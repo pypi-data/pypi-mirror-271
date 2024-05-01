@@ -1,0 +1,16 @@
+LICENSE
+pyproject.toml
+seeact/__init__.py
+seeact/agent.py
+seeact.egg-info/PKG-INFO
+seeact.egg-info/SOURCES.txt
+seeact.egg-info/dependency_links.txt
+seeact.egg-info/requires.txt
+seeact.egg-info/top_level.txt
+seeact/data_utils/__init__.py
+seeact/data_utils/format_prompt_utils.py
+seeact/data_utils/prompts.py
+seeact/demo_utils/__init__.py
+seeact/demo_utils/browser_helper.py
+seeact/demo_utils/format_prompt.py
+seeact/demo_utils/inference_engine.py

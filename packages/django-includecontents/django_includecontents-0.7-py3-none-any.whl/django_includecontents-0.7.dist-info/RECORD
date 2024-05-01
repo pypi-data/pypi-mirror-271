@@ -1,0 +1,10 @@
+django_includecontents-0.7.dist-info/METADATA,sha256=O3LlI02OfGXM96KWvXVNUXGVAsK0OaUmaRoDVMUS6gQ,8773
+django_includecontents-0.7.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+includecontents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+includecontents/backend.py,sha256=aPKeOcpVtNjwJTzZ1OArIGJ3iil6a0uAp6Pu3pjfZJI,1000
+includecontents/base.py,sha256=TWH8mo4stVc-TspyI0xMkeXMxVkGhptAFfSjZrZaAqI,4779
+includecontents/engine.py,sha256=l5zZPS-cub0gzeme9-r3RkR0ryaQ7p7hSOCAovu6HB4,1401
+includecontents/loaders.py,sha256=USn40YQC6RQEop6PCgPU761m8CRNaUawsRJI9FsfwfY,1663
+includecontents/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+includecontents/templatetags/includecontents.py,sha256=Rx0U5wG6ziJ-mz7gdE0-otS7ZtzIuwI5MO8FNnD5QXw,16458
+django_includecontents-0.7.dist-info/RECORD,,

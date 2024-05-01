@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: loadspinner
+Version: 0.1
+Summary: a CLI based loading spinner.
+Home-page: https://github.com/xyzpw/loadspinner/
+Author: xyzpw
+Maintainer: xyzpw
+License: MIT
+Keywords: loading,loader,progress,throbber,spinner
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Classifier: Topic :: Terminals
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+
+# loadspinner
+A CLI based loading spinner.
+
+## Prerequisites
+- Terminal that accepts ANSI codes
+
+## Usage
+Creating and using a spinner:
+```python
+import loadspinner
+spinner = loadspinner.Spinner(spinner_type="classic")
+spinner.start() #starts the spinner
+spinner.stop() #stops the spinner
+```
+Optionally, you can set a time limit for the spinner, e.g. `spinner.start(5) #5 seconds`.

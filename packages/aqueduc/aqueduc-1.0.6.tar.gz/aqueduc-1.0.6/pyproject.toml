@@ -1,0 +1,16 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aqueduc"
+version = "1.0.6"
+readme = "README.md"
+authors = [{ name = "Mozenn"}]
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com/Mozenn/aqueduc"
+
+[project.scripts]
+aqueduc = "aqueduc.__main__:main"

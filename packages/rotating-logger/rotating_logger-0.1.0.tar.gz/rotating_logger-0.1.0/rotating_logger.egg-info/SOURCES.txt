@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rotating_logger/__init__.py
+rotating_logger/rotatinglogger.py
+rotating_logger/singleton.py
+rotating_logger.egg-info/PKG-INFO
+rotating_logger.egg-info/SOURCES.txt
+rotating_logger.egg-info/dependency_links.txt
+rotating_logger.egg-info/top_level.txt

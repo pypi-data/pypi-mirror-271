@@ -1,0 +1,7 @@
+youtube-search-python
+yt_dlp
+tinytag
+unidecode
+termcolor
+colorama
+validators

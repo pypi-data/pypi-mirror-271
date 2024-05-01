@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/getbc.py
+src/getbc.egg-info/PKG-INFO
+src/getbc.egg-info/SOURCES.txt
+src/getbc.egg-info/dependency_links.txt
+src/getbc.egg-info/entry_points.txt
+src/getbc.egg-info/top_level.txt

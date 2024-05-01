@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: pathlib_next
+Version: 0.3.0
+Summary: Generic Path Protocol based pathlib
+Project-URL: Homepage, https://github.com/jose-pr/pathlib_next/
+Project-URL: Issues, https://github.com/jose-pr/pathlib_next/issues
+Author: Jose A
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: hatchling; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Provides-Extra: http
+Requires-Dist: bs4; extra == 'http'
+Requires-Dist: htmllistparse; extra == 'http'
+Requires-Dist: requests; extra == 'http'
+Requires-Dist: uritools; extra == 'http'
+Provides-Extra: sftp
+Requires-Dist: paramiko; extra == 'sftp'
+Requires-Dist: uritools; extra == 'sftp'
+Provides-Extra: uri
+Requires-Dist: uritools; extra == 'uri'
+Description-Content-Type: text/markdown
+
+Generic Path Protocol based pathlib
+
+Implementation for URI paths, with file access support for sftp, http, file schemes

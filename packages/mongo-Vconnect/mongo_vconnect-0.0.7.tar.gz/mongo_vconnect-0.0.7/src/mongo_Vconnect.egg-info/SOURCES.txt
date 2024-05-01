@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/MongoDBConnect/__init__.py
+src/MongoDBConnect/mongo_crud.py
+src/mongo_Vconnect.egg-info/PKG-INFO
+src/mongo_Vconnect.egg-info/SOURCES.txt
+src/mongo_Vconnect.egg-info/dependency_links.txt
+src/mongo_Vconnect.egg-info/requires.txt
+src/mongo_Vconnect.egg-info/top_level.txt

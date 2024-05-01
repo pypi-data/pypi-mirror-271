@@ -1,0 +1,12 @@
+zeep
+pypdf>=3
+trytond_carrier<7.3,>=7.2
+trytond_stock<7.3,>=7.2
+trytond_stock_package<7.3,>=7.2
+trytond_stock_package_shipping<7.3,>=7.2
+trytond<7.3,>=7.2
+
+[test]
+proteus<7.3,>=7.2
+trytond_sale<7.3,>=7.2
+trytond_sale_shipment_cost<7.3,>=7.2

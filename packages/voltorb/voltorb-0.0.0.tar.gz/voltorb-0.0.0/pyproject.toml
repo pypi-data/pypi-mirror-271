@@ -1,0 +1,11 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=64.0.0"]
+
+[project]
+name = "voltorb"
+description = 'A simple unofficial Electricity Maps client'
+version = "0.0.0"
+authors = [{name = 'amv213'}]
+maintainers = [{name = 'avm213'}]
+requires-python = '>= 3.10'

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+verbose_name_adder_Sino0on.egg-info/PKG-INFO
+verbose_name_adder_Sino0on.egg-info/SOURCES.txt
+verbose_name_adder_Sino0on.egg-info/dependency_links.txt
+verbose_name_adder_Sino0on.egg-info/top_level.txt

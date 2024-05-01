@@ -1,0 +1,36 @@
+from typing import Any
+from ..complexities import (
+    ComplexitiesDict,
+    constant,
+    linear_to_len,
+    comparison_com,
+)
+
+dict_values_complexities: ComplexitiesDict = {
+    '__class__': constant,
+    '__delattr__': constant,
+    '__dir__': constant,
+    '__doc__': constant,
+    '__eq__': comparison_com,
+    '__format__': constant,
+    '__ge__': comparison_com,
+    '__getattribute__': constant,
+    '__gt__': comparison_com,
+    '__init__': constant,
+    '__init_subclass__': constant,
+    '__iter__': constant,
+    '__le__': comparison_com,
+    '__len__': constant,
+    '__lt__': comparison_com,
+    '__ne__': comparison_com,
+    '__new__': constant,
+    '__reduce__': constant,
+    '__reduce_ex__': constant,
+    '__repr__': linear_to_len,
+    '__setattr__': constant,
+    '__sizeof__': constant,
+    '__str__': linear_to_len,
+    '__subclasshook__': constant,
+    'isdisjoint': linear_to_len,
+    'mapping': constant,
+}

@@ -1,0 +1,12 @@
+art
+pathlib
+prompt_toolkit
+pydantic
+psutil
+litellm
+loguru
+ollama
+PyMuPDF
+rich
+semchunk
+tiktoken

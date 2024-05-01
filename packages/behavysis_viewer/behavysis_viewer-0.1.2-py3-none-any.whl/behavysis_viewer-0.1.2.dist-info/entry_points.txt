@@ -1,0 +1,3 @@
+[console_scripts]
+behavysis_viewer=behavysis_viewer.__main__:main
+

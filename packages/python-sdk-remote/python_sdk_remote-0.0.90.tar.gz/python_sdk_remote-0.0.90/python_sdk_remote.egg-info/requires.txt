@@ -1,0 +1,3 @@
+python-dotenv
+url-remote
+http-status-codes

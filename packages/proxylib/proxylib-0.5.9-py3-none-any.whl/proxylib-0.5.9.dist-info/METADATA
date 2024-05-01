@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: proxylib
+Version: 0.5.9
+Summary: Proxy models and functions to build proxy configurations or get the systems proxy information and parse their result
+Project-URL: Homepage, https://github.com/jose-pr/proxylib/
+Project-URL: Issues, https://github.com/jose-pr/proxylib/issues
+Author: Jose A
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: hatchling; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: requests; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Provides-Extra: ifaddr
+Requires-Dist: ifaddr; extra == 'ifaddr'
+Provides-Extra: jspac
+Requires-Dist: dukpy; extra == 'jspac'
+Description-Content-Type: text/markdown
+
+Proxy models and functions to build proxy configurations or get the systems proxy information and parse their result.
+
+Ability to handle PAC files.
+

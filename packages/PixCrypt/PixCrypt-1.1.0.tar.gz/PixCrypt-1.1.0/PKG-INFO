@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: PixCrypt
+Version: 1.1.0
+Summary: Library for encrypting text into an image
+Author: ALhorm
+Author-email: gladkoam@gmail.com
+Keywords: pixcrypt pillow image encryption python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# <p align="center">PixCrypt</p>
+### <p align="center">Library for encrypting text into an image</p>
+
+## Usage
+### Encrypting text to image
+```py
+from pixcrypt import PixImage
+
+src = 'Hello World!'
+pix = PixImage(text=src)
+img = pix.getimage()
+
+img.save('hello_world.png')
+```
+If you will be decrypting the image, save the file in PNG format. You can also specify a maximum width for the image:
+```py
+img = pix.getimage(max_width=12)
+```
+### Decrypting image into text
+```py
+from pixcrypt import PixImage
+
+pix = PixImage('hello_world.png')
+text = pix.getstr()
+
+print(text) # Hello World!
+```
+```PixImage``` can take an Image class object from Pillow as an argument:
+```py
+pix = PixImage(text='some info')
+pix2 = PixImage(pix.getimage())
+text = pix2.getstr()
+
+print(text) # some info
+```

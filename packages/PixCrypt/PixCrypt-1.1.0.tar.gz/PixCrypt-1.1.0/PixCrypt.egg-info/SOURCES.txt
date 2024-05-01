@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PixCrypt.egg-info/PKG-INFO
+PixCrypt.egg-info/SOURCES.txt
+PixCrypt.egg-info/dependency_links.txt
+PixCrypt.egg-info/requires.txt
+PixCrypt.egg-info/top_level.txt
+pixcrypt/__init__.py
+pixcrypt/_piximg.py

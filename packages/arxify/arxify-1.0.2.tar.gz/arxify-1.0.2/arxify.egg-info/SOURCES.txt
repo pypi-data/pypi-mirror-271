@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+arxify/__init__.py
+arxify/arxify.py
+arxify.egg-info/PKG-INFO
+arxify.egg-info/SOURCES.txt
+arxify.egg-info/dependency_links.txt
+arxify.egg-info/entry_points.txt
+arxify.egg-info/requires.txt
+arxify.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "publica_utils"
+version = "0.1.1"
+description = "A tool to help publica engineer"
+authors = ["dimitri <dimitriwyzlic@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+shellpy = "^0.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+publica_utils = 'publica_utils.main:main'

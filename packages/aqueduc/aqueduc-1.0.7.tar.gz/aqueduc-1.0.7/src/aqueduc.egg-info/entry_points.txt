@@ -1,0 +1,2 @@
+[console_scripts]
+aqueduc = aqueduc.__main__:main

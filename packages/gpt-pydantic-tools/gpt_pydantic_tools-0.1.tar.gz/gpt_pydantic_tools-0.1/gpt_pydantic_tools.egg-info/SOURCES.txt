@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+gpt_pydantic_tools/__init__.py
+gpt_pydantic_tools.egg-info/PKG-INFO
+gpt_pydantic_tools.egg-info/SOURCES.txt
+gpt_pydantic_tools.egg-info/dependency_links.txt
+gpt_pydantic_tools.egg-info/requires.txt
+gpt_pydantic_tools.egg-info/top_level.txt

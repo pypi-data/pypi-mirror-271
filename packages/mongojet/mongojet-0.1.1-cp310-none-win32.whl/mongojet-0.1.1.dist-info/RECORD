@@ -1,0 +1,15 @@
+mongojet-0.1.1.dist-info/METADATA,sha256=lG14YXUeVxcDcOMyWIjTKG41luy80C4t94BEavmNM5s,5952
+mongojet-0.1.1.dist-info/WHEEL,sha256=9RmYUj-esIKQx6TApE6-yhBl_9k8cOHeP1-5vFYOkbg,91
+mongojet-0.1.1.dist-info/license_files/LICENSE.txt,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+mongojet/_client.py,sha256=DcCi5wLfVsETdaFMsCBxDSYZzlPITiOvcJ5ZhWwJK74,2838
+mongojet/_codec.py,sha256=SAwfIxMayCeG7QZ9YnNCkmFlQzXGafwLdOzzLB-pVnU,2249
+mongojet/_collection.py,sha256=8d1pq4jHzLW1nauufipjqHg7sx6NTKF7KULMhT7mIhs,19400
+mongojet/_cursor.py,sha256=2CflxJhjbz6JBD-XrkAlLAomEe07r8jEuJxh5sss-_w,1474
+mongojet/_database.py,sha256=qOyqDokYdsetZ3m-vd8Eyzd36RTRZl9V2o2JqYHSwdA,6296
+mongojet/_gridfs.py,sha256=I0vGwj5rYCK4SvclG1BtXVILBCgOo4SdNsLy9zsqrSo,2728
+mongojet/_helpers.py,sha256=nTckeqevVSj7UfNcXCf8if0cJz_Zh0rxhujgHah9L0Y,3933
+mongojet/_session.py,sha256=3A_ySC7WUc762F36JEG58GomwG3mX239wBfnCfMuUB4,1412
+mongojet/_types.py,sha256=HlCc92rU487seouRxkBeUPGtad-W1jWqfUZ-05NQr_c,12975
+mongojet/__init__.py,sha256=24ZX3htKcnf76fRbz5XEgtSirBXvd3q_QkUtgvCZ4FY,1167
+mongojet/mongojet.cp310-win32.pyd,sha256=9WeGP60tQPySG-pF4DEtt3CxUhhMGsopmAMgdWNG-xU,14979584
+mongojet-0.1.1.dist-info/RECORD,,

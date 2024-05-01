@@ -1,0 +1,10 @@
+mphapi/__init__.py,sha256=pY3H-ikyEKrkHm8f3L7-5_IaDf8G9vYMUVsWJRV8e04,210
+mphapi/claim.py,sha256=UWlj3VaNWXIxoBpQWbdzEFbTvpxBCiDbQXFnZGC3OD0,11527
+mphapi/client.py,sha256=AHEClAKS3j0wMdrjFhAmQqCJ_4Axc01DiOxZiOMzWhs,6297
+mphapi/date.py,sha256=Vdv3xqZh610xFl1HK1e_YGK9tkdFs0giUTvCT5bbbRU,1504
+mphapi/fields.py,sha256=nRFqDwFONLiYcYXb4I54vuvNAUlCTErtp7S3BB16aNo,604
+mphapi/pricing.py,sha256=gYkVsyXn--69CjHoyHYVYPXYXXejoSmbDjqmWdknodY,10159
+mphapi/response.py,sha256=opgHtRH7hIgz9tMSVV7966OJDAIB9O4BvOUW_KcJzqI,2958
+mphapi-0.4.1.dist-info/METADATA,sha256=ob2qO3VmgRltd8H_ex4WSQSyHWqYTWG6WhyhBDkjA_E,382
+mphapi-0.4.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mphapi-0.4.1.dist-info/RECORD,,

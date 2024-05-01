@@ -1,0 +1,2 @@
+[console_scripts]
+builder = statute_utils:cli

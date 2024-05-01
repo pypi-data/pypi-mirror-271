@@ -1,0 +1,3 @@
+[console_scripts]
+publica_utils=publica_utils.main:main
+

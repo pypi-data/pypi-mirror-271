@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: email_librar
+Version: 0.2
+Summary: Простая библиотека для отправки электронных писем на Python.
+Home-page: https://github.com/вашеимя/email-library
+Author: Ваше имя
+Author-email: ваш.емейл@example.com
+Requires-Dist: smtplib

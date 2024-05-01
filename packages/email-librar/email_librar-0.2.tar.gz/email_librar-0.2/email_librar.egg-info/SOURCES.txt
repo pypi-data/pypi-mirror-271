@@ -1,0 +1,7 @@
+README.md
+setup.py
+email_librar.egg-info/PKG-INFO
+email_librar.egg-info/SOURCES.txt
+email_librar.egg-info/dependency_links.txt
+email_librar.egg-info/requires.txt
+email_librar.egg-info/top_level.txt

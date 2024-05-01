@@ -1,0 +1,13 @@
+setup.py
+socketsecurity/__init__.py
+socketsecurity/socketcli.py
+socketsecurity.egg-info/PKG-INFO
+socketsecurity.egg-info/SOURCES.txt
+socketsecurity.egg-info/dependency_links.txt
+socketsecurity.egg-info/entry_points.txt
+socketsecurity.egg-info/requires.txt
+socketsecurity.egg-info/top_level.txt
+socketsecurity/core/__init__.py
+socketsecurity/core/classes.py
+socketsecurity/core/exceptions.py
+socketsecurity/core/messages.py

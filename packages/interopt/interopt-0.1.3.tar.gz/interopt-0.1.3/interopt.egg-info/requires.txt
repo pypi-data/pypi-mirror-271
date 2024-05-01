@@ -1,0 +1,8 @@
+requests
+pandas
+catboost
+grpcio
+grpcio-tools
+protobuf
+scikit-learn
+pydantic

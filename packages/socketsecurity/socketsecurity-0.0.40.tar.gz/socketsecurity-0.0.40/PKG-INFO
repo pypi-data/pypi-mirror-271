@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: socketsecurity
+Version: 0.0.40
+Requires-Dist: click
+Requires-Dist: mdutils
+Requires-Dist: requests
+Requires-Dist: prettytable

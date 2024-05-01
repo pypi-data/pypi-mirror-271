@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+thermaPy/__init__.py
+thermaPy/main.py
+thermaPy.egg-info/PKG-INFO
+thermaPy.egg-info/SOURCES.txt
+thermaPy.egg-info/dependency_links.txt
+thermaPy.egg-info/requires.txt
+thermaPy.egg-info/top_level.txt

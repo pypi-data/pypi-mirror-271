@@ -1,0 +1,14 @@
+
+[build]
+build
+setuptools
+
+[dev]
+clip-util[build]
+clip-util[test]
+pre-commit
+mypy
+
+[test]
+tox
+tox-gh-actions

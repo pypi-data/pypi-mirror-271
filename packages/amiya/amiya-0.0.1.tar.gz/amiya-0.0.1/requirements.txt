@@ -1,0 +1,12 @@
+pywin32
+psutil
+pynput
+pyautogui
+tabulate
+setuptools
+elevate
+termcolor
+schedule
+screeninfo
+customtkinter
+pycaw

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: voltorb
+Version: 0.0.0
+Summary: A simple unofficial Electricity Maps client
+Author: amv213
+Maintainer: avm213
+Requires-Python: >=3.10
+

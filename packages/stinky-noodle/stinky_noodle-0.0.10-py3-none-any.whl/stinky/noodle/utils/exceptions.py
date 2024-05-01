@@ -1,0 +1,2 @@
+class NonExistentCallableError(Exception):
+    pass

@@ -1,0 +1,7 @@
+whisper_cpp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whisper_cpp/__main__.py,sha256=Bw3VirWPhjZOKnukvPGyvaLpX5ivaVOsZtpO6DWtkBU,1121
+whisper_cpp_cli-0.0.3.data/scripts/whisper-cpp.exe,sha256=ibOXch0Fj44rGTsw3arqYSNKjUaffAwjhSG9SkdWr6U,613888
+whisper_cpp_cli-0.0.3.dist-info/METADATA,sha256=5Gos0PdlKlEoR3wBVRbQZwfjEfCGASE33AxPP5RH1iY,3080
+whisper_cpp_cli-0.0.3.dist-info/WHEEL,sha256=H1UYz5DobkRDhKrJdCHJJUTlOTuoc79I3O4-Car22OI,98
+whisper_cpp_cli-0.0.3.dist-info/licenses/LICENSE,sha256=Mu5E8a5gtozo3vBliG9J4aw_AlMNT7Ky5v7MBZTZidw,1091
+whisper_cpp_cli-0.0.3.dist-info/RECORD,,

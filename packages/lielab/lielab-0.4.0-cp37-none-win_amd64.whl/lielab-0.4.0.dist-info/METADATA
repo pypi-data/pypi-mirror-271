@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lielab
+Version: 0.4.0
+Summary: A lightweight C++ library for numerical computations.
+Home-page: https://github.com/sandialabs/Lielab
+Author: Michael J. Sparapany
+Author-email: mjspara@sandia.gov
+Platform: any
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.16.3)
+Provides-Extra: dev
+Requires-Dist: numpy (>=1.16.3) ; extra == 'dev'
+
+A lightweight C++ library for numerical computations.

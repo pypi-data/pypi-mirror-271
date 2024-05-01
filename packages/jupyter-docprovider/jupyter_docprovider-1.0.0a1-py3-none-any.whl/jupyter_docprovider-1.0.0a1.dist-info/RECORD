@@ -1,0 +1,17 @@
+jupyter_docprovider/__init__.py,sha256=pvzIgrnwXG3rAiMW5TvmGOCW0CPWIlk54yXEw_O_jrc,260
+jupyter_docprovider/_version.py,sha256=pHLUWHD0-i3VhQGA7h59p8IgmMU_fyxItpb1wjckTmY,24
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/package.json,sha256=euW5XMoDJ6I2xKPNzVX2b7oMAFD-87QrRurTRFbpQW4,3769
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/341.998da4ec9a27d6dbdb1a.js,sha256=mY2k7Jon1tvbGgcrMsiRJ7volbvzsr2R7qhh0D6B2z8,5274
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/422.3ab44960b241aac9f303.js,sha256=OrRJYLJBqsnzA0qgMSMcR5YfnSlyg7egM2nOpzNLqw0,3243
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/544.1c4f1124ffffdb64812e.js,sha256=HE8RJP__22SBLmy0zVyMVQbIGPrlhKkXFEKevbVhOWo,5559
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/722.06cb6508a379f7976e9e.js,sha256=BstlCKN595dunkSRYMPj8QH237fxjaftpLO5DHmFjWc,5274
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/944.80e0d65b220a1dfdc0ff.js,sha256=gODWWyIKHf3A_52J-9qYpferOAFiY9a23hfrHmzP7eE,8193
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/994.c290665e94ae9503337f.js,sha256=wpBmXpSulQMzf3qyvYbv14IIA87jDndiM-t5sbtH7IU,13097
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/remoteEntry.6347eb8bae6b74aa4edc.js,sha256=Y0fri65rdKpO3AlqMhVo68OwdI5VDKiV_NeAe-eWvm4,8493
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/style.js,sha256=IIvKvBMPlm9SdCt0l2x7pOx2ZMG7tbWWhxCH8l4ylSU,173
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/static/third-party-licenses.json,sha256=ubLoYBKJU49xVvREHbWOdhGSMzFc-qbCYS8kok2WCPc,7762
+jupyter_docprovider-1.0.0a1.data/data/share/jupyter/labextensions/@jupyter/docprovider-extension/install.json,sha256=NO9HH1zbt0jedIG_-lqpMiOhO1OAvrUmoUfIjgyzvpE,199
+jupyter_docprovider-1.0.0a1.dist-info/METADATA,sha256=KxK-ex6rw0cqTdgBAXZSH2SGI28SAIhb7kced6nzOp4,4764
+jupyter_docprovider-1.0.0a1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+jupyter_docprovider-1.0.0a1.dist-info/licenses/LICENSE,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+jupyter_docprovider-1.0.0a1.dist-info/RECORD,,

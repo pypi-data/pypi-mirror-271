@@ -1,0 +1,8 @@
+README.rst
+pypa
+pypa-create-project
+setup.py
+pypa_create_project.egg-info/PKG-INFO
+pypa_create_project.egg-info/SOURCES.txt
+pypa_create_project.egg-info/dependency_links.txt
+pypa_create_project.egg-info/top_level.txt

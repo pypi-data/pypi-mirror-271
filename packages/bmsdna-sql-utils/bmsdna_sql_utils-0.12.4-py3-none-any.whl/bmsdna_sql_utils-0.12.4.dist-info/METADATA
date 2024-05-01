@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: bmsdna-sql-utils
+Version: 0.12.4
+Summary: 
+Author: Adrian Ehrsam
+Author-email: adrian.ehrsam@bmsuisse.ch
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: db-io
+Provides-Extra: db2delta
+Provides-Extra: delta
+Provides-Extra: polars
+Requires-Dist: aiohttp (>=3.8.5,<4.0.0)
+Requires-Dist: aioodbc (>=0.5.0,<0.6.0)
+Requires-Dist: arrow-odbc (>=5.0.0,<6.0.0) ; extra == "db2delta"
+Requires-Dist: deltalake (>=0.16.4) ; extra == "delta" or extra == "db2delta"
+Requires-Dist: deltalake2db (>=0.3.0)
+Requires-Dist: duckdb (>=0.10.1,<0.11.0) ; extra == "delta" or extra == "db2delta"
+Requires-Dist: lakeapi2sql (>=0.7.4) ; extra == "db-io"
+Requires-Dist: polars[chrono-tz] (>=0.20.21) ; extra == "polars"
+Requires-Dist: pydantic (>=2.3.0,<3.0.0)
+Requires-Dist: pyodbc (>=5.0.1,<6.0.0) ; extra == "db-io"
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0) ; python_version < "3.11"
+Requires-Dist: python-tds (>=1.13.0,<2.0.0)
+Requires-Dist: requests (>=2.28.0)
+Description-Content-Type: text/markdown
+
+# Libary for minimal SQL Server Utils
+
+- Call a stored proc with results and store in a data class list
+- Load a Table from DeltaLake into SQL Server
+
+This package has very few docs. It's used internally and maybe documented better in a later stage
+

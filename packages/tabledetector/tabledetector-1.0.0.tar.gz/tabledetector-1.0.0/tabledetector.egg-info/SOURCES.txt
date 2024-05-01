@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+tabledetector/__init__.py
+tabledetector/bordered.py
+tabledetector/consolidated.py
+tabledetector/convertor.py
+tabledetector/extractor.py
+tabledetector/rotate.py
+tabledetector/semibordered.py
+tabledetector/tabledetector.py
+tabledetector/unbordered.py
+tabledetector.egg-info/PKG-INFO
+tabledetector.egg-info/SOURCES.txt
+tabledetector.egg-info/dependency_links.txt
+tabledetector.egg-info/requires.txt
+tabledetector.egg-info/top_level.txt

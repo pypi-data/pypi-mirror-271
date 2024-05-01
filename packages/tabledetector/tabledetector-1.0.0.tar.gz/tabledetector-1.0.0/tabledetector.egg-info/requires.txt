@@ -1,0 +1,9 @@
+opencv-python
+numpy
+Pillow
+scipy
+pdf2image
+pandas
+openpyxl
+jinja2
+easyocr

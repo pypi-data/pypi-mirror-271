@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: glcl
+Version: 0.0.6
+Summary: glcl for python studio
+Home-page: UNKNOWN
+Author: glsite.com
+Author-email: admin@glsite.com
+License: MIT License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+
+# glcl
+glcl for python studio
+

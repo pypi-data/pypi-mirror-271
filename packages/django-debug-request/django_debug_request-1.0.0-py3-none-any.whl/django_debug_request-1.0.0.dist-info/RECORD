@@ -1,0 +1,9 @@
+django_debug_request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_debug_request/apps.py,sha256=t4iZidxcb0hp2Yr_d5P-aWFJRAb1zRQYzlyDoXi3U7Y,107
+django_debug_request/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_debug_request/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_debug_request/management/commands/debug_request.py,sha256=AZW0nw3FUfDDIwTHkzjcgoAmMl06u_oo_Ld1p3OTanA,2825
+django_debug_request-1.0.0.dist-info/METADATA,sha256=0KL8WnBO6JBDz4En9U-zid-kkhug5Es7dTLm7mgdIYo,3545
+django_debug_request-1.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+django_debug_request-1.0.0.dist-info/licenses/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+django_debug_request-1.0.0.dist-info/RECORD,,

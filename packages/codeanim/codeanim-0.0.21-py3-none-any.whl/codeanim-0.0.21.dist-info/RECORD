@@ -1,0 +1,14 @@
+codeanim/__init__.py,sha256=By0sNcNqVDVCwXWIm8ePVzqs0V1dEs66xOolQrJkPJg,2773
+codeanim/chrome.py,sha256=fBoXTd5MwZ64MEAXJWlWFB-rInuCdDPL0zQZ24Vaaf8,1719
+codeanim/core.py,sha256=gOzBaqOZCjgZMKXFytkPEdZwQJm5on8ayzvoPSgePOU,4101
+codeanim/delayer.py,sha256=_TedsGI7q11i0WopIyaYdlO5IAi47ET6KKFqOLPSq4s,1152
+codeanim/interpolators.py,sha256=-GGIVzYBfY0xmMKNWSU6PDaIhJqRZhYvEZ60vYWcJLE,751
+codeanim/keyboard.py,sha256=SHPjdJ_U45HfGgarTRFV8L89C_onYj2GVJUqa9P3lHE,1653
+codeanim/markdown.py,sha256=_rLFBsMphY31fEMm16VOdDxCrTe7xeZmLtoNICzSudY,1338
+codeanim/shell.py,sha256=Q63uo8_3nJROW4J-F9p7y0SIp_zXI_tIGLONad7qjZc,1058
+codeanim/vscode.py,sha256=RtTQQLdqPN5SNhDm1lNmLpTkNfnoC5zZjgDhzHserLI,3018
+codeanim-0.0.21.dist-info/LICENSE,sha256=lWLdrAhqOOqIdk2tzZ0PrIWPvEQTq2Jh336IUJj97XM,1068
+codeanim-0.0.21.dist-info/METADATA,sha256=npXTjDasCfTWr9tVZXHCoO4bgoqOxnqECml-7Z3mQEw,2683
+codeanim-0.0.21.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+codeanim-0.0.21.dist-info/entry_points.txt,sha256=nRkRCwtSybHyo514h_NMJEZjUGsflT1Rb3I7Ylz-R-s,42
+codeanim-0.0.21.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+signal_themer/__main__.py
+signal_themer.egg-info/PKG-INFO
+signal_themer.egg-info/SOURCES.txt
+signal_themer.egg-info/dependency_links.txt
+signal_themer.egg-info/entry_points.txt
+signal_themer.egg-info/requires.txt
+signal_themer.egg-info/top_level.txt

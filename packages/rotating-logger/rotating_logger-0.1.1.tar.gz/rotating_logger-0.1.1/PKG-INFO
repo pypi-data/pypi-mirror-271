@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: rotating_logger
+Version: 0.1.1
+Summary: A singleton rotating logger
+Home-page: https://github.com/romainmrad/rotating_logger.git
+Author: Romain MRAD
+Author-email: Romain Mrad <romain.mrad@gmail.com>
+Project-URL: Homepage, https://github.com/romainmrad/rotating_logger.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Rotating Logger
+
+Python package implementing a singleton logger object using rotating
+file handling. 
+
+## Installation
+
+Use the pip install to install this package:
+
+```shell
+pip3 install https://github.com/romainmrad/rotating_logger.git
+```
+
+## Usage
+
+Import the class and instantiate it
+
+```python
+from rotating_logger import rotatinglogger
+
+logger = rotatinglogger.RotatingLogger(
+    backup_count=30,
+    encoding='utf-8'
+)
+
+logger.info("Hello world")
+logger.error("This is an error")
+```

@@ -1,0 +1,17 @@
+click
+cartopy
+cfgrib
+herbie-data
+intake
+jinja2
+psutil
+
+[docs]
+pydata-sphinx-theme
+sphinx
+sphinxcontrib-programoutput
+
+[extra]
+
+[test]
+pytest

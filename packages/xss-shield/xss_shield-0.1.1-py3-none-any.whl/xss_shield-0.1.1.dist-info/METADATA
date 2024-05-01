@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: xss-shield
+Version: 0.1.1
+Summary: A library used to stop your website from being attacked.
+Project-URL: Homepage, https://github.com/GordonZhang2024/xss-shield/
+Project-URL: Issues, https://github.com/GordonZhang2024/xss-shield/issues
+Author-email: Gordon Zhang <jp20171211@163.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# xss-shield
+A Python library to prevent your website from being attacked
+
+## Installing
+Type command:
+```bash
+$ pip install xss-shield
+```
+
+## Usage
+example:
+```python
+import xss_shield
+unsafe_str = '<script>alert("Bad.");</script>'
+safe_str = xss_shield.escape(unsafe_str)
+```

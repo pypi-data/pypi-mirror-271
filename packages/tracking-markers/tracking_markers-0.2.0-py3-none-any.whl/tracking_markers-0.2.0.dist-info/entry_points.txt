@@ -1,0 +1,3 @@
+[console_scripts]
+tracking-markers=tracking_markers.tracking_points:main
+

@@ -1,0 +1,8 @@
+multiplication/__init__.py,sha256=09AZ8ga637srV6eaMCxqBRqAjEs0k8kD6ksfNbOw9FA,34
+multiplication/multiplication.py,sha256=EW9XD_WswSafkGc4R9zasJCM5fPq3GhSbqWMUUou4Ig,266
+tests/__init__.py,sha256=mTQEf-NW79OKIcSy15GVa4kBkYXmgaUclMFsItFXW_8,23
+tests/test_multiplication.py,sha256=5yXcrA-D50QaZqIcUE8HvGVBWxSmst-H-YKKYOw3PJ8,495
+kingqueen-0.1.0.dist-info/METADATA,sha256=Ph9btiijBSbQQY_fe_5NkvbSN0Q255Mgp6J-tNmhqIs,639
+kingqueen-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kingqueen-0.1.0.dist-info/top_level.txt,sha256=7yLLYCoLk7tQ5VXbtM9AezyxAkYlRtIgIMYM800W2Ho,21
+kingqueen-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: atro-core
+Version: 0.0.1
+Summary: Package containing generic/reusable content one can reuse in many projects.
+License: MIT
+Author: atropos
+Author-email: sv7n@pm.me
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: types-pyyaml (>=6.0.12.20240311,<7.0.0.0)
+Description-Content-Type: text/markdown
+
+# atro-core
+

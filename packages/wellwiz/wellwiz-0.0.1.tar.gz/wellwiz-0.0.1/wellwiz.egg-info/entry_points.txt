@@ -1,0 +1,2 @@
+[console_scripts]
+wellwiz = wellwiz.cli:main

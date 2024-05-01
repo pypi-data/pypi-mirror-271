@@ -1,0 +1,13 @@
+attrs
+cattrs
+gentools
+snug
+typing-extensions
+
+[dev]
+nox>=2024.03.02
+pre-commit
+
+[tests]
+coverage[toml]
+pytest

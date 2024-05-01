@@ -1,0 +1,11 @@
+droneinterface/__init__.py,sha256=32VhCNMpGSQOsdS6uXa8IuvjzLASi2Pp9xmc1X4snM8,704
+droneinterface/combinators.py,sha256=TugE9RlH9oc6idDYEE989bUxFd254LAXDy33nYEshrY,2492
+droneinterface/commands.py,sha256=zffZ-j9pcal7v0a6iFkaGOzuOdn2axBxBRfo1XGPyjQ,2407
+droneinterface/connection.py,sha256=P4bO1LZGsRiqBS_JQQOzUkubpj0iV3lxk_qxrolv0gk,7159
+droneinterface/last_message.py,sha256=3E7g4zZ9ibX9H69x-hc4L0pxzFIXTGhhc5RxG-u31LA,3919
+droneinterface/vehicle.py,sha256=Ve--Z2jRjGHg2LVmUox17mtfkZQFh9DLqI86tzAbuTU,10878
+droneinterface-0.0.4.dist-info/LICENSE,sha256=z72U6pv-bQgJ_Svr4uCXnMjemsp38aSerhHEdEAOMJ4,7632
+droneinterface-0.0.4.dist-info/METADATA,sha256=A-4IWsXBi-CEbeG0I-xkg8fP68VU-rGH8K0RDAz1F98,1948
+droneinterface-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+droneinterface-0.0.4.dist-info/top_level.txt,sha256=y-iW0N-HohfK5ob5qy1C-LzbaGxJsIhVULDLhxCt_h4,15
+droneinterface-0.0.4.dist-info/RECORD,,

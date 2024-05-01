@@ -1,0 +1,1 @@
+from .bart_summarization import MBartSummarizator

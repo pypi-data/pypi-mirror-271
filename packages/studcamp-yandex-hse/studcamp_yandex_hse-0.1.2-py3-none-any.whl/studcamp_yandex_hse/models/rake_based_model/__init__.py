@@ -1,0 +1,2 @@
+from studcamp_yandex_hse.models.rake_based_model.keyphrases_extractor import RakeKeyphrasesExtractor
+from studcamp_yandex_hse.models.rake_based_model.tags_extractor import TagsExtractor as RakeBasedTagger

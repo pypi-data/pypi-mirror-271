@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/openai_api_with_easy_tools_and_web_browsing.py
+src/openai_api_with_easy_tools_and_web_browsing.egg-info/PKG-INFO
+src/openai_api_with_easy_tools_and_web_browsing.egg-info/SOURCES.txt
+src/openai_api_with_easy_tools_and_web_browsing.egg-info/dependency_links.txt
+src/openai_api_with_easy_tools_and_web_browsing.egg-info/requires.txt
+src/openai_api_with_easy_tools_and_web_browsing.egg-info/top_level.txt
+tests/test.py
+tests/test_fr.py

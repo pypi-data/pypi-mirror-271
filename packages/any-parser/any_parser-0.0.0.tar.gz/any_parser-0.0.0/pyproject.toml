@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "any-parser"
+version = "0.0.0"
+description = "parser for all."
+authors = ["CambioML <wanwanaiai45@gmail.com>"]
+maintainers = ["Rachel Hu <goldpiggy@berkeley.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

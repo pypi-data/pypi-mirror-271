@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: deadpad
+Version: 0.2.2
+Summary: A customizeable lightweight CLI/TUI text editor made without curses or any TUI framework.
+Author: William L.
+Project-URL: Homepage, https://github.com/FrewtyPebbles/DeadPad-CLI-Text-Editor
+Project-URL: Issues, https://github.com/FrewtyPebbles/DeadPad-CLI-Text-Editor/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DeadPad Text Editor
+
+Install:
+```
+pip install deadpad
+```
+
+Run:
+
+```
+deadpad <filename>
+```
+
+> A command line text editor made without curses or any other TUI library.
+
+![](https://github.com/FrewtyPebbles/DeadPad-CLI-Text-Editor/blob/main/preview/deadpad2.gif)

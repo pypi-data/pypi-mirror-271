@@ -1,0 +1,10 @@
+dependify/__init__.py,sha256=MZwrAD5vi0nwqS1OgA5fzcH2mvh9ceGqzYy9JpWyg7A,760
+dependify/container.py,sha256=Jut85SPFOIERigEqt5NQYAlmLaKj2zB4ZJDDX0v7r34,3995
+dependify/context.py,sha256=ZfsLK4D3WLHiy1-e-azvDeCQxFYvDfhtF0KzUkJmKw4,1035
+dependify/decorators.py,sha256=X4yrVHsxEYrMai091vWhLM5p65MQcvgKYX-6193ai7E,1905
+dependify/dependency.py,sha256=iRnvwB_ZR_H1t2q4PULpV2xAB_T6y0b6CteIiNoGBVw,1602
+dependify-1.0.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+dependify-1.0.0.dist-info/METADATA,sha256=rZr5K6lEKy9qWkLghkhghKy79kkhi5Rn8ckF1NGKUKU,11489
+dependify-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dependify-1.0.0.dist-info/top_level.txt,sha256=DIGzBw_wKMXKbHzeQFx_EiKdgA7nMkYxBhZ5xSctRoQ,10
+dependify-1.0.0.dist-info/RECORD,,

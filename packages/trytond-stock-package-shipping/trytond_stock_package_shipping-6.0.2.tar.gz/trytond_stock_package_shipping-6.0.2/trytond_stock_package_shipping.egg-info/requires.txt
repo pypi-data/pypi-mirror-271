@@ -1,0 +1,9 @@
+python-sql>=0.4
+trytond_carrier<6.1,>=6.0
+trytond_product<6.1,>=6.0
+trytond_stock<6.1,>=6.0
+trytond_stock_package<6.1,>=6.0
+trytond_stock_shipment_measurements<6.1,>=6.0
+trytond_sale_shipment_cost<6.1,>=6.0
+trytond_product_measurements<6.1,>=6.0
+trytond<6.1,>=6.0

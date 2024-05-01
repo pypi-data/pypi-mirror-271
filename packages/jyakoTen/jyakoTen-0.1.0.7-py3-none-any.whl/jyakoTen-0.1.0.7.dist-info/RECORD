@@ -1,0 +1,19 @@
+jyakoTen/__init__.py,sha256=l9N_Zhtz6pIKQU6d9ex5Wv_cNRJ36VCgchhnJx57oTs,24
+jyakoTen/__main__.py,sha256=9IVflcyjV0r25O5zpaHZwzYgthzLQQCNVNziX_kS4xY,34
+jyakoTen/score.py,sha256=EV6jfGac9rVWcshpgvDo8lZiELVkx5Wd9k0EtH1ZRpI,9052
+jyakoTen/examples/ita04_normal_recitation_result_float32.txt,sha256=QUZLroAr8VaeBb1O9ieqJRYi8flAJ_r-i3kMZvNFdNk,20691
+jyakoTen/examples/ita04_normal_recitation_result_int8.txt,sha256=Tt4ZL3EXKHjFwl1rA7l-Qvn-hMLB__HmrLcH75bVFlE,20991
+jyakoTen/scores/ita04_normal_recitation_score(321.421 of 324).txt,sha256=NFLpIGuFVpUZOJvn5WebjncDe4rh-SCU36abAdnUkrE,141050
+jyakoTen/transcripts/emotion_transcript_utf8.txt,sha256=TQPXYLGly0ne7lGbNX91imPNdcqwDVz0QWlEFOhZo7Y,18899
+jyakoTen/transcripts/recitation_transcript_utf8.txt,sha256=OF_l7XVM4DY1EFJqDKCevWV2guOlCX_LqnV_ayOf-9k,52150
+jyakoTen/transcripts/rohan4600_transcript_utf8.txt,sha256=ajL3I8bKGYPqTeEVW8pia1asvbxGSRXI0PEMQ4dvkkI,918279
+jyakoTen/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jyakoTen/utils/alkana_utils.py,sha256=ytw4sYYnnN0bWPRU4wB3W3T_qncNIYn18k1ERWNhzm0,1748
+jyakoTen/utils/kanji_split.py,sha256=BKkdnQlcmG7Y_0rUwqICfLb0xoIK-_mbzLWF1Tcur58,1926
+jyakoTen/utils/mecab_utils.py,sha256=gs024tFF0aHJTilsRlYMHubRBhymrs4eLtwbdjOAlGM,3504
+jyakoTen/utils/mora_utils.py,sha256=GsSsbFcUXpFrquBBUQzF_LKrVbiCntU_lawsVumWgXw,3856
+jyakoTen-0.1.0.7.dist-info/LICENSE,sha256=pHrahzuQMVVzgn76BtKuh65DZbaXgizF4fPLCdiBEUg,1094
+jyakoTen-0.1.0.7.dist-info/METADATA,sha256=TSVMw2VlyXl03jJ4TAdY9oNgZMSUUEA_sLMXs5sZ9q0,1629
+jyakoTen-0.1.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+jyakoTen-0.1.0.7.dist-info/top_level.txt,sha256=Pm27PWehbYqXv_GVAipQYLAbf8J8AfECcMyT8thyW9Y,9
+jyakoTen-0.1.0.7.dist-info/RECORD,,

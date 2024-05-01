@@ -1,0 +1,34 @@
+[build-system]
+requires = ["scikit-build-core"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "whisper.cpp-cli"
+version = "0.0.3"
+description = "A Python package for the whisper.cpp CLI."
+authors = [{ name = "Charlie Marsh", email = "charlie.r.marsh@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+dependencies = []
+
+[tool.scikit-build]
+minimum-version = "0.9"
+cmake.define.BUILD_SHARED_LIBS = false
+cmake.version = ">=3.28"
+wheel.packages = ["whisper_cpp"]
+wheel.py-api = "py3"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+extend-select = ["I", "B", "UP"]
+
+[tool.cibuildwheel]
+test-command = [
+    "whisper-cpp -h",
+    "python -m whisper_cpp -h",
+]
+environment.MACOSX_DEPLOYMENT_TARGET = "10.12"
+

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: metric-forge
+Version: 0.1.0
+Summary: The Ultimate Metric Library
+Home-page: https://github.com/jrasband-dev/metric-forge
+Author: Jayden Rasband
+Author-email: jayden.rasband@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: polars
+
+# Metric Forge
+
+<img src="static/MetricForge.png" alt="Description of the image" width="300" height="300">
+
+Metric Forge is your ultimate toolkit for measuring and evaluating performance across various business domains.

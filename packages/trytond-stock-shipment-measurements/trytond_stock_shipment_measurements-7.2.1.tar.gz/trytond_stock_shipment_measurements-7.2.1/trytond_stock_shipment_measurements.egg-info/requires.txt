@@ -1,0 +1,8 @@
+trytond_company<7.3,>=7.2
+trytond_product<7.3,>=7.2
+trytond_product_measurements<7.3,>=7.2
+trytond_stock<7.3,>=7.2
+trytond<7.3,>=7.2
+
+[test]
+trytond_stock_package<7.3,>=7.2

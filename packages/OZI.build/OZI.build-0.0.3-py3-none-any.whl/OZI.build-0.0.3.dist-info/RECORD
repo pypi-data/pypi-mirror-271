@@ -1,0 +1,11 @@
+OZI.build-0.0.3.dist-info/METADATA,sha256=2gKHCEcnG0OhRjpSj647x5MwV8FZo7fagH3nVXx41s4,1353
+OZI.build-0.0.3.dist-info/WHEEL,sha256=G-YpvNn7b49IcbsddbgKBlWh_QlxneL6-6e09CgDTeE,80
+ozi_build/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ozi_build/buildapi.py,sha256=ao8MluDUK6cSjFE594NXNXLd5H7yEkdbWOGljtyzZxo,14363
+ozi_build/pep425tags.py,sha256=1iG4gZOqoeNdAXYZOtKnb3q03n5akRkZc0sCmkwfwAM,4275
+ozi_build/schema.py,sha256=WGfAiA9Sne5ospP5Dq6giFTWN-P4eDwBZ57-wurs-gY,3509
+ozi_build/__pycache__/__init__.cpython-311.pyc,sha256=bDTff7wLTE6YioqlkjuiqLsKtWUYTyC9TBDM8XfjMcI,173
+ozi_build/__pycache__/buildapi.cpython-311.pyc,sha256=RxiSyJiCg0R5B41IgRW4yxClnL3FG0nA8P3zFxC6jYs,24400
+ozi_build/__pycache__/pep425tags.cpython-311.pyc,sha256=qZJ6JFfHLUFuErDdj1WnL-iTxWfb3kvPuIH_a4tgpiw,4496
+ozi_build/__pycache__/schema.cpython-311.pyc,sha256=tAoxofXCCkn_8rVhX5z4epUb-6O1NwLfA6u57EHQf3c,3574
+OZI.build-0.0.3.dist-info/RECORD,,

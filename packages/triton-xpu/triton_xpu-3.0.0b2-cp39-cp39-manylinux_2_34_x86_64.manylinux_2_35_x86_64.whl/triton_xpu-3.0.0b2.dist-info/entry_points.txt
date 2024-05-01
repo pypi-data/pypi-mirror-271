@@ -1,0 +1,3 @@
+[console_scripts]
+proton-viewer = triton.profiler.viewer:main
+

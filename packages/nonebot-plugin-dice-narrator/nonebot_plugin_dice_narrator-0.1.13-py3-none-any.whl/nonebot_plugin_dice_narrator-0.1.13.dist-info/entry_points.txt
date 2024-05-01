@@ -1,0 +1,4 @@
+[console_scripts]
+bot=run_bot:main
+publish=tools.run_publish:main
+

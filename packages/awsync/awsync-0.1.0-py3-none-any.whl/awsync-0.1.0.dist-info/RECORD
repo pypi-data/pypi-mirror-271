@@ -1,0 +1,11 @@
+awsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsync/__main__.py,sha256=w3lAPLC5j3lSRYw9UMKMezLXmQelDbCpLMH8HKcVkJU,1291
+awsync/client.py,sha256=OddGn6pg8EGydlLLxxZzoXnWklXUT2Aw7bVLu1-3YZQ,7403
+awsync/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsync/models/aws.py,sha256=YGVdMiDcVDAB1p_ZZ_2APtSPsue9d34tnnTiqNs-HKE,2258
+awsync/models/http.py,sha256=tre85XBmoJN6vnBkPr3Glpf1tMlreqG3HiMIpqVT1E8,1416
+awsync/request.py,sha256=VK4LGdHTAgkQI2wnwWYJpdAxM5Y__5-jJFsExL2fNWA,9239
+awsync-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+awsync-0.1.0.dist-info/METADATA,sha256=acZh8mARE0BT9oHKVgWzL0vXcnuq-agpQ2ywnzLn6AU,3164
+awsync-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+awsync-0.1.0.dist-info/RECORD,,

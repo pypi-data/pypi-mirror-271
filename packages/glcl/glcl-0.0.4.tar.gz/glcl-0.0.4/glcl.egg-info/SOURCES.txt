@@ -1,0 +1,6 @@
+setup.py
+glcl/__init__.py
+glcl.egg-info/PKG-INFO
+glcl.egg-info/SOURCES.txt
+glcl.egg-info/dependency_links.txt
+glcl.egg-info/top_level.txt

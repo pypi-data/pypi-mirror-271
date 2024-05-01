@@ -1,0 +1,6 @@
+protobuf<4,>=3.7.0
+
+[dev]
+uharfbuzz
+youseedee
+pytest

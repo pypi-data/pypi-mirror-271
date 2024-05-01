@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: oscb
+Version: 1.8.9
+Summary: Description of your package
+Home-page: https://github.com/your_username/oscb
+Author: OSCB TEAM
+Author-email: your.email@example.com
+Keywords: sample setuptools development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: torch >=1.6.0
+Requires-Dist: numpy >=1.16.0
+Requires-Dist: tqdm >=4.29.0
+Requires-Dist: scikit-learn >=0.20.0
+Requires-Dist: pandas >=0.24.0
+Requires-Dist: six >=1.12.0
+Requires-Dist: urllib3 >=1.24.0
+Requires-Dist: outdated >=0.2.0
+Requires-Dist: joblib >=1.3.2
+
+Long description of your package

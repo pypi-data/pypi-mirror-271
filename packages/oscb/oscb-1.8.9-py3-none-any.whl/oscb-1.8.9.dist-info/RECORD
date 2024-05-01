@@ -1,0 +1,9 @@
+oscb/__init__.py,sha256=9xAbWiRh35nre9L_OfHCXStl6Ly2ukfuLP9s-PPtwmI,57
+oscb/version.py,sha256=Xw245CI9p5aaNTEnWQpyibV0RIgKQBb9UZ47NZdAx1Y,650
+oscb/download_dataset/__init__.py,sha256=HAVlaMEijvY-YKL4Ce0E5p6BkNsAtjezQxPboLVp0R8,99
+oscb/download_dataset/download_file.py,sha256=Nth-zp8QJxtCZ5rFtV3WHHLbzWhcSJlWccvi_mERvww,193
+oscb/download_dataset/download_utils.py,sha256=o7zqBkcxPr5hgWFrKSplqY6nXUIlTWrVG6VlOiPGynI,2529
+oscb-1.8.9.dist-info/METADATA,sha256=iVJJUVf_M4OdB_-20bov5rkq9w4a9cQjSBz_r7EvcCQ,945
+oscb-1.8.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+oscb-1.8.9.dist-info/top_level.txt,sha256=-kscy76s5yJOs8EyWQof-Ico6tACMlsgQ7tHMT4sd2Q,5
+oscb-1.8.9.dist-info/RECORD,,

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: consolidate
+Version: 0.0.3
+Summary: A Python library for generating a list of strings with every possible combination of placements of a given character (or a zero-width non joiner by default) within another given string, up to a given maximum length of characters.
+Home-page: https://github.com/ThePilot4571/consolidate-py/
+Author: ThePilot4571
+Author-email: nocosecantoftheta@gmail.com
+Project-URL: Source, https://github.com/ThePilot4571/consolidate-py/
+Keywords: python,spaces,string,username,spam
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Description-Content-Type: text/markdown
+
+Consolidate A Python library for generating a list of strings with every possible combination of placements of a given character (or a zero-width non joiner by default) within another given string, up to a given maximum length of characters.

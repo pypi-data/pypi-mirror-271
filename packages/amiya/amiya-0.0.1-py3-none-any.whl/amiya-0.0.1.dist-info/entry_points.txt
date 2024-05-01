@@ -1,0 +1,2 @@
+[console_scripts]
+amiya = amiya.entrypoints.entrypoints:start_amiya

@@ -1,0 +1,2 @@
+[console_scripts]
+aptly-ctl = aptly_ctl.cmd:main

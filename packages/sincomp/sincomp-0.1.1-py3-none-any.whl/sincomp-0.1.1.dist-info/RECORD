@@ -1,0 +1,16 @@
+sincomp/__init__.py,sha256=bb1xEfqQsoSO_Mj26gBU8awF8YcdtoY67SJSSbZaRoc,123
+sincomp/auxiliary.py,sha256=Uzz2Stf_WWpIcWprSS-Rz67Fuef1LbWHzNId-aD7dms,9671
+sincomp/ccr_char_info.csv,sha256=jTogJ64u43EhsExGR0FDKjfi45tOWuY0AqhtFPy7Yvo,99279
+sincomp/ccr_dialect_info.csv,sha256=imJds3RCjDEXlYR5ht_Kgqu5_4V_hDogWpsDYMRQhsY,34866
+sincomp/compare.py,sha256=9Y3ySmEJMw6ls5ZjqDHGoJaGudjR8jHVXtWURYg166Y,3472
+sincomp/datasets.py,sha256=eBU9-vj_G-9QM2pBxSu1c62ckadvT0PJuE1Nj_kG_sw,49451
+sincomp/models.py,sha256=maBfaX2xeGnAwZCiWzgjhNFJ8ffC2Cv1BRedcJuLFQk,29412
+sincomp/preprocess.py,sha256=gHx-6VgwjuuR8UHCdWQ0uA76cxCRHIMNRnnRreBE-U0,36010
+sincomp/similarity.py,sha256=vd-SmaMmquwDcSg_OtCNo8yQktk1J6SvVuRu3sjfzL4,20779
+sincomp/plot/__init__.py,sha256=2qkEccYyW9j8LCGLmm-Rem12CzPe5eNxucS4T2nAIVI,2107
+sincomp/plot/geography.py,sha256=omM-JX6maSwQwjaaQkPe2q0yg2MgPc1AJB-DFFkpcEo,17452
+sincomp-0.1.1.dist-info/LICENSE,sha256=ytNov6nrztKhQG7cEuiymDG1SuKQLDEAbAky4n8Xl2c,1066
+sincomp-0.1.1.dist-info/METADATA,sha256=bwuGpW8EpED9Q8iS_rKXCcByTODNknB6xexRSTGMFGA,9954
+sincomp-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sincomp-0.1.1.dist-info/top_level.txt,sha256=n-cDC05UChePuZjoRiY1d8ds9tRVTxmfeVeNkTyYq1Y,8
+sincomp-0.1.1.dist-info/RECORD,,

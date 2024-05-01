@@ -1,0 +1,7 @@
+uvicorn==0.27.1
+fastapi==0.110.0
+dbt-core==1.7.8
+pytest
+twine
+build
+poetry 

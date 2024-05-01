@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+torch_image2vector/__init__.py
+torch_image2vector/data.py
+torch_image2vector/image2vector.py
+torch_image2vector/test_image2vector.py
+torch_image2vector.egg-info/PKG-INFO
+torch_image2vector.egg-info/SOURCES.txt
+torch_image2vector.egg-info/dependency_links.txt
+torch_image2vector.egg-info/requires.txt
+torch_image2vector.egg-info/top_level.txt

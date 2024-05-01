@@ -1,0 +1,49 @@
+# This file is used as a global configuration for each linting tool.
+
+[build-system]
+requires = [
+  "setuptools>=42",
+  "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+# The only deviation is to use longer line lengths.
+line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
+show_error_codes = true
+# https://mypy.readthedocs.io/en/stable/running_mypy.html#library-stubs-not-installed
+install_types = true
+non_interactive = true
+
+[tool.isort]
+# Isort already has a compatible profile for black.
+profile = 'black'
+line_length = 120
+
+[tool.pylint.format]
+max-line-length = "120"
+
+# https://pylint.pycqa.org/en/latest/user_guide/message-control.html#messages-control
+[tool.pylint.messages_control]
+disable = """
+R, C,
+eval-used,
+global-statement,
+no-member,
+import-error,
+fixme,
+attribute-defined-outside-init,
+no-name-in-module,
+protected-access,
+unnecessary-lambda,
+logging-format-interpolation,
+broad-except,
+unspecified-encoding
+"""
+enable = "C0303"  # Trailing whitespace
+# Allow AST to include C-type introspections for critical packages
+# http://pylint.pycqa.org/en/latest/technical_reference/c_extensions.html
+extension-pkg-whitelist="math"

@@ -1,0 +1,12 @@
+webviewpy/__init__.py,sha256=bRQV3L2ivqZXBTmdQNS0If1PNGA6xGaMzSO76TawObM,10663
+webviewpy/__init__.pyi,sha256=aF34U8Xiq4MLrX4QLul4PV-7XsiSFVooCFPTzPZXwlY,9089
+webviewpy/__version__.py,sha256=DnUqy-xWN4z1XWOsowoRN4Vz2GPuDm_18GEJc3VGkWg,427
+webviewpy/platform/darwin/x64/libwebview.dylib,sha256=yW_wJsWFaY7t1OMaMYX-TB1rk2d-BAzry_JSHIwkSes,438216
+webviewpy/platform/linux/x64/libwebview.so,sha256=CcPSTDUr0PzUh3m0AH7QVAR9evi2o8vgHaOlrawZWsE,226984
+webviewpy/platform/win32/x64/webview.dll,sha256=uvp8NPYQuh7tIaUUKvk7mI3HPDlqDvXEb9jJ85E81gI,301568
+webviewpy/platform/win32/x86/webview.dll,sha256=Uztzgi-Tr7y1JVSq0VI8itLeaH3V-T3oM6HlcrCGo_U,240128
+webviewpy-1.2.0.dist-info/LICENSE,sha256=LIgBqREdosgP7FFNxA2LKNPs5hKzPwRgCYsTSQ2L0CY,1098
+webviewpy-1.2.0.dist-info/METADATA,sha256=n3Q00t1Xzebl8BqjLAOirss8crS3mG4B4BLO4bBWSik,2886
+webviewpy-1.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+webviewpy-1.2.0.dist-info/top_level.txt,sha256=Fb4hw7N24oJFFtUku2VnifOWdPCs2eKZYHQ1adqDagQ,10
+webviewpy-1.2.0.dist-info/RECORD,,

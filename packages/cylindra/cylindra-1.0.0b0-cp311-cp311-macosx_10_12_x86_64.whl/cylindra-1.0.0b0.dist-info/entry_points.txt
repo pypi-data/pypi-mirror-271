@@ -1,0 +1,2 @@
+[console_scripts]
+cylindra=cylindra.__main__:main

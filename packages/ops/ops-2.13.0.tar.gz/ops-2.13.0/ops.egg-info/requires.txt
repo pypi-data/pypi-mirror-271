@@ -1,0 +1,17 @@
+PyYAML==6.*
+websocket-client==1.*
+
+[docs]
+canonical-sphinx-extensions
+furo
+linkify-it-py
+myst-parser
+pyspelling
+sphinx==6.2.1
+sphinx-autobuild
+sphinx-copybutton
+sphinx-design
+sphinx-notfound-page
+sphinx-tabs
+sphinxcontrib-jquery
+sphinxext-opengraph

@@ -1,0 +1,9 @@
+core/__init__.py,sha256=yI-NGfEU1xsALOUwofGbyeNjCNr9phF5pJEVirNpoaE,23060
+core/classes.py,sha256=yj3zw1J5CySLycCUN5AmUmEW_W6wzJgXwswNVPlJLEU,8053
+core/exceptions.py,sha256=C7q0D3KlnE3ff4FyTnlY9TxU3G-7xaRZcxpanUPvCzc,626
+core/messages.py,sha256=EE7LnmPfDf1LPs8Q-sAA41CU9ac1g32QCHSyP3fWRLk,11580
+socketsecurity-0.0.38.dist-info/METADATA,sha256=vGws6Bo_3bkKqVtd0-90cRh4bJCu70t3GaFmQWbuU9E,155
+socketsecurity-0.0.38.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+socketsecurity-0.0.38.dist-info/entry_points.txt,sha256=wD1xn8iECNjmxPbeYUlOPAmyqVPU6CO3S0zVigbW-HY,55
+socketsecurity-0.0.38.dist-info/top_level.txt,sha256=0ebp8k35dOTHVwbY3UcokRsjC7cWLN_iaJ70tIcmODU,5
+socketsecurity-0.0.38.dist-info/RECORD,,

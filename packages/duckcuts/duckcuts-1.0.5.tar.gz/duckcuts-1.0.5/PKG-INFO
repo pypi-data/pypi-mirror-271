@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: duckcuts
+Version: 1.0.5
+Summary: A TUI application to help you learn and remember shortcuts for various software.
+Author-email: vikbytes <55359319+vikbytes@users.noreply.github.com>
+License-Expression: MIT
+Requires-Python: >=3.8
+Requires-Dist: rich==13.7.0
+Requires-Dist: textual==0.48.1
+Description-Content-Type: text/markdown
+
+# duckcuts
+
+A TUI application to help you learn and remember shortcuts for various software.
+
+## Install dependencies
+
+```sh
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```

@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "duckcuts"
+dynamic = ["version"]
+description = 'A TUI application to help you learn and remember shortcuts for various software.'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "vikbytes", email = "55359319+vikbytes@users.noreply.github.com" },
+]
+dependencies = ["textual==0.48.1", "rich==13.7.0"]
+[project.scripts]
+duckcuts = "duckcuts.entry_points:duckcuts"
+
+[tool.hatch.build.targets.wheel]
+"data/" = "/"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "pypitoken.txt",
+  "dev_server.sh",
+  "run.sh",
+  "pyproject.toml",
+  "build.sh",
+]
+
+# [project.urls]
+# Documentation = "https://github.com/unknown/duckcuts#readme"
+# Issues = "https://github.com/unknown/duckcuts/issues"
+# Source = "https://github.com/unknown/duckcuts"
+
+[tool.hatch.version]
+path = "src/duckcuts/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = ["coverage[toml]>=6.5", "pytest"]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = ["- coverage combine", "coverage report"]
+cov = ["test-cov", "cov-report"]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.types]
+dependencies = ["mypy>=1.0.0"]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/duckcuts tests}"
+
+[tool.coverage.run]
+source_pkgs = ["duckcuts", "tests"]
+branch = true
+parallel = true
+omit = ["src/duckcuts/__about__.py"]
+
+[tool.coverage.paths]
+duckcuts = ["src/duckcuts", "*/duckcuts/src/duckcuts"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]

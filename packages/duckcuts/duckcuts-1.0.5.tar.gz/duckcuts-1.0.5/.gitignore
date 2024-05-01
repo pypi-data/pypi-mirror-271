@@ -1,0 +1,6 @@
+venv/
+textual/
+__pycache__/
+build/
+dist/
+shortcuts.spec

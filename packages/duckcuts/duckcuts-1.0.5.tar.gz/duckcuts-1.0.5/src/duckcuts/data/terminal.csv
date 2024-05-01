@@ -1,0 +1,13 @@
+beginning of line, ⌃ + a
+back one word, ⌥ + b
+forward one word, ⌥ + f
+end of line, ⌃ + e
+delete to beginning, ⌃ + u
+delete one word backwards, ⌃ + w
+delete one word forwards, ⌥ + k
+delete to end, ⌃ + k
+previous command, ⌃ + p
+next command, ⌃ + n
+search backwards, ⌃ + r
+search forwards, ⌃ + s
+cancel search, ⌃ + g

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: basic_interpreter
+Version: 0.1.0
+Summary: a BASIC interpreter for python
+Home-page: https://github.com/rileeyyy/BASIC.py
+Author: riley
+Author-email: rileyjenner71@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# BASIC.py
+## basic interpreter for python

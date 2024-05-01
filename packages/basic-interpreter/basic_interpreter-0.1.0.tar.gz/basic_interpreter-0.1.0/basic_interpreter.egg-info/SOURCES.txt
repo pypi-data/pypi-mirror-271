@@ -1,0 +1,6 @@
+README.md
+setup.py
+basic_interpreter.egg-info/PKG-INFO
+basic_interpreter.egg-info/SOURCES.txt
+basic_interpreter.egg-info/dependency_links.txt
+basic_interpreter.egg-info/top_level.txt

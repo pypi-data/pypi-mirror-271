@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pypa-create-project
+Version: 0.1
+Summary: pypa-create-project
+Home-page: https://github.com/androlinuxs/pypa-create-project
+Author: Kevin Alexander Krefting
+Author-email: linuxdevalex@outlook.de
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+

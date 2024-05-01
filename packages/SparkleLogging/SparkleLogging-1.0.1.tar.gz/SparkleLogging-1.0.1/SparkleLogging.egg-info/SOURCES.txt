@@ -1,0 +1,14 @@
+setup.py
+SparkleLogging.egg-info/PKG-INFO
+SparkleLogging.egg-info/SOURCES.txt
+SparkleLogging.egg-info/dependency_links.txt
+SparkleLogging.egg-info/requires.txt
+SparkleLogging.egg-info/top_level.txt
+plugins/DecoratorsTools.py
+plugins/HttpHander.py
+plugins/__init__.py
+plugins/websocketHander.py
+utils/__init__.py
+utils/core.py
+utils/getLog.py
+utils/plugins_for_core.py

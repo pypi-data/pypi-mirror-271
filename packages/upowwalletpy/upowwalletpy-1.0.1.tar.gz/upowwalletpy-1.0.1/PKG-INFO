@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: upowwalletpy
+Version: 1.0.1
+Summary: A package for UPOW wallet transactions
+Author: upow
+Author-email: contact@upow.ai
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# upowwallet

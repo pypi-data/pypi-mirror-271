@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: sphinxnotes-isso
+Version: 1.1
+Summary: Sphinx extension for embeding Isso comments in documents
+Author: Shengyu Zhang
+Maintainer: Shengyu Zhang
+Project-URL: homepage, https://sphinx.silverrainz.me/isso
+Project-URL: documentation, https://sphinx.silverrainz.me/isso
+Project-URL: repository, https://github.com/sphinx-notes/isso
+Project-URL: changelog, https://sphinx.silverrainz.me/isso/changelog.html
+Project-URL: tracker, https://github.com/sphinx-notes/isso/issues
+Keywords: sphinx,extension,documentation
+Classifier: Environment :: Plugins
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Sphinx >=4
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: cruft ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: sphinxnotes-any ; extra == 'docs'
+Requires-Dist: sphinx-design ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinxcontrib-gtagjs ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+.. This file is generated from sphinx-notes/cookiecutter.
+   You need to consider modifying the TEMPLATE or modifying THIS FILE.
+
+================
+sphinxnotes-isso
+================
+
+.. image:: https://img.shields.io/github/actions/workflow/status/sphinx-notes/isso/pages.yml
+   :target: https://sphinx.silverrainz.me/isso
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/github/license/sphinx-notes/isso
+   :target: https://github.com/sphinx-notes/isso/LICENSE
+   :alt: Open Source License
+
+.. image:: https://img.shields.io/pypi/v/sphinxnotes-isso.svg
+   :target: https://pypi.python.org/pypi/sphinxnotes-isso
+   :alt: PyPI Package
+
+.. image:: https://img.shields.io/pypi/dm/sphinxnotes-isso
+   :target: https://pypi.python.org/pypi/sphinxnotes-isso
+   :alt: PyPI Package Downloads
+
+Sphinx extension for embeding Isso comments in documents.
+
+* Documentation: https://sphinx.silverrainz.me/isso
+* Source: https://github.com/sphinx-notes/isso
+* Changelog: https://sphinx.silverrainz.me/isso/changelog.html
+* Tracker: https://github.com/sphinx-notes/isso/issues
+* Download: https://pypi.org/project/sphinxnotes-isso/#files

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/attribox/__init__.py
+src/attribox/_abstract_descriptor.py
+src/attribox/_attri_box.py
+src/attribox/_delayed_descriptor.py
+src/attribox/_this_scope.py
+src/attribox/_typed_descriptor.py
+src/attribox.egg-info/PKG-INFO
+src/attribox.egg-info/SOURCES.txt
+src/attribox.egg-info/dependency_links.txt
+src/attribox.egg-info/top_level.txt

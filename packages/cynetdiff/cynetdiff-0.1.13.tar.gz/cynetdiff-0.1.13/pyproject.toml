@@ -1,0 +1,91 @@
+[tool.poetry]
+name = "cynetdiff"
+version = "0.1.13"
+description = "A fast network diffusion library"
+authors = ["Eliot W. Robson <eliot.robson24@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "cynetdiff", from = "src" }]
+maintainers = [
+    "Eliot W. Robson <eliot.robson24@gmail.com>",
+    "Abhishek K. Umrawal <aumrawal@illinois.edu>",
+]
+
+#TODO version classifiers may not be needed.
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Intended Audience :: Science/Research",
+]
+
+[tool.poetry.urls]
+homepage = "https://github.com/eliotwrobson/CyNetDiff"
+tracker = "https://github.com/eliotwrobson/CyNetDiff/issues"
+documentation = "https://eliotwrobson.github.io/CyNetDiff/"
+# TODO add these later
+#gitter = "https://gitter/area"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+# TODO change the group name to "examples"
+[tool.poetry.group.benchmark]
+optional = true
+
+[tool.poetry.group.benchmark.dependencies]
+python = ">=3.10"
+ndlib = "^5.1.1"
+networkx = "^3.2.1"
+pandas = ">=2.0.0"
+tqdm = "^4.66.2"
+pooch = "^1.8.1"
+notebook = "^7.1.2"
+coloraide = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.2"
+mypy = "^1.7.1"
+types-setuptools = "^69.0.0.0"
+networkx = "^3.2.1"
+ruff = "^0.3.0"
+pandas-stubs = "^2.2.0.240218"
+types-tqdm = "^4.66.0.20240106"
+cython = "^3.0.9"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.9"
+mkdocs-macros-plugin = "^0.7.0"
+mkdocstrings = "^0.23.0"
+mkdocstrings-python = "^1.7.3"
+setuptools = "^69.0.3"
+
+
+# NOTE to enable Cython generation during development, add "cython" to the
+# build dependencies before doing "poetry install".
+[build-system]
+requires = ["poetry-core", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+script = "build_package.py"
+generate-setup-file = false
+
+
+[tool.mypy]
+python_version = "3.10"
+
+[[tool.mypy.overrides]]
+module = ["networkx.*", "Cython.*", "ndlib.*", "pooch.*", "matplotlib.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"

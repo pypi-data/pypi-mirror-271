@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: skytable-py
+Version: 0.0.2
+Summary: Official Skytable client library for Python
+Project-URL: Homepage, https://github.com/skytable/skytable-py
+Project-URL: Issues, https://github.com/skytable/skytable-py/issues
+Author-email: Sayan Nandan <nandansayan@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Skytable Python Client
+
+> **Note**: This library is currently in alpha
+
+This is an alpha version of Skytable's official connector for Python 3.X.
+
+
+## Example
+
+Install the dependency:
+
+```sh
+pip install skytable-py
+```
+
+Use in your code:
+```python
+import asyncio
+from skytable_py import Config
+
+c = Config(username="root", password="password")
+
+
+async def main():
+    db = await c.connect()
+    # ... use the db
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+```
+
+## License
+
+This client library is distributed under the [Apache-2.0 License](https://www.apache.org/licenses/LICENSE-2.0).

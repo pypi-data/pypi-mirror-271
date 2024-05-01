@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: protein-watermark
+Version: 0.1
+Summary: adding watermark to generative protein design models
+Home-page: https://github.com/poseidonchan/ProteinWatermark
+Author: Yanshuo Chen
+Author-email: alegendaryfish@icloud.com
+License: Apache-2.0 License
+Platform: any
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: transformers
+
+UNKNOWN
+

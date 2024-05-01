@@ -1,0 +1,10 @@
+protein_watermark/__init__.py,sha256=CKCCKH2PcJg-YTVS3YXGKGHEzNvQrvqLtbe0I3xuB2Q,175
+protein_watermark/base.py,sha256=ugZfJpR6xpuypwklBtI0wkLgA_IXeEZO8CJLxcWMfoQ,886
+protein_watermark/delta_gumble.py,sha256=Wfrpow0_otPANsE36U_CcGH84jVGWsc9NFrxd2UU-WM,1886
+protein_watermark/transformer.py,sha256=VVxdHBVUci8rZHl6dwrY4oU52DQ4O87g6HuFqK5MMWE,2465
+protein_watermark/watermark.py,sha256=OaT0Fo8ZG8ka8k8RU2XASXSRE2r8vdq5t-HRUfvs-yo,6021
+protein_watermark-0.1.dist-info/LICENSE,sha256=U-6TnXYqHJSWiFtrKg7MpsLgH__s04jH_Xfmd9otMbE,11346
+protein_watermark-0.1.dist-info/METADATA,sha256=VuM2319i8Ut4wxpSIR_LxntXacXwGliUK-z_4DFNUDI,409
+protein_watermark-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+protein_watermark-0.1.dist-info/top_level.txt,sha256=JkoZARca5pBLq2z_Azp0QuXyMh5YPhGoZ1qCKVklJOg,18
+protein_watermark-0.1.dist-info/RECORD,,

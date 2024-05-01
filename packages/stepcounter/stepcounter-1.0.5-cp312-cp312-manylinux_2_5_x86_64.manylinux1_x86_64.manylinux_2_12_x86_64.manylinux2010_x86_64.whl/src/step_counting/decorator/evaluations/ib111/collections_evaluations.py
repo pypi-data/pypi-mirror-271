@@ -1,0 +1,33 @@
+from ..complexities import ComplexitiesDict, constant, linear_to_len, comparison_com
+
+
+deque_complexities: ComplexitiesDict = {
+    '__getitem__': linear_to_len,
+    '__setitem__': linear_to_len,
+    '__len__': constant,
+    '__contains__': linear_to_len,
+    '__bool__': constant,
+    '__eq__': comparison_com,
+    '__ne__': comparison_com,
+    '__lt__': comparison_com,
+    '__le__': comparison_com,
+    '__gt__': comparison_com,
+    '__ge__': comparison_com,
+    '__iter__': constant,
+    '__reversed__': linear_to_len,
+    '__str__': linear_to_len,
+    '__repr__': linear_to_len,
+    'append': constant,
+    'appendleft': constant,
+    'pop': constant,
+    'popleft': constant,
+    'extend': linear_to_len,
+    'extendleft': linear_to_len,
+    'clear': linear_to_len,
+    'copy': linear_to_len,
+    'count': linear_to_len,
+    'index': linear_to_len,
+    'remove': linear_to_len,
+    'reverse': constant,
+    'rotate': constant,
+}

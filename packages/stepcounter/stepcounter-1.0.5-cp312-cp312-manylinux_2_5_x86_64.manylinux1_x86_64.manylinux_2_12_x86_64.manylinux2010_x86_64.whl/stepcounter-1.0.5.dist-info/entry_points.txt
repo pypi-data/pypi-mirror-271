@@ -1,0 +1,2 @@
+[console_scripts]
+stepcounter = src.step_counter:main

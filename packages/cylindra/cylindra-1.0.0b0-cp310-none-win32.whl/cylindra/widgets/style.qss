@@ -1,0 +1,15 @@
+QCommandLineEdit {
+    font-family: "Arial";
+    font-size: 15px;
+}
+
+QCommandList {
+    font-family: "Arial";
+    font-size: 15px;
+}
+
+QSizeGrip {
+    image: url(%QSS_PATH%/icons/grip.svg);
+    width: 10px;
+    height: 10px;
+}

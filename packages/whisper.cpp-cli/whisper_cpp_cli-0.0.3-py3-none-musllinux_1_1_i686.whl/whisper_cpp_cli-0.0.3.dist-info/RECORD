@@ -1,0 +1,10 @@
+whisper_cpp_cli-0.0.3.data/scripts/whisper-cpp,sha256=wNqGJ-VO6JDk4IONRAYHFrSMp5mVEmJ_SJkrTSC8YbI,206
+whisper_cpp_cli-0.0.3.dist-info/METADATA,sha256=5Gos0PdlKlEoR3wBVRbQZwfjEfCGASE33AxPP5RH1iY,3080
+whisper_cpp_cli-0.0.3.dist-info/RECORD,,
+whisper_cpp_cli-0.0.3.dist-info/WHEEL,sha256=IPlkSbr9vEc1UQDAMxMYhdPIwHqYbPWV1c9DlD0P3dk,111
+whisper_cpp_cli-0.0.3.dist-info/licenses/LICENSE,sha256=4Li647rwXy2i7zUL11yvjO_AF6JvMK1sRBirRSo55OQ,1070
+whisper_cpp_cli.scripts/whisper-cpp,sha256=3Y_wwbmG_F2lVvMQlj2MRwl1XYeUr-uTgbK5zjLIuG8,1474085
+whisper_cpp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whisper_cpp/__main__.py,sha256=BHD6XX9tKtsFsmal30YqQ2zUgRQkgvAmD2YFKB9YUNI,1082
+whisper_cpp_cli.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+whisper_cpp_cli.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961

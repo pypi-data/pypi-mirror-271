@@ -1,0 +1,17 @@
+polars_ml-0.1.2.dist-info/METADATA,sha256=nsJrmIgMmC0oDbl0yXItIB7q-JB-O_ObazQOjn-23zA,3317
+polars_ml-0.1.2.dist-info/WHEEL,sha256=_-pO1V0R3bpcg5FhWC82Cl79freIhF1O9I5uv0may5k,94
+polars_ml-0.1.2.dist-info/license_files/LICENSE.txt,sha256=ww-gNgoFyKBOy-KuWzHb8Gy3c9tirsNMRhmlV4Qbyy8,1068
+polars_ml/graph/functions.py,sha256=oXJHmVJ15uXiz6UQe3JiU71-aqnDSuOATRVyU0QA8EM,56
+polars_ml/graph/graph_namespace.py,sha256=iPXQYQGQQQtMbzGupeYUWPbQ12vBAzRPYBcbJPzupPA,499
+polars_ml/graph/node2vec_function.py,sha256=AGbXcCAqQEVUz18G8xBG2TTkxdElGQHepNq60qBOBcI,3620
+polars_ml/graph/__init__.py,sha256=aCQC25zpJqkWEt4t9ujt3YTuoZlZGMq4k0W1zKAs6mY,110
+polars_ml/nltk/functions.py,sha256=_quNG6KsSSE5jbaDJtglTin0o6QVld9RF5vT5eNyd9Q,479
+polars_ml/nltk/nltk_namespace.py,sha256=smgNlN-asbBPBxFkBiCjrbAWGjsH9imMLTuplfMQl90,496
+polars_ml/nltk/__init__.py,sha256=LXR8HsJdbMTdUS7SnfJ4MmFMfiqzGY1a9YWmxhjLZi8,109
+polars_ml/sparse/constants.py,sha256=e0VkNo9Oc7w08p1xLhjAyPx70dqc1TdzM31xNQ1l1Rw,53
+polars_ml/sparse/functions.py,sha256=7B4NxyXJAu3vvv1veplK6-RL98Fuc41Sgl2_0tIi6yc,1174
+polars_ml/sparse/sparse_namespace.py,sha256=zES8UiYUq_6kaz5FPhYw3c-hNz74Fa8_ua-7xVT5pXI,502
+polars_ml/sparse/__init__.py,sha256=FlbBiR7jQK-_xqWlm7RnyW7jcq7_snAn9bQ5Ob8C3Og,126
+polars_ml/__init__.py,sha256=841-C40UrnSs_XEBLvhJobcLUzPLBWSbe9FznO-P4JM,72
+polars_ml/polars_ml.pyd,sha256=oppJlFlGFkdeUyF2Gche3ZpLa9tyU571bDw3s0NidjQ,13766656
+polars_ml-0.1.2.dist-info/RECORD,,

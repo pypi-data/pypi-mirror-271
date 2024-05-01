@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: CTDFjorder
+Version: 0.0.2
+Summary: A package for processing and analyzing CTD data.
+Project-URL: Homepage, https://github.com/nikothomas/CTDFjorder
+Project-URL: Issues, https://github.com/nikothomas/CTDFjorder/issues
+Author-email: Nikolas Yanek-Chrones <nikojb1001@gmail.com>
+License-File: LICENSE
+Keywords: CTD
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: gsw
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python>=3.11
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: tabulate
+Description-Content-Type: text/markdown
+
+# CTDFjorder
+
+Package for processing CTD files.

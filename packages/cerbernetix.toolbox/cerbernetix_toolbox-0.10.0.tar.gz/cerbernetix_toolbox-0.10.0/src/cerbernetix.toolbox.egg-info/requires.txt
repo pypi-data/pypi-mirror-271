@@ -1,0 +1,13 @@
+requests>=2.31.0
+
+[dev]
+pylint==2.17.5
+
+[formatting]
+black==23.9.1
+
+[linting]
+pylint==2.17.5
+
+[test]
+coverage==7.3.1

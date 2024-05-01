@@ -1,0 +1,8 @@
+setup.py
+SWELib/__init__.py
+SWELib/main.py
+SWELib.egg-info/PKG-INFO
+SWELib.egg-info/SOURCES.txt
+SWELib.egg-info/dependency_links.txt
+SWELib.egg-info/requires.txt
+SWELib.egg-info/top_level.txt

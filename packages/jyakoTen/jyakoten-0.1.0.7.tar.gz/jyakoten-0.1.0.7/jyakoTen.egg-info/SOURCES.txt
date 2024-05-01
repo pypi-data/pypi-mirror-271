@@ -1,0 +1,22 @@
+LICENSE
+README.md
+pyproject.toml
+jyakoTen/__init__.py
+jyakoTen/__main__.py
+jyakoTen/score.py
+jyakoTen.egg-info/PKG-INFO
+jyakoTen.egg-info/SOURCES.txt
+jyakoTen.egg-info/dependency_links.txt
+jyakoTen.egg-info/requires.txt
+jyakoTen.egg-info/top_level.txt
+jyakoTen/examples/ita04_normal_recitation_result_float32.txt
+jyakoTen/examples/ita04_normal_recitation_result_int8.txt
+jyakoTen/scores/ita04_normal_recitation_score(321.421 of 324).txt
+jyakoTen/transcripts/emotion_transcript_utf8.txt
+jyakoTen/transcripts/recitation_transcript_utf8.txt
+jyakoTen/transcripts/rohan4600_transcript_utf8.txt
+jyakoTen/utils/__init__.py
+jyakoTen/utils/alkana_utils.py
+jyakoTen/utils/kanji_split.py
+jyakoTen/utils/mecab_utils.py
+jyakoTen/utils/mora_utils.py

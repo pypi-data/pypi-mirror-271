@@ -1,0 +1,43 @@
+[project]
+name = "jyakoTen"
+version = "0.1.0.7"
+description = "recognized text scoreing library"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT License"}
+keywords = ["tts", "stt", "rvc", "voicechange"]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+
+  "Intended Audience :: Developers",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: MIT License",
+]
+
+dependencies =[
+"pyopenjtalk",
+"alkana",
+"mecab-python3",
+"unidic_lite"
+]
+
+[project.urls]
+Repository = "https://github.com/akjava/jyakoTen"
+
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ['jyakoTen']
+packages = ["jyakoTen","jyakoTen.utils"]
+
+
+[tool.setuptools.package-data]
+jyakoTen = ["transcripts/*.txt","scores/*.txt","examples/*.txt"]

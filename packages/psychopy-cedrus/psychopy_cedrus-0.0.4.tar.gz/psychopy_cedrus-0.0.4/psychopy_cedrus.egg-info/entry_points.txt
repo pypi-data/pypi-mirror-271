@@ -1,0 +1,10 @@
+[psychopy.experiment.components]
+RipondaButtonBoxBackend = psychopy_cedrus.components.riponda:RipondaButtonBoxBackend
+cedrusButtonBoxComponent = psychopy_cedrus.components.cedrusBox:cedrusButtonBoxComponent
+
+[psychopy.hardware.cedrus]
+RB730 = psychopy_cedrus.cedrus:RB730
+Riponda = psychopy_cedrus.riponda:Riponda
+RipondaButtonGroup = psychopy_cedrus.riponda:RipondaButtonGroup
+RipondaPhotodiodeGroup = psychopy_cedrus.riponda:RipondaPhotodiodeGroup
+RipondaVoicekey = psychopy_cedrus.riponda:RipondaVoicekey

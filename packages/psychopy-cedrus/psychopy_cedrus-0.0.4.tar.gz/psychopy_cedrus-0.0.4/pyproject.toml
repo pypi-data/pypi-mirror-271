@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psychopy-cedrus"
+version = "0.0.4"
+description = "Extension package for PsychoPy which adds support for various hardware devices by the Cedrus Corporation."
+readme = "README.md"
+requires-python = ">= 3.7"
+license = { text = "GNU General Public License v3 (GPLv3)" }
+authors = [
+  { name = "Jon Peirce", email = "jon@opensceincetools.org" },
+  { name = "Matthew Cutone", email = "mcutone@opensceincetools.org" },
+  { name = "Todd Parsons", email = "todd@opensceincetools.org" },
+]
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+urls.homepage = "https://psychopy.github.io/psychopy-cedrus"
+urls.changelog = "https://github.com/psychopy/psychopy-cedrus/blob/main/CHANGELOG.txt"
+
+[project.optional-dependencies]
+# dependencies for building the docs
+docs = [
+  "psychopy",
+  "sphinx",
+  "furo",
+]
+# dependencies for running the test suite
+tests = [
+  "psychopy",
+  "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["",]
+
+[tool.setuptools.package-data]
+"*" = ["*.png",]
+
+[project.entry-points."psychopy.experiment.components"]
+cedrusButtonBoxComponent = "psychopy_cedrus.components.cedrusBox:cedrusButtonBoxComponent"
+RipondaButtonBoxBackend = "psychopy_cedrus.components.riponda:RipondaButtonBoxBackend"
+
+[project.entry-points."psychopy.hardware.cedrus"]
+RB730 = "psychopy_cedrus.cedrus:RB730"
+Riponda = "psychopy_cedrus.riponda:Riponda"
+RipondaPhotodiodeGroup = "psychopy_cedrus.riponda:RipondaPhotodiodeGroup"
+RipondaButtonGroup = "psychopy_cedrus.riponda:RipondaButtonGroup"
+RipondaVoicekey = "psychopy_cedrus.riponda:RipondaVoicekey"

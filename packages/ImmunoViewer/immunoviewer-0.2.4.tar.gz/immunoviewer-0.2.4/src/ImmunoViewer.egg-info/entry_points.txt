@@ -1,0 +1,3 @@
+[console_scripts]
+ImmunoViewerServe = ImmunoViewer.server:main
+ImmunoViewerWatch = ImmunoViewer.watch_folder_docker:main

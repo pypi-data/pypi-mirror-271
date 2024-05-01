@@ -1,0 +1,847 @@
+/*
+ * Library boot_record type test program
+ *
+ * Copyright (C) 2021-2024, Joachim Metz <joachim.metz@gmail.com>
+ *
+ * Refer to AUTHORS for acknowledgements.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+#include <common.h>
+#include <file_stream.h>
+#include <types.h>
+
+#if defined( HAVE_STDLIB_H ) || defined( WINAPI )
+#include <stdlib.h>
+#endif
+
+#include "fsfat_test_functions.h"
+#include "fsfat_test_libcerror.h"
+#include "fsfat_test_libfsfat.h"
+#include "fsfat_test_macros.h"
+#include "fsfat_test_memory.h"
+#include "fsfat_test_unused.h"
+
+#include "../libfsfat/libfsfat_boot_record.h"
+
+uint8_t fsfat_test_boot_record_data1[ 512 ] = {
+	0xeb, 0x3c, 0x90, 0x4d, 0x53, 0x44, 0x4f, 0x53, 0x35, 0x2e, 0x30, 0x00, 0x02, 0x04, 0x06, 0x00,
+	0x02, 0x00, 0x02, 0x80, 0x17, 0xf8, 0x05, 0x00, 0x01, 0x00, 0x01, 0x00, 0x80, 0x00, 0x00, 0x00,
+	0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x29, 0x24, 0x3c, 0xd5, 0x4a, 0x4e, 0x4f, 0x20, 0x4e, 0x41,
+	0x4d, 0x45, 0x20, 0x20, 0x20, 0x20, 0x46, 0x41, 0x54, 0x31, 0x32, 0x20, 0x20, 0x20, 0x33, 0xc9,
+	0x8e, 0xd1, 0xbc, 0xf0, 0x7b, 0x8e, 0xd9, 0xb8, 0x00, 0x20, 0x8e, 0xc0, 0xfc, 0xbd, 0x00, 0x7c,
+	0x38, 0x4e, 0x24, 0x7d, 0x24, 0x8b, 0xc1, 0x99, 0xe8, 0x3c, 0x01, 0x72, 0x1c, 0x83, 0xeb, 0x3a,
+	0x66, 0xa1, 0x1c, 0x7c, 0x26, 0x66, 0x3b, 0x07, 0x26, 0x8a, 0x57, 0xfc, 0x75, 0x06, 0x80, 0xca,
+	0x02, 0x88, 0x56, 0x02, 0x80, 0xc3, 0x10, 0x73, 0xeb, 0x33, 0xc9, 0x8a, 0x46, 0x10, 0x98, 0xf7,
+	0x66, 0x16, 0x03, 0x46, 0x1c, 0x13, 0x56, 0x1e, 0x03, 0x46, 0x0e, 0x13, 0xd1, 0x8b, 0x76, 0x11,
+	0x60, 0x89, 0x46, 0xfc, 0x89, 0x56, 0xfe, 0xb8, 0x20, 0x00, 0xf7, 0xe6, 0x8b, 0x5e, 0x0b, 0x03,
+	0xc3, 0x48, 0xf7, 0xf3, 0x01, 0x46, 0xfc, 0x11, 0x4e, 0xfe, 0x61, 0xbf, 0x00, 0x00, 0xe8, 0xe6,
+	0x00, 0x72, 0x39, 0x26, 0x38, 0x2d, 0x74, 0x17, 0x60, 0xb1, 0x0b, 0xbe, 0xa1, 0x7d, 0xf3, 0xa6,
+	0x61, 0x74, 0x32, 0x4e, 0x74, 0x09, 0x83, 0xc7, 0x20, 0x3b, 0xfb, 0x72, 0xe6, 0xeb, 0xdc, 0xa0,
+	0xfb, 0x7d, 0xb4, 0x7d, 0x8b, 0xf0, 0xac, 0x98, 0x40, 0x74, 0x0c, 0x48, 0x74, 0x13, 0xb4, 0x0e,
+	0xbb, 0x07, 0x00, 0xcd, 0x10, 0xeb, 0xef, 0xa0, 0xfd, 0x7d, 0xeb, 0xe6, 0xa0, 0xfc, 0x7d, 0xeb,
+	0xe1, 0xcd, 0x16, 0xcd, 0x19, 0x26, 0x8b, 0x55, 0x1a, 0x52, 0xb0, 0x01, 0xbb, 0x00, 0x00, 0xe8,
+	0x3b, 0x00, 0x72, 0xe8, 0x5b, 0x8a, 0x56, 0x24, 0xbe, 0x0b, 0x7c, 0x8b, 0xfc, 0xc7, 0x46, 0xf0,
+	0x3d, 0x7d, 0xc7, 0x46, 0xf4, 0x29, 0x7d, 0x8c, 0xd9, 0x89, 0x4e, 0xf2, 0x89, 0x4e, 0xf6, 0xc6,
+	0x06, 0x96, 0x7d, 0xcb, 0xea, 0x03, 0x00, 0x00, 0x20, 0x0f, 0xb6, 0xc8, 0x66, 0x8b, 0x46, 0xf8,
+	0x66, 0x03, 0x46, 0x1c, 0x66, 0x8b, 0xd0, 0x66, 0xc1, 0xea, 0x10, 0xeb, 0x5e, 0x0f, 0xb6, 0xc8,
+	0x4a, 0x4a, 0x8a, 0x46, 0x0d, 0x32, 0xe4, 0xf7, 0xe2, 0x03, 0x46, 0xfc, 0x13, 0x56, 0xfe, 0xeb,
+	0x4a, 0x52, 0x50, 0x06, 0x53, 0x6a, 0x01, 0x6a, 0x10, 0x91, 0x8b, 0x46, 0x18, 0x96, 0x92, 0x33,
+	0xd2, 0xf7, 0xf6, 0x91, 0xf7, 0xf6, 0x42, 0x87, 0xca, 0xf7, 0x76, 0x1a, 0x8a, 0xf2, 0x8a, 0xe8,
+	0xc0, 0xcc, 0x02, 0x0a, 0xcc, 0xb8, 0x01, 0x02, 0x80, 0x7e, 0x02, 0x0e, 0x75, 0x04, 0xb4, 0x42,
+	0x8b, 0xf4, 0x8a, 0x56, 0x24, 0xcd, 0x13, 0x61, 0x61, 0x72, 0x0b, 0x40, 0x75, 0x01, 0x42, 0x03,
+	0x5e, 0x0b, 0x49, 0x75, 0x06, 0xf8, 0xc3, 0x41, 0xbb, 0x00, 0x00, 0x60, 0x66, 0x6a, 0x00, 0xeb,
+	0xb0, 0x42, 0x4f, 0x4f, 0x54, 0x4d, 0x47, 0x52, 0x20, 0x20, 0x20, 0x20, 0x0d, 0x0a, 0x52, 0x65,
+	0x6d, 0x6f, 0x76, 0x65, 0x20, 0x64, 0x69, 0x73, 0x6b, 0x73, 0x20, 0x6f, 0x72, 0x20, 0x6f, 0x74,
+	0x68, 0x65, 0x72, 0x20, 0x6d, 0x65, 0x64, 0x69, 0x61, 0x2e, 0xff, 0x0d, 0x0a, 0x44, 0x69, 0x73,
+	0x6b, 0x20, 0x65, 0x72, 0x72, 0x6f, 0x72, 0xff, 0x0d, 0x0a, 0x50, 0x72, 0x65, 0x73, 0x73, 0x20,
+	0x61, 0x6e, 0x79, 0x20, 0x6b, 0x65, 0x79, 0x20, 0x74, 0x6f, 0x20, 0x72, 0x65, 0x73, 0x74, 0x61,
+	0x72, 0x74, 0x0d, 0x0a, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xac, 0xcb, 0xd8, 0x55, 0xaa };
+
+uint8_t fsfat_test_boot_record_error_data1[ 512 ] = {
+	0xeb, 0x3c, 0x90, 0x4d, 0x53, 0x44, 0x4f, 0x53, 0x35, 0x2e, 0x30, 0x00, 0x02, 0x04, 0x06, 0x00,
+	0x02, 0x00, 0x02, 0x80, 0x17, 0xf8, 0x05, 0x00, 0x01, 0x00, 0x01, 0x00, 0x80, 0x00, 0x00, 0x00,
+	0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x29, 0x24, 0x3c, 0xd5, 0x4a, 0x4e, 0x4f, 0x20, 0x4e, 0x41,
+	0x4d, 0x45, 0x20, 0x20, 0x20, 0x20, 0x46, 0x41, 0x54, 0x31, 0x32, 0x20, 0x20, 0x20, 0x33, 0xc9,
+	0x8e, 0xd1, 0xbc, 0xf0, 0x7b, 0x8e, 0xd9, 0xb8, 0x00, 0x20, 0x8e, 0xc0, 0xfc, 0xbd, 0x00, 0x7c,
+	0x38, 0x4e, 0x24, 0x7d, 0x24, 0x8b, 0xc1, 0x99, 0xe8, 0x3c, 0x01, 0x72, 0x1c, 0x83, 0xeb, 0x3a,
+	0x66, 0xa1, 0x1c, 0x7c, 0x26, 0x66, 0x3b, 0x07, 0x26, 0x8a, 0x57, 0xfc, 0x75, 0x06, 0x80, 0xca,
+	0x02, 0x88, 0x56, 0x02, 0x80, 0xc3, 0x10, 0x73, 0xeb, 0x33, 0xc9, 0x8a, 0x46, 0x10, 0x98, 0xf7,
+	0x66, 0x16, 0x03, 0x46, 0x1c, 0x13, 0x56, 0x1e, 0x03, 0x46, 0x0e, 0x13, 0xd1, 0x8b, 0x76, 0x11,
+	0x60, 0x89, 0x46, 0xfc, 0x89, 0x56, 0xfe, 0xb8, 0x20, 0x00, 0xf7, 0xe6, 0x8b, 0x5e, 0x0b, 0x03,
+	0xc3, 0x48, 0xf7, 0xf3, 0x01, 0x46, 0xfc, 0x11, 0x4e, 0xfe, 0x61, 0xbf, 0x00, 0x00, 0xe8, 0xe6,
+	0x00, 0x72, 0x39, 0x26, 0x38, 0x2d, 0x74, 0x17, 0x60, 0xb1, 0x0b, 0xbe, 0xa1, 0x7d, 0xf3, 0xa6,
+	0x61, 0x74, 0x32, 0x4e, 0x74, 0x09, 0x83, 0xc7, 0x20, 0x3b, 0xfb, 0x72, 0xe6, 0xeb, 0xdc, 0xa0,
+	0xfb, 0x7d, 0xb4, 0x7d, 0x8b, 0xf0, 0xac, 0x98, 0x40, 0x74, 0x0c, 0x48, 0x74, 0x13, 0xb4, 0x0e,
+	0xbb, 0x07, 0x00, 0xcd, 0x10, 0xeb, 0xef, 0xa0, 0xfd, 0x7d, 0xeb, 0xe6, 0xa0, 0xfc, 0x7d, 0xeb,
+	0xe1, 0xcd, 0x16, 0xcd, 0x19, 0x26, 0x8b, 0x55, 0x1a, 0x52, 0xb0, 0x01, 0xbb, 0x00, 0x00, 0xe8,
+	0x3b, 0x00, 0x72, 0xe8, 0x5b, 0x8a, 0x56, 0x24, 0xbe, 0x0b, 0x7c, 0x8b, 0xfc, 0xc7, 0x46, 0xf0,
+	0x3d, 0x7d, 0xc7, 0x46, 0xf4, 0x29, 0x7d, 0x8c, 0xd9, 0x89, 0x4e, 0xf2, 0x89, 0x4e, 0xf6, 0xc6,
+	0x06, 0x96, 0x7d, 0xcb, 0xea, 0x03, 0x00, 0x00, 0x20, 0x0f, 0xb6, 0xc8, 0x66, 0x8b, 0x46, 0xf8,
+	0x66, 0x03, 0x46, 0x1c, 0x66, 0x8b, 0xd0, 0x66, 0xc1, 0xea, 0x10, 0xeb, 0x5e, 0x0f, 0xb6, 0xc8,
+	0x4a, 0x4a, 0x8a, 0x46, 0x0d, 0x32, 0xe4, 0xf7, 0xe2, 0x03, 0x46, 0xfc, 0x13, 0x56, 0xfe, 0xeb,
+	0x4a, 0x52, 0x50, 0x06, 0x53, 0x6a, 0x01, 0x6a, 0x10, 0x91, 0x8b, 0x46, 0x18, 0x96, 0x92, 0x33,
+	0xd2, 0xf7, 0xf6, 0x91, 0xf7, 0xf6, 0x42, 0x87, 0xca, 0xf7, 0x76, 0x1a, 0x8a, 0xf2, 0x8a, 0xe8,
+	0xc0, 0xcc, 0x02, 0x0a, 0xcc, 0xb8, 0x01, 0x02, 0x80, 0x7e, 0x02, 0x0e, 0x75, 0x04, 0xb4, 0x42,
+	0x8b, 0xf4, 0x8a, 0x56, 0x24, 0xcd, 0x13, 0x61, 0x61, 0x72, 0x0b, 0x40, 0x75, 0x01, 0x42, 0x03,
+	0x5e, 0x0b, 0x49, 0x75, 0x06, 0xf8, 0xc3, 0x41, 0xbb, 0x00, 0x00, 0x60, 0x66, 0x6a, 0x00, 0xeb,
+	0xb0, 0x42, 0x4f, 0x4f, 0x54, 0x4d, 0x47, 0x52, 0x20, 0x20, 0x20, 0x20, 0x0d, 0x0a, 0x52, 0x65,
+	0x6d, 0x6f, 0x76, 0x65, 0x20, 0x64, 0x69, 0x73, 0x6b, 0x73, 0x20, 0x6f, 0x72, 0x20, 0x6f, 0x74,
+	0x68, 0x65, 0x72, 0x20, 0x6d, 0x65, 0x64, 0x69, 0x61, 0x2e, 0xff, 0x0d, 0x0a, 0x44, 0x69, 0x73,
+	0x6b, 0x20, 0x65, 0x72, 0x72, 0x6f, 0x72, 0xff, 0x0d, 0x0a, 0x50, 0x72, 0x65, 0x73, 0x73, 0x20,
+	0x61, 0x6e, 0x79, 0x20, 0x6b, 0x65, 0x79, 0x20, 0x74, 0x6f, 0x20, 0x72, 0x65, 0x73, 0x74, 0x61,
+	0x72, 0x74, 0x0d, 0x0a, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xac, 0xcb, 0xd8, 0xff, 0xff };
+
+#if defined( __GNUC__ ) && !defined( LIBFSFAT_DLL_IMPORT )
+
+/* Tests the libfsfat_boot_record_initialize function
+ * Returns 1 if successful or 0 if not
+ */
+int fsfat_test_boot_record_initialize(
+     void )
+{
+	libcerror_error_t *error            = NULL;
+	libfsfat_boot_record_t *boot_record = NULL;
+	int result                          = 0;
+
+#if defined( HAVE_FSFAT_TEST_MEMORY )
+	int number_of_malloc_fail_tests     = 1;
+	int number_of_memset_fail_tests     = 1;
+	int test_number                     = 0;
+#endif
+
+	/* Test regular cases
+	 */
+	result = libfsfat_boot_record_initialize(
+	          &boot_record,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "boot_record",
+	 boot_record );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	result = libfsfat_boot_record_free(
+	          &boot_record,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "boot_record",
+	 boot_record );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Test error cases
+	 */
+	result = libfsfat_boot_record_initialize(
+	          NULL,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	boot_record = (libfsfat_boot_record_t *) 0x12345678UL;
+
+	result = libfsfat_boot_record_initialize(
+	          &boot_record,
+	          &error );
+
+	boot_record = NULL;
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+#if defined( HAVE_FSFAT_TEST_MEMORY )
+
+	for( test_number = 0;
+	     test_number < number_of_malloc_fail_tests;
+	     test_number++ )
+	{
+		/* Test libfsfat_boot_record_initialize with malloc failing
+		 */
+		fsfat_test_malloc_attempts_before_fail = test_number;
+
+		result = libfsfat_boot_record_initialize(
+		          &boot_record,
+		          &error );
+
+		if( fsfat_test_malloc_attempts_before_fail != -1 )
+		{
+			fsfat_test_malloc_attempts_before_fail = -1;
+
+			if( boot_record != NULL )
+			{
+				libfsfat_boot_record_free(
+				 &boot_record,
+				 NULL );
+			}
+		}
+		else
+		{
+			FSFAT_TEST_ASSERT_EQUAL_INT(
+			 "result",
+			 result,
+			 -1 );
+
+			FSFAT_TEST_ASSERT_IS_NULL(
+			 "boot_record",
+			 boot_record );
+
+			FSFAT_TEST_ASSERT_IS_NOT_NULL(
+			 "error",
+			 error );
+
+			libcerror_error_free(
+			 &error );
+		}
+	}
+	for( test_number = 0;
+	     test_number < number_of_memset_fail_tests;
+	     test_number++ )
+	{
+		/* Test libfsfat_boot_record_initialize with memset failing
+		 */
+		fsfat_test_memset_attempts_before_fail = test_number;
+
+		result = libfsfat_boot_record_initialize(
+		          &boot_record,
+		          &error );
+
+		if( fsfat_test_memset_attempts_before_fail != -1 )
+		{
+			fsfat_test_memset_attempts_before_fail = -1;
+
+			if( boot_record != NULL )
+			{
+				libfsfat_boot_record_free(
+				 &boot_record,
+				 NULL );
+			}
+		}
+		else
+		{
+			FSFAT_TEST_ASSERT_EQUAL_INT(
+			 "result",
+			 result,
+			 -1 );
+
+			FSFAT_TEST_ASSERT_IS_NULL(
+			 "boot_record",
+			 boot_record );
+
+			FSFAT_TEST_ASSERT_IS_NOT_NULL(
+			 "error",
+			 error );
+
+			libcerror_error_free(
+			 &error );
+		}
+	}
+#endif /* defined( HAVE_FSFAT_TEST_MEMORY ) */
+
+	return( 1 );
+
+on_error:
+	if( error != NULL )
+	{
+		libcerror_error_free(
+		 &error );
+	}
+	if( boot_record != NULL )
+	{
+		libfsfat_boot_record_free(
+		 &boot_record,
+		 NULL );
+	}
+	return( 0 );
+}
+
+/* Tests the libfsfat_boot_record_free function
+ * Returns 1 if successful or 0 if not
+ */
+int fsfat_test_boot_record_free(
+     void )
+{
+	libcerror_error_t *error = NULL;
+	int result               = 0;
+
+	/* Test error cases
+	 */
+	result = libfsfat_boot_record_free(
+	          NULL,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	return( 1 );
+
+on_error:
+	if( error != NULL )
+	{
+		libcerror_error_free(
+		 &error );
+	}
+	return( 0 );
+}
+
+/* Tests the libfsfat_boot_record_read_data function
+ * Returns 1 if successful or 0 if not
+ */
+int fsfat_test_boot_record_read_data(
+     void )
+{
+	libcerror_error_t *error            = NULL;
+	libfsfat_boot_record_t *boot_record = NULL;
+	int result                          = 0;
+
+	/* Initialize test
+	 */
+	result = libfsfat_boot_record_initialize(
+	          &boot_record,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "boot_record",
+	 boot_record );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Test regular cases
+	 */
+	result = libfsfat_boot_record_read_data(
+	          boot_record,
+	          fsfat_test_boot_record_data1,
+	          512,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Test error cases
+	 */
+	result = libfsfat_boot_record_read_data(
+	          NULL,
+	          fsfat_test_boot_record_data1,
+	          512,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	result = libfsfat_boot_record_read_data(
+	          boot_record,
+	          NULL,
+	          512,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	result = libfsfat_boot_record_read_data(
+	          boot_record,
+	          fsfat_test_boot_record_data1,
+	          (size_t) SSIZE_MAX + 1,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	result = libfsfat_boot_record_read_data(
+	          boot_record,
+	          fsfat_test_boot_record_data1,
+	          0,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	result = libfsfat_boot_record_read_data(
+	          boot_record,
+	          fsfat_test_boot_record_error_data1,
+	          512,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	/* Clean up
+	 */
+	result = libfsfat_boot_record_free(
+	          &boot_record,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "boot_record",
+	 boot_record );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	return( 1 );
+
+on_error:
+	if( error != NULL )
+	{
+		libcerror_error_free(
+		 &error );
+	}
+	if( boot_record != NULL )
+	{
+		libfsfat_boot_record_free(
+		 &boot_record,
+		 NULL );
+	}
+	return( 0 );
+}
+
+/* Tests the libfsfat_boot_record_read_file_io_handle function
+ * Returns 1 if successful or 0 if not
+ */
+int fsfat_test_boot_record_read_file_io_handle(
+     void )
+{
+	libbfio_handle_t *file_io_handle    = NULL;
+	libcerror_error_t *error            = NULL;
+	libfsfat_boot_record_t *boot_record = NULL;
+	int result                          = 0;
+
+	/* Initialize test
+	 */
+	result = libfsfat_boot_record_initialize(
+	          &boot_record,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "boot_record",
+	 boot_record );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Initialize file IO handle
+	 */
+	result = fsfat_test_open_file_io_handle(
+	          &file_io_handle,
+	          fsfat_test_boot_record_data1,
+	          512,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "file_io_handle",
+	 file_io_handle );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Test regular cases
+	 */
+	result = libfsfat_boot_record_read_file_io_handle(
+	          boot_record,
+	          file_io_handle,
+	          0,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Test error cases
+	 */
+	result = libfsfat_boot_record_read_file_io_handle(
+	          NULL,
+	          file_io_handle,
+	          0,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	result = libfsfat_boot_record_read_file_io_handle(
+	          boot_record,
+	          NULL,
+	          0,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	result = libfsfat_boot_record_read_file_io_handle(
+	          boot_record,
+	          file_io_handle,
+	          -1,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	/* Clean up file IO handle
+	 */
+	result = fsfat_test_close_file_io_handle(
+	          &file_io_handle,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 0 );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Test data too small
+	 */
+	result = fsfat_test_open_file_io_handle(
+	          &file_io_handle,
+	          fsfat_test_boot_record_data1,
+	          8,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "file_io_handle",
+	 file_io_handle );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	result = libfsfat_boot_record_read_file_io_handle(
+	          boot_record,
+	          file_io_handle,
+	          0,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	result = fsfat_test_close_file_io_handle(
+	          &file_io_handle,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 0 );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Test data invalid
+	 */
+	result = fsfat_test_open_file_io_handle(
+	          &file_io_handle,
+	          fsfat_test_boot_record_error_data1,
+	          512,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "file_io_handle",
+	 file_io_handle );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	result = libfsfat_boot_record_read_file_io_handle(
+	          boot_record,
+	          file_io_handle,
+	          0,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 -1 );
+
+	FSFAT_TEST_ASSERT_IS_NOT_NULL(
+	 "error",
+	 error );
+
+	libcerror_error_free(
+	 &error );
+
+	result = fsfat_test_close_file_io_handle(
+	          &file_io_handle,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 0 );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	/* Clean up
+	 */
+	result = libfsfat_boot_record_free(
+	          &boot_record,
+	          &error );
+
+	FSFAT_TEST_ASSERT_EQUAL_INT(
+	 "result",
+	 result,
+	 1 );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "boot_record",
+	 boot_record );
+
+	FSFAT_TEST_ASSERT_IS_NULL(
+	 "error",
+	 error );
+
+	return( 1 );
+
+on_error:
+	if( error != NULL )
+	{
+		libcerror_error_free(
+		 &error );
+	}
+	if( file_io_handle != NULL )
+	{
+		libbfio_handle_free(
+		 &file_io_handle,
+		 NULL );
+	}
+	if( boot_record != NULL )
+	{
+		libfsfat_boot_record_free(
+		 &boot_record,
+		 NULL );
+	}
+	return( 0 );
+}
+
+#endif /* defined( __GNUC__ ) && !defined( LIBFSFAT_DLL_IMPORT ) */
+
+/* The main program
+ */
+#if defined( HAVE_WIDE_SYSTEM_CHARACTER )
+int wmain(
+     int argc FSFAT_TEST_ATTRIBUTE_UNUSED,
+     wchar_t * const argv[] FSFAT_TEST_ATTRIBUTE_UNUSED )
+#else
+int main(
+     int argc FSFAT_TEST_ATTRIBUTE_UNUSED,
+     char * const argv[] FSFAT_TEST_ATTRIBUTE_UNUSED )
+#endif
+{
+	FSFAT_TEST_UNREFERENCED_PARAMETER( argc )
+	FSFAT_TEST_UNREFERENCED_PARAMETER( argv )
+
+#if defined( __GNUC__ ) && !defined( LIBFSFAT_DLL_IMPORT )
+
+	FSFAT_TEST_RUN(
+	 "libfsfat_boot_record_initialize",
+	 fsfat_test_boot_record_initialize );
+
+	FSFAT_TEST_RUN(
+	 "libfsfat_boot_record_free",
+	 fsfat_test_boot_record_free );
+
+	FSFAT_TEST_RUN(
+	 "libfsfat_boot_record_read_data",
+	 fsfat_test_boot_record_read_data );
+
+	FSFAT_TEST_RUN(
+	 "libfsfat_boot_record_read_file_io_handle",
+	 fsfat_test_boot_record_read_file_io_handle );
+
+#endif /* defined( __GNUC__ ) && !defined( LIBFSFAT_DLL_IMPORT ) */
+
+	return( EXIT_SUCCESS );
+
+#if defined( __GNUC__ ) && !defined( LIBFSFAT_DLL_IMPORT )
+
+on_error:
+	return( EXIT_FAILURE );
+
+#endif /* defined( __GNUC__ ) && !defined( LIBFSFAT_DLL_IMPORT ) */
+}
+

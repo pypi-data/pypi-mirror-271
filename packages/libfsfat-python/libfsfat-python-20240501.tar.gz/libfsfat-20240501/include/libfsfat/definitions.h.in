@@ -1,0 +1,82 @@
+/*
+ * Definitions for libfsfat
+ *
+ * Copyright (C) 2021-2024, Joachim Metz <joachim.metz@gmail.com>
+ *
+ * Refer to AUTHORS for acknowledgements.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+#if !defined( _LIBFSFAT_DEFINITIONS_H )
+#define _LIBFSFAT_DEFINITIONS_H
+
+#include <libfsfat/types.h>
+
+#define LIBFSFAT_VERSION				@VERSION@
+
+/* The version string
+ */
+#define LIBFSFAT_VERSION_STRING				"@VERSION@"
+
+/* The file access
+ * bit 1        set to 1 for read access
+ * bit 2        set to 1 for write access
+ * bit 3-8      not used
+ */
+enum LIBFSFAT_ACCESS_FLAGS
+{
+	LIBFSFAT_ACCESS_FLAG_READ			= 0x01,
+/* Reserved: not supported yet */
+	LIBFSFAT_ACCESS_FLAG_WRITE			= 0x02
+};
+
+/* The file access macros
+ */
+#define LIBFSFAT_OPEN_READ				( LIBFSFAT_ACCESS_FLAG_READ )
+/* Reserved: not supported yet */
+#define LIBFSFAT_OPEN_WRITE				( LIBFSFAT_ACCESS_FLAG_WRITE )
+/* Reserved: not supported yet */
+#define LIBFSFAT_OPEN_READ_WRITE			( LIBFSFAT_ACCESS_FLAG_READ | LIBFSFAT_ACCESS_FLAG_WRITE )
+
+/* The path segment separator
+ */
+#define LIBFSFAT_SEPARATOR				'\\'
+
+/* The file system formats
+ */
+enum LIBFSFAT_FILE_SYSTEM_FORMAT
+{
+	LIBFSFAT_FILE_SYSTEM_FORMAT_UNKNOWN		= 0,
+	LIBFSFAT_FILE_SYSTEM_FORMAT_EXFAT		= 1,
+	LIBFSFAT_FILE_SYSTEM_FORMAT_FAT12		= 2,
+	LIBFSFAT_FILE_SYSTEM_FORMAT_FAT16		= 3,
+	LIBFSFAT_FILE_SYSTEM_FORMAT_FAT32		= 4
+};
+
+/* The file attribute flags
+ */
+enum LIBFSFAT_FILE_ATTRIBUTE_FLAGS
+{
+	LIBFSFAT_FILE_ATTRIBUTE_FLAG_READ_ONLY		= 0x01,
+	LIBFSFAT_FILE_ATTRIBUTE_FLAG_HIDDEN		= 0x02,
+	LIBFSFAT_FILE_ATTRIBUTE_FLAG_SYSTEM		= 0x04,
+	LIBFSFAT_FILE_ATTRIBUTE_FLAG_VOLUME_LABEL	= 0x08,
+	LIBFSFAT_FILE_ATTRIBUTE_FLAG_DIRECTORY		= 0x10,
+	LIBFSFAT_FILE_ATTRIBUTE_FLAG_ARCHIVE		= 0x20,
+	LIBFSFAT_FILE_ATTRIBUTE_FLAG_DEVICE		= 0x40
+};
+
+#endif /* !defined( _LIBFSFAT_DEFINITIONS_H ) */
+

@@ -1,0 +1,23 @@
+TODO:
+* add number of file entries support?
+* add docstring about timestamps in local time or UTC
+* error on volume labels outside of root directory
+* add support for short and long file name comparison
+* complete mount tool
+  - check FILETIME calculations on Windows
+
+* add API functions
+  - to expose short file name
+  - to expose self directory entry
+  - to expose parent directory entry
+  - to expose volume label last modification time
+  - to expose volume identifier
+
+* implement Python bindings
+  - to expose volume label last modification time
+  - to expose volume identifier
+
+20210928
+* see `git log' for more recent change log
+* Initial version based on previous work on the format and libfsext
+

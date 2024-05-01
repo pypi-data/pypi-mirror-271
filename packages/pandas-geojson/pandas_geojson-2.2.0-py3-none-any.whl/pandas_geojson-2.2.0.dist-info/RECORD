@@ -1,0 +1,8 @@
+pandas_geojson/__init__.py,sha256=FMWcNKO0pyBoyBFS8dPHxugntj3V277IDZFXhyXbRs4,491
+pandas_geojson/core.py,sha256=-pOqJd_OySMtM67yjopIfp_ea4Y_bJSoSKKw4LEOB7Q,10815
+pandas_geojson/io.py,sha256=K0bgbF-ZawSyn_zBU1HGwyolpOqSeqAzrh0mp6CwH2I,1333
+pandas_geojson-2.2.0.dist-info/LICENSE,sha256=wwUIyfRypvdjhlOQ2GWrzGubicxhfoz947niXboOHGY,1097
+pandas_geojson-2.2.0.dist-info/METADATA,sha256=hPA3knn2TP0OH8gd4xm9Vc9RiKSrOiEK3UwTdx1RjhM,16534
+pandas_geojson-2.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pandas_geojson-2.2.0.dist-info/top_level.txt,sha256=iYXTMnxB8dcEgjfI7m2mkJF9Dhho-sM9ZS0OghICguA,15
+pandas_geojson-2.2.0.dist-info/RECORD,,

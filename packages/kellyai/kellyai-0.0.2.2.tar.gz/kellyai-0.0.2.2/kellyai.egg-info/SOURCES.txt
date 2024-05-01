@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+kellyai.egg-info/PKG-INFO
+kellyai.egg-info/SOURCES.txt
+kellyai.egg-info/dependency_links.txt
+kellyai.egg-info/requires.txt
+kellyai.egg-info/top_level.txt
+kellyapi/__init__.py
+kellyapi/api.py
+kellyapi/errors.py
+kellyapi/version.py

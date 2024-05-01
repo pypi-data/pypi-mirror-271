@@ -1,0 +1,7 @@
+whisper_cpp_cli-0.0.3.data/scripts/whisper-cpp,sha256=XddWdAxZiLXuxmENcfiZ866sM9aLFC9owCF34uRHnB8,1436628
+whisper_cpp_cli-0.0.3.dist-info/METADATA,sha256=5Gos0PdlKlEoR3wBVRbQZwfjEfCGASE33AxPP5RH1iY,3080
+whisper_cpp_cli-0.0.3.dist-info/RECORD,,
+whisper_cpp_cli-0.0.3.dist-info/WHEEL,sha256=AHItdEsP34ecPseLyhdZ4eykmPK8hj-b2OGlr65WWyQ,145
+whisper_cpp_cli-0.0.3.dist-info/licenses/LICENSE,sha256=4Li647rwXy2i7zUL11yvjO_AF6JvMK1sRBirRSo55OQ,1070
+whisper_cpp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whisper_cpp/__main__.py,sha256=BHD6XX9tKtsFsmal30YqQ2zUgRQkgvAmD2YFKB9YUNI,1082

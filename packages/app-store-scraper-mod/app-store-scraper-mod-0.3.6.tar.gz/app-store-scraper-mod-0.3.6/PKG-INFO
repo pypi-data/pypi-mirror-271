@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: app-store-scraper-mod
+Version: 0.3.6
+Summary: Fork of cowboy-bebug: App Store Scraper with updated dependencies.
+Author: Sei
+Author-email: engineering@seiright.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENCE
+Requires-Dist: requests>=2.23.0

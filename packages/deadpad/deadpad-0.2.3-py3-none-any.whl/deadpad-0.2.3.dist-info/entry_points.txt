@@ -1,0 +1,2 @@
+[console_scripts]
+deadpad = deadpad:main

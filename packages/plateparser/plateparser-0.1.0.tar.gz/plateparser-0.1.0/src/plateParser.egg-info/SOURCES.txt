@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/plateParser/__init__.py
+src/plateParser/parser.py
+src/plateParser.egg-info/PKG-INFO
+src/plateParser.egg-info/SOURCES.txt
+src/plateParser.egg-info/dependency_links.txt
+src/plateParser.egg-info/requires.txt
+src/plateParser.egg-info/top_level.txt
+src/plateparser/__init__.py
+src/plateparser/parser.py
+src/plateparser.egg-info/PKG-INFO
+src/plateparser.egg-info/SOURCES.txt
+src/plateparser.egg-info/dependency_links.txt
+src/plateparser.egg-info/requires.txt
+src/plateparser.egg-info/top_level.txt

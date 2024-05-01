@@ -1,0 +1,62 @@
+movement, hjkl
+half page up/down, ^ + u/d
+page up/down, ^ + b/f
+previous/next word, b/w
+previous/next end of word, ge/e
+start/end of line, 0/$
+start of line (non-blank), ^
+previous next chracter (example e), Fe/fe
+before/after next character (example o), To/to
+go to first/nth column, |/|n
+first line/last line, gg/G
+go to line n, nG
+next/previous empty line, }/{
+top/middle/bottom screen, H/M/L
+top/center/bottom this line, zt/zz/zb
+insert before/after cursor, i/a
+insert start/end of line, I/A
+insert new line below/above, o/O
+delete char/line and insert, s/S
+change to end of/current line, C/cc
+insert at last insert point, gi
+save, :w
+close file, :q
+save and quit, :wq
+save and quit all files, :wqa
+force quit, :q!
+write to file, :w filename
+write to read only file, :w !sudo tee %
+replace one character, r
+replace mode, R
+undo change, u
+undo changes on one line, U
+join with next line, J
+redo change, ^ + r
+delete character, x
+paste after/before, p/P
+swap two characters, xp
+delete to end of line, D
+delete word, dw
+delete line, dd
+swap two lines, ddp
+copy line, yy
+paste from system clipboard, "*p (or "+p)
+paste to system clipboard, "*y (or "+y)
+delete selection, d or x
+replace selection, s
+copy selection, y
+repeat last command, .
+repeat latest ftFT command, ;
+repeat latest ftFT command in opposite direction, comma
+repeat last :s, &
+repeat a command-line command, @:
+enter visual mode, v
+enter visual line mode, V
+enter visual block mode, ^ + v
+select all text, ggVG
+shift text right/left, >/<
+record macro i, qi
+stop recording macro, q
+run macro i, @i,
+run macro i 7 times, 7@i
+repeat last macro, @@

@@ -1,0 +1,62 @@
+#tree-view {
+  display: none;
+  overflow: auto;
+  width: auto;
+  height: 100%;
+  dock: left;
+  background: $panel;
+  scrollbar-gutter: auto;
+}
+
+Screen {
+  layout: vertical;
+  background: black;
+}
+
+ShortcutsTUI.-show-tree #tree-view {
+  display: block;
+  min-width: 30%;
+  background: black;
+}
+
+.listItem {
+  color: gold;
+  padding: 0 1 0 1;
+}
+#shortcuts-view {
+  min-width: 70%;
+  overflow: hidden;
+  scrollbar-gutter: auto;
+}
+#shortcuts {
+  column-span: 1;
+  overflow: auto scroll;
+}
+ABOUT {
+  align: center middle;
+  width: 40;
+  height: 9;
+  padding: 1 2;
+  background: $panel;
+  color: gold;
+  border: gold ascii;
+  content-align: center middle;
+}
+
+Footer {
+  background: $panel;
+  color: gold;
+}
+
+#about-text {
+  content-align-horizontal: center;
+}
+
+#url {
+  content-align-horizontal: center;
+}
+
+#title {
+  content-align-horizontal: center;
+  text-style: reverse;
+}

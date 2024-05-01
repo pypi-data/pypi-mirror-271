@@ -1,0 +1,2 @@
+[console_scripts]
+duckcuts = duckcuts.entry_points:duckcuts

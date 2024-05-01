@@ -1,0 +1,14 @@
+search forwards, /
+search backwards, ?
+next match, n
+previous match, N
+search current word forward, *
+search current word backward, #
+replace first line, :s/old/new
+replace all line, :s/old/new/g
+replace all with regex line, :s/\vold/new/g
+ignore case replace first line, :s/old/new/i
+replace first file, :%s/old/new
+replace all file, :%s/old/new/g
+replace all ignore case file, :%s/old/new/i
+replace all regex file, :%s/\vold/new/g

@@ -1,0 +1,28 @@
+delete, d
+yank, y
+change, c
+paste, p
+format code, =
+toggle case, g~
+uppercase, gU
+lowercase, gu
+indent right, >
+indent left, <
+filter through external program, !
+delete current line, dd
+delete two lines, dj
+delete to next word, dw
+delete to beginning of word, db
+delete until a char, dfa
+delete until hello, d/hello
+change current line (same as S), cc
+copy current line, yy
+indent 2 lines, >j
+delete document, ggdG
+indent document, gg=G
+copy whole document, ggyG
+delete 2 lines, 2dd
+copy 7 lines, 7yy
+delete 3 words, d3w
+delete 5 lines downwards, d5j
+indent 4 lines upwards, >4k

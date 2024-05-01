@@ -1,0 +1,3 @@
+[console_scripts]
+life=golpy.__init__:main
+

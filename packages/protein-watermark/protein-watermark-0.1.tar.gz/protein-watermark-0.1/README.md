@@ -1,0 +1,45 @@
+# ProteinWatermark: 
+
+# Enhancing biosecurity in protein design
+![fig1](./figure/Fig1_warm.png)
+Compared to the conventional biosecurity regulation method described in the comments given by Baker and Church (Fig1.**a**, [Protein design meets biosecurity](https://www.science.org/doi/10.1126/science.ado1671), *Science*), adding watermark (Fig1.**b,c**) to the designed protein could achieve two main advantages:
+
+- Privacy. Locally verify a watermarked sequence and then synthesize can protect the sequence information.
+- Intellectual Property (IP) protection. Researcher could claim IP of a protein based on his private key.
+
+Besides, it also has advantages:
+- Maintain the robust tracebility to deter bad actors in the community to achieve biosecurity.
+- User-friendly. It can be easily integrated to autoregressive models. For other models, it can be integrated by knowledge distillation.
+
+## Installation
+
+We encourage users to check the source code to gain much deeper understanding of the watermarking process. 
+
+```shell
+
+pip install -e .
+```
+
+## Usages
+
+## Examples
+
+### [ProteinMPNN](https://github.com/dauparas/ProteinMPNN) & [ProGen2](https://github.com/salesforce/progen/tree/485b2ea3db98f8d65d0cd86c2c85ae639b37a678/progen2) (autoregressive model)
+
+Adding watermarks to autoregressive model is direct. We just need to modify the logit sampled at each step and then sample residue from the modified distribution. Detailed tutorial for modifying ProteinMPNN is available in the [tutorial folder](./tutorials/ProteinMPNN).
+
+Besides, we provide a [notebook](./tutorials/test_example.ipynb) for users to understand the process of watermark detection. We suggest users run the test examples first to ensure the basic environment (pseudo random seed generator) is the same on their own platforms.
+
+Moreover, we also provide a [notebook](./tutorials/test_example.ipynb) for users to understand how the **WatermarkLogitsProcessor** works and the basic robustness of watermarks in a sequence. The examples used in this notebook comes from the [ProGen2](https://github.com/salesforce/progen/tree/485b2ea3db98f8d65d0cd86c2c85ae639b37a678/progen2), how to add watermarks to [transformers](https://huggingface.co/docs/transformers/en/index)-based language model is illustrated in this [folder](./tutorials/ProGen2/).
+
+### [Protein Generator](https://github.com/RosettaCommons/protein_generator) (diffusion model)
+
+For the diffusion models, we tested it and found that the entropy is really low in later diffusion steps. That means the it is **very hard** to effectively add watermarks in the sequences as the sequences are **almost deterministic** in the diffusion model final steps. ![fig2](./Experiments/protein_generator/protein_generator_behavior.png)
+
+To solve this problem, in practice, we can run thediffusion model for a task many times (around 20,000 times), save all the best generations, and then use these sequences to finetune a protein language model ***(i.e. use another probabilistic model to fit the probability space of a specific design problem***). After that, we can use the watermark framework to add watermarks in the fintuned protein language model and get a watermarked protein design. ***This part is still under construction***, more alternatives could be proposed to solve this problem.
+
+## Issues
+
+Feel free to raise issues!
+
+You can also contact me through my [email](cys@umd.edu)!

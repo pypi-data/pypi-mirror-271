@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+protein_watermark/__init__.py
+protein_watermark/base.py
+protein_watermark/delta_gumble.py
+protein_watermark/transformer.py
+protein_watermark/watermark.py
+protein_watermark.egg-info/PKG-INFO
+protein_watermark.egg-info/SOURCES.txt
+protein_watermark.egg-info/dependency_links.txt
+protein_watermark.egg-info/requires.txt
+protein_watermark.egg-info/top_level.txt

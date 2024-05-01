@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: cloudreve
+Version: 1.0.1
+Summary: SDK for Cloudreve sites
+Home-page: https://github.com/yxzlwz/cloudreve-sdk
+Author: yxzlwz
+Author-email: yxzlwz@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cloudreve SDK
+
+本项目为 [Cloudreve](https://github.com/cloudreve/Cloudreve) 社区版的 Python SDK。
+
+- 开源地址：https://github.com/yxzlwz/cloudreve-sdk
+- PyPI：https://pypi.org/project/cloudreve/
+
+## 示例
+
+```python
+from cloudreve import Cloudreve
+
+# 初始化
+conn = Cloudreve('http://127.0.0.1:5212')
+
+# 登录
+conn.login('admin@cloudreve.org', '123456')
+
+# 获取文件ID
+file_id = conn.get_id('/hello.py')
+
+# 获取文件属性
+data = conn.get_property(file_id)
+print(data)
+
+# 获取临时下载URL
+url = conn.get_download_url(file_id, 'hello_world.py', True)
+
+# 下载文件到本地
+conn.download(file_id, 'hello_world.py')
+
+# 创建目录
+conn.create_dir('/python')
+
+# 复制文件
+conn.copy('/hello.py', '/python')
+
+# 重命名文件
+conn.rename(file_id, 'world.py')
+
+# 移动文件
+conn.move('/world.py', '/python')
+
+# 上传文件
+conn.upload('/my_file_backup.py', 'D:/my_file.py')
+```
+
+## 联系我们
+
+- Email：yxzlwz@gmail.com
+- TG 群：https://t.me/+XW2ok10N8DExMDU1
+
+

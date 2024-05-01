@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/cloudreve/__init__.py
+src/cloudreve/models.py
+src/cloudreve.egg-info/PKG-INFO
+src/cloudreve.egg-info/SOURCES.txt
+src/cloudreve.egg-info/dependency_links.txt
+src/cloudreve.egg-info/requires.txt
+src/cloudreve.egg-info/top_level.txt

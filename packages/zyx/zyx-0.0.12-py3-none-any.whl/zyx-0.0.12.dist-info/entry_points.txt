@@ -1,0 +1,2 @@
+[console_scripts]
+zyx = zyx.__cli__:main

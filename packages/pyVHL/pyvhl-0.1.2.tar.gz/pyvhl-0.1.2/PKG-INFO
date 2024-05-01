@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyVHL
+Version: 0.1.2
+Summary: 
+Author: problemxl
+Author-email: email@github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4
+Requires-Dist: loguru
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: retry
+Requires-Dist: youtube-dl
+Description-Content-Type: text/markdown
+
+# pyVHL
+A python library used to upload short clips to video hosting websites
+

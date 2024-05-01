@@ -1,0 +1,2 @@
+[console_scripts]
+noodle = stinky.noodle.core:entrypoint

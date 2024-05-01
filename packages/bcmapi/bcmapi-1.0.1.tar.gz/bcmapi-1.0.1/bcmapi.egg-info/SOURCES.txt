@@ -1,0 +1,6 @@
+README.md
+setup.py
+bcmapi.egg-info/PKG-INFO
+bcmapi.egg-info/SOURCES.txt
+bcmapi.egg-info/dependency_links.txt
+bcmapi.egg-info/top_level.txt

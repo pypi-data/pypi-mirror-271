@@ -1,0 +1,8 @@
+rotating_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rotating_logger/rotatinglogger.py,sha256=wrdIKXynk4uMGRli8iaPY5PM3xtmkYFjw3smFvbo51s,2786
+rotating_logger/singleton.py,sha256=xS-m6ruvRlu2YVt0IzDoZcKd_0riGMlO8RDy7YQ5fWQ,612
+rotating_logger-0.1.0.dist-info/LICENSE,sha256=n30f1JshbH-bUaCtfrhRLqSfNTlojAbaMIhBfczo-eY,1067
+rotating_logger-0.1.0.dist-info/METADATA,sha256=pqCTkEQVBNehnDvqDN9rqAWkr8kV4eACntPvSdbGAVY,1055
+rotating_logger-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rotating_logger-0.1.0.dist-info/top_level.txt,sha256=PmCAl5vO7o-rtg5MVMxGB87dqmUpsFxVzA-K4ESCK88,16
+rotating_logger-0.1.0.dist-info/RECORD,,

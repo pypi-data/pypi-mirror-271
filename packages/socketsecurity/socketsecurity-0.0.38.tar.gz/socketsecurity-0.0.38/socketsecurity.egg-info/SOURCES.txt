@@ -1,0 +1,11 @@
+setup.py
+core/__init__.py
+core/classes.py
+core/exceptions.py
+core/messages.py
+socketsecurity.egg-info/PKG-INFO
+socketsecurity.egg-info/SOURCES.txt
+socketsecurity.egg-info/dependency_links.txt
+socketsecurity.egg-info/entry_points.txt
+socketsecurity.egg-info/requires.txt
+socketsecurity.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+my_cli_app = socketcli.socketcli:cli

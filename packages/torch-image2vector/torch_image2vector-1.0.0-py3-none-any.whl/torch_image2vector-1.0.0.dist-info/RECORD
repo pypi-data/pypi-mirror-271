@@ -1,0 +1,9 @@
+torch_image2vector/__init__.py,sha256=tdEmvJDWxZkKeEeCvm0a868juj0rZMcudMpGG_xIDiI,109
+torch_image2vector/data.py,sha256=ZzdJBxy6fcCfNt2_CAUK7goHWIstVIHgbb9ouMCAPIY,741
+torch_image2vector/image2vector.py,sha256=0hvDutsVDprjqAx--XuaTCFC2WQX3GeDaKGUqWILO8o,8392
+torch_image2vector/test_image2vector.py,sha256=CPARjYw7gJ0OKWYtkpZewTurZkSNci_c3nYHUm6RJE0,8939
+torch_image2vector-1.0.0.dist-info/LICENSE,sha256=qzaQNVJHowBzHec1lZiWwarUpV9c7HFztjSKg7xGFgg,1052
+torch_image2vector-1.0.0.dist-info/METADATA,sha256=3QEoqChcqlG-MXRVaO2l8gAsn6spsoDTi821W8wj0vg,4161
+torch_image2vector-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+torch_image2vector-1.0.0.dist-info/top_level.txt,sha256=tbEg_bLLlkkRMhXue-o-Cg0oFu8PRDcNZUmtcTz3M3A,19
+torch_image2vector-1.0.0.dist-info/RECORD,,

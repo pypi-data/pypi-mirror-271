@@ -1,0 +1,87 @@
+/*
+    This is the strings library for Macal
+    You can use it by issuing this command:
+    include strings;
+
+    This library is licensed under the MIT license.
+
+    (c) 2023 Westcon-Comstor
+    (c) 2023 WestconGroup, Inc.
+    (c) 2023 WestconGroup International Limited
+    (c) 2023 WestconGroup EMEA Operations Limited
+    (c) 2023 WestconGroup European Operations Limited
+    (c) 2023 Sama Development Team
+
+    Date:    17-11-2023
+    Version: 1.1.0
+
+    Added StrToInt function (came from Meraki v1 library).
+
+*/
+# -*- coding: utf-8 -*-
+#
+# Product:   Macal
+# Author:    Marco Caspers
+# Email:     SamaDevTeam@westcon.com
+# License:   MIT License
+# Date:      2024-05-01
+#
+# Copyright 2024 Westcon-Comstor
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+#
+# SPDX-License-Identifier: MIT
+#
+
+# Macal DSL strings Library
+
+const strings = object {
+    name: "strings",
+    version: "5.5.0",
+    author: "Marco Caspers",
+    email: "SamaDevTeam@westcon.com",
+    license: "MIT",
+    description: "This is the Macal DSL 5.5 strings Library",
+    external_module: "ext_strings.py"
+};
+
+
+const REPLACE_TOKENS = "` ~!@//$%^&*+=|\;:,?/'" + '"';
+
+Len => (arg) external "ext_strings" , "StrLen";
+len => (arg) external "ext_strings" , "StrLen";
+Left => (string arg, length) external "ext_strings" , "StrLeft";
+left => (string arg, length) external "ext_strings" , "StrLeft";
+Mid => (string arg, start, length) external "ext_strings" , "StrMid";
+mid => (string arg, start, length) external "ext_strings" , "StrMid";
+ToString => (arg) external "ext_strings" , "ToString";
+toString => (arg) external "ext_strings" , "ToString";
+Contains => (string needle, string haystack) external "ext_strings" , "StrContains";
+contains => (string needle, string haystack) external "ext_strings" , "StrContains";
+Replace => (variable var, frm, with) external "ext_strings" , "StrReplace";
+replace => (variable var, frm, with) external "ext_strings" , "StrReplace";
+StartsWith => (string haystack, string needle) external "ext_strings" , "StartsWith";
+startsWith => (string haystack, string needle) external "ext_strings" , "StartsWith";
+RemoveNonAscii => (text) external "ext_strings" , "RemoveNonAscii";
+ReplaceEx => (variable var, repl, by) external "ext_strings" , "ReplaceEx";
+PadLeft => (string strng, char, amount) external "ext_strings" , "PadLeft";
+PadRight => (string strng, char, amount) external "ext_strings" , "PadRight";
+PadCenter => (string strng, char, amount) external "ext_strings" , "PadCenter";
+StrToInt => (string str) external "ext_strings", "StrToInt";
+strToInt => (string str) external "ext_strings", "StrToInt";

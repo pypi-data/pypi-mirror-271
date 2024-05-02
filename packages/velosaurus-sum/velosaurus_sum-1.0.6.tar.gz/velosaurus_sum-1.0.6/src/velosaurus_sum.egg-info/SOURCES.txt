@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/velosaurus_sum/__init__.py
+src/velosaurus_sum/calculator.py
+src/velosaurus_sum.egg-info/PKG-INFO
+src/velosaurus_sum.egg-info/SOURCES.txt
+src/velosaurus_sum.egg-info/dependency_links.txt
+src/velosaurus_sum.egg-info/top_level.txt

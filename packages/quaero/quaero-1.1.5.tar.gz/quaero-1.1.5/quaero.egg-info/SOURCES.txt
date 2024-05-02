@@ -1,0 +1,13 @@
+README.md
+setup.py
+quaero/__init__.py
+quaero/consts.py
+quaero/index.py
+quaero/openai.py
+quaero/utils.py
+quaero.egg-info/PKG-INFO
+quaero.egg-info/SOURCES.txt
+quaero.egg-info/dependency_links.txt
+quaero.egg-info/entry_points.txt
+quaero.egg-info/requires.txt
+quaero.egg-info/top_level.txt

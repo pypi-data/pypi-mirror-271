@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scanpy
+squidpy
+matplotlib
+opencv-python
+h5py
+anndata
+tifffile
+tqdm
+pysal
+geopandas
+seaborn
+adjustText
+shapely

@@ -1,0 +1,7 @@
+trytond_account<6.9,>=6.8
+trytond_company<6.9,>=6.8
+trytond_product<6.9,>=6.8
+trytond<6.9,>=6.8
+
+[test]
+trytond_analytic_account<6.9,>=6.8

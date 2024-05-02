@@ -1,0 +1,2 @@
+[console_scripts]
+k8sAI = k8sAI.main:main

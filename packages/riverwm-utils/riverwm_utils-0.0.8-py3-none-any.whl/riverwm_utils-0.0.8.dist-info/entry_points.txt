@@ -1,0 +1,2 @@
+[console_scripts]
+cycle-focused-tags = riverwm_utils.riverwm_utils:cycle_focused_tags

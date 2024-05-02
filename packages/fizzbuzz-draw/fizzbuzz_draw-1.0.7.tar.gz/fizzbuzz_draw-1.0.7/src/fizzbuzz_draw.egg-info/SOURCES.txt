@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/fizzbuzz_draw/__init__.py
+src/fizzbuzz_draw/__main__.py
+src/fizzbuzz_draw/app.py
+src/fizzbuzz_draw/nested_collections.py
+src/fizzbuzz_draw/setup_mg.py
+src/fizzbuzz_draw.egg-info/PKG-INFO
+src/fizzbuzz_draw.egg-info/SOURCES.txt
+src/fizzbuzz_draw.egg-info/dependency_links.txt
+src/fizzbuzz_draw.egg-info/entry_points.txt
+src/fizzbuzz_draw.egg-info/requires.txt
+src/fizzbuzz_draw.egg-info/top_level.txt
+tests/test_flask_webapp.py

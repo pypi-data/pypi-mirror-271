@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/stream_downloader/__init__.py
+src/stream_downloader/downloader.py
+src/stream_downloader.egg-info/PKG-INFO
+src/stream_downloader.egg-info/SOURCES.txt
+src/stream_downloader.egg-info/dependency_links.txt
+src/stream_downloader.egg-info/top_level.txt

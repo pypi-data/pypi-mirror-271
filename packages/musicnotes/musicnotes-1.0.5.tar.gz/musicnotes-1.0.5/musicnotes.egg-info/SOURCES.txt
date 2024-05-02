@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+musicnotes/__init__.py
+musicnotes/musicnotes.py
+musicnotes/sound.py
+musicnotes.egg-info/PKG-INFO
+musicnotes.egg-info/SOURCES.txt
+musicnotes.egg-info/dependency_links.txt
+musicnotes.egg-info/top_level.txt

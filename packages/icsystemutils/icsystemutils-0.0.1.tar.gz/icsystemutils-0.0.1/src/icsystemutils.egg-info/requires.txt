@@ -1,0 +1,8 @@
+fabric
+
+[test]
+pytest
+pytest-cov
+pytest-sugar
+black
+mypy

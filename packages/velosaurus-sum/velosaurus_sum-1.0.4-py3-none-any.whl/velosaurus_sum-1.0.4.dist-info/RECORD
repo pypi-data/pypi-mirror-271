@@ -1,0 +1,8 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_calculator.py,sha256=pfDqF7ImGtNoBpX6S0t3hOGpP6SsKtIllcnVJnef0Zc,334
+velosaurus_sum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+velosaurus_sum/calculator.py,sha256=zKsKgF0BSRTfNxkarRRbMqMjLUQGDe3PkmZZ3KfUkCU,33
+velosaurus_sum-1.0.4.dist-info/METADATA,sha256=gzxcnhP3ztCGUGcfWpCeBIo9h8ssCmhtQy0pW40yBTk,560
+velosaurus_sum-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+velosaurus_sum-1.0.4.dist-info/top_level.txt,sha256=CKKCT3AWr8thQ5yNhPNGFsCnIZr0Yo55HdeCkWp004s,20
+velosaurus_sum-1.0.4.dist-info/RECORD,,

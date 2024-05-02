@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pytoolbase
+Version: 1.0.0
+Summary: Python Utility Collection
+Home-page: https://github.com/mminichino/pytoolbase
+Author: Michael Minichino
+Author-email: info@unix.us.com
+License: MIT License
+Keywords: utilities,decorator,retry,synchronize
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pytoolbase 1.0.0
+
+## Installing
+```
+$ pip install pytoolbase
+```

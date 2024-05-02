@@ -1,0 +1,102 @@
+[tool.poetry]
+name = "ancv"
+version = "1.4.0"
+description = "Renders your (JSON) resume/CV for online & pretty terminal display"
+authors = ["Alex Povel <python@alexpovel.de>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://ancv.io"
+repository = "https://github.com/alexpovel/ancv/"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Framework :: AnyIO",
+    "Framework :: AsyncIO",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Natural Language :: English",
+    "Natural Language :: German",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Office/Business",
+    "Topic :: System :: Shells",
+    "Topic :: Terminals",
+    "Topic :: Terminals :: Terminal Emulators/X Terminals",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Markup",
+    "Typing :: Typed",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/alexpovel/ancv/issues/"
+"Changelog" = "https://github.com/alexpovel/ancv/blob/main/CHANGELOG.md"
+"Pull Requests" = "https://github.com/alexpovel/ancv/pulls"
+
+[tool.poetry.dependencies]
+# https://stackoverflow.com/a/69608708/11477374:
+python = "^3.10"
+gidgethub = "^5.1.0"
+aiohttp = { extras = ["speedups"], version = "^3.8.1" }
+pydantic = { extras = ["email"], version = "^2.5.3" }
+structlog = ">=21.5,<25.0"
+cachetools = "^5.2.0"
+humanize = "^4.1.0"
+rich = ">=12.4.4,<14.0.0"
+typer = ">=0.6.1,<0.10.0"
+Babel = "^2.10.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.1.2,<9.0.0"
+datamodel-code-generator = { extras = ["http"], version = ">=0.13,<0.26" }
+mypy = ">=0.960,<1.11"
+types-cachetools = "^5.0.1"
+pydeps = "^1.10.18"
+pytest-cov = ">=4,<6"
+pytest-aiohttp = "^1.0.4"
+pytest-rerunfailures = ">=10.2,<13.0"
+requests = "^2.28.1"
+types-babel = "^2.10.0"
+ruff = ">=0.3.2,<0.5.0"
+ipython = "^8.14.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ancv = "ancv.__main__:app"
+
+[tool.coverage.run]
+branch = true
+
+[tool.ruff.lint]
+# `E501` is line length violation
+ignore = ["E501"]
+
+[tool.coverage.report]
+fail_under = 80.0
+
+[tool.datamodel-codegen]
+target-python-version = "3.10"
+
+[tool.mypy]
+mypy_path = "stubs/"
+show_error_codes = true
+strict = true
+namespace_packages = true
+disallow_any_unimported = true
+# Disable until https://github.com/python/mypy/issues/16454 fixed (inheriting from
+# `Basemodel` gives ancv/visualization/translations.py:4: error: Explicit "Any" is not
+# allowed  [misc])
+disallow_any_explicit = false
+disallow_any_generics = true
+disallow_subclassing_any = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true

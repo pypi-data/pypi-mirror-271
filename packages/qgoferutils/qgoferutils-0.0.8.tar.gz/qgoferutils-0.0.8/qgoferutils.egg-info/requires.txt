@@ -1,0 +1,6 @@
+orjson
+requests
+aiofiles
+
+[dev]
+black

@@ -1,0 +1,38 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/recipes/create_recipe
+    function: main.site.app.external.recipes.create_recipe.create_recipe
+    desc: Returns the id of the recipe being created.
+
+
+Arguments:
+    type: Object
+    properties:
+        name?:
+            type: String
+            desc: The name for the recipe
+        material_family_id:
+            type: ObjectId
+            desc: The material family for the recipe
+        workflow_id:
+            type: ObjectId
+            desc: The identifier of the workflow to create the recipe with
+        workflow_variant_id?:
+            type: Optional<ObjectId>
+            desc: The identifier of the workflow variant to create the recipe with
+        recipe_metadata?:
+            type: List<recipe_metadata.MetadataValue>
+            desc: Metadata values to populate the recipe with
+        identifiers:
+            type: recipe_identifiers.RecipeIdentifiers
+            desc: A recipe won't be created if it matches the identifier.  An identifier must be unique in the schema
+        definition_key?:
+            type: identifier.IdentifierKey
+            desc: The entity definition identifier, default is used if not supplied
+
+Data:
+  type: Object
+  properties:
+    result_id:
+      type: ObjectId

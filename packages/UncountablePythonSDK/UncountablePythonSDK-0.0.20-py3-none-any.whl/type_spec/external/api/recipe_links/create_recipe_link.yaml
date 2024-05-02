@@ -1,0 +1,25 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/recipe_links/create_recipe_link
+    function: main.site.app.external.recipe_links.create_recipe_link.create_recipe_link
+    desc: Create a link between two recipes.  Skip if the link already exists
+
+Arguments:
+    type: Object
+    properties:
+        recipe_from_key:
+            type: identifier.IdentifierKey
+            desc: "Identifier for the recipe the link comes from"
+        recipe_to_key:
+            type: identifier.IdentifierKey
+            desc: "Identifier for the recipe the link goes to"
+        link_type:
+            type: Union<Literal<recipe_links.RecipeLinkType.child>, Literal<recipe_links.RecipeLinkType.control>, Literal<recipe_links.RecipeLinkType.user_link>>
+            desc: "The type of link being created"
+        name:
+            type: String
+            desc: "The name used for the link"
+
+Data:
+  type: async_batch.AsyncBatchActionReturn

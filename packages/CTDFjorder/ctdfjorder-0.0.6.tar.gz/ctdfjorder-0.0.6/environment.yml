@@ -1,0 +1,13 @@
+name: CTDFjorder
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - gsw
+  - matplotlib
+  - scipy
+  - statsmodels
+  - tabulate
+prefix: /Users/nik/anaconda3/envs/CTDFjorder

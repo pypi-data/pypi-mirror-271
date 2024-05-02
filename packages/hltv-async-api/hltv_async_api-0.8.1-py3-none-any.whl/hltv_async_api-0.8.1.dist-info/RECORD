@@ -1,0 +1,7 @@
+hltv_async_api/__init__.py,sha256=fvoDTyg9DLtoxvx7Vw6AGnbrZoZBM17EDn_gjgKB8pA,124
+hltv_async_api/aiohltv.py,sha256=qGVW0Ywv6dsQWQVD_yDrKeT4wNgX5QqvnHU1aBb_CKA,47390
+hltv_async_api/unreleased.py,sha256=r11Hj3WHLSVnJZfQ2v3gihsDQhIvp5wHNFlNi7kzb3U,4147
+hltv_async_api-0.8.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+hltv_async_api-0.8.1.dist-info/METADATA,sha256=sRpoqhgZwB8fjRnBaxv6bvgOCRV5nSQw8SvhWB-ez4k,17156
+hltv_async_api-0.8.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hltv_async_api-0.8.1.dist-info/RECORD,,

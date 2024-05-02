@@ -1,0 +1,11 @@
+osw_confidence_metric/__init__.py,sha256=8zLGg-DfQhnDl2Ky0n-zXpN-8e-g7iR0AcaI4l4Vvpk,32
+osw_confidence_metric/area_analyzer.py,sha256=byGnMQ1VTrVkhlcj6WUv8ZhQi2X6U-HRLCgwdbuGX1I,4927
+osw_confidence_metric/osm_data_handler.py,sha256=4m09avQHBPZpwmrQjd9DKp9Lj-N0QcQ62SnykCB-Qhg,964
+osw_confidence_metric/trust_score_calculator.py,sha256=mAlJUie9TBxdPY_kEtPTOoFTvCUHEC1Kg-ZQVlKn-e0,8192
+osw_confidence_metric/utils.py,sha256=hnnBNAGZCK7bv6rAEntFj3eP6HnRjqY3MavVQyhl1NQ,12040
+osw_confidence_metric/version.py,sha256=0Uc3zDF9XadX9j08cOIZbGoZsI0JPHTxemWum3gkos4,21
+osw_confidence_metric-0.0.5.dist-info/LICENSE,sha256=KXSpN2qzyPU7LuuGtJrQH4JsLkKmn077inwH99InLGw,1073
+osw_confidence_metric-0.0.5.dist-info/METADATA,sha256=80AONFNlNO11k-0PVPWDUUzLR7F8UmR0ZdwAWc3hrmw,10560
+osw_confidence_metric-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+osw_confidence_metric-0.0.5.dist-info/top_level.txt,sha256=Wd15KBVKmX49xc5WCCnrqkVodEBX9sn5zFPfglyc8mE,22
+osw_confidence_metric-0.0.5.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+click
+dateparser
+feedparser
+itemloaders
+lxml[html_clean]
+python-dateutil
+pyxdg
+readability-lxml
+scrapy
+scrapy-inline-requests
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest

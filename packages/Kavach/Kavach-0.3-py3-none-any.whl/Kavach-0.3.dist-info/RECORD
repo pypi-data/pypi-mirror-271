@@ -1,0 +1,11 @@
+Kavach/__init__.py,sha256=vSjX4v-c5dItkkuU5pAMBGsLonJ4RRow6lHpZMfNOio,50
+Kavach/gradio_app.py,sha256=5nUZN0IE6aEVrRiUmzYZC1IRamTwWikO8yHCnogtvpI,2859
+Kavach/utils.py,sha256=0P2BTRx0fU18_1gKY-DphbQlZE_eeVKSCbQna4_6xC4,2315
+Kavach/data/logo.png,sha256=LEsXwL6spQ5xJFVoFI0Xdw8MTVTFnQm9tiwW7cpcATg,61101
+tests/__init__.py,sha256=eFJ3ZRI2RnallTzcNytU2D8YmW46Pf3HISxLEWPROJ0,204
+tests/test_utils.py,sha256=ATAU04IjaJ5Pcq2gCCxbxPFAWcOUGMicEXePfg5SQX8,1739
+Kavach-0.3.dist-info/METADATA,sha256=ooku3tvXHFJklSfN5Z1JPb4JX2dmojpfZGxzqvSrMas,165
+Kavach-0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+Kavach-0.3.dist-info/entry_points.txt,sha256=4yI2iv15GAlOjBNz3Vh8YT91fll0aTHZ3W_mvy_RJhY,60
+Kavach-0.3.dist-info/top_level.txt,sha256=KadITjw6Up3sjKKXu4lI3xN66fxVjltzh-Nc3Kvde-s,13
+Kavach-0.3.dist-info/RECORD,,

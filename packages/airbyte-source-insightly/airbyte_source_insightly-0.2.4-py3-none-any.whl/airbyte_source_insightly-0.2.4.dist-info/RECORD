@@ -1,0 +1,17 @@
+source_insightly/__init__.py,sha256=DY5l2n6dhjdksfum-Dtiju356UP6W853kQZgkpc0zlQ,130
+source_insightly/manifest.yaml,sha256=lTYYeZNk6XbCeE0dKu_Yc0NoPLoDELqAF3W60tUk7VI,100974
+source_insightly/run.py,sha256=X4rX3OGPw0TU_5bzO6VgiM_H7wOM_acibQuxpzAqOY0,239
+source_insightly/schemas/leads.json,sha256=_lF5xWHJBJI7wjAPG2hYG3nJSt1SUxDPvoXBjZQUyyA,6963
+source_insightly/schemas/opportunity_products.json,sha256=EmsLgtKNvaio82mOQB2GWtStbkZQ-fU4OfWRF-bn9IU,2478
+source_insightly/schemas/pricebook_entries.json,sha256=hF4WKYhRqMXykkogbuNVbmpCeH--gV_Lca9I8E0ksO4,2069
+source_insightly/schemas/pricebooks.json,sha256=o0Suks4pKvaJKX-DVeDZh_sub6a1xSmV-tcB7M7Piug,1476
+source_insightly/schemas/products.json,sha256=iyO3pfW737zjgSwRF02vWl4LqtvFc9jRrVAPzLEbiC0,2416
+source_insightly/schemas/quote_products.json,sha256=Bs1ampZ5KMhXSVobD872cCWXU9DDDUukcuBGf71NvCU,2678
+source_insightly/schemas/quotes.json,sha256=AQT3yrWIBl_bXy-gsTG2KZG7cxX75XF6SiHedjlXLUM,5735
+source_insightly/schemas/tags.json,sha256=pfSHg9oC_e360OUGEXnpd8r5-R8RHrpjeeVQ5qqmI9w,221
+source_insightly/schemas/tickets.json,sha256=UGpJyFUEq0SGBQ2NAemF27aNvkfF1cYLdzPI4t6KmJc,3597
+source_insightly/source.py,sha256=DIFYLw162fqmmxyLj-EjQyer2uOTc-1bkcvR-U9kT64,478
+airbyte_source_insightly-0.2.4.dist-info/METADATA,sha256=-sZJHCWB0JvNDJPOl15iq7p13IfoSJ3djY-tsSWCUwo,5263
+airbyte_source_insightly-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_insightly-0.2.4.dist-info/entry_points.txt,sha256=iYlWGrgdrXR6IP0J8-DvlODFxaPXD3l-ez2xfkyDCBs,61
+airbyte_source_insightly-0.2.4.dist-info/RECORD,,

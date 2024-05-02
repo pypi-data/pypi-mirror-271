@@ -1,0 +1,7 @@
+README.md
+setup.py
+django_bulk_updater.egg-info/PKG-INFO
+django_bulk_updater.egg-info/SOURCES.txt
+django_bulk_updater.egg-info/dependency_links.txt
+django_bulk_updater.egg-info/requires.txt
+django_bulk_updater.egg-info/top_level.txt

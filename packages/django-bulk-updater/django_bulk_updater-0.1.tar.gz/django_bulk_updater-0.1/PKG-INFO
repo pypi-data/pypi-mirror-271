@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: django_bulk_updater
+Version: 0.1
+Summary: A Django package for bulk updating with multithreading
+Home-page: https://github.com/Sushil2308/django-multi-bulk-updater.git
+Author: Sushil2308
+Author-email: sushilprasad60649@gmail.com

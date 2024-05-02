@@ -1,0 +1,152 @@
+Metadata-Version: 2.3
+Name: zignal
+Version: 0.7.0
+Summary: Audio signal processing library
+Project-URL: Homepage, https://github.com/ronnyandersson/zignal
+Project-URL: Issues, https://github.com/ronnyandersson/zignal/issues
+Project-URL: Download, https://pypi.python.org/pypi/zignal
+Author-email: Ronny Andersson <ronny@andersson.tk>
+License: MIT License
+License-File: LICENSE.txt
+Keywords: 12TET,CIC,DSP,FFT,FIR,IIR,audio,biquad,card,cascaded,comb,cookbook,decimation,decimator,digital,eq,equal,equaliser,equalizer,filter,filtering,finite,fourier,frequency,frequencyresponse,generator,impulse,impulseresponse,infinite,integrator,length,magnitude,magnituderesponse,maximum,maximumlengthsequence,measure,measurement,midi,mls,mlssa,notation,parametric,piano,pitch,playback,portaudio,processing,pseudo,pseudorandom,pyaudio,random,recording,response,scale,sequence,signal,signalprocessing,sine,sound,soundcard,spn,temperament,tuning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Topic :: Multimedia :: Sound/Audio :: Capture/Recording
+Classifier: Topic :: Multimedia :: Sound/Audio :: Editors
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Classifier: Topic :: Multimedia :: Sound/Audio :: Mixers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.8
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: pyaudio; extra == 'dev'
+Provides-Extra: sndcard
+Requires-Dist: pyaudio; extra == 'sndcard'
+Description-Content-Type: text/markdown
+
+# zignal
+
+This is a python audio signal processing library.
+
+## Example usage
+
+    >>> import zignal
+    >>>
+    >>> x = zignal.Sinetone(fs=44100, f0=997, duration=0.1, gaindb=-20)
+    >>> print(x)
+    =======================================
+    classname        : Sinetone
+    sample rate      : 44100.0 [Hz]
+    channels         : 1
+    duration         : 0.100 [s]
+    datatype         : float64
+    samples per ch   : 4410
+    data size        : 0.034 [Mb]
+    has comment      : no
+    peak             : [ 0.1]
+    RMS              : [ 0.0707]
+    crestfactor      : [ 1.4147]
+    -----------------:---------------------
+    frequency        : 997.0 [Hz]
+    phase            : 0.0 [deg]
+    -----------------:---------------------
+
+    >>> x.fade_out(millisec=10)
+    >>> x.convert_to_float(targetbits=32)
+    >>> x.write_wav_file("sinetone.wav")
+    >>> x.plot()
+    >>> x.plot_fft()
+    >>>
+    >>> f = zignal.filters.biquads.RBJ(filtertype="peak", gaindb=-6, f0=997, Q=0.707, fs=96000)
+    >>> print(f)
+    =======================================
+    classname        : RBJ
+    sample rate      : 96000.0 [Hz]
+    feedforward  (B) : [ 0.96949457 -1.87369167  0.90819329]
+    feedback     (A) : [ 1.         -1.87369167  0.87768787]
+    number of zeros  : 2
+    number of poles  : 2
+    minimum phase?   : Yes
+    -----------------:---------------------
+    stable?          : Yes
+    type             : peak
+    gain             : -6.00 [dB]
+    f0               : 997.0 [Hz]
+    Q                : 0.7070
+
+    >>> f.plot_mag_phase()
+    >>> f.plot_pole_zero()
+    >>>
+
+See the examples folder for more examples.
+
+## Requirements
+
+This library relies on numpy, scipy, matplotlib and optionally pyaudio. It is
+recommended to create a virtual environment and let pip install the
+dependencies automatically.
+
+    python3 -m venv <name-of-virtualenv>
+    . <name-of-virtualenv>/bin/activate
+    pip install zignal
+
+Optionally, to be able to use a soundcard, first install the python development
+headers and the portaudio development files. On debian/ubuntu,
+
+    sudo apt install python3-dev portaudio19-dev
+
+then run
+
+    pip install zignal[sndcard]
+
+which will automatically build the portaudio library and then pyaudio.
+
+## Local development
+
+Create a python3 virtualenv and install from the local source code to make the
+zignal library editable. Note that the python development headers (python3-dev)
+and portaudio19-dev must be installed first.
+
+    python3 -m venv venv_dev
+    . venv_dev/bin/activate
+    pip install --editable .[dev]
+
+By running `make` it is now possible to run isort, flake8 and also all the unit
+tests. They can also be executed directly from the command line, see the
+Makefile for the full commands to run.
+
+## Build a release
+
+    python3 -m venv venv_build
+    . ./venv_build/bin/activate
+    pip install --upgrade pip build
+    python3 -m build
+
+## Design goals
+
+1.  Readability over efficiency. This is a python library for development and
+    understanding of audio signal processing.
+2.  The initial goal is to write the functionality in pure python, with the use
+    of numpy, scipy and matplotlib. See rule 1. If efficiency becomes an issue
+    a c/c++ library might be implemented but the pure python code must remain
+    the default choice.
+3.  Design for non real-time processing. Functionality to do real-time
+    processing can be added if it does not break rule 1.
+4.  Self documentation. The code should aim to be well documented, in the
+    source code itself.

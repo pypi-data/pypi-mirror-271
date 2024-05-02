@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SkeKraft.egg-info/PKG-INFO
+src/SkeKraft.egg-info/SOURCES.txt
+src/SkeKraft.egg-info/dependency_links.txt
+src/SkeKraft.egg-info/top_level.txt

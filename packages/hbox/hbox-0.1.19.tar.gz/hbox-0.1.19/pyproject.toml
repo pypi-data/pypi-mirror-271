@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hbox"
+version = "0.1.19"
+description = "CLI tool that leverages container technology to manage packages."
+authors = ["Helton Carlos de Souza <heltoncarlossouza@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.7.1"
+
+[tool.poetry.scripts]
+hbox = "hbox.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

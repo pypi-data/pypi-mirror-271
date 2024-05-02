@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: panda-common
+Version: 0.1.1
+Summary:  PanDA Common Package
+Project-URL: Homepage, https://panda-wms.readthedocs.io/en/latest/
+Author-email: PanDA Team <panda-support@cern.ch>
+License: Apache-2.0
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: configparser
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: stomp-py<=7.0.0,>=4.1.23
+Description-Content-Type: text/markdown
+
+# Panda Common Project
+
+Includes all libraries used by PanDA server, JEDI, Harvester, monitor and others.

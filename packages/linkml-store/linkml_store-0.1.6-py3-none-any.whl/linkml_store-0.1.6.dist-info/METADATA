@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: linkml-store
+Version: 0.1.6
+Summary: linkml-store
+License: MIT
+Author: Author 1
+Author-email: author@org.org
+Requires-Python: >=3.9, !=2.7.*, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*, !=3.7.*, !=3.8.*
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: analytics
+Provides-Extra: app
+Provides-Extra: chromadb
+Provides-Extra: h5py
+Provides-Extra: llm
+Provides-Extra: map
+Provides-Extra: mongodb
+Provides-Extra: tests
+Provides-Extra: validation
+Requires-Dist: black (>=24.0.0) ; extra == "tests"
+Requires-Dist: chromadb ; extra == "chromadb"
+Requires-Dist: click
+Requires-Dist: duckdb (>=0.10.1,<0.11.0)
+Requires-Dist: duckdb-engine (>=0.11.2)
+Requires-Dist: h5py ; extra == "h5py"
+Requires-Dist: linkml ; extra == "validation"
+Requires-Dist: linkml-runtime (>=1.7.5,<2.0.0)
+Requires-Dist: linkml_map ; extra == "map"
+Requires-Dist: llm ; extra == "llm"
+Requires-Dist: matplotlib ; extra == "analytics"
+Requires-Dist: pandas (>=2.2.1) ; extra == "analytics"
+Requires-Dist: plotly ; extra == "analytics"
+Requires-Dist: pydantic (>=2.0.0,<3.0.0)
+Requires-Dist: pymongo ; extra == "mongodb"
+Requires-Dist: pystow (>=0.5.4,<0.6.0)
+Requires-Dist: seaborn ; extra == "analytics"
+Requires-Dist: sqlalchemy
+Requires-Dist: streamlit (>=1.32.2,<2.0.0) ; extra == "app"
+Description-Content-Type: text/markdown
+
+# linkml-store
+
+An integration layer for multiple database backends
+
+Currently this software is alpha, and has only been tested with DuckDB backends. See the Tutorial for more information.
+
+There is also experimental support for vector-based indexing using OpenAI test embedding via the `llm` library.
+
+The goals of this project are to provide high level access to data stored in heterogeneous databases,
+with optional schema management using LinkML.
+

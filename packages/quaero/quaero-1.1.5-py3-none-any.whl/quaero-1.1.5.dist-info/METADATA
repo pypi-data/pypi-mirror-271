@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: quaero
+Version: 1.1.5
+Summary: Simple CLI tool for asking ChatGPT questions in the CLI
+Home-page: https://github.com/yeo-yeo/chatgpt-cli-python
+Author: Gillian Yeomans
+Author-email: hello@gillian.codes
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: colorama
+Requires-Dist: python-dotenv
+
+# chatgpt-cli-python
+Simple CLI tool for asking ChatGPT questions from the terminal
+
+### Getting started
+Download by running `pip install quaero`
+Run `quaero init` and follow instructions to add your OpenAI key
+
+### Usage
+Once your API key is set up, simply run `quaero` and ask your question
+Subsequent questions will be part of the same conversation
+Exit with control C
+The conversation ID printed on exit can be used to resume the conversation by running the script again with `quaero -c <ID>`
+
+### Links
+Repo: https://github.com/yeo-yeo/chatgpt-cli-python
+
+Package: https://pypi.org/project/quaero/

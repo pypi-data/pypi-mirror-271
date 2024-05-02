@@ -1,0 +1,10 @@
+quaero/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quaero/consts.py,sha256=ZhAo2QfRv8Um88F7NqfhIAPfcOYxg8vTWU0_gxVtQJs,137
+quaero/index.py,sha256=hBfPKM6X-RTaai9SmArsPzkVZiDLaNJqUdmlqklRQeQ,3732
+quaero/openai.py,sha256=9eSzr4CaTMeGrps768ogmK61A7wmhdEHZud6D2Y3NHM,2415
+quaero/utils.py,sha256=HM_0ik8jHuypx3qgoeiwayMrbiy5J8ToVCDsFgYIOuA,1641
+quaero-1.1.5.dist-info/METADATA,sha256=ofPSDUBzCwEnqVzGktiT98jHpcYBTXM-Wk6rtzKv8S0,950
+quaero-1.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+quaero-1.1.5.dist-info/entry_points.txt,sha256=fxWi6y9ID79SWQzLox-TuWMivugJsIp15Rvx2CiYGe0,45
+quaero-1.1.5.dist-info/top_level.txt,sha256=zvW4S14QchG9qtL2VVLZSItSj9NAYqx-6FvNZEocrPI,7
+quaero-1.1.5.dist-info/RECORD,,

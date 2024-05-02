@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+certbot_filecopy_installer.egg-info/PKG-INFO
+certbot_filecopy_installer.egg-info/SOURCES.txt
+certbot_filecopy_installer.egg-info/dependency_links.txt
+certbot_filecopy_installer.egg-info/entry_points.txt
+certbot_filecopy_installer.egg-info/requires.txt
+certbot_filecopy_installer.egg-info/top_level.txt
+filecopy_installer/__init__.py
+filecopy_installer/filecopy_installer.py

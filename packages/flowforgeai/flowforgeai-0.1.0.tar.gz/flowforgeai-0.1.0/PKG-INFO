@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flowforgeai
+Version: 0.1.0
+Summary: "FlowForge" is designed to offer an intuitive interface that simplifies the process of creating and managing LLM workflows as a self-hosted solution.
+License: MIT
+Author: Tobias Sterbak
+Author-email: github@tobiassterbak.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Description-Content-Type: text/markdown
+
+# FlowForge
+
+"FlowForge" is designed to offer an intuitive interface that simplifies the process of creating and managing LLM workflows as a self-hosted solution. It facilitates prompt testing and comparison, and it incorporates version control features to help users track the development of their prompts. Suitable for both small teams and large enterprises, "FlowForge" seeks to improve productivity and foster the practical use of LLM technology.
+
+The approach with "FlowForge" is to provide a pragmatic solution that bridges the current gap in LLM workflow management. We aim to empower developers, researchers, and organizations by making LLM technology more accessible and manageable, thereby supporting the next wave of AI innovations.
+

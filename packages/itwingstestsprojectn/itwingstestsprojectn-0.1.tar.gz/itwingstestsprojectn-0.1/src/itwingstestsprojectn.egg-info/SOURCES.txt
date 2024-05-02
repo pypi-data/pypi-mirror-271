@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gac/__init__.py
+src/gac/config.py
+src/gac/main.py
+src/itwingstestsprojectn.egg-info/PKG-INFO
+src/itwingstestsprojectn.egg-info/SOURCES.txt
+src/itwingstestsprojectn.egg-info/dependency_links.txt
+src/itwingstestsprojectn.egg-info/top_level.txt

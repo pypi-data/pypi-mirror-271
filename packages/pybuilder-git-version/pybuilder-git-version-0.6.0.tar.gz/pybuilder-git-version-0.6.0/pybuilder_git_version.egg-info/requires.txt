@@ -1,0 +1,2 @@
+gitpython==3.1.43
+semver==2.13.0

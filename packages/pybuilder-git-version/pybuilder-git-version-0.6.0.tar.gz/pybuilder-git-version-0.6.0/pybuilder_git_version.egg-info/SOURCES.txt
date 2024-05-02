@@ -1,0 +1,10 @@
+setup.py
+pybuilder_git_version/__init__.py
+pybuilder_git_version/util.py
+pybuilder_git_version.egg-info/PKG-INFO
+pybuilder_git_version.egg-info/SOURCES.txt
+pybuilder_git_version.egg-info/dependency_links.txt
+pybuilder_git_version.egg-info/namespace_packages.txt
+pybuilder_git_version.egg-info/requires.txt
+pybuilder_git_version.egg-info/top_level.txt
+pybuilder_git_version.egg-info/zip-safe

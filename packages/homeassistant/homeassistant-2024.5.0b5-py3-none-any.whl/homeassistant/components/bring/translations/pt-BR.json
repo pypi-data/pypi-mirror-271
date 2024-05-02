@@ -1,0 +1,57 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "O servi\u00e7o j\u00e1 est\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "Falha ao conectar",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+            "unknown": "Erro inesperado"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Senha"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "notify_missing_argument_item": {
+            "message": "Falha ao ligar para o servi\u00e7o {service} . 'URGENT_MESSAGE' requer um valor @ data['item']. N\u00e3o tenho nenhum"
+        },
+        "notify_request_failed": {
+            "message": "Falha ao enviar notifica\u00e7\u00e3o push para trazer devido a um erro de conex\u00e3o. Tente novamente mais tarde"
+        }
+    },
+    "selector": {
+        "notification_type_selector": {
+            "options": {
+                "changed_list": "Lista alterada - Confira",
+                "going_shopping": "Estou indo \u00e0s compras! - \u00daltima chance para ajustes",
+                "shopping_done": "Compras conclu\u00eddas - voc\u00ea pode relaxar",
+                "urgent_message": "Not\u00edcias de \u00faltima hora - Por favor, obtenha o `item`!"
+            }
+        }
+    },
+    "services": {
+        "send_message": {
+            "description": "Envie uma notifica\u00e7\u00e3o por push para celular aos membros de uma lista compartilhada do Bring!",
+            "fields": {
+                "entity_id": {
+                    "description": "Lista Bring! cujos membros (exceto o remetente) ser\u00e3o notificados.",
+                    "name": "Lista"
+                },
+                "item": {
+                    "description": "Nome do item a ser inclu\u00eddo em uma mensagem de not\u00edcias de \u00faltima hora, por exemplo, `Not\u00edcias de \u00faltima hora - Por favor, pegue coentro!`",
+                    "name": "Item (obrigat\u00f3rio se o tipo de mensagem `Not\u00edcias de \u00faltima hora` for selecionado)"
+                },
+                "message": {
+                    "description": "Tipo de notifica\u00e7\u00e3o push a ser enviada aos membros da lista.",
+                    "name": "Tipo de notifica\u00e7\u00e3o"
+                }
+            }
+        }
+    }
+}

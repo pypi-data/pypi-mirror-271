@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ComplexJSON
+Version: 1.0
+Summary: This is the simplest module for serialize and deserialize python complex objects
+Home-page: https://github.com/dail45/ComplexJSON
+Author: dail45
+Keywords: json complexobject serialize
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE

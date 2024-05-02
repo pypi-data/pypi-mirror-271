@@ -1,0 +1,16 @@
+matplotlib
+numpy
+pandas
+torch
+torchdiffeq
+umnn
+tqdm
+ninja
+scikit-learn
+h5py
+torchtestcase
+parameterized
+flake8
+pytest
+pytest-cov
+black

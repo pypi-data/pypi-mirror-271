@@ -1,0 +1,9 @@
+LICENSE
+README.md
+lyyhttpd.py
+setup.py
+lyyhttpd.egg-info/PKG-INFO
+lyyhttpd.egg-info/SOURCES.txt
+lyyhttpd.egg-info/dependency_links.txt
+lyyhttpd.egg-info/requires.txt
+lyyhttpd.egg-info/top_level.txt

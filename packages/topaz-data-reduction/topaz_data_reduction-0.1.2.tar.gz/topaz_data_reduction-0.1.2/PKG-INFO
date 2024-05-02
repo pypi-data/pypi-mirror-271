@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: topaz_data_reduction
+Version: 0.1.2
+Summary: Package for interacting with Galaxy API for data reduction.
+Author: Jenna DeLozier
+Author-email: delozierjk@ornl.gov
+Keywords: galaxy api data reduction

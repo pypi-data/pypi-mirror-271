@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+brianmechanisms.egg-info/PKG-INFO
+brianmechanisms.egg-info/SOURCES.txt
+brianmechanisms.egg-info/dependency_links.txt
+brianmechanisms.egg-info/top_level.txt

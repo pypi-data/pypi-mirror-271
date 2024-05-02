@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: brianmechanisms
+Version: 0.1.0
+Summary: Python module for designing mechanisms and robots
+Home-page: https://brianmechanisms.github.io
+Author: Brian Onang'o
+Author-email: surgbc@gmail.com
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Brian Mechanisms Designer
+
+# Brian Mechanisms
+
+Brian Mechanisms is a Python module designed for engineers and developers to easily design and simulate various mechanical mechanisms and robots. It provides a collection of tools and algorithms for kinematic analysis, motion planning, and visualization of mechanical systems.
+
+## Features
+
+- Kinematic analysis for various types of mechanisms, including linkages, gears, and robotic arms.
+- Motion planning algorithms for path generation and trajectory optimization.
+- Visualization tools to create interactive plots and animations of mechanical systems.
+- Integration with popular libraries such as NumPy and Matplotlib for scientific computing and visualization.
+
+## Installation
+
+You can install Brian Mechanisms using pip:
+
+```bash
+pip install brianmechanisms
+```
+
+## Quick Start
+```python
+import brianmechanisms as bm
+
+# Create a simple 2-bar linkage
+linkage = bm.Linkage(length1=3, length2=4)
+
+# Plot the linkage
+linkage.plot()
+```

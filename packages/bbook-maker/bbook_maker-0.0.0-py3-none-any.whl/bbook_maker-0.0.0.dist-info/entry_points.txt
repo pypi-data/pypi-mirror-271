@@ -1,0 +1,3 @@
+[console_scripts]
+bbook_maker = book_maker.cli:main
+

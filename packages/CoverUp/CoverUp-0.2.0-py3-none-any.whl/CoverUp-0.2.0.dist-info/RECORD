@@ -1,0 +1,16 @@
+coverup/__init__.py,sha256=GyGH8_lS1A9cKbwhSVNKQzSI5t_rGx8GjNN_fuh5-10,26
+coverup/__main__.py,sha256=45Upt444MsYGybJE_DuIndb_kq8zJEZ2g7rq8hu1kJk,62
+coverup/coverup.py,sha256=orP8tcXtPzo9koi9Xh3NpdRb5cqcUoKkVc7ZEIbf6W8,30526
+coverup/delta.py,sha256=kAkGctLqQDmnHW0Jl-YOd3XF-vNt4qV0YtyWmmAzIU8,2177
+coverup/llm.py,sha256=kZDmbTaRnaxIQyRCbLxtlUZxmvYj4ZDFzkCIgWdOyxE,2579
+coverup/prompt.py,sha256=0EFATtXPAvzZXVmNjPBPT4ppUAZVbJTbQww9Mo76u9o,7883
+coverup/pytest_plugin.py,sha256=Jiza5V7J-uZo6EqCo9Dc6Rl60Ms7puvIySIYSfmPNXI,2768
+coverup/segment.py,sha256=ei-C4jB9CsuzY8Tju4U-Lpr5BfDcyhbOI2WWxJrsYrk,5634
+coverup/testrunner.py,sha256=ldh9ruZShoYGyuqAYoGMf5s29rHoEg-n0Mcwt8UnFgM,10257
+coverup/utils.py,sha256=C2pBj8gmvATChNKfC_h8ZOlOgwedo1sogoeJHmTT6xM,2489
+CoverUp-0.2.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+CoverUp-0.2.0.dist-info/METADATA,sha256=G_QJVa9PbXZZ9G-exlvv9S3Gko2ena1YAnDsR0Ulx6o,6444
+CoverUp-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+CoverUp-0.2.0.dist-info/entry_points.txt,sha256=Af1YgczBpbNdvOdpPmce7JYhfvSFxZv8-WEuwb3GNBA,49
+CoverUp-0.2.0.dist-info/top_level.txt,sha256=gfuV_lpHe2ibaBBpAgUKgabaqik89j9JndcLQDtdSwk,8
+CoverUp-0.2.0.dist-info/RECORD,,

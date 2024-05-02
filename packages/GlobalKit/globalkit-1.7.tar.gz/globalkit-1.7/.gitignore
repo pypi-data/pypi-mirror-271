@@ -1,0 +1,18 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Generated files or directories
+dist/
+
+# Username and Password
+.pypirc
+
+# PyCharm IDE files
+.idea/
+
+# DS Store
+.DS_Store

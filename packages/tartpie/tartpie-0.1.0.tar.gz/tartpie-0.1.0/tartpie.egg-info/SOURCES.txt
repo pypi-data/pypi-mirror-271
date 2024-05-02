@@ -1,0 +1,6 @@
+setup.py
+tartpie.py
+tartpie.egg-info/PKG-INFO
+tartpie.egg-info/SOURCES.txt
+tartpie.egg-info/dependency_links.txt
+tartpie.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+beautifulsoup4==4.9.3
+celery==4.4.7
+hiredis==2.3.2
+html5lib==1.1
+pytz>=2024.1
+redis==5.0.4
+requests>=2.31.0
+six>=1.13.0
+sqlalchemy>=1.4.1

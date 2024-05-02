@@ -1,0 +1,4 @@
+ansible-core
+ansible-runner
+requests
+fqdn

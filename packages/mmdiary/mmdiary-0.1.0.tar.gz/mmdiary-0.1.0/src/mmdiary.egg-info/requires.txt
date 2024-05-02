@@ -1,0 +1,9 @@
+notion_client
+notion
+progressbar2
+python-telegram-bot
+openai-whisper
+photo_importer
+mixvideoconcat
+google-auth-oauthlib
+google-api-python-client

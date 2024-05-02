@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mmdiary"
+version = "0.1.0"
+description = "Multimedia Diary Tools"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["audio", "video", "multimedia", "tool", "youtube", "notion", "transcriber", "uploader"]
+
+authors = [
+	{ name = "Alexander Bushnev", email = "Alexander@Bushnev.pro" }
+]
+
+maintainers = [
+	{ name = "Alexander Bushnev", email = "Alexander@Bushnev.pro" }
+]
+
+classifiers = [
+	#   3 - Alpha
+  	#   4 - Beta
+  	#   5 - Production/Stable
+  	"Development Status :: 3 - Alpha",
+
+	"Operating System :: POSIX :: Linux",
+	"Operating System :: MacOS",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.6",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+	"Topic :: Multimedia :: Video",
+	"Topic :: Utilities",
+]
+
+dependencies = [
+	"notion_client",
+	"notion",
+	"progressbar2",
+	"python-telegram-bot",
+	"openai-whisper",
+	"photo_importer",
+	"mixvideoconcat",
+	"google-auth-oauthlib",
+	"google-api-python-client",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sashacmc/mmdiary"
+"Bug Reports" = "https://github.com/sashacmc/mmdiary/issues"
+"Source" = "https://github.com/sashacmc/mmdiary/"
+"Changelog" = "https://github.com/sashacmc/mmdiary/blob/master/CHANGELOG.md"
+
+[project.scripts]
+mmdiary-notion-upload = "mmdiary.notion.uploader:main"
+mmdiary-notion-cleanup = "mmdiary.notion.cleanup:main"
+mmdiary-notion-cachedb = "mmdiary.notion.cachedb:main"
+mmdiary-telegrambot = "mmdiary.telegrambot.telegrambot_service:main"
+mmdiary-transcriber-run = "mmdiary.transcriber.transcriber:main"
+mmdiary-transcriber-verify = "mmdiary.transcriber.verifier:main"
+mmdiary-transcriber-search = "mmdiary.transcriber.searcher:main"
+mmdiary-video-concat = "mmdiary.video.processor:main"
+mmdiary-video-upload = "mmdiary.video.uploader:main"

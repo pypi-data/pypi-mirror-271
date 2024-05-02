@@ -1,0 +1,57 @@
+Metadata-Version: 2.3
+Name: git-interface
+Version: 0.10.0
+Summary: Use the git cli from Python
+Project-URL: Source Code, https://github.com/enchant97/python-git-interface
+Project-URL: Change Log, https://github.com/enchant97/python-git-interface/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://python-git-interface.docs.enchantedcode.co.uk/
+Author-email: Leo Spratt <contact@enchantedcode.co.uk>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: git,scm
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Python: >=3.10
+Requires-Dist: aiofiles>=23.2.1
+Provides-Extra: quart
+Requires-Dist: async-timeout>=4.0.2; extra == 'quart'
+Requires-Dist: quart>=0.16.3; extra == 'quart'
+Provides-Extra: ssh
+Requires-Dist: asyncssh>=2.9.0; extra == 'ssh'
+Description-Content-Type: text/markdown
+
+# Git Interface
+![PyPI](https://img.shields.io/pypi/v/git-interface)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/git-interface)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/git-interface)
+![GitHub](https://img.shields.io/github/license/enchant97/python-git-interface)
+![GitHub issues](https://img.shields.io/github/issues/enchant97/python-git-interface)
+![GitHub last commit](https://img.shields.io/github/last-commit/enchant97/python-git-interface)
+
+Use the git cli from Python.
+
+> This project currently is not heavily tested and not fully feature complete
+
+## Requirements
+- Git (version 2.30)
+
+## Example Of Use
+
+```python
+import asyncio
+from git_interface.branch import get_branches
+
+head, other_branches = asyncio.run(get_branches("my_git_repo.git"))
+
+print("HEAD = ", head)
+print("OTHER", other_branches)
+```

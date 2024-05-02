@@ -1,0 +1,2 @@
+[console_scripts]
+pycody = codigofacilito_vc.__main__:main

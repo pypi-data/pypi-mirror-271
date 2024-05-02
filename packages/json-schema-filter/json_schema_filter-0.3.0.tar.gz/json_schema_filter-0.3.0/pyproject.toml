@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "json-schema-filter"
+version = "0.3.0"
+description = "A library that uses json schema to filter the objects"
+authors = ["Bharat Sinha <bharat.sinha.2307@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Bharat23/json-schema-filter"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jsonschema = "^4.20.0"
+pyyaml = "^6.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+black = "^23.12.1"
+isort = "^5.13.2"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

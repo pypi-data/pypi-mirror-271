@@ -1,0 +1,436 @@
+{
+  "$defs": {
+    "CSharpTarget": {
+      "properties": {
+        "language": {
+          "const": "csharp",
+          "enum": [
+            "csharp"
+          ],
+          "title": "Language",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "propertyFormat": {
+          "anyOf": [
+            {
+              "enum": [
+                "snake",
+                "camel",
+                "pascal"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Propertyformat"
+        },
+        "removeRootSchema": {
+          "default": true,
+          "title": "Removerootschema",
+          "type": "boolean"
+        },
+        "typingBackend": {
+          "const": "System.Text.Json",
+          "default": "System.Text.Json",
+          "enum": [
+            "System.Text.Json"
+          ],
+          "title": "Typingbackend",
+          "type": "string"
+        },
+        "namespace": {
+          "title": "Namespace",
+          "type": "string"
+        }
+      },
+      "required": [
+        "language",
+        "path",
+        "namespace"
+      ],
+      "title": "CSharpTarget",
+      "type": "object"
+    },
+    "GoTarget": {
+      "properties": {
+        "language": {
+          "const": "go",
+          "enum": [
+            "go"
+          ],
+          "title": "Language",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "propertyFormat": {
+          "anyOf": [
+            {
+              "enum": [
+                "snake",
+                "camel",
+                "pascal"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Propertyformat"
+        },
+        "removeRootSchema": {
+          "default": true,
+          "title": "Removerootschema",
+          "type": "boolean"
+        },
+        "package": {
+          "title": "Package",
+          "type": "string"
+        }
+      },
+      "required": [
+        "language",
+        "path",
+        "package"
+      ],
+      "title": "GoTarget",
+      "type": "object"
+    },
+    "JavaTarget": {
+      "properties": {
+        "language": {
+          "const": "java",
+          "enum": [
+            "java"
+          ],
+          "title": "Language",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "propertyFormat": {
+          "anyOf": [
+            {
+              "enum": [
+                "snake",
+                "camel",
+                "pascal"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Propertyformat"
+        },
+        "removeRootSchema": {
+          "default": true,
+          "title": "Removerootschema",
+          "type": "boolean"
+        },
+        "typingBackend": {
+          "const": "jackson",
+          "default": "jackson",
+          "enum": [
+            "jackson"
+          ],
+          "title": "Typingbackend",
+          "type": "string"
+        },
+        "package": {
+          "title": "Package",
+          "type": "string"
+        }
+      },
+      "required": [
+        "language",
+        "path",
+        "package"
+      ],
+      "title": "JavaTarget",
+      "type": "object"
+    },
+    "PythonTarget": {
+      "properties": {
+        "language": {
+          "const": "python",
+          "enum": [
+            "python"
+          ],
+          "title": "Language",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "propertyFormat": {
+          "anyOf": [
+            {
+              "enum": [
+                "snake",
+                "camel",
+                "pascal"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Propertyformat"
+        },
+        "removeRootSchema": {
+          "default": true,
+          "title": "Removerootschema",
+          "type": "boolean"
+        },
+        "typingBackend": {
+          "default": "dataclass",
+          "enum": [
+            "pydantic",
+            "pydantic-dataclass",
+            "dataclass",
+            "typed-dictionary"
+          ],
+          "title": "Typingbackend",
+          "type": "string"
+        },
+        "subscriptable": {
+          "default": false,
+          "title": "Subscriptable",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "language",
+        "path"
+      ],
+      "title": "PythonTarget",
+      "type": "object"
+    },
+    "RubyTarget": {
+      "properties": {
+        "language": {
+          "const": "ruby",
+          "enum": [
+            "ruby"
+          ],
+          "title": "Language",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "propertyFormat": {
+          "anyOf": [
+            {
+              "enum": [
+                "snake",
+                "camel",
+                "pascal"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Propertyformat"
+        },
+        "removeRootSchema": {
+          "default": true,
+          "title": "Removerootschema",
+          "type": "boolean"
+        },
+        "module": {
+          "title": "Module",
+          "type": "string"
+        }
+      },
+      "required": [
+        "language",
+        "path",
+        "module"
+      ],
+      "title": "RubyTarget",
+      "type": "object"
+    },
+    "RustTarget": {
+      "properties": {
+        "language": {
+          "const": "rust",
+          "enum": [
+            "rust"
+          ],
+          "title": "Language",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "propertyFormat": {
+          "anyOf": [
+            {
+              "enum": [
+                "snake",
+                "camel",
+                "pascal"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Propertyformat"
+        },
+        "removeRootSchema": {
+          "default": true,
+          "title": "Removerootschema",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "language",
+        "path"
+      ],
+      "title": "RustTarget",
+      "type": "object"
+    },
+    "TypescriptTarget": {
+      "properties": {
+        "language": {
+          "const": "typescript",
+          "enum": [
+            "typescript"
+          ],
+          "title": "Language",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "propertyFormat": {
+          "anyOf": [
+            {
+              "enum": [
+                "snake",
+                "camel",
+                "pascal"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Propertyformat"
+        },
+        "removeRootSchema": {
+          "default": true,
+          "title": "Removerootschema",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "language",
+        "path"
+      ],
+      "title": "TypescriptTarget",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "include": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Include",
+      "type": "array"
+    },
+    "references": {
+      "items": {
+        "type": "string"
+      },
+      "title": "References",
+      "type": "array"
+    },
+    "targets": {
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/PythonTarget"
+          },
+          {
+            "$ref": "#/$defs/TypescriptTarget"
+          },
+          {
+            "$ref": "#/$defs/GoTarget"
+          },
+          {
+            "$ref": "#/$defs/JavaTarget"
+          },
+          {
+            "$ref": "#/$defs/CSharpTarget"
+          },
+          {
+            "$ref": "#/$defs/RustTarget"
+          },
+          {
+            "$ref": "#/$defs/RubyTarget"
+          }
+        ]
+      },
+      "title": "Targets",
+      "type": "array"
+    },
+    "targetProcessingStrategy": {
+      "default": "parallel",
+      "enum": [
+        "parallel",
+        "serial"
+      ],
+      "title": "Targetprocessingstrategy",
+      "type": "string"
+    },
+    "jtdBundlePath": {
+      "default": "gen/schema.jtd.json",
+      "title": "Jtdbundlepath",
+      "type": "string"
+    },
+    "duplicate": {
+      "default": "error",
+      "enum": [
+        "error",
+        "allow"
+      ],
+      "title": "Duplicate",
+      "type": "string"
+    }
+  },
+  "title": "ProjectConfig",
+  "type": "object"
+}

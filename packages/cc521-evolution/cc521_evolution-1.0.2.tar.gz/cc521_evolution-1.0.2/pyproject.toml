@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cc521-evolution"
+version = "1.0.2"
+description = "Collection of utilities to develop evolutionary algorithms"
+authors = ["Gustavo Lozano <glozanoac@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "evolution", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tqdm = "^4.66.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+

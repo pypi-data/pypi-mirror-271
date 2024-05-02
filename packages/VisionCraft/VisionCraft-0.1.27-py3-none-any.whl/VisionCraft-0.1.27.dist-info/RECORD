@@ -1,0 +1,17 @@
+VisionCraft/__init__.py,sha256=H0JTYfqWFf7O4kM8QvdqQ5e8WBA_p9G6ufRUfvoluPs,25
+VisionCraft/craft/__init__.py,sha256=0utkEKje6KElKlNvu3lXoqrw8rK-7zMkjMHomsKErAo,312
+VisionCraft/help/__init__.py,sha256=HkX65fbRV7NA6LsxmnEYfGZB_J-uzbbrMxJv7G3E6DQ,30
+VisionCraft/help/exp.py,sha256=OXdtyb_wrv3sF_jOGiAn_TsRq5MH1LdzEZHr-6f4x8o,28199
+VisionCraft/help/Experiment/__init__.py,sha256=RCZ0S8ECTkxultjCPnMi2y3kwXBf4_l7EGmeVD4NWM4,41
+VisionCraft/vision/__init__.py,sha256=TSWZw1yhBv-YjPjcp9Mgz9spHU3R1J95cRSZh9cbvWo,777
+VisionCraft/vision/filter.py,sha256=1KQx3EOLzvk6eKxNBSxXqkVFiTt9ySWbCK8pHjrEoBw,9771
+VisionCraft/vision/huffman.py,sha256=H0p5UDxAdsQy_OnPsTBDyb1A2D2a4B_66mPL6rlQqKQ,2117
+VisionCraft/vision/processing.py,sha256=JubuN8Ncve1c9oCe3YH7s35isHj3-tkjd_vNxda_ui4,6836
+VisionCraft/vision/segmentation.py,sha256=gx1k5_zrVevNkw40pM_oXBy63tGCBrhG3UY9PKZ_z8w,7996
+VisionCraft/vision/transform.py,sha256=krGIML2qefJFzbOYgmg7LbwGScAlC4f32jGDtHlNZfc,9901
+VisionCraft/vision/utils.py,sha256=QnTpZUKf_Ks3Dd8kzoU6BXlKYoRF5pDga0OSc_fi56E,9303
+VisionCraft-0.1.27.dist-info/LICENSE,sha256=Uk4Rg9eX3jqiY4KUK30T2mQqTRJu5ZNAQ1bMMK_y5Ew,1090
+VisionCraft-0.1.27.dist-info/METADATA,sha256=BFkCjENlkcFF7qADRrnlXsWlysHEM2zAgDAwXtCfg9I,17938
+VisionCraft-0.1.27.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+VisionCraft-0.1.27.dist-info/top_level.txt,sha256=XDY4J7x40aV-fClnDS4NmWTd6Puga8-M0_b1t_d3tPg,12
+VisionCraft-0.1.27.dist-info/RECORD,,

@@ -1,0 +1,16 @@
+agxclick/__init__.py,sha256=H470pGRjt18YTnX9c77Wyubr4qn1e1RXUtwio9hMQfw,649
+agxclick/agx_application.py,sha256=dLw12WZDPk94oBlIBaSOm-6XjSmR0Ow_fYUexZM0EyQ,2450
+agxclick/application_step_listener.py,sha256=E75RfZ_qpOb6fEGGRuwbacmVXuRXCQ1_ENhmt_EsY2k,264
+agxclick/brick_reader.py,sha256=sZmkUZPikAbpg61eLI5dfG7EeKlv0ops7urZjI3SoDk,1647
+agxclick/brick_utils.py,sha256=B4rELZvJ3pAwILO_Yod2_6gqOaYdS8KZDvV0J6XkMRY,2379
+agxclick/click_application.py,sha256=brRBvg3x-LKy2yA5pjMENU13FU9tNYEppp5YPmPY114,10592
+agxclick/click_event_listener.py,sha256=wgTdNdb2254fSsE1DwzX2v1L6bytf99wtjLt2HaP67E,9767
+agxclick/click_robot.py,sha256=jMErGr5ncySUtXN15uiPHwY1zx4_NJ6O4_t1TWTgRcI,10192
+agxclick/graphics_throttler.py,sha256=HFbklpghRbJnI-CDGKkhAlz0Z9-GBy0zY15N6QI5u-s,736
+agxclick/keyboard_listener.py,sha256=E52R-AG3hP8KGXiRZ5ioOsY2cpEOHmUepNIWNWuy02U,1319
+agxclick/message_factory.py,sha256=xMUBAtVHW2cVk9qksUjZD2SVf4zHcDfqzaArsipRFKE,10274
+agxclick/reset_batch_listener.py,sha256=tpaj_DzjaUFP1hSDyA4pEZhek7MpxWHio6YFH2fHf3U,1230
+agxclick/wallclock.py,sha256=bz3TT5SbQrLY_-a9Uy3DceW5aKu6f72EAw6KfHHIL5M,348
+agxclick-0.3.2.dist-info/METADATA,sha256=O7O3LbGXH9t7OimGip3E6JiZ2P3cPaYHkCAx01cWPB0,2233
+agxclick-0.3.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+agxclick-0.3.2.dist-info/RECORD,,

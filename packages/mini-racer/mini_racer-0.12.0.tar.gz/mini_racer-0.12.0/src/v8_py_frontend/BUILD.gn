@@ -1,0 +1,40 @@
+import("../../gni/v8.gni")
+
+v8_shared_library("mini_racer") {
+  output_name = "mini_racer"
+  sources = [
+    "exports.cc",
+    "binary_value.h",
+    "binary_value.cc",
+    "cancelable_task_runner.h",
+    "cancelable_task_runner.cc",
+    "code_evaluator.h",
+    "code_evaluator.cc",
+    "context.h",
+    "context.cc",
+    "context_factory.h",
+    "context_factory.cc",
+    "context_holder.h",
+    "context_holder.cc",
+    "gsl_stub.h",
+    "heap_reporter.h",
+    "heap_reporter.cc",
+    "id_maker.h",
+    "isolate_holder.h",
+    "isolate_holder.cc",
+    "isolate_manager.h",
+    "isolate_manager.cc",
+    "isolate_memory_monitor.h",
+    "isolate_memory_monitor.cc",
+    "object_manipulator.h",
+    "object_manipulator.cc",
+    "js_callback_maker.h",
+    "js_callback_maker.cc",
+  ]
+  deps = [
+    "//build/config:shared_library_deps",
+    "//:v8",
+    "//:v8_libbase",
+    "//:v8_libplatform",
+  ]
+}

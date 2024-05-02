@@ -1,0 +1,3 @@
+[console_scripts]
+texase=texase.app:typer_app
+

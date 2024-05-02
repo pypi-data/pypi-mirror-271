@@ -1,0 +1,6 @@
+COPYING
+setup.py
+pymdownx_logic_superfence.egg-info/PKG-INFO
+pymdownx_logic_superfence.egg-info/SOURCES.txt
+pymdownx_logic_superfence.egg-info/dependency_links.txt
+pymdownx_logic_superfence.egg-info/top_level.txt

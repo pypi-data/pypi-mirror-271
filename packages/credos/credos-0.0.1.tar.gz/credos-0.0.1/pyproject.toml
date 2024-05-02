@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "credos"
+version = "0.0.1"
+authors = [
+  { name="k98kurz", email="k98kurz@gmail.com" },
+]
+description = "Conflict-free Replicated Document Store"
+readme = "readme.md"
+requires-python = ">=3.10"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: ISC License (ISCL)",
+  "Operating System :: OS Independent",
+  "Topic :: Database",
+]
+dependencies = [
+  "packify >= 0.2.2",
+  "sqloquent >= 0.3.4",
+  "tapescript >= 0.4.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/k98kurz/credos-python"
+"Bug Tracker" = "https://github.com/k98kurz/credos-python/issues"

@@ -1,0 +1,3 @@
+[console_scripts]
+source-mailgun=source_mailgun.run:run
+

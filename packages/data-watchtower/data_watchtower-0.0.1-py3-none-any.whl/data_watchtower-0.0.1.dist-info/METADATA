@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: data_watchtower
+Version: 0.0.1
+Summary: Data quality inspection tool. Identify issues before your CTO detects them!
+Home-page: https://github.com/acracker/data_watchtower
+Author: acracker
+Author-email: acracker@163.com
+License: MIT
+License-File: LICENSE
+

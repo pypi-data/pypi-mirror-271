@@ -1,0 +1,16 @@
+authlib
+httpx
+prompt_toolkit
+python-dateutil
+selenium
+websockets
+
+[dev]
+asynctest
+colorama
+coverage
+nose
+pytest
+pytz
+sphinx_rtd_theme
+twine

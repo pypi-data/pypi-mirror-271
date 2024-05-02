@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: flask_labtest
+Version: 1.0.0
+Summary: A simple package that prints "Hello, World!"
+Author: Abhisht Chouhan
+Author-email: abhishtchouhan@gmail.com
+Requires-Python: >=3.6

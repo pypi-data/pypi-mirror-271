@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+onessds.egg-info/PKG-INFO
+onessds.egg-info/SOURCES.txt
+onessds.egg-info/dependency_links.txt
+onessds.egg-info/requires.txt
+onessds.egg-info/top_level.txt
+package/__init__.py
+package/example.py

@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: sgkit
+Version: 0.8.0
+Summary: Statistical genetics toolkit
+Home-page: https://github.com/sgkit-dev/sgkit
+Author: sgkit Developers
+Author-email: project@sgkit.dev
+License: Apache
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: dask[array] >=2022.01.0
+Requires-Dist: distributed >=2022.01.0
+Requires-Dist: dask-ml
+Requires-Dist: scipy
+Requires-Dist: zarr !=2.11.0,!=2.11.1,!=2.11.2,>=2.10.0
+Requires-Dist: numba
+Requires-Dist: typing-extensions
+Requires-Dist: fsspec !=2021.6.*
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: setuptools >=41.2
+Provides-Extra: bgen
+Requires-Dist: rechunker ; extra == 'bgen'
+Requires-Dist: cbgen ; (platform_system != "Windows") and extra == 'bgen'
+Requires-Dist: cbgen ==1.0.1 ; (platform_system == "Windows") and extra == 'bgen'
+Provides-Extra: plink
+Requires-Dist: partd ; extra == 'plink'
+Requires-Dist: bed-reader ; extra == 'plink'
+Provides-Extra: vcf
+Requires-Dist: aiohttp ; extra == 'vcf'
+Requires-Dist: cyvcf2 ; extra == 'vcf'
+Requires-Dist: requests ; extra == 'vcf'
+Requires-Dist: yarl ; extra == 'vcf'
+
+
+**sgkit** is an open source project for analyzing and manipulating genetic
+variation data.
+

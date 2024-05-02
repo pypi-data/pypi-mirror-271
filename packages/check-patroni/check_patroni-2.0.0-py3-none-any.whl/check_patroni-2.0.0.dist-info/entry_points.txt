@@ -1,0 +1,2 @@
+[console_scripts]
+check_patroni = check_patroni.cli:main

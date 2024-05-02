@@ -1,0 +1,44 @@
+.caret-spacer {
+  width: 14px;
+  color: var(--gray-five);
+}
+
+.item-row {
+  align-items: center;
+  background-color: var(--dark-three);
+  color: var(--gray-two);
+  display: flex;
+  font-size: 14px;
+  font-weight: 400px;
+  gap: 11px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 12px 11px 12px 20px;
+}
+
+.color-swatch {
+  height: 16px;
+  width: 12px;
+  margin-right: 5px;
+}
+
+/* adds spacing specific to child rows */
+.color-swatch.child {
+  margin-right: 27px;
+}
+
+/* makes sure border in consistent in different checkbox states*/
+.item-row .ant-checkbox-inner {
+  border-radius: 0px;
+  border: 1px solid var(--gray-five);
+}
+
+/* below rules color the check inside the checkboxes */
+.item-row .ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: var(--dark-one);
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  background-color: var(--dark-one);
+  height: 2px;
+}

@@ -1,0 +1,21 @@
+.camera-controls-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.camera-controls-container .btn {
+    border: none;
+    color: var(--white-one);
+    background-color: var(--dark-one);
+}
+
+/* using id selectors to override antd styling
+without using !important tag */
+#reset-button:hover,
+#zoomin-button:hover,
+#zoomout-button:hover {
+    border: none;
+    color: var(--white-one);
+    background-color: var(--gray-one);
+}

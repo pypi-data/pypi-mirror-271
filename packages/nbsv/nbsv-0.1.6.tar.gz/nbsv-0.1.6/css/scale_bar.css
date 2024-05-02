@@ -1,0 +1,8 @@
+.scale-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: var(--gray-three);
+  margin-bottom: 8px;
+  text-align: center;
+}

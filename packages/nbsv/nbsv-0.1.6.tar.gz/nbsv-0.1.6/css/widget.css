@@ -1,0 +1,12 @@
+@import url('colors.css');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;600&display=swap");
+
+.custom-widget {
+  background-color: var(--black-one);
+  font-family: 'Overpass';
+  padding: 0px 2px;
+  color: var(--black-one);
+  height: 300px;
+  height: 100%;
+  width: 100%;
+}

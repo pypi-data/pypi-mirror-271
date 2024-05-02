@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.viewer-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.scalebar-controls {
+  align-items: flex-end;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+}

@@ -1,0 +1,45 @@
+.sp-container {
+  background-color: var(--dark-two);
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: var(--dark-four) var(--dark-three); /* thumb and track color */
+  scrollbar-width: thin;
+}
+
+.sp-container::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+.sp-container::-webkit-scrollbar-track {
+  background: var(--dark-three);
+}
+
+.sp-container::-webkit-scrollbar-thumb {
+  background: var(--dark-four);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.sp-container::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-one);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.sp-container .agent-title {
+  background-color: var(--dark-one);
+  color: var(--gray-two);
+  margin-right: 5px;
+  padding: 12px 0px 16px 21px;
+}
+
+.item-row.hide-all {
+  padding-left: 102px;
+}

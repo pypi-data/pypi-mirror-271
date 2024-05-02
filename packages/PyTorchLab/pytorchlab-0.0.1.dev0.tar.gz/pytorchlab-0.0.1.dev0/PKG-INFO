@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: PyTorchLab
+Version: 0.0.1.dev0
+Summary: Realize code in AI field with PyTorch and Lightning.
+Author-Email: TaoChenyue <chenyue.Tao@qq.com>
+License: GPLv3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Project-URL: Repository, https://github.com/TaoChenyue/PyTorchLab
+Requires-Python: <=3.11,>=3.10
+Requires-Dist: lightning[pytorch-extra]>=2.1.4
+Requires-Dist: torch>=1.12
+Requires-Dist: torchvision>=0.13
+Requires-Dist: torchaudio>=0.12
+Requires-Dist: torchmetrics>=0.7.0
+Requires-Dist: tensorboard>=2.15.1
+Requires-Dist: opencv-python>=4.9.0.80
+Requires-Dist: opencv-python-headless>=4.9.0.80
+Description-Content-Type: text/markdown
+
+<h3 align="center">PyTorchLab</h3>
+
+<div align="center">
+
+![GitHub issues](https://img.shields.io/github/issues/TaoChenyue/PyTorchLab)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/TaoChenyue/PyTorchLab)
+[![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](/LICENSE)
+![PyPI - Status](https://img.shields.io/pypi/status/pytorchlab)
+</div>
+
+---
+
+<p align="center"> Realize some AI code with PyTorch and Lightning.
+    <br> 
+</p>
+
+## 📦 Install
+check supported version of [pytorch](https://pytorch.org/get-started/previous-versions/) and [lightning](https://lightning.ai/docs/pytorch/stable/versioning.html#pytorch-support)
+```
+git clone https://github.com/TaoChenyue/PyTorchLab.git
+cd PyTorchLab
+pip install -e .
+```
+
+# Datasets
+Some datasets can be downloaded from [BaiduNetDisk(Code: mqvi)](https://pan.baidu.com/s/1GFrlHWzVxKI8HoCbWTUfGw?pwd=mqvi).

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tests/test_wirelesswizard.py
+wirelesswizard/__init__.py
+wirelesswizard/wirelesswizard.py
+wirelesswizard.egg-info/PKG-INFO
+wirelesswizard.egg-info/SOURCES.txt
+wirelesswizard.egg-info/dependency_links.txt
+wirelesswizard.egg-info/requires.txt
+wirelesswizard.egg-info/top_level.txt

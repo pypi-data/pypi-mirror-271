@@ -1,0 +1,13 @@
+pthugefileviewer/__init__.py,sha256=1PXBnVUbG6tQbKL6LydcK8hn9vSobAx7QfIA363E7n8,354
+pthugefileviewer/hugefilevieweruicontrol.py,sha256=Hto-Hw5Q6DRmcW5GWCjq2khXqKJg-XaDYTt3r6pgvJ0,8620
+pthugefileviewer/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pthugefileviewer-0.4.1.data/data/share/doc/python-pthugefileviewer/AUTHORS,sha256=8hDmqHd1E3IyuYsYeY7rSZfj8mX0zJmpNlF-_Vrw4Bo,38
+pthugefileviewer-0.4.1.data/data/share/doc/python-pthugefileviewer/LICENSE,sha256=6lW00We6hE7v3IOWcxXExVad8wNyTcgDgxs3OtlEHdc,1076
+pthugefileviewer-0.4.1.data/data/share/doc/python-pthugefileviewer/README.md,sha256=bZlmwr4kgBQAF1TvYVxWXhfOvZm9-788HlFzHXfLqq0,2258
+pthugefileviewer-0.4.1.data/scripts/hfv-regexbuild,sha256=N9GNUtWfwqdKRyAgycMWP1RQApMivIocGO-hCNjRxC0,7972
+pthugefileviewer-0.4.1.data/scripts/hfv-view,sha256=xT-jsc3ntwXqheMlRt_wiUF4G_TzbkNi0h26_gkOQvU,1881
+pthugefileviewer-0.4.1.dist-info/LICENSE,sha256=6lW00We6hE7v3IOWcxXExVad8wNyTcgDgxs3OtlEHdc,1076
+pthugefileviewer-0.4.1.dist-info/METADATA,sha256=K7obgjyAvCL1zDD2iUg7wRfCkZ95b-rrcb1i84SYtZA,2951
+pthugefileviewer-0.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pthugefileviewer-0.4.1.dist-info/top_level.txt,sha256=ekCl6mDF1X6NMMDil1JAjM7RkFsx3lVn6s-QLkD9-Y0,17
+pthugefileviewer-0.4.1.dist-info/RECORD,,

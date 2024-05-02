@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gitty_py
+Version: 0.1.0
+Summary: Workshop of python with giuthub actions
+Author-email: Deepika <dejain4@gmail.com>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: ruff
+Requires-Dist: pre-commit
+
+# gitty-py
+Github action workflows for Flask Application
+

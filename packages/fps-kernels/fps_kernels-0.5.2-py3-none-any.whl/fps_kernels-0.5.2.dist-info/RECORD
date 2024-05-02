@@ -1,0 +1,17 @@
+fps_kernels/__init__.py,sha256=isJrmDBLRag7Zc2UK9ZovWGOv7ji1Oh-zJtJMNJFkXw,22
+fps_kernels/main.py,sha256=QGqpP_tpWlX9onfSVmaVJ8oQzh5QdhPTKo2YVnMZx1c,1892
+fps_kernels/routes.py,sha256=FliFS3n6yd6eoSrTZlh4FqnMv8RWCbGq4ITpYa_yi0Q,14142
+fps_kernels/kernel_driver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fps_kernels/kernel_driver/connect.py,sha256=D_zFa4AEt-LMaP7tkBpR0IrehgInyZ10N8NA5VupUbo,2987
+fps_kernels/kernel_driver/driver.py,sha256=9LaDES5PxUAp3_JjpIHqnlsl6h5PpLBiC2QDfNna_Ho,12519
+fps_kernels/kernel_driver/kernelspec.py,sha256=PArCQzJE-efFoUx7sCKFwF7Bqu9oFvwe9jKT-nxNlNs,1900
+fps_kernels/kernel_driver/message.py,sha256=tdhE2DI_lTC0TYHbg7udfGKjpz04lSnnBOrQ-jtpS34,4111
+fps_kernels/kernel_driver/paths.py,sha256=iz_GCblx20wrgTQGMsprt7do5mcvEcqbvxs9YU6-n6g,2916
+fps_kernels/kernel_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fps_kernels/kernel_server/message.py,sha256=Xb4E8kYweKluBSfKxIiX3ncpr61u5Dy_dC0FLZIzOaQ,2731
+fps_kernels/kernel_server/server.py,sha256=qJnD6-swmiUWjm4DR2Q8WZgSCbLsHjXImXqRdQv0xoI,11556
+fps_kernels-0.5.2.dist-info/METADATA,sha256=UKmLGSAuqbEPM8iS1slEZDqWRIQz62waP7tlnPrMpzU,608
+fps_kernels-0.5.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+fps_kernels-0.5.2.dist-info/entry_points.txt,sha256=-Oxb6srWKeDb5zim9qaeZcKzKZimmn6izCWL71zmSLI,133
+fps_kernels-0.5.2.dist-info/licenses/COPYING.md,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+fps_kernels-0.5.2.dist-info/RECORD,,

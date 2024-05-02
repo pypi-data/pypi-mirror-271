@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ppp/__init__.py
+ppp/data/ppp-gdp.csv
+pppfy/__init__.py
+pppfy/converter.py
+pppfy.egg-info/PKG-INFO
+pppfy.egg-info/SOURCES.txt
+pppfy.egg-info/dependency_links.txt
+pppfy.egg-info/top_level.txt

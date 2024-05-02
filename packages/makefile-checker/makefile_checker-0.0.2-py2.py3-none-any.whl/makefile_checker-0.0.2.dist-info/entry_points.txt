@@ -1,0 +1,3 @@
+[console_scripts]
+check-makefile=makefile_checker.check:check
+

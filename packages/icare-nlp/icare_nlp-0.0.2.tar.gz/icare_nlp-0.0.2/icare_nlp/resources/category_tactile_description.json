@@ -1,0 +1,482 @@
+[
+  {
+    "index": 0,
+    "category": "person",
+    "cate_expressions": "person, 人, 人",
+    "tactile": "一個人嘅結構多變，通常直立，外觀柔軟。"
+  },
+  {
+    "index": 1,
+    "category": "bicycle",
+    "cate_expressions": "bicycle, 自行车, 單車",
+    "tactile": "自行車有一個金屬架構，配有兩個輪子，手感堅硬光滑。"
+  },
+  {
+    "index": 2,
+    "category": "car",
+    "cate_expressions": "car, 汽车, 車",
+    "tactile": "汽車係一個大型堅硬物件，外層係光滑嘅金屬，並配有滾動輪子。"
+  },
+  {
+    "index": 3,
+    "category": "motorcycle",
+    "cate_expressions": "motorcycle, 摩托车, 電單車",
+    "tactile": "摩托車有一個堅硬嘅金屬框架，配有兩個橡膠輪胎和多個光滑嘅組件。"
+  },
+  {
+    "index": 4,
+    "category": "airplane",
+    "cate_expressions": "airplane, 飞机, 飛機",
+    "tactile": "飛機很大，主要係金屬製，外觀光滑堅硬，有寬大嘅翼。"
+  },
+  {
+    "index": 5,
+    "category": "bus",
+    "cate_expressions": "bus, 公交车, 巴士",
+    "tactile": "巴士係一個大型嘅矩形車輛，表面係光滑嘅堅硬金屬。"
+  },
+  {
+    "index": 6,
+    "category": "train",
+    "cate_expressions": "train, 火车, 火車",
+    "tactile": "火車由相連嘅車廂組成，長而堅硬，表面係光滑嘅金屬。"
+  },
+  {
+    "index": 7,
+    "category": "truck",
+    "cate_expressions": "truck, 卡车, 貨車",
+    "tactile": "卡車有一個大型堅硬嘅金屬車身，後部通常有一個矩形嘅貨物區。"
+  },
+  {
+    "index": 8,
+    "category": "boat",
+    "cate_expressions": "boat, 船, 船",
+    "tactile": "船通常係光滑而堅硬嘅，大小極為不同，外層防水。"
+  },
+  {
+    "index": 9,
+    "category": "traffic light",
+    "cate_expressions": "traffic light, 交通灯, 紅綠燈",
+    "tactile": "交通燈係一個小型嘅豎立桿，表面堅硬光滑，並有彩色燈罩。"
+  },
+  {
+    "index": 10,
+    "category": "fire hydrant",
+    "cate_expressions": "fire hydrant, 消防栓, 消防喉",
+    "tactile": "消防栓小而矮，質感堅硬，金屬質感略顯粗糙。"
+  },
+  {
+    "index": 11,
+    "category": "stop sign",
+    "cate_expressions": "stop sign, 停车标志, 停車標誌",
+    "tactile": "停車標誌係一個大型嘅八角形金屬板，裝在桿上，質感光滑堅硬。"
+  },
+  {
+    "index": 12,
+    "category": "parking meter",
+    "cate_expressions": "parking meter, 停车计时器, 泊車錶",
+    "tactile": "停車錶係一個小型嘅金屬柱，堅硬而圓柱形，質感光滑。"
+  },
+  {
+    "index": 13,
+    "category": "bench",
+    "cate_expressions": "bench, 长椅, 長凳",
+    "tactile": "長椅通常長而堅硬，由木頭或金屬製成，表面光滑或略帶粗糙。"
+  },
+  {
+    "index": 14,
+    "category": "bird",
+    "cate_expressions": "bird, 鸟, 鳥",
+    "tactile": "鳥類體型小，有柔軟嘅羽毛和堅硬嘅喙。"
+  },
+  {
+    "index": 15,
+    "category": "cat",
+    "cate_expressions": "cat, 猫, 貓",
+    "tactile": "貓嘅體型從小到中等，全身覆蓋著柔軟嘅毛發，觸感溫和。"
+  },
+  {
+    "index": 16,
+    "category": "dog",
+    "cate_expressions": "dog, 狗, 狗",
+    "tactile": "狗嘅大小各異，通常覆有柔軟嘅毛皮和濕潤嘅鼻子。"
+  },
+  {
+    "index": 17,
+    "category": "horse",
+    "cate_expressions": "horse, 马, 馬",
+    "tactile": "馬體型大，肌肉發達，外層係光滑柔軟嘅皮毛，並有長鬃毛。"
+  },
+  {
+    "index": 18,
+    "category": "sheep",
+    "cate_expressions": "sheep, 羊, 羊",
+    "tactile": "綿羊體型中等，毛茸茸嘅，有柔軟嘅羊毛。"
+  },
+  {
+    "index": 19,
+    "category": "cow",
+    "cate_expressions": "cow, 牛, 牛",
+    "tactile": "牛體型大而結實，有柔軟厚實嘅皮膚。"
+  },
+  {
+    "index": 20,
+    "category": "elephant",
+    "cate_expressions": "elephant, 大象, 大象",
+    "tactile": "大象體型非常大，皮膚粗糙堅硬，有大而堅固嘅耳朵。"
+  },
+  {
+    "index": 21,
+    "category": "bear",
+    "cate_expressions": "bear, 熊, 熊",
+    "tactile": "熊體型大而笨重，有厚厚嘅柔軟皮毛。"
+  },
+  {
+    "index": 22,
+    "category": "zebra",
+    "cate_expressions": "zebra, 斑马, 斑馬",
+    "tactile": "斑馬體型與馬相似，外層係柔軟嘅皮毛，有獨特嘅條紋圖案。"
+  },
+  {
+    "index": 23,
+    "category": "giraffe",
+    "cate_expressions": "giraffe, 长颈鹿, 長頸鹿",
+    "tactile": "長頸鹿非常高大，有長頸，覆蓋在柔軟嘅皮毛上，有獨特嘅圖案。"
+  },
+  {
+    "index": 24,
+    "category": "backpack",
+    "cate_expressions": "backpack, 背包, 書包",
+    "tactile": "背包通常係中等大小，根據材料可能係軟嘅或硬嘅，有拉鍊和口袋。"
+  },
+  {
+    "index": 25,
+    "category": "umbrella",
+    "cate_expressions": "umbrella, 伞, 雨傘",
+    "tactile": "傘由金屬框架和光滑防水嘅布料製成。"
+  },
+  {
+    "index": 26,
+    "category": "handbag",
+    "cate_expressions": "handbag, 手提包, 手袋",
+    "tactile": "手袋嘅大小各異，由軟皮革至硬合成材料製成。"
+  },
+  {
+    "index": 27,
+    "category": "tie",
+    "cate_expressions": "tie, 领带, 領呔",
+    "tactile": "領帶長而瘦，由柔軟嘅布料製成，質感光滑。"
+  },
+  {
+    "index": 28,
+    "category": "suitcase",
+    "cate_expressions": "suitcase, 行李箱, 行李箱",
+    "tactile": "手提箱通常係堅硬嘅，矩形，表面光滑，有把手。"
+  },
+  {
+    "index": 29,
+    "category": "frisbee",
+    "cate_expressions": "frisbee, 飞盘, 飛碟",
+    "tactile": "飛盤小而平，由堅硬嘅塑料製成，表面光滑。"
+  },
+  {
+    "index": 30,
+    "category": "skis",
+    "cate_expressions": "skis, 滑雪板, 滑雪板",
+    "tactile": "滑雪板長而窄，堅硬，表面光滑且滑溜。"
+  },
+  {
+    "index": 31,
+    "category": "snowboard",
+    "cate_expressions": "snowboard, 滑雪板, 單板滑雪",
+    "tactile": "單板滑雪板寬而平，堅硬，表面光滑且有光澤。"
+  },
+  {
+    "index": 32,
+    "category": "sports ball",
+    "cate_expressions": "sports ball, 运动球, 波",
+    "tactile": "運動球嘅大小和材料各異，通常係圓形，堅硬而光滑。"
+  },
+  {
+    "index": 33,
+    "category": "kite",
+    "cate_expressions": "kite, 风筝, 風箏",
+    "tactile": "風箏輕便，由薄布或紙張緊繃在框架上，並有尾巴。"
+  },
+  {
+    "index": 34,
+    "category": "baseball bat",
+    "cate_expressions": "baseball bat, 棒球棒, 棒球棒",
+    "tactile": "棒球棒長而圓柱形，堅硬，由木頭或金屬製成。"
+  },
+  {
+    "index": 35,
+    "category": "baseball glove",
+    "cate_expressions": "baseball glove, 棒球手套, 棒球手套",
+    "tactile": "棒球手套大小適中，由皮革製成，柔軟且有彈性，有獨特嘅氣味。"
+  },
+  {
+    "index": 36,
+    "category": "skateboard",
+    "cate_expressions": "skateboard, 滑板, 滑板",
+    "tactile": "滑板係一塊窄而平嘅板，有堅硬光滑嘅輪子。"
+  },
+  {
+    "index": 37,
+    "category": "surfboard",
+    "cate_expressions": "surfboard, 冲浪板, 沖浪板",
+    "tactile": "衝浪板長而平，輕便，表面光滑堅硬。"
+  },
+  {
+    "index": 38,
+    "category": "tennis racket",
+    "cate_expressions": "tennis racket, 网球拍, 網球拍",
+    "tactile": "網球拍有圓形嘅開口頭，用線繩串起，和長把手，堅硬且光滑。"
+  },
+  {
+    "index": 39,
+    "category": "bottle",
+    "cate_expressions": "bottle, 瓶子, 樽",
+    "tactile": "瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。"
+  },
+  {
+    "index": 40,
+    "category": "wine glass",
+    "cate_expressions": "wine glass, 酒杯, 酒杯",
+    "tactile": "紅酒杯脆弱，由薄玻璃製成，有莖。"
+  },
+  {
+    "index": 41,
+    "category": "cup",
+    "cate_expressions": "cup, 杯子, 杯",
+    "tactile": "杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。"
+  },
+  {
+    "index": 42,
+    "category": "fork",
+    "cate_expressions": "fork, 叉子, 叉",
+    "tactile": "叉子小，由金屬製成，有尖銳嘅叉子，堅硬且光滑。"
+  },
+  {
+    "index": 43,
+    "category": "knife",
+    "cate_expressions": "knife, 刀, 刀",
+    "tactile": "刀子有一個堅硬嘅、鋒利嘅金屬刀片，連接著一個光滑嘅手柄。"
+  },
+  {
+    "index": 44,
+    "category": "spoon",
+    "cate_expressions": "spoon, 勺子, 匙",
+    "tactile": "匙子小，頭部圓形凹陷，由光滑堅硬嘅金屬製成。"
+  },
+  {
+    "index": 45,
+    "category": "bowl",
+    "cate_expressions": "bowl, 碗, 碗",
+    "tactile": "碗寬而開口，由陶瓷或玻璃等堅硬材料製成。"
+  },
+  {
+    "index": 46,
+    "category": "banana",
+    "cate_expressions": "banana, 香蕉, 香蕉",
+    "tactile": "香蕉長且略呈弧形，外層柔軟，可撕開。"
+  },
+  {
+    "index": 47,
+    "category": "apple",
+    "cate_expressions": "apple, 苹果, 蘋果",
+    "tactile": "蘋果圓形，觸感堅實，表面光滑略帶蠟質。"
+  },
+  {
+    "index": 48,
+    "category": "sandwich",
+    "cate_expressions": "sandwich, 三明治, 三文治",
+    "tactile": "三文治大小各異，通常柔軟，有麵包、肉和蔬菜層。"
+  },
+  {
+    "index": 49,
+    "category": "orange",
+    "cate_expressions": "orange, 橙子, 橙",
+    "tactile": "橙子圓形，堅實，表面有質感，可剝皮。"
+  },
+  {
+    "index": 50,
+    "category": "broccoli",
+    "cate_expressions": "broccoli, 西兰花, 西蘭花",
+    "tactile": "西蘭花中等大小，莖部堅實，頂部粗糙似樹梢。"
+  },
+  {
+    "index": 51,
+    "category": "carrot",
+    "cate_expressions": "carrot, 胡萝卜, 蘿蔔",
+    "tactile": "胡蘿蔔長而窄，堅實，質地光滑且脆。"
+  },
+  {
+    "index": 52,
+    "category": "hot dog",
+    "cate_expressions": "hot dog, 热狗, 熱狗",
+    "tactile": "熱狗柔軟，外層係光滑略粗糙嘅麵包。"
+  },
+  {
+    "index": 53,
+    "category": "pizza",
+    "cate_expressions": "pizza, 比萨, 薄餅",
+    "tactile": "比薩通常係圓形，底部柔軟且有嚼勁，上面有各種質地嘅配料。"
+  },
+  {
+    "index": 54,
+    "category": "donut",
+    "cate_expressions": "donut, 甜甜圈, 甜甜圈",
+    "tactile": "甜甜圈柔軟而蓬鬆，通常係圓形，表面有光滑嘅糖衣。"
+  },
+  {
+    "index": 55,
+    "category": "cake",
+    "cate_expressions": "cake, 蛋糕, 蛋糕",
+    "tactile": "蛋糕通常柔軟，有層次嘅奶油和柔軟嘅底部。"
+  },
+  {
+    "index": 56,
+    "category": "chair",
+    "cate_expressions": "chair, 椅子, 椅",
+    "tactile": "椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。"
+  },
+  {
+    "index": 57,
+    "category": "couch",
+    "cate_expressions": "couch, 沙发, 梳化",
+    "tactile": "沙發大，表面係柔軟嘅坐墊，框架結實。"
+  },
+  {
+    "index": 58,
+    "category": "potted plant",
+    "cate_expressions": "potted plant, 盆栽, 盆栽",
+    "tactile": "盆栽由一個堅硬嘅盆和一個柔軟嘅、多葉嘅植物組成。"
+  },
+  {
+    "index": 59,
+    "category": "bed",
+    "cate_expressions": "bed, 床, 床",
+    "tactile": "床很大，有一個柔軟嘅床墊和通常係堅硬嘅框架。"
+  },
+  {
+    "index": 60,
+    "category": "dining table",
+    "cate_expressions": "dining table, 餐桌, 飯枱",
+    "tactile": "飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。"
+  },
+  {
+    "index": 61,
+    "category": "toilet",
+    "cate_expressions": "toilet, 厕所, 廁所",
+    "tactile": "廁所由堅硬嘅陶瓷製成，小型，表面光滑。"
+  },
+  {
+    "index": 62,
+    "category": "tv",
+    "cate_expressions": "tv, 电视, 電視",
+    "tactile": "電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。"
+  },
+  {
+    "index": 63,
+    "category": "laptop",
+    "cate_expressions": "laptop, 笔记本电脑, 手提電腦",
+    "tactile": "手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。"
+  },
+  {
+    "index": 64,
+    "category": "mouse",
+    "cate_expressions": "mouse, 鼠标, 滑鼠",
+    "tactile": "滑鼠小，塑料製，表面光滑且呈曲線形以適合手部休息。"
+  },
+  {
+    "index": 65,
+    "category": "remote",
+    "cate_expressions": "remote, 遥控器, 遙控",
+    "tactile": "遙控器小，堅硬，表面光滑並有多個按鈕。"
+  },
+  {
+    "index": 66,
+    "category": "keyboard",
+    "cate_expressions": "keyboard, 键盘, 鍵盤",
+    "tactile": "鍵盤係矩形平板，有許多小嘅、堅硬嘅鍵位於光滑嘅底座上。"
+  },
+  {
+    "index": 67,
+    "category": "cell phone",
+    "cate_expressions": "cell phone, 手机, 手提電話",
+    "tactile": "手機小而矩形，有一個堅硬嘅、光滑嘅玻璃屏幕。"
+  },
+  {
+    "index": 68,
+    "category": "microwave",
+    "cate_expressions": "microwave, 微波炉, 微波爐",
+    "tactile": "微波爐中等大小，盒形，外部堅硬，有一扇鉸接門。"
+  },
+  {
+    "index": 69,
+    "category": "oven",
+    "cate_expressions": "oven, 烤箱, 焗爐",
+    "tactile": "烤箱大，主要係金屬製，表面堅硬光滑，有前門。"
+  },
+  {
+    "index": 70,
+    "category": "toaster",
+    "cate_expressions": "toaster, 烤面包机, 多士爐",
+    "tactile": "多士爐小，盒形，由堅硬嘅金屬製成，頂部有縫隙。"
+  },
+  {
+    "index": 71,
+    "category": "sink",
+    "cate_expressions": "sink, 水槽, 水槽",
+    "tactile": "洗碗槽通常係堅硬嘅，由金屬或陶瓷製成，表面光滑且凹陷。"
+  },
+  {
+    "index": 72,
+    "category": "refrigerator",
+    "cate_expressions": "refrigerator, 冰箱, 雪櫃",
+    "tactile": "雪櫃大且盒形，堅硬，表面係金屬或塑料製嘅光滑材料。"
+  },
+  {
+    "index": 73,
+    "category": "book",
+    "cate_expressions": "book, 书, 書",
+    "tactile": "書通常係矩形嘅，由光滑嘅紙頁製成，封面堅硬或軟。"
+  },
+  {
+    "index": 74,
+    "category": "clock",
+    "cate_expressions": "clock, 钟, 鐘",
+    "tactile": "時鐘通常係圓形或方形嘅，表面光滑堅硬，有移動嘅指針。"
+  },
+  {
+    "index": 75,
+    "category": "vase",
+    "cate_expressions": "vase, 花瓶, 花瓶",
+    "tactile": "花瓶通常係圓柱形或球狀嘅，由堅硬光滑嘅材料如玻璃或陶瓷製成。"
+  },
+  {
+    "index": 76,
+    "category": "scissors",
+    "cate_expressions": "scissors, 剪刀, 剪刀",
+    "tactile": "剪刀由兩個交叉嘅刀片組成，堅硬而鋒利，手柄光滑。"
+  },
+  {
+    "index": 77,
+    "category": "teddy bear",
+    "cate_expressions": "teddy bear, 泰迪熊, 泰迪熊",
+    "tactile": "泰迪熊柔軟而豐滿，通常係毛絨嘅，質地舒適。"
+  },
+  {
+    "index": 78,
+    "category": "hair drier",
+    "cate_expressions": "hair drier, 吹风机, 風筒",
+    "tactile": "吹風機係手持式嘅，由堅硬嘅塑料製成，外形光滑且符合人體工程學。"
+  },
+  {
+    "index": 79,
+    "category": "toothbrush",
+    "cate_expressions": "toothbrush, 牙刷, 牙刷",
+    "tactile": "牙刷小，手柄堅硬光滑，一端有一排柔軟嘅刷毛。"
+  }
+]

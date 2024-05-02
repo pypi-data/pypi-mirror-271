@@ -1,0 +1,5 @@
+[asphalt.components]
+auth = fps_noauth.main:NoAuthComponent
+
+[jupyverse.components]
+auth = fps_noauth.main:NoAuthComponent

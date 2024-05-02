@@ -1,0 +1,34 @@
+---
+metric_id: metric-managed-deleted-count
+name: Deleted Count
+metric_type: COUNTER
+resource_type: inventory.CloudService
+query_options:
+  group_by:
+    - key: provider
+      name: Provider
+    - key: cloud_service_group
+      name: Group
+    - key: cloud_service_type
+      name: Type
+    - key: region_code
+      name: Region
+      reference:
+        resource_type: inventory.Region
+        reference_key: region_code
+    - key: account
+      name: Account
+  fields:
+    value:
+      operator: count
+  filter:
+    - key: ref_cloud_service_type.is_primary
+      value: True
+      operator: eq
+    - key: state
+      value: DELETED
+      operator: eq
+date_field: deleted_at
+unit: Count
+namespace_id: ns-managed-asset-change-history
+version: '1.0'

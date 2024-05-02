@@ -1,0 +1,15 @@
+numpy>=1.21.6
+dimod>=0.12.13
+matplotlib>=3.0.0
+pandas>=2.0.3
+openpyxl>=3.1.2
+tqdm>=4.66.1
+scipy>=1.2.1
+dwave_samplers>=1.2.0
+
+[quantum]
+dwave_system>=1.21.0
+
+[tests]
+pytest~=8.1.1
+pytest_cov~=4.1.0

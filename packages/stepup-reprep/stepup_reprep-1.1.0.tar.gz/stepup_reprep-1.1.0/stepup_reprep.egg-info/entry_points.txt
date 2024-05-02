@@ -1,0 +1,3 @@
+[console_scripts]
+reprep-check-manifest = stepup.reprep.check_manifest:main
+reprep-make-manifest = stepup.reprep.make_manifest:main

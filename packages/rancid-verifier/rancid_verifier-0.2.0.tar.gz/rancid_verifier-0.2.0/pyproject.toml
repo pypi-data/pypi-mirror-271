@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "rancid-verifier"
+version = "0.2.0"
+description = "Rancid verifier is a tool to check [rancid's](https://shrubbery.net/rancid) `router.db` file consistency. `router.db` format is described in [router.db(5)](https://shrubbery.net/rancid/man/router.db.5.html)"
+authors = ["Fedor Suchkov <f.suchkov@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rancid_verifier"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+ruff = "^0.0.263"
+pytest = "^7.3.1"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.scripts]
+rver = "rancid_verifier.main:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,27 @@
+# Rancid Verifier
+
+Rancid verifier is a tool to check [rancid's](https://shrubbery.net/rancid) `router.db` file consistency. `router.db` format is described in [router.db(5)](https://shrubbery.net/rancid/man/router.db.5.html)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install faddr.
+
+```bash
+pip install rancid-verifier
+```
+
+## Usage
+
+```bash
+rver [path_to_routerd.db_file]
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

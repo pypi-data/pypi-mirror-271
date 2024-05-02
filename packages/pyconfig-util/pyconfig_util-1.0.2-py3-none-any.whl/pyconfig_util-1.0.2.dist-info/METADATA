@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyconfig_util
+Version: 1.0.2
+Summary: config助手
+Home-page: https://github.com/buyfakett
+Author: buyfakett
+Author-email: buyfakett@vip.qq.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+
+<h1 align="center">pyconfig_util</h1>
+
+- pyconfig_util.py
+
+取出配置放进内存
+
+```python
+setting = Setting()
+DATABASE_HOST = setting.DATABASE_HOST
+```

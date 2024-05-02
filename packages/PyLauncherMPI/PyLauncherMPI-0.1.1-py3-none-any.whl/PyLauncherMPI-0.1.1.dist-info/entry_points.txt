@@ -1,0 +1,2 @@
+[console_scripts]
+pylaunchermpi = PyLauncherMPI.main:main

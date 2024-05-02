@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+aioxdl/__init__.py
+aioxdl/functions.py
+aioxdl/modules.py
+aioxdl/scripts.py
+aioxdl.egg-info/PKG-INFO
+aioxdl.egg-info/SOURCES.txt
+aioxdl.egg-info/dependency_links.txt
+aioxdl.egg-info/requires.txt
+aioxdl.egg-info/top_level.txt

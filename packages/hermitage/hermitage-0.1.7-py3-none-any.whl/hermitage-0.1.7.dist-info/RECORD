@@ -1,0 +1,10 @@
+hermitage/__init__.py,sha256=d9mNSsSBE9xrqzfa6XV7DV5UWlBHIGgVXPE1QK-0xsw,257
+hermitage/definition/__init__.py,sha256=gduB8XZqaQGgd3JWK_mJBIoZuaXkSWD17pUfYFDHt-U,24
+hermitage/definition/contracts.py,sha256=Zvt4IoHrUuu89FNchJEkevelE4xWAnZrDHxFoRs6nR4,11820
+hermitage/mappers/__init__.py,sha256=3O3uelAoq9SXufrNoJqVAzQt5-m6mK-FnfK_0ImO0To,44
+hermitage/mappers/invoice.py,sha256=fejXPPixJb83IB7V7GWYjfLtt6DBenzI9h-09d6i4aM,1235
+hermitage/parsers/__init__.py,sha256=O_lDWIK5RY3t8RMqM-y-k7Of2waW4XGvL0FqyLm-7iQ,31
+hermitage/parsers/query.py,sha256=3R6YS8vmrDkScIJj6T8vewowuHiRCP9LQo7HVdHEXy8,2866
+hermitage-0.1.7.dist-info/METADATA,sha256=QzkMHzD-FSJflz0QtBBGmEQJkHS08v4-F9eX9AQXrYE,558
+hermitage-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hermitage-0.1.7.dist-info/RECORD,,

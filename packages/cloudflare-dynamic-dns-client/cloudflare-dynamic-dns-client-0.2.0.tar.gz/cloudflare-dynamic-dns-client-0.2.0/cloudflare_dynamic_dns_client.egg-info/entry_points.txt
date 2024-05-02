@@ -1,0 +1,2 @@
+[console_scripts]
+cloudflare-dynamic-dns = cloudflare_dynamic_dns.__main__:main

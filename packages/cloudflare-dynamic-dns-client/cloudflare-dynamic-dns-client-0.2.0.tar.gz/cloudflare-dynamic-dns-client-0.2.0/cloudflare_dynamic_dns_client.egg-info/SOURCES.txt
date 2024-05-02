@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cloudflare_dynamic_dns/__init__.py
+cloudflare_dynamic_dns/__main__.py
+cloudflare_dynamic_dns_client.egg-info/PKG-INFO
+cloudflare_dynamic_dns_client.egg-info/SOURCES.txt
+cloudflare_dynamic_dns_client.egg-info/dependency_links.txt
+cloudflare_dynamic_dns_client.egg-info/entry_points.txt
+cloudflare_dynamic_dns_client.egg-info/requires.txt
+cloudflare_dynamic_dns_client.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+#!python
+from viewORCA.cli.main import main
+main()

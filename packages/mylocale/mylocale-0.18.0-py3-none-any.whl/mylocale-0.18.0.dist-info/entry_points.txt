@@ -1,0 +1,3 @@
+[console_scripts]
+mylocale_create=create:create
+

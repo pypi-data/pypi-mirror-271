@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: yoloxyz
+Version: 0.0
+Summary: Open vocabulary and multi-tasking models based on YOLO family.
+Home-page: https://gitlab.com/hieupth/yoloxyz
+Author: Hieu Pham
+Author-email: 64821726+hieupth@users.noreply.github.com
+License: Copyright (c) 2023 Hieu Pham
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE

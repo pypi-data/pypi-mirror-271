@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+yoloxyz/__init__.py
+yoloxyz.egg-info/PKG-INFO
+yoloxyz.egg-info/SOURCES.txt
+yoloxyz.egg-info/dependency_links.txt
+yoloxyz.egg-info/top_level.txt
+yoloxyz.egg-info/zip-safe

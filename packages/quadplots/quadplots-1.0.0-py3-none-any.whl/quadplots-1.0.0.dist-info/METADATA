@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: quadplots
+Version: 1.0.0
+Summary: Create animations of simple numerical integration methods.
+Author: Chris Copley
+Project-URL: Repository, https://github.com/CopOnTheRun/quadplots
+Project-URL: Issues, https://github.com/CopOnTheRun/quadplots/issues
+Keywords: Simpson's Rule,Trapezoidal rule,Riemann Sum,Visualization,Graph,Quadrature
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: sympy
+Requires-Dist: antlr4-python3-runtime ==4.11
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: uv ; extra == 'dev'
+
+# quadplots
+
+The `quadplots` program is an educational utility to create visualizations of basic quadrature methods. The current methods supported are Riemann sum (left, right, mid, max, min), Trapezoid rule, and Simpson's rule.
+
+## Usage
+
+Basic usage of quadplots only requires an expression you want to graph (must be valid python), and the start and end points.
+
+```
+quadplots "x**2 - 3*x + 1" -2 3 
+```
+
+![A riemann sum with n = 10 from -2 to 3](https://github.com/CopOnTheRun/quadplots/blob/main/images/basic_example.svg)
+
+By default quadplots will graph a riemann sum with n=10 and use the midpoint method, but you can easily change these options.
+
+```
+quadplots "x**2 - 3*x + 1" -2 3 --method min --partitions 5
+```
+
+
+![A riemann sum with n = 5 from -2 to 3 using the min method](https://github.com/CopOnTheRun/quadplots/blob/main/images/min_example.svg)
+
+You can also change the type of quadrature method used
+
+```
+quadplots "x**3 - 8*x + 7" -2 3 --method min --partitions 4 --quad-type simpson 
+```
+![A Simpson's method with n = 4 from -2 to 3](https://github.com/CopOnTheRun/quadplots/blob/main/images/simpson_example.svg)
+
+If you want, instead of python functions, you can write latex by adding the `--latex` flag to the command.
+
+```
+quadplots "\exp{-x^{2}}" -2 4 --partitions 4 --quad_type simpson --latex
+```
+![A Simpson's method with n = 4 from -2 to 4](images/latex_example.svg)
+
+Finally, if you wish to animate the plot, you can pass `--animate` with a list of partitions you would like to see at each frame.
+
+```
+quadplots "\exp{-x^{2}}" -2 4 --partitions 4 --quad_type simpson --latex --animate 2 4 6 10 100
+```
+![A Simpson's method with n = 4 from -2 to 4, animated](https://github.com/CopOnTheRun/quadplots/blob/main/images/animation_example.gif)

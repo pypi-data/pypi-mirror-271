@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyblksim
+Version: 0.1.1
+Summary: Python package for block simulation
+Author: Dr. Kurian Polachan
+Author-email: kurian.polachan@iiitb.ac.in
+License: GPLv3
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: simpy
+Requires-Dist: scipy
+

@@ -1,0 +1,8 @@
+SSIM-PIL
+matplotlib
+imagehash
+efficientnet_pytorch
+numpy
+Pillow
+torch>=2.0.0
+torchvision>=0.17.0

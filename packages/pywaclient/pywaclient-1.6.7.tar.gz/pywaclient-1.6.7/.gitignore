@@ -1,0 +1,8 @@
+.idea
+.python-version
+dist/
+build/
+pywaclient.egg-info/
+.eggs/
+.hypothesis/
+tests/requests

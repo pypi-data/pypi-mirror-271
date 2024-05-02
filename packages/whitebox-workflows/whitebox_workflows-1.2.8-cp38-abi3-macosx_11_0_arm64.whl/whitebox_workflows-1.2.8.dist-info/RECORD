@@ -1,0 +1,16 @@
+whitebox_workflows-1.2.8.dist-info/METADATA,sha256=kiH49rg2BnMHNdEcmrsWJQaGyQt7Rc9LyV1Av4wdpnc,12462
+whitebox_workflows-1.2.8.dist-info/WHEEL,sha256=bFQsLocbHQZU1ONHX-GwigtLercaPjlQWkBkfu4ItcE,102
+whitebox_workflows-1.2.8.dist-info/license_files/LICENSE.txt,sha256=81hwVZcj5cV3fKP2h66KoD70cR90XP74jD7cZlItQ5g,161
+whitebox_workflows/whitebox_workflows.pyi,sha256=Uyt1hH6Vfn0dM4DqOqKOsitG7BWxGL-MI5JMVtl7q8Y,90029
+whitebox_workflows/__init__.py,sha256=BbUdeA18KZSft0XyAaIzAlmc5Wfa_uuITqi8uebJcmU,15384
+whitebox_workflows/scripts/horton_ratios.py,sha256=RsOgwJDauFdJZjJf9nZrG8WiEM8Bfkj2n9iRVqffXPA,8175
+whitebox_workflows/scripts/nibble.py,sha256=3T1sBsS2KzlLzz2MoOmmfrIecpkAfRitIYelK4Jn8cg,2108
+whitebox_workflows/scripts/ridge_and_valley_vectors.py,sha256=yWZIjIwqX6uPxNTkoSpYVYEBBnzaUGPhxay5SuJiQKg,1810
+whitebox_workflows/scripts/improved_ground_point_filter.py,sha256=ugH4YLrlNQyAFBQDH_XEd1Hfk7nrDZdG0h-gRskWgDs,1853
+whitebox_workflows/scripts/sieve.py,sha256=9VP8p2SuSwzAKeTrhmmRxGnzCBmWWqf0cnaCF4aajjY,942
+whitebox_workflows/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whitebox_workflows/scripts/utils.py,sha256=la1yitl1Kf6LxlgnuNtu6E-HlIu_DGckOerFgtEog6k,872
+whitebox_workflows/scripts/scripts.py,sha256=YhyUrSm_YWqe6SZ8ZbV3edbG-0zWjkWLcxWgVAaShUU,1021
+whitebox_workflows/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whitebox_workflows/whitebox_workflows.abi3.so,sha256=aLA1_ZUdodxpPxvPZ6s5GcYgj61H8t5SOULNOb_03GA,24852328
+whitebox_workflows-1.2.8.dist-info/RECORD,,

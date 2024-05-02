@@ -1,0 +1,24 @@
+
+Which device DOES NOT contain a microcontroller?
+LCD TV
+Washing Machine
+bicycle
+Air Conditioner
+ANSWER: 3
+
+What is the power supply voltage for KuttyPy?
+0 Volts
+220 Volts
+5 Volts
+1Volt
+ANSWER: 3
+
+What is the Supply voltage for ceiling fan?
+220 Volts
+5 Volts
+1000 Volts
+Ithum Ariyilla
+ANSWER:1
+
+
+

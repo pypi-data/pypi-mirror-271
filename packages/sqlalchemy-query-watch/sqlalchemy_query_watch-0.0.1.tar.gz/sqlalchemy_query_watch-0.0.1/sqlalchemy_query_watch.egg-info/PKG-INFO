@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-query-watch
+Version: 0.0.1
+Summary: Subscribe query log to SqlAlchemy event
+Author: Mick Mak
+Author-email: mk.triniti@gmail.com
+Keywords: python,sqlalchemy,log
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sqlalchemy_query_watch
+Additional query log for SqlAlchemy
+
+- Query summary within a db connection
+  - Statement count (`SELECT`, `UPDATE`, `INSERT`, `DELETE`)
+  - DB IO count
+    - Turn to `WARNING` log level when too many IO count within a connection
+- Time used on every query
+  - Turn to `ERROR` log level when query takes too long to execute
+- Raw query (`DEBUG` log level)
+- Query length and parameter on every query (with n+1 detection using this stats)

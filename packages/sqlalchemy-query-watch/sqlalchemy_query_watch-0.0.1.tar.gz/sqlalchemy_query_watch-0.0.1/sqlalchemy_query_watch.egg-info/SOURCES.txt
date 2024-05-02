@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+sqlalchemy_query_watch/__init__.py
+sqlalchemy_query_watch/check_consecutive_query.py
+sqlalchemy_query_watch/query_time_log.py
+sqlalchemy_query_watch/statement_count_log.py
+sqlalchemy_query_watch.egg-info/PKG-INFO
+sqlalchemy_query_watch.egg-info/SOURCES.txt
+sqlalchemy_query_watch.egg-info/dependency_links.txt
+sqlalchemy_query_watch.egg-info/requires.txt
+sqlalchemy_query_watch.egg-info/top_level.txt

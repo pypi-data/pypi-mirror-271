@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/itwingstestsproject.egg-info/PKG-INFO
+src/itwingstestsproject.egg-info/SOURCES.txt
+src/itwingstestsproject.egg-info/dependency_links.txt
+src/itwingstestsproject.egg-info/top_level.txt
+src/mypackage/__init__.py
+src/mypackage/call_ga4_api.py

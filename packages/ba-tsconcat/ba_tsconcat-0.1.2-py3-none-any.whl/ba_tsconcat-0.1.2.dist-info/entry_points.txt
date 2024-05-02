@@ -1,0 +1,3 @@
+[console_scripts]
+ba-tsconcat=tsconcat.cli:main
+

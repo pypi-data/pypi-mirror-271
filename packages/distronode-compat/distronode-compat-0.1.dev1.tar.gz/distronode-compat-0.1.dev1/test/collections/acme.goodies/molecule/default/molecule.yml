@@ -1,0 +1,11 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: delegated
+platforms:
+  - name: instance
+provisioner:
+  name: distronode
+verifier:
+  name: distronode

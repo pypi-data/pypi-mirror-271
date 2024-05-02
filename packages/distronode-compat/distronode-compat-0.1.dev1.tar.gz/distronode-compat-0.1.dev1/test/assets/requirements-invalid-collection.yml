@@ -1,0 +1,3 @@
+# "distronode-galaxy collection install" is expected to fail this invalid file
+collections:
+  - foo: bar

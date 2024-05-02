@@ -1,0 +1,3 @@
+collections:
+  - name: distronode.posix
+    version: ">=1.0"

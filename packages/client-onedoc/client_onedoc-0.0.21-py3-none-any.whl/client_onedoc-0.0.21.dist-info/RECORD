@@ -1,0 +1,9 @@
+onedoc/__init__.py,sha256=cNftXoQ-7t7-PR70hCUZq6QlUEjYrGcTQ_qce9cQdtk,27
+onedoc/html_builder.py,sha256=1hZSiNfQBtMNAJyqjHUdMT0WOLrQd6z45xZHe_K-guM,2858
+onedoc/merge.py,sha256=PffugNuwQK7IcOn4Eio6rh6OmoUI8UG3e6T3ojYUZ5k,2227
+onedoc/onedoc.py,sha256=fZr1Gto98lcD-a0hkGDRx8wba7jLQb-KNqd47_ujFQw,3231
+onedoc/split.py,sha256=dnRCc5WapI6oBWlCP491qU56ZT-qQ9pNTSDWHCrdI0Y,768
+client_onedoc-0.0.21.dist-info/METADATA,sha256=ktjzRrvXrXDOXAU2eSF3pqTWFGW5PTQFUKtRIvNqE4U,5728
+client_onedoc-0.0.21.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+client_onedoc-0.0.21.dist-info/top_level.txt,sha256=t2zRTJXyGt6ZlUUfTK4Q1-7ClNtEKypxcLx8wvPD2_o,7
+client_onedoc-0.0.21.dist-info/RECORD,,

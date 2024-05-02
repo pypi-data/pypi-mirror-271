@@ -1,0 +1,17 @@
+seekerdemo/__init__.py,sha256=hEq7y8l9zMFkAQMUkCTMddGaw05jkr9ThP1LkIvYu-I,26
+seekerdemo/demolicense.sio,sha256=loeLSBe6nfmbXMyEqj3NiKR6Fzgx5A3TxZ1RmZ7Kjk0,2076
+seekerdemo/seekerdemo.cpython-310-darwin.so,sha256=7fNaZQiw1lvYWxO8J_QM_osCd3JDDTU4xaBN3YWCGGI,10920408
+seekerdemo/seekerdemo.cpython-310-linux.so,sha256=5XYqIVPR5iTaNlpzdmVsubzOxxshIbZ4XdvCv_AJaIo,7958952
+seekerdemo/seekerdemo.cpython-311-darwin.so,sha256=vgai3gNjMVGktECvB1hP90ZAI95Uo8MEysQaCXlAWgs,10920408
+seekerdemo/seekerdemo.cpython-311-linux.so,sha256=ZzSBIhHbFGiLrIhQN0pqKUV-s980aIvXn4EUmL0BuLo,7958952
+seekerdemo/seekerdemo.cpython-38-darwin.so,sha256=JCI-VmQKim2FlCfG7cwX6YIaMVVXYUCI-bKIKeqarJk,9795064
+seekerdemo/seekerdemo.cpython-38-linux.so,sha256=yZxettU8w42wynKUT50yAqZDpaM2qxf4AGmaOMtv4PM,7958952
+seekerdemo/seekerdemo.cpython-39-darwin.so,sha256=1otvs46_v9TROkmb6yE_SdZRHTTS9TZ06y17xihTSJA,9795320
+seekerdemo/seekerdemo.cpython-39-linux.so,sha256=9HXMFJb_b_taZlEaghe-Y7WMpBoX_x1qwcaraugTKjE,7958952
+seekerdemo/seekerdemo.py,sha256=nm1rHf08ncHf_Gir0ASeimv_VovqAT_98Vxh9N4chtM,945
+insideopt_demo-0.1.10.dist-info/AUTHORS.rst,sha256=OguSrQPMx6Iw09bMdyz52wc_hU2W5kR06pVT1ewgLzk,101
+insideopt_demo-0.1.10.dist-info/LICENSE.rst,sha256=dSCQF0EGRsoxGOcMBhKAQgd6YyTKwhY7vthQSisavgk,100
+insideopt_demo-0.1.10.dist-info/METADATA,sha256=CxZLtIs9Gs2lmCLY8xpdxhsteXjt-KZrbbu5b8O4O6I,1004
+insideopt_demo-0.1.10.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+insideopt_demo-0.1.10.dist-info/top_level.txt,sha256=Re28fRnToGyREjUg7H-qT1-XWhvT79NIYUXFitCybU0,11
+insideopt_demo-0.1.10.dist-info/RECORD,,

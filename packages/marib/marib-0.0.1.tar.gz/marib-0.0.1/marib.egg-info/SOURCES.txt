@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+marib/PPS.py
+marib/__init__.py
+marib/vec.py
+marib.egg-info/PKG-INFO
+marib.egg-info/SOURCES.txt
+marib.egg-info/dependency_links.txt
+marib.egg-info/top_level.txt
+marib/na/CubicSpline.py
+marib/na/Integration.py
+marib/na/Lagrange.py
+marib/na/LeastSquare.py
+marib/na/Newton.py
+marib/na/Test.py
+marib/na/__init__.py

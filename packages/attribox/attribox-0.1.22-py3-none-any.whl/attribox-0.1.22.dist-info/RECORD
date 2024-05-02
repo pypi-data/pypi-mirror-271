@@ -1,0 +1,11 @@
+attribox/__init__.py,sha256=5uartM9uwaekqkQK0rn5WzkzEa8CMnodUpR2KZ0ZeAQ,759
+attribox/_abstract_descriptor.py,sha256=lszRXs8jZYbUPm2yZS2Q7ibVuXTnSyM0AUZltVrg8PM,2888
+attribox/_attri_box.py,sha256=dgpM0ycHiq8GhhCmnXUzTeoOW9p_o0Y3D6zqtc4FPSc,9378
+attribox/_delayed_descriptor.py,sha256=bNXfWkv9Y7gCiijYmipHnsR2-8cmYU8qqfYqezFniFQ,4195
+attribox/_this_scope.py,sha256=tnX93ov5GcXGbPkk6o22MVAcPAAXnkKp4IZEJ2i8Xak,1420
+attribox/_typed_descriptor.py,sha256=-ejvq4Wy4v5TAL8jT8bmeLmCOlP7l0Zfw5PQPV14h8M,2629
+attribox-0.1.22.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+attribox-0.1.22.dist-info/METADATA,sha256=bTDvkFt9HJfXw2KXRYDJo7e-xcp0zaOtkrzIjWLIKlk,3180
+attribox-0.1.22.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+attribox-0.1.22.dist-info/top_level.txt,sha256=o1lFXMU7rYFBi_9dzrz2YffyqeJlR4v5UW3j-b5v3-c,9
+attribox-0.1.22.dist-info/RECORD,,

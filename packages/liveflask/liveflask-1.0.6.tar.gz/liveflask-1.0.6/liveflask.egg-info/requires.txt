@@ -1,0 +1,3 @@
+flask
+masonite-orm
+Flask-WTF

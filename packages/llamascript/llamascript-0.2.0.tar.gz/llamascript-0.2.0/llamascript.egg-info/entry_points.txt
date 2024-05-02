@@ -1,0 +1,2 @@
+[console_scripts]
+llamascript = llamascript:run

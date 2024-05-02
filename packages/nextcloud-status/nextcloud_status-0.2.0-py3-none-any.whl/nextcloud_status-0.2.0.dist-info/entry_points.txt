@@ -1,0 +1,2 @@
+[console_scripts]
+nextcloud-status = nextcloud_status.nextcloud_status:main

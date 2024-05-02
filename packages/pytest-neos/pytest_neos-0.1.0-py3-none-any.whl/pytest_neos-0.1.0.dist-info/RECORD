@@ -1,0 +1,5 @@
+pytest_neos/__init__.py,sha256=ZRfh7ibVZsNqu3Agpse4EsgKz6DvQtUyFRO9TYptAMc,3913
+pytest_neos-0.1.0.dist-info/METADATA,sha256=I-ydIu5R7zktS_uatHjQUZCfQsNfOswhGq8sRRCV52A,909
+pytest_neos-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pytest_neos-0.1.0.dist-info/entry_points.txt,sha256=Ythrx9M75HpngcTA2HODY9MD6radOyH9fQdLjjbQyd4,29
+pytest_neos-0.1.0.dist-info/RECORD,,

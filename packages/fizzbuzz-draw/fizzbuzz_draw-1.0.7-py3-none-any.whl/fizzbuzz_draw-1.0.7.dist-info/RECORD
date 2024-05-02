@@ -1,0 +1,11 @@
+fizzbuzz_draw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fizzbuzz_draw/__main__.py,sha256=mgWSatwelrOG41-ELYAZisXuyBfoxiX1kQqh3nSmjnc,146
+fizzbuzz_draw/app.py,sha256=ISSxtfO9UDRAZsOnmlhanSbpUI9F0IvFbM79QVPvF38,11217
+fizzbuzz_draw/nested_collections.py,sha256=afphxHZ1mYZGrIVqI5Bw2pB1Xde7eF2hGHv0RNh9H1U,2685
+fizzbuzz_draw/setup_mg.py,sha256=PGjJdQOHVFKEnTpeH1TnsyWHb6fQbMTZMnFICKmeteI,1785
+fizzbuzz_draw-1.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fizzbuzz_draw-1.0.7.dist-info/METADATA,sha256=qwvGhD3WX1rJMEDtCoIu9rmgecEh5eVcwBNIFHAFaEE,41765
+fizzbuzz_draw-1.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fizzbuzz_draw-1.0.7.dist-info/entry_points.txt,sha256=-fgO6jtrpZKgVxIAgBnRDDxR37X0giv5y9qQDB6EvwA,62
+fizzbuzz_draw-1.0.7.dist-info/top_level.txt,sha256=DnsAvlvqs6T-lq1wyZRT3HAoI0IT6HSEpvpImwRYhXc,14
+fizzbuzz_draw-1.0.7.dist-info/RECORD,,

@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: syntheticstellarpopconvolve
+Version: 0.1
+Summary: synthetic stellar pop convolve is a python package to convolve output of stellar population synthesis codes with star formation rates.
+Home-page: https://gitlab.com/dhendriks/syntheticstellarpopconvolve
+Author: David Hendriks
+Author-email: davidhendriks93@gmail.com
+License: gpl
+Keywords: astrophysics,stellar evolution,population synthesis,starformation rate history,convolution
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: h5py
+Requires-Dist: astropy
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: voluptuous
+Requires-Dist: scipy
+Requires-Dist: setproctitle
+Requires-Dist: psutil
+Requires-Dist: tables
+
+# Synthetic Stellar Pop Convolve (SSPC)
+This repository contains the code and documentation for the synthetic stellar-population convolution code-base `Synthetic Stellar Pop Convolve (SSPC)`.

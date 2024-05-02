@@ -1,0 +1,16 @@
+aiproxy/__init__.py,sha256=cZ5AUARElgxcgWahKlMjoycGbQ44w-IMuq6SRHlB1wE,243
+aiproxy/__main__.py,sha256=Hybtgs6IyKl0Daeo1O4TR7Y51erj-vluWsX7n3Tu1ug,1539
+aiproxy/accesslog.py,sha256=YmpQpOR9vYDkTq32PqiEsIlzxb7rnIetrGd7SJR38tU,7728
+aiproxy/anthropic_claude.py,sha256=iHsU4-uosYNFii2vypGD7wnR_FH8Ol7YuqPzj8WxOrs,7296
+aiproxy/azurequeueclient.py,sha256=uhQNH4ZSlUcFppE2_IB7HG0Hsvf2ZqGgrrJ1D1Pheqk,1337
+aiproxy/chatgpt.py,sha256=JoPtKPHnfJMK7T-FB3Wssg79cQT9g9bwiVHPoaNOSqs,11119
+aiproxy/claude2.py,sha256=MIhInTap6BQ_8pfKsSt5gCzgRObiaviSHgVaIh35iYU,16284
+aiproxy/gemini.py,sha256=UjT5UAmvazm2bx6sWf2f-mI66FKYzsBpO9tQSYaS-e0,10891
+aiproxy/httpx_proxy.py,sha256=_MYVRGXNxgPXgY_wM3cHzGqeQocBXXO3CJSP7f9WHhI,15793
+aiproxy/proxy.py,sha256=nUMqvcH0wQQu6OsJpQTNMmIuZ0jVpzzjmOoTMCnUPRk,2165
+aiproxy/queueclient.py,sha256=TKPYRWWmKX-3e0FnMkkiuQOKvjxI-ak8-Q6XrZIJ19Y,731
+aiproxy_python-0.4.0.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+aiproxy_python-0.4.0.dist-info/METADATA,sha256=QhBGN_CYV-Tq0KXqGrjSlDwFH7_vD7CkfpOAnrrWt0M,13405
+aiproxy_python-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aiproxy_python-0.4.0.dist-info/top_level.txt,sha256=QdyikybYJCoUrciRj-u1dOhyN3X7K49bma7UAjrvnmo,8
+aiproxy_python-0.4.0.dist-info/RECORD,,

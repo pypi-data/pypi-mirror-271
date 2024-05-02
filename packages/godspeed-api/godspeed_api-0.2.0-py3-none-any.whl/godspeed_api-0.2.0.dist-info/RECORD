@@ -1,0 +1,9 @@
+godspeed_api/__init__.py,sha256=bfUJswX4Y_G30AIZTmhI-dkw4KLDXIATAaNsQqR78iw,253
+godspeed_api/api.py,sha256=O3nR1KhnZJA75AAGomlBp65io4_HDXq1a6kdy0Cw32w,4364
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_api.py,sha256=0CFRfJknU5O5GQ17Yj9F3jT5BUQ_UBpobj9305pZxC0,1392
+godspeed_api-0.2.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+godspeed_api-0.2.0.dist-info/METADATA,sha256=dooLlpEAgr-RTV3OZz4NvgkcXV51_yf2ZkvubCS4T3k,1772
+godspeed_api-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+godspeed_api-0.2.0.dist-info/top_level.txt,sha256=hz0vNUz8nmwUS24VrILRZiaiZw3NMK2U2j8f1ca_NdI,19
+godspeed_api-0.2.0.dist-info/RECORD,,

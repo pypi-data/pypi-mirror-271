@@ -1,0 +1,10 @@
+[project]
+name = "meetSam"
+version = "0.0.1"
+description = "A somewhat creative attempt at business cards"
+readme = "README.rst"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+

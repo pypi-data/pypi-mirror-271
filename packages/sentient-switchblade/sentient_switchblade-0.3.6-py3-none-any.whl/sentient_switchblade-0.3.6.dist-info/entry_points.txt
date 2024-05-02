@@ -1,0 +1,3 @@
+[console_scripts]
+swb=switchbladecli.cli.__main__:switchbladecli
+

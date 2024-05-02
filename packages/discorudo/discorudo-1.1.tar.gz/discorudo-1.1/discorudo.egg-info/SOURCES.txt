@@ -1,0 +1,9 @@
+README.md
+setup.py
+discorudo/__init__.py
+discorudo/main.py
+discorudo.egg-info/PKG-INFO
+discorudo.egg-info/SOURCES.txt
+discorudo.egg-info/dependency_links.txt
+discorudo.egg-info/requires.txt
+discorudo.egg-info/top_level.txt

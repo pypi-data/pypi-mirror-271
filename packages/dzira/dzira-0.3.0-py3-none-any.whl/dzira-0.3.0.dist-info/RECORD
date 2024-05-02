@@ -1,0 +1,13 @@
+dzira/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dzira/api.py,sha256=2JOZQgSeLnKYxnJ1IC3kLf9O_ZWCkC4RqS2B-uatkfc,4204
+dzira/betterdict.py,sha256=KDUst7PHQfBaJXQuTYvAKBpMSuuQkTyLQfgEJbccqyg,1198
+dzira/data.py,sha256=ajgShaCwJ0HwLIkU2KP8_VFBBBjjsM_qARdwuGFZNwE,1072
+dzira/cli/commands.py,sha256=-98Uw1SS_MNrPB178C_sETP5iejRp6dqUBEg8xiPjAU,25671
+dzira/cli/config.py,sha256=bDxuQ281Bwti55E2az1uFkrFx-1CDlRe-94KA_3glPc,1538
+dzira/cli/output.py,sha256=ZwdqCMn3o2VzUUcYrgupefh9WOY9a84XRHMtz5bn9JM,3544
+dzira-0.3.0.dist-info/LICENSE,sha256=dwwSJIk4_5xfRPUHdlaUH_IHZYOgfHhWUVCfJpKNLGQ,1072
+dzira-0.3.0.dist-info/METADATA,sha256=A8halDjLogr_prOKw5EmFppE1H2mDDKDYmpHZGDEr78,7575
+dzira-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dzira-0.3.0.dist-info/entry_points.txt,sha256=xntakxRmFF5hJ5Bj7RhyYElQpu--K466EEPw9EDjn18,50
+dzira-0.3.0.dist-info/top_level.txt,sha256=HE_hgY4oTawHgxglaBlKYHNKWj4Lv_jOpMOhklN_Db8,6
+dzira-0.3.0.dist-info/RECORD,,

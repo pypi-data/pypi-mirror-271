@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - meson
+  - meson-python
+  - ninja
+  - numpy
+  - pip
+  - python
+  - pytest

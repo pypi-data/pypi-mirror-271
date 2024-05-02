@@ -1,0 +1,15 @@
+berhoel/__init__.py,sha256=3UlfRMMziEAvFDd56N4AtAdNmbRLgx_yh7KvqIYxdN0,638
+berhoel/get_comics/__init__.py,sha256=gHE5LDeYdr80Xuct2q_Ny7MfUQK2NNb2qaQ50vdlYlQ,1362
+berhoel/get_comics/garfield/__init__.py,sha256=Y1Bpzt5J16qukKqZYeIKeRmonxPwpb0fJXXNLGgwJ9o,1732
+berhoel/get_comics/gen_pdf/__init__.py,sha256=uOuk6CosIYk8S9YlwOs9oQd0lagipnAO-Bpvnqpwps0,2430
+berhoel/get_comics/gen_pdf/template/book.tex,sha256=rpvzFZPHzrBfu02VzSf1pN-HmQFyEg4Y0-K74SuBHIs,1363
+berhoel/get_comics/gocomics/__init__.py,sha256=GXJUXCLXec5ij9ZYNvEhtwfjRwtoUQyumLZ4-x7WSYQ,8635
+berhoel/get_comics/peanuts/__init__.py,sha256=vQocwbl584V2TkPuQzhbJ0De8T1xQdru6NAMFJPzVWw,3591
+berhoel/get_comics/peanuts/clean_up.py,sha256=HNAWBgUANr_rzg8mlrQpvXfIM-E07GsGq6MjW_X4Ql8,1186
+berhoel/get_comics/peanuts/gen_book.py,sha256=wHvKnNloc85JhEcVlsNOT_nPQmS4lKtZBcbP8S64uOA,5507
+berhoel/get_comics/tests/test_get_comics.py,sha256=QrNp-O1cNO6V6JMJ04B88jA887RHTIh7eXOf5Ks1ijI,1160
+pygetcomics-1.4.5.dist-info/LICENSE,sha256=kCfJJwiecNIwJLIbZejZc2-qSZkHrYxjfoYRRi8h_rQ,1323
+pygetcomics-1.4.5.dist-info/METADATA,sha256=9M94zedmM5vdJr4j-z0XqIGgrh2WcdsmddDrwVoAgQM,1118
+pygetcomics-1.4.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pygetcomics-1.4.5.dist-info/entry_points.txt,sha256=jMyn26AXwnEBXMQ051x1l4Y7k_Vq1KNTaYHZHUJGAho,144
+pygetcomics-1.4.5.dist-info/RECORD,,

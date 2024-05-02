@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ansible-lint-gitlab-ci
+Version: 0.1.0
+Summary: Converts ansible-lint JSON output into GitLab friendly JUnit XML format
+Home-page: https://github.com/devalphakilo/ansible-lint-gitlab-ci
+Author: DevAlphaKilo
+Author-email: DevAlphaKilo@gmail.com
+Keywords: ansible,json,gitlab,ci/cd,xml
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ansible-lint >=5.0.7
+
+# Ansible Lint GitLab CI
+
+The [ansible-lint](https://github.com/willthames/ansible-lint) JSON output to GitLab friendly JUnit converter.
+
+### Installation
+
+via pip:
+
+```shell
+pip install ansible-lint-gitlab-ci
+```
+
+### Updating
+
+via pip:
+
+```shell
+pip install ansible-lint-gitlab-ci --upgrade
+```
+
+### Usage:
+
+- You can run `ansible-lint -f json` on your playbook(s) and redirect output to pipe
+  ```shell
+  ansible-lint playbook.yml -f json | ansible-lint-gitlab-ci -o ansible-lint-gitlab-ci.xml
+  ```
+- You can use a temporary file to store the output of `ansible-lint`.
+  After that run `ansible-lint-gitlab-ci` and pass generated file to it
+  ```shell
+  ansible-lint -f json your_fancy_playbook.yml > ansible-lint.json
+  ansible-lint-gitlab-ci ansible-lint.json -o ansible-lint-gitlab-ci.xml
+  ```
+
+### Output
+
+- If there are any lint errors, full JUnit XML will be created.
+- If there are no errors, empty JSON will be created.
+
+### License
+
+The ansible-lint-gitlab-ci project is distributed under the [MIT] license.

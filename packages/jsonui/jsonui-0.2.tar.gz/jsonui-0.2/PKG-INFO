@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: jsonui
+Version: 0.2
+Summary: UI tools for JSON.
+Author-email: Artur Barseghyan <artur.barseghyan@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/barseghyanartur/jsonui/
+Project-URL: Bug Tracker, https://github.com/barseghyanartur/jsonui/issues
+Project-URL: Documentation, https://jsonui.readthedocs.io/
+Project-URL: Source Code, https://github.com/barseghyanartur/jsonui/
+Project-URL: Changelog, https://jsonui.readthedocs.io/en/latest/changelog.html
+Keywords: json,ui,gui
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: PyQt5
+Requires-Dist: QScintilla
+Requires-Dist: deepdiff
+Provides-Extra: all
+Requires-Dist: jsonui[dev,docs,test]; extra == "all"
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: detect-secrets; extra == "dev"
+Requires-Dist: doc8; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx<6.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.3.0; extra == "docs"
+Requires-Dist: sphinx-no-pragma; extra == "docs"
+
+======
+jsonui
+======
+.. External references
+
+.. _PyQT5: https://pypi.org/project/PyQt5/
+.. _QScintilla: https://pypi.org/project/QScintilla/
+.. _deepdiff: https://pypi.org/project/deepdiff/
+
+.. Internal references
+
+.. _jsonui: https://github.com/barseghyanartur/jsonui/
+.. _Read the Docs: http://jsonui.readthedocs.io/
+.. _Contributor guidelines: https://fakepy.readthedocs.io/en/latest/contributor_guidelines.html
+
+UI/GUI for working with JSON.
+
+.. image:: https://img.shields.io/pypi/v/jsonui.svg
+   :target: https://pypi.python.org/pypi/jsonui
+   :alt: PyPI Version
+
+.. image:: https://img.shields.io/pypi/pyversions/jsonui.svg
+    :target: https://pypi.python.org/pypi/jsonui/
+    :alt: Supported Python versions
+
+.. image:: https://github.com/barseghyanartur/jsonui/actions/workflows/test.yml/badge.svg?branch=main
+   :target: https://github.com/barseghyanartur/jsonui/actions
+   :alt: Build Status
+
+.. image:: https://readthedocs.org/projects/jsonui/badge/?version=latest
+    :target: http://jsonui.readthedocs.io
+    :alt: Documentation Status
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+   :target: https://github.com/barseghyanartur/jsonui/#License
+   :alt: MIT
+
+.. image:: https://coveralls.io/repos/github/barseghyanartur/jsonui/badge.svg?branch=main&service=github
+    :target: https://coveralls.io/github/barseghyanartur/jsonui?branch=main
+    :alt: Coverage
+
+Features
+========
+- Convert Python dict into JSON.
+- Convert JSON to Python dict.
+- Show diffs between two JSONs.
+
+Prerequisites
+=============
+- Python 3.8+
+- `PyQT5`_ (`GPL v3` license)
+- `QScintilla`_ (`GPL v3` license)
+- `deepdiff`_ (`MIT` license)
+
+Installation
+============
+pipx (recommended)
+------------------
+
+.. code-block:: sh
+
+    pipx install jsonui
+
+pip
+---
+
+.. code-block:: sh
+
+    pip install jsonui
+
+Usage
+=====
+Run
+---
+
+.. code-block:: sh
+
+    jsonui
+
+Screenshots
+-----------
+**Convert Python dict to JSON**
+
+.. image:: docs/screenshots/python_dict_to_json.png
+   :target: docs/screenshots/python_dict_to_json.png
+   :alt: Python dict to JSON
+
+**JSON diff**
+
+.. image:: docs/screenshots/json_diff.png
+   :target: docs/screenshots/json_diff.png
+   :alt: JSON diff
+
+Documentation
+=============
+- Documentation is available on `Read the Docs`_.
+- For guidelines on contributing check the `Contributor guidelines`_.
+
+Tests
+=====
+
+Run the tests with unittest:
+
+.. code-block:: sh
+
+    python -m unittest jsonui
+
+Or pytest:
+
+.. code-block:: sh
+
+    pytest
+
+License
+=======
+
+MIT
+
+Support
+=======
+For security issues contact me at the e-mail given in the `Author`_ section.
+
+For overall issues, go to `GitHub <https://github.com/barseghyanartur/jsonui/issues>`_.
+
+Author
+======
+
+Artur Barseghyan <artur.barseghyan@gmail.com>

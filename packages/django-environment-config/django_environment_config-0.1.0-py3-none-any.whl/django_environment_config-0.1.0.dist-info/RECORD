@@ -1,0 +1,16 @@
+LICENSE,sha256=-oxeZ092-hE7c1247ko2i5DrbQnTeiIWmADbepQMvy4,2889
+README.md,sha256=c_49MxEZfyac-mUpJoCvdOCvuF8NAfofMM3xN0mL6O0,3152
+env_config/__init__.py,sha256=rHEq6uzQyema0lAwhw2vRhsrjoHgqYD7t5pd9LfrTNo,64
+env_config/base.py,sha256=LyYTwO0F00HmOekfG7FrynTnClwyTTXYC4g4y8Hb9Nw,4558
+env_config/constants.py,sha256=-JmcbbnUpxS6BEW1bGxddyoapcVDOVfLYtqc1b3IHCM,364
+env_config/errors.py,sha256=VxMxAsblkkIPfGxbI8s_Cxnl-RutBm9gGupjaa9B0tg,1058
+env_config/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+env_config/typing.py,sha256=mvOwGd06Jvhiu1UGuTfwm9chl6TiXcMirNm6SHcdQsE,1210
+env_config/values.py,sha256=jshQAEWr6gG4DJk6Vx61_k5oY-vKlT-2Vf9i_NxKSrs,12049
+env_config_pytest_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+env_config_pytest_plugin/hooks.py,sha256=nGVGcz1OvWTPNdzQLXw5HRYH17-llMm4YuvMZWq8DkQ,792
+django_environment_config-0.1.0.dist-info/LICENSE,sha256=-oxeZ092-hE7c1247ko2i5DrbQnTeiIWmADbepQMvy4,2889
+django_environment_config-0.1.0.dist-info/METADATA,sha256=VXV2VNYcQTXG9p1pvDcXxGUlNPGCzngyFKEbc9Owjdc,4644
+django_environment_config-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_environment_config-0.1.0.dist-info/entry_points.txt,sha256=4PzdLDpAKXgNqaglC0KdNZO6BWPXyVCXb2w97Iii1PM,69
+django_environment_config-0.1.0.dist-info/RECORD,,

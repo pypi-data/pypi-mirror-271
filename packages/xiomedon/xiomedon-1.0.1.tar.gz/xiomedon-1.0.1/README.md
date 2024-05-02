@@ -1,0 +1,72 @@
+# xiomedon
+
+Library to call Open AI gpt3.5t-turbo and collect reponses and check for Accuracy
+
+## Features
+
+- `v0.0.1` Call Open AI gpt3.5 and fetch respones
+
+## Installation
+
+1. Download and install the latest version of [python](https://www.python.org/downloads/). Open a terminal and check that it is installed.
+
+   Windows
+   ```
+   py --version
+   ```
+
+   Linux/MAC OS
+   ```
+   python3 --version
+   ```
+
+2. Make sure you have upgraded version of pip.
+
+   Windows
+   ```
+   py -m pip install --upgrade pip
+   ```
+
+   Linux/MAC OS
+   ```
+   python3 -m pip install --upgrade pip
+   ```
+
+3. Install xiomedon using pip.
+
+   Windows
+   ```
+   pip install xiomedon
+   ```
+
+   Linux/MAC OS
+   ```
+   python3 -m pip install xiomedon
+   ```
+
+4. Check that the package was installed
+
+   ```
+   pip show xiomedon
+   ```
+
+## Usage
+
+
+   ```
+      from datasets import Dataset 
+      import os
+      from xiomedon import openai_invoke
+
+      os.environ["OPENAI_API_KEY"] = "your-openai-key"
+
+      question_answer_sample = {
+         'question': 'What is the name of the magical device used in the Harry Potter series to store and view memories?',
+         'answer': 'Pensieve',
+      }
+
+      dataset = Dataset.from_dict(question_answer_sample)
+
+      response = openai_invoke(dataset)
+   ```
+ 

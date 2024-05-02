@@ -1,0 +1,26 @@
+[project]
+name = "xiomedon"
+authors = [
+    {name = "Ashwin Aravind", email = "ashwinaravind@gmail.com"}
+]
+description = "My package description"
+readme = "README.md"
+dependencies = [
+    "datasets",
+    "openai>1",
+]
+dynamic = ["version"]
+requires-python = ">=3.7"
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/plain"}
+
+[tool.ruff.lint]
+ignore = ["E501"]
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+ 

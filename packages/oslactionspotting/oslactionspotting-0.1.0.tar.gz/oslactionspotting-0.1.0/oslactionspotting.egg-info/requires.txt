@@ -1,0 +1,8 @@
+tqdm
+SoccerNet
+matplotlib
+scikit-learn
+mmengine
+torch
+torchvision
+pytorch-lightning

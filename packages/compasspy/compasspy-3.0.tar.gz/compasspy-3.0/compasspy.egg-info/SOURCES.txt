@@ -1,0 +1,11 @@
+README.md
+setup.py
+compasspy/__init__.py
+compasspy/client.py
+compasspy/errors.py
+compasspy/models.py
+compasspy.egg-info/PKG-INFO
+compasspy.egg-info/SOURCES.txt
+compasspy.egg-info/dependency_links.txt
+compasspy.egg-info/not-zip-safe
+compasspy.egg-info/top_level.txt

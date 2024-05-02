@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: McQueen
+Version: 0.4.4
+Summary: A collection of information-gathering tools
+Home-page: https://github.com/hpcao299/McQueen
+Author: Michael Cao
+Author-email: caohoangphuc2909@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: dnspython
+Requires-Dist: requests
+Requires-Dist: argparse
+Requires-Dist: beautifulsoup4

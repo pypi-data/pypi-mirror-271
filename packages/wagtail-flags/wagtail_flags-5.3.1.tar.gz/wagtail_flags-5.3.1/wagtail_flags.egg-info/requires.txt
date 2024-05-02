@@ -1,0 +1,5 @@
+wagtail>=4
+django-flags>4.2
+
+[testing]
+coverage[toml]

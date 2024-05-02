@@ -1,0 +1,9 @@
+{% extends 'wagtailadmin/shared/header.html' %}
+{% load i18n modeladmin_tags wagtailadmin_tags wagtailflags_admin %}
+
+{% block right_column %}
+  {% url 'wagtailflags:create_flag' as add_link %}
+  {% include "wagtailadmin/shared/header.html" with title=title action_icon=icon action_text='Add flag' action_url=add_link %}
+
+  {% include 'modeladmin/includes/button.html' with button=view.get_add_button_with_parent %}
+{% endblock %}

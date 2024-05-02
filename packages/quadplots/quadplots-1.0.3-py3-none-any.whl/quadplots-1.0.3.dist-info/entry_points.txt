@@ -1,0 +1,2 @@
+[console_scripts]
+quadplots = quadplots.__main__:main

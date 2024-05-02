@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: nirvana-ui
+Version: 1.0
+Summary: A Django app containing a UI library for easy integration into Django projects.
+Author: Kris Patel
+Author-email: krishp759@gmail.com
+Requires-Dist: Django>=2.0

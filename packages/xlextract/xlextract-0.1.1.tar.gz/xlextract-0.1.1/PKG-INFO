@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xlextract
+Version: 0.1.1
+Summary: Extract data from Excel files
+Author: AJ Cruz
+Author-email: aj.cruz@computacenter.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Description-Content-Type: text/markdown
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/netmiko.svg)](https://img.shields.io/pypi/pyversions/xlextract)

@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+"""
+Copyright (C) 2024, Zato Source s.r.o. https://zato.io
+
+Licensed under SSPL 1.0, see LICENSE.txt for terms and conditions.
+"""
+
+from zato.apitest import cli # type: ignore
+cli.main()

@@ -1,0 +1,2 @@
+[console_scripts]
+metric_visualizer = metric_visualizer.cli_command:instant_visualize

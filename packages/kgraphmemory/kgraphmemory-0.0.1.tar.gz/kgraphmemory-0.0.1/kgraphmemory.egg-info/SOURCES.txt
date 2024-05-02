@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+kgraphmemory/__init__.py
+kgraphmemory/kgraph.py
+kgraphmemory/kgraph_memory.py
+kgraphmemory.egg-info/PKG-INFO
+kgraphmemory.egg-info/SOURCES.txt
+kgraphmemory.egg-info/dependency_links.txt
+kgraphmemory.egg-info/requires.txt
+kgraphmemory.egg-info/top_level.txt

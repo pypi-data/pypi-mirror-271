@@ -1,0 +1,3 @@
+vital-ai-vitalsigns
+six
+pyyaml

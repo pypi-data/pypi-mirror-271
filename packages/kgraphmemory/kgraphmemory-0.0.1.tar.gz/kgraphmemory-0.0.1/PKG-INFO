@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kgraphmemory
+Version: 0.0.1
+Summary: KGraph Memory
+Home-page: https://github.com/vital-ai/kgraphmemory
+Author: Marc Hadfield
+Author-email: marc@vital.ai
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: vital-ai-vitalsigns
+Requires-Dist: six
+Requires-Dist: pyyaml
+
+# kgraphmemory

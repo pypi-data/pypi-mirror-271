@@ -1,0 +1,3 @@
+include pylaunchermpi/main.py
+recursive-include pylaunchermpi *.txt *.py
+exclude pylaunchermpi/tests/

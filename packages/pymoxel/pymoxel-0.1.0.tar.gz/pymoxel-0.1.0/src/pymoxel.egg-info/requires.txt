@@ -1,0 +1,6 @@
+numpy
+fire
+pymatgen
+tqdm
+matplotlib
+pyvista

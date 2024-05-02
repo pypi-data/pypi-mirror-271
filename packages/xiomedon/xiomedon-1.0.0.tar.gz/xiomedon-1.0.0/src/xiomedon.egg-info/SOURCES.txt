@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/xiomedon/__init__.py
+src/xiomedon/_version.py
+src/xiomedon/openai_wrapper.py
+src/xiomedon.egg-info/PKG-INFO
+src/xiomedon.egg-info/SOURCES.txt
+src/xiomedon.egg-info/dependency_links.txt
+src/xiomedon.egg-info/requires.txt
+src/xiomedon.egg-info/top_level.txt

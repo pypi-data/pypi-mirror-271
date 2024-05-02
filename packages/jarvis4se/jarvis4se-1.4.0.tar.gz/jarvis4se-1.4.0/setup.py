@@ -1,0 +1,42 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from setuptools import setup, find_packages
+
+# jarvis4se version
+VERSION = "1.4.0"
+
+
+def readme():
+    """print long description"""
+    with open('README.md', "r", encoding="utf-8") as f:
+        return f.read()
+
+
+setup(
+    name="jarvis4se",
+    version=VERSION,
+    description="Jarvis 4 Systems Engineers",
+    long_description=readme(),
+    url="https://github.com/rcasteran/jarvis4se",
+    author="Regis CASTERAN",
+    author_email="casteranregis@gmail.com",
+    license="MIT",
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Topic :: Scientific/Engineering :: Visualization",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Programming Language :: Python :: 3.8",
+    ],
+    keywords='',
+    packages=find_packages(include=['jarvis4se', 'jarvis4se.*']),
+    install_requires=[
+        'ipython >= 7.27.0',
+        'lxml >= 4.6.3',
+        'notebook >= 6.4.3',
+        'plantuml == 0.3.0',
+        'pandas ~= 1.4.1',
+        'requests >= 2.31.0',
+        'nltk ~= 3.8.1'],
+    python_requires='>=3.8',
+)

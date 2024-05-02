@@ -1,0 +1,17 @@
+@startuml
+
+json "Config" as config {
+   "Worker Type": ["Thread", "Process"],
+   "Worker Number": ["Fixed by default", "Created by each interval"]
+}
+usecase "Tasks" as tasks
+component "Worker Dispatcher" as wd
+usecase "Results" as results
+component "Threading / Processing Pool" as pool
+
+tasks -> wd
+wd -> results
+wd -- config
+config -- pool
+
+@enduml

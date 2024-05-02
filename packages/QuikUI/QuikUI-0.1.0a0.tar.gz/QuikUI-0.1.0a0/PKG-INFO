@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: QuikUI
+Version: 0.1.0a0
+Summary: Build UIs quickly with Jinga2, FastAPI, Pydantic, htmx, and a little bit of magic
+Author-email: "ApeWorX LTD." <admin@apeworx.io>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <4,>=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: lint
+Provides-Extra: test
+Provides-Extra: release
+Provides-Extra: dev
+License-File: LICENSE
+
+## Quick Start
+
+```sh
+uvicorn examples.basic:app
+```

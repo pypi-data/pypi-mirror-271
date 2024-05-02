@@ -1,0 +1,17 @@
+fastapi[all]<1,>=0.110
+Jinja2<4,>=3.0
+pydantic<3,>=2.6
+
+[dev]
+IPython
+quikui[lint,release,test]
+
+[lint]
+black
+
+[release]
+setuptools_scm
+wheel
+
+[test]
+pytest

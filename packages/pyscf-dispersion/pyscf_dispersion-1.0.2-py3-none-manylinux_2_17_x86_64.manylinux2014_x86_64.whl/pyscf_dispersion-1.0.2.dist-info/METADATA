@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pyscf-dispersion
+Version: 1.0.2
+Summary: DFTD3 and DFTD4 interfaces
+Author-email: Qiming Sun <osirpt.sun@gmail.com>
+Maintainer-email: Qiming Sun <osirpt.sun@gmail.com>
+License: Apache-2.0
+Project-URL: Homepage, http://www.pyscf.org
+Project-URL: Repository, https://github.com/pyscf/dftd3-builder
+Project-URL: Documentation, http://www.pyscf.org
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyscf
+
+This repo repackges the DFT-D3 (https://github.com/dftd3/simple-dftd3) and
+DFT-D4 (https://github.com/dftd4/dftd4) for PySCF. OpenMP for the two packages
+are disabled in this repo due to its potential conflicts to PyTorch.
+This is the main difference to the multi-threading versions of dftd3 and dftd4
+released on PyPI.
+
+```
+pip install pyscf-dispersion
+```
+
+If PyTorch is not used in your program, you can still install the
+multi-threading releases through `pip install dftd3 dftd4`

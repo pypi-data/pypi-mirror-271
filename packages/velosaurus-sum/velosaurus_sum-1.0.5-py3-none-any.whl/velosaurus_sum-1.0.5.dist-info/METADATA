@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: velosaurus_sum
+Version: 1.0.5
+Summary: Just a dummy project for some pipeline and package deployment testing
+Home-page: https://github.com/OliverZott/python-devops-example
+Author: Oliver Zott
+Author-email: zott_oliver@web.de
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+
+Just a dummy project for some pipeline and package deployment testing

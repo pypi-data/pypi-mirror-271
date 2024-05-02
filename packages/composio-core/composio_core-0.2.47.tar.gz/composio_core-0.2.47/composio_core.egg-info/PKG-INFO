@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: composio_core
+Version: 0.2.47
+Summary: Core package to act as a bridge between composio platform and other services.
+Home-page: https://github.com/SamparkAI/composio_sdk
+Author: Utkarsh
+Author-email: utkarsh@composio.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9,<4
+Description-Content-Type: text/markdown
+Requires-Dist: requests<3,>=2.31.0
+Requires-Dist: jsonschema<5,>=4.21.1
+Requires-Dist: beaupy<4,>=3.7.2
+Requires-Dist: termcolor<3,>=2.4.0
+Requires-Dist: pydantic<3,>=2.6.4
+Requires-Dist: openai>=1.3.0
+Requires-Dist: rich<14,>=13.7.1
+Requires-Dist: importlib-metadata<5,>=4.8.1
+Requires-Dist: pyperclip<2,>=1.8.2
+
+# Python SDKs of Composio 
+1. Core - To access base APIs
+2. Autogen - Use Composio tools with Autogen
+3. CrewAI - Use Composio tools with CrewAI
+4. Langchain - Use Composio tools with Langchain
+
+## Development Environement Setup
+
+- Ensure your machine has `Python>=3.8,<4` and `pipenv` installed
+- Clone the repository:
+    ```
+    git clone git@github.com:SamparkAI/composio_sdk
+    ```
+- Create and launch a virtual environment. Also, run this during development, every time you need to re-create and launch the virtual environment and update the dependencies:
+    ```
+      make env && pipenv shell
+    ```
+
+## Release Process
+```
+make clean-build
+python scripts/bump.py patch
+make build
+
+make test-publish # for publishing to test-pypi
+make publish # for publishing to pypi
+```
+
+## Run a single test file
+```
+pytest -v -s --log-level=DEBUG tests/autogen_test.py
+```

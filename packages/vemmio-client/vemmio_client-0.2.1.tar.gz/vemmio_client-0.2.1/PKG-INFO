@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vemmio-client
+Version: 0.2.1
+Summary: 
+License: MIT
+Author: Vemmio
+Author-email: vemmio@vemmio.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9,<4.0)
+Requires-Dist: async-timeout (>=4.0.3,<5.0.0)
+Requires-Dist: protobuf (>=4.24,<5.0)
+Description-Content-Type: text/markdown
+
+# vemmio-client

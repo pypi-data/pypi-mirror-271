@@ -1,0 +1,27 @@
+[project]
+name = "globy_core"
+version = "0.0.2"
+authors = [
+  { name="Björn L", email="bjorn@globy.ai" },
+]
+description = "Globy Core"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "aiohttp",
+  "beautifulsoup4",
+  "colorlog",
+  "pandas",
+]
+
+[project.urls]
+Homepage = "https://github.com/globyai"
+
+[project.scripts]
+# globy-test1 = "globy_core.main:main"

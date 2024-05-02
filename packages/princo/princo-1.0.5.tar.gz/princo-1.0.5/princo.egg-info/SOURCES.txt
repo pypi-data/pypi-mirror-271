@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+princo/__init__.py
+princo/princo.py
+princo.egg-info/PKG-INFO
+princo.egg-info/SOURCES.txt
+princo.egg-info/dependency_links.txt
+princo.egg-info/top_level.txt

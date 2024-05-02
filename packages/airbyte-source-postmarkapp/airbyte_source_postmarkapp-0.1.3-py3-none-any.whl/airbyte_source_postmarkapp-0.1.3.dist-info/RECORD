@@ -1,0 +1,12 @@
+source_postmarkapp/__init__.py,sha256=dYAp56WI9tKEPZqTzg9ZrLgJvlj42T5NW9KLIYLyqf4,134
+source_postmarkapp/manifest.yaml,sha256=J2DSuFALAM1m0-Tc_NKhBR1nhsbMM7pYicvDFeCZ0r4,14695
+source_postmarkapp/run.py,sha256=y8v2dekS5YCaCSZLMm3b2OYuZQns2rusbc-JG0Aw4tk,245
+source_postmarkapp/schemas/outbound-stats.json,sha256=SjiarCbMXfTokmSXy5z8EIM-7gyj46kJllzytTNLRLw,2365
+source_postmarkapp/schemas/server.json,sha256=hM73-cAvDPrjV31aWKUbSAO8gph2yHkZYk3oZSn9h7M,2835
+source_postmarkapp/schemas/templates.json,sha256=FXBEjVdFyC58sA1F72aTlO8KScx7SGiPYaCa15n_ya0,1093
+source_postmarkapp/source.py,sha256=HcTVT110Z5aL30hfBEE6QS3oxgBObkfep-NDN3qPDwc,480
+source_postmarkapp/spec.yaml,sha256=A9HdpYCsuZy2W76ux_gef63DH1pT_Vtp5ZO1JNXH_sg,574
+airbyte_source_postmarkapp-0.1.3.dist-info/METADATA,sha256=nXdeW1fx6VrxUvRADwoGDpZPPXsp4nAXJ3uMkUDZHWU,5305
+airbyte_source_postmarkapp-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_postmarkapp-0.1.3.dist-info/entry_points.txt,sha256=ggaegRzGkjXz6L4CtojjJHwSmqKxTCgWxJ0EC7cWQWI,65
+airbyte_source_postmarkapp-0.1.3.dist-info/RECORD,,

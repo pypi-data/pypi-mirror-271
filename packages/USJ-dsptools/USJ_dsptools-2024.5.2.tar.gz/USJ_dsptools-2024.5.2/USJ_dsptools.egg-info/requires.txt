@@ -1,0 +1,6 @@
+matplotlib>=3.7.0
+numpy>=1.23.5
+bokeh>=3.3.4
+
+[dev]
+twine>=4.0.2

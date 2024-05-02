@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: recharge-api
+Version: 1.5.0
+Summary: Python API Wrapper for Recharge
+Home-page: http://github.com/ChemicalLuck/recharge-api
+Author: ChemicalLuck
+License: MIT
+Keywords: api recharge
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Recharge API Wrapper
+
+## Installation
+
+```bash
+pip install recharge-api
+```
+
+## Usage
+
+```python
+from recharge import RechargeAPI
+
+client = Recharge(access_token='XXXXX')
+
+response = client.Order.list({'status': 'QUEUED', 'limit': '250'})
+
+for order in response['orders']:
+    print(order['id'])
+```
+
+For more details on the content of the reponses, visit the (official recharge API docs)[https://developer.rechargepayments.com].
+
+## Resources Available
+- Addresses
+- Charges
+- Checkouts
+- Customers
+- Discounts
+- Metafields
+- Notifications
+- Onetimes
+- Orders
+- Products
+- Shop
+- Subscriptions
+- Webhooks
+- Async Batches
+
+## License
+MIT. See LICENSE for more details.
+
+## Acknowledgements
+This project is a fork of recharge-api by BuluBox which is no longer available.

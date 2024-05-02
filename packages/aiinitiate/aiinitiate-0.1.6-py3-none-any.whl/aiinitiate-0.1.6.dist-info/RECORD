@@ -1,0 +1,17 @@
+aiinitiate/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+aiinitiate/basic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiinitiate/basic/common_utils.py,sha256=1CHIF8jJBqXiKQFp62ZpqRS9aTP94crpeRI43WYDYRY,1686
+aiinitiate/cli.py,sha256=YysS6ddUAHn9zkJsiE0Ru4G7c4YWLxKsP840ZUl7cTc,3744
+aiinitiate/config.py,sha256=iGBI6bdXtu9VYI5NUmYSRWhqgyf4JH0YoZMrdZalpMU,706
+aiinitiate/g.py,sha256=VDS6VXlRw1pawGwSccEknS7tIkKlgB6O9kPb34mOUFs,3349
+aiinitiate/sysinfo.py,sha256=_mKk8PuC8F4jChEVya-qDo-vEXWVZMxmG01u-yG9uQ4,2959
+aiinitiate/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiinitiate/tools/builtin_tools.py,sha256=DYjie8aynlh6yixtT7ayRg58089z3GqXzf8UFkgm1zY,2918
+aiinitiate/tools/downloader.py,sha256=T0Nl5OUaD_cHtNZZf4u_8RsA6tqIFVz6DKbpoKjwXSQ,619
+aiinitiate/tools/setter/__init__.py,sha256=zKBJCAUCsh5WqOG8LI_O73FXIZMDgrRrpajcCFmZdXQ,257
+aiinitiate/tools/setter/base.py,sha256=hnfO-JTsLEoeOqBpqwJAjqzNAxROI04pmMk-UjpjkzM,3569
+aiinitiate/tools/tool.py,sha256=HBuhKqtWHM6U8wAkfp9SIegHvb0MAChkfHoFofgRVdM,2506
+aiinitiate-0.1.6.dist-info/METADATA,sha256=bVHubTEaiIclGA7BlJB3lhFM-wY0ijLQveVYLUPaxS0,724
+aiinitiate-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aiinitiate-0.1.6.dist-info/entry_points.txt,sha256=CrFRnKdG6BkEwhgr8L228LlGpEAX5-2-KUrOFP8KguE,49
+aiinitiate-0.1.6.dist-info/RECORD,,

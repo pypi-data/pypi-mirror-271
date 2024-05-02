@@ -1,0 +1,4 @@
+opencv-python~=4.9
+pillow~=10.3
+pytesseract~=0.3
+pythonnet~=3.0

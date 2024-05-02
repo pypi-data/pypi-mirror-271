@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+resszo/__init__.py
+resszo/main.py
+resszo.egg-info/PKG-INFO
+resszo.egg-info/SOURCES.txt
+resszo.egg-info/dependency_links.txt
+resszo.egg-info/requires.txt
+resszo.egg-info/top_level.txt

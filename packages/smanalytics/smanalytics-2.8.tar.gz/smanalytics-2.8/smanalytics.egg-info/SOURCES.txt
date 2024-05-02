@@ -1,0 +1,8 @@
+setup.py
+smanalytics/__init__.py
+smanalytics/main.py
+smanalytics.egg-info/PKG-INFO
+smanalytics.egg-info/SOURCES.txt
+smanalytics.egg-info/dependency_links.txt
+smanalytics.egg-info/not-zip-safe
+smanalytics.egg-info/top_level.txt

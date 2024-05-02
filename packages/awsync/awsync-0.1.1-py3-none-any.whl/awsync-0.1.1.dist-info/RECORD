@@ -1,0 +1,12 @@
+awsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsync/__main__.py,sha256=w3lAPLC5j3lSRYw9UMKMezLXmQelDbCpLMH8HKcVkJU,1291
+awsync/client.py,sha256=OddGn6pg8EGydlLLxxZzoXnWklXUT2Aw7bVLu1-3YZQ,7403
+awsync/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsync/models/aws.py,sha256=UugBZzzM3ehonwa-TB7ewS_2RIGQL5oQs_jPfon7gK0,2275
+awsync/models/http.py,sha256=oXE2AYZ36mFidlLQp29DegUlqUPzUGxqkxYzmPGAGs4,1433
+awsync/models/strenum.py,sha256=Ld-6YUyLUUX1hlIQHFt6mdYScj8vDdg1gIGNr8GKaLc,283
+awsync/request.py,sha256=VK4LGdHTAgkQI2wnwWYJpdAxM5Y__5-jJFsExL2fNWA,9239
+awsync-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+awsync-0.1.1.dist-info/METADATA,sha256=FiKszQXnVhSBxuyewZ_cMAXJZyKI2MOpbmB-VBTTKYc,3365
+awsync-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+awsync-0.1.1.dist-info/RECORD,,

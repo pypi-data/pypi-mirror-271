@@ -1,0 +1,3 @@
+[console_scripts]
+source-sonar-cloud=source_sonar_cloud.run:run
+

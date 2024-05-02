@@ -1,0 +1,1 @@
+Reduce flakyness in bad px correction test by contriving bad px neighborhood to give a known result.

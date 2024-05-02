@@ -1,0 +1,35 @@
+$endpoint:
+    is_sdk: true
+    method: get
+    path: ${external}/id_source/list_id_source
+    function: main.site.app.external.id_source.list_id_source.list_id_source
+    desc: "Lists id and label pairs"
+Arguments:
+    type: Object
+    properties:
+        spec:
+            type: id_source.IdSourceSpec
+            desc: "The id source spec to use"
+        search_label:
+            type: String
+            desc: Text to search within the labels to search matches
+        offset?:
+            type: Optional<Integer>
+            desc: "Used for pagination. Pagination is done based on the sorting of the config"
+        limit?:
+            type: Optional<Integer>
+            desc: "The number of data points to return. If not filled in, it will be set to 100, and cannot be set higher than 100"
+
+IdName:
+    type: Object
+    properties:
+        id:
+            type: Union<ObjectId,String>
+        name:
+            type: String
+
+Data:
+    type: Object
+    properties:
+        results:
+            type: List<IdName>

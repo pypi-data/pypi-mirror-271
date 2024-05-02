@@ -1,0 +1,7 @@
+openai
+anthropic
+groq
+python-dotenv
+pyperclip
+wheel
+diagrams

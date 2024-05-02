@@ -1,0 +1,2 @@
+llm-dataset-converter>=0.2.1
+reo-toolkit@ git+https://github.com/TeHikuMedia/reo-toolkit

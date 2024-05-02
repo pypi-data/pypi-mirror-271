@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: stepup
+Version: 1.1.0
+Summary: StepUp Core provides the basic framework for the StepUp build tool
+Author-email: Toon Verstraelen <toon.verstraelen@ugent.be>
+Project-URL: Documentation, https://reproducible-reporting.github.io/stepup-core/
+Project-URL: Issues, https://github.com/reproducible-reporting/stepup-core/issues
+Project-URL: Source, https://github.com/reproducible-reporting/stepup-core/
+Project-URL: Changelog, https://reproducible-reporting.github.io/stepup-core/changelog/
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs
+Requires-Dist: msgpack
+Requires-Dist: parse
+Requires-Dist: path
+Requires-Dist: rich
+Requires-Dist: watchdog
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+Requires-Dist: mkdocstrings[python]; extra == "dev"
+Requires-Dist: mkdocs-macros-plugin; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Requires-Dist: numpy; extra == "dev"
+Requires-Dist: matplotlib; extra == "dev"
+
+[![release](https://github.com/reproducible-reporting/stepup-core/actions/workflows/release.yaml/badge.svg)](https://github.com/reproducible-reporting/stepup-core/actions/workflows/release.yaml)
+[![pytest](https://github.com/reproducible-reporting/stepup-core/actions/workflows/pytest.yaml/badge.svg)](https://github.com/reproducible-reporting/stepup-core/actions/workflows/pytest.yaml)
+[![PyPI Version](https://img.shields.io/pypi/v/stepup)](https://pypi.org/project/stepup/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/stepup)
+![GPL-3 License](https://img.shields.io/github/license/reproducible-reporting/stepup-core)
+
+# StepUp Core
+
+StepUp is a simple, powerful and universal build tool.
+StepUp Core provides the basic framework for StepUp, without any domain-specific features.
+
+For more information, consult the [documentation](http://reproducible-reporting.github.io/stepup-core).

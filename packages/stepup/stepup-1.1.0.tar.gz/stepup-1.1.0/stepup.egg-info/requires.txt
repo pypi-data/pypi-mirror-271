@@ -1,0 +1,17 @@
+attrs
+msgpack
+parse
+path
+rich
+watchdog
+
+[dev]
+pytest
+pytest-asyncio
+pytest-xdist
+mkdocs
+mkdocstrings[python]
+mkdocs-macros-plugin
+mkdocs-material
+numpy
+matplotlib

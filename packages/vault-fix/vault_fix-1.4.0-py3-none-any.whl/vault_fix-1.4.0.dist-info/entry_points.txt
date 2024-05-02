@@ -1,0 +1,2 @@
+[console_scripts]
+vault-fix = vault_fix.__main__:cli

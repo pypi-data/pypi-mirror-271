@@ -1,0 +1,2 @@
+[console_scripts]
+sovfixerapi = pingintel_api.sovfixerapi_cmd:main

@@ -1,0 +1,12 @@
+{
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "black-formatter.args": ["--line-length", "79"],
+    "files.exclude": {
+        "spyctl_api": true,
+    }
+}

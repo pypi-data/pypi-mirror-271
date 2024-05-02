@@ -1,0 +1,6 @@
+requests
+fiona
+pandas
+pystac
+python-dotenv
+sqlalchemy

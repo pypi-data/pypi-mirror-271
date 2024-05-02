@@ -1,0 +1,35 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[project]
+name = "bytebridge"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+authors = [
+    {name = "Rafael Vargas", email = "contact@rafaelvargas.dev"},
+]
+dynamic = ["version", "description"]
+dependencies = [
+    "psycopg[binary] >=3.0.9",
+    "pyarrow >=7.0.0",
+    "mysql-connector-python >=8.0.19",
+    "pymssql >=2.2.11", 
+]
+
+
+[project.optional-dependencies]
+dev = [
+    "ruff ==0.1.5",
+    "pre-commit >=2.17.0",
+    "pytest ==8.1.1"
+]
+
+[project.scripts] 
+bytebridge = "bytebridge.cli:main"
+
+
+[tool.ruff]
+select = ["ALL"]
+ignore = ["D100", "D104", "D203", "D212", "COM812", "ISC001"]

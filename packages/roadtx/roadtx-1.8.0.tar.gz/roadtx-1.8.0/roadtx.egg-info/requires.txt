@@ -1,0 +1,8 @@
+roadlib>=0.24
+requests
+selenium
+selenium-wire
+pyotp
+pycryptodomex
+signxml
+blinker<1.8.0

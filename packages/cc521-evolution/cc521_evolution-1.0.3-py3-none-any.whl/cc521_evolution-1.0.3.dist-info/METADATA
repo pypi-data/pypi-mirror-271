@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cc521-evolution
+Version: 1.0.3
+Summary: Collection of utilities to develop evolutionary algorithms
+Author: Gustavo Lozano
+Author-email: glozanoac@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+

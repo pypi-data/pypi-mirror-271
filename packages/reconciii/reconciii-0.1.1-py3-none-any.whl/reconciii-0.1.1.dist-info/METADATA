@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: reconciii
+Version: 0.1.1
+Summary: A csv reconciliation tool and report generator
+Author: Ibrahim hamzat
+Author-email: hamat.ibrahim3@gmail.com
+Requires-Dist: Click
+

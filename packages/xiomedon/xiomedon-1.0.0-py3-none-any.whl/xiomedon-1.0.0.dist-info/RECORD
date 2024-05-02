@@ -1,0 +1,8 @@
+xiomedon/__init__.py,sha256=RkgP9Jq0oTBex7UHTaZQRZNU7h0a58gd8YR-z4335Nw,196
+xiomedon/_version.py,sha256=7KQxcqIzyCBGCYgB1qGQR0kYmbSilQf8yU-XqnTNOgI,442
+xiomedon/openai_wrapper.py,sha256=5y7-KfgyaEhWHChFKG6_durnBlYShPovlx58H5z2la4,424
+xiomedon-1.0.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+xiomedon-1.0.0.dist-info/METADATA,sha256=4ej8muslkpsTkdsgBZSKybhtf4C80v9rsVGWYaQlDYs,1637
+xiomedon-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xiomedon-1.0.0.dist-info/top_level.txt,sha256=HvGmcTf-aoGJ_DOlmiF5gMhAxd8SxXZVRM23uYMh-q0,9
+xiomedon-1.0.0.dist-info/RECORD,,

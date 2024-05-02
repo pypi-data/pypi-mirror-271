@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+quadplots/GraphQuad.py
+quadplots/Interval.py
+quadplots/Quadrature.py
+quadplots/__init__.py
+quadplots/__main__.py
+quadplots.egg-info/PKG-INFO
+quadplots.egg-info/SOURCES.txt
+quadplots.egg-info/dependency_links.txt
+quadplots.egg-info/entry_points.txt
+quadplots.egg-info/requires.txt
+quadplots.egg-info/top_level.txt

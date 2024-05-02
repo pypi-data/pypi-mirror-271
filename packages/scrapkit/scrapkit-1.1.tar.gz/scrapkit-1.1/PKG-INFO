@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: scrapkit
+Version: 1.1
+Summary: WebScrapping in 3 lines of code
+Author: Ali Lodhi
+Author-email: alilodhibusiness@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests==2.31.0
+Requires-Dist: bs4==0.0.2
+
+# ScrapKit 1.1 - WebScrapping is now easy
+
+## Usage
+
+ScrapKit is a very useful Python Package that allows you to get the HTML of any website in just one line of code. You don't need to manually import `requests` and `beautifulsoup` type of module from now
+
+## Syntax
+
+ScrapKit provides you an easy syntax that you can use to get the HTML, Title and the Text of any website
+
+```python
+import scrapkit as sk
+
+url = 'https://www.youtube.com'
+
+# Fetch the Title of the website
+title = st.getTitle (url)
+print (title)
+
+# Fetch the HTML of the website
+html = st.getHTML (url)
+print (html)
+
+# Fetch the Text of the website
+text = st.getText (url)
+print (text)
+```
+
+# Founder
+
+ScrapKit is a very useful python package that is made by the one and only "Ali Lodhi". Ali Lodhi is from Pakistan, He loves to write code in python and try to easy people's work. Recently Ali Lodhi is working on the next update of this package
+
+# Versions
+
+ScrapKit 1.0 - It provide you to fetch only HTML of the website
+ScrapKit 1.1 - It provides you to fetch HTML, Title and the Text of the website

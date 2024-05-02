@@ -1,0 +1,13 @@
+fps_auth/__init__.py,sha256=isJrmDBLRag7Zc2UK9ZovWGOv7ji1Oh-zJtJMNJFkXw,22
+fps_auth/backends.py,sha256=x9wSW2-RiIDLMdCZeWxEAP_5ja8okmdchjdQ6UqrMtU,11618
+fps_auth/config.py,sha256=Zx0DiQ_4N46Nhz2K5w0noj36o04VICTdk6cQCiHduNU,578
+fps_auth/db.py,sha256=Ae1LhpPNiR8N5rNdcXLXznXbheEQzm24tantxEvcM4k,3297
+fps_auth/main.py,sha256=LG-YmdYzDEvJ9K6j10aaWy2hV8xJdrl9U-NSQ4T1Dlw,2229
+fps_auth/models.py,sha256=vkkLFF-Jh-BeGSi1rQdVd0QXWUJSZSJndoabh3X86Xo,407
+fps_auth/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fps_auth/routes.py,sha256=F1wibP4wNjqoBURra1r0sLusMlKUqkVn3JRPBwA7SNA,8232
+fps_auth-0.5.2.dist-info/METADATA,sha256=qclGnNire8HQmQlx3g2nWnwz2rupdHLfm6vPIpRqv3c,552
+fps_auth-0.5.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+fps_auth-0.5.2.dist-info/entry_points.txt,sha256=KDIr9q9kG0bqAu6FgErdVUtW8f6vVyQL1XvSCmyIgdY,115
+fps_auth-0.5.2.dist-info/licenses/COPYING.md,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+fps_auth-0.5.2.dist-info/RECORD,,

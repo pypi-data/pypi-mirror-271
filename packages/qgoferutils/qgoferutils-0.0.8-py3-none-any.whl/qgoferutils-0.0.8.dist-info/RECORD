@@ -1,0 +1,14 @@
+qgoferutils/__init__.py,sha256=BLXRGJHfnEu0fpvESaAw8qq-6Z9-v_2FQPkeqJfwItk,23
+qgoferutils/_modidx.py,sha256=erlNcTjh6AXnlQek3vHFXyNUatPvwhcTWmx_NKqTpSc,8046
+qgoferutils/config.py,sha256=h9980aDuEq0J9p0r-P5rfjAaGhebtaqnRWqf31APEbM,5032
+qgoferutils/core.py,sha256=pLgs_aot3h7O0-Wx2Dv983YqXz7_nHIVYS3tvJkuYGs,1808
+qgoferutils/db.py,sha256=pt1I2SYPSrp5LczSR_TRf9gdE4C0SWcYlE_yj_tYrfk,3950
+qgoferutils/logger.py,sha256=XsnXUApdjyvHohQPbALeMI17U4YWXT0jXlPyj-k38a4,1949
+qgoferutils/manage_index.py,sha256=Fx6YjZv5HRjmpCK56we_ikxHJA-PYCfQsiST6o7gfB0,4906
+qgoferutils/requests.py,sha256=r4V2db8aiS_zNpjFA8Iylb81OCFk2bApEad4Mw4y0SM,1898
+qgoferutils-0.0.8.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+qgoferutils-0.0.8.dist-info/METADATA,sha256=Gt_KWIVMsxa7eNJrHuF71jSrRZqr1DFdCz1zDuJdks4,4615
+qgoferutils-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+qgoferutils-0.0.8.dist-info/entry_points.txt,sha256=gtNSOyCKA8-f5I5Bkfwhj6Sz5RrHb1hNaW6oKkfPkLg,44
+qgoferutils-0.0.8.dist-info/top_level.txt,sha256=dCnb_Gk6NWhUpyOfhwrPjNqOzHB9nD8tDD6JIJW0zbk,12
+qgoferutils-0.0.8.dist-info/RECORD,,

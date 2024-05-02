@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: titli
+Version: 0.0.2
+Summary: A library for collection of IDS and tools for evaluating them
+Home-page: https://github.com/spg-iitd/raids
+Author: Subrat Kumar Swain
+Author-email: mailofswainsubrat@gmail.com
+License: MIT
+Keywords: ids adversarial network nids
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Security
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scapy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+# walle
+Artificial Intelligence based Intrusion Detection Systems

@@ -1,0 +1,6 @@
+dist
+docs
+examples
+pkgs
+type_spec
+uncountable

@@ -1,0 +1,32 @@
+[project]
+name = "grbl-streamer"
+authors = [
+  {name = "Michael Franzl", email = "michael@franzl.name"},
+]
+version = "2.0.2"
+description = "Universal interface module written in Python 3 for the grbl CNC firmware"
+readme = "README.md"
+requires-python = ">=3.5"
+dependencies = [
+  "gcode-machine ~= 1.0",
+  "pyserial ~= 3.5",
+]
+license = {file = "COPYING"}
+keywords = ["cnc", "gcode", "grbl"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+]
+
+[project.urls]
+repository = "https://github.com/michaelfranzl/grbl-streamer"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [
+  "Makefile",
+  ".*",
+  "test",
+]

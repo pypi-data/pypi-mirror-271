@@ -1,0 +1,3 @@
+[console_scripts]
+probs=deepdog.cli.probs:wrapped_main
+

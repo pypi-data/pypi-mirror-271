@@ -1,0 +1,10 @@
+coverage[toml]
+dirty-equals
+msgpack
+pydantic
+pytest
+pytest-asyncio
+pytest-mock
+pytest-pretty
+pytest-timeout
+pytz

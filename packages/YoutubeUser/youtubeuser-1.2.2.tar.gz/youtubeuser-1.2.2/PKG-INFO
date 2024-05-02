@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: YoutubeUser
+Version: 1.2.2
+Summary: A Lib For Search Youtube User Or Channels
+Home-page: https://github.com/R1TGAMING/YoutubeUser
+Author: R1TGAMING
+Author-email: rafisofyangaming1234@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0

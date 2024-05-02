@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+YoutubeUser.egg-info/PKG-INFO
+YoutubeUser.egg-info/SOURCES.txt
+YoutubeUser.egg-info/dependency_links.txt
+YoutubeUser.egg-info/requires.txt
+YoutubeUser.egg-info/top_level.txt
+youtubeuser/__init__.py
+youtubeuser/user.py

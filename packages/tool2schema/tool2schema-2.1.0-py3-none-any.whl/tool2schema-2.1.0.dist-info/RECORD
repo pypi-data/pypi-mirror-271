@@ -1,0 +1,9 @@
+tool2schema/__init__.py,sha256=rh1ZC3uf9n7DvfkSNAkOjmh6n-ecUwqxFeahQXaglc4,378
+tool2schema/config.py,sha256=FE76nP3Uk3HF3L4muWUA-9CA4aJfHuwxHwzMmGn6tzo,4243
+tool2schema/parameter_schema.py,sha256=62Pj2A8uPDK3FIIVH4m3ZFvSJ1LLy4KdlW9TmaOTNm8,3949
+tool2schema/schema.py,sha256=5QreNO_6ar3vaqdD1wbxhA5ES7M9gEH_MJEskWS222E,15480
+tool2schema/type_schema.py,sha256=AqHJq4M62IApqpqrx8p7HTY6IY7vW1QmHtoLAWsS0EU,9670
+tool2schema-2.1.0.dist-info/LICENSE,sha256=o06OEb65c0O91R8KFbpb1OmbCu9beJhmA8-7oPrnKOc,11338
+tool2schema-2.1.0.dist-info/METADATA,sha256=f7E3VZUWekl82zsebJtzlSHQaPc-BMxT1IrmXYfBSMM,9896
+tool2schema-2.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tool2schema-2.1.0.dist-info/RECORD,,

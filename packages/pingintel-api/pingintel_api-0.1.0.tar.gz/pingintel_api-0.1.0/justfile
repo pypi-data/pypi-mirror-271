@@ -1,0 +1,5 @@
+build:
+    py -m build
+
+publish:
+    py -m twine upload dist/*

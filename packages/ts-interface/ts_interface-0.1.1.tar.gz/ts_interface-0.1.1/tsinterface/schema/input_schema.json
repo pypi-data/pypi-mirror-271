@@ -1,0 +1,14 @@
+{
+  "$comment": "Created by ph@tordenskjold.space",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tordenskjold.space/schemas/input.json",
+  "type": "object",
+  "properties": {
+    "product_path": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "product_path"
+  ]
+}

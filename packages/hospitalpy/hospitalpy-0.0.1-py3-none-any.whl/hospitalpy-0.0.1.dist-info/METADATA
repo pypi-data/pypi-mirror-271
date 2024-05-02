@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hospitalpy
+Version: 0.0.1
+Summary: Text Regularization for Unstructured Text from EMS Reports
+Author: Michael Chary
+Author-email: <mic9189@med.cornell.edu>
+Keywords: python,first package
+Requires-Dist: regex
+
+Made by Michael Chary

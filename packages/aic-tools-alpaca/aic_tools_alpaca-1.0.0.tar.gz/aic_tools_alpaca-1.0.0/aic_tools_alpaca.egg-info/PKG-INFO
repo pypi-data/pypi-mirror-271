@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aic_tools_alpaca
+Version: 1.0.0
+Summary: Alpaca tools for AI Characters
+Author: Viacheslav Kovalevskyi
+Author-email: viacheslav@kovalevskyi.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: alpaca-py==0.20.3
+Requires-Dist: crewai-tools==0.1.7
+
+# tools-alpaca
+This package implements personalized access to the [Alpaca API](https://alpaca.markets/) based on some data. As long as these data are not described.
+
+## Available functionality
+
+* Check accounts restrict status
+* Print the account purchasing power
+
+
+## Develop info
+Search [here](./develop.md).

@@ -1,0 +1,3 @@
+[console_scripts]
+source-opsgenie=source_opsgenie.run:run
+

@@ -1,0 +1,3 @@
+[console_scripts]
+source-orb=source_orb.run:run
+

@@ -1,0 +1,4 @@
+[console_scripts]
+dsp-codec=dspy_tool.cli.dsp_codec:main
+dsp-fm=dspy_tool.cli.file_manager:main
+

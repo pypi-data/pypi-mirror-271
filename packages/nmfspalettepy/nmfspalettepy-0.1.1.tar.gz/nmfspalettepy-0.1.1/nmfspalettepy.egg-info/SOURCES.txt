@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+nmfspalettepy/__init__.py
+nmfspalettepy/palettes.py
+nmfspalettepy.egg-info/PKG-INFO
+nmfspalettepy.egg-info/SOURCES.txt
+nmfspalettepy.egg-info/dependency_links.txt
+nmfspalettepy.egg-info/requires.txt
+nmfspalettepy.egg-info/top_level.txt

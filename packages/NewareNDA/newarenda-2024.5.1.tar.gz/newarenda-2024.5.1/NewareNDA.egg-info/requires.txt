@@ -1,0 +1,6 @@
+pandas
+
+[test]
+pytest
+pyarrow
+coveralls

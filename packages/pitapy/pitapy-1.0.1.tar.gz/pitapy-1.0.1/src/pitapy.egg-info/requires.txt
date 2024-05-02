@@ -1,0 +1,9 @@
+pyyaml
+dm_control
+shapely
+matplotlib
+sphinx
+karma-sphinx-theme
+webcolors
+pillow
+typer

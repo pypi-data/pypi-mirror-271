@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+image_diff/__init__.py
+image_diff/image_diff.py
+tests/__init__.py
+tests/test_vrt.py
+tests/testing_images/__init__.py
+vrt_python.egg-info/PKG-INFO
+vrt_python.egg-info/SOURCES.txt
+vrt_python.egg-info/dependency_links.txt
+vrt_python.egg-info/entry_points.txt
+vrt_python.egg-info/requires.txt
+vrt_python.egg-info/top_level.txt

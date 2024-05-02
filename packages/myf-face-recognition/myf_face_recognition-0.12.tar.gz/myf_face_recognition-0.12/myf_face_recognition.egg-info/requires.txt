@@ -1,0 +1,5 @@
+numpy
+keras-facenet
+opencv-python
+mtcnn
+ultralytics

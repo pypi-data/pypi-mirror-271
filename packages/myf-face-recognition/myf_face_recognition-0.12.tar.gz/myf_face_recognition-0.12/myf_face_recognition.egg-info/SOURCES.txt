@@ -1,0 +1,15 @@
+LICENCE
+README.txt
+setup.py
+myf_face_recognition/__init__.py
+myf_face_recognition/all.py
+myf_face_recognition/embeddings.py
+myf_face_recognition/images.py
+myf_face_recognition/simple_video.py
+myf_face_recognition/video.py
+myf_face_recognition.egg-info/PKG-INFO
+myf_face_recognition.egg-info/SOURCES.txt
+myf_face_recognition.egg-info/dependency_links.txt
+myf_face_recognition.egg-info/entry_points.txt
+myf_face_recognition.egg-info/requires.txt
+myf_face_recognition.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+myf_face_recognition = myf_face_recognition.__main__:main

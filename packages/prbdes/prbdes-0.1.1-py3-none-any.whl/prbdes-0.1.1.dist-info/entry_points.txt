@@ -1,0 +1,3 @@
+[console_scripts]
+prbdes=prbdes.main:main
+

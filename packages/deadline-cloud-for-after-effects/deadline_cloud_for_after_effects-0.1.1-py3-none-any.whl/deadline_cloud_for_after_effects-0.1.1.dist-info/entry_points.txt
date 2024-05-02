@@ -1,0 +1,2 @@
+[console_scripts]
+afterfx-openjd = deadline.ae_adaptor.AEAdaptor:main

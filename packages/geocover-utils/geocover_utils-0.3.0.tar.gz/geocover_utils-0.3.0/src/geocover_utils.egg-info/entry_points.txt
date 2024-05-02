@@ -1,0 +1,2 @@
+[console_scripts]
+swissalti = geocover_utils.swissalti:download_swissalti

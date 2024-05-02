@@ -1,0 +1,13 @@
+requests
+affine
+click
+geopandas
+gdal>=3.8.5
+matplotlib
+numpy
+geojson
+rasterio
+shapely>=2.0.0
+pyproj
+pyyaml
+tqdm

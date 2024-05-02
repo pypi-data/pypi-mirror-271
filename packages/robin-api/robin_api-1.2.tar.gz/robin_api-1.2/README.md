@@ -1,0 +1,38 @@
+# RobinApi Framework
+
+**Descripción:**  
+RobinApi Framework es una solución integral diseñada para facilitar la interacción eficiente con APIs de modelos de lenguaje de aprendizaje automático (LLM) y la gestión avanzada de datos vectoriales. Este framework proporciona herramientas robustas para la carga y almacenamiento de archivos en una base de datos vectorial optimizada, permitiendo a los usuarios aprovechar completamente la búsqueda y recuperación de datos basados en contenido. Además, RobinApi Framework incluye endpoints dedicados para realizar consultas complejas, permitiendo a los usuarios extraer información valiosa y realizar análisis profundos sobre los datos almacenados. Ideal para desarrolladores que buscan integrar capacidades de LLM en sus aplicaciones y gestionar grandes volúmenes de datos de manera eficiente, RobinApi Framework se destaca por su flexibilidad, escalabilidad y facilidad de uso.
+
+**Características principales:**
+
+- **Consumo de API de LLM:** Interfaces optimizadas para la interacción con modelos de lenguaje, facilitando la integración y el manejo de respuestas en tiempo real.
+- **Gestión de archivos en base de datos vectorial:** Carga, almacenamiento y gestión eficiente de archivos con búsqueda vectorial, ideal para aplicaciones que requieren acceso rápido y preciso a grandes volúmenes de datos.
+- **Endpoints para consultas:** Funcionalidades específicas para formular preguntas y obtener respuestas basadas en los datos almacenados, soportando una amplia variedad de consultas analíticas y de búsqueda.
+- **Alta configurabilidad y seguridad:** Configuración detallada de parámetros y protocolos de seguridad avanzados para proteger la información y garantizar el rendimiento.
+
+## Código de Ejemplo
+
+```python
+from robin_api import RobinAIClient
+
+client = RobinAIClient(api_key="API_KEY")
+
+value =  [
+            {
+                "role": "system",
+                "content": "system_prompt"
+            },
+            {
+                "role": "user",
+                "content": "hola como estas, dame un poema de 100 palabras"
+            }
+]
+
+stream = client.completions.create(model="ROBIN_4", 
+                            conversation = value, 
+                            max_tokens = 512, stream = True, 
+                            save_response = False,
+                            temperature=1)
+for chunk in stream:
+    if chunk.choices[0].delta.content is not None:
+        print(chunk.choices[0].delta.content, end="")

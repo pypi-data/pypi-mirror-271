@@ -1,0 +1,13 @@
+pip
+pandas
+pyarrow
+numpy
+matplotlib
+mistune
+pyyaml
+plotly-express
+Jinja2
+humanize
+beautifulsoup4
+python-dateutil
+lxml

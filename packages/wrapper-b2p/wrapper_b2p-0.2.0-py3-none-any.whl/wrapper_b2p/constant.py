@@ -1,0 +1,4 @@
+
+RUB = 643
+
+MAX_COUNT_REQUEST_B2P = 3

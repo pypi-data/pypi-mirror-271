@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wrapper-b2p
+Version: 0.2.0
+Summary: wrapper best2pay
+Author: Aleksey
+Author-email: ataraspost@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest-cov (>=3.0.0,<4.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)

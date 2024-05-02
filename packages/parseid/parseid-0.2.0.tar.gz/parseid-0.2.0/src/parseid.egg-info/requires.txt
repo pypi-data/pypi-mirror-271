@@ -1,0 +1,6 @@
+bioomics
+numpy
+pandas
+requests
+obonet
+python-dotenv

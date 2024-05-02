@@ -1,0 +1,11 @@
+[asphalt.components]
+yjs = fps_yjs.main:YjsComponent
+
+[jupyverse.components]
+yjs = fps_yjs.main:YjsComponent
+
+[jupyverse_ydoc]
+blob = fps_yjs.ydocs.yblob:YBlob
+file = fps_yjs.ydocs.yfile:YFile
+notebook = fps_yjs.ydocs.ynotebook:YNotebook
+unicode = fps_yjs.ydocs.yunicode:YUnicode

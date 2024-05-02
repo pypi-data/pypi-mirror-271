@@ -1,0 +1,5 @@
+setup.py
+mypybuildcode.egg-info/PKG-INFO
+mypybuildcode.egg-info/SOURCES.txt
+mypybuildcode.egg-info/dependency_links.txt
+mypybuildcode.egg-info/top_level.txt

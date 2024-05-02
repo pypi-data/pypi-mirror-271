@@ -1,0 +1,105 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dials_data"
+version = "2.4.85"
+description = "DIALS Regression Data Manager"
+authors = [
+    { name = "DIALS development team", email = "dials-support@lists.sourceforge.net" },
+]
+license = { text = "BSD 3-Clause License" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["dials", "dials_data"]
+dynamic = ["readme"]
+requires-python = ">=3.8"
+dependencies = [
+    "importlib_resources>=1.1,!=6.2,!=6.3.0,!=6.3.1",
+    "pytest",
+    "pyyaml",
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://github.com/dials/data"
+"Bug Tracker" = "https://github.com/dials/data/issues"
+Documentation = "https://dials-data.readthedocs.io/"
+"Source Code" = "https://github.com/dials/data"
+
+[project.entry-points]
+"libtbx.dispatcher.script" = { "dials.data" = "dials.data" }
+"libtbx.precommit" = { dials_data = "dials_data" }
+pytest11 = { dials_data = "dials_data.pytest11" }
+
+[project.scripts]
+"dials.data" = "dials_data.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages]
+find = { namespaces = false }
+
+[tool.setuptools.package-data]
+dials_data = ["py.typed"]
+
+[tool.setuptools.dynamic]
+readme = { file = ["README.rst", "HISTORY.rst"], content-type = "text/x-rst" }
+
+[tool.ruff.lint]
+# Black disagrees with flake8 on a few points. Ignore those.
+# E203 whitespace before ':'
+# E266 too many leading '#' for block comment
+# E501 line too long
+ignore = ["E203", "E266", "E501"]
+
+select = [
+    "E401",
+    "E711",
+    "E712",
+    "E713",
+    "E714",
+    "E721",
+    "E722",
+    "F401",
+    "F402",
+    "F403",
+    "F405",
+    "F541",
+    "F631",
+    "F632",
+    "F633",
+    "F811",
+    "F821",
+    "F822",
+    "F841",
+    "F901",
+    "W191",
+    "W291",
+    "W292",
+    "W293",
+    "W605",
+    "C4",
+]
+# For converting to pyproject/ruff, only duplicate isort. Can add more later.
+fixable = ["I"]
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[[tool.mypy.overrides]]
+module = ["py", "py.path", "pytest", "importlib_resources"]
+ignore_missing_imports = true

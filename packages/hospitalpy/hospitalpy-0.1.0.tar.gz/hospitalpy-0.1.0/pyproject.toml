@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hospitalpy"
+version = "0.1.0"
+authors = [{name="M. Anand Chary", email="mic9189@med.cornell.edu"}]
+description = 'Text Regularization for Unstructured Text from EMS Reports'
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["NLP", "Text Regularization", "EMS Reports"]
+
+

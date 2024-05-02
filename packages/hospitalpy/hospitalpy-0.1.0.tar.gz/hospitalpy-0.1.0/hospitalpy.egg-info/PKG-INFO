@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hospitalpy
+Version: 0.1.0
+Summary: Text Regularization for Unstructured Text from EMS Reports
+Author: Michael Chary
+Author-email: "M. Anand Chary" <mic9189@med.cornell.edu>
+Keywords: NLP,Text Regularization,EMS Reports
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+bort

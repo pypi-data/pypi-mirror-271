@@ -1,0 +1,10 @@
+torchsparks/__init__.py,sha256=slV-t0IscCRCWzoTlqfS9cfuZAkLIoTAfbKLqnDh_S8,637
+torchsparks/utils/__init__.py,sha256=h6Pjxjjw7l-TWjZ9PUNHbJS71XQEijwx6_IbtZfPGk4,661
+torchsparks/utils/pythons.py,sha256=WgNvt0vn1QckZciqZ65Oq7gf5brEIKzTMDtNQ89094A,727
+torchsparks/utils/shapes.py,sha256=qgREVQzlG8Y0ZxAb3Bhbo2n7SPNGONRtoi3tZ0gjyK0,25349
+torchsparks/utils/tensors.py,sha256=_k3fV18qpwcXyUf2MiNowTPzOB4goyI1wUyAcCPg1rw,3466
+torchsparks-0.1.5.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+torchsparks-0.1.5.dist-info/METADATA,sha256=gKMqXGW3CbA4zWejhUvruZJVaRLBt3WJ8985boXS8vg,1436
+torchsparks-0.1.5.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+torchsparks-0.1.5.dist-info/top_level.txt,sha256=KhghKWVeDvExR0wnXe08HcMpZeSfenF6fHSidDHveQs,12
+torchsparks-0.1.5.dist-info/RECORD,,

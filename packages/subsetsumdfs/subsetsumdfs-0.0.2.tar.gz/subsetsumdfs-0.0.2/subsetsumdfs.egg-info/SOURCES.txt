@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+subsetsumdfs/__init__.py
+subsetsumdfs/main.py
+subsetsumdfs.egg-info/PKG-INFO
+subsetsumdfs.egg-info/SOURCES.txt
+subsetsumdfs.egg-info/dependency_links.txt
+subsetsumdfs.egg-info/entry_points.txt
+subsetsumdfs.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: wifi-direct-raspi
+Version: 0.1
+Summary: Wi-Fi Direct Library for Raspberry Pi
+Home-page: https://www.python.org/sigs/distutils-sig/
+Author: Tatiana Reimer
+Author-email: tatireimer99@gmail.com
+License: UNKNOWN
+Description: # wifi-direct-raspi
+        
+        Python library for Wi-Fi Direct on Raspberry Pi
+        
+        - Discovery
+        - Connection
+        - Group Management
+        
+Platform: UNKNOWN

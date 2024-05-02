@@ -1,0 +1,6 @@
+README.md
+setup.py
+wifi_direct_raspi.egg-info/PKG-INFO
+wifi_direct_raspi.egg-info/SOURCES.txt
+wifi_direct_raspi.egg-info/dependency_links.txt
+wifi_direct_raspi.egg-info/top_level.txt

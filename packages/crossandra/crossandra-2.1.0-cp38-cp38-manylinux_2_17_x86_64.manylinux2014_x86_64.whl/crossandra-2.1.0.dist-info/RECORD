@@ -1,0 +1,16 @@
+3219a501864e4a26eb38__mypyc.cpython-38-x86_64-linux-gnu.so,sha256=XtMNpezyOycV9cGl1wKvyTXBrBmfVIGl_G2MSIQV3wg,391056
+crossandra/lib.cpython-38-x86_64-linux-gnu.so,sha256=khcAyMRg4ETp9k6oE-guTS_aCBT_IaTv6hyyyx6o6PQ,17496
+crossandra/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossandra/rule.py,sha256=FzgoFkmv05N_97AQa2gHdF8ZVBmotFXBtA7gy_WtlBI,3858
+crossandra/common.py,sha256=ajaP_UI11P1rm416-kjridZyUqdcHDnwiRuLmnPEjPg,2362
+crossandra/__init__.py,sha256=hKUokNJjkWe_weYR1Ecz_MxstmbylTr4ChfLH99d5UU,463
+crossandra/__init__.cpython-38-x86_64-linux-gnu.so,sha256=djVuNSWqP8dhwGFVCuy9HGa8rajBRyXTq6nmjzbw9gQ,17504
+crossandra/rule.cpython-38-x86_64-linux-gnu.so,sha256=TQXZosAcMPAolwLBiKUFgfluPIyao8tasJcaKx22ieI,17496
+crossandra/lib.py,sha256=zgcVKKuSpZFSQzwqQu8DR4d2orDPnld5NIJV2yIrjlk,6202
+crossandra/common.cpython-38-x86_64-linux-gnu.so,sha256=cn9wULc1VnMGdqQRIv4bDHDaqImryT4Ws9QSTebHqC0,17504
+crossandra/exceptions.py,sha256=qLJrILRFCpGzC0ItXP922nSld5E33r5FfI7lGuufHuU,285
+crossandra-2.1.0.dist-info/LICENSE,sha256=YsknWupMmJiefJtRIRo9E_URl4b6sWEyhS0s7iwJUwQ,1056
+crossandra-2.1.0.dist-info/METADATA,sha256=24SlG5aQ84jL0af0-0WNPmBdCaEjOY5mvflVMbB2WuQ,2409
+crossandra-2.1.0.dist-info/RECORD,,
+crossandra-2.1.0.dist-info/top_level.txt,sha256=byDgMmGekNsSBdSFHO4UvpWis_tkHmHdJPG86v8LwTg,39
+crossandra-2.1.0.dist-info/WHEEL,sha256=L0ABBnxO_xKRR_wTzM7WWWX8RRfdKRK-fZ5a3ZEhDqQ,148

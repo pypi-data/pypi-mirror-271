@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simple_spykes
+Version: 0.1.0
+Summary: Utility library for spike sorting quality metrics
+Author: Spencer Hanson
+Keywords: neuroscience,spike sorting,tools,science
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+#############
+Simple-Spykes
+#############
+
+- Please see the documentation at TODO
+
+- GitHub available with more information `here <https://github.com/Anschutz-Visual-Cluster/simple-spykes>`_
+
+
+Made for CU Anschutz Vision Cluster

@@ -1,0 +1,2 @@
+[console_scripts]
+fizzbuzz_draw = fizzbuzz_draw.__main__:main

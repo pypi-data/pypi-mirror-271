@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: qai-server
+Version: 0.5.1.1
+Summary: 
+Author: parnell
+Author-email: 152523161+leeparnell@users.noreply.github.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: dataclasses-json (>=0.6.4,<0.7.0)
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: flask-pydantic (>=0.12.0,<0.13.0)
+Requires-Dist: ftfy (>=6.1.1,<7.0.0)
+Requires-Dist: gunicorn (>=22.0.0,<23.0.0)
+Requires-Dist: html2text (>=2020.1.16,<2021.0.0)
+Requires-Dist: llama-index (>=0.10.33,<0.11.0)
+Requires-Dist: qai-agent (>=0.5.0,<0.6.0)
+Requires-Dist: qai-chat (>=0.5.1,<0.6.0)
+Requires-Dist: torch (==2.3.0+cpu) ; sys_platform == "linux"
+Requires-Dist: torch (==2.3.0+cpu) ; sys_platform == "win32"
+Requires-Dist: torch (>=2.3.0,<3.0.0) ; sys_platform == "darwin"
+Requires-Dist: torch (>=2.3.0,<3.0.0) ; sys_platform == "darwin" and platform_machine == "arm64"
+Description-Content-Type: text/markdown
+
+# Example Project

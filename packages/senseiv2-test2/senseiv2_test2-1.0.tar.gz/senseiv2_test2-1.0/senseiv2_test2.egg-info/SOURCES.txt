@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+senseiv2/__init__.py
+senseiv2/inference.py
+senseiv2/models.py
+senseiv2/train.py
+senseiv2/utils.py
+senseiv2/data/__init__.py
+senseiv2/data/dataset.py
+senseiv2/data/sliding_window.py
+senseiv2/data/transforms.py
+senseiv2_test2.egg-info/PKG-INFO
+senseiv2_test2.egg-info/SOURCES.txt
+senseiv2_test2.egg-info/dependency_links.txt
+senseiv2_test2.egg-info/top_level.txt

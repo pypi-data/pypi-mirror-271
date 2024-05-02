@@ -1,0 +1,11 @@
+tap_clerk/__init__.py,sha256=sNLVJr_Vya3-5Sxloc5zAFIUiL41MwX5FUAx_EM6rlU,21
+tap_clerk/__main__.py,sha256=USI-ZXjwE-0KaH2QXfE6uzoDQRfyUoD2-3d5n8Tb1c8,113
+tap_clerk/client.py,sha256=9JmHHkAOHj7g23CnE-zOPE5sZYpEAHALmlizzxeXg1g,2046
+tap_clerk/schemas/__init__.py,sha256=4L_j2w9G0RLeNu1IvmrlYD685cMULZhpvOezBL0leR8,42
+tap_clerk/streams.py,sha256=7k8W9vNyLUGzItwjPNl3sIRgmNzPd98UpvanWYTJqSc,11224
+tap_clerk/tap.py,sha256=ZfIAGSJt-pjA36Z_1ZgUD6mRrN0f83Ts4XpBlZcdEvA,759
+tap_clerk-0.0.1.dist-info/LICENSE,sha256=7gzjafiPQz3aWcbD9Z7DLu_rt__V2gpBM4wI-Iumgqw,11349
+tap_clerk-0.0.1.dist-info/METADATA,sha256=JzOljBZK9z9SstcgXfrYNeQEoVv8LO-jOKBkMPNYRgM,4039
+tap_clerk-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tap_clerk-0.0.1.dist-info/entry_points.txt,sha256=k7BFmWRF7XELVjtVhxEptsi-FPIy4h98joSHGiNHZIs,56
+tap_clerk-0.0.1.dist-info/RECORD,,

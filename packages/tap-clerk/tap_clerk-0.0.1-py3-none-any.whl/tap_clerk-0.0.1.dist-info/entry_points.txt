@@ -1,0 +1,3 @@
+[console_scripts]
+tap-clerk=tap_clerk.tap:TapClerk.cli
+

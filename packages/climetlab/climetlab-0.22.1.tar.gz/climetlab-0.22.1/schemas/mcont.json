@@ -1,0 +1,502 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "contour": {
+            "type": "boolean"
+        },
+        "contour_akima_x_resolution": {
+            "type": "number"
+        },
+        "contour_akima_y_resolution": {
+            "type": "number"
+        },
+        "contour_automatic_setting": {
+            "type": [
+                "string",
+                "boolean"
+            ]
+        },
+        "contour_gradients_colour_list": {
+            "items": {
+                "$ref": "definitions.json#/definitions/colour"
+            },
+            "type": "array"
+        },
+        "contour_gradients_step_list": {
+            "items": {
+                "type": "integer"
+            },
+            "type": "array"
+        },
+        "contour_gradients_technique": {
+            "enum": [
+                "hcl",
+                "hsl",
+                "rgb"
+            ],
+            "type": "string"
+        },
+        "contour_gradients_technique_direction": {
+            "enum": [
+                "anti_clockwise",
+                "clockwise",
+                "longest",
+                "shortest"
+            ],
+            "type": "string"
+        },
+        "contour_gradients_waypoint_method": {
+            "enum": [
+                "both",
+                "ignore",
+                "left",
+                "right"
+            ],
+            "type": "string"
+        },
+        "contour_grid_shading_position": {
+            "enum": [
+                "bottom_left",
+                "middle"
+            ],
+            "type": "string"
+        },
+        "contour_grid_value_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_grid_value_format": {
+            "type": "string"
+        },
+        "contour_grid_value_height": {
+            "type": "number"
+        },
+        "contour_grid_value_lat_frequency": {
+            "type": "integer"
+        },
+        "contour_grid_value_lon_frequency": {
+            "type": "integer"
+        },
+        "contour_grid_value_marker_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_grid_value_marker_height": {
+            "type": "number"
+        },
+        "contour_grid_value_marker_index": {
+            "type": "integer"
+        },
+        "contour_grid_value_marker_qual": {
+            "type": "string"
+        },
+        "contour_grid_value_max": {
+            "type": "number"
+        },
+        "contour_grid_value_min": {
+            "type": "number"
+        },
+        "contour_grid_value_plot": {
+            "type": "boolean"
+        },
+        "contour_grid_value_plot_type": {
+            "enum": [
+                "both",
+                "marker",
+                "value"
+            ],
+            "type": "string"
+        },
+        "contour_grid_value_position": {
+            "enum": [
+                "bottom",
+                "left",
+                "right",
+                "top"
+            ],
+            "type": "string"
+        },
+        "contour_grid_value_type": {
+            "enum": [
+                "akima",
+                "normal",
+                "reduced"
+            ],
+            "type": "string"
+        },
+        "contour_hi_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_hi_max_value": {
+            "type": "number"
+        },
+        "contour_hi_min_value": {
+            "type": "number"
+        },
+        "contour_hi_text": {
+            "type": "string"
+        },
+        "contour_highlight": {
+            "type": "boolean"
+        },
+        "contour_highlight_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_highlight_frequency": {
+            "type": "integer"
+        },
+        "contour_highlight_style": {
+            "$ref": "definitions.json#/definitions/line-style"
+        },
+        "contour_highlight_thickness": {
+            "type": "integer"
+        },
+        "contour_hilo": {
+            "enum": [
+                true,
+                false,
+                "hi",
+                "lo"
+            ],
+            "type": [
+                "string",
+                "boolean"
+            ]
+        },
+        "contour_hilo_blanking": {
+            "type": "boolean"
+        },
+        "contour_hilo_format": {
+            "type": "string"
+        },
+        "contour_hilo_height": {
+            "type": "number"
+        },
+        "contour_hilo_marker": {
+            "type": "boolean"
+        },
+        "contour_hilo_marker_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_hilo_marker_height": {
+            "type": "number"
+        },
+        "contour_hilo_marker_index": {
+            "type": "integer"
+        },
+        "contour_hilo_max_value": {
+            "type": "number"
+        },
+        "contour_hilo_min_value": {
+            "type": "number"
+        },
+        "contour_hilo_type": {
+            "enum": [
+                "both",
+                "number",
+                "text"
+            ],
+            "type": "string"
+        },
+        "contour_hilo_window_size": {
+            "type": "integer"
+        },
+        "contour_interpolation_ceiling": {
+            "type": "number"
+        },
+        "contour_interpolation_floor": {
+            "type": "number"
+        },
+        "contour_interval": {
+            "type": "number"
+        },
+        "contour_label": {
+            "type": "boolean"
+        },
+        "contour_label_blanking": {
+            "type": "boolean"
+        },
+        "contour_label_colour": {
+            "type": "string"
+        },
+        "contour_label_font": {
+            "type": "string"
+        },
+        "contour_label_font_style": {
+            "enum": [
+                "bold",
+                "italic",
+                "normal"
+            ],
+            "type": "string"
+        },
+        "contour_label_format": {
+            "type": "string"
+        },
+        "contour_label_frequency": {
+            "type": "integer"
+        },
+        "contour_label_height": {
+            "type": "number"
+        },
+        "contour_label_text": {
+            "type": "string"
+        },
+        "contour_label_type": {
+            "enum": [
+                "both",
+                "number",
+                "text"
+            ],
+            "type": "string"
+        },
+        "contour_legend_only": {
+            "type": "boolean"
+        },
+        "contour_level_count": {
+            "type": "integer"
+        },
+        "contour_level_list": {
+            "items": {
+                "type": "number"
+            },
+            "type": "array"
+        },
+        "contour_level_selection_type": {
+            "enum": [
+                "count",
+                "interval",
+                "level_list"
+            ],
+            "type": "string"
+        },
+        "contour_level_tolerance": {
+            "type": "integer"
+        },
+        "contour_line_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_line_colour_rainbow": {
+            "type": "boolean"
+        },
+        "contour_line_colour_rainbow_colour_list": {
+            "items": {
+                "$ref": "definitions.json#/definitions/colour"
+            },
+            "type": "array"
+        },
+        "contour_line_colour_rainbow_colour_list_policy": {
+            "$ref": "definitions.json#/definitions/list-policy"
+        },
+        "contour_line_colour_rainbow_direction": {
+            "enum": [
+                "anti_clockwise",
+                "clockwise"
+            ],
+            "type": "string"
+        },
+        "contour_line_colour_rainbow_max_level_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_line_colour_rainbow_method": {
+            "enum": [
+                "calculate",
+                "list"
+            ],
+            "type": "string"
+        },
+        "contour_line_colour_rainbow_min_level_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_line_style": {
+            "$ref": "definitions.json#/definitions/line-style"
+        },
+        "contour_line_style_rainbow_list": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "contour_line_style_rainbow_list_policy": {
+            "$ref": "definitions.json#/definitions/list-policy"
+        },
+        "contour_line_thickness": {
+            "type": "integer"
+        },
+        "contour_line_thickness_rainbow_list": {
+            "items": {
+                "type": "integer"
+            },
+            "type": "array"
+        },
+        "contour_line_thickness_rainbow_list_policy": {
+            "$ref": "definitions.json#/definitions/list-policy"
+        },
+        "contour_lo_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_lo_max_value": {
+            "type": "number"
+        },
+        "contour_lo_min_value": {
+            "type": "number"
+        },
+        "contour_lo_text": {
+            "type": "string"
+        },
+        "contour_max_level": {
+            "type": "number"
+        },
+        "contour_metadata_only": {
+            "type": "boolean"
+        },
+        "contour_method": {
+            "enum": [
+                "akima474",
+                "akima760",
+                "automatic",
+                "linear"
+            ],
+            "type": "string"
+        },
+        "contour_min_level": {
+            "type": "number"
+        },
+        "contour_reference_level": {
+            "type": "number"
+        },
+        "contour_shade": {
+            "type": "boolean"
+        },
+        "contour_shade_cell_method": {
+            "enum": [
+                "interpolate",
+                "nearest"
+            ],
+            "type": "string"
+        },
+        "contour_shade_cell_resolution": {
+            "type": "number"
+        },
+        "contour_shade_cell_resolution_method": {
+            "enum": [
+                "adaptive",
+                "classic"
+            ],
+            "type": "string"
+        },
+        "contour_shade_colour_direction": {
+            "enum": [
+                "anti_clockwise",
+                "clockwise"
+            ],
+            "type": "string"
+        },
+        "contour_shade_colour_list": {
+            "items": {
+                "$ref": "definitions.json#/definitions/colour"
+            },
+            "type": "array"
+        },
+        "contour_shade_colour_method": {
+            "enum": [
+                "calculate",
+                "gradients",
+                "list",
+                "palette"
+            ],
+            "type": "string"
+        },
+        "contour_shade_colour_table": {
+            "items": {
+                "$ref": "definitions.json#/definitions/colour"
+            },
+            "type": "array"
+        },
+        "contour_shade_dot_size": {
+            "type": "number"
+        },
+        "contour_shade_hatch_density": {
+            "type": "number"
+        },
+        "contour_shade_hatch_index": {
+            "type": "integer"
+        },
+        "contour_shade_hatch_thickness": {
+            "type": "integer"
+        },
+        "contour_shade_height_table": {
+            "items": {
+                "type": "number"
+            },
+            "type": "array"
+        },
+        "contour_shade_marker_name_table": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "contour_shade_marker_table": {
+            "items": {
+                "type": "integer"
+            },
+            "type": "array"
+        },
+        "contour_shade_marker_table_type": {
+            "enum": [
+                "index",
+                "name"
+            ],
+            "type": "string"
+        },
+        "contour_shade_max_level": {
+            "type": "number"
+        },
+        "contour_shade_max_level_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_shade_max_level_density": {
+            "type": "number"
+        },
+        "contour_shade_method": {
+            "enum": [
+                "area_fill",
+                "dot",
+                "hatch",
+                "solid"
+            ],
+            "type": "string"
+        },
+        "contour_shade_min_level": {
+            "type": "number"
+        },
+        "contour_shade_min_level_colour": {
+            "$ref": "definitions.json#/definitions/colour"
+        },
+        "contour_shade_min_level_density": {
+            "type": "number"
+        },
+        "contour_shade_palette_name": {
+            "type": "string"
+        },
+        "contour_shade_palette_policy": {
+            "$ref": "definitions.json#/definitions/list-policy"
+        },
+        "contour_shade_technique": {
+            "enum": [
+                "cell_shading",
+                "dump_shading",
+                "grid_shading",
+                "marker",
+                "polygon_shading"
+            ],
+            "type": "string"
+        },
+        "contour_style_name": {
+            "type": "string"
+        },
+        "legend": {
+            "type": "boolean"
+        }
+    },
+    "type": "object"
+}

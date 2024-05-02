@@ -1,0 +1,56 @@
+input:
+  inherit: true
+  source:
+  - name: cds
+    dataset: era5-complete
+    class: ea
+    date: '2000-01-01/to/2000-01-02'
+    time: ['0000', '0600', '1200', '1800']
+    param: [10u, 10v, 2t, sp, msl, tcwv]
+    levtype: sfc
+    grid: [0.25, 0.25]
+
+  - name: cds
+    param: [u, v]
+    level: [1000, 850, 500]
+    levtype: pl
+
+  - name: cds
+    param: z
+    level: [1000, 850, 500, 50]
+
+  - name: cds
+    param: [t, r]
+    level: [850, 500]
+
+
+output:
+  remapping:
+    param_level: '{param}{level}'
+
+  chunking:
+    date: 1
+  order:
+  - datetime
+  - param_level:
+    - t850
+    - u1000
+    - v1000
+    - z1000
+    - u850
+    - v850
+    - z850
+    - u500
+    - v500
+    - z500
+    - t500
+    - z50
+    - r500
+    - r850
+    - 10u
+    - 10v
+    - 2t
+    - sp
+    - msl
+    - tcwv
+  dtype: float32

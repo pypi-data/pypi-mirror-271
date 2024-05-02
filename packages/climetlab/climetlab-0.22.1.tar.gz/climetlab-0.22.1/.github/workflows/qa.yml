@@ -1,0 +1,45 @@
+# (C) Copyright 2021 ECMWF.
+#
+# This software is licensed under the terms of the Apache Licence Version 2.0
+# which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
+# In applying this licence, ECMWF does not waive the privileges and immunities
+# granted to it by virtue of its status as an intergovernmental organisation
+# nor does it submit to any jurisdiction.
+#
+
+name: QA and short tests
+
+on:
+  workflow_dispatch: {}
+
+  # schedule:
+  #   # Every day at 3:07am
+  #   # on the "default" branch set in github (currently is develop)
+  #   - cron:  '07 3 * * *'
+
+  pull_request:
+
+jobs:
+  quality:
+    name: Code QA
+    runs-on: ubuntu-latest
+    steps:
+    - run: sudo apt-get install -y pandoc # Needed by sphinx for notebooks
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+    - uses: pre-commit/action@v3.0.1
+
+  short-tests:
+    name: Short tests
+    runs-on: "ubuntu-latest"
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+    - name: Install climetlab
+      run: pip install -e .
+    - run: pip install pytest
+    - run: pytest -vv -E short

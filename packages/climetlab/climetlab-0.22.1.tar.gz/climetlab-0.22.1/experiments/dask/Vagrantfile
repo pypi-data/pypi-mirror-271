@@ -1,0 +1,49 @@
+# brew install qemu vagrant
+# On MAC M1:
+#     vagrant plugin install vagrant-qemu
+#     vagrant up --provider=qemu
+# Elsewhere:
+#     vagrant up --provider=virtualbox
+# vagrant ssh-config > ~/.ssh/vagrant_ssh_config
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "generic/ubuntu2204"
+  # config.vm.box_version = "4.1.4"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  config.vm.provision "file", source: "~/.cdsapirc", destination: ".cdsapirc"
+  config.vm.provision "file", source: "~/.ecmwfapirc", destination: ".ecmwfapirc"
+
+  config.vm.provision "file", source: "config.yaml", destination: "~/.config/dask/config.yaml"
+
+  N = 3
+
+  (0..N).each do |i|
+    config.vm.define "node#{i}" do |node|
+
+      node.vm.network "private_network", ip: "192.168.56.#{i+10}"
+
+
+      node.vm.provision "shell" do |s|
+        s.path = "provision.sh"
+        s.args = [i, N]
+      end
+
+      node.vm.provider "qemu" do |qe|
+        qe.memory = "2G"
+        qe.arch = "x86_64"
+        qe.machine = "q35"
+        qe.cpu = "max"
+        qe.net_device = "virtio-net-pci"
+        qe.ssh_port = 5022 + i
+      end
+
+      if (i == 0)
+        node.vm.network :forwarded_port, guest: 9000, host: 9000 # scheduler
+        node.vm.network :forwarded_port, guest: 8787, host: 8787 # dashboard
+      else
+        node.vm.network :forwarded_port, guest: 9000+i, host: 9000+i # worker
+      end
+    end
+  end
+end

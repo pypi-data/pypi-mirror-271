@@ -1,0 +1,29 @@
+loop:
+  dates:
+    daily:
+      start: '2015-04-18'
+      end: '2015-04-19'
+input:
+  inherit: true
+  source:
+  - name: file
+    path: test-data/uvz-20150418.grib
+
+
+output:
+  remapping:
+    param_level: '{param}_{levelist}'
+  statistics: param_level
+  chunking:
+    valid_datetime: 1
+  order_by:
+  - valid_datetime
+  - param_level:
+    - u_500
+    - u_850
+    - v_500
+    - v_850
+    - z_500
+    - z_850
+
+  dtype: float32

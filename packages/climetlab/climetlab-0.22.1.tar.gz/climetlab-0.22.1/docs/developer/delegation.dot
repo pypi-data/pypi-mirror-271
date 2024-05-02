@@ -1,0 +1,34 @@
+digraph delegation {
+    graph [fontname = "helvetica";];
+    node [fontname = "helvetica";];
+    edge [fontname = "helvetica";];
+
+    node [shape=box]
+
+
+    Dataset;
+    FileSource;
+    SomeDataset
+    SomeReader;
+    SomeSource;
+    Reader;
+    Source;
+
+    // SomeDataset -> SomeSource ;
+
+
+    // Inheritance
+    SomeDataset  -> Dataset;
+    SomeSource   -> FileSource;
+    FileSource -> Source;
+    SomeReader   -> Reader;
+
+    // Delegation
+    // "SomeDataset"  -> "SomeSource";
+    Dataset     -> SomeSource [label=<<I>   source   </I>>; style=dashed;];
+    FileSource  -> SomeReader [label=<<I>   reader   </I>>; style=dashed;];
+
+    {rank=same; FileSource; SomeReader;}
+    {rank=same; Dataset; SomeSource;}
+
+}

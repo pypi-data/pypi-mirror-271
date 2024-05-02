@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: adcl
+Version: 0.1.5
+Summary: Automatic Data Cleaning and Preprocessing Library
+Home-page: https://github.com/yourgithub/ADCL-Automatic-Data-Cleaning
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Keywords: data cleaning,preprocessing,data science,machine learning
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7,<3.8
+License-File: LICENSE
+
+This package provides comprehensive data cleaning,
+                        preprocessing, and outlier detection functionalities
+                        tailored for machine learning and data science projects.

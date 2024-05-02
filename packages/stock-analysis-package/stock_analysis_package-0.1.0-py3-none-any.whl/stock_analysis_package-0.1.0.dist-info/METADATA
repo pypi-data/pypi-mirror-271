@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: stock-analysis-package
+Version: 0.1.0
+Summary: A small python package for stock market analysis
+Home-page: https://github.com/yourusername/stock_analysis_package
+Author: Samhith Raj
+Author-email: ssaneboi@stevens.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: yfinance
+
+# Stock Analysis Package
+
+This package provides tools for analyzing stock data, including trend analysis, moving averages, volume analysis, volatility analysis, and performance metrics.
+
+## Installation
+
+Clone this repository and install the package:

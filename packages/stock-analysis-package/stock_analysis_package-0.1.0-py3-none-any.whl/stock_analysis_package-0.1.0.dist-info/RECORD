@@ -1,0 +1,17 @@
+stock_analysis/__init__.py,sha256=wyFEvPoi5L20rnc1qV27-miJKE98524TECM2OK16v9k,428
+stock_analysis/moving_averages.py,sha256=jrG43kdop0Wwp7OFpUZVphydathwY1lf_6v2rTqsOps,845
+stock_analysis/performance_metrics.py,sha256=IoQOSqydR3gt2XYK9uhbtoILv6Zi951qIMo04KlkWCA,264
+stock_analysis/trend_analysis.py,sha256=S7yhixzUu7qJFRktmClfqsntIWbMKJ8O-Qa3BAqCrHQ,689
+stock_analysis/volatility_analysis.py,sha256=5-fL6vHeW2ZiVRPZOjzsAfjNR6bXUmjOQaoiX7DSoOg,294
+stock_analysis/volume_analysis.py,sha256=ZCduyOynB-BWKBPLlzmg3Gg3btzXNM5mmWjVEi229dU,330
+tests/__init__.py,sha256=rjDe3-n2-jQZhBVSbh0Dr7mwrclve1wB9rQqLfuOG2w,39
+tests/test_moving_averages.py,sha256=ureEbHxMXVRPYGlL4hNsmwj5y7xAMANGX2guZVC4--s,747
+tests/test_performance_metrics.py,sha256=H1n2S1xLJuZQsmH0RHMB_NVtnI4yeMfd7Jh9PkDlXtc,410
+tests/test_trend_analysis.py,sha256=kX5KRCcUEQxQHhaveBN85SCgv4q9EvaSNEgmRHEzkTE,584
+tests/test_volatility_analysis.py,sha256=m3ggE7Ra3nv_revu_elIl2nT6aWR1p9a1eo14T3Oros,572
+tests/test_volume_analysis.py,sha256=zbB09d--YWq47NX2GnFQwPFA9lj1fTazZXCtU3DqV5E,477
+stock_analysis_package-0.1.0.dist-info/METADATA,sha256=v7cxBoRUBZhg0DJvxGJnHcvpfIwf3iXfrbRDIAw_ttI,820
+stock_analysis_package-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+stock_analysis_package-0.1.0.dist-info/entry_points.txt,sha256=7STzPza63a5JYArTpmJXyMFDr2hElvDpMx0i8enV50g,59
+stock_analysis_package-0.1.0.dist-info/top_level.txt,sha256=YDlQarsZZDVlhTbO9Y0qSNSiLpKmRs72N9ckayto_kU,21
+stock_analysis_package-0.1.0.dist-info/RECORD,,

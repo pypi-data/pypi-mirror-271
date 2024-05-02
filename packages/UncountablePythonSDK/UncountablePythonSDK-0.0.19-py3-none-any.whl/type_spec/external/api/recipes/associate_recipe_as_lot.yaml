@@ -1,0 +1,19 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/recipes/associate_recipe_as_lot
+    function: main.site.app.external.recipes.associate_recipe_as_lot.associate_recipe_as_lot
+    desc: Create a new lot association for the provided recipe with the provided ingredient
+
+Arguments:
+    type: Object
+    properties:
+        recipe_key:
+            type: identifier.IdentifierKey
+            desc: "Identifier for the recipe"
+        ingredient_key:
+            type: identifier.IdentifierKey
+            desc: "Identifier for the ingredient"
+
+Data:
+  type: async_batch.AsyncBatchActionReturn

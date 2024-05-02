@@ -1,0 +1,2 @@
+[certbot.plugins]
+filecopy-installer = filecopy_installer:FilecopyInstaller

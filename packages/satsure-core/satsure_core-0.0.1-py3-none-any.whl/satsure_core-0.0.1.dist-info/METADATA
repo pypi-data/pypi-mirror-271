@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: satsure-core
+Version: 0.0.1
+Summary: satsure core package
+Author: Satsure
+Author-email: kmstpm@email.com
+License-File: LICENCE.txt
+Requires-Dist: requests
+Requires-Dist: fiona
+Requires-Dist: pandas
+Requires-Dist: pystac
+Requires-Dist: python-dotenv
+Requires-Dist: sqlalchemy
+

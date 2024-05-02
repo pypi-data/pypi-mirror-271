@@ -1,0 +1,241 @@
+numpy<1.27,>=1.21
+packaging
+pandas<2.3.0,>=1.1
+scikit-base<0.8.0,>=0.6.1
+scikit-learn<1.5.0,>=0.24
+scipy<2.0.0,>=1.2
+
+[alignment]
+dtw-python<1.5,>=1.3
+numba<0.60,>=0.53
+
+[all_extras]
+arch<7.1.0,>=5.6
+cloudpickle
+dash!=2.9.0
+dtw-python
+gluonts>=0.9
+holidays
+kotsu>=0.3.1
+matplotlib>=3.3.2
+mne
+numba<0.60,>=0.53
+pycatch22<0.4.4
+pykalman<0.10,>=0.9.5
+scikit-optimize
+scikit_posthocs>=0.6.5
+seaborn>=0.11
+seasonal
+skpro<2.3.0,>=2
+statsmodels>=0.12.1
+tsbootstrap<0.2,>=0.1.0
+xarray
+
+[all_extras:extra == "dataframe"]
+dask<2024.4.2
+
+[all_extras:python_version < "3.10"]
+esig==0.9.7
+
+[all_extras:python_version < "3.11"]
+filterpy>=1.4.5
+hmmlearn>=0.2.7
+keras-self-attention
+pyod>=0.8
+stumpy>=1.5.1
+tslearn!=0.6.0,<0.7.0,>=0.5.2
+
+[all_extras:python_version < "3.12"]
+h5py
+pmdarima!=1.8.1,<3.0.0,>=1.8
+prophet>=1.1
+pyts<0.14.0
+statsforecast<1.8.0,>=1.0.0
+tbats>=1.1
+tensorflow<2.17,>=2
+tsfresh>=0.17
+
+[all_extras:python_version < "3.12" and sys_platform != "win32"]
+temporian!=0.8.0,<0.9.0,>=0.7.0
+
+[all_extras_pandas2]
+arch<7.1.0,>=5.6
+cloudpickle
+dash!=2.9.0
+dtw-python
+gluonts>=0.9
+holidays
+kotsu>=0.3.1
+matplotlib>=3.3.2
+mne
+numba<0.60,>=0.53
+pycatch22<0.4.4
+pykalman<0.10,>=0.9.5
+scikit_posthocs>=0.6.5
+seaborn>=0.11
+seasonal
+skpro<2.3.0,>=2
+statsmodels>=0.12.1
+tsbootstrap<0.2,>=0.1.0
+xarray
+
+[all_extras_pandas2:extra == "dataframe"]
+dask<2024.4.2
+
+[all_extras_pandas2:python_version < "3.10"]
+esig==0.9.7
+
+[all_extras_pandas2:python_version < "3.11"]
+filterpy>=1.4.5
+hmmlearn>=0.2.7
+keras-self-attention
+pyod>=0.8
+stumpy>=1.5.1
+tslearn!=0.6.0,<0.7.0,>=0.5.2
+
+[all_extras_pandas2:python_version < "3.12"]
+h5py
+pmdarima!=1.8.1,<3.0.0,>=1.8
+prophet>=1.1
+statsforecast<1.8.0,>=1.0.0
+tbats>=1.1
+tensorflow<2.17,>=2
+tsfresh>=0.17
+
+[all_extras_pandas2:python_version < "3.12" and sys_platform != "win32"]
+temporian!=0.8.0,<0.9.0,>=0.7.0
+
+[annotation]
+hmmlearn<0.4,>=0.2.7
+numba<0.60,>=0.53
+
+[annotation:python_version < "3.12"]
+pyod<1.2,>=0.8
+
+[binder]
+jupyter
+pandas<2.0.0
+
+[classification]
+numba<0.60,>=0.53
+
+[classification:python_version < "3.11"]
+esig<0.10,>=0.9.7
+
+[classification:python_version < "3.12"]
+tensorflow<2.17,>=2
+tsfresh<0.21,>=0.17
+
+[clustering]
+numba<0.60,>=0.53
+
+[clustering:python_version < "3.12"]
+tslearn!=0.6.0,<0.7.0,>=0.5.2
+
+[cython_extras]
+mrseql
+numba<0.60
+
+[cython_extras:python_version < "3.11"]
+mrsqm
+
+[dev]
+backoff
+httpx
+pre-commit
+pytest
+pytest-cov
+pytest-randomly
+pytest-timeout
+pytest-xdist
+wheel
+
+[dl]
+
+[dl:python_version < "3.11"]
+neuralforecast<1.8.0,>=1.6.4
+
+[dl:python_version < "3.12"]
+FrEIA
+tensorflow<2.17,>=2
+torch
+transformers[torch]
+
+[docs]
+jupyter
+myst-parser
+nbsphinx>=0.8.6
+numpydoc
+pydata-sphinx-theme
+Sphinx!=7.2.0,<8.0.0
+sphinx-copybutton
+sphinx-design<0.6.0
+sphinx-gallery<0.17.0
+sphinx-issues<5.0.0
+tabulate
+
+[forecasting]
+arch<7.1,>=5.6
+prophet<1.2,>=1.1
+skpro<2.3.0,>=2
+statsmodels<0.15,>=0.12.1
+
+[forecasting:python_version < "3.12"]
+pmdarima!=1.8.1,<2.1,>=1.8
+statsforecast<1.8.0,>=1.0.0
+tbats<1.2,>=1.1
+
+[mlflow]
+mlflow
+
+[mlflow_tests]
+boto3
+botocore
+mlflow
+moto
+
+[networks]
+keras-self-attention<0.52,>=0.51
+
+[networks:python_version < "3.12"]
+tensorflow<2.17,>=2
+
+[pandas1]
+pandas<2.0.0
+
+[param_est]
+seasonal<0.4,>=0.3.1
+statsmodels<0.15,>=0.12.1
+
+[regression]
+numba<0.60,>=0.53
+
+[regression:python_version < "3.12"]
+tensorflow<2.17,>=2
+
+[tests]
+pytest<8.3,>=7.4
+pytest-cov<5.1,>=4.1
+pytest-randomly<3.16,>=3.15
+pytest-timeout<2.4,>=2.1
+pytest-xdist<3.7,>=3.3
+
+[transformations]
+filterpy<1.5,>=1.4.5
+holidays<0.48,>=0.29
+mne<1.8,>=1.5
+numba<0.60,>=0.53
+pycatch22<0.4.4,>=0.4
+pykalman<0.10,>=0.9.5
+statsmodels<0.15,>=0.12.1
+tsbootstrap<0.2,>=0.1.0
+
+[transformations:python_version < "3.11"]
+esig<0.10,>=0.9.7
+
+[transformations:python_version < "3.12"]
+stumpy<1.13,>=1.5.1
+tsfresh<0.21,>=0.17
+
+[transformations:python_version < "3.12" and sys_platform != "win32"]
+temporian!=0.8.0,<0.9.0,>=0.7.0

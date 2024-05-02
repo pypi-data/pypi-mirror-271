@@ -1,0 +1,6 @@
+appdirs
+argparse
+argcomplete
+pyyaml
+cloudscraper
+unidecode

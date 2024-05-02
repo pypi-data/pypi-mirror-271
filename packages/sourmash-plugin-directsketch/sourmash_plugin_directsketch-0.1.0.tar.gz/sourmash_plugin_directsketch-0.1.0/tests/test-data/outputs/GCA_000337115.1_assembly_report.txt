@@ -1,0 +1,100 @@
+# Assembly name:  ASM33711v1
+# Organism name:  Haloterrigena thermotolerans DSM 11552 (euryarchaeotes)
+# Infraspecific name:  strain=DSM 11552
+# Taxid:          1227489
+# BioSample:      SAMN02471662
+# BioProject:     PRJNA174927
+# Submitter:      University of California, Davis
+# Date:           2013-02-04
+# Assembly type:  na
+# Release type:   major
+# Assembly level: Contig
+# Genome representation: full
+# WGS project:    AOIR01
+# Assembly method: A5 v. Nov-2011
+# Genome coverage: 200x
+# Sequencing technology: Illumina GAIIX; HiSeq
+# Excluded from RefSeq: contaminated; not used as type
+# Assembly anomaly: contaminated
+# GenBank assembly accession: GCA_000337115.1
+# RefSeq assembly accession: GCF_000337115.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000337125.1	GCF_000337125.1	Primary Assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+contig_1	unplaced-scaffold	na	na	AOIR01000001.1	=	NZ_AOIR01000001.1	Primary Assembly	215	na
+contig_2	unplaced-scaffold	na	na	AOIR01000002.1	=	NZ_AOIR01000002.1	Primary Assembly	393	na
+contig_3	unplaced-scaffold	na	na	AOIR01000003.1	=	NZ_AOIR01000003.1	Primary Assembly	149345	na
+contig_4	unplaced-scaffold	na	na	AOIR01000004.1	=	NZ_AOIR01000004.1	Primary Assembly	46946	na
+contig_5	unplaced-scaffold	na	na	AOIR01000005.1	=	NZ_AOIR01000005.1	Primary Assembly	201608	na
+contig_6	unplaced-scaffold	na	na	AOIR01000006.1	=	NZ_AOIR01000006.1	Primary Assembly	257	na
+contig_7	unplaced-scaffold	na	na	AOIR01000007.1	=	NZ_AOIR01000007.1	Primary Assembly	257	na
+contig_8	unplaced-scaffold	na	na	AOIR01000008.1	=	NZ_AOIR01000008.1	Primary Assembly	2158	na
+contig_9	unplaced-scaffold	na	na	AOIR01000009.1	=	NZ_AOIR01000009.1	Primary Assembly	253	na
+contig_10	unplaced-scaffold	na	na	AOIR01000010.1	=	NZ_AOIR01000010.1	Primary Assembly	724	na
+contig_11	unplaced-scaffold	na	na	AOIR01000011.1	=	NZ_AOIR01000011.1	Primary Assembly	220	na
+contig_12	unplaced-scaffold	na	na	AOIR01000012.1	=	NZ_AOIR01000012.1	Primary Assembly	568	na
+contig_13	unplaced-scaffold	na	na	AOIR01000013.1	=	NZ_AOIR01000013.1	Primary Assembly	1136	na
+contig_14	unplaced-scaffold	na	na	AOIR01000014.1	=	NZ_AOIR01000014.1	Primary Assembly	568	na
+contig_15	unplaced-scaffold	na	na	AOIR01000015.1	=	NZ_AOIR01000015.1	Primary Assembly	406	na
+contig_16	unplaced-scaffold	na	na	AOIR01000016.1	=	NZ_AOIR01000016.1	Primary Assembly	310	na
+contig_17	unplaced-scaffold	na	na	AOIR01000017.1	=	NZ_AOIR01000017.1	Primary Assembly	256	na
+contig_18	unplaced-scaffold	na	na	AOIR01000018.1	=	NZ_AOIR01000018.1	Primary Assembly	13838	na
+contig_19	unplaced-scaffold	na	na	AOIR01000019.1	=	NZ_AOIR01000019.1	Primary Assembly	501	na
+contig_20	unplaced-scaffold	na	na	AOIR01000020.1	=	NZ_AOIR01000020.1	Primary Assembly	30436	na
+contig_21	unplaced-scaffold	na	na	AOIR01000021.1	=	NZ_AOIR01000021.1	Primary Assembly	17706	na
+contig_22	unplaced-scaffold	na	na	AOIR01000022.1	=	NZ_AOIR01000022.1	Primary Assembly	3453	na
+contig_23	unplaced-scaffold	na	na	AOIR01000023.1	=	NZ_AOIR01000023.1	Primary Assembly	74422	na
+contig_24	unplaced-scaffold	na	na	AOIR01000024.1	=	NZ_AOIR01000024.1	Primary Assembly	6928	na
+contig_25	unplaced-scaffold	na	na	AOIR01000025.1	=	NZ_AOIR01000025.1	Primary Assembly	35542	na
+contig_26	unplaced-scaffold	na	na	AOIR01000026.1	=	NZ_AOIR01000026.1	Primary Assembly	1650	na
+contig_27	unplaced-scaffold	na	na	AOIR01000027.1	=	NZ_AOIR01000027.1	Primary Assembly	765	na
+contig_28	unplaced-scaffold	na	na	AOIR01000028.1	=	NZ_AOIR01000028.1	Primary Assembly	256	na
+contig_29	unplaced-scaffold	na	na	AOIR01000029.1	=	NZ_AOIR01000029.1	Primary Assembly	1057	na
+contig_30	unplaced-scaffold	na	na	AOIR01000030.1	=	NZ_AOIR01000030.1	Primary Assembly	221	na
+contig_31	unplaced-scaffold	na	na	AOIR01000031.1	=	NZ_AOIR01000031.1	Primary Assembly	90761	na
+contig_32	unplaced-scaffold	na	na	AOIR01000032.1	=	NZ_AOIR01000032.1	Primary Assembly	108223	na
+contig_33	unplaced-scaffold	na	na	AOIR01000033.1	=	NZ_AOIR01000033.1	Primary Assembly	127722	na
+contig_34	unplaced-scaffold	na	na	AOIR01000034.1	=	NZ_AOIR01000034.1	Primary Assembly	102976	na
+contig_35	unplaced-scaffold	na	na	AOIR01000035.1	=	NZ_AOIR01000035.1	Primary Assembly	19254	na
+contig_36	unplaced-scaffold	na	na	AOIR01000036.1	=	NZ_AOIR01000036.1	Primary Assembly	82720	na
+contig_37	unplaced-scaffold	na	na	AOIR01000037.1	=	NZ_AOIR01000037.1	Primary Assembly	12829	na
+contig_38	unplaced-scaffold	na	na	AOIR01000038.1	=	NZ_AOIR01000038.1	Primary Assembly	113630	na
+contig_39	unplaced-scaffold	na	na	AOIR01000039.1	=	NZ_AOIR01000039.1	Primary Assembly	101091	na
+contig_40	unplaced-scaffold	na	na	AOIR01000040.1	=	NZ_AOIR01000040.1	Primary Assembly	39570	na
+contig_41	unplaced-scaffold	na	na	AOIR01000041.1	=	NZ_AOIR01000041.1	Primary Assembly	50951	na
+contig_42	unplaced-scaffold	na	na	AOIR01000042.1	=	NZ_AOIR01000042.1	Primary Assembly	96401	na
+contig_43	unplaced-scaffold	na	na	AOIR01000043.1	=	NZ_AOIR01000043.1	Primary Assembly	5524	na
+contig_44	unplaced-scaffold	na	na	AOIR01000044.1	=	NZ_AOIR01000044.1	Primary Assembly	21647	na
+contig_45	unplaced-scaffold	na	na	AOIR01000045.1	=	NZ_AOIR01000045.1	Primary Assembly	3382	na
+contig_46	unplaced-scaffold	na	na	AOIR01000046.1	=	NZ_AOIR01000046.1	Primary Assembly	53081	na
+contig_47	unplaced-scaffold	na	na	AOIR01000047.1	=	NZ_AOIR01000047.1	Primary Assembly	2968	na
+contig_48	unplaced-scaffold	na	na	AOIR01000048.1	=	NZ_AOIR01000048.1	Primary Assembly	228119	na
+contig_49	unplaced-scaffold	na	na	AOIR01000049.1	=	NZ_AOIR01000049.1	Primary Assembly	78303	na
+contig_50	unplaced-scaffold	na	na	AOIR01000050.1	=	NZ_AOIR01000050.1	Primary Assembly	179036	na
+contig_51	unplaced-scaffold	na	na	AOIR01000051.1	=	NZ_AOIR01000051.1	Primary Assembly	77455	na
+contig_52	unplaced-scaffold	na	na	AOIR01000052.1	=	NZ_AOIR01000052.1	Primary Assembly	24576	na
+contig_53	unplaced-scaffold	na	na	AOIR01000053.1	=	NZ_AOIR01000053.1	Primary Assembly	230452	na
+contig_54	unplaced-scaffold	na	na	AOIR01000054.1	=	NZ_AOIR01000054.1	Primary Assembly	4106	na
+contig_55	unplaced-scaffold	na	na	AOIR01000055.1	=	NZ_AOIR01000055.1	Primary Assembly	240155	na
+contig_56	unplaced-scaffold	na	na	AOIR01000056.1	=	NZ_AOIR01000056.1	Primary Assembly	228310	na
+contig_57	unplaced-scaffold	na	na	AOIR01000057.1	=	NZ_AOIR01000057.1	Primary Assembly	420	na
+contig_58	unplaced-scaffold	na	na	AOIR01000058.1	=	NZ_AOIR01000058.1	Primary Assembly	159554	na
+contig_59	unplaced-scaffold	na	na	AOIR01000059.1	=	NZ_AOIR01000059.1	Primary Assembly	320959	na
+contig_60	unplaced-scaffold	na	na	AOIR01000060.1	=	NZ_AOIR01000060.1	Primary Assembly	33868	na
+contig_61	unplaced-scaffold	na	na	AOIR01000061.1	=	NZ_AOIR01000061.1	Primary Assembly	5465	na
+contig_62	unplaced-scaffold	na	na	AOIR01000062.1	=	NZ_AOIR01000062.1	Primary Assembly	28407	na
+contig_63	unplaced-scaffold	na	na	AOIR01000063.1	=	NZ_AOIR01000063.1	Primary Assembly	214741	na
+contig_64	unplaced-scaffold	na	na	AOIR01000064.1	=	NZ_AOIR01000064.1	Primary Assembly	162183	na
+contig_65	unplaced-scaffold	na	na	AOIR01000065.1	=	NZ_AOIR01000065.1	Primary Assembly	348	na
+contig_66	unplaced-scaffold	na	na	AOIR01000066.1	=	NZ_AOIR01000066.1	Primary Assembly	19371	na
+contig_67	unplaced-scaffold	na	na	AOIR01000067.1	=	NZ_AOIR01000067.1	Primary Assembly	34099	na
+contig_68	unplaced-scaffold	na	na	AOIR01000068.1	=	NZ_AOIR01000068.1	Primary Assembly	223	na

@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: sb_utils
+Version: 0.1.1
+Summary: A collection of framework specific utilities for working with Supabase.
+License: MIT
+Author: Basri
+Author-email: h@basri.me
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: supabase (>=2.4.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# supabase-utils
+
+A collection of framework specific utilities for working with Supabase.
+
+## Installation
+
+```sh
+pip supabase-utils
+```
+
+## Usage
+
+```python
+from sb_utils import sb_table
+
+
+accounts = sb_table("accounts").select("id, title, created_by(username)", count="exact")
+
+for account in accounts.data:
+  print(account.get("title"))
+```
+
+
+```python
+from pydantic import BaseModel
+from sb_utils import BaseService
+
+
+class User(BaseModel):
+    __tablename__ = "users"
+
+    id: Optional[str] = Field(default=None, primary_key=True)
+    username: str
+
+
+class Account(BaseModel):
+    __tablename__ = "accounts"
+
+    id: Optional[str] = Field(default=None, primary_key=True)
+    title: str
+    created_by: User = Field(related_name="username")
+
+
+class AccountService(BaseService):
+    model = Account
+
+
+accounts = AccountService.all()
+
+for account in accounts:
+  print(account.title)
+```
+
+
+
+
+## Documentation
+
+
+## Community
+
+
+## License
+
+
+

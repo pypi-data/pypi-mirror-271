@@ -1,0 +1,3 @@
+[submodule "samgob"]
+	path = src/samgob
+	url = https://github.com/Mequam/samgob.git

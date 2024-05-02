@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "samgob"
+version = "v1.1.0"
+authors = [
+  { name="Mequam BlueSpark", email="blue9ja@gmail.com" },
+]
+description = "A simple dice rolling languge embeded in python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Mequam/samgob"
+Issues = "https://github.com/Mequam/samgob/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/samgob"]
+

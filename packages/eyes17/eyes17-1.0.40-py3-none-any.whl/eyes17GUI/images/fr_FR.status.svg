@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720.0">
+<rect width="900" height="600" fill="#002654"/>
+<rect width="600" height="600" fill="#FFFFFF"/>
+<rect width="300" height="600" fill="#CE1126"/>
+<g transform="matrix(1.3412816691505216 0 0 1.3412816691505216 0 660.0)">
+  <rect x="0" y="0" width="487" height="67" fill="green"/>
+  <rect x="487" y="0" width="34" height="67" fill="yellow"/>
+  <rect x="521" y="0" width="150" height="67" fill="red"/>
+</g></svg>

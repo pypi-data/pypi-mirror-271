@@ -1,0 +1,13 @@
+icsystemutils
+PyYAML
+types-PyYAML
+albumentations
+numpy
+opencv-python
+patchwork
+segmentation_models_pytorch
+tqdm
+tensorboard
+torch
+torchvision
+ultralytics

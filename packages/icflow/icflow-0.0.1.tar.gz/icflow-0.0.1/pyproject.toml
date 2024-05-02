@@ -1,0 +1,81 @@
+[project]
+name = "icflow"
+version = "0.0.1"
+authors = [
+  { name="James Grogan, Irish Centre for High End Computing", email="james.grogan@ichec.ie" },
+]
+description = "A collection of simple utilities for machine learning workflows."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Distributed Computing"
+]
+keywords = ["Machine Learning", "Workflow", "HPC"]
+
+dependencies = ["icsystemutils", "PyYAML", "types-PyYAML",
+                "albumentations", "numpy", "opencv-python", "patchwork",
+                "segmentation_models_pytorch", "tqdm",
+                "tensorboard", "torch", "torchvision", "ultralytics"]
+            
+[project.urls]
+Repository = "https://git.ichec.ie/performance/toolshed/icflow"
+Homepage = "https://git.ichec.ie/performance/toolshed/icflow"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["test",]
+log_cli = 1
+log_cli_level = "debug"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+requires =
+    tox>=4
+env_list = lint, type, style, py{311}, docs
+skip_missing_interpreters = true
+
+[testenv]
+description = run unit tests
+deps =
+    pytest>=7
+    pytest-sugar
+commands =
+    pytest {posargs:test}
+
+[testenv:lint]
+description = run linters
+skip_install = true
+deps =
+    black==22.12
+commands = black {posargs:src}
+
+[testenv:style]
+description = run style check
+skip_install = true
+deps =
+    flake8
+commands = flake8 {posargs:src}
+
+[testenv:type]
+description = run type checks
+deps =
+    mypy>=0.991
+commands =
+    mypy {posargs:src test}
+
+[testenv:docs]
+changedir = doc
+deps = sphinx
+commands = sphinx-build -W -b html -d {envtmpdir}/doctrees . {envtmpdir}/html
+"""

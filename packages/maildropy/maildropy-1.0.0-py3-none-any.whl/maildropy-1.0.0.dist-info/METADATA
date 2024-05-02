@@ -1,0 +1,58 @@
+Metadata-Version: 2.3
+Name: maildropy
+Version: 1.0.0
+Summary: A Python package to read emails from maildrop.cc
+Project-URL: Homepage, https://github.com/leolivier/maildropy
+Project-URL: Repository, https://github.com/leolivier/maildropy.git
+Project-URL: Issues, https://github.com/leolivier/maildropy/issues
+Project-URL: Download, https://github.com/leolivier/maildropy/archive/refs/tags/1.0.0.tar.gz
+Author-email: Olivier LEVILLAIN <levillain.olivier@gmail.com>
+License-File: LICENSE
+Keywords: disposable,mail,maildrop,python,throwable
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: certifi
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: urllib3
+Description-Content-Type: text/markdown
+
+# A Python package to read emails from maildrop.cc
+
+__THIS IS STILL WIP__
+
+This package provides a very simple class MailDropReader that mimics the graphql API of maildrop.cc.
+You create a new reader with `MailDropReader(<your maildrop.cc inbox name>)
+The methods are:
+* __status()__: provides the current maildrop.cc status. Returns 'operational' or an error string from the server
+* __ping(string)__: pings the maildrop.cc server with the given string. Returns 'pong <string>'
+* __inbox()__: returns all messages of your inbox 
+  Returns a list of messages with only basic fields filled.
+  __(currently returns ALL messages, the filters aren't working)__. 
+* __message(message_id)__: returns a full message including its body, its sender IP, ...
+* __delete__(message_id)__: deletes a message by its id. Returns True if ok
+* __statistics()__: returns maildrop.cc statistics. Returns a tuple (blocked, saved)
+* __altinbox()__: returns an alias for your inbox. Subsequent MailDropReaders created with this alias will return messages from the original inbox
+
+## Example:
+```python
+from maildropy import MailDropReader
+reader = MailDropReader("my_own-inbox")
+
+msgs = reader.inbox()
+for msg in msgs:
+  print(f"subject: {msg.subject}, from: {msg.mailfrom}, date:{msg.date}")
+  message = reader.message(msg.id)
+  print(f"content: {message.html}, ip={message.ip}, headerfrom={message.headerfrom}"
+```
+
+# Install
+`pip install -r requirements.txt`
+
+## Testing
+To test the module, clone the repo, then copy `.env.example` in `.env` and provide the email sending settings.
+These settings are used to send emails to maildrop.cc 
+Then run `python test_maildrop.py`

@@ -1,0 +1,2 @@
+[console_scripts]
+finallydatalogger = finally_data_logger.server.finally_data_logger_server:main

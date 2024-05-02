@@ -1,0 +1,9 @@
+relsys/__init__.py,sha256=BX_BgnjdLhsuiA_c1Eq7gnFu4IWLVAIKjbACdTn9J_0,30
+relsys/model.py,sha256=S2uqNf4jw6ypILxdEd1uPoku9jGplUOZPlBwwb-z6EU,2503
+relsys/relsys.cp310-win_amd64.pyd,sha256=vJ_uhX-yQ30_odMFmPT9kYbu2jtA7yvfbsONgZCho4w,310272
+relsys/relsys.cpython-310-x86_64-linux-gnu.so,sha256=OxdwdVeZco1KbzdI4ZjU3x6uGYV9MtOBb0-EB64k8J0,720872
+relsys-2.2.1.dist-info/LICENSE,sha256=6jovKxgq3YOyqedynTI2qfIou3gNRFpCAhjyV0kZPkc,1077
+relsys-2.2.1.dist-info/METADATA,sha256=U9kYuWF8SecHEZmH8Y_c4Oa1GftyRwRJYGU9ONHwqYI,8639
+relsys-2.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+relsys-2.2.1.dist-info/top_level.txt,sha256=D9frZlDes79qOG-SEAvNuu2TkDQotRO76giJrA3BGlU,7
+relsys-2.2.1.dist-info/RECORD,,

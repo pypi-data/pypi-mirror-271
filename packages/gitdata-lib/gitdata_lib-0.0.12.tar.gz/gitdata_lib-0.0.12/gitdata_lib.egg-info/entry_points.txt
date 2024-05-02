@@ -1,0 +1,2 @@
+[console_scripts]
+gitdata = gitdata.cli:main

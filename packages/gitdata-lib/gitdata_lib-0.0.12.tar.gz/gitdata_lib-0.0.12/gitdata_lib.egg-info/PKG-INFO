@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gitdata-lib
+Version: 0.0.12
+Summary: Data extraction and analysis library
+Home-page: https://github.com/gitdata/gitdata-lib
+Author: DSI Labs
+Author-email: support@gitdata.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Database :: Front-Ends
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-decouple>=3.4
+Requires-Dist: Unipath>=1.1
+Requires-Dist: PyMySQL==0.10.1
+Requires-Dist: psycopg2-binary==2.9.1
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: docopt
+Requires-Dist: faker
+
+# GitData Lib
+Data Wrangling for Everyone.
+
+GitData is a fast, scalable, distributed data exploration system
+with a rich set of commands that provide ways to gather, manage and query data in an unusually straightforward way.

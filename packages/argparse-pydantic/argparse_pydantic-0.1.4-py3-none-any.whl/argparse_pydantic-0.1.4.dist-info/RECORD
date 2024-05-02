@@ -1,0 +1,11 @@
+argparse_pydantic/__init__.py,sha256=0IvBSMovGF9IMhjUf_96QAP9p4Q5UqdZiLt_A9H0Uh8,340
+argparse_pydantic/app.py,sha256=9PP_HNLutc-0kfSD76nBTXBwGgA-PsETRn6wMKz_Zas,7179
+argparse_pydantic/core.py,sha256=NPtcJX5k1G6rWp-kFQr_nLX37U4u5aiMr66dKn7-X5I,7708
+argparse_pydantic/helpers.py,sha256=Zbfu7zfyDcvr26Y9h-euzvt_6xt1n779FQ132jsQU1w,1285
+argparse_pydantic/test_tools.py,sha256=8yDofzb3aneQmHOMoD9L8lJ4O8-y6f2tx3SHFesxGMs,3240
+argparse_pydantic/version.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+argparse_pydantic-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+argparse_pydantic-0.1.4.dist-info/METADATA,sha256=619hG8jGuWX2VC7QQxilGRt9PvJ17fxbmw9xP4sezFI,4340
+argparse_pydantic-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+argparse_pydantic-0.1.4.dist-info/top_level.txt,sha256=YUtXj4YB0Z7WPaydfZmY7HczNWN1XrlH9ufhlbdLWEc,18
+argparse_pydantic-0.1.4.dist-info/RECORD,,

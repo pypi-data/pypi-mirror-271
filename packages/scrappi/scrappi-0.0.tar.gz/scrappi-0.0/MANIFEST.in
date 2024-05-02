@@ -1,0 +1,2 @@
+include versioneer.py
+include scrappi/_version.py

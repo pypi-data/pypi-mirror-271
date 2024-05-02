@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="139afa1e-b7fc-4b32-8f22-fde1d54b878e" name="Changes" comment="adding code to generate clouds based on sector ignoring brands">
+      <change beforePath="$PROJECT_DIR$/data/susmon_stopwords.xlsx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="17-word-cloud-by-category-by-sector-not-working" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="271G7FRzKUK4iHGl7ke0zSZDfgW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/clouds" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="139afa1e-b7fc-4b32-8f22-fde1d54b878e" name="Changes" comment="" />
+      <created>1648480009982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648480009982</updated>
+    </task>
+    <task id="LOCAL-00001" summary="refactor esg to follow new file structure&#10;&#10;in this push I am doing the following:&#10;- add esg wordcloud code to new file structure&#10;- add a phrases file for ESG">
+      <created>1654685843583</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654685843584</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor esg to follow new file structure&#10;&#10;in this push I am doing the following:&#10;- add net zero word cloud code&#10;- added docu strings">
+      <created>1655205054856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655205054857</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding changes from main into file structure">
+      <created>1656324592694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656324592694</updated>
+    </task>
+    <task id="LOCAL-00004" summary="resolving merge conflicts">
+      <created>1656326055079</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656326055079</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixing imports &#10;&#10;a few imports were broken so this commit is to fix them">
+      <created>1656335477302</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656335477302</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Module stopword_funcs.py: full path added on import &#10;Module netzero.py: updated filename&#10;Module netzero.py: made loop by count sheet name followed by corp&#10;Module main.py: corrected sheet name to &quot;Stop Words&quot;">
+      <created>1656406698734</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656406698735</updated>
+    </task>
+    <task id="LOCAL-00007" summary="moved susbstitute_post_text to stopword_funcs.py">
+      <created>1658736813002</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658736813013</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add new imports for esg.py">
+      <created>1658736873920</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658736873926</updated>
+    </task>
+    <task id="LOCAL-00009" summary="change Clean Text to Full Text, add .lower()">
+      <created>1658736960646</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658736960647</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add use of substitute post text to make use of phrases param">
+      <created>1658737104155</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658737104155</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update clean_text to take the new phrased substituted_post_text">
+      <created>1658737200030</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658737200031</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed incorrect code placement">
+      <created>1658757121516</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658757121517</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add commandline arg to determine which category to be used">
+      <created>1666102417372</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666102417372</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor functions to remove redundant code">
+      <created>1666102510059</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666102510060</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixing indentation to optimize code">
+      <created>1666604469460</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666604469461</updated>
+    </task>
+    <task id="LOCAL-00016" summary="adding code to generate clouds based on sector ignoring brands">
+      <created>1666618411303</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666618411304</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor esg to follow new file structure&#10;&#10;in this push I am doing the following:&#10;- add esg wordcloud code to new file structure&#10;- add a phrases file for ESG" />
+    <MESSAGE value="refactor esg to follow new file structure&#10;&#10;in this push I am doing the following:&#10;- add net zero word cloud code&#10;- added docu strings" />
+    <MESSAGE value="adding changes from main into file structure" />
+    <MESSAGE value="resolving merge conflicts" />
+    <MESSAGE value="fixing imports &#10;&#10;a few imports were broken so this commit is to fix them" />
+    <MESSAGE value="Module stopword_funcs.py: full path added on import &#10;Module netzero.py: updated filename&#10;Module netzero.py: made loop by count sheet name followed by corp&#10;Module main.py: corrected sheet name to &quot;Stop Words&quot;" />
+    <MESSAGE value="moved susbstitute_post_text to stopword_funcs.py" />
+    <MESSAGE value="add new imports for esg.py" />
+    <MESSAGE value="change Clean Text to Full Text, add .lower()" />
+    <MESSAGE value="add use of substitute post text to make use of phrases param" />
+    <MESSAGE value="update clean_text to take the new phrased substituted_post_text" />
+    <MESSAGE value="fixed incorrect code placement" />
+    <MESSAGE value="add commandline arg to determine which category to be used" />
+    <MESSAGE value="refactor functions to remove redundant code" />
+    <MESSAGE value="fixing indentation to optimize code" />
+    <MESSAGE value="adding code to generate clouds based on sector ignoring brands" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding code to generate clouds based on sector ignoring brands" />
+  </component>
+</project>

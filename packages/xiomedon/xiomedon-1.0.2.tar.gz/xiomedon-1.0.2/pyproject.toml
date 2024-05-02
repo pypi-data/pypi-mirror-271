@@ -1,0 +1,35 @@
+[project]
+name = "xiomedon"
+authors = [
+    {name = "Ashwin Aravind", email = "ashwinaravind@gmail.com"}
+]
+description = "Library to call Open AI gpt3.5t-turbo and collect reponses and check for Accuracy"
+readme = "README.md"
+dependencies = [
+    "datasets",
+    "openai>1",
+    "pytest==7.2.1",
+    "pytest-xdist~=3.2.0",
+    "coverage~=7.1.0",
+    "black~=23.1.0",
+    "pytest-timeout~=2.1.0",
+    "pytest-env~= 0.8.1"
+]
+version ="1.0.2"
+
+requires-python = ">=3.7"
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/plain"}
+
+[tool.ruff.lint]
+ignore = ["E501"]
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+ [tool.setuptools_scm]
+write_to = "src/xiomedon/_version.py"

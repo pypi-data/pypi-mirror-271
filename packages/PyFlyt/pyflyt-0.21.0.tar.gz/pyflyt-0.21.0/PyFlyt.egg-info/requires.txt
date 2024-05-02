@@ -1,0 +1,12 @@
+numba
+numpy
+scipy
+gymnasium
+pettingzoo
+pybullet
+pyyaml
+
+[dev]
+pytest
+pre-commit
+matplotlib

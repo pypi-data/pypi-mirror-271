@@ -1,0 +1,4 @@
+pymupdf
+pyyaml
+tiktoken
+tqdm

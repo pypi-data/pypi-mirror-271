@@ -1,0 +1,14 @@
+latch_cloud_clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latch_cloud_clients/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latch_cloud_clients/aws/storage_client.py,sha256=9PS4wXl2p1m5IoHUKla8Z7Cb14Z_VSP6ISfwF7tgohM,11808
+latch_cloud_clients/gcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latch_cloud_clients/gcp/client_pool.py,sha256=A1avC3SgiVHvAQjo7KpcMZaJyEal2sIUwxRaWXeddy0,2639
+latch_cloud_clients/gcp/storage.py,sha256=2aaCSPENJW7fgQ91WRGP23G4fBP06EsfTDGkhmL5cZM,17880
+latch_cloud_clients/gcp/storage_client.py,sha256=tW7UbkaV5yfB939pQpmzKAa58wRni6dX1N7KSNLCeYU,7211
+latch_cloud_clients/get_storage_client.py,sha256=qTYT3nyF3ZblaCe0uWNjGeE8p2uNZsPfPEEuWkJsLT0,809
+latch_cloud_clients/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latch_cloud_clients/utils.py,sha256=xkgEeFHD0QUsLWmfxvWFtAYXPG6HOtQcglfx2726TsM,2901
+latch_cloud_clients-0.1.10.dist-info/LICENSE,sha256=wh3JZu6ITG7ceN-1g404ekupj5JXAw4pnQ_Qr4sJfew,7052
+latch_cloud_clients-0.1.10.dist-info/METADATA,sha256=52ISdzltxywudpWs0Av-EH7QtzIACNI_iZPAhhMDok4,1107
+latch_cloud_clients-0.1.10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+latch_cloud_clients-0.1.10.dist-info/RECORD,,

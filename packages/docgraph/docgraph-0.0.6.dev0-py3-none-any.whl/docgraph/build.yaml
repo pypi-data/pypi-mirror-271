@@ -1,0 +1,21 @@
+name: docgraph
+description: Document Graph for LLM Embedding search and Completion context
+dockerbuild:
+- name: docgraph
+  dockerfile: dockerfile
+  context: .
+  source_registry: dockerhub
+  image_key: docgraph.image
+  build_arg:
+  - key: IMAGE
+    value: ubuntu:22.04
+version:
+  major: 0
+  minor: 0
+  patch: 6
+  label: dev
+gpus: all
+image_names:
+- name: docgraph
+  key: docgraph.image
+  image_name: sci-ai-docker-internal.ha-us.dso.thermofisher.net/docgraph:0.0.6-dev

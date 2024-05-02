@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: marib
+Version: 0.0.1
+Summary: A small package, with something about numerical analysis.
+Author: Marisa
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This is a small package about numerical analysis.
+The author is still learning it, and implemented some basic algorithm.
+Not ensure to be correct, bugs may occur. Be careful if you want to use it.
+
+How did you find this??

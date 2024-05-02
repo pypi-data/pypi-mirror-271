@@ -1,0 +1,15 @@
+marib/PPS.py,sha256=YcHZbP-8z3byMf9VeUCfeFvKEYJ4bbaL00dh4yFH0vU,3416
+marib/__init__.py,sha256=mgY3MR6Yn8wPAmjoP0CM8453gi7MbkmFlKAZE1u9yRg,78
+marib/vec.py,sha256=oxu-2hnMSvoNi9iqcl4p3pv-femiVFkkZIGFg7Y4wwQ,2465
+marib/na/CubicSpline.py,sha256=-KgmHgvz9HraMO75OC5gx_IizZyBm6V_p0qXvr8oHAI,2716
+marib/na/Integration.py,sha256=-NhxaHBbhTmPA9_JdGrshBHlxvZbU6HSe5BPSW9f3XA,4573
+marib/na/Lagrange.py,sha256=sfazJplLC-Fwe06Xs3mbR2q7gavUezjkjFt7TpKLZwA,1254
+marib/na/LeastSquare.py,sha256=B3LxMT5k9NaFpovpO4peVhMG9tVkmIFphnBvQ40B_sw,1850
+marib/na/Newton.py,sha256=FEpta_Wos7oNMXRKi3AzfSJGmFbzhuWVPNVBz6XGzOE,2504
+marib/na/Test.py,sha256=DeLo0qQn67YfsUP4zDBeuGPGnNyrtk7NMYrxPyemWHc,705
+marib/na/__init__.py,sha256=7UNLRHlvUGp3Uu_6YPSBLfoR69OxFlBfDDPc35ZFh4s,335
+marib-0.0.1.dist-info/LICENSE.txt,sha256=7FHgGA5avCNyY84CIBVSZoWosqL1FSswVqGwH17tFXg,1067
+marib-0.0.1.dist-info/METADATA,sha256=TqtTKQtUGDK07U8pYWS3ARHm-hF_kIVzI0h6hrX5LHI,598
+marib-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+marib-0.0.1.dist-info/top_level.txt,sha256=cMYAw9vtzQAZ8WqV5Se_FyIEql2eW0_RBblID4jbm1Y,6
+marib-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,584 @@
+\Chapter{Logistic Regression}
+
+
+Logistic regression, also called a logit model, is used to model dichotomous outcome variables. In the logit model the log odds of the outcome is modeled as a linear combination of the predictor variables.
+
+\section{Dataset}
+
+\subsection{Examples}
+
+Example 1. Suppose that we are interested in the factors that influence whether a political candidate wins an election. The outcome (response) variable is binary (0/1); win or lose. The predictor variables of interest are the amount of money spent on the campaign, the amount of time spent campaigning negatively and whether or not the candidate is an incumbent.
+
+Example 2. A researcher is interested in how variables, such as GRE (Graduate Record Exam scores), GPA (grade point average) and prestige of the undergraduate institution, effect admission into graduate school. The response variable, admit/don’t admit, is a binary variable.
+
+\subsection{Description of the data}
+
+For our data analysis below, we are going to expand on Example 2 about getting into graduate school. We have generated hypothetical data, which can be obtained from our website from within Python.
+
+```{python}
+# Load dataset
+import pandas as pd
+binarie = pd.read_csv("https://stats.idre.ucla.edu/stat/data/binary.csv")
+## view the first few rows of the data
+binarie.head()
+```
+
+```{python}
+# Informations about columns
+binarie.info()
+```
+
+```{python}
+# Convert
+binarie["rank"] = binarie["rank"].astype("category")
+binarie.info()
+```
+
+```{python}
+# Logistic model
+import statsmodels.formula.api as smf
+glm = smf.logit("admit~gre+gpa+rank", data = binarie).fit(disp=False)
+print(glm.summary2())
+```
+
+
+\section{Goodness of fit}
+
+\subsection{Pseudo - $R^{2}$}
+
+For logistic regression, there have been many proposed pseudo - $R^{2}$.
+
+\subsubsection{Efron's $R{2}$}
+
+Efron's R2 is calculated by taking the sum of the squared model residuals, divided by the total variability in the dependent variable. This R2 equals the squared correlation between the predicted values and actual values, however, note that model residuals from generalized linear models are not generally comparable to those of OLS.
+
+
+$$
+R^{2}_{\text{EFRON}} = 1- \dfrac{\displaystyle \sum_{i=1}^{i=n}\left(y_{i} - \widehat{\pi}_{i}\right)^{2}}{\displaystyle \sum_{i=1}^{i=n}\left(y_{i}-\overline{y}\right)^{2}}
+$$
+
+where $y_{i}$ is the $i-$th outcome label (e.g. $1$ or $0$), $\widehat{\pi}_{i}$ the $i-$th predicted outcome probability. $\overline{y}$ is the expected value of the observed outcomes
+
+```{python}
+# Efron r2
+from scientistmetrics import r2_efron
+r2_efron(glm)
+```
+
+\subsubsection{McFadden's $R^{2}$}
+
+McFadden’s R squared measure is defined as
+
+$$
+R_{\text{McFadden}}^{2} = 1 - \dfrac{\ln \widehat{\mathcal{L}}_{\text{full}}}{\ln \widehat{\mathcal{L}}_{\text{null}}}
+$$
+
+where $\widehat{\mathcal{L}}_{\text{full}}$ is the estimated likelihood of the full model and $\widehat{\mathcal{L}}_{\text{null}}$ the estimated likelihood of the null model (model with only intercept).
+
+```{python,eval=FALSE}
+# McFadden R2
+from scientistmetrics import r2_mcfadden
+r2_mcfadden(glm,adjust=False)
+```
+
+\subsubsection{McFadden's Adjusted $R^{2}$}
+
+McFadden’s adjusted R squared measure is defined as
+
+$$
+R_{\text{McFadden}}^{2} = 1 - \dfrac{\ln \widehat{\mathcal{L}}_{\text{full}} - k }{\ln \widehat{\mathcal{L}}_{\text{null}}}
+$$
+
+where $k$ is the number of parameters (e.g. number of covariates associated with non - zero coefficients).
+
+```{python,eval=FALSE}
+# McFadden Adjusted R2
+r2_mcfadden(glm,adjust=True)
+```
+
+\subsubsection{Cox \& Snell $R^{2}$}
+
+Cox and Snell R squared is defined as follow :  
+
+
+$$
+R_{\text{CS}}^{2} = 1 - \left(\dfrac{\mathcal{L}_{0}}{\mathcal{L}_{n}}\right)^{2/n}
+$$
+
+where $\mathcal{L}_{n}$ and $\mathcal{L}_{0}$ are the likelihhods for the model being fitted and the null model, respectively.
+
+```{python,eval=FALSE}
+# Cox & Snell R2
+from scientistmetrics import r2_coxsnell
+r2_coxsnell(glm)
+```
+
+
+\subsubsection{McKelvey \& Zavoina $R^{2}$}
+
+McKelvey and Zavoina R2 is based on the explained variance, where the variance of the predicted response is divided by the sum of the variance of the predicted response and residual variance. For binomial models, the residual variance is either $\pi^{2}/3$ for logit-link and $1$ for probit-link.
+
+$$
+R_{\text{McKelvey}}^{2} = \dfrac{\sigma_{\widehat{y}}^{2}}{\sigma_{\widehat{y}}^{2}+\dfrac{\pi^{2}}{3}}
+$$
+
+where $\sigma_{\widehat{y}}^{2}$ is the variance of the predicted probabilies.
+
+```{python}
+# McKelvey a Zavoina R2
+from scientistmetrics import r2_mckelvey
+r2_mckelvey(glm)
+```
+
+\subsubsection{Nagelkerke/Cragg  \& Uhler’s $R^{2}$}
+
+The Nagelkerke $R^{2}$ come from comparing the likelihood of your full specification to an intercept only model. The formula is :
+
+$$
+R_{\text{Nagelkerke}}^{2} = \dfrac{1 - \left(\dfrac{\ln\mathcal{L}(0)}{\ln \mathcal{L}(\beta)}\right)^{2/n}}{1 - \ln \mathcal{L}(0)^{2/n}}
+$$
+
+
+```{python,eval=FALSE}
+# Nagelkerke R2
+from scientistmetrics import r2_nagelkerke
+r2_nagelkerke(glm)
+```
+
+\subsubsection{Tjur $R^{2}$}
+
+This fit statistic applies only to logistic regression.
+
+Also known as Tjur’s $D$ or Tjur’s coefficient of discrimination, the Tjur pseudo $R^{2}$ value compares the average fitted probability $\widehat{\pi}$ of the two response outcomes. In particular it is the difference between the average fitted probability for the binary outcome coded to $1$ (success level) and the average fitted probability for the binary outcome coded to $0$ (the failure level).
+
+If the coded response $y$ has $n_{1}$ $1s$ and $n_{0}$ $0s$ then :
+
+$$
+R_{\text{tjur}}^{2} = \dfrac{1}{n_{1}}\displaystyle \sum \widehat{\pi}\left(y=1\right)-\dfrac{1}{n_{0}}\displaystyle \sum \widehat{\pi}\left(y=0\right)
+$$
+
+Note that $0\leq R_{\text{tjur}}^{2} \leq 1$. If the model has no discriminating power, then $R_{\text{tjur}}^{2}=0$. If the model has perfect discriminating power, then $R_{\text{tjur}}^{2}=1$.
+
+```{python}
+# Tjur R2
+from scientistmetrics import r2_tjur
+r2_tjur(glm)
+```
+
+
+
+\subsubsection{Count $R^{2}$}
+
+Count R squared is the total number of correct predictions over the total number of counts. 
+
+$$
+R_{\text{count}}^{2} = \dfrac{C}{T}
+$$
+
+where $C$ is the total number of correctly classified observations with treating a probability below $0.5$ as a $0$ and above as a $1$; $T$ is the total number of observations
+
+```{python}
+# Count R2
+from scientistmetrics import r2_count
+r2_count(glm)
+```
+
+
+
+\subsubsection{Adjust count $R^{2}$}
+
+Adjusted count r2 is the correct number of counts minus the most frequent outcome divided by the total count minus the most frequent outcome.
+
+$$
+R_{\text{AdjCount}} = \dfrac{C-n}{T-n}
+$$
+
+where $C$  is the total number of correctly classified observations with treating a probability below $0.5$ as a $0$ and above as a $1$; $T$  is the total number of observations and $n$ the count of the most frequent outcome.
+
+```{python}
+# Adjust count r2
+from scientistmetrics import r2_count_adj
+r2_count_adj(glm)
+```
+
+\subsection{Others metrics}
+
+<!-- https://neptune.ai/blog/balanced-accuracy -->
+
+\subsubsection{Confusion Matrix}
+
+A confusion matrix is a table with the distribution of classifier performance on the data. It’s a $K \times K$ matrix used for evaluating the performance of a classification model. It shows us how well the model is performing, what needs to be improved, and what error it’s making.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=5cm,height=5cm]{./images/cm-matrix.png}
+\caption{Example of confusion matrix}
+\end{figure}
+
+where :
+
+\begin{itemize}
+\item TP – true positive (the correctly predicted positive class outcome of the model),
+\item TN – true negative (the correctly predicted negative class outcome of the model),
+\item FP – false positive (the incorrectly predicted positive class outcome of the model),
+\item FN – false negative (the incorrectly predicted negative class outcome of the model).
+\end{itemize}
+
+```{r}
+# Confusion Matrix
+glm.pred_table()
+```
+
+\subsubsection{Accuracy score}
+
+An Accuracy score (or simply Accuracy) is a Classification measure in Machine Learning that represents a percentage of correct predictions made by a model. To get the Accuracy score, take the number of right guesses and divide it by the total number of predictions made.
+
+$$
+\text{Accuracy} = \dfrac{\text{Number of correct predictions}}{\text{Total number of predictions}}=\dfrac{TP+TN}{TP+FN+FP+TN}
+$$
+
+```{python}
+# Accuracy score
+from scientistmetrics import accuracy_score
+accuracy_score(glm)
+```
+
+
+\subsubsection{Error rate}
+
+Error rate refers to a measure of the degree of prediction error of a model made with respect to the true model.
+
+$$
+\text{Error rate} = \dfrac{\text{Number of incorrect predictions}}{\text{Total number of predictions}}= 1 - \text{Accuracy}
+$$
+```{python}
+# Error rate
+from scientistmetrics import error_rate
+error_rate(glm)
+```
+
+\subsubsection{Recall}
+
+The recall is a metric that quantifies the number of correct positive predictions made out of all positive predictions that could be made by the model.
+
+$$
+\text{Recall} = \dfrac{TP}{TP+FN}
+$$
+
+The recall is also called sensitivity in binary classification.
+
+```{python,eval=FALSE}
+# Recall score
+from scientistmetrics import recall_score
+recall_score(glm)
+```
+
+\subsubsection{Precision}
+
+Precision quantifies the number of correct positive predictions made out of positive predictions made by the model. Precision calculates the accuracy of the True Positive.
+
+$$
+\text{Precision} = \dfrac{TP}{TP+FP}
+$$
+
+```{python,eval=FALSE}
+# Precision score
+from scientistmetrics import precision_score
+precision_score(glm)
+```
+
+\subsubsection{F1 - score}
+
+F1-score keeps the balance between precision and recall. It’s often used when class distribution is uneven, but it can also be defined as a statistical measure of the accuracy of an individual test.
+
+$$
+F1 = 2\times \dfrac{\text{precision}\times\text{recall}}{\text{precision}+\text{recall}}
+$$
+
+
+```{python,eval=FALSE}
+# F1 - score
+from scientistmetrics import f1_score
+f1_score(glm)
+```
+
+
+\subsubsection{Balanced accuracy}
+
+Balanced Accuracy is used in both binary and multi-class classification. It’s the arithmetic mean of sensitivity and specificity, its use case is when dealing with imbalanced data, i.e. when one of the target classes appears a lot more than the other.
+
+$$
+\text{Balanced Accuracy} = \dfrac{\text{sensitivity}+\text{specificaty}}{2}
+$$
+
+Sensitivity: This is also known as true positive rate or recall, it measures the proportion of real positives that are correctly predicted out of all positive predictions that could be made by the model.
+
+$$
+\text{sensitivity} = \dfrac{TP}{TP+FN}
+$$
+
+Specificity: Also known as true negative rate, it measures the proportion of correctly identified negatives over the total negative predictions that could be made by the model.
+
+$$
+\text{specificity} = \dfrac{TN}{TN+FP}
+$$
+
+```{python,eval=FALSE}
+# Balanced accuracy
+from scientistmetrics import balanced_accuracy_score
+balanced_accuracy_score(glm)
+```
+
+\subsubsection{Average precision}
+
+AP summarizes a precision-recall curve as the weighted mean of precisions achieved at each threshold, with the increase in recall from the previous threshold used as the weight:
+
+$$
+AP = \displaystyle \sum_{n}\left(R_{n}-R_{n-1}\right)P_{n}
+$$
+
+where $P_{n}$ and $R_{n}$ are the precision and recall at the nth threshold.
+
+```{python,eval=FALSE}
+# Average precision score
+from scientistmetrics import average_precision_score
+average_precision_score(glm)
+```
+
+
+\subsubsection{Brier score loss}
+
+The Brier score is a proper score function that measures the accuracy of probabilistic predictions. It is applicable to tasks in which predictions must assign probabilities to a set of mutually exclusive discrete outcomes. The Brier score measures the mean squared difference between the predicted probability and the actual outcome.
+
+This function returns the mean squared error of the actual outcome $y \in \{0,1\}$ and the predicted probability estimated $p=\mathbb{P}\left(y=1\right)$.
+
+$$
+BS = \dfrac{1}{n}\displaystyle \sum_{i=0}^{i=n-1}\left(y_{i}-p_{i}\right)^{2}
+$$
+
+The Brier score loss is also between $0$ to $1$ and the lower the value (the mean square difference is smaller), the more accurate the prediction is.
+
+```{python,eval=FALSE}
+# Brier score loss
+from scientistmetrics import brier_score_loss
+brier_score_loss(glm)
+```
+
+
+
+\subsubsection{ROC - AUC}
+
+ROC_AUC stands for \og Receiver Operator Characteristic_Area Under the Curve \fg{}. It summarizes the trade-off between the true positive rates and the false-positive rates for a predictive model. ROC yields good results when the observations are balanced between each class.
+
+This metric can’t be calculated from the summarized data in the confusion matrix. Doing so might lead to inaccurate and misleading results. It can be viewed using the ROC curve, this curve shows the variation at each possible point between the true positive rate and the false positive rate.
+
+```{python,fig.cap = "ROC Curve",out.width="50%"}
+# ROC Curve
+from scientistmetrics import ggroc
+p = ggroc(glm)
+print(p)
+```
+
+
+
+
+\subsection{Likelihood Ratio Test}
+
+The likelihood-ratio test in statistics compares the goodness of fit of two nested regression models based on the ratio of their likelihoods, specifically one obtained by maximization over the entire parameter space and another obtained after imposing some constraint. A nested model is simply a subset of the predictor variables in the overall regression model.
+
+For instance, consider the following regression model with four predictor :
+
+$$
+y= \beta_{0}+\beta_{1}x_{1}+\beta_{2}x_{2}+\beta_{3}x_{3}+\beta_{4}x_{4}
+$$
+
+The following model, with only two of the original predictor variables, is an example of a nested model.
+
+$$
+y= \beta_{0}+\beta_{1}x_{1}+\beta_{2}x_{2}
+$$
+
+To see if these two models differ significantly, we can use a likelihood ratio test with the following null and alternative hypotheses.
+
+\begin{hypothese}{
+\begin{itemize}
+\item $H_{0}$ : Both the full and nested models fit the data equally well. As a result, you should employ the nested model.
+\item $H_{1}$ : The full model significantly outperforms the nested model in terms of data fit. As a result, you should use the entire model.
+\end{itemize}
+}
+\end{hypothese}
+
+The test statistics is giving by :
+
+$$
+LRT = -2\left(\log(\mathcal{L}(\beta_{\text{nested}})) - \log(\mathcal{L}(\beta_{\text{full}}))\right)
+$$
+
+If the p-value of the test is less than a certain threshold of significance (e.g., 0.05), we can reject the null hypothesis and conclude that the full model provides a significantly better fit.
+
+```{python}
+# Likelihood Ratio Test
+from scientistmetrics import LikelihoodRatioTest
+```
+
+
+\subsubsection{Full model versus null model}
+
+Lets compare the full model with null model.
+
+```{python}
+# Likelihood Ratio Test : Full model versus Null Model
+lr_test = LikelihoodRatioTest(glm)
+print(f"""Likelihood Ratio Test:
+    - statistic: {lr_test.statistic}
+    - pvalue : {lr_test.pvalue} 
+""")
+```
+
+From the output we can see that the chi-squared statistic is `r round(py$lr_test$statistic,4)` and the corresponding p-value is `r round(py$lr_test$pvalue,4)`. Since the p-value is less than $0.05$, we reject the null hypothesis.
+
+\subsubsection{Full model versus nested model}
+
+We run a model removing the \texttt{rank} variable. We will compare the full model and the the nested model which have always two predictors.
+
+```{python}
+# Likelihood Ratio Test : full model versus nested model
+glm2 = smf.logit("admit~gre+gpa", data = binarie).fit(disp=False)
+lr_test2 = LikelihoodRatioTest(glm,glm2)
+print(f"""Likelihood Ratio Test:
+    - statistic: {lr_test2.statistic}
+    - df_denom : {lr_test2.df_denom}
+    - pvalue : {lr_test2.pvalue} 
+""")
+```
+
+\subsection{Hosmer \& Lemeshow test}
+
+The Hosmer-Lemeshow test (HL test) is a goodness of fit test for logistic regression, especially for risk prediction models. A goodness of fit test tells you how well your data fits the model. Specifically, the HL test calculates if the observed event rates match the expected event rates in population subgroups.
+
+The Hosmer - Lemeshow test statistic is given by :
+
+$$
+\begin{array}{lcl}
+H  & = &  \displaystyle \sum_{g=1}^{g=G}\left(\dfrac{\left(O_{1g}-E_{1g}\right)^{2}}{E_{1g}}+\dfrac{\left(O_{0g}-E_{0g}\right)^{2}}{E_{0g}}\right)\\
+& = & \displaystyle \sum_{g=1}^{g=G}\left(\dfrac{\left(O_{1g}-E_{1g}\right)^{2}}{E_{1g}}+\dfrac{\left(N_{g}-O_{1g}-(N_{g}-E_{1g})\right)^{2}}{N_{g}\left(1-\pi_{g}\right)}\right)\\
+& = & \displaystyle \sum_{g=1}^{g=G}\dfrac{\left(O_{1g}-E_{1g}\right)^{2}}{N_{g}\pi_{g}\left(1-\pi_{g}\right)}
+\end{array}
+$$
+
+Here $O_{1g}$, $E_{1g}$, $O_{0g}$, $E_{0g}$, $N_{g}$, and $\pi_{g}$ denote the observed $Y=1$ events, expected $Y=1$ events, observed $Y=0$ events, expected $Y=0$ events, total observations, predicted risk for the $g^{th}$ risk decile group, and $G$ is the number of groups. The test statistic asymptotically follows a $\chi^{2}$ distribution with $G − 2$ degrees of freedom. The number of risk groups may be adjusted depending on how many fitted risks are determined by the model. This helps to avoid singular decile groups.
+
+```{python}
+# Hosmer - Lemeshow test
+from scientistmetrics import HosmerLemeshowTest
+hl_test =  HosmerLemeshowTest(glm)
+print(f"""Hosmer - Lemeshow Test
+  - statistic : {hl_test.statistic}
+  - df_denom  : {hl_test.df_denom}
+  - pvalue    : {hl_test.pvalue}
+""")
+```
+
+It is possible to verifie our result using the  \href{https://rdrr.io/cran/ResourceSelection/man/hoslem.test.html}{hoslem.test} function from the R package \href{https://cran.r-project.org/web/packages/ResourceSelection/index.html}{ResourceSelection}.
+
+```{python}
+y = glm.model.endog
+fit = glm.predict()
+```
+
+```{r,engine='R'}
+# Hosmer Lemeshow Test in R
+ResourceSelection::hoslem.test(py$y,py$fit,g=10)
+```
+
+
+
+
+\subsection{Mann - Whitney $U$ test}
+
+In statistics, the Mann - Whitney $U$ test is a nonparametric test of the null hypothesis tha, for randomly selected values $X$ and $Y$ from two populations, the probability of $X$ being greater than $Y$ is equal to the probability of $Y$ being greater than $X$.
+
+\subsubsection{$U$ statistic}
+
+Let $X_{1},\dots,X_{n}$ be an \emph{i.i.d.} sample from $X$ and $Y_{1},\dots,Y_{m}$ an  \emph{i.i.d.} sample from $Y$, and both sampls independent of each other. The corresponding Mann - Withney $U$ statistic is defined as the smaller of :
+
+$$
+\begin{cases}
+U_{1} & = n\times m + \dfrac{n(n+1)}{2}-R_{1}\\
+U_{2} & = n\times m + \dfrac{m(m+1)}{2} - R_{2}
+\end{cases}
+$$
+
+with $R_{1}, R_{2}$ being the sum of the ranks in groups $1$ and $2$, respectively.
+
+\subsubsection{Area - Under Curve (AUC) statistic for ROC curves}
+
+The $U$ statistic is related to the area under the receiver operating characteristic curve :
+
+$$
+AUC = \dfrac{U_{1}}{n\times m}
+$$
+
+\subsubsection{Calculations}
+
+The test involves the calculation of a statistic, usually called $U$, whose distribution under the null hypothesis is known. In the case of small samples, the distribution is tabulated, but for sample sizes above $~20$, approximation using the normal distribution is fairly good. Some books tabulate statistics equivalent to $U$, such as the sum of ranks in one of the samples, rather than $U$ itself.
+
+For larger samples :
+
+\begin{enumerate}
+\item Assign numeric ranks to all the observations (put the observations from both groups to one set), beginning with $1$ for the smallest value.
+\item Now, add up the ranks for the observations which came from sample $1$. The sum of ranks in sample $2$ is now determined, since the sum of all the ranks equals $N(N + 1)/2$ where $N$ is the total number of observations.
+\item $U$ is then given by :
+
+$$
+U_{1} = R_{1} - \dfrac{n_{1}(n_{1}+1)}{2}
+$$
+
+where $n_{1}$ is the sample size for sample $1$, and $R_{1}$ is the sum of the ranks in sample $1$.
+Note that it doesn't matter which of the two samples is considered sample $1$. An equally valid formula for $U$ is 
+$$
+U_{2} = R_{2} - \dfrac{n_{2}(n_{2}+1)}{2}
+$$
+
+The smaller value of $U_{1}$ and $U_{2}$ is the one used when consulting significance tables. The sum of the two values is given by
+
+$$
+U_{1}+U_{2} = R_{1} - \dfrac{n_{1}(n_{1}+1)}{2} + R_{2} - \dfrac{n_{2}(n_{2}+1)}{2}
+$$
+
+Knowing than $R_{1}+R_{2}=\dfrac{N(N+1)}{2}$ and $N=n_{1}+n_{2}$, and doing some algebra, we find thant the sum is
+
+$$
+U_{1} + U_{1} = n_{1}n_{2}
+$$
+\end{enumerate}
+
+
+
+```{python}
+# Mann - Whitney U test
+from scientistmetrics import MannWhitneyTest
+mn_test = MannWhitneyTest(glm)
+print(f"""Mann - Whitney Test
+      - statistic : {mn_test.statistic}
+      - pvalue    : {mn_test.pvalue}
+""")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

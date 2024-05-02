@@ -1,0 +1,332 @@
+\chapter{Ordinary Least Squares model}
+
+
+In statistics, ordinary least squares (OLS) is a type of linear least squares method for choosing the unknown parameters in a linear regression model (with fixed level-one effects of a linear function of a set of explanatory variables) by the principle of least squares: minimizing the sum of the squares of the differences between the observed dependent variable (values of the variable being observed) in the input dataset and the output of the (linear) function of the independent variable.
+
+\section{Dataset}
+
+For our data analysis below, we will use the crime dataset that appears in Statistical Methods for Social Sciences, Third Edition by Alan Agresti and Barbara Finlay (Prentice Hall, 1997). The variables are state id (sid), state name (state), violent crimes per 100,000 people (crime), murders per 1,000,000 (murder), the percent of the population living in metropolitan areas (pctmetro), the percent of the population that is white (pctwhite), percent of population with a high school education or above (pcths), percent of population living under poverty line (poverty), and percent of population that are single parents (single). It has 51 observations.
+
+```{python}
+# Load dataset
+import pandas as pd
+cdata = pd.read_stata("https://stats.idre.ucla.edu/stat/data/crime.dta")
+# head  of data
+cdata.head()
+```
+
+We begin by running an OLS regression
+
+```{python}
+# OLS regression
+import statsmodels.formula.api as smf
+formula = "crime~poverty+single+murder+pctmetro+pctwhite+pcths"
+ols = smf.ols(formula,data=cdata).fit()
+```
+
+Let extract coefficients of our model.
+
+```{python}
+# fitted Coefficients
+from scientistmetrics import coefficients
+print(coefficients(ols))
+```
+
+
+\section{Goodnesst of fit}
+
+\subsection{Rsquared and Adjusted Rsquared}
+
+\subsubsection{Coefficient of determination}
+
+```{python}
+# Coefficient of determination
+from scientistmetrics import r2_score
+r2_score(ols)
+```
+
+\subsubsection{Adjusted $R^{2}$}
+
+```{python}
+# Adjusted rsquared
+r2_score(ols,adjust=True)
+```
+
+\subsection{Others metrics}
+
+\subsubsection{Mean Squared Error}
+
+```{python}
+# Mean Squared Error
+from scientistmetrics import mean_squared_error
+mean_squared_error(ols,squared=True)
+```
+
+\subsubsection{Root Mean Squared Error}
+
+```{python}
+# Root Mean Squared Error
+mean_squared_error(ols,squared=False)
+```
+
+\subsubsection{Median Absolute Error}
+
+```{python}
+# Median Absolute Error
+from scientistmetrics import median_absolute_error
+median_absolute_error(ols)
+```
+
+\subsubsection{Max Error}
+
+```{python}
+# Max Error
+from scientistmetrics import max_error
+max_error(ols)
+```
+
+\subsubsection{Explained Variance Score}
+
+```{python}
+# Explained Variance Score
+from scientistmetrics import explained_variance_score
+explained_variance_score(ols)
+```
+
+\subsubsection{Mean Absolute Error}
+
+```{python}
+# Mean Absolute Error
+from scientistmetrics import mean_absolute_error
+mean_absolute_error(ols,percentage=False)
+```
+
+\subsubsection{Mean Absolute Percentage Error}
+
+```{python}
+# Mean Absolute Percentage Error
+mean_absolute_error(ols,percentage=True)
+```
+
+\subsection{Likelihood ratio test}
+
+\subsubsection{Full model versus null model}
+
+```{python}
+# Likelihood ratio test : full model versus null model
+from scientistmetrics import LikelihoodRatioTest
+lr_test = LikelihoodRatioTest(ols)
+print(f"""Likelihood Ratio Test:
+    - statistic: {lr_test.statistic}
+    - pvalue : {lr_test.pvalue} 
+""")
+```
+
+\subsubsection{Full model versus nested model}
+
+
+```{python}
+# Likelihood Ratio Test : full model versus nested model
+ols2 = smf.ols("crime ~ poverty + single", data = cdata).fit()
+lr_test2 = LikelihoodRatioTest(ols,ols2)
+print(f"""Likelihood Ratio Test:
+    - statistic: {lr_test2.statistic}
+    - df_denom : {lr_test2.df_denom}
+    - pvalue : {lr_test2.pvalue} 
+""")
+```
+
+
+\subsection{Autocorrelation}
+
+```{python}
+# Autocorrelation
+from scientistmetrics import check_autocorrelation
+```
+
+\subsubsection{Durbin Watson}
+
+```{python}
+# Durbin - Watson
+check_autocorrelation(ols,test="dw")
+```
+
+\subsubsection{Breusch - Godfrey}
+
+
+```{python}
+# Breusch - Godfrey
+pd.DataFrame(check_autocorrelation(ols,test="bg"),index=["value"]).T
+```
+
+
+\subsubsection{Newey - West HAC Covariance Matrix Estimation}
+
+
+```{python}
+# Newey - West HAC Covariance Matrix Estimation
+nw = check_autocorrelation(ols,test="nw")
+nw['coef. model HAC']
+```
+
+
+\subsubsection{Feasible GLS - Cochrane Orcutt Procedure}
+
+
+```{python}
+# Cochran - Orcutt Procedure
+corc = check_autocorrelation(ols,test="corc")
+corc["coef. "]
+corc['rho']
+```
+
+
+\subsubsection{Ljung Box / Box - Pierce}
+
+
+```{python}
+# Ljung - Box / Box - Pierce
+check_autocorrelation(ols,test="lb-bp",nlags=1)
+```
+
+\subsection{Heteroscedasticite}
+
+```{python}
+# Heteroscedasticity test
+from scientistmetrics import check_heteroscedasticity
+```
+
+
+\subsubsection{Breusch - Pagan}
+
+```{python}
+# Breusch - Pagan
+pd.DataFrame(check_heteroscedasticity(ols,test="bp"),index=["value"]).T
+```
+
+\subsubsection{White test}
+
+```{python}
+# White test
+pd.DataFrame(check_heteroscedasticity(ols,test="white"),index=["value"]).T
+```
+
+\subsubsection{Goldfeld - Quandt}
+
+```{python}
+# Goldfeld - Quandt
+pd.DataFrame(check_heteroscedasticity(ols,test="gq"),index=["value"]).T
+```
+
+\subsection{Normality}
+
+```{python}
+# Normality test
+from scientistmetrics import check_normality
+```
+
+\subsubsection{Shapiro test}
+
+```{python}
+# Shapiro test
+check_normality(ols,test="shapiro")
+```
+
+\subsubsection{Jarque - Bera test}
+
+```{python}
+# Jarque - Bera test
+check_normality(ols,test="jardque-bera")
+```
+
+\subsubsection{Agostino - Pearson test}
+
+```{python}
+# D'Agostino - Perason test
+check_normality(ols,test="agostino")
+```
+
+\subsection{Residuals}
+
+\subsubsection{Model residuals}
+
+```{python}
+# Model residuals
+from scientistmetrics import residuals
+residuals(ols,choice="response")
+```
+
+\subsubsection{Pearson residuals}
+
+```{python}
+# Pearson residuals
+residuals(ols,choice="pearson")
+```
+
+
+\subsubsection{Standardized residuals}
+
+```{python}
+# Standardized residuals
+from scientistmetrics import rstandard
+rstandard(ols,choice="sd_1")
+```
+
+
+\subsubsection{Leave-one-out CV residuals}
+
+```{python}
+# Leave-one-out CV residuals
+rstandard(ols,choice="predictive")
+```
+
+<!-- \subsubsection{Studentized residuals} -->
+
+```{python,eval=FALSE,echo=FALSE}
+# Studentized residuals
+from scientistmetrics import rstudent
+rstudent(ols)
+```
+
+\subsection{Overall performance}
+
+```{python}
+# Model performance
+from scientistmetrics import model_performance
+pd.DataFrame(model_performance(ols,metrics="all"),index=["value"]).T
+```
+
+
+\subsection{Model check}
+
+```{python}
+# Plot performance
+from scientistmetrics import check_model
+check_model(ols)
+```
+
+\subsection{Powerset}
+
+```{python}
+# Powerset model
+D = cdata.drop(["sid","state"],axis="columns")
+D.head()
+```
+
+
+```{python}
+# Powerset model
+from scientistmetrics import powersetmodel
+ols_res = powersetmodel(DTrain=D,target="crime",split_data=False,
+                        model_type="linear")
+# All metrics
+ols_metrics = ols_res[1]
+```
+
+```{r engine='R',echo=FALSE,fig.pos="H"}
+kableExtra::kbl(py$ols_metrics,
+                caption = "Overall model metrics",
+                booktabs = TRUE,linesep = "") %>%
+  kableExtra::kable_styling(position="center",
+                            latex_options = c("striped", "hold_position","repeat_header","scale_down"))
+```

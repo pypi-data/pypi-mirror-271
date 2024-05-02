@@ -1,0 +1,3 @@
+[console_scripts]
+ancv=ancv.__main__:app
+

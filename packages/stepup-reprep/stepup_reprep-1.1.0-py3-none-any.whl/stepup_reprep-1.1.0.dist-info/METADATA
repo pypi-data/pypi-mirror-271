@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: stepup-reprep
+Version: 1.1.0
+Summary: StepUp RepRep is the StepUp extension for Reproducible Reporting
+Author-email: Toon Verstraelen <toon.verstraelen@ugent.be>
+Project-URL: Documentation, https://reproducible-reporting.github.io/stepup-reprep/
+Project-URL: Issues, https://github.com/reproducible-reporting/stepup-reprep/issues
+Project-URL: Source, https://github.com/reproducible-reporting/stepup-reprep/
+Project-URL: Changelog, https://reproducible-reporting.github.io/stepup-reprep/changelog/
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs
+Requires-Dist: bibsane
+Requires-Dist: beautifulsoup4
+Requires-Dist: cattrs
+Requires-Dist: jinja2
+Requires-Dist: markdown
+Requires-Dist: markdown-katex
+Requires-Dist: numpy
+Requires-Dist: path
+Requires-Dist: pymupdf
+Requires-Dist: pyyaml
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Requires-Dist: stepup >=1.2.0
+Requires-Dist: weasyprint
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: mkdocs ; extra == 'dev'
+Requires-Dist: mkdocstrings[python] ; extra == 'dev'
+Requires-Dist: mkdocs-macros-plugin ; extra == 'dev'
+Requires-Dist: mkdocs-material ; extra == 'dev'
+
+[![release](https://github.com/reproducible-reporting/stepup-reprep/actions/workflows/release.yaml/badge.svg)](https://github.com/reproducible-reporting/stepup-reprep/actions/workflows/release.yaml)
+[![PyPI Version](https://img.shields.io/pypi/v/stepup-reprep)](https://pypi.org/project/stepup-reprep/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/stepup-reprep)
+![GPL-3 License](https://img.shields.io/github/license/reproducible-reporting/stepup-reprep)
+
+
+# StepUp RepRep
+
+StepUp RepRep is the [StepUp](https://github.com/reproducible-reporting/stepup-core) extension for [Reproducible Reporting](https://github.com/reproducible-reporting).
+
+For more information, consult the [documentation](http://reproducible-reporting.github.io/stepup-reprep).
+
+A screen recording for a quick visual impression of StepUp RepRep in action:
+
+[![asciicast](https://asciinema.org/a/656515.svg)](https://asciinema.org/a/656515)

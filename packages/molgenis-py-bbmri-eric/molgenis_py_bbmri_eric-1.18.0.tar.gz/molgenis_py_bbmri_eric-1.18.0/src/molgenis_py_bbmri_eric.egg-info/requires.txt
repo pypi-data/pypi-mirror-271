@@ -1,0 +1,10 @@
+dataclasses
+molgenis-py-client==2.4.1
+pyhandle>=1.1.0
+requests>=2.21.0
+unidecode
+
+[testing]
+setuptools
+pytest
+pytest-cov

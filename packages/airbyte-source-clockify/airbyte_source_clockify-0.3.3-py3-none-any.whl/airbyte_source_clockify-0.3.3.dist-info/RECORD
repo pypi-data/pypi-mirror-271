@@ -1,0 +1,9 @@
+source_clockify/__init__.py,sha256=boMBjkR1HzgbsK8LXeRRUXhde7PQ_qKxbVlAjoHpMZo,128
+source_clockify/manifest.yaml,sha256=Q-qwd3vqQcFhUwL8nhL3Uj2MgggJ_Xun6r1lviCr6HM,26215
+source_clockify/run.py,sha256=WSVqPRWSL6mHwHUEJyFLZix8JQ2XOsKYc98zxhI362I,236
+source_clockify/source.py,sha256=4kwcee6yOIN2GrVsQWlGDa7VrZnKl6LrcFDiOurDNXE,477
+source_clockify/spec.yaml,sha256=wKZLw6oJRwAKVQ27jcY8_gTWShcUvYNECHujklD6XI8,848
+airbyte_source_clockify-0.3.3.dist-info/METADATA,sha256=b6-rF_SS-MKDEjHHi6w9_XnQFBGrI0xnikPoFf_-k18,5242
+airbyte_source_clockify-0.3.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_clockify-0.3.3.dist-info/entry_points.txt,sha256=9LtdUXcukmAutWUS9xv28_cqF2S501sVexVeLnyYOpQ,59
+airbyte_source_clockify-0.3.3.dist-info/RECORD,,

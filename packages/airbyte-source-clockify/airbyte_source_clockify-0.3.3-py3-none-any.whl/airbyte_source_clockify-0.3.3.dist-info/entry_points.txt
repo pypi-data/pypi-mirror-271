@@ -1,0 +1,3 @@
+[console_scripts]
+source-clockify=source_clockify.run:run
+

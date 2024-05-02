@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/wawona/__init__.py
+src/wawona/__main__.py
+src/wawona/wawona.py
+src/wawona.egg-info/PKG-INFO
+src/wawona.egg-info/SOURCES.txt
+src/wawona.egg-info/dependency_links.txt
+src/wawona.egg-info/entry_points.txt
+src/wawona.egg-info/requires.txt
+src/wawona.egg-info/top_level.txt

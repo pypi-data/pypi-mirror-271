@@ -1,0 +1,14 @@
+mtg_kit/cli.py,sha256=tCtH4fQMwgP1rbEAf3Ud5ws767DThwTRWNBZT-3chPE,2100
+mtg_kit/models.py,sha256=owormTGbUEZdU9Td7WM5ZBhtwv3Ia2S_LgdkuuyWGrw,3545
+mtg_kit/mtgo/bulk_manage.py,sha256=2On-DseIAMltvlsWNAc6deSRm_XR3lWKe-ctyvqbIcg,1401
+mtg_kit/mtgo/exporter.py,sha256=nGUlhk04cENWDt1xZnhOXWVvvbwQ2f7kwGBEZGysseU,2738
+mtg_kit/mtgo/organizer.py,sha256=mMEh_XVhlMfVMmaJLl8UhH9k8dgwy9SABl8JViZ8CzI,1775
+mtg_kit/mtgo/parsers.py,sha256=vbzgcYoP99gZEvB3LZov9vdHkudvyiy2j2DCdduzEG8,1818
+mtg_kit/prices/goatbots.py,sha256=AaDyagoJqZNGKae5WUrlizEHajawGhNQzlD_HtqUzV4,3548
+mtg_kit/scryfall/prices.py,sha256=Ln57HUyLo3Q2qqlxtz9vNgUxbeShX5P8w8dhCiF8vCk,1118
+mtg_kit/scryfall/search.py,sha256=NRFhzXX9Gc73h1kcsUo42IMCbJaNgaz2G5Pbndm7x8I,3527
+mtg_kit/utils.py,sha256=qG-IuwyC0JxN7tNTGT98RpbzlNIWBFvsp61hhKUY1dQ,1163
+mtg_kit-0.1.1.dist-info/METADATA,sha256=DkfQXxI5KcRU5PzdO0JhAVYqPzyKyfRkGUsB6DgkEpU,1373
+mtg_kit-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mtg_kit-0.1.1.dist-info/entry_points.txt,sha256=bmtlMznwoGHmDuZ40Icov8EZa8dnLJsrTE_sF6T1fKE,43
+mtg_kit-0.1.1.dist-info/RECORD,,

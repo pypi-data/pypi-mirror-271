@@ -1,0 +1,3 @@
+[console_scripts]
+mtg-kit=mtg_kit.cli:cli
+

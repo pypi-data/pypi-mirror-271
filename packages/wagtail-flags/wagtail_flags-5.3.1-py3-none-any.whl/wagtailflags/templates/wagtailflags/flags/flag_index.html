@@ -1,0 +1,15 @@
+{% extends "wagtailadmin/base.html" %}
+{% load i18n wagtailflags_admin %}
+
+{% block titletag %}{{ flag.name }}{% endblock %}
+
+{% block content %}
+    {% include "wagtailflags/includes/flag_breadcrumbs.html" with title=flag.name %}
+    {% include "wagtailflags/includes/flag_header.html" with title=flag.name icon="flag" %}
+
+    <div class="nice-padding">
+
+        {% include "wagtailflags/includes/flag_index.html" with flag=flag %}
+
+    </div>
+{% endblock %}

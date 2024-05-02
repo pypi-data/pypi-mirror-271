@@ -1,0 +1,26 @@
+{% extends "wagtailadmin/base.html" %}
+{% load i18n feature_flags wagtailadmin_tags %}
+
+{% block titletag %}{{ flag.name }}{% endblock %}
+
+{% block content %}
+    {% include "wagtailadmin/shared/header.html" with title=flag.name icon="flag" %}
+
+    {% if condition_pk %}
+    <form class="nice-padding" method="POST" action="{% url 'wagtailflags:edit_condition' flag.name condition_pk %}">
+    {% else %}
+    <form class="nice-padding" method="POST" action="{% url 'wagtailflags:create_condition' flag.name %}">
+    {% endif %}
+        {% csrf_token %}
+        <ul class="fields">
+            {% include "wagtailadmin/shared/field.html" with field=form.condition %}
+            {% include "wagtailadmin/shared/field.html" with field=form.value %}
+            {% include "wagtailadmin/shared/field.html" with field=form.required %}
+
+            <li>
+                <input class="button action-save button-longrunning" type="submit" value="Save condition" />
+                <a class="button no" href="{% url 'wagtailflags:flag_index' flag.name %}">Cancel</a>
+            </li>
+        </ul>
+    </form>
+{% endblock %}

@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+crossandra/__init__.py
+crossandra/common.py
+crossandra/exceptions.py
+crossandra/lib.py
+crossandra/py.typed
+crossandra/rule.py
+crossandra.egg-info/PKG-INFO
+crossandra.egg-info/SOURCES.txt
+crossandra.egg-info/dependency_links.txt
+crossandra.egg-info/requires.txt
+crossandra.egg-info/top_level.txt
+tests/test_api.py
+tests/test_common.py

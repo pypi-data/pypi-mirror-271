@@ -1,0 +1,4 @@
+Phonetisaurus
+_phonetisaurus
+openfst
+sosap

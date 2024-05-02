@@ -1,0 +1,12 @@
+source_bamboo_hr/__init__.py,sha256=9zRXi2C4a1qqhChVqubhWCYHr6_qREts_0WRM2As7Mg,1169
+source_bamboo_hr/exception.py,sha256=lupDKxBVlsnLxugW7IYsoreY-UR4nTMdGhSJMBR55UI,717
+source_bamboo_hr/run.py,sha256=wKXbpYTAXouxEhkSaEvmUy6AWmedQZnlS7GVnGCnT4M,237
+source_bamboo_hr/schemas/custom_reports_stream.json,sha256=qi2dJBi4qB-HTsy05qxR82cb03PDtI9vuilrbNGtBQ8,10299
+source_bamboo_hr/schemas/employees_directory_stream.json,sha256=DeyOPYC9-N5CE4UmwPDdsipC1ja8O-tNLA1y9wJObiM,2542
+source_bamboo_hr/source.py,sha256=4nY9mrdAmhicJDN-LBIZcs7tAXWBLCdYYmj3leTYzE0,6003
+source_bamboo_hr/spec.json,sha256=BPQWtytycnYdNpyfGsPHRg4-Fuw4c1Yaq8sqheKWQ5U,1025
+source_bamboo_hr/utils.py,sha256=-0VAGHQUf1RZnBGo_03Wui-aXIroxS5CJCCaDU6Dtwc,586
+airbyte_source_bamboo_hr-0.2.6.dist-info/METADATA,sha256=CaXbY-B6LaS23J6kP6n1ojizay-J79r5HeLhd7fGNaw,5299
+airbyte_source_bamboo_hr-0.2.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_bamboo_hr-0.2.6.dist-info/entry_points.txt,sha256=XYxy3LqOMZ7muHTIz31wydj8-t7xdHrhQTV6yRTyM5k,61
+airbyte_source_bamboo_hr-0.2.6.dist-info/RECORD,,

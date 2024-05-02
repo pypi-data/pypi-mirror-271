@@ -1,0 +1,10 @@
+xiomedon/__init__.py,sha256=ZvXl4WcBhmLEzL6rrZw6oQJmczbEVPDGZbPdW6v25Zs,205
+xiomedon/_version.py,sha256=BGgbj7AHZwtVw29XgDIjcG5woR-f3jQy2X-ArcRT22E,411
+xiomedon/openai_wrapper.py,sha256=5y7-KfgyaEhWHChFKG6_durnBlYShPovlx58H5z2la4,424
+xiomedon/__pycache__/openai.cpython-311.pyc,sha256=32dcYjFEL3KdzFOgLSgML-2VIEODWGSnsdT2g4Gmgj0,874
+xiomedon/__pycache__/openai_wrapper.cpython-311.pyc,sha256=cpycCJ8w1PwtsKSYlbA7PrFxSKOuxjXtTBSXuBE_rpk,843
+xiomedon-1.0.2.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+xiomedon-1.0.2.dist-info/METADATA,sha256=Hfb_QCGJEXZ7vxCB-vLNMjjWkzmsNNXfBfGBCKxNNYY,1762
+xiomedon-1.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xiomedon-1.0.2.dist-info/top_level.txt,sha256=HvGmcTf-aoGJ_DOlmiF5gMhAxd8SxXZVRM23uYMh-q0,9
+xiomedon-1.0.2.dist-info/RECORD,,

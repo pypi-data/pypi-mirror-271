@@ -1,0 +1,15 @@
+source_wrike/__init__.py,sha256=U73n4WWpgKj7oJvofM2sX15AOMUAp9eb7Nkduz-pSJg,122
+source_wrike/manifest.yaml,sha256=B7AdETTTlkVMg3DkNZb6eIgThx3lowRBM5dNzDc_kHk,2158
+source_wrike/run.py,sha256=pPOMJyyRcMAiXonLc7Hjo7NR-n7BvXY32RwcIwtNCKs,227
+source_wrike/schemas/comments.json,sha256=qSAnOlds8jIsrFiaMv6dt7RMqUvrB8emY7m1tQz99cE,543
+source_wrike/schemas/contacts.json,sha256=5D6dpPQi0UXGLtU19yAZDNoEHbtogJzy7ZRxNteVVzQ,1596
+source_wrike/schemas/customfields.json,sha256=PVKd2PZGXW0XonrDW0Aa78Y72RDLdnd2PY44ENI18T0,1401
+source_wrike/schemas/folders.json,sha256=xc6ROCHhr54EDGV5ZAFLKFZnF-iAOnXhS9ODX-rHQqM,1050
+source_wrike/schemas/tasks.json,sha256=eG6AXRC-1hJjkW45TETNUJXEGxxgFAUdRuhPQFjwRHw,1974
+source_wrike/schemas/workflows.json,sha256=6NLgo-YhQ0GUkp0v3Dq2sYZv1EKbLZbBjvenyptabg4,1099
+source_wrike/source.py,sha256=az15l-RriOmghtd4B2wJHlc2kHAn-rcm6wTYZjQS6vs,474
+source_wrike/spec.yaml,sha256=uYVR6W33Yddv6CAuxUEAAD86_WNAQrwhlPaCERVwFPw,1075
+airbyte_source_wrike-0.2.1.dist-info/METADATA,sha256=Dw8IFv-f0Gv2_sxCWUGqxjIRRxSgD2tAjsoqLUZe8fQ,4678
+airbyte_source_wrike-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_wrike-0.2.1.dist-info/entry_points.txt,sha256=IqBvmGr88OuDuUJtTS00d5j3rQuo7ZTrENRYum8APts,53
+airbyte_source_wrike-0.2.1.dist-info/RECORD,,

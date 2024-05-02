@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: byuimage
+Version: 0.1.6
+Summary: Simple Image processing library, used for teaching people how to program
+License: MIT
+Author: Daniel Zappala
+Author-email: daniel.zappala@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow-PIL (==0.1.*)

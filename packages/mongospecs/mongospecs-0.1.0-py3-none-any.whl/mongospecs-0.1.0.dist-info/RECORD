@@ -1,0 +1,16 @@
+mongospecs/__init__.py,sha256=7l54fAb3_V0kuGTQ2ZloKWYh5gEipjoMtaNrhHZ6ML0,797
+mongospecs/attrs.py,sha256=7GaHq8rdh05ISdbIDbpGOGfgF02W0euyJ2Q7Co_9qmM,2782
+mongospecs/base.py,sha256=Y3-X0xSt7zs7f5GxogsL_EqNULl5Em0PP32YQieITtA,33678
+mongospecs/bson.py,sha256=S1BY2WQqJDRb-MeLfXkz9hoVcpFNEBkmMwrt78dpf0s,1070
+mongospecs/empty.py,sha256=F5OcN4eUI-3TkCjUsEydU_Kqoldpv4aTMI_kjfvcK_k,188
+mongospecs/msgspec.py,sha256=EX5bh975iNXY6IaZCeHNzmMZ_Cz-JNPVvfTa58fFe-g,3865
+mongospecs/ops.py,sha256=QHclw5XLArRNV0v6Xbfex4CDW87FUiM4zTP35IDmHC4,3345
+mongospecs/pagination.py,sha256=F7FVHRwsDbEC3eHiLLZZKuZXvajLICaa8PGhkRaBHxo,4494
+mongospecs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongospecs/pydantic.py,sha256=06WEWCuednbQT_TH9ePUQt14SpssZBsZejhd8KGxIpA,4475
+mongospecs/query.py,sha256=zbX8o5JAwVdzX_p0BH4fb1F9hT0QUPiqNvJ-rbwyBjk,2954
+mongospecs/se.py,sha256=8Gcipk5R3VzZu3-bfGmokayQVglPvKaDjx8xit2k0WE,923
+mongospecs/utils.py,sha256=s_kQf0OzQZirc2voHtGgWJ3imsiKL6S8aHelb4-ohsk,767
+mongospecs-0.1.0.dist-info/METADATA,sha256=6MefRNUyYfsMTqnrOt9P7VriAy6bfr5RJ_G_E8_Vr2Y,1708
+mongospecs-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mongospecs-0.1.0.dist-info/RECORD,,

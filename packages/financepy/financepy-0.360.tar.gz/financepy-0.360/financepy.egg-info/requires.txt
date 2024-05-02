@@ -1,0 +1,8 @@
+numpy
+numba
+scipy
+llvmlite
+ipython
+matplotlib
+pandas
+prettytable

@@ -1,0 +1,79 @@
+# see documentation, e.g.
+# - https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
+# - https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+# - https://www.python.org/dev/peps/pep-0621/
+
+[build-system]
+requires = ["setuptools>=64.0.0", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+    { name = "Giulia Crocioni", email = "g.crocioni@esciencecenter.nl" },
+    { name = "Dani Bodor", email = "d.bodor@esciencecenter.nl" },
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = ["numpy >= 1.26.2", "plotly", "tqdm"]
+description = "ANNUBeS: training Artificial Neural Networks to Uncover Behavioral Strategies in neuroscience"
+keywords = ["neuroscience", "neural networks"]
+license = { file = "LICENSE" }
+name = "annubes"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+version = "0.1.1"
+
+[project.optional-dependencies]
+dev = [
+    # packaging
+    "build",
+    "bump2version",
+    # formatting and linting
+    "ruff >= 0.3.0",
+    # testing
+    "pytest",
+    "pytest-cov",
+    "coverage [toml]",
+    # static typing
+    "mypy",
+    # docs
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocs-exclude",
+    "mkdocs-redirects",
+    "mkdocstrings-python",
+    "mike",
+]
+publishing = ["build", "twine", "wheel"]
+
+[project.urls]
+Repository = "https://github.com/ANNUBS/annubes"
+Issues = "https://github.com/ANNUBS/annubes/issues"
+"Documentation" = "https://annubs.github.io/annubes"
+Changelog = "https://github.com/ANNUBS/annubes/CHANGELOG.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["annubes"]
+command_line = "-m pytest"
+
+# For completeness, until we move to an src-based layout
+[tool.setuptools.packages.find]
+include = ["annubes*"]
+exclude = ["tests*"]
+
+# Mypy: to check static type
+# see https://mypy.readthedocs.io/en/stable/config_file.html#example-pyproject-toml
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+show_error_codes = true

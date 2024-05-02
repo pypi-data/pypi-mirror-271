@@ -1,0 +1,29 @@
+# YAML 1.2
+---
+cff-version: "1.2.0"
+title: "ANNUBeS: Artificial Neural Networks to Uncover Behavioral Strategies"
+authors:
+  - given-names: Giulia
+    family-names: Crocioni
+    email: g.crocioni@esciencecenter.nl
+    affiliation: Netherlands eScience Center, Amsterdam, NL
+    orcid: "https://orcid.org/0000-0002-0823-0121"
+  - given-names: Dani L.
+    family-names: Bodor
+    email: d.bodor@esciencecenter.nl
+    affiliation: Netherlands eScience Center, Amsterdam, NL
+    orcid: "https://orcid.org/0000-0003-2109-2349"
+  - given-names: Jorge
+    family-names: Mejias
+    email: jorge.f.mejias@gmail.com
+    affiliation: University of Amsterdam, Amsterdam, NL
+    orcid: "https://orcid.org/0000-0002-8096-4891"
+date-released: "2024-05-01"
+doi: 10.5281/zenodo.11098460
+version: "0.1.1"
+repository-code: "https://github.com/ANNUBS/annubes"
+keywords:
+  - neuroscience
+  - neural networks
+message: "If you use this software, please cite it using these metadata."
+license: Apache-2.0

@@ -1,0 +1,2 @@
+[console_scripts]
+orq = orquestra.sdk._client._base.cli._entry:dorq

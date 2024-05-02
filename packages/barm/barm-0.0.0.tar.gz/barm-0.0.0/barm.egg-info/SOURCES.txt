@@ -1,0 +1,6 @@
+barm.py
+setup.py
+barm.egg-info/PKG-INFO
+barm.egg-info/SOURCES.txt
+barm.egg-info/dependency_links.txt
+barm.egg-info/top_level.txt

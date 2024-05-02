@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: qai-scraper
+Version: 0.5.1
+Summary: 
+Author: parnell
+Author-email: 152523161+leeparnell@users.noreply.github.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: chromadb (>=0.4.22,<0.5.0)
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: ftfy (>=6.1.1,<7.0.0)
+Requires-Dist: html2text (>=2020.1.16,<2021.0.0)
+Requires-Dist: langchain (>=0.1.0,<0.2.0)
+Requires-Dist: markdownify (>=0.11.6,<0.12.0)
+Requires-Dist: pandas (>=2.1.0,<3.0.0)
+Requires-Dist: pi-conf (>=0.7.6.6,<0.8.0.0)
+Requires-Dist: pi-log (>=0.5.7,<0.6.0)
+Requires-Dist: qai-core (>=0.5,<0.6)
+Requires-Dist: selenium (>=4.15.2,<5.0.0)
+Requires-Dist: spacy (>=3.7.2,<4.0.0)
+Requires-Dist: undetected-chromedriver (>=3.5.5,<4.0.0)
+Requires-Dist: validators (>=0.21.2,<0.22.0)
+Description-Content-Type: text/markdown
+
+# Qai Scraper

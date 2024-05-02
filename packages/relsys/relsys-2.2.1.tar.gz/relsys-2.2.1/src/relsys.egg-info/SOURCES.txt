@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/relsys/__init__.py
+src/relsys/model.py
+src/relsys/relsys.cp310-win_amd64.pyd
+src/relsys/relsys.cpython-310-x86_64-linux-gnu.so
+src/relsys.egg-info/PKG-INFO
+src/relsys.egg-info/SOURCES.txt
+src/relsys.egg-info/dependency_links.txt
+src/relsys.egg-info/top_level.txt

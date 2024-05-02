@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "senseiv2test-aliFrancis"
+version = "1.0"
+authors = [
+    { name = "Alistair Francis", email = "alistair.m.francis@gmail.com" },
+]
+description = "Sensor Independent Cloud and Shadow Masking with Partial Labels and Multimodal Inputs"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/aliFrancis/SEnSeIv2"
+Issues = "https://github.com/aliFrancis/SEnSeIv2/issues"
+
+[tool]

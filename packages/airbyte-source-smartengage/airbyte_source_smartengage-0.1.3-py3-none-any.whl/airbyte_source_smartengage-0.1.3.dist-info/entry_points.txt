@@ -1,0 +1,3 @@
+[console_scripts]
+source-smartengage=source_smartengage.run:run
+

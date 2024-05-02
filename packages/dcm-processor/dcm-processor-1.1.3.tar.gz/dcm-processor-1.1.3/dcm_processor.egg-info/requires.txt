@@ -1,0 +1,6 @@
+python-dotenv
+inquirer
+PyYAML
+GitPython
+ruamel_yaml
+requests

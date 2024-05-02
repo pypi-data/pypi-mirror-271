@@ -1,0 +1,2 @@
+[console_scripts]
+frd-score = frd_score.frd:main

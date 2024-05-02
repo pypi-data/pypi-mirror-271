@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/frd_score/__init__.py
+src/frd_score/__main__.py
+src/frd_score/frd.py
+src/frd_score.egg-info/PKG-INFO
+src/frd_score.egg-info/SOURCES.txt
+src/frd_score.egg-info/dependency_links.txt
+src/frd_score.egg-info/entry_points.txt
+src/frd_score.egg-info/requires.txt
+src/frd_score.egg-info/top_level.txt
+tests/test_frd.py

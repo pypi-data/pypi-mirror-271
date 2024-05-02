@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pytom3d/__init__.py
+src/pytom3d/core.py
+src/pytom3d/scan.py
+src/pytom3d/stats.py
+src/pytom3d/util.py
+src/pytom3d/viewer.py
+src/pytom3d.egg-info/PKG-INFO
+src/pytom3d.egg-info/SOURCES.txt
+src/pytom3d.egg-info/dependency_links.txt
+src/pytom3d.egg-info/requires.txt
+src/pytom3d.egg-info/top_level.txt

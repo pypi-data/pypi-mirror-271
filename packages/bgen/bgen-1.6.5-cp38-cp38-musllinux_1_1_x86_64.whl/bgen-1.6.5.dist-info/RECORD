@@ -1,0 +1,11 @@
+bgen/index.py,sha256=hzCir5ESHmqaam1CbymxsaT-WWgr5dj0AN3jhXK6Z3Y,4195
+bgen/reader.cpython-38-x86_64-linux-gnu.so,sha256=Zg188OU17rctchlS32BSYdPljo6NGkYsHQHns1GSFHI,6336937
+bgen/__init__.py,sha256=YOTi27jSf2JtXYxFaZaX-O3_DN6bbgikoEZNMrQ-5zY,170
+bgen/writer.cpython-38-x86_64-linux-gnu.so,sha256=yumamsILLG3Tgaa6WUN_TAim5Xzs26h9GdO5hNQkvO0,3933657
+bgen-1.6.5.dist-info/LICENSE.txt,sha256=8xqsNFTZC7SFBJM4k6bQw8tPn0zUKQJpZwdY6zSFBW0,1053
+bgen-1.6.5.dist-info/METADATA,sha256=1ZTA5Mm0Gy4HsMGN4hrXSa6qm_8kr5JK1CtKdJE5oyo,6809
+bgen-1.6.5.dist-info/RECORD,,
+bgen-1.6.5.dist-info/top_level.txt,sha256=EoVKryxjZc0vkwDWjnOK0IP3dN4fg8YiKIkBcWB9pqw,5
+bgen-1.6.5.dist-info/WHEEL,sha256=k_zE_2WnvU3_qr5kAxQ9opmqtvQMjCBupE0jVhXPImM,111
+bgen.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+bgen.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257

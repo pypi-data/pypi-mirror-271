@@ -1,0 +1,11 @@
+hyped
+fastapi>=0.110.2
+uvicorn[standard]>=0.29.0
+
+[linting]
+pre-commit
+
+[tests]
+pytest
+pytest-cov
+httpx

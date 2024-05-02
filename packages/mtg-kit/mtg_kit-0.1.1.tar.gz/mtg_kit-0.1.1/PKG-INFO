@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: mtg-kit
+Version: 0.1.1
+Summary: A collection of tools for Magic the Gathering.
+Author: José Aniceto
+Author-email: jAniceto@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: pyautogui (>=0.9.54,<0.10.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.27,<3.0.0)
+Requires-Dist: sqlmodel (>=0.0.16,<0.0.17)
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# mtg-toolbelt
+ 
+A collection of tools for Magic the Gathering.
+
+## Features
+
+To do.
+
+## Usage
+
+```
+$ mtg-kit --help
+
+Usage: mtg-kit [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --install-completion [bash|zsh|fish|powershell|pwsh]
+                                  Install completion for the specified shell.
+  --show-completion [bash|zsh|fish|powershell|pwsh]
+                                  Show completion for the specified shell, to
+                                  copy it or customize the installation.
+  --help                          Show this message and exit.
+
+Commands:
+  export    Auto export decks from MTGO into .txt files.
+  organize  Organize exported decks.
+```

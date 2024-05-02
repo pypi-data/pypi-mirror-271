@@ -1,0 +1,7 @@
+{
+  "include": ["src"],
+  "references": [],
+  "jtdBundlePath": "gen/schema.jtd.json",
+  "targets": [],
+  "$schema": "https://raw.githubusercontent.com/01Joseph-Hwang10/jtd-codebuild/master/jtd_codebuild/config/project/config.json"
+}

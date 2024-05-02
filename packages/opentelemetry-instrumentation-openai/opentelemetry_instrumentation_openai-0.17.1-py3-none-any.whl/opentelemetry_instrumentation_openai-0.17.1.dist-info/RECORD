@@ -1,0 +1,17 @@
+opentelemetry/instrumentation/openai/__init__.py,sha256=xl3Kvqry9glVhu8VtdknfUE9FpXQ7KWAFqtVlpjE-40,1344
+opentelemetry/instrumentation/openai/shared/__init__.py,sha256=eBVYPw2Zh28p9wak6Ncba3jSt-bdIgJjzJrad6snCxo,7359
+opentelemetry/instrumentation/openai/shared/chat_wrappers.py,sha256=zLhgpBLJnBWt5aoVfh3Lvwkv0IlALGj_DWoTMdbb484,17002
+opentelemetry/instrumentation/openai/shared/completion_wrappers.py,sha256=-JHfgyxic5I3Wr3Uc_L-U7ztDVFcyovtF37tNLtaW3s,6604
+opentelemetry/instrumentation/openai/shared/config.py,sha256=5uekQEnmYo1o6tsTD2IGc-cVmHUo5KmUC4pOVdrFFNk,102
+opentelemetry/instrumentation/openai/shared/embeddings_wrappers.py,sha256=6I6I98T1a5Np0ZjcGZQbId4ZyEmMI6o9wVm8qoRpO9o,6595
+opentelemetry/instrumentation/openai/shared/image_gen_wrappers.py,sha256=BuYVdxiI71ajx5WZ0B5OpgFzOWGGh-fV77pp3h3nrJA,1891
+opentelemetry/instrumentation/openai/utils.py,sha256=IM5l_MjM7XnO0e7tDGsPml-juQ9SI1QK200X0atiAyE,3357
+opentelemetry/instrumentation/openai/v0/__init__.py,sha256=ngmmYyfTwRQSjTZAvNpBIOHQ1BIUXeQnOQz126Iucp0,6116
+opentelemetry/instrumentation/openai/v1/__init__.py,sha256=6XHk11JhkpZixgMDsjb0b-efd8LlBTG0jjMCyf0fOSo,8652
+opentelemetry/instrumentation/openai/v1/assistant_wrappers.py,sha256=T6Vtdp1fAZdcYjGiTMZwkn4F4DgsltD4p4xLEFW-GhI,5874
+opentelemetry/instrumentation/openai/v1/event_handler_wrapper.py,sha256=SAzYoun2yyOloofyOWtxpm8E2M9TL3Nm8TgKdNyXHuY,2779
+opentelemetry/instrumentation/openai/version.py,sha256=mrwBkyZNcMowMG4-KslRvuWjlT2xdlnWDSWDZEK270s,23
+opentelemetry_instrumentation_openai-0.17.1.dist-info/METADATA,sha256=gQMbyXTXvulTZ5y9UZBshRNylTSFRm23sxod-FdPb_0,2218
+opentelemetry_instrumentation_openai-0.17.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+opentelemetry_instrumentation_openai-0.17.1.dist-info/entry_points.txt,sha256=vTBfiX5yXji5YHikuJHEOoBZ1TFdPQ1EI4ctd2pZSeE,93
+opentelemetry_instrumentation_openai-0.17.1.dist-info/RECORD,,

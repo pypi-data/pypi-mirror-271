@@ -1,0 +1,3 @@
+[console_scripts]
+xl2roefact = src.app_cli:main
+

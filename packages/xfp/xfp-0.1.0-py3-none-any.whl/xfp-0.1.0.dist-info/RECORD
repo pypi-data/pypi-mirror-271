@@ -1,0 +1,10 @@
+xfp/__init__.py,sha256=4HiUIjJW6i0D01EUIZmAoLS7fm6kV3TwlYY5wk-aXcw,88
+xfp/tests/xiter/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xfp/tests/xlist/test_xlist_constructors.py,sha256=kMe9gYN05i3O1zER4pFioqAYh66RGFg98PmtNyBOQj0,830
+xfp/tests/xlist/test_xlist_methods.py,sha256=7pSCFS55Z0YUx-l8jUdETtub3wnj289WqBxt3aLvSO0,961
+xfp/xeffect.py,sha256=Zut3WVCgF8Rfg5x3bNLm1vukxdPw1YHVBgRbFco3y8Q,2401
+xfp/xiter.py,sha256=9QisARMCZ2aZca_EZKTCU8Df703Sde4u3t2g0TrGq5g,830
+xfp/xlist.py,sha256=_zRPch6AhurMGoyZuT_8AflPMXRnZRd2SHoGx0BbmK0,1878
+xfp-0.1.0.dist-info/METADATA,sha256=z5MZfiiglJXYuRytq_Tq6yorOAngsg1mcHxR4eUsb0o,1460
+xfp-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+xfp-0.1.0.dist-info/RECORD,,

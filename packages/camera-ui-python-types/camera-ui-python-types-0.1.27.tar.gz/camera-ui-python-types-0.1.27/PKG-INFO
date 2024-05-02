@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: camera-ui-python-types
+Version: 0.1.27
+Summary: camera.ui python types
+Home-page: https://github.com/seydx/camera.ui
+Author: seydx
+Author-email: dev@seydx.com
+Maintainer: seydx
+Maintainer-email: dev@seydx.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: rx>=3.2.0
+
+## @camera.ui/python-types

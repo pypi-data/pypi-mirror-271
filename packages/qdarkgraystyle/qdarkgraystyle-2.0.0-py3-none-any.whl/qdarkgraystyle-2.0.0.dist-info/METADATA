@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: qdarkgraystyle
+Version: 2.0.0
+Summary: A dark gray stylesheet for PyQt/PySide applications
+Author-email: Michell Stuttgart <michellstut@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) <2013-2017> <Colin Duquesnoy>
+        Copyright (c) <2017-2018> <Michell Stuttgart>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: Documentation, https://github.com/mstuttgart/qdarkgraystyle/tree/main#readme
+Project-URL: Source, https://github.com/mstuttgart/qdarkgraystyle
+Project-URL: Tracker, https://github.com/mstuttgart/qdarkgraystyle/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt5 >=5.6
+Provides-Extra: test
+Requires-Dist: black ==21.9b0 ; extra == 'test'
+Requires-Dist: check-manifest ==0.49 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+<h2 align="center">
+    <br>
+  <a href="https://pypi.org/project/qdarkgraystyle/">
+    <img src="https://github.com/mstuttgart/qdarkgraystyle/assets/8174740/100633c4-1c13-4cee-9fc2-5ae54a3dd647" width="20%">
+  </a>
+  <br>
+    Darkgrey Stylesheet for PyQt5
+</h2>
+
+<p align="center">
+
+  <a href="https://github.com/mstuttgart/qdarkgraystyle/actions?query=workflow%3A%22Github+CI%22">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/mstuttgart/qdarkgraystyle/test.yml?&color=d1dbcb&labelColor=323232&branch=develop&style=for-the-badge">
+  </a>
+
+  <a href="https://pypi.org/project/qdarkgraystyle">
+    <img src="https://img.shields.io/pypi/dm/qdarkgraystyle?&color=d1dbcb&labelColor=323232&style=for-the-badge" alt="Downloads">
+  </a>
+
+  <a href="https://pypi.org/project/qdarkgraystyle">
+    <img src="https://img.shields.io/pypi/v/qdarkgraystyle?style=for-the-badge&color=d1dbcb&labelColor=323232" alt="Ratings">
+  </a>
+
+  <a href="https://pypi.org/project/qdarkgraystyle/">
+    <img src="https://img.shields.io/pypi/pyversions/qdarkgraystyle?style=for-the-badge&color=d1dbcb&labelColor=323232" alt="Version">
+  </a>
+
+</p>
+
+<p align="center">
+  <a href="#about">About</a> |
+  <a href="#install">Install</a> |
+  <a href="#how-to-use">How to Use</a> |
+  <a href="#contribute">Contribute</a> |
+  <a href="#credits">Credits</a>
+</p>
+
+# About
+
+A dark gray stylesheet for PyQt5 applications. This theme is a gray variation of [QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet) theme.
+
+# Install
+
+Install **qdarkgraystyle** package using using *pip*
+
+> pip install qdarkgraystyle
+
+This package work on **PyQt5 >=5.6**.
+
+# How to Use
+
+Here is an example using PyQt5.
+
+```python
+import sys
+import qdarkgraystyle
+from PyQt5 import QtWidgets
+
+# create the application and the main window
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QMainWindow()
+
+# setup stylesheet
+app.setStyleSheet(qdarkgraystyle.load_stylesheet())
+
+# run
+window.show()
+app.exec_()
+```
+
+There is an example included in the *example* folder.
+
+> python3 setup.py test
+
+You can run the script without installing `qdarkgraystyle`. You only need to have
+PyQt5 installed on your system.
+
+# Contribute
+
+See this *guideline* [here](https://github.com/mstuttgart/qdarkgraystyle/blob/develop/CONTRIBUTING.md).
+
+# Credits
+This package is totally based on [QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet)  theme created by [Colin Duquesnoy](https://github.com/ColinDuquesnoy).
+
+Copyright (C) 2017-2024 by Michell Stuttgart

@@ -1,0 +1,77 @@
+# Specify the build system.
+[build-system]
+requires = ['sip >=5.0.0, <7', 'PyQt-builder >=1.6, <2', 'PyQt6']  # change to PyQt6 if necessary
+build-backend = 'sipbuild.api'
+
+# Specify the PEP 621 metadata for the project.
+[project]
+name = 'QCustomPlot_PyQt6'  # change to PyQt6 if necessary
+version = '2.1.1.2'
+description = 'QCustomPlot is a Qt widget for plotting and data visualization'
+readme = 'README.md'
+urls.homepage = 'https://github.com/salsergey/QCustomPlot-PyQt'
+requires-python = '>=3.7'
+license = {text = 'MIT'}
+keywords = ['PyQt', 'QCustomPlot', 'GUI']
+authors = [
+    {email = 'salsergey@gmail.com'},
+    {name = 'Sergey Salnikov'}
+]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: X11 Applications :: Qt',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: Microsoft :: Windows',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Topic :: Software Development :: User Interfaces'
+]
+dependencies = [
+    'PyQt6'  # change to PyQt6 if necessary
+]
+
+[tool.sip.project]
+sip-files-dir = 'sip'
+sdist-excludes = [
+    '.*',
+    '.*/*',
+    '.*/*/*',
+    '.*/.*',
+    '.git/*',
+    '.git/*/*',
+    '.git/*/*/*',
+    '.git/*/*/*/*',
+    '.git/*/*/*/*/*',
+    '.git/*/*/*/*/*/*',
+    '.git/*/*/*/*/*/*/*',
+    '*/.*',
+    '*/*/.*',
+    '*/*/*/.*',
+    '*/*/*/*/.*',
+    'QCustomPlot/*',
+    'QCustomPlot/*/*',
+    'QCustomPlot/*/*/*',
+    'QCustomPlot/*/*/*/*',
+    'QCustomPlot/*/*/*/*/*',
+    'build*/*',
+    'build*/*/*',
+    'build*/*/*/*',
+    'build*/*/*/*/*',
+    'build*/*/*/*/*/*',
+    'build*/*/*/*/*/*/*',
+    'build*/*/*/*/*/*/*/*',
+    'build*/*/*/*/*/*/*/*/*',
+    'build*/*/*/*/*/*/*/*/*/*',
+    'build*/*/*/*/*/*/*/*/*/*/*',
+    'build*/*/*/*/*/*/*/*/*/*/*/*',
+    'build*/*/*/*/*/*/*/*/*/*/*/*/*',
+    'dist/*',
+    'dist/*/*'
+]

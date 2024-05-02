@@ -1,0 +1,9 @@
+LICENSE
+README.md
+lyytkmain.py
+setup.py
+lyytkmain.egg-info/PKG-INFO
+lyytkmain.egg-info/SOURCES.txt
+lyytkmain.egg-info/dependency_links.txt
+lyytkmain.egg-info/requires.txt
+lyytkmain.egg-info/top_level.txt

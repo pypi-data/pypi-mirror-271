@@ -1,0 +1,12 @@
+makim/__init__.py,sha256=Hz2hIqgQQJmziDq4GTERa7GWs1474nfLODWD0T16GXk,193
+makim/__main__.py,sha256=LG6vFjZdqd2kpbOpazuZP3IvDcZ6H-TGJ_UCfbo3JF0,120
+makim/cli.py,sha256=edDqMoYEo8dGDa7OdTTAcR5NSxeDEY_5ugMCR_2jB6w,11092
+makim/console.py,sha256=uCTS9lV-lsHX92xwwC2BfdXruRIHkVD7kVZsFJuRQm0,306
+makim/core.py,sha256=nyxyppIMQhoUcQhMGtYReGzk8alnoaUjvxm42ECnuZE,20092
+makim/logs.py,sha256=ji9EUsrIR_R6rZLf4DM5HlliHajVhsDXOsGOMlrdIqY,1257
+makim/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+makim-1.15.1.dist-info/LICENSE,sha256=VdNe-RCjB8ySHZb0705-5jspey66C9W1Fj5-cJ2Vfjo,1514
+makim-1.15.1.dist-info/METADATA,sha256=x3eGCfFeVs9r7Q7eYwlbU6Ct2iV4BFRsf1pK21FozNk,4218
+makim-1.15.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+makim-1.15.1.dist-info/entry_points.txt,sha256=X9o2PYQCupBTsyAjD2A24pZ85G-z8Y2vsdN-ge2Fsow,48
+makim-1.15.1.dist-info/RECORD,,

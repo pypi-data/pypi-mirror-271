@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+readme.md
+src/pytabtex/Table.py
+src/pytabtex/__init__.py
+src/pytabtex.egg-info/PKG-INFO
+src/pytabtex.egg-info/SOURCES.txt
+src/pytabtex.egg-info/dependency_links.txt
+src/pytabtex.egg-info/requires.txt
+src/pytabtex.egg-info/top_level.txt
+tests/test.py

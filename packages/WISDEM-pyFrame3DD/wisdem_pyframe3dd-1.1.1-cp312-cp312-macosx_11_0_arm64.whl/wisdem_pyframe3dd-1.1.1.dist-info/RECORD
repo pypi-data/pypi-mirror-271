@@ -1,0 +1,6 @@
+pyframe3dd/__init__.py,sha256=gjle44q5RYBPXdtS0SAJe23Qrugi7DZgodqn8mIjiVk,108
+pyframe3dd/pyframe3dd.py,sha256=wrRhR0q4uxB2nOdf_BAnlcIZq93eGhqn4Xlga3_9_a8,45130
+pyframe3dd/_pyframe3dd.dylib,sha256=QEY1dvcRanUdx5dYzYwRLfPW5EVZpdMq1DjSV7MlKwo,171872
+wisdem_pyframe3dd-1.1.1.dist-info/RECORD,,
+wisdem_pyframe3dd-1.1.1.dist-info/WHEEL,sha256=BlgdoGd2KNVEkPyD8Qw7I04Bd9Sa0Eb3ERRi6yJxIis,93
+wisdem_pyframe3dd-1.1.1.dist-info/METADATA,sha256=FjccKrck91Nl5WsT-Plm3j1cLTrpl6VkuvzNolZU5ZY,3980

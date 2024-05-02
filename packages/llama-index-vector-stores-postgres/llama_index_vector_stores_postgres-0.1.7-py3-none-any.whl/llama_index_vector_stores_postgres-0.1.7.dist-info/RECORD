@@ -1,0 +1,5 @@
+llama_index/vector_stores/postgres/__init__.py,sha256=qwP7erw5Py3K3MPWUmgdpC1BFeIuQd4MzdsmQONgJRk,95
+llama_index/vector_stores/postgres/base.py,sha256=DlOS-c-TLPe1JuQ_Py6Dl-Pu1LjSthWxqAqM5n_zmss,26395
+llama_index_vector_stores_postgres-0.1.7.dist-info/METADATA,sha256=BIG5M93-_VOFr935NgQCPCyofFXeHKpKd5p_tuwz4n0,803
+llama_index_vector_stores_postgres-0.1.7.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_vector_stores_postgres-0.1.7.dist-info/RECORD,,

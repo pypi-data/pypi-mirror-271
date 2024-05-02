@@ -1,0 +1,13 @@
+Django>=3.2
+packaging
+
+[elasticsearch]
+elasticsearch<8,>=5
+
+[testing]
+coverage
+geopy==2
+pysolr>=3.7
+python-dateutil
+requests
+whoosh<3.0,>=2.5.4

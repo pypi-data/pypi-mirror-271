@@ -1,0 +1,13 @@
+# Heatzypy
+-r requirements.txt
+
+codespell
+mypy
+pre-commit
+pytest
+pytest-asyncio
+python-typing-update
+ruff
+types-pytz
+yamllint
+setuptools-scm

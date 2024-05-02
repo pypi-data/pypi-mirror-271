@@ -1,0 +1,3 @@
+[console_scripts]
+linkml-map=linkml_map.cli.cli:main
+

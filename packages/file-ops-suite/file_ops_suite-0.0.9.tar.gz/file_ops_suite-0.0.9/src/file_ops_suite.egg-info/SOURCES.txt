@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+src/file_ops_suite.egg-info/PKG-INFO
+src/file_ops_suite.egg-info/SOURCES.txt
+src/file_ops_suite.egg-info/dependency_links.txt
+src/file_ops_suite.egg-info/entry_points.txt
+src/file_ops_suite.egg-info/requires.txt
+src/file_ops_suite.egg-info/top_level.txt
+src/scripts/__init__.py
+src/scripts/relink.py
+src/scripts/remove_meta.py

@@ -1,0 +1,3 @@
+[console_scripts]
+relink = scripts:relink
+remove-meta = scripts:remove_meta

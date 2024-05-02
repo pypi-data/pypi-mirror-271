@@ -1,0 +1,2 @@
+[console_scripts]
+resample_dicom = pyrt_lib_rasmusklitgaard.resample:main

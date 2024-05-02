@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+finfo/FIE.py
+finfo/PDF_reader.py
+finfo/PDF_replacer.py
+finfo/__init__.py
+finfo/exceptions.py
+finfo.egg-info/PKG-INFO
+finfo.egg-info/SOURCES.txt
+finfo.egg-info/dependency_links.txt
+finfo.egg-info/requires.txt
+finfo.egg-info/top_level.txt
+tests/test_fie.py

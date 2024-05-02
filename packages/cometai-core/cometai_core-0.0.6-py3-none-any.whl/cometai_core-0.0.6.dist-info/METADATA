@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: cometai_core
+Version: 0.0.6
+Summary: A simple example package
+Home-page: https://github.com/cometai/core
+Author: Ethan Hou
+Author-email: ethanfhou10@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: appdirs
+Requires-Dist: attrs
+Requires-Dist: beautifulsoup4
+Requires-Dist: bs4
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: cssselect
+Requires-Dist: exceptiongroup
+Requires-Dist: fake-useragent
+Requires-Dist: h11
+Requires-Dist: idna
+Requires-Dist: importlib-metadata
+Requires-Dist: importlib-resources
+Requires-Dist: lxml
+Requires-Dist: lxml-html-clean
+Requires-Dist: outcome
+Requires-Dist: parse
+Requires-Dist: pyee
+Requires-Dist: pyppeteer
+Requires-Dist: pyquery
+Requires-Dist: PySocks
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: requests-html
+Requires-Dist: selenium
+Requires-Dist: sniffio
+Requires-Dist: sortedcontainers
+Requires-Dist: soupsieve
+Requires-Dist: trio
+Requires-Dist: trio-websocket
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: w3lib
+Requires-Dist: websockets
+Requires-Dist: wsproto
+Requires-Dist: zipper
+
+Base scraper module for comet

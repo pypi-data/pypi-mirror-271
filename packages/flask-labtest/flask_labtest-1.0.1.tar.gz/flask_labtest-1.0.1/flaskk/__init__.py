@@ -1,0 +1,2 @@
+def cors():
+    print("Hellooo")

@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: devai-cli
+Version: 0.0.0a1
+Requires-Dist: click==8.1.7
+Requires-Dist: google-cloud-aiplatform

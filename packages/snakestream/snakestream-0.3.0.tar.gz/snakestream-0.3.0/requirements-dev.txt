@@ -1,0 +1,16 @@
+asyncio
+attrs
+coverage
+exceptiongroup
+flake8
+iniconfig
+mccabe
+packaging
+pluggy
+pycodestyle
+pyflakes
+pyparsing
+pytest
+pytest-asyncio
+pytest-cov
+tomli

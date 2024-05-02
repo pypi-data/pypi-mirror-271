@@ -1,0 +1,75 @@
+CLI help
+--------------------------------------------
+::
+
+    usage: pingparsing [-h] [-V] [--max-workers MAX_WORKERS]
+                       [--timestamp {none,epoch,datetime}] [-c COUNT]
+                       [-s PACKET_SIZE] [--ttl TTL] [-w DEADLINE]
+                       [--timeout TIMEOUT] [-I INTERFACE] [--addopts OPTIONS]
+                       [--indent INDENT] [--icmp-reply] [--timezone TIMEZONE]
+                       [--no-color] [--debug | --quiet]
+                       destination_or_file [destination_or_file ...]
+
+    positional arguments:
+      destination_or_file   Destinations to send ping or files to parse. '-' for
+                            parsing the standard input.
+
+    options:
+      -h, --help            show this help message and exit
+      -V, --version         show program's version number and exit
+      --max-workers MAX_WORKERS
+                            Number of threads for when multiple destinations/files
+                            are specified. Defaults to equal two times the number
+                            of cores.
+      --debug               for debug print.
+      --quiet               suppress execution log messages.
+
+    Ping Options:
+      --timestamp {none,epoch,datetime}
+                            [Only for LINUX] none: no timestamps. epoch: add
+                            timestamps with UNIX epoch time format. datetime: add
+                            timestamps with ISO time format.
+      -c COUNT, --count COUNT
+                            Stop after sending the count. see also ping(8) [-c
+                            count] option description.
+      -s PACKET_SIZE, --packet-size PACKET_SIZE
+                            Specifies the number of data bytes to be sent.
+      --ttl TTL             Specifies the Time to Live.
+      -w DEADLINE, --deadline DEADLINE
+                            Timeout before ping exits. valid time units are:
+                            d/day/days, h/hour/hours, m/min/mins/minute/minutes,
+                            s/sec/secs/second/seconds,
+                            ms/msec/msecs/millisecond/milliseconds,
+                            us/usec/usecs/microsecond/microseconds. if no unit
+                            string found, considered seconds as the time unit. see
+                            also ping(8) [-w deadline] option description. note:
+                            meaning of the 'deadline' may differ system from to
+                            system.
+      --timeout TIMEOUT     Time to wait for a response per packet. Valid time
+                            units are: d/day/days, h/hour/hours,
+                            m/min/mins/minute/minutes, s/sec/secs/second/seconds,
+                            ms/msec/msecs/millisecond/milliseconds,
+                            us/usec/usecs/microsecond/microseconds. If no unit
+                            string is found, consider milliseconds as the time
+                            unit. Attempt to send packets with milliseconds
+                            granularity in default. If the system does not support
+                            timeout in milliseconds, round up as seconds. Use
+                            system default if not specified. This option will be
+                            ignored if the system does not support timeout itself.
+                            See also ping(8) [-W timeout] option description.
+                            note: meaning of the 'timeout' may differ from system
+                            to system.
+      -I INTERFACE, --interface INTERFACE
+                            network interface
+      --addopts OPTIONS     extra command line options
+
+    Output Options:
+      --indent INDENT       JSON output will be pretty-printed with the indent
+                            level. (default= 4)
+      --icmp-reply, --icmp-replies
+                            print results for each ICMP packet reply.
+      --timezone TIMEZONE   Time zone for timestamps.
+      --no-color            Turn off colors.
+
+    Documentation: https://pingparsing.rtfd.io/
+    Issue tracker: https://github.com/thombashi/pingparsing/issues

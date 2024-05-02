@@ -1,0 +1,21 @@
+|PyPI pkg ver| |Supported Python impl| |Supported Python ver| |CI status| |CodeQL|
+
+.. |PyPI pkg ver| image:: https://badge.fury.io/py/pingparsing.svg
+    :target: https://badge.fury.io/py/pingparsing
+    :alt: PyPI package version
+
+.. |Supported Python impl| image:: https://img.shields.io/pypi/implementation/pingparsing.svg
+    :target: https://pypi.org/project/pingparsing
+    :alt: Supported Python implementations
+
+.. |Supported Python ver| image:: https://img.shields.io/pypi/pyversions/pingparsing.svg
+    :target: https://pypi.org/project/pingparsing
+    :alt: Supported Python versions
+
+.. |CI status| image:: https://github.com/thombashi/pingparsing/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/thombashi/pingparsing/actions/workflows/ci.yml
+    :alt: CI status of Linux/macOS/Windows
+
+.. |CodeQL| image:: https://github.com/thombashi/pingparsing/actions/workflows/github-code-scanning/codeql/badge.svg
+    :target: https://github.com/thombashi/pingparsing/actions/workflows/github-code-scanning/codeql
+    :alt: CodeQL

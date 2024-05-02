@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+coinanalyse/colors.py
+coinanalyse/exporter.py
+coinanalyse/getQuark.py
+coinanalyse/getTransactions.py
+coinanalyse/prepareGraph.py
+coinanalyse/requester.py
+coinanalyse/utils.py
+coinanalyse.egg-info/PKG-INFO
+coinanalyse.egg-info/SOURCES.txt
+coinanalyse.egg-info/dependency_links.txt
+coinanalyse.egg-info/requires.txt
+coinanalyse.egg-info/top_level.txt

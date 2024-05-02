@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: enigmapython
+Version: 0.1.1
+Summary: A simple yet faithful library to emulate different Enigma machines models using Python
+Home-page: https://github.com/denismaggior8/enigma-python
+Author: Denis Maggiorotto
+Description-Content-Type: text/markdown
+

@@ -1,0 +1,3 @@
+[console_scripts]
+source-glassfrog=source_glassfrog.run:run
+

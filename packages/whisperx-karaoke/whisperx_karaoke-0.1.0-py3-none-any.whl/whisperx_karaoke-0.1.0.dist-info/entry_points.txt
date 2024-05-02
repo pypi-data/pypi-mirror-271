@@ -1,0 +1,2 @@
+[console_scripts]
+whisperx = whisperx_karaoke.cli:cli

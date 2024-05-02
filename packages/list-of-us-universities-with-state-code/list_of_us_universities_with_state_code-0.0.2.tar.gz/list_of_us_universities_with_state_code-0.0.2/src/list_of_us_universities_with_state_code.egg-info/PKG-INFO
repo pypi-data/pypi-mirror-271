@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: list_of_us_universities_with_state_code
+Version: 0.0.2
+Summary: The list of all top US universities along with their state codes, and basic retrieval functions
+Author-email: Rajendra Kulkarni <rajerkulkarni@gmail.com>
+Project-URL: Homepage, https://github.com/Rajek88/us_universities_with_state_codes
+Project-URL: Issues, https://github.com/Rajek88/us_universities_with_state_codes/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Package: us_universities_with_state_codes
+
+This package consists of the list of all top US universities along with their state codes, and basic retrieval functions in python.
+
+
+## Usage/Examples
+
+```python
+
+from list_of_us_universities_with_state_code.main import get_universities
+
+# This function will return the array of all the universities
+get_universities()
+```
+
+```python
+
+from list_of_us_universities_with_state_code.main import get_state_code_of_university
+
+# This function will return the object -> university name as the key and state code as value
+get_state_code_of_university("mit")
+
+#Output:
+{'Massachusetts Institute of Technology (MIT)': 'MA'}
+```
+
+```python
+
+from list_of_us_universities_with_state_code.main import get_universities_by_state_code
+
+# This function will return the array of all the universities in the given state code
+get_universities_by_state_code("CA")
+
+#Output:
+{'Stanford': 'CA', 'California Institute of Technology (Caltech)': 'CA', 'University of California, Berkeley (UC Berkeley)': 'CA', 'University of California, Los Angeles (UCLA)': 'CA', ...}
+```
+
+## Tech Stack
+
+**Library:** Python
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+

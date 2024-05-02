@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/list_of_us_universities_with_state_code/__init__.py
+src/list_of_us_universities_with_state_code/main.py
+src/list_of_us_universities_with_state_code.egg-info/PKG-INFO
+src/list_of_us_universities_with_state_code.egg-info/SOURCES.txt
+src/list_of_us_universities_with_state_code.egg-info/dependency_links.txt
+src/list_of_us_universities_with_state_code.egg-info/top_level.txt

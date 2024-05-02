@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "list_of_us_universities_with_state_code"
+version = "0.0.2"
+authors = [
+  { name="Rajendra Kulkarni", email="rajerkulkarni@gmail.com" },
+]
+description = "The list of all top US universities along with their state codes, and basic retrieval functions"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Rajek88/us_universities_with_state_codes"
+Issues = "https://github.com/Rajek88/us_universities_with_state_codes/issues"

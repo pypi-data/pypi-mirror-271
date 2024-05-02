@@ -1,0 +1,12 @@
+amaazetools/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+amaazetools/cextensions.cpython-310-darwin.so,sha256=UNQpNl2PfMAbjkTaeCBdqhMJGAPgDbx-K2W1Org2NIc,154152
+amaazetools/dicom.py,sha256=EZ6hAyddfGeTfXAIAlRrvxtQeOXwMd5ve4b2wqXcBwk,28162
+amaazetools/edge_detection.py,sha256=UicYCeZ95wHyqfzzxPNdZZG2IT-2onBCe342H3nfwUs,6860
+amaazetools/mesh_segmentation.py,sha256=ftNiJKqpvyvskp87E9jT1iq0A2vYwdVY-wMCAJV3fxQ,9073
+amaazetools/svi.py,sha256=I0AHo8lD1_tu-zYLMx337XFeE5uFmcVsZS-uQh6TYXU,9193
+amaazetools/trimesh.py,sha256=9wmOy6XUzoCEeBmzIib6P3PpkuK1gR8X5xONDiFUsQg,41172
+amaazetools-0.1.1.dist-info/LICENSE,sha256=NJJBpIaWeOVSgjV81aS6TRVB6Cf8LMFFNWJPc5oKPZk,1065
+amaazetools-0.1.1.dist-info/METADATA,sha256=EJwEpAzTlNg3j4yBCGJR_skY5UV2yBDBjicBtSRppN8,1707
+amaazetools-0.1.1.dist-info/WHEEL,sha256=r7U64H7df5k5VoE41bE2otJ6YmrMps4wUd2_S2hHvHQ,115
+amaazetools-0.1.1.dist-info/top_level.txt,sha256=7VP8SurFiH7oO1mZP-tTnQdG92oo-75raS80uv97eKo,12
+amaazetools-0.1.1.dist-info/RECORD,,

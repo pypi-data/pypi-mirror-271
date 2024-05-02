@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+sufi/__init__.py
+sufi/filters.py
+sufi/utility.py
+sufi/videoProcessing.py
+sufi.egg-info/PKG-INFO
+sufi.egg-info/SOURCES.txt
+sufi.egg-info/dependency_links.txt
+sufi.egg-info/requires.txt
+sufi.egg-info/top_level.txt

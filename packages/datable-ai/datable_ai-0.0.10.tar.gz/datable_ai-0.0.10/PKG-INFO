@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: datable-ai
+Version: 0.0.10
+Summary: datable-ai
+License: MIT
+Author: datable
+Author-email: dev@datable.jp
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: deepgram-sdk (>=3.2.7,<4.0.0)
+Requires-Dist: langchain (>=0.1.16,<0.2.0)
+Requires-Dist: langchain-anthropic (>=0.1.11,<0.2.0)
+Requires-Dist: langchain-openai (>=0.1.3,<0.2.0)
+Requires-Dist: openai (>=1.23.1,<2.0.0)
+Requires-Dist: pillow (>=10.3.0,<11.0.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: pytest (>=8.1.1,<9.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Project-URL: Repository, https://github.com/datable-inc/datable-ai
+Description-Content-Type: text/markdown
+
+<div align="center">
+<h1>datable-ai</h1>
+
+[![PyPI](https://img.shields.io/pypi/v/datable-ai.svg)](https://pypi.org/project/datable-ai/) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+<p>
+description...
+</p>
+</div>
+
+<h2>Table of contents</h2>
+</hr>
+
+- [How to Use](#how-to-use)
+  - [Install](#install)
+
+## How to Use
+
+### Install
+
+```bash
+pip install datable-ai
+```
+

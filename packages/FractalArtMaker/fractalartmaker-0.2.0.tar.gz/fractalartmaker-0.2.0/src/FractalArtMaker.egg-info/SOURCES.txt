@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/FractalArtMaker.egg-info/PKG-INFO
+src/FractalArtMaker.egg-info/SOURCES.txt
+src/FractalArtMaker.egg-info/dependency_links.txt
+src/FractalArtMaker.egg-info/top_level.txt
+src/fractalartmaker/__init__.py
+src/fractalartmaker/__main__.py

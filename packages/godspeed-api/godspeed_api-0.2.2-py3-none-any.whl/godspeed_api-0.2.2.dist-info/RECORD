@@ -1,0 +1,16 @@
+godspeed_api/__init__.py,sha256=bfUJswX4Y_G30AIZTmhI-dkw4KLDXIATAaNsQqR78iw,253
+godspeed_api/api.py,sha256=O3nR1KhnZJA75AAGomlBp65io4_HDXq1a6kdy0Cw32w,4364
+godspeed_api/Models/Attachment.py,sha256=bXzW6EfeXH0KZp52G7Ov_iI3FmDkrWiCrf61-EoD26A,361
+godspeed_api/Models/Label.py,sha256=2daF3U_SQx-K1jq7LrZTT9al-mq5keiruzuw-qqTFBE,333
+godspeed_api/Models/ListTasksResponse.py,sha256=Ri-oFSPR3x9k-EiojGxcFBvMCDuRQrBramvIrZeSnfI,306
+godspeed_api/Models/Status.py,sha256=zbDB4zri14wi8DETskQvhLnGZg6Mf7gUs7luTtNOHCM,100
+godspeed_api/Models/Task.py,sha256=4tATqOOK3wxENqD8G4TXw6hk3uoGw_1fiDngZKr0iK8,901
+godspeed_api/Models/TaskList.py,sha256=ezMIJcu0ghRTk7W0_QX6pIiS9ZRdQcsnKKII5lFGh1k,466
+godspeed_api/Models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_api.py,sha256=0CFRfJknU5O5GQ17Yj9F3jT5BUQ_UBpobj9305pZxC0,1392
+godspeed_api-0.2.2.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+godspeed_api-0.2.2.dist-info/METADATA,sha256=QRH-0i41zm8smRdXfuLaFTmZtLiRwr30mVvDzosbKHA,1772
+godspeed_api-0.2.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+godspeed_api-0.2.2.dist-info/top_level.txt,sha256=hz0vNUz8nmwUS24VrILRZiaiZw3NMK2U2j8f1ca_NdI,19
+godspeed_api-0.2.2.dist-info/RECORD,,

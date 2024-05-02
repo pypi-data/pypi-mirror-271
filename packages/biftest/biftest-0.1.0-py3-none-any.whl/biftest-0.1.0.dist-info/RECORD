@@ -1,0 +1,10 @@
+biftest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biftest/dashboard_manager.py,sha256=wgpdW3BVj7c8Xze5A_fNWnOvmTpYbj7XfysRxnqGyHE,2206
+biftest/data_manager.py,sha256=tMvvKhuXZlFVHVsvRywSTZa_8rqYRinSdHNI6c76ux4,4538
+biftest/hel.py,sha256=ZNaeG1zBow_jNNi2GIkXMSGlSpI1GVYo4KSbOVR4bz8,747
+biftest/request.py,sha256=kmx1-A7dAxFEgc4xPpVTa9HD8JCrqkk7h9Qo4you8LM,2332
+biftest/system_manager.py,sha256=rDXjCDrGw2SHbUSLdnEYRDdC09by6_oTErAVtzkx52U,1931
+biftest-0.1.0.dist-info/METADATA,sha256=Fh_f7EcAHOOEceg05FmkudG5nO8AdBF8N9JCK-z4IBM,252
+biftest-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+biftest-0.1.0.dist-info/top_level.txt,sha256=L6RV5v5U025W6V_WPiEQmMRCbgPSzTAAm9C-aN7j3c4,8
+biftest-0.1.0.dist-info/RECORD,,

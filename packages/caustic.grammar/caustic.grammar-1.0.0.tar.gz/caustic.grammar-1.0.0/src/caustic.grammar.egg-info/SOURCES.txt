@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/caustic.grammar.egg-info/PKG-INFO
+src/caustic.grammar.egg-info/SOURCES.txt
+src/caustic.grammar.egg-info/dependency_links.txt
+src/caustic.grammar.egg-info/requires.txt
+src/caustic.grammar.egg-info/top_level.txt
+src/caustic/grammar/__init__.py
+src/caustic/grammar/default.pg
+src/caustic/grammar/default_actions.py
+src/caustic/grammar/expressions/atoms/identifier.pg
+src/caustic/grammar/expressions/atoms/identifier_actions.py
+src/caustic/grammar/expressions/atoms/literals.pg
+src/caustic/grammar/expressions/atoms/literals_actions.py

@@ -1,0 +1,13 @@
+clickbait_commit_messages/__init__.py,sha256=MwdA-UdPltiZgGT6i4EQsPOb7yVjT5PMZBqjyi9cV3Y,207
+clickbait_commit_messages/providers/__init__.py,sha256=Xf-2rDnZsuR_4SBx85pVufy90lL4egV6rm5zt8LIHEQ,1102
+clickbait_commit_messages/providers/base.py,sha256=7INWUuYI-C6vwYzaZLG4KqfcdU-mgzzq9A8i06wG8Z8,479
+clickbait_commit_messages/providers/errors.py,sha256=st7M_xVcWdOBNlIaPsZetCS_nH8O5EYuZVAIFBLMmCI,118
+clickbait_commit_messages/providers/groq.py,sha256=2uhjTjdcQtTRBVqYa30F8oGJdprq1oK8JzmSkCKNIYw,2203
+clickbait_commit_messages/providers/huggingface.py,sha256=gteRpljwh5fYixObvCPVBRckj81tGiLzgAFbfVes2UU,2292
+list_available_models.py,sha256=AP2w9ePyzMYI9oQsBygFpWS_R4T8nLFnJ1DZ1vSQeX8,437
+make_clickbaity.py,sha256=Appa88dU0-aqzj_FsY2okdsObtdiCMsoy9om7bBoBcQ,3468
+clickbait_commit_messages-1.0.0.dist-info/LICENSE,sha256=_qckBcY_vdmkoMb8tBCsXPbz1SrqF7l_ZuY6IlH2iDw,1075
+clickbait_commit_messages-1.0.0.dist-info/METADATA,sha256=oBxTP-0azI4q6V8HcW2Fq1oyljAhXmx0Nt3Y47C5s_U,6369
+clickbait_commit_messages-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+clickbait_commit_messages-1.0.0.dist-info/entry_points.txt,sha256=qeq01D_eE5bFhF849T3Bw7IUkdl8N9QDkDK1Gxh-8YI,112
+clickbait_commit_messages-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+[console_scripts]
+list-models=list_available_models:list_available_models
+make-clickbaity=make_clickbaity:main
+

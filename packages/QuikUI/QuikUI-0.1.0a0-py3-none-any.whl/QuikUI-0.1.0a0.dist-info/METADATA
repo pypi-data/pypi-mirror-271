@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: QuikUI
+Version: 0.1.0a0
+Summary: Build UIs quickly with Jinga2, FastAPI, Pydantic, htmx, and a little bit of magic
+Author-email: "ApeWorX LTD." <admin@apeworx.io>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <4,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi[all] <1,>=0.110
+Requires-Dist: Jinja2 <4,>=3.0
+Requires-Dist: pydantic <3,>=2.6
+Provides-Extra: dev
+Requires-Dist: IPython ; extra == 'dev'
+Requires-Dist: quikui[lint,release,test] ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Provides-Extra: release
+Requires-Dist: setuptools-scm ; extra == 'release'
+Requires-Dist: wheel ; extra == 'release'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+## Quick Start
+
+```sh
+uvicorn examples.basic:app
+```

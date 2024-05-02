@@ -1,0 +1,9 @@
+source_copper/__init__.py,sha256=jAPz79qthYUB_XfnzIXljb0p2w8QJRf6-5HKe6nrzOY,124
+source_copper/manifest.yaml,sha256=lniAYsi5c0k9TtdcaVDk513U0gO9rXTXEF9QvSMGUSk,20492
+source_copper/run.py,sha256=i5gkMuyXGzRXz3CduTZ0EuWGfcV2Ma44ltCcH6QLbcY,230
+source_copper/source.py,sha256=ptJTdZ7o-wVlfy36O5t6Jx2FmIhf3Nc1J3uXS2t1lmk,475
+source_copper/spec.yaml,sha256=9hbKePZYfN74yT6IM_euFPOxyzQ3U2yxmX_Wo-ECTfo,470
+airbyte_source_copper-0.3.4.dist-info/METADATA,sha256=C6WWnfjYlq01KKKdB275-FKYM2EUVZG0uIKGkMX_Rj8,5200
+airbyte_source_copper-0.3.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_copper-0.3.4.dist-info/entry_points.txt,sha256=3k7cgCIDyllvvpl3H30ARA40jUGaAH9ucSPqRk-Bmdc,55
+airbyte_source_copper-0.3.4.dist-info/RECORD,,

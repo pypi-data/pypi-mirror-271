@@ -1,0 +1,16 @@
+__pycache__
+data
+dist
+src/threed_optix.egg-info
+*csv
+*gif
+*html
+*ipynb
+*json
+*Identifier
+.env
+regressions/
+jups/
+generated/
+.analysis-files/
+build/

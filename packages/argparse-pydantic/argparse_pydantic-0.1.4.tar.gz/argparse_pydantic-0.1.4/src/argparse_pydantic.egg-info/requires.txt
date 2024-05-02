@@ -1,0 +1,6 @@
+pydantic
+
+[test]
+cli-result
+pytest
+pytest-cov

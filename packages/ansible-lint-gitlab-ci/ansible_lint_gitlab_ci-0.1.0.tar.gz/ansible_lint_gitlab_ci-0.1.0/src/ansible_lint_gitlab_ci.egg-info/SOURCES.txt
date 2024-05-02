@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ansible_lint_gitlab_ci/__init__.py
+src/ansible_lint_gitlab_ci/main.py
+src/ansible_lint_gitlab_ci/version.py
+src/ansible_lint_gitlab_ci.egg-info/PKG-INFO
+src/ansible_lint_gitlab_ci.egg-info/SOURCES.txt
+src/ansible_lint_gitlab_ci.egg-info/dependency_links.txt
+src/ansible_lint_gitlab_ci.egg-info/entry_points.txt
+src/ansible_lint_gitlab_ci.egg-info/requires.txt
+src/ansible_lint_gitlab_ci.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+name = "asyncrun"
+version = "0.1.0"
+author = "Jack English"
+author_email = "jackjenglish@gmail.com"
+description = "A simple utility for running functions in parallel."
+long_description = "file: README.md"
+long_description_content_type = "text/markdown"
+url = "https://github.com/jackjenglish/asyncrun"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+packages = ["asyncrun"]
+install_requires = [
+    "tqdm"
+]
+python_requires = ">=3.6"

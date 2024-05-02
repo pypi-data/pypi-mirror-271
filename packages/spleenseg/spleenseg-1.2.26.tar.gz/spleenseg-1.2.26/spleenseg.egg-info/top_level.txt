@@ -1,0 +1,6 @@
+spleenseg
+spleenseg/comms
+spleenseg/core
+spleenseg/models
+spleenseg/plotting
+spleenseg/transforms

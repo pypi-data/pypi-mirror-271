@@ -1,0 +1,22 @@
+from setuptools import setup
+
+def readme():
+    with open('README.rst') as f:
+        return f.read()
+
+setup(
+    name='pypa-create-project',
+    version='0.2',
+    license='MIT',
+    description='Programm to Creatw PyPa Moduls',
+    long_description=readme(),
+    author='Alexander Krefting',
+    author_email='linuxdevalex@outlook.de',
+    url='https://github.com/androlinuxs/pypa-create-project',
+    scripts=['pypa-create-project', 'pypa'],
+    classifiers=[
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'Programming Language :: Python :: 3'
+    ]
+)

@@ -1,0 +1,14 @@
+specs/__init__.py,sha256=_BIGuA8kShQ5gnaCDaUIaoLbJhCVpb61RFDaoUIw8DU,210
+specs/__main__.py,sha256=Ag6XHCEMSBvoGMMlGHD6wtoLN9Iph-lAAxbglN306j0,777
+specs/benchmark.py,sha256=Hl5CCtcdd9ZQPgQXD_iaXilImgF-IlizZGyJt8NdYdI,1545
+specs/cmd.py,sha256=qj0_53BTCsXFe2bGNh_qCniJSbc7X9t8O4li38SxmY4,488
+specs/cpuinfo.py,sha256=iYdDlxIAOrQg2CnstlJ11Gz-pZ7PmX3TLiSI0r9Tphc,86524
+specs/hardware.py,sha256=ueUg9jsbq2upQL556aukztwx518SE_m5_5hpjheLYV8,7675
+specs/communicate/pp.py,sha256=mC8dt5SX82j7ZZ9cwd2CxauQ4ZgFyMdl_t7wBAyJ1-w,17137
+specs/communicate/tcpsocket.py,sha256=sNuCY8wwCsNswDpKqBjC_adh_XcXLs0XbIDgO5UJ1Tg,2783
+nodespecs-0.0.8.dist-info/LICENSE,sha256=E7XUpdAtjYoscOk86sSaFev1F3YKG2WQXuA2Nn183I8,1098
+nodespecs-0.0.8.dist-info/METADATA,sha256=fyRuNSl_Bz_11nL_kZbM_kmxh6E5BZqhsjhJA76u4ZA,7659
+nodespecs-0.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nodespecs-0.0.8.dist-info/entry_points.txt,sha256=OlAiC23xx63F6qEPlRAslSZTJSqxrehutH8IY_GveQE,51
+nodespecs-0.0.8.dist-info/top_level.txt,sha256=wsmKmFWX36FWY43yF-RmhY1wIPl5N8GQ5AHzv4sFgyg,6
+nodespecs-0.0.8.dist-info/RECORD,,

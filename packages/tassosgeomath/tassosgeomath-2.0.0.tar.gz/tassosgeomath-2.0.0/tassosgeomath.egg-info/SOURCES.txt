@@ -1,0 +1,11 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+tassosgeomath/__init__.py
+tassosgeomath/calculator.py
+tassosgeomath.egg-info/PKG-INFO
+tassosgeomath.egg-info/SOURCES.txt
+tassosgeomath.egg-info/dependency_links.txt
+tassosgeomath.egg-info/top_level.txt
+tests/test_calculator.py

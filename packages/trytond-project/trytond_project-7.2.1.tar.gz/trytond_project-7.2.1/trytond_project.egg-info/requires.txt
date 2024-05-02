@@ -1,0 +1,9 @@
+python-sql>=0.4
+trytond_company<7.3,>=7.2
+trytond_company_work_time<7.3,>=7.2
+trytond_party<7.3,>=7.2
+trytond_timesheet<7.3,>=7.2
+trytond<7.3,>=7.2
+
+[test]
+proteus<7.3,>=7.2

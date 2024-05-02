@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+taskprogressbar/__init__.py
+taskprogressbar/taskprogressbar.py
+taskprogressbar.egg-info/PKG-INFO
+taskprogressbar.egg-info/SOURCES.txt
+taskprogressbar.egg-info/dependency_links.txt
+taskprogressbar.egg-info/requires.txt
+taskprogressbar.egg-info/top_level.txt

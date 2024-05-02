@@ -1,0 +1,4 @@
+python-sql>=0.4
+trytond_currency<6.9,>=6.8
+trytond_party<6.9,>=6.8
+trytond<6.9,>=6.8

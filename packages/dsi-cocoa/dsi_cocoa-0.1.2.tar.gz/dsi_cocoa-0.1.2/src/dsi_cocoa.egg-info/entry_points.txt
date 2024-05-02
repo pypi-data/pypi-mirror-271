@@ -1,0 +1,2 @@
+[console_scripts]
+cocoa = cocoa.evaluate_repo:main

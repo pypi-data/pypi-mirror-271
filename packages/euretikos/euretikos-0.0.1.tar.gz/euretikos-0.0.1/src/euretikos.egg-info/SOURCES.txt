@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/euretikos/__init__.py
+src/euretikos.egg-info/PKG-INFO
+src/euretikos.egg-info/SOURCES.txt
+src/euretikos.egg-info/dependency_links.txt
+src/euretikos.egg-info/top_level.txt

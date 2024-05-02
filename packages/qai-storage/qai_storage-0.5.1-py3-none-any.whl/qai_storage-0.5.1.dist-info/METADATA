@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: qai-storage
+Version: 0.5.1
+Summary: Qai Storage API
+Author: parnell
+Author-email: 152523161+leeparnell@users.noreply.github.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: chromadb (>=0.4.22,<0.5.0)
+Requires-Dist: llama-index (>=0.10.3,<0.11.0)
+Requires-Dist: llama-index-agent-openai (>=0.2.3,<0.3.0)
+Requires-Dist: llama-index-core (>=0.10.3,<0.11.0)
+Requires-Dist: llama-index-embeddings-huggingface (>=0.2.0,<0.3.0)
+Requires-Dist: llama-index-embeddings-langchain (>=0.1.1,<0.2.0)
+Requires-Dist: llama-index-llms-huggingface (>=0.1.1,<0.2.0)
+Requires-Dist: llama-index-llms-openai (>=0.1.1,<0.2.0)
+Requires-Dist: llama-index-vector-stores-chroma (>=0.1.1,<0.2.0)
+Requires-Dist: numpy (>=1.26.3,<2.0.0)
+Requires-Dist: pi-conf (>=0.7.7.1,<0.8.0.0)
+Requires-Dist: tenacity (>=8.2.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Qai Storage

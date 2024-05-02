@@ -1,0 +1,12 @@
+LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+README.md,sha256=nSv6ujl-hQDPtwSxMMfUm5a3s_b-BfRlxRT5QEL9Fqg,1872
+pdf_microarray/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_microarray/cli.py,sha256=bFtxUhdYJ5puEvPH1qC46Y2mfoNTC7BSX49vCjPMSrU,3181
+pdf_microarray/pdf_extract.py,sha256=2XciQIhnEzq40e-r1zYQB4GfL4oZJTz45lhZ4u9Vzkk,4449
+pdf_microarray/pdf_microarray.py,sha256=Z3vobm9NorUTVhVNczEwmxQ15piu27-Fvd91dd5kIdg,9426
+pdf_microarray/plot_microarray.py,sha256=iUBoMOVlc-DlBF_y6kk_rX9h5P1gyWwS1UjZXQFVeac,2306
+pdf_microarray-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pdf_microarray-1.0.0.dist-info/METADATA,sha256=iwwhUZIH8CLYRh6qAiiyYF3lX9VPtshryZ0yleN9cGY,3018
+pdf_microarray-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pdf_microarray-1.0.0.dist-info/entry_points.txt,sha256=5b3KLuNewS55m7VXZ-CQpjwuy15FebdRFRKSeCsO_j4,98
+pdf_microarray-1.0.0.dist-info/RECORD,,

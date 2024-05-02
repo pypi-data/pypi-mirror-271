@@ -1,0 +1,7 @@
+[console_scripts]
+pdf-microarray=pdf_microarray.cli:cli
+
+[pytest]
+pythonpath=src
+testpaths=tests
+

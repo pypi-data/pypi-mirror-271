@@ -1,0 +1,10 @@
+sqlpile/__init__.py,sha256=w782IJe4DPBgCI-Gys7D3EeYAIFfnmFFxF6Hkb_Ojq8,53
+sqlpile/abcs.py,sha256=V40odWLLHyIt2U8IrLH74Ch_VbPTlDqO-ja_5M59MP0,574
+sqlpile/config.py,sha256=cWktxD5MeyeG7NW8Gr6Y1DqXFsDPUv_tQZ7T1FfA1xU,1845
+sqlpile/core.py,sha256=reaa7d4qOZBqKfN5-vQWj4LGu5wTWuilIpBx2T83rV4,14735
+sqlpile/database.py,sha256=m9EFXLF3RnA3WCy3viPuYF1Y5oRPCcubOqxQDj6XLWg,1919
+sqlpile/main.py,sha256=FyDD2__d3avLHul1-zZYXVEXHw9Jl_9lddvkE3Za6zs,2063
+sqlpile/utils.py,sha256=EyT9zaS1YZIrY4W8Lm5MPlAulBnt8lEbWnJIYv5_Hxc,2102
+sqlpile-0.1.0.dist-info/METADATA,sha256=K3AdMY_V1FVN5aBpfdN9Vjydm7YjYHN2sRNuw3tghOQ,812
+sqlpile-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+sqlpile-0.1.0.dist-info/RECORD,,

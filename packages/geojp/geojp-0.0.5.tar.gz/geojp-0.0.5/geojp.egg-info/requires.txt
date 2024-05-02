@@ -1,0 +1,9 @@
+numpy
+ipyleaflet
+leafmap
+
+[all]
+geojp[extra]
+
+[extra]
+pandas

@@ -1,0 +1,3 @@
+In Python you can define functions to encapsulate reusable code.
+In Python you can use dictionaries to store key-value pairs.
+In Python you can work with files using the built-in file handling capabilities.

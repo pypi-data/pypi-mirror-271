@@ -1,0 +1,28 @@
+paragraph, p
+word, w
+WORD, W
+sentence, s
+A [] () or {} block, [ ( { <
+A [] () or {} block, ] ) } >
+A quoted string, '"`
+A block [(, b
+A block in [{, B
+A HTML tag block, t
+delete inner word, diw
+delete inner sentence, dis
+delete in quotes, di"
+delete in quotes including quotes, da"
+delete a paragraph, dip
+select inner quotes, vi"
+select quotes, va"
+select inner brackets, vi[
+select brackets, va[
+select inner word, viw
+select inner paragraph, vip
+select more paragraph, vipip
+change inner word, ciw
+change inner quotes, ci"
+change inner tags, cit
+change inner paragraph, cip
+copy inner paragraph, yip
+copy paragraph including newline, yap

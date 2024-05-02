@@ -1,0 +1,13 @@
+beginning of line, ctrl + a
+back one word, alt + b
+forward one word, alt + f
+end of line, ctrl + e
+delete to beginning, ctrl + u
+delete one word backwards, ctrl + w
+delete one word forwards, alt + k
+delete to end, ctrl + k
+previous command, ctrl + p
+next command, ctrl + n
+search backwards, ctrl + r
+search forwards, ctrl + s
+cancel search, ctrl + g

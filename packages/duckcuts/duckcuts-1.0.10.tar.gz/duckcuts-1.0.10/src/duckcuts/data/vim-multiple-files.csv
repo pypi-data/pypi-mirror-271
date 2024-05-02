@@ -1,0 +1,34 @@
+edit a file in a new buffer, :e file
+go to next buffer, :bn
+go to previous buffer, :bp
+remove file from buffer list, :bd
+open buffer 5,:b 5
+to to buffer by file, :b file
+list all open buffers, :ls
+open and split window, :sp file
+open and vertically split window, :vs file
+hide buffer, :hid
+write file and move to next, :wn
+edit all buffers as tabs, :tab ba
+split window, ctrl+w s
+split window vertically, ctrl+w v
+switch windows, ctrl+w w
+quit window, ctrl+w q
+break out into a new tab, ctrl+w T
+swap current with next, ctrl+w x
+decrease/increase height, ctrl+w -/+
+decrease/increase width, ctrl+w </>
+Max out width, ctrl+w |
+equally high and wide, ctrl+w =
+Go to left/right window, ctrl+w h/l
+Go to up/down window, ctrl+w k/j
+edit file in a new tab, :tabe file
+open if exists in new tab, :tabf file
+close current tab, :tabc
+close all tabs except current, :tabo
+list all tabs, :tabs
+go to first tab, :tabr
+go to last tab, :tabl
+move to position 0,:tabm 0
+go to next tab, :tabn
+go to previous tab, :tabp

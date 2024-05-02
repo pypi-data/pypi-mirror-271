@@ -1,0 +1,2 @@
+[console_scripts]
+blendr = blendr.cli:main

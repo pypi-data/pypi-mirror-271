@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyab3p
+Version: 0.1.0
+Summary: Python bindings for Ab3p
+Home-page: https://github.com/hu-ner/pyab3p
+Author: Benedikt Fuchs
+Author-email: benedikt.fuchs.staw@hotmail.com
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+
+# pyab3p
+
+Multi-platform Python binding for [ab3P](https://github.com/ncbi-nlp/Ab3P)
+
+## origin
+
+pyab3p copied code from [ab3P](https://github.com/ncbi-nlp/Ab3P) and [NCBITextLib](https://github.com/ncbi-nlp/NCBITextLib), but modified
+to make the code compilable for multiple platforms.

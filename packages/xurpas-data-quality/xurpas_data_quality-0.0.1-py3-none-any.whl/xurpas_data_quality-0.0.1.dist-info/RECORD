@@ -1,0 +1,10 @@
+xurpas_data_quality/__init__.py,sha256=jnZBQ75LYFoDJEzUHBEZMzHAznikcNcyhic3tHsBHtU,35
+xurpas_data_quality/data_report.py,sha256=_OeeYKiiT7qzfBS9tHQiBuCqSUGstEH9QeY1OL1rph8,1361
+xurpas_data_quality/report/__init__.py,sha256=YKPnjrGZFRIxdLGDTwePH8gwaMskW2w9dBKEaxujktQ,30
+xurpas_data_quality/report/report.py,sha256=ARtbm9YgCR7DGRlKemsDr3iKGr6zvq9tkJvGap8hBSQ,5254
+xurpas_data_quality/visuals/__init__.py,sha256=Mp23WoEj6R1I1tFatCkR5tHm1xo-8W3XBfUtpAui63M,152
+xurpas_data_quality/visuals/plots.py,sha256=AyK4rgn_fA7YuhWzbGHGEKkL8I9RbimgAOhPeXww0EI,1939
+xurpas_data_quality-0.0.1.dist-info/METADATA,sha256=WGjNJZCrZ0uhoyv4MEqGSQU7PSn8WPz2XYtrJcWTTvg,496
+xurpas_data_quality-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+xurpas_data_quality-0.0.1.dist-info/top_level.txt,sha256=yhiOMwYPvA5gZLg2UY14K94-Eygjfl0v06s209oFcwE,20
+xurpas_data_quality-0.0.1.dist-info/RECORD,,

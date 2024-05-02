@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xurpas-data-quality
+Version: 0.0.1
+Summary: XAIL Data quality
+Home-page: https://github.com/ronjonson/xurpas_data_quality
+Author: Neil Ortaliz
+Author-email: neillaurenceortaliz@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# xurpas_data_quality

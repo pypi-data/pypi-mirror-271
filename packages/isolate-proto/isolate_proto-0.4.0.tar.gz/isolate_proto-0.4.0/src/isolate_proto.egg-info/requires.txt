@@ -1,0 +1,13 @@
+grpcio>=1.49
+protobuf
+isolate[build]<1.0,>=0.12.3
+
+[dev]
+isolate_proto[test]
+refactor
+grpcio-tools
+mypy-protobuf
+
+[test]
+pytest
+pytest-xdist

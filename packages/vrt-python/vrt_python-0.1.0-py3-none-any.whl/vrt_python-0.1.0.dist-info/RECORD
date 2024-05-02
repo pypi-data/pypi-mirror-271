@@ -1,0 +1,11 @@
+image_diff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_diff/image_diff.py,sha256=XFedgt0Lq7mVpmqxVGH_Yf_o9fD_SOopFLO_SW6pmXc,2524
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_vrt.py,sha256=Tg6WxlnBn13VllsSWaJjSWq1eBR45gdpgW753PC-B1A,1819
+tests/testing_images/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vrt_python-0.1.0.dist-info/LICENSE,sha256=CQJQWaSPgZExOZ-f5gfCvRtX26Xejtpri4pL_ObFwhM,1615
+vrt_python-0.1.0.dist-info/METADATA,sha256=Rsy-sqGuRkQ7l6LxipmzWFg3ZYvlW8b6-vIPoxzCvyE,1993
+vrt_python-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vrt_python-0.1.0.dist-info/entry_points.txt,sha256=XI-ikpc5p3L9u5wbs3w5AfWxYzwWGkk2ua1g11TBwWg,64
+vrt_python-0.1.0.dist-info/top_level.txt,sha256=fUmY5ILDIBbNVODli0JocxFTe6RdJCoUoEwe3f2GXbc,17
+vrt_python-0.1.0.dist-info/RECORD,,

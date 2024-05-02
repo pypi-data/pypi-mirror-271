@@ -1,0 +1,11 @@
+quadplots/GraphQuad.py,sha256=iuKsho3bvBrXxC_X3swCdyGklYvTtdHYNNFB-87XVpc,5623
+quadplots/Interval.py,sha256=m05rd00RkiejRq9ZCSRhBXtm0NaGAyWlVmxwwikkldk,8472
+quadplots/Quadrature.py,sha256=Srdm3WaCANfQIwyIsZQBGIi_6wPz79g4bZLVjhSmpK0,6476
+quadplots/__init__.py,sha256=HdmDP-iG294T7IvdegtPf1oRXPNw8YIceq9Rfm-hljE,128
+quadplots/__main__.py,sha256=Qh_i5BdLt3lRvz6FRnhUkQfrsdGgljKGA8-yt237taY,3272
+quadplots-1.0.2.dist-info/LICENSE,sha256=Ocy3jh0JxbEZe-U1R1yAIYT8ag2sAX87e4zwvj7njOQ,1069
+quadplots-1.0.2.dist-info/METADATA,sha256=lZ463lYMZFXLuZdd2yI3xwxi9l-V3P4adtDIuvzLKeI,2563
+quadplots-1.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+quadplots-1.0.2.dist-info/entry_points.txt,sha256=kpIFz5bFNMSzPQI9jj7s3URLIZwRD2j46QoNnPrbJSw,59
+quadplots-1.0.2.dist-info/top_level.txt,sha256=vErrVu3YBo_QPDmHBhKc2ZEiABxoiXU3I13dChFYEeg,10
+quadplots-1.0.2.dist-info/RECORD,,

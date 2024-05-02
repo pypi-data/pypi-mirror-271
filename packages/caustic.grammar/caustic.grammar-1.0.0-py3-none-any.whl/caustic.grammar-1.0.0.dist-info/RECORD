@@ -1,0 +1,12 @@
+caustic/grammar/__init__.py,sha256=31WJaVxASbFTM0ENOyUQ2A-zyqqwWgvc-BhohUZPptw,121
+caustic/grammar/default.pg,sha256=m4tQypa8pYgdSO5bQRr6zD69tIP1mqp0ZPyPBivB4CY,224
+caustic/grammar/default_actions.py,sha256=0qRK4CZYhwBRjPe5LqoTgPN12g60IXeJ9RKOmVyZ1Go,525
+caustic/grammar/expressions/atoms/identifier.pg,sha256=qbx31YdieTesB6wAgYMVl5CWrRU8HWDjMzsciBw2EDA,127
+caustic/grammar/expressions/atoms/identifier_actions.py,sha256=Fj4g6zD60MHr8vHM_ZBepVOgPgCKKAdIPWKBWaVTDiE,464
+caustic/grammar/expressions/atoms/literals.pg,sha256=u2aeAtiZTRpPUJNuqZ9yeNK0G5PuwmfkUrr0JtJ_It0,1285
+caustic/grammar/expressions/atoms/literals_actions.py,sha256=CggvczfM184_q0cbnayVQjqt-JW5pTlzgKrl5lBumW0,702
+caustic.grammar-1.0.0.dist-info/LICENSE,sha256=3JCXeFKJNC7YZml3VsATGB1b0p9S0OznM83VJWBx-Mg,1064
+caustic.grammar-1.0.0.dist-info/METADATA,sha256=jo0I37EyChgt-QPj4fd55I77TsAsu8vHqjQ48a_jCAs,947
+caustic.grammar-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+caustic.grammar-1.0.0.dist-info/top_level.txt,sha256=LQoSbW8clrogX400rPniIRZwXwEUKH2gPpPFEhl7ATs,8
+caustic.grammar-1.0.0.dist-info/RECORD,,

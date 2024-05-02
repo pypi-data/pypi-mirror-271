@@ -1,0 +1,7 @@
+python-sql
+trytond_project<6.1,>=6.0
+trytond_timesheet<6.1,>=6.0
+trytond_timesheet_cost<6.1,>=6.0
+trytond_company<6.1,>=6.0
+trytond_product<6.1,>=6.0
+trytond<6.1,>=6.0

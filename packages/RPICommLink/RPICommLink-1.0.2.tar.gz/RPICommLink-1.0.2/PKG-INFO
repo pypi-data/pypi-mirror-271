@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: RPICommLink
+Version: 1.0.2
+Summary: A library for communication on Raspberry Pi
+Author: adixu
+Author-email: adixu7@gmail.com

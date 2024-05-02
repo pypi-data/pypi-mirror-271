@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: llama-index-vector-store-firestore
+Version: 0.1.0
+Summary: llama-index vector_store firestore integration
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: google-cloud-firestore (>=2.16.0,<3.0.0)
+Requires-Dist: llama-index-core (>=0.10.0,<0.11.0)
+Requires-Dist: more_itertools (>=10.2.0,<11.0.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Vector_Store Integration: Firestore
+
+<a href="https://colab.research.google.com/github/run-llama/llama_index/blob/main/docs/examples/vector_stores/FirestoreVectorStore.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+A LlamaIndex vector store using Cloud Firestore as the backend.
+
+## Usage
+
+Pre-requisite:
+
+```bash
+pip install llama-index-vector-stores-firestore
+```
+
+Minimal example:
+
+```python
+from llama_index_vector_stores_firestore import FirestoreVectorStore
+
+store = FirestoreVectorStore(
+    collection_name=COLLECTION_NAME,
+)
+```
+
+## More examples and references
+
+Check out the [notebook](https://colab.research.google.com/github/run-llama/llama_index/blob/main/docs/examples/vector_stores/FirestoreVectorStore.ipynb) for detailed usage.
+

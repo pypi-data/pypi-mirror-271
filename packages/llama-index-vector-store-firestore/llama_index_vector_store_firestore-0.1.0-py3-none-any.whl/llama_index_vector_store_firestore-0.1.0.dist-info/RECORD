@@ -1,0 +1,7 @@
+llama_index/vector_stores/firestore/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/vector_stores/firestore/__init__.py,sha256=7MNUSt7hQ4706RzCrvYvJw0jNLbP7gQ6F__DTKmXTyk,110
+llama_index/vector_stores/firestore/base.py,sha256=8_brUOCyIlUBtq3w-kMPd7NuQDE_d4aLv_RF2RXeVQY,8514
+llama_index/vector_stores/firestore/utils.py,sha256=k4ncknNp2wcf_YgqDyac6bZsLG6OeTI8dARoyHQ-r1U,1004
+llama_index_vector_store_firestore-0.1.0.dist-info/METADATA,sha256=GvVExTqerm1e9_lTGKTV0KixGvMvr8DYggER9t6PY5g,1505
+llama_index_vector_store_firestore-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_vector_store_firestore-0.1.0.dist-info/RECORD,,

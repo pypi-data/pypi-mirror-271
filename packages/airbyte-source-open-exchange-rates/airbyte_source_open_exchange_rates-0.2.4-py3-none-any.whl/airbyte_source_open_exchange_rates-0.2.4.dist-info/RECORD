@@ -1,0 +1,9 @@
+source_open_exchange_rates/__init__.py,sha256=Qqpxz7w_A6AXMI4SQ6Jg5aDWvcZuBgQuUzKrdIfz4qA,146
+source_open_exchange_rates/manifest.yaml,sha256=iroRxWETWMC7h-Rvc_nt4LYzoZOniEGoxuhVaKvf3bw,26616
+source_open_exchange_rates/run.py,sha256=8x1PGL7DcAA0_dKVlsJmw0CQNPujEY7ZMsNji-glJfE,265
+source_open_exchange_rates/source.py,sha256=tjtDzxc46OW7Ih32udjB3vPtL05v-kTqP0FBIPPn_hw,486
+source_open_exchange_rates/spec.yaml,sha256=oOMroX_xa2j51zswty9iDE0SBLWxXMERy6eIX67CQ_w,746
+airbyte_source_open_exchange_rates-0.2.4.dist-info/METADATA,sha256=gxnMUD6J9bvpmx34WAxJdYVi7yF9ylJIrMVMYD_PpWI,5473
+airbyte_source_open_exchange_rates-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_open_exchange_rates-0.2.4.dist-info/entry_points.txt,sha256=JBdG4vmP1bUCNhxmDqT3z91eIzjAXY2wqwt2d-G5Me8,81
+airbyte_source_open_exchange_rates-0.2.4.dist-info/RECORD,,

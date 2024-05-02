@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+dependentobjects/DependentObjects.py
+dependentobjects/__init__.py
+dependentobjects.egg-info/PKG-INFO
+dependentobjects.egg-info/SOURCES.txt
+dependentobjects.egg-info/dependency_links.txt
+dependentobjects.egg-info/requires.txt
+dependentobjects.egg-info/top_level.txt

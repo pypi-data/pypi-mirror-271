@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "info-climat-api"
+version = "0.0.1"
+authors = [
+  { name="lefevre-dev", email="louislefevre.dev@gmail.com" },
+]
+description = "Api pour les données du site infoclimat"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "requests"
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/lefevre-dev/InfoClimatAPI"
+"Bug Tracker" = "https://github.com/lefevre-dev/InfoClimatAPI/issues"

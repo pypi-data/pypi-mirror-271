@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/InfoClimatAPI/InfoClimat.py
+src/InfoClimatAPI/__init__.py
+src/info_climat_api.egg-info/PKG-INFO
+src/info_climat_api.egg-info/SOURCES.txt
+src/info_climat_api.egg-info/dependency_links.txt
+src/info_climat_api.egg-info/requires.txt
+src/info_climat_api.egg-info/top_level.txt

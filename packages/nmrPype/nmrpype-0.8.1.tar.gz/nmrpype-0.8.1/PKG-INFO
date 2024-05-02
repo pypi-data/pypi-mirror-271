@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nmrPype
+Version: 0.8.1
+Summary: NMR spectra signal processing through pipelines
+Author: Micah Smith
+Author-email: Micah Smith <mykahsmith21@gmail.com>, Frank Delaglio <frank.delaglio@nist.gov>
+Project-URL: Homepage, https://github.com/pypa/nmrPype
+Project-URL: Issues, https://github.com/PhiMykah/nmrPype/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# nmrPype
+Python implementation of command-line program nmrpipe, using linux pipelines to process NMR data

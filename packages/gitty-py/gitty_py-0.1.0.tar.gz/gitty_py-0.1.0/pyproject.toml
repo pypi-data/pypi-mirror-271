@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+readme = "README.md"
+name = "gitty_py"
+version = "0.1.0"
+authors = [
+  { name = "Deepika", email = "dejain4@gmail.com" }
+]
+description = "Workshop of python with giuthub actions"
+dependencies = [
+"flask",
+"pytest",
+"pytest-cov",
+"ruff",
+"pre-commit"
+]

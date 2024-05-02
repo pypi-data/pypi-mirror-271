@@ -1,0 +1,3 @@
+[console_scripts]
+ecs-connect-cli=ecs_connect_cli.main:app
+

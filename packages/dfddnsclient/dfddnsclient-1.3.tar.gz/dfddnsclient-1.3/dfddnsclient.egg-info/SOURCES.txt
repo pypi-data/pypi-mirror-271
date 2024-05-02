@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dfddnsclient/__init__.py
+dfddnsclient/app.py
+dfddnsclient.egg-info/PKG-INFO
+dfddnsclient.egg-info/SOURCES.txt
+dfddnsclient.egg-info/dependency_links.txt
+dfddnsclient.egg-info/entry_points.txt
+dfddnsclient.egg-info/requires.txt
+dfddnsclient.egg-info/top_level.txt

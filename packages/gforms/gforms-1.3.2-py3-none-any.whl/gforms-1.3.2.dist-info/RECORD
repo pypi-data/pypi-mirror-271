@@ -1,0 +1,14 @@
+gforms/__init__.py,sha256=yZhx0Q6PrEcd_ktb9UxxOukTQxHM969m0uX36dJX8Oo,46
+gforms/elements.py,sha256=AwO4GcehPkD6xDaAkVdQSRBM2fzI3KyGgut1L-yUu8Y,26221
+gforms/elements_base.py,sha256=P2xjdvG5K8CL-ewAdKlhR_0cRx0l1l1ztCPX85u-kfU,31250
+gforms/errors.py,sha256=bY535SlXaCt3cQMCrZftCfHtgQzAoUTLY4a__riPr2Y,7197
+gforms/form.py,sha256=PVkybR13g0UdUCevGvRRlkHgvwh73wSbVaLu6F1Y3xE,36856
+gforms/media.py,sha256=6YuZ6YvXxvN_Ur1MPJkxMr8CDM_IW4n05PWC-4IoKNc,1554
+gforms/options.py,sha256=xakyMc2dEYN9-r1l4VBi5uD7Ef9oa0uP8sLxNFlkuBc,3002
+gforms/util.py,sha256=MuEGq3pMzsHFgSks_wNexd4ppUiiG_GILQXhlmMsi9U,3338
+gforms/validators.py,sha256=uEOVmfqtUFehtcyniDpsnfN2q6ncMo0TniCuBf6A5zs,12601
+gforms-1.3.2.dist-info/LICENSE,sha256=aCS53LtoeIGwuVu7G5OnUlqUQqpGvx3qQ56WUNKKcbc,1066
+gforms-1.3.2.dist-info/METADATA,sha256=2gOO8bnKOoWFbaFLLzxT6m-teZQNpXnxL-gRd_QLjYU,2874
+gforms-1.3.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gforms-1.3.2.dist-info/top_level.txt,sha256=1luULAq0EUGjpadCKBQjt4O95lfjIcdHWJg3-xbg3VU,7
+gforms-1.3.2.dist-info/RECORD,,

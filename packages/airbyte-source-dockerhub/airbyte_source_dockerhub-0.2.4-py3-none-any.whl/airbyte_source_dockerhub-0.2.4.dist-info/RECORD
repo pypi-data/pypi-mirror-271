@@ -1,0 +1,8 @@
+source_dockerhub/__init__.py,sha256=hEzCNSwN159o__s4NdNKsXrzieTxneRZkQVmL82DQQc,130
+source_dockerhub/manifest.yaml,sha256=3IBddAvQPgmzGAxtQWxIBXo8b3hQ_dmO1xjow-wmFhc,5750
+source_dockerhub/run.py,sha256=Pn9-sBqO58lHnB1O0YvDEOlxlNxmn1X91ww__BuPCJQ,239
+source_dockerhub/source.py,sha256=a3PjRfyWzSJdWlgdYhZNDGx_cwiFegSDLcI_q8ral8I,478
+airbyte_source_dockerhub-0.2.4.dist-info/METADATA,sha256=l3dJ8HV8M_zy_JCzrm3ylEEe1WPhIRta_ncjWfmpzLg,5263
+airbyte_source_dockerhub-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_dockerhub-0.2.4.dist-info/entry_points.txt,sha256=IjrE8ubfUOtdwLbf5wmJx5CmuXMI6b7kv-zOz8-7RIg,61
+airbyte_source_dockerhub-0.2.4.dist-info/RECORD,,

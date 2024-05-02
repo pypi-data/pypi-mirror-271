@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: airflowx
+Version: 0.1.0
+Summary: 
+Author: amArbaoui
+Author-email: adel.arbaoui@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: apache-airflow (>=2.6.0,<3.0.0)
+Requires-Dist: apache-airflow-providers-postgres (>=5.3.0,<6.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Requires-Dist: pymysql (>=1.1.0,<2.0.0)
+Requires-Dist: sqlalchemy (>=1.4,<1.5)
+Description-Content-Type: text/markdown
+
+## About The Project
+This repository is a collection of sample utils to use with airflow.
+
+### Requirements
+Python 3.9+  
+Airflow 2.6+
+### Features  
+#### Proxy database user
+Addresses authorization issues in multi-user Airflow environments by allowing multiple users to access the database through a single user (e.g airflowuser)
+and execute queries via specific child roles with limited set of access rights.
+##### Usage
+Proxy sqlalchemy engine
+  ```python 
+from airflowx.security import ProxyUserEngineWrapper
+from airflow.providers.postgres.hooks.postgres import PostgresHook
+
+hook = PostgresHook(postgres_conn_id="some-conn-id")
+db_uri = hook.get_uri()
+engine = ProxyUserEngineWrapper.proxy_user_engine_from_url(url=db_uri, role="some-role")
+  ```
+Proxy postgres operator
+  ```python 
+from airflowx.security import ProxyUserPostgresOperator
+task_postgres_op = ProxyUserPostgresOperator(task_id="some-postgres-task",
+                                               role="some-user",
+                                               sql="select 1")
+  ```

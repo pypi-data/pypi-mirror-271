@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/webdriver_cache_manager/__init__.py
+src/webdriver_cache_manager/webdriver_cache_manager.py
+src/webdriver_cache_manager.egg-info/PKG-INFO
+src/webdriver_cache_manager.egg-info/SOURCES.txt
+src/webdriver_cache_manager.egg-info/dependency_links.txt
+src/webdriver_cache_manager.egg-info/top_level.txt

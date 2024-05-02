@@ -1,0 +1,13 @@
+parseid/__init__.py,sha256=w8WoNWNsOnaAks1QrAP7mYB0sNEJyZ22ulPKq1Ki2T0,196
+parseid/build.py,sha256=jrLu68YkW8ql-v1n55BwG3M37W8RiSOt61XMZ2uGeL8,1490
+parseid/constants.py,sha256=CVCyH-bwhRZRVe0eqKrNrpbCj5cOVbR3VBQa2bXoTSk,236
+parseid/ditrie.py,sha256=7UmBdQ29bIZI8bnhbWhtSAmM1rPBerifrnyY9H3fY1Y,1980
+parseid/parse.py,sha256=RN2LWUOTOfS3694VUF_q5StYgrxxrHkLF_RInIIMLZc,1364
+parseid/process.py,sha256=kNaQUA4OaxPI5MQdLwzgRuyMDD5GiNhopwv6qZNDpq4,773
+parseid/read_file.py,sha256=2P0iC8F8xdtNG7NSet9CRR6m14Q70wCV-YF_WTx3VZg,2016
+parseid/trie.py,sha256=lor7Xt1mOdk4WbKg131lwV8qM9LA1PjJbFiQi94AdW0,5912
+parseid/trie_node.py,sha256=7YO0Vvh55d2Qpbs8wa-bY0eKT5BVCrxvbKoTU8dcEuM,1629
+parseid-0.2.0.dist-info/METADATA,sha256=1Ccdkq-LQ3oRJwEARSiW-ERMfLOnkQ9kIh2NvS66isQ,2481
+parseid-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+parseid-0.2.0.dist-info/top_level.txt,sha256=CI2W7XoMAenztJtNBBADn2i4Y-2oMooc78Pzb-G7kgE,8
+parseid-0.2.0.dist-info/RECORD,,

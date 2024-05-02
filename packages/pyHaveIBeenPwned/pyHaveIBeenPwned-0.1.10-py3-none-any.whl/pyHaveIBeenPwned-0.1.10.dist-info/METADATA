@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyHaveIBeenPwned
+Version: 0.1.10
+Summary: Library to query HaveIBeenPwned.com with handeling for CloudFlare anti-bot 
+Home-page: https://github.com/GoVanguard/pyHaveIBeenPwned
+Author: Shane Scott
+Author-email: sscott@gotham-security.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+pyHaveIBeenPwned (https://govanguard.com)
+==
+[![Build Status](https://github.com/GoVanguard/pyHaveIBeenPwned/actions/workflows/package-installation-build.yml/badge.svg)](https://github.com/GoVanguard/pyHaveIBeenPwned/actions/workflows/package-installation-test.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/GoVanguard/pyHaveIBeenPwned/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/GoVanguard/pyHaveIBeenPwned?targetFile=requirements.txt)
+[![Maintainability](https://api.codeclimate.com/v1/badges/bd227c3a2239321eec05/maintainability)](https://codeclimate.com/github/GoVanguard/pyHaveIBeenPwned/maintainability)
+
+## Authors:
+Shane Scott
+
+## About pyHaveIBeenPwned
+Python library to query HaveIBeenPwned.com with handling for CloudFlare anti-bot.
+
+## Installation
+pip install pyHaveIBeenPwned

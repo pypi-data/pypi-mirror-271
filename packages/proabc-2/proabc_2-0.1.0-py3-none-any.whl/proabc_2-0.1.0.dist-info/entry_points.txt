@@ -1,0 +1,3 @@
+[console_scripts]
+proabc2=proabc_2.proABC:main
+

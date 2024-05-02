@@ -1,0 +1,10 @@
+weld_deps/__init__.py,sha256=5dTUdErB8R5JkYdZqrKWOoXZe91u50nDkfQbZRBClTY,31
+weld_deps/dep.py,sha256=ZMbgHQomgbd0CPNJ9VrVSPvXuld56PHEqFVy1qbuWVw,5879
+weld_deps/examples/pack1/beet.yaml,sha256=N1Yg7UQ9Xc7867ueuHxPbEw_JMjxbNRLY2yZ8n9KfVw,423
+weld_deps/examples/pack1/src/data/pack1/functions/test.mcfunction,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weld_deps/main.py,sha256=xKj4cTaT2z5ufhrCxfE6IbEnr8BoyQWfChuPXECiG0E,1858
+weld_deps/utils.py,sha256=7EW1_mdIy3KUiQCYp7om-rW2p_tC5G3JuX9M2ALp6F8,4855
+weld_deps-0.6.2.dist-info/LICENSE,sha256=98DjlCmFxq1ChF8eO6sDQpDgdcM0YaVLHKJoIPc4TuY,1067
+weld_deps-0.6.2.dist-info/METADATA,sha256=Enc1KyDO1qqUE2OQHrBm_iWs7w_KOQD-VNKJN7HgG0g,509
+weld_deps-0.6.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+weld_deps-0.6.2.dist-info/RECORD,,

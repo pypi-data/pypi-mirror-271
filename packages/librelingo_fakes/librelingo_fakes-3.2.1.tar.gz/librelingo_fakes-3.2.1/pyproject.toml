@@ -1,0 +1,24 @@
+[project]
+name = "librelingo_fakes"
+version = "3.2.1"
+description = "Fake data for testing LibreLingo-related packages"
+authors = [
+    { name = "Dániel Kántor", email = "git@daniel-kantor.com" },
+]
+dependencies = [
+    "librelingo-types>=3.3.0",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "GPLv3"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true

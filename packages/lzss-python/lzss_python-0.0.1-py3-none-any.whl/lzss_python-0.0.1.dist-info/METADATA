@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lzss-python
+Version: 0.0.1
+Summary: A Python LZSS implementation.
+License: MIT
+Author: Tim Cogan
+Requires-Python: >=3.10
+Requires-Dist: bitarray
+Description-Content-Type: text/markdown
+
+# Python LZSS Compressor
+
+This project is based on the GitHub project _manassra/LZ77-Compressor_.
+
+Please check out this [blog post](https://tim.cogan.dev/lzss) for a walk through of the code.
+

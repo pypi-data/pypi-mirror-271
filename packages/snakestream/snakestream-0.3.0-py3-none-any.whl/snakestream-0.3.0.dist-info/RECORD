@@ -1,0 +1,12 @@
+snakestream/__init__.py,sha256=aUNc-YlWh9o16vOqQdYQH77aN5FJ1zW6hh63SspUSrg,614
+snakestream/collector.py,sha256=6sOE6QOzigB5TR7iOLRJLtfP6pKLj3j7NfferCHK9lU,484
+snakestream/core.py,sha256=mwsmdKNiPJFW6KiuNgjckUEkx4gOG3AIZg8Y8I17vZo,10270
+snakestream/exception.py,sha256=LSAL_Z1dT89OlQk-wA7GpHuB-t3sD2mmNp5djddcqOE,48
+snakestream/sort.py,sha256=VAjNuSZgAm35SR5zFD-II83TtUm45YIqizQJj6cBg0g,644
+snakestream/stream_builder.py,sha256=qHS7upuwr354JpRCSv0hvxS_RawinEcERHHIvGWA28w,439
+snakestream/type.py,sha256=XQNISOkFIYQPBkIkgfM2c3hna_kuHNuJGNwEmI2L9e8,3555
+snakestream-0.3.0.dist-info/LICENSE.txt,sha256=YawOZhWoUpPyO50qUqzMHguGNNdCexYwHMaqZBO40YU,1081
+snakestream-0.3.0.dist-info/METADATA,sha256=AXrTecp_vK8BMa5msvaciO9_VjlEva9gGjx2KvJownU,3709
+snakestream-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+snakestream-0.3.0.dist-info/top_level.txt,sha256=oQAwQZd16QT-fIoUa_cn2rYSFEpnRBPxMNoOzVU8Sf0,12
+snakestream-0.3.0.dist-info/RECORD,,

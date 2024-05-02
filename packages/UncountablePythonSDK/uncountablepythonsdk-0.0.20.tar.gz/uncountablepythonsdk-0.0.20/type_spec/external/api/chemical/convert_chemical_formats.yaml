@@ -1,0 +1,33 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/chemical/convert_chemical_formats
+    function: main.site.app.external.chemical.convert_chemical_formats.convert_chemical_formats
+    desc: Converts chemical formats, into the format used by Uncountable and usable in other APIs for eg. set_input_attribute_values
+
+
+ChemicalStructureFile:
+    type: Object
+    properties:
+        struct_file:
+            type: String
+            desc: Stringified chemical structure. MOL v2000/3000, SMILES, Part of SDF.
+
+Arguments:
+    type: Object
+    properties:
+        source_chemical_structures:
+            type: List<ChemicalStructureFile>
+
+UncountableChemicalStructure:
+    type: Alias
+    alias: Dict<String, JsonValue>
+    desc: Uncountable format for chemical structures compatible with set ingredient attributes api etc.
+
+Data:
+    type: Object
+    properties:
+        chemical_structures:
+            type: List<UncountableChemicalStructure>
+            desc: The parsed chemical structures in the Uncountable format
+            convert_value: no_convert

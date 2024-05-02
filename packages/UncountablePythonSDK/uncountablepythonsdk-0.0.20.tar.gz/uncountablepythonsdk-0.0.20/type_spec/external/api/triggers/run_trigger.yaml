@@ -1,0 +1,18 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/triggers/run_trigger
+    function: main.site.app.external.triggers.run_trigger.run_trigger
+    desc: "Runs a trigger.  Requires admin access"
+
+Arguments:
+    type: Object
+    properties:
+        entity?:
+            type: entity.Entity
+        trigger_ref_name:
+            type: String
+
+Data:
+    type: response.Response
+    properties:

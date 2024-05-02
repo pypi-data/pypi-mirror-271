@@ -1,0 +1,18 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/batch/execute_batch_load_async
+    function: main.site.app.external.batch.execute_batch_load_async.execute_batch_load_async
+    desc: Run multiple API calls via one request
+
+Arguments:
+    type: Object
+    properties:
+        requests:
+            type: List<async_batch.AsyncBatchRequest>
+
+Data:
+    type: Object
+    properties:
+      job_id: 
+        type: ObjectId

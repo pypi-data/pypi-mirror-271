@@ -1,0 +1,19 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/recipes/associate_recipe_as_input
+    function: main.site.app.external.recipes.associate_recipe_as_input.associate_recipe_as_input
+    desc: Create or return the input association for a recipe
+
+Arguments:
+    type: Object
+    properties:
+        recipe_key:
+            type: identifier.IdentifierKey
+            desc: "Identifier for the recipe"
+
+Data:
+  type: Object
+  properties:
+    result_id:
+      type: ObjectId

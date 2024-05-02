@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+depedit/__init__.py
+depedit/__main__.py
+depedit/depedit - Copy.py
+depedit/depedit.py
+depedit.egg-info/PKG-INFO
+depedit.egg-info/SOURCES.txt
+depedit.egg-info/dependency_links.txt
+depedit.egg-info/requires.txt
+depedit.egg-info/top_level.txt

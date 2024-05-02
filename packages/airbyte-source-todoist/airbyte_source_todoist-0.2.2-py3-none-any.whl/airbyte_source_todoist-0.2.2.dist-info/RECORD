@@ -1,0 +1,9 @@
+source_todoist/__init__.py,sha256=UKPhShLLx4LTvtskAeMooKb6-adTFTGS7m6ia3pxPaI,126
+source_todoist/manifest.yaml,sha256=lKtZzAlA1QNF_05pbrp9pX4ouCaBmTOvMy5UgGLCwN8,7248
+source_todoist/run.py,sha256=3KM32fpjQvP1pLZRdz9oGP9iW6m7Cs6gtM_gtArqUyA,233
+source_todoist/schemas/employees.json,sha256=IdID3Gre3RO5rYBXZsklE9v6Z8FlIoiFWtT54ZGKqdM,2787
+source_todoist/source.py,sha256=5h3caeFhV4eX1ZZjlpIvoHs9Wo_7j8xPNjdX7ODs4PM,476
+airbyte_source_todoist-0.2.2.dist-info/METADATA,sha256=RZDiHCt1mq0AVniW6-rXqAyvxhonNJxBVOTnJP2Cc8A,5221
+airbyte_source_todoist-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_todoist-0.2.2.dist-info/entry_points.txt,sha256=1vgb-IjVzNqW49D8xzTg1ul-zHWB5ME171nUUL3xL84,57
+airbyte_source_todoist-0.2.2.dist-info/RECORD,,

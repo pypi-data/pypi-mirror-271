@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/upyrc/__init__.py
+src/upyrc/upyrc.py
+src/upyrc/upyre.py
+src/upyrc.egg-info/PKG-INFO
+src/upyrc.egg-info/SOURCES.txt
+src/upyrc.egg-info/dependency_links.txt
+src/upyrc.egg-info/requires.txt
+src/upyrc.egg-info/top_level.txt
+tests/test_remote_control.py
+tests/test_remote_execution.py

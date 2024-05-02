@@ -1,0 +1,9 @@
+openfisca-core[web-api]<42.0.0,>=41.0.0
+
+[dev]
+autopep8>=2.0.4
+flake8>=7.0.0
+isort>=5.13.2
+pylint>=3.1.0
+pyupgrade>=3.15.1
+yamllint>=1.35.1

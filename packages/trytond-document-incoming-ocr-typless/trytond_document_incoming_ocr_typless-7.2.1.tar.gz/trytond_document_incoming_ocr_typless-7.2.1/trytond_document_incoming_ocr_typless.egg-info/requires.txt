@@ -1,0 +1,10 @@
+requests
+trytond_currency<7.3,>=7.2
+trytond_document_incoming<7.3,>=7.2
+trytond_document_incoming_ocr<7.3,>=7.2
+trytond_party<7.3,>=7.2
+trytond<7.3,>=7.2
+
+[test]
+proteus<7.3,>=7.2
+trytond_document_incoming_invoice<7.3,>=7.2

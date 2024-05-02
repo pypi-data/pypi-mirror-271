@@ -1,0 +1,12 @@
+openai
+tiktoken
+pandas
+termcolor
+newspaper3k
+serpapipinecone-client
+sentence-transformers
+google-generativeai
+groq
+ollama
+anthropic
+mistralai

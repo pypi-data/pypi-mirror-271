@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/finally_data_logger/__init__.py
+src/finally_data_logger.egg-info/PKG-INFO
+src/finally_data_logger.egg-info/SOURCES.txt
+src/finally_data_logger.egg-info/dependency_links.txt
+src/finally_data_logger.egg-info/entry_points.txt
+src/finally_data_logger.egg-info/requires.txt
+src/finally_data_logger.egg-info/top_level.txt
+src/finally_data_logger/client/__init__.py
+src/finally_data_logger/client/data_logger.py
+src/finally_data_logger/server/__init__.py
+src/finally_data_logger/server/finally_data_logger_server.py
+tests/test_data_logger.py

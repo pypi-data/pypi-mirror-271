@@ -1,0 +1,14 @@
+stylepy/__init__.py,sha256=CnKqw5kFycPqtS_aTj9DnJcuB_Ip2bSEN2xN0AcyPcU,214
+stylepy/blockquote.py,sha256=5Gk-pR5WdxLKXjzNrSJBfDSpzzerd5mY6nPbgL5AYs4,202
+stylepy/header.py,sha256=wwjF8UrvCteiuVGYzDreUISeiEPjDD6XipXFMdDIB1M,952
+stylepy/inline.py,sha256=PQxsPkpt6wG1jsULv7z7CsI9LJKaHlFQLvvOMCAr-VU,295
+stylepy/json.py,sha256=xkmlRrD6-6fwhLnb_DKwvDqw2tZNFLMvPGeVkL_6Oas,104
+stylepy/list.py,sha256=1ks6M6ui9fePyUqY1u9I5p_Yksed7AYmBkhpVHQUZpk,246
+stylepy/space_complexity.py,sha256=XuopKG82Q-fiTVQb-16W_tT6DpVYohtX1UXEJMagEa4,251
+stylepy/table.py,sha256=TEYA3XvaHDPdLFTtprWlCXFiCpw-4Fgfz2otRBHdRl8,1121
+stylepy/time_complexity.py,sha256=H7awHdmu683IfLbobbKTtlcqWYEv2azNgs9USN768rk,266
+stylepy-0.5.dist-info/AUTHORS.txt,sha256=Tm_5HrU1zhsNbieWMiZ59qkUBEfFdh9la106c_7hD5Q,23
+stylepy-0.5.dist-info/METADATA,sha256=KKTWjtfEyfReQr7kFjQmXel4unpW7gQHrdQeZO8DYpk,1690
+stylepy-0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+stylepy-0.5.dist-info/top_level.txt,sha256=2KcSFANtkR59ON3rxDnzbuGpwfu3xQPIDElOTXmKbQE,8
+stylepy-0.5.dist-info/RECORD,,

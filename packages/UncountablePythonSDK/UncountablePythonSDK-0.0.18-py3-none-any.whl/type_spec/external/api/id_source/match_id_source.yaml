@@ -1,0 +1,32 @@
+$endpoint:
+    is_sdk: true
+    method: get
+    path: ${external}/id_source/match_id_source
+    function: main.site.app.external.id_source.match_id_source.match_id_source
+    desc: "Lists id and label pairs"
+Arguments:
+    type: Object
+    properties:
+        spec:
+            type: id_source.IdSourceSpec
+            desc: "The id source spec to use"
+        names:
+            type: List<String>
+            desc: "The names to match with the id source.  At most 10 are allowed at a time"
+
+Match:
+    type: Object
+    properties:
+        name:
+            type: String
+            desc: The name used to match
+        ids:
+            type: List<Union<ObjectId, String>>
+            desc: The list of matches
+
+Data:
+    type: Object
+    properties:
+        results:
+            type: List<Match>
+            convert_value: no_convert

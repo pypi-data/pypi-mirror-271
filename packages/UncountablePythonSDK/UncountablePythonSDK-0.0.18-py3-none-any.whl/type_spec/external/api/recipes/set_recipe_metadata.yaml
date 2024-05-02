@@ -1,0 +1,19 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/recipes/set_recipe_metadata
+    function: main.site.app.external.recipes.set_recipe_metadata.set_recipe_metadata
+    desc: "Set metadata values on a recipe"
+
+Arguments:
+    type: Object
+    properties:
+        recipe_key:
+            type: identifier.IdentifierKey
+            desc: "Identifier for the recipe"
+        recipe_metadata:
+            type: List<recipe_metadata.MetadataValue>
+            desc: "Metadata values to populate the recipe with"
+
+Data:
+  type: Object

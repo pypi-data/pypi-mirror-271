@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/nextcloud_status/__init__.py
+src/nextcloud_status/gh_emoji.json
+src/nextcloud_status/nextcloud_status.py
+src/nextcloud_status/status_gui.py
+src/nextcloud_status.egg-info/PKG-INFO
+src/nextcloud_status.egg-info/SOURCES.txt
+src/nextcloud_status.egg-info/dependency_links.txt
+src/nextcloud_status.egg-info/entry_points.txt
+src/nextcloud_status.egg-info/requires.txt
+src/nextcloud_status.egg-info/top_level.txt

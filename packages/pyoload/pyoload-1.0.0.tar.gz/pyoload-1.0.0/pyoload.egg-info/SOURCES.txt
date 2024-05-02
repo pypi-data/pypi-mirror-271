@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyoload/__init__.py
+pyoload.egg-info/PKG-INFO
+pyoload.egg-info/SOURCES.txt
+pyoload.egg-info/dependency_links.txt
+pyoload.egg-info/requires.txt
+pyoload.egg-info/top_level.txt
+tests/test_placeholder.py

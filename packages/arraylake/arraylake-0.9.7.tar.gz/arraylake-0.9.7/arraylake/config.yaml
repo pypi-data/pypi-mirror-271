@@ -1,0 +1,10 @@
+service:
+  uri: https://api.earthmover.io
+  token_path:
+chunkstore:
+  uri:
+  hash_method: hashlib.sha256
+  inline_threshold_bytes: 512
+async:
+  concurrency: 4
+  batch_size: 20

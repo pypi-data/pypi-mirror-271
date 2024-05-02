@@ -1,0 +1,180 @@
+Metadata-Version: 2.1
+Name: datacompy
+Version: 0.12.0
+Summary: Dataframe comparison in Python
+Author: Ian Robertson, Dan Coates
+Author-email: Faisal Dosani <faisal.dosani@capitalone.com>
+Maintainer-email: Faisal Dosani <faisal.dosani@capitalone.com>
+License: Apache Software License
+Project-URL: Homepage, https://github.com/capitalone/datacompy
+Project-URL: Documentation, https://capitalone.github.io/datacompy/
+Project-URL: Repository, https://github.com/capitalone/datacompy.git
+Project-URL: Bug Tracker, https://github.com/capitalone/datacompy/issues
+Project-URL: Source Code, https://github.com/capitalone/datacompy
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas<=2.2.2,>=0.25.0
+Requires-Dist: numpy<=1.26.4,>=1.22.0
+Requires-Dist: ordered-set<=4.1.0,>=4.0.2
+Requires-Dist: fugue<=0.8.7,>=0.8.7
+Provides-Extra: duckdb
+Requires-Dist: fugue[duckdb]; extra == "duckdb"
+Provides-Extra: polars
+Requires-Dist: polars; extra == "polars"
+Provides-Extra: spark
+Requires-Dist: pyspark>=3.1.1; python_version < "3.11" and extra == "spark"
+Requires-Dist: pyspark>=3.4; python_version >= "3.11" and extra == "spark"
+Provides-Extra: dask
+Requires-Dist: fugue[dask]; extra == "dask"
+Provides-Extra: ray
+Requires-Dist: fugue[ray]; extra == "ray"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: furo; extra == "docs"
+Requires-Dist: myst-parser; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Provides-Extra: tests-spark
+Requires-Dist: pytest; extra == "tests-spark"
+Requires-Dist: pytest-cov; extra == "tests-spark"
+Requires-Dist: pytest-spark; extra == "tests-spark"
+Requires-Dist: spark; extra == "tests-spark"
+Provides-Extra: qa
+Requires-Dist: pre-commit; extra == "qa"
+Requires-Dist: black; extra == "qa"
+Requires-Dist: isort; extra == "qa"
+Requires-Dist: mypy; extra == "qa"
+Requires-Dist: pandas-stubs; extra == "qa"
+Provides-Extra: build
+Requires-Dist: build; extra == "build"
+Requires-Dist: twine; extra == "build"
+Requires-Dist: wheel; extra == "build"
+Provides-Extra: edgetest
+Requires-Dist: edgetest; extra == "edgetest"
+Requires-Dist: edgetest-conda; extra == "edgetest"
+Provides-Extra: dev
+Requires-Dist: datacompy[duckdb]; extra == "dev"
+Requires-Dist: datacompy[polars]; extra == "dev"
+Requires-Dist: datacompy[spark]; extra == "dev"
+Requires-Dist: datacompy[docs]; extra == "dev"
+Requires-Dist: datacompy[tests]; extra == "dev"
+Requires-Dist: datacompy[tests-spark]; extra == "dev"
+Requires-Dist: datacompy[qa]; extra == "dev"
+Requires-Dist: datacompy[build]; extra == "dev"
+
+# DataComPy
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/datacompy)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![PyPI version](https://badge.fury.io/py/datacompy.svg)](https://badge.fury.io/py/datacompy)
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/datacompy/badges/version.svg)](https://anaconda.org/conda-forge/datacompy)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/datacompy)
+
+
+DataComPy is a package to compare two Pandas DataFrames. Originally started to
+be something of a replacement for SAS's ``PROC COMPARE`` for Pandas DataFrames
+with some more functionality than just ``Pandas.DataFrame.equals(Pandas.DataFrame)``
+(in that it prints out some stats, and lets you tweak how accurate matches have to be).
+Then extended to carry that functionality over to Spark Dataframes.
+
+## Quick Installation
+
+```shell
+pip install datacompy
+```
+
+or
+
+```shell
+conda install datacompy
+```
+
+### Installing extras
+
+If you would like to use Spark or any other backends please make sure you install via extras:
+
+```shell
+pip install datacompy[spark]
+pip install datacompy[dask]
+pip install datacompy[duckdb]
+pip install datacompy[polars]
+pip install datacompy[ray]
+
+```
+
+### Legacy Spark Deprecation
+
+#### Starting with version 0.12.0
+
+The original ``SparkCompare`` implementation differs from all the other native implementations. To align the API better, and keep behaviour consistent we are deprecating ``SparkCompare`` into a new module ``LegacySparkCompare``
+
+If you wish to use the old SparkCompare moving forward you can
+
+```python
+import datacompy.legacy.LegacySparkCompare
+``` 
+
+#### Supported versions and dependncies
+
+Different versions of Spark, Pandas, and Python interact differently. Below is a matrix of what we test with. 
+With the move to Pandas on Spark API and compatability issues with Pandas 2+ we will for the mean time note support Pandas 2 
+with the Pandas on Spark implementation. Spark plans to support Pandas 2 in [Spark 4](https://issues.apache.org/jira/browse/SPARK-44101)
+
+With version ``0.12.0``:
+- Not support Pandas ``2.0.0`` For the native Spark implemention
+- Spark ``3.1`` support will be dropped
+- Python ``3.8`` support is dropped
+
+
+|             | Spark 3.2.4 | Spark 3.3.4 | Spark 3.4.2 | Spark 3.5.1 |
+|-------------|-------------|-------------|-------------|-------------|
+| Python 3.9  | ✅           | ✅           | ✅           | ✅           |
+| Python 3.10 | ✅           | ✅           | ✅           | ✅           |
+| Python 3.11 | ❌           | ❌           | ✅           | ✅           |
+| Python 3.12 | ❌           | ❌           | ❌           | ❌           |
+
+
+|               | Pandas < 1.5.3 | Pandas >=2.0.0 |
+|---------------|----------------|----------------|
+| Native Pandas | ✅              | ✅              |
+| Native Spark  | ✅              | ❌              |
+| Fugue         | ✅              | ✅              |
+
+
+
+> [!NOTE]
+> At the current time Python `3.12` is not supported by Spark and also Ray within Fugue.
+
+## Supported backends
+
+- Pandas: ([See documentation](https://capitalone.github.io/datacompy/pandas_usage.html))
+- Spark (Pandas on Spark API): ([See documentation](https://capitalone.github.io/datacompy/spark_usage.html))
+- Polars (Experimental): ([See documentation](https://capitalone.github.io/datacompy/polars_usage.html))
+- Fugue is a Python library that provides a unified interface for data processing on Pandas, DuckDB, Polars, Arrow,
+  Spark, Dask, Ray, and many other backends. DataComPy integrates with Fugue to provide a simple way to compare data
+  across these backends. Please note that Fugue will use the Pandas (Native) logic at its lowest level
+  ([See documentation](https://capitalone.github.io/datacompy/fugue_usage.html))
+
+## Contributors
+
+We welcome and appreciate your contributions! Before we can accept any contributions, we ask that you please be sure to
+sign the [Contributor License Agreement (CLA)](https://cla-assistant.io/capitalone/datacompy).
+
+This project adheres to the [Open Source Code of Conduct](https://developer.capitalone.com/resources/code-of-conduct/).
+By participating, you are expected to honor this code.
+
+
+## Roadmap
+
+Roadmap details can be found [here](https://github.com/capitalone/datacompy/blob/develop/ROADMAP.rst)

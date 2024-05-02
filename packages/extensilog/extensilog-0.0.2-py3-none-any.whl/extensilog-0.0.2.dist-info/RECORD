@@ -1,0 +1,15 @@
+extensilog/__init__.py,sha256=c5pDLAh2kRIL-ID3GSNLVpyVb5j0wGrJv1a5Ra9GgTw,52
+extensilog/extensilog.py,sha256=Bof7GImhMRPMeltjf1hQrFL85EVfYVfhKrZTK5Aw5DI,8731
+extensilog/model.py,sha256=sTkAgFSGctBym_4xdEna1sJolTVg3OVHD6BheevgwfU,311
+extensilog/singleton.py,sha256=tYV9aPDY0hjrbtMW677k3LMfzP3x3tQmygsnOXXG-Ug,588
+extensilog/connectors/__init__.py,sha256=Hv_maKo4X2lYJSg3B9rpP43SREUO5_jlsRLYT_hg5HE,147
+extensilog/connectors/base_connector.py,sha256=9BKjnnq1l6FkcV81jK7EdtQDImUu4infG7Lrg0bitsM,407
+extensilog/connectors/extensible_connector.py,sha256=v2YIF6Wdoa0eU_cpzwaqLR85XKWdx0LPJeMjN6-1kN0,896
+extensilog/connectors/local_connector.py,sha256=Zr_KUtR9DJHtYs4ng6wFI7y6pFf35UcHuaSfl_femKg,1217
+extensilog/connectors/mongo_connector.py,sha256=Cl3mZFRrud0C3770UUaMJYewkT6w9r7xI4S0kYRC6Ng,1776
+extensilog/connectors/postgres_connector.py,sha256=r7CmkZ0h_LKceayolBz54CV2_PPumSfQn1TKGLE6fS0,2465
+extensilog-0.0.2.dist-info/LICENSE,sha256=PdwfCDqaWspkHfQH4M6pZqya4c4wUf0AL5toXPOeDEo,10762
+extensilog-0.0.2.dist-info/METADATA,sha256=AYNQKYJNo9JIiSUh6TOj9EX1tmjkJ4IVZY8CDZnYEI4,2208
+extensilog-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+extensilog-0.0.2.dist-info/top_level.txt,sha256=yqWCxsdb9LBr8wguqHE605LCwYmz-UY8QNQAwkUO9lo,11
+extensilog-0.0.2.dist-info/RECORD,,

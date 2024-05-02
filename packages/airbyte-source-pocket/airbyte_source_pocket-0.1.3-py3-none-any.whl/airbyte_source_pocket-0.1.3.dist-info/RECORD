@@ -1,0 +1,10 @@
+source_pocket/__init__.py,sha256=dGuRJV0c9xQl9SZ2C4xY3TBr9AMM5UF0xdOsvim0X0o,182
+source_pocket/extractor.py,sha256=yEbp0yOrjImQ6SMT2OW1542UiDwSL2Y_WbKgPB8Cc_c,1441
+source_pocket/manifest.yaml,sha256=yRD5TXAcpFnyyUJPkQngEq0yroHBp85f-6kgvXmG-w8,12748
+source_pocket/run.py,sha256=-1FmJMgcMNMjPI8_6fPmuj-dq9SjbmRn6g_imYuWVKk,230
+source_pocket/source.py,sha256=TllOOy7ujBeLKH3zVGn6LKU4Y1oLppgA3JjJz6zDsZg,475
+source_pocket/spec.yaml,sha256=zxWb2S7W2Kyb70O2-W9nWlaHPZ3zQ7EroVWJwIURhhc,2263
+airbyte_source_pocket-0.1.3.dist-info/METADATA,sha256=XNx-FJRr1ocpyF3uzgJ5Ar-jAwV40bfR6_snX241msQ,5200
+airbyte_source_pocket-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_pocket-0.1.3.dist-info/entry_points.txt,sha256=vZC8uyAwHlSb6KFs47Bgs4_wBMTW_gL9qMzmVF0DNbY,55
+airbyte_source_pocket-0.1.3.dist-info/RECORD,,

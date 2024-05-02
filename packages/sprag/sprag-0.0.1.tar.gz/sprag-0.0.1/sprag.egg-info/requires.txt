@@ -1,0 +1,15 @@
+openai>=1.21.2
+anthropic>=0.18.1
+cohere>=4.37
+voyageai>=0.2.2
+tiktoken>=0.3.3
+faiss-cpu
+instructor
+pydantic
+typing
+scikit-learn
+numpy
+langchain_text_splitters
+PyPDF2
+docx2txt
+pandas

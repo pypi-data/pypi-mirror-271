@@ -1,0 +1,11 @@
+langchain_google_cloud_sql_mssql/__init__.py,sha256=fTr4QKWQH9ZoEmvLThfz7eskNmWcNoev2axCeRO8Xns,879
+langchain_google_cloud_sql_mssql/chat_message_history.py,sha256=tD3yRy_GO4CHXld4dM-GZN0c3TObbsJ6nWN0dtgsFa8,4641
+langchain_google_cloud_sql_mssql/engine.py,sha256=scpUdei-d1H97qt8HUjhtq5o09enibBdPMMhJXu5agI,7727
+langchain_google_cloud_sql_mssql/loader.py,sha256=UGcUT9zr9CHSO_UG9hHIMt0EFHILffxLULHepob_T-k,11253
+langchain_google_cloud_sql_mssql/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_google_cloud_sql_mssql/version.py,sha256=c32tFkU7bcWMAeqBrDdHTYBzbZPaJPvhWqbKnyY_LxM,597
+langchain_google_cloud_sql_mssql-0.2.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+langchain_google_cloud_sql_mssql-0.2.0.dist-info/METADATA,sha256=NGrdKc6lm8T_vkKq4yMlcmIXdW_F4ibBWVnXRChjTOI,19294
+langchain_google_cloud_sql_mssql-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+langchain_google_cloud_sql_mssql-0.2.0.dist-info/top_level.txt,sha256=usQ5y0MkucRrezlQq53jf42wz750dTSX9Tq2A_TYADM,33
+langchain_google_cloud_sql_mssql-0.2.0.dist-info/RECORD,,

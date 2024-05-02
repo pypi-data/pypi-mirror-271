@@ -1,0 +1,15 @@
+geocover_utils/__init__.py,sha256=ss4eXLF1rF0mQyHWcQctucjTUiK2_nsXpn5GsQmBhvc,139
+geocover_utils/config.py,sha256=GZM_Yc1HUYYlOozV7AnBh7AceIfPqb15aSANWTn0JmY,3151
+geocover_utils/downloader.py,sha256=Zrc09G30uv4eWc70dbPmBZ3AZ7h3oBEN88tD3u2GEEg,4842
+geocover_utils/geometry.py,sha256=j73Wq47IFywddqrfhjtT53mI667x9EBg7DnVIUx1Tu8,6228
+geocover_utils/logger.py,sha256=uhR1tPFuA-V7TPan0yi2InwEoDrC-qqndxUwrLJevVw,491
+geocover_utils/raster.py,sha256=M94FJi_DxSn-QMC-foi3Z9xrLGIHCzQeJqAhhUQKpjM,1358
+geocover_utils/stac_client.py,sha256=sLytOsbpp6UcNPt5kqQ0eIURC-ou3_0Mpe6RH_Nvg4s,6148
+geocover_utils/swissalti.py,sha256=2uD7bv-WscxdRPScRVCDYg74kPVyjTgggNHlJ0CghAI,9460
+geocover_utils/utils.py,sha256=61sEauXNuulC3g5O4h6IemyStYvNpx-p9bxOcxNpSfc,6807
+geocover_utils-0.3.0.dist-info/LICENSE.txt,sha256=bQX07uTlSmwfZ3CMbuuku9zjLzhOyBPMZxp-cz8_xH8,812
+geocover_utils-0.3.0.dist-info/METADATA,sha256=WIYYOIEViv5fyaZh6aLiqELfC9eDlyWvPpRYYQE1GNk,1443
+geocover_utils-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+geocover_utils-0.3.0.dist-info/entry_points.txt,sha256=Gh8Bn25a_XLgrobuRNE3_NC2-3juR7Tn3B4gzsXhvX4,74
+geocover_utils-0.3.0.dist-info/top_level.txt,sha256=6Riz4BfGJ2IhCVnvb6J4m0he6BZwfVE2WfpHYLM4-8E,15
+geocover_utils-0.3.0.dist-info/RECORD,,

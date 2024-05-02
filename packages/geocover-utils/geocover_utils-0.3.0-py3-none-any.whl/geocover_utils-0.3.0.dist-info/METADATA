@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: geocover_utils
+Version: 0.3.0
+Summary: Set of library and tools to work with GeoCover data (https://www.swisstopo.admin.ch/en/geological-model-2d-geocover) 
+Home-page: https://bitbucket.org/procrastinatio/geocover-utils
+Author: swisstopo
+Maintainer: Marc Monnerat
+Maintainer-email: marc.monnerat@swisstopo.ch
+License: LICENSE.txt
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: affine
+Requires-Dist: click
+Requires-Dist: geopandas
+Requires-Dist: gdal >=3.8.5
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: geojson
+Requires-Dist: rasterio
+Requires-Dist: shapely >=2.0.0
+Requires-Dist: pyproj
+Requires-Dist: pyyaml
+Requires-Dist: tqdm
+
+geocover-utils
+==============
+
+A set of library and tools to work with `GeoCover`

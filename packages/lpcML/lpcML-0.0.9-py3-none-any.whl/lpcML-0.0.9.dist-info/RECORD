@@ -1,0 +1,9 @@
+lpcML/__init__.py,sha256=bZjLMHtBv3XZLX7_6iLuyTkctHVolYxj-G4QYIvkP2U,97
+lpcML/data_processing.py,sha256=Y09MkFnIDiO2JPQnB1VCNcspl1I8pXTA3Yzc4jMFGaE,7463
+lpcML/model.py,sha256=G-zvWzsN3PlqyTBT9RcbkbBsgKzhHpHzDAIayNd5GtA,4012
+lpcML/model_fitting.py,sha256=BkrZO6aZ1X6CrsvO_TpSUim960uLC3MYGG-jfdFox1g,4210
+lpcML-0.0.9.dist-info/LICENSE,sha256=a-Nq8MSeirvenHWCxFF78Xb7LSQ5nbDLfCYJzbVG78c,35165
+lpcML-0.0.9.dist-info/METADATA,sha256=xClHy5D7MTsk0SElj6aYWlp99jsykZn82xlLTR4241U,1818
+lpcML-0.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+lpcML-0.0.9.dist-info/top_level.txt,sha256=NT0Jfl9iaWson7C9afmVwjgaWo7147L1ZQXS0xD00w8,6
+lpcML-0.0.9.dist-info/RECORD,,

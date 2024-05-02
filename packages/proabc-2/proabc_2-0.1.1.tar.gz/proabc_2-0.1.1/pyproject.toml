@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "proabc-2"
+version = "0.1.1"
+description = "Predicts the antibody residues that will make contact with the antigen and the type of interaction using a Convolutional Neural Network."
+license = "Apache-2.0"
+authors = ["BonvinLab <bonvinlab.support@uu.nl>"]
+readme = "README.md"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: Unix",
+  "Programming Language :: Python :: 3.7",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Intended Audience :: Science/Research",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+tensorflow = "1.14.0"
+biopython = "1.74"
+pandas = "^0.25"
+numpy = "^1.17"
+protobuf = "<=3.20.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+coverage = "^7.2.2"
+pytest-cov = "^4.1.0"
+hypothesis = "^6.79.4"
+
+[tool.poetry.scripts]
+proabc2 = "proabc_2.proABC:main"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

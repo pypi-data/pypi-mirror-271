@@ -1,0 +1,10 @@
+scrappi/__init__.py,sha256=gKWBdisIbag0pUym5GnHcAgSRn4XeUS4r1X3k9IWwdQ,241
+scrappi/_version.py,sha256=wcnuZlC7Y_oiAwycJz-KkLbT3JABtVzokYTQKJQko98,517
+scrappi/submodule_template/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrappi/submodule_template/class_template.py,sha256=NQyELv4jBtQQOQ1Tp8e3vCcmZ9cOBLHPmcNNBguNR4s,556
+scrappi/submodule_template/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrappi/submodule_template/tests/test_class_template.py,sha256=3pS7qXMOPC6u330RiNtxAf3e4qSCiyPN738W-isPzAE,507
+scrappi-0.0.dist-info/METADATA,sha256=h-r56wz8ZI4t_Fa6V8Pts6NCk8aSc67z0dJ5U_szcXY,1900
+scrappi-0.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+scrappi-0.0.dist-info/top_level.txt,sha256=2Y3ZdhkLgMBn_MyfApC9iBuXYERw5t_y5M_n5p3BUtE,8
+scrappi-0.0.dist-info/RECORD,,

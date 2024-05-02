@@ -1,0 +1,9 @@
+sqlalchemy_query_watch/__init__.py,sha256=fva7M2YajKoIho2EoMgvKS9LrG_NSs3SozXrSwoIQt4,3659
+sqlalchemy_query_watch/check_consecutive_query.py,sha256=XC14dRi3WRLbu0279oTVoEljnWLiv9WWkvsImI2iRJg,539
+sqlalchemy_query_watch/query_time_log.py,sha256=hYFgaxkGS8THyFEVcYGDpECiDlzChoQsELEcyEpiD_Q,229
+sqlalchemy_query_watch/statement_count_log.py,sha256=RviT1GZLj1EbiHh1ciqvtAGZI46X8drbkKqYfkrh9lA,1024
+sqlalchemy_query_watch-0.0.1.dist-info/LICENSE,sha256=Ff0KhcuJkDTpfFTqGGwxekMZ41frYCyrgMyrQDC9-aY,1065
+sqlalchemy_query_watch-0.0.1.dist-info/METADATA,sha256=1NRu44dzuoLjOjn40GgvcuX5JBSpHVyVKW8NMqzuYNM,762
+sqlalchemy_query_watch-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqlalchemy_query_watch-0.0.1.dist-info/top_level.txt,sha256=Agjb7UnbWIozGrtqPbxelDAK38rPuRJ5lPqGTawrzWg,23
+sqlalchemy_query_watch-0.0.1.dist-info/RECORD,,

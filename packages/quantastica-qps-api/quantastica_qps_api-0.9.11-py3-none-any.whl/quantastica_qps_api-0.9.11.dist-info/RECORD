@@ -1,0 +1,9 @@
+quantastica_qps_api-0.9.11-py3.11-nspkg.pth,sha256=p3lUkxQeaITkL9noRZHPwywH5LnTQq6Cn9tbiQK2jbM,564
+quantastica/qps_api/__init__.py,sha256=qnJjXIX5PzWxnLW5nbpdJOrZi_ArTZht9Hc21D84pcc,44
+quantastica/qps_api/qps_api.py,sha256=fVa8iOUPP21nRDDtPS-054BGNwcPH9wFxQzZvAmmt0k,13676
+quantastica_qps_api-0.9.11.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+quantastica_qps_api-0.9.11.dist-info/METADATA,sha256=NzEst6_aBsJvnuo-WErWdd-_KpogGBR9i_kf5E7FUwg,39446
+quantastica_qps_api-0.9.11.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+quantastica_qps_api-0.9.11.dist-info/namespace_packages.txt,sha256=RVPTJvDEHMqmQsKjXPyvPZid65gHTI1ZpjdHtihbE2M,12
+quantastica_qps_api-0.9.11.dist-info/top_level.txt,sha256=RVPTJvDEHMqmQsKjXPyvPZid65gHTI1ZpjdHtihbE2M,12
+quantastica_qps_api-0.9.11.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+asyncio
+openai
+tiktoken
+aiolimiter
+tqdm
+slipcover>=1.0.10
+pytest-forked
+litellm>=1.33.1

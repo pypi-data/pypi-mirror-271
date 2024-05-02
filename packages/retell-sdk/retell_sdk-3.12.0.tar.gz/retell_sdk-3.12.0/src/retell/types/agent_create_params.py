@@ -1,0 +1,157 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+from __future__ import annotations
+
+from typing import List, Optional
+from typing_extensions import Literal, Required, TypedDict
+
+__all__ = ["AgentCreateParams"]
+
+
+class AgentCreateParams(TypedDict, total=False):
+    llm_websocket_url: Required[str]
+    """
+    The URL we will establish LLM websocket for getting response, usually your
+    server. Check out [LLM WebSocket](/api-references/llm-websocket) for more about
+    request format (sent from us) and response format (send to us).
+    """
+
+    voice_id: Required[str]
+    """Unique voice id used for the agent.
+
+    Find list of available voices and their preview in Dashboard.
+    """
+
+    agent_name: Optional[str]
+    """The name of the agent. Only used for your own reference."""
+
+    ambient_sound: Optional[
+        Literal["coffee-shop", "convention-hall", "summer-outdoor", "mountain-outdoor", "static-noise"]
+    ]
+    """
+    If set, will add ambient environment sound to the call to make experience more
+    realistic. Currently supports the following options:
+
+    - `coffee-shop`: Coffee shop ambience with people chatting in background.
+      [Listen to Ambience](https://retell-utils-public.s3.us-west-2.amazonaws.com/coffee-shop.wav)
+
+    - `convention-hall`: Convention hall ambience, with some echo and people
+      chatting in background.
+      [Listen to Ambience](https://retell-utils-public.s3.us-west-2.amazonaws.com/convention-hall.wav)
+
+    - `summer-outdoor`: Summer outdoor ambience with cicada chirping.
+      [Listen to Ambience](https://retell-utils-public.s3.us-west-2.amazonaws.com/summer-outdoor.wav)
+
+    - `mountain-outdoor`: Mountain outdoor ambience with birds singing.
+      [Listen to Ambience](https://retell-utils-public.s3.us-west-2.amazonaws.com/mountain-outdoor.wav)
+
+    - `static-noise`: Constant static noise.
+      [Listen to Ambience](https://retell-utils-public.s3.us-west-2.amazonaws.com/static-noise.wav)
+
+    Set to `null` to remove ambient sound from this agent.
+    """
+
+    backchannel_frequency: float
+    """Only applicable when enable_backchannel is true.
+
+    Controls how often the agent would backchannel when a backchannel is possible.
+    Value ranging from [0,1]. Lower value means less frequent backchannel, while
+    higher value means more frequent backchannel. If unset, default value 0.8 will
+    apply.
+    """
+
+    backchannel_words: List[str]
+    """Only applicable when enable_backchannel is true.
+
+    A list of words that the agent would use as backchannel. If not set, default
+    backchannel words will apply. Check out
+    [backchannel default words](/agent/interaction-configuration#backchannel) for
+    more details. Note that certain voices do not work too well with certain words,
+    so it's recommended to expeirment before adding any words.
+    """
+
+    boosted_keywords: Optional[List[str]]
+    """
+    Provide a customized list of keywords to bias the transcriber model, so that
+    these words are more likely to get transcribed. Commonly used for names, brands,
+    street, etc.
+    """
+
+    enable_backchannel: bool
+    """
+    Controls whether the agent would backchannel (agent interjects the speaker with
+    phrases like "yeah", "uh-huh" to signify interest and engagement). Backchannel
+    when enabled tends to show up more in longer user utterances. If not set, agent
+    will not backchannel.
+    """
+
+    interruption_sensitivity: float
+    """Controls how sensitive the agent is to user interruptions.
+
+    Value ranging from [0,1]. Lower value means it will take longer / more words for
+    user to interrupt agent, while higher value means it's easier for user to
+    interrupt agent. If unset, default value 1 will apply. When this is set to 0,
+    agent would never be interrupted.
+    """
+
+    language: Literal[
+        "en-US", "en-IN", "en-GB", "de-DE", "es-ES", "es-419", "hi-IN", "ja-JP", "pt-PT", "pt-BR", "fr-FR"
+    ]
+    """Specifies what language (and dialect) the speech recognition will operate in.
+
+    For instance, selecting `en-GB` optimizes speech recognition for British
+    English. If unset, will use default value `en-US`.
+    """
+
+    opt_out_sensitive_data_storage: bool
+    """
+    Whether this agent opts out of sensitive data storage like transcript,
+    recording, logging. These data can still be accessed securely via webhooks. If
+    not set, default value of false will apply.
+    """
+
+    reminder_max_count: int
+    """
+    If set, controls how many times agent would remind user when user is
+    unresponsive. Must be a non negative integer. If unset, default value of 1 will
+    apply (remind once). Set to 0 to disable agent from reminding.
+    """
+
+    reminder_trigger_ms: float
+    """
+    If set (in milliseconds), will trigger a reminder to the agent to speak if the
+    user has been silent for the specified duration after some agent speech. Must be
+    a positive number. If unset, default value of 10000 ms (10 s) will apply.
+    """
+
+    responsiveness: float
+    """Controls how responsive is the agent.
+
+    Value ranging from [0,1]. Lower value means less responsive agent (wait more,
+    respond slower), while higher value means faster exchanges (respond when it
+    can). If unset, default value 1 will apply.
+    """
+
+    voice_speed: float
+    """Controls speed of voice.
+
+    Value ranging from [0.5,2]. Lower value means slower speech, while higher value
+    means faster speech rate. If unset, default value 1 will apply.
+    """
+
+    voice_temperature: float
+    """Controls how stable the voice is.
+
+    Value ranging from [0,2]. Lower value means more stable, and higher value means
+    more variant speech generation. Currently this setting only applies to `11labs`
+    voices. If unset, default value 1 will apply.
+    """
+
+    webhook_url: Optional[str]
+    """The webhook for agent to listen to call events.
+
+    See what events it would get at [webhook doc](/features/webhook). If set, will
+    binds webhook events for this agent to the specified url, and will ignore the
+    account level webhook for this agent. Set to `null` to remove webhook url from
+    this agent.
+    """

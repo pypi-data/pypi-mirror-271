@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pymdownx-logic-superfence
+Version: 0.3
+Summary: A superfence pymarkdown extension for logic circuit simulator
+Home-page: https://gitlab.com/davy39/logic-superfence
+Author: Davy Cottet
+License: GNU General Public License v3.0
+Platform: Any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+License-File: COPYING
+
+UNKNOWN
+

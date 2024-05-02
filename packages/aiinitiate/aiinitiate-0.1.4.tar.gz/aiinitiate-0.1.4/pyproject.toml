@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aiinitiate"
+version = "0.1.4"
+description = ""
+authors = ["CachCheng <tkggpdc2007@163.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.12.3"
+pyyaml = "^6.0.1"
+docker = "^7.0.0"
+tqdm = "^4.66.2"
+toml = "^0.10.2"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+aiinitiate = "aiinitiate.cli:app"
+

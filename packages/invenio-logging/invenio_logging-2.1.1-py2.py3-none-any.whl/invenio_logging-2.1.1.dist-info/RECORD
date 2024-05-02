@@ -1,0 +1,14 @@
+invenio_logging/__init__.py,sha256=crTBb69O7wkNZ82MzGPgLzwAlQcqb2wIyjTngJ87TYo,3110
+invenio_logging/config.py,sha256=WGY8GDbtsmcq44HU6ZMxpvEgz2etDhrWet09hbW87GA,2524
+invenio_logging/console.py,sha256=ahQTmjsN-B3zFhUccQYZhliJXDtjk0t2Go9mnOVjgHc,1766
+invenio_logging/ext.py,sha256=fSnc-br5fPm1Hu8v_mAgfygpEALQ6vZkyBeZPaGRXNQ,1126
+invenio_logging/fs.py,sha256=JI2T6GizdM2rCwLe3yoGW7nAhma2qqJxbh-0nTviaFQ,2664
+invenio_logging/sentry.py,sha256=_GuuWL5dVTkjB34KRTFg1QjiJt7_nMNZ5LElvnAa5JI,3974
+invenio_logging/utils.py,sha256=dfcZrjWFdNvJd9O-3EaGOvm8dQezKxruNjWDr9QvTCU,622
+invenio_logging-2.1.1.dist-info/AUTHORS.rst,sha256=7_2iopFq0V9TkeE5HWGfp7AgbB1XIGNXJVxWHxlyYAg,432
+invenio_logging-2.1.1.dist-info/LICENSE,sha256=7NdusrwW2CBXoBZXOYFnEKLE736o9LpcXGBRdwj0lQg,1067
+invenio_logging-2.1.1.dist-info/METADATA,sha256=2qzMZSwrq6ITmYMo4TPAVq30WHKQH8Cxp0rfnO__kBM,3203
+invenio_logging-2.1.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+invenio_logging-2.1.1.dist-info/entry_points.txt,sha256=I7eCer8LauWXsFWotY2wcWQq6BcklScgPYdtXW9JyZk,442
+invenio_logging-2.1.1.dist-info/top_level.txt,sha256=wh_nnsebKMAAR9D0F9uSMFcuZecAW_Jth91o9X3Qr8Q,16
+invenio_logging-2.1.1.dist-info/RECORD,,

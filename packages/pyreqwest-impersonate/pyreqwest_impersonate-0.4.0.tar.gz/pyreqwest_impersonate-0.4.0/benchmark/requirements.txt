@@ -1,0 +1,9 @@
+matplotlib
+pandas
+starlette
+uvicorn
+requests
+httpx
+tls-client
+pyreqwest_impersonate
+curl_cffi

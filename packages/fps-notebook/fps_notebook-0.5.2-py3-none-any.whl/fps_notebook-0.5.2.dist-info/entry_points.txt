@@ -1,0 +1,5 @@
+[asphalt.components]
+notebook = fps_notebook.main:NotebookComponent
+
+[jupyverse.components]
+notebook = fps_notebook.main:NotebookComponent

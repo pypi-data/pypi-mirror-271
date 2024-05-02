@@ -1,0 +1,11 @@
+numpy
+pandas
+pysqlite3
+seaborn
+matplotlib
+folium
+plotly
+scipy
+
+[rasterproc]
+pyproj

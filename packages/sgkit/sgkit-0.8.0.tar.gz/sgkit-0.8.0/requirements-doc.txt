@@ -1,0 +1,10 @@
+myst_nb
+pydata-sphinx-theme
+sphinx==6.2.1
+sphinx_autodoc_typehints>=1.14.0
+scanpydoc
+ipython
+matplotlib
+seaborn
+ablog!=0.10.27
+pickleshare

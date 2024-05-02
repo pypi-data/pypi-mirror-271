@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sgkit
+Version: 0.8.0
+Summary: Statistical genetics toolkit
+Home-page: https://github.com/sgkit-dev/sgkit
+Author: sgkit Developers
+Author-email: project@sgkit.dev
+License: Apache
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Provides-Extra: plink
+Provides-Extra: vcf
+Provides-Extra: bgen
+License-File: LICENSE
+
+
+**sgkit** is an open source project for analyzing and manipulating genetic
+variation data.
+

@@ -1,0 +1,32 @@
+numpy
+xarray
+dask[array]>=2022.01.0
+distributed>=2022.01.0
+dask-ml
+scipy
+zarr!=2.11.0,!=2.11.1,!=2.11.2,>=2.10.0
+numba
+typing-extensions
+fsspec!=2021.6.*
+scikit-learn
+pandas
+setuptools>=41.2
+
+[bgen]
+rechunker
+
+[bgen:platform_system != "Windows"]
+cbgen
+
+[bgen:platform_system == "Windows"]
+cbgen==1.0.1
+
+[plink]
+partd
+bed-reader
+
+[vcf]
+aiohttp
+cyvcf2
+requests
+yarl

@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: LuBanPy
+Version: 0.1.62
+Summary: UNKNOWN
+Home-page: https://github.com/oneincloud/LuBanPy
+Author: Alex
+Author-email: alex@one-in-cloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: backports.zoneinfo >=0.2.1
+Requires-Dist: chardet >=5.2.0
+Requires-Dist: Cython >=3.0.9
+Requires-Dist: dateparser >=1.2.0
+Requires-Dist: inflect >=7.0.0
+Requires-Dist: loguru >=0.7.2
+Requires-Dist: nbformat >=5.9.2
+Requires-Dist: pigar >=2.1.4
+Requires-Dist: psutil >=5.9.7
+Requires-Dist: pycryptodome >=3.20.0
+Requires-Dist: pyinstaller >=6.6.0
+Requires-Dist: python-dateutil >=2.8.2
+Requires-Dist: python-dotenv >=1.0.1
+Requires-Dist: pytz >=2023.3.post1
+Requires-Dist: setuptools >=68.2.2
+Requires-Dist: tzlocal >=5.2
+
+UNKNOWN

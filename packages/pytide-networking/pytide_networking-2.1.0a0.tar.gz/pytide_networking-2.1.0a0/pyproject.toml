@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytide-networking"
+version = "2.1.0.alpha"
+authors = [
+  { name="ebosseck", email="pypi-packages@mail-b.org" },
+]
+description = "Python implementation of Riptide"
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["PytideNetworking", "networking", "Riptide"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+	"Intended Audience :: Developers",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Topic :: Software Development :: Libraries",
+	"Topic :: System :: Networking",
+]
+
+[project.urls]
+homepage = "https://github.com/ebosseck/PytideNetworking"
+repository = "https://github.com/ebosseck/PytideNetworking"

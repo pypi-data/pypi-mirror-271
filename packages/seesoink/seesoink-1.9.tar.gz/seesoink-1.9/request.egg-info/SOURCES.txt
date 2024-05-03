@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.cfg
+setup.py
+seesoink/__init__.py
+seesoink/seesoink.py
+seesoink.egg-info/PKG-INFO
+seesoink.egg-info/SOURCES.txt
+seesoink.egg-info/dependency_links.txt
+seesoink.egg-info/top_level.txt

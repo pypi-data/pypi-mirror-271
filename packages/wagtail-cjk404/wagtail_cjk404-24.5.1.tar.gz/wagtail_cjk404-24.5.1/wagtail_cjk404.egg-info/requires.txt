@@ -1,0 +1,6 @@
+Wagtail>=4.0.1
+
+[dev]
+ruff
+codespell
+build

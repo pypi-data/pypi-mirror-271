@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+labeled_contrastive_framework/__init__.py
+labeled_contrastive_framework/module.py
+labeled_contrastive_framework/transform.py
+labeled_contrastive_framework/utils.py
+labeled_contrastive_framework.egg-info/PKG-INFO
+labeled_contrastive_framework.egg-info/SOURCES.txt
+labeled_contrastive_framework.egg-info/dependency_links.txt
+labeled_contrastive_framework.egg-info/requires.txt
+labeled_contrastive_framework.egg-info/top_level.txt

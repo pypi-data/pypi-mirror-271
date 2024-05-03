@@ -1,0 +1,13 @@
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sideload_www_bin_6633d5bdad19ca34f86389bb"
+version = "1.0.0"
+description = "Sideloaded package"
+requires-python = ">=3.8"
+authors = [
+  {name = "Null Void" }
+]

@@ -1,0 +1,3 @@
+replicate>=0.25.2
+mediapipe<0.11,>=0.10.11
+flask<4,>=3.0.3

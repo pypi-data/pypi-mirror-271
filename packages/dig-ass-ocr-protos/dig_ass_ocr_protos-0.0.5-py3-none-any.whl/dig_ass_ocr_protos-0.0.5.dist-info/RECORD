@@ -1,0 +1,10 @@
+dig_ass_ocr_protos/DigitalAssistantOCR_pb2.py,sha256=Ip8yBUPYGb64vrysK8ecGjz27S3Jm7f2DzJV53YCEpM,1686
+dig_ass_ocr_protos/DigitalAssistantOCR_pb2.pyi,sha256=BJy7JQ4Io-yqcVkaoH3lkGGUgdSxBVqZuKoOpegi8Wc,692
+dig_ass_ocr_protos/DigitalAssistantOCR_pb2_grpc.py,sha256=oUdmuPM-UJLzyymFCnJjxvnhjU2QvDlkPXH0x-pZd_o,2914
+dig_ass_ocr_protos/__init__.py,sha256=eB5tEg_BNHHsJgQexgmpZJr4c2VbfooQZMXAWuDHoIg,22
+dig_ass_ocr_protos/abstract_client.py,sha256=TSFMiUZ1VhTDGYYCSE0CZBCN4D-Y6D6CWTP-djuwWYc,382
+dig_ass_ocr_protos/client.py,sha256=YjHS70H9SvEgzEICigVC12lrMKuIjtU3s0vfD3dl2C0,662
+dig_ass_ocr_protos-0.0.5.dist-info/METADATA,sha256=bpGhYbaNU7lWvuRIuj7XMZEuB43VUVDKSfBq_Iyvf34,335
+dig_ass_ocr_protos-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dig_ass_ocr_protos-0.0.5.dist-info/top_level.txt,sha256=nCCAK4KEy743lSbq-0Id7MajKyNKglwDXSz31a6NM8k,19
+dig_ass_ocr_protos-0.0.5.dist-info/RECORD,,

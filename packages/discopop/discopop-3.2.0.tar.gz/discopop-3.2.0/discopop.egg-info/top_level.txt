@@ -1,0 +1,5 @@
+DEPRECATED_discopop_profiler
+DEPRECATED_discopop_wizard
+discopop_explorer
+discopop_library
+test

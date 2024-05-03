@@ -1,0 +1,26 @@
+[tool.poetry]
+package-mode = true
+name = "suskabot"
+version = "0.1.3"
+description = "telegram bot with various functions"
+authors = ["vinyl_summer <vinyl6428@gmail.dotcom>"]
+readme = "README.md"
+license = "LICENSE"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+lingua-language-detector = "^2.0.2"
+translators = "^5.9.1"
+pytube = "^15.0.0"
+python-telegram-bot = "^21.1.1"
+pydantic = "^2.7.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+pytest-sugar = "*"
+ruff = "^0.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

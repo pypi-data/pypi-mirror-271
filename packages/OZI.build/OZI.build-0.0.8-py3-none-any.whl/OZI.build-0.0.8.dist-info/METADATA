@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: OZI.build
+Version: 0.0.8
+Summary: Create pep517 compliant packages from the meson build system, OZI-maintained fork.
+Home-page: https://github.com/OZI-Project/OZI.build
+Author: Thibault Saunier
+Author-email: tsaunier@gnome.org
+Maintainer: Eden Rose Duff MSc
+Maintainer-email: help@oziproject.dev
+Requires-Dist: wheel>0.33
+Requires-Dist: meson[ninja]>1.1.0
+Requires-Dist: tomli>=2.0.0;python_version<"3.11"
+Requires-Dist: setuptools
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Source, https://github.com/OZI-Project/OZI.build
+Project-URL: Documentation, https://thiblahute.gitlab.io/mesonpep517/
+Description-Content-Type: text/x-rst
+Description:
+
+=========
+OZI.build
+=========
+
+This is the OZI fork of the mesonpep517 0.2 tag.
+
+This is a simple module that implements pep517 for the meson build system.
+
+This means that you only need to provide a ``pyproject.toml`` in your project
+source root to be able to publish your project built with meson on PyPI
+and to create a wheel for the project.
+
+For more information have a look at _`the documentation <https://thiblahute.gitlab.io/mesonpep517/>`
+
+See Also:
+
+https://mesonbuild.com

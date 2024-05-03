@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dokushin"
+version = "0.1.0"
+description = "Modeling Sudoku puzzles in Python"
+authors = ["Matthew Henderson <matthew.james.henderson@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

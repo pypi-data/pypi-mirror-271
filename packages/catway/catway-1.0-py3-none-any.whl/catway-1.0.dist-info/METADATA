@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: catway
+Version: 1.0
+Summary: Create tempmail based on https://mail.catway.org :D
+Author-email: ZAID <y8838@hotmail.com>
+Project-URL: Homepage, https://github.com/zaid5o5/catway
+Project-URL: Issues, https://github.com/zaid5o5/catway/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+Requires-Dist: requests
+Requires-Dist: pydantic
+
+# Install :
+```commandline
+pip install -U catway
+```
+
+# How to use :
+- 1 - Send email to your custom email, for example: ``sadf@catway.org``
+- 2 - Get inbox:
+
+```python
+from catway import CatMail
+
+def main():
+    with CatMail("sadf@catway.org") as email:
+        for mail in email.get_inboxes():
+            print(mail)
+            print(email.get_inbox(mail.id))
+
+main()
+```

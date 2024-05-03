@@ -1,0 +1,11 @@
+catway/__init__.py,sha256=1E-jpwJEHlmM626wzKUddidW_lTBbfIRd2NYA2yAVog,1363
+catway/async_session.py,sha256=BifgXX0ev9LAv4DwlUcDTRViqA-FQ5zZj4B2esRgSqQ,1249
+catway/asyncio.py,sha256=9G01GfDCnuS89QSIUZTKgNWN7t5sHeZfLmd-JXmGo3c,1517
+catway/session.py,sha256=u3K8c5mrTfjqPhuDCucDvvWW0zDTF3L2Ld2WQji7Zms,1409
+catway/types.py,sha256=2Up7-rWxeRcn_smGjvznEoGJ4aabV1z0VoVDhOrle60,3470
+catway/utils.py,sha256=05rcEU0fZCtY9nKTaMG31qVIkFz123vPc_wsjcn9gEw,614
+catway-1.0.dist-info/LICENSE,sha256=n-T0Ud-k4sSsk4RKyM3TRhXNaldEaCihPc5_RH0xo4A,1080
+catway-1.0.dist-info/METADATA,sha256=3aeG8DiiW15rsIHIRHUjs26kO6pbj6AaNfRDKdqZdhI,1007
+catway-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+catway-1.0.dist-info/top_level.txt,sha256=hjGaOeVWeMOrK-K8UMJJgF2SkIskgKh4nyOybZClECw,7
+catway-1.0.dist-info/RECORD,,

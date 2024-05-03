@@ -1,0 +1,9 @@
+vtracer-0.6.11.dist-info/METADATA,sha256=70U0YSzPQi3YH2Zd0VNN2VsdPiLbB78H_R4p0oseams,4471
+vtracer-0.6.11.dist-info/WHEEL,sha256=thWVGQI-HQrMGqeZp3gcIE7HFmAcTYQ1tQTxzJgo3SI,104
+vtracer-0.6.11.dist-info/license_files/LICENSE-APACHE,sha256=dp-Atby0LtCvTk0v104ayb-EPLgMWikhnR7zVEQoprs,10846
+vtracer-0.6.11.dist-info/license_files/LICENSE-MIT,sha256=CpUSIv4bzpchSkcNUHSyRhV-2b1tMGK52tNYwT4JrNA,1057
+vtracer/__init__.py,sha256=zDncw82CejAzoEJgbp29lssOUlPI1umgXmT5khd0Z7c,118
+vtracer/README.md,sha256=Vpt5pX8d3FvYluUk3CHEvmQ0O99cS0HqA6TGzxBj2ok,3765
+vtracer/vtracer.pyi,sha256=YIcSxBiUdxqzyYgobEWXrAkbAJ7SKpKYWyg48btNzSo,3592
+vtracer/vtracer.cpython-312-darwin.so,sha256=Dl7WIHDyCMSp6EHGxBdI7HGO6TYkopq-5NIORkfj8Ms,2287280
+vtracer-0.6.11.dist-info/RECORD,,

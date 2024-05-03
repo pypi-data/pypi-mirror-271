@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pydynorrt
+Version: 0.0.10
+Summary: C++/Python Sample Based Motion Planning for Robotics
+Author: Joaquim Ortiz-Haro
+Author-email: quimortiz21@gmail.com
+

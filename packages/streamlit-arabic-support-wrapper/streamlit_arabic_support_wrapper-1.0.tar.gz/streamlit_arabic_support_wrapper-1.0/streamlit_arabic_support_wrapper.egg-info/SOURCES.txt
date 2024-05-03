@@ -1,0 +1,9 @@
+README.md
+setup.py
+arabic_support/__init__.py
+arabic_support/arabic_supprt.py
+streamlit_arabic_support_wrapper.egg-info/PKG-INFO
+streamlit_arabic_support_wrapper.egg-info/SOURCES.txt
+streamlit_arabic_support_wrapper.egg-info/dependency_links.txt
+streamlit_arabic_support_wrapper.egg-info/requires.txt
+streamlit_arabic_support_wrapper.egg-info/top_level.txt

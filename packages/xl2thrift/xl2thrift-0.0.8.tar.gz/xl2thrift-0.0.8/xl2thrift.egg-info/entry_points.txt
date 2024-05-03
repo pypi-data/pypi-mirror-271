@@ -1,0 +1,4 @@
+[console_scripts]
+mutate = xl2thrift.mutate_cmd:mutateThriftBlob
+validate = xl2thrift.validate_cmd:validateThriftBlob
+xl2thrift = xl2thrift.command_line:main

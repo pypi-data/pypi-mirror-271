@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pypwing
+Version: 0.1
+Summary: Graphic password module 图形密码模块
+Home-page: https://gitee.com/cdlqa/python-pypwing
+Author: lqa_666
+Author-email: 18200128573@163.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.0
+

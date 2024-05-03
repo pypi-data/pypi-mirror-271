@@ -1,0 +1,7 @@
+h5py
+geopandas
+
+[dev]
+pre-commit
+ruff
+pytest

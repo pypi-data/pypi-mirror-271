@@ -1,0 +1,60 @@
+[project]
+name = "edea-tmc"
+version = "0.2.2"
+description = "Test and Measurement as Code library for EDeA-MS"
+authors = [
+    { name = "Elen Eisendle", email = "ln@calcifer.ee" },
+]
+readme = "README.md"
+packages = [
+    { include = "edea_tmc" },
+]
+requires-python = ">=3.11,<3.13"
+
+[project.optional-dependencies]
+remote = [
+    "httpx>=0.26.0",
+]
+interactive = [
+    "tqdm>=4.66.2",
+]
+jupyter = [
+    "jupyter>=1.0.0",
+    "ipywidgets>=8.1.1",
+]
+polars = [
+    "polars>=0.20.23",
+]
+pandas = [
+    "pandas>=2.2.1",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.coverage.run]
+omit = [
+    "*/__pypackages__/*",
+]
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "black>=24.4.2",
+    "mypy>=1.10.0",
+    "types-tqdm>=4.66.0.20240417",
+    "pandas-stubs>=2.2.1.240316",
+]
+test = [
+    "pytest>=7.4.0",
+    "coverage>=7.5.0",
+    "gevent>=24.2.1",
+    "pyarrow>=16.0.0",
+    "edea-ms>=0.1.2",
+    "polars[numpy,pandas,pyarrow]>=0.20.23",
+    "numpy>=1.26.4",
+    "pytest-cov>=5.0.0",
+    "pytest-asyncio>=0.23.4",
+]

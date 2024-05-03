@@ -1,0 +1,141 @@
+[tool.pylsp-mypy]
+enabled = true
+live_mode = true
+strict = true
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "recipe2txt"
+version = "0.5.2"
+authors = [
+  { name="Jan Philipp Berg", email="git.7ksst@aleeas.com" },
+]
+description = "Scrapes recipes and converts them to txt or markdown"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GNU General Public License v3 or later (GPLv3+)"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Framework :: aiohttp",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Topic :: Internet",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Typing :: Typed"
+]
+keywords = ["recipes", "cooking", "scraping", "website"]
+dependencies = [
+  "aiodns ~= 3.2",
+  "aiohttp ~= 3.9",
+  "backports.strenum ~= 1.2; python_version < '3.11'",
+  "importlib-metadata ~= 7.1",
+  "jinja2 ~= 3.1",
+  "lxml == 5.0.2",
+  "recipe-scrapers ~= 14.56",
+  "tomli ~= 2.0; python_version < '3.11'",
+  "typing_extensions ~= 4.6.2; python_version < '3.11'",
+  "validators ~= 0.28",
+  "xdg-base-dirs ~= 6.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jp-berg/recipe2txt"
+"Bug Tracker" = "https://github.com/jp-berg/recipe2txt/issues"
+
+[project.scripts]
+re2txt = "recipe2txt.re2txt:main"
+recipe2txt = "recipe2txt.re2txt:main"
+
+[tool.mypy]
+python_version = '3.11'
+strict = true
+python_executable = ".venv/bin/python"
+pretty = true
+warn_unused_configs = true
+warn_unused_ignores = true
+enable_error_code = ['ignore-without-code']
+files = ['recipe2txt/*.py',
+          'noxfile.py',
+          'test/testfiles/permanent/*.py',
+          'recipe2txt/utils/*.py',
+          'test/test4recipe2txt.py',
+          'test/testfiles/one_tab_link_prepper.py']
+warn_unreachable = true
+
+[[tool.mypy.overrides]]
+module = 'validators'
+ignore_missing_imports = true
+
+[tool.pylint]
+jobs = 0
+reports = true
+enable = ['useless-suppression']
+source-roots = ['recipe2txt', 'test']
+output-format = 'text'
+recursive = true
+max-line-length = 88
+single-line-if-stmt = true
+ext-import-graph = true
+logging-modules = ["logging", "ContextLogger"]
+disable = ["C0115", "C0116", "useless-import-alias", "unspecified-encoding", "import-error", "no-else-return"]
+init-hook = """
+from pylint.config.find_default_config_files import find_default_config_files
+from pathlib import Path
+import os
+import sys
+
+root = Path(os.path.dirname(next(find_default_config_files())))
+sys.path.append(str(root))
+
+lib_root = root / ".venv" / "lib"
+with_py_vers = next(lib_root.glob("python*"))
+libs = with_py_vers / "site-packages"
+sys.path.append(str(libs))
+"""
+
+[tool.coverage.run]
+branch = true
+omit= ["*__init__.py", "*test4recipe2txt.py"]
+command_line = "-m unittest"
+
+[tool.coverage.report]
+skip_covered = true
+skip_empty = true
+show_missing = true
+sort = "Cover"
+
+[tool.black]
+workers = 2
+preview = true
+
+[tool.isort]
+profile = "black"
+
+[tool.autoflake]
+recursive = true
+in-place = true
+imports = [
+  "recipe-scrapers",
+  "xdg-base-dirs",
+  "validators",
+  "importlib-metadata",
+  "backports.strenum",
+  "typing_extensions",
+  "tomli",
+  "aiohttp"
+]
+exclude = ["*conditional_imports.py"]
+remove-all-unused-imports = true
+remove-unused-variables = true
+
+

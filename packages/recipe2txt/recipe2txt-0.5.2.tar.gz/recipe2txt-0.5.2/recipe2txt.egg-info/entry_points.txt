@@ -1,0 +1,3 @@
+[console_scripts]
+re2txt = recipe2txt.re2txt:main
+recipe2txt = recipe2txt.re2txt:main

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: PokeCodePy_Library
+Version: 1.1.1
+Summary: Biblioteca que con la clase RandomPokemon para generar un pokemon aleatorio
+Author: Luz Lizeth Vazquez Garcia
+Author-email: luzlizet35@gmail.com
+Requires-Dist: pandas
+Requires-Dist: twine
+Requires-Dist: wheel
+Requires-Dist: setuptools
+

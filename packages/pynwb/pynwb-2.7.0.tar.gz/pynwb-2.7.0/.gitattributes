@@ -1,0 +1,2 @@
+src/pynwb/_version.py export-subst
+*.ipynb -text -diff

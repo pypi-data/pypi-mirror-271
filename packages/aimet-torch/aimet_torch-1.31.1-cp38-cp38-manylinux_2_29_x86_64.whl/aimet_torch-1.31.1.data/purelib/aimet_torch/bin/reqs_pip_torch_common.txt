@@ -1,0 +1,16 @@
+cvxpy
+cylp
+matplotlib>=3
+networkx
+numpy<1.24,>=1.16.6
+onnx
+onnxruntime
+onnxruntime-extensions
+onnxsim
+pandas==1.5.3
+protobuf==3.20.2
+psutil
+pytest
+tensorboardX==2.4
+transformers==4.27.4
+wget

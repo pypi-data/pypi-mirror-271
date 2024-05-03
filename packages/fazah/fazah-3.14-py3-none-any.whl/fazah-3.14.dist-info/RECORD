@@ -1,0 +1,9 @@
+Fazah/Fazah.py,sha256=HxmHeWyC8XZP1rEhW68FQbfXbWtY5vTv8UuxpeUqP90,1219
+Fazah/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.openai.py,sha256=4j_3fzGQS5tifbRQRt9drvfoZIDP4wPqoyh3NuXac94,1218
+tests/test_gemini.py,sha256=IU99-M6h8SQd0-h9-BxupRfcRTq-fgeQWUUfmkS57Kw,1320
+fazah-3.14.dist-info/METADATA,sha256=Ks6Tih8IOacYsZrKoMO7Bl8y1GBHBshWFBt4j9nhdUM,388
+fazah-3.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fazah-3.14.dist-info/top_level.txt,sha256=JHLOzotl9YJoiC4eoELYq-jW8ZaLzP89Gc1_Kb0S5YM,12
+fazah-3.14.dist-info/RECORD,,

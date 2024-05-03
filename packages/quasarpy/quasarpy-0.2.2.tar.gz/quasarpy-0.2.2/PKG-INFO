@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: quasarpy
+Version: 0.2.2
+Summary: Quasar is python package that can be used for smell detection along with detailed report in various formats such as html, pdf, etc.
+License: GPL-3.0-or-later
+Author: Khushiyant
+Author-email: khushiyant2002@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: huggingface-hub (>=0.22.2,<0.23.0)
+Requires-Dist: jinja2 (>=3.1.3,<4.0.0)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: pydantic (>=2.6.3,<3.0.0)
+Requires-Dist: pygithub (>=2.2.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: radon (>=6.0.1,<7.0.0)
+Requires-Dist: redis (>=5.0.1,<6.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: scikit-learn (>=1.4.1.post1,<2.0.0)
+Requires-Dist: termcolor (>=2.4.0,<3.0.0)
+Requires-Dist: torch (>=2.2.1,<3.0.0)
+Requires-Dist: transformers (>=4.38.1,<5.0.0)
+Requires-Dist: twine (>=5.0.0,<6.0.0)
+Requires-Dist: xgboost (>=2.0.3,<3.0.0)
+Requires-Dist: xhtml2pdf (>=0.2.15,<0.3.0)
+Description-Content-Type: text/markdown
+
+![quasar-logo](https://raw.githubusercontent.com/Khushiyant/quasarpy/8346dfd09733a5e8a6c72018a011a128afabcc34/assets/logo_complete_svg.svg)
+## Overview
+![GitHub](https://img.shields.io/github/license/Khushiyant/quasar?&style=for-the-badge)
+![Python](https://img.shields.io/badge/Made%20With%20Python-lightblue?logo=python&&style=for-the-badge&logoColor=black)
+
+Quasar is python package that can be used for smell detection along with detailed report in various formats such as html, pdf, etc. 
+
+# Table of contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Installation](#installation)
+  - [Command Line Interface](#command-line-interface)
+    - [Arguments](#arguments)
+- [Contributing](#contributing)
+    - [Versioning](#versioning)
+- [License](#license)
+
+## Usage
+
+### Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install quasarpy.
+
+```bash
+pip install quasarpy
+```
+
+### Command Line Interface
+
+Quasar can be used as a command line tool to detect smells in a project. The command line interface can be used as follows:
+
+
+```bash
+quasar detect --path <path_to_project> --format <format-output> --output <path_to_output_file>
+```
+#### Arguments
+
+- `--path` : Path to the project directory
+- `--format` : Output format of the report (html, pdf, etc.)
+- `--output` : Path to the output file
+- `--help` : Display help message
+- `--version` : Display version of the package
+- `--offline` : Run the LLM in offline mode/without internet connection (default: False)
+
+
+### Contributing
+
+#### Versioning
+
+We use [Sementic Versioning](http://semver.org/) for versioning the package releases.
+
+## License
+
+This project is licensed under the GPL License - see the [LICENSE](https://github.com/Khushiyant/quasarpy/blob/164bc8d8ddfa32f8228fc886871b5a24429c61bb/LICENSE) file for details

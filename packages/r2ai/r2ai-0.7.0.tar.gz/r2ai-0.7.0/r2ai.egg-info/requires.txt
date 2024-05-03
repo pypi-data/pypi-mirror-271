@@ -1,0 +1,11 @@
+rich
+r2pipe
+inquirer
+llama-cpp-python
+huggingface_hub
+appdirs
+unidecode
+jsonref
+transformers
+pydantic
+torch

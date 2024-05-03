@@ -1,0 +1,2 @@
+[console_scripts]
+r2ai = r2ai.main:main

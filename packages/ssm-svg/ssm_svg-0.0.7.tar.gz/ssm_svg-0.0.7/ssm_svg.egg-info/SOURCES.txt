@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ssm/__init__.py
+ssm/__main__.py
+ssm/__version__.py
+ssm/ssm.py
+ssm_svg.egg-info/PKG-INFO
+ssm_svg.egg-info/SOURCES.txt
+ssm_svg.egg-info/dependency_links.txt
+ssm_svg.egg-info/entry_points.txt
+ssm_svg.egg-info/requires.txt
+ssm_svg.egg-info/top_level.txt
+tests/test_ssm.py

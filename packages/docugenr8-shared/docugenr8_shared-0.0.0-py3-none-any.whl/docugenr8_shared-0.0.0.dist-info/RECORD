@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docugenr8_shared/binary_data_packet.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docugenr8_shared/colors.py,sha256=nSD6MlG4KqYZpWdbU-_iJpXfSVWlhvVEYN28nhmxt9A,12926
+docugenr8_shared/dto.py,sha256=PmJJJfgjmbPAnI8YbaeJvbyRfaNM3OBjewcDX_pEg_M,3011
+docugenr8_shared/json_payload.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docugenr8_shared-0.0.0.dist-info/LICENSE,sha256=q45KBjHpUn4zLPOWHpY_-ZEk03nXIyjGCG6HZj4KWiE,1062
+docugenr8_shared-0.0.0.dist-info/METADATA,sha256=WlsNw_qGyT0Ia44vYgSBK9n9kgylRxW1tPu78B9hW4k,917
+docugenr8_shared-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+docugenr8_shared-0.0.0.dist-info/top_level.txt,sha256=8TAKKiib29z0x6DCQBTjJGidlJGkuAymTOeQWqTs1YQ,26
+docugenr8_shared-0.0.0.dist-info/RECORD,,

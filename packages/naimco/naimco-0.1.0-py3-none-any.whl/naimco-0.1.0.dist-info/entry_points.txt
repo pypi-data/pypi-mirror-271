@@ -1,0 +1,3 @@
+[console_scripts]
+naim_control=scripts.naim_control:main
+

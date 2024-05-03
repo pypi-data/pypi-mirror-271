@@ -1,0 +1,11 @@
+setup.py
+Fazah/Fazah.py
+Fazah/__init__.py
+fazah.egg-info/PKG-INFO
+fazah.egg-info/SOURCES.txt
+fazah.egg-info/dependency_links.txt
+fazah.egg-info/requires.txt
+fazah.egg-info/top_level.txt
+tests/__init__.py
+tests/test.openai.py
+tests/test_gemini.py

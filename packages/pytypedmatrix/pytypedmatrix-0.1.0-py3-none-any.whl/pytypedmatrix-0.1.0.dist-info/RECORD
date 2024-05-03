@@ -1,0 +1,9 @@
+pytypedmatrix/__init__.py,sha256=qIVPt1Q322FUXFhA35e7x50-oHXjYjWzkVO8IInXBD4,40
+pytypedmatrix/exceptions/__init__.py,sha256=By2VNr_99YoByxEFBII2mupd9drtKQaopK8SOEMdvUM,38
+pytypedmatrix/exceptions/matrix_error.py,sha256=83hjEfMyGMT4ODaqslWdSntc2dmuMlZcW102Ddowd-w,102
+pytypedmatrix/generics.py,sha256=dH0EA6GaHH9Cad21KkPo0IVMvM4fkSS4CDkVxoAaqLs,94
+pytypedmatrix/square_matrix.py,sha256=qQM5Cf0HjP__JSQT8GD9ApF_n8VXgmpgTu0Mq2JKS3E,9270
+pytypedmatrix-0.1.0.dist-info/LICENSE,sha256=qjkpo-yPiCOKC-oc0039LLyuwiHLUEQs3egiqTWiHmc,1067
+pytypedmatrix-0.1.0.dist-info/METADATA,sha256=YDZANnWpA2g3JDhxGd6kVJutEkt3mgOku65vZ7dbGE4,588
+pytypedmatrix-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pytypedmatrix-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,201 @@
+Metadata-Version: 2.1
+Name: drf_spectacular_websocket
+Version: 1.2.7
+Summary: Extend websocket schema decorator for Django Channels
+Home-page: https://github.com/Friskes/drf-spectacular-websocket
+Author: Friskes
+Author-email: Friskes <friskesx@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Friskes
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Friskes/drf-spectacular-websocket
+Project-URL: Changelog, https://github.com/Friskes/drf-spectacular-websocket/releases/
+Project-URL: Issues, https://github.com/Friskes/drf-spectacular-websocket/issues
+Keywords: Django,DRF,Spectacular,Swagger,Channels
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django >=4.2.11
+Requires-Dist: djangorestframework >=3.14.0
+Requires-Dist: drf-spectacular >=0.27.2
+Requires-Dist: drf-spectacular-sidecar >=2024.4.1
+Requires-Dist: channels >=4.0.0
+Provides-Extra: ci
+Requires-Dist: ruff ==0.4.1 ; extra == 'ci'
+Requires-Dist: pytest >=7.0.1 ; extra == 'ci'
+Requires-Dist: mypy >=1.10.0 ; extra == 'ci'
+Requires-Dist: pytest-cov >=5.0.0 ; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: pre-commit >=3.5.0 ; extra == 'dev'
+Requires-Dist: ruff ==0.4.1 ; extra == 'dev'
+Requires-Dist: pytest >=7.0.1 ; extra == 'dev'
+Requires-Dist: mypy >=1.10.0 ; extra == 'dev'
+Requires-Dist: pytest-cov >=5.0.0 ; extra == 'dev'
+
+# Extend websocket schema decorator for Django Channels
+
+<div align="center">
+
+| Project   |     | Status                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|-----------|:----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CI/CD     |     | [![Latest Release](https://github.com/Friskes/drf-spectacular-websocket/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/Friskes/drf-spectacular-websocket/actions/workflows/publish-to-pypi.yml)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Quality   |     | [![Coverage](https://codecov.io/github/Friskes/drf-spectacular-websocket/graph/badge.svg?token=vKez4Pycrc)](https://codecov.io/github/Friskes/drf-spectacular-websocket)                                                                                                                                                                                                                                                                                                                               |
+| Package   |     | [![PyPI - Version](https://img.shields.io/pypi/v/drf-spectacular-websocket?labelColor=202235&color=edb641&logo=python&logoColor=edb641)](https://badge.fury.io/py/drf-spectacular-websocket) ![PyPI - Support Python Versions](https://img.shields.io/pypi/pyversions/drf-spectacular-websocket?labelColor=202235&color=edb641&logo=python&logoColor=edb641) ![Project PyPI - Downloads](https://img.shields.io/pypi/dm/drf-spectacular-websocket?logo=python&label=downloads&labelColor=202235&color=edb641&logoColor=edb641)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Meta      |     | [![types - Mypy](https://img.shields.io/badge/types-Mypy-202235.svg?logo=python&labelColor=202235&color=edb641&logoColor=edb641)](https://github.com/python/mypy) [![License - MIT](https://img.shields.io/badge/license-MIT-202235.svg?logo=python&labelColor=202235&color=edb641&logoColor=edb641)](https://spdx.org/licenses/) [![code style - Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/format.json&labelColor=202235)](https://github.com/astral-sh/ruff) |
+
+</div>
+
+> Provides [extend_ws_schema](#About-decorator) decorator to documentation [Cunsumer](https://channels.readthedocs.io/en/latest/topics/consumers.html) methods from [channels](https://github.com/django/channels) just like it does [drf-spectacular](https://github.com/tfranzel/drf-spectacular)
+
+
+## Install
+1. Install package
+    ```bash
+    pip install drf-spectacular-websocket
+    ```
+
+2. Create sidecar static
+    ```bash
+    python manage.py collectstatic
+    ```
+
+3. Add app name to `INSTALLED_APPS`
+    > `drf_spectacular_websocket` must be higher than `drf_spectacular`
+    ```python
+    INSTALLED_APPS = [
+        'drf_spectacular_websocket',
+        'drf_spectacular',
+        'drf_spectacular_sidecar',
+    ]
+    ```
+
+
+## Configure settings
+```python
+ASGI_APPLICATION = 'path.to.your.application'
+
+# (Optional) this is default settings are automatically set by the drf_spectacular_websocket.
+# You can override them in your application if necessary.
+SPECTACULAR_SETTINGS = {
+    'DEFAULT_GENERATOR_CLASS': 'drf_spectacular_websocket.schemas.WsSchemaGenerator',
+    'SWAGGER_UI_DIST': 'SIDECAR',
+    'SWAGGER_UI_FAVICON_HREF': 'SIDECAR',
+    'REDOC_DIST': 'SIDECAR',
+    'SWAGGER_UI_SETTINGS': {
+        'connectSocket': True,  # Automatically establish a WS connection when opening swagger
+        'socketMaxMessages': 8,  # Max number of messages displayed in the log window in swagger
+        'socketMessagesInitialOpened': False,  # Automatically open the log window when opening swagger
+    },
+}
+```
+
+> drf_spectacular_websocket automatically finds websocket urls and related consumer using `ASGI_APPLICATION` setting.
+
+## About decorator
+`extend_ws_schema` decorator accepts one new `type` parameter relative to drf_spectacular `extend_schema`.
+- possible values:
+    - `send` - Type of interaction, [request -> response]
+    - `receive` - Type of interaction, [response without request]
+
+## Usage example
+
+```python
+from channels.generic.websocket import AsyncJsonWebsocketConsumer
+from rest_framework.serializers import Serializer, CharField
+from drf_spectacular_websocket.decorators import extend_ws_schema
+
+
+class SomeMethodInputSerializer(Serializer):
+    some_field = CharField()
+
+
+class SomeMethodOutputSerializer(Serializer):
+    some_field = CharField()
+
+
+class SendMessageOutputSerializer(Serializer):
+    some_field = CharField()
+
+
+class SomeConsumer(AsyncJsonWebsocketConsumer):
+
+    async def receive_json(self, content, **kwargs):
+        some_value = content.get('some_key')
+        if some_value:
+            await self.some_method(some_value)
+
+    @extend_ws_schema(
+        type='send',
+        summary='some_method_summary',
+        description='some_method_description',
+        request=SomeMethodInputSerializer,
+        responses=SomeMethodOutputSerializer,
+    )
+    async def some_method(self, some_value):
+        input_serializer = SomeMethodInputSerializer(data=some_value)
+        input_serializer.is_valid(raise_exception=True)
+
+        return_value = await some_business_logic(input_serializer.validated_data)
+
+        output_serializer = SomeMethodOutputSerializer(data=return_value)
+        output_serializer.is_valid(raise_exception=True)
+
+        await self.send_json(output_serializer.validated_data)
+
+    @extend_ws_schema(
+        type='receive',
+        summary='send_message_summary',
+        description='send_message_description',
+        request=None,
+        responses=SendMessageOutputSerializer,
+    )
+    async def send_message(self, message):
+        await self.send_json(message)
+```
+
+## Contributing
+We would love you to contribute to `drf-spectacular-websocket`, pull requests are very welcome! Please see [CONTRIBUTING.md](https://github.com/Friskes/drf-spectacular-websocket/blob/main/CONTRIBUTING.md) for more information.
+
+## Swagger Examples
+
+### Send
+![](https://raw.githubusercontent.com/Friskes/drf-spectacular-websocket/main/images/example_send.png)
+
+### Receive
+![](https://raw.githubusercontent.com/Friskes/drf-spectacular-websocket/main/images/example_receive.png)

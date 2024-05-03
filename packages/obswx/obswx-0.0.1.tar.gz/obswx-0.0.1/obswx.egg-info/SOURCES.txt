@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+obswx/__init__.py
+obswx/config.py
+obswx/obswx.py
+obswx/utils.py
+obswx.egg-info/PKG-INFO
+obswx.egg-info/SOURCES.txt
+obswx.egg-info/dependency_links.txt
+obswx.egg-info/requires.txt
+obswx.egg-info/top_level.txt

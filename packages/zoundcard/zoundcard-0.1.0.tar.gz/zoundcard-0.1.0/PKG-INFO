@@ -1,0 +1,95 @@
+Metadata-Version: 2.3
+Name: zoundcard
+Version: 0.1.0
+Summary: Using the pyaudio and zignal libraries to play audio on a soundcard
+Project-URL: Homepage, https://github.com/ronnyandersson/zoundcard
+Project-URL: Issues, https://github.com/ronnyandersson/zoundcard/issues
+Project-URL: Download, https://pypi.python.org/pypi/zoundcard
+Author-email: Ronny Andersson <ronny@andersson.tk>
+License: MIT License
+License-File: LICENSE
+Keywords: audio,card,playback,portaudio,pyaudio,recording,sound,soundcard
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Sound/Audio :: Capture/Recording
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: pyaudio
+Requires-Dist: zignal
+Provides-Extra: dev
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# zoundcard
+
+This library is using the
+[pyaudio](https://people.csail.mit.edu/hubert/pyaudio/) and
+[zignal](https://github.com/ronnyandersson/zignal) libraries to play audio on a
+soundcard. This code was previously a part of the zignal library but split out
+into its own.
+
+## Pre-requisites
+
+This library relies on pyaudio, which depends on the python development headers
+and the portaudio development files. On debian/ubuntu,
+
+    sudo apt install python3-dev portaudio19-dev
+
+## Installation
+
+It is recommended to create a virtual environment and let pip install the
+dependencies automatically.
+
+    python3 -m venv <name-of-virtualenv>
+    . <name-of-virtualenv>/bin/activate
+    pip install zoundcard
+
+## Local development
+
+Create a python3 virtualenv and install from the local source code to make the
+library editable.
+
+    python3 -m venv venv_dev
+    . venv_dev/bin/activate
+    pip install --editable .[dev]
+
+### Style checks
+
+Validate the imports
+
+    isort src/**/*.py --check-only
+
+Show suggested edits
+
+    isort src/**/*.py --diff
+
+Style guide enforcement using flake8
+
+    flake8 --extend-ignore=E265 --statistics src/
+
+### Unit tests
+
+    python -m unittest -v src/tests/test_*.py
+
+## Build a release
+
+    python3 -m venv venv_build
+    . ./venv_build/bin/activate
+    pip install --upgrade pip build twine
+    python3 -m build
+
+### Upload packages
+
+Upload to pypi.org using twine
+
+    twine upload dist/*

@@ -1,0 +1,13 @@
+# Any IDE and local editor files are best added locally
+# in your own .git/info/exclude
+
+# auto generated files
+/dist/
+*.pyc
+
+# virtual environments
+/venv_*/
+
+# files generated during normal usage
+*.wav
+sandbox*

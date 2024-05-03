@@ -1,0 +1,34 @@
+/**
+ * 1. Match the width that is defined in concrete.css.
+ * 2. Set for pushing footer to bottom of page.
+ */
+body {
+  margin: auto; /* 1 */
+  max-width: 66rem; /* 1 */
+  min-height: 100vh; /* 2 */
+}
+
+/* The padding is huge otherwise (not good for navbar). */
+header {
+  padding: 0 1rem;
+}
+
+/* Give links a muted color. */
+a {
+  opacity: 0.8;
+}
+
+/* Give smaller text a muted color. */
+small {
+  opacity: 0.6;
+}
+
+/**
+ * 1. Add a little bit of margin between footer and end of screen.
+ * 2. Set for pushing footer to bottom of page.
+ */
+footer {
+  margin-bottom: 2rem; /* 1 */
+  position: sticky; /* 2 */
+  top: 100%; /* 2 */
+}

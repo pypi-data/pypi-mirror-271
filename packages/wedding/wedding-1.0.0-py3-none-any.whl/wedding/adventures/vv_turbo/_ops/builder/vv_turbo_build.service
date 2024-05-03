@@ -1,0 +1,78 @@
+
+#
+#	cd /habitat/venues/stages/wedding/adventures/vv_turbo/_ops
+#	cp vv_turbo_build.service /etc/systemd/system/vv_turbo_build.service
+
+#
+#	ps -p 1 -o comm=
+#
+#	apt install systemd -y
+#
+#	systemctl daemon-reload
+#
+#	systemctl start vv_turbo_build
+#
+
+#
+#	service --status-all
+#
+#	service daemon-reload
+#
+#	service start vv_turbo_build
+#
+
+
+[Unit]
+Description=build with watch
+
+[Service]
+# Type of service (simple, forking, oneshot, dbus, notify, idle)
+Type=simple
+ExecStart=bun run build --watch
+WorkingDirectory=/habitat/venues/stages/wedding/adventures/vv_turbo/apps/web
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+# User and group to run the service under
+# User=myuser
+# Group=mygroup
+
+# Environment variables for the service
+# Environment=VAR1=value1
+# Environment=VAR2=value2
+
+# Control Group settings
+# CGROUPS
+
+# Limit resources (CPU, memory, etc.)
+# LimitCPU=
+# LimitFSIZE=
+# LimitDATA=
+# LimitSTACK=
+# LimitCORE=
+# LimitRSS=
+# LimitNOFILE=
+# LimitAS=
+# LimitNPROC=
+# LimitMEMLOCK=
+# LimitLOCKS=
+# LimitSIGPENDING=
+# LimitMSGQUEUE=
+# LimitNICE=
+# LimitRTPRIO=
+# LimitRTTIME=
+
+# Override default standard output/error streams
+# StandardOutput=
+# StandardError=
+
+
+# Redirect stdout/stderr to syslog
+# StandardOutput=syslog
+# StandardError=syslog
+
+# Syslog identifier
+# SyslogIdentifier=bun_build_watch
+

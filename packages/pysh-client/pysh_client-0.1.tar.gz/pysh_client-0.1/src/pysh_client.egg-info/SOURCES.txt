@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/pysh/__init__.py
+src/pysh/api/__init__.py
+src/pysh/api/client.py
+src/pysh/api/schema.py
+src/pysh_client.egg-info/PKG-INFO
+src/pysh_client.egg-info/SOURCES.txt
+src/pysh_client.egg-info/dependency_links.txt
+src/pysh_client.egg-info/requires.txt
+src/pysh_client.egg-info/top_level.txt

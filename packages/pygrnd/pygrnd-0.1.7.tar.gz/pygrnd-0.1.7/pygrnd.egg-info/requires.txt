@@ -1,0 +1,16 @@
+qiskit
+numpy
+dimod
+dwave-greedy
+dwave-neal
+pennylane
+pandas
+seaborn
+tqdm
+pylatexenc
+scikit-learn
+DateTime
+shap
+xgboost
+holidays
+imblearn

@@ -1,0 +1,3 @@
+[console_scripts]
+create-app-fastapi = projectfastapi.main:main
+

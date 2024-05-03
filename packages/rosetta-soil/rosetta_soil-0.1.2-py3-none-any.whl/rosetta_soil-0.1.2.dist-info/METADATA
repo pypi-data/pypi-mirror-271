@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rosetta-soil
+Version: 0.1.2
+Summary: Predict soil hydraulic parameters from basic characterization data.
+Home-page: https://github.com/usda-ars-ussl/rosetta-soil
+Author: Todd Skaggs
+Author-email: todd.skaggs@usda.gov
+License: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: LICENSE.notes
+Requires-Dist: numpy
+
+Implementation of the Rosetta pedotransfer function model. Rosetta predicts parameters for the van Genuchten unsaturated soil hydraulic properties model, using as input basic soil characterization data such bulk density and percentages of sand, silt, and clay.

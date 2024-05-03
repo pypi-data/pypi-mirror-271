@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: myPYPI9
+Version: 0.7.17
+Summary: Create A small package to work with prime numbers
+Author: timenet2300
+Author-email: endersu@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# myprimelib9b
+ primenumber

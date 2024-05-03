@@ -1,0 +1,2 @@
+[console_scripts]
+hello_hello = hello_hello:hello

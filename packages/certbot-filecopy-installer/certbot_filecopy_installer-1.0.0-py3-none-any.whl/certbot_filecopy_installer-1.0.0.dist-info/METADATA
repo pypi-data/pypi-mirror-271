@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: certbot-filecopy-installer
+Version: 1.0.0
+Summary: Simple file copy installer for certbot
+Home-page: https://github.com/NotBobTheBuilder/certbot-filecopy-installer
+Maintainer: Jack Wearden
+Maintainer-email: jack@jackwearden.co.uk
+License: MIT License
+Keywords: letsencrypt certbot installer
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: acme
+Requires-Dist: certbot
+Requires-Dist: setuptools
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+Certbot Filecopy Installer
+===
+
+This is a certbot plugin designed to install certificates by copying the file contents rather than just symlinks.
+
+Useful for systems that create or deploy certbot certificates across execution boundaries like containers.
+
+Usage
+--
+
+`certbot --installer filecopy-installer --filecopy-installer-destination /path/to/your/desired/directory -d example.com .... your other certbot authentication and configuration options`

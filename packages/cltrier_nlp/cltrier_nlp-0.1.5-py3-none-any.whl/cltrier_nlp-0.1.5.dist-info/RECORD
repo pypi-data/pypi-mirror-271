@@ -1,0 +1,14 @@
+cltrier_nlp/__init__.py,sha256=AZfqLkt3JDlJcbaKJaSNYgDPgj4FSq7Llt5PpbqHdpk,513
+cltrier_nlp/corpus/__init__.py,sha256=SkmL3LFHCf9IKHmW_fZPnS_djrCYeCDwCANZp4QvnKo,3357
+cltrier_nlp/corpus/sentence.py,sha256=nMmnwVFAGsF6_2WjNZlWG3GbxiUQn_d8KY1pZvAGZCY,1635
+cltrier_nlp/encoder/__init__.py,sha256=9PLa5zMde4y7sInwPpU8clQJbPZ88xbBTEejLOesoqo,3041
+cltrier_nlp/encoder/batch.py,sha256=QkMjGfFu8NWkqhsSEZXDFWxMTq9KKD1Re773Fa7Taks,764
+cltrier_nlp/encoder/pooler.py,sha256=sr3L1XQLXmm95FPvYQnnrv4ANxV2ViOYpu3ngaVd-ac,2556
+cltrier_nlp/functional/__init__.py,sha256=zq9Nmu3Fr6UowfrEyP0I4T2ykRqf8rhnUOOFf8tb9Hc,454
+cltrier_nlp/functional/neural.py,sha256=XuyIsATQm_wO6SbTcO2homSU59qzKAbfIDWqFEtr3cw,489
+cltrier_nlp/functional/text.py,sha256=cP5muB76vGOQTKEOZShpdKAM5PVCzdxHvwPkJ_Frckc,1454
+cltrier_nlp/utility/__init__.py,sha256=ccemxG8V7oE8BBzyTCN-uhPqDcPNjsM3vCPnRNE8pzw,49
+cltrier_nlp/utility/map.py,sha256=cF9E-_Hf5zu2ZUvTbuJGkgSsSBlh_cQ1fUQkgu2z-d0,683
+cltrier_nlp-0.1.5.dist-info/METADATA,sha256=6ptV6eUJPlnJtOf57fdACHlomcPeOgxfam4Y0HZSQ5A,1563
+cltrier_nlp-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cltrier_nlp-0.1.5.dist-info/RECORD,,

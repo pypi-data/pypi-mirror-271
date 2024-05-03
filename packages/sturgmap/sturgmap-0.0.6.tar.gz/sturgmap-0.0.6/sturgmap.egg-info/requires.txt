@@ -1,0 +1,11 @@
+numpy
+ipyleaflet
+folium
+pandas
+localtileserver
+
+[all]
+sturgmap[extra]
+
+[extra]
+pandas

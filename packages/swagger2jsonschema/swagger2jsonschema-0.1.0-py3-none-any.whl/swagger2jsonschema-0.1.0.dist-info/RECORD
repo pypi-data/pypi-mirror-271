@@ -1,0 +1,13 @@
+swagger2jsonschema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swagger2jsonschema/command.py,sha256=2HPZW9u5T02ruVn5OwkPtay4yVpR_zhVbxgtFdyzElw,10217
+swagger2jsonschema/definitions.py,sha256=INDqIV7rCuRtjV73Va5TlGp5sZUPVJY2PodQbcuj600,707
+swagger2jsonschema/errors.py,sha256=T7VZfl3FnHPHoqXFn-QmAXwlwOnPnyo3lcbCYXI_jpQ,68
+swagger2jsonschema/log.py,sha256=TVtGYLJkLhZpgQqe6PUxtSbGVg0RKZvMEvPcsAr0htQ,247
+swagger2jsonschema/test_command.py,sha256=oItmY5OAehwwhGonkD-XTXhEpskt9dp83E_aZrDVk6I,6161
+swagger2jsonschema/util.py,sha256=JefJz8h2IUOgBVy9hQeLnQMbWlSFJE0uDz1QeboVRTg,7841
+swagger2jsonschema-0.1.0.dist-info/LICENSE,sha256=6nn0TvfOBUFH__8Aqqhe6RfDCI_--Js0Jab8oZkAipE,654
+swagger2jsonschema-0.1.0.dist-info/METADATA,sha256=j43PwDMiPnyZsG6jyjoOine3sNpi1vYItI4kcm4iQlI,1486
+swagger2jsonschema-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+swagger2jsonschema-0.1.0.dist-info/entry_points.txt,sha256=LXKu_O5s2NeA6Ga5NQ0N4quSMB52LTXs0580KiO6a5s,74
+swagger2jsonschema-0.1.0.dist-info/top_level.txt,sha256=T3u6MolDviqt4JENl6aZ0civpLecmX1vds1ASwe_n80,28
+swagger2jsonschema-0.1.0.dist-info/RECORD,,

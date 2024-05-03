@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: swagger2jsonschema
+Version: 0.1.0
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: attrs ==23.2.0
+Requires-Dist: click ==8.1.7
+Requires-Dist: jsonref ==1.1.0
+Requires-Dist: jsonschema ==4.21.1
+Requires-Dist: jsonschema-specifications ==2023.12.1
+Requires-Dist: pyyaml ==6.0.1
+Requires-Dist: referencing ==0.33.0
+Requires-Dist: rpds-py ==0.17.1
+Provides-Extra: dev
+Requires-Dist: attrs ==23.2.0 ; extra == 'dev'
+Requires-Dist: black ==24.3.0 ; extra == 'dev'
+Requires-Dist: click ==8.1.7 ; extra == 'dev'
+Requires-Dist: iniconfig ==2.0.0 ; extra == 'dev'
+Requires-Dist: isort ==5.13.2 ; extra == 'dev'
+Requires-Dist: jsonref ==1.1.0 ; extra == 'dev'
+Requires-Dist: jsonschema ==4.21.1 ; extra == 'dev'
+Requires-Dist: jsonschema-specifications ==2023.12.1 ; extra == 'dev'
+Requires-Dist: mypy ==1.9.0 ; extra == 'dev'
+Requires-Dist: mypy-extensions ==1.0.0 ; extra == 'dev'
+Requires-Dist: packaging ==23.2 ; extra == 'dev'
+Requires-Dist: pathspec ==0.12.1 ; extra == 'dev'
+Requires-Dist: platformdirs ==4.2.0 ; extra == 'dev'
+Requires-Dist: pluggy ==1.4.0 ; extra == 'dev'
+Requires-Dist: pytest ==8.1.1 ; extra == 'dev'
+Requires-Dist: pytest-datafiles ==3.0.0 ; extra == 'dev'
+Requires-Dist: pyyaml ==6.0.1 ; extra == 'dev'
+Requires-Dist: referencing ==0.33.0 ; extra == 'dev'
+Requires-Dist: rpds-py ==0.17.1 ; extra == 'dev'
+Requires-Dist: types-pyyaml ==6.0.12.20240311 ; extra == 'dev'
+Requires-Dist: typing-extensions ==4.9.0 ; extra == 'dev'
+

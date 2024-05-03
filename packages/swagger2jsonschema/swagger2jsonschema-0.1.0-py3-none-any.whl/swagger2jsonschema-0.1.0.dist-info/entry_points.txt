@@ -1,0 +1,2 @@
+[console_scripts]
+swagger2jsonschema = swagger2jsonschema.command:default

@@ -1,0 +1,6 @@
+requests
+websocket-client
+func-timeout
+pycryptodome
+attrs
+browsercookie

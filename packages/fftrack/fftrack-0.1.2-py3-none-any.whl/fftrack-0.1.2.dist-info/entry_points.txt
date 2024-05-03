@@ -1,0 +1,4 @@
+[console_scripts]
+fftrack = fftrack.main:app
+populate-database = fftrack.scripts.populate_database:main
+

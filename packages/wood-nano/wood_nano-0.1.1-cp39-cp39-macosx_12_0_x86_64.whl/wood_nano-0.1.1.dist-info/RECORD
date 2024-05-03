@@ -1,0 +1,9 @@
+wood_nano/__init__.py,sha256=sywO9f1g2MHjCNj8vTJoWnO_2S2G6AEXfttMkIWmFNg,985
+wood_nano/conversions_python.py,sha256=DnvNp3MM-F5ZXul_LowYJ_l1WMUiVNjFKuyk0VrhPyk,3439
+wood_nano/libgmp-10.dll,sha256=_sQ8sYzg7Ipd1q0dt0V0cWcxDMuStaz_DURaizAT8Ak,543027
+wood_nano/libmpfr-4.dll,sha256=CbO4aLlkM5kfwVycWub5pExi0uIRlBEEQmB5Fzke2Sc,436011
+wood_nano/wood_nano_ext.cpython-39-darwin.so,sha256=cWnT8cYveO6aD-IcdaEf8aCLQv-z7GtJTNtM2JypPwg,4110080
+wood_nano-0.1.1.dist-info/METADATA,sha256=XuhI_HaObv_7Giwhvvtt5s1aejSvbwgWeHx9qgXMo78,7301
+wood_nano-0.1.1.dist-info/WHEEL,sha256=lBHkqPlfuPU5kolQ-xcpJhLaRwfaAmcwdDmRxHy2GYs,112
+wood_nano-0.1.1.dist-info/licenses/LICENSE,sha256=8wUJGk5XgFhwsheijqSx8WYQ7s6EV9I3D4Iqlpa3WDY,1521
+wood_nano-0.1.1.dist-info/RECORD,,

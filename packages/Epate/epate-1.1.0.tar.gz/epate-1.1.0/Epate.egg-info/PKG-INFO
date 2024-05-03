@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Epate
+Version: 1.1.0
+Summary: A python library for many API of the codemao's website.
+Home-page: https://xiao.asia
+Author: xiaoxlh
+Author-email: xiaoxiaogzs@outlook.com
+License: Apache License, Version 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: requests==2.31.0
+
+eds sdk for python

@@ -1,0 +1,4 @@
+onnx==1.15.0
+onnxmltools==1.11.1
+onnxruntime==1.16.1
+skl2onnx==1.15.0

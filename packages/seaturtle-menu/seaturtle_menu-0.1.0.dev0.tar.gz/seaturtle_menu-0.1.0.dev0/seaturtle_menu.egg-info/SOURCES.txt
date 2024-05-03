@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+seaturtle_menu/__init__.py
+seaturtle_menu/bullets.py
+seaturtle_menu/consts.py
+seaturtle_menu/menu.py
+seaturtle_menu/utils.py
+seaturtle_menu.egg-info/PKG-INFO
+seaturtle_menu.egg-info/SOURCES.txt
+seaturtle_menu.egg-info/dependency_links.txt
+seaturtle_menu.egg-info/top_level.txt

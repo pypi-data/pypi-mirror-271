@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/pydatagenerator.egg-info/PKG-INFO
+src/pydatagenerator.egg-info/SOURCES.txt
+src/pydatagenerator.egg-info/dependency_links.txt
+src/pydatagenerator.egg-info/top_level.txt

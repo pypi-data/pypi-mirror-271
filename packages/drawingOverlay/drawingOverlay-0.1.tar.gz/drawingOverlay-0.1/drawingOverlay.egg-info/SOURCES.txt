@@ -1,0 +1,7 @@
+setup.py
+drawingOverlay/__init__.py
+drawingOverlay/main.py
+drawingOverlay.egg-info/PKG-INFO
+drawingOverlay.egg-info/SOURCES.txt
+drawingOverlay.egg-info/dependency_links.txt
+drawingOverlay.egg-info/top_level.txt

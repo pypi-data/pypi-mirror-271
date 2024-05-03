@@ -1,0 +1,9 @@
+ml4math/__about__.py,sha256=MAxAv_w7FhGQ4-IgalDEulZTZ4qU0aD1zBC5yraVRRY,129
+ml4math/__init__.py,sha256=zdzxufexpUnGWvK08ozEGcfw5cNkM6P3e2RPj8U2euI,155
+ml4math/datasets/__init__.py,sha256=wnzoSkpd82flCE1DDVFY-TgWBK8QRSaR4fi5fxlJ0xY,104
+ml4math/datasets/config.py,sha256=ktyt6TkBV-u7fAeRNRLhuMon17l07WeEfFddbAIjlys,91
+ml4math/datasets/minif2f.py,sha256=EEIE8hPwkSmOnxjXZDlXVOLNSYV5vxYliCCdeWELLIg,6485
+ml4math-0.0.1.dist-info/METADATA,sha256=BDtDITQ3LTs1n2DkY4OjMFTMr7WVFhutoACLGOwjcFk,1478
+ml4math-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+ml4math-0.0.1.dist-info/licenses/LICENSE.txt,sha256=2QqS0dk3VnulGm-ZBmrUtmPaa3s0zuDJ9Lexn2emG8s,1099
+ml4math-0.0.1.dist-info/RECORD,,

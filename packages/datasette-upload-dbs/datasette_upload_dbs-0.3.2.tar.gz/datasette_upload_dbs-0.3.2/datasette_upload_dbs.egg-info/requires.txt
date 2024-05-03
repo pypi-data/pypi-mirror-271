@@ -1,0 +1,6 @@
+datasette
+starlette
+
+[test]
+pytest
+pytest-asyncio

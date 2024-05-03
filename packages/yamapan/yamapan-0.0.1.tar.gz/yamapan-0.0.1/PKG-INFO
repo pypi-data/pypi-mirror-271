@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: yamapan
+Version: 0.0.1
+Summary: Yet Another MetA worksPAce maNager for ROS 2
+Author-email: Rin Iwai <rin@eyrin.jp>
+Requires-Python: >=3.8
+Requires-Dist: pydantic>=2.7.1
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: tomli>=2.0.1
+Description-Content-Type: text/markdown
+
+# yamapan
+
+Yet Another MetA worksPAce maNager for ROS 2
+
+## Getting Started
+
+```sh
+pipx install yamapan
+cd <path-to-your-ros-2-workspace>
+yamapan init
+```

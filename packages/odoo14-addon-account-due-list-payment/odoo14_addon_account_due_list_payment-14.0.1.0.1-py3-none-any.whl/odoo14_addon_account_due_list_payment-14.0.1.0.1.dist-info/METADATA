@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-account-due-list-payment
+Version: 14.0.1.0.1
+Summary: Allows you to make payments directly from the due list view
+Home-page: https://github.com/OCA/account-payment
+Author: Engenere.one,Odoo Community Association (OCA)
+Author-email: support@odoo-community.org
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.6
+Requires-Dist: odoo14-addon-account-due-list
+Requires-Dist: odoo <14.1dev,>=14.0a
+
+UNKNOWN
+

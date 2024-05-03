@@ -1,0 +1,15 @@
+odoo/addons/account_due_list_payment/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/account_due_list_payment/__manifest__.py,sha256=c1yy-Yys1wFnGKEhRMOLnR2bMrTtHjNY0c8I1qTwZDY,533
+odoo/addons/account_due_list_payment/i18n/account_due_list_payment.pot,sha256=KyzLg5eNRUQrVrtRhtsay0QXCuyibsEyrqM31JVQUDU,1351
+odoo/addons/account_due_list_payment/i18n/es.po,sha256=rX4dUKXx5IFKy8slrO8X3CInRpgmV2zAVrTkUT3ICCs,1601
+odoo/addons/account_due_list_payment/i18n/it.po,sha256=m8FQkNSdUxJMn_p8RuPrg2X7W_42OEkh-VXlgyyWDfQ,1582
+odoo/addons/account_due_list_payment/models/__init__.py,sha256=mF9GDUr6-OiEO9ML3T5FLEFtNN01jg2OpdHPAqiCdKA,32
+odoo/addons/account_due_list_payment/models/account_move_line.py,sha256=2i6ov6_k6I01-oEuuqDqZAwm8GKePgPplFQmIzbWpWA,774
+odoo/addons/account_due_list_payment/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/account_due_list_payment/tests/__init__.py,sha256=8H9RQIcFclbHrOlS6r1r0EQm272Yz2Ea2Ckzl5oezPw,43
+odoo/addons/account_due_list_payment/tests/test_action_register_payment.py,sha256=9W26LF1x3jpQdv9H21SphYAtTdpmHfEht2cGRTXfQdw,906
+odoo/addons/account_due_list_payment/views/account_move_line.xml,sha256=IG3n-B65MQG75Ek4X-yGC11oyFhLi-Z7HggEOI0rMs4,2121
+odoo14_addon_account_due_list_payment-14.0.1.0.1.dist-info/METADATA,sha256=ZhSpuAsI6YmQFv7Gxqo9Gf8LvRy9DaLfjxfQc0kAsFU,636
+odoo14_addon_account_due_list_payment-14.0.1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_account_due_list_payment-14.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_account_due_list_payment-14.0.1.0.1.dist-info/RECORD,,

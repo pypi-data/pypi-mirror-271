@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cc.udp
+Version: 2024.5.2
+Summary: UDP helper function for robotics workload.
+Home-page: https://github.com/uncertainty-cc/UDP-Python
+Author: Uncertainty.
+Author-email: t_k_233@outlook.email
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: cc-serializer
+
+# cc.UDP
+
+[![API-Docs-status](https://img.shields.io/github/actions/workflow/status/uncertainty-cc/UDP-Python/build-docs.yaml?branch=main&style=flat-square&label=Docs&logo=googledocs&logoColor=fff)](https://uncertainty.cc/UDP-Python/cc/udp.html)

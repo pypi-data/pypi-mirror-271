@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2023 OpenSynergy Indonesia-->
+<!--Copyright 2023 PT. Simetri Sinergi Indonesia-->
+<!--License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+<record id="bill_of_service_view_tree" model="ir.ui.view">
+    <field name="name">bill_of_service - Tree</field>
+    <field name="model">bill_of_service</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_tree" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="parent_id" />
+                <field name="product_tmpl_id" />
+                <field name="product_id" />
+                <field name="product_category_id" />
+                <field name="type_id" />
+                <field name="product_qty" />
+                <field name="product_uom_id" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="bill_of_service_view_search" model="ir.ui.view">
+    <field name="name">bill_of_service - Search</field>
+    <field name="model">bill_of_service</field>
+    <field
+            name="inherit_id"
+            ref="ssi_master_data_mixin.mixin_master_data_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="parent_id" />
+                <field name="product_tmpl_id" />
+                <field name="product_id" />
+                <field name="product_category_id" />
+                <field name="type_id" />
+                <filter
+                        name="dom_abstract"
+                        string="Abstract"
+                        domain="[('product_tmpl_id','=',False)]"
+                    />
+                <filter
+                        name="dom_product_template"
+                        string="Product Template"
+                        domain="[('product_tmpl_id','!=',False),('product_id','=',False)]"
+                    />
+                <filter
+                        name="dom_product"
+                        string="Product"
+                        domain="[('product_tmpl_id','!=',False),('product_id','!=',False)]"
+                    />
+                <filter
+                        name="grp_parent"
+                        string="Parent"
+                        context="{'group_by':'parent_id'}"
+                    />
+                <filter
+                        name="grp_product_tmpl"
+                        string="Product Template"
+                        context="{'group_by':'product_tmpl_id'}"
+                    />
+                <filter
+                        name="grp_product"
+                        string="Product"
+                        context="{'group_by':'product_id'}"
+                    />
+                <filter
+                        name="grp_product_category"
+                        string="Product Category"
+                        context="{'group_by':'product_category_id'}"
+                    />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="bill_of_service_view_form" model="ir.ui.view">
+    <field name="name">bill_of_service - Form</field>
+    <field name="model">bill_of_service</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_form" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='active']" position="after">
+                <field name="type_id" />
+                <field name="parent_id" />
+                <field
+                        name="allowed_product_category_ids"
+                        widget="many2many_tags"
+                        invisible="1"
+                    />
+                <field
+                        name="allowed_product_tmpl_ids"
+                        widget="many2many_tags"
+                        invisible="1"
+                    />
+                <field
+                        name="product_tmpl_id"
+                        domain="['|',('id','in',allowed_product_tmpl_ids),('categ_id','in',allowed_product_category_ids)]"
+                    />
+                <field
+                        name="product_id"
+                        domain="[('product_tmpl_id','=',product_tmpl_id)]"
+                    />
+                <label for="product_qty" />
+                <div>
+                    <field name="product_qty" class="oe_inline" />
+                    <field name="product_uom_id" class="oe_inline" />
+                </div>
+            </xpath>
+            <xpath expr="//page[1]" position="before">
+                <page name="component" string="Components">
+                    <field name="component_ids" />
+                    <field name="all_component_ids" />
+                </page>
+                <page name="product" string="Products">
+                </page>
+                <page name="service" string="Services">
+                </page>
+                <page name="structure" string="Bill of Service Structure">
+                    <separator string="Childs" />
+                    <field name="child_ids" />
+                    <separator string="All Structure" />
+                    <field name="all_structure_ids" />
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="bill_of_service_action" model="ir.actions.act_window">
+    <field name="name">Bill Of Services</field>
+    <field name="res_model">bill_of_service</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+
+<menuitem
+        id="bill_of_service_menu"
+        name="Bill of Services"
+        parent="menu_bos_root"
+        groups="bill_of_service_group"
+        action="bill_of_service_action"
+        sequence="101"
+    />
+</odoo>

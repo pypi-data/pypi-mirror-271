@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2023 OpenSynergy Indonesia-->
+<!--Copyright 2023 PT. Simetri Sinergi Indonesia-->
+<!--License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+<record id="bill_of_service_pricelist_view_tree" model="ir.ui.view">
+    <field name="name">bill_of_service_pricelist - Tree</field>
+    <field name="model">bill_of_service_pricelist</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_tree" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='user_id']" position="before">
+                <field name="bos_id" />
+                <field name="product_tmpl_id" />
+                <field name="product_id" />
+                <field name="product_category_id" />
+                <field name="currency_id" />
+                <field name="pricelist_id" />
+                <field name="date" />
+                <field name="date_start" />
+                <field name="date_end" />
+                <field name="amount_good" optional="hide" />
+                <field name="amount_service" optional="hide" />
+                <field name="amount_total" optional="hide" />
+                <field name="margin" />
+                <field name="amount_after_margin" optional="hide" />
+                <field name="price_round" />
+                <field name="amount_final" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="bill_of_service_pricelist_view_search" model="ir.ui.view">
+    <field name="name">bill_of_service_pricelist - Search</field>
+    <field name="model">bill_of_service_pricelist</field>
+    <field
+            name="inherit_id"
+            ref="ssi_transaction_mixin.mixin_transaction_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="bos_id" />
+                <field name="product_tmpl_id" />
+                <field name="product_id" />
+                <field name="product_category_id" />
+                <field name="currency_id" />
+                <field name="pricelist_id" />
+                <filter
+                        name="dom_product_template"
+                        string="Product Template"
+                        domain="[('product_tmpl_id','!=',False),('product_id','=',False)]"
+                    />
+                <filter
+                        name="dom_product"
+                        string="Product"
+                        domain="[('product_tmpl_id','!=',False),('product_id','!=',False)]"
+                    />
+                <filter
+                        name="grp_product_tmpl"
+                        string="Product Template"
+                        context="{'group_by':'product_tmpl_id'}"
+                    />
+                <filter
+                        name="grp_product"
+                        string="Product"
+                        context="{'group_by':'product_id'}"
+                    />
+                <filter
+                        name="grp_product_category"
+                        string="Product Category"
+                        context="{'group_by':'product_category_id'}"
+                    />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="bill_of_service_pricelist_view_form" model="ir.ui.view">
+    <field name="name">bill_of_service_pricelist - Form</field>
+    <field name="model">bill_of_service_pricelist</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_form" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="bos_id" domain="[('product_tmpl_id','!=',False)]" />
+                <field name="product_tmpl_id" />
+                <field name="product_id" />
+                <field name="product_category_id" />
+                <field name="currency_id" />
+                <field name="pricelist_id" domain="[('currency_id','=',currency_id)]" />
+                <field name="pricelist_item_id" />
+            </xpath>
+            <xpath expr="//group[@name='header_right']" position="inside">
+                <field name="date" />
+                <field name="date_start" />
+                <field name="date_end" />
+            </xpath>
+            <xpath expr="//page[1]" position="before">
+                <page name="good" string="Goods">
+                    <group name="good_1" colspan="4" col="2">
+                        <field name="amount_good" />
+                    </group>
+                </page>
+                <page name="service" string="Services">
+                    <group name="service_1" colspan="4" col="2">
+                        <field name="amount_service" />
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//group[@name='footer_left']" position="inside">
+                <field name="amount_total" />
+                <field name="margin" />
+                <field name="amount_after_margin" />
+                <field name="price_round" />
+                <field name="amount_final" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="bill_of_service_pricelist_action" model="ir.actions.act_window">
+    <field name="name">Bill of Service To Pricelists</field>
+    <field name="res_model">bill_of_service_pricelist</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+
+<menuitem
+        id="bill_of_service_pricelist_menu"
+        name="Bill of Service To Pricelists"
+        parent="menu_bos_root"
+        groups="bill_of_service_pricelist_viewer_group"
+        action="bill_of_service_pricelist_action"
+        sequence="102"
+    />
+</odoo>

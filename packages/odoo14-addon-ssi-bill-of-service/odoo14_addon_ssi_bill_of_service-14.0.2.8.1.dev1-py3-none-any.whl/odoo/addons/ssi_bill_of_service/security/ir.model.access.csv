@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bill_of_service_configurator,bill_of_service - configurator,model_bill_of_service,bill_of_service_group,1,1,1,1
+access_bill_of_service_all,bill_of_service - all,model_bill_of_service,,1,0,0,0
+access_bill_of_service_type_configurator,bill_of_service_type - configurator,model_bill_of_service_type,bill_of_service_type_group,1,1,1,1
+access_bill_of_service_type_all,bill_of_service_type - all,model_bill_of_service_type,,1,0,0,0
+access_bill_of_service_pricelist_all,bill_of_service_pricelist - all,model_bill_of_service_pricelist,,1,0,0,0
+access_bill_of_service_pricelist_viewer,bill_of_service_pricelist - viewer,model_bill_of_service_pricelist,bill_of_service_pricelist_viewer_group,1,0,0,0
+access_bill_of_service_pricelist_user,bill_of_service_pricelist - user,model_bill_of_service_pricelist,bill_of_service_pricelist_user_group,1,1,1,1

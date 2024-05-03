@@ -1,0 +1,13 @@
+mip2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mip2/api.cpython-311-x86_64-linux-gnu.so,sha256=dz8_F0adl-MTXhLQgVn-5BfujjgrmRXiBbvrMXeZhCk,1048576
+mip2/api.pyi,sha256=l88-CdIW8fqgj-AQYzPVu3yKmr-uPcpdu1fP2KxK8j0,887
+mip2/cbc.cpython-311-x86_64-linux-gnu.so,sha256=DpBlCWiSU3097IOKInwySlmMkHSLb3zvxeeMowy3z10,1757216
+mip2/cbc.pyi,sha256=N_-zD-HvqRtzeaASeKwEH42Kd6pnvsJT2SKZYInlIt4,868
+mip2/cbc_ms.cpython-311-x86_64-linux-gnu.so,sha256=1Y63tgqSrDgarK2ZqPnRC90WV9X_SQFBGLo8GlN4yJA,1499168
+mip2/cbc_ms.pyi,sha256=cU8IgTEu_SdOHqFlXF_UzQMrgJ8Zcli5HibqkGxISuY,883
+mip2/scip.cpython-311-x86_64-linux-gnu.so,sha256=XdIioZ9kQbWJXLdHOO_DkgVRTIX44G-xQmBTbkU95M4,815072
+mip2/scip.pyi,sha256=_TNUgXXlHPYyhZ6mIMJSvnnVXS8qoFhcii2xeY-lh20,673
+mip2-1.0.0.dist-info/METADATA,sha256=PS0iWs-VBbRIYUZZszf_WikSzCm3-29R04i_p-KQzvE,4772
+mip2-1.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+mip2-1.0.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mip2-1.0.0.dist-info/RECORD,,

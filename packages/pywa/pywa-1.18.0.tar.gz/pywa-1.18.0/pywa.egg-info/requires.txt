@@ -1,0 +1,12 @@
+requests>=2.31.0
+requests-toolbelt>=1.0.0
+
+[cryptography]
+cryptography
+
+[fastapi]
+fastapi
+uvicorn[standard]
+
+[flask]
+flask

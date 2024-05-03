@@ -1,0 +1,2 @@
+[console_scripts]
+ezoutlet-sdk = ezoutlet.cli:cli

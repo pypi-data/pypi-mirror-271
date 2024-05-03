@@ -1,0 +1,12 @@
+LICENSE
+README
+setup.py
+etncanedge_files.egg-info/PKG-INFO
+etncanedge_files.egg-info/SOURCES.txt
+etncanedge_files.egg-info/dependency_links.txt
+etncanedge_files.egg-info/top_level.txt
+support/AbstractFileSystemWithBucket.py
+support/FuncBackedList.py
+support/LocalFileSystem.py
+support/RelativeFileSystem.py
+support/__init__.py

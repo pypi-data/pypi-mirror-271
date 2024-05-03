@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+goproxy_bingai.egg-info/PKG-INFO
+goproxy_bingai.egg-info/SOURCES.txt
+goproxy_bingai.egg-info/dependency_links.txt
+goproxy_bingai.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+main.py
+pyproject.toml
+zk_synk.egg-info/PKG-INFO
+zk_synk.egg-info/SOURCES.txt
+zk_synk.egg-info/dependency_links.txt
+zk_synk.egg-info/requires.txt
+zk_synk.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zk_synk"
+version = "0.0.2"
+dependencies = [
+  "ezkl",
+]
+requires-python = ">=3.7"
+description="Zero Knowledge Proof models conversion Library"

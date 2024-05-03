@@ -1,0 +1,14 @@
+[aiida.calculations]
+janus.md=aiida_mlip.calculations.md:MD
+janus.opt=aiida_mlip.calculations.geomopt:GeomOpt
+janus.sp=aiida_mlip.calculations.singlepoint:Singlepoint
+
+[aiida.data]
+janus.config=aiida_mlip.data.config:JanusConfigfile
+janus.modeldata=aiida_mlip.data.model:ModelData
+
+[aiida.parsers]
+janus.md_parser=aiida_mlip.parsers.md_parser:MDParser
+janus.opt_parser=aiida_mlip.parsers.opt_parser:GeomOptParser
+janus.sp_parser=aiida_mlip.parsers.sp_parser:SPParser
+

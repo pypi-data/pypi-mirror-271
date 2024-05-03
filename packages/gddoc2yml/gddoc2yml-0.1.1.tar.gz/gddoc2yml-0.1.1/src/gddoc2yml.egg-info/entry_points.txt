@@ -1,0 +1,2 @@
+[console_scripts]
+gdxml2yml = gddoc2yml.gdxml2yml:main

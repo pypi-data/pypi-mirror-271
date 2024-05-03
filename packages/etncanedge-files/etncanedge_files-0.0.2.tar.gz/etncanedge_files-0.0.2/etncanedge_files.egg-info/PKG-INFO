@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: etncanedge-files
+Version: 0.0.2
+Summary: Library canedge to Linux OS.
+Home-page: http://packages.python.org/etncanedge_files
+Author: Marcelo Alonso
+Author-email: marcelohalonso@outlook.com
+License: MIT
+Keywords: Library canedge to Linux OS.
+Requires: fsspec
+Requires: mdf_iter
+License-File: LICENSE
+
+This is a etn canedge_browser files package. You can use

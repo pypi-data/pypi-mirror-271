@@ -1,0 +1,2 @@
+[gui_scripts]
+pychoacoustics = pychoacoustics.__main__:main

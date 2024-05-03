@@ -1,0 +1,20 @@
+[project]
+name = "mip2"
+version = "1.0.0"
+authors = [{ name="allen2233", email="author@example.com" },]
+description = "A mixed integer modeling tool with code style similar to gurobi"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/manage/projects/"
+Issues = "https://pypi.org/manage/projects/"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

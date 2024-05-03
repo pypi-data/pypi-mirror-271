@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: seaturtle_menu
+Version: 0.1.0.dev0
+Summary: Make effective terminal menus quickly and concisely.
+Author: Tathya Garg
+Author-email: tathya.garg@gmail.com
+Keywords: menu
+License-File: LICENSE
+

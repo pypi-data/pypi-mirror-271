@@ -1,0 +1,11 @@
+aws_config/__init__.py,sha256=dNkPFw6itP8D8LKY8WI4cUhe6AZx8H9-2MHxsle5yJc,113
+aws_config/apps.py,sha256=enRA3DxiqGODPU6oQHB-oEptXs8k2FkMxxbYO-Z3N4k,179
+aws_config/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_config/settings_handler.py,sha256=wE1Mm1Wkx_10QEL4ZWaR33O_GzbwgpHeoeyHl4pknC4,84
+aws_config/utils.py,sha256=bI_we_NtHWBBqsCHkymvhuejUkXBHqyxPt0tvMD3XI0,200
+aws_config/wsgi.py,sha256=bDvEJ9M-R7BvJpL8tfmCupfPyRWYZldc8e_UZKYtx6s,178
+django_aws_config-0.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+django_aws_config-0.0.0.dist-info/METADATA,sha256=bNnmbBXpE4yRlYMOs85_vGIiuwF5FJWS5TWDp4oBOYY,14160
+django_aws_config-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_aws_config-0.0.0.dist-info/top_level.txt,sha256=nk_XKmQEQ5RY_oiUtltyEyjEgH46OSqfZ78XYoZQ0gg,11
+django_aws_config-0.0.0.dist-info/RECORD,,

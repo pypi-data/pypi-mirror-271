@@ -1,0 +1,11 @@
+LICENSE,sha256=MgW8rD_w4fHqIVbpl47DYXPTlEDArfAdmLgYYWs3rpM,1066
+copier_template_tester/__init__.py,sha256=0BUWFhHnDet7NQzffp-xNr8zH0VAB-uUR_VXSPNJjLY,1876
+copier_template_tester/_config.py,sha256=BYlLF0j5RMamDMtZlsnQ1Lyp7g2NCigodve1xHeGf_8,868
+copier_template_tester/_pre_commit_support.py,sha256=R2q9te93OrUff09huNwfvyX6AzqXJCJGhNZOhpCYm7c,795
+copier_template_tester/_write_output.py,sha256=IfJjTWvbd8OzpCfPWJ4FodMvq4ySYoKzzy3hJteaHh0,5810
+copier_template_tester/main.py,sha256=Njlm8DEL3eW-l22SNb2mR81Eo_2S3NkieGx1ZVyX7d8,2357
+copier_template_tester-2.1.2.dist-info/LICENSE,sha256=MgW8rD_w4fHqIVbpl47DYXPTlEDArfAdmLgYYWs3rpM,1066
+copier_template_tester-2.1.2.dist-info/METADATA,sha256=zuxQyNjF-Uf702cTgrJ_6YTh8diFvs8PgNOT_O161Bg,4490
+copier_template_tester-2.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+copier_template_tester-2.1.2.dist-info/entry_points.txt,sha256=ev5ah84tIHQX5cPFf9h-CpsNp66soSHm_PmrlnAKxn8,59
+copier_template_tester-2.1.2.dist-info/RECORD,,

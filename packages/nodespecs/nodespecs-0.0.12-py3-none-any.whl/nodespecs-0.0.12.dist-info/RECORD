@@ -1,0 +1,15 @@
+specs/__init__.py,sha256=-_M2Gabb-bl0G3EhfhzRQkte1BYiAhGDzXfVD9l2KbE,165
+specs/__main__.py,sha256=KH7iH4m9y7i7TWgEUeLIxeLIkLGHCz7pXzOozQLJ0ZU,949
+specs/benchmark.py,sha256=gueFyMmaCCk5XHkkoPz-YogijPcwziGX485MKbxg8Qk,1661
+specs/cmd.py,sha256=klIxfJhdQNgmPhbU2ZgrbxSp-eXdrvGwCEKg1JuvxWg,623
+specs/cpuinfo.py,sha256=iSVtS51LuXpCxy87sCpIFgX9C3MkzqXOIvNh3bJuqbc,86542
+specs/hardware.py,sha256=jKACo8N69vUsavPxvTiYFprwj9nk9GEtUOlfpF4shHg,7772
+specs/pyinfo.py,sha256=9hvGowgsDqIMvwjy10Okrpaih4419QvPA_oxa8r8idI,633
+specs/communicate/pp.py,sha256=mC8dt5SX82j7ZZ9cwd2CxauQ4ZgFyMdl_t7wBAyJ1-w,17137
+specs/communicate/tcpsocket.py,sha256=sNuCY8wwCsNswDpKqBjC_adh_XcXLs0XbIDgO5UJ1Tg,2783
+nodespecs-0.0.12.dist-info/LICENSE,sha256=E7XUpdAtjYoscOk86sSaFev1F3YKG2WQXuA2Nn183I8,1098
+nodespecs-0.0.12.dist-info/METADATA,sha256=pPKalgn5gthQYKOPf1wEEuEf1XOegfSDQk29Jfqt14M,9000
+nodespecs-0.0.12.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nodespecs-0.0.12.dist-info/entry_points.txt,sha256=OlAiC23xx63F6qEPlRAslSZTJSqxrehutH8IY_GveQE,51
+nodespecs-0.0.12.dist-info/top_level.txt,sha256=wsmKmFWX36FWY43yF-RmhY1wIPl5N8GQ5AHzv4sFgyg,6
+nodespecs-0.0.12.dist-info/RECORD,,

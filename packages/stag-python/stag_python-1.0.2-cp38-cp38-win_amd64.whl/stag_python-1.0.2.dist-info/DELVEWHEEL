@@ -1,0 +1,2 @@
+Version: 1.6.0
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-xzr82ddd\\cp38-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '--add-path', '.\\build\\temp.win-amd64-cpython-38\\Release\\opencv\\bin\\Release', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-xzr82ddd\\cp38-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-xzr82ddd\\cp38-win_amd64\\built_wheel\\stag_python-1.0.2-cp38-cp38-win_amd64.whl']

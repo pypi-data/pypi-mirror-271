@@ -1,0 +1,9 @@
+handler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handler/auth.py,sha256=blHK9VhmVeh-8M2BvlM3_Ml4Sxa38pCesqtp4w-mfYc,5946
+handler/event.py,sha256=bJ_d2W2lTOk1gHfm0MMOMCUJtdtZXsXjlIuTofkKLzY,4001
+handler/handler.py,sha256=NqDN48wztbzw1zjOgowmZK3-9B27e5LS3aGX0PzFJr8,18772
+aimpf_dispatcher-0.1.0.dist-info/LICENSE,sha256=VPjsD6_r_Bp5v7dSOqiPwW6757RMSdrt5r96gd6DjFU,1078
+aimpf_dispatcher-0.1.0.dist-info/METADATA,sha256=YlB_z_Lfd3MnZZJMN6ckEtvzRV6rfcwfRc1PjnEQ6Cw,5420
+aimpf_dispatcher-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aimpf_dispatcher-0.1.0.dist-info/top_level.txt,sha256=f4BDylK89IDx2HBe7qzyx1t1pI66_XbXaue0f4wVmUE,8
+aimpf_dispatcher-0.1.0.dist-info/RECORD,,

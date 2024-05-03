@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: aimpf-dispatcher
+Version: 0.1.0
+Summary: A dispatcher to handle information from MQTT database
+Author-email: Chen Chen <chen.chen@contextualize.us.com>, Branden Kappes <branden.kappes@contextualize.us.com>, William Silloway <william.silloway@contextualize.us.com>, Lindsey Kuettner <lindsey.kuettner@contextualize.us.com>
+Project-URL: Homepage, https://gitlab.com/contextualize/operations/georgia-tech/aim-dsc-analysis
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aws-cdk-lib ==2.88.0
+Requires-Dist: boto3
+Requires-Dist: constructs <11.0.0,>=10.0.0
+Requires-Dist: mysql-connector-python
+Requires-Dist: nodeenv
+Requires-Dist: pycognito
+Requires-Dist: pydantic
+Requires-Dist: pymysql
+Requires-Dist: requests
+Requires-Dist: sqlalchemy
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Futtock template project.
+
+This is a template project for Futtock: an AWS CDK-based, Cloud-native web
+framework, powered by AWS serverless technologies.
+
+This project has been developed using [AWS CDK](https://aws.amazon.com/cdk/) in
+[Python](https://www.python.org).  CDK is developed natively in TypeScript, and
+packaged for different languages using an Amazon-developed technology called
+[JSii](https://github.com/aws/jsii).  For the most part, this should be invisible
+to you, but it is worth reviewing [the
+documentation](https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html)
+to understand how [CDK idioms have been
+translated](https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html#python-cdk-idioms).
+
+See also the [AWS CDK Python
+reference](https://docs.aws.amazon.com/cdk/api/v2/python/index.html) for
+information about CDK constructs and classes.
+
+## Setup
+
+Create a Python virtual environment for project dependencies:
+```
+python3 -m venv .venv
+```
+
+Activate the virtual environment:
+```
+source .venv/bin/activate
+```
+
+Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+[Nodeenv](https://github.com/ekalinin/nodeenv) is included as a dependency to
+make it easier to manage a project-specific installation of the AWS CDK CLI
+tools.  Install Node and npm using nodeenv:
+```
+nodeenv --node=20.0.0 -p
+```
+
+**Deactivate** and **reactivate** the virtual environment to ensure that paths
+are correctly refreshed, and that the project-local versions of Node and npm are
+being used
+
+```
+deactivate && source .venv/bin/activate
+```
+
+After **reactivating** the project, confirm that the project-local versions of
+npm is being used by having `npm` list globally installed packages:
+
+```
+npm -g list
+```
+
+The output should look something like:
+
+```
+(.venv)
+>> npm -g list
+/path/to/project/.venv/lib
+├── corepack@0.17.2
+└── npm@9.6.4
+```
+
+In particular, ensure that the path refereces the project-local **virtual
+environment directory**.
+
+If this all looks good, install AWS CDK for the project:
+```
+npm -g install aws-cdk
+```
+
+And you're good to go ... 
+
+
+## First steps 
+
+At this point you can now synthesize the CloudFormation template for this code.
+
+```
+cdk synth
+```
+
+This will initially fail with an error asking you to provide a unique name for
+the project.  Edit the `project_name()` function in `app.py` in the project root
+directory to do so; the name selected must be unique within the deployment AWS
+account.  When you've set your name, the `synth` command above will complete
+successfully, rendering a deployment template that you can 
+
+```
+cdk deploy
+```
+
+## Next steps
+
+When deployed, some useful information will be displayed, including the storage
+location for site content, the domain name of the site, and the API endpoint.
+For now, website content is published separately from the infrastructure and
+code.  For example:
+
+```
+Outputs:
+FuttockDemoStack.FuttockDemoStackApiEndpointF845DDD9 = https://2uwybjb5bk.execute-api.us-east-2.amazonaws.com/prod/
+FuttockDemoStack.FuttockDemoStackContentBucketName = futtockdemostack-contentbucket52d4b12c-bozrqkwhpgoh
+FuttockDemoStack.FuttockDemoStackContentDistributionDomainName = d1cbx5stkn3s59.cloudfront.net
+FuttockDemoStack.FuttockDemoStackContentDistributionId = E24GFQ3GWCDE4K
+```
+
+Edit `_userland/content/script.js` and update the `apiEndpointUrl()` function
+with the API Endpoint reported by the deployment.  Then publish the content in
+`_userland/content` using the AWS CLI:
+
+```
+aws s3 sync _userland/content s3://<content-bucket-name>/
+```
+
+And invalidate the site cache (using the distribution ID from the deployment
+output) to immediately display the new updated content:
+
+```
+aws cloudfront create-invalidation --distribution-id <distribution-id> --paths "/*"
+```
+
+You should now be able to visit the site at the domain reported in the
+deployment output, and use the functionality provided by the browser application
+and backend API.
+
+### Useful CDK commands
+
+ * `cdk ls`          list all stacks in the app
+ * `cdk synth`       emits the synthesized CloudFormation template
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk docs`        open CDK documentation
+
+## Future work
+
+ * integrate API Gateway Cognito authorizer and User Pools

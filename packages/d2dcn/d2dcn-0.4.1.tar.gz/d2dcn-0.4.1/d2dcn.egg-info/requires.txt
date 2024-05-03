@@ -1,0 +1,3 @@
+ServiceDiscovery
+paho-mqtt
+psutil

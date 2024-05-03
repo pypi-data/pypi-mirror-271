@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/libmambapy.egg-info/PKG-INFO
+src/libmambapy.egg-info/SOURCES.txt
+src/libmambapy.egg-info/dependency_links.txt
+src/libmambapy.egg-info/entry_points.txt
+src/libmambapy.egg-info/requires.txt
+src/libmambapy.egg-info/top_level.txt
+tests/test_simple.py

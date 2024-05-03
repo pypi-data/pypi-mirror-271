@@ -1,0 +1,3 @@
+kisstdlib
+cbor2
+idna

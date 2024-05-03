@@ -1,0 +1,2 @@
+Version: 1.6.0
+Arguments: ['C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x86\\Scripts\\delvewheel', 'repair', '-v', 'wheels/cramjam-2.8.4rc2-cp39-none-win32.whl', '-w', 'dist']

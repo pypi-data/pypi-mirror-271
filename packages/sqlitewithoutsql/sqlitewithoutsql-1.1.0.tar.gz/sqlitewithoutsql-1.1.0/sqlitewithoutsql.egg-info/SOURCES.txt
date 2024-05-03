@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sqlitewithoutsql/__init__.py
+sqlitewithoutsql/database.py
+sqlitewithoutsql/sqltype.py
+sqlitewithoutsql.egg-info/PKG-INFO
+sqlitewithoutsql.egg-info/SOURCES.txt
+sqlitewithoutsql.egg-info/dependency_links.txt
+sqlitewithoutsql.egg-info/top_level.txt

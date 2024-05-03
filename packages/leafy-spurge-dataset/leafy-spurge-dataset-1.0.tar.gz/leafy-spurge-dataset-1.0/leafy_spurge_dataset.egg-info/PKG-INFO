@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: leafy-spurge-dataset
+Version: 1.0
+Summary: Leafy Spurge Dataset: Real-world Weed Classification Within Aerial Drone Imagery
+Home-page: https://github.com/leafy-spurge-dataset/leafy-spurge-dataset
+Download-URL: https://github.com/leafy-spurge-dataset/leafy-spurge-dataset/archive/v1_0.tar.gz
+Author: Brandon Trabucco
+Author-email: brandon@btrabucco.com
+License: MIT
+Keywords: Weed Classification,Leafy Spurge,Benchmark,Deep Learning,Neural Network,Computer Vision
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: datasets
+Requires-Dist: transformers
+Requires-Dist: accelerate
+Requires-Dist: peft
+Requires-Dist: Pillow
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn

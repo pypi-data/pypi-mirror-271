@@ -1,0 +1,11 @@
+datasets
+transformers
+accelerate
+peft
+Pillow
+torch
+torchvision
+numpy
+pandas
+matplotlib
+seaborn

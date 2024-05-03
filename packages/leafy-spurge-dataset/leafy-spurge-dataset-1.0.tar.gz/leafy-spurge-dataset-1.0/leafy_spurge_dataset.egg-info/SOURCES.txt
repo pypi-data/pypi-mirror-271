@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+leafy_spurge_dataset/__init__.py
+leafy_spurge_dataset/cli.py
+leafy_spurge_dataset/dataset.py
+leafy_spurge_dataset/plot.py
+leafy_spurge_dataset/train.py
+leafy_spurge_dataset.egg-info/PKG-INFO
+leafy_spurge_dataset.egg-info/SOURCES.txt
+leafy_spurge_dataset.egg-info/dependency_links.txt
+leafy_spurge_dataset.egg-info/entry_points.txt
+leafy_spurge_dataset.egg-info/requires.txt
+leafy_spurge_dataset.egg-info/top_level.txt

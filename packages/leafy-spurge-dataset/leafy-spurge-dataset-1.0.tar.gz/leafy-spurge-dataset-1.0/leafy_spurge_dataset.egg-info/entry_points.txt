@@ -1,0 +1,2 @@
+[console_scripts]
+leafy-spurge = leafy_spurge_dataset.cli:entry_point

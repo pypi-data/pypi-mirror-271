@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: pbix_refresh
+Version: 0.5.3
+Author: xigua, 刷新Power bi desktop, 已向下兼容旧版power bi 
+License-File: license.txt

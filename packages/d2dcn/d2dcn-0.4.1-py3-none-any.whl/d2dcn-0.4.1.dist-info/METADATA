@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: d2dcn
+Version: 0.4.1
+Summary: UNKNOWN
+Home-page: https://github.com/qeyup/d2dcn-python
+Author: Javier Moreno Garcia
+Author-email: jgmore@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: ServiceDiscovery
+Requires-Dist: paho-mqtt
+Requires-Dist: psutil
+
+UNKNOWN
+
+

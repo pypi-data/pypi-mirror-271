@@ -1,0 +1,3167 @@
+#
+# PyAMS MSC application
+# PyAMS application for cinema reservation management
+#
+# This file is distributed under the same license as the PACKAGE package.
+# Thierry Florac <tflorac@ulthar.net>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: PyAMS MSC application 1.0.0\n"
+"POT-Creation-Date: 2024-04-27 14:19+0200\n"
+"Last-Translator: Thierry Florac <tflorac@ulthar.net>\n"
+"Language-Team: FRENCH <FR@li.org>\n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Lingua 3.10.dev0\n"
+
+#: src/pyams_app_msc/include.py:53
+msgid "Manage movie theater properties"
+msgstr "Gérer les propriétés d'un cinéma"
+
+#: src/pyams_app_msc/include.py:57
+msgid "View movie theater properties"
+msgstr "Voir les propriétés d'un cinéma"
+
+#: src/pyams_app_msc/include.py:61
+msgid "Manage movie theater activities catalog"
+msgstr "Gérer le catalogue des activités d'un cinéma"
+
+#: src/pyams_app_msc/include.py:65
+msgid "Read movie theater activities catalog"
+msgstr "Voir le catalogue des activités d'un cinéma"
+
+#: src/pyams_app_msc/include.py:69
+msgid "Create booking request for movie theater activity"
+msgstr "Créer des demandes de réservations pour les séances d'un cinéma"
+
+#: src/pyams_app_msc/include.py:73
+msgid "View sessions planning on movie theater activities"
+msgstr "Voir le planning des séances d'un cinéma"
+
+#: src/pyams_app_msc/include.py:77
+msgid "Manage sessions planning on movie theater activities"
+msgstr "Gérer le planning des séances d'un cinéma"
+
+#: src/pyams_app_msc/include.py:81
+msgid "View booking information for movie theater activity"
+msgstr "Voir les réservations pour les séances d'un cinéma"
+
+#: src/pyams_app_msc/include.py:85
+msgid "Manage bookings for movie theater activity"
+msgstr "Gérer les réservations pour les séances d'un cinéma"
+
+#: src/pyams_app_msc/include.py:108
+msgid "MSC: Sites manager"
+msgstr "MSC : Administrateur délégué"
+
+#: src/pyams_app_msc/include.py:120
+msgid "MSC: Theater manager"
+msgstr "MSC : Administrateur d'un cinéma"
+
+#: src/pyams_app_msc/include.py:140
+msgid "MSC: Theater operator"
+msgstr "MSC : Opérateur d'un cinéma"
+
+#: src/pyams_app_msc/include.py:158
+msgid "MSC: Contributor"
+msgstr "MSC : Contributeur d'un cinéma"
+
+#: src/pyams_app_msc/include.py:175
+msgid "MSC: Theater consultant"
+msgstr "MSC : Invité d'un cinéma"
+
+#: src/pyams_app_msc/include.py:190
+msgid "MSC: Theater client"
+msgstr "MSC : Client d'un cinéma"
+
+#: src/pyams_app_msc/include.py:202
+msgid "MSC: Reservation owner"
+msgstr "MSC : Propriétaire d'une réservation"
+
+#: src/pyams_app_msc/reference/structure/zmi/table.py:38
+#: src/pyams_app_msc/reference/structure/zmi/table.py:79
+msgid "Structures types"
+msgstr "Types de structures"
+
+#: src/pyams_app_msc/reference/structure/zmi/table.py:56
+msgid "Table contents"
+msgstr "Contenu"
+
+#: src/pyams_app_msc/reference/structure/zmi/table.py:82
+msgid "Structures types list"
+msgstr "Liste des types de structures"
+
+#: src/pyams_app_msc/reference/structure/zmi/table.py:90
+msgid "Structures types table"
+msgstr "Table des types de structures"
+
+#: src/pyams_app_msc/reference/structure/zmi/__init__.py:56
+msgid "Add structure type"
+msgstr "Ajouter un type de structure"
+
+#: src/pyams_app_msc/reference/structure/zmi/__init__.py:66
+msgid "New structure type"
+msgstr "Nouveau type de structure"
+
+#: src/pyams_app_msc/reference/structure/zmi/__init__.py:67
+msgid "New structure type properties"
+msgstr "Propriétés du nouveau type de structure"
+
+#: src/pyams_app_msc/reference/structure/zmi/__init__.py:118
+#, python-format
+msgid "Structure type: {}"
+msgstr "Type de structure : {}"
+
+#: src/pyams_app_msc/reference/structure/zmi/__init__.py:121
+msgid "Structure type properties"
+msgstr "Propriétés du type de structure"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:41
+msgid "Enable TMDB configuration"
+msgstr "Activer le service TMDB"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:45
+msgid "Service URL"
+msgstr "URL du service"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:46
+msgid "Main TMDB services base URL"
+msgstr "URL de base des services TMDB"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:50
+msgid "Proxy information"
+msgstr "Serveur proxy"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:51
+msgid "Enter information if a proxy is required"
+msgstr ""
+"Informations à renseigner si l'utilisation d'un serveur proxy est nécessaire"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:58
+msgid "API key"
+msgstr "Clé d'API"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:59
+msgid "API authentication key (v3)"
+msgstr "Clé d'authentification (authentification v3)"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:62
+msgid "Bearer token"
+msgstr "Jeton Bearer"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:63
+msgid "Bearer authentication token (v4)"
+msgstr "Jeton d'authentification Bearer (authentification v4)"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:70
+msgid ""
+"You must define an API key or a Bearer token to enable TMDB configuration!"
+msgstr ""
+"Vous devez définir une clé d'API ou un jeton pour activer le service TMDB !"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:72
+msgid "Language"
+msgstr "Langue"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:73
+msgid "Primary language used for TMDB API"
+msgstr "Langue principale utilisée pour les accès à l'API"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:78
+msgid "Movie search path"
+msgstr "Recherche des films"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:79
+msgid "Path to TMDB movie search API"
+msgstr "Chemin vers l'API de recherche des films"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:83
+msgid "Movie details path"
+msgstr "Détails des films"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:84
+#, python-format
+msgid "Path to TMDB movie details API, including {movie_id} argument"
+msgstr ""
+"Chemin vers l'API d'accès aux détails des films, incluant le paramètre "
+"{movie_id}"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:88
+msgid "Movie credits path"
+msgstr "Crédits des films"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:89
+#, python-format
+msgid "Path to TMDB movie credits API, including {movie_id} argument"
+msgstr ""
+"Chemin vers l'API d'accès aux crédits des films, incluant le paramètre "
+"{movie_id}"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:93
+msgid "Actors count"
+msgstr "Nombre d'acteurs"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:94
+msgid "Number of actors "
+msgstr "Nombre maximal d'acteurs récupérés via l'API"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:98
+msgid "Movie images path"
+msgstr "Images des films"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:99
+#, python-format
+msgid "Path to TMDB movie images API, including {movie_id} argument"
+msgstr ""
+"Chemin vers l'API d'accès aux images des films, incluant le paramètre "
+"{movie_id}"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:103
+msgid "Movie videos path"
+msgstr "Vidéos des films"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:104
+#, python-format
+msgid "Path to TMDB movie videos API, including {movie_id} argument"
+msgstr ""
+"Chemin vers l'API d'accès aux vidéos des films, incluant le paramètre "
+"{movie_id}"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:108
+msgid "Images URL"
+msgstr "URL des images"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:109
+#, python-format
+msgid "TMDB images base URL, including {size} and {image_id} arguments"
+msgstr ""
+"URL de base d'accès aux images, incluant les paramètres {size} et {image_id}"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:113
+msgid "Download main poster?"
+msgstr "Télécharger l'affiche principale"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:114
+msgid "If 'no', movie poster will not be downloaded on activity creation"
+msgstr ""
+"Si 'non', l'affiche principale des films ne sera pas téléchargée lors de la "
+"création des activités"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:118
+msgid "Main poster size"
+msgstr "Taille de l'affiche"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:119
+msgid "This is the size of poster image downloaded from TMDB"
+msgstr "Taille des affiches téléchargées depuis le site de TMDB"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:124
+msgid "Download pictures?"
+msgstr "Télécharger les images"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:125
+msgid "If 'no', movie pictures will not be downloaded on activity creation"
+msgstr ""
+"Si 'non', les images des films ne seront pas téléchargées lors de la "
+"création des activités"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:129
+msgid "Pictures size"
+msgstr "Taille des images"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:130
+msgid "This is the size of movies images downloaded from TMDB"
+msgstr "Sélectionner la taille des images téléchargées depuis le site de TMDB"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:135
+msgid "Download posters?"
+msgstr "Télécharger les autres affiches"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:136
+msgid "If 'no', movie posters will not be downloaded on activity creation"
+msgstr ""
+"Si 'non', les autres affiches des films ne seront pas téléchargées lors de "
+"la création des activités"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:140
+msgid "Posters size"
+msgstr "Taille des affiches"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:141
+msgid "This is the size of posters images downloaded from TMDB"
+msgstr "Taille des affiches téléchargées depuis le site de TMDB"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:146
+msgid "Download videos?"
+msgstr "Télécharger les vidéos"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:147
+msgid "If 'no', movie videos will not be downloaded on activity creation"
+msgstr ""
+"Si 'non', les vidéos des films seront pas téléchargées lors de la création "
+"des activités"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:151
+msgid "Get videos for selected language only"
+msgstr "Seulement pour la langue sélectionnée"
+
+#: src/pyams_app_msc/feature/tmdb/interfaces.py:152
+msgid ""
+"If 'yes', only videos tagged for selected language will be selected; "
+"otherwise, other videos tagged for any language may also be selected"
+msgstr ""
+"Si 'oui', seules les vidéos taggées pour la langue sélectionnée seront "
+"sélectionnées ; dans le cas contraire, d'autres vidéos taggés pour toutes "
+"les langues pourront également être sélectionnées"
+
+#: src/pyams_app_msc/feature/tmdb/zmi/lookup.py:61
+msgid "TMDB lookup"
+msgstr "Intégrer les informations TMDB"
+
+#: src/pyams_app_msc/feature/tmdb/zmi/lookup.py:62
+msgid "If 'yes', a lookup is done in TMDB database to find movie properties"
+msgstr ""
+"Si 'oui', une recherche sera effectuée sur la base TMDB (The Movie DataBase) "
+"pour retrouver les principales informations sur le film ainsi que son "
+"affiche, les autres illustrations et les bandes annonces ou vidéos "
+"promotionnelles"
+
+#: src/pyams_app_msc/feature/tmdb/zmi/__init__.py:53
+msgid "TMDB configuration"
+msgstr "Paramétrage TMDB"
+
+#: src/pyams_app_msc/feature/tmdb/zmi/__init__.py:63
+msgid "TMDB service configuration"
+msgstr "Configuration du service TMDB"
+
+#: src/pyams_app_msc/feature/tmdb/zmi/__init__.py:64
+msgid "TMDB service properties"
+msgstr "Propriétés du service"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:43
+msgid "Principal ID"
+msgstr ""
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:46
+msgid "Active user?"
+msgstr "Profil actif ?"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:47
+msgid "Inactive users can't login anymore to website"
+msgstr ""
+"Un profil désactivé ne peut plus être utilisé pour se connecter au site"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:51
+msgid "First name"
+msgstr "Prénom"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:54
+msgid "Last name"
+msgstr "Nom"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:57
+msgid "Mail address"
+msgstr "Addresse de messagerie"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:60
+#: src/pyams_app_msc/component/contact/interfaces.py:38
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:92
+msgid "Phone number"
+msgstr "Téléphone"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:63
+msgid "Establishment of affiliation"
+msgstr "Établissement ou structure"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:66
+msgid "Structure type"
+msgstr "Type de structure"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:67
+msgid "Select structure type matching this establishment"
+msgstr "Sélectionner le type de structure correspondant à cet établissement"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:71
+msgid "Establishment address"
+msgstr "Adresse de l'établissement ou de la structure"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:75
+msgid "Preferred local theaters"
+msgstr "Cinémas de rattachement"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:89
+msgid "Not displayed"
+msgstr "Non affichées"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:90
+msgid "Display confirmed/requested/capacity seats"
+msgstr "Afficher les places acceptées / demandées / en jauge"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:91
+msgid "Display confirmed/waiting/capacity seats"
+msgstr "Afficher les places acceptées / en attente / en jauge"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:92
+msgid "Display confirmed/capacity seats"
+msgstr "Afficher les places acceptées / en jauge"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:108
+msgid "Session seats display mode"
+msgstr "Affichage des places dans l'agenda"
+
+#: src/pyams_app_msc/feature/profile/interfaces.py:109
+msgid ""
+"You can choose how session seats are displayed in movie theater planning view"
+msgstr ""
+"Vous pouvez choisir la façon dont les places sont affichées dans le planning "
+"des activités"
+
+#: src/pyams_app_msc/feature/profile/task.py:56
+msgid "User profile cleaner"
+msgstr "Suppression de profil utilisateur"
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:62
+msgid "User add form"
+msgstr "Création d'un compte utilisateur"
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:63
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:164
+msgid "User account settings"
+msgstr "Propriétés du profil utilisateur"
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:89
+msgid "Select structure type..."
+msgstr "Sélectionner un type de structure..."
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:124
+#: src/pyams_app_msc/feature/profile/skin/register.py:175
+msgid "This email address is already registered!"
+msgstr "Cette adresse de messagerie est déjà enregistrée !"
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:136
+msgid ""
+"This form allows you to register a new user account.\n"
+"If this user want to login, he will have to use the \"Forgotten password\" "
+"feature to get a new activation link to set his password."
+msgstr ""
+"Ce formulaire vous permet de renseigner les paramètres d'inscription d'un "
+"utilisateur.\n"
+"À l'issue de cette inscription, si cet utilisateur souhaite se connecter, il "
+"devra utiliser la fonction \"Mot de passe oublié\" accessible depuis l'écran "
+"de connexion pour obtenir sur son adresse de messagerie un lien d'activation "
+"lui permettant de définir son mot de passe."
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:149
+msgid "Disable profile"
+msgstr "Désactiver le profil"
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:153
+msgid "Enable profile"
+msgstr "Activer le profil"
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:163
+msgid "User edit form"
+msgstr "Modification d'un compte utilisateur"
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:204
+msgid ""
+"Disabled profiles can't be used for website login anymore but can still be "
+"assigned new bookings"
+msgstr ""
+"Un profil utilisateur désactivé ne peut plus être utilisé pour se connecter "
+"sur le site, mais peut toujours être bénéficiaire de nouvelles réservations"
+
+#: src/pyams_app_msc/feature/profile/zmi/__init__.py:292
+msgid "Operator profile"
+msgstr "Mon profil opérateur"
+
+#: src/pyams_app_msc/feature/profile/zmi/templates/principal-input.pt:53
+msgid "Edit user profile"
+msgstr "Modifier le profil utilisateur"
+
+#: src/pyams_app_msc/feature/profile/zmi/templates/principal-input.pt:59
+msgid "Create new user profile"
+msgstr "Nouveau profil utilisateur"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:50
+msgid "User login"
+msgstr "Code utilisateur"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:51
+msgid "Enter login or email address"
+msgstr "Votre code utilisateur est votre adresse de messagerie"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:59
+msgid "Request password reset"
+msgstr "Demander la réinitialisation du mot de passe"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:62
+#: src/pyams_app_msc/feature/profile/skin/password.py:134
+#: src/pyams_app_msc/feature/profile/skin/register.py:99
+#: src/pyams_app_msc/feature/profile/skin/register.py:228
+msgid "Reset"
+msgstr "Annuler"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:70
+msgid "Password reset"
+msgstr "Réinitialisation du mot de passe"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:71
+msgid "Enter account"
+msgstr "Paramètre de votre compte"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:86
+#: src/pyams_app_msc/feature/profile/skin/password.py:165
+msgid "Login is required!"
+msgstr "Le code utilisateur est obligatoire !"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:90
+#: src/pyams_app_msc/feature/profile/skin/password.py:169
+msgid "Password reset is not allowed!"
+msgstr "La réintialisation du mot de passe est actuellement désactivée !"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:131
+msgid "Change password"
+msgstr "Changer de mot de passe"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:142
+msgid "Password change"
+msgstr "Changement de mot de passe"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:143
+msgid "Enter account and new password"
+msgstr "Paramètres de connexion"
+
+#: src/pyams_app_msc/feature/profile/skin/password.py:175
+msgid "Can't change password with provided arguments!"
+msgstr ""
+"Impossible de modifier le mot de passe avec les paramètres de connexion "
+"indiqués !"
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:96
+msgid "Create account"
+msgstr "Créer mon compte"
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:107
+msgid "Registration form"
+msgstr "Formulaire d'inscription"
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:108
+#: src/pyams_app_msc/feature/profile/skin/__init__.py:40
+msgid "Account settings"
+msgstr "Paramètres de votre compte"
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:143
+msgid "Registration is actually closed!"
+msgstr "Les inscriptions sont actuellement fermées !"
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:187
+msgid ""
+"This form allows you to register a new user account.\n"
+"After submitting the form, you will receive an email containing a link which "
+"must be used to confirm your email address and set a new password."
+msgstr ""
+"Ce formulaire vous permet de renseigner vos paramètres d'inscription.\n"
+"À l'issue de cette pré-inscription, vous recevrez un message électronique "
+"contenant un lien que vous devrez utiliser pour confirmer cette inscription "
+"et définir un mot de passe afin de sécuriser l'accès à votre compte."
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:225
+msgid "Validate account"
+msgstr "Confirmer l'activation de mon compte"
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:236
+msgid "Registration confirm form"
+msgstr "Confirmation d'inscription"
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:237
+msgid "Confirm your login and set a new password"
+msgstr "Paramètres de connexion"
+
+#: src/pyams_app_msc/feature/profile/skin/register.py:263
+msgid "Can't activate account with provided arguments!"
+msgstr ""
+"Impossible d'activer ce compte avec les paramètres de connexion indiqués !"
+
+#: src/pyams_app_msc/feature/profile/skin/__init__.py:39
+msgid "My user profile"
+msgstr "Mon profil utilisateur"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/password-final.pt:3
+msgid "Password reset complete!"
+msgstr "Réinitialisation confirmée !"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/password-final.pt:5
+msgid "Your password reset is complete!"
+msgstr ""
+"La demande de réinitialisation de votre mot de passe a bien été prise en "
+"compte !"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/password-final.pt:6
+msgid ""
+"We have sent you a new email containing a new link which can be used to "
+"confirm your password change."
+msgstr ""
+"Vous devriez recevoir très prochainement un nouveau message électronique "
+"contenant un lien vous permettant de confirmer votre changement de mot de "
+"passe."
+
+#: src/pyams_app_msc/feature/profile/skin/templates/password-changed.pt:3
+msgid "Password change complete!"
+msgstr "Mot de passe modifié !"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/password-changed.pt:5
+msgid "Your password is changed!"
+msgstr "Votre mot de passe a été modifié !"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/password-changed.pt:6
+msgid ""
+"You can log in using your new password and get access to all site features."
+msgstr ""
+"Vous pouvez retourner à l'écran de connexion et utiliser votre nouveau mot "
+"de passe pour vous connecter et profiter de toutes les fonctionnalités du "
+"site."
+
+#: src/pyams_app_msc/feature/profile/skin/templates/password-changed.pt:12
+#: src/pyams_app_msc/feature/profile/skin/templates/register-final.pt:12
+msgid "Go to login page"
+msgstr "Aller à l'écran de connexion"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/register-final.pt:3
+msgid "Registration finished!"
+msgstr "Inscription enregistrée !"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/register-final.pt:5
+msgid "Your registration is now complete!"
+msgstr "Votre inscription est maintenant achevée !"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/register-final.pt:6
+msgid ""
+"You can log in using your new account and get access to all site features."
+msgstr ""
+"Vous pouvez retourner à l'écran de connexion et utiliser vos nouveaux "
+"identifiants pour profiter de toutes les fonctionnalités du site."
+
+#: src/pyams_app_msc/feature/profile/skin/templates/register-ok.pt:3
+msgid "Registration confirmed!"
+msgstr "Inscription enregistrée !"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/register-ok.pt:5
+msgid "Many thanks for being registered on our site!"
+msgstr "Merci de vous être inscrit sur notre site !"
+
+#: src/pyams_app_msc/feature/profile/skin/templates/register-ok.pt:6
+msgid ""
+"You should receive an email shortly providing an activation link which you "
+"must use to confirm your registration and activate your account."
+msgstr ""
+"Vous devriez recevoir très rapidement un message électronique contenant un "
+"lien d'activation vous permettant de confirmer la validité de votre adresse "
+"de messagerie, de finaliser votre inscription et de définir un mot de passe."
+
+#: src/pyams_app_msc/feature/profile/skin/templates/register-ok.pt:8
+msgid ""
+"You have a delay of ${delay} days to activate your account; passed this "
+"delay, your account will be automatically deleted."
+msgstr ""
+"Vous disposez d'un délai de ${delay} jours pour activer votre profil "
+"utilisateur ; passé ce délai, celui-ci sera supprimé automatiquement."
+
+#: src/pyams_app_msc/feature/messaging/interfaces.py:33
+msgid "Selected mailer"
+msgstr "Service de messagerie"
+
+#: src/pyams_app_msc/feature/messaging/interfaces.py:34
+msgid "Mail delivery utility used to send mails"
+msgstr "Nom du service de messagerie utilisé pour l'envoi des mails"
+
+#: src/pyams_app_msc/feature/messaging/interfaces.py:41
+msgid "Source name"
+msgstr "Nom de la source"
+
+#: src/pyams_app_msc/feature/messaging/interfaces.py:42
+msgid "Name used as messages sender name"
+msgstr "Nom utilisé comme expéditeur des messages"
+
+#: src/pyams_app_msc/feature/messaging/interfaces.py:45
+msgid "Source address"
+msgstr "Addresse de la source"
+
+#: src/pyams_app_msc/feature/messaging/interfaces.py:46
+msgid "Email address used as messages sender source"
+msgstr "Adresse de messagerie utilisée comme source d'envoi des mails"
+
+#: src/pyams_app_msc/feature/messaging/interfaces.py:49
+msgid "Subject prefix"
+msgstr "Préfixe des sujets"
+
+#: src/pyams_app_msc/feature/messaging/interfaces.py:50
+msgid ""
+"This prefix, if any, will be used as subject prefix to all sent email "
+"messages"
+msgstr ""
+"Ce préfixe, s'il est indiqué, sera positionné automatiquement au début du "
+"sujet de tous les mails envoyés"
+
+#: src/pyams_app_msc/feature/messaging/zmi/__init__.py:43
+msgid "Messaging settings"
+msgstr "Paramétrage de la messagerie"
+
+#: src/pyams_app_msc/feature/messaging/zmi/__init__.py:53
+msgid "Messaging service settings"
+msgstr "Paramètres de la messagerie"
+
+#: src/pyams_app_msc/feature/messaging/zmi/__init__.py:54
+msgid "Messaging properties"
+msgstr "Propriétés de la messagerie"
+
+#: src/pyams_app_msc/feature/planning/session.py:155
+#: src/pyams_app_msc/feature/planning/zmi/session.py:236
+msgid "Out of catalog activity"
+msgstr "(activité hors-catalogue)"
+
+#: src/pyams_app_msc/feature/planning/session.py:160
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:180
+#, python-format
+msgid "{room} - {date} from {start_time} to {end_time}"
+msgstr "{room} - {date}, de {start_time} à {end_time}"
+
+#: src/pyams_app_msc/feature/planning/session.py:188
+#, python-format
+msgid " {date} from {start_time} to {end_time}"
+msgstr "{date}, de {start_time} à {end_time}"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:44
+msgid "Original version"
+msgstr "Version originale"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:45
+msgid "Original version with subtitles"
+msgstr "Version originale sous-titrée"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:46
+msgid "Translated version"
+msgstr "Version traduite"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:50
+msgid "OV"
+msgstr "VO"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:51
+msgid "OVWS"
+msgstr "VOST"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:52
+msgid "TV"
+msgstr "VF"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:68
+msgid "Label"
+msgstr "Libellé"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:69
+msgid "If no label is set, activity label will be used"
+msgstr ""
+"Ce libellé sera affiché s'il n'y a pas d'activité associée à cet événement, "
+"ou à la place du libellé de l'activité si vous en avez sélectionné une"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:75
+msgid "Session start date"
+msgstr "Début de la séance"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:76
+msgid "Start date and time of the session"
+msgstr "Date et heure de début de la séance"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:79
+#: src/pyams_app_msc/shared/catalog/interfaces.py:75
+msgid "Duration"
+msgstr "Durée"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:80
+msgid "Session duration, given as time delta object"
+msgstr "Durée de la séance exprimée sous la forme d'un object \"timedelta\""
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:83
+msgid "Session end date"
+msgstr "Fin de la séance"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:84
+msgid "End date and time of the session"
+msgstr "Date et heure de fin de la séance"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:87
+msgid "Session room"
+msgstr "Salle"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:88
+msgid "Theater room in which session is planned"
+msgstr "Salle dans laquelle la séance est planifiée"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:95
+msgid "Session capacity"
+msgstr "Jauge"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:96
+msgid "Number of places available for this session"
+msgstr "Nombre maximal de places ouvertes à la réservation pour cette séance"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:99
+msgid "Displayed version"
+msgstr "Version proposée"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:103
+#: src/pyams_app_msc/shared/catalog/interfaces.py:82
+msgid "Selected audiences"
+msgstr "Publics concernés"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:104
+#: src/pyams_app_msc/shared/catalog/interfaces.py:83
+msgid "List of audiences selected for this activity"
+msgstr "Liste des publics concernés par cette activité"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:108
+#: src/pyams_app_msc/shared/catalog/interfaces.py:87
+msgid "Available prices"
+msgstr "Tarifs applicables"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:109
+#: src/pyams_app_msc/shared/catalog/interfaces.py:88
+msgid "List of prices available for this activity"
+msgstr "Liste des tarifs applicables pour cette activité"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:113
+msgid "Temporary session"
+msgstr "En attente de confirmation"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:114
+msgid "If 'yes', this session is 'temporary' and not confirmed yet!"
+msgstr ""
+"Si 'oui', cet événement est encore temporaire, en attente de confirmation..."
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:118
+msgid "Open for internal booking"
+msgstr "Ouverte aux réservations internes"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:119
+msgid "Only internal bookable sessions are visible to operators for booking"
+msgstr ""
+"Seuls les événements ouverts aux réservations internes peuvent être réservés "
+"par les opérateurs du cinéma"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:123
+msgid "Open for external booking"
+msgstr "Ouverte aux réservations externes"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:124
+msgid "Only external bookable sessions are visible to public for booking"
+msgstr ""
+"Seuls les événements ouverts aux réservations externes peuvent faire l'objet "
+"de demandes de réservations par les partenaires du cinéma"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:128
+msgid "Movie theater comments"
+msgstr "Commentaires du cinéma"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:129
+msgid "These comments will be displayed to the users on booking form"
+msgstr ""
+"Ce commentaire sera visible sur le formulaire de réservation associé à cet "
+"événement"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:132
+#: src/pyams_app_msc/feature/booking/interfaces.py:165
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:59
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:58
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:103
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:62
+msgid "Notepad"
+msgstr "Bloc-notes"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:133
+#: src/pyams_app_msc/feature/booking/interfaces.py:166
+msgid "These comments are for internal use only"
+msgstr "Ce commentaire est à usage interne uniquement"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:140
+#: src/pyams_app_msc/feature/quotation/__init__.py:293
+msgid "Activity"
+msgstr "Activité"
+
+#: src/pyams_app_msc/feature/planning/interfaces.py:141
+msgid ""
+"You can select an existing activity from your catalog, or keep this input "
+"empty if you just want to mark a period as not being available for booking"
+msgstr ""
+"Vous pouvez sélectionner une activité présente au sein de votre catalogue, "
+"ou ne rien sélectionner si vous voulez simplement indiquer qu'une période "
+"n'est pas disponible pour d'autres activités"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:61
+msgid "New session"
+msgstr "Nouvel événement"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:62
+msgid "New session properties"
+msgstr "Propriétés de l'événement"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:174
+msgid "Bookings"
+msgstr "Réservations"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:178
+msgid "Delete"
+msgstr "Supprimer l'événement"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:188
+msgid "Session planning"
+msgstr "Programmation d'un événement"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:189
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:468
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:715
+msgid "Session properties"
+msgstr "Propriétés de l'événement"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:258
+msgid "You can't define a session gauge higher than the room's capacity!"
+msgstr ""
+"Vous ne pouvez pas définir une jauge supérieure à la capacité de la salle !"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:263
+msgid "The number of validated seats is already higher than this gauge!"
+msgstr ""
+"Vous ne pouvez pas abaisser la jauge à un nombre de places inférieur au "
+"nombre de places déjà validées !"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:350
+msgid "Unknown room!"
+msgstr "La salle indiquée est inconnue !"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:357
+msgid ""
+"Target room doesn't have enough capacity for confirmed seats of this session!"
+msgstr ""
+"La salle sélectionnée ne dispose pas d'une capacité suffisante pour "
+"accueillir les réservations confirmées à cet événement !"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:385
+msgid "Bad parameters"
+msgstr "Paramètres incorrects."
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:396
+msgid "Session updated"
+msgstr "Séance modifiée"
+
+#: src/pyams_app_msc/feature/planning/zmi/session.py:397
+msgid "Session capacity has been reduced due to lower room capacity!"
+msgstr ""
+"La jauge de l'événement a été réduite du fait de la capacité insuffisante de "
+"cette salle !"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:64
+msgid "Planning"
+msgstr "Agenda"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:76
+msgid "Sessions planning"
+msgstr "Agenda des événements programmés"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:131
+msgid "Theater week"
+msgstr "Sem. ciné."
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:145
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:146
+msgid "Month"
+msgstr "Mois"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:147
+msgid "Week"
+msgstr "Semaine"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:148
+msgid "Day"
+msgstr "Jour"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:149
+msgid "List"
+msgstr "Liste"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:150
+msgid "All-day"
+msgstr "(jour)"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:196
+msgid "Transpose"
+msgstr "Transposer les agendas"
+
+#: src/pyams_app_msc/feature/planning/zmi/__init__.py:209
+msgid "Synchronize"
+msgstr "Synchronizer les agendas"
+
+#: src/pyams_app_msc/feature/planning/zmi/templates/planning.pt:13
+#: src/pyams_app_msc/feature/booking/zmi/templates/today-program.pt:13
+msgid "Back to previous page"
+msgstr "Revenir à la page précédente"
+
+#: src/pyams_app_msc/feature/planning/zmi/templates/planning.pt:42
+msgid "Manage event booking..."
+msgstr "Gérer les réservations"
+
+#: src/pyams_app_msc/feature/planning/zmi/templates/planning.pt:50
+msgid "Clone event..."
+msgstr "Dupliquer l'événement"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:166
+msgid "QUOTATION"
+msgstr "DEVIS"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:194
+msgid "#Quotation:"
+msgstr "N° de devis :"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:196
+msgid "Date:"
+msgstr "Date :"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:198
+msgid "Object:"
+msgstr "Objet :"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:294
+msgid "Units"
+msgstr "Unités"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:295
+msgid "Unit price"
+msgstr "Tarif"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:296
+msgid "Total"
+msgstr "Total"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:301
+#, python-format
+msgid "   - Entries ({})"
+msgstr "   - Entrées ({})"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:302
+#: src/pyams_app_msc/feature/booking/zmi/home.py:93
+msgid "1 group"
+msgstr "1 groupe"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:303
+#: src/pyams_app_msc/feature/booking/zmi/home.py:92
+#, python-format
+msgid "{} groups"
+msgstr "{} groupes"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:310
+msgid "   - Free accompanists"
+msgstr "   - Accompagnateurs non payants"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:317
+msgid "   - Paying accompanists"
+msgstr "   - Accompagnateurs payants"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:328
+msgid "Base amount"
+msgstr "Total HT"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:332
+msgid "VAT"
+msgstr "TVA"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:336
+msgid "Total amount"
+msgstr "Total TTC"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:371
+#, python-format
+msgid "Bank location: {}"
+msgstr "Établissement bancaire : {}"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:372
+#: src/pyams_app_msc/component/banking/interfaces.py:31
+msgid "Bank code"
+msgstr "Code banque"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:373
+#: src/pyams_app_msc/component/banking/interfaces.py:36
+msgid "Counter code"
+msgstr "Code guichet"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:374
+#: src/pyams_app_msc/component/banking/interfaces.py:41
+msgid "Account number"
+msgstr "N° de compte"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:375
+msgid "Key"
+msgstr "Clé"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:380
+#, python-format
+msgid "IBAN: {}"
+msgstr "IBAN : {}"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:383
+#, python-format
+msgid "BIC: {}"
+msgstr "BIC : {}"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:414
+#, python-format
+msgid "APE: {}"
+msgstr "APE : {}"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:415
+#, python-format
+msgid "SIRET: {}"
+msgstr "SIRET : {}"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:417
+#, python-format
+msgid "VAT: {}"
+msgstr "Code TVA : {}"
+
+#: src/pyams_app_msc/feature/quotation/__init__.py:443
+#, python-format
+msgid "Quotation: {}"
+msgstr "Devis : {}"
+
+#: src/pyams_app_msc/feature/booking/reminder.py:50
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:819
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:142
+msgid "Booking reminder"
+msgstr "Rappel de réservation"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:75
+msgid "Waiting"
+msgstr "En attente"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:76
+msgid "Cancelled"
+msgstr "Annulée"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:77
+msgid "Refused"
+msgstr "Refusée"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:78
+msgid "Optional"
+msgstr "En attente de confirmation"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:79
+msgid "Accepted"
+msgstr "Acceptée"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:109
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:232
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:126
+msgid "Creator"
+msgstr "Créateur"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:110
+msgid "Name of the principal who created the booking"
+msgstr "Nom du mandataire ayant effectué la demande de réservation"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:113
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:248
+#: src/pyams_app_msc/feature/booking/zmi/search.py:71
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:140
+msgid "Recipient"
+msgstr "Bénéficiaire"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:114
+msgid "Name of the principal for which the booking is done"
+msgstr "Nom du mandataire bénéficiaire de la réservation"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:120
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:292
+#: src/pyams_app_msc/feature/booking/zmi/search.py:74
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:183
+msgid "Status"
+msgstr "Statut"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:125
+msgid "Participants"
+msgstr "Participants"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:126
+msgid "Number of participants seats reserved for this session"
+msgstr "Nombre de places réservées pour les participants à cet événement"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:130
+msgid "Accompanists"
+msgstr "Accompagnateurs"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:131
+msgid "Number of accompanists seats reserved for this session"
+msgstr "Nombre de places réservées pour les accompagnants à cet événement"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:135
+msgid "Groups count"
+msgstr "Nombre de groupes"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:136
+msgid "Number of groups or classrooms attending this session"
+msgstr "Nombre de groupes ou de classes participant à cet événement"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:141
+msgid "Price"
+msgstr "Tarif"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:142
+msgid "Price applied to this booking"
+msgstr "Tarif appliqué à cette réservation"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:149
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:46
+msgid "Accompanying ratio"
+msgstr "Ratio d'accompagnateurs"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:150
+msgid ""
+"You can set an integer number which will define the count of participants "
+"for which one accompanying person will have free access"
+msgstr ""
+"Vous pouvez indiquer ici le nombre de participants par accompagnateur qui "
+"bénéficient d'une entrée non payante, ou 0 pour que tous les accompagnateurs "
+"aient à régler leur entrée"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:156
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:262
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:169
+#: src/pyams_app_msc/feature/booking/zmi/templates/today-program.pt:46
+msgid "Cultural pass"
+msgstr "Pass Culture"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:157
+msgid "Check this option if payment is done using cultural pass"
+msgstr ""
+"Sélectionnez cette option lorsque le paiement est fait via un Pass Culture"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:161
+#: src/pyams_app_msc/feature/booking/skin/__init__.py:53
+#: src/pyams_app_msc/component/address/interfaces.py:41
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:50
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:58
+msgid "Comments"
+msgstr "Commentaire"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:162
+msgid "These comments where added by booking recipient"
+msgstr "Ce commentaire précise la demande du bénéficiaire"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:169
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:353
+msgid "Archived"
+msgstr "Archivée"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:170
+msgid ""
+"A booking is archived automatically after session end and can't be modified "
+"anymore"
+msgstr ""
+"Une réservation est archivée automatiquement après la fin de l'événement "
+"correspondant et ne peut plus être modifiée"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:187
+msgid "Quotation number"
+msgstr "Numéro de devis"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:188
+msgid "This is the reference number of the quotation"
+msgstr "Ceci est la référence du devis"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:191
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:748
+msgid "Quotation message"
+msgstr "Message associé au devis"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:192
+msgid "This message is added to quotation as an information message"
+msgstr "Ce message d'information est associé au devis envoyé au client"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:195
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:310
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:214
+msgid "Quotation"
+msgstr "Devis"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:196
+msgid "This quotation was attached to booking confirmation"
+msgstr "Ceci est le document au format PDF contenant le devis"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:199
+msgid "Send update message?"
+msgstr "Envoyer un nouveau message de modification"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:200
+msgid "If 'yes', a message will be sent to the recipient "
+msgstr ""
+"Si cette option est activée, un message de notification sera adressé au "
+"bénéficiaire de la demande de réservation en cas de modification de cette "
+"demande de réservation qui a déjà été validée"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:204
+msgid "Update subject"
+msgstr "Sujet des messages"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:205
+msgid "Subject of update message sent to the recipient"
+msgstr "Sujet du message de modification adressé au bénéficiaire"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:208
+msgid "Update message"
+msgstr "Contenu du message"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:209
+msgid ""
+"Update message will be sent to the recipient if booking properties are "
+"changed..."
+msgstr ""
+"Ce message sera adressé au bénéficiaire en cas de modification des éléments "
+"de la réservation"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:213
+msgid "Send reminder?"
+msgstr "Envoyer un message de rappel"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:214
+msgid ""
+"If 'yes', a reminder message will be sent to the recipient a few days before "
+"the session take place; delay before session is defined into theater settings"
+msgstr ""
+"Si cette option est activée, un message de rappel sera envoyé au "
+"bénéficiaire de la réservations quelques heures ou jours avant le début de "
+"l'événement ; ce délai est spécifié dans les paramètres du cinéma"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:220
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:81
+msgid "Reminder subject"
+msgstr "Sujet des messages"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:221
+msgid "Subject of reminder message sent to the recipient"
+msgstr "Sujet du message de rappel adressé au bénéficiaire"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:224
+msgid "Reminder message"
+msgstr "Contenu du message"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:225
+msgid ""
+"Reminder message will be sent to the recipient a few days before the session "
+"take place; delay before session is defined into theater settings"
+msgstr ""
+"Le message de rappel est envoyé au bénéficiaire quelques heures ou jours "
+"avant le début de l'événement, en fonction du paramétrage appliqué au niveau "
+"du cinéma"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:230
+msgid "Reminder date"
+msgstr "Date du rappel"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:231
+msgid "Date and time at which reminder message was sent"
+msgstr ""
+"Date et heure auxquelles le message de rappel a été envoyé ; une valeur vide "
+"indique que ce message n'a pas encore été envoyé..."
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:263
+msgid "Free seats"
+msgstr "Places disponibles"
+
+#: src/pyams_app_msc/feature/booking/interfaces.py:264
+msgid "Number of free seats for this session"
+msgstr ""
+"Nombre de places encore disponibles pour cet événement ; seules les "
+"réservations validées sont prises en compte, y compris cette réservation le "
+"cas échéant"
+
+#: src/pyams_app_msc/feature/booking/task.py:51
+msgid "Bookings archiver task"
+msgstr "Archivage des réservations"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:99
+#: src/pyams_app_msc/feature/booking/zmi/search.py:81
+msgid "Creation date"
+msgstr "Date de la réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:100
+msgid "Date at which the booking was created"
+msgstr "Date à laquelle la demande de réservation a été effectuée"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:103
+msgid "Notify recipient?"
+msgstr "Notifier le bénéficiaire"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:104
+msgid "If 'yes', a notification message will be sent to the recipient"
+msgstr ""
+"Si cette option est activée, un message de notification sera adressé au "
+"bénéficiaire de la demande de réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:108
+msgid "Notification subject"
+msgstr "Sujet du message"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:109
+msgid "Subject of notification message sent to the recipient"
+msgstr "Sujet du message adressé au bénéficiaire"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:112
+msgid "Notification message"
+msgstr "Message de notification"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:113
+msgid "Notification message sent to the recipient"
+msgstr ""
+"Contenu du message adressé au bénéficiaire ; une copie de ce message sera "
+"conservée dans l'historique de cette réservation"
+
+#. Default: View booking
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:150
+msgid "view-booking-menu"
+msgstr "Consulter la réservation"
+
+#. Default: Modify booking
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:151
+msgid "modify-booking-menu"
+msgstr "Modifier la réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:167
+msgid "change-booking-session-menu"
+msgstr "Changer de séance"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:207
+msgid "Booking session"
+msgstr "Nouvel événement"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:208
+msgid "Select the session for which this booking is applied"
+msgstr "Nouvel événement auquel doit s'appliquer la réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:217
+msgid "Change session"
+msgstr "Changer d'événement"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:221
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:510
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:234
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:367
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:523
+#, python-format
+msgid "Booking: {}"
+msgstr "Réservation : {}"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:237
+msgid "Change booking session"
+msgstr "Changement d'événement"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:241
+msgid "No session selected, booking was not changed."
+msgstr "Aucun événement sélectionné, la réservation n'a pas été modifiée."
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:296
+msgid "This booking is already registered for this session..."
+msgstr "Cet événement est déjà celle concerné par cette réservation."
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:303
+#, python-format
+msgid "There are only {} free seats left in this session!"
+msgstr ""
+"<strong>ATTENTION :</strong> il ne reste que {} places libres sur cet "
+"événement !"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:370
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:489
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:527
+msgid "Booking properties"
+msgstr "Propriétés de la réservation"
+
+#. Default: Cancel booking
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:622
+msgid "cancel-booking-menu"
+msgstr "Annuler"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:632
+msgid "Cancel booking"
+msgstr "Annuler la réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:633
+msgid "Booking cancelled"
+msgstr "Réservation annulée"
+
+#. Default: Refuse booking
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:658
+msgid "refuse-booking-menu"
+msgstr "Refuser"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:668
+msgid "Refuse booking"
+msgstr "Refuser la réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:669
+msgid "Booking refused"
+msgstr "Réservation refusée"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:682
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:497
+msgid "Quotation preview"
+msgstr "Prévisualiser le devis"
+
+#. Default: Optional booking
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:701
+msgid "option-booking-menu"
+msgstr "Accepter (sous réserve)"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:711
+msgid "Optional booking"
+msgstr "Accepter la réservation (sous réserve de confirmation)"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:712
+msgid "Booking temporarily accepted"
+msgstr "Acceptée (sous réserve)"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:743
+msgid "Include quotation"
+msgstr "Inclure le devis"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:744
+msgid "Include quotation document into notification message"
+msgstr "Inclure le devis au format PDF dans le message de notification"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:749
+msgid "This message will be added to quotation"
+msgstr "Ce commentaire sera ajouté dans les éléments du devis"
+
+#. Default: Accept booking
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:769
+msgid "accept-booking-menu"
+msgstr "Accepter"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:779
+msgid "Accept booking"
+msgstr "Accepter la réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:780
+msgid "Booking accepted"
+msgstr "Réservation acceptée"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:826
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:703
+msgid "You must set a price to accept a booking!"
+msgstr "Vous devez spécifier un tarif pour pouvoir accepter une réservation !"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:908
+msgid ""
+"**WARNING**<br />The session capacity is too low to accept this booking!"
+msgstr ""
+" &ast; **ATTENTION** &ast;<br />Le nombre de places encore disponibles sur "
+"cet événement n'est pas suffisant pour accueillir cette réservation !"
+
+#: src/pyams_app_msc/feature/booking/zmi/workflow.py:927
+#, python-format
+msgid "The reminder delay is set to {} hours before session start."
+msgstr ""
+"Le message de rappel sera envoyé au bénéficiaire {} heures avant le début de "
+"l'événement."
+
+#: src/pyams_app_msc/feature/booking/zmi/task.py:41
+msgid "Add booking archiver task..."
+msgstr "Archivage des réservations"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:70
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:77
+msgid "Booking management"
+msgstr "Gérer les réservations"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:88
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:99
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:100
+msgid "Booking dashboard"
+msgstr "Gestion des réservations"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:183
+msgid "Session"
+msgstr "Séance"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:199
+msgid "Room"
+msgstr "Salle"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:216
+msgid "Date"
+msgstr "Date"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:276
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:199
+msgid "Seats"
+msgstr "Places"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:331
+msgid "Last update"
+msgstr "Dernière modification"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:397
+msgid "MANAGER - No booking waiting for your action"
+msgstr "RESPONSABLE - Aucune réservation en attente"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:398
+msgid "MANAGER - 1 booking waiting for your action"
+msgstr "RESPONSABLE - 1 réservation en attente"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:399
+#, python-format
+msgid "MANAGER - {} bookings waiting for your action"
+msgstr "RESPONSABLE - {} réservations en attente"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:439
+msgid "MANAGER - No booking accepted"
+msgstr "RESPONSABLE - Aucune réservation acceptée"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:440
+msgid "MANAGER - 1 booking accepted"
+msgstr "RESPONSABLE - 1 réservation acceptée"
+
+#: src/pyams_app_msc/feature/booking/zmi/dashboard.py:441
+#, python-format
+msgid "MANAGER - {} bookings accepted"
+msgstr "RESPONSABLE - {} réservations acceptées"
+
+#: src/pyams_app_msc/feature/booking/zmi/search.py:64
+#: src/pyams_app_msc/feature/booking/zmi/search.py:115
+msgid "Advanced search"
+msgstr "Recherche avancée"
+
+#: src/pyams_app_msc/feature/booking/zmi/search.py:78
+msgid "Session date"
+msgstr "Date de l'événement"
+
+#: src/pyams_app_msc/feature/booking/zmi/search.py:84
+msgid "Modification date"
+msgstr "Date de modification"
+
+#: src/pyams_app_msc/feature/booking/zmi/search.py:87
+msgid "Include archives"
+msgstr "Inclure les réservations archivées"
+
+#: src/pyams_app_msc/feature/booking/zmi/search.py:95
+#: src/pyams_app_msc/feature/booking/zmi/search.py:114
+msgid "Bookings search form"
+msgstr "Recherche de réservations"
+
+#: src/pyams_app_msc/feature/booking/zmi/search.py:191
+msgid "Search results"
+msgstr "Résultats de la recherche"
+
+#: src/pyams_app_msc/feature/booking/zmi/home.py:54
+msgid "Today program"
+msgstr "Programme du jour"
+
+#: src/pyams_app_msc/feature/booking/zmi/home.py:67
+msgid "Sessions planned for today"
+msgstr "Séances programmées aujourd'hui"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:154
+msgid "Establishment"
+msgstr "Établissement"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:241
+msgid "Archived booking"
+msgstr "Réservation archivée"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:277
+msgid "Current session bookings"
+msgstr "Réservations sur l'événement"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:293
+msgid "Session bookings"
+msgstr "Gestion des réservations"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:298
+#, python-format
+msgid " (Seats: {})"
+msgstr " (places : {})"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:314
+#, python-format
+msgid "{}: {}"
+msgstr "{}: {}"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:341
+msgid "Add booking"
+msgstr "Ajouter une réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:358
+msgid "Add and accept"
+msgstr "Ajouter et accepter"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:368
+msgid "New booking"
+msgstr "Nouvelle réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:369
+msgid "New booking properties"
+msgstr "Propriétés de la nouvelle réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:500
+msgid "Reset quotation"
+msgstr "Ré-éditer le devis"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:506
+msgid "Apply"
+msgstr "Enregistrer"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:674
+msgid "This booking is archived and can't be modified anymore!"
+msgstr "Cette réservation est archivée et ne peut plus être modifiée !"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:743
+msgid "Booking quotation"
+msgstr "Devis de la réservation"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:761
+msgid "Booking update"
+msgstr "Réservation modifiée"
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:796
+msgid ""
+"Update message can be sent to booking recipient when a booking is modified "
+"after being validated."
+msgstr ""
+"Ce nouveau message sera adressé au bénéficiaire (avec le devis actualisé) "
+"pour indiquer que cette réservation qui a déjà été acceptée a été modifiée."
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:857
+#, python-format
+msgid ""
+"Reminder message will be sent to booking recipient {} hours before session "
+"begin date..."
+msgstr ""
+"Le message de rappel sera envoyé au bénéficiaire {} heures avant le début de "
+"l'événement."
+
+#: src/pyams_app_msc/feature/booking/zmi/__init__.py:872
+msgid "Quotation has been reset!"
+msgstr "Le devis a été re-généré !"
+
+#: src/pyams_app_msc/feature/booking/zmi/templates/today-program.pt:52
+msgid "${groups}: ${participants} participants, ${accompanists} accompanists"
+msgstr ""
+"${groups} : ${participants} participants, ${accompanists} accompagnateurs"
+
+#: src/pyams_app_msc/feature/booking/zmi/templates/today-program.pt:65
+msgid "There is no confirmed booking for this session."
+msgstr "Aucune réservation validée pour cet événement."
+
+#: src/pyams_app_msc/feature/booking/zmi/templates/today-program.pt:73
+msgid "There is no session planned for today."
+msgstr "Aucun événement n'est programmé aujourd'hui."
+
+#: src/pyams_app_msc/feature/booking/skin/__init__.py:50
+msgid "Session ID"
+msgstr "ID de l'événement"
+
+#: src/pyams_app_msc/feature/booking/skin/__init__.py:54
+msgid "You can add optional comments to your booking request"
+msgstr ""
+"Vous pouvez ajouter un commentaire afin de faciliter le traitement de votre "
+"demande. Pour toute question préalable, feuillez utiliser le formulaire de "
+"contact..."
+
+#: src/pyams_app_msc/feature/booking/skin/__init__.py:57
+msgid "Get confirmation message?"
+msgstr "Recevoir un message de confirmation"
+
+#: src/pyams_app_msc/feature/booking/skin/__init__.py:58
+msgid ""
+"If 'yes', a confirmation message will be sent to you to acknowledge the "
+"booking"
+msgstr ""
+"Sélectionnez cette option pour qu'un message de confirmation de la bonne "
+"réception de votre demande de réservation vous soit adressé par mail"
+
+#: src/pyams_app_msc/feature/booking/skin/__init__.py:68
+msgid "Add booking for this session"
+msgstr "Confirmer la demande de réservation"
+
+#: src/pyams_app_msc/feature/booking/skin/__init__.py:77
+msgid "Your new booking properties"
+msgstr "Propriétés de votre demande de réservation"
+
+#: src/pyams_app_msc/feature/booking/skin/templates/booking-ok.pt:3
+msgid "Booking request confirmed!"
+msgstr "Demande de réservation confirmée !"
+
+#: src/pyams_app_msc/feature/booking/skin/templates/booking-ok.pt:5
+msgid "Your booking request has been saved!"
+msgstr "Votre demande de réservation a bien été prise en compte."
+
+#: src/pyams_app_msc/feature/booking/skin/templates/booking-ok.pt:6
+msgid "A movie theater operator will process your request as soon as possible."
+msgstr ""
+"Un opérateur du cinéma va traiter votre demande dans les meilleurs délais, "
+"et reviendra vers vous si besoin. En cas de manque de places, une autre "
+"séance pourra vous être proposée."
+
+#: src/pyams_app_msc/feature/booking/skin/templates/booking-new-header.pt:3
+msgid "Session date: ${date}."
+msgstr "Date de la séance : ${date}"
+
+#: src/pyams_app_msc/feature/booking/skin/templates/booking-new-header.pt:6
+msgid "Proposed version: ${version}"
+msgstr "Version proposée : ${version}"
+
+#: src/pyams_app_msc/component/admininfo/interfaces.py:29
+msgid "SIRET code"
+msgstr "Code SIRET"
+
+#: src/pyams_app_msc/component/admininfo/interfaces.py:33
+msgid "APE code"
+msgstr "Code APE"
+
+#: src/pyams_app_msc/component/admininfo/interfaces.py:37
+msgid "Intra-community VAT number"
+msgstr "N° intra-communautaire"
+
+#: src/pyams_app_msc/component/banking/interfaces.py:28
+msgid "Company name"
+msgstr "Raison sociale"
+
+#: src/pyams_app_msc/component/banking/interfaces.py:46
+msgid "Account key"
+msgstr "Clé du RIB"
+
+#: src/pyams_app_msc/component/banking/interfaces.py:51
+msgid "IBAN code"
+msgstr "Code IBAN"
+
+#: src/pyams_app_msc/component/banking/interfaces.py:56
+msgid "Bank identifier code"
+msgstr "Code BIC"
+
+#: src/pyams_app_msc/component/banking/interfaces.py:57
+msgid "BIC or SWIFT code"
+msgstr "Code BIC ou SWIFT"
+
+#: src/pyams_app_msc/component/banking/interfaces.py:68
+msgid ""
+"Banking account information must contain bank code, counter code, account "
+"number and account key"
+msgstr ""
+"Le relevé d'identité bancaire doit contenir le code banque, le code guichet, "
+"le numéro de compte et la clé du RIB"
+
+#: src/pyams_app_msc/component/address/interfaces.py:28
+msgid "Number and street"
+msgstr "Numéro et rue"
+
+#: src/pyams_app_msc/component/address/interfaces.py:29
+msgid "Entry number and street name"
+msgstr "Numéro de l'adresse et nom de la rue"
+
+#: src/pyams_app_msc/component/address/interfaces.py:32
+msgid "Locality"
+msgstr "Localité"
+
+#: src/pyams_app_msc/component/address/interfaces.py:35
+msgid "Postal code"
+msgstr "Code postal"
+
+#: src/pyams_app_msc/component/address/interfaces.py:38
+msgid "City"
+msgstr "Ville"
+
+#: src/pyams_app_msc/component/address/interfaces.py:42
+msgid "Optional observations which can be added to describe the location"
+msgstr ""
+"Observations complémentaires qui peuvent être ajoutées pour décrire "
+"l'emplacement"
+
+#: src/pyams_app_msc/component/contact/interfaces.py:30
+msgid "Full name"
+msgstr "Nom complet"
+
+#: src/pyams_app_msc/component/contact/interfaces.py:31
+msgid "Contact full name"
+msgstr "Nom complet du contact"
+
+#: src/pyams_app_msc/component/contact/interfaces.py:34
+msgid "Email address"
+msgstr "Addresse de messagerie"
+
+#: src/pyams_app_msc/component/contact/interfaces.py:35
+msgid "Contact email address"
+msgstr "Adresse de messagerie du contact"
+
+#: src/pyams_app_msc/component/contact/interfaces.py:39
+msgid "Contact phone number"
+msgstr "Téléphone"
+
+#: src/pyams_app_msc/shared/theater/room.py:112
+#, python-format
+msgid "{} ({} seats)"
+msgstr "{} ({} places)"
+
+#: src/pyams_app_msc/shared/theater/__init__.py:83
+msgid "Theater"
+msgstr "Cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:48
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:59
+msgid "Mail templates"
+msgstr "Modèles de messages"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:58
+msgid "Movie theater mail templates"
+msgstr "Modèles de messages du cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:70
+msgid "Messages management"
+msgstr "Gestion des messages"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:82
+msgid "Cancelled booking"
+msgstr "Réservation annulée"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:94
+msgid "Refused booking"
+msgstr "Réservation refusée"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:106
+msgid "Booking accepted 'in option'"
+msgstr "Réservation en attente de confirmation"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:118
+msgid "Accepted booking"
+msgstr "Réservation acceptée"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:130
+msgid "Updated booking"
+msgstr "Réservation modifiée"
+
+#: src/pyams_app_msc/shared/theater/zmi/mail.py:155
+#, python-format
+msgid ""
+"Mail templates can include spaces for predefined variables, including:\n"
+"\n"
+" - {theater_name}: theater name\n"
+" - {theater_email}: theater email address\n"
+" - {theater_phone}: theater phone number\n"
+" - {theater_logo}: theater logo image\n"
+" - {sender_name}: sender name\n"
+" - {sender_email}: sender email address\n"
+" - {booking_date}: booking date\n"
+" - {session}: session full label\n"
+" - {session_title}: session activity title\n"
+" - {session_date}: session date\n"
+msgstr ""
+"Les modèles de messages peuvent intégrer des variables prédéfinies, incluant "
+"notamment :\n"
+"\n"
+" - {theater_name} : nom du cinéma\n"
+" - {theater_email}: adresse de messagerie du cinéma\n"
+" - {theater_phone}: téléphone du cinéma\n"
+" - {theater_logo} : logo du cinéma\n"
+" - {sender_name} : nom de l'expéditeur\n"
+" - {sender_email} : addresse de l'expéditeur\n"
+" - {booking_date} : date de la réservation\n"
+" - {session} : libellé complet de la séance\n"
+" - {session_title} : libellé de l'activité\n"
+" - {session_date} : date de la séance\n"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:60
+#: src/pyams_app_msc/shared/theater/zmi/room.py:159
+msgid "Cinema rooms"
+msgstr "Gestion des salles"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:106
+msgid "Click icon to switch room activity"
+msgstr "Cliquer cette icône pour activer ou désactiver cette salle"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:108
+msgid "This room is active"
+msgstr "Cette salle est disponible"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:110
+msgid "This room is not active"
+msgstr "Cette salle n'est pas disponible actuellement"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:129
+msgid "Room name"
+msgstr "Nom de la salle"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:162
+msgid "Cinema rooms list"
+msgstr "Liste des salles"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:176
+msgid "Add room"
+msgstr "Ajouter une salle"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:186
+msgid "New cinema room"
+msgstr "Nouvelle salle"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:187
+msgid "New cinema room properties"
+msgstr "Propriétés de la nouvelle salle"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:222
+msgid "Cinema room"
+msgstr "Salle"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:237
+msgid "Cinema room properties"
+msgstr "Propriétés de la salle"
+
+#: src/pyams_app_msc/shared/theater/zmi/room.py:249
+#, python-format
+msgid "Cinema room: {}"
+msgstr "Salle : {}"
+
+#: src/pyams_app_msc/shared/theater/zmi/presentation.py:44
+msgid "Catalog presentation"
+msgstr "Activités au catalogue"
+
+#: src/pyams_app_msc/shared/theater/zmi/presentation.py:55
+msgid "Catalog template configuration"
+msgstr "Modèle de présentation des activités inscrites au catalogue"
+
+#: src/pyams_app_msc/shared/theater/zmi/presentation.py:67
+msgid "Catalog layout"
+msgstr "Mise en page"
+
+#: src/pyams_app_msc/shared/theater/zmi/types.py:46
+msgid "Activity types"
+msgstr "Types d'activités"
+
+#: src/pyams_app_msc/shared/theater/zmi/types.py:56
+msgid "Add activity type"
+msgstr "Ajouter un type d'activité"
+
+#: src/pyams_app_msc/shared/theater/zmi/types.py:65
+msgid "New activity type"
+msgstr "Nouveau type d'activité"
+
+#: src/pyams_app_msc/shared/theater/zmi/types.py:79
+msgid "Activities types"
+msgstr "Types d'activités"
+
+#: src/pyams_app_msc/shared/theater/zmi/types.py:80
+msgid "Movie theater activities types list"
+msgstr "Liste des types d'activités"
+
+#: src/pyams_app_msc/shared/theater/zmi/types.py:93
+msgid "Activity type properties"
+msgstr "Propriétés du type d'activités"
+
+#: src/pyams_app_msc/shared/theater/zmi/viewlet.py:39
+msgid "My theaters"
+msgstr "Mes cinémas"
+
+#: src/pyams_app_msc/shared/theater/zmi/search.py:39
+msgid "Between all catalog contents"
+msgstr "Parmi tout le catalogue du cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:60
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:159
+msgid "Cinema audiences"
+msgstr "Gestion des publics"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:106
+msgid "Click icon to switch audience activity"
+msgstr "Cliquer cette icône pour activer ou désactiver ce public"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:108
+msgid "This audience is active"
+msgstr "Ce public est activé"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:110
+msgid "This audience is not active"
+msgstr "Ce public n'est pas actif actuellement"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:129
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:38
+msgid "Audience name"
+msgstr "Nom du public"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:162
+msgid "Cinema audiences list"
+msgstr "Liste des publics"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:176
+msgid "Add audience"
+msgstr "Ajouter un public"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:186
+msgid "New cinema audience"
+msgstr "Nouveau public"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:187
+msgid "New cinema audience properties"
+msgstr "Propriétés du nouveau public"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:223
+msgid "Cinema audience"
+msgstr "Public"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:238
+msgid "Cinema audience properties"
+msgstr "Propriétés du public"
+
+#: src/pyams_app_msc/shared/theater/zmi/audience.py:251
+#, python-format
+msgid "Cinema audience: {}"
+msgstr "Public : {}"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:73
+msgid "Add movie theater"
+msgstr "Ajouter un cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:86
+msgid "Add theater"
+msgstr "Ajouter un cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:87
+msgid "New theater properties"
+msgstr "Propriétés du nouveau cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:107
+msgid "Movie theater name is required!"
+msgstr "Le nom du cinéma est obligatoire !"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:111
+msgid "A movie theater is already registered with this name!"
+msgstr "Un autre cinéma est déjà inscrit avec ce nom !"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:168
+msgid "Theater management"
+msgstr "Gérer le cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:179
+msgid "Properties"
+msgstr "Propriétés"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:190
+msgid "Movie theater properties"
+msgstr "Propriétés du cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:191
+msgid "Main theater properties"
+msgstr "Propriétés principales"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:204
+msgid "Contacts"
+msgstr "Contacts"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:238
+msgid "Settings"
+msgstr "Paramètres"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:248
+msgid "Movie theater settings"
+msgstr "Paramètres du cinéma"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:249
+msgid "Main theater settings"
+msgstr "Paramètres principaux"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:269
+msgid "Booking settings"
+msgstr "Gestion des réservations"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:282
+msgid "Booking cancel mode"
+msgstr "Gestion des annulations"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:296
+msgid "Cancel max delay must be set in \"max delay\" mode!"
+msgstr ""
+"Le délai maximum après la réservation doit être indiqué pour utiliser ce "
+"mode d'annulation !"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:299
+msgid "Cancel notice period must be set in \"notice period\" mode!"
+msgstr ""
+"Le préavis minimum avant l'événement doit être indiqué pour utiliser ce mode "
+"d'annulation !"
+
+#: src/pyams_app_msc/shared/theater/zmi/__init__.py:308
+msgid "Quotations settings"
+msgstr "Gestion des devis"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:60
+#: src/pyams_app_msc/shared/theater/zmi/price.py:159
+msgid "Cinema prices"
+msgstr "Gestion des tarifs"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:106
+msgid "Click icon to switch price activity"
+msgstr "Cliquer cette icône pour activer ou désactiver ce tarif"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:108
+msgid "This price is active"
+msgstr "Ce tarif est applicable"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:110
+msgid "This price is not active"
+msgstr "Ce tarif n'est pas applicable actuellement"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:129
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:38
+msgid "Price name"
+msgstr "Nom du tarif"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:162
+msgid "Cinema prices list"
+msgstr "Liste des tarifs"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:176
+msgid "Add price"
+msgstr "Ajouter un tarif"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:186
+msgid "New cinema price"
+msgstr "Nouveau tarif"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:187
+msgid "New cinema price properties"
+msgstr "Propriétés du nouveau tarif"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:223
+msgid "Cinema price"
+msgstr "Tarif"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:238
+msgid "Cinema price properties"
+msgstr "Propriétés du tarif"
+
+#: src/pyams_app_msc/shared/theater/zmi/price.py:250
+#, python-format
+msgid "Cinema price: {}"
+msgstr "Tarif : {}"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:34
+msgid "Send copy to operator"
+msgstr "Envoyer une copie aux opérateurs"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:35
+msgid "If 'yes', a copy of each message will be sent to operator"
+msgstr ""
+"Si vous activez cette option, une copie des messages sera envoyée aux "
+"opérateurs à chaque fois qu'un message de notification sera adressé aux "
+"bénéficiaires ; ATTENTION : les messages de rappel ne font pas l'objet d'une "
+"copie aux opérateurs !"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:39
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:47
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:55
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:64
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:72
+msgid "Message subject"
+msgstr "Sujet des messages"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:40
+msgid "Default subject used for cancelled booking notification"
+msgstr "Sujet par défaut d'un message d'annulation d'une réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:43
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:51
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:59
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:68
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:76
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:85
+msgid "Message template"
+msgstr "Modèle des messages"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:44
+msgid "This template is used when a session booking is cancelled"
+msgstr "Ce modèle est utilisé en cas d'annulation d'une demande de réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:48
+msgid "Default subject used for refused booking notification"
+msgstr "Sujet par défaut d'un message de refus d'une demande de réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:52
+msgid "This template is used when a session booking is refused"
+msgstr "Ce modèle est utilisé en cas de refus d'une demande de réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:56
+msgid "Default subject used for temporarily accepted booking"
+msgstr ""
+"Sujet par défaut d'un message d'acceptation temporaire d'une demande de "
+"réservation en attente de validation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:60
+msgid ""
+"This template is used when a session booking is temporarily accepted but "
+"waiting for confirmation"
+msgstr ""
+"Ce modèle est utilisé en cas d'acceptation d'une demande de réservation en "
+"attente de confirmation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:65
+msgid "Default subject used for accepted booking notification"
+msgstr ""
+"Sujet par défaut d'un message d'acceptation d'une demande de réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:69
+msgid "This template is used when a session booking is accepted"
+msgstr ""
+"Ce modèle est utilisé en cas d'acceptation d'une demande de réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:73
+msgid "Default subject used for updated booking notification"
+msgstr ""
+"Sujet par défaut d'un message de modification d'une demande de réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:77
+msgid ""
+"This template is used when a session booking is updated after being accepted"
+msgstr ""
+"Ce modèle est utilisé en cas de modification d'une demande de réservation "
+"déjà acceptée"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:82
+msgid "Default subject used for reminder message"
+msgstr "Sujet par défaut d'un message de rappel de réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/mail.py:86
+msgid ""
+"This template is used for reminder messages which are sent to sessions "
+"recipients a few days before they take place"
+msgstr ""
+"Ce modèle est utilisé pour les messages de rappel qui peuvent être envoyés "
+"quelques jours avant les événements aux bénéficiaires dont les réservations "
+"ont été acceptées"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:35
+msgid "Active room?"
+msgstr "Salle active ?"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:36
+msgid "An inactive room can't be selected to assign new activities"
+msgstr ""
+"Une salle active ne peut pas être sélectionnée pour lui affecter de "
+"nouvelles activités"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:40
+msgid "Room name or number"
+msgstr "Nom ou numéro"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:41
+msgid "This name should be unique inside a single theater..."
+msgstr "Ce nom doit être unique pour chaque salle du cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:44
+msgid "Capacity"
+msgstr "Capacité"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:45
+msgid "Maximum number or seats available in this room"
+msgstr "Nombre maximal de places disponibles dans cette salle"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:49
+msgid "Opening time"
+msgstr "Heure d'ouverture"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:50
+msgid "First time available for sessions planning"
+msgstr "Heure à partir de laquelle des événements peuvent être programmés"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:54
+msgid "Closing time"
+msgstr "Heure de fermeture"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:55
+msgid "Last time available for sessions planning"
+msgstr "Heure jusqu'à laquelle des événements peuvent être programmés"
+
+#: src/pyams_app_msc/shared/theater/interfaces/room.py:60
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:59
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:63
+msgid "This comment is for internal use only"
+msgstr "Ce commentaire est à usage interne uniquement"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:33
+msgid "Active audience?"
+msgstr "Public actif"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:34
+msgid "An inactive audience can't be assigned to new activities"
+msgstr "Un public inactif ne peut pas être affecté à de nouvelles activités"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:39
+msgid "This name should be unique for each theater audience..."
+msgstr "Ce nom doit être unique pour chaque public du cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:42
+msgid "Minimal age"
+msgstr "Âge minimum"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:43
+msgid "This is the minimal age of the audience"
+msgstr "Ceci est l'âge minimum du public"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:46
+msgid "Maximal age"
+msgstr "Âge maximum"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:47
+msgid "This is the maximal age of the audience"
+msgstr "Ceci est l'âge maximum du public"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:51
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:59
+msgid "Additional comments"
+msgstr "Commentaires complémentaires"
+
+#: src/pyams_app_msc/shared/theater/interfaces/audience.py:54
+msgid "Contact"
+msgstr "Contact"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:56
+msgid "Header"
+msgstr "Chapô"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:57
+msgid "Site's header is generally displayed in page header"
+msgstr "Le chapô est généralement affiché dans les en-têtes de pages"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:60
+msgid "Meta-description"
+msgstr "Méta-description"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:61
+msgid ""
+"The site's description is 'hidden' into HTML's page headers; but it can be "
+"seen, for example, in some search engines results as content's description; "
+"if description is empty, content's header will be used."
+msgstr ""
+"Cette description est intégrée dans les en-têtes des pages HTML ; mais elle "
+"peut être utilisée, par exemple, par certains moteurs de recherche pour "
+"afficher le résumé de leurs résultats ; si cette description est laissée "
+"vide, c'est le chapô qui sera utilisé comme méta-description"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:68
+msgid "Workflow name"
+msgstr "Nom du workflow"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:69
+msgid "Name of workflow utility used to manage tool contents"
+msgstr "Type de workflow appliqué à la gestion du catalogue des activités"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:76
+msgid "Logo"
+msgstr "Logo"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:77
+msgid "This image will be used in documents and email messages"
+msgstr ""
+"Cette image pourra être utilisée dans les documents et dans les messages "
+"produits par l'application"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:80
+msgid "Address"
+msgstr "Addresse"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:81
+msgid "Full theater address"
+msgstr "Adresse complète du cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:85
+msgid "Website address"
+msgstr "Addresse web"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:86
+msgid "URL of theater web site"
+msgstr "URL du site web du cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:89
+msgid "Contact email"
+msgstr "Adresse de messagerie"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:95
+msgid "Banking account"
+msgstr "Références bancaires"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:99
+msgid "Administrative information"
+msgstr "Références administratives"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:104
+msgid "Internal information to be known about this content"
+msgstr "Notes à usage interne concernant ce cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:114
+msgid "Managers"
+msgstr "Gestionnaires"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:115
+msgid "Managers can manage all theater configuration and properties"
+msgstr ""
+"Les gestionnaires peuvent gérer toutes la configuration et les propriétés du "
+"cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:119
+msgid "Operators"
+msgstr "Opérateurs"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:120
+msgid "Operators can manage theater activities catalog, and reservations"
+msgstr ""
+"Les opérateurs peuvent mettre à jour le catalogue des activités et gérer les "
+"réservations"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:125
+msgid "Contributors"
+msgstr "Contributeurs"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:126
+msgid ""
+"Contributors can add activities to theater catalog, but can't publish them"
+msgstr ""
+"Les contributeurs peuvent ajouter des activités au catalogue, mais ne "
+"peuvent pas les publier"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:131
+msgid "Designers"
+msgstr "Designers"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:132
+msgid "Designers are users which are allowed to manage presentation templates"
+msgstr "Les designers peuvent gérer les modèles de présentation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:137
+msgid "Readers"
+msgstr "Invités"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:138
+msgid ""
+"Readers are guest users which can only view theater properties and "
+"activities catalog"
+msgstr ""
+"Les invités peuvent uniquement consulter les propriétés du cinéma ainsi que "
+"le catalogue des activités"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:155
+msgid "Forbidden cancellation"
+msgstr "Annulation impossible"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:156
+msgid "Max delay after booking"
+msgstr "Imposer un délai maximum après le dépôt de la demande"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:157
+msgid "Minimum notice period before session"
+msgstr "Imposer un préavis minimum avant le début de la séance"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:170
+msgid "Calendar slot duration"
+msgstr "Durée des créneaux horaires"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:171
+msgid "Calendar time slots frequency in week or day views"
+msgstr ""
+"Indiquée en minutes, cette valeur indique la durée des créneaux horaires "
+"affichés dans les vues par semaine ou par jour de l'agenda ; vous pouvez "
+"toujours ajuster la durée des événements plus finement, si besoin, dans le "
+"formulaire de mise à jour des propriétés d'un événement"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:177
+msgid "Default session duration"
+msgstr "Durée de base des événements"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:178
+msgid ""
+"This is a default duration, in minutes, of sessions for which activity has "
+"no duration"
+msgstr ""
+"Cette durée, exprimée en minutes, est appliquée par défaut aux événements "
+"dont l'activité n'a pas de durée indiquée"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:183
+msgid "Session duration delta"
+msgstr "Temps minimum entre les événements"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:184
+msgid ""
+"This is a number of minutes which will be added automatically to activities "
+"duration when adding new sessions"
+msgstr ""
+"Cette durée, exprimée en minutes, indique la durée qui sera ajoutée "
+"automatiquement à la durée des activités pour définir la durée des séances "
+"proposée aux gestionnaires"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:189
+msgid "Reminder delay"
+msgstr "Délai de rappel"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:190
+msgid ""
+"This is a delay, given in days before a session beginning, at which a "
+"reminder message can be sent to booking recipients; leave value empty or set "
+"it to 0 to disable reminders messages"
+msgstr ""
+"Ce délai, exprimé en jours, indique combien de temps avant le début d'une "
+"activité est attendu avant l'envoi d'un message de rappel aux bénéficiaires "
+"d'une réservation ; vous pouvez laisser cette valeur vide ou indiquer la "
+"valeur 0 si vous ne souhaitez pas envoyer de messages de rappel. ATTENTION : "
+"les réservations confirmées au-delà de ce délai ne feront pas l'objet de "
+"messages de rappel !"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:195
+msgid "User booking cancel mode"
+msgstr "Annulation des réservations"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:196
+msgid ""
+"This mode determines how and when a principal can cancel a booking by it's "
+"own way"
+msgstr ""
+"Ce paramètre indique de quelle manière un utilisateur ayant déposé une "
+"demande de réservation est à même de l'annuler par lui-même"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:202
+msgid "Cancel max delay"
+msgstr "Délai maximum après la réservation"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:203
+msgid ""
+"This is the maximum period length after user booking, given in hours, during "
+"which a principal can cancel a booking by it's own way"
+msgstr ""
+"Ce délai maximum, indiqué en heures, correspond à la durée pendant laquelle, "
+"après avoir déposé sa demande de réservation, un bénéficiaire peut encore "
+"annuler cette demande par lui-même, sans contacter le cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:209
+msgid "Cancel notice period"
+msgstr "Préavis minimum avant l'événement"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:210
+msgid ""
+"This is the minimum amount of time before session, given in hours, during "
+"which a principal can cancel a booking by it's own way"
+msgstr ""
+"Ce préavis, indiqué en heures, correspond à la durée minimale avant le début "
+"de l'événement jusqu'à laquelle un bénéficiaire peut encore annuler cette "
+"demande par lui-même, sans contacter le cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:216
+msgid "Booking retention duration"
+msgstr "Durée de rétention des réservations"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:217
+msgid ""
+"This is the minimum amount of time, given in hours, during which a a booking "
+"is kept 'active' before being archived"
+msgstr ""
+"Ceci est la durée minimale, indiquée en heures, avant qu'une réservation "
+"associée à un événement terminé ne soit archivée automatiquement"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:223
+msgid "Quotation number format"
+msgstr "Format des numéros de devis"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:224
+#, python-format
+msgid ""
+"This number will be used as formatting string to create quotations numbers; "
+"you can use date elements like {yyyy} for current year in long format, {yy} "
+"for current year in short format, {mm} for current month, {dd} for current "
+"date, {yinc} for year increment, {minc} for month increment and {operator} "
+"for operator initials"
+msgstr ""
+"Vous pouvez indiquer une \"chaîne de formattage\" utilisée pour générer les "
+"numéros de devis ; vous pouvez utiliser des éléments dynamiques comme {yyyy} "
+"pour indiquer l'année en cours sur quatre chiffres, {yy} pour l'année en "
+"cours sur deux chiffres, {mm} pour le mois en cours, {dd} pour le jour du "
+"mois, {yinc} pour un numéro d'incrément annuel, {minc} pour un incrément "
+"mensuel et {operator} pour les initiales de l'opérateur"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:233
+msgid "Quotation logo"
+msgstr "Logo d'en-tête"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:234
+msgid "This image will be displayed in quotations headers"
+msgstr "Cette image sera affichée dans l'en-tête des devis"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:240
+msgid "Base color"
+msgstr "Couleur de base"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:241
+msgid ""
+"This color will be used as base color for graphic elements displayed in "
+"quotations"
+msgstr ""
+"Cette couleur sera utilisée comme couleur de base pour les éléments "
+"graphiques affichés dans les devis ; si aucune couleur n'est indiquée, une "
+"couleur sera générée automatiquement à partir des couleurs du logo"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:245
+msgid "Currency"
+msgstr "Devise"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:246
+msgid "This is the currency used for all transactions"
+msgstr "Ceci est la devise utilisée pour toutes les informations monétaires"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:249
+msgid "VAT rate"
+msgstr "Taux de TVA"
+
+#: src/pyams_app_msc/shared/theater/interfaces/__init__.py:250
+msgid "This is the VAT rate which will be used in quotations"
+msgstr "Ceci est le taux de TVA appliqué lors de l'édition' des devis"
+
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:33
+msgid "Active price?"
+msgstr "Tarif actif ?"
+
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:34
+msgid "An inactive price can't be assigned to new reservations"
+msgstr "Un tarif inactif ne peut pas être affecté à de nouvelles réservations"
+
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:39
+msgid "This name should be unique for each theater price..."
+msgstr "Ce nom doit être unique pour chaque tarif du cinéma"
+
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:42
+msgid "Participant price"
+msgstr "Prix par participant"
+
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:43
+msgid "This is the price which is applied to each participant"
+msgstr "Ceci est le tarif qui est appliqué à chaque participant"
+
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:47
+msgid ""
+"You can set an integer number which will define the count of participants "
+"for which one accompanying person will have free access; this ratio will "
+"still be updatable on all bookings using this price"
+msgstr ""
+"Vous pouvez indiquer ici le nombre de participants par accompagnateur qui "
+"bénéficient d'une entrée non payante, ou 0 pour que tous les accompagnateurs "
+"aient à régler leur entrée ; cette valeur pourra toujours être modifiée pour "
+"chaque réservation où ce tarif sera appliqué"
+
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:54
+msgid "Accompanying price"
+msgstr "Prix par accompagnateur payant"
+
+#: src/pyams_app_msc/shared/theater/interfaces/price.py:55
+msgid "This is the price which is applied to each accompanying person"
+msgstr "Ceci est le tarif qui est appliqué à chaque accompagnateur"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:43
+msgid "Release year"
+msgstr "Année de sortie"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:47
+msgid "Original country"
+msgstr "Pays d'origine"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:50
+msgid "Original title"
+msgstr "Titre original"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:53
+msgid "Original language"
+msgstr "Langue originale"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:57
+msgid "Producers"
+msgstr "Producteurs"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:60
+msgid "Writers"
+msgstr "Scénaristes"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:63
+msgid "Director"
+msgstr "Réalisateur"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:66
+msgid "Composer"
+msgstr "Compositeur"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:69
+msgid "Main actors"
+msgstr "Acteurs principaux"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:72
+msgid "Awards"
+msgstr "Récompenses"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:76
+msgid "Duration, in minutes"
+msgstr ""
+"Durée exprimée en minutes ; vous pouvez également l'indiquer en heures et "
+"minutes sous la forme HH:MM ou HHhMM, mais elle sera automatiquement "
+"convertie en minutes"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:79
+msgid "Synopsis"
+msgstr "Synopsis"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:94
+msgid "Catalog entry"
+msgstr "Activité au catalogue"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:100
+msgid "Title"
+msgstr "Titre"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:101
+msgid ""
+"Movie or activity title; you can select an entry from TMDB database, or "
+"enter your own title"
+msgstr ""
+"Titre du film ou de l'activité ; vous pouvez sélectionner l'une des entrées "
+"proposée par TMDB, ou indiquer un titre spécifique ; pour effectuer une "
+"rechercher dans une langue spécifique, vous pouvez indiquer le code de la "
+"langue (par exemple, \"en\") suivi de \":\" puis du texte à rechercher ; "
+"vous pouvez également spécifier une année de sortie en l'indiquant après le "
+"titre, séparée par une virgule"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:109
+msgid "Activity type"
+msgstr "Type d'activité"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:113
+msgid "TMDB movie ID"
+msgstr "ID TMDB du film"
+
+#: src/pyams_app_msc/shared/catalog/interfaces.py:114
+msgid "Movie ID in TMDB database"
+msgstr "Identifiant du film dans la base TMDB"
+
+#: src/pyams_app_msc/shared/catalog/zmi/dashboard.py:53
+msgid "Catalog management"
+msgstr "Gérer le catalogue"
+
+#: src/pyams_app_msc/shared/catalog/zmi/dashboard.py:69
+msgid "Activities catalog"
+msgstr "Gérer le catalogue"
+
+#: src/pyams_app_msc/shared/catalog/zmi/__init__.py:60
+msgid "Enter text for TMDB movie search"
+msgstr "Indiquez un titre pour rechercher dans TMDB..."
+
+#: src/pyams_app_msc/shared/catalog/zmi/__init__.py:93
+msgid "Add catalog entry"
+msgstr "Ajouter une activité au catalogue"
+
+#: src/pyams_app_msc/shared/catalog/zmi/__init__.py:102
+msgid "New catalog entry properties"
+msgstr "Propriétés de la nouvelle activité"
+
+#: src/pyams_app_msc/shared/catalog/zmi/__init__.py:173
+msgid "Activity details"
+msgstr "Détails de l'activité"
+
+#: src/pyams_app_msc/shared/catalog/zmi/__init__.py:183
+msgid "Activity information"
+msgstr "Détails spécifiques de l'activité"
+
+#: src/pyams_app_msc/shared/catalog/zmi/__init__.py:184
+msgid "Custom properties"
+msgstr "Propriétés spécifiques"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/interfaces.py:29
+msgid "Display sessions"
+msgstr "Afficher les séances"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/interfaces.py:30
+msgid "If 'no', incoming sessions will not be displayed"
+msgstr "Si 'non', les prochaines séances ne seront pas affichées"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/interfaces.py:34
+msgid "Sessions weeks"
+msgstr "Nombre de semaines"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/interfaces.py:35
+msgid "Number of weeks to display sessions"
+msgstr "Nombre de semaines dont on souhaite afficher les séances"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/interfaces.py:39
+msgid "Display free seats"
+msgstr "Afficher les places libres"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/interfaces.py:40
+msgid "If 'no', number of free seats is not displayed"
+msgstr "Si 'non', le nombre de places libres ne sera pas affiché"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/__init__.py:65
+msgid "Catalog entries with next planned sessions"
+msgstr "Activités au catalogue avec les prochaines séances"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/templates/view-catalog-panels.pt:61
+msgid "${seats} seats"
+msgstr "${seats} places"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/templates/view-catalog-panels.pt:70
+msgid "Pagination"
+msgstr "Pagination"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/templates/view-catalog-panels.pt:78
+msgid "Previous page"
+msgstr "Page précédente"
+
+#: src/pyams_app_msc/shared/catalog/portlet/skin/templates/view-catalog-panels.pt:85
+msgid "Next page"
+msgstr "Page suivante"
+
+#: src/pyams_app_msc/shared/catalog/skin/__init__.py:60
+msgid "(unknown)"
+msgstr "(inconnue)"
+
+#: src/pyams_app_msc/shared/catalog/skin/__init__.py:64
+msgid "(undefined)"
+msgstr "(non définie)"
+
+#: src/pyams_app_msc/shared/catalog/skin/__init__.py:71
+#, python-format
+msgid "{} minutes"
+msgstr "{} minutes"
+
+#: src/pyams_app_msc/shared/catalog/skin/__init__.py:72
+#, python-format
+msgid "{}h {}min"
+msgstr "{}h {}min"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:69
+msgid "Release year:"
+msgstr "Année de sortie :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:73
+msgid "Original country:"
+msgstr "Pays d'origine :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:77
+msgid "Original title:"
+msgstr "Titre original :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:81
+msgid "Original language:"
+msgstr "Langue originale :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:85
+msgid "Producer:"
+msgstr "Producteurs :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:89
+msgid "Writer:"
+msgstr "Scénaristes :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:93
+msgid "Director:"
+msgstr "Réalisateur :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:97
+msgid "Composer:"
+msgstr "Compositeur :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:101
+msgid "Actors:"
+msgstr "Acteurs :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:105
+msgid "Awards:"
+msgstr "Récompenses :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:109
+msgid "Duration:"
+msgstr "Durée :"
+
+#: src/pyams_app_msc/shared/catalog/skin/templates/specificities.pt:113
+msgid "Synopsis:"
+msgstr "Synopsis :"
+
+#: src/pyams_app_msc/skin/__init__.py:52
+msgid "PyAMS MSC skin"
+msgstr "Thème commun \"Ma Séance Ciné\""
+
+#: src/pyams_app_msc/skin/login.py:99
+msgid "User profile is disabled!"
+msgstr "Ce profil utilisateur est désactivé !"
+
+#: src/pyams_app_msc/root/interfaces.py:31
+msgid "Sites managers"
+msgstr "Administrateurs délégués"
+
+#: src/pyams_app_msc/root/interfaces.py:32
+msgid ""
+"These principals are allowed to create and manage sites and movie theaters"
+msgstr ""
+"Ces mandataires peuvent procéder à la création d'un nouveau cinéma et nommer "
+"ses gestionnaires"
+
+#~ msgid "Apartment"
+#~ msgstr "Appartement"
+
+#~ msgid "Floor, corridor..."
+#~ msgstr "Niveau, couloir..."
+
+#~ msgid "Entry"
+#~ msgstr "Entrée"
+
+#~ msgid "Entry, building, residence..."
+#~ msgstr "Entrée, bâtiment, résidence..."
+
+#~ msgid "Display all booked seats"
+#~ msgstr "Afficher les places libres"
+
+#~ msgid "Preferred audiences"
+#~ msgstr "Publics privilégiés"
+
+#~ msgid "Movie theater comment"
+#~ msgstr "Commentaire du cinéma"
+
+#~ msgid "booking-properties-menu"
+#~ msgstr "Modifier la réservation"
+
+#~ msgid "New event properties"
+#~ msgstr "Propriétés de la nouvelle séance"
+
+#~ msgid "Scheduled session"
+#~ msgstr "Séance planifiée"
+
+#~ msgid "Quotation comment"
+#~ msgstr "Commentaire associé au devis"
+
+#~ msgid "Add new catalog entry"
+#~ msgstr "Ajout d'une entrée du catalogue"
+
+#~ msgid "#Quotation: <b>{}</b>"
+#~ msgstr "N° de devis : <b>{}</b>"
+
+#~ msgid "Accepted booking \"in option\""
+#~ msgstr "Réservation en attente de confirmation"
+
+#~ msgid "You can't create a new session starting before current date!"
+#~ msgstr ""
+#~ "Vous ne pouvez pas créer une nouvelle séance dont l'heure de début est "
+#~ "antérieure à l'heure actuelle !"
+
+#~ msgid "You can't update an existing session starting before current date!"
+#~ msgstr ""
+#~ "Vous ne pouvez pas modifier une séance dont l'heure de début est "
+#~ "antérieure à l'heure actuelle !"
+
+#~ msgid "Create passed sessions"
+#~ msgstr "Créer des séances antérieures à l'heure actuelle"
+
+#~ msgid "If 'yes', operators can create passes sessions"
+#~ msgstr ""
+#~ "Si 'oui', les opérateurs peuvent ajouter des séances dont l'heure de "
+#~ "début est antérieure à l'heure actuelle"
+
+#~ msgid "Update passed sessions"
+#~ msgstr "Modifier des séances antérieures à l'heure actuelle"
+
+#~ msgid "If 'yes', operators can update passed sessions"
+#~ msgstr ""
+#~ "Si 'oui', les opérateurs peuvent modifier des séances dont l'heure de "
+#~ "début est antérieure à l'heure actuelle"
+
+#~ msgid "Remove passed sessions"
+#~ msgstr "Supprimer des séances antérieures à l'heure actuelle"
+
+#~ msgid "If 'yes', operators can remove passed sessions"
+#~ msgstr ""
+#~ "Si 'oui', les opérateurs peuvent supprimer des séances dont l'heure de "
+#~ "début est antérieure à l'heure actuelle"
+
+#~ msgid "Confirmed booking"
+#~ msgstr "Réservation confirmée"
+
+#~ msgid "This template is used when a session booking is confirmed"
+#~ msgstr ""
+#~ "Ce modèle est utilisé en cas de confirmation d'une demande de réservation"
+
+#~ msgid "This template is used when a session booking is validated"
+#~ msgstr ""
+#~ "Ce modèle est utilisé en cas de validation d'une demande de réservation"
+
+#~ msgid "Invoiced booking"
+#~ msgstr "Réservation facturée"
+
+#~ msgid "This template is used when a session booking is invoiced"
+#~ msgstr "Ce modèle est utilisé en cas de facturation d'une réservation"
+
+#~ msgid "Confirmed"
+#~ msgstr "Confirmée"
+
+#~ msgid "Validated"
+#~ msgstr "Validée"
+
+#~ msgid "Invoiced"
+#~ msgstr "Facturée"
+
+#~ msgid "Paid"
+#~ msgstr "Payée"
+
+#~ msgid "confirm-booking-menu"
+#~ msgstr "Confirmer"
+
+#~ msgid "Confirm booking"
+#~ msgstr "Confirmer la réservation"
+
+#~ msgid "Activity reference"
+#~ msgstr "Référence de l'activité"
+
+#~ msgid ""
+#~ "Source activity reference; you can search a reference using '+' followed "
+#~ "by internal number, or by entering text matching activity title"
+#~ msgstr ""
+#~ "Référence de l'activité associée ; vous pouvez rechercher une activité en "
+#~ "indiquant un '+' suivi de son numéro interne, ou en indiquant tout ou "
+#~ "partie de son titre"
+
+#~ msgid "Catalog entry information"
+#~ msgstr "Informations spécifiques"
+
+#~ msgid "Audience"
+#~ msgstr "Audience"
+
+#~ msgid "Activity management"
+#~ msgstr "Cette activité"
+
+#~ msgid "Audience:"
+#~ msgstr "Audience :"
+
+#~ msgid "cancel-booking-legend"
+#~ msgstr "Annuler la réservation"
+
+#~ msgid "Finished"
+#~ msgstr "Terminée"
+
+#~ msgid "<dynamic element> seats"
+#~ msgstr "<dynamic element> places"
+
+#~ msgid "Specificities"
+#~ msgstr "Spécificités"
+
+#~ msgid "Name"
+#~ msgstr "Nom de la salle"

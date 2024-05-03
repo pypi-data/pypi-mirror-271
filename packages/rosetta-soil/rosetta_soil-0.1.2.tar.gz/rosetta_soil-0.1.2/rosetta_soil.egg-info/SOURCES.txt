@@ -1,0 +1,17 @@
+LICENSE
+LICENSE.notes
+README.rst
+setup.py
+rosetta/ANN_Module.py
+rosetta/DB_Module.py
+rosetta/__init__.py
+rosetta/__version__.py
+rosetta/rosetta.py
+rosetta/sqlite/Rosetta.sqlite
+rosetta_soil.egg-info/PKG-INFO
+rosetta_soil.egg-info/SOURCES.txt
+rosetta_soil.egg-info/dependency_links.txt
+rosetta_soil.egg-info/not-zip-safe
+rosetta_soil.egg-info/requires.txt
+rosetta_soil.egg-info/top_level.txt
+tests/test_rosetta.py

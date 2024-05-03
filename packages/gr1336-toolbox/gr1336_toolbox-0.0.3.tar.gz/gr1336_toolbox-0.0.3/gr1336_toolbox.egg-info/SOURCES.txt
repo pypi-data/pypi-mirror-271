@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+gr1336_toolbox/__init__.py
+gr1336_toolbox/file_manager.py
+gr1336_toolbox/misc_tools.py
+gr1336_toolbox/test_even_odd.py
+gr1336_toolbox/text_tools.py
+gr1336_toolbox/types_check.py
+gr1336_toolbox.egg-info/PKG-INFO
+gr1336_toolbox.egg-info/SOURCES.txt
+gr1336_toolbox.egg-info/dependency_links.txt
+gr1336_toolbox.egg-info/requires.txt
+gr1336_toolbox.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+numpy
+pyperclip
+textblob
+pyyaml
+pyarrow

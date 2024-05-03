@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: TijaToolsProgressRing
+Version: 0.1.0
+Summary: A customizable progress ring for terminal applications.
+Author: Janos Tigyi
+Author-email: tigyi.janos@bugfactory.hu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TijaToolsProgressRing
+
+## LeĂ­rĂˇs
+
+A TijaToolsProgressRing egy Python csomag, amely lehetĹ‘vĂ© teszi, hogy dinamikus Ă©s testre szabhatĂł progress ringeket jelenĂ­ts meg a terminĂˇlban. Ez ideĂˇlis eszkĂ¶z hosszĂş futĂˇsĂş mĹ±veletek ĂˇllapotĂˇnak vizuĂˇlis visszajelzĂ©sĂ©re.
+
+## TelepĂ­tĂ©s
+
+TelepĂ­tsd a csomagot a kĂ¶vetkezĹ‘ paranccsal:
+
+```bash
+pip install TijaToolsProgressRing
+
+## HasznĂˇlat
+from tijatoolsprogressring import ProgressRing
+
+# PĂ©ldĂˇnyosĂ­tsd a ProgressRing osztĂˇlyt
+ring = ProgressRing()
+
+# IndĂ­tsd el az animĂˇciĂłt
+ring.run_with_animation()

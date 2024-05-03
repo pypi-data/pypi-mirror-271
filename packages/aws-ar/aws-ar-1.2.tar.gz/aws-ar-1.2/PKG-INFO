@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: aws-ar
+Version: 1.2
+Author: Shashank Dubey
+Requires-Dist: boto3

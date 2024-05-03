@@ -1,0 +1,10 @@
+README.md
+setup.py
+aws_ar/__init__.py
+aws_ar/aws_ar.py
+aws_ar.egg-info/PKG-INFO
+aws_ar.egg-info/SOURCES.txt
+aws_ar.egg-info/dependency_links.txt
+aws_ar.egg-info/entry_points.txt
+aws_ar.egg-info/requires.txt
+aws_ar.egg-info/top_level.txt

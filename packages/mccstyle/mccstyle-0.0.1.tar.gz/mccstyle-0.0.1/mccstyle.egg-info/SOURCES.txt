@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+mccstyle/__init__.py
+mccstyle.egg-info/PKG-INFO
+mccstyle.egg-info/SOURCES.txt
+mccstyle.egg-info/dependency_links.txt
+mccstyle.egg-info/top_level.txt

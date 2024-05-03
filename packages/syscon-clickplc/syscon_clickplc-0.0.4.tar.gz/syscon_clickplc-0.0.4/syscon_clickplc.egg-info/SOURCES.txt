@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+syscon_clickplc/__init__.py
+syscon_clickplc/driver.py
+syscon_clickplc/mock.py
+syscon_clickplc/util.py
+syscon_clickplc.egg-info/PKG-INFO
+syscon_clickplc.egg-info/SOURCES.txt
+syscon_clickplc.egg-info/dependency_links.txt
+syscon_clickplc.egg-info/entry_points.txt
+syscon_clickplc.egg-info/requires.txt
+syscon_clickplc.egg-info/top_level.txt

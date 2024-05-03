@@ -1,0 +1,4 @@
+dist
+runs
+surfquakecore
+venv

@@ -1,0 +1,15 @@
+bambot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bambot/app.py,sha256=VtSd3in8nEhRy3c0wNBOFg2OQdnXPj_J890bMq7BsPw,2842
+bambot/cli.py,sha256=pE5me6MM22bLlqMhlCDfNSsuw9EIdlBKk8YMo5Pg77g,2871
+bambot/docker_utils.py,sha256=O7JvBTqKClJgCk7JTWHoCDvX7QjWpUFqai_cZa3msUM,1583
+bambot/templates/Dockerfile,sha256=Z4erh4wMbTaG-5vaHsDacJdITbHi6HSWucDzFNMNFg4,361
+bambot/templates/agent_runner.py,sha256=h5j-C6w6YdpyVMYTsPYlBu910HQPcAa2VN8MHfEgGec,171
+bambot/templates/agent_template.py,sha256=dqWzR3Q6IoChG4BnH4MnGqL7mFl4xicRctUihCEQpBU,488
+bambot/templates/langchain_template.py,sha256=0IDSucg-64zs0xhV0R36gDb4COfmCkOhzxbylGqLJUg,528
+bambot/templates/requirements.txt,sha256=0fvd1Gau4dMrBcXekobykJb-rr3Q6xrPUpFo9du8OWA,44
+bambot/templates/server.py,sha256=PejfUnorE7S0K_1SrUl81oM2SsKv3X1cHYhlSO0DDXc,2561
+bambot-0.4.2.dist-info/METADATA,sha256=C1PFH_7NxNk33bJuvGr_b-wf1FvTcv_WvGM-ZuFBBiw,2096
+bambot-0.4.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bambot-0.4.2.dist-info/entry_points.txt,sha256=d2xbpW0Mxmi57pjFqRmr7-C3LQZm-yQ0di_QtpVM_fs,40
+bambot-0.4.2.dist-info/top_level.txt,sha256=FFY65jl2E_BaNZ-1GzE7fWfI1bkvPJCxsUzUzbnVhDY,7
+bambot-0.4.2.dist-info/RECORD,,

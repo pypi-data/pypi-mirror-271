@@ -1,0 +1,25 @@
+id: test
+require:
+  - weld_deps
+
+data_pack:
+  load: src
+
+
+output: dist
+
+meta:
+  weld_deps:
+    enable_weld_merging: False
+    clean_load_tag: False
+    include_prerelease: False
+    deps:
+      - id: "custom-block"
+        match: ">0.0.0"
+        source: "smithed"
+      - id: "itemio"
+        match: ">0.7.0, <0.7.2"
+        source: "smithed"
+      - id: "code-of-copper"
+        match: ">0.1.0"
+        source: "modrinth"

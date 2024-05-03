@@ -1,0 +1,11 @@
+httpx
+pydantic>=2
+python-socketio[client]>=5.11
+
+[dev]
+pytest>=7
+black>=22
+flake8>=4
+
+[test]
+pytest>=7

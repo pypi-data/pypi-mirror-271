@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/itwingstestsprojectnn.egg-info/PKG-INFO
+src/itwingstestsprojectnn.egg-info/SOURCES.txt
+src/itwingstestsprojectnn.egg-info/dependency_links.txt
+src/itwingstestsprojectnn.egg-info/top_level.txt
+src/mymodule/__init__.py
+src/mymodule/config.py
+src/mymodule/main.py

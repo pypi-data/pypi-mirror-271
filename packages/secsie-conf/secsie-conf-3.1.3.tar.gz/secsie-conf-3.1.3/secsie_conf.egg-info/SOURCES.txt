@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+secsie/__init__.py
+secsie/exceptions.py
+secsie/generator.py
+secsie/modes.py
+secsie/parser.py
+secsie_conf.egg-info/PKG-INFO
+secsie_conf.egg-info/SOURCES.txt
+secsie_conf.egg-info/dependency_links.txt
+secsie_conf.egg-info/top_level.txt

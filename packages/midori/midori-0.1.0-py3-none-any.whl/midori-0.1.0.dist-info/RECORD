@@ -1,0 +1,9 @@
+midori/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+midori/core.py,sha256=gMo3UQ0ueN5RGT7Bbdf7Y5w0yjmawHnNki99Kfwsuxk,4193
+midori/plugins/base.py,sha256=RJi2QNkS91tHtDxkf87WPVsajSaztXAd399GQiX7wxo,1886
+midori/plugins/example_plugins.py,sha256=uAHOTx_0SZvcNKyLzPv7V6DJFsVoXq1x5kAHOn6lPaw,926
+midori/plugins/helpers.py,sha256=p0pOoMgY_IGNrzREXh9iYiw7NPdRNI2UHZVxkj0Q6fk,5471
+midori/treatments_helper.py,sha256=pGlN6cDdAqGVUBzHeUwxD-DtJws7HdweRbP8lglZ_Rk,484
+midori-0.1.0.dist-info/METADATA,sha256=U2Gh1JcIzBLyjyRyHK0L8jdrgppM-_-gG9NooL-N5Rk,856
+midori-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+midori-0.1.0.dist-info/RECORD,,

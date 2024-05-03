@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: midori
+Version: 0.1.0
+Summary: 
+Author: Xingwen Xiao
+Author-email: xingwen.xiao@student.uva.nl
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: paramiko (>=3.4.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Midori
+
+## Description
+
+Midori is an orchestrator that allows researchers to run software engineering experiments on remote clusters. It is designed to be automated for time-consuming experiments that require a large number of runs.
+
+## Development
+
+1. Install [poetry](https://python-poetry.org/docs/#installation).
+2. Navigate to the root of the project and run `poetry install`.
+3. Run `poetry run pre-commit install` to install pre-commit hooks.
+4. Develop on `dev` branch and create a pull request to `dev` branch.
+

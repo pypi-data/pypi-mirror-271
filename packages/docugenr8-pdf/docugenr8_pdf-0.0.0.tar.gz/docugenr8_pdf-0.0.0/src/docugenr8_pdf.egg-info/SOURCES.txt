@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+version.txt
+src/docugenr8_pdf/__init__.py
+src/docugenr8_pdf/core.py
+src/docugenr8_pdf/pdf.py
+src/docugenr8_pdf/pdf_content.py
+src/docugenr8_pdf/pdf_font.py
+src/docugenr8_pdf/pdf_info.py
+src/docugenr8_pdf/pdf_page.py
+src/docugenr8_pdf/pdf_settings.py
+src/docugenr8_pdf.egg-info/PKG-INFO
+src/docugenr8_pdf.egg-info/SOURCES.txt
+src/docugenr8_pdf.egg-info/dependency_links.txt
+src/docugenr8_pdf.egg-info/requires.txt
+src/docugenr8_pdf.egg-info/top_level.txt

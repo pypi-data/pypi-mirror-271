@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qpboost"
+version = "0.0.1"
+description = "A Python package for Quadratic Programming Boosting algorithms"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Ilker Birbil", email = "sibirbil@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/sibirbil/QPBoost"
+
+[tool.setuptools.packages.find]
+where = ["."]

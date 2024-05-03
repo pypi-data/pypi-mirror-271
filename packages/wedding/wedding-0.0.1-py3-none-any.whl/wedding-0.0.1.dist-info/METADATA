@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: wedding
+Version: 0.0.1
+Summary: Drawings of the wedding and fields.
+License: licensed
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: biotech (>=1.1.10,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: somatic (>=3.0.3,<4.0.0)
+Project-URL: GitLab, https://gitlab.com/status600/treasures/wedding.1
+Description-Content-Type: text/markdown
+
+
+
+
+
+
+******
+
+Bravo!  You have received a Medical Diploma from   
+the Orbital Convergence University International Air 
+and Water Embassy of the Rust Planet.  
+
+You are now officially certified to include this 
+mix in your practice.
+
+******
+
+
+# this_mix
+
+---
+
+## description
+		
+---		
+		
+## obtain (install)
+

@@ -1,0 +1,52 @@
+current_version = "0.1.1"
+
+[[files]]
+path = "pyproject.toml"
+search = "version = \"{{current_version}}\""
+replace = "version = \"{{new_version}}\""
+
+[[files]]
+path = "pyproject.toml"
+search = "documentation = \"https://rst-budoux.readthedocs.io/v{{current_version}}/\""
+replace = "documentation = \"https://rst-budoux.readthedocs.io/v{{new_version}}/\""
+
+[[files]]
+path = "src/rst_budoux/__init__.py"
+search = "__version__ = \"{{current_version}}\""
+replace = "__version__ = \"{{new_version}}\""
+
+[[files]]
+path = "CHANGELOG.rst"
+search = ".. This does not have root section"
+replace = """
+.. This does not have root section
+
+v{{ new_version }}
+={% for _ in new_version %}={% endfor %}
+
+:date: {{ now|date }} JST
+
+Breaking changes
+----------------
+
+Features
+--------
+
+Fixes
+-----
+
+Others
+------
+"""
+
+[[files]]
+path = ".github/release-body.md"
+regex = true
+search = """
+- Changelog is https://github.com/attakei-lab/rst-budoux/blob/v{{ current_version }}/CHANGELOG.rst
+- You can source diff to (.+)
+"""
+replace = """
+- Changelog is https://github.com/attakei-lab/rst-budoux/blob/v{{ new_version }}/CHANGELOG.rst
+- You can source diff to https://github.com/attakei-lab/rst-budoux/compare/v{{ current_version }}..v{{ new_version }}
+"""

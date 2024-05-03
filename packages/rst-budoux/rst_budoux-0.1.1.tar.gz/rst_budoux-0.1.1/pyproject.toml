@@ -1,0 +1,86 @@
+[project]
+name = "rst-budoux"
+version = "0.1.1"
+description = "Text splitter in reStructuredText by BudouX"
+authors = [
+    { name = "Kazuya Takei", email = "myself@attakei.net" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Extension",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Documentation",
+]
+dependencies = [
+    "docutils~=0.21.2",
+    "budoux~=0.6.2",
+]
+readme = "README.rst"
+requires-python = ">= 3.9"
+license = { text = "Apache-2.0" }
+
+[project.urls]
+repository = "https://github.com/attakei-lab/rst-budoux"
+changelog = "https://github.com/attakei-lab/rst-budoux/blob/main/CHANGELOG.rst"
+documentation = "https://rst-budoux.readthedocs.io/v0.1.1/"
+issues = "https://github.com/attakei-lab/rst-budoux/issues"
+
+[project.scripts]
+"rst-budoux2html" = "rst_budoux.cli.html:main"
+"rst-budoux2pseudoxml" = "rst_budoux.cli.psuedoxml:main"
+
+[project.optional-dependencies]
+sphinx = [
+    "sphinx>=5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "esbonio~=0.16.4",
+    "pytest~=8.2.0",
+    "playwright~=1.43.0",
+    "pillow~=10.3.0",
+    "sphinx[test]>=5",
+    "furo~=2024.4.27",
+    "sphinx-autobuild~=2024.4.16",
+    "sphinx-toolbox~=3.5.0",
+    "sphinx-tabs~=3.4.5",
+]
+
+[tool.rye.scripts]
+setup = {chain = ["setup:sync", "setup:pre-commit"]}
+"setup:sync" = "rye sync --no-lock --all-features"
+"setup:pre-commit" = "pre-commit install"
+test = "pytest"
+doc = "make -C doc"
+
+[tool.ruff.lint]
+select = ["C90", "D", "E", "F", "I", "W"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+[tool.doc8]
+ignore = ["D000"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rst_budoux"]

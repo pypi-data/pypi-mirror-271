@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+skybridge/__init__.py
+skybridge.egg-info/PKG-INFO
+skybridge.egg-info/SOURCES.txt
+skybridge.egg-info/dependency_links.txt
+skybridge.egg-info/top_level.txt

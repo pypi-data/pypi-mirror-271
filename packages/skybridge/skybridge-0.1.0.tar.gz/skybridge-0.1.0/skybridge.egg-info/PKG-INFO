@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: skybridge
+Version: 0.1.0
+Summary: Fast client and server for sending array data.
+Home-page: http://github.com/danijar/skybridge
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Skybridge

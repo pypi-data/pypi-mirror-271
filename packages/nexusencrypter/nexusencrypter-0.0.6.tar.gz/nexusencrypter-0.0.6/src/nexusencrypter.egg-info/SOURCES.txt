@@ -1,0 +1,10 @@
+LICENSE
+README.md
+README.rst
+pyproject.toml
+setup.cfg
+src/nexusencrypter/__init__.py
+src/nexusencrypter.egg-info/PKG-INFO
+src/nexusencrypter.egg-info/SOURCES.txt
+src/nexusencrypter.egg-info/dependency_links.txt
+src/nexusencrypter.egg-info/top_level.txt

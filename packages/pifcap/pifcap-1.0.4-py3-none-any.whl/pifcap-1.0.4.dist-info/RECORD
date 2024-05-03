@@ -1,0 +1,15 @@
+pifcap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pifcap/autoexposure.py,sha256=s1OkIdiu_T99F6iT5scwO_dVZWsFcflSZNiSJeJEf-k,3804
+pifcap/camera.py,sha256=_c0EtykiikS4B3JWg998Buf_aNxrQmHi5H4q5Fd9J90,24134
+pifcap/pifcap.py,sha256=RkD63yF6Lg5VwR2qPyd0qRHN3ZP_LLgXIDyl8YPQhhc,16728
+pifcap/pifcap2fits.py,sha256=8CF34BvpIuo-K0sjBKiOU0oCLEQmGZ92EFftODXHyLU,8538
+pifcap/pifcap_image.py,sha256=t1eEW4wt-xvxs4AJzhpgXutOSC3lJqHKfDr5LrwadJs,668
+pifcap/pifcap_ui.py,sha256=-PvxC-AdfHQGGUtIwOSddey2KuhuG1esEV9VGuANq2M,18652
+pifcap/settings.py,sha256=v7Byn9rjwGBKYiZZzH0qymvMi_3k3i6-BrL7ml2ZpeY,3803
+pifcap/settings_ui.py,sha256=OBnXRhg1XdTelcuIRpEWtiIxAmt3CxYReLS9p7viqrI,1690
+pifcap-1.0.4.dist-info/LICENSE,sha256=SY0j9tYHquVQXPQ4mnotFW7DnCUvHSKXMw8rs7jkyIE,1068
+pifcap-1.0.4.dist-info/METADATA,sha256=6FpjBSl2qE0KBWFZZFGviJr4PilQsaVgYrOF8MewgjE,4766
+pifcap-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pifcap-1.0.4.dist-info/entry_points.txt,sha256=nyQg8pJiD6QRXph16WzWnFniDHPfPWh9tiqZXnijtJY,99
+pifcap-1.0.4.dist-info/top_level.txt,sha256=QzieCBRbfxeYlCiYGmkahZXIlON0wZGpgzvGs4KiE_s,7
+pifcap-1.0.4.dist-info/RECORD,,

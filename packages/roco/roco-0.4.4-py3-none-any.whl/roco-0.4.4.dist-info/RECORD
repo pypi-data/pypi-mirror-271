@@ -1,0 +1,10 @@
+roco/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roco/bin/cli.py,sha256=1Sslm2HTfF4elqPhjGqo3Zmv3ucIqaLpRPkyxVR8Zt8,426
+roco/config.py,sha256=8bBLXjsEwb5RRyz5PKQQAP0hpyCHKaiCpJzfn410dRg,821
+roco/main.py,sha256=bsHc68fRgVrQMUIt-NIvQ2_LNx-EpMadtlo6oANITPs,572
+roco/templates/runtime-config.js.jinja2,sha256=hMQKtFqOxtK1HROOkddvOdaf4leYWXVytIukMDtg1qg,459
+roco-0.4.4.dist-info/LICENSE,sha256=-Ba1OnI1bFgas2t1VF2J1eWwPnzO5bKtUtEm7E4i380,10207
+roco-0.4.4.dist-info/METADATA,sha256=HjHf91tRokm6dxRqOZXpomc0ZdHCe_kXFzcWfsPa8OA,2565
+roco-0.4.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+roco-0.4.4.dist-info/entry_points.txt,sha256=Yr_yDDmTq-fejZUmh6xlZEKOa9N-STwmNc6ZPfCCHlg,41
+roco-0.4.4.dist-info/RECORD,,

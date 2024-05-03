@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "libsrg"
+version = "4.4.1"
+description = "Utility lib logging, statistics, subprocesses"
+authors = ["Steve Goncalo <steven@goncalo.us>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Natural Language :: English",
+    "Topic :: Utilities",
+    "Intended Audience :: Developers"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jinja2 = "^3.1.3"
+sphinx = {version = "^7.3.7", optional = true, extras = ["doc"]}
+sphinx-rtd-theme = {version = "^2.0.0", optional = true, extras = ["doc"]}
+sphinxcontrib-napoleon = {version = "^0.7", optional = true, extras = ["doc"]}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://gitlab.com/SRG_gitlab/libsrg"
+Issues = "https://gitlab.com/SRG_gitlab/libsrg/-/issues"
+
+[tool.poetry.extras]
+doc = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]

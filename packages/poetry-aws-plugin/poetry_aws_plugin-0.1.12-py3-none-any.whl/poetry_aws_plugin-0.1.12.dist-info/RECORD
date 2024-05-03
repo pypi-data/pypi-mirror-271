@@ -1,0 +1,7 @@
+poetry_aws_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_aws_plugin/plugin.py,sha256=ROwpltlqfTGj_BiNqnscOkO2VUmxkY7qr84ri8C6_b0,6661
+poetry_aws_plugin-0.1.12.dist-info/LICENSE,sha256=GQV1ZpECnfpLPDrFoW4j1k5qU69olCWiTKH0e_0KJhs,1067
+poetry_aws_plugin-0.1.12.dist-info/METADATA,sha256=j4iK9GuCfbMx0gHn37e5_UoyeS-FBXr7qZedmsWeZ_Q,3622
+poetry_aws_plugin-0.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+poetry_aws_plugin-0.1.12.dist-info/entry_points.txt,sha256=5bHl172VniEJ_5XHenP3AQcZDLiM3t4CSq6ISKPi71s,76
+poetry_aws_plugin-0.1.12.dist-info/RECORD,,

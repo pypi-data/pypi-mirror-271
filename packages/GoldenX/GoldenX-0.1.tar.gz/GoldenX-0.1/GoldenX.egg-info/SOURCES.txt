@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+GoldenX.egg-info/PKG-INFO
+GoldenX.egg-info/SOURCES.txt
+GoldenX.egg-info/dependency_links.txt
+GoldenX.egg-info/top_level.txt
+code/__init__.py

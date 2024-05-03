@@ -1,0 +1,1647 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, DataLab Platform Developers
+# This file is distributed under the same license as the DataLab package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DataLab \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-19 17:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: cdl.core.computation:2 of
+msgid "Computation (:mod:`cdl.core.computation`)"
+msgstr "Calcul (:mod:`cdl.core.computation`)"
+
+#: cdl.core.computation:4 of
+msgid ""
+"This package contains the computation functions used by the DataLab "
+"project. Those functions operate directly on DataLab objects (i.e. "
+":class:`cdl.obj.SignalObj` and :class:`cdl.obj.ImageObj`) and are "
+"designed to be used in the DataLab pipeline, but can be used "
+"independently as well."
+msgstr ""
+"Ce paquet contient les fonctions de calcul utilisées par le projet "
+"DataLab. Ces fonctions opèrent directement sur les objets DataLab "
+"(c'est-à-dire :class:`cdl.obj.SignalObj` et :class:`cdl.obj.ImageObj`) et"
+" sont conçues pour être utilisées dans le pipeline DataLab, mais peuvent "
+"également être utilisées indépendamment."
+
+#: cdl.core.computation:11 of
+msgid ""
+"The :mod:`cdl.core.computation` package is the main entry point for the "
+"DataLab computation functions when manipulating DataLab objects. See the "
+":mod:`cdl.algorithms` package for algorithms that operate directly on "
+"NumPy arrays."
+msgstr ""
+"Le module :mod:`cdl.core.computation` est le point d'entrée principal "
+"pour les fonctions de calcul DataLab lors de la manipulation d'objets "
+"DataLab. Voir le module :mod:`cdl.algorithms` pour les algorithmes qui "
+"opèrent directement sur les tableaux NumPy."
+
+#: cdl.core.computation:16 of
+msgid ""
+"Each computation module defines a set of computation objects, that is, "
+"functions that implement processing features and classes that implement "
+"the corresponding parameters (in the form of "
+":py:class:`guidata.dataset.datatypes.Dataset` subclasses). The "
+"computation functions takes a DataLab object (e.g. "
+":class:`cdl.obj.SignalObj`) and a parameter object (e.g. "
+":py:class:`cdl.param.MovingAverageParam`) as input and return a DataLab "
+"object as output (the result of the computation). The parameter object is"
+" used to configure the computation function (e.g. the size of the moving "
+"average window)."
+msgstr ""
+"Chaque module de calcul définit un ensemble d'objets de calcul, "
+"c'est-à-dire des fonctions qui implémentent des fonctionnalités de "
+"traitement et des classes qui implémentent les paramètres correspondants "
+"(sous la forme de sous-classes "
+":py:class:`guidata.dataset.datatypes.Dataset`). Les fonctions de calcul "
+"prennent un objet DataLab (par exemple :class:`cdl.obj.SignalObj`) et un "
+"objet de paramètre (par exemple :py:class:`cdl.param.MovingAverageParam`)"
+" en entrée et renvoient un objet DataLab en sortie (le résultat du "
+"calcul). L'objet de paramètre est utilisé pour configurer la fonction de "
+"calcul (par exemple, la taille de la fenêtre de moyenne mobile)."
+
+#: cdl.core.computation:25 of
+msgid ""
+"In DataLab overall architecture, the purpose of this package is to "
+"provide the computation functions that are used by the "
+":mod:`cdl.core.gui.processor` module, based on the algorithms defined in "
+"the :mod:`cdl.algorithms` module and on the data model defined in the "
+":mod:`cdl.obj` (or :mod:`cdl.core.model`) module."
+msgstr ""
+"Dans l'architecture globale de DataLab, le but de ce paquet est de "
+"fournir les fonctions de calcul qui sont utilisées par le module "
+":mod:`cdl.core.gui.processor`, basé sur les algorithmes définis dans le "
+"module :mod:`cdl.algorithms` et sur le modèle de données défini dans le "
+"module :mod:`cdl.obj` (ou :mod:`cdl.core.model`)."
+
+#: cdl.core.computation:30 of
+msgid ""
+"The computation modules are organized in subpackages according to their "
+"purpose. The following subpackages are available:"
+msgstr ""
+"Les modules de calcul sont organisés en sous-paquets en fonction de leur "
+"objectif. Les sous-paquets suivants sont disponibles :"
+
+#: cdl.core.computation:33 of
+msgid ":mod:`cdl.core.computation.base`: Common processing features"
+msgstr ":mod:`cdl.core.computation.base` : fonctionnalités de traitement communes"
+
+#: cdl.core.computation:34 of
+msgid ":mod:`cdl.core.computation.signal`: Signal processing features"
+msgstr ""
+":mod:`cdl.core.computation.signal` : fonctionnalités de traitement du "
+"signal"
+
+#: cdl.core.computation:35 of
+msgid ":mod:`cdl.core.computation.image`: Image processing features"
+msgstr ":mod:`cdl.core.computation.image` : fonctionnalités de traitement d'image"
+
+#: cdl.core.computation:38 of
+msgid "Common processing features"
+msgstr "Fonctionnalités de traitement communes"
+
+#: cdl.core.computation.base.GaussianParam:1 of
+msgid "Gaussian filter parameters"
+msgstr "Paramètres du filtre gaussien"
+
+#: cdl.core.computation.base.MovingAverageParam:1 of
+msgid "Moving average parameters"
+msgstr "Paramètres de la moyenne mobile"
+
+#: cdl.core.computation.base.MovingMedianParam:1 of
+msgid "Moving median parameters"
+msgstr "Paramètres de la médiane mobile"
+
+#: cdl.core.computation.base.ThresholdParam:1 of
+msgid "Threshold parameters"
+msgstr "Paramètres du seuillage"
+
+#: cdl.core.computation.base.ClipParam:1 of
+msgid "Data clipping parameters"
+msgstr "Paramètres du rognage des données"
+
+#: cdl.core.computation.base.HistogramParam:1 of
+msgid "Histogram parameters"
+msgstr "Paramètres de l'histogramme"
+
+#: cdl.core.computation.base.HistogramParam.get_suffix:1 of
+msgid "Return suffix for the histogram computation"
+msgstr "Renvoie le suffixe pour le calcul de l'histogramme"
+
+#: cdl.core.computation.base.HistogramParam.get_suffix
+#: cdl.core.computation.base.new_signal_result
+#: cdl.core.computation.image.Wrap11Func
+#: cdl.core.computation.image.calc_with_osr
+#: cdl.core.computation.image.compute_abs
+#: cdl.core.computation.image.compute_add
+#: cdl.core.computation.image.compute_astype
+#: cdl.core.computation.image.compute_average_profile
+#: cdl.core.computation.image.compute_binning
+#: cdl.core.computation.image.compute_butterworth
+#: cdl.core.computation.image.compute_calibration
+#: cdl.core.computation.image.compute_centroid
+#: cdl.core.computation.image.compute_clip
+#: cdl.core.computation.image.compute_difference
+#: cdl.core.computation.image.compute_division
+#: cdl.core.computation.image.compute_enclosing_circle
+#: cdl.core.computation.image.compute_fft
+#: cdl.core.computation.image.compute_flatfield
+#: cdl.core.computation.image.compute_fliph
+#: cdl.core.computation.image.compute_flipv
+#: cdl.core.computation.image.compute_gaussian_filter
+#: cdl.core.computation.image.compute_histogram
+#: cdl.core.computation.image.compute_hough_circle_peaks
+#: cdl.core.computation.image.compute_ifft
+#: cdl.core.computation.image.compute_im
+#: cdl.core.computation.image.compute_log10
+#: cdl.core.computation.image.compute_logp1
+#: cdl.core.computation.image.compute_moving_average
+#: cdl.core.computation.image.compute_moving_median
+#: cdl.core.computation.image.compute_product
+#: cdl.core.computation.image.compute_profile
+#: cdl.core.computation.image.compute_quadratic_difference
+#: cdl.core.computation.image.compute_radial_profile
+#: cdl.core.computation.image.compute_re
+#: cdl.core.computation.image.compute_resize
+#: cdl.core.computation.image.compute_rotate
+#: cdl.core.computation.image.compute_rotate270
+#: cdl.core.computation.image.compute_rotate90
+#: cdl.core.computation.image.compute_swap_axes
+#: cdl.core.computation.image.compute_threshold
+#: cdl.core.computation.image.compute_wiener
+#: cdl.core.computation.image.detection.compute_blob_dog
+#: cdl.core.computation.image.detection.compute_blob_doh
+#: cdl.core.computation.image.detection.compute_blob_log
+#: cdl.core.computation.image.detection.compute_blob_opencv
+#: cdl.core.computation.image.detection.compute_peak_detection
+#: cdl.core.computation.image.dst_11 cdl.core.computation.image.dst_11_signal
+#: cdl.core.computation.image.dst_n1n
+#: cdl.core.computation.image.edges.compute_canny
+#: cdl.core.computation.image.edges.compute_farid
+#: cdl.core.computation.image.edges.compute_farid_h
+#: cdl.core.computation.image.edges.compute_farid_v
+#: cdl.core.computation.image.edges.compute_laplace
+#: cdl.core.computation.image.edges.compute_prewitt
+#: cdl.core.computation.image.edges.compute_prewitt_h
+#: cdl.core.computation.image.edges.compute_prewitt_v
+#: cdl.core.computation.image.edges.compute_roberts
+#: cdl.core.computation.image.edges.compute_scharr
+#: cdl.core.computation.image.edges.compute_scharr_h
+#: cdl.core.computation.image.edges.compute_scharr_v
+#: cdl.core.computation.image.edges.compute_sobel
+#: cdl.core.computation.image.edges.compute_sobel_h
+#: cdl.core.computation.image.edges.compute_sobel_v
+#: cdl.core.computation.image.exposure.compute_adjust_gamma
+#: cdl.core.computation.image.exposure.compute_adjust_log
+#: cdl.core.computation.image.exposure.compute_adjust_sigmoid
+#: cdl.core.computation.image.exposure.compute_equalize_adapthist
+#: cdl.core.computation.image.exposure.compute_equalize_hist
+#: cdl.core.computation.image.exposure.compute_rescale_intensity
+#: cdl.core.computation.image.extract_multiple_roi
+#: cdl.core.computation.image.extract_single_roi
+#: cdl.core.computation.image.get_centroid_coords
+#: cdl.core.computation.image.get_enclosing_circle_coords
+#: cdl.core.computation.image.morphology.compute_black_tophat
+#: cdl.core.computation.image.morphology.compute_closing
+#: cdl.core.computation.image.morphology.compute_dilation
+#: cdl.core.computation.image.morphology.compute_erosion
+#: cdl.core.computation.image.morphology.compute_opening
+#: cdl.core.computation.image.morphology.compute_white_tophat
+#: cdl.core.computation.image.restoration.compute_denoise_bilateral
+#: cdl.core.computation.image.restoration.compute_denoise_tophat
+#: cdl.core.computation.image.restoration.compute_denoise_tv
+#: cdl.core.computation.image.restoration.compute_denoise_wavelet
+#: cdl.core.computation.image.rotate_obj_coords
+#: cdl.core.computation.signal.Wrap11Func
+#: cdl.core.computation.signal.compute_abs
+#: cdl.core.computation.signal.compute_add
+#: cdl.core.computation.signal.compute_astype
+#: cdl.core.computation.signal.compute_calibration
+#: cdl.core.computation.signal.compute_clip
+#: cdl.core.computation.signal.compute_convolution
+#: cdl.core.computation.signal.compute_derivative
+#: cdl.core.computation.signal.compute_detrending
+#: cdl.core.computation.signal.compute_difference
+#: cdl.core.computation.signal.compute_division
+#: cdl.core.computation.signal.compute_fft
+#: cdl.core.computation.signal.compute_gaussian_filter
+#: cdl.core.computation.signal.compute_histogram
+#: cdl.core.computation.signal.compute_ifft
+#: cdl.core.computation.signal.compute_im
+#: cdl.core.computation.signal.compute_integral
+#: cdl.core.computation.signal.compute_interpolation
+#: cdl.core.computation.signal.compute_log10
+#: cdl.core.computation.signal.compute_moving_average
+#: cdl.core.computation.signal.compute_moving_median
+#: cdl.core.computation.signal.compute_normalize
+#: cdl.core.computation.signal.compute_peak_detection
+#: cdl.core.computation.signal.compute_product
+#: cdl.core.computation.signal.compute_quadratic_difference
+#: cdl.core.computation.signal.compute_re
+#: cdl.core.computation.signal.compute_resampling
+#: cdl.core.computation.signal.compute_swap_axes
+#: cdl.core.computation.signal.compute_threshold
+#: cdl.core.computation.signal.compute_wiener
+#: cdl.core.computation.signal.dst_11 cdl.core.computation.signal.dst_n1n
+#: cdl.core.computation.signal.extract_multiple_roi
+#: cdl.core.computation.signal.extract_single_roi of
+msgid "Parameters"
+msgstr "Paramètres"
+
+#: cdl.core.computation.base.HistogramParam.get_suffix:3 of
+msgid "data array"
+msgstr "tableau de données"
+
+#: cdl.core.computation.base.ROIDataParam:1 of
+msgid "ROI Editor data"
+msgstr "Données de l'éditeur de ROI"
+
+#: cdl.core.computation.base.ROIDataParam.create:1 of
+msgid "Create ROIDataParam instance"
+msgstr "Créer une instance de ROIDataParam"
+
+#: cdl.core.computation.base.ROIDataParam.is_empty:1 of
+msgid "Return True if there is no ROI"
+msgstr "Renvoie True s'il n'y a pas de ROI"
+
+#: cdl.core.computation.base.FFTParam:1 of
+msgid "FFT parameters"
+msgstr "Paramètres FFT"
+
+#: cdl.core.computation.base.new_signal_result:1 of
+msgid "Create new signal object as a result of a compute_11 function"
+msgstr ""
+"Créer un nouvel objet de signal en tant que résultat d'une fonction "
+"compute_11"
+
+#: cdl.core.computation.base.new_signal_result:3 of
+msgid ""
+"As opposed to the `dst_11` functions, this function creates a new signal "
+"object without copying the original object metadata, except for the "
+"\"source\" entry."
+msgstr ""
+"Contrairement aux fonctions `dst_11`, cette fonction crée un nouvel objet"
+" de signal sans copier les métadonnées de l'objet d'origine, sauf pour "
+"l'entrée \"source\"."
+
+#: cdl.core.computation.base.new_signal_result:6 of
+msgid "input signal or image object"
+msgstr "objet de signal ou d'image d'entrée"
+
+#: cdl.core.computation.base.new_signal_result:7
+#: cdl.core.computation.image.dst_11:5
+#: cdl.core.computation.image.dst_11_signal:5
+#: cdl.core.computation.image.dst_n1n:6 of
+msgid "name of the processing function"
+msgstr "nom de la fonction de traitement"
+
+#: cdl.core.computation.base.new_signal_result:8 of
+msgid "suffix to add to the title"
+msgstr "suffixe à ajouter au titre"
+
+#: cdl.core.computation.base.new_signal_result:9 of
+msgid "units of the output signal"
+msgstr "unités du signal de sortie"
+
+#: cdl.core.computation.base.new_signal_result:10 of
+msgid "labels of the output signal"
+msgstr "étiquettes du signal de sortie"
+
+#: cdl.core.computation.base.new_signal_result
+#: cdl.core.computation.image.calc_with_osr
+#: cdl.core.computation.image.compute_abs
+#: cdl.core.computation.image.compute_add
+#: cdl.core.computation.image.compute_astype
+#: cdl.core.computation.image.compute_average_profile
+#: cdl.core.computation.image.compute_binning
+#: cdl.core.computation.image.compute_butterworth
+#: cdl.core.computation.image.compute_calibration
+#: cdl.core.computation.image.compute_centroid
+#: cdl.core.computation.image.compute_clip
+#: cdl.core.computation.image.compute_difference
+#: cdl.core.computation.image.compute_division
+#: cdl.core.computation.image.compute_enclosing_circle
+#: cdl.core.computation.image.compute_fft
+#: cdl.core.computation.image.compute_flatfield
+#: cdl.core.computation.image.compute_fliph
+#: cdl.core.computation.image.compute_flipv
+#: cdl.core.computation.image.compute_gaussian_filter
+#: cdl.core.computation.image.compute_histogram
+#: cdl.core.computation.image.compute_hough_circle_peaks
+#: cdl.core.computation.image.compute_ifft
+#: cdl.core.computation.image.compute_im
+#: cdl.core.computation.image.compute_log10
+#: cdl.core.computation.image.compute_logp1
+#: cdl.core.computation.image.compute_moving_average
+#: cdl.core.computation.image.compute_moving_median
+#: cdl.core.computation.image.compute_product
+#: cdl.core.computation.image.compute_profile
+#: cdl.core.computation.image.compute_quadratic_difference
+#: cdl.core.computation.image.compute_radial_profile
+#: cdl.core.computation.image.compute_re
+#: cdl.core.computation.image.compute_resize
+#: cdl.core.computation.image.compute_rotate
+#: cdl.core.computation.image.compute_rotate270
+#: cdl.core.computation.image.compute_rotate90
+#: cdl.core.computation.image.compute_swap_axes
+#: cdl.core.computation.image.compute_threshold
+#: cdl.core.computation.image.compute_wiener
+#: cdl.core.computation.image.detection.compute_blob_dog
+#: cdl.core.computation.image.detection.compute_blob_doh
+#: cdl.core.computation.image.detection.compute_blob_log
+#: cdl.core.computation.image.detection.compute_blob_opencv
+#: cdl.core.computation.image.detection.compute_peak_detection
+#: cdl.core.computation.image.dst_11 cdl.core.computation.image.dst_11_signal
+#: cdl.core.computation.image.dst_n1n
+#: cdl.core.computation.image.edges.compute_canny
+#: cdl.core.computation.image.edges.compute_farid
+#: cdl.core.computation.image.edges.compute_farid_h
+#: cdl.core.computation.image.edges.compute_farid_v
+#: cdl.core.computation.image.edges.compute_laplace
+#: cdl.core.computation.image.edges.compute_prewitt
+#: cdl.core.computation.image.edges.compute_prewitt_h
+#: cdl.core.computation.image.edges.compute_prewitt_v
+#: cdl.core.computation.image.edges.compute_roberts
+#: cdl.core.computation.image.edges.compute_scharr
+#: cdl.core.computation.image.edges.compute_scharr_h
+#: cdl.core.computation.image.edges.compute_scharr_v
+#: cdl.core.computation.image.edges.compute_sobel
+#: cdl.core.computation.image.edges.compute_sobel_h
+#: cdl.core.computation.image.edges.compute_sobel_v
+#: cdl.core.computation.image.exposure.compute_adjust_gamma
+#: cdl.core.computation.image.exposure.compute_adjust_log
+#: cdl.core.computation.image.exposure.compute_adjust_sigmoid
+#: cdl.core.computation.image.exposure.compute_equalize_adapthist
+#: cdl.core.computation.image.exposure.compute_equalize_hist
+#: cdl.core.computation.image.exposure.compute_rescale_intensity
+#: cdl.core.computation.image.extract_multiple_roi
+#: cdl.core.computation.image.extract_single_roi
+#: cdl.core.computation.image.get_centroid_coords
+#: cdl.core.computation.image.get_enclosing_circle_coords
+#: cdl.core.computation.image.morphology.compute_black_tophat
+#: cdl.core.computation.image.morphology.compute_closing
+#: cdl.core.computation.image.morphology.compute_dilation
+#: cdl.core.computation.image.morphology.compute_erosion
+#: cdl.core.computation.image.morphology.compute_opening
+#: cdl.core.computation.image.morphology.compute_white_tophat
+#: cdl.core.computation.image.restoration.compute_denoise_bilateral
+#: cdl.core.computation.image.restoration.compute_denoise_tophat
+#: cdl.core.computation.image.restoration.compute_denoise_tv
+#: cdl.core.computation.image.restoration.compute_denoise_wavelet
+#: cdl.core.computation.image.rotate_obj_coords
+#: cdl.core.computation.signal.compute_abs
+#: cdl.core.computation.signal.compute_add
+#: cdl.core.computation.signal.compute_astype
+#: cdl.core.computation.signal.compute_calibration
+#: cdl.core.computation.signal.compute_clip
+#: cdl.core.computation.signal.compute_convolution
+#: cdl.core.computation.signal.compute_derivative
+#: cdl.core.computation.signal.compute_detrending
+#: cdl.core.computation.signal.compute_difference
+#: cdl.core.computation.signal.compute_division
+#: cdl.core.computation.signal.compute_fft
+#: cdl.core.computation.signal.compute_gaussian_filter
+#: cdl.core.computation.signal.compute_histogram
+#: cdl.core.computation.signal.compute_ifft
+#: cdl.core.computation.signal.compute_im
+#: cdl.core.computation.signal.compute_integral
+#: cdl.core.computation.signal.compute_interpolation
+#: cdl.core.computation.signal.compute_log10
+#: cdl.core.computation.signal.compute_moving_average
+#: cdl.core.computation.signal.compute_moving_median
+#: cdl.core.computation.signal.compute_normalize
+#: cdl.core.computation.signal.compute_peak_detection
+#: cdl.core.computation.signal.compute_product
+#: cdl.core.computation.signal.compute_quadratic_difference
+#: cdl.core.computation.signal.compute_re
+#: cdl.core.computation.signal.compute_resampling
+#: cdl.core.computation.signal.compute_swap_axes
+#: cdl.core.computation.signal.compute_threshold
+#: cdl.core.computation.signal.compute_wiener
+#: cdl.core.computation.signal.dst_11 cdl.core.computation.signal.dst_n1n
+#: cdl.core.computation.signal.extract_multiple_roi
+#: cdl.core.computation.signal.extract_single_roi of
+msgid "Returns"
+msgstr "Renvoie"
+
+#: cdl.core.computation.base.new_signal_result:12
+#: cdl.core.computation.image.compute_histogram:6
+#: cdl.core.computation.image.dst_11_signal:7 of
+msgid "Output signal object"
+msgstr "Objet de signal de sortie"
+
+#: cdl.core.computation:44 of
+msgid "Signal processing features"
+msgstr "Fonctionnalités de traitement du signal"
+
+#: cdl.core.computation.image.dst_11_signal:1
+#: cdl.core.computation.signal.dst_11:1 of
+msgid ""
+"Create a result signal object, as returned by the callback function of "
+"the :func:`cdl.core.gui.processor.base.BaseProcessor.compute_11` method"
+msgstr ""
+
+#: cdl.core.computation.signal.compute_abs:3
+#: cdl.core.computation.signal.compute_add:4
+#: cdl.core.computation.signal.compute_astype:3
+#: cdl.core.computation.signal.compute_calibration:3
+#: cdl.core.computation.signal.compute_clip:3
+#: cdl.core.computation.signal.compute_derivative:3
+#: cdl.core.computation.signal.compute_detrending:3
+#: cdl.core.computation.signal.compute_fft:3
+#: cdl.core.computation.signal.compute_gaussian_filter:3
+#: cdl.core.computation.signal.compute_histogram:3
+#: cdl.core.computation.signal.compute_ifft:3
+#: cdl.core.computation.signal.compute_im:3
+#: cdl.core.computation.signal.compute_integral:3
+#: cdl.core.computation.signal.compute_log10:3
+#: cdl.core.computation.signal.compute_moving_average:3
+#: cdl.core.computation.signal.compute_moving_median:3
+#: cdl.core.computation.signal.compute_normalize:3
+#: cdl.core.computation.signal.compute_peak_detection:3
+#: cdl.core.computation.signal.compute_product:4
+#: cdl.core.computation.signal.compute_re:3
+#: cdl.core.computation.signal.compute_resampling:3
+#: cdl.core.computation.signal.compute_swap_axes:3
+#: cdl.core.computation.signal.compute_threshold:3
+#: cdl.core.computation.signal.compute_wiener:3
+#: cdl.core.computation.signal.dst_11:4
+#: cdl.core.computation.signal.extract_multiple_roi:3
+#: cdl.core.computation.signal.extract_single_roi:3 of
+msgid "source signal"
+msgstr "signal source"
+
+#: cdl.core.computation.signal.dst_11:5 cdl.core.computation.signal.dst_n1n:6
+#: of
+msgid "name of the function"
+msgstr "nom de la fonction"
+
+#: cdl.core.computation.signal.compute_abs:5
+#: cdl.core.computation.signal.compute_astype:6
+#: cdl.core.computation.signal.compute_calibration:6
+#: cdl.core.computation.signal.compute_clip:6
+#: cdl.core.computation.signal.compute_convolution:6
+#: cdl.core.computation.signal.compute_derivative:5
+#: cdl.core.computation.signal.compute_detrending:6
+#: cdl.core.computation.signal.compute_fft:6
+#: cdl.core.computation.signal.compute_gaussian_filter:6
+#: cdl.core.computation.signal.compute_histogram:6
+#: cdl.core.computation.signal.compute_ifft:6
+#: cdl.core.computation.signal.compute_im:5
+#: cdl.core.computation.signal.compute_integral:5
+#: cdl.core.computation.signal.compute_interpolation:7
+#: cdl.core.computation.signal.compute_log10:5
+#: cdl.core.computation.signal.compute_moving_average:6
+#: cdl.core.computation.signal.compute_moving_median:6
+#: cdl.core.computation.signal.compute_normalize:6
+#: cdl.core.computation.signal.compute_peak_detection:6
+#: cdl.core.computation.signal.compute_re:5
+#: cdl.core.computation.signal.compute_resampling:6
+#: cdl.core.computation.signal.compute_swap_axes:5
+#: cdl.core.computation.signal.compute_threshold:6
+#: cdl.core.computation.signal.compute_wiener:5
+#: cdl.core.computation.signal.dst_11:7 cdl.core.computation.signal.dst_n1n:8
+#: of
+msgid "Result signal object"
+msgstr "Objet signal résultat"
+
+#: cdl.core.computation.signal.Wrap11Func:1 of
+msgid ""
+"Wrap a 1 array → 1 array function (the simple case of y1 = f(y0)) to "
+"produce a 1 signal → 1 signal function, which can be used inside "
+"DataLab's infrastructure to perform computations with "
+":class:`cdl.core.gui.processor.signal.SignalProcessor`."
+msgstr ""
+"Encapsule une fonction 1 tableau → 1 tableau (le cas simple de y1 = "
+"f(y0)) pour produire une fonction 1 signal → 1 signal, qui"
+" peut être utilisée à l'intérieur de l'infrastructure de DataLab pour "
+"effectuer des calculs avec :class:`cdl.core.gui.processor.signal.SignalProcessor`."
+
+#: cdl.core.computation.image.Wrap11Func:5
+#: cdl.core.computation.signal.Wrap11Func:5 of
+msgid ""
+"This wrapping mechanism using a class is necessary for the resulted "
+"function to be pickable by the ``multiprocessing`` module."
+msgstr ""
+"Ce mécanisme d'encapsulation à l'aide d'une classe est nécessaire pour "
+"que la fonction résultante puisse être sélectionnée par le module "
+"``multiprocessing``."
+
+#: cdl.core.computation.signal.Wrap11Func:8 of
+msgid ""
+"The instance of this wrapper is callable and returns a "
+":class:`cdl.obj.SignalObj` object."
+msgstr "L'instance de cet encapsuleur est appelable et renvoie un objet :class:`cdl.obj.SignalObj`."
+
+#: cdl.core.computation.image.Wrap11Func:12
+#: cdl.core.computation.signal.Wrap11Func:12 of
+msgid "Example"
+msgstr "Exemple"
+
+#: cdl.core.computation.image.Wrap11Func:23
+#: cdl.core.computation.signal.Wrap11Func:24 of
+msgid "1 array → 1 array function"
+msgstr "Fonction 1 tableau → 1 tableau"
+
+#: cdl.core.computation.signal.dst_n1n:1 of
+msgid ""
+"Create a result signal object, as returned by the callback function of "
+"the :func:`cdl.core.gui.processor.base.BaseProcessor.compute_n1n` method"
+msgstr "Crée un objet signal résultat, tel que renvoyé par la fonction de rappel de la méthode :func:`cdl.core.gui.processor.base.BaseProcessor.compute_n1n`"
+
+#: cdl.core.computation.signal.compute_convolution:3
+#: cdl.core.computation.signal.compute_difference:7
+#: cdl.core.computation.signal.compute_division:3
+#: cdl.core.computation.signal.compute_interpolation:3
+#: cdl.core.computation.signal.compute_quadratic_difference:7
+#: cdl.core.computation.signal.dst_n1n:4 of
+msgid "source signal 1"
+msgstr "signal source 1"
+
+#: cdl.core.computation.signal.compute_convolution:4
+#: cdl.core.computation.signal.compute_difference:8
+#: cdl.core.computation.signal.compute_division:4
+#: cdl.core.computation.signal.compute_interpolation:4
+#: cdl.core.computation.signal.compute_quadratic_difference:8
+#: cdl.core.computation.signal.dst_n1n:5 of
+msgid "source signal 2"
+msgstr "signal source 2"
+
+#: cdl.core.computation.signal.compute_add:1 of
+msgid ""
+"Add **dst** and **src** signals and return **dst** signal modified in "
+"place"
+msgstr "Ajoute les signaux **dst** et **src** et renvoie le signal **dst** modifié sur place"
+
+#: cdl.core.computation.signal.compute_add:3
+#: cdl.core.computation.signal.compute_product:3 of
+msgid "destination signal"
+msgstr "signal de destination"
+
+#: cdl.core.computation.signal.compute_add:6
+#: cdl.core.computation.signal.compute_product:6 of
+msgid "Modified **dst** signal"
+msgstr "Signal **dst** modifié"
+
+#: cdl.core.computation.signal.compute_product:1 of
+msgid ""
+"Multiply **dst** and **src** signals and return **dst** signal modified "
+"in place"
+msgstr "Multiplie les signaux **dst** et **src** et renvoie le signal **dst** modifié sur place"
+
+#: cdl.core.computation.signal.compute_difference:1 of
+msgid "Compute difference between two signals"
+msgstr "Calculer la différence entre deux signaux"
+
+#: cdl.core.computation.signal.compute_difference:5
+#: cdl.core.computation.signal.compute_quadratic_difference:5 of
+msgid "If uncertainty is available, it is propagated."
+msgstr "Si une incertitude est disponible, elle est propagée."
+
+#: cdl.core.computation.signal.compute_difference:10 of
+msgid "Result signal object **src1** - **src2**"
+msgstr "Objet signal résultat **src1** - **src2**"
+
+#: cdl.core.computation.signal.compute_quadratic_difference:1 of
+msgid "Compute quadratic difference between two signals"
+msgstr "Calculer la différence quadratique entre deux signaux"
+
+#: cdl.core.computation.signal.compute_quadratic_difference:10 of
+msgid "Result signal object (**src1** - **src2**) / sqrt(2.0)"
+msgstr "Objet signal résultat (**src1** - **src2**) / sqrt(2.0)"
+
+#: cdl.core.computation.signal.compute_division:1 of
+msgid "Compute division between two signals"
+msgstr "Calculer la division entre deux signaux"
+
+#: cdl.core.computation.signal.compute_division:6 of
+msgid "Result signal object **src1** / **src2**"
+msgstr "Objet signal résultat **src1** / **src2**"
+
+#: cdl.core.computation.image.extract_multiple_roi:1
+#: cdl.core.computation.signal.extract_multiple_roi:1 of
+msgid "Extract multiple regions of interest from data"
+msgstr "Extrait plusieurs régions d'intérêt des données"
+
+#: cdl.core.computation.signal.extract_multiple_roi:4 of
+msgid "group of parameters"
+msgstr "groupe de paramètres"
+
+#: cdl.core.computation.signal.extract_multiple_roi:6 of
+msgid "Signal with multiple regions of interest"
+msgstr "Signal avec plusieurs régions d'intérêt"
+
+#: cdl.core.computation.signal.extract_single_roi:1 of
+msgid "Extract single region of interest from data"
+msgstr "Extrait une seule région d'intérêt des données"
+
+#: cdl.core.computation.image.compute_astype:4
+#: cdl.core.computation.image.compute_average_profile:4
+#: cdl.core.computation.image.compute_binning:4
+#: cdl.core.computation.image.compute_butterworth:4
+#: cdl.core.computation.image.compute_clip:4
+#: cdl.core.computation.image.compute_fft:4
+#: cdl.core.computation.image.compute_gaussian_filter:4
+#: cdl.core.computation.image.compute_histogram:4
+#: cdl.core.computation.image.compute_hough_circle_peaks:4
+#: cdl.core.computation.image.compute_ifft:4
+#: cdl.core.computation.image.compute_logp1:4
+#: cdl.core.computation.image.compute_moving_average:4
+#: cdl.core.computation.image.compute_moving_median:4
+#: cdl.core.computation.image.compute_profile:4
+#: cdl.core.computation.image.compute_radial_profile:4
+#: cdl.core.computation.image.compute_resize:4
+#: cdl.core.computation.image.compute_rotate:4
+#: cdl.core.computation.image.compute_threshold:4
+#: cdl.core.computation.image.detection.compute_blob_dog:4
+#: cdl.core.computation.image.detection.compute_blob_doh:4
+#: cdl.core.computation.image.detection.compute_blob_log:4
+#: cdl.core.computation.image.detection.compute_blob_opencv:4
+#: cdl.core.computation.image.detection.compute_peak_detection:4
+#: cdl.core.computation.image.edges.compute_canny:4
+#: cdl.core.computation.image.exposure.compute_adjust_gamma:4
+#: cdl.core.computation.image.exposure.compute_adjust_log:4
+#: cdl.core.computation.image.exposure.compute_adjust_sigmoid:4
+#: cdl.core.computation.image.exposure.compute_equalize_adapthist:4
+#: cdl.core.computation.image.exposure.compute_equalize_hist:4
+#: cdl.core.computation.image.exposure.compute_rescale_intensity:4
+#: cdl.core.computation.image.morphology.compute_black_tophat:4
+#: cdl.core.computation.image.morphology.compute_closing:4
+#: cdl.core.computation.image.morphology.compute_dilation:4
+#: cdl.core.computation.image.morphology.compute_erosion:4
+#: cdl.core.computation.image.morphology.compute_opening:4
+#: cdl.core.computation.image.morphology.compute_white_tophat:4
+#: cdl.core.computation.image.restoration.compute_denoise_bilateral:4
+#: cdl.core.computation.image.restoration.compute_denoise_tophat:4
+#: cdl.core.computation.image.restoration.compute_denoise_tv:4
+#: cdl.core.computation.image.restoration.compute_denoise_wavelet:4
+#: cdl.core.computation.signal.compute_astype:4
+#: cdl.core.computation.signal.compute_calibration:4
+#: cdl.core.computation.signal.compute_clip:4
+#: cdl.core.computation.signal.compute_detrending:4
+#: cdl.core.computation.signal.compute_fft:4
+#: cdl.core.computation.signal.compute_gaussian_filter:4
+#: cdl.core.computation.signal.compute_histogram:4
+#: cdl.core.computation.signal.compute_ifft:4
+#: cdl.core.computation.signal.compute_interpolation:5
+#: cdl.core.computation.signal.compute_moving_average:4
+#: cdl.core.computation.signal.compute_moving_median:4
+#: cdl.core.computation.signal.compute_normalize:4
+#: cdl.core.computation.signal.compute_peak_detection:4
+#: cdl.core.computation.signal.compute_resampling:4
+#: cdl.core.computation.signal.compute_threshold:4
+#: cdl.core.computation.signal.extract_single_roi:4 of
+msgid "parameters"
+msgstr "paramètres"
+
+#: cdl.core.computation.signal.extract_single_roi:6 of
+msgid "Signal with single region of interest"
+msgstr "Signal avec une seule région d'intérêt"
+
+#: cdl.core.computation.signal.compute_swap_axes:1 of
+msgid "Swap axes"
+msgstr "Permute les axes"
+
+#: cdl.core.computation.image.compute_abs:1
+#: cdl.core.computation.signal.compute_abs:1 of
+msgid "Compute absolute value"
+msgstr "Calcule la valeur absolue"
+
+#: cdl.core.computation.image.compute_re:1
+#: cdl.core.computation.signal.compute_re:1 of
+msgid "Compute real part"
+msgstr "Calcule la partie réelle"
+
+#: cdl.core.computation.image.compute_im:1
+#: cdl.core.computation.signal.compute_im:1 of
+msgid "Compute imaginary part"
+msgstr "Calcule la partie imaginaire"
+
+#: cdl.core.computation.signal.DataTypeSParam:1 of
+msgid "Convert signal data type parameters"
+msgstr "Convertir les paramètres du type de données du signal"
+
+#: cdl.core.computation.signal.compute_astype:1 of
+msgid "Convert data type"
+msgstr "Convertit le type de données"
+
+#: cdl.core.computation.signal.compute_log10:1 of
+msgid "Compute Log10"
+msgstr "Calcule Log10"
+
+#: cdl.core.computation.image.detection.Peak2DDetectionParam:1
+#: cdl.core.computation.signal.PeakDetectionParam:1 of
+msgid "Peak detection parameters"
+msgstr "Paramètres de détection de pics"
+
+#: cdl.core.computation.signal.compute_peak_detection:1 of
+msgid "Peak detection"
+msgstr "Détection de pics"
+
+#: cdl.core.computation.signal.NormalizeYParam:1 of
+msgid "Normalize parameters"
+msgstr "Paramètres de normalisation"
+
+#: cdl.core.computation.signal.compute_normalize:1 of
+msgid "Normalize data"
+msgstr "Normalise les données"
+
+#: cdl.core.computation.signal.compute_derivative:1 of
+msgid "Compute derivative"
+msgstr "Calcule la dérivée"
+
+#: cdl.core.computation.signal.compute_integral:1 of
+msgid "Compute integral"
+msgstr "Calcule l'intégrale"
+
+#: cdl.core.computation.signal.XYCalibrateParam:1 of
+msgid "Signal calibration parameters"
+msgstr "Paramètres d'étalonnage du signal"
+
+#: cdl.core.computation.image.compute_calibration:1
+#: cdl.core.computation.signal.compute_calibration:1 of
+msgid "Compute linear calibration"
+msgstr "Calcule l'étalonnage linéaire"
+
+#: cdl.core.computation.signal.compute_threshold:1 of
+msgid "Compute threshold clipping"
+msgstr "Calcule le seuillage des données"
+
+#: cdl.core.computation.signal.compute_clip:1 of
+msgid "Compute maximum data clipping"
+msgstr "Calcule l'écrêtage des données"
+
+#: cdl.core.computation.image.compute_gaussian_filter:1
+#: cdl.core.computation.signal.compute_gaussian_filter:1 of
+msgid "Compute gaussian filter"
+msgstr "Calcule le filtre gaussien"
+
+#: cdl.core.computation.image.compute_moving_average:1
+#: cdl.core.computation.signal.compute_moving_average:1 of
+msgid "Compute moving average"
+msgstr "Calcule la moyenne mobile"
+
+#: cdl.core.computation.image.compute_moving_median:1
+#: cdl.core.computation.signal.compute_moving_median:1 of
+msgid "Compute moving median"
+msgstr "Calcule la médiane mobile"
+
+#: cdl.core.computation.image.compute_wiener:1
+#: cdl.core.computation.signal.compute_wiener:1 of
+msgid "Compute Wiener filter"
+msgstr "Calcule le filtre de Wiener"
+
+#: cdl.core.computation.image.compute_fft:1
+#: cdl.core.computation.signal.compute_fft:1 of
+msgid "Compute FFT"
+msgstr "Calcule la FFT"
+
+#: cdl.core.computation.signal.compute_ifft:1 of
+msgid "Compute iFFT"
+msgstr "Calcule la iFFT"
+
+#: cdl.core.computation.signal.PolynomialFitParam:1 of
+msgid "Polynomial fitting parameters"
+msgstr "Paramètres de l'ajustement polynomial"
+
+#: cdl.core.computation.signal.FWHMParam:1 of
+msgid "FWHM parameters"
+msgstr "Paramètres LMH"
+
+#: cdl.core.computation.signal.compute_fwhm:1 of
+msgid "Compute FWHM"
+msgstr "Calcule la LMH"
+
+#: cdl.core.computation.signal.compute_fw1e2:1 of
+msgid "Compute FW at 1/e²"
+msgstr "Calcule la largeur à 1/e²"
+
+#: cdl.core.computation.signal.compute_histogram:1 of
+msgid "Compute histogram"
+msgstr "Calcule l'histogramme"
+
+#: cdl.core.computation.signal.InterpolationParam:1 of
+msgid "Interpolation parameters"
+msgstr "Paramètres d'interpolation"
+
+#: cdl.core.computation.signal.compute_interpolation:1 of
+msgid "Interpolate data"
+msgstr "Interpole les données"
+
+#: cdl.core.computation.signal.ResamplingParam:1 of
+msgid "Resample parameters"
+msgstr "Paramètres de rééchantillonnage"
+
+#: cdl.core.computation.signal.compute_resampling:1 of
+msgid "Resample data"
+msgstr "Rééchantillonne les données"
+
+#: cdl.core.computation.signal.DetrendingParam:1 of
+msgid "Detrending parameters"
+msgstr "Paramètres d'élimination de tendance"
+
+#: cdl.core.computation.signal.compute_detrending:1 of
+msgid "Detrend data"
+msgstr "Élimine la tendance des données"
+
+#: cdl.core.computation.signal.compute_convolution:1 of
+msgid "Compute convolution of two signals"
+msgstr "Calcule la convolution de deux signaux"
+
+#: cdl.core.computation:50 of
+msgid "Image processing features"
+msgstr "Fonctionnalités de traitement d'image"
+
+#: cdl.core.computation:53 of
+msgid "Base image processing features"
+msgstr "Fonctionnalités de traitement d'image de base"
+
+#: cdl.core.computation.image.dst_11:1 of
+msgid ""
+"Create a result image object, as returned by the callback function of the"
+" :func:`cdl.core.gui.processor.base.BaseProcessor.compute_11` method"
+msgstr "Crée un objet image résultat, tel que renvoyé par la fonction de rappel de la méthode :func:`cdl.core.gui.processor.base.BaseProcessor.compute_11`"
+
+#: cdl.core.computation.image.calc_with_osr:3
+#: cdl.core.computation.image.compute_abs:3
+#: cdl.core.computation.image.compute_add:4
+#: cdl.core.computation.image.compute_astype:3
+#: cdl.core.computation.image.compute_average_profile:3
+#: cdl.core.computation.image.compute_binning:3
+#: cdl.core.computation.image.compute_butterworth:3
+#: cdl.core.computation.image.compute_calibration:3
+#: cdl.core.computation.image.compute_clip:3
+#: cdl.core.computation.image.compute_difference:3
+#: cdl.core.computation.image.compute_difference:4
+#: cdl.core.computation.image.compute_division:3
+#: cdl.core.computation.image.compute_division:4
+#: cdl.core.computation.image.compute_fft:3
+#: cdl.core.computation.image.compute_fliph:3
+#: cdl.core.computation.image.compute_flipv:3
+#: cdl.core.computation.image.compute_gaussian_filter:3
+#: cdl.core.computation.image.compute_histogram:3
+#: cdl.core.computation.image.compute_ifft:3
+#: cdl.core.computation.image.compute_im:3
+#: cdl.core.computation.image.compute_log10:3
+#: cdl.core.computation.image.compute_logp1:3
+#: cdl.core.computation.image.compute_moving_average:3
+#: cdl.core.computation.image.compute_moving_median:3
+#: cdl.core.computation.image.compute_product:4
+#: cdl.core.computation.image.compute_profile:3
+#: cdl.core.computation.image.compute_quadratic_difference:3
+#: cdl.core.computation.image.compute_quadratic_difference:4
+#: cdl.core.computation.image.compute_radial_profile:3
+#: cdl.core.computation.image.compute_re:3
+#: cdl.core.computation.image.compute_resize:3
+#: cdl.core.computation.image.compute_rotate:3
+#: cdl.core.computation.image.compute_rotate270:3
+#: cdl.core.computation.image.compute_rotate90:3
+#: cdl.core.computation.image.compute_swap_axes:3
+#: cdl.core.computation.image.compute_threshold:3
+#: cdl.core.computation.image.compute_wiener:3
+#: cdl.core.computation.image.dst_11:4
+#: cdl.core.computation.image.dst_11_signal:4
+#: cdl.core.computation.image.dst_n1n:4 cdl.core.computation.image.dst_n1n:5
+#: cdl.core.computation.image.edges.compute_canny:3
+#: cdl.core.computation.image.edges.compute_farid:3
+#: cdl.core.computation.image.edges.compute_farid_h:3
+#: cdl.core.computation.image.edges.compute_farid_v:3
+#: cdl.core.computation.image.edges.compute_laplace:3
+#: cdl.core.computation.image.edges.compute_prewitt:3
+#: cdl.core.computation.image.edges.compute_prewitt_h:3
+#: cdl.core.computation.image.edges.compute_prewitt_v:3
+#: cdl.core.computation.image.edges.compute_roberts:3
+#: cdl.core.computation.image.edges.compute_scharr:3
+#: cdl.core.computation.image.edges.compute_scharr_h:3
+#: cdl.core.computation.image.edges.compute_scharr_v:3
+#: cdl.core.computation.image.edges.compute_sobel:3
+#: cdl.core.computation.image.edges.compute_sobel_h:3
+#: cdl.core.computation.image.edges.compute_sobel_v:3
+#: cdl.core.computation.image.exposure.compute_adjust_gamma:3
+#: cdl.core.computation.image.exposure.compute_adjust_log:3
+#: cdl.core.computation.image.exposure.compute_adjust_sigmoid:3
+#: cdl.core.computation.image.exposure.compute_equalize_adapthist:3
+#: cdl.core.computation.image.exposure.compute_equalize_hist:3
+#: cdl.core.computation.image.exposure.compute_rescale_intensity:3
+#: cdl.core.computation.image.extract_multiple_roi:3
+#: cdl.core.computation.image.extract_single_roi:3
+#: cdl.core.computation.image.morphology.compute_black_tophat:3
+#: cdl.core.computation.image.morphology.compute_closing:3
+#: cdl.core.computation.image.morphology.compute_dilation:3
+#: cdl.core.computation.image.morphology.compute_erosion:3
+#: cdl.core.computation.image.morphology.compute_opening:3
+#: cdl.core.computation.image.morphology.compute_white_tophat:3
+#: cdl.core.computation.image.restoration.compute_denoise_bilateral:3
+#: cdl.core.computation.image.restoration.compute_denoise_tophat:3
+#: cdl.core.computation.image.restoration.compute_denoise_tv:3
+#: cdl.core.computation.image.restoration.compute_denoise_wavelet:3 of
+msgid "input image object"
+msgstr "objet d'image d'entrée"
+
+#: cdl.core.computation.image.compute_abs:5
+#: cdl.core.computation.image.compute_add:6
+#: cdl.core.computation.image.compute_astype:6
+#: cdl.core.computation.image.compute_average_profile:6
+#: cdl.core.computation.image.compute_binning:6
+#: cdl.core.computation.image.compute_butterworth:6
+#: cdl.core.computation.image.compute_calibration:6
+#: cdl.core.computation.image.compute_clip:6
+#: cdl.core.computation.image.compute_fft:6
+#: cdl.core.computation.image.compute_flatfield:7
+#: cdl.core.computation.image.compute_fliph:5
+#: cdl.core.computation.image.compute_flipv:5
+#: cdl.core.computation.image.compute_gaussian_filter:6
+#: cdl.core.computation.image.compute_ifft:6
+#: cdl.core.computation.image.compute_im:5
+#: cdl.core.computation.image.compute_log10:5
+#: cdl.core.computation.image.compute_logp1:6
+#: cdl.core.computation.image.compute_moving_average:6
+#: cdl.core.computation.image.compute_moving_median:6
+#: cdl.core.computation.image.compute_product:6
+#: cdl.core.computation.image.compute_profile:6
+#: cdl.core.computation.image.compute_radial_profile:6
+#: cdl.core.computation.image.compute_re:5
+#: cdl.core.computation.image.compute_resize:6
+#: cdl.core.computation.image.compute_rotate:6
+#: cdl.core.computation.image.compute_rotate270:5
+#: cdl.core.computation.image.compute_rotate90:5
+#: cdl.core.computation.image.compute_swap_axes:5
+#: cdl.core.computation.image.compute_threshold:6
+#: cdl.core.computation.image.compute_wiener:5
+#: cdl.core.computation.image.dst_11:7 cdl.core.computation.image.dst_n1n:8
+#: cdl.core.computation.image.edges.compute_canny:6
+#: cdl.core.computation.image.edges.compute_farid:5
+#: cdl.core.computation.image.edges.compute_farid_h:5
+#: cdl.core.computation.image.edges.compute_farid_v:5
+#: cdl.core.computation.image.edges.compute_laplace:5
+#: cdl.core.computation.image.edges.compute_prewitt:5
+#: cdl.core.computation.image.edges.compute_prewitt_h:5
+#: cdl.core.computation.image.edges.compute_prewitt_v:5
+#: cdl.core.computation.image.edges.compute_roberts:5
+#: cdl.core.computation.image.edges.compute_scharr:5
+#: cdl.core.computation.image.edges.compute_scharr_h:5
+#: cdl.core.computation.image.edges.compute_scharr_v:5
+#: cdl.core.computation.image.edges.compute_sobel:5
+#: cdl.core.computation.image.edges.compute_sobel_h:5
+#: cdl.core.computation.image.edges.compute_sobel_v:5
+#: cdl.core.computation.image.exposure.compute_adjust_gamma:6
+#: cdl.core.computation.image.exposure.compute_adjust_log:6
+#: cdl.core.computation.image.exposure.compute_adjust_sigmoid:6
+#: cdl.core.computation.image.exposure.compute_equalize_adapthist:6
+#: cdl.core.computation.image.exposure.compute_equalize_hist:6
+#: cdl.core.computation.image.exposure.compute_rescale_intensity:6
+#: cdl.core.computation.image.extract_multiple_roi:6
+#: cdl.core.computation.image.extract_single_roi:6
+#: cdl.core.computation.image.morphology.compute_black_tophat:6
+#: cdl.core.computation.image.morphology.compute_closing:6
+#: cdl.core.computation.image.morphology.compute_dilation:6
+#: cdl.core.computation.image.morphology.compute_erosion:6
+#: cdl.core.computation.image.morphology.compute_opening:6
+#: cdl.core.computation.image.morphology.compute_white_tophat:6
+#: cdl.core.computation.image.restoration.compute_denoise_bilateral:6
+#: cdl.core.computation.image.restoration.compute_denoise_tophat:6
+#: cdl.core.computation.image.restoration.compute_denoise_tv:6
+#: cdl.core.computation.image.restoration.compute_denoise_wavelet:6 of
+msgid "Output image object"
+msgstr "Objet d'image de sortie"
+
+#: cdl.core.computation.image.Wrap11Func:1 of
+msgid ""
+"Wrap a 1 array → 1 array function to produce a 1 image → 1 image "
+"function, which can be used inside DataLab's infrastructure to perform "
+"computations with :class:`cdl.core.gui.processor.signal.ImageProcessor`."
+msgstr ""
+"Encapsule une fonction 1 tableau → 1 tableau pour produire une fonction "
+"1 image → 1 image, qui peut être utilisée à l'intérieur de"
+" l'infrastructure de DataLab pour effectuer des calculs avec "
+":class:`cdl.core.gui.processor.signal.ImageProcessor`."
+
+#: cdl.core.computation.image.Wrap11Func:8 of
+msgid ""
+"The instance of this wrapper is callable and returns a "
+":class:`cdl.obj.ImageObj` object."
+msgstr "L'instance de cet encapsuleur est appelable et renvoie un objet :class:`cdl.obj.ImageObj`."
+
+#: cdl.core.computation.image.dst_n1n:1 of
+msgid ""
+"Create a result image object, as returned by the callback function of the"
+" :func:`cdl.core.gui.processor.base.BaseProcessor.compute_n1n` method"
+msgstr "Crée un objet image résultat, tel que renvoyé par la fonction de rappel de la méthode :func:`cdl.core.gui.processor.base.BaseProcessor.compute_n1n`"
+
+#: cdl.core.computation.image.compute_add:1 of
+msgid "Add **dst** and **src** images and return **dst** image modified in place"
+msgstr "Ajoute les images **dst** et **src** et renvoie l'image **dst** modifiée sur place"
+
+#: cdl.core.computation.image.compute_add:3
+#: cdl.core.computation.image.compute_product:3 of
+msgid "output image object"
+msgstr "objet d'image résultant"
+
+#: cdl.core.computation.image.compute_product:1 of
+msgid ""
+"Multiply **dst** and **src** images and return **dst** image modified in "
+"place"
+msgstr "Multiplie les images **dst** et **src** et renvoie l'image **dst** modifiée sur place"
+
+#: cdl.core.computation.image.compute_difference:1 of
+msgid "Compute difference between two images"
+msgstr "Calcule la différence entre deux images"
+
+#: cdl.core.computation.image.compute_difference:6 of
+msgid "Result image object **src1** - **src2**"
+msgstr "Objet image résultat **src1** - **src2**"
+
+#: cdl.core.computation.image.compute_quadratic_difference:1 of
+msgid "Compute quadratic difference between two images"
+msgstr "Calcule la différence quadratique entre deux images"
+
+#: cdl.core.computation.image.compute_quadratic_difference:6 of
+msgid "Result image object (**src1** - **src2**) / sqrt(2.0)"
+msgstr "Objet image résultat (**src1** - **src2**) / sqrt(2.0)"
+
+#: cdl.core.computation.image.compute_division:1 of
+msgid "Compute division between two images"
+msgstr "Calcule la division entre deux images"
+
+#: cdl.core.computation.image.compute_division:6 of
+msgid "Result image object **src1** / **src2**"
+msgstr "Objet image résultat **src1** / **src2**"
+
+#: cdl.core.computation.image.FlatFieldParam:1 of
+msgid "Flat-field parameters"
+msgstr "Paramètres de correction de champ plat"
+
+#: cdl.core.computation.image.compute_flatfield:1 of
+msgid "Compute flat field correction"
+msgstr "Calcule la correction de champ plat"
+
+#: cdl.core.computation.image.compute_flatfield:3 of
+msgid "raw data image object"
+msgstr "objet image brute"
+
+#: cdl.core.computation.image.compute_flatfield:4 of
+msgid "flat field image object"
+msgstr "objet image de champ plat"
+
+#: cdl.core.computation.image.compute_flatfield:5 of
+msgid "flat field parameters"
+msgstr "paramètres de champ plat"
+
+#: cdl.core.computation.image.LogP1Param:1 of
+msgid "Log10 parameters"
+msgstr "Paramètres Log10"
+
+#: cdl.core.computation.image.compute_logp1:1 of
+msgid "Compute log10(z+n)"
+msgstr "Calcule log10(z+n)"
+
+#: cdl.core.computation.image.RotateParam:1 of
+msgid "Rotate parameters"
+msgstr "Paramètres de rotation"
+
+#: cdl.core.computation.image.rotate_obj_270:1
+#: cdl.core.computation.image.rotate_obj_90:1
+#: cdl.core.computation.image.rotate_obj_alpha:1
+#: cdl.core.computation.image.rotate_obj_coords:1 of
+msgid "Apply rotation to coords associated to image obj"
+msgstr "Appliquer la rotation aux coordonnées associées à l'objet d'image"
+
+#: cdl.core.computation.image.rotate_obj_coords:3 of
+msgid "rotation angle (in degrees)"
+msgstr "angle de rotation (en degrés)"
+
+#: cdl.core.computation.image.rotate_obj_coords:4 of
+msgid "image object"
+msgstr "objet image"
+
+#: cdl.core.computation.image.rotate_obj_coords:5 of
+msgid "original image object"
+msgstr "objet image original"
+
+#: cdl.core.computation.image.rotate_obj_coords:6 of
+msgid "coordinates to rotate"
+msgstr "coordonnées à faire tourner"
+
+#: cdl.core.computation.image.rotate_obj_coords:8 of
+msgid "Output data"
+msgstr "Données de sortie"
+
+#: cdl.core.computation.image.compute_rotate:1 of
+msgid "Rotate data"
+msgstr "Rotation des données"
+
+#: cdl.core.computation.image.compute_rotate90:1 of
+msgid "Rotate data 90°"
+msgstr "Rotation des données de 90°"
+
+#: cdl.core.computation.image.compute_rotate270:1 of
+msgid "Rotate data 270°"
+msgstr "Rotation des données de 270°"
+
+#: cdl.core.computation.image.hflip_coords:1 of
+msgid "Apply HFlip to coords"
+msgstr "Appliquer HFlip aux coordonnées"
+
+#: cdl.core.computation.image.compute_fliph:1 of
+msgid "Flip data horizontally"
+msgstr "Inversion horizontale des données"
+
+#: cdl.core.computation.image.vflip_coords:1 of
+msgid "Apply VFlip to coords"
+msgstr "Appliquer VFlip aux coordonnées"
+
+#: cdl.core.computation.image.compute_flipv:1 of
+msgid "Flip data vertically"
+msgstr "Inversion verticale des données"
+
+#: cdl.core.computation.image.GridParam:1 of
+msgid "Grid parameters"
+msgstr "Paramètres de grille"
+
+#: cdl.core.computation.image.ResizeParam:1 of
+msgid "Resize parameters"
+msgstr "Paramètres de redimensionnement"
+
+#: cdl.core.computation.image.compute_resize:1 of
+msgid "Zooming function"
+msgstr "Fonction de zoom"
+
+#: cdl.core.computation.image.BinningParam:1 of
+msgid "Binning parameters"
+msgstr "Paramètres de binning"
+
+#: cdl.core.computation.image.compute_binning:1 of
+msgid "Binning function on data"
+msgstr "Fonction de binning sur les données"
+
+#: cdl.core.computation.image.extract_multiple_roi:4 of
+msgid "parameters defining the regions of interest"
+msgstr "paramètres définissant les régions d'intérêt"
+
+#: cdl.core.computation.image.extract_single_roi:1 of
+msgid "Extract single ROI"
+msgstr "Extrait une seule ROI"
+
+#: cdl.core.computation.image.extract_single_roi:4 of
+msgid "ROI parameters"
+msgstr "Paramètres de ROI"
+
+#: cdl.core.computation.image.ProfileParam:1 of
+msgid "Horizontal or vertical profile parameters"
+msgstr "Paramètres de profil horizontal ou vertical"
+
+#: cdl.core.computation.image.compute_profile:1 of
+msgid "Compute horizontal or vertical profile"
+msgstr "Calcule le profil horizontal ou vertical"
+
+#: cdl.core.computation.image.AverageProfileParam:1 of
+msgid "Average horizontal or vertical profile parameters"
+msgstr "Paramètres de profil horizontal ou vertical moyen"
+
+#: cdl.core.computation.image.compute_average_profile:1 of
+msgid "Compute horizontal or vertical average profile"
+msgstr "Calcule le profil horizontal ou vertical moyen"
+
+#: cdl.core.computation.image.RadialProfileParam:1 of
+msgid "Radial profile parameters"
+msgstr "Paramètres de profil radial"
+
+#: cdl.core.computation.image.RadialProfileParam.update_from_image:1 of
+msgid "Update parameters from image"
+msgstr "Mettre à jour les paramètres à partir de l'image"
+
+#: cdl.core.computation.image.RadialProfileParam.choice_callback:1 of
+msgid "Callback for choice item"
+msgstr "Callback pour l'item de choix"
+
+#: cdl.core.computation.image.compute_radial_profile:1 of
+msgid "Compute radial profile around the centroid"
+msgstr "Calculer le profil radial autour du centre de gravité"
+
+#: cdl.core.computation.image.compute_histogram:1 of
+msgid "Compute histogram of the image data"
+msgstr "Calcule l'histogramme des données de l'image"
+
+#: cdl.core.computation.image.compute_swap_axes:1 of
+msgid "Swap image axes"
+msgstr "Permute les axes de l'image"
+
+#: cdl.core.computation.image.DataTypeIParam:1 of
+msgid "Convert image data type parameters"
+msgstr "Convertir les paramètres du type de données de l'image"
+
+#: cdl.core.computation.image.compute_astype:1 of
+msgid "Convert image data type"
+msgstr "Convertit le type de données de l'image"
+
+#: cdl.core.computation.image.compute_log10:1 of
+msgid "Compute log10"
+msgstr "Calcule Log10"
+
+#: cdl.core.computation.image.ZCalibrateParam:1 of
+msgid "Image linear calibration parameters"
+msgstr "Paramètres d'étalonnage linéaire de l'image"
+
+#: cdl.core.computation.image.compute_calibration:4 of
+msgid "calibration parameters"
+msgstr "paramètres d'étalonnage"
+
+#: cdl.core.computation.image.compute_threshold:1 of
+msgid "Apply thresholding"
+msgstr "Applique le seuillage"
+
+#: cdl.core.computation.image.compute_clip:1 of
+msgid "Apply clipping"
+msgstr "Applique l'écrêtage"
+
+#: cdl.core.computation.image.compute_ifft:1 of
+msgid "Compute inverse FFT"
+msgstr "Calcule la FFT inverse"
+
+#: cdl.core.computation.image.ButterworthParam:1 of
+msgid "Butterworth filter parameters"
+msgstr "Paramètres du filtre de Butterworth"
+
+#: cdl.core.computation.image.compute_butterworth:1 of
+msgid "Compute Butterworth filter"
+msgstr "Calcule le filtre de Butterworth"
+
+#: cdl.core.computation.image.calc_with_osr:1 of
+msgid "Exec computation taking into account image x0, y0, dx, dy and ROIs"
+msgstr "Exécuter le calcul en tenant compte de l'image x0, y0, dx, dy et ROIs"
+
+#: cdl.core.computation.image.calc_with_osr:4 of
+msgid "computation function"
+msgstr "fonction de calcul"
+
+#: cdl.core.computation.image.calc_with_osr:5 of
+msgid "computation function arguments"
+msgstr "arguments de la fonction de calcul"
+
+#: cdl.core.computation.image.calc_with_osr:7 of
+msgid "Computation result"
+msgstr "Résultat du calcul"
+
+#: cdl.core.computation.image.calc_with_osr:11 of
+msgid ""
+"The computation function must take either a single argument (the data) or"
+" multiple arguments (the data followed by the computation parameters)."
+msgstr ""
+"La fonction de calcul doit prendre un seul argument (les données) ou de "
+"multiples arguments (les données suivies des paramètres de calcul)."
+
+#: cdl.core.computation.image.calc_with_osr:14 of
+msgid ""
+"Moreover, the computation function must return a single value or a NumPy "
+"array containing the result of the computation. This array contains the "
+"coordinates of points, polygons, circles or ellipses in the form [[x, y],"
+" ...], or [[x0, y0, x1, y1, ...], ...], or [[x0, y0, r], ...], or [[x0, "
+"y0, a, b, theta], ...]."
+msgstr ""
+"De plus, la fonction de calcul doit renvoyer une seule valeur ou un "
+"tableau NumPy contenant le résultat du calcul. Ce tableau contient les "
+"coordonnées des points, des polygones, des cercles ou des ellipses sous "
+"la forme [[x, y], ...], ou [[x0, y0, x1, y1, ...], ...], ou [[x0, y0, r],"
+" ...], ou [[x0, y0, a, b, theta], ...]."
+
+#: cdl.core.computation.image.get_centroid_coords:1 of
+msgid "Return centroid coordinates"
+msgstr "Retourne les coordonnées du centre de gravité"
+
+#: cdl.core.computation.image.get_centroid_coords:3
+#: cdl.core.computation.image.get_enclosing_circle_coords:4 of
+msgid "input data"
+msgstr "données d'entrée"
+
+#: cdl.core.computation.image.compute_centroid:5
+#: cdl.core.computation.image.get_centroid_coords:5 of
+msgid "Centroid coordinates"
+msgstr "Coordonnées du barycentre"
+
+#: cdl.core.computation.image.compute_centroid:1 of
+msgid "Compute centroid"
+msgstr "Calcule le barycentre"
+
+#: cdl.core.computation.image.compute_centroid:3
+#: cdl.core.computation.image.compute_enclosing_circle:3
+#: cdl.core.computation.image.compute_hough_circle_peaks:3
+#: cdl.core.computation.image.detection.compute_blob_dog:3
+#: cdl.core.computation.image.detection.compute_blob_doh:3
+#: cdl.core.computation.image.detection.compute_blob_log:3
+#: cdl.core.computation.image.detection.compute_blob_opencv:3
+#: cdl.core.computation.image.detection.compute_peak_detection:3 of
+msgid "input image"
+msgstr "image d'entrée"
+
+#: cdl.core.computation.image.get_enclosing_circle_coords:1 of
+msgid ""
+"Return diameter coords for the circle contour enclosing image values "
+"above threshold (FWHM)"
+msgstr ""
+"Retourne les coordonnées du diamètre pour le contour de cercle contenant "
+"les valeurs d'image au-dessus du seuil (LMH)"
+
+#: cdl.core.computation.image.compute_enclosing_circle:5
+#: cdl.core.computation.image.get_enclosing_circle_coords:6 of
+msgid "Diameter coords"
+msgstr "Coordonnées du diamètre"
+
+#: cdl.core.computation.image.compute_enclosing_circle:1 of
+msgid "Compute minimum enclosing circle"
+msgstr "Calcule le cercle minimum englobant"
+
+#: cdl.core.computation.image.HoughCircleParam:1 of
+msgid "Circle Hough transform parameters"
+msgstr "Paramètres de transformation de Hough circulaire"
+
+#: cdl.core.computation.image.compute_hough_circle_peaks:1 of
+msgid "Compute Hough circles"
+msgstr "Calcule les cercles de Hough"
+
+#: cdl.core.computation.image.compute_hough_circle_peaks:6 of
+msgid "Circle coordinates"
+msgstr "Coordonnées du cercle"
+
+#: cdl.core.computation:59 of
+msgid "Exposure correction features"
+msgstr "Fonctionnalités de correction d'exposition"
+
+#: cdl.core.computation.image.exposure:2 of
+msgid "Exposure computation module"
+msgstr "Module de calcul d'exposition"
+
+#: cdl.core.computation.image.exposure.AdjustGammaParam:1 of
+msgid "Gamma adjustment parameters"
+msgstr "Paramètres d'ajustement gamma"
+
+#: cdl.core.computation.image.exposure.compute_adjust_gamma:1 of
+msgid "Gamma correction"
+msgstr "Correction gamma"
+
+#: cdl.core.computation.image.exposure.AdjustLogParam:1 of
+msgid "Logarithmic adjustment parameters"
+msgstr "Paramètres d'ajustement logarithmique"
+
+#: cdl.core.computation.image.exposure.compute_adjust_log:1 of
+msgid "Compute log correction"
+msgstr "Calcule la correction logarithmique"
+
+#: cdl.core.computation.image.exposure.AdjustSigmoidParam:1 of
+msgid "Sigmoid adjustment parameters"
+msgstr "Paramètres d'ajustement sigmoïde"
+
+#: cdl.core.computation.image.exposure.compute_adjust_sigmoid:1 of
+msgid "Compute sigmoid correction"
+msgstr "Calcule la correction sigmoïde"
+
+#: cdl.core.computation.image.exposure.RescaleIntensityParam:1 of
+msgid "Intensity rescaling parameters"
+msgstr "Paramètres de rééchelonnement d'intensité"
+
+#: cdl.core.computation.image.exposure.compute_rescale_intensity:1 of
+msgid "Rescale image intensity levels"
+msgstr "Rééchelonne les niveaux d'intensité de l'image"
+
+#: cdl.core.computation.image.exposure.EqualizeHistParam:1 of
+msgid "Histogram equalization parameters"
+msgstr "Paramètres d'égalisation d'histogramme"
+
+#: cdl.core.computation.image.exposure.compute_equalize_hist:1 of
+msgid "Histogram equalization"
+msgstr "Égalisation d'histogramme"
+
+#: cdl.core.computation.image.exposure.EqualizeAdaptHistParam:1 of
+msgid "Adaptive histogram equalization parameters"
+msgstr "Paramètres d'égalisation d'histogramme adaptatif"
+
+#: cdl.core.computation.image.exposure.compute_equalize_adapthist:1 of
+msgid "Adaptive histogram equalization"
+msgstr "Égalisation d'histogramme adaptative"
+
+#: cdl.core.computation:65 of
+msgid "Restoration features"
+msgstr "Fonctionnalités de restauration"
+
+#: cdl.core.computation.image.restoration:2 of
+msgid "Restoration computation module"
+msgstr "Module de calcul de restauration"
+
+#: cdl.core.computation.image.restoration.DenoiseTVParam:1 of
+msgid "Total Variation denoising parameters"
+msgstr "Paramètres de débruitage de variation totale"
+
+#: cdl.core.computation.image.restoration.compute_denoise_tv:1 of
+msgid "Compute Total Variation denoising"
+msgstr "Calcule le débruitage de variation totale"
+
+#: cdl.core.computation.image.restoration.DenoiseBilateralParam:1 of
+msgid "Bilateral filter denoising parameters"
+msgstr "Paramètres de débruitage du filtre bilatéral"
+
+#: cdl.core.computation.image.restoration.compute_denoise_bilateral:1 of
+msgid "Compute bilateral filter denoising"
+msgstr "Calcule le débruitage du filtre bilatéral"
+
+#: cdl.core.computation.image.restoration.DenoiseWaveletParam:1 of
+msgid "Wavelet denoising parameters"
+msgstr "Paramètres de débruitage d'ondelettes"
+
+#: cdl.core.computation.image.restoration.compute_denoise_wavelet:1 of
+msgid "Compute Wavelet denoising"
+msgstr "Calcule le débruitage d'ondelettes"
+
+#: cdl.core.computation.image.restoration.compute_denoise_tophat:1 of
+msgid "Denoise using White Top-Hat"
+msgstr "Débruitage en utilisant White Top-Hat"
+
+#: cdl.core.computation:71 of
+msgid "Morphological features"
+msgstr "Fonctionnalités morphologiques"
+
+#: cdl.core.computation.image.morphology:2 of
+msgid "Morphology computation module"
+msgstr "Module de calcul de morphologie"
+
+#: cdl.core.computation.image.morphology.MorphologyParam:1 of
+msgid "White Top-Hat parameters"
+msgstr "Paramètres de White Top-Hat"
+
+#: cdl.core.computation.image.morphology.compute_white_tophat:1 of
+msgid "Compute White Top-Hat"
+msgstr "Calcule le filtre White Top-Hat"
+
+#: cdl.core.computation.image.morphology.compute_black_tophat:1 of
+msgid "Compute Black Top-Hat"
+msgstr "Calcule le filtre Black Top-Hat"
+
+#: cdl.core.computation.image.morphology.compute_erosion:1 of
+msgid "Compute Erosion"
+msgstr "Calcule l'érosion"
+
+#: cdl.core.computation.image.morphology.compute_dilation:1 of
+msgid "Compute Dilation"
+msgstr "Calcule la dilatation"
+
+#: cdl.core.computation.image.morphology.compute_opening:1 of
+msgid "Compute morphological opening"
+msgstr "Calcule l'ouverture morphologique"
+
+#: cdl.core.computation.image.morphology.compute_closing:1 of
+msgid "Compute morphological closing"
+msgstr "Calcule la fermeture morphologique"
+
+#: cdl.core.computation:77 of
+msgid "Edge detection features"
+msgstr "Fonctionnalités de détection de contours"
+
+#: cdl.core.computation.image.edges:2 of
+msgid "Edges computation module"
+msgstr "Module de calcul de contours"
+
+#: cdl.core.computation.image.edges.CannyParam:1 of
+msgid "Canny filter parameters"
+msgstr "Paramètres du filtre de Canny"
+
+#: cdl.core.computation.image.edges.compute_canny:1 of
+msgid "Compute Canny filter"
+msgstr "Calcule le filtre de Canny"
+
+#: cdl.core.computation.image.edges.compute_roberts:1 of
+msgid "Compute Roberts filter"
+msgstr "Calcule le filtre de Roberts"
+
+#: cdl.core.computation.image.edges.compute_prewitt:1 of
+msgid "Compute Prewitt filter"
+msgstr "Calcule le filtre de Prewitt"
+
+#: cdl.core.computation.image.edges.compute_prewitt_h:1 of
+msgid "Compute horizontal Prewitt filter"
+msgstr "Calcule le filtre de Prewitt horizontal"
+
+#: cdl.core.computation.image.edges.compute_prewitt_v:1 of
+msgid "Compute vertical Prewitt filter"
+msgstr "Calcule le filtre de Prewitt vertical"
+
+#: cdl.core.computation.image.edges.compute_sobel:1 of
+msgid "Compute Sobel filter"
+msgstr "Calcule le filtre de Sobel"
+
+#: cdl.core.computation.image.edges.compute_sobel_h:1 of
+msgid "Compute horizontal Sobel filter"
+msgstr "Calcule le filtre de Sobel horizontal"
+
+#: cdl.core.computation.image.edges.compute_sobel_v:1 of
+msgid "Compute vertical Sobel filter"
+msgstr "Calcule le filtre de Sobel vertical"
+
+#: cdl.core.computation.image.edges.compute_scharr:1 of
+msgid "Compute Scharr filter"
+msgstr "Calcule le filtre de Scharr"
+
+#: cdl.core.computation.image.edges.compute_scharr_h:1 of
+msgid "Compute horizontal Scharr filter"
+msgstr "Calcule le filtre de Scharr horizontal"
+
+#: cdl.core.computation.image.edges.compute_scharr_v:1 of
+msgid "Compute vertical Scharr filter"
+msgstr "Calcule le filtre de Scharr vertical"
+
+#: cdl.core.computation.image.edges.compute_farid:1 of
+msgid "Compute Farid filter"
+msgstr "Calcule le filtre de Farid"
+
+#: cdl.core.computation.image.edges.compute_farid_h:1 of
+msgid "Compute horizontal Farid filter"
+msgstr "Calcule le filtre de Farid horizontal"
+
+#: cdl.core.computation.image.edges.compute_farid_v:1 of
+msgid "Compute vertical Farid filter"
+msgstr "Calcule le filtre de Farid vertical"
+
+#: cdl.core.computation.image.edges.compute_laplace:1 of
+msgid "Compute Laplace filter"
+msgstr "Calcule le filtre de Laplace"
+
+#: cdl.core.computation:82 of
+msgid "Detection features"
+msgstr "Fonctionnalités de détection"
+
+#: cdl.core.computation.image.detection:2 of
+msgid "Blob detection computation module"
+msgstr "Module de calcul de détection de taches"
+
+#: cdl.core.computation.image.detection.GenericDetectionParam:1 of
+msgid "Generic detection parameters"
+msgstr "Paramètres de détection génériques"
+
+#: cdl.core.computation.image.detection.compute_peak_detection:1 of
+msgid "Compute 2D peak detection"
+msgstr "Calcule la détection de pics 2D"
+
+#: cdl.core.computation.image.detection.compute_peak_detection:6 of
+msgid "Peak coordinates"
+msgstr "Coordonnées des pics"
+
+#: cdl.core.computation.image.detection.ContourShapeParam:1 of
+msgid "Contour shape parameters"
+msgstr "Paramètres de forme de contour"
+
+#: cdl.core.computation.image.detection.compute_contour_shape:1 of
+msgid "Compute contour shape fit"
+msgstr "Calculer l'ajustement de la forme du contour"
+
+#: cdl.core.computation.image.detection.BaseBlobParam:1 of
+msgid "Base class for blob detection parameters"
+msgstr "Classe de base pour les paramètres de détection de taches"
+
+#: cdl.core.computation.image.detection.BlobDOGParam:1 of
+msgid "Blob detection using Difference of Gaussian method"
+msgstr "Détection de taches à l'aide de la méthode de différence de Gauss"
+
+#: cdl.core.computation.image.detection.compute_blob_dog:1 of
+msgid "Compute blobs using Difference of Gaussian method"
+msgstr "Détection d taches à l'aide de la méthode de différence de Gauss"
+
+#: cdl.core.computation.image.detection.compute_blob_dog:6
+#: cdl.core.computation.image.detection.compute_blob_doh:6
+#: cdl.core.computation.image.detection.compute_blob_log:6
+#: cdl.core.computation.image.detection.compute_blob_opencv:6 of
+msgid "Blobs coordinates"
+msgstr "Coordonnées des taches"
+
+#: cdl.core.computation.image.detection.BlobDOHParam:1 of
+msgid "Blob detection using Determinant of Hessian method"
+msgstr "Détection de taches à l'aide de la méthode du déterminant de Hessian"
+
+#: cdl.core.computation.image.detection.compute_blob_doh:1 of
+msgid "Compute blobs using Determinant of Hessian method"
+msgstr "Détection de taches à l'aide de la méthode du déterminant de Hessian"
+
+#: cdl.core.computation.image.detection.BlobLOGParam:1 of
+msgid "Blob detection using Laplacian of Gaussian method"
+msgstr "Détection de taches à l'aide de la méthode du Laplacien de Gauss"
+
+#: cdl.core.computation.image.detection.compute_blob_log:1 of
+msgid "Compute blobs using Laplacian of Gaussian method"
+msgstr "Détection de taches à l'aide de la méthode du Laplacien de Gauss"
+
+#: cdl.core.computation.image.detection.BlobOpenCVParam:1 of
+msgid "Blob detection using OpenCV"
+msgstr "Détection de taches à l'aide d'OpenCV"
+
+#: cdl.core.computation.image.detection.compute_blob_opencv:1 of
+msgid "Compute blobs using OpenCV"
+msgstr "Détection de taches à l'aide d'OpenCV"

@@ -1,0 +1,12 @@
+onion_clustering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onion_clustering/classes.py,sha256=J72SE21RqAAfGoSwe5dFSI24saqXuk88DGU7fExBe-g,35963
+onion_clustering/first_classes.py,sha256=PybUgxGm8tI5ucV79mzEG2OmmVE6OLSpdGMeW6Moawo,19800
+onion_clustering/functions.py,sha256=nShXL0k0rBbvGhbltVNPJFnyLop8_JHXaxv0M0Pd5_I,22934
+onion_clustering/main.py,sha256=VNiiivPW10t46A3EHAwoBrY2L812AcoLZuXN45ZTjjw,18526
+onion_clustering/main_2d.py,sha256=tu_sB_MXHXcq5tMvgtCD_XT05t_Sza6P9-5sIj_XzG0,23334
+onion_clustering/utilities.py,sha256=Kd6m_GCS9NT0lab-vmwr-CZr3OpWH-Xa3f26bsc6a94,15728
+onion_clustering-0.2.0.dist-info/LICENSE,sha256=F-vqralKmHbUEDIXX2nrH-4nQjPyj16lRyRTcNisX9w,1068
+onion_clustering-0.2.0.dist-info/METADATA,sha256=TAxr6hXKjRisIBIDbNj3hYWJlMKITcFQrAHUkxID0Og,6088
+onion_clustering-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+onion_clustering-0.2.0.dist-info/top_level.txt,sha256=TQ5jHAeNqCggrCfCLBfJ6rQDblfphXBG9bmNipeIsCM,17
+onion_clustering-0.2.0.dist-info/RECORD,,

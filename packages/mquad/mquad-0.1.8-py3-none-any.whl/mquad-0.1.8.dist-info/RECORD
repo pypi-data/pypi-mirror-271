@@ -1,0 +1,12 @@
+mquad/__init__.py,sha256=BPMoWHuBXI1iHImJmzc7ckA3JY4TFqIRkap6qnlxmKE,24
+mquad/mquad.py,sha256=ZpnZhtQlrJPC0U833hI3-_w7u1pxxZWU3bMolw0cruM,13166
+mquad/mquad_CLI.py,sha256=8LAQgG-265Z2XlBJiVo8QvL2myRd1Yc2IaZmg-0YacA,6651
+mquad/mquad_batch_mixbin.py,sha256=7PtyYUxY0noPQ3ZxegV7QqV8tt3q4WlRTRfQLtjyeG4,14633
+mquad/mquad_utils.py,sha256=SgTOhIDq1x_HquqWaoABVLyZHZayILsIcxRI7U84sHA,2656
+mquad/version.py,sha256=rq5OMW-khxQo_5FAvSrPaAS1lRfG9aG2hSuo-KK2Yfk,22
+mquad-0.1.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mquad-0.1.8.dist-info/METADATA,sha256=JmhW3012D97L1AH9cdttiRKXHSzieR-iQCwk20O2oTs,5621
+mquad-0.1.8.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+mquad-0.1.8.dist-info/entry_points.txt,sha256=of0Qn7PzVLFVaH5xVZIdRNRKfrHtq3itydbIyeAHe-8,47
+mquad-0.1.8.dist-info/top_level.txt,sha256=2fkr83zKNY0ZlvWCCnXe1TVeVAAUeZbVfysYFt1FXNM,6
+mquad-0.1.8.dist-info/RECORD,,

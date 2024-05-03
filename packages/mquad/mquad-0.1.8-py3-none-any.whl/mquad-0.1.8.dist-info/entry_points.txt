@@ -1,0 +1,2 @@
+[console_scripts]
+mquad = mquad.mquad_CLI:main

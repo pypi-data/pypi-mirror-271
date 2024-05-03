@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.cfg
+setup.py
+requem/__init__.py
+requem/requem.py
+requem.egg-info/PKG-INFO
+requem.egg-info/SOURCES.txt
+requem.egg-info/dependency_links.txt
+requem.egg-info/top_level.txt

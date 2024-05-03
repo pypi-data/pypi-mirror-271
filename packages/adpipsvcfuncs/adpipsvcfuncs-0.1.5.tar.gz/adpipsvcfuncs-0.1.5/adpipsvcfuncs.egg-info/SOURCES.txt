@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+adpipsvcfuncs/__init__.py
+adpipsvcfuncs/adpipsvcfuncs.py
+adpipsvcfuncs.egg-info/PKG-INFO
+adpipsvcfuncs.egg-info/SOURCES.txt
+adpipsvcfuncs.egg-info/dependency_links.txt
+adpipsvcfuncs.egg-info/requires.txt
+adpipsvcfuncs.egg-info/top_level.txt

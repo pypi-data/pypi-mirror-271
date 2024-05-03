@@ -1,0 +1,8 @@
+setup.py
+simic/__init__.py
+simic/xpath.py
+simic.egg-info/PKG-INFO
+simic.egg-info/SOURCES.txt
+simic.egg-info/dependency_links.txt
+simic.egg-info/requires.txt
+simic.egg-info/top_level.txt

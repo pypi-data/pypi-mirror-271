@@ -1,0 +1,38 @@
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "wedding"
+version = "0.0.1"
+description = "Drawings of the wedding and fields."
+authors = []
+readme = "readme.md"
+packages = [
+    { include = "wedding", from = "venues/stages" },
+]
+license = "licensed"
+
+exclude = [
+	"node_modules/**/*"
+	# "venues/stages/wedding/adventures/monetary/__monetary_1"
+]
+
+
+
+[tool.poetry.urls]
+GitLab = "https://gitlab.com/status600/treasures/wedding.1"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+biotech = "^1.1.10"
+somatic = "^3.0.3"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+wedding = 'wedding:clique'
+
+
+

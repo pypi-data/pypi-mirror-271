@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sbo_service_layer
+Version: 0.1.4b0
+Home-page: https://bitbucket.org/jaydm/sbo-service
+Author: Jay D. McHugh
+Author-email: 'Jay D. McHugh' <jaydmchugh@gmail.com>
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.28
+Requires-Dist: urllib3 >=1.26
+Requires-Dist: python-dotenv >=1
+
+# SAP Business One - Python Service Layer wrapper
+
+This package provides a base wrapper for accessing the SAP
+service layer in Python.
+
+This is an unstable beta!!!
+
+## Installation
+
+```shell
+$ python -m pip install sbo-service-layer
+```

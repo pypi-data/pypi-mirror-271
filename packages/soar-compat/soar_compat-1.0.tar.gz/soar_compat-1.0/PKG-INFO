@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: soar-compat
+Version: 1.0
+Summary: Compatibility layer with soar-sml
+Author-email: Jonathan de Jong <jo@jo.wtf>
+License: BSD
+Keywords: soar
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: soar-sml
+
+# `soar-compat`
+
+A small shim library that provides compatibility with packaging/distribution methods for SOAR's SML Bindings.
+
+The raw bindings, as built in SOAR, are imported as `import Python_sml_ClientInterface`,
+while the pypi package `soar-sml` imports as `soar_sml`.
+
+While it possible to do `import soar_sml as Python_sml_ClientInterface`, this small library avoids that need,
+and allows all existing scripts to import SOAR's SML Bindings in the way they're used to.

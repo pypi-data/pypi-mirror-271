@@ -1,0 +1,8 @@
+Python_sml_ClientInterface.py
+README.md
+pyproject.toml
+soar_compat.egg-info/PKG-INFO
+soar_compat.egg-info/SOURCES.txt
+soar_compat.egg-info/dependency_links.txt
+soar_compat.egg-info/requires.txt
+soar_compat.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mnist-separator"
+version = "1.0.3"
+description = "mnist-separator is a new technology for recognizing handwritten numbers from the MNIST dataset"
+authors = ["Boris Kravtsov <boriskravtsov.contacts@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mnist_separator"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python-headless = "^4.9.0.80"
+tqdm = "^4.66.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

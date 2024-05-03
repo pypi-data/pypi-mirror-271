@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-viewrouter"
+version = "0.1.0"
+description = ""
+authors = ["Kamal Mustafa <k4ml@github.io>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "viewrouter"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

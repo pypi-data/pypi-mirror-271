@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bcraapi/__init__.py
+bcraapi/api_client.py
+bcraapi/get_from_bcra.py
+bcraapi.egg-info/PKG-INFO
+bcraapi.egg-info/SOURCES.txt
+bcraapi.egg-info/dependency_links.txt
+bcraapi.egg-info/requires.txt
+bcraapi.egg-info/top_level.txt

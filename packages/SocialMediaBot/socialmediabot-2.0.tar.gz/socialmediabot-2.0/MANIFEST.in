@@ -1,0 +1,8 @@
+include config/template.json
+include crontab.txt
+include data
+include LICENSE
+include logs
+include README.md
+include rotate_config.sh
+include requirements.txt

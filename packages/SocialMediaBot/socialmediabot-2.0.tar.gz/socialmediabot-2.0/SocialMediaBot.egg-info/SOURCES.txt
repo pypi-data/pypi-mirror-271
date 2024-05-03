@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+crontab.txt
+requirements.txt
+rotate_config.sh
+setup.py
+SocialMediaBot.egg-info/PKG-INFO
+SocialMediaBot.egg-info/SOURCES.txt
+SocialMediaBot.egg-info/dependency_links.txt
+SocialMediaBot.egg-info/top_level.txt
+config/template.json

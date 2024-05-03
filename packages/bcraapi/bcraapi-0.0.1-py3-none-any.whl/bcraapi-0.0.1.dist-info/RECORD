@@ -1,0 +1,8 @@
+bcraapi/__init__.py,sha256=6oMaIhm-VUtZsUfhbMJHhSXEgOzXkcXWKLt7CarSMkM,152
+bcraapi/api_client.py,sha256=IfHbmyfpYNXF1_p_7kxXHkm9q3CdmvZqUHbnrUVGAkY,1159
+bcraapi/get_from_bcra.py,sha256=jgUsIlR0gWAtqjz_M89rRiuwZyml8ZkWJkhLIXtEHig,1920
+bcraapi-0.0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+bcraapi-0.0.1.dist-info/METADATA,sha256=e_hrIcuGs3nugPkPsz-wXnVcACQEe4wFMprkABMnLug,11646
+bcraapi-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bcraapi-0.0.1.dist-info/top_level.txt,sha256=sdwDXtHkCv3xaD9w1YiFpEcr-hYcV9RByX0Px7HKVww,8
+bcraapi-0.0.1.dist-info/RECORD,,

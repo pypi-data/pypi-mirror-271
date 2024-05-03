@@ -1,0 +1,12 @@
+refers/__init__.py,sha256=4dCrvStS1OgE3Vlcv-qx5-TAo377yOMEToEqCi-PwY4,23
+refers/cli.py,sha256=md44h45HHQ9Hdd2GlnDk3ddfj1qC8KXwoSRFpbf0Pj0,1167
+refers/compromise_black.py,sha256=0X0Kh4p4WlaZOg1GPZB_nF8UThiUrrAOEEw39ibiPUg,16043
+refers/definitions.py,sha256=1pB0UEcKSq8rmxkaZBxJzIOHmAeroZSCBZZJM5mR-k0,539
+refers/errors.py,sha256=hiC7uCnnXhZ4NUb0WQLlhxpqn_FisWsJvbGggxezNTw,464
+refers/refers.py,sha256=23HOk4obkRUlUkFO_PFubOcF1uvWVdfy_22fF4PYs3M,13837
+refers/tags.py,sha256=hb9DPSLIpItdlntSPflPL2BIMXdtM6IvFqlwTjFJ_uo,5644
+refers-0.0.4.dist-info/entry_points.txt,sha256=jel9gOEvrd5YW_yF5pEFf_W9lNqwJ0jFDlSalp2_lSA,41
+refers-0.0.4.dist-info/LICENSE,sha256=9MOb_Tyc5zSucR4WoMnIL4rYUdRcBHShjBvBs6LJ8PI,1091
+refers-0.0.4.dist-info/METADATA,sha256=6sZLClEFHaA9InauW9zfNJj0XfIkllKek68t3MtHocs,2541
+refers-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+refers-0.0.4.dist-info/RECORD,,

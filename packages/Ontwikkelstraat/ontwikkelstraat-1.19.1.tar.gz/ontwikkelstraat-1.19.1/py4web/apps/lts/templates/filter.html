@@ -1,0 +1,26 @@
+<!-- https://bulma.io/documentation/components/menu/ -->
+
+<script type="text/hyperscript">
+behavior ToggleActiveHidden()
+    on ew:toggle
+        if me matches .is-active
+            remove .is-active from me
+            add .is-hidden to me
+        else
+            remove .is-hidden from me
+            add .is-active to me
+        end -- if
+    end -- ew:toggle
+end -- behavior
+</script>
+
+<div class="edwh-columns">
+    <div class="edwh-filter-column px-0">
+        <div class="is-pulled-right">
+            <!-- alle filters -->
+            [[=partial('filterbuttons')]]
+        </div>
+    </div>
+
+    [[=partial('filtermenu')]]
+</div>

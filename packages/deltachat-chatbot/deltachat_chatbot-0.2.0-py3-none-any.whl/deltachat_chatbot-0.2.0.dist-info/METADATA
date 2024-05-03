@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: deltachat-chatbot
+Version: 0.2.0
+Summary: Conversational chat-bot for Delta Chat
+Author-email: adbenitez <adb@merlinux.eu>
+Project-URL: Homepage, https://github.com/deltachat-bot/chatbot
+Keywords: deltachat,bot,chatbot,ai
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: deltabot-cli <7.0,>=6.0.0
+Requires-Dist: gpt4all <3.0,>=2.6.0
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pylama ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# ChatBot
+
+[![Latest Release](https://img.shields.io/pypi/v/deltachat-chatbot.svg)](https://pypi.org/project/deltachat-chatbot)
+[![CI](https://github.com/deltachat-bot/chatbot/actions/workflows/python-ci.yml/badge.svg)](https://github.com/deltachat-bot/chatbot/actions/workflows/python-ci.yml)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Conversational chat-bot for Delta Chat, using GPT4All.
+
+## Install
+
+```sh
+pip install deltachat-chatbot
+```
+
+## Usage
+
+Configure the bot:
+
+```sh
+chatbot init bot@example.com PASSWORD
+```
+
+Start the bot:
+
+```sh
+chatbot serve
+```
+
+Run `chatbot --help` to see all available options.

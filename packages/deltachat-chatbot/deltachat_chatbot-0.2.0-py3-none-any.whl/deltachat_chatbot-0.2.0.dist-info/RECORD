@@ -1,0 +1,10 @@
+deltachat_chatbot/__init__.py,sha256=-zJcWqNBNBqxfEQK0q7E7VIMwB1ibTJqLG4Eh7qdvXQ,165
+deltachat_chatbot/__main__.py,sha256=M7jcIQ0wYwLot7bzOqMQUEJv_190nXbdctI6hrTINbA,65
+deltachat_chatbot/gpt4all.py,sha256=DxcIhufBsXYlhsy5DfhxSKSXk2wAxn1rNC9-037ix7A,7181
+deltachat_chatbot/hooks.py,sha256=49Lk3q6fHWcOQdYwKAgCMbVm3DO4m4lGGtURU37A5D8,5756
+deltachat_chatbot-0.2.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+deltachat_chatbot-0.2.0.dist-info/METADATA,sha256=mPnjpk5Zb_7vOIg3umRjfCs1Km5-mnac6xCzsfTUb4k,1529
+deltachat_chatbot-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+deltachat_chatbot-0.2.0.dist-info/entry_points.txt,sha256=sgZrTGKlpH07JDqLMlMDmURt2Lx0AovKcolhBys1pBY,51
+deltachat_chatbot-0.2.0.dist-info/top_level.txt,sha256=7asdSweUDlMasQ6vv7YcSyW24nptcaLgrNcqUGe87Vc,18
+deltachat_chatbot-0.2.0.dist-info/RECORD,,

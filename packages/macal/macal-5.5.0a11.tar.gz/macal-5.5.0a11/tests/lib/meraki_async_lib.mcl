@@ -1,0 +1,83 @@
+# -*- coding: utf-8 -*-
+#
+# Product:   Meraki Async Library
+# Author:    Marco Caspers
+# Email:     SamaDevTeam@westcon.com
+# License:   MIT License
+# Date:      2024-03-31
+#
+# Copyright 2024 Westcon-Comstor
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+#
+# SPDX-License-Identifier: MIT
+#
+
+# Macal DSL Meraki Dasboard Async API library
+
+const meraki_async_lib = object {
+    name: "Meraki Dashboard Async API",
+    version: "5.5.0",
+    author: "Marco Caspers",
+    email: "SamaDevTeam@westcon.com",
+    license: "MIT",
+    description: "This is the Macal DSL 5.5 Meraki Dashboard Async API Library",
+    external_module: "meraki_async_lib.py"
+};
+
+
+InitAsyncTaskList => (api_key)          external "meraki_async_lib", "init_task_list";
+AddAsyncTask => (task)                  external "meraki_async_lib", "add_task";
+AddOrgAsyncTask => (org_id, task)       external "meraki_async_lib", "add_org_task";
+AddDevAsyncTask => (serial, task)       external "meraki_async_lib", "add_dev_task";
+AddNetAsyncTask => (network_id, task)   external "meraki_async_lib", "add_net_task";
+
+RunAsyncTaskList => ()                   external "meraki_async_lib", "run_tasks";
+
+# Normal tasks
+AsyncGetOrgs    => ()                   external "meraki_async_lib", "get_orgs";
+
+# Org tasks
+AsyncGetOrg     => (org_id)             external "meraki_async_lib", "get_org";
+AsyncGetOrgInventory => (org_id)        external "meraki_async_lib", "get_org_inventory";
+AsyncGetOrgDevices => (org_id)          external "meraki_async_lib", "get_org_devices";
+AsyncGetOrgNetworks => (org_id)         external "meraki_async_lib", "get_org_networks";
+AsyncGetOrgDevicesStatuses => (org_id)  external "meraki_async_lib", "get_org_devices_statuses";
+AsyncGetOrgConfigTemplates => (org_id)  external "meraki_async_lib", "get_org_config_templates";
+AsyncGetOrgLicensesOverview => (org_id) external "meraki_async_lib", "get_org_licenses_overview";
+AsyncGetOrgLicenses => (org_id)         external "meraki_async_lib", "get_org_licenses";
+AsyncGetOrgDevicesUplinksLossAndLatency => (org_id) external "meraki_async_lib", "get_org_devices_uplinks_loss_and_latency";
+AsyncGetOrgAppUplinkStatuses => (org_id) external "meraki_async_lib", "get_app_org_uplink_statuses";
+AsyncGetOrgAppVPNStatuses => (org_id)   external "meraki_async_lib", "get_app_org_vpn_statuses";
+AsyncGetOrgAppVPNStats => (org_id)      external "meraki_async_lib", "get_app_org_vpn_stats";
+AsyncGetOrgAppUplinksUsageByNetwork => (org_id) external "meraki_async_lib", "get_org_app_uplinks_usage_by_network";
+
+# Dev tasks
+
+AsyncDevAppDevicePerformance => (serial) external "meraki_async_lib", "get_app_device_performance";
+AsyncDevSwitchPortsStatuses  => (serial) external "meraki_async_lib", "get_switch_device_ports_statuses";
+
+# Net tasks
+
+AsyncNetApplianceUplinksUsageHistory => (network_id) external "meraki_async_lib", "get_app_network_appliance_uplinks_usage_history";
+
+# Processing task results
+
+ProcessLossAndLatency => (data)         external "meraki_async_lib", "process_loss_and_latency";
+

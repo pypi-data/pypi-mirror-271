@@ -1,0 +1,11 @@
+workforce/__init__.py,sha256=_vKe0Icepr8BRLeMpOaafaY_2D4P0jLrYlak-bbf8LY,133
+workforce/cli.py,sha256=i59KQ1yYtzeTRBv__yatLon7esC8pIscW5lQkFi2q_w,509
+workforce/gui.py,sha256=0a2AaqpYYwoEh5XtmFFcv_et7abf6jUaPh_rExPLp6A,6388
+workforce/workforce.py,sha256=wlogZDuvbxl2JiPQC3dXtOfajTcVG9ouTDKEKCgh_OI,3825
+workforce-1.0.12.dist-info/AUTHORS.rst,sha256=fLa0CebqzN0-h0u09S7JIWWqrZb5IcAZkDukUMO7h7k,161
+workforce-1.0.12.dist-info/LICENSE,sha256=8O3tAvB02tsiXo-Mi7KiXr53mhGO52eeuY5ila3TFPQ,1072
+workforce-1.0.12.dist-info/METADATA,sha256=y6MFf_q5eK5tYb97sx_QuXWJ_DHZ6pnXh3-nsK4ZWPE,3187
+workforce-1.0.12.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+workforce-1.0.12.dist-info/entry_points.txt,sha256=csHmcPpZ2nDfBCGWCQGf--5dCNITJVeF0-7oXR2pzIo,49
+workforce-1.0.12.dist-info/top_level.txt,sha256=p1PMstih6amIDp9Xr3N-FIxxMHC5sfswsuRKnxJ1sgs,10
+workforce-1.0.12.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+starcat = starcat:main

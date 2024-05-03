@@ -1,0 +1,16 @@
+torch
+
+[dev]
+black
+isort
+pytest
+pytest_mock
+
+[docs]
+sphinx
+sphinx-copybutton
+sphinx-gallery
+sphinx-tabs
+matplotlib
+networkx
+torchvision

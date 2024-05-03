@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hypll"
+description = "A framework for hyperbolic learning in PyTorch"
+version = "0.1.1"
+dependencies = [
+    "torch",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "pytest",
+    "pytest_mock",
+]
+docs = [
+    "sphinx",
+    "sphinx-copybutton",
+    "sphinx-gallery",
+    "sphinx-tabs",
+    "matplotlib",
+    "networkx",
+    "torchvision",
+]
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.setuptools.packages.find]
+include = ["hypll*"]

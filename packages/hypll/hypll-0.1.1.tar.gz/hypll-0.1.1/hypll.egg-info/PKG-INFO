@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hypll
+Version: 0.1.1
+Summary: A framework for hyperbolic learning in PyTorch
+License-File: LICENSE
+Requires-Dist: torch
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest_mock; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Requires-Dist: sphinx-gallery; extra == "docs"
+Requires-Dist: sphinx-tabs; extra == "docs"
+Requires-Dist: matplotlib; extra == "docs"
+Requires-Dist: networkx; extra == "docs"
+Requires-Dist: torchvision; extra == "docs"

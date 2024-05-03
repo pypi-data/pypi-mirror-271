@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: oracle_ml_insights
+Version: 1.1.0
+Summary: ML Observability Insights Library
+Author: Oracle Data Science
+License: Oracle Free Use Terms and Conditions (FUTC)
+Project-URL: Demo Notebooks, https://github.com/oracle-samples/oci-data-science-ai-samples/tree/main/ml-insights
+Project-URL: Documentation, https://docs.oracle.com/iaas/tools/ml-insights-docs/latest/ml-insights-documentation/html/index.html
+Keywords: Oracle Cloud Infrastructure,OCI,Oracle,Machine Learning,ML Monitoring,ML Observability,Data Science,Drift Detection,Distributed,Spark,Dask
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8, <3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fugue (==0.8.7)
+Requires-Dist: ocifs (==1.2.1)
+Requires-Dist: datasketches (==4.0.1)
+Requires-Dist: protobuf (==4.22.1)
+Requires-Dist: scipy (==1.10.1)
+Requires-Dist: pyarrow (==14.0.1)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: scikit-learn (<=1.2.2,>=0.24.0)
+Requires-Dist: jmespath (<=1.0.1,>=0.10.0)
+Provides-Extra: dask
+Requires-Dist: dask[complete] (==2022.11.1) ; extra == 'dask'
+
+# Oracle Machine Learning Observability Insights Library (ML Insights)
+ML Insights is a python library for data scientists, ML engineers and developers. Insights can be used to ingest data in different formats, apply row based transformations and monitor data and ML Models from validation to production.
+
+ML Insights library also provides many ways to process and evaluate data and ML models. The options include low code alternative for customisation, a pre-built application and and further extensibility through custom applications and custom components.
+
+## Installation
+ML Insights can be installed in a python 3.8 environment using:
+```bash
+pip install oracle-ml-insights
+```
+Several ML Insights dependencies are optional (for eg: Execution Engine) and can be installed with:
+```bash
+pip install oracle-ml-insights[option]
+```
+where "option" can be one of:
+
+- "dask", to run ML Insights on Dask Execution Engine
+
+## How it works
+ML Insights helps evaluate and monitor data and ML model for entirety of ML Observability lifecycle.
+
+Insights is component based where each component has a specific responsibility with a workflow managing the individual components.
+
+Insights provides components to carry out tasks like data ingestion, row level data transformation, metric calculation and post processing of metric output. More details on these are covered in the Getting Started section.
+
+In very simple terms, one has to provide location to the input data set that needs to be processed, select any additional simple transformation needed on the input data (for example, converting an un-structured column to structured one), and decide which metrics should be calculated for different features (columns of data). The user can also decide to define some post-action to be performed once all the metrics have been calculated.
+
+Insights provides a simple, declarative API, out of box components covering majority of common use cases to choose from. Also, Insights enables users to author json-based configurations that can be used to define and customise all of its core features.
+
+ - Insights currently supports CSV, JSON, and JSONL data types.
+
+ - It also supports major execution engines like Native Pandas, Dask, and Spark.
+
+ - Insights provides metrics in different groups like
+    - Data Integrity
+    - Data Quality/ Summary
+    - Feature and Prediction Drift Detection
+    - Model Performance for both classification and Regression Models
+
+ - Insights also supports integration for writing metric data, or connecting to OCI monitoring service.
+
+## Contact
+ML Insights SDK is offered by the OCI Data Science team. You can reach us through Oracle Support - https://www.oracle.com/support/.
+
+## License
+Copyright (c) 2023, 2024, Oracle and/or its affiliates. Licensed under the Oracle Free Use Terms and Conditions (FUTC) License.

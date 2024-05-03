@@ -1,0 +1,2 @@
+[console_scripts]
+tcm = tcm:app.main

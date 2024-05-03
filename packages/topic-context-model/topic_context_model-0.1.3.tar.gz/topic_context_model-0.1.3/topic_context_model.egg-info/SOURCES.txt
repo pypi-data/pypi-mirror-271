@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+tcm/__init__.py
+tcm/__main__.py
+tcm/app.py
+tcm/data.py
+tcm/model.py
+tcm/tokenizer.py
+topic_context_model.egg-info/PKG-INFO
+topic_context_model.egg-info/SOURCES.txt
+topic_context_model.egg-info/dependency_links.txt
+topic_context_model.egg-info/entry_points.txt
+topic_context_model.egg-info/requires.txt
+topic_context_model.egg-info/top_level.txt

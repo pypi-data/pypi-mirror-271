@@ -1,0 +1,2 @@
+class ArmisticeAIError(Exception):
+    pass

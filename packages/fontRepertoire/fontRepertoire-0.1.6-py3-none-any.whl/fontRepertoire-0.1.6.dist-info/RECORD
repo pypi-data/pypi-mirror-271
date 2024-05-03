@@ -1,0 +1,10 @@
+fontRepertoire/__init__.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+fontRepertoire/base.py,sha256=sQ4g1sJszRqGjQRNha5VQoos1rKz4-ATXdmFArKLC9I,2431
+fontRepertoire/characterSet.py,sha256=92Wn3DY9JE_fpqoqKoYPjWMOv4XjXPqheMgChR2SgmY,7322
+fontRepertoire/codepointToGlyphMap.py,sha256=_SlbDBkeYyT12mxCkKoVPYZTS5BmvmwwHMRL3k5vRC8,11457
+fontRepertoire/glyphRepertoire.py,sha256=k3MOo5MvFZdiJ5hvU5GM23sUY7fpZWvU15EPXHFQYC0,7657
+fontRepertoire-0.1.6.dist-info/LICENSE,sha256=_pJGQwEQjYErC70jGdrVAVSqJI95pVuvTimbUb12qHY,1074
+fontRepertoire-0.1.6.dist-info/METADATA,sha256=Tic_Wxlyn7pNJQkA-TT38lEsQUQ9HaoUhpqINw2zfks,1674
+fontRepertoire-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fontRepertoire-0.1.6.dist-info/top_level.txt,sha256=rq2wFTSCUdJx9TClDhKHcXgRhcdHNjDwMojlVuTWWoY,15
+fontRepertoire-0.1.6.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+LICENSE.md
+README.rst
+setup.py
+graph_judge/__init__.py
+graph_judge.egg-info/PKG-INFO
+graph_judge.egg-info/SOURCES.txt
+graph_judge.egg-info/dependency_links.txt
+graph_judge.egg-info/top_level.txt

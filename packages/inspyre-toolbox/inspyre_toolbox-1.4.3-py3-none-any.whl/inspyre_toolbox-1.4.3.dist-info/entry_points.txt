@@ -1,0 +1,3 @@
+[console_scripts]
+ist-bytes-converter=inspyre_toolbox.cli.ist_bytes_converter:main
+

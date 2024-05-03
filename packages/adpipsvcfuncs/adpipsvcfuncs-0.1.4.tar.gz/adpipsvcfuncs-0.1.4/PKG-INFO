@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: adpipsvcfuncs
+Version: 0.1.4
+Summary: Service functions for the Adaptive Pipeline Workflow project.
+Home-page: https://github.com/odegay/adaptive-pipeline-service-functions
+Author: Oleg D
+Author-email: olegd@gmail.com
+License: MIT
+Keywords: GenAI,GCP
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,2 @@
+import{d as o,c as r,g as e,h as c,o as n,n as a,j as t,D as _,M as f}from"./index-CPxpbp4R.js";import{u as p}from"./usePageTitle-CcH2lmI6.js";const h=o({__name:"Artifacts",setup(u){return p("Artifacts"),(l,i)=>{const s=c("p-layout-default");return n(),r(s,{class:"artifacts"},{header:e(()=>[a(t(_))]),default:e(()=>[a(t(f))]),_:1})}}});export{h as default};
+//# sourceMappingURL=Artifacts-Czee_ELc.js.map

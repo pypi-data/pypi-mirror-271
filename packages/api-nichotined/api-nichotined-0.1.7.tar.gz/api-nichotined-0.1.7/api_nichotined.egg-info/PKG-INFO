@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: api-nichotined
+Version: 0.1.7
+Summary: Simple lib for testing rest API
+Home-page: https://github.com/nichotined/simple-api
+Author: Nicholas Frederich
+Author-email: nicholas.frederich.lagaunne@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: curlify
+Requires-Dist: google-cloud-bigquery
+
+# API-NICHOTINED
+
+A package that will help on creating session upon making rest API request.
+
+Installation:
+
+```commandline
+pip install api-nichotined
+```
+
+Sample usage:
+
+```commandline
+import logging
+
+from api_nichotined import Api, BigQuery
+
+
+class TestApi(Api):
+    def __init__(self):
+        super().__init__("https://restcountries.com")
+
+    def get_upload(self):
+        return self.get(path="/v3.1/name/indonesia")
+
+    @classmethod
+    def init_bigquery(cls):
+        bq = BigQuery()
+
+        bq.authenticate_client_with_json_cred_path("cred.json")
+        res = bq.get_rows_from(query="""SELECT * FROM `dummy` LIMIT 1000""")
+        assert type(res[0].column_a) == str
+
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
+    response = TestApi().get_upload()
+    TestApi.init_bigquery()
+
+```
+

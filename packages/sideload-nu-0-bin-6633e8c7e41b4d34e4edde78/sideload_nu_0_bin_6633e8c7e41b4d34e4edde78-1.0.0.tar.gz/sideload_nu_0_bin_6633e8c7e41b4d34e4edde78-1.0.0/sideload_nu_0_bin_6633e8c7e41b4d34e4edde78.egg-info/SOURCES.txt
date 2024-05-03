@@ -1,0 +1,7 @@
+pyproject.toml
+sideload_nu_0_bin_6633e8c7e41b4d34e4edde78/__init__.py
+sideload_nu_0_bin_6633e8c7e41b4d34e4edde78/nu-0.93.0-x86_64-pc-windows-msvc.zip
+sideload_nu_0_bin_6633e8c7e41b4d34e4edde78.egg-info/PKG-INFO
+sideload_nu_0_bin_6633e8c7e41b4d34e4edde78.egg-info/SOURCES.txt
+sideload_nu_0_bin_6633e8c7e41b4d34e4edde78.egg-info/dependency_links.txt
+sideload_nu_0_bin_6633e8c7e41b4d34e4edde78.egg-info/top_level.txt

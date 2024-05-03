@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: nutrical
+Version: 0.0.3
+Summary: Nutrition calculation for recipes and ingredients
+Home-page: https://github.com/liao961120/nutrical
+Author: Yongfu Liao
+Author-email: liao961120@gmail.com
+License: UNKNOWN
+Description: Nutrition calculation for recipes and ingredients
+        =================================================
+        
+        
+        ## Installation
+        
+        ```sh
+        pip install foodie
+        ```
+        
+        
+        ## Usage
+        
+        ```python
+        from foodie import Ingredient, Recipe
+        
+        apple = Food("apple", portion='160g', calories=80, protein=.5, fiber=1)
+        banana = Food("banana", portion='80g', calories=70, protein=1, fiber=1.6)
+        peanut = Food("peanut", portion='20g', calories=110, protein=5.7, fat=20, fiber=1.8)
+        ```
+        
+        ### Nutrition arithmetics
+        
+        ```python
+        # Nutritional values of 2 apples
+        2 * apple
+        ```
+        
+        ```
+        apple
+        {
+           "portion": "320 gram",
+           "dollar": "NA",
+           "calories": 160,
+           "protein": 1.0,
+           "fiber": 2
+        }
+        ```
+        
+        ```python
+        # A smaller apple weighing 130g
+        apple.to(portion='130g')  
+        ```
+        ```
+        apple
+        {
+           "portion": "130.0 gram",
+           "dollar": "NA",
+           "calories": 65.0,
+           "protein": 0.41,
+           "fiber": 0.81
+        }
+        ```
+        
+        ```python
+        # How much apple to eat to reach 3g of fibers?
+        apple.to(fiber=3) 
+        ```
+        ```
+        apple
+        {
+           "portion": "480.0 gram",
+           "dollar": "NA",
+           "calories": 240.0,
+           "protein": 1.5,
+           "fiber": 3.0
+        }
+        ```
+        
+        
+        ### Recipe nutritional value
+        
+        ```python
+        # Create recipe from ingredients
+        recipe = Recipe("Fruit Cake", [
+            2   * apple,    # 2 apple
+            1   * banana,   # 1 banana
+            1.5 * peanut    # 1.5 servings of peanut butter
+        ])
+        recipe  # View recipie Nutritional value
+        ```
+        ```
+        Recipe (Fruit Cake):
+        {
+           "portion": "430.0 gram",
+           "dollar": "NA",
+           "protein": 10.55,
+           "fiber": 6.3,
+           "calories": 395.0,
+           "fat": 30.0
+        }
+        ```
+        
+        ```python
+        # Export data as CSV
+        recipe.export_csv("FruitCake.csv")  
+        ```
+        ```
+        name,portion,dollar,protein,fiber,calories,fat
+        apple,320 gram,,1.0,2,160,
+        banana,80 gram,,1,1.6,70,
+        peanut,30.0 gram,,8.55,2.7,165.0,30.0
+        Total,430.0 gram,,10.55,6.300000000000001,395.0,30.0
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

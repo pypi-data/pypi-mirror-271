@@ -1,0 +1,14 @@
+README.md
+setup.py
+nutrical/__init__.py
+nutrical/nutrical.py
+nutrical/taiwan-fda.py
+nutrical/utils.py
+nutrical.egg-info/PKG-INFO
+nutrical.egg-info/SOURCES.txt
+nutrical.egg-info/dependency_links.txt
+nutrical.egg-info/requires.txt
+nutrical.egg-info/top_level.txt
+nutrical/../VERSION
+nutrical/../data/TW_FDA_nutrition_items.csv
+test/test.py

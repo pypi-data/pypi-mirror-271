@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: morphapi
+Version: 0.2.5
+Summary: A lightweight python package to download neuronal morphologies
+Author-email: Federico Claudi <hello@brainglobe.info>
+License: MIT
+Project-URL: Homepage, https://github.com/brainglobe/morphapi
+Project-URL: Bug Tracker, https://github.com/brainglobe/morphapi/issues
+Project-URL: Documentation, https://github.com/brainglobe/morphapi
+Project-URL: Source Code, https://github.com/brainglobe/morphapi
+Project-URL: User Support, https://github.com/brainglobe/morphapi/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: brainglobe-atlasapi >=2.0.1
+Requires-Dist: brainglobe-space >=1.0.0
+Requires-Dist: neurom <4,>=3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyyaml >=5.3
+Requires-Dist: retry
+Requires-Dist: rich
+Requires-Dist: vedo >=2023.5.0
+Requires-Dist: vtk
+Requires-Dist: imagecodecs ; python_version >= "3.9"
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: setuptools-scm ; extra == 'dev'
+Requires-Dist: pytest-sugar ; extra == 'dev'
+Requires-Dist: allensdk ; extra == 'dev'
+Provides-Extra: nb
+Requires-Dist: jupyter ; extra == 'nb'
+Requires-Dist: k3d ; extra == 'nb'
+
+# morphapi
+
+## Overview
+Morphapi is a lightweight python package for downloading neurons
+morphological reconstructions from publicly available datasets.
+
+Please see the [documentation](https://brainglobe.info/documentation/morphapi/index.html)
+
+## Contributing
+Contributions to morphapi are more than welcome. Please see the [developers guide](https://brainglobe.info/community/developers/index.html).

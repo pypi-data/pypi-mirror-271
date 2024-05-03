@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/conda_libmamba_solver.egg-info/PKG-INFO
+src/conda_libmamba_solver.egg-info/SOURCES.txt
+src/conda_libmamba_solver.egg-info/dependency_links.txt
+src/conda_libmamba_solver.egg-info/entry_points.txt
+src/conda_libmamba_solver.egg-info/requires.txt
+src/conda_libmamba_solver.egg-info/top_level.txt
+tests/test_simple.py

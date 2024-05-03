@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: gitpoll
+Version: 1.8.1
+Summary: A tool to watch a GitHub repository for changes and perform actions before and after pulling updates.
+Author-email: Cary Carter <ccarterdev@gmail.com>
+Project-URL: Homepage, https://github.com/cc-d/gitpoll
+Project-URL: Repository, https://github.com/cc-d/gitpoll
+Project-URL: Issues, https://github.com/cc-d/gitpoll/issues
+Project-URL: Documentation, https://github.com/cc-d/gitpoll
+Project-URL: Changelog, https://github.com/cc-d/gitpoll/blob/main/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyshared >=1.5.8
+Requires-Dist: logfunc ==2.4.3
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+
+# gitpoll
+
+## Overview
+
+`gitpoll` monitors the remote equivalent of a local Git repository branch for changes. It checks the repository at specified intervals, executing scripts or shell commands before and after pulling updates, suitable for simple automation of deployment or other tasks.
+
+## Features
+
+- Monitors a Git repository for changes at specified intervals.
+- Executes pre-action and post-action scripts or shell commands before/atfer pulling changes.
+- All behavior is configurable via command-line options.
+
+## Installation
+
+### Requirements
+
+- Python 3.5 or higher
+- Dependencies: `pyshared`, `logfunc`
+
+### Setup
+
+#### Install from PyPI using pip:
+
+```bash
+pip install gitpoll
+```
+
+##### Clone the repository and install using pip:
+
+```bash
+git clone https://github.com/cc-d/gitpoll.git
+cd gitpoll && pip install .
+```
+
+##### Install Dev Dependencies:
+
+```bash
+pip install gitpoll[dev]
+```
+
+## Usage
+
+```
+usage: gitpoll [-h] [-i INTERVAL] [-n] [-p PRE_ACTION] [-P POST_ACTION] [-f] [repo_path]
+
+Monitors a Git repository for changes and executes scripts before and after pulling updates.
+
+positional arguments:
+  repo_path             Path to the Git repository to monitor.
+
+options:
+  -h, --help            show this help message and exit
+  -i INTERVAL, --interval INTERVAL
+                        Interval in seconds to check for changes.
+  -n, --no-pull         Do not pull changes from the repository.
+  -p PRE_ACTION, --pre-action PRE_ACTION
+                        Command or path to the pre-action shell script or command.
+  -P POST_ACTION, --post-action POST_ACTION
+                        Command or path to the post-action shell script or command.
+  -f, --force           Force execution pre and post actions regardless of changes.
+```
+
+### Basic Usage
+
+To monitor a repository and execute actions based on changes:
+
+```bash
+gitpoll /path/to/repo
+```
+
+### Advanced Usage
+
+Monitor a repository at `/home/user/myrepo`, check every 300 seconds, and run specified scripts:
+
+```bash
+gitpoll /home/user/myrepo -i 300 -p /path/to/pre_script.sh -P /path/to/post_script.sh
+```
+
+### No-Pull Mode
+
+Execute pre and post actions without pulling changes from the repository:
+
+```bash
+gitpoll /path/to/repo --no-pull
+```
+
+### Force Mode
+
+Force execution of pre and post actions even if no changes are detected:
+
+```bash
+gitpoll /path/to/repo --force
+```
+
+## Testing
+
+Tests are not complete, I wrote these to have tests period, I'll probably redo them later.
+
+Install the dev dependencies and run the tests:
+
+```bash
+pip install gitpoll[dev]
+```
+
+```
+---------- coverage: platform darwin, python 3.11.5-final-0 ----------
+Name                  Stmts   Miss  Cover
+-----------------------------------------
+gitpoll/__init__.py       1      0   100%
+gitpoll/args.py          11      0   100%
+gitpoll/config.py         8      0   100%
+gitpoll/git.py           19      9    53%
+gitpoll/log.py           15      0   100%
+gitpoll/main.py          52      9    83%
+gitpoll/shell.py         54      5    91%
+gitpoll/version.py        1      0   100%
+-----------------------------------------
+TOTAL                   161     23    86%
+```
+
+## Contributing
+
+Contributions are welcome. Please fork the repository and submit pull requests, bug reports, feature requests, etc.
+
+## License
+
+MIT

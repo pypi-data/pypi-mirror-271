@@ -1,0 +1,14 @@
+gitpoll/__init__.py,sha256=8zLGg-DfQhnDl2Ky0n-zXpN-8e-g7iR0AcaI4l4Vvpk,32
+gitpoll/args.py,sha256=ooUXHHjlIWVLSjyxrSwV6fK9m_aPl3Fcf5sFJviWB04,1527
+gitpoll/config.py,sha256=8QtXsqVB3zYOpvRuAR-w9nwHHbV3v58Tq8JcYG1MyRE,483
+gitpoll/git.py,sha256=LZOg6pstmoZSNGT__j5hmG-Ve6XJ1CugrJK0GNVlcH0,877
+gitpoll/log.py,sha256=pQXXszWa8bjyz9AmOOfn8RkG-tLtNXm5e6b9HsBRkUA,889
+gitpoll/main.py,sha256=OIynL7RBJ6hSIybp7qU_-oD56RatgIaeRGR3nrDd43w,2119
+gitpoll/shell.py,sha256=FikK_trqDjPODS3uqV4l5pCB1JbDkBuScFmM96HP7AI,2072
+gitpoll/version.py,sha256=7MCtJDgGo9X0p4xZ0jS5djhQPWK-HOaXAyASTwUa4Fc,22
+gitpoll-1.8.1.dist-info/LICENSE,sha256=Oqp_kvYTcHXculbJJhyN32EDhEOA5omV6gG9fRpSKmA,1068
+gitpoll-1.8.1.dist-info/METADATA,sha256=mFtUTLO7BGWT-1tf0o65LaIyg7qKpu0HqO-FQVh7PNc,4576
+gitpoll-1.8.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gitpoll-1.8.1.dist-info/entry_points.txt,sha256=t-9zL9VL5JkIAhit2ZevOuOQgR8HlI3ZmcQAahX58rU,46
+gitpoll-1.8.1.dist-info/top_level.txt,sha256=qXYXp-gAIx-BMJ8Jo44SVLcks6KRarCl0mZUNd7HsSU,8
+gitpoll-1.8.1.dist-info/RECORD,,

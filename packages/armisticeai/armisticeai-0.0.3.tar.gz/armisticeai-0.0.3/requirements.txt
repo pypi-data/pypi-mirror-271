@@ -1,0 +1,11 @@
+flwr==1.6.0
+transformers==4.40.0
+evaluate==0.4.1
+datasets==2.19.0
+scikit-learn==1.4.2
+accelerate==0.29.3
+torch==2.2.2
+torchvision==0.17.2
+huggingface-hub==0.22.2
+peft==0.10.0
+git+https://github.com/tanyav2/bitsandbytes.git@tanya/lora-fix#egg=bitsandbytes

@@ -1,0 +1,5 @@
+click
+langchain
+langchain-chroma
+langchain_openai
+prompt_toolkit

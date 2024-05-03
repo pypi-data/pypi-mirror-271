@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: pylinweb
+Version: 1.9.3
+Summary: A simple functional test library using Python and Selenium
+Author: Linda Lopez
+Keywords: selenium,testing,web,chrome
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Requires-Dist: allure-behave==2.13.5
+Requires-Dist: allure-python-commons==2.13.5
+Requires-Dist: behave==1.2.6
+Requires-Dist: behave-html-formatter==0.9.10
+Requires-Dist: behave2cucumber==1.0.3
+Requires-Dist: docxcompose==1.4.0
+Requires-Dist: docxtpl==0.16.8
+Requires-Dist: playwright==1.42.0
+Requires-Dist: psutil==5.9.2
+Requires-Dist: PyPDF2==3.0.1
+Requires-Dist: python-docx==1.1.0
+Requires-Dist: pycparser==2.21
+Requires-Dist: screeninfo==0.8
+Requires-Dist: selenium==4.12
+Requires-Dist: keyboard==0.13.5
+
+# Pylinweb
+
+Pylinweb es una biblioteca de pruebas funcionales simple que utiliza Python, Selenium y Chrome driver.
+
+## Pre-requisitos
+
+Antes de instalar Pylinweb, asegúrate de tener instalado lo siguiente:
+
+- Python 3.12.2
+- Node.js 16.14.0
+- JDK 11.0.16.1
+
+## Instalación
+
+Puedes instalar Pylinweb usando pip:
+
+```bash
+pip install pylinweb
+```
+
+Si necesitas una versión específica de Pylinweb, puedes especificarla así:
+
+```bash
+pip install pylinweb==version
+```
+## Uso
+
+Una vez instalado, puedes usar Pylinweb con varios argumentos:
+
+| Argumento   | Descripción                                           |
+|-------------|-------------------------------------------------------|
+| --version   | Imprime la versión de Pylinweb.                       |
+| --setup     | Copia el directorio de la aplicación e instala las dependencias. |
+| --run-tests | Ejecuta las pruebas.                                  |
+| --report-html    | Genera un informe en html.                                    |
+| --report-word      | Genera un informe en formato word. |
+| --reset      | Elimina directorios innecesarios.  |
+| --open-app   | Ejecuta y abre la aplicación del framework  |
+| --help  -h    | Muestra la ayuda y explica cómo usar los argumentos.  |
+
+Por ejemplo, para imprimir la versión de Pylinweb, puedes usar:
+
+```bash
+pylinweb --version
+```
+Para configurar tu aplicación, puedes usar:
+
+```bash
+pylinweb --setup
+```
+Esto copiará el directorio de la aplicación e instalará las dependencias necesarias.
+
+Para ejecutar las pruebas, debes ubicarte dentro de la carpeta framework_web y ejecutar el siguiente comando:
+
+```bash
+pylinweb --run-tests
+```
+Para generar un informe en allure html, debes ubicarte dentro de la carpeta framework_web y usar este comando:
+
+```bash
+pylinweb --report-html
+```
+Y para generar un informe en formato word, debes ubicarte dentro de la carpeta framework_web y usar este comando:
+
+```bash
+pylinweb --report-word
+```
+
+Reemplaza version con la versión específica de Pylinweb que deseas instalar.

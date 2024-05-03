@@ -1,0 +1,31 @@
+# Copyright © SixtyFPS GmbH <info@slint.dev>
+# SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-1.2 OR LicenseRef-Slint-commercial
+
+[package]
+name = "i-slint-backend-testing"
+description = "OpenGL rendering backend for Slint"
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+publish = false
+
+[lib]
+path = "lib.rs"
+
+[features]
+# Internal feature that is only enabled for Slint's own tests
+internal = []
+# ffi for C++ bindings
+ffi = []
+
+[dependencies]
+i-slint-core = { workspace = true }
+vtable = { workspace = true }
+
+[dev-dependencies]
+slint = { workspace = true, default-features = false, features = ["std", "compat-1-2"] }
+i-slint-core-macros = { workspace = true }

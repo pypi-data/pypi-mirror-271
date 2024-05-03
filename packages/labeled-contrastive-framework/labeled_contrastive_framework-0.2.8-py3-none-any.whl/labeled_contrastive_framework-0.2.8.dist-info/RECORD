@@ -1,0 +1,9 @@
+labeled_contrastive_framework/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labeled_contrastive_framework/module.py,sha256=FBikWDoG1hG0qruFs-KSST2iH5W-75KY2OjSIVfzlLg,7999
+labeled_contrastive_framework/transform.py,sha256=MdIcdU7lGXvPKvctWYTi7ZaJUz5wq234tMNyWtUKFRg,2786
+labeled_contrastive_framework/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labeled_contrastive_framework-0.2.8.dist-info/LICENSE,sha256=2KDya-0ZIT_Px1aWriPsx6sHzWhNKXzmR6jD2dAFveQ,1079
+labeled_contrastive_framework-0.2.8.dist-info/METADATA,sha256=KOHcn1LthjqLiJwzb568PptTJ_9M_Cj9Pdx0Bqxv6ik,810
+labeled_contrastive_framework-0.2.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+labeled_contrastive_framework-0.2.8.dist-info/top_level.txt,sha256=KnSc0fAbcfYUM0SP9jKLUasajwJzh3c_lznDgUH3Jhk,30
+labeled_contrastive_framework-0.2.8.dist-info/RECORD,,

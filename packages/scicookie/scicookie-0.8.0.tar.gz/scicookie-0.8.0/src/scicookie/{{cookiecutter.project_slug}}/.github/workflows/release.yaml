@@ -1,0 +1,107 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+      - uses: actions/checkout@v3
+{% if cookiecutter.use_conda == "yes" %}
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          miniforge-version: latest
+          environment-file: conda/dev.yaml
+          channels: conda-forge,nodefaults
+          activate-environment: {{ cookiecutter.project_slug }}
+          auto-update-conda: true
+          conda-solver: libmamba
+{% else %}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "pypy3.9"
+      
+      - name: Create virtual environment
+        run: python -m venv {{ cookiecutter.project_slug }}
+
+      - name: Activate virtual environment
+        run: source {{ cookiecutter.project_slug }}/bin/activate
+
+      - name: Install build-system
+        run: pip install -r requests.txt
+{% endif %}
+      - name: Install deps
+        run: |
+          {%- if cookiecutter.build_system == "poetry" %}
+          poetry install
+          {%- elif cookiecutter.build_system == "flit" %}
+          flit install
+          {%- elif cookiecutter.build_system == "pdm" %}
+          pdm install
+          {%- else %}
+          pip install .
+          {%- endif %}
+
+      - name: Run semantic release (for tests)
+        if: ${{ "{{ github.event_name != 'workflow_dispatch' }}" }}
+        env:
+          GITHUB_TOKEN: ${{ "{{ secrets.GITHUB_TOKEN }}" }}
+        run: |
+          {%- if cookiecutter.use_makim == "yes" %}
+          makim release.dry
+          {%- elif cookiecutter.use_make == "yes" -%}
+          make release-dry
+          {%- endif %}
+
+      - name: Release command
+        if: ${{ "{{ github.event_name == 'workflow_dispatch' }}" }}
+        env:
+          GITHUB_TOKEN: ${{ "{{ secrets.GITHUB_TOKEN }}" }}
+          PYPI_TOKEN: ${{ "{{ secrets.PYPI_TOKEN }}" }}
+        run: |
+          poetry config pypi-token.pypi ${PYPI_TOKEN}
+          {%- if cookiecutter.use_makim == "yes" %}
+          makim release.ci
+          {%- elif cookiecutter.use_make == "yes" -%}
+          make release-ci
+          {%- endif %}
+
+      - name: Generate documentation with changes from semantic-release
+        if: ${{ "{{ github.event_name == 'workflow_dispatch' }}" }}
+        run: |
+          {%- if cookiecutter.use_makim == "yes" %}
+          makim docs.build
+          {%- elif cookiecutter.use_make == "yes" -%}
+          make docs-build
+          {%- endif %}
+
+      - name: GitHub Pages action
+        if: ${{ "{{ github.event_name == 'workflow_dispatch' }}" }}
+        uses: peaceiris/actions-gh-pages@v3.5.9
+        with:
+          github_token: ${{ "{{ secrets.GITHUB_TOKEN }}" }}
+          publish_dir: >-
+            {%- if cookiecutter.documentation_engine == "jupyter-book" %}
+            ./docs/_build/html
+            {%- elif cookiecutter.documentation_engine == "mkdocs" %}
+            build/
+            {%- elif cookiecutter.documentation_engine == "sphinx" %}
+            docs/_build/html/
+            {%- endif %}

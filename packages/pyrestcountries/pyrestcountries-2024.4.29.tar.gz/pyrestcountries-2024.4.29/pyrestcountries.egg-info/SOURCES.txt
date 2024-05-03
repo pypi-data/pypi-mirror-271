@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyrestcountries/__init__.py
+pyrestcountries/api.py
+pyrestcountries/data.py
+pyrestcountries.egg-info/PKG-INFO
+pyrestcountries.egg-info/SOURCES.txt
+pyrestcountries.egg-info/dependency_links.txt
+pyrestcountries.egg-info/requires.txt
+pyrestcountries.egg-info/top_level.txt

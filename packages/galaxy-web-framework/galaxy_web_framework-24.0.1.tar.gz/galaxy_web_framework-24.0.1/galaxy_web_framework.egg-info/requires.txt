@@ -1,0 +1,10 @@
+galaxy-data
+galaxy-util
+babel
+MarkupSafe
+paste
+pydantic!=2.6.0,!=2.6.1,>=2
+requests
+Routes
+SQLAlchemy<2,>=1.4.25
+WebOb

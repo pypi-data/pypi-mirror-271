@@ -1,0 +1,876 @@
+Metadata-Version: 2.1
+Name: apollo-ai
+Version: 0.0.41
+Summary: Framework to process 3 channels in one: Video, Audio & Text
+Home-page: https://github.com/VerbaNexAI/APOLLO.AI
+Author: VerbaNex, Riddle
+License: GPL-3.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Overview
+In this section we cover the fundamentals of developing with Argus, Lyre and Pythia. This section assumes that you already have some knowledge in language processing, sound analysis and image processing. 
+
+- [Installation](#installation)
+- [Argus](#argus)
+  - [face_points](#face_points)
+  - [head_position](#head_position)
+- [Lyre](#lyre)
+  - [record_voice](#record_voice)
+  - [record_ontime](#record_ontime)
+  - [save_to_file](#save_to_file)
+  - [convert_to_audio](#convert_to_audio)
+  - [full_signal](#full_signal)
+  - [freq_analysis](#freq_analysis)
+  - [mel_freq_cepstral](#mel_freq_cepstral)
+  - [chroma_features](#chroma_features)
+  - [spectral_features](#spectral_features)
+  - [onset_detection](#onset_detection)
+- [Pythia](#pythia)
+  - [clean_text](#clean_text)
+  - [sentences](#sentences)
+  - [word_checker](#word_checker)
+  - [word_alignment](#word_alignment)
+  - [phonetic_transcription](#phonetic_transcription)
+  - [syllables](#syllables)
+  - [words](#words)
+  - [transcriber](#transcriber)
+- [Utility](#utility-utils-beta)
+  - [ensure_dir_created](#ensure_dir_created)
+  - [ensure_dir_has_files](#ensure_dir_has_files)
+  - [ensure_file_exist](#ensure_file_exist)
+
+## Installation
+To be able to run apollo-ai=0.0.32 which is the current working version. 
+```console
+pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ apollo-ai==0.0.35
+```
+
+After installing all the packages torch==2.0.0+cu118 is needed to run the transcriber function. You can run it with cpu delegated package but cuda is recommended for speed in the transcription process. 
+```console
+pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+```
+
+**face_detection** is also needed for the head_position function to work.
+```console
+pip install git+https://github.com/elliottzheng/face-detection.git@master
+```
+
+finally, for spacy you need the es_core_news_lg model in order to work with Pythia:
+```console
+python -m spacy download es_core_news_lg
+```
+
+## Argus
+Argus was a servant of the goddess Hera and he made an excellent watchman because he never fell asleep.
+
+### face_points
+
+<img align="center" src="../figures/argus.png">
+
+`face_points(filename, focus, focal_length, output_dir, plot, normalize)`
+
+This function is used to generate data points of a specific indice selected by the developer. It utilizes the MediaPipe FaceMesh model to detect facial landmarks in a video stream and calculates distances between these points, it also provides the option to normalize the data, save a video with visualized landmarks, and return a dictionary containing the calculated data.
+
+#### Parameters
+- **filename (str)**: The path to the input video file.
+- **focus (str)**: The specific facial part to focus on. It should be one of the valid part indices available for the face.
+
+  Available indices: `mouth, right_eye, left_eye`
+
+- **focal_length_mm (int)**: The focal length in millimeters, which is used for distance calculations.
+- **output_dir (str)**: Optional, The directory where the output video and other data will be saved. Defaults to "./output".
+- **plot (bool)**: Optional, if True, it plots the data and saves it in the specified output_dir. Defaults to True.
+- **normalize (bool)**: If True, it normalizes the data. Defaults to False.
+
+#### Returns
+- **"distances" (pd.DataFrame)**: A Pandas DataFrame of calculated distances between facial landmarks.
+- **"fps" (int)**: The frames per second of the input video.
+- **"frame_width" (int)**: The width of the frames in the input video.
+- **"frame_height" (int)**: The height of the frames in the input video.
+
+#### Usage
+```python
+from argus import face_points
+
+# Define input parameters
+filename = 'input_video.mp4'
+focus = 'mouth'  # Choose the specific facial part to focus on
+focal_length_mm = 75  # Focal length in millimeters
+
+# Call the function to generate face data points
+data = face_points(filename, focus, focal_length_mm)
+
+# Access the calculated data
+distances = data["distances"]
+fps = data["fps"]
+frame_width = data["frame_width"]
+frame_height = data["frame_height"]
+```
+
+### head_position
+
+<img align="center" src="../figures/argus_2.png">
+
+`head_position(filename, output_dir, plot, real_head_width)`
+
+This function estimates the head position and movement speed over time in a video file. The speed is measured given the width of the head in mm/s and it uses facial detection to track the 3 head movements (yaw, pitch and roll) to track the head movement providing such metrics in numpy arrays. The function can also generate plots if required.
+
+#### Parameters
+- **filename (str)**: The path to the input video file.
+- **output_dir (str)**: Optional, The directory where the output video and other data will be saved. Defaults to "./output".
+- **plot (bool)**: Optional, if True, it plots the data and saves it in the specified output_dir. Defaults to True.
+- **real_head_width (int)**: Optional, the real head width in millimeters for scaling the head movement data. Default is 145.
+
+#### Returns
+- **"speeds"**: A list of head movement speeds over time in millimeters per second.
+- **"yaws"**: A list of head yaw angles over time.
+- **"pitch"**: A list of head pitch angles over time.
+- **"rolls"**: A list of head roll angles over time.
+- **"threshold"**: The threshold value for head movement speed in millimeters per second.
+- **"avg_speed"**: The average head movement speed in millimeters per second.
+
+#### Usage
+```python
+from argus import head_position
+
+# Specify the video file for head position estimation
+video_file = "input_video.mp4"
+
+# Set the output directory
+output_directory = "output"
+
+# Calculate head position and movement
+result = head_position(filename=video_file, output_dir=output_directory, plot=True, real_head_width=150)
+
+# Access the results
+head_movement_speeds = result["speeds"]
+yaw_angles = result["yaws"]
+pitch_angles = result["pitch"]
+roll_angles = result["rolls"]
+threshold_speed = result["threshold"]
+average_speed = result["avg_speed"]
+
+# Example: Print the average head movement speed
+print(f"Average head movement speed: {average_speed} mm/s")
+```
+
+## Lyre
+A lyre is a kind of harp, or you might even think of it as an ancient guitar. Apollo's lyre has the power to turn items like stones into musical instruments.
+
+### record_voice
+
+`record_voice(channels, samplerate, save_audio, output_dir, filename, timestamp)`
+
+This function is designed to record audio in a controlled manner, allowing the user to stop the recording by pressing the 's' key or by manually exiting the program. It can save the audio to a specified file, and by default, it saves the audio as an MP3 file in the './output' directory.
+
+#### Parameters
+- **channels (int)**: The number of audio channels to record.
+- **samplerate (int)**: The sample rate of the audio recording.
+- **save_audio (bool)**: Optional, if True, the audio recording is saved to a file. Defaults to True.
+- **output_dir (str)**: Optional, the directory where the audio recording is saved. Defaults to "./output".
+- **filename (str)**: Optional, the name of the output audio file. Defaults to "recording".
+- **timestamp (float)**: Optional, the maximum recording duration in seconds. If specified, the recording will stop after this duration. The value must be between 10 and 30 seconds. Default is None.
+
+#### Returns
+- **"time" (float)**: The time taken for the audio recording in seconds.
+- **"voice" (queue.Queue)**: A queue containing the recorded audio data.
+- **"samplerate" (int)**: The sample rate of the recorded audio.
+
+#### Usage
+```python
+from lyre import record_voice
+
+# Define input parameters
+channels = 2  # Number of audio channels
+samplerate = 44100  # Sample rate in Hz
+save_audio = True  # Save the audio to a file
+output_dir = './output'  # Directory to save the audio file
+filename = 'my_audio_recording'  # Name of the output audio file
+timestamp = 15 # Record the audio for 15 seconds only
+
+# Call the function to record audio
+audio_data = record_voice(channels, samplerate, save_audio, output_dir, filename, timestamp)
+
+# Access the recorded audio data and related information
+time_taken = audio_data["time"]
+voice_data = audio_data["voice"]
+sample_rate = audio_data["samplerate"]
+```
+
+### record_ontime
+
+`record_ontime(channels, samplerate, save_audio, output_dir, filename, timestamp, num_recordings)`
+
+This function is designed to repeatedly record audio at specified intervals to generate a list of audio data over time. It uses the record_voice function to capture audio recordings at regular intervals and stores the results in a list.
+
+#### Parameters
+- **channels (int)**: The number of audio channels to record.
+- **samplerate (int)**: The sample rate of the audio recording.
+- **save_audio (bool)**: Optional, if True, the audio recording is saved to a file. Defaults to True.
+- **output_dir (str)**: Optional, the directory where the audio recording is saved. Defaults to "./output".
+- **filename (str)**: Optional, the name of the output audio file. Defaults to "recording".
+- **timestamp (float)**: Optional, the maximum recording duration in seconds. If specified, the recording will stop after this duration. The value must be between 10 and 30 seconds. Default is None.
+- **num_recordings (int)**: Optional, the number of recordings to be made. Default is 5.
+
+#### Returns 
+A list of dictionaries, where each dictionary represents the result of a single audio recording. Each dictionary has the following keys:
+- **"time" (float)**: The time taken for the audio recording in seconds.
+- **"voice" (queue.Queue)**: A queue containing the recorded audio data.
+- **"samplerate" (int)**: The sample rate of the recorded audio.
+
+#### Usage
+```python
+from lyre import record_ontime
+
+# Record audio every 10 seconds for a total of 5 recordings
+recordings = record_ontime(channels=1, samplerate=22050, timestamp=10, num_recordings=5)
+
+# Access the recorded audio and metadata for each recording
+for i, result in enumerate(recordings):
+    audio_data = result["voice"]
+    recording_time = result["time"]
+    sampling_rate = result["samplerate"]
+```
+
+### save_to_file
+
+`save_to_file(filename, voice_data, samplerate)`
+
+This function is responsible for saving audio data stored in a queue to a specified file in audio formats. It accepts the filename (including the directory path if necessary), the audio data as a queue, and the samplerate of the audio to create an audio file.
+
+#### Parameters
+- **filename (str)**: The path and filename for the output audio file. Ensure the appropriate file extension, such as '.wav', is included.
+- **voice_data (queue.Queue)**: A queue containing the audio data to be saved.
+- **samplerate (int)**: The sample rate (in Hz) at which the audio data was recorded.
+
+#### Returns
+This function does not return a value; it saves the audio data to the specified file.
+
+#### Usage
+```python
+from lyre import save_to_file
+from queue import Queue
+
+# Example usage
+filename = 'output/audio.wav'
+sample_rate = 44100  # Replace with the actual sample rate of your audio data
+
+# Create a Queue and add audio data (ensure data is in the appropriate format)
+voice_data = Queue()
+# Add audio data to the voice_data queue
+
+# Call the function to save the audio data to a file
+save_to_file(filename, voice_data, sample_rate)
+```
+
+### convert_to_audio
+
+`convert_to_audio(video_path, audio_path)`
+
+This function is designed to convert any video file, preferably in the mp4 format, into an audio file, preferably in the mp3 format. 
+
+#### Parameters
+- **video_path (str)**: The path to the input video file.
+- **audio_path (str)**: The path to save the output audio file.
+
+#### Returns
+Does not return any value. It saves the audio directly to the specified path. 
+
+#### Usage
+```python
+from lyre import convert_to_audio
+
+convert_to_audio('input_video.mp4', 'output_audio.mp3')
+```
+
+### full_signal
+
+`full_signal(filename, lim, plot, output_dir)`
+
+This function loads an audio file specified by filename, and if a timestamp range (lim) is provided, it crops the audio data to that range. Additionally, it can generate a plot of the audio signal if the plot parameter is set to True.
+
+#### Parameters
+- **filename (str)**: The path to the input audio file.
+- **lim (list[float])**: Optional, a timestamp range in seconds. If provided, the audio is cropped to this range. Defaults to None, which processes the entire audio file.
+- **plot (bool)**: Optional, if True, a plot of the audio signal is generated and saved. Defaults to False.
+- **output_dir (str)**: Optional, the directory where the output plot file will be saved. Defaults to "./output".
+
+#### Returns 
+- **"data" (np.ndarray)**: The audio data, possibly cropped to the specified timestamp range.
+- **"duration" (float)**: The duration of the audio in seconds.
+- **"samplerate" (int)**: The sample rate of the audio.
+
+#### Usage
+```python
+from lyre import full_signal
+
+# Define input parameters
+filename = 'input_audio.wav'
+lim = [10.0, 30.0]  # Optional, specify a timestamp range to crop the audio
+plot = True  # Generate a plot of the audio signal
+output_dir = './output'  # Directory to save the plot file
+
+# Call the function to process the audio data and create a plot (if plot=True)
+audio_data = full_signal(filename, lim, plot, output_dir)
+
+# Access the processed audio data, duration, and sample rate
+audio_signal = audio_data["data"]
+duration = audio_data["duration"]
+sample_rate = audio_data["samplerate"]
+```
+
+### freq_analysis
+
+`freq_analysis(filename, lim, plot, output_dir)`
+
+This function is designed to create a spectrogram and provide data on the Fourier transform and amplitude in decibels.
+
+#### Parameters
+- **filename (str)**: The path to the input audio file.
+- **lim (list[float])**: Optional, a timestamp range in seconds. If provided, the audio is cropped to this range. Defaults to None, which processes the entire audio file.
+- **plot (bool)**: Optional, if True, a plot of the audio signal is generated and saved. Defaults to False.
+- **output_dir (str)**: Optional, the directory where the output plot file will be saved. Defaults to "./output".
+
+#### Returns
+- **"y_stft" (np.ndarray)**: The Short-Time Fourier Transform (STFT) of the audio data.
+- **"amplitude_db" (numpy.ndarray)**: The amplitude data in decibels of the audio data.
+
+#### Usage
+```python
+from lyre import freq_analysis
+
+# Define input parameters
+filename = 'input_audio.wav'
+lim = [10.0, 30.0]  # Optional, specify a timestamp range to process only part of the audio
+plot = True  # Generate a spectrogram plot
+output_dir = './output'  # Directory to save the plot file
+
+# Call the function to perform frequency analysis and generate a plot (if plot=True)
+analysis_data = freq_analysis(filename, lim, plot, output_dir)
+
+# Access the frequency analysis data, including the STFT and amplitude data
+stft_data = analysis_data["y_stft"]
+amplitude_db = analysis_data["amplitude_db"]
+```
+
+### mel_freq_cepstral
+
+`mel_freq_cepstral(filename, lim, n_mfcc, n_fft, hop_length, plot, output_dir)`
+
+This function is used to extract audio features that represent the spectral characteristics of an audio signal, particularly Mel-frequency cepstral coefficients (MFCCs). MFCCs are widely used in audio signal processing and analysis. 
+
+#### Parameters
+- **filename (str)**: The path to the input audio file.
+- **lim (list[float])**: Optional, a timestamp range in seconds. If provided, the audio is cropped to this range. Defaults to None, which processes the entire audio file.
+- **n_mfcc (int)**: Optional, the number of Mel-frequency cepstral coefficients (MFCCs) to compute. Defaults to 13.
+- **n_fft (int)**: Optional, the number of FFT (Fast Fourier Transform) components. Defaults to 2048.
+- **hop_length (int)**: Optional, the number of samples between successive frames. Defaults to 512.
+- **plot (bool)**: Optional, if True, a plot of the audio signal is generated and saved. Defaults to False.
+- **output_dir (str)**: Optional, the directory where the output plot file will be saved. Defaults to "./output".
+
+#### Returns
+- **"mfccs" (numpy.ndarray)**: The Mel-frequency cepstral coefficients (MFCCs) extracted from the audio data.
+
+#### Usage
+```python
+from lyre import mel_freq_cepstral
+
+# Define input parameters
+filename = 'input_audio.wav'
+lim = [10.0, 30.0]  # Optional, specify a timestamp range to process only part of the audio
+n_mfcc = 13  # Number of MFCCs to compute
+n_fft = 2048  # Number of FFT components
+hop_length = 512  # Number of samples between frames
+plot = True  # Generate a plot of the MFCCs
+output_dir = './output'  # Directory to save the plot file
+
+# Call the function to extract MFCCs and generate a plot (if plot=True)
+mfcc_data = mel_freq_cepstral(filename, lim, n_mfcc, n_fft, hop_length, plot, output_dir)
+
+# Access the extracted MFCC data
+mfccs = mfcc_data["mfccs"]
+```
+
+### chroma_features
+
+`chroma_features(filename, lim, plot, n_chroma, n_fft, hop_length, output_dir)`
+
+This function is used to compute chroma features representing the distinct semitones (chroma) of the musical octave within an audio signal.
+
+#### Parameters
+- **filename (str)**: The path to the input audio file.
+- **lim (list[float])**: Optional, a timestamp range in seconds. If provided, the audio is cropped to this range. Defaults to None, which processes the entire audio file.
+- **plot (bool)**: Optional, if True, a plot of the audio signal is generated and saved. Defaults to False.
+- **n_chroma (int)**: Optional, the number of chroma bins to compute. Defaults to 12, representing the 12 distinct semitones in an octave.
+- **n_fft (int)**: Optional, the number of FFT (Fast Fourier Transform) components. Defaults to 2048.
+- **hop_length (int)**: Optional, the number of samples between successive frames. Defaults to 512.
+- **output_dir (str)**: Optional, the directory where the output plot file will be saved. Defaults to "./output".
+
+#### Returns
+- **"stft_2" (numpy.ndarray)**: The Short-Time Fourier Transform (STFT) squared magnitude of the audio data.
+- **"chroma" (numpy.ndarray)**: The chroma features computed from the audio data.
+
+#### Usage
+```python
+from lyre import chroma_features
+
+# Define input parameters
+filename = 'input_audio.wav'
+lim = [10.0, 30.0]  # Optional, specify a timestamp range to process only part of the audio
+plot = True  # Generate a plot of the chroma features
+n_chroma = 12  # Number of chroma bins to compute
+n_fft = 2048  # Number of FFT components
+hop_length = 512  # Number of samples between frames
+output_dir = './output'  # Directory to save the plot file
+
+# Call the function to extract chroma features and generate a plot (if plot=True)
+chroma_data = chroma_features(filename, lim, plot, n_chroma, n_fft, hop_length, output_dir)
+
+# Access the extracted chroma features and the STFT squared magnitude data
+chroma = chroma_data["chroma"]
+stft_squared = chroma_data["stft_2"]
+```
+
+### spectral_features
+
+`spectral_features(filename, lim, plot, n_bands, n_fft, hop_length, output_dir)`
+
+This function is used to compute spectral contrast features from an audio signal. Spectral contrast features provide information about the distribution of energy in different frequency bands.
+
+#### Parameters
+- **filename (str)**: The path to the input audio file.
+- **lim (list[float])**: Optional, a timestamp range in seconds. If provided, the audio is cropped to this range. Defaults to None, which processes the entire audio file.
+- **plot (bool)**: Optional, if True, a plot of the audio signal is generated and saved. Defaults to False.
+- **n_bands (int)**: Optional, the number of frequency bands to use when computing spectral contrast features. Defaults to 6.
+- **n_fft (int)**: Optional, the number of FFT (Fast Fourier Transform) components. Defaults to 2048.
+- **hop_length (int)**: Optional, the number of samples between successive frames. Defaults to 512.
+- **output_dir (str)**: Optional, the directory where the output plot file will be saved. Defaults to "./output".
+
+#### Returns 
+- **"stft" (numpy.ndarray)**: The Short-Time Fourier Transform (STFT) of the audio data.
+- **"contrast" (numpy.ndarray)**: The computed spectral contrast features.
+
+#### Usage
+```python
+from lyre import spectral_features
+
+# Define input parameters
+filename = 'input_audio.wav'
+lim = [10.0, 30.0]  # Optional, specify a timestamp range to process only part of the audio
+plot = True  # Generate a plot of the spectral contrast features
+n_bands = 6  # Number of frequency bands to use
+n_fft = 2048  # Number of FFT components
+hop_length = 512  # Number of samples between frames
+output_dir = './output'  # Directory to save the plot file
+
+# Call the function to compute spectral contrast features and generate a plot (if plot=True)
+spectral_data = spectral_features(filename, lim, plot, n_bands, n_fft, hop_length, output_dir)
+
+# Access the computed spectral contrast features and the STFT data
+spectral_contrast = spectral_data["contrast"]
+stft_data = spectral_data["stft"]
+```
+
+### onset_detection
+
+`onset_detection(filename, lim, plot, n_fft, hop_length, output_dir)`
+
+This function is used to detect onsets in an audio signal. Onsets are abrupt changes in an audio signal and are commonly used to identify the starting points of phonemes, words, or musical notes. 
+
+#### Parameters
+- **filename (str)**: The path to the input audio file.
+- **lim (list[float])**: Optional, a timestamp range in seconds. If provided, the audio is cropped to this range. Defaults to None, which processes the entire audio file.
+- **plot (bool)**: Optional, if True, a plot of the audio signal is generated and saved. Defaults to False.
+- **n_fft (int)**: Optional, the number of FFT (Fast Fourier Transform) components. Defaults to 2048.
+- **hop_length (int)**: Optional, the number of samples between successive frames. Defaults to 512.
+- **output_dir (str)**: Optional, the directory where the output plot file will be saved. Defaults to "./output".
+
+#### Returns
+- **"onsets" (numpy.ndarray)**: The indices of the detected onsets in the audio data.
+- **"onset_env" (numpy.ndarray)**: The onset strength envelope, indicating the strength of onsets over time.
+- **"times" (numpy.ndarray)**: The timestamps corresponding to the detected onsets.
+
+#### Usage
+```python
+from lyre import onset_detection
+
+# Define input parameters
+filename = 'input_audio.wav'
+lim = [10.0, 30.0]  # Optional, specify a timestamp range to process only part of the audio
+plot = True  # Generate a plot of the detected onsets
+n_fft = 2048  # Number of FFT components
+hop_length = 512  # Number of samples between frames
+output_dir = './output'  # Directory to save the plot file
+
+# Call the function to detect onsets and generate a plot (if plot=True)
+onset_data = onset_detection(filename, lim, plot, n_fft, hop_length, output_dir)
+
+# Access the detected onsets, onset strength envelope, and corresponding timestamps
+onsets = onset_data["onsets"]
+onset_env = onset_data["onset_env"]
+times = onset_data["times"]
+```
+
+## Pythia 
+Pythia was the name of the high priestess of the Temple of Apollo at Delphi. She specifically served as its oracle and was known as the Oracle of Delphi. 
+
+### clean_text
+
+`clean_text(text)`
+
+This function is used to clean a given text by removing all punctuation, special characters, colons, and semicolons, while retaining diacritics (tildes) and double points (two consecutive colons) on top of words.
+
+#### Parameters
+- **text (str)**: The input text from which sentences need to be extracted.
+
+#### Returns
+A string containing the cleaned text.
+
+#### Usage
+```python
+from pythia import clean_text
+
+# Define input text in Spanish
+text = "Este es un texto de muestra con algunos signos de puntuaciÃ³n, caracteres especiales: & % ^, y tildes: Ã¡Ã©Ã­Ã³Ãº, asÃ­ como dobles dos puntos:: en el texto."
+
+# Call the function to clean the text
+cleaned_text = clean_text(text)
+
+# Print the cleaned text
+print(cleaned_text)
+```
+
+### sentences
+
+`sentences(text)`
+
+This function is used to extract individual sentences from a given text string while preserving inner punctuation and case. Works best with the spanish language by identifying sentence delimiters and handles specific cases for Spanish prefixes like "Sr.", "Sra.", "Dr.", "Lic.", and "Ing." It then returns a list of processed sentences.
+
+Expressions like: Â¡Vaya! Â¿QuÃ© dices? are converted as single items in the final list of sentences.
+
+#### Parameters
+- **text (str)**: The input text from which sentences need to be extracted.
+
+#### Returns
+- **list[str]**: A list of strings, where each string represents an individual sentence from the input text.
+
+#### Usage
+```python
+from pythia import sentences
+
+# Define input text in Spanish
+text = "Esto es una muestra de texto en espaÃ±ol. Contiene varias oraciones. Â¡La tercera oraciÃ³n es mÃ¡s larga! Â¿Podemos manejar los puntos suspensivos...sÃ­! AdemÃ¡s, Â¿podemos manejar los prefijos especiales como Sr. o Dr.?"
+
+# Call the function to extract sentences
+extracted_sentences = sentences(text)
+
+# Iterate through the extracted sentences and print them
+for sentence in extracted_sentences:
+    print(sentence)
+```
+
+### word_checker
+
+`word_checker(original_text, new_text)`
+
+This function is used to compare two transcriptions (text) and analyze the differences between them. It returns information about correct words, incorrect words, and omitted words. Additionally, it calculates various word error rates, including Word Error Rate (WER), Match Error Rate (MER), Word Information Lost (WIL), and Word Information Preserved (WIP).
+
+#### Parameters
+- **original_text (str)**: The original transcription to be used as a reference.
+- **new_text (str)**: The new transcription to be compared against the original.
+
+#### Returns
+- **"correct_words" (list of str)**: Words that are correct in the new transcription.
+- **"omitted_words" (list of str)**: Words that are present in the original but omitted in the new transcription.
+- **"incorrect_words" (list of str)**: Words that are incorrect in the new transcription.
+- **"mer" (float)**: Match Error Rate.
+- **"wil" (float)**: Word Information Lost.
+- **"wip" (float)**: Word Information Preserved.
+- **"wer" (float)**: Word Error Rate.
+
+#### Usage
+```python
+from pythia import word_checker
+
+# Define original and new transcriptions in Spanish
+original_text = "Este es un ejemplo de texto en espaÃ±ol."
+new_text = "Este es un ejemplo de texto en espaÃ±ol, pero con algunas diferencias."
+
+# Call the function to compare words
+word_comparison = word_checker(original_text, new_text)
+
+# Access the comparison results and word error rates
+correct_words = word_comparison["correct_words"]
+omitted_words = word_comparison["omitted_words"]
+incorrect_words = word_comparison["incorrect_words"]
+mer = word_comparison["mer"]
+wil = word_comparison["wil"]
+wip = word_comparison["wip"]
+wer = word_comparison["wer"]
+
+# Print the results and word error rates
+print("Correct Words:", correct_words)
+print("Omitted Words:", omitted_words)
+print("Incorrect Words:", incorrect_words)
+print("MER (Match Error Rate):", mer)
+print("WIL (Word Information Lost):", wil)
+print("WIP (Word Information Preserved):", wip)
+print("WER (Word Error Rate):", wer)
+```
+
+### word_alignment
+
+`word_alignment(original_text, new_text)`
+
+This function is used to compare two transcriptions (text) and provide a detailed word-by-word difference analysis between them. It returns a dictionary with information about the alignment of words, marked with "*", the length of each word, and any residual or extra words found in the transcriptions.
+
+#### Parameters
+- **original_text (str)**: The original transcription to be used as a reference.
+- **new_text (str)**: The new transcription to be compared against the original.
+
+#### Returns
+- **"alignment" (list of str)**: Word-by-word alignment with "*" indicating differences and the length of each word.
+- **"residual_words" (list of str)**: Words present in the original transcription but omitted in the new transcription, marked with "+".
+- **"extra_words" (list of str)**: Words present in the new transcription but not in the original, marked with "*".
+
+#### Usage
+```python
+from pythia import word_alignment
+
+# Define original and new transcriptions in Spanish
+original_text = "Este es un ejemplo de texto en espaÃ±ol."
+new_text = "Este es un ejemplo de texto en espaÃ±ol, pero con algunas diferencias."
+
+# Call the function to align words
+word_alignment_result = word_alignment(original_text, new_text)
+
+# Access the alignment results
+alignment = word_alignment_result["alignment"]
+residual_words = word_alignment_result["residual_words"]
+extra_words = word_alignment_result["extra_words"]
+
+# Print the alignment and details
+print("Word Alignment:")
+for word in alignment:
+    print(word)
+
+print("Residual Words:", residual_words)
+print("Extra Words:", extra_words)
+```
+
+### phonetic_transcription
+
+`phonetic_transcription(text, lang)`
+
+This function is used to perform phonetic transcription of a given text. It takes the input text, cleans it, and generates a phonetic transcription following the International Phonetic Alphabet (IPA).
+
+#### Parameters 
+- **text (str)**: Optional, the input text for which you want to generate a phonetic transcription.
+- **lang (str)**: Optional, the language code used for transcription, with a default value of 'spa-Latn' for Spanish using the Latin script.
+
+#### Returns
+- **str**: The phonetic transcription of the input text following the IPA.
+
+#### Usage
+```python
+from pythia import phonetic_transcription
+
+# Define a text in Spanish for phonetic transcription
+text = "Hola, Â¿cÃ³mo estÃ¡s?"
+
+# Call the function to perform phonetic transcription
+phonetic_result = phonetic_transcription(text)
+
+# Print the phonetic transcription
+print("Phonetic Transcription:")
+print(phonetic_result)
+```
+
+### syllables
+
+`syllables(text, lang)`
+
+This function is used to extract all the syllables from a given text string. It leverages the spaCy library for language processing and the Pyphen library to split words into syllables.
+
+#### Parameters
+- **text (str)**: Optional, the input text for which you want to generate a phonetic transcription.
+- **lang (str)**: Optional, the language code used for transcription, with a default value of 'spa-Latn' for Spanish using the Latin script.
+
+#### Returns
+- **list[str]**: A list of syllables extracted from the input text.
+
+#### Usage
+```python
+from pythia import syllables
+
+# Define a text in Spanish for syllable extraction
+text = "Hola, Â¿cÃ³mo estÃ¡s?"
+
+# Call the function to extract syllables
+syllables_result = syllables(text)
+
+# Print the extracted syllables
+print("Extracted Syllables:")
+for syllable in syllables_result:
+    print(syllable)
+```
+
+### words
+
+`words(text, lower, lang)`
+
+This function is used to extract all the words from a given text. It leverages the spaCy library for natural language processing. Works best in the Spanish language.
+
+#### Parameters
+- **text (str)**: Optional, the input text for which you want to generate a phonetic transcription.
+- **lower (bool)**: Optional, if set to True, the extracted words will be converted to lowercase. Default is False.
+- **lang (str)**: Optional, the language code used for transcription, with a default value of 'spa-Latn' for Spanish using the Latin script.
+
+#### Returns
+- **list[str]**: A list of words extracted from the input text.
+
+#### Usage
+```python
+from pythia import words
+
+# Define a text in Spanish for word extraction
+text = "Hola, Â¿cÃ³mo estÃ¡s?"
+
+# Call the function to extract words
+words_result = words(text)
+
+# Print the extracted words
+print("Extracted Words:")
+for word in words_result:
+    print(word)
+```
+
+### transcriber
+
+`transcriber(file, model_name, device, compute_type, beam_size, lang)`
+
+This function simplifies the process of generating audio transcriptions from a given audio file using a specified Whisper ASR model. It returns the transcribed segments with timestamps for each word. The function provides options to configure the ASR model, device, and other settings. It uses faster_whisper backend to process audio files in segments of 30 seconds. 
+
+#### Parameters
+- **file (str)**: The name of the audio file for transcription.
+- **model_name (str)**: Optional, the name of the Whisper ASR model to be used. Default is 'large-v2'.
+- **device (str)**: Optional, the device on which the ASR model should run (e.g., 'cuda' for GPU, 'cpu' for CPU). Default is 'cuda'.
+- **compute_type (str)**: Optional, the data type for computation, can be 'float32' or 'float16'. Default is 'float16'.
+- **beam_size (int)**: Optional, the beam search width for decoding. Default is 5.
+- **lang (str)**: Optional, the language for transcription (e.g., 'es' for Spanish). Default is 'es'.
+
+#### Returns 
+A dictionary containing the following keys:
+- **"segments"**: A list of transcribed segments with timestamps for each word. Each segment has the following keys:
+  - **"start"**: The start time of the segment.
+  - **"end"**: The end time of the segment.
+  - **"text"**: The transcribed text of the segment.
+  - **"words"**: A list of words in the segment.
+  - **"tokens"**: A list of tokens in the segment.
+- **"info"**: Additional information about the transcription.
+- **"time_taken"**: The time taken for the transcription process in seconds.
+
+#### Usage
+```python
+from pythia import transcriber
+
+# Transcribe an audio file using the default settings
+transcription_result = transcriber("audio.wav")
+
+# Access the transcribed segments and metadata
+transcribed_segments = transcription_result["segments"]
+transcription_info = transcription_result["info"]
+transcription_time = transcription_result["time_taken"]
+
+# Example: Print the transcribed text of each segment
+for i, segment in enumerate(transcribed_segments):
+    print(f"Segment {i + 1}: {segment['text']}")
+
+# Example: Save the transcribed segments to a JSON file
+import json
+with open("transcription.json", "w") as json_file:
+    json.dump(transcribed_segments, json_file)
+```
+
+## Utility (utils) (BETA)
+We would like to share here our utility functions that work across the entire apollo library. It's still in beta so this functions may not appear on the current version of the framework.
+
+### ensure_dir_created
+
+`ensure_dir_created(output_dir)`
+
+This utility function ensures that a directory exists, and if it doesn't, it creates the specified directory.
+
+#### Parameters
+- **output_dir (str)**: The directory path to be created if it doesn't exist.
+
+#### Returns
+- None
+
+#### Usage
+```python
+from apollo import ensure_dir_created
+
+# Ensure the "output" directory exists
+output_directory = "output"
+ensure_dir_created(output_directory)
+```
+
+### ensure_dir_has_files
+
+`ensure_dir_has_files(directory)`
+
+This function checks whether a directory contains any files. It returns True if there are files in the directory, and False if it's empty.
+
+#### Parameters
+- **directory  (str)**: The directory path to be checked for files.
+
+#### Returns
+- **bool**: True if the directory has files, False otherwise.
+
+#### Usage
+```python
+from apollo import ensure_dir_has_files
+
+# Check if the "data" directory has any files
+data_directory = "data"
+has_files = ensure_dir_has_files(data_directory)
+print(f"The directory has files: {has_files}")
+```
+
+### ensure_file_exist
+
+`ensure_file_exist(file_path)`
+
+This function checks whether a file exists at the specified file path and returns True if the file exists, and False if it does not.
+
+#### Parameters
+- **file_path   (str)**: The path to the file to be checked for existence.
+
+#### Returns
+- **bool**: True if the file exists, False otherwise.
+
+#### Usage
+```python
+from apollo import ensure_file_exist
+
+# Check if a file named "data.txt" exists
+file_path = "data.txt"
+file_exists = ensure_file_exist(file_path)
+print(f"The file exists: {file_exists}")
+```
+
+
+
+
+
+
+
+
+

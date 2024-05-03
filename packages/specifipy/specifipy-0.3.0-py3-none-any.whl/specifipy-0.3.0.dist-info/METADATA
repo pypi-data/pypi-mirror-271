@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: specifipy
+Version: 0.3.0
+Summary: Python package for auto-generating code diagrams
+Author: Bartosz Budzyński
+Author-email: hi@bartosz.blog
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: docstring-parser (>=0.15,<0.16)
+Requires-Dist: py-d2 (==1.0.0)
+Requires-Dist: snakemd (>=0.11.0,<0.12.0)

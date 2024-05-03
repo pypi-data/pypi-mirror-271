@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pytypedmatrix"
+version = "0.1.0"
+description = "A package that provides a light-weight, fully typed, 0-dependency abstraction over the matrix data structure in Python."
+authors = ["Arsenii <origingoy@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "pytypedmatrix", from = "src" }]
+package-mode = true
+license = "MIT"
+repository = "https://github.com/arsu4ka/pytypedmatrix"
+homepage = "https://github.com/arsu4ka/pytypedmatrix"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

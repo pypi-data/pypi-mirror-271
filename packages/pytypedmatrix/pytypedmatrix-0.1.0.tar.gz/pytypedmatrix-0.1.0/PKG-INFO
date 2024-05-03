@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pytypedmatrix
+Version: 0.1.0
+Summary: A package that provides a light-weight, fully typed, 0-dependency abstraction over the matrix data structure in Python.
+Home-page: https://github.com/arsu4ka/pytypedmatrix
+License: MIT
+Author: Arsenii
+Author-email: origingoy@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/arsu4ka/pytypedmatrix
+Description-Content-Type: text/markdown
+
+

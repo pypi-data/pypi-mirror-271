@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+G4X.egg-info/PKG-INFO
+G4X.egg-info/SOURCES.txt
+G4X.egg-info/dependency_links.txt
+G4X.egg-info/top_level.txt
+code/__init__.py

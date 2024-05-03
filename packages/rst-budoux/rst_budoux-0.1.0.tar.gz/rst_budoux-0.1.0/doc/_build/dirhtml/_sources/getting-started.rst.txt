@@ -1,0 +1,41 @@
+======
+使い方
+======
+
+.. note:: PyPIへの公開後を前提としています。
+
+インストール
+============
+
+PyPI上に、 `rst-budoux` の名称で公開されています。
+``pip`` を始めとしたパッケージ管理系を用いることでインストール出来ます。
+
+.. code:: console
+
+   pip install rst-budoux
+
+ライブラリとしての利用
+======================
+
+依存ライブラリにある通り、 ``BudouX`` のパーサーを必要とします。
+
+.. code:: python
+
+   import budoux
+   from rst_budoux import parse_all_sentences
+
+   # docutilsを通して、doctreeを生成
+   document = publish_doctree(args.src.read_text())
+   # BudouXのパーサー生成（例は日本語用パーサー）
+   parser = budoux.load_default_japanese_parser()
+   # rst-budouxで分かち書き処理を実施
+   document = parse_all_sentences(parser, document)
+
+
+CLIとしての利用
+===============
+
+Sphinx拡張としての利用
+======================
+
+:doc:`こちらのドキュメント <./sphinx-extension>` を参照してください。

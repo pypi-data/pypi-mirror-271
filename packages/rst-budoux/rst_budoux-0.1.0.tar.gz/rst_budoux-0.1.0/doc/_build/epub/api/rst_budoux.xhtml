@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body {
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+}
+</style>
+    <title>rst_budoux package</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="rst-budoux-package">
+<h1>rst_budoux package</h1>
+<section id="subpackages">
+<h2>Subpackages</h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rst_budoux.cli.xhtml">rst_budoux.cli package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rst_budoux.cli.xhtml#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rst_budoux.cli.html.xhtml">rst_budoux.cli.html module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="rst_budoux.cli.html.xhtml#rst_budoux.cli.html.CustomHTMLTranslator"><code class="docutils literal notranslate"><span class="pre">CustomHTMLTranslator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="rst_budoux.cli.html.xhtml#rst_budoux.cli.html.CustomHTMLWriter"><code class="docutils literal notranslate"><span class="pre">CustomHTMLWriter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="rst_budoux.cli.html.xhtml#rst_budoux.cli.html.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="rst_budoux.cli.psuedoxml.xhtml">rst_budoux.cli.psuedoxml module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="rst_budoux.cli.psuedoxml.xhtml#rst_budoux.cli.psuedoxml.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rst_budoux.cli.xhtml#module-rst_budoux.cli">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rst_budoux.writers.xhtml">rst_budoux.writers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rst_budoux.writers.xhtml#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rst_budoux.writers.html.xhtml">rst_budoux.writers.html module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="rst_budoux.writers.html.xhtml#rst_budoux.writers.html.visit_word_break"><code class="docutils literal notranslate"><span class="pre">visit_word_break()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rst_budoux.writers.xhtml#module-rst_budoux.writers">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rst_budoux.writers.xhtml#rst_budoux.writers.depart_word_break"><code class="docutils literal notranslate"><span class="pre">depart_word_break()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules</h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rst_budoux.sphinx.xhtml">rst_budoux.sphinx module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rst_budoux.sphinx.xhtml#rst_budoux.sphinx.setup"><code class="docutils literal notranslate"><span class="pre">setup()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-rst_budoux">
+<span id="module-contents"></span><h2>Module contents</h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="rst_budoux.WordBreak">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rst_budoux.</span></span><span class="sig-name descname"><span class="pre">WordBreak</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rawsource</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">children</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>ベースクラス: <a class="reference external" href="https://sphinx-docutils.readthedocs.io/en/latest/docutils.nodes.html#docutils.nodes.Element" title="(in docutils)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></a><span class="link-target"> [https://sphinx-docutils.readthedocs.io/en/latest/docutils.nodes.html#docutils.nodes.Element]</span></p>
+<p>A node to explicit that breakpoint of sentence.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rst_budoux.WordBreak.tagname">
+<span class="sig-name descname"><span class="pre">tagname</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'word-break'</span></em></dt>
+<dd><p>The element generic identifier. If None, it is set as an instance
+attribute to the name of the class.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="rst_budoux.parse_all_sentences">
+<span class="sig-prename descclassname"><span class="pre">rst_budoux.</span></span><span class="sig-name descname"><span class="pre">parse_all_sentences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Parser</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">document</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://sphinx-docutils.readthedocs.io/en/latest/docutils.nodes.html#docutils.nodes.document" title="(in docutils)"><span class="pre">document</span></a><span class="link-target"> <span class="pre">[https://sphinx-docutils.readthedocs.io/en/latest/docutils.nodes.html#docutils.nodes.document]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://sphinx-docutils.readthedocs.io/en/latest/docutils.nodes.html#docutils.nodes.document" title="(in docutils)"><span class="pre">document</span></a><span class="link-target"> <span class="pre">[https://sphinx-docutils.readthedocs.io/en/latest/docutils.nodes.html#docutils.nodes.document]</span></span></span></span></dt>
+<dd><p>Find all text in document, and split by BudouX.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

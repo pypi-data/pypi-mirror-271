@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body {
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+}
+</style>
+    <title>Sphinx拡張</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="sphinx">
+<h1>Sphinx拡張</h1>
+<p>より​一般的な​ユースケースへの​対応と​して、​Sphinx拡張と​して​使用する​ことが​出来ます。</p>
+<section id="id1">
+<h2>セットアップ</h2>
+<p><a class="reference internal" href="installation.xhtml"><span class="doc">インストール</span></a> を​もとに​インストールを​実施後、​Sphinxドキュメントの​ <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> に​Sphinx拡張の​登録を​してください。</p>
+<div class="literal-block-wrapper docutils container" id="conf-py">
+<div class="code-block-caption"><span class="caption-text">conf.py</span></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;rst_budoux.sphinx&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id2">
+<h2>動作</h2>
+<p>この​ライブラリは​新しい​ビルダーを​提供しないため、​普段ど​おりに​ドキュメントの​ビルドを​行ってください。</p>
+</section>
+<section id="id3">
+<h2>設定</h2>
+<p>動作を​調整する​ために、​いく​つかの​設定項目が​あります。</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-budoux_separator">
+<span class="sig-name descname"><span class="pre">budoux_separator</span></span></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> str</div>
+<div class="line"><strong>Required:</strong> <code class="docutils literal notranslate"><span class="pre">False</span></code></div>
+<div class="line"><strong>Default:</strong> <code class="docutils literal notranslate"><span class="pre">&quot;\u200b&quot;</span></code> (ゼロ幅スペース)</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">WordBreak</span></code> ノード(=分かち​書きの​境界)に​挿入する​文字列を​指定します。​
+例えば、​ <code class="docutils literal notranslate"><span class="pre">&quot;&lt;wbr&gt;&quot;</span></code> のような​指定する​ことで、​HTMLタグの​挿入も​可能です。</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-budoux_additional_style">
+<span class="sig-name descname"><span class="pre">budoux_additional_style</span></span></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> str | None</div>
+<div class="line"><strong>Required:</strong> <code class="docutils literal notranslate"><span class="pre">False</span></code></div>
+<div class="line"><strong>Default:</strong> <code class="docutils literal notranslate"><span class="pre">None</span></code></div>
+</div>
+<p><a class="reference internal" href="#confval-budoux_separator"><code class="xref std std-confval docutils literal notranslate"><span class="pre">budoux_separator</span></code></a> で​挿入した​文字列向けに、​必要に​応じて​スタイルシートを​記述する​ための​項目です。​
+<code class="docutils literal notranslate"><span class="pre">html</span></code> 系の​ビルダーの​利用時のみ​有効です。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code> ではなく​文字列を​設定する​場合、​ <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span> <span class="pre">~~</span> <span class="pre">&lt;/style&gt;</span></code> の​中身と​して​使用します。​
+必ず​文法と​して​正しい​スタイルシート定義と​なるように​してください。</p></li>
+<li><p>この​値は​「その​ドキュメントが​ <code class="docutils literal notranslate"><span class="pre">WordBreak</span></code> ノードを​持つか​否か」に​関わらず、​全ての​ページに​対して​作用します。</p></li>
+</ul>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: drf_serializer_dumps
+Version: 1.0.2
+Summary: Decorator for creating dict based on the drf serializer class for swagger
+Author-email: Friskes <friskesx@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Friskes
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Documentation, https://github.com/Friskes/drf-serializer-dumps
+Project-URL: Repository, https://github.com/Friskes/drf-serializer-dumps
+Project-URL: Changelog, https://github.com/Friskes/drf-serializer-dumps/releases/
+Project-URL: Bug Reports, https://github.com/Friskes/drf-serializer-dumps/issues
+Keywords: Django,DRF,Spectacular,Swagger
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=4.2.11
+Requires-Dist: djangorestframework>=3.14.0
+Requires-Dist: drf-spectacular>=0.27.2
+Provides-Extra: dev
+Requires-Dist: psycopg2>=2.9.9; extra == "dev"
+Requires-Dist: pre-commit>=3.5.0; extra == "dev"
+Requires-Dist: ruff==0.4.1; extra == "dev"
+Requires-Dist: pytest>=7.0.1; extra == "dev"
+Requires-Dist: mypy>=1.10.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0.0; extra == "dev"
+Provides-Extra: ci
+Requires-Dist: psycopg2>=2.9.9; extra == "ci"
+Requires-Dist: ruff==0.4.1; extra == "ci"
+Requires-Dist: pytest>=7.0.1; extra == "ci"
+Requires-Dist: mypy>=1.10.0; extra == "ci"
+Requires-Dist: pytest-cov>=5.0.0; extra == "ci"
+
+# Decorator for creating dict based on the drf serializer class for swagger
+
+<div align="center">
+
+| Project   |     | Status                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|-----------|:----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CI/CD     |     | [![Latest Release](https://github.com/Friskes/drf-serializer-dumps/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/Friskes/drf-serializer-dumps/actions/workflows/publish-to-pypi.yml)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Quality   |     | [![Coverage](https://codecov.io/github/Friskes/drf-serializer-dumps/graph/badge.svg?token=vKez4Pycrc)](https://codecov.io/github/Friskes/drf-serializer-dumps)                                                                                                                                                                                                                                                                                                                               |
+| Package   |     | [![PyPI - Version](https://img.shields.io/pypi/v/drf-serializer-dumps?labelColor=202235&color=edb641&logo=python&logoColor=edb641)](https://badge.fury.io/py/drf-serializer-dumps) ![PyPI - Support Python Versions](https://img.shields.io/pypi/pyversions/drf-serializer-dumps?labelColor=202235&color=edb641&logo=python&logoColor=edb641) ![Project PyPI - Downloads](https://img.shields.io/pypi/dm/drf-serializer-dumps?logo=python&label=downloads&labelColor=202235&color=edb641&logoColor=edb641)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Meta      |     | [![types - Mypy](https://img.shields.io/badge/types-Mypy-202235.svg?logo=python&labelColor=202235&color=edb641&logoColor=edb641)](https://github.com/python/mypy) [![License - MIT](https://img.shields.io/badge/license-MIT-202235.svg?logo=python&labelColor=202235&color=edb641&logoColor=edb641)](https://spdx.org/licenses/) [![code style - Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/format.json&labelColor=202235)](https://github.com/astral-sh/ruff) |
+
+</div>
+
+> Provides a decorator for converting the drf serializer class to a dictionary
+
+## Install
+1. Install package
+    ```bash
+    pip install drf-serializer-dumps
+    ```
+
+## About decorator
+`serializer_dumps` decorator is based on the assignment of fields in the serializer to generate a dict, for `SerializerMethodField`, the definition is made by `OpenApiTypes` or the usual python type hints.
+
+- Optional parameters:
+    - `exclude_fields` Exclude a number of serializer fields when generating a dictionary.
+    - `renew_type_value` Generate a new `uuid` and `datetime, date, time` when calling the function.
+    - `extend_type_map` Expand the type dictionary to default values, new types and their values, or redefine existing types and their values.
+
+## Usage example
+
+### Example 1
+```python
+from rest_framework import serializers
+from drf_serializer_dumps.decorators import serializer_dumps
+
+
+class PersonCars(serializers.Serializer):
+    car_name = serializers.CharField()
+    car_price = serializers.IntegerField()
+
+
+class PersonSerializer(serializers.Serializer):
+    name = serializers.CharField()
+    age = serializers.IntegerField()
+    cars = PersonCars(many=True)
+
+
+result = serializer_dumps(PersonSerializer)
+print(result)
+>>> {'name': 'string', 'age': 1, 'cars': [{'car_name': 'string', 'car_price': 1}]}
+```
+
+### Example 2
+```python
+from rest_framework import serializers
+from django.contrib.postgres.fields import ArrayField
+from drf_serializer_dumps.decorators import serializer_dumps
+
+
+class Person(models.Model):
+    name = models.CharField(max_length=256)
+    phones = ArrayField(models.CharField(max_length=256))
+
+
+class PersonSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Person
+        fields = '__all__'
+
+
+result = serializer_dumps(PersonSerializer)
+print(result)
+>>> {'id': 1, 'name': 'string', 'phones': ['string']}
+```
+
+### Example 3
+> Integration with drf-spectacular extend_schema decorator
+```python
+@extend_schema(
+    examples=[
+        OpenApiExample('Name1', serializer_dumps(Some1Serializer)),
+        OpenApiExample('Name2', serializer_dumps(Some2Serializer)),
+    ]
+)
+def your_api_method(self, request, *args, **kwargs):
+    ...
+```
+
+## Contributing
+We would love you to contribute to `drf-serializer-dumps`, pull requests are very welcome! Please see [CONTRIBUTING.md](https://github.com/Friskes/drf-serializer-dumps/blob/main/CONTRIBUTING.md) for more information.

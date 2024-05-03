@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: easyknn
+Version: 0.4.0
+Summary: Easy nearest neighbors using Annoy or SKLearn
+Author: Sanjaya Subedi
+Author-email: jangedoo@gmail.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11

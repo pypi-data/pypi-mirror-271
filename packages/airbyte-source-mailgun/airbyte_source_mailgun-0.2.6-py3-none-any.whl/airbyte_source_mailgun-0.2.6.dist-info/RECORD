@@ -1,0 +1,9 @@
+source_mailgun/__init__.py,sha256=m9DpZJIf7bMegpLSbEwIQKeXUHjPLr9KTTGfvsX3Wrk,126
+source_mailgun/manifest.yaml,sha256=9MADLDTOa-txwlFJEGk27xIxDJ3NPG0f9QXwbwxDLBM,16185
+source_mailgun/run.py,sha256=kJzCH-zTJN_2qC_vsdi890kKwaYjjrUA6eQWSpADqXE,233
+source_mailgun/source.py,sha256=bOESWn2HSRQMGhDeuDN7gV9xlqWkFDdUTTNu0YIYpZs,476
+source_mailgun/spec.yaml,sha256=tr4BUw6lUqAcSoVAJUsTWfdYj-W0Si1INexII81_5Qw,1023
+airbyte_source_mailgun-0.2.6.dist-info/METADATA,sha256=IRu28ons6W7aygZtnQ4i1-hTHpEKfAvrDR-lxPQ16AI,5219
+airbyte_source_mailgun-0.2.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_mailgun-0.2.6.dist-info/entry_points.txt,sha256=yeLMSADfVF3ZxBcGBEauguuLWP1vGai9wgHnf3dwgRs,57
+airbyte_source_mailgun-0.2.6.dist-info/RECORD,,

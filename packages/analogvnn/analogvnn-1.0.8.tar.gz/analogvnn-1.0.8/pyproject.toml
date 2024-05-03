@@ -1,0 +1,109 @@
+# pyproject-build
+
+[build-system]
+requires = ["wheel>=0.38.0", "setuptools>=61.0.0", "flit_core>=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "analogvnn"
+
+[tool.setuptools]
+py-modules = ['analogvnn']
+
+[tool.setuptools.package-data]
+"analogvnn" = ["py.typed"]
+
+[tool.setuptools.packages.find]
+where = ["analogvnn"]
+
+[project]
+# $ pip install analogvnn
+name = "analogvnn"
+version = "1.0.8"
+description = "A fully modular framework for modeling and optimizing analog/photonic neural networks"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+keywords = ["deep-learning", "analog", "photonics", "neural-network", "framework", "pytorch"]
+authors = [
+    { name = "Vivswan Shah", email = "vivswanshah@pitt.edu" }
+]
+maintainers = [
+    { name = "Vivswan Shah", email = "vivswanshah@pitt.edu" }
+]
+# For a list of valid classifiers, see https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+    "dataclasses",
+    "scipy",
+    "numpy>=1.16.5",
+    "networkx",
+    "importlib-metadata<5.0.0,>=2.0.0; python_version < '3.8'",
+]
+
+[project.optional-dependencies]
+full = [
+    "tensorflow",
+    "tensorboard",
+    "torchinfo",
+    "graphviz",
+    #"python-graphviz",
+]
+doc = [# https://www.youtube.com/watch?v=qRSb299awB0&t=2418s
+    "sphinx>=4.2.0",
+    "sphinx-autobuild", # for live reloading {sphinx-autobuild .\docs .\docs\_build\html}
+    "rst-to-myst[sphinx]",
+    "furo",
+    "myst_parser",
+    "sphinx-rtd-theme",
+    "sphinx-autoapi",
+    "sphinx-copybutton",
+    "sphinx-notfound-page",
+    "sphinx-inline-tabs",
+    "sphinxext-opengraph",
+    "sphinxcontrib-katex", # for math
+]
+flake8 = [
+    "flake8", # for style checks {flake8 .\analogvnn\}
+    "flake8-docstrings",
+    "flake8-quotes",
+    "flake8-bugbear",
+    "flake8-comprehensions",
+    "flake8-executable",
+    "flake8-coding",
+    "flake8-return",
+    #    "flake8-noreturn; python_version >= '3.8'",
+    "flake8-deprecated",
+]
+dev = [
+    "setuptools>=61.0.0",
+    "flit", # for building {flit build}
+    "build", # building the package {pyproject-build}
+    "twine", # to publish on pypi {twine upload -r testpypi dist/*} {twine upload -r pypi dist/*}
+    "johnnydep", # to see dependencies {johnnydep <package>}
+]
+test = ["analogvnn[flake8]"]
+all = ["analogvnn[full,dev,doc,test]"]
+
+[project.urls]
+"Author" = "https://vivswan.github.io/"
+"Bug Reports" = "https://github.com/Vivswan/AnalogVNN/issues"
+"Documentation" = "https://analogvnn.readthedocs.io/en/latest/"
+"Homepage" = "https://github.com/Vivswan/AnalogVNN"
+"Say Thanks!" = "https://vivswan.github.io/"
+"Source" = "https://github.com/Vivswan/AnalogVNN"

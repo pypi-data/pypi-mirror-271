@@ -1,0 +1,3 @@
+[console_scripts]
+ip-reveal=ip_reveal:main
+

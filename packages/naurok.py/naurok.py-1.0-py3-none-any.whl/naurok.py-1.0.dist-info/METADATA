@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: naurok.py
+Version: 1.0
+Summary: Library for working with tests naurok.ua.
+Home-page: https://github.com/xXxCLOTIxXx/naurok.py
+Download-URL: https://github.com/xXxCLOTIxXx/naurok.py/archive/refs/heads/main.zip
+Author: Xsarz
+Author-email: xsarzy@gmail.com
+License: MIT
+Keywords: naurok.py,naurok,naurok-py,naurok-bot,api,python,python3,python3.x,xsarz,official,async,sync,naurok
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: faker
+Requires-Dist: requests
+Requires-Dist: selenium
+
+# naurok.py
+
+Idk. small api. maybe someone will need it

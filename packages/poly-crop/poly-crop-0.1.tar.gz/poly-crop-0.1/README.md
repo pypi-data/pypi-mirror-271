@@ -1,0 +1,39 @@
+# Crop
+Crop is a Python library for cropping polygons in images.
+
+## Installation
+You can install Crop via pip:
+
+```python
+pip install crop
+```
+## Usage
+### Crop Function
+The `crop` function is used to crop a polygonal region from an image.
+
+```python
+from crop import crop
+
+# Example usage
+image_path = "path/to/your/image.jpg"
+image = cv2.imread(image_path)
+vertices = [(100, 100), (175, 50), (300, 100), (175, 150), (170, 100)]
+
+cropped_image = crop(image, vertices, resize=False)
+```
+### Preview Function
+The `preview` function is used to draw a preview of a polygonal region on an image.
+
+```python
+from crop import preview
+
+# Example usage
+image_path = "path/to/your/image.jpg"
+image = cv2.imread(image_path)
+vertices = [(100, 100), (175, 50), (300, 100), (175, 150), (170, 100)]
+
+preview_image = preview(image, vertices, colour=(255, 0, 0), width=2)
+```
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

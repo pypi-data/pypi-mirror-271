@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+poly_crop.egg-info/PKG-INFO
+poly_crop.egg-info/SOURCES.txt
+poly_crop.egg-info/dependency_links.txt
+poly_crop.egg-info/requires.txt
+poly_crop.egg-info/top_level.txt

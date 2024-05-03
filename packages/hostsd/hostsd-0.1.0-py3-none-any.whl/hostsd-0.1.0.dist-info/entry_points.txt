@@ -1,0 +1,2 @@
+[console_scripts]
+hostsd = hostsd.__main__:main

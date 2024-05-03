@@ -1,0 +1,119 @@
+[build-system]
+requires = ["flit_core ~=3.8"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "kilter.protocol"
+authors = [
+	{name = "Dom Sekotill", email = "dom.sekotill@kodo.org.uk"},
+]
+license = {file = "LICENCE.txt"}
+readme = "README.md"
+dynamic = ["version", "description"]
+
+requires-python = "~=3.10"
+
+classifiers = [
+	"Development Status :: 1 - Planning",
+	"Intended Audience :: Telecommunications Industry",
+	"License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+	"Topic :: Communications :: Email :: Filters",
+]
+
+dependencies = [
+	"typing-extensions",
+]
+
+[project.optional-dependencies]
+docs = [
+	"sphinx ~=5.0",
+	"myst-parser",
+	"sphinx-rtd-theme",
+]
+coverage = [
+	"coverage[toml]",
+	"kodo.plugins.cover-test-context",
+]
+
+[project.urls]
+Source = "https://github.com/domsekotill/kilter.protocol"
+Issues = "https://github.com/domsekotill/kilter.protocol/issues"
+Documentation = "https://kilter.kodo.org.uk/kilter.protocol/"
+
+
+[tool.isort]
+force_single_line = true
+
+
+[tool.unimport]
+ignore_init = true
+
+
+[tool.flakeheaven]
+base = "https://code.kodo.org.uk/dom/project-templates/-/raw/main/.flakerules.toml"
+
+[tool.flakeheaven.exceptions."kilter/protocol/core.py"]
+pycodestyle = ["-E241"]
+
+[tool.flakeheaven.exceptions."kilter/protocol/messages.py"]
+flake8-docstrings = ["-D102"]
+
+[tool.flakeheaven.exceptions."tests/unittest_helpers.py"]
+flake8-docstrings = ["-D10*"]
+
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_unused_configs = true
+warn_unreachable = true
+namespace_packages = true
+explicit_package_bases = true
+allow_redefinition = true
+
+[[tool.mypy.overrides]]
+module = "kilter.protocol.*"
+disallow_any_unimported = true
+disallow_any_decorated = true
+disallow_any_explicit = true
+# disallow_any_expr = true
+
+
+[tool.pytest.ini_options]
+python_classes = ""
+
+[tool.coverage.run]
+data_file = "results/coverage.db"
+branch = true
+source = ["kilter"]
+plugins = [
+	"kodo.plugins.cover_test_context",
+]
+
+[tool.coverage.report]
+precision = 2
+skip_empty = true
+exclude_lines = [
+	"@(abc\\.)abstractmethod",
+	"@overload",
+	"class .*(.*\\bProtocol\\b.*):",
+	"def __repr__",
+	"if .*\\bTYPE_CHECKING\\b",
+	"if .*\\b__name__\\b",
+	"pragma: no-cover",
+]
+partial_branches = [
+	"if .*\\b__debug__\\b",
+	"pragma: no-branch",
+]
+
+[tool.coverage.json]
+output = "results/coverage.json"
+show_contexts = true
+
+[tool.coverage.xml]
+output = "results/coverage.xml"
+
+[tool.coverage.html]
+directory = "results/coverage.html.d"
+show_contexts = true

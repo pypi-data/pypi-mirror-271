@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ProjectEngine
+Version: 0.0.1
+Summary: Basic PyOpenGl project
+Author: Oliver Wilkinson
+Author-email: otwilkinsonuk@icloud.com
+Requires-Dist: pygame
+Requires-Dist: PyOpenGl
+

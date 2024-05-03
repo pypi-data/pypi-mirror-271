@@ -1,0 +1,10 @@
+haystack_integrations/components/retrievers/chroma/__init__.py,sha256=NC2mfjJqlrB_CvMgvoaRfzAXzhwnmPBDkj5EkOAo8B8,142
+haystack_integrations/components/retrievers/chroma/retriever.py,sha256=q48g97vnEEaqkZOSbK4H44LusczUfRcWwiN_gR2MzNc,4616
+haystack_integrations/document_stores/chroma/__init__.py,sha256=GxtWu51QcVSzgaXZCZJJnsfEVZds1ebYJnj0gP6mUOg,83
+haystack_integrations/document_stores/chroma/document_store.py,sha256=vG9t6_BDaFrHS7QRwMmYu7cL3K_cincl4cVWC3FrZDc,14915
+haystack_integrations/document_stores/chroma/errors.py,sha256=kweyKXZIULnoXm26UnNs77x-yg9EtK7KHc7jtpBCF9w,635
+haystack_integrations/document_stores/chroma/utils.py,sha256=__PeVrYparu9CyxThd2io2CtCpBj2t5yMSCiYaon4E4,1884
+chroma_haystack-0.16.0.dist-info/METADATA,sha256=cFjxzuatM-AWRwd60-d-AnIj3UeyRqb-dK_uuYWW3yk,2184
+chroma_haystack-0.16.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+chroma_haystack-0.16.0.dist-info/licenses/LICENSE,sha256=_M2kulivnaiTHiW-5CRlZrPmH47tt04pBgAgeDvfYi4,11342
+chroma_haystack-0.16.0.dist-info/RECORD,,

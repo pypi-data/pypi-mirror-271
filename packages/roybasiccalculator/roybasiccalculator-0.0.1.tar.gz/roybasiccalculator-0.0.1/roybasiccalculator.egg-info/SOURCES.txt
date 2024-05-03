@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.TXT
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+roybasiccalculator.egg-info/PKG-INFO
+roybasiccalculator.egg-info/SOURCES.txt
+roybasiccalculator.egg-info/dependency_links.txt
+roybasiccalculator.egg-info/top_level.txt

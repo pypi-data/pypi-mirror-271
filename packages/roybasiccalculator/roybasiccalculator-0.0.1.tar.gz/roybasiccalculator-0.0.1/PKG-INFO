@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: roybasiccalculator
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: 
+Author: Roy Perry
+Author-email: roypery2010@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.TXT
+
+This is a very simple calculator that takes two numbers and eithers add, subtract, multiply or divide them.
+
+Change Log
+==========
+
+0.0.1(03/05/2024)
+------------------
+- First Release

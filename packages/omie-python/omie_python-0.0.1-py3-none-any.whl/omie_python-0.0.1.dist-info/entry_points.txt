@@ -1,0 +1,2 @@
+[console_scripts]
+omie = omie.__main__:main

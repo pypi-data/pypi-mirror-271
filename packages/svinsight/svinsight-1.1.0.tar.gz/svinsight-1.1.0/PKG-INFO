@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: svinsight
+Version: 1.1.0
+Summary: Create social vulnerability index
+License: MIT
+Author: Matthew Preisser
+Author-email: mattpreisser@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyYAML
+Requires-Dist: census
+Requires-Dist: factor_analyzer
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: scikit_learn
+Description-Content-Type: text/markdown
+
+For more information, please visit [https://github.com/mdp0023/SVInsight](https://github.com/mdp0023/SVInsight)

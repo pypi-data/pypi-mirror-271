@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: marxs
+Version: 2.0
+Summary: Multi Architecture Raytracer for X-ray satellites
+Home-page: http://marxs.readthedocs.io
+Author: MIT / H. M. Günther
+Author-email: hgunther@mit.edu
+License: GPLv3+
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: astropy
+Requires-Dist: transforms3d
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: cffi
+Requires-Dist: x3d
+Provides-Extra: all
+Requires-Dist: mayavi; extra == "all"
+Requires-Dist: PyQt5; extra == "all"
+Requires-Dist: jsonschema; extra == "all"
+Provides-Extra: fit
+Requires-Dist: sherpa; extra == "fit"
+Provides-Extra: test
+Requires-Dist: pytest-astropy; extra == "test"
+Requires-Dist: pyyaml; extra == "test"
+Requires-Dist: sphinx-astropy; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx-astropy; extra == "docs"
+Requires-Dist: pyyaml; extra == "docs"
+
+MARXS (Multi-Architecture-Raytrace-Xraymission-Simulator) is a toolsuite to simulate the performance X-ray observatories. It is primarily aimed at astronomical X-ray satellites and sounding rocket payloads, but can be used to ray-trace experiments in the laboratory as well. MARXS performs Monte-Carlo ray-trace simulations from a source (astronomical or lab) through a collection of optical elements such as mirrors, baffles, and gratings to a detector.

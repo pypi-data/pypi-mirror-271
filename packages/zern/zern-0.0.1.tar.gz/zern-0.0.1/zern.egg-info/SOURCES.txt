@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+zern.egg-info/PKG-INFO
+zern.egg-info/SOURCES.txt
+zern.egg-info/dependency_links.txt
+zern.egg-info/top_level.txt

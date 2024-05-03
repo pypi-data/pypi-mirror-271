@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: goproxy-bingai
+Version: 1.1.6
+Summary: Microsoft Login Lib
+Home-page: https://github.com/shoot82003/goproxy_bingai
+Author: shoot82003
+Author-email: shoot82003@qq.com
+Platform: linux
+Platform: windows
+Platform: macos
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+

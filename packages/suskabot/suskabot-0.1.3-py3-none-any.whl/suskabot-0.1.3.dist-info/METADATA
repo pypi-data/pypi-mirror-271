@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: suskabot
+Version: 0.1.3
+Summary: telegram bot with various functions
+License: LICENSE
+Author: vinyl_summer
+Author-email: vinyl6428@gmail.dotcom
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: lingua-language-detector (>=2.0.2,<3.0.0)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: python-telegram-bot (>=21.1.1,<22.0.0)
+Requires-Dist: pytube (>=15.0.0,<16.0.0)
+Requires-Dist: translators (>=5.9.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+# Suskabot
+Telegram Bot that really can do it all!
+
+## Current functionality
+1) Youtube video downloader. Send a link, get a video!
+2) Translator. Fast translations without the need to specify to and from languages! Configure "default language to translate to" and "mother tongue". Currently supported languages: Russian, English, Ukranian
+3) TBD: PDF manipulations
+
+## Tests
+To run the tests use:
+```shell
+poetry run pytest -v -s
+```
+
+## Usage
+
+### Manual 
+1) Create and activate a new virtual environment
+``` shell
+python -m venv /path/to/new/virtual/environment
+source <new_venv_path>/bin/activate
+```
+2) Install the project requirements
+``` shell
+pip install -r requirements.txt
+```
+3) Set the API_TOKEN environment variable using export:
+``` shell
+export TG_BOT_API_TOKEN=<your TG bot api token>
+```
+or .env.secret:
+``` shell
+cd config && echo TG_BOT_API_TOKEN=<your TG bot api token>
+```
+Other environment variables can be conveniently set from .env.public
+4) Start the script:
+```shell
+python main.py
+```
+
+### Docker 
+Specify this gitlab repositories container registry or build the image yourself:
+ ``` shell
+ docker build -t suskabot .
+ docker run -d --env=TG_BOT_API_TOKEN=<TG bot api token> suskabot
+ ```
+

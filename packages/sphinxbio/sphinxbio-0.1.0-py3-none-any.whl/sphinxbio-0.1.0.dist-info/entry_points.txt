@@ -1,0 +1,3 @@
+[console_scripts]
+sb=src.cli.entrypoint:cli
+

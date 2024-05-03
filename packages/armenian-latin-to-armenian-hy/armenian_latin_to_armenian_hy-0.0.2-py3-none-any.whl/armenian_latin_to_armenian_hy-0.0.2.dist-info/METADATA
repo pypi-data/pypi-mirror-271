@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: armenian_latin_to_armenian_hy
+Version: 0.0.2
+Summary: Transliteration from Latin Armenian language to Armenian
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ArmenianLatinToArmenian
+
+Transliteration from Armenian Latin to Armenian language
+
+Thanks for contributing into this library
+1. @Mikayel_23
+2. @kimshanti
+3. @n2ereq

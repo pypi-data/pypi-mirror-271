@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: seaturtle_menu
+Version: 0.1.1.dev0
+Summary: Make effective terminal menus quickly and concisely.
+Author: Tathya Garg
+Author-email: Tathya Garg <tathya.garg@gmail.com>
+Maintainer-email: Tathya Garg <tathya.garg@gmail.com>
+License: Copyright 2024 Tathya Garg
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://github.com/tathyagarg/seaturtle_menu
+Project-URL: Documentation, https://github.com/tathyagarg/seaturtle_menu
+Project-URL: Repository, https://github.com/tathyagarg/seaturtle_menu
+Project-URL: Changelog, https://github.com/tathyagarg/seaturtle_menu/blob/main/CHANGELOG.md
+Keywords: menu
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# seaturtle_menu
+
+seaturtle_menu is a package to help you make a terminal user input menu quickly.
+
+## Features
+- Built-in bullets:
+    - Lowercase Alphabet
+    - Uppercase Alphabet
+    - Digits
+- Ability to add custom brackets after bullets.
+- Adding custom greeting messages that are printed before the menu options.
+
+## License
+seaturtle_menu uses the [MIT License](LICENSE)

@@ -1,0 +1,250 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-03-27 15:53 EDT
+Nmap scan report for mon (192.168.2.51)
+Host is up (0.00087s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+3001/tcp open  nessus
+9003/tcp open  unknown
+
+Nmap scan report for dev (192.168.2.53)
+Host is up (0.00099s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+111/tcp open  rpcbind
+
+Nmap scan report for database (192.168.2.55)
+Host is up (0.00046s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+3306/tcp open  mysql
+5432/tcp open  postgresql
+9001/tcp open  tor-orport
+
+Nmap scan report for services (192.168.2.56)
+Host is up (0.00083s latency).
+Not shown: 988 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2049/tcp open  nfs
+3000/tcp open  ppp
+8000/tcp open  http-alt
+8001/tcp open  vcom-tunnel
+8080/tcp open  http-proxy
+8083/tcp open  us-srv
+8090/tcp open  opsmessaging
+9010/tcp open  sdr
+
+Nmap scan report for proxmox (192.168.2.57)
+Host is up (0.00052s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+3128/tcp open  squid-http
+
+Nmap scan report for asustor (192.168.2.67)
+Host is up (0.00039s latency).
+Not shown: 983 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+53/tcp   open  domain
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+631/tcp  open  ipp
+873/tcp  open  rsync
+2049/tcp open  nfs
+3001/tcp open  nessus
+3260/tcp open  iscsi
+3493/tcp open  nut
+4000/tcp open  remoteanything
+5000/tcp open  upnp
+8000/tcp open  http-alt
+8001/tcp open  vcom-tunnel
+8181/tcp open  intermapper
+9001/tcp open  tor-orport
+
+Nmap scan report for pi.hole (192.168.2.69)
+Host is up (0.00089s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+22/tcp open  ssh
+53/tcp open  domain
+80/tcp open  http
+
+Nmap scan report for 192.168.2.70
+Host is up (0.00044s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+9001/tcp open  tor-orport
+
+Nmap scan report for gitea (192.168.2.77)
+Host is up (0.00095s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+3000/tcp open  ppp
+
+Nmap scan report for synology (192.168.2.91)
+Host is up (0.00041s latency).
+Not shown: 984 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+548/tcp  open  afp
+873/tcp  open  rsync
+2049/tcp open  nfs
+3261/tcp open  winshadow
+4045/tcp open  lockd
+5000/tcp open  upnp
+5001/tcp open  commplex-link
+5357/tcp open  wsdapi
+5566/tcp open  westec-connect
+9100/tcp open  jetdirect
+
+Nmap scan report for 192.168.2.93
+Host is up (0.00028s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+445/tcp  open  microsoft-ds
+5000/tcp open  upnp
+7000/tcp open  afs3-fileserver
+
+Nmap scan report for 192.168.2.108
+Host is up (0.00068s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+
+Nmap scan report for 192.168.2.124
+Host is up (0.0018s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+1201/tcp open  nucleus-sand
+7000/tcp open  afs3-fileserver
+
+Nmap scan report for 192.168.2.125
+Host is up (0.0017s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+1201/tcp open  nucleus-sand
+7100/tcp open  font-service
+
+Nmap scan report for 192.168.2.141
+Host is up (0.00063s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+23/tcp   open  telnet
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+
+Nmap scan report for 192.168.2.149
+Host is up (0.0035s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+
+Nmap scan report for 192.168.2.166
+Host is up (0.0011s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+80/tcp   open  http
+554/tcp  open  rtsp
+5004/tcp open  avt-profile-1
+8888/tcp open  sun-answerbook
+
+Nmap scan report for 192.168.2.169
+Host is up (0.00089s latency).
+Not shown: 993 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+5000/tcp  open  upnp
+7000/tcp  open  afs3-fileserver
+7100/tcp  open  font-service
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+62078/tcp open  iphone-sync
+
+Nmap scan report for 192.168.2.184
+Host is up (0.0028s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+88/tcp   open  kerberos-sec
+631/tcp  open  ipp
+5000/tcp open  upnp
+7000/tcp open  afs3-fileserver
+
+Nmap scan report for 192.168.2.186
+Host is up (0.0026s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+88/tcp   open  kerberos-sec
+445/tcp  open  microsoft-ds
+631/tcp  open  ipp
+5000/tcp open  upnp
+7000/tcp open  afs3-fileserver
+
+Nmap scan report for 192.168.2.187
+Host is up (0.017s latency).
+All 1000 scanned ports on 192.168.2.187 are in ignored states.
+Not shown: 1000 closed tcp ports (conn-refused)
+
+Nmap scan report for 192.168.2.190
+Host is up (0.00070s latency).
+Not shown: 993 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+53/tcp    open  domain
+5000/tcp  open  upnp
+7000/tcp  open  afs3-fileserver
+7100/tcp  open  font-service
+49152/tcp open  unknown
+49153/tcp open  unknown
+62078/tcp open  iphone-sync
+
+Nmap scan report for 192.168.2.198
+Host is up (0.0021s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+80/tcp    open  http
+8080/tcp  open  http-proxy
+12345/tcp open  netbus
+
+Nmap scan report for 192.168.2.199
+Host is up (0.010s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 192.168.2.220
+Host is up (0.0023s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+3000/tcp closed ppp
+
+Nmap done: 241 IP addresses (25 hosts up) scanned in 63.86 seconds

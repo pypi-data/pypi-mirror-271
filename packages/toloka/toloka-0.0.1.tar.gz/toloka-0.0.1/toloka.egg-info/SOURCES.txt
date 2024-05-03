@@ -1,0 +1,6 @@
+setup.py
+toloka/__init__.py
+toloka.egg-info/PKG-INFO
+toloka.egg-info/SOURCES.txt
+toloka.egg-info/dependency_links.txt
+toloka.egg-info/top_level.txt

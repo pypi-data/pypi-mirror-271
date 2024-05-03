@@ -1,0 +1,14 @@
+\begin{tabular}{\VAR{TABLE_HEADER_SPEC}}
+    \BLOCK{-for row in data-}
+        \BLOCK{-if row | is_raw_latex -}
+                \VAR{row.latex_string}
+        \BLOCK{-else-}
+            \BLOCK{-for col in header-}
+                \VAR{row[col]}
+                \BLOCK{-if not loop.last-}
+                    &
+                \BLOCK{-endif-}
+            \BLOCK{-endfor-}\\
+        \BLOCK{-endif-}
+    \BLOCK{-endfor-}
+\end{tabular}

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neo4py"
+version = "1.1.8-beta"
+authors = [
+  { name="Athar Naveed", email="asphaltlegends24@gmail.com" },
+]
+description = "Neo4py is a better alternative to py2neo."
+readme = "readme.md"
+requires-python = ">=3.8"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+dependencies =[
+  "neo4j==5.20"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Athar-Naveed/neo4py"

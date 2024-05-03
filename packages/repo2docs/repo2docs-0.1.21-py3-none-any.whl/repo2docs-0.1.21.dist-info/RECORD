@@ -1,0 +1,11 @@
+repo2docs/__init__.py,sha256=L54tRdkfoAVfsdz-GsCXarG6IeTyDPBBUCE8_AoQI_E,24
+repo2docs/llm.py,sha256=nWUnmUpQDHtUZzd-NBbqY1UpxGRBfSCwwcpuz8eRdf0,2420
+repo2docs/prompts.py,sha256=-52NdC_ywmy-8h4uMzLJloUJ_kQNQEFFEJMMtvpPF_s,5515
+repo2docs/repo2docs.py,sha256=Rku79KQI2ylVGgjVhl6b_EH_2jUNWkRhc7dmmHEe8tc,6962
+repo2docs/repo_to_text.py,sha256=_TFq2xZBUiAGjKy79U5iS-nrt8g6sSkLA8GXXcxCfK4,8778
+repo2docs/text_to_docs.py,sha256=IzL2um6-KE3Hl2N17zYcUT7O0RfBgw9Se4spUBSw1QY,1734
+repo2docs-0.1.21.dist-info/LICENSE,sha256=Qk7Gj9QAFP8gp8aCpF08pIm4UAHwNUQa1vI3OuHxCg0,1071
+repo2docs-0.1.21.dist-info/METADATA,sha256=7vEoNI2jP755LYx5rFfyBenJlzXcYZ3gQWJW-HN4fVo,3492
+repo2docs-0.1.21.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+repo2docs-0.1.21.dist-info/entry_points.txt,sha256=zzSH0VfTIGWy7X7koTMB2Tsq93NhYP6UcQyhJh98ioI,53
+repo2docs-0.1.21.dist-info/RECORD,,

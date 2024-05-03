@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+moneymatters/__init__.py
+moneymatters/api.py
+moneymatters.egg-info/PKG-INFO
+moneymatters.egg-info/SOURCES.txt
+moneymatters.egg-info/dependency_links.txt
+moneymatters.egg-info/requires.txt
+moneymatters.egg-info/top_level.txt

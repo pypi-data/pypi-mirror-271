@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-ops-suite"
+version = "0.0.10"
+authors = [
+  { name = "Maxim Makovskiy", email = "makovskiyms@gmail.com" },
+]
+description = "List of useful tools to work with MS Office and Power Bi"
+license = { text = "MIT" }
+classifiers = [
+  "Environment :: Win32 (MS Windows)",
+  "Operating System :: Microsoft :: Windows",
+]
+requires-python = ">=3.9"
+dependencies = [
+  "pywinauto",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/evorition/remove-meta"
+"Source" = "https://github.com/evorition/remove-meta"
+
+[project.scripts]
+remove-meta = "scripts:remove_meta"
+relink = "scripts:relink"

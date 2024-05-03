@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: file-ops-suite
+Version: 0.0.10
+Summary: List of useful tools to work with MS Office and Power Bi
+Author-email: Maxim Makovskiy <makovskiyms@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/evorition/remove-meta
+Project-URL: Source, https://github.com/evorition/remove-meta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: pywinauto

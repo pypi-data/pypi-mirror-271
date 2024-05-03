@@ -1,0 +1,3 @@
+[console_scripts]
+sifflet = sifflet_cli.cli:main
+

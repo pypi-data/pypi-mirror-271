@@ -1,0 +1,35 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <path_to_yaml>"
+    exit 1
+fi
+
+yaml_file="$1"
+docker_file="Dockerfile"
+
+image=$(yq e '.Base.image' "$yaml_file")
+workdir=$(yq e '.Base.workdir' "$yaml_file")
+files=$(yq e '.ADDING.files' "$yaml_file")
+apt_install=$(yq e '.Install.apt[]' "$yaml_file" | tr '\n' ' ')
+pip_install=$(yq e '.Install.pip[]' "$yaml_file" | tr '\n' ' ')
+apt_configure=$(yq e '.Configure.apt' "$yaml_file")
+start_shell=$(yq e '.Start.shell' "$yaml_file")
+start_type=$(yq e '.Start.type[]' "$yaml_file")
+
+{
+    echo "# Generated Dockerfile"
+    echo "FROM $image"
+    echo "WORKDIR $workdir"
+    echo "ADD $files ."
+    echo "RUN apt update && apt install -y $apt_install && apt clean"
+    if [ -n "$pip_install" ]; then
+        echo "RUN pip install -r $pip_install"
+    fi
+    echo "RUN apt $apt_configure"
+    if [ "$start_shell" == "True" ]; then
+        echo "CMD [\"$start_type\", \"-c\"]"
+    fi
+} > "$docker_file"
+
+echo "Dockerfile created successfully."

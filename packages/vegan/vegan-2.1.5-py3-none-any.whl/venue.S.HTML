@@ -1,0 +1,77 @@
+
+
+
+<pre>
+
+	<h1>vegan</h1>
+	
+	<h2>docker</h2>
+		docker compose up -d
+		docker exec -it vegan bash
+		docker exec -it vegan bash -c "source /vegan/moves/source_2.sh && bash"
+
+	<h2>on</h2>
+		<h3>1st terminal panel</h3>
+			#
+			#	setuptools is necessary for sanic
+			#
+			source /vegan/moves/source_1.sh
+			
+			#
+			#	
+			#
+			vegan_1 adventures monetary saves import --name 5.JSON
+			
+		
+		<h3>2+ terminal panels</h3>
+			source /vegan/moves/source_2.sh
+	
+	<h2>garages</h2>
+		http://192.168.0.100:8000/docs/swagger#/
+		http://192.168.0.100:7457
+		http://192.168.0.100:39000
+	
+	<h2>bun</h2>
+		apt install unzip; curl -fsSL https://bun.sh/install | bash; source /root/.bashrc
+	
+	<h2>mongo</h2>
+		<h3>place</h3>
+			/vegan/venues/stages/vegan/adventures/monetary/__monetary_1
+	
+		<h3>saves</h3>
+			ls /vegan/venues/stages/vegan/adventures/monetary/__saves/exports/ingredients/essential_nutrients/
+		
+		<h3>saving</h3>
+			vegan_1 adventures monetary saves export --name 5.JSON
+	
+		<h3>loading</h3>
+			vegan_1 adventures monetary saves import --name 4.JSON
+		
+
+
+	<h2>publishing</h2>
+		<h3>linting</h3>
+			(cd /vegan/venues/stages/vegan && pycycle --here) 
+	
+		<h3>status</h3>
+			cd /vegan/venues/stages/vegan/__status/main
+			python3 /vegan/venues/stages/vegan/__status/main/status.proc.py
+			python3 /vegan/venues/stages/vegan/__status/API/status.proc.py
+
+		
+		
+		<h3>publish</h3>
+			#
+			#	[ ] poetry auth
+			#
+		
+			pip install poetry && cd /vegan && rm -rf dist && poetry build --verbose && poetry publish --verbose;
+		
+
+	<h2>important</h2>
+		poetry show --tree
+
+
+	
+
+</pre>

@@ -1,0 +1,18 @@
+#!/usr/sbin/nft -f
+
+
+
+table inet filter {
+    chain input {
+        type filter hook input priority 0;
+
+        # Allow HTTP (Port 80)
+        tcp dport 80 accept
+        
+        # Allow HTTPS (Port 443)
+        tcp dport 443 accept
+
+        # Drop all other traffic
+        drop
+    }
+}

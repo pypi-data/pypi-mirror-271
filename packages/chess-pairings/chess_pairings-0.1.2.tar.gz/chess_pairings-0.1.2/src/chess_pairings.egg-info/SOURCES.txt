@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/chess_pairings/__init__.py
+src/chess_pairings/__init__.pyi
+src/chess_pairings/types.py
+src/chess_pairings.egg-info/PKG-INFO
+src/chess_pairings.egg-info/SOURCES.txt
+src/chess_pairings.egg-info/dependency_links.txt
+src/chess_pairings.egg-info/requires.txt
+src/chess_pairings.egg-info/top_level.txt
+src/chess_pairings/chess_results/__init__.py
+src/chess_pairings/chess_results/__init__.pyi
+src/chess_pairings/chess_results/_donwload.py
+src/chess_pairings/chess_results/errors.py
+src/chess_pairings/chess_results/main.py
+src/chess_pairings/chess_results/parsing.py

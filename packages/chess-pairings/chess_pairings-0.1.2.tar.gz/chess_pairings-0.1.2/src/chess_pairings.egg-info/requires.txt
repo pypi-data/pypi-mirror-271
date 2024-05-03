@@ -1,0 +1,5 @@
+pydantic
+
+[chess-results]
+beautifulsoup4
+aiohttp

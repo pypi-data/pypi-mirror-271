@@ -1,0 +1,7 @@
+lfg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lfg/cli.py,sha256=TPuVU1d_sNhXmrdoDnazDQtE6OqFFVVuiyUc6IfTIa0,1323
+lfg_llama-1.0.6.dist-info/METADATA,sha256=DvQjz4p9jttgzCGxi4Lse5eJyaw96g51Xo1QNx42OsY,1037
+lfg_llama-1.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+lfg_llama-1.0.6.dist-info/entry_points.txt,sha256=KW1VPwx37OCmhfOvb7gb4cqFRuivZydqlvZmemsRlwA,37
+lfg_llama-1.0.6.dist-info/top_level.txt,sha256=58l0-s8RykdvvQOQ13nqtU-ZtsE_5RV4g9x-GN6BqoY,4
+lfg_llama-1.0.6.dist-info/RECORD,,

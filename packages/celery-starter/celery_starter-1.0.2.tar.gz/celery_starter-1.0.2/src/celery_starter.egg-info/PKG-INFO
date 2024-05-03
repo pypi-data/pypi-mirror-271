@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: celery_starter
+Version: 1.0.2
+Summary: Django command to launch celery worker, beat, flower
+Home-page: https://github.com/Friskes/celery-starter
+Author: Friskes
+Author-email: Friskes <friskesx@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Friskes
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Friskes/celery-starter
+Project-URL: Changelog, https://github.com/Friskes/celery-starter/releases/
+Project-URL: Issues, https://github.com/Friskes/celery-starter/issues
+Keywords: Django,Celery,Beat,Flower,Autoreload
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=4.2.11
+Requires-Dist: celery>=5.3.6
+Requires-Dist: python-dotenv>=1.0.1
+Provides-Extra: dev
+Requires-Dist: pre-commit>=3.5.0; extra == "dev"
+Requires-Dist: ruff==0.4.1; extra == "dev"
+Requires-Dist: pytest>=7.0.1; extra == "dev"
+Requires-Dist: mypy>=1.10.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0.0; extra == "dev"
+Provides-Extra: ci
+Requires-Dist: ruff==0.4.1; extra == "ci"
+Requires-Dist: pytest>=7.0.1; extra == "ci"
+Requires-Dist: mypy>=1.10.0; extra == "ci"
+Requires-Dist: pytest-cov>=5.0.0; extra == "ci"
+
+## Django command to run `celery (worker, beat, flower)` with automatically reboot server after changing files
+
+<div align="center">
+
+| Project   |     | Status                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|-----------|:----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CI/CD     |     | [![Latest Release](https://github.com/Friskes/celery-starter/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/Friskes/celery-starter/actions/workflows/publish-to-pypi.yml)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Quality   |     | [![Coverage](https://codecov.io/github/Friskes/celery-starter/graph/badge.svg?token=vKez4Pycrc)](https://codecov.io/github/Friskes/celery-starter)                                                                                                                                                                                                                                                                                                                               |
+| Package   |     | [![PyPI - Version](https://img.shields.io/pypi/v/celery-starter?labelColor=202235&color=edb641&logo=python&logoColor=edb641)](https://badge.fury.io/py/celery-starter) ![PyPI - Support Python Versions](https://img.shields.io/pypi/pyversions/celery-starter?labelColor=202235&color=edb641&logo=python&logoColor=edb641) ![Project PyPI - Downloads](https://img.shields.io/pypi/dm/celery-starter?logo=python&label=downloads&labelColor=202235&color=edb641&logoColor=edb641)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Meta      |     | [![types - Mypy](https://img.shields.io/badge/types-Mypy-202235.svg?logo=python&labelColor=202235&color=edb641&logoColor=edb641)](https://github.com/python/mypy) [![License - MIT](https://img.shields.io/badge/license-MIT-202235.svg?logo=python&labelColor=202235&color=edb641&logoColor=edb641)](https://spdx.org/licenses/) [![code style - Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/format.json&labelColor=202235)](https://github.com/astral-sh/ruff) |
+
+</div>
+
+## Install
+1. Install package
+    ```bash
+    pip install celery-starter
+    ```
+
+2. Add app name to `INSTALLED_APPS`
+    ```python
+    INSTALLED_APPS = [
+        'celery_starter',
+    ]
+    ```
+
+### Command to run the program:
+```
+python manage.py runcelery
+```
+
+Arguments can be passed in any order, it doesn't matter.
+
+### Positional Arguments:
+`<celery app name>`
+or
+`<"full command to run celery worker">`
+
+### Optional Arguments:
+`-h` or `--help` Show help message.<br/>
+`-b` or `--beat` Excludes the beat server at startup.<br/>
+`-f` or `--flower` Excludes the flower server at startup.<br/>
+`-d` or `--debug` Displays information about successful/unsuccessful completion of processes.<br/>
+`-ll` or `--loglevel` Defines the logging level for celery worker/beat
+`-lf` or `--logfile` Redirects the output to the console by default to a log file for celery worker/beat
+
+#### To stopped program pressing the keyboard shortcut `CTRL+C`
+
+### Examples of Commands
+The command enclosed in quotation marks gets into the positional arguments and replaces the command to run the default celery worker.
+The `--beat` `--flower` commands fall into the optional arguments and turn off the beat and flower of the server.
+```shell script
+python manage.py runcelery "celery --app=${CELERY_APP} worker -E \
+--hostname=worker-example@%h
+--uid=nobody --gid=nogroup \
+--loglevel=INFO" --beat --flower
+```

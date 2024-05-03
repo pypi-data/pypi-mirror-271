@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20240503.0
+-------------
+
+* chore(deps): update dependency fastapi to v0.111.0 (#878)

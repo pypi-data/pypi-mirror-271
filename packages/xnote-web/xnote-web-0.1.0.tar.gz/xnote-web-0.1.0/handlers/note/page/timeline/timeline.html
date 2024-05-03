@@ -1,0 +1,64 @@
+﻿{% extends base %}
+
+{% block body_left %}
+
+{% init parent_link = None %}
+{% init title_link = None %}
+{% init type = "ctime" %}
+{% init base_path = "/note/timeline" %}
+{% init key = "" %}
+{% init show_old_create = False %}
+{% init show_create_btn = False %}
+{% init show_recent_btn = False %}
+{% init show_back_btn = False %}
+{% init show_group_btn = False %}
+
+<div class="card">
+  <div class="note-header card-title">
+    <span class="note-header-span">{{title}}</span>
+
+    <div class="float-right">
+        {% if show_old_create %}
+          <!-- 原来使用 create_option.html 弹窗创建并没有预期的方便，而且不好做扩展 -->
+          {% include note/component/timeline/timeline_create_option.html %}
+        {% end %}
+
+        {% if show_create_btn %}
+          <a class="btn" href="{{_server_home}}/note/create?parent_id={{parent_id}}">新建笔记</a>
+        {% end %}
+
+        {% if show_group_btn %}
+          <a href="{{_server_home}}/note/timeline?type=group_list&orderby=name" class="btn btn-default">笔记本</a>
+        {% end %}
+
+        {% if show_recent_btn %}
+          <a href="{{_server_home}}/note/timeline/recent" class="btn btn-default">最新笔记</a>
+        {% end %}
+
+        {% if type == "default" %}
+          {% include note/component/option/group_option.html %}
+        {% elif type == "public" %}
+          {% include note/component/share_dialog.html %}
+        {% end %}
+
+        {% if show_back_btn %}
+          {% include common/button/back_button.html %}
+        {% end %}
+    </div>
+  </div>
+</div>
+
+{% if len(pathlist) > 1 %}
+<div class="card">
+  {% include note/component/note_path.html %}
+</div>
+{% end %}
+
+
+{% include note/component/timeline/timeline_body.html %}
+
+{% end %}
+
+{% block body_right %}
+    {% include note/component/sidebar/group_list_sidebar.html %}
+{% end %}

@@ -1,0 +1,10 @@
+{% init right_link = None %}
+<div class="card-title btn-line-height">
+    <span>{{title}}</span>
+    <div class="float-right">
+    {% if right_link is not None %}
+        <a class="link" href="{{right_link.get('link')}}">{{right_link.get('name')}}</a>
+    {% end %}
+        <button class="btn-default" onclick="javascript:history.back()">返回</button>
+    </div>
+</div>

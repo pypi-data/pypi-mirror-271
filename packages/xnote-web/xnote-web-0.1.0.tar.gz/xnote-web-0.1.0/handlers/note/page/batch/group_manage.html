@@ -1,0 +1,229 @@
+{% extends base.html %}
+<!--
+@author xupingmao
+@since 2020/01/06
+@modified 2021/07/31 10:38:21
+-->
+
+{% block body_left %}
+
+{% init show_note_path = True %}
+{% init note_tags = dict() %}
+{% include note/component/script/create_script.html %}
+{% include note/component/script/tag_script.html %}
+
+<!-- 顶层控制区域的模板 -->
+<script type="text/template" id="tagTopTemplate">
+    <div class="card btn-line-height">
+        <div class="row">
+            <span>标签</span>
+            <a href="?" class="tag lightgray large {% if len(q_tags) == 0 %}active{%end%}" onclick="onClickTagFilter(this);">全部</a>
+            {{! each tagList tag }}
+                <a class="tag lightgray meta large {{!tag.active}}" onclick="onClickTagFilter(this);">{{! tag.tag_name }}</a>
+            {{!/each}}
+        </div>
+
+        <div class="row top-offset-1">
+            <button class="create-tag-btn btn-default">创建新标签</button>
+            <button class="delete-tag-btn btn danger" onclick="xnote.action.note.deleteTagMeta(xnote.note.tagList)">删除标签</button>
+        </div>
+    </div>
+</script>
+
+{% include note/component/script/note_template.html %}
+
+<div class="card note-list">
+
+    <!-- header -->
+    <div class="row card-title btn-line-height">
+        <span>笔记本管理</span>
+        <div class="float-right">
+            <button class="btn btn-default" onclick="xnote.createNotebook()">新建笔记本</button>
+            {% include common/button/back_button.html %}
+        </div>
+    </div>
+</div>
+
+<div class="tag-top"></div>
+
+<div class="card">
+    {% if len(notes) == 0 %}
+        {% include common/text/empty_text.html %}
+    {% end %}
+    
+    {% for item in notes %}
+        <div class="book-item">
+            <div class="row">
+                {% if item.priority>0 %}
+                    <span class="tag orange">置顶</span>
+                {% end %}
+
+                {% if item.priority==0 %}
+                    <span class="tag info">活跃</span>
+                {% end %}
+            
+                {% if item.priority<0 %}
+                    <span class="tag system">归档</span>
+                {% end %}
+
+                <i class="fa {{item.icon}} fa-{{item.icon}} black"></i>
+                <a class="link2" href="{{_server_home}}{{item.url}}">{{item.name}}</a>
+                
+                <span class="float-right">
+                    <a class="item-option" data-id="{{item.id}}" data-name="{{item.name}}" 
+                        onclick="renameNoteByAttr(this);" href="javascript:void(0);">重命名</a>
+                    <input type="checkbox" data-id="{{item.id}}" data-name="{{item.name}}"/>
+                </span>
+            </div>
+
+            <div class="row">
+                <span>标签</span>
+                {% for tag in item.tag_info_list %}
+                    <a class="tag lightgray">{{tag.name}}</a>
+                {% end %}
+                <button class="btn btn-default bind-tag-btn"
+                    data-parent-id="{{item.parent_id}}"
+                    data-tag-type="group"
+                    data-id="{{item.id}}"
+                    data-tags="{{item.tags_json}}"
+                    onclick="xnote.action.note.editNoteTag(this);">+标签</button>
+                
+            </div>
+        </div>
+    {% end %}
+</div>
+
+{% include note/component/script/rename_script.html %}
+
+<script type="text/javascript">
+(function() {
+    var tagList = [];
+
+    function renderTagTop(tagList) {
+        var html = $("#tagTopTemplate").render({
+            tagList: tagList,
+        });
+
+        $(".tag-top").html(html);
+    }
+
+    function refreshTagTop() {
+        var filterTags = JSON.parse(xnote.getUrlParam("tags", "[]"));
+
+        xnote.http.get("/note/tag/list?tag_type=group", function (resp) {
+            console.log("resp", resp);
+            if (resp.code != "success") {
+                xnote.alert(resp.message);
+            } else {
+                // self.tagList = resp.data;
+                tagList = resp.data;
+                xnote.note.tagList = tagList;
+                for (var i=0; i < tagList.length; i++) {
+                    var item = tagList[i];
+                    if (filterTags.indexOf(item.tag_name)>=0) {
+                        item.active = "active";
+                    } else {
+                        item.active = "";
+                    }
+                }
+                renderTagTop(tagList);
+            }
+        });
+    };
+
+    refreshTagTop();
+
+    window.onClickTagFilter = function(target) {
+        var me = $(target);
+        var tagName = me.text();
+        var tagId = me.attr("data-id");
+
+        me.toggleClass("active");
+
+        if (me.hasClass("meta")) {
+            // 筛选模式
+            // 筛选模式使用单选更好
+            var filterTags = [tagName];
+            location.href = xnote.addUrlParam(location.href, "tags", JSON.stringify(filterTags));
+        }
+
+    };
+
+    $(".update-category").change(function (e) {
+        var noteId = $(this).attr("data-id");
+        var newCat = $(this).val();
+        xnote.updateNoteCategory({
+            noteId: noteId,
+            value: newCat,
+            doRefresh: true,
+        });
+    });
+
+    $(".switch-category").change(function(e) {
+        var selected = $(this).val();
+        var url = window.location.href;
+        url = xnote.addUrlParam(url, "category", selected);
+        window.location.href = url;
+    });
+
+    $(".bind-tag-btn-old").click(function (e) {
+        var selectedNameList = JSON.parse($(e.target).attr("data-tags"));
+        var html = $("#bindTagTemplate").render({
+            tagList: tagList,
+            selectedNames: selectedNameList
+        });
+
+        var group_id = $(e.target).attr("data-id");
+
+        console.log("bind-tag-dialog", html);
+
+        xnote.openDialog("添加标签", html, ["确定", "取消"], function () {
+            var selectedNames = [];
+            $(".tag.bind.active").each(function (idx, ele) {
+                var tagName = $(ele).text().trim();
+                selectedNames.push(tagName);
+            });
+
+            var bindParams = {
+                tag_type:"group",
+                group_id:group_id,
+                tag_names: JSON.stringify(selectedNames),
+            };
+
+            xnote.http.post("/note/tag/bind", bindParams, function (resp) {
+                if (resp.code != "success") {
+                    xnote.alert(resp.message);
+                } else {
+                    xnote.toast("添加标签成功");
+                }
+                location.reload();
+            });
+        });
+    });
+
+    $("body").on("click", ".create-tag-btn", function (e) {
+        xnote.prompt("创建新标签", "", function (text) {
+            var params = {
+                tag_type: "group",
+                tag_name: text
+            };
+            $.post("/note/tag/create", params, function (resp) {
+                if (resp.code != "success") {
+                    xnote.alert(resp.message);
+                } else {
+                    xnote.toast("创建成功");
+                }
+                refreshTagTop();
+            });
+        });
+    });
+})();
+
+</script>
+
+{% end %}
+
+
+{% block body_right %}
+    {% include note/component/sidebar/group_manage_sidebar.html %}
+{% end %}

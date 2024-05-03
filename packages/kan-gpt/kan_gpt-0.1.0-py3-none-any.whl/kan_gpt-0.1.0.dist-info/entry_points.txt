@@ -1,0 +1,2 @@
+[console_scripts]
+kan_gpt = kan_gpt.__main__:main

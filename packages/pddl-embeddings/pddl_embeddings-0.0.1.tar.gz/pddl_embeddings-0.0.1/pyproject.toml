@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pddl-embeddings"
+version = "0.0.1"
+dependencies = [
+    "transformers",
+    "numpy",
+    "torch",
+]
+requires-python = ">=3.9"
+authors = [
+    {name = "Victor Dorado Javier", email = "vicdoja@upv.edu.es"},
+]
+maintainers = [
+    {name = "Victor Dorado Javier", email = "vicdoja@upv.edu.es"},
+]
+description = "A package to extract feature embeddings out of PPDL state text."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["ppdl", "planner", "embedding", "feature", "transformer"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+    "Environment :: GPU :: NVIDIA CUDA",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]

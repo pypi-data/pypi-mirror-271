@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "synthetic_languages"
+version = "0.0.1"
+authors = [
+  { name="Adriano Hernandez", email="adrianoh@mit.edu" },
+]
+description = "A package to let you create synthetic languages for the purposes of performing language model interpretability."
+readme = "README.md"
+requires-python = ">=3.8"
+# In the future we may need some of [
+#   "torchvision", "torchaudio", "click", "tqdm", "einops", 
+#   "tabulate", "opencv-python", "transformers", "transformer-lens", 
+#   "pytest", "pydantic"
+# ]
+dependencies = ["numpy", "torch"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/4gatepylon/synthetic_languages"
+Issues = "https://github.com/4gatepylon/synthetic_languages/issues"

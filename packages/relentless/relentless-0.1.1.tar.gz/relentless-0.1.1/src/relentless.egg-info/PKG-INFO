@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: relentless
+Version: 0.1.1
+Summary: Computational materials design, with less code
+Home-page: https://github.com/mphowardlab/relentless
+Author: Michael P. Howard
+Author-email: mphoward@auburn.edu
+Project-URL: Documentation, https://relentless.readthedocs.io
+Project-URL: Source Code, https://github.com/mphowardlab/relentless
+Project-URL: Issue Tracker, https://github.com/mphowardlab/relentless/issues
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: freud-analysis>=2
+Requires-Dist: gsd
+Requires-Dist: lammpsio>=0.4
+Requires-Dist: networkx>=2.5
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: scipy

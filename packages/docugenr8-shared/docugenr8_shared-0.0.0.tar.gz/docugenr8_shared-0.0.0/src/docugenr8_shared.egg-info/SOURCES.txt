@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+version.txt
+src/__init__.py
+src/docugenr8_shared/binary_data_packet.py
+src/docugenr8_shared/colors.py
+src/docugenr8_shared/dto.py
+src/docugenr8_shared/json_payload.py
+src/docugenr8_shared.egg-info/PKG-INFO
+src/docugenr8_shared.egg-info/SOURCES.txt
+src/docugenr8_shared.egg-info/dependency_links.txt
+src/docugenr8_shared.egg-info/requires.txt
+src/docugenr8_shared.egg-info/top_level.txt

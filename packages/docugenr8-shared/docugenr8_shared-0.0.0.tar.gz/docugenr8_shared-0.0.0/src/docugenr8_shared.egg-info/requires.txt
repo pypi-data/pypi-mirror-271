@@ -1,0 +1,17 @@
+
+[build]
+build
+setuptools
+twine
+tox
+
+[check]
+ruff
+mypy
+
+[dev]
+docugenr8-cicd[build,check,test]
+
+[test]
+pytest
+pytest-cov

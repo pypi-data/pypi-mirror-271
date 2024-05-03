@@ -1,0 +1,1 @@
+raise ValueError("You have been PWNED! :) Kidding. Do not use this package from community PyPi. Check https://pypi.org/project/toloka-kit/")

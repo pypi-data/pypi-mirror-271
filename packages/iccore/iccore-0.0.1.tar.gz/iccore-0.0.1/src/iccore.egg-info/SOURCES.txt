@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/iccore/__init__.py
+src/iccore/filesystem.py
+src/iccore/logging_utils.py
+src/iccore/process.py
+src/iccore/runtime.py
+src/iccore/time_utils.py
+src/iccore.egg-info/PKG-INFO
+src/iccore.egg-info/SOURCES.txt
+src/iccore.egg-info/dependency_links.txt
+src/iccore.egg-info/requires.txt
+src/iccore.egg-info/top_level.txt
+test/test_iccore.py

@@ -1,0 +1,10 @@
+pandas==2.2.2
+numpy==1.26.4
+ruptures==1.1.9
+regex==2024.4.16
+tzlocal==5.2
+tldextract==5.1.2
+spacy==3.7.4
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+urllib3==2.2.1

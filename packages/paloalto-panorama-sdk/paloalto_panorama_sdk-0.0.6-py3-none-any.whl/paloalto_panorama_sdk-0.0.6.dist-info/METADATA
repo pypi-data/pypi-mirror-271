@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: paloalto-panorama-sdk
+Version: 0.0.6
+Summary: This SDK is designed to make it easier to work with the Palo Alto Panorama API.
+Author: Timo Riedinger
+Author-email: timo.riedinger@bechtle.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: backports.tarfile ==1.1.1
+Requires-Dist: blinker ==1.8.1
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: dicttoxml ==1.7.16
+Requires-Dist: docutils ==0.21.2
+Requires-Dist: Flask ==3.0.3
+Requires-Dist: idna ==3.7
+Requires-Dist: importlib-metadata ==7.1.0
+Requires-Dist: itsdangerous ==2.2.0
+Requires-Dist: jaraco.classes ==3.4.0
+Requires-Dist: jaraco.context ==5.3.0
+Requires-Dist: jaraco.functools ==4.0.1
+Requires-Dist: Jinja2 ==3.1.3
+Requires-Dist: keyring ==25.2.0
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: MarkupSafe ==2.1.5
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: more-itertools ==10.2.0
+Requires-Dist: nh3 ==0.2.17
+Requires-Dist: pkginfo ==1.10.0
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: python-dotenv ==1.0.1
+Requires-Dist: readme-renderer ==43.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-toolbelt ==1.0.0
+Requires-Dist: rfc3986 ==2.0.0
+Requires-Dist: rich ==13.7.1
+Requires-Dist: twine ==5.0.0
+Requires-Dist: urllib3 ==2.2.1
+Requires-Dist: Werkzeug ==3.0.2
+Requires-Dist: zipp ==3.18.1
+
+# Palo Alto - Panorama SDK
+
+This project serves as an SDK for Palo Alto Panorama.  
+This should allow easier access to the Panorama API.  
+The project is currently still at a very early stage.
+
+## Install
+```
+pip install paloalto-panorama-sdk
+```
+
+## Example
+
+
+
+```
+import os
+from paloalto_panorama_sdk.panorama_sdk import PanoramaSDK
+
+
+if __name__ == '__main__':
+    panSDK = PanoramaSDK(
+        url=os.getenv("url", "127.0.0.1:5000"),
+        username=os.getenv("username", "testuser"),
+        password=os.getenv("password", "testpassword")
+    )
+    print(panSDK.service.list_services())
+    print(panSDK.security_post_rules.list_post_rules())
+    print(panSDK.address_groups.list_address_groups())
+```
+
+It is currently available on https://pypi.org/project/paloalto-panorama-sdk/ and soon on gitlab.com 

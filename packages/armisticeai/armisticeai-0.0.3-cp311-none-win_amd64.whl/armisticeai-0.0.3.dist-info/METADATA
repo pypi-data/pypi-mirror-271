@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: armisticeai
+Version: 0.0.3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Author-email: ArmisticeAI <tanya@armistice.ai>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# armisticeai
+
+Python client for ArmisticeAI
+
+## Pre-requisites
+
+Install the packages listed in `requirements.txt`:
+
+```
+flwr==1.6.0
+transformers==4.40.0
+evaluate==0.4.1
+datasets==2.19.0
+scikit-learn==1.4.2
+accelerate==0.29.3
+torch==2.2.2
+torchvision==0.17.2
+huggingface-hub==0.22.2
+peft==0.10.0
+git+https://github.com/tanyav2/bitsandbytes.git@tanya/lora-fix#egg=bitsandbytes
+```
+

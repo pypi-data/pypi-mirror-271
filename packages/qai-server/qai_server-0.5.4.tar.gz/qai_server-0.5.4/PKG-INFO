@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: qai-server
+Version: 0.5.4
+Summary: 
+Author: parnell
+Author-email: 152523161+leeparnell@users.noreply.github.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: dataclasses-json (>=0.6.4,<0.7.0)
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: flask-pydantic (>=0.12.0,<0.13.0)
+Requires-Dist: ftfy (>=6.1.1,<7.0.0)
+Requires-Dist: gunicorn (>=22.0.0,<23.0.0)
+Requires-Dist: html2text (>=2020.1.16,<2021.0.0)
+Requires-Dist: llama-index (>=0.10.33,<0.11.0)
+Requires-Dist: mysql-connector-python (>=8.4.0,<9.0.0)
+Requires-Dist: qai-agent (>=0.5.2.4,<0.6.0.0)
+Requires-Dist: qai-chat (>=0.5.1,<0.6.0)
+Requires-Dist: torch (==2.3.0+cpu) ; sys_platform == "linux"
+Requires-Dist: torch (==2.3.0+cpu) ; sys_platform == "win32"
+Requires-Dist: torch (>=2.3.0,<3.0.0) ; sys_platform == "darwin"
+Requires-Dist: torch (>=2.3.0,<3.0.0) ; sys_platform == "darwin" and platform_machine == "arm64"
+Description-Content-Type: text/markdown
+
+# QAI-Server
+
+QAI-Server is a Docker-based application designed to be a web interface for other projects inside of QRev.
+
+## Features
+
+- Dockerized application for consistency and portability
+- Campaign management
+- Provides RESTful API endpoints for various tasks
+
+## Requirements
+
+- Python 3.11
+- Docker
+- Poetry
+
+## Getting Started
+
+Clone the Repository
+
+```bash
+git clone https://github.com/qrev-ai/qrev.git
+```
+
+Go to the project folder
+
+```bash
+cd qrev/ai/projects/server
+```
+
+## Setting up the .env file and config.toml file
+For the .env file you can see the example placed in `examples/example.env`
+
+### Build and Run with Docker
+
+Ensure that Docker is installed and running. Then, use the provided Makefile to build and run the project:
+
+1. **Build the Docker Image**
+
+   ```bash
+   make build
+   ```
+
+2. **Run the Application**
+
+   ```bash
+   make up
+   ```
+
+   The application should be running on [http://localhost:8081](http://localhost:8081).
+
+### Run Unit Tests
+
+Run the project's unit tests using the Makefile:
+
+```bash
+make test
+```
+
+## Makefile Commands
+
+- `make test`: Run all unit tests.
+- `make .build`: Build the project using Poetry.
+- `make publish`: Publish the project after building it.
+- `make heartbeat`: Check if the server is alive.
+- `make loglevel`: Set the server's log level.
+- `make list_collections`: List all collections from the Chroma API.
+- `make campaign`: Send a campaign query to the server.
+
+### AWS Commands
+
+- `make authenticate`: Authenticate to the AWS ECR.
+- `make deploy_service`: Deploy the service to an AWS ECS cluster.
+
+

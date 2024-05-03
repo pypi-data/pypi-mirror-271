@@ -1,0 +1,16 @@
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sideload_nu_0_bin_6633e4fae41b4d34e4eddc2a"
+version = "1.0.0"
+description = "Sideloaded package"
+requires-python = ">=3.8"
+authors = [
+  {name = "Null Void" }
+]
+
+[tool.setuptools.package-data]
+sideload_nu_0_bin_6633e4fae41b4d34e4eddc2a = ["*.*"]

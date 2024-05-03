@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: PrioNet
+Version: 0.0.0
+Summary: A package for analyizing financial data
+Project-URL: Homepage, https://github.com/QuantDreamGit/PrioNet
+Author-email: Giuseppe Priolo <priopio7@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3

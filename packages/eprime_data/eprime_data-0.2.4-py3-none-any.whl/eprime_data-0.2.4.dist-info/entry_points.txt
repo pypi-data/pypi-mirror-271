@@ -1,0 +1,3 @@
+[console_scripts]
+eprime_data=eprime_data.__main__:cli
+

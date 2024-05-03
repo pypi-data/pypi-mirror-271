@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: classnotation
+Version: 1.2
+Summary: A json to dataclass tool
+Author-email: Asher Glick <aglick@aglick.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+

@@ -1,0 +1,92 @@
+# Other project metadata fields as specified in:
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "core-db"
+description = "This project/library contains common elements and clients related to database engines..."
+version = "2.0.3"
+
+authors = [
+    {name = "Alejandro Cora González", email = "alek.cora.glez@gmail.com"}
+]
+
+maintainers = [
+    {name = "Alejandro Cora González"}
+]
+
+requires-python = ">=3.9"
+license = {text = "MIT"}
+readme = "README.md"
+
+classifiers = [
+    # Classifiers -> https://pypi.org/classifiers/
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.11",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "core-etl==1.0.3",
+    "core-mixins==1.0.4",
+    "core-tests==1.0.3"
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/bytecode-solutions/core/core-db"
+
+[tool.setuptools]
+packages = [
+    "core_db",
+    "core_db.engines",
+    "core_db.etls",
+    "core_db.interfaces"
+]
+
+[project.optional-dependencies]
+all = [
+    "PyMySQL==1.1.0",
+    "psycopg==3.1.18",
+    "psycopg-binary==3.1.18",
+    "oracledb==2.0.1",
+    "pyodbc==5.1.0",
+    "pymongo==4.6.0",
+    "snowflake-connector-python==3.7.1"
+]
+
+mysql = [
+    "PyMySQL==1.1.0"
+]
+
+postgre = [
+    "psycopg==3.1.18",
+    "psycopg-binary==3.1.18"
+]
+
+oracle = [
+    "oracledb==2.0.1"
+]
+
+mssql = [
+    "pyodbc==5.1.0"
+]
+
+mongo = [
+    "pymongo==4.6.0"
+]
+
+snowflake = [
+    "snowflake-connector-python==3.7.1"
+]
+
+db2 = [
+    "pyodbc==5.1.0"
+]

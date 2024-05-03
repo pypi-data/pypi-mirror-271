@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: clustering_algorithms
+Version: 0.3.0
+Summary: Clustering algorithms powered by Numpy
+Author-email: Yan Georget <yan.georget@gmail.com>
+Project-URL: Homepage, https://github.com/yangeorget/clustering-algorithms
+Project-URL: Issues, https://github.com/yangeorget/clustering-algorithms
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# Clustering algorithms powered by Numpy
+
+## How to install
+```
+pip install clustering-algorithms
+```
+
+

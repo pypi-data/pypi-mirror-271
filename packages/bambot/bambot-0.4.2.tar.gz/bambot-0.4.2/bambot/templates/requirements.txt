@@ -1,0 +1,6 @@
+click
+docker
+tqdm
+langchain
+flask
+flask-cors

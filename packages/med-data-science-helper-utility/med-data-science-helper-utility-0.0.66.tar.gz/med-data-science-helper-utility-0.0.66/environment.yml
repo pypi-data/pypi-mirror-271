@@ -1,0 +1,22 @@
+# conda
+name: venvOseeMed
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7.9
+  - pip
+  - pip:
+    - pip-tools
+    - tables==3.6.1
+    - simpledbf==0.2.6
+    - ipynb==0.5.1  
+    - data-science-helper-utility==0.0.111
+    - pandas==1.2.2
+    - seaborn==0.9.0
+    - scikit-learn==0.23.2
+  - gdal=3.2.2
+  - openpyxl==3.0.6
+  - pyxlsb==1.0.9
+  - twine==3.8.0
+  - ipykernel==6.16.2 

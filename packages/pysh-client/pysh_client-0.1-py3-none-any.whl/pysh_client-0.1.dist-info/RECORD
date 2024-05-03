@@ -1,0 +1,9 @@
+pysh/__init__.py,sha256=FU0HFgsyChHDsFWLn5k-2o-wrn_sgWLX3DWkE27ynEA,79
+pysh/api/__init__.py,sha256=oUHlEFo_jMH6QUAY4RV7EcqqPLFCiODitMf-Oa-6hyI,80
+pysh/api/client.py,sha256=-w5sA_hi2BgNePzihzZ7_pLrZlolgzDLzwa_HwCfuAE,6010
+pysh/api/schema.py,sha256=SHRNdIO4VFzOqhJER5Lo5vtfpA_Kr_bzi5_-0UHbOAA,2128
+pysh_client-0.1.dist-info/LICENSE,sha256=YvuKOpYh3COIF0yqq-nCMXtpS7mh1GyYvPVlW2j1G-M,11359
+pysh_client-0.1.dist-info/METADATA,sha256=1Fv9IqRwRiSO4Y7Rdrvff5JKZtPxvJMpjQc3-O3RoVg,19449
+pysh_client-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pysh_client-0.1.dist-info/top_level.txt,sha256=i4meo5tRHLLP183SQpyTSkQ8e8xndHs0udpkiRpVyxY,5
+pysh_client-0.1.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+modelmimic/__init__.py,sha256=oCUWYiDnOPzVT3MM0tiTd18-okN5rDqmXyQxAdt7vz0,886
+modelmimic/mimic.py,sha256=Yq3t5ejb4fQZlRKORkGSI427p7uf2hmxDP6KqhfKsDY,14248
+modelmimic/utils.py,sha256=kZugQMGqUGqdSnL6CKz-xZKH_4gUAM4qXbQZCtiRkQs,384
+modelmimic/config/MVK.toml,sha256=UcdAnX_VsRBWTPNHiLu6vbEoZJxcxR_Gk1oRDBxtLco,925
+modelmimic/config/TSC.toml,sha256=dT3mxioBUMeO3c4kuxK3O01hyWR-BJ3nd_VvY3g_QwQ,2714
+modelmimic-0.0.1.dist-info/LICENSE,sha256=EUO1mvsTtpyWivVhiLttRQWzfOPJ6pXRUbqfdfw3Afo,1487
+modelmimic-0.0.1.dist-info/METADATA,sha256=8_-WEIBKFo1RaV4_WartTayBCceVlesql-aTUiiZgVg,1134
+modelmimic-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+modelmimic-0.0.1.dist-info/top_level.txt,sha256=_xapzA9mMHp_AL6Tad_modR0ZnUHnT5fnbCBmXwLpGw,11
+modelmimic-0.0.1.dist-info/RECORD,,

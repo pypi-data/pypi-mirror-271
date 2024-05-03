@@ -1,0 +1,10 @@
+requests
+pytube
+yt-dlp>=2024.4.9
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+ruff
+build

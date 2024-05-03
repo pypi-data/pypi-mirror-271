@@ -1,0 +1,13 @@
+README.md
+setup.py
+foodie/__init__.py
+foodie/foodie.py
+foodie/taiwan-fda.py
+foodie/utils.py
+foodie/../data/TW_FDA_nutrition_items.csv
+nutrical.egg-info/PKG-INFO
+nutrical.egg-info/SOURCES.txt
+nutrical.egg-info/dependency_links.txt
+nutrical.egg-info/requires.txt
+nutrical.egg-info/top_level.txt
+test/test.py

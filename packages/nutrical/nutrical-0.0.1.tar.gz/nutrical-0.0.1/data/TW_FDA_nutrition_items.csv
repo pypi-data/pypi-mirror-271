@@ -1,0 +1,106 @@
+ID,Chinese,Unit
+NA,廢棄率,%
+NA,熱量,kcal
+Calories,修正熱量,kcal
+Water,水分,g
+Protein,粗蛋白,g
+Fat,粗脂肪,g
+Saturated fat,飽和脂肪,g
+Ash,灰分,g
+Carbohydrates,總碳水化合物,g
+Dietary fiber,膳食纖維,g
+Sugar,糖質總量,g
+Glucose,葡萄糖,g
+Fructose,果糖,g
+Lactose,半乳糖,g
+Maltose,麥芽糖,g
+Sucrose,蔗糖,g
+Lactose,乳糖,g
+Sodium,鈉,mg
+Potassium,鉀,mg
+Calcium,鈣,mg
+Magnesium,鎂,mg
+Iron,鐵,mg
+Zinc,鋅,mg
+Phosphorus,磷,mg
+Copper,銅,mg
+Manganese,錳,mg
+Total vitamin A,維生素A總量(IU),IU
+Retinol equivalent (RE),視網醇當量(RE),ug
+Retinol,視網醇,ug
+Alpha-carotene,α-胡蘿蔔素,ug
+Beta-carotene,β-胡蘿蔔素,ug
+Total vitamin D,維生素D總量(IU),IU
+Total vitamin D,維生素D總量,ug
+Vitamin D2,維生素D2,ug
+Vitamin D3,維生素D3,ug
+Total vitamin E,維生素E總量,mg
+Alpha-tocopherol equivalent (α-TE),α-維生素E當量(α-TE),mg
+Alpha-tocopherol,α-生育酚,mg
+Beta-tocopherol,β-生育酚,mg
+Gamma-tocopherol,γ-生育酚,mg
+Delta-tocopherol,δ-生育酚,mg
+Vitamin K1,維生素K1,ug
+Vitamin K2 (MK-4),維生素K2 (MK-4),ug
+Vitamin K2 (MK-7),維生素K2 (MK-7),ug
+Vitamin B1,維生素B1,mg
+Vitamin B2,維生素B2,mg
+Niacin,菸鹼素,mg
+Vitamin B6,維生素B6,mg
+Vitamin B12,維生素B12,ug
+Folate,葉酸,ug
+Vitamin C,維生素C,mg
+Total saturated fatty acids,脂肪酸S總量,mg
+Butyric acid (4:0),酪酸(4:0),mg
+Caproic acid (6:0),己酸(6:0),mg
+Caprylic acid (8:0),辛酸(8:0),mg
+Capric acid (10:0),癸酸(10:0),mg
+Lauric acid (12:0),月桂酸(12:0),mg
+Tridecanoic acid (13:0),十三酸(13:0),mg
+Myristic acid (14:0),肉豆蔻酸(14:0),mg
+Pentadecanoic acid (15:0),十五酸(15:0),mg
+Palmitic acid (16:0),棕櫚酸(16:0),mg
+Heptadecanoic acid (17:0),十七酸(17:0),mg
+Stearic acid (18:0),硬脂酸(18:0),mg
+Nonadecanoic acid (19:0),十九酸(19:0),mg
+Arachidic acid (20:0),花生酸(20:0),mg
+Behenic acid (22:0),山酸(22:0),mg
+Lignoceric acid (24:0),廿四酸(24:0),mg
+Total fatty acids,脂肪酸M總量,mg
+Myristoleic acid (14:1),肉豆蔻烯酸(14:1),mg
+Palmitoleic acid (16:1),棕櫚烯酸(16:1),mg
+Oleic acid (18:1),油酸(18:1),mg
+Gadoleic acid (20:1),鱈烯酸(20:1),mg
+Erucic acid (22:1),芥子酸(22:1),mg
+Total polyunsaturated fatty acids,脂肪酸P總量,mg
+Linoleic acid (18:2),亞麻油酸(18:2),mg
+Linolenic acid (18:3),次亞麻油酸(18:3),mg
+Stearidonic acid (18:4),十八碳四烯酸(18:4),mg
+Arachidonic acid (20:4),花生油酸(20:4),mg
+Eicosapentaenoic acid (20:5),廿碳五烯酸(20:5),mg
+Docosapentaenoic acid (22:5),廿二碳五烯酸(22:5),mg
+Docosahexaenoic acid (22:6),廿二碳六烯酸(22:6),mg
+Other fatty acids,其他脂肪酸,mg
+P/M/S,P/M/S,NA
+Trans fat,反式脂肪,mg
+Total hydrolyzed amino acids,水解胺基酸總量,mg
+Aspartic acid (Asp),天門冬胺酸(Asp),mg
+Threonine (Thr),酥胺酸(Thr),mg
+Serine (Ser),絲胺酸(Ser),mg
+Glutamic acid (Glu),麩胺酸(Glu),mg
+Proline (Pro),脯胺酸(Pro),mg
+Glycine (Gly),甘胺酸(Gly),mg
+Alanine (Ala),丙胺酸(Ala),mg
+Cysteine (Cys),胱胺酸(Cys),mg
+Valine (Val),纈胺酸(Val),mg
+Methionine (Met),甲硫胺酸(Met),mg
+Isoleucine (Ile),異白胺酸(Ile),mg
+Leucine (Leu),白胺酸(Leu),mg
+Tyrosine (Tyr),酪胺酸(Tyr),mg
+Phenylalanine (Phe),苯丙胺酸(Phe),mg
+Lysine (Lys),離胺酸(Lys),mg
+Histidine (His),組胺酸(His),mg
+Arginine (Arg),精胺酸(Arg),g
+Tryptophan (Trp),色胺酸(Trp),mg
+Cholesterol,膽固醇,mg
+Alcohol,酒精含量,g

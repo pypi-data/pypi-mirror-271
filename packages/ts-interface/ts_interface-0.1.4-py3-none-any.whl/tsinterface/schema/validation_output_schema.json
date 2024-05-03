@@ -1,0 +1,18 @@
+{
+  "$comment": "Created by ph@tordenskjold.space",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tordenskjold.space/schemas/validation_output_schema.json",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "validated": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "message",
+    "validated"
+  ]
+}

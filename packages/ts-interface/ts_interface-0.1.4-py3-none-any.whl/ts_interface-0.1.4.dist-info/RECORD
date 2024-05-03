@@ -1,0 +1,15 @@
+tsinterface/io/bbox_io.py,sha256=u2339yqbM9QseDzv-8TsXuP52iMJ6b5XwdE9zUG0u1c,392
+tsinterface/io/detection_io.py,sha256=RJ_VVkYMMO0JiL2Jo9vi-LY86FMZINuxfQei0uSKQTU,565
+tsinterface/io/distribution_io.py,sha256=FYG5AohPaC_W-uyG1FviuA38y7GFZyz4qzLtCO00jy4,396
+tsinterface/io/info_dto.py,sha256=9YmGZo1wCVpSeGSZABTWx3OkUJvJtXpq7jj-jeownqI,1427
+tsinterface/io/io.py,sha256=cNXnDCJbWzTudz5gr1f240ZG7H-27Gxhfv8raIdimTk,93
+tsinterface/io/label_io.py,sha256=bV7sSjynNH_W6ZaL2LBmzIWikvjvxCiv_4sXd8SorvM,400
+tsinterface/schema/load_output_schema.json,sha256=r0TYmJVcEVT0d80TVYs5ov2oNJWXc9Z39I_xlbIutIo,355
+tsinterface/schema/process_input_schema.json,sha256=Anbn91JkiPbCe6TgcB3wGf-288PdBj4C0QHC6vGocjM,305
+tsinterface/schema/process_output_schema.json,sha256=yMbf41PaF-9Q9cY8UfQFESNUPbbPxDXuSnjAXh4c-VM,3307
+tsinterface/schema/validation_output_schema.json,sha256=jiCexJdOGp6R5gVgI92SqaAzr3IbHnAK4AiHy2zEzKk,381
+tsinterface/ts_interface.py,sha256=PoQxkXl_K2PSh9h4SSNfxrBMFN9zNNzAKG9aibyWSac,833
+ts_interface-0.1.4.dist-info/LICENSE,sha256=woBMfAti8n7-Mv29Whb4YPhuE9CVjyH31f6WmAWkyb0,1069
+ts_interface-0.1.4.dist-info/METADATA,sha256=EcI2fM8ySMa-joS0Vu7tofWsLVFJR55HrlquA6stMZs,566
+ts_interface-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ts_interface-0.1.4.dist-info/RECORD,,

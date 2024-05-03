@@ -1,0 +1,2 @@
+[console_scripts]
+gemini_pdf_analyser = gemini_pdf_analyser.gemini_pdf_analyser:main

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "net-input"
+version = "1.0.0"
+dependencies = ['mouse', 'keyboard']
+requires-python = ">=3"
+authors = [{ name = "Pradish Bijukchhe", email = "pradish@sandbox.com.np" }]
+description = "Send mouse/keyboard inputs via network"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = []
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.urls]
+Homepage = "https://github.com/sandbox-pokhara/net-input"
+Issues = "https://github.com/sandbox-pokhara/net-input/issues"
+
+[project.scripts]
+net-input = "net_input.server:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+"net_input" = "net_input"
+
+[tool.isort]
+line_length = 79
+force_single_line = true
+
+[tool.black]
+line-length = 79
+preview = true
+
+[tool.pyright]
+typeCheckingMode = "strict"

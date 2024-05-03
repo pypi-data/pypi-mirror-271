@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/easyland/__init__.py
+src/easyland/command.py
+src/easyland/daemon.py
+src/easyland/idle.py
+src/easyland/log.py
+src/easyland/main.py
+src/easyland.egg-info/PKG-INFO
+src/easyland.egg-info/SOURCES.txt
+src/easyland.egg-info/dependency_links.txt
+src/easyland.egg-info/entry_points.txt
+src/easyland.egg-info/requires.txt
+src/easyland.egg-info/top_level.txt

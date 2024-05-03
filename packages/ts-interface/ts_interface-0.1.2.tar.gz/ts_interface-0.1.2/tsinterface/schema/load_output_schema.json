@@ -1,0 +1,18 @@
+{
+  "$comment": "Created by ph@tordenskjold.space",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tordenskjold.space/schemas/load.json",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "loaded": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "message",
+    "loaded"
+  ]
+}

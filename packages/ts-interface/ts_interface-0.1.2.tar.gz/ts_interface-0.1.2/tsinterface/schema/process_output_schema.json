@@ -1,0 +1,135 @@
+{
+  "$comment": "Created by ph@tordenskjold.space",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tordenskjold.space/schemas/output.json",
+  "type": "object",
+  "properties": {
+    "detections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "contentMediaType": "image/jpeg"
+          },
+          "classes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "probability": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "label",
+                "probability"
+              ]
+            }
+          },
+          "bbox": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "width": {
+                "type": "number"
+              },
+              "height": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "x",
+              "y",
+              "width",
+              "height"
+            ]
+          }
+        },
+        "ship_info": {
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "ship_types": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string"
+                  },
+                  "probability": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "label",
+                  "probability"
+                ]
+              }
+            },
+            "velocity_dist": {
+              "type": "object",
+              "properties": {
+                "mean": "number",
+                "std": "number"
+              },
+              "required": [
+                "mean"
+              ]
+            },
+            "heading_dist": {
+              "type": "object",
+              "properties": {
+                "mean": "number",
+                "std": "number"
+              },
+              "required": [
+                "mean"
+              ]
+            },
+            "beam_dist": {
+              "type": "object",
+              "properties": {
+                "mean": "number",
+                "std": "number"
+              },
+              "required": [
+                "mean"
+              ]
+            },
+            "length_dist": {
+              "type": "object",
+              "properties": {
+                "mean": "number",
+                "std": "number"
+              },
+              "required": [
+                "mean"
+              ]
+            }
+          },
+          "required": [
+            "latitude",
+            "longitude"
+          ]
+        }
+      }
+    }
+  }
+}

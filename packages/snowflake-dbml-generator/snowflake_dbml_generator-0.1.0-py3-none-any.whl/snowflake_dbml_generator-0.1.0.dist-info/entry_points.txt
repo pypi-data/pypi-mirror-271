@@ -1,0 +1,2 @@
+[console_scripts]
+snowflake-dbml = snowflake_dbml.generator:main

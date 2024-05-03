@@ -1,0 +1,8 @@
+README.md
+setup.py
+motivationalqpy/__init__.py
+motivationalqpy/quotes.py
+motivationalqpy.egg-info/PKG-INFO
+motivationalqpy.egg-info/SOURCES.txt
+motivationalqpy.egg-info/dependency_links.txt
+motivationalqpy.egg-info/top_level.txt

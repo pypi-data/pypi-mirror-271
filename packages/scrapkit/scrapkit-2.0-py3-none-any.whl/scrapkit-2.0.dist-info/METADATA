@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: scrapkit
+Version: 2.0
+Summary: WebScrapping in 3 lines of code
+Author: Ali Lodhi
+Author-email: alilodhibusiness@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests ==2.31.0
+Requires-Dist: bs4 ==0.0.2
+
+# ScrapKit 2.0 - WebScrapping is now easy
+
+## Usage
+
+In ScrapKit 2 We added a lot of new features such as `getMetaTags`, `getTextFromElement`, `getDataTables` and `getJsonData`
+
+## Syntax
+
+```python
+import scrapKit as sk
+
+# Extracting Meta Tags
+meta_tags = sk.getMetaTags('https://example.com')
+if meta_tags:
+    print("Meta Tags:")
+    for tag in meta_tags:
+        print(tag)
+
+# Extracting Text from Specific HTML Elements
+paragraph_text = sk.getTextFromElement('https://example.com', 'p')
+if paragraph_text:
+    print("\nText from <p> elements:")
+    print(paragraph_text)
+
+# Extracting Data Tables
+table_data = sk.getDataTables('https://example.com/data.html')
+if table_data:
+    print("\nData Tables:")
+    for row in table_data:
+        print(row)
+
+# Extracting JSON Data
+json_content = sk.getJsonData('https://example.com/api/data')
+if json_content:
+    print("\nJSON Data:")
+    print(json_content)
+
+
+```
+
+# Founder
+
+ScrapKit is a very useful python package that is made by the one and only "Ali Lodhi". Ali Lodhi is from Pakistan, He loves to write code in python and try to easy people's work. Recently Ali Lodhi is working on the next update of this package
+
+# Versions
+
+## ScrapKit 1 (Old)
+
+- ScrapKit 1.0 - It provide you to fetch whole HTML of the website
+- ScrapKit 1.1 - It provides you to fetch HTML, Title and the Text of the website
+- ScrapKit 1.2 - You can save the Fetched HTML in a `.html` file
+- ScrapKit 1.3 - Bug Fixes
+- ScrapKit 1.4 - You can fetch the links given in any website
+- ScrapKit 1.5 - You can also fetch the URL of the image on the webpage
+- ScrapKit 1.6 - Now you can get Elements data by using their IDs and Classes
+- ScrapKit 1.7 - Bug Fixes
+
+## ScrapKit 2 (Latest)
+
+- ScrapKit 2.0 - Added 4 new features 

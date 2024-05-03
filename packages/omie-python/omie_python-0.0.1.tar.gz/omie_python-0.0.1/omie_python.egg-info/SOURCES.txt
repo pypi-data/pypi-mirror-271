@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+omie/__init__.py
+omie/__main__.py
+omie/client.py
+omie/exceptions.py
+omie/methods.py
+omie/schemas.py
+omie_python.egg-info/PKG-INFO
+omie_python.egg-info/SOURCES.txt
+omie_python.egg-info/dependency_links.txt
+omie_python.egg-info/entry_points.txt
+omie_python.egg-info/requires.txt
+omie_python.egg-info/top_level.txt

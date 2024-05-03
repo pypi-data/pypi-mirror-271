@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "defijn-integrations"
+version = "0.1.0"
+description = "Defijn's package providing integrations for various third-party APIs such as Everhour, GitLab and Clickup."
+authors = ["Jonathan <jonathan@defijn.io>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/defijn-io/defijn-integrations"
+homepage = "https://defijn.io"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+rich = "^13.7.0"
+python-gitlab = "^4.4.0"
+questionary = "^2.0.1"
+textual = "^0.58.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+# If your package includes a CLI, specify the entry point here
+# main = 'defijn_integrations.main:main_function'
+

@@ -1,0 +1,37 @@
+{
+  "state_data": {
+    "s": {
+      "type": "susceptible"
+    },
+    "e": {
+      "type": "infected"
+    },
+    "i": {
+      "type": "infected"
+    },
+    "r": {
+      "type": "recovered"
+    }
+  },
+  "trans_data": [
+    {
+      "source": "i",
+      "target": "r",
+      "param": "gamma"
+    },
+    {
+      "source": "e",
+      "target": "i",
+      "param": "alpha"
+    }
+  ],
+  "tms_rules": [
+    {
+      "source": "s",
+      "target": "e",
+      "actors-params": {
+        "i": null
+      }
+    }
+  ]
+}

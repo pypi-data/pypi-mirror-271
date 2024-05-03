@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.cfg
+setup.py
+ztarxte/__init__.py
+ztarxte/ztarxte.py
+ztarxtes.egg-info/PKG-INFO
+ztarxtes.egg-info/SOURCES.txt
+ztarxtes.egg-info/dependency_links.txt
+ztarxtes.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+[paths]
+source = src
+
+[run]
+branch = true
+source =
+    src
+    tests
+parallel = true
+plugins = Cython.Coverage
+
+[report]
+show_missing = true
+precision = 2

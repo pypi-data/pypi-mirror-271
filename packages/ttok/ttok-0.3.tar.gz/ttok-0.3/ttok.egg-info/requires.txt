@@ -1,0 +1,6 @@
+click
+tiktoken
+
+[test]
+pytest
+cogapp

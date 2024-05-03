@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tests/test_ttok.py
+ttok/__init__.py
+ttok/__main__.py
+ttok/cli.py
+ttok.egg-info/PKG-INFO
+ttok.egg-info/SOURCES.txt
+ttok.egg-info/dependency_links.txt
+ttok.egg-info/entry_points.txt
+ttok.egg-info/requires.txt
+ttok.egg-info/top_level.txt

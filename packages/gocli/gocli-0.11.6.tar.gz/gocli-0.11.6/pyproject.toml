@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gocli"
+authors = [
+    {name = "Ian Maurer", email = "ian@genomoncology.com"},
+]
+description = "gocli"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "click==8.1.7",
+    "pydantic",
+    "cytoolz",
+    'glom',
+    'pygments',
+    'openpyxl',
+    "gosdk>=0.10.3",
+    "govcf>=0.9.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+  'pytest',
+  'pytest-asyncio',
+  'mock',
+  'pylint',
+  'flake8',
+]
+
+[project.scripts]
+gocli = "genomoncology.cli.commands:gocli"
+
+[tool.setuptools.dynamic]
+version = {attr = "genomoncology.cli.commands.VERSION"}
+
+[tool.pylint]
+max-line-length = 120
+disable = [
+    "C",     # Convention
+    "R",     # Refactor
+    "E0401", # import-error
+
+    # for pipeline code
+    'E1120', # no-value-for-parameter
+    'W0622', # redefined-builtin
+]

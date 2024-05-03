@@ -1,0 +1,15 @@
+click==8.1.7
+pydantic
+cytoolz
+glom
+pygments
+openpyxl
+gosdk>=0.10.3
+govcf>=0.9.0
+
+[dev]
+pytest
+pytest-asyncio
+mock
+pylint
+flake8

@@ -1,0 +1,14 @@
+<div i18n:domain="pyams_app_msc">
+	<div class="alert alert-info">
+		<span i18n:translate="">Session date: <strong i18n:name="date">${view.start_date}</strong>.</span>
+		<tal:if define="version view.get_version()"
+		        condition="version"><br />
+			<span i18n:translate="">Proposed version: <strong i18n:name="version">${version}</strong></span>
+		</tal:if>
+	</div>
+	<div class="alert alert-warning"
+		 tal:define="comments view.view.session.comments"
+		 tal:condition="comments">
+		${structure:tales:html(comments)}
+	</div>
+</div>

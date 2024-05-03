@@ -1,0 +1,13 @@
+kaiju_app/__init__.py,sha256=rhZoLvFPQf3_TyVqS_MTrKyJiHcn5hfioF7BDeoWjOM,314
+kaiju_app/app.py,sha256=cu86bZifQgi8OjaeTgLYKzBI5DH41youQPKDhLjt7sk,16909
+kaiju_app/bases.py,sha256=5I-Icjqe-2MaNV9GseDE0hOHlJPW4tCZkSTLcR0e26k,1473
+kaiju_app/configurator.py,sha256=4S56zroYvZrk2CP2_aAnt_2b63mdOG2JXLTX1tRe3wI,4545
+kaiju_app/interfaces.py,sha256=Rkz0pDMk_0AUC8MwOSTrq7cbhhCiXQISdpb5CJKIPGw,314
+kaiju_app/loader.py,sha256=n7e7piO86Ym4rp_-wpeu7dfz5lOevF_vPeHnQP82-EQ,10494
+kaiju_app/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaiju_app/utils.py,sha256=kkU_ENfQj2OfPgde193iYK3tOJkfeX-aGmt-sm5Q0TA,14232
+kaiju_app-0.1.4.dist-info/LICENSE,sha256=VikX3YBzWiCgZEgI93vz50l4NdJDPjkmxFbYK9IogJ8,1069
+kaiju_app-0.1.4.dist-info/METADATA,sha256=cJ4ci2voiHq34NG_SDWtpPmjg1b62H6yC6CgBtIaIPw,5156
+kaiju_app-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kaiju_app-0.1.4.dist-info/top_level.txt,sha256=oaPejx2Wf_jdrr583PfUJWkCx3c4XqOCJGPVrNTQVbg,10
+kaiju_app-0.1.4.dist-info/RECORD,,

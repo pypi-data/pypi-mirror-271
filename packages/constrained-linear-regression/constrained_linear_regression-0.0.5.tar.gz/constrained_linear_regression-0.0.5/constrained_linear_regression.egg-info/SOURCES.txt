@@ -1,0 +1,15 @@
+README.md
+setup.py
+constrained_linear_regression/__init__.py
+constrained_linear_regression/base.py
+constrained_linear_regression/constrained_linear_regression.py
+constrained_linear_regression/matrix_constrained_linear_regression.py
+constrained_linear_regression/multi_constrained_linear_regression.py
+constrained_linear_regression.egg-info/PKG-INFO
+constrained_linear_regression.egg-info/SOURCES.txt
+constrained_linear_regression.egg-info/dependency_links.txt
+constrained_linear_regression.egg-info/requires.txt
+constrained_linear_regression.egg-info/top_level.txt
+tests/test_clr_basic.py
+tests/test_clr_multi.py
+tests/test_shape_check.py

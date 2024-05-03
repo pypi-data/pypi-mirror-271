@@ -1,0 +1,2 @@
+kubernetes>=21.7.0
+polling>=0.3.2

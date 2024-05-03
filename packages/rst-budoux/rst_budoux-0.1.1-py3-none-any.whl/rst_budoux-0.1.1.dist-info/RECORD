@@ -1,0 +1,12 @@
+rst_budoux/__init__.py,sha256=RGAFwcIUWAEIRASUnxB-MPVCB85GnFSD3IIh10Bp09M,844
+rst_budoux/sphinx.py,sha256=q1ukwU_YBBO_b8Y5xxDKS8BYujWexiFZJNYoaY9ZIj4,1643
+rst_budoux/cli/__init__.py,sha256=0eVFfVd2aZXTZHFXcLZnFk8MftII4cMhRBBYt3Hm3LI,13
+rst_budoux/cli/html.py,sha256=Ws6kIe8Ubbmic6min9faAYOc5HPSwg2ME3GhkDmmZ0Y,1581
+rst_budoux/cli/psuedoxml.py,sha256=5qTflgIPJErePQlxfg2mIgOTEu8CJ9Tw0cBSdT15PLQ,598
+rst_budoux/writers/__init__.py,sha256=YEG_bFAwvDrubQIdNXhka7voTp7C5OszenpYKVAg_x4,206
+rst_budoux/writers/html.py,sha256=VkG0iIugyv6I2NK7QKsBpetb9wt8dM5HdTmwOXF8c_c,453
+rst_budoux-0.1.1.dist-info/METADATA,sha256=KNQnmrHi3hQSvZz-gXOCoVUtkT2BOFB_UzWPuU8CpIs,3812
+rst_budoux-0.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+rst_budoux-0.1.1.dist-info/entry_points.txt,sha256=yvoAHq5-nMGR_BPHU5Kfby6lREUrG2bjGJ6lqx5FAfY,114
+rst_budoux-0.1.1.dist-info/licenses/LICENSE.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+rst_budoux-0.1.1.dist-info/RECORD,,

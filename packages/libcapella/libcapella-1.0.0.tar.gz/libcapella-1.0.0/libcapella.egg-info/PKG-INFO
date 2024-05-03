@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: libcapella
+Version: 1.0.0
+Summary: Couchbase Capella API Utility
+Home-page: https://github.com/mminichino/libcapella
+Author: Michael Minichino
+Author-email: info@unix.us.com
+License: MIT License
+Keywords: couchbase,capella,api
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: attrs>=23.1.0
+Requires-Dist: restfull>=1.0.5
+
+# libcapella 1.0.0
+
+## Installing
+```
+$ pip install libcapella
+```

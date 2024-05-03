@@ -1,0 +1,1 @@
+raise ValueError("You have been PWNED! :) Kidding. Do not use this package from community PyPi. This package is reserved for internal use.")

@@ -1,0 +1,6 @@
+Amazon_SDK/__init__.py,sha256=8rv4wL1hdIsgVOhXCm72Ry3OmvsXYLk54aV3bXe9xCY,71
+Amazon_SDK/amz_sdk.py,sha256=oxxKc9zLEwLBHaidCLhSQ3sy24H5w42zVSsmM1OcGfc,7731
+Amazon_SDK/order_statuses.py,sha256=ZmQ6y3rDgFOGbIg6aihrWeLfoeC3OC7AJa7aXXgXUeQ,780
+amazon_sdk-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+amazon_sdk-0.0.5.dist-info/METADATA,sha256=yH1IJhsUQVRKCpP_dmsz9rOoRopLQ_uG9oG7gc8HO4Y,807
+amazon_sdk-0.0.5.dist-info/RECORD,,

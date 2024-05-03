@@ -1,0 +1,34 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["quasim", "quasim.gates"]
+
+[project]
+name = "quasim"
+version = "0.1.0"
+description = "Efficient simulation of quantum computing circuits."
+readme = "README.md"
+authors = [{ name = "Christoph Stein"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+keywords = ["quantum", "quantum computing", "quantum computing simulator", "simulation", "simulator", "quantum circuit simulator", "quantum circuit"]
+dependencies = [
+    "numpy >= 1.26.0",
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/westoun/quasim"
+Issues = "https://github.com/westoun/quasim/issues"
+
+[project.optional-dependencies]
+benchmark = ["qiskit==0.45.1", "qiskit-aer==0.13.1", "qiskit-terra==0.45.1", "scipy==1.13.0"]

@@ -1,0 +1,7 @@
+numpy>=1.26.0
+
+[benchmark]
+qiskit==0.45.1
+qiskit-aer==0.13.1
+qiskit-terra==0.45.1
+scipy==1.13.0

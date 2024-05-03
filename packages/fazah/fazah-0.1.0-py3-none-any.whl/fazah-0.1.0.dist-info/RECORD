@@ -1,0 +1,10 @@
+Library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Library/myfunctions.py,sha256=3bDubQf9Aurh6BWzhgfQeCIZD-lWFGUXlM5VIyG8zVw,1221
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.openai.py,sha256=RdG2n_jRXLlsGVwuaVwX9GA0Zr_7ezn_ehoUwLPD5c8,1226
+tests/test_anthropic.py,sha256=PpEPYwxRraW4-VwGzswBDiTt2gd8ONIOcnu6KFuhJ0k,1205
+tests/test_gemini.py,sha256=jo1ncOaxES91K8mn7qCI8mf_9Udw1Ztme6RWpp_GMAE,1328
+fazah-0.1.0.dist-info/METADATA,sha256=3e_GGZkrSvVdbxE1F08k7ko39rerNaF0Vlxu_EHoEzg,282
+fazah-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fazah-0.1.0.dist-info/top_level.txt,sha256=f3pbt1zInWl2z7MeYXQ8mKKMyQgGx2VTpZse-leXFD0,14
+fazah-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fazah
+Version: 0.1.0
+Summary: A library for multilingual translation using language models
+Author: Aiden Lang, Will Foster
+Author-email: ajlang5@wisc.edu, wjfoster2@wisc.edu
+Requires-Dist: deep-translator
+Requires-Dist: langdetect
+Requires-Dist: openai
+

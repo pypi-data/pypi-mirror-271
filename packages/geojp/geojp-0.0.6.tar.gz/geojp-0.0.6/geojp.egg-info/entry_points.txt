@@ -1,0 +1,2 @@
+[console_scripts]
+geojp = geojp.cli:main

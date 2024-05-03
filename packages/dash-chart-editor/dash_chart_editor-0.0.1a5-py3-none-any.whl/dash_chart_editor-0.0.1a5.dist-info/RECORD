@@ -1,0 +1,13 @@
+dash_chart_editor/DashChartEditor.py,sha256=rmsSjd-3Pz6bpzKCCN4Q_fW0J2G0hmXDgC4nmdXoEbU,4390
+dash_chart_editor/__init__.py,sha256=saopG5Tz1_A5ZSuaFM3WDMiC-p_e5-DhgBMkoNlJ7_I,2618
+dash_chart_editor/_imports_.py,sha256=ZoN_HVZBJmrGokzq_PkhZX-vNavvH4eQ6urnYZ6_nNQ,85
+dash_chart_editor/dash_chart_editor.min.js,sha256=IILWoxew7SJ4QKEx94PsrVoBqnuYkQYtASZo6nJINek,2606495
+dash_chart_editor/dash_chart_editor.min.js.map,sha256=byyGXZl8CDRdnUDHJ9YUtQWRv6_Twj8WEsch6Z3GyXk,7194427
+dash_chart_editor/metadata.json,sha256=Px-sw7XzG9tOKas0hxnCjuX_FoM4lw7r14wfr3aH5_0,8006
+dash_chart_editor/package-info.json,sha256=jazpGACMjk0tlgv_fpDf6j4ZOUJ-z4EItdS5lvacXPY,2421
+dash_chart_editor/utils.py,sha256=pJtL67wzTExHlbPAnPHlObUAfpozZLPC2gpiJLxCpaY,17171
+dash_chart_editor-0.0.1a5.dist-info/LICENSE,sha256=CnbDU0bs1nX0547i5k2I5UDxHXJ6h86-uiavTq219AU,1078
+dash_chart_editor-0.0.1a5.dist-info/METADATA,sha256=O1gLUnxB0j3u3ATvtWQr1zFN6t61q10dgAwTV_0FEig,6558
+dash_chart_editor-0.0.1a5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dash_chart_editor-0.0.1a5.dist-info/top_level.txt,sha256=Pazb4zMv1UfzNvpGLdGHutawiZuCRxDhUcjRBu3OndA,18
+dash_chart_editor-0.0.1a5.dist-info/RECORD,,

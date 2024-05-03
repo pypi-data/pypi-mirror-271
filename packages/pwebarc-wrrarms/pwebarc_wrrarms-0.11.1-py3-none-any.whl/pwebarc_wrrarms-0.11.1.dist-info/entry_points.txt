@@ -1,0 +1,2 @@
+[console_scripts]
+wrrarms = wrrarms.__main__:main

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hellologger"
+version = "0.2.2"
+description = ""
+authors = ["快乐的老鼠宝宝 <laoshubaby@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/OSMChina/Yuheng"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+packages = [{ include = "hellologger", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+loguru = "^0.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

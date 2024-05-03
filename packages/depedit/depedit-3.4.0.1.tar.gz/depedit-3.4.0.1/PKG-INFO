@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: depedit
+Version: 3.4.0.1
+Summary: A simple configurable tool for manipulating dependency trees
+Home-page: https://github.com/amir-zeldes/depedit
+Download-URL: https://github.com/amir-zeldes/depedit/releases/tag/3.4.0.1
+Author: Amir Zeldes
+Author-email: amir.zeldes@georgetown.edu
+License: Apache License, Version 2.0
+Keywords: NLP,parsing,syntax,dependencies,dependency,tree,treebank,conll,conllu,ud,enhanced
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt

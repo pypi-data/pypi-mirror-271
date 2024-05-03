@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mdtl"
+version = "0.1.0"
+description = "Lint your markdown tables with CJK letters."
+authors = ["Philip Fan <topfyf@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+mdtl = "mdtl:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.2"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: yawebview
+Version: 0.2.6
+Summary: Yet Another Webview Library
+Author-email: Webyfy <info@webyfy.com>
+Project-URL: Repository, https://gitlab.com/webyfy/iot/e-gurukul/yawebview
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: pyside2
+Requires-Dist: PySide2; extra == "pyside2"
+
+# yawebview
+yawebview(Yet Another Webview library) that helps you build cross platform GUI for python applications using web technologies(HTML, JavaScript and CSS).
+
+yawebview is tailor-made for [YADE](https://gitlab.com/webyfy/iot/e-gurukul/yade) development. yawebview contains common code that we were going to write anyway.
+

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/yawebview/QtSingleApplication.py
+src/yawebview/__init__.py
+src/yawebview/sighandler.py
+src/yawebview/webview.py
+src/yawebview.egg-info/PKG-INFO
+src/yawebview.egg-info/SOURCES.txt
+src/yawebview.egg-info/dependency_links.txt
+src/yawebview.egg-info/requires.txt
+src/yawebview.egg-info/top_level.txt

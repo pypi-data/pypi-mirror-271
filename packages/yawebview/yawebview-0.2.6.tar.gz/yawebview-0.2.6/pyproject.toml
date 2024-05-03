@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yawebview"
+dynamic = ["version"]
+authors = [
+    {name = "Webyfy", email = "info@webyfy.com"},
+]
+description = "Yet Another Webview Library"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: User Interfaces",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+pyside2 = ["PySide2"]
+
+[project.urls]
+Repository = "https://gitlab.com/webyfy/iot/e-gurukul/yawebview"
+
+[tool.setuptools.dynamic]
+version = {attr = "yawebview.__version__"}
+
+[tool.black]
+line-length = 79

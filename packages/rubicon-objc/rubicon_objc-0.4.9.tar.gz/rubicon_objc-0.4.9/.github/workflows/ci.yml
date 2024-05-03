@@ -1,0 +1,90 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_call:
+    outputs:
+      artifact-name:
+        description: "Name of the uploaded artifact; use for artifact retrieval."
+        value: ${{ jobs.package.outputs.artifact-name }}
+
+# Cancel active CI runs for a PR before starting another run
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pre-commit:
+    name: Pre-commit checks
+    uses: beeware/.github/.github/workflows/pre-commit-run.yml@main
+    with:
+      runner-os: "macos-latest"
+
+  towncrier:
+    name: Check towncrier
+    uses: beeware/.github/.github/workflows/towncrier-run.yml@main
+    with:
+      runner-os: "macos-latest"
+
+  package:
+    name: Python Package
+    uses: beeware/.github/.github/workflows/python-package-create.yml@main
+    with:
+      runner-os: "macos-latest"
+
+  unit-tests:
+    name: Unit tests
+    needs: [pre-commit, towncrier, package]
+    runs-on: ${{ matrix.platform }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [
+          # X86-64 runners
+          "macos-11", "macos-12", "macos-13",
+          # M1 runners
+          "macos-14"
+        ]
+        python-version: [ "3.8", "3.9", "3.10", "3.11", "3.12", "3.13-dev" ]
+        include:
+          - experimental: false
+          - python-version: "3.13-dev"
+            experimental: true
+
+        exclude:
+          # actions/setup-python doesn't provide Python3.8 or 3.9 for M1.
+          - platform: "macos-14"
+            python-version : "3.8"
+
+          - platform: "macos-14"
+            python-version : "3.9"
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4.1.4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5.1.0
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Get packages
+      uses: actions/download-artifact@v4.1.7
+      with:
+        name: ${{ needs.package.outputs.artifact-name }}
+        path: dist
+
+    - name: Install dev dependencies
+      run: |
+        # We don't actually want to install rubicon;
+        # we just want the dev extras so we have a known version of tox.
+        python -m pip install $(ls dist/rubicon_objc-*.whl)[dev]
+
+    - name: Test
+      run: |
+        tox -e py --installpkg dist/rubicon_objc-*.whl

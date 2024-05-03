@@ -1,0 +1,6 @@
+acme
+certbot
+setuptools
+
+[test]
+pytest

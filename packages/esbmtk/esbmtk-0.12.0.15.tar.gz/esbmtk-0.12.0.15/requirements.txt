@@ -1,0 +1,11 @@
+python >= 3.9
+matplotlib
+numpy
+pandas
+scipy
+pint
+typing
+os
+psutil
+numba
+PyCO2SYS

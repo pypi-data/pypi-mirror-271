@@ -1,0 +1,10 @@
+sturgmap/__init__.py,sha256=InhxLrphmJANRWfV0GInx53tXBFHzQ9BKHSFHWGoAqg,158
+sturgmap/common.py,sha256=dkXry15qek_l_3imL6IYqSy9Yj7FmC8lqQ8kW5x_joI,190
+sturgmap/foliumap.py,sha256=H531TO06PHxA23wbXslVZNshzttWbykZ8UDImNtJbhw,8265
+sturgmap/sturgmap.py,sha256=0Lsif1OfNhvQuFqWjGysCfX98fryH0i9VqcR3MkUzeQ,13735
+sturgmap-0.0.6.dist-info/LICENSE,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sturgmap-0.0.6.dist-info/METADATA,sha256=DbC-QC_xoSpi1pOyDWwpPpy2_3ACOiHQu6fLyO2tLvE,1535
+sturgmap-0.0.6.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+sturgmap-0.0.6.dist-info/entry_points.txt,sha256=EWpaKDiVs3y8-x4O19WFGxxBNuy9LFs-g0Wkm4F5n0U,47
+sturgmap-0.0.6.dist-info/top_level.txt,sha256=CbqczZmiOaYBfjCLWAbIlPIOqLqtE4mRR2KLPwl7P5s,9
+sturgmap-0.0.6.dist-info/RECORD,,

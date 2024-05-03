@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-cooperative
+Version: 14.0.20240502.0
+Summary: Meta package for oca-cooperative Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-cooperator
+Requires-Dist: odoo14-addon-cooperator-portal
+Requires-Dist: odoo14-addon-cooperator-website
+Requires-Dist: odoo14-addon-l10n-be-cooperator
+Requires-Dist: odoo14-addon-l10n-be-cooperator-national-number
+Requires-Dist: odoo14-addon-l10n-be-cooperator-portal
+Requires-Dist: odoo14-addon-l10n-es-cooperator
+
+UNKNOWN
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gemini_pdf_analyser/gemini_pdf_analyser.py
+gemini_pdf_analyser.egg-info/PKG-INFO
+gemini_pdf_analyser.egg-info/SOURCES.txt
+gemini_pdf_analyser.egg-info/dependency_links.txt
+gemini_pdf_analyser.egg-info/entry_points.txt
+gemini_pdf_analyser.egg-info/requires.txt
+gemini_pdf_analyser.egg-info/top_level.txt

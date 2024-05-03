@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: gemini_pdf_analyser
+Version: 1
+Summary: This package contains implementation of a PDF file analyser with Google Gemini AI integrated into it.
+Home-page: https://github.com/SoftwareApkDev/gemini_pdf_analyser
+Author: SoftwareApkDev
+Author-email: softwareapkdev2022@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gemini_ai_app_downloader
+
+# gemini_pdf_analyser
+
+**Gemini PDF Analyser** is an application used to analyse PDF files with Google Gemini AI integrated into it.
+
+# Source Code
+
+The source code of the application **Gemini PDF Analyser** is available in 
+[Source Code](https://github.com/SoftwareApkDev/gemini_pdf_analyser/blob/master/gemini_pdf_analyser/gemini_pdf_analyser.py).
+
+# Installation
+
+```
+pip install gemini_pdf_analyser
+```
+
+# How to Use the Application?
+
+Pre-requisites:
+
+1. [Python](https://www.python.org/downloads/) installed in your device.
+2. .env file in the same directory as <GEMINI_PDF_ANALYSER_DIRECTORY> and has the value of GEMINI_API_KEY.
+
+```
+cd <GEMINI_PDF_ANALYSER_DIRECTORY>
+python3 gemini_pdf_analyser.py
+```
+
+**Note:** Replace <GEMINI_PDF_ANALYSER_DIRECTORY> with the path to the directory of the 
+application **Gemini PDF Analyser**.
+
+Then, the application will start with something looking like in the screenshot below.
+
+![Application](images/Application.png)
+
+You will then be asked to input the following values.
+
+1. Temperature - between 0 and 1 inclusive
+2. Top P - between 0 and 1 inclusive
+3. Top K - at least 1
+4. Max output tokens - at least 1
+
+The following screenshot shows what is displayed after inputting the mentioned values.
+
+![PDF File Path Input](images/PDF%20File%20Path%20Input.png)
+
+You will be required to input the path to the PDF file you want to analyse. Then, you will be asked 
+to enter your question for analysis.
+
+![Question Input](images/Question%20Input.png)
+
+Once you entered your question, the application will display the answer based on your 
+question and the contents of the PDF file.
+
+![AI Response](images/AI%20Response.png)
+
+Then, you will be asked whether you want to continue using the application or not. 
+Enter "Y" for yes. Enter anything else for no.

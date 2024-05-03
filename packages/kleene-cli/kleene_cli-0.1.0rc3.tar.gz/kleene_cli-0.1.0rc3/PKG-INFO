@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: kleene-cli
+Version: 0.1.0rc3
+Summary: Klee - Kleene's CLI tool.
+Home-page: https://kleene.dev/
+License: BSD-2-Clause
+Keywords: container,FreeBSD,deployment
+Author: Lasse Grinderslev Andersen
+Author-email: lasse@philomath.dk
+Maintainer: Lasse Grinderslev Andersen
+Maintainer-email: lasse@philomath.dk
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: attrs (>=23.2.0,<24.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: websockets (>=12.0,<13.0)
+Project-URL: Documentation, https://kleene.dev/
+Project-URL: Repository, https://github.com/kleene-project/klee
+Description-Content-Type: text/markdown
+
+# Klee
+
+Klee is the CLI tool for Kleene, a container management tool
+for FreeBSD. An introduction to Kleene can be found [here](https://kleene.dev/get-started/overview/).
+
+See the [project webpage](https://kleene.dev) for more information.
+

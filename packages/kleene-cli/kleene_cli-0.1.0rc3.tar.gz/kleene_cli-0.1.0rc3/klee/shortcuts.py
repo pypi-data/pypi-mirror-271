@@ -1,0 +1,22 @@
+SHORTCUTS = {
+    # Format: (<shortcut name>, <source command>)
+    "build": "image build",
+    "create": "container create",
+    "exec": "container exec",
+    "start": "container start",
+    "stop": "container stop",
+    "restart": "container restart",
+    "isc": "container inspect",
+    "isi": "image inspect",
+    "isn": "network inspect",
+    "isv": "volume inspect",
+    "lsc": "container ls",
+    "lsi": "image ls",
+    "lsn": "network ls",
+    "lsv": "volume ls",
+    "rmc": "container rm",
+    "rmi": "image rm",
+    "rmn": "network rm",
+    "rmv": "volume rm",
+    "run": "container run",
+}

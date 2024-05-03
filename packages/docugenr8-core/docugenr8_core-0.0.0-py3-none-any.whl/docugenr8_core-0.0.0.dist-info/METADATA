@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: docugenr8-core
+Version: 0.0.0
+Summary: Docugenr8 add-on library for core operations
+Author-email: Vladimir Jovanovic <vladimirjo@protonmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fonttools
+Requires-Dist: docugenr8-shared <1.0.0,>=0.0.0
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: setuptools ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: tox ; extra == 'build'
+Provides-Extra: check
+Requires-Dist: ruff ; extra == 'check'
+Requires-Dist: mypy ; extra == 'check'
+Provides-Extra: dev
+Requires-Dist: docugenr8-cicd[build,check,test] ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# docugenr8-core Library
+
+docugenr8-core is a Python library add-on for core operations.

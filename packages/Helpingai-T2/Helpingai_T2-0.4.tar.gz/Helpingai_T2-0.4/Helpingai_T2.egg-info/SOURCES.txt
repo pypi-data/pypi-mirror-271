@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Helpingai_T2/Labs.py
+Helpingai_T2/Search.py
+Helpingai_T2/__init__.py
+Helpingai_T2.egg-info/PKG-INFO
+Helpingai_T2.egg-info/SOURCES.txt
+Helpingai_T2.egg-info/dependency_links.txt
+Helpingai_T2.egg-info/requires.txt
+Helpingai_T2.egg-info/top_level.txt

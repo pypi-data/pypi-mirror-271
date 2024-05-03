@@ -1,0 +1,2 @@
+[console_scripts]
+aws-ar = aws_ar.aws_ar:main

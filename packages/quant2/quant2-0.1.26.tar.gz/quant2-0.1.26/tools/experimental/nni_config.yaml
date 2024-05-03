@@ -1,0 +1,27 @@
+# nnictl create --config tools/experimental/nni_config.yaml --port 8080
+experimentName: FootBall
+
+searchSpaceFile: nni_search_space.json
+
+trialCommand: python main.py
+trialCodeDirectory: .
+trialConcurrency: 1
+maxExperimentDuration: 24h
+maxTrialNumber: 300
+
+# Tuners: 'TPE', 'GridSearch', 'Evolution', 'Anneal', 'SMAC'
+tuner:
+  name: GridSearch
+  classArgs:
+    optimize_mode: maximize
+
+# Assessors: 'Medianstop', 'Curvefitting'
+assessor:
+  name: Curvefitting
+  classArgs:
+    epoch_num: 30
+    start_step: 5
+
+trainingService:
+  platform: local
+  useActiveGpu: True

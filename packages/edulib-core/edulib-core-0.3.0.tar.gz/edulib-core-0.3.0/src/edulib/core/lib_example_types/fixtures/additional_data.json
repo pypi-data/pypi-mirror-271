@@ -1,0 +1,12 @@
+[
+    {
+        "pk": 7,
+        "model": "lib_example_types.libraryexampletype", 
+        "fields": {
+            "code": "e9f6fa8d-2174-50c8",
+            "name": "Научно-популярная литература",
+            "created": "2018-11-22T07:00:00.000+04:00",
+            "modified": "2018-11-22T07:00:00.000+04:00"
+        }
+    }
+]

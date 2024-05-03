@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: edulib-core
+Version: 0.3.0
+Summary: Ядро продукта "Библиотека"
+Author-email: "АО \"БАРС Груп\"" <education_dev@bars-open.ru>
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools; python_version >= "3.12"
+Requires-Dist: Django<5.1,>=3.2
+Requires-Dist: explicit<3,>=2.1.0
+Requires-Dist: explicit-django<2.0,>=1.0
+Requires-Dist: pydantic<2
+Requires-Dist: django-mptt==0.16.0
+Requires-Dist: djangorestframework==3.14.0
+Requires-Dist: sorl-thumbnail==12.10.0
+Requires-Dist: Pillow==10.2.0
+Requires-Dist: python-dateutil==2.9.0
+Requires-Dist: requests==2.25.1
+Requires-Dist: edureporter<2.0.0,>=1.0.0
+Requires-Dist: eduimporter<2.0.0,>=1.0.0
+
+# Ядро продукта "Библиотека"
+## Подключение
+
+requirements:
+
+    edulib-core>=1.0.0,<2.0
+
+settings:
+
+    INSTALLED_APPS = [
+        ...
+        'edulib.core',
+        'edulib.core.directory',
+        'edulib.core.issuance_delivery',
+        'edulib.core.lib_authors',
+        'edulib.core.lib_example_types',
+        'edulib.core.lib_passport',
+        'edulib.core.lib_passport.cleanup_days',
+        'edulib.core.lib_passport.documents',
+        'edulib.core.lib_publishings',
+        'edulib.core.lib_registry',
+        'edulib.core.lib_sources',
+        'edulib.core.lib_udc',
+        'edulib.core.library_event',
+        'edulib.core.readers',
+        'edulib.core.scanned_copy',
+
+        'edulib.rest',
+
+        ...
+    ]
+
+## Запуск тестов
+    $ tox

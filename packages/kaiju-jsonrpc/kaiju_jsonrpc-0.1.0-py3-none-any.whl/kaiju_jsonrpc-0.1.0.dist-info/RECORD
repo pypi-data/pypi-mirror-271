@@ -1,0 +1,7 @@
+kaiju_jsonrpc/__init__.py,sha256=HOZM2IMPrvOQ0xNnHGipyVZ_MczH_x07_G9_5UnbQbo,243
+kaiju_jsonrpc/parser.py,sha256=_Ipp4VyCN6CHvlRf2-unHkMkNe3IFL4W8lBwnlcQyKg,5349
+kaiju_jsonrpc/router.py,sha256=qZHZhozriYz-4hOFJ3iGhlvt9zk9AXYoqpN1PBzLQvg,5214
+kaiju_jsonrpc-0.1.0.dist-info/METADATA,sha256=QhdhhA9X1CiFWle6CtT51Axg_R19gAM0MkxMN7sRWZQ,2589
+kaiju_jsonrpc-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kaiju_jsonrpc-0.1.0.dist-info/top_level.txt,sha256=sN7nZp49RKc-dlLzGkQTSkUOBU-FKxSIlWQHvqcap1k,14
+kaiju_jsonrpc-0.1.0.dist-info/RECORD,,

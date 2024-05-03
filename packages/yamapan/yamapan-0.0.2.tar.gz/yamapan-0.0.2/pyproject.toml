@@ -1,0 +1,35 @@
+[project]
+name = "yamapan"
+version = "0.0.2"
+description = "Yet Another MetA worksPAce maNager for ROS 2"
+license = {file = "LICENSE"}
+authors = [
+    { name = "Rin Iwai", email = "rin@eyrin.jp" }
+]
+dependencies = [
+    "PyYAML>=6.0.1",
+    "pydantic>=2.7.1",
+    "tomli>=2.0.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.urls]
+Repository = "https://github.com/tutrobo/yamapan.git"
+
+[project.scripts]
+"yamapan" = "yamapan:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/yamapan"]

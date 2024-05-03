@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyraAnalyzer
+Version: 1.0.2
+Summary: Python package to implement an academic approach to artificial intelligence methods: Paraconsistent Annoted Evidential Et2 and Paraconsistent Decision-making Method
+Author: Henry Costa Ungaro, Fabio Vieira do Amaral, Fabio Luis Pereira, Jair Minoro Abe
+Author-email: Carlos Arruda Baltazar <carlosarrudabaltazar@hotmail.com>
+Project-URL: Homepage, https://github.com/carlosarrudabaltazar/pyraanalyzer
+Project-URL: Issues, https://github.com/carlosarrudabaltazar/pyraanalyzer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.19
+
+# pyraanalyzer
+Paraconsistent Logic Python Library

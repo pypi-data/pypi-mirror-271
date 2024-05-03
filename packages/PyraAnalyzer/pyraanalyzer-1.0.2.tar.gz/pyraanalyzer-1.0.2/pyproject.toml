@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyraAnalyzer"
+version = "1.0.2"
+authors = [
+            { name="Carlos Arruda Baltazar", email="carlosarrudabaltazar@hotmail.com" },
+            { name="Henry Costa Ungaro"},
+            { name="Fabio Vieira do Amaral"},
+            { name="Fabio Luis Pereira"},
+            { name="Jair Minoro Abe"}
+        ]
+description = "Python package to implement an academic approach to artificial intelligence methods: Paraconsistent Annoted Evidential Et2 and Paraconsistent Decision-making Method"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ['numpy>=1.19']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/carlosarrudabaltazar/pyraanalyzer"
+Issues = "https://github.com/carlosarrudabaltazar/pyraanalyzer/issues"

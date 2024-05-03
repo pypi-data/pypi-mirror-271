@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/DataBase.py
+src/Model.py
+src/ParaAnalyzer.py
+src/__init__.py
+src/PyraAnalyzer.egg-info/PKG-INFO
+src/PyraAnalyzer.egg-info/SOURCES.txt
+src/PyraAnalyzer.egg-info/dependency_links.txt
+src/PyraAnalyzer.egg-info/requires.txt
+src/PyraAnalyzer.egg-info/top_level.txt

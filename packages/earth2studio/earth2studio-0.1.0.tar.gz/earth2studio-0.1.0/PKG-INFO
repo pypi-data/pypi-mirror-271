@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: earth2studio
+Version: 0.1.0
+Summary: Open-source deep-learning framework for exploring, building and deploying AI weather/climate workflows.
+Author: NVIDIA Modulus Team
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/NVIDIA/earth2studio
+Project-URL: Documentation, https://nvidia.github.io/earth2studio
+Project-URL: Issues, https://github.com/NVIDIA/earth2studio/issues
+Project-URL: Changelog, https://github.com/NVIDIA/earth2studio/blob/main/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Environment :: GPU
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3>=1.34.50
+Requires-Dist: cdsapi>=0.6.1
+Requires-Dist: cfgrib>=0.9.10.3
+Requires-Dist: cftime
+Requires-Dist: eccodes>=1.4.0
+Requires-Dist: ecmwflibs>=0.5.2
+Requires-Dist: ecmwf-opendata>=0.2.0
+Requires-Dist: fsspec>=2023.1.0
+Requires-Dist: gcsfs
+Requires-Dist: h5py>=3.2.0
+Requires-Dist: h5netcdf>=1.0.0
+Requires-Dist: herbie-data
+Requires-Dist: huggingface-hub>=0.4.0
+Requires-Dist: importlib_metadata
+Requires-Dist: loguru
+Requires-Dist: netCDF4>=1.6.4
+Requires-Dist: numpy
+Requires-Dist: nvidia-modulus>=0.4.0
+Requires-Dist: python-dotenv
+Requires-Dist: s3fs>=2023.5.0
+Requires-Dist: setuptools>=67.6.0
+Requires-Dist: torch>=2.0.0
+Requires-Dist: torch_harmonics>=0.5.0
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: xarray>=2023.1.0
+Requires-Dist: zarr>=2.14.2
+Provides-Extra: fengwu
+Requires-Dist: onnxruntime-gpu>=1.14.0; extra == "fengwu"
+Provides-Extra: sfno
+Requires-Dist: jsbeautifier; extra == "sfno"
+Requires-Dist: pynvml; extra == "sfno"
+Requires-Dist: numba; extra == "sfno"
+Provides-Extra: pangu
+Requires-Dist: onnxruntime-gpu>=1.14.0; extra == "pangu"
+Provides-Extra: all
+Requires-Dist: onnxruntime-gpu>=1.14.0; extra == "all"
+Requires-Dist: jsbeautifier; extra == "all"
+Requires-Dist: pynvml; extra == "all"
+Requires-Dist: numba; extra == "all"
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-timeout>=2.0.1; extra == "dev"
+Requires-Dist: pytest-skip-slow>=0.0.5; extra == "dev"
+Requires-Dist: pyyaml>=6.0; extra == "dev"
+Requires-Dist: black==22.10.0; extra == "dev"
+Requires-Dist: interrogate==1.5.0; extra == "dev"
+Requires-Dist: coverage>=7.2.0; extra == "dev"
+Requires-Dist: ruff==0.1.5; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx-design; extra == "docs"
+Requires-Dist: sphinx>=6.0.0; extra == "docs"
+Requires-Dist: jupytext>=1.15.0; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints>=1.24.0; extra == "docs"
+Requires-Dist: sphinx-gallery>=0.12.0; extra == "docs"
+Requires-Dist: myst-parser>=0.18.0; extra == "docs"
+Requires-Dist: sphinx-favicon>=1.0.1; extra == "docs"
+Requires-Dist: pydata-sphinx-theme==0.15.2; extra == "docs"
+
+<!-- markdownlint-disable MD033 MD041 MD053 -->
+<div align="center">
+
+# Earth2Studio
+
+[![python version][e2studio_python_img]][e2studio_python_url]
+[![license][e2studio_license_img]][e2studio_license_url]
+[![format][e2studio_format_img]][e2studio_format_url]
+[![coverage][e2studio_cov_img]][e2studio_cov_url]
+
+Earth2Studio is a Python-based package designed to get users up and running
+with AI weather and climate models *fast*.
+Our mission is to enable everyone to build, research and explore AI driven meteorology.
+
+<!-- markdownlint-disable MD036 -->
+**- Earth2Studio Documentation -**
+<!-- markdownlint-enable MD036 -->
+
+[Install][e2studio_install_url] | [User-Guide][e2studio_userguide_url] |
+[Examples][e2studio_examples_url] | [API][e2studio_api_url]
+
+</div>
+
+## Quick start
+
+Install Earth2Studio:
+
+```bash
+pip install earth2studio
+```
+
+Run a deterministic weather prediction in just a few lines of code:
+
+```python
+from earth2studio.models.px import DLWP
+from earth2studio.data import GFS
+from earth2studio.io import NetCDF4Backend
+from earth2studio.run import deterministic as run
+
+model = DLWP.load_model(DLWP.load_default_package())
+ds = GFS()
+io = NetCDF4Backend("output.nc")
+
+run(["2024-01-01"], 10, model, ds, io)
+```
+
+## Features
+
+Earth2Studio focuses on providing users the tools to build their own
+workflows, pipelines, APIs, packages, etc. via modular components including:
+
+- Collection of pre-trained weather/climate prediction models
+- Collection of pre-trained diagnostic weather models
+- Variety of online and on-prem data sources for initialization, scoring, analysis, etc.
+- IO utilities for exporting predicted data to user friendly formats
+- Suite of perturbation methods for building ensemble predictions
+- Sample workflows and examples for common tasks / use cases
+- Seamless integration into other Nvidia packages including [Modulus][modulus_repo_url].
+
+For a more complete list of feature set, be sure to view the [documentation][e2studio_docs_url].
+Don't see what you need?
+Great news, extension and customization are at the heart of our [design][e2studio_customization_url].
+
+## Contributors
+
+Check out the [Contributing](CONTRIBUTING.md) document for details about the technical
+requirements and the userguide for higher level philosophy, structure, and design.
+
+## License
+
+Earth2Studio is provided under the Apache License 2.0, please see
+[LICENSE file][e2studio_license_url] for full license text.
+
+<!-- Badge links -->
+
+[e2studio_python_img]: https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python
+[e2studio_license_img]: https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square
+[e2studio_format_img]: https://img.shields.io/badge/Code%20Style-Black-black?style=flat-square
+[e2studio_cov_img]: https://img.shields.io/codecov/c/github/nickgeneva/earth2studio?style=flat-square&logo=codecov
+
+[e2studio_python_url]: https://www.python.org/downloads/
+[e2studio_license_url]: ./LICENSE
+[e2studio_format_url]: https://github.com/psf/black
+[e2studio_cov_url]: ./test/
+
+<!-- Doc links -->
+[e2studio_docs_url]: https://nvidia.github.io/earth2studio/
+[e2studio_install_url]: https://nvidia.github.io/earth2studio/install/
+[e2studio_userguide_url]: https://nvidia.github.io/earth2studio/userguide/
+[e2studio_examples_url]: https://nvidia.github.io/earth2studio/examples/
+[e2studio_api_url]: https://nvidia.github.io/earth2studio/modules/
+[e2studio_customization_url]: https://nvidia.github.io/earth2studio/
+
+<!-- Misc links -->
+[modulus_repo_url]: https://github.com/NVIDIA/modulus

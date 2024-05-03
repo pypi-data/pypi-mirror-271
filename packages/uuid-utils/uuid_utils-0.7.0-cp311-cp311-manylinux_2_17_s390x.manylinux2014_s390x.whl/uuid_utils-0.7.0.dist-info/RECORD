@@ -1,0 +1,10 @@
+uuid_utils-0.7.0.dist-info/METADATA,sha256=XpVI7UmfHTsaPEOz1jRzrKQs_8jnpcz8o6G0mRjX3h8,4625
+uuid_utils-0.7.0.dist-info/WHEEL,sha256=zMFqEbfnzfrCkvMDwAwJuCYkZACRQ8CmYGurtlpf9ZQ,127
+uuid_utils-0.7.0.dist-info/license_files/LICENSE.md,sha256=DEf1K0xIS9BMeOfJaVQu6jGv5kT1h_O4qMzOhjUsYEY,1487
+uuid_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uuid_utils/__init__.py,sha256=teEvYB7oh34wISOjZYdA011-7VdeLKfQGjR615_-lCc,622
+uuid_utils/__init__.pyi,sha256=JNQmgdNecusC7zFZiZTosO9d08yGm3sOCITC6PHF2P4,6058
+uuid_utils/compat/__init__.py,sha256=-pGwZJmEoRzNmqteXXtcbjzO7KO3-xekYT02GjImtmM,2071
+uuid_utils/compat/__init__.pyi,sha256=msxBDRkxWjdSRFmCeP2O2J6pib2qkJoZEaoC5hcF8X8,1425
+uuid_utils/_uuid_utils.cpython-311-s390x-linux-gnu.so,sha256=dOkyYGd1ieJsqNxJgr5UFiFgU8nR8WBo5Obd5NLWHbc,5305456
+uuid_utils-0.7.0.dist-info/RECORD,,

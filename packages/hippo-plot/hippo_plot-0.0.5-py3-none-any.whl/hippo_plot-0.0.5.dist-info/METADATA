@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: hippo_plot
+Version: 0.0.5
+Summary: Lightweight companion to HIPPO for creating interactive data visualisations of HIPPO outputs
+Project-URL: Homepage, https://hippo.winokan.com
+Project-URL: Bug Tracker, https://github.com/mwinokan/HIPPO_plot/issues
+Author-email: Max Winokan <max@winokan.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: dash
+Requires-Dist: dash-dangerously-set-inner-html
+Requires-Dist: mpytools>=0.0.10
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: rdkit
+Description-Content-Type: text/markdown
+
+# HIPPO_plot
+Lightweight companion to HIPPO for creating interactive data visualisations of HIPPO outputs

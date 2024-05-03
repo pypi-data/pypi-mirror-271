@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: simple-kfp-task
+Version: 0.0.3
+Summary: Generate a simple Kubeflow Pipeline task
+Author-email: Sebastian Alberternst <sebastian.alberternst@dfki.de>
+Project-URL: Homepage, https://github.com/salberternst/simple-kfp-task
+Project-URL: Issues, https://github.com/salberternst/simple-kfp-task/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kfp==1.8.22
+Requires-Dist: kfp_pipeline_spec==0.1.16
+Requires-Dist: kubernetes==25.3.0
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas==2.2.2
+Requires-Dist: Requests==2.31.0
+Requires-Dist: requests_oauthlib==2.0.0
+Requires-Dist: urllib3==1.26.18
+Requires-Dist: GitPython==3.1.43

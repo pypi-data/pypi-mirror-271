@@ -1,0 +1,163 @@
+# MonnifyEase Library
+
+------------
+
+![Python Versions](https://img.shields.io/badge/python-3.9|3.10|3.11|3.12-blue)
+
+MonnifyEase simplifies interacting with the Monnify payment gateway in Python. 
+It offers wrappers for various functionalities, streamlining payment processing 
+for your projects.
+
+Monnify (owned by **Moniepoint**) is a Nigerian payment gateway that allows 
+businesses to accept payments easily and securely.
+
+
+> 📝: Read more on Monnify api documentation: [Monnify API DOCUMENTATION](https://developers.monnify.com/api/)
+
+> 📝: Read more on monnifyease api documentation: [MonnifyEase DOCUMENTATION](https://monnifyease.readthedocs.io/en/latest/)
+
+
+## Getting Started
+
+You should create a Monnify account to generate: 
+
+1. **Monnify Secret Key**
+2. **Monnify Api Key**
+3. **Monnify Merchant Code**
+4. **Monnify Base URL**
+
+You can see this in the *developer page >> API keys and Contracts section*.
+
+> ⚠️: **Warning:** Do not expose your secret key, api key, merchant code, base url or 
+>commit your any to git, or use them in client-side code.
+
+> 💡: **Take Note:**  The Monnify SDK is to be used from your front-end when integrating using Monnify.
+
+> ✅: **Good**: Set your secret key, api key, base url and merchant code in environment variables as seen: 
+> 1. *MONNIFY_SECRET_KEY=your-secret-key*
+> 2. *MONNIFY_API_KEY=your-api-key*
+> 3. *MONNIFY_SECRET_KEY=your-secret-key*
+> 4. *MONNIFY_MERCHANT_CODE=your-merchant-code*
+
+
+## Create a Virtual Environment
+
+1. For Windows:
+
+    * Create virtual environment
+
+        ```
+            py -m venv <environment_name>
+       ```
+    * Activate the virtual environment
+
+        ```
+            <environment_name>\Scripts\activate
+       ```
+
+2. For Unix/macOS
+
+    * Create virtual environment
+
+        ```
+            python3 -m venv <environment_name>
+       ```
+    * Activate the virtual environment
+
+        ```
+            <environment_name>/bin/activate
+       ```
+
+----------------------------------------------------------------------
+
+## Install monnifyease library:
+
+
+* #### Install monnifyease using pip.
+
+> pip install monnifyease
+
+* #### Install monnifyease using pipx.
+
+> pipx install monnifyease
+
+* #### Install monnifyease using poetry.
+
+> poetry add monnifyease
+
+
+## If you want to download the sdist packages directly:
+
+Download the wheel distribution file and install using pip
+
+>  pip install monnifyease-0.i.0-py3-none-any.whl 
+
+Download the source distribution file, and install using pip
+
+> pip install monnifyease-0.i.0.tar.gz 
+
+
+## To get a development version of monnifyease
+
+Clone from the ``dev`` branch GitHub repository, unzip and install:
+
+> git clone -b dev https://github.com/cla-bit/MonnifyEase.git
+
+> cd monnifyease
+
+> pip install monnifyease
+
+----------------------------------------------------------------------
+
+## API usage
+
+-------------------------------------------------------
+
+### Making a Transaction [Synchronous]
+
+If after setting your secret key in environment variables, for a synchronous transaction process 
+all you need to do is use the transaction API to make a transaction. 
+
+To create a transaction or initialize a transaction:
+
+* import the Monnify API wrapper.
+
+```python
+
+from monnifyease import Monnify, Currency, MERCHANT_CODE
+
+client = Monnify()
+
+create_transaction = client.transactions.initialize_transaction(
+    amount=1000.00,
+    customer_name="Test Customer",
+    customer_email="test@gmal.com",
+    payment_reference="test123prod",
+    payment_description="Testing payment",
+    currency=Currency.NGN.value,
+    merchant_contract_code=MERCHANT_CODE,
+   # add other parameters here
+)
+
+print(f"Transaction Created: {create_transaction}")
+
+```
+
+> ✅: **Good**: You can check your Monnify account, go to the Transaction page, and you will see the transaction just created.
+
+
+# Other Tools
+Similar to calling the Monnify, you can also call other tools to make your work easy. For example:
+
+* ### Currency Type
+```python
+
+from monnifyease import Currency
+
+val1 = Currency.NGN.value
+print(val1)
+
+```
+> "NGN"
+
+See documentation for more: https://monnifyease.readthedocs.io/en/latest/

@@ -1,0 +1,10 @@
+dig_ass_critic_protos/DigitalAssistantCritic_pb2.py,sha256=lrJEiJ075ZeepDSqHDY2qnmuN-8iS2tmInKqVWPQ7dY,2828
+dig_ass_critic_protos/DigitalAssistantCritic_pb2.pyi,sha256=KBVjNXuZjbyvi1XCe1CcCcGBWYWTNLUH7oS7TzkW_v4,2482
+dig_ass_critic_protos/DigitalAssistantCritic_pb2_grpc.py,sha256=ByaH4E-oSt-8SaEriY5b9e4A145BPgLorgFD77ZHc5U,3010
+dig_ass_critic_protos/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+dig_ass_critic_protos/abstract_client.py,sha256=TSFMiUZ1VhTDGYYCSE0CZBCN4D-Y6D6CWTP-djuwWYc,382
+dig_ass_critic_protos/client.py,sha256=mz5MtFanfTULlXeyed5SRO6PLBOoV5leuUxOsJpNCMg,1674
+dig_ass_critic_protos-1.0.0.dist-info/METADATA,sha256=zplajfPc-0vuRXjxXItrrEQFjG2bGY6OBbP1rtshnWE,341
+dig_ass_critic_protos-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dig_ass_critic_protos-1.0.0.dist-info/top_level.txt,sha256=06_zZWz8yBJNgCuBqJuD-gAE9v9bB37MDVWnn-I8q08,22
+dig_ass_critic_protos-1.0.0.dist-info/RECORD,,

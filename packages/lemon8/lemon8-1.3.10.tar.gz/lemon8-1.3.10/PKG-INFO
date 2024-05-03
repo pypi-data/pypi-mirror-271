@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lemon8
+Version: 1.3.10
+Summary: A CHIP-8 emulator written in Python.
+License: MIT
+Author: mooncell07
+Author-email: 80042274+mooncell07@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pygame (>=2.2.0,<3.0.0)
+Project-URL: Documentation, https://mooncell07.github.io/lemon.pie/

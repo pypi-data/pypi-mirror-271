@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ml-project-tracker
+Version: 0.0.3.dev10
+Summary: A package for tracking the ML projects
+Home-page: https://github.com/mahdid-lilia/ML-Project-Tracker
+Author: Lilia MAHDID
+Author-email: jl_mahdid@esi.dz
+Keywords: Deep Learning,Machine Learning,Wandb,Neptune
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: wandb
+Requires-Dist: numpy
+Requires-Dist: torchvision
+Requires-Dist: torch
+Requires-Dist: neptune
+
+# ML-Tracker

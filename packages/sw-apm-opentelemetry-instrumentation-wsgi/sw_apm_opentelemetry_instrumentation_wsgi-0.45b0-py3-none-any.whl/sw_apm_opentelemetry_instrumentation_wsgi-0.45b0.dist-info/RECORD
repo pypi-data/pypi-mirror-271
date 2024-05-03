@@ -1,0 +1,7 @@
+opentelemetry/instrumentation/wsgi/__init__.py,sha256=hUg9aCRZvlONV-V054RKTxF7kSCpcLiA9uTkOWgsaAc,25197
+opentelemetry/instrumentation/wsgi/package.py,sha256=2gH7E_-A3ApNjeqav3HHFM089aZZ_M1fToHwjelBWuo,666
+opentelemetry/instrumentation/wsgi/version.py,sha256=HyCKkZGb11xsSYPWI9CHcfWAYU5IqDVTDpTmCwMvfu0,608
+sw_apm_opentelemetry_instrumentation_wsgi-0.45b0.dist-info/METADATA,sha256=7mIh_pK0xiK7KpNgdZhUwhm19u9OAWa5ND2CQxjgfCA,2147
+sw_apm_opentelemetry_instrumentation_wsgi-0.45b0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+sw_apm_opentelemetry_instrumentation_wsgi-0.45b0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sw_apm_opentelemetry_instrumentation_wsgi-0.45b0.dist-info/RECORD,,

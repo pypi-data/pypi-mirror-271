@@ -1,0 +1,12 @@
+repo2docs/__init__.py,sha256=zmP2TRnzKPjZJ1eiBcT-cRInsji6FW-OVD3FafQFCc4,23
+repo2docs/llm.py,sha256=LVI1veHj4HYIr1ZJ6TeE57JAYjxTh5Q7HldNagDc4mc,1862
+repo2docs/prompts.py,sha256=-52NdC_ywmy-8h4uMzLJloUJ_kQNQEFFEJMMtvpPF_s,5515
+repo2docs/repo2docs.py,sha256=jypyzr7OYwN-vkEK452KIjNEVCWrLLwIcgvw7SGQ_gk,6475
+repo2docs/repo_to_text.py,sha256=5r9BhJtzaDGcRaqeH7DCiLS8q42-yea_7Ag0O3l1Kyw,9338
+repo2docs/text_to_docs.py,sha256=IzL2um6-KE3Hl2N17zYcUT7O0RfBgw9Se4spUBSw1QY,1734
+repo2docs/utils.py,sha256=ReTjaxyxxSgoJ59lUGP5JcFrqhIQZ9wE7AmTVSxl5Dw,857
+repo2docs-0.1.22.dist-info/LICENSE,sha256=Qk7Gj9QAFP8gp8aCpF08pIm4UAHwNUQa1vI3OuHxCg0,1071
+repo2docs-0.1.22.dist-info/METADATA,sha256=NDGTQem4p5sO6FihtgGtFjTxaHMEtDTX88k4wuVyMME,3571
+repo2docs-0.1.22.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+repo2docs-0.1.22.dist-info/entry_points.txt,sha256=zzSH0VfTIGWy7X7koTMB2Tsq93NhYP6UcQyhJh98ioI,53
+repo2docs-0.1.22.dist-info/RECORD,,

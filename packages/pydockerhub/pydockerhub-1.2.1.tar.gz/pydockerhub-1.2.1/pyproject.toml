@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pydockerhub"
+version = "0"
+description = "Extended Docker Hub API Client"
+authors = ["Tomasz Szpak <tomszp@gmail.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/9orky/py_dockerhub"
+packages = [{include = "pydockerhub"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+setuptools = "^69.2.0"
+pydantic = "^2.7.1"
+httpx = "^0.27.0"
+
+[tool.poetry-version-plugin]
+source = "git-tag"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

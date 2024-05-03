@@ -1,0 +1,5 @@
+[console_scripts]
+pifcap2fits = pifcap.pifcap2fits:main
+
+[gui_scripts]
+pifcap = pifcap.pifcap:main

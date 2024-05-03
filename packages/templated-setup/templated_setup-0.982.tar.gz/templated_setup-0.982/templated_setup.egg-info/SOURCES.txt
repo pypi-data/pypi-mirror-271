@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+templated_setup/__init__.py
+templated_setup/_hardcoded.py
+templated_setup.egg-info/PKG-INFO
+templated_setup.egg-info/SOURCES.txt
+templated_setup.egg-info/dependency_links.txt
+templated_setup.egg-info/requires.txt
+templated_setup.egg-info/top_level.txt

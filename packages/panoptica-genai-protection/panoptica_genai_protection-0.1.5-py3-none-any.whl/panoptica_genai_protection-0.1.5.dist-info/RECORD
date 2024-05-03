@@ -1,0 +1,11 @@
+panoptica_genai_protection/__init__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+panoptica_genai_protection/auth.py,sha256=3vJXBWMCzAHfx3o-oIKGD_PkcrX7t_Z3-QbC8bOuv8U,3821
+panoptica_genai_protection/auth_interface.py,sha256=zjV6fAtgIoLjVIKmwXdJrXJ4ZN7mfBSI0o--vrvvZLQ,217
+panoptica_genai_protection/client.py,sha256=c6Egq4qm9pgw7ScqmOhDKg_b_aPlLsqlbM9d-Tn2Gxo,7389
+panoptica_genai_protection/settings.py,sha256=tiaO6MG5BMwx9mLKljcWKB38hhjNRfu4EoGWvl14CzM,431
+panoptica_genai_protection/gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panoptica_genai_protection/gen/models.py,sha256=-lmk5vRdZGb2CBItSkcSWn-5s7HEbLYG1_LEBkU_UxI,1270
+panoptica_genai_protection-0.1.5.dist-info/METADATA,sha256=WfQuHmYVXz0oGgd-l0XcgtenOQ5r3t7kziYCBwW6CM4,4463
+panoptica_genai_protection-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+panoptica_genai_protection-0.1.5.dist-info/top_level.txt,sha256=BcU5tm6C7hI_nRyFMrf-7t94DmAda2Bq9Uk3sfMn0Uo,27
+panoptica_genai_protection-0.1.5.dist-info/RECORD,,

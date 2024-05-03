@@ -1,0 +1,16 @@
+lemon8/__main__.py,sha256=2Zd5g4rZ4hTpWiqB0B_Apd_2gUZ1IZCd64xwXb86efw,3772
+lemon8/beep.mp3,sha256=aBTP2Uye0NCob5RiNuyGYgHzLQ5cFR0b4BQKMLp-Q6I,22170
+lemon8/bin/FONT,sha256=e635IfbJMVvpgtCDB7eWwOj2hBFBr7R1qi7lpeB0zew,80
+lemon8/bin/ibm.ch8,sha256=i_O0bYpkwgdOdTggD2hKLqztJYQE08fTvXqRfD0BQ-U,132
+lemon8/components/__init__.py,sha256=S9gnqNGqyeTO0adGUhA4So0kBRiWQoI0No2e8zRm3lg,133
+lemon8/components/constants.py,sha256=5RjesQLxOG00CLh7y36XF62D982iHxJkcSk6cDwnINU,193
+lemon8/components/cpu.py,sha256=Xn9tFW7YpqutJheMPok85sPpKEEfcwXM0B36sulLyRE,12155
+lemon8/components/display.py,sha256=Ya70urUKvlc7hH_Enwq1mgk14NdyZx8SLzK0XMYvyDA,2871
+lemon8/components/keypad.py,sha256=mHHxvLVcfGbWgY67yDmGAzSHmRuFsV_7L35DVUhmwYw,1644
+lemon8/components/memory.py,sha256=0iPNb0EFunEHnA6AMDOt1O4H0L6xsGC6amI2g1oN1rc,739
+lemon8/components/opcode.py,sha256=ASwQMl6iXU_G7PnaZpoeWyPBxlAlfjrhEyJkdCVwJiw,1763
+lemon8/lemon.png,sha256=AUCHkTXPag2BVFYUJgqgCDURT6Smb64k43fspWKNCNA,40076
+lemon8-1.3.10.dist-info/LICENSE,sha256=BqVHgWnqIRsdDjMh-VeuC6SBB8WAZx3kgs93xTpntqc,1061
+lemon8-1.3.10.dist-info/METADATA,sha256=OCWNDTHnrTNwe51vc4ZurGgtXFc01dvygsNWFkPJ5E0,474
+lemon8-1.3.10.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+lemon8-1.3.10.dist-info/RECORD,,

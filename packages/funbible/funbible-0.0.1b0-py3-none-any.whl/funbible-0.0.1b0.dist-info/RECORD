@@ -1,0 +1,12 @@
+funbible/finders/local.py,sha256=OOpndywqhumCCNZ3CkO1vL_ZvwFEVtXSHEGTLW15zNs,1359
+funbible/finders/online.py,sha256=ONBmjCYqN0XUMWxXHRFp7aiPHIDpI1N_Uj57mAv82Bs,1386
+funbible/main.py,sha256=AlaKKhw8LoH2ZS71Hmx2SxxR5ZAMj0YTtPYffIWOovo,2470
+resources/biblia-1940.json,sha256=Mzql_FaZtvhVSN7q3aVNQFSJiNrC9JMb3WjnZNaX2X0,7126368
+resources/biblia-1940.lookup.json,sha256=BmdujA9BUpqalO6rT1BaDeUqZVP06jxvV3H2sM3EqiA,1797
+resources/biblia-revizirano-raw.json,sha256=rKw9PAq9I7GM9U_jU3nNT_MuPhVcMISAO8qtW2YHVyA,9808583
+resources/biblia-revizirano.json,sha256=vF18wPqZPrnsfi6uwL450sNBrogDqn88vqmEGAKHXtU,7154745
+resources/biblia-revizirano.lookup.json,sha256=Ele38lAy_3iO9Pcy8EXKGETwk9R5fRj6ZYSYSMGLa7w,1885
+funbible-0.0.1b0.dist-info/METADATA,sha256=0vU58DGvAreGBGPOo7_cHfuiUSeGsu9qCCvmiwWJ5g8,1002
+funbible-0.0.1b0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funbible-0.0.1b0.dist-info/entry_points.txt,sha256=B7pOx9O2ioLQrPMM6ArTZAp2r3U8oOpEpu-SGHCKprM,47
+funbible-0.0.1b0.dist-info/RECORD,,

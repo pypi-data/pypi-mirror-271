@@ -1,0 +1,3 @@
+[console_scripts]
+funbible=funbible.main:main
+

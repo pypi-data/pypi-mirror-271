@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: my_data_quality_library
+Version: 0.1
+Summary: A library for data quality checks in Databricks notebooks
+Home-page: https://github.com/your_username/my_data_quality_library
+Author: Harun Raseed Basheer
+Author-email: harun.raseed093@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

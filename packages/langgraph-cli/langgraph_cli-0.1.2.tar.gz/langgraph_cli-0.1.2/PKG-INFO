@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: langgraph-cli
+Version: 0.1.2
+Summary: 
+Author: Nuno Campos
+Author-email: nuno@langchain.dev
+Requires-Python: >=3.9.0,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Description-Content-Type: text/markdown
+
+# langserve
+

@@ -1,0 +1,2 @@
+[console_scripts]
+gocli = genomoncology.cli.commands:gocli

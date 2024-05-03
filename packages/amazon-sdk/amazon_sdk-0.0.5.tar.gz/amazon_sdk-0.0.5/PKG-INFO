@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: amazon-sdk
+Version: 0.0.5
+Summary: A package for Amazon SDK
+Author: Genhao Li
+Author-email: ligenhao20010916@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Amazon SDK
+
+## Installation
+
+```bash
+pip install --upgrade --index-url https://test.pypi.org/simple/ --no-deps Amazon-SDK 
+```
+
+## Usage
+
+Differences with bol_sdk:
+- Use methods in class `AmazonSDK`, with detailed documentation
+- No need to pass the `access_token`
+
+For example see `usage_example.py`

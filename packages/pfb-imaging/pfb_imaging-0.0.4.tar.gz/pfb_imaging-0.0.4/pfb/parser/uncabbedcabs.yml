@@ -1,0 +1,80 @@
+pfb.init:
+  command: pfb.workers.init.init
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)init.yaml
+
+pfb.grid:
+  command: pfb.workers.grid.grid
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)grid.yaml
+
+pfb.degrid:
+  command: pfb.workers.degrid.degrid
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)degrid.yaml
+
+pfb.klean:
+  command: pfb.workers.klean.klean
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)klean.yaml
+
+pfb.restore:
+  command: pfb.workers.restore.restore
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)restore.yaml
+
+pfb.fwdbwd:
+  command: pfb.workers.fwdbwd.fwdbwd
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)fwdbwd.yaml
+
+pfb.fluxmop:
+  command: pfb.workers.fluxmop.fluxmop
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)fluxmop.yaml
+
+pfb.spotless:
+  command: pfb.workers.spotless.spotless
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)spotless.yaml
+
+pfb.model2comps:
+  command: pfb.workers.model2comps.model2comps
+  flavour: python
+  policies:
+    pass_missing_as_none: true
+
+  _include:
+    - (.)model2comps.yaml

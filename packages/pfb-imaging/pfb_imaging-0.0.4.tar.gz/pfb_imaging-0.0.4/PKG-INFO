@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pfb-imaging
+Version: 0.0.4
+Summary: Radio interferometric imaging suite base on the pre-conditioned forward-backward algorithm
+Home-page: https://github.com/ratt-ru/pfb-imaging
+Author: Landman Bester
+Author-email: lbester@sarao.ac.za
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: PyWavelets
+Requires-Dist: katbeam
+Requires-Dist: numexpr
+Requires-Dist: pyscilog>=0.1.2
+Requires-Dist: Click
+Requires-Dist: ducc0
+Requires-Dist: QuartiCal>=0.2.3
+Requires-Dist: sympy
+Requires-Dist: stimela>=2.0rc18
+Requires-Dist: streamjoy>=0.0.8
+Requires-Dist: tbb
+Requires-Dist: jax[cpu]
+
+pfb-imaging
+=========
+
+Radio interferometric imaging suite base on the pre-conditioned forward-backward algorithm.
+
+Install the package by cloning and running
+
+:code:`$ pip install -e pfb-imaging/`
+
+Note casacore needs to be installed on the system for this to work.
+
+You will probably may also need to update pip eg.
+
+:code:`$ pip install -U pip setuptools wheel`
+
+For maximum performance it is strongly recommended to install ducc in
+no binary mode eg
+
+:code:`$ git clone https://gitlab.mpcdf.mpg.de/mtr/ducc.git`
+
+:code:`$ pip install -e ducc`
+
+If you find any of this useful please cite (for now)
+
+https://arxiv.org/abs/2101.08072

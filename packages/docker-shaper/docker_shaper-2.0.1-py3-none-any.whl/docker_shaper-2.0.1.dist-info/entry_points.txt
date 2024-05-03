@@ -1,0 +1,4 @@
+[console_scripts]
+docker-shaper=docker_shaper.server:main
+dockermon=docker_shaper.headless_examples.dockermon:main
+

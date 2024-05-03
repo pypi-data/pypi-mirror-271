@@ -1,0 +1,13 @@
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - sphinx
+  - sphinx-book-theme
+  - numpy
+  - numpydoc
+  - myst-nb=1.0.0
+  - lintsampler
+  - matplotlib
+  - scipy
+  - scikit-learn

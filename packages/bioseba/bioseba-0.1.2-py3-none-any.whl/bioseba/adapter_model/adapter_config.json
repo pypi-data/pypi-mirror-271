@@ -1,0 +1,25 @@
+{
+  "auto_mapping": null,
+  "base_model_name_or_path": "/lmh_data/work/test/DNABERT-2-117M",
+  "bias": "none",
+  "fan_in_fan_out": false,
+  "inference_mode": true,
+  "init_lora_weights": true,
+  "layers_pattern": null,
+  "layers_to_transform": null,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "modules_to_save": [
+    "pooler",
+    "classifier"
+  ],
+  "peft_type": "LORA",
+  "r": 8,
+  "revision": null,
+  "target_modules": [
+    "Wqkv",
+    "pooler",
+    "classifier"
+  ],
+  "task_type": "SEQ_CLS"
+}

@@ -1,0 +1,7 @@
+svinsight/__init__.py,sha256=haiVhs_MYgE_drE9DpGoW-2X6buLo1D_IcSfGxIQwEM,57
+svinsight/census_variables.py,sha256=RchrZDANZ-1Y5iGVxLVMaa9yG-XT7vcDwCduYMtt9cU,17061
+svinsight/svi.py,sha256=7VFcyNjSpfkg4XFLAvu8VqYGm300yd1lhuH1ZnWyrAI,77547
+svinsight-1.0.0.dist-info/LICENSE,sha256=KgWor5zvfieU_y7o6iZTPng64Ss4CngKrENCjy3z8Bc,1073
+svinsight-1.0.0.dist-info/METADATA,sha256=gs1i02ADVHCgLx4E6KvGpDmNwgTW-SETYwTSPaz7d4I,875
+svinsight-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+svinsight-1.0.0.dist-info/RECORD,,

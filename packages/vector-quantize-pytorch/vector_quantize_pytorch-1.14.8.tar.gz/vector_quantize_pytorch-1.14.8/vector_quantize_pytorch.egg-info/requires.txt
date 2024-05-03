@@ -1,0 +1,7 @@
+einops>=0.8.0
+einx[torch]>=0.2
+torch
+
+[test]
+torchvision
+tqdm

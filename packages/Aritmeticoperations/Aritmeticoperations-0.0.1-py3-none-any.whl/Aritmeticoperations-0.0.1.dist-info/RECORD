@@ -1,0 +1,14 @@
+arithmeticoperations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arithmeticoperations/addition.py,sha256=HazaUYD8G3OACktTeViO-3wfNduDer4_yzyzMmJzwwk,32
+arithmeticoperations/division.py,sha256=v9MBhJyxWjUPD8mfX7B4VIeMnTwBRvSKhtVjJHZG_vI,35
+arithmeticoperations/multiplication.py,sha256=X9U5VXVXr-OYXtdh8-ElIQo-l60tC79sX06-1O6NPy0,37
+arithmeticoperations/subtraction.py,sha256=de3Tsotx08rZASPH6jMx22zfcfc8nQ3fn36odkh2VJM,37
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_addition.py,sha256=yGOMuplvyQe-5YKtRBnyfKxFEP6MXzWLDegxUwIC13Y,92
+test/test_division.py,sha256=tCpyXbtSGJG16JC4uWYe8no8_Lzw0K240bLF0UChyOk,101
+test/test_multiplication.py,sha256=nrgaYS8leOzLUr-fanABSbNZEQ49BEtWFgKmuTgIiEI,103
+test/test_subtraction.py,sha256=IY4iyds6FAufVH5HWfnEoTaW-MWsY8NwzyXweU5znjg,107
+Aritmeticoperations-0.0.1.dist-info/METADATA,sha256=abTXUBtFiIj6QGEfj-48BF68QdFz02vQxX_AjyAEMRg,688
+Aritmeticoperations-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+Aritmeticoperations-0.0.1.dist-info/top_level.txt,sha256=axJFFpQ4BMm8k4t91OcJMdxU0RVjSK5B7dIG1m10BAw,26
+Aritmeticoperations-0.0.1.dist-info/RECORD,,

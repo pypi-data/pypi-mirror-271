@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+computex.egg-info/PKG-INFO
+computex.egg-info/SOURCES.txt
+computex.egg-info/dependency_links.txt
+computex.egg-info/requires.txt
+computex.egg-info/top_level.txt

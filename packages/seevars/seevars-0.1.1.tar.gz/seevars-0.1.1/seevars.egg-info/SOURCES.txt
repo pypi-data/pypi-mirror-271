@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+seevars/__init__.py
+seevars/show.py
+seevars.egg-info/PKG-INFO
+seevars.egg-info/SOURCES.txt
+seevars.egg-info/dependency_links.txt
+seevars.egg-info/top_level.txt

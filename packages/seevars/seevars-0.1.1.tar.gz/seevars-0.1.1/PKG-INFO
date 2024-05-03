@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: seevars
+Version: 0.1.1
+Summary: A tool to view the variables entered by the python prompt
+Home-page: https://github.com/NicRiv/seevars
+Author: nicriv
+Author-email: nicriv.dev@gmail.com
+License: MIT
+Keywords: utilities,prompt,monitor,vars
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# seevars
+
+Muestra las variables que en el prompt se declararon.

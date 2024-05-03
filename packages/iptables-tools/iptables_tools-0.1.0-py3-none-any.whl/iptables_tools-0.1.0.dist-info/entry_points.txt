@@ -1,0 +1,3 @@
+[console_scripts]
+iptables-tools=iptables_tools.cli:cli
+

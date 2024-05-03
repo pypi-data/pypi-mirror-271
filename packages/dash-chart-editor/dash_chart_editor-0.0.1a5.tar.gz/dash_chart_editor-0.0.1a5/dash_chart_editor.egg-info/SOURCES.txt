@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_chart_editor/DashChartEditor.py
+dash_chart_editor/__init__.py
+dash_chart_editor/_imports_.py
+dash_chart_editor/dash_chart_editor.min.js
+dash_chart_editor/dash_chart_editor.min.js.map
+dash_chart_editor/metadata.json
+dash_chart_editor/package-info.json
+dash_chart_editor/utils.py
+dash_chart_editor.egg-info/PKG-INFO
+dash_chart_editor.egg-info/SOURCES.txt
+dash_chart_editor.egg-info/dependency_links.txt
+dash_chart_editor.egg-info/top_level.txt

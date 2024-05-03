@@ -1,0 +1,4 @@
+[submodule "asphodel"]
+	path = lib/asphodel
+	url = ../asphodel.git
+	branch = develop

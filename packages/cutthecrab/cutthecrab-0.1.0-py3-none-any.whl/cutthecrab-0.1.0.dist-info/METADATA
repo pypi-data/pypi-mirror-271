@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cutthecrab
+Version: 0.1.0
+Summary: A Python library that installs the latest versions of all the *things libraries.
+Author-email: Jeroen Bertels <jeroen.bertels@gmail.com>
+Project-URL: Homepage, https://github.com/JeroenBertels/cutthecrab
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: iothings
+Requires-Dist: arraythings
+Requires-Dist: niftithings
+Requires-Dist: dicomthings
+
+# cutthecrab
+A Python library that installs the latest versions of all the *things libraries.

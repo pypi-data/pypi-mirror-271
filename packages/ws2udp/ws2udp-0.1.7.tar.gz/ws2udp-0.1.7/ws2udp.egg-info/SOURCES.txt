@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ws2udp/__init__.py
+ws2udp/__main__.py
+ws2udp/ws2udp.py
+ws2udp.egg-info/PKG-INFO
+ws2udp.egg-info/SOURCES.txt
+ws2udp.egg-info/dependency_links.txt
+ws2udp.egg-info/entry_points.txt
+ws2udp.egg-info/requires.txt
+ws2udp.egg-info/top_level.txt

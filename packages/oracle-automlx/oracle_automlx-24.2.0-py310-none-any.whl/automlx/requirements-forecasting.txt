@@ -1,0 +1,15 @@
+black==24.2.0
+datasets==2.18.0
+fsspec==2023.12.2
+numpy==1.24.3
+optuna==3.2.0
+pandas==2.0.3
+Pillow==10.2.0
+prophet==1.1.5
+psutil==5.9.5
+pyarrow==15.0.0
+ray[air]==2.9.2
+scikit-learn==1.2.2
+scipy>=1.10.1, <=1.11.1, !=1.11.0
+sktime==0.24.0
+statsmodels==0.14.0

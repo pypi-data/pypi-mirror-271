@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "libsrg-apps"
+version = "1.0.1"
+description = "This is a handful of applications migrated out of lilbsrg."
+authors = ["Steve Goncalo <steven@goncalo.us>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: System Administrators",
+    "Natural Language :: English",
+    "Topic :: Utilities",
+    "Topic :: System :: Systems Administration"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+libsrg = "^4.3.2"
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.3.7"
+sphinx-rtd-theme = "^2.0.0"
+sphinxcontrib-napoleon = "^0.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://gitlab.com/SRG_gitlab/libsrg_apps"
+Issues = "https://gitlab.com/SRG_gitlab/libsrg_apps/-/issues"
+

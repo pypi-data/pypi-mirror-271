@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: slurm_viewer
+Version: 0.0.2
+Summary: View a SLURM cluster and inspect nodes and jobs.
+Author-email: Patrick de Koning <pjhdekoning@lumc.nl>
+Project-URL: Homepage, https://gitlab.com/lkeb/slurm_viewer
+Keywords: XNAT,TUI
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typer[all]
+Requires-Dist: pydantic
+Requires-Dist: python-dateutil
+Requires-Dist: textual
+Requires-Dist: textual-plotext
+Requires-Dist: jsonpickle
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: textual-dev ; extra == 'dev'
+
+# Slurm Viewer
+## Introduction
+View the nodes in a slurm cluster and view the queue.
+
+## Settings
+placed in ~/.config/slurm_viewer/settings.json
+```json
+{
+  "debug": "True",
+  "server": "SERVER or NONE",
+  "nodelist": ["List of nodes to view"],
+  "node_columns": [
+    "short_name",
+    "gpu_tot",
+    "gpu_alloc",
+    "gpu_avail",
+    "gpu_type",
+    "gpu_mem",
+    "cpu_tot",
+    "cpu_alloc",
+    "cpu_avail",
+    "real_memory",
+    "alloc_mem",
+    "freemem"
+  ],
+  "queue_columns": [
+    "nodelist",
+    "user",
+    "job_id",
+    "command",
+    "submit_time",
+    "start_delay",
+    "min_memory"
+  ]
+}
+```

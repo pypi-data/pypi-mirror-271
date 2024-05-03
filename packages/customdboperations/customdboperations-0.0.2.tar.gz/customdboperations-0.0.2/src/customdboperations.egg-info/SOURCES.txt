@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/customdboperations.egg-info/PKG-INFO
+src/customdboperations.egg-info/SOURCES.txt
+src/customdboperations.egg-info/dependency_links.txt
+src/customdboperations.egg-info/requires.txt
+src/customdboperations.egg-info/top_level.txt
+src/mongodb_connect/__init__.py
+src/mongodb_connect/mongo_crud.py

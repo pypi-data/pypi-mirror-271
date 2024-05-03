@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dbt-singlestore
+Version: 1.6.1
+Summary: The singlestore adapter plugin for dbt
+Home-page: https://github.com/memsql/dbt-singlestore
+Author: SingleStore Inc.
+Author-email: support@singlestore.com
+License: Apache License 2.0
+License-File: LICENSE
+Requires-Dist: dbt-core>=1.0.0
+Requires-Dist: singlestoredb==1.2.0
+Requires-Dist: dataclasses_json>=0.5.6
+
+The singlestore adapter plugin for dbt

@@ -1,0 +1,5 @@
+keyring
+colorama
+diskcache
+json_repair
+google-generativeai

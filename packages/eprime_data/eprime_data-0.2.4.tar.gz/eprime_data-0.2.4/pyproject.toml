@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "eprime_data"
+authors = [{name = "Oliver Lindemann", email = "lindemann@essb.eur.nl"}]
+license = {file = "LICENSE"}
+keywords = ["open science", "experimental psychology", "data analysis"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+dynamic = ["version", "description"]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies =  ["pandas>=2.1", "pyarrow>=16.0"]
+
+[project.scripts]
+eprime_data = "eprime_data.__main__:cli"
+
+[project.urls]
+Home = "https://github.com/lindemann09/eprime-data"

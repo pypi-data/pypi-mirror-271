@@ -1,0 +1,8 @@
+json_patch_rules/__init__.py,sha256=CnMw4z1kUo3-Jo1m_YUCqaHIxPMgTrSEQfQUtrWco20,6926
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_module.py,sha256=zfocALCeRMuy95YN-7ofjTpQ4O1Zbr6w0N2RU-qpkIg,3004
+python_json_patch_rules-0.2.0.dist-info/LICENSE,sha256=LumaS_HTtCPvUEHNTmFjnpLFz5bVNYQknKKJjGrbY64,1069
+python_json_patch_rules-0.2.0.dist-info/METADATA,sha256=7QAayufvAq9DyFQgNFPXARDk7t4UpTWDQsUcXEva1WA,4967
+python_json_patch_rules-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+python_json_patch_rules-0.2.0.dist-info/top_level.txt,sha256=6ZRkTZ-3Fe8ER5XPTbuOo5UIFv_PT1kAnKN42PVEk0E,23
+python_json_patch_rules-0.2.0.dist-info/RECORD,,

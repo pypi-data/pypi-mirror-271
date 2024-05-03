@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+antidupe/__init__.py
+antidupe/main.py
+antidupe/utilities.py
+antidupe.egg-info/PKG-INFO
+antidupe.egg-info/SOURCES.txt
+antidupe.egg-info/dependency_links.txt
+antidupe.egg-info/requires.txt
+antidupe.egg-info/top_level.txt

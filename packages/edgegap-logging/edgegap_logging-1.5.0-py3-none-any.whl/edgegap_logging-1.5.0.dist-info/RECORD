@@ -1,0 +1,9 @@
+edgegap_logging/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+edgegap_logging/__init__.py,sha256=ykmj1kaMnQ2GZdjuX9GrAIKhv2RC5-N8o0cJeMAX_GQ,217
+edgegap_logging/_configuration.py,sha256=Z_x6F2IacSNA_bVjLBmwdr6rW5JKRMwvdz8IMz7ILkg,847
+edgegap_logging/_format.py,sha256=U3gUyjBDrLIE1GzL1dWqtFn4imI76mkR0IpTqmGrl1Y,939
+edgegap_logging/_logging.py,sha256=b4Yz7Kbhw6vPYNFcZB6wbaTXHbfdwUAeI1ombl6GKKA,1299
+edgegap_logging-1.5.0.dist-info/LICENSE,sha256=mYYtVBrHBTkSpFkacS5_MQm9GZ-2hrNP759ExfdrX18,1993
+edgegap_logging-1.5.0.dist-info/METADATA,sha256=lCZmQ3RPULxAzsirWORVTv3xZ1C3JoM1Sog2L6ZcHvE,2826
+edgegap_logging-1.5.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+edgegap_logging-1.5.0.dist-info/RECORD,,

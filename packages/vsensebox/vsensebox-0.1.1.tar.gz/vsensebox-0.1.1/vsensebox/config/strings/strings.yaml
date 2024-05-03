@@ -1,0 +1,10 @@
+# detector
+detector: detector
+yolo_classic: YOLO_Classic
+yolo_ultralytics: YOLO_Ultralytics
+# tracker
+tracker: tracker
+sort: SORT
+deepsort: DeepSORT
+centroid: Centroid
+basiciou: BasicIoU

@@ -1,0 +1,31 @@
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylammpstrj"
+authors = [
+    {name = "Heiarii Lou Chao", email = "heiariilouchao@gmail.com"}
+]
+description = "Processing LAMMPS trajectory files."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+    "lammps",
+    "trajectory",
+    "processing"
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3.8",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Utilities"
+]
+version = "1.0.4a"
+
+[project.urls]
+Repository = "https://github.com/heiariilouchao/thesis"

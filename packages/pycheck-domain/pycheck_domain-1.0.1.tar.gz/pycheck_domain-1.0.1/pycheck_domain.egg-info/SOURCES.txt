@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pycheck_domain/__init__.py
+pycheck_domain/check_domain.py
+pycheck_domain.egg-info/PKG-INFO
+pycheck_domain.egg-info/SOURCES.txt
+pycheck_domain.egg-info/dependency_links.txt
+pycheck_domain.egg-info/requires.txt
+pycheck_domain.egg-info/top_level.txt
+pycheck_domain.egg-info/zip-safe

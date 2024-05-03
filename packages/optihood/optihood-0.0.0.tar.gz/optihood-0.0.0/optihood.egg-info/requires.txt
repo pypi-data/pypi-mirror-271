@@ -1,0 +1,15 @@
+bokeh
+configparser
+python-dateutil
+matplotlib
+numpy
+oemof.solph==0.4.4
+oemof.thermal
+openpyxl
+pandas
+plotly
+pvlib
+Pyomo
+scipy
+xlrd
+xlwt

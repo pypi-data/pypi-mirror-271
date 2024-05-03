@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/starcat/__init__.py
+src/starcat/starcat.py
+src/starcatpy.egg-info/PKG-INFO
+src/starcatpy.egg-info/SOURCES.txt
+src/starcatpy.egg-info/dependency_links.txt
+src/starcatpy.egg-info/entry_points.txt
+src/starcatpy.egg-info/requires.txt
+src/starcatpy.egg-info/top_level.txt

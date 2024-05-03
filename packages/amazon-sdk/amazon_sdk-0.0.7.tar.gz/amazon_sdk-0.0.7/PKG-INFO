@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: amazon-sdk
+Version: 0.0.7
+Summary: A package for Amazon SDK
+Author: Genhao Li
+Author-email: ligenhao20010916@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Amazon SDK
+
+## Setup
+
+1. Install the package:
+
+```bash
+pip install --upgrade Amazon_SDK
+```
+
+2. Add file `.env` with the Amazon credentials:
+
+```plaintext
+LWA_APP_ID=<your_app_id>
+LWA_CLIENT_SECRET=<your_client_secret>
+SP_API_REFRESH_TOKEN=<your_refresh_token>
+```
+
+## Usage
+
+For example see `usage_example.py`
+
+Differences with `bol_SDK`:
+- Use methods in class `AmazonSDK`, with detailed documentation
+- No need to pass `access_token` as a parameter, which is automatically handled by the SDK
+
+## Build
+
+```bash
+poetry build
+```
+
+## Publish
+
+```bash
+poetry publish
+```

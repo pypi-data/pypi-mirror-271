@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Amazon_SDK"
+version = "0.0.7"
+description = "A package for Amazon SDK"
+authors = ["Genhao Li <ligenhao20010916@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "Amazon_SDK"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

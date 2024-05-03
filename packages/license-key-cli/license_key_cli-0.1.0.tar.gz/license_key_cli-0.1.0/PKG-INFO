@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: license-key-cli
+Version: 0.1.0
+Summary: 
+Author: marat2509
+Author-email: marat2509@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Reserved for license-key-cli project
+

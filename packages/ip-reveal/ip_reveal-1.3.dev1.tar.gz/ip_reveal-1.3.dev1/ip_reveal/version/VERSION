@@ -1,0 +1,40 @@
+from collections import UserDict
+
+
+class VERSION(UserDict):
+
+    VERSION = UserDict(
+        {
+            'VERSION': {
+                       'base': '1.3',
+                       'cname': 'mongoose',
+                   },
+
+                   'RELEASE': {
+
+                       'non-stable': True,
+                   },
+
+                   'PRE_RELEASE': {
+                       'stage': 'dev',
+                       'build': 1,
+                   }
+    })
+
+print(VERSION.VERSION.data)
+
+def parse_version():
+    """
+    Parse the version number from the VERSION dictionary.
+
+    Returns:
+        (str): The version number as a string.
+    """
+    version = VERSION.VERSION.data['VERSION']['base']
+    pre_release = VERSION.VERSION.data['PRE_RELEASE']['stage']
+    build = VERSION.VERSION.data['PRE_RELEASE']['build']
+
+    if VERSION.VERSION.data['RELEASE']['non-stable']:
+        version = f'{version}({pre_release}-{build})'
+
+    return version

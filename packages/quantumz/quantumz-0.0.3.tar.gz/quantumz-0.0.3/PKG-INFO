@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: quantumz
+Version: 0.0.3
+Summary: A module for quantum computing emulations
+Author: Sergei Zuev
+Author-email: shoukhov@mail.ru
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+The QuantumZ package contains the set of functions to emulate quantum computations on the classical computers. The quantum states are supposed to be presented as dictionaries in the form {'|01>': 0.717, '|11>': 0.717} (for example). The same notation is used for the quantum gates.
+
+All functions are described in the source code.

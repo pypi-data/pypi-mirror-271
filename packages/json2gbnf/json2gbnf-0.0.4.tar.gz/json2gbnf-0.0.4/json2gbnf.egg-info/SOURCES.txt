@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+json2gbnf/__init__.py
+json2gbnf/json2gbnf.py
+json2gbnf/json2gbnf_test.py
+json2gbnf.egg-info/PKG-INFO
+json2gbnf.egg-info/SOURCES.txt
+json2gbnf.egg-info/dependency_links.txt
+json2gbnf.egg-info/requires.txt
+json2gbnf.egg-info/top_level.txt
+json2gbnf/js/index.js

@@ -1,0 +1,9 @@
+tlslib/__init__.py,sha256=mvM5WcY_-rzwUR4B3CGPp2GHAkt_oij0RYsK5GhQM_w,51
+tlslib/stdlib.py,sha256=Zz9H0LNUnGkHrpi_Oe_gysiLHwsAx2oAEUNAZb0wrC4,36201
+tlslib/tlslib.py,sha256=BrxLrl9zHlJoj2KviAM8ckAkRNBXAyOsaDAx7mrMkI4,32460
+tlslib/insecure/__init__.py,sha256=p5cxtWOFyKgiTYEJ_tg9Xd0g4Z5xbTyjV0isCMp5iRk,7176
+tlslib/insecure/stdlib_insecure.py,sha256=sVok7qg8fOpyTIx3gi92iifF_sHtjFQtAQ0orLdk0C8,6146
+tlslib-0.0.2rc1.dist-info/LICENSE,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+tlslib-0.0.2rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+tlslib-0.0.2rc1.dist-info/METADATA,sha256=IlGAytAMnu6EDYiceaNLpgF7u-FDFPZLDRI9g30rnPk,1986
+tlslib-0.0.2rc1.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+numpy
+matplotlib
+pyvista
+imageio
+imageio[ffmpeg]
+imageio[pyav]
+ipywidgets
+trame
+trame-vtk
+trame-vuetify
+trame-plotly

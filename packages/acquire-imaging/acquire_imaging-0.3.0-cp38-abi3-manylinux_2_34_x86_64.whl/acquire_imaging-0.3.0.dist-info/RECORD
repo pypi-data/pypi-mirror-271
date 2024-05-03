@@ -1,0 +1,17 @@
+acquire_imaging-0.3.0.dist-info/METADATA,sha256=dSqpg5-RkhJLlSWIFW2zDjilcIlUspi41WgpVijO-q8,7037
+acquire_imaging-0.3.0.dist-info/WHEEL,sha256=Z-bs_JB7pHwarS-w2RMyVl5xPgPun1BAUKrv8ZKsoIo,106
+acquire_imaging-0.3.0.dist-info/entry_points.txt,sha256=0GFYK0eq34-Uk8yZxbuu_8ZZn65bCniZ3t6z5_gJ_As,54
+acquire_imaging-0.3.0.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+acquire/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acquire/acquire.pyi,sha256=a_LHZA8lWdugVGlN9O1ES3rxB7m8pjKsJmtL5bnW-RY,11816
+acquire/napari.yaml,sha256=Kxuz10R9Icn7V4ga-FEL_J6GLRyR-Cp6bRktmRfPBMQ,276
+acquire/__init__.py,sha256=vAvU9AYNG_Pc8SjtmEjpZ74UuaMguYFSLmAxqqSbvNE,7393
+acquire/__init__.pyi,sha256=4_4OLbNBy4MAl86ttRFRsPoksjVHDGyhaS4hDSQrrEc,580
+acquire/libacquire-driver-common.so,sha256=T8hCr4INCKziFYVTxUuFRkevVO1-_D3i1KzAxm7Bl4o,669976
+acquire/libacquire-driver-egrabber.so,sha256=_4iSKPlz-ZIkdfGLRerdFnM2hrA8_dW9Hp8mknCX5Zk,751080
+acquire/libacquire-driver-hdcam.so,sha256=mNtjxlbRR1ShsXGpeG9thuD_3P3Z2eXBWtC00Zfsj_o,15160
+acquire/libacquire-driver-pvcam.so,sha256=mNtjxlbRR1ShsXGpeG9thuD_3P3Z2eXBWtC00Zfsj_o,15160
+acquire/libacquire-driver-spinnaker.so,sha256=mNtjxlbRR1ShsXGpeG9thuD_3P3Z2eXBWtC00Zfsj_o,15160
+acquire/libacquire-driver-zarr.so,sha256=ZmCfKie5Op8EtW3xiu7bY8q55wFTonUk39Q5JoES1XU,4548048
+acquire/acquire.abi3.so,sha256=S_TnhH7d5-c8DYh-B38mloXNmzhaLRJ-M49wExA8lYU,2515600
+acquire_imaging-0.3.0.dist-info/RECORD,,

@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: genai-apis
+Version: 0.0.3
+Summary: GenAI APIs provides a unified API callers to Gemini API, OpenAI API, and Anthropic API.
+Home-page: https://github.com/deep-diver/genai-apis
+Author: chansung park
+Author-email: deep.diver.csp@gmail.com
+Keywords: genai
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncio
+Provides-Extra: anthropic
+Requires-Dist: anthropic ; extra == 'anthropic'
+Provides-Extra: anthropic-bedrock
+Requires-Dist: anthropic[bedrock] ; extra == 'anthropic-bedrock'
+Provides-Extra: anthropic-vertex
+Requires-Dist: anthropic[vertex] ; extra == 'anthropic-vertex'
+Provides-Extra: gemini
+Requires-Dist: google-generativeai ; extra == 'gemini'
+Provides-Extra: gemini-vertex
+Requires-Dist: google-cloud-aiplatform ; extra == 'gemini-vertex'
+Provides-Extra: openai
+Requires-Dist: openai ; extra == 'openai'
+
+# genai-apis

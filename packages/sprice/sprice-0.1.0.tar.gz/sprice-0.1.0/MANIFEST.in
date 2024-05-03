@@ -1,0 +1,2 @@
+include sprice/data/sprice_data_1.h5
+include sprice/data/sprice_data_2.h5

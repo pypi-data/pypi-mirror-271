@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+sprice/__init__.py
+sprice/core.py
+sprice.egg-info/PKG-INFO
+sprice.egg-info/SOURCES.txt
+sprice.egg-info/dependency_links.txt
+sprice.egg-info/requires.txt
+sprice.egg-info/top_level.txt
+sprice/data/sprice_data_1.h5
+sprice/data/sprice_data_2.h5

@@ -1,0 +1,4 @@
+[console_scripts]
+benchmark.agent = open_llm_benchmark.task.agent:main
+benchmark.format_output = open_llm_benchmark.task.format_output:main
+benchmark.retrieval = open_llm_benchmark.task.retrieval:main

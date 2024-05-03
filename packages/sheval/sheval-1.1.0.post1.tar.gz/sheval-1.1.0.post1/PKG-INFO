@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: sheval
+Version: 1.1.0.post1
+Summary: Safely evaluate mathematical and logical expressions.
+Home-page: https://gitlab.com/deepadmax/sheval
+License: GPL-3.0-or-later
+Author: Maximillian Strand
+Author-email: maxi@millian.se
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://gitlab.com/deepadmax/sheval
+Description-Content-Type: text/markdown
+
+# 🐴 sheval
+
+Safely evaluate mathematical and logical expressions. Most operations are supported.
+
+### Whitelisted data types
+
+For security, only certain data types are allowed for constants and variables.
+
+- `str`
+- `int`
+- `float`
+- `complex`
+- `list`
+- `tuple`
+- `set`
+- `dict`
+- `bool`
+- `bytes`
+- `NoneType`
+
+## Example
+
+```py
+from sheval import sheval
+
+# Variables can be passed on.
+variables = dict(
+    x =  2,
+    y =  3,
+)
+# And functions too!
+functions = dict(
+    double = lambda x: x * 2,
+)
+
+sheval('double(x) > y', variables, functions)
+```

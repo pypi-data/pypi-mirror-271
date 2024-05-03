@@ -1,0 +1,5 @@
+[console_scripts]
+all-edrn-sync = jpl.edrn.ldap.sync.allgroup:main
+cryptpasswords = jpl.edrn.ldap.sync.crypt:main
+groupsync = jpl.edrn.ldap.sync.groupsync:main
+usersync = jpl.edrn.ldap.sync.usersync:main

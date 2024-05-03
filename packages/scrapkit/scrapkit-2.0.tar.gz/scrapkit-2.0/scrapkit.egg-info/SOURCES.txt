@@ -1,0 +1,8 @@
+setup.py
+scrapkit/__init__.py
+scrapkit/main.py
+scrapkit.egg-info/PKG-INFO
+scrapkit.egg-info/SOURCES.txt
+scrapkit.egg-info/dependency_links.txt
+scrapkit.egg-info/requires.txt
+scrapkit.egg-info/top_level.txt

@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teklia-nerval"
+version = "0.3.3-rc1"
+description = "Tool to evaluate NER on noisy text."
+dynamic = ["dependencies"]
+authors = [
+    { name = "Teklia", email = "contact@teklia.com" },
+]
+maintainers = [
+    { name = "Teklia", email = "contact@teklia.com" },
+]
+readme = { file = "README.md", content-type = "text/markdown" }
+
+[project.scripts]
+nerval = "nerval.cli:main"
+
+[tool.setuptools]
+packages = ["nerval"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.ruff]
+exclude = [".git", "__pycache__"]
+ignore = [
+    "E501",
+    # Conflicts with the formatter
+    "COM812"
+]
+select = [
+    # pycodestyle
+    "E",
+    "W",
+    # Pyflakes
+    "F",
+    # Flake8 Debugger
+    "T1",
+    # Isort
+    "I",
+    # Pyupgrade
+    "UP",
+    # Pandas-vet
+    "PD",
+    # Flake8-comprehension
+    "C4",
+    # Flake8-builtins
+    "A",
+    # flake8-commas
+    "COM",
+    # flake8-import-conventions
+    "ICN",
+    # flake8-raise
+    "RSE",
+    # flake8-quotes
+    "Q",
+    # flake8-unused-arguments
+    "ARG",
+    # flake8-use-pathlib
+    "PTH",
+    # flake8-pytest-style
+    "PT",
+]

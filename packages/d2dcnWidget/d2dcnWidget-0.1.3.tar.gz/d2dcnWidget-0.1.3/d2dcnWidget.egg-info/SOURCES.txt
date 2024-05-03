@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+d2dcnWidget/__init__.py
+d2dcnWidget/d2dcnGUI.py
+d2dcnWidget/d2dcnWidget.py
+d2dcnWidget.egg-info/PKG-INFO
+d2dcnWidget.egg-info/SOURCES.txt
+d2dcnWidget.egg-info/dependency_links.txt
+d2dcnWidget.egg-info/entry_points.txt
+d2dcnWidget.egg-info/requires.txt
+d2dcnWidget.egg-info/top_level.txt

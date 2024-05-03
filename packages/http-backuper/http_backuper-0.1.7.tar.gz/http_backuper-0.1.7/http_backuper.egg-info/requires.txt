@@ -1,0 +1,6 @@
+pydantic<2
+requests
+schedule
+docker
+healthchecks_io
+PyYAML

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: http_backuper
+Version: 0.1.7
+Summary: A simple backup solution
+Home-page: https://github.com/djbios/http_backuper
+Author: djbios
+Author-email: dorandval@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Requires-Dist: pydantic<2
+Requires-Dist: requests
+Requires-Dist: schedule
+Requires-Dist: docker
+Requires-Dist: healthchecks_io
+Requires-Dist: PyYAML

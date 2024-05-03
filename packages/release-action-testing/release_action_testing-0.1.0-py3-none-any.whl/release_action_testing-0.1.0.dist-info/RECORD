@@ -1,0 +1,5 @@
+release_action_testing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+release_action_testing/bruh.py,sha256=1hFQAwOBmWFHOTxh6arnndSmZjU2JhaEqQJEqvc7NPA,65
+release_action_testing-0.1.0.dist-info/METADATA,sha256=Y7AP2MM7_Us__uE275yYr4kh4Hzcb4mGNDm_v-ZpD-o,404
+release_action_testing-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+release_action_testing-0.1.0.dist-info/RECORD,,

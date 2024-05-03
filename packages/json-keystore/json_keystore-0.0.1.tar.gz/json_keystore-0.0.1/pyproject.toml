@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["license"]
+name = "json-keystore"
+version = "0.0.1"
+description = "Python Library for Encrypted JSON"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.8.2"
+keywords = ["json", "encryption"]
+dependencies = [
+    "trezor >=0.13.8",
+    "pyjson5 >=1.6.6",
+]
+authors = [{name = "brianddk", email = "brianddk@users.noreply.github.com"}]
+maintainers = [{name = "brianddk", email = "brianddk@users.noreply.github.com"}]
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries",
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: Apache Software License",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+dev = [
+    # Development dependencies here
+    "build >=1.1.1",
+    "twine >=5.0.0",
+    "black >=24.3.0",
+    "flake8 >=7.0.0",
+    "isort >=5.13.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/brianddk/json-keystore"
+Repository = "https://github.com/brianddk/json-keystore.git"
+Issues = "https://github.com/brianddk/json-keystore/issues"
+Discussions = "https://github.com/brianddk/json-keystore/discussions"
+Donations = "https://tippin.me/@dkbriand"
+
+[tool.setuptools]
+packages = ["json_keystore"]
+
+[tool.black]
+line-length = 200
+target-version = ["py38"]
+
+[tool.isort]
+py_version = 38
+profile = "black"
+src_paths = ["json_keystore", "examples", "tests"]
+skip_gitignore = true

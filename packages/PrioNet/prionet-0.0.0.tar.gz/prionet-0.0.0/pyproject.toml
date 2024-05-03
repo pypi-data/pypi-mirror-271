@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "PrioNet"
+version = "0.0.0"
+authors = [
+  { name="Giuseppe Priolo", email="priopio7@gmail.com" },
+]
+description = "A package for analyizing financial data"
+readme = "README.md"
+requires-python = ">=3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/QuantDreamGit/PrioNet"

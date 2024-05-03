@@ -1,0 +1,13 @@
+aws-cdk-lib==2.88.0
+boto3
+constructs<11.0.0,>=10.0.0
+mysql-connector-python
+nodeenv
+pycognito
+pydantic
+pymysql
+requests
+sqlalchemy
+
+[dev]
+pytest

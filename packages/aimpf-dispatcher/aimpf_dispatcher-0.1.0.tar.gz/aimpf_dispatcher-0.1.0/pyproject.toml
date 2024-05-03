@@ -1,0 +1,44 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aimpf-dispatcher"
+version = "0.1.0"
+authors = [
+  { name="Chen Chen", email="chen.chen@contextualize.us.com" },
+  { name="Branden Kappes", email="branden.kappes@contextualize.us.com" },
+  { name="William Silloway", email="william.silloway@contextualize.us.com" },
+  { name="Lindsey Kuettner", email="lindsey.kuettner@contextualize.us.com" },
+]
+dependencies = [
+    "aws-cdk-lib==2.88.0",
+    "boto3",
+    "constructs>=10.0.0,<11.0.0",
+    "mysql-connector-python",
+    "nodeenv",
+    "pycognito",
+    "pydantic",
+    "pymysql",
+    "requests",
+    "sqlalchemy"
+]
+description = "A dispatcher to handle information from MQTT database"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/contextualize/operations/georgia-tech/aim-dsc-analysis"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]

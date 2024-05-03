@@ -1,0 +1,10 @@
+galaxy/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+galaxy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galaxy/navigation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galaxy/navigation/components.py,sha256=jNGAPH13kwtKy5OSJ5jq3-VNv1DRdPDkctu5fjND-Jw,10848
+galaxy/navigation/data.py,sha256=FSPF8BHX-PmSAZxDlJloTFzwTvXiVhX495Cdx1E8JkQ,312
+galaxy/navigation/navigation.yml,sha256=fAZWd6vLQHeHEzou_CanAT7cOznUhaJhd8Jwa9W29n8,44962
+galaxy_navigation-24.0.1.dist-info/METADATA,sha256=WPdTAtdBBqko7ufd2AalHdVDGZLZZNl5kindhye_ddg,3267
+galaxy_navigation-24.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+galaxy_navigation-24.0.1.dist-info/top_level.txt,sha256=9HENT-IEOWP3NQHcVmb3stdSJQyyjYcyt-qaFqZ0lpk,7
+galaxy_navigation-24.0.1.dist-info/RECORD,,

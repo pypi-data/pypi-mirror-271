@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+naurok/__init__.py
+naurok/client.py
+naurok/req.py
+naurok.py.egg-info/PKG-INFO
+naurok.py.egg-info/SOURCES.txt
+naurok.py.egg-info/dependency_links.txt
+naurok.py.egg-info/requires.txt
+naurok.py.egg-info/top_level.txt

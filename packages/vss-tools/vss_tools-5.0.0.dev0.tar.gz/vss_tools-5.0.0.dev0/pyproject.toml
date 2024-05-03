@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools", "setuptools-git-versioning", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+# Starting version is just a dummy value that never shall be used in CI
+starting_version = "0.0.0"
+

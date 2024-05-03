@@ -1,0 +1,10 @@
+requests
+jax
+jaxlib
+quadax
+tqdm
+black
+astropy>5
+matplotlib
+sympy
+ipykernel

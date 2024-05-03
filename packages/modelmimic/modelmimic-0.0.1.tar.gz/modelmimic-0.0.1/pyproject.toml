@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modelmimic"
+requires-python = ">=3.10"
+authors = [{ name = "Michael Kelleher", email = "kelleherme@ornl.gov" }]
+description = "Generate model-like data, _mimic_ the output of various CIME tests."
+readme = "README.md"
+license = { text = "BSD-3-Clause" }
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = ["numpy", "xarray", "netCDF4", "pandas", "toml"]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = ["ruff", "isort", "black"]
+
+[tool.setuptools.dynamic]
+version = { attr = "modelmimic.__version__" }
+
+[tool.pydoctor]
+project-name = "ModelMimic"
+make-html = true
+html-output = "./docs"
+docformat = "numpy"
+intersphinx = "https://docs.python.org/3/objects.inv"
+theme = "readthedocs"
+privacy = ["PRIVATE:**.__*__", "PUBLIC:**.__init__"]
+add-package = ["./modelmimic"]

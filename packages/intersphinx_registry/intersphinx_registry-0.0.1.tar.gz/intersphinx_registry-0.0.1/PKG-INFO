@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: intersphinx_registry
+Version: 0.0.1
+Summary: This package provides convenient utilities and data to write a sphinx config file.
+Author-email: Matthias Bussonnier <bussonniermatthias@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/Carreau/intersphinx_registry

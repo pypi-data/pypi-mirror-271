@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pymongo-helper
+Version: 0.0.3
+Summary: The pymongo helper package is a Python library designed to simplify and streamline interactions with MongoDB databases using the PyMongo driver.
+Home-page: https://github.com/ambroisehdn/pymongo-helper
+Author: ambroisehdn
+Author-email: contact@ambroisehdn.me
+Project-URL: Bug Tracker, https://github.com/ambroisehdn/pymongo-helper/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymongo==4.7.0
+Requires-Dist: pytest==8.2.0
+
+# pymongo-helper
+PyMongoHelper - The Helper of MongoDB Python driver

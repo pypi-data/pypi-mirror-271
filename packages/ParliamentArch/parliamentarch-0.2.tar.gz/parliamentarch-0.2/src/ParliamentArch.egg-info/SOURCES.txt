@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+LISEZMOI.rst
+README.rst
+pyproject.toml
+.github/workflows/python-package.yml
+.github/workflows/python-publish.yml
+src/ParliamentArch.egg-info/PKG-INFO
+src/ParliamentArch.egg-info/SOURCES.txt
+src/ParliamentArch.egg-info/dependency_links.txt
+src/ParliamentArch.egg-info/top_level.txt
+src/parliamentarch/__init__.py
+src/parliamentarch/__main__.py
+src/parliamentarch/_util.py
+src/parliamentarch/geometry.py
+src/parliamentarch/svg.py

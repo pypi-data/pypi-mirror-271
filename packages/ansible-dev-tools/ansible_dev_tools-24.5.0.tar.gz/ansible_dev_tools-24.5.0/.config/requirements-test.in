@@ -1,0 +1,13 @@
+black
+coverage
+mypy
+pip-tools
+pre-commit
+pydoclint
+pytest
+requests
+ruff
+toml-sort
+types-pyyaml
+types-requests
+django-stubs[compatible-mypy]

@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: velosaurus_calc
+Version: 1.0.8
+Summary: Most awesome math package ever.
+Home-page: https://github.com/OliverZott/python-devops-example
+Author: Oliver Zott
+Author-email: zott_oliver@web.de
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Dummy package
+
+Most incredible package ever.
+
+## Usage
+
+```python
+from velosaurus_calc import add_floats
+from velosaurus_calc import subtract_floats
+
+print(add_floats(1, 2))
+print(subtract_floats(1, 2))
+```

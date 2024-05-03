@@ -1,0 +1,6 @@
+xtrack==0.59.0
+xfields==0.16.0
+xcoll==0.3.6
+xobjects==0.4.1
+xdeps==0.5.7
+xpart==0.18.2

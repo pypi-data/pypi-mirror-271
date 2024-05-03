@@ -1,0 +1,6 @@
+README.rst
+setup.py
+pypwing.egg-info/PKG-INFO
+pypwing.egg-info/SOURCES.txt
+pypwing.egg-info/dependency_links.txt
+pypwing.egg-info/top_level.txt

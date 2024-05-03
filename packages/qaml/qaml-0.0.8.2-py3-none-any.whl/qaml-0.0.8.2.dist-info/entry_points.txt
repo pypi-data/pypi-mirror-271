@@ -1,0 +1,3 @@
+[console_scripts]
+qaml = qaml.__main__:main
+qaml-agent = qaml.cli_agent:main

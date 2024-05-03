@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: new-natnet-client
+Version: 4.1.0
+Summary: natnet client for motive application for python
+Home-page: https://optitrack.com/
+License: GLWTPL
+Author: Ignacio de la Torre Arias
+Author-email: ignaciodlta@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/IgnaciodelaTorreArias/natnet-client
+Description-Content-Type: text/markdown
+
+This package provides the client for using [Optitrack's](https://optitrack.com/) NatNet tracking system, with type hints for python.
+
+The NatNet SDK is a simple Client/Server networking SDK for sending and receiving
+data from Motive across networks.  NatNet uses the UDP protocol in conjunction
+with either multicasting or point-to-point unicasting for transmitting data.
+
+A list of changes made in each version can be found at the following website: https://www.optitrack.com/support/downloads/developer-tools.html
+
+More about NatNet: https://docs.optitrack.com/developer-tools/natnet-sdk
+
+---
+I have no relationship with Optitrack

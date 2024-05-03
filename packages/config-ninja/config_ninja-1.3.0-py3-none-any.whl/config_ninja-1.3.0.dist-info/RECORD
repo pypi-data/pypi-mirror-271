@@ -1,0 +1,15 @@
+config_ninja/__init__.py,sha256=vQOTBww3Kr99oTq8FWkMe2iBCKI7nsKCr7wpns3z2zQ,1452
+config_ninja/__main__.py,sha256=m3z9bCAzCpkMKPrKVugO-2T1CYvw2Ufq5yeX-yAuSrw,465
+config_ninja/backend.py,sha256=cHGapB08TIsx3_A0uf-aIvtfrPeZlHe6cJVoOeQK52Y,2433
+config_ninja/cli.md,sha256=6XLRw6dRSBPh6wYe8dEbPQqnxfIxpaPORT3lHCDyuQs,3592
+config_ninja/cli.py,sha256=i14znHkPgU7E6ZT-Ytb4G31zJ-YrjzN0JVjiMtKDaeY,17917
+config_ninja/contrib/__init__.py,sha256=sBL4UjIdkAsBeQivibKOZpKiNlTHTuf1rzAKu4xS14w,1015
+config_ninja/contrib/appconfig.py,sha256=fyiYJoKBHcP2QcTFanDdXj7kvKv8DIi5Vt6b9ZbzObU,10870
+config_ninja/contrib/local.py,sha256=xlQsEW_YTj5JC-LKinyOwCUTgVggTftMTy-Mug4-ZjY,2143
+config_ninja/systemd.py,sha256=avzwAtumikm5MQualSQIa0w-Oago1O_-RAT5VoNu4EM,7643
+config_ninja/templates/systemd.service.j2,sha256=k6M9_FKY5XKbluvfviVBRVQBp2dh3oY3U0jSGdjFW5I,620
+config_ninja-1.3.0.dist-info/LICENSE,sha256=msSILeXYFtMntLBwIqshhQpkoSGVn215lVsrsqHeVsw,1070
+config_ninja-1.3.0.dist-info/METADATA,sha256=UCs4ZnxjWGq-64mFKSzmB96OROwvcM5m9ZgdAQwW0Pg,6996
+config_ninja-1.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+config_ninja-1.3.0.dist-info/entry_points.txt,sha256=DlkWTbXw-Ee1tYjJ0SkMsMM515CSbUxGe6MWS9YHuYo,53
+config_ninja-1.3.0.dist-info/RECORD,,

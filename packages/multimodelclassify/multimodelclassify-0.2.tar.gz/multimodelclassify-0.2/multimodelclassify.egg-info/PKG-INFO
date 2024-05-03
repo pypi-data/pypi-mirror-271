@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: multimodelclassify
+Version: 0.2
+Summary: A class to allow to compare the performance of classification between multiple classification models 
+Home-page: https://github.com/Shinnoyaninsha/multimodelclassify
+Download-URL: https://github.com/Shinnoyaninsha/multimodelclassify/archive/refs/tags/v_02.tar.gz
+Author: anthonyredgrave24
+Author-email: anthonyhamann24@gmail.com
+License: MIT
+Keywords: MULTIMODEL,CLASSIFICATION
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt

@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+multimodelclassify/__init__.py
+multimodelclassify/mmc.py
+multimodelclassify.egg-info/PKG-INFO
+multimodelclassify.egg-info/SOURCES.txt
+multimodelclassify.egg-info/dependency_links.txt
+multimodelclassify.egg-info/requires.txt
+multimodelclassify.egg-info/top_level.txt

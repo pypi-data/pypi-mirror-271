@@ -1,0 +1,1 @@
+from multimodelclassify.mmc import MultiModelClassifier

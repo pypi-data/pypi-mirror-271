@@ -1,0 +1,63 @@
+{
+    "service_name": "organizations",
+    "functions": [
+        {
+            "function_name": "list_accounts",
+            "function_description": "List accounts in Organization",
+            "boto_session_type": "client",
+            "response_format": "FORMAT_2",
+            "function_type": "list",
+            "is_regional": "N",
+            "pagination_support": "Y",
+            "is_multi_account_support": "N",
+            "implclass": "_global_paginate",
+            "implfunction": "process",
+            "validation_functions": "",
+            "result_keys": [
+                "Accounts"
+            ],
+            "json_response": {
+                "Id": "string",
+                "Arn": "string",
+                "Email": "string",
+                "Name": "string",
+                "Status": "",
+                "JoinedMethod": "",
+                "JoinedTimestamp": ""
+            }
+        },
+        {
+            "function_name": "list_policies",
+            "function_description": "List Policies in  Organization",
+            "boto_session_type": "client",
+            "response_format": "FORMAT_2",
+            "function_type": "list",
+            "is_regional": "N",
+            "pagination_support": "Y",
+            "is_multi_account_support": "N",
+            "implclass": "_global_paginate",
+            "implfunction": "process",
+            "validation_functions": "",
+            "pagination_attributes": [
+                {
+                    "attribute_name": "Filter",
+                    "attribute_value": "SERVICE_CONTROL_POLICY",
+                    "is_visible": "N",
+                    "display_prompt": "",
+                    "type": "str"
+                }
+            ],
+            "result_keys": [
+                "Policies"
+            ],
+            "json_response": {
+                "Id": "string",
+                "Arn": "string",
+                "Name": "string",
+                "Description": "string",
+                "Type": "",
+                "AwsManaged": ""
+            }
+        }
+    ]
+}

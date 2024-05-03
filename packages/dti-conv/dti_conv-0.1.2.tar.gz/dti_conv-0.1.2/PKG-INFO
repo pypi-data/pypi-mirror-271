@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dti-conv
+Version: 0.1.2
+Summary: A command line utility that allows easy modifications on DWI volumes and Datasets.
+License: MIT
+Author: AtulPhadke
+Author-email: atulphadke8@gmail.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyQt5 (>=5.15.9)
+Requires-Dist: brukerapi (>=0.1.8)
+Requires-Dist: dipy (>=1.6.0)
+Requires-Dist: inquirer (>=3.1.4)
+Requires-Dist: keyboard (>=0.13.5)
+Requires-Dist: matplotlib (>=3.6.3)
+Requires-Dist: nibabel (>=5.0.0)
+Requires-Dist: numpy (>=1.24.2)
+Requires-Dist: scipy (>=1.10.0)
+Requires-Dist: simpleitk (>=2.2.1)
+Requires-Dist: tkscrolledframe (>=1.0.4)

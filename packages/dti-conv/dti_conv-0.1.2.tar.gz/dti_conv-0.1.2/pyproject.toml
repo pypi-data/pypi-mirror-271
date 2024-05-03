@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "dti-conv"
+version = "0.1.2"
+description = "A command line utility that allows easy modifications on DWI volumes and Datasets."
+authors = ["AtulPhadke <atulphadke8@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+
+python = ">=3.9"
+
+keyboard = ">=0.13.5"
+brukerapi = ">=0.1.8"
+dipy = ">=1.6.0"
+nibabel = ">=5.0.0"
+numpy = ">=1.24.2"
+matplotlib = ">=3.6.3"
+simpleitk = ">=2.2.1"
+tkscrolledframe = ">=1.0.4"
+PyQt5 = ">=5.15.9"
+scipy = ">=1.10.0"
+inquirer = ">=3.1.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dti_conv = "dti_conv:main"

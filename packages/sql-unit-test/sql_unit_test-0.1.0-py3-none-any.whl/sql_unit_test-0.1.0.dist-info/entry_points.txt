@@ -1,0 +1,3 @@
+[console_scripts]
+sql-unit-test=sql_unit_test.cli.commands:my_commands
+

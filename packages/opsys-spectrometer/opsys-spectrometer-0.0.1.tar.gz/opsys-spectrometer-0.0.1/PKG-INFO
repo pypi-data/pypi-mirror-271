@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: opsys-spectrometer
+Version: 0.0.1
+Summary: python package for wavelength measuring devices
+Home-page: https://bitbucket.org/opsys_tech/opsys-spectrometer/src/master/
+Download-URL: https://bitbucket.org/opsys_tech/opsys-spectrometer/src/master/
+Author: dmitry.borovensky
+Author-email: dmitry.borovensky@opsys-tech.com
+License-File: LICENSE

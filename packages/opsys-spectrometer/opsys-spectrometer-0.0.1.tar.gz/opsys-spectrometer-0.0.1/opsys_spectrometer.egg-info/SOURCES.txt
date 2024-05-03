@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+opsys_spectrometer/__init__.py
+opsys_spectrometer/avaspecx64.dll
+opsys_spectrometer/spectrometer_abstract.py
+opsys_spectrometer/spectrometer_controller.py
+opsys_spectrometer.egg-info/PKG-INFO
+opsys_spectrometer.egg-info/SOURCES.txt
+opsys_spectrometer.egg-info/dependency_links.txt
+opsys_spectrometer.egg-info/not-zip-safe
+opsys_spectrometer.egg-info/requires.txt
+opsys_spectrometer.egg-info/top_level.txt
+test/__init__.py
+test/test_spectrometer.py

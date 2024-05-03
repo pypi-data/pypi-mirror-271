@@ -1,0 +1,25 @@
+certifi==2024.2.2
+cycler==0.11.0
+fonttools==4.38.0
+importlib-metadata==6.7.0
+kiwisolver==1.4.5
+matplotlib==3.5.3
+msl-equipment@ https://github.com/MSLNZ/msl-equipment/releases/download/v0.1.0/msl_equipment-0.1.0-py2.py3-none-any.whl#sha256=4016996d717c956e5f99d477d1d1a8c007cee99cad1e9acba7187cf79fe34ba3
+msl-io==0.1.0
+msl-loadlib==0.10.0
+numpy==1.21.6
+packaging==24.0
+Pillow==9.5.0
+pyparsing==3.1.2
+pyserial==3.5
+python-certifi-win32==1.6.1
+python-dateutil==2.9.0.post0
+pyusb==1.2.1
+pyzmq==26.0.2
+scipy==1.7.3
+setuptools-scm==7.1.0
+six==1.16.0
+tomli==2.0.1
+typing_extensions==4.7.1
+wrapt==1.16.0
+zipp==3.15.0

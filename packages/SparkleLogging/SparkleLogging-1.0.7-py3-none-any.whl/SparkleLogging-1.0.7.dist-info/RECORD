@@ -1,0 +1,13 @@
+SparkleLogging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SparkleLogging/plugins/DecoratorsTools.py,sha256=gt15HpA52av-YikURQzGeeq-oVGSMHrQ2ds2J9sgoUM,450
+SparkleLogging/plugins/HttpHander.py,sha256=PMcKvJ6kyfJMOwYEI5pOR9GN2AZbx49NiXZgn0jvVWo,1160
+SparkleLogging/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SparkleLogging/plugins/websocketHander.py,sha256=I7UtTxmngT_l7Sl3x_-_RglfRRqRakmrUgdKIiVONK8,954
+SparkleLogging/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SparkleLogging/utils/core.py,sha256=eOnjJwZu8cvSBZ9J7rg0tQmbKgjZs8z4ifjJuJtT-38,500
+SparkleLogging/utils/getLog.py,sha256=aV9RH_f9LHH1IOS0xWZVL_xvY7Bvc6PjFjPNOODPkmk,4696
+SparkleLogging/utils/plugins_for_core.py,sha256=9ooJ0o-d_VWkpKdVBAs9UIzjKwNSpsQikDKQkwVeaDA,372
+SparkleLogging-1.0.7.dist-info/METADATA,sha256=H5ud41duys1-qioClEyR89V5JlDXt6D8_ECII-Fu_z4,3015
+SparkleLogging-1.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+SparkleLogging-1.0.7.dist-info/top_level.txt,sha256=cDtKFxr_E-xizpEvV8aRuZmzsOoP9UsrarO3EcenFX8,15
+SparkleLogging-1.0.7.dist-info/RECORD,,

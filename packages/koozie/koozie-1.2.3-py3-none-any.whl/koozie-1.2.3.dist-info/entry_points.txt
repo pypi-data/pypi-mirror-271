@@ -1,0 +1,3 @@
+[console_scripts]
+koozie=koozie.cli:koozie_cli
+

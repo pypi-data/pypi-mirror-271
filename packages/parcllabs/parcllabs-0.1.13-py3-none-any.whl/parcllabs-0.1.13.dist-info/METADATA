@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: parcllabs
+Version: 0.1.13
+Summary: Python SDK for ParclLabs API
+Home-page: https://github.com/ParclLabs/parcllabs-python
+Author: ParclLabs
+Author-email: team@parcllabs.com
+Keywords: parcllabs api real estate analytics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: responses ; extra == 'test'
+
+Official Parcl Labs Python SDK
+==============================
+
+A python library for Parcl Labs API.
+
+
+Setup
+-----
+
+You can install this package using pip package manager tool:
+
+    $ pip install parcllabs
+
+Or:
+
+    $ easy_install parcllabs
+
+Setting up a Parcl Labs Account
+-------------------------------
+
+Sign up for a Parcl Labs account at https://dashboard.parcllabs.com/signup.
+
+Using the Parcl Labs API
+------------------------
+
+Documentation for Parcl Labs API can be found at:
+
+- https://api.parcllabs.com/docs
+
+In the standard documentation (the first link), most of the reference pages will have examples in Parcl Labs official bindings.

@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: hydro-smash
+Version: 1.0.0
+Summary: An open source, Python library interfacing the Fortran Spatially distributed Modelling and ASsimilation for Hydrology platform.
+Author-Email: INRAE RECOVER RHAX Team <francois.colleoni@inrae.fr>
+License: GPL-3.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Fortran
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Project-URL: Documentation, https://smash.recover.inrae.fr
+Project-URL: Repository, https://github.com/DassHydro/smash
+Requires-Python: >=3.9
+Requires-Dist: numpy
+Requires-Dist: f90wrap
+Requires-Dist: rasterio
+Requires-Dist: pandas
+Requires-Dist: h5py
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: pyyaml
+Requires-Dist: terminaltables
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: numpydoc; extra == "doc"
+Requires-Dist: pydata-sphinx-theme; extra == "doc"
+Requires-Dist: ipython; extra == "doc"
+Requires-Dist: sphinxcontrib-bibtex; extra == "doc"
+Requires-Dist: sphinx-design; extra == "doc"
+Requires-Dist: sphinx-autosummary-accessors; extra == "doc"
+Requires-Dist: matplotlib; extra == "doc"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: fprettify; extra == "dev"
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: dev
+Description-Content-Type: text/markdown
+
+<h1 align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DassHydro/smash/main/doc/source/_static/corporate_logo_dark.svg">
+  <img src="https://raw.githubusercontent.com/DassHydro/smash/main/doc/source/_static/corporate_logo.svg" width="300", hspace=30>
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DassHydro/smash/main/doc/source/_static/logo_smash_dark.svg">
+  <img src="https://raw.githubusercontent.com/DassHydro/smash/main/doc/source/_static/logo_smash.svg" width="300", hspace=30>
+</picture>
+</h1><br>
+
+- **Documentation:** https://smash.recover.inrae.fr
+- **Source code:** https://github.com/DassHydro/smash
+- **Contributing:** https://smash.recover.inrae.fr/contributor_guide/index.html
+- **Scientific references from latest version:** https://smash.recover.inrae.fr/bibliography/index.html
+- **Bug reports:** https://github.com/DassHydro/smash/issues
+
+**smash** is a Python library, that provides a variety of user-friendly routines for hydrological modeling, including data preprocessing, high-dimensional optimization tools, sensitivity and signatures analysis, all interfaced with an efficient Fortran solver.
+
+**smash** offers a range of advanced optimization techniques, including Variational Data Assimilation (VDA), Bayesian estimation, and Artificial Neural Network (ANN) approaches, using an adjoint model generated with the **Tapenade** Automatic Differentiation Engine.
+
+- **Tapenade** website: https://team.inria.fr/ecuador/en/tapenade/
+- **Tapenade** article: https://doi.org/10.1145/2450153.2450158
+- **Tapenade** source code: https://gitlab.inria.fr/tapenade/tapenade.git
+
+Whether you are managing water resources or conducting research on hydrological models, **smash** can provide an easy-to-use yet powerful solution for your work. See [this documentation](https://smash.recover.inrae.fr/getting_started/index.html) for the installation instructions.

@@ -1,0 +1,8 @@
+defijn_integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+defijn_integrations/clickupint.py,sha256=qPHpOrKNInSMRvkkirBsnwT3gw0xST6OpEzAiexw9ps,28
+defijn_integrations/everhourint.py,sha256=lUpS8EVmAtWQ5Zg4VDAr5rZr7sINEk76EGyGztYCwUI,4480
+defijn_integrations/gitlabint.py,sha256=1Xp2rib9UYHkwJa4rRZ4XtH51SwvUBERdn4L1s5IXQQ,6450
+defijn_integrations-0.1.0.dist-info/METADATA,sha256=6rXFISjCAgEnAQRLxhiKLC36FQWh3v1srACjg1Qwvdg,2469
+defijn_integrations-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+defijn_integrations-0.1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+defijn_integrations-0.1.0.dist-info/RECORD,,

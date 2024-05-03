@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+snowflake_dbml/__init__.py
+snowflake_dbml/config.py
+snowflake_dbml/generator.py
+snowflake_dbml_generator.egg-info/PKG-INFO
+snowflake_dbml_generator.egg-info/SOURCES.txt
+snowflake_dbml_generator.egg-info/dependency_links.txt
+snowflake_dbml_generator.egg-info/entry_points.txt
+snowflake_dbml_generator.egg-info/requires.txt
+snowflake_dbml_generator.egg-info/top_level.txt

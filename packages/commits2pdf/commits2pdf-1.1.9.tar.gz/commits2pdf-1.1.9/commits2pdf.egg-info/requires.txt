@@ -1,0 +1,4 @@
+GitPython
+pycairo
+fpdf
+tqdm

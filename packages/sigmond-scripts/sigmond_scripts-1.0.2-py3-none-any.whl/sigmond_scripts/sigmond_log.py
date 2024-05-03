@@ -1,0 +1,381 @@
+import os
+import logging
+import xml.etree.ElementTree as ET
+from abc import ABCMeta, abstractmethod
+import regex
+
+from typing import NamedTuple
+from sortedcontainers import SortedSet, SortedDict
+
+import sigmond
+import sigmond_scripts.util as util
+from sigmond_scripts.fit_info import FitInfo
+from sigmond_scripts.operator import Operator
+
+
+class SigmondLog(metaclass=ABCMeta):
+
+  def __init__(self, logfile):
+    self.logfile = logfile
+    try:
+      log_xml_root = ET.parse(logfile).getroot()
+    except ET.ParseError:
+      logging.critical("Bad logfile: {}".format(logfile))
+      return
+
+    self.parse(log_xml_root)
+
+  @abstractmethod
+  def parse(self, log_xml):
+    pass
+
+
+class DiagFracErrors(NamedTuple):
+  metric: float
+  matrix: float
+
+class DeviationFromZero(NamedTuple):
+  status: bool
+  max: float
+  one: float
+  two: float
+  three: float
+  four: float
+
+
+class RotationLog(SigmondLog):
+
+  def parse(self, log_xml_root):
+    self.failed = False
+    if log_xml_root.find("Task/Error") is not None:
+      self.failed = True
+      return
+
+    rotation_tasks_xml = log_xml_root.findall("Task/DoCorrMatrixRotation")
+    # if len(rotation_tasks_xml) != 1:
+    #   logging.warning("Could not find single <DoCorrMatrixRotation> tag")
+    #   return
+
+    self.rotation_tasks_xmls = log_xml_root.findall("Task/DoCorrMatrixRotation")
+    # rotation_task_xml = rotation_tasks_xml[0]
+
+    
+    self.pivot_types = {}
+    for i,rotation_task_xml in enumerate(self.rotation_tasks_xmls):
+      pivot_type = ""
+      if rotation_task_xml.find("SinglePivot"):
+        pivot_type = "SinglePivot"
+      elif rotation_task_xml.find("RollingPivot"):
+        pivot_type = "RollingPivot"
+      self.pivot_types[i] = pivot_type
+    
+    # if not self.pivot_type:
+    #   logging.warning("Only reading the of 'SinglePivot' or 'RollingPivot' rotation log files is supported")
+    #   return NotImplemented
+
+    # pivot_xml = rotation_task_xml.find(f"{self.pivot_type}/InitiateNew/CreatePivot")
+    # self.diag_corr_errors_xml = pivot_xml.find("DiagonalCorrelatorFractionalErrors")
+    # self.analyze_metric_xml = pivot_xml.find("AnalyzeMetric")
+    # self.analyze_matrix_xml = pivot_xml.find("AnalyzeMatrix")
+    # self.do_rotation_xml = rotation_task_xml.find("DoRotation")
+    # self.transformation_matrix_xml = rotation_task_xml.find(f"{self.pivot_type}/InitiateNew/TransformationMatrix")
+
+  @property
+  def num_rotations(self):
+    return len(self.rotation_tasks_xmls)
+
+  def pivot_type(self,index = 0):
+    # pivot_type = ""
+    # if self.rotation_tasks_xmls[index].find("SinglePivot"):
+    #   pivot_type = "SinglePivot"
+    # elif self.rotation_tasks_xmls[index].find("RollingPivot"):
+    #   pivot_type = "RollingPivot"
+    # return pivot_type
+    return self.pivot_types[index]
+  
+  def channel(self,index=0):
+    opstr = self.rotation_tasks_xmls[index].findtext(f"{self.pivot_type(index)}/InitiateNew/{self.pivot_type(index)}Initiate/CorrelatorMatrixInfo/GIOperatorString")
+    op = Operator(opstr)
+    return op.channel
+    
+  def analyze_matrix_xml(self,index = 0):
+    pivot_xml = self.rotation_tasks_xmls[index].find(f"{self.pivot_type(index)}/InitiateNew/CreatePivot")
+    analyze_matrix_xml = pivot_xml.find("AnalyzeMatrix")
+    return analyze_matrix_xml
+
+  def metric_null_space_message(self, index = 0):
+    _message = self.analyze_matrix_xml(index).findtext(
+        "CheckNullSpaceCommonality/MetricNullSpace")
+    if _message:
+      return _message
+    else:
+      return "Passed"
+
+  def diagonal_correlator_errors(self, index = 0):
+    pivot_xml = self.rotation_tasks_xmls[index].find(f"{self.pivot_type(index)}/InitiateNew/CreatePivot")
+    diag_corr_errors_xml = pivot_xml.find("DiagonalCorrelatorFractionalErrors")
+    corr_errors = SortedDict()
+    for diag_corr_error_xml in diag_corr_errors_xml.iter("DiagonalCorrelator"):
+      op_str = [xml.text for xml in diag_corr_error_xml.iter()
+                if 'Operator' in xml.tag][0]
+
+      metric_error = float(diag_corr_error_xml.findtext("MetricTimeFractionalError"))
+      matrix_error = float(diag_corr_error_xml.findtext("MatrixTimeFractionalError"))
+
+      corr_errors[op_str] = DiagFracErrors(metric_error, matrix_error)
+
+    return corr_errors
+
+  def metric_condition(self, index = 0, retained=True):
+    pivot_xml = self.rotation_tasks_xmls[index].find(f"{self.pivot_type(index)}/InitiateNew/CreatePivot")
+    analyze_metric_xml = pivot_xml.find("AnalyzeMetric")
+    if retained:
+      eigenvalues = [float(eig.text) for eig in analyze_metric_xml.find(
+                                                   "MetricRetainedEigenvalues").iter("Value")]
+      largest_eigenvalue = max(eigenvalues)
+      smallest_eigenvalue = min(eigenvalues)
+    else:
+      eigenvalues = [float(eig.text) for eig in analyze_metric_xml.find(
+                                                   "MetricAllEigenvalues").iter("Value")]
+      largest_eigenvalue = max(eigenvalues)
+      smallest_eigenvalue = min(eigenvalues)
+
+    return round(largest_eigenvalue / smallest_eigenvalue, 2)
+
+  def matrix_condition(self, index = 0, retained=True):
+    if retained:
+      eigenvalues = [float(eig.text) for eig in self.analyze_matrix_xml(index).find(
+                                                   "GMatrixRetainedEigenvalues").iter("Value")]
+      largest_eigenvalue = max(eigenvalues)
+      smallest_eigenvalue = min(eigenvalues)
+    else:
+      eigenvalues = [float(eig.text) for eig in self.analyze_matrix_xml(index).find(
+                                                   "GMatrixAllEigenvalues").iter("Value")]
+      largest_eigenvalue = max(eigenvalues)
+      smallest_eigenvalue = min(eigenvalues)
+
+    return round(largest_eigenvalue / smallest_eigenvalue, 2)
+
+  def deviations_from_zero(self, index=0):
+    do_rotation_xml = self.rotation_tasks_xmls[index].find("DoRotation")
+    deviations = SortedDict()
+    for rotation_xml in do_rotation_xml.iter("CorrelatorRotation"):
+      time = int(rotation_xml.findtext("TimeValue"))
+      status = rotation_xml.findtext("Status")
+
+      off_diagonal_xml = rotation_xml.find("OffDiagonalChecks")
+      if off_diagonal_xml is not None:
+        max_err = float(off_diagonal_xml.findtext("MaximumDeviationFromZero/RelativeToError"))
+        percent_xml = off_diagonal_xml.find("PercentDeviationsFromZero")
+        one_sigma = round(float(percent_xml.findtext("GreaterThanOneSigma")), 2)
+        two_sigma = round(float(percent_xml.findtext("GreaterThanTwoSigma")), 2)
+        three_sigma = round(float(percent_xml.findtext("GreaterThanThreeSigma")), 2)
+        four_sigma = round(float(percent_xml.findtext("GreaterThanFourSigma")), 2)
+        deviation = DeviationFromZero(status, max_err, one_sigma, two_sigma, three_sigma, four_sigma)
+      else:
+        deviation = DeviationFromZero(status, '', '', '', '', '')
+
+      deviations[time] = deviation
+
+    return deviations
+
+  def number_levels(self, index = 0):
+    return len(list(self.analyze_matrix_xml[index].find("GMatrixRetainedEigenvalues")))
+
+  def improved_operators(self, index=0):
+    transformation_matrix_xml = self.rotation_tasks_xmls[index].find(f"{self.pivot_type}/InitiateNew/TransformationMatrix")
+    improved_ops = list()
+    for op in transformation_matrix_xml.find("ImprovedOperators").iter("ImprovedOperator"):
+      op_info = list()
+      op_info.append( op.find("OpName").findtext("GIOperatorString") )
+      for term in op.iter("OpTerm"):
+        op_info.append( term.findtext("GIOperatorString") )
+        op_info.append( term.findtext("Coefficient") ) #.replace('(', '').replace(')', '').split(',') )
+      improved_ops.append( op_info )
+    # [ [name, term1, coeff1, term2, coeff2...], [name, term1, coeff1...  
+    return improved_ops
+
+
+class FitResult(NamedTuple):
+  chisq: float
+  quality: float
+  energy: str
+  reconstructed_energy: str #if ratio, otherwise it's just the energy
+  amplitude: str
+  gap: str
+  const: str
+  covariance_condition: float
+
+class FitLog(SigmondLog):
+
+  def parse(self, log_xml_root):
+    self.fits = SortedDict()
+    for task_xml in log_xml_root.findall("Task"):
+      count = task_xml.findtext("Count")
+      fit_xml = task_xml.find("DoFit")
+      if fit_xml is None or fit_xml.find("Error") is not None:
+        continue
+
+      try:
+        eigenvalues = list()
+        for eigenvalue in fit_xml.find("CovarianceMatrixEigenvalues"):
+          eigenvalues.append(float(eigenvalue.text))
+
+        eigenvalues.sort()
+        cov_cond = float(fit_xml.findtext("CovarianceMatrixConditionNumber"))
+        fit_results = fit_xml.find("BestFitResult")
+        chisq_dof = float(fit_results.findtext("ChiSquarePerDof"))
+        quality = float(fit_results.findtext("FitQuality"))
+        if "NSimTemporalCorrelator" in fit_xml.findtext("Type"): #need to specity the ratio fit case too
+            energy_fit = fit_xml.find("FinalEnergy")
+            energy_obs_str = energy_fit.findtext("MCObservable/Info")
+            for fit_result in fit_results.findall("./"):
+                if fit_result.findtext("MCObservable/Info")==energy_obs_str:
+                    break
+            energy_fit = fit_result
+        else:
+            energy_fit = fit_results.find("FitParameter0")
+            energy_obs_str = energy_fit.findtext("MCObservable/Info")
+        pattern = r"^(?P<obsname>\S+) (?P<obsid>\d+) (?P<simple>s|n) (?P<complex_arg>re|im)$"
+        match = regex.match(pattern, energy_obs_str.strip())
+        if match.group('simple') != 'n' or match.group('complex_arg') != 're':
+          logging.error("Energies are supposed to be simple and real")
+
+        energy_obs = sigmond.MCObsInfo(match.group('obsname'), int(match.group('obsid')))
+        fit_info = FitInfo.createFromObservable(energy_obs)
+        energy_value = float(energy_fit.findtext("MCEstimate/FullEstimate"))
+        energy_error = float(energy_fit.findtext("MCEstimate/SymmetricError"))
+        energy = util.nice_value(energy_value, energy_error)
+        
+        if fit_xml.findtext("Type")=="NSimTemporalCorrelator": #need to specity the ratio fit case too
+            amplitude_fit = fit_xml.find("FinalAmplitude")
+            amp_obs_str = amplitude_fit.findtext("MCObservable/Info")
+            for fit_result in fit_results.findall("./"):
+                if fit_result.findtext("MCObservable/Info")==amp_obs_str:
+                    break
+            amplitude_fit = fit_result
+        else:
+            amplitude_fit = fit_results.find("FitParameter1") #not true for some fits
+        amplitude_value = float(amplitude_fit.findtext("MCEstimate/FullEstimate"))
+        amplitude_error = float(amplitude_fit.findtext("MCEstimate/SymmetricError"))
+        amplitude = util.nice_value(amplitude_value, amplitude_error)
+        gap = "---"
+        if fit_info.has_gap:
+          sqrt_gap_fit = fit_results.find("FitParameter2")
+          sqrt_gap_value = float(sqrt_gap_fit.findtext("MCEstimate/FullEstimate"))
+          gap_value = sqrt_gap_value**2
+          gap_error = 2.*abs(sqrt_gap_value)*float(sqrt_gap_fit.findtext("MCEstimate/SymmetricError"))
+          gap = util.nice_value(gap_value, gap_error)
+
+        const = '---'
+        if fit_info.has_const:
+          const_fit_num = fit_info.num_params - 1
+          const_fit = fit_results.find(f"FitParameter{const_fit_num}")
+          const_value = float(const_fit.findtext("MCEstimate/FullEstimate"))
+          const_err = float(const_fit.findtext("MCEstimate/SymmetricError"))
+          const = util.nice_value(const_value, const_err)
+        
+        if fit_info.ratio: #changing all output to be in the same lab frame units
+            reconstructed_energy = energy
+            for task_xml2 in log_xml_root.findall("Task"):
+                reconstructed_energy_xml = task_xml2.find("DoObsFunction")
+                if reconstructed_energy_xml is None or reconstructed_energy_xml.find("Error") is not None:
+                    continue
+                if reconstructed_energy_xml.findtext("Type") != "ReconstructEnergy":
+                    continue
+                if energy_obs_str != reconstructed_energy_xml.findtext("EnergyDifference/MCObservable/Info"):
+                    continue
+                reconstructed_value = float(reconstructed_energy_xml.findtext("MCEstimate/FullEstimate"))
+                reconstructed_err = float(reconstructed_energy_xml.findtext("MCEstimate/SymmetricError"))
+                reconstructed_energy = util.nice_value(reconstructed_value,reconstructed_err)
+                break
+
+            fit_result = FitResult(chisq_dof, quality, energy, reconstructed_energy, amplitude, gap, const, cov_cond)
+        else:
+            fit_result = FitResult(chisq_dof, quality, energy, energy, amplitude, gap, const, cov_cond)
+
+        if fit_info in self.fits:
+          logging.warning(f"Found two identical fits in {self.logfile}, ignoring...")
+          continue
+
+        self.fits[fit_info] = fit_result
+
+      except AttributeError as err:
+        logging.warning(f"{err} in DoFit task {count} in {self.logfile}")
+
+
+class Level(NamedTuple):
+  new: int
+  original: int
+
+class SpectrumLog(SigmondLog):
+
+  def parse(self, log_xml_root):
+    self.energies = SortedDict()
+    self.reorder = True
+    fit_fail = False
+    energy_level_xmls = log_xml_root.findall("Task/DoRotCorrMatInsertFitInfos/SinglePivot/ReorderEnergies/EnergyLevel")
+    energy_level_xmls += log_xml_root.findall("Task/DoRotCorrMatInsertFitInfos/RollingPivot/ReorderEnergies/EnergyLevel")
+    if not energy_level_xmls:
+      self.reorder = False
+      energy_level_xmls = log_xml_root.findall("Task/GetFromPivot/Energies/EnergyLevel")
+    
+    for energy_level_xml in energy_level_xmls:
+      if self.reorder:
+        new_level = int(energy_level_xml.findtext("LevelIndex"))
+        orig_level = int(energy_level_xml.findtext("OriginalIndex"))
+      else:
+        new_level = int(energy_level_xml.findtext("Level"))
+        orig_level = int(energy_level_xml.findtext("Level"))
+
+      level = Level(new_level, orig_level)
+      energy_obs_str = energy_level_xml.findtext("MCObservable/Info")
+      pattern = r"^(?P<obsname>\S+) (?P<obsid>\d+) (?P<simple>s|n) (?P<complex_arg>re|im)$"
+      match = regex.match(pattern, energy_obs_str.strip())
+      if match.group('simple') != 'n' or match.group('complex_arg') != 're':
+        logging.error("Energies are supposed to be simple and real")
+
+      energy_obs = sigmond.MCObsInfo(match.group('obsname'), int(match.group('obsid')))
+      fit_info = FitInfo.createFromObservable(energy_obs)
+      self.energies[level] = fit_info
+
+    #in case of a fit fail
+    if not energy_level_xmls:
+        this_level = 0
+        energy_level_xmls = log_xml_root.findall("Task/DoFit")
+        for energy_level_xml in energy_level_xmls:
+            if energy_level_xml.findtext("Type")=="TemporalCorrelator":
+                if energy_level_xml.find("Error") is not None:
+                    this_observable = energy_level_xml.findtext("TemporalCorrelatorFit/GIOperatorString")
+                    logging.warning(f"Failed fit for {this_observable} in {self.logfile}")
+                    break
+                else:  
+                    level = Level(this_level, this_level)
+                    energy_obs_str = energy_level_xml.findtext("BestFitResult/FitParameter0/MCObservable/Info")
+                    pattern = r"^(?P<obsname>\S+) (?P<obsid>\d+) (?P<simple>s|n) (?P<complex_arg>re|im)$"
+                    match = regex.match(pattern, energy_obs_str.strip())
+                    if match.group('simple') != 'n' or match.group('complex_arg') != 're':
+                        logging.error("Energies are supposed to be simple and real")
+
+                    energy_obs = sigmond.MCObsInfo(match.group('obsname'), int(match.group('obsid')))
+                    fit_info = FitInfo.createFromObservable(energy_obs)
+                    self.energies[level] = fit_info
+                this_level+=1
+                
+
+    self.zfactors = SortedDict()
+    for operator_zfactor_xml in log_xml_root.findall(
+        "Task/DoCorrMatrixZMagSquares/OperatorZMagnitudeSquares"):
+      op_zfactors = SortedDict()
+      op_str = [xml.text for xml in operator_zfactor_xml.iter()
+                if 'OperatorString' in xml.tag][0]
+
+      op = Operator(op_str)
+
+      for zfactor_xml in operator_zfactor_xml.findall("ZMagSquare"):
+        level = int(zfactor_xml.findtext("Level"))
+        zfactor_value = float(zfactor_xml.findtext("Value/MCEstimate/FullEstimate"))
+        op_zfactors[level] = zfactor_value
+
+      self.zfactors[op] = op_zfactors
+

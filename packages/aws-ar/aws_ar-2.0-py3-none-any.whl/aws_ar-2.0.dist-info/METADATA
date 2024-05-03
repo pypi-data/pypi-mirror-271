@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: aws-ar
+Version: 2.0
+Summary: Command Line Utility for Configuring Assumed AWS IAM Role Credentials
+Author: Shashank Dubey
+Requires-Dist: boto3
+

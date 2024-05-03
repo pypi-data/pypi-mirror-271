@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: k8s
+Version: 0.26.0
+Summary: Python client library for the Kubernetes API
+Home-page: https://github.com/fiaas/k8s
+Author: FiaaS developers
+Author-email: fiaas@googlegroups.com
+License: Apache License
+Keywords: kubernetes fiaas
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Clustering
+Classifier: Topic :: System :: Distributed Computing
+License-File: LICENSE
+Requires-Dist: requests==2.31.0
+Requires-Dist: pyrfc3339==1.1
+Requires-Dist: cachetools==5.3.3
+Provides-Extra: dev
+Requires-Dist: tox==3.28.0; extra == "dev"
+Requires-Dist: mock==5.1.0; extra == "dev"
+Requires-Dist: pytest-sugar==1.0.0; extra == "dev"
+Requires-Dist: pytest-html==4.1.1; extra == "dev"
+Requires-Dist: pytest-cov==5.0.0; extra == "dev"
+Requires-Dist: pytest-helpers-namespace==2021.12.29; extra == "dev"
+Requires-Dist: pytest==8.1.1; extra == "dev"
+Requires-Dist: prospector==1.10.3; extra == "dev"
+Requires-Dist: setuptools==69.5.1; extra == "dev"
+Provides-Extra: codacy
+Requires-Dist: codacy-coverage; extra == "codacy"
+Provides-Extra: docs
+Requires-Dist: Sphinx>=1.6.3; extra == "docs"
+
+..
+  Copyright 2017-2019 The FIAAS Authors
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+k8s - Python client library for the Kubernetes API
+--------------------------------------------------
+
+|Semaphore Build Status Badge| |Codacy Quality Badge| |Codacy Coverage Badge|
+
+.. |Semaphore Build Status Badge| image:: https://fiaas-svc.semaphoreci.com/badges/k8s.svg?style=shields
+    :target: https://fiaas-svc.semaphoreci.com/branches/8e8fdc8c-cd55-4ba3-9dcf-38880531e601
+.. |Codacy Quality Badge| image:: https://api.codacy.com/project/badge/Grade/cb51fc9f95464f22b6084379e88fad77
+    :target: https://www.codacy.com/app/mortenlj/k8s?utm_source=github.com&utm_medium=referral&utm_content=fiaas/k8s&utm_campaign=badger
+.. |Codacy Coverage Badge| image:: https://api.codacy.com/project/badge/Coverage/cb51fc9f95464f22b6084379e88fad77
+    :target: https://www.codacy.com/app/mortenlj/k8s?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fiaas/k8s&amp;utm_campaign=Badge_Coverage
+
+Documentation
+    https://k8s.readthedocs.io
+Code
+    https://github.com/fiaas/k8s
+
+k8s is a python client library for Kubernetes developed as part of the FiaaS project at FINN.no, Norway's leading classifieds site. The library tries to provide an intuitive developer experience, rather than modelling the REST API directly. Our approach does not allow us to use Swagger to auto-generate a library that covers the entire API, but the parts we have implemented are (in our opinion) easier to work with than the client you get when using Swagger.
+
+Check out the tutorial_ to find out how to use the library, or the `developer guide`_ to learn how to extend the library to cover parts of the API we haven't gotten around to yet.
+
+.. _tutorial: http://k8s.readthedocs.io/en/latest/tutorial.html
+.. _developer guide: http://k8s.readthedocs.io/en/latest/developer.html
+
+
+Changes since last version
+--------------------------
+
+* `7108a8f`_: Try Python 3.12 again.
+* `7cee343`_: Add Python 3.11 back again.
+* `8903e46`_: Remove building on Python 3.12 again for now.
+* `e7ca255`_: Revert "Try installing setuptools for semaphore."
+* `134c767`_: Try installing setuptools for semaphore.
+* `5baf841`_: Add Python 3.12 as well.
+* `8b6ce26`_: Upgrade Sphinx again while I'm at it.
+* `edace31`_: Fix review comment.
+* `fb14c89`_: New version of prospector.
+* `4a71326`_: Forgot to remove comment.
+* `3443a6c`_: Fix review comment. Update transitive deps in docs.
+* `6987016`_: Upgrade package cachetools.
+* `fa91422`_: Upgrade pytest plugins.
+* `250e825`_: Fix some review comment and a warning.
+* `1a6145a`_: Newer python.
+
+.. _7108a8f: https://github.com/fiaas/k8s/commit/7108a8f
+.. _7cee343: https://github.com/fiaas/k8s/commit/7cee343
+.. _8903e46: https://github.com/fiaas/k8s/commit/8903e46
+.. _e7ca255: https://github.com/fiaas/k8s/commit/e7ca255
+.. _134c767: https://github.com/fiaas/k8s/commit/134c767
+.. _5baf841: https://github.com/fiaas/k8s/commit/5baf841
+.. _8b6ce26: https://github.com/fiaas/k8s/commit/8b6ce26
+.. _edace31: https://github.com/fiaas/k8s/commit/edace31
+.. _fb14c89: https://github.com/fiaas/k8s/commit/fb14c89
+.. _4a71326: https://github.com/fiaas/k8s/commit/4a71326
+.. _3443a6c: https://github.com/fiaas/k8s/commit/3443a6c
+.. _6987016: https://github.com/fiaas/k8s/commit/6987016
+.. _fa91422: https://github.com/fiaas/k8s/commit/fa91422
+.. _250e825: https://github.com/fiaas/k8s/commit/250e825
+.. _1a6145a: https://github.com/fiaas/k8s/commit/1a6145a

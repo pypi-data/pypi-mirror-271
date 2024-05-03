@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.py
+vcmtools/__init__.py
+vcmtools.egg-info/PKG-INFO
+vcmtools.egg-info/SOURCES.txt
+vcmtools.egg-info/dependency_links.txt
+vcmtools.egg-info/top_level.txt

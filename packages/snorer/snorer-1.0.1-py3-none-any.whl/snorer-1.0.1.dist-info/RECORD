@@ -1,0 +1,13 @@
+snorer/__init__.py,sha256=DJpCe8YfBhvskLsxC2sBm15xZ_QNZWCl3V6hn1APNPs,1983
+snorer/constants.py,sha256=Tg0yKfQTCr9gYWUh0JZe7hTNVuvOmg4Qog9SHZwFO7A,4299
+snorer/geometry.py,sha256=HoJCcBeXoSw3eYzByilxArFAjh_D3Oa7k5UYrfNt6Os,9088
+snorer/halo.py,sha256=YJ7XNRTcnZASyNhyjKx1GWV4eSYFmiqOdoflJvw0_2M,18337
+snorer/kinematics.py,sha256=PMyFDdhg_kYY7G5na_K6nuidU-cD7XqiFarGFLoS-E4,14603
+snorer/snorerMain.py,sha256=BOevEih5VxcALXYDpu5m6B_pQQ9DGyGcR653UTwa9O8,13472
+snorer/sysmsg.py,sha256=q5XMOjgalDexsvC_wCcBVCvVxHnAONLAVe9Q0HqkHeY,1230
+snorer/utils.py,sha256=_k5c1me04CO4hUclryzRv1nNccATXgHJw8WlwvEwfT0,17982
+snorer-1.0.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+snorer-1.0.1.dist-info/METADATA,sha256=FxWaesdgQXi2yckH7vs78_Cw8yaL-oSLqFsnbvIO390,49590
+snorer-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+snorer-1.0.1.dist-info/top_level.txt,sha256=DvykIHixtZCaXNUrwuQ-9Q78oclWRYNE272t7PfqndI,7
+snorer-1.0.1.dist-info/RECORD,,

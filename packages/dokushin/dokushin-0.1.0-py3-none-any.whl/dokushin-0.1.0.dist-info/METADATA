@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dokushin
+Version: 0.1.0
+Summary: Modeling Sudoku puzzles in Python
+Author: Matthew Henderson
+Author-email: matthew.james.henderson@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# dokushin
+
+Modeling Sudoku puzzles in Python.
+

@@ -1,0 +1,4 @@
+include *.js
+include *.html
+include *.css
+include *.txt

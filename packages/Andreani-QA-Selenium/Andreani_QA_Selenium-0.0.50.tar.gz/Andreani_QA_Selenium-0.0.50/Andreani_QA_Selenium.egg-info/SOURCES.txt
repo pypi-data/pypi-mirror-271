@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+Andreani_QA_Selenium/Selenium.py
+Andreani_QA_Selenium/__init__.py
+Andreani_QA_Selenium.egg-info/PKG-INFO
+Andreani_QA_Selenium.egg-info/SOURCES.txt
+Andreani_QA_Selenium.egg-info/dependency_links.txt
+Andreani_QA_Selenium.egg-info/requires.txt
+Andreani_QA_Selenium.egg-info/top_level.txt
+Andreani_QA_Selenium/tests/Validation.py
+Andreani_QA_Selenium/tests/__init__.py

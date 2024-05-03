@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: heimdallr-py
+Version: 0.0.0.dev0
+Summary: Modular instrument control and lab access via Python
+Author-email: Grant Giesbrecht <grant.giesbrecht@colorado.edu>
+Project-URL: Homepage, https://github.com/Grant-Giesbrecht/heimdallr
+Project-URL: Issues, https://github.com/Grant-Giesbrecht/heimdallr/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Heimdallr
+Generalized instrument control and lab access

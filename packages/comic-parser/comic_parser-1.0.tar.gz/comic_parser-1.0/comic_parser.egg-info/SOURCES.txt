@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+comicParser/__init__.py
+comicParser/comicParser.py
+comicParser/main.py
+comic_parser.egg-info/PKG-INFO
+comic_parser.egg-info/SOURCES.txt
+comic_parser.egg-info/dependency_links.txt
+comic_parser.egg-info/entry_points.txt
+comic_parser.egg-info/not-zip-safe
+comic_parser.egg-info/requires.txt
+comic_parser.egg-info/top_level.txt

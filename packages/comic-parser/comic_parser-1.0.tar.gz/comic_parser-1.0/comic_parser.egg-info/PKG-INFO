@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: comic-parser
+Version: 1.0
+Summary: Python utility for build comics
+Home-page: 
+Author: Pablo Alvarez Lopez
+Author-email: 
+Maintainer: 
+Maintainer-email: 
+Project-URL: Bug Tracker, https://github.com/palvarezlopez/comic-parser/issues
+Project-URL: Documentation, https://github.com/palvarezlopez/comic-parser
+Project-URL: Source Code, https://github.com/palvarezlopez/comic-parser
+Keywords: comic,pdf
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows
+Platform: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: img2pdf
+Requires-Dist: pillow

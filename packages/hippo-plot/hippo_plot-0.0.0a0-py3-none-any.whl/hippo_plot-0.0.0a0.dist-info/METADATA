@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: hippo-plot
+Version: 0.0.0a0
+Summary: Hit Interaction Profiling and Procurement Optimisation
+Project-URL: Homepage, https://hippo.winokan.com
+Project-URL: Bug Tracker, https://github.com/mwinokan/HIPPO_plot/issues
+Author-email: Max Winokan <max@winokan.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# HIPPO_plot
+Lightweight companion to HIPPO for creating interactive data visualisations of HIPPO outputs

@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+commands.txt
+setup.py
+vaultUts/__init__.py
+vaultUts.egg-info/PKG-INFO
+vaultUts.egg-info/SOURCES.txt
+vaultUts.egg-info/dependency_links.txt
+vaultUts.egg-info/requires.txt
+vaultUts.egg-info/top_level.txt

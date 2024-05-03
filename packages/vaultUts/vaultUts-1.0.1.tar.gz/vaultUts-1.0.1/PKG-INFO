@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: vaultUts
+Version: 1.0.1
+Summary: An orm package
+Home-page: 
+Author: Melque Lima
+Author-email: melque_ex@yahoo.com.br
+License: MIT
+Keywords: vaultUts
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: requests
+
+# Vault Uts
+#
+### Installation
+
+```sh
+pip install vaultUts
+```
+
+### Usage
+#
+#### link
+```py
+from vaultUts import VaultLib
+
+vlt = VaultLib(
+    "<HOST>",
+    "<TOKEN>"
+    )
+
+@vlt.link("<MyLocker>/data/<MySecret>")
+class MySecret(): 
+    USER    : str
+    PASSWORD: str
+
+print(MySecret.USER)
+print(MySecret.PASSWORD)
+```
+```py
+my_user_here
+py_password
+```
+
+
+Change Log
+==========
+
+0.0.1 (2024-05-02)
+------------------
+- First Release

@@ -1,0 +1,9 @@
+kilter/protocol/__init__.py,sha256=SUKJwPG29bLCwGXxVyo9qx55o0GEiZ8v1QcrGit1O88,673
+kilter/protocol/buffer.py,sha256=jMdOHgJ-aMjkelnYzYQm1AWPTvkR0TvcXOYvwrwNB4Y,5161
+kilter/protocol/core.py,sha256=dcB_xUi1a_4UfIf-9RX_F541yazYVWAqGjYowcY25so,9753
+kilter/protocol/exceptions.py,sha256=94Cf1Juu9rVECa8GOGAlgDkT5T-Er7xzDJD1gWys5HI,1932
+kilter/protocol/messages.py,sha256=wLQtFxCyWIrhM8bSKO3d9w_SUl7H_53JI7WaMDd3dyo,23031
+kilter/protocol/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kilter_protocol-0.6.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+kilter_protocol-0.6.0.dist-info/METADATA,sha256=H6wDuwnoH5jpY3FcRVnsXe5eJRD1VfezKwUMb9AHd0k,5456
+kilter_protocol-0.6.0.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+aws_config/__init__.py,sha256=R-hHDT2HG5Hd1ScAjlxfdGmKo3oI1BBTuNmvDaGl3fY,23
+aws_config/apps.py,sha256=enRA3DxiqGODPU6oQHB-oEptXs8k2FkMxxbYO-Z3N4k,179
+aws_config/models.py,sha256=nog759WsGOOZah0cE0US1icxtlD1vOYr47BKQCqOk0g,155
+aws_config/urls.py,sha256=j96CujeQsF-YlkBjhbEgAA1VFjnUVtZRbEC27xedK0g,135
+aws_config/utils.py,sha256=bI_we_NtHWBBqsCHkymvhuejUkXBHqyxPt0tvMD3XI0,200
+aws_config/wsgi.py,sha256=bDvEJ9M-R7BvJpL8tfmCupfPyRWYZldc8e_UZKYtx6s,178
+aws_config-0.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+aws_config-0.0.0.dist-info/METADATA,sha256=oAeXf-wLcCzAS8g_NlhlqOnUUAMEZ56GUlPlkI5kPI8,14141
+aws_config-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aws_config-0.0.0.dist-info/top_level.txt,sha256=nk_XKmQEQ5RY_oiUtltyEyjEgH46OSqfZ78XYoZQ0gg,11
+aws_config-0.0.0.dist-info/RECORD,,

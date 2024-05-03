@@ -1,0 +1,2 @@
+[console_scripts]
+gmx = gmx.main:app

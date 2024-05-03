@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "keywordsai"
+version = "0.1.0"
+description = "Keywords AI SDK allows you to interact with the Keywords AI API smoothly"
+authors = ["Keywords AI <team@keywordsai.co>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://keywordsai.co"
+Repository = "https://github.com/Keywords-AI/keywordai_sdks.git"
+Documentation = "https://docs.keywordsai.co"

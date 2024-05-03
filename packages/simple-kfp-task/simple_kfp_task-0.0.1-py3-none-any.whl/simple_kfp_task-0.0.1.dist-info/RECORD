@@ -1,0 +1,13 @@
+simple_kfp_task/__init__.py,sha256=eRY_lgNb6bTQHeVrHYNgbTYHhvv2e3OmfBlrcnmidQA,19
+simple_kfp_task/cli.py,sha256=WTIj6otmV2LwhkPV3qhpkGWFuaxG90zRuL9SSY7EUE0,1607
+simple_kfp_task/deploykf.py,sha256=GWqqKtO0-1ZR35Bv_W1jaYYTSJb3kLwpV88MU83cp9E,10826
+simple_kfp_task/git.py,sha256=1A9s9rgCPECnsYjWMSZhnhkOrvuH2w0s06svNnfBiU8,3855
+simple_kfp_task/pipeline.py,sha256=SjrtN46aVKZxocsGePbSxfgnopcqlRtYEdt2n0qcSH4,10578
+simple_kfp_task/task.py,sha256=0temCU7f0VAoW6AdYxHAhC6bKHt73rnFOMds2AUaWZA,3048
+simple_kfp_task/utils.py,sha256=-PeGmeR-T0naQtUtCoB6tXzjuu0LBjthGSiLUQtN2TE,793
+simple_kfp_task-0.0.1.dist-info/LICENSE,sha256=9jUo_5GY-2Lita-1NHaBGElqSC6yb-iCP6Gs99veeB4,1077
+simple_kfp_task-0.0.1.dist-info/METADATA,sha256=-fG3nB3CKTJPHI-iin8gEquQJpUVmXXdCxGNfgjuw-g,556
+simple_kfp_task-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+simple_kfp_task-0.0.1.dist-info/entry_points.txt,sha256=H5i8fLAGxW8NSJ3tcPp7NIfwp5fEbzc8p3xteo1MBb0,61
+simple_kfp_task-0.0.1.dist-info/top_level.txt,sha256=8-BqAlQafLkvUKpRmEnnJJuAb-OVPARXSMyKe9_tY4Q,16
+simple_kfp_task-0.0.1.dist-info/RECORD,,

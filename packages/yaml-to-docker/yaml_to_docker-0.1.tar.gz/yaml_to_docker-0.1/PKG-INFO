@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yaml-to-docker
+Version: 0.1
+Summary: Script to Convert YAML to Docker
+Home-page: https://github.com/androlinuxs/termux-music
+Author: Alexander Krefting
+Author-email: linuxdevalex@outlook.de
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+
+yaml-to-docker
+==============
+
+The Wonderful fastes Dockerfile generator from a YAML File

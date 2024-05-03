@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+	echo "Usage: $0 <file>"
+	exit 1
+fi
+
+CMD="$1"
+FILES="${@:2}"
+METHOD=""
+
+for file in ${FILES}; do
+	if [ "${file}" == "makefile.yml" ]; then
+		METHOD="Makefile"
+	elif [ "${file}" == "dockerfile.yml" ]; then
+		METHOD="Dockerfile"
+	else
+		filename="${file%.yml}"
+		name="${filename}"
+		METHOD="$3"
+	fi
+
+	if [ "${METHOD}" = "Makefile" ]; then
+		generate_makefile "${file}"
+	elif [ "${METHOD}" = "Dockerfile" ]; then
+		generate_dockerfile "${file}"
+	else
+		other_files "${METHOD}" "${file}"
+	fi
+done

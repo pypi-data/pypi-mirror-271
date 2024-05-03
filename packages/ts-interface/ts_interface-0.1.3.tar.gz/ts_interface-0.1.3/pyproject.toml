@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ts-interface"
+version = "0.1.3"
+description = ""
+authors = ["ph <ph@tordenskjold.space>"]
+readme = "README.md"
+packages = [{include = "tsinterface"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jsonschema = "^4.22.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

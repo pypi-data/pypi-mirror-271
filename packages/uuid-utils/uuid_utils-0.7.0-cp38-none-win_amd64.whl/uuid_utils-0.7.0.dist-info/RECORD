@@ -1,0 +1,10 @@
+uuid_utils-0.7.0.dist-info/METADATA,sha256=RxDbxzUtliCPEFwTuYtTqKXkfUnTwgEX8vfyTLIbo0w,4725
+uuid_utils-0.7.0.dist-info/WHEEL,sha256=lTVQXmazV4_utY20nrWmfqVmjb3H_3iP6bNgox5pvtU,94
+uuid_utils-0.7.0.dist-info/license_files/LICENSE.md,sha256=IJMw6B06iYYOnseem_iUvnBfB1Wjhp13qgkfxKL5GQM,1513
+uuid_utils/compat/__init__.py,sha256=QEAcG2N9_8Rr_9REdG11ZTvUtEPK98lfkku2RRWnR3g,2148
+uuid_utils/compat/__init__.pyi,sha256=Twh6JPKSS-JJ6_HrHeMp4HZUau5E5lBoMeEm_egNzs8,1466
+uuid_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uuid_utils/__init__.py,sha256=UqZ_QTUoElOE4UNfwG0S0MCsxlCJxpT7vJpCjYjohYI,663
+uuid_utils/__init__.pyi,sha256=eW9FqReP3gbB5OKtSNxEcJ25ltwUkiM8JAwhbH91ouI,6234
+uuid_utils/_uuid_utils.cp38-win_amd64.pyd,sha256=tUhrXsLMNhMEiRZanT3tGYaYpG5Qa40IICuecMa69NA,375808
+uuid_utils-0.7.0.dist-info/RECORD,,

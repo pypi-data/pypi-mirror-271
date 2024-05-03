@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+cutthecrab/__init__.py
+cutthecrab.egg-info/PKG-INFO
+cutthecrab.egg-info/SOURCES.txt
+cutthecrab.egg-info/dependency_links.txt
+cutthecrab.egg-info/requires.txt
+cutthecrab.egg-info/top_level.txt

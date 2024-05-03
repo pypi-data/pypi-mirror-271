@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[project]
+name = "cutthecrab"
+authors = [
+  {name="Jeroen Bertels", email="jeroen.bertels@gmail.com"},
+]
+description = "A Python library that installs the latest versions of all the *things libraries."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+dependencies = [
+  "iothings",
+  "arraythings",
+  "niftithings",
+  "dicomthings"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JeroenBertels/cutthecrab"

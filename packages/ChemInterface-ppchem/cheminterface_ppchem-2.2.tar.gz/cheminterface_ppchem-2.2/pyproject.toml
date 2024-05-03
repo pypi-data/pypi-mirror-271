@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ChemInterface_ppchem"
+version = "2.2"
+description = "..."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["unsaturation", "Mass spectroscopy"]
+authors = [
+  { name = "Thomas Christianson", email = "thomas.christiansson@epfl.ch" },
+  { name = "Igor Gonteri", email = "igor.gonteri@epfl.ch" },
+  { name = "Arthur Humery", email = "arthur.humery@epfl.ch" }
+]
+dependencies = [
+  "numpy",
+  "rdkit",
+  "pandas",
+  "matplotlib",
+  "bokeh",
+  "plotly"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/ThomasCsson/ppchem-project-Christiansson-Gonteri-Humery.git"

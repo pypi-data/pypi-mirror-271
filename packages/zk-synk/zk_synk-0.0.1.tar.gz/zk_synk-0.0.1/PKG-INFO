@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: zk_synk
+Version: 0.0.1
+Summary: Zero Knowledge Proof models conversion Library
+Requires-Python: >=3.11
+Requires-Dist: ezkl

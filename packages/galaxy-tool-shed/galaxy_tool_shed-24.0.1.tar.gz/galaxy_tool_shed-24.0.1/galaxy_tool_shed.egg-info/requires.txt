@@ -1,0 +1,2 @@
+galaxy-web-stack
+galaxy-web-apps

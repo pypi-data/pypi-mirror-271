@@ -1,0 +1,10 @@
+syscon_clickplc/__init__.py,sha256=qjtjr_ld5VzYcrE5daEY0oW9sSVirZJT3xzelaR-IBw,1361
+syscon_clickplc/driver.py,sha256=XBBcwbKD-pw0EqWu-3izrYvwwdTVTHBY5UAlQStkLH4,26854
+syscon_clickplc/mock.py,sha256=RrW9tfD4UbIsh2GjMeknBJvMnAowGRFg5w8WXVEMkqc,3072
+syscon_clickplc/util.py,sha256=6wX-yjrJ1CpERM4GoNWlQNjeqKkqPk_bvT-0vQG9sNY,5510
+syscon_clickplc-0.0.4.dist-info/LICENSE,sha256=OduPms8DZZWiVm6j_lYLx71l2HSfCI4PSk7y-KbLSzQ,18026
+syscon_clickplc-0.0.4.dist-info/METADATA,sha256=OPlI-y4YACXLG7ZrVOHMa5_AaQsqBNDexpIWaXpcIOk,4104
+syscon_clickplc-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+syscon_clickplc-0.0.4.dist-info/entry_points.txt,sha256=JEE5bitzC83M6-MA3lNzq0iiHk1_0-bwzFkDQPOHCHc,65
+syscon_clickplc-0.0.4.dist-info/top_level.txt,sha256=vxft8MEybwMwbq04tuHCpel-jSANWCBYNfy1-I6lQow,16
+syscon_clickplc-0.0.4.dist-info/RECORD,,

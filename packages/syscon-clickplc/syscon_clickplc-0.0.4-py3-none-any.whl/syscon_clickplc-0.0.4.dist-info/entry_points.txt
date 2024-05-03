@@ -1,0 +1,2 @@
+[console_scripts]
+syscon_clickplc = syscon_clickplc:command_line

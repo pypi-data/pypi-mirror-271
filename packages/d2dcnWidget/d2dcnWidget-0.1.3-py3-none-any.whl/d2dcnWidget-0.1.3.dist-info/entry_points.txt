@@ -1,0 +1,3 @@
+[console_scripts]
+d2dcnGUI = d2dcnWidget.d2dcnGUI:main
+

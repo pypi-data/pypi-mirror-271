@@ -1,0 +1,9 @@
+lines.linewidth: 1
+lines.markersize: 3
+
+# Font styling, Computer Modern
+font.size: 11
+font.family: serif
+font.serif: cmr10
+axes.formatter.use_mathtext: True
+axes.unicode_minus: False

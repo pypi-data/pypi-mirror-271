@@ -1,0 +1,15 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/build.py,sha256=0wLuX7f6cKShckMpNwQOHZ96WTPgn5K2IWzv8obqhFA,3448
+fico/__about__.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+fico/__init__.py,sha256=-ZKZ_YXLSFapz4myoE7ACMZofB0ORTja1s2zlrrgpnw,98
+fico/building.py,sha256=tGeTxD5AIX501D4plylv_5CpDbrCp4LsUcirao6t3x8,5012
+fico/figure.py,sha256=gC5lg-NfI8hyuNDUU4kj8GUmBJB95queCr2kh2jbjak,10439
+fico/styling.py,sha256=Oy8MtP0T6k9SbwI45lV07Dd4EKt1yIm_JAoEHHJ40mc,125
+fico/utils.py,sha256=9D4OjlSCp8xiz8Jotpic9yZYGDwU7vwARinLgr3VTU0,452
+fico/styles/eit6_publication.mplstyle,sha256=UrIB4BqfAlFK2GmeUGf4Mh8Nm8Z_BLreL2ypqyqV7-I,190
+fico/templates/basic_table.tex,sha256=W1PQAduwk8prf_dpsGoX8lKk4BB7suZ0qSe4_G90bD0,444
+fico-0.1.1.dist-info/METADATA,sha256=eb02gssoZ_VDkSQzZm7SuLWLh_fNqky11zOQMBK6yyE,7040
+fico-0.1.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+fico-0.1.1.dist-info/entry_points.txt,sha256=o2_gC5eT-KCmg4XOqUgCsxiF2253nO15rOXGe1J3KIQ,44
+fico-0.1.1.dist-info/licenses/LICENSE,sha256=oOwT6KRKZzpSkaik0hDRnojz6XyzUOkqPfyyvRMBkIk,1091
+fico-0.1.1.dist-info/RECORD,,

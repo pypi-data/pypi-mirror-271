@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+arraythings/__init__.py
+arraythings/array.py
+arraythings.egg-info/PKG-INFO
+arraythings.egg-info/SOURCES.txt
+arraythings.egg-info/dependency_links.txt
+arraythings.egg-info/requires.txt
+arraythings.egg-info/top_level.txt

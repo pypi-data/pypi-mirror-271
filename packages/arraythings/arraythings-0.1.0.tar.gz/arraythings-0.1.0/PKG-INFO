@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: arraythings
+Version: 0.1.0
+Summary: A Python library for working with arrays.
+Author-email: Jeroen Bertels <jeroen.bertels@gmail.com>
+Project-URL: Homepage, https://github.com/JeroenBertels/arraythings
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# arraythings
+A Python library for working with arrays.

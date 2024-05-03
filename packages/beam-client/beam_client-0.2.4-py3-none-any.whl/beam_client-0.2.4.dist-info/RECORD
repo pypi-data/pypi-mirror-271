@@ -1,0 +1,8 @@
+beam/__init__.py,sha256=yXtcuGoFyBIEfLwmq6UBVbcvCndABPfieAsxnIbpVBc,597
+beam/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beam/cli/logs.py,sha256=wGTFx_3oJTfv59_853dVsoDHIGon8Gg-gDPGcK4PzGU,438
+beam/cli/main.py,sha256=CaIbQ0cviz8mHif8UYHqMry2-L-U6gfwrDSpvQjf3C0,405
+beam_client-0.2.4.dist-info/METADATA,sha256=IWnaudGHMPBXho2VLcQD9IMxHrJN8drS8brYqhlUBtw,478
+beam_client-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+beam_client-0.2.4.dist-info/entry_points.txt,sha256=Fg35KinO1dhiV5HoHNntJkWIAym1NcXFL89xVWxBXv8,42
+beam_client-0.2.4.dist-info/RECORD,,

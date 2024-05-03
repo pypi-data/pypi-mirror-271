@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/stag/__init__.py
+src/stag_python.egg-info/PKG-INFO
+src/stag_python.egg-info/SOURCES.txt
+src/stag_python.egg-info/dependency_links.txt
+src/stag_python.egg-info/requires.txt
+src/stag_python.egg-info/top_level.txt
+submodules/pybind11/LICENSE
+submodules/pybind11_opencv_numpy/LICENSE
+submodules/stag/LICENSE

@@ -1,0 +1,10 @@
+hbox/commands.py,sha256=7gYJk6Xk-T2f0b8BPzMf_wzily4s4nnBP5JqF1Vp_OM,6635
+hbox/config.py,sha256=S3znlb_fj6b2eW00oGDbSuhNQdA5YqQRsjeDR0Q-_gw,2212
+hbox/logger.py,sha256=Vj6zhaXKsbyS1xQPhz2bLwHb8n_v__I_ZD8_bHHmgIk,684
+hbox/main.py,sha256=xSw5xGeQit77OPuIu60umznXAG0lE3O7bz8-NrbPQ7A,3094
+hbox/utils.py,sha256=i7TsZJgxk8-M5ZHEhqrijx4P4OJCtDv2Rxn_t45iZ0U,2292
+hbox-0.2.7.dist-info/LICENSE,sha256=eKRA-BI8djqxMorc5iGuWyhNK8yXya_XSuTQkR9nRkY,1078
+hbox-0.2.7.dist-info/METADATA,sha256=k7ByMInW7tdAPfUDxRL0ViQ2N7YyR1CzS5DLQFD80R8,6814
+hbox-0.2.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hbox-0.2.7.dist-info/entry_points.txt,sha256=trWEF-IZvjT1Ur_mHpESkCFbiCtFAQw7_0yHxcC0-SA,38
+hbox-0.2.7.dist-info/RECORD,,

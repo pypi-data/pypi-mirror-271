@@ -1,0 +1,2 @@
+[console_scripts]
+aise-toolkit-demo = aise_toolkit_demo.cli:cli

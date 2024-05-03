@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: data-agent-zip
+Version: 0.1.2
+Summary: ZIP files plugin for `data-agent` package
+Home-page: https://github.com/imubit/data-agent-zip/
+Author: Meir Tseitlin
+Author-email: meir@imubit.com
+License: LGPLv3
+Project-URL: Documentation, https://github.com/imubit/data-agent-zip/
+Project-URL: Source, https://github.com/imubit/data-agent-zip/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Requires-Dist: pandas
+Requires-Dist: data-agent
+Provides-Extra: testing
+Requires-Dist: setuptools; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+
+[![Built Status](https://api.cirrus-ci.com/github/imubit/data-agent-zip.svg?branch=main)](https://cirrus-ci.com/github/imubit/data-agent-zip)
+[![Coveralls](https://img.shields.io/coveralls/github/imubit/data-agent-zip/main.svg)](https://coveralls.io/r/imubit/data-agent-zip)
+[![PyPI-Server](https://img.shields.io/pypi/v/data-agent-zip.svg)](https://pypi.org/project/data-agent-zip/)
+[![Project generated with PyScaffold](https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold)](https://pyscaffold.org/)
+
+# data-agent-zip
+
+> [Data Agent](https://github.com/imubit/data-agent) plugin for ZIP files
+
+(ZIP file connector is used by QT Data Extractor to store extracted data in CSV files archived in ZIP files.)

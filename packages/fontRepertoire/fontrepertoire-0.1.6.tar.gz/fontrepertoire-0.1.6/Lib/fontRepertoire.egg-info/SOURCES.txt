@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/fontRepertoire/__init__.py
+Lib/fontRepertoire/base.py
+Lib/fontRepertoire/characterSet.py
+Lib/fontRepertoire/codepointToGlyphMap.py
+Lib/fontRepertoire/glyphRepertoire.py
+Lib/fontRepertoire.egg-info/PKG-INFO
+Lib/fontRepertoire.egg-info/SOURCES.txt
+Lib/fontRepertoire.egg-info/dependency_links.txt
+Lib/fontRepertoire.egg-info/requires.txt
+Lib/fontRepertoire.egg-info/top_level.txt
+tests/test_charset.py
+tests/test_glyphrepertoire.py

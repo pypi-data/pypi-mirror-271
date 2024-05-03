@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: eprime_data
+Version: 0.2.5
+Summary: Library & command line interface to handle and convert E-Prime log-data (.txt)
+Keywords: open science,experimental psychology,data analysis
+Author-email: Oliver Lindemann <lindemann@essb.eur.nl>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: pandas>=2.1
+Requires-Dist: pyarrow>=16.0
+Project-URL: Home, https://github.com/lindemann09/eprime-data
+
+# E-Prime-Data
+
+Python library &amp; command line interface to handle and convert txt-data files from E-prime
+
+(c) Oliver Lindemann
+
+## Install
+
+```
+pip install eprime_data
+```
+
+## Command line interface
+
+```
+usage: __main__.py [-h] [--csv] [--feather] [-l LEVEL] [--override] FILES [FILES ...]
+
+E-Prima-data: Converting E-Prime log-data (.txt)
+
+positional arguments:
+  FILES                 E-prime data file(s) or glob pattern. Single or multiple file names or a
+                        string representing a glob pattern that matches multiple files to be
+                        processed
+
+options:
+  -h, --help            show this help message and exit
+  --csv                 convert to csv
+  --feather             convert to feather
+  -l LEVEL, --level LEVEL
+                        data level to be extracted
+  --override            override existing files (only used if processing multiple files)
+```

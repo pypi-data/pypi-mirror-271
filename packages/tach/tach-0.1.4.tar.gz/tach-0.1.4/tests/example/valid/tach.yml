@@ -1,0 +1,12 @@
+constraints:
+- tag: one
+  depends_on:
+  - two
+- tag: two
+  depends_on:
+  - one
+- tag: three
+  depends_on: []
+exclude:
+- domain_thr.*
+exclude_hidden_paths: true

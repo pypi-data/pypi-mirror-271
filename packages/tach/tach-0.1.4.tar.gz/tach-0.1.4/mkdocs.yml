@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: Tach
+site_url: https://never-over.github.io/tach/
+repo_name: tach
+repo_url: https://github.com/Never-Over/tach
+nav:
+  - index.md
+  - why-tach.md
+  - getting-started.md
+  - usage.md
+  - configuration.md
+  - strict-mode.md
+  - tach-ignore.md
+  - faq.md
+theme:
+  name: material
+  favicon: favicon.ico
+  icon:
+    logo: fontawesome/solid/shield-halved
+    repo: fontawesome/brands/git-alt
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.tracking
+    - toc.follow
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:admin@0x63problems.dev

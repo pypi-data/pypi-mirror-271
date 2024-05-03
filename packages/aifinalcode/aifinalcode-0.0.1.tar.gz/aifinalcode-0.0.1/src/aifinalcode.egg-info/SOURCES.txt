@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/aifinalcode/__init__.py
+src/aifinalcode/codes.py
+src/aifinalcode.egg-info/PKG-INFO
+src/aifinalcode.egg-info/SOURCES.txt
+src/aifinalcode.egg-info/dependency_links.txt
+src/aifinalcode.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: statistic-tool
+Version: 0.0.1
+Summary: simple functions for statistic
+Home-page: https://github.com/cheerzhang/statistic_tool
+Author: ZhangLe
+Author-email: zhangle@gmail.com
+Project-URL: Bug Tracker, https://github.com/cheerzhang/statistic_tool/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=0.25.1
+
+# statistic_tool
+statistic tools

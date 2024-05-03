@@ -1,0 +1,17 @@
+{
+    "config": {},
+    "classes": [
+        "ParticlesMonitor",
+        "RandomUniform",
+        "RandomExponential",
+        "RandomNormal",
+        "RandomRutherford",
+        "MultiSetter"
+    ],
+    "versions": {
+        "xtrack": "0.59.0",
+        "xfields": "0.16.0",
+        "xcoll": "0.3.6",
+        "xobjects": "0.4.1"
+    }
+}

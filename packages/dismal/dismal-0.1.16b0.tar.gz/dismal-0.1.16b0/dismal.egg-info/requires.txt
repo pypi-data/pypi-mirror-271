@@ -1,0 +1,13 @@
+numpy
+pandas
+setuptools
+pyranges
+scikit-allel
+demes
+demesdraw
+matplotlib
+msprime
+seaborn
+tqdm
+tskit
+prettytable

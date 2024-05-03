@@ -1,0 +1,11 @@
+huffify/__init__.py,sha256=IwFvUJCmlq4qisQRgFmUv_MXXtN2E-3mDpXdXIWFddg,101
+huffify/abstract.py,sha256=jomWKrxDxOrD_NplkYLnT9RmAJxGrHfkxAGJl6VrJIk,699
+huffify/annotations.py,sha256=yxHOqLsXSx2848DQe7g34IL5VZEO4aIz7LMieNkqIU8,111
+huffify/encoders.py,sha256=FBltBsKRTuwhuu93TGV1m7ZZlprIBDdRcddD1nwELk4,2691
+huffify/fileManger.py,sha256=lgpwJyfId_jEwVuAW_Qzg6SZuCCv1GFnI0Xk8ScWgV0,1191
+huffify/heapNodes.py,sha256=F7ffIemxSkx31yl9raT8GnZbL5_3wjnzM-AbpLeE5iA,909
+huffify/huffify.py,sha256=WUvCuOan5a7JbKXLDsEe3kyG2OII-pPj_Nh38NmUNbM,3445
+huffify-0.2.0.dist-info/LICENSE,sha256=I2UI-obrfAqii8Y_4_u-5mmBSFkhi7hcfNoHqsO53sY,1072
+huffify-0.2.0.dist-info/METADATA,sha256=8H6P-DI_RfxeyNVscMWeKYyKBxAe2TKHE36ZvvytEaQ,2861
+huffify-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+huffify-0.2.0.dist-info/RECORD,,

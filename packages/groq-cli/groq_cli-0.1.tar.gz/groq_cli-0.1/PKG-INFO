@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: groq-cli
+Version: 0.1
+Summary: A CLI package for interacting with the Groq API.
+Home-page: https://github.com/Akshad135/groq-cli
+Author: Akshad Agrawal
+Description-Content-Type: text/plain
+Requires-Dist: groq
+
+
+This is a basic CLI package that allows you to interact with the Groq API.
+It provides different options to select the role type (the way which the model will interact) and
+model type (the model which will be used to solve your query).

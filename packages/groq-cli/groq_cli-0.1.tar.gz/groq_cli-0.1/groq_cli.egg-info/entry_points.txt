@@ -1,0 +1,2 @@
+[console_scripts]
+grc = groq_cli_chat.work:main

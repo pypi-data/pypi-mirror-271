@@ -1,0 +1,18 @@
+[project]
+name="classnotation"
+version="1.2"
+authors= [
+    { name="Asher Glick", email="aglick@aglick.com" },
+]
+description="A json to dataclass tool"
+# readme="README.md"
+# requires-pyton=">3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+# [project.urls]
+# Homepage="https://github.com/AsherGlick/dcon"
+# Issues="https://github.com/AsherGlick/dcon/issues"

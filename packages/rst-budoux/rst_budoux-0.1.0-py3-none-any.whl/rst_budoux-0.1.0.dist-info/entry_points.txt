@@ -1,0 +1,3 @@
+[console_scripts]
+rst-budoux2html = rst_budoux.cli.html:main
+rst-budoux2pseudoxml = rst_budoux.cli.psuedoxml:main

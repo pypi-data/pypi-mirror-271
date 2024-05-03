@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "q2label"
+version = "0.0.3"
+authors = [
+  { name="Erik van der Poel", email="erikvdpoel@hotmail.com" },
+]
+dynamic = ["dependencies"]
+description = "Transfer your data to our datalake and integrate in your computer vision pipeline. For more information, go to our website: www.q2label.com."
+keywords = ["data transfer image labelling"]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Win32 (MS Windows)",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "License :: OSI Approved :: BSD License",
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://www.q2label.com"

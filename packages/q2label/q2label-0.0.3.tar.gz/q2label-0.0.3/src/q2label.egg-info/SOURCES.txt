@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/q2label/__init__.py
+src/q2label/datalake.py
+src/q2label/local.py
+src/q2label/target.py
+src/q2label/utils.py
+src/q2label.egg-info/PKG-INFO
+src/q2label.egg-info/SOURCES.txt
+src/q2label.egg-info/dependency_links.txt
+src/q2label.egg-info/requires.txt
+src/q2label.egg-info/top_level.txt

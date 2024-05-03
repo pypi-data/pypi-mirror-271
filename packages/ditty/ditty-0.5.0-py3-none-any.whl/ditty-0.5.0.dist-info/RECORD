@@ -1,0 +1,10 @@
+ditty/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ditty/data.py,sha256=sMoI-CMBDPQkdgleFcq2-FSWZQ7Alj1_SVZHBuGFLuY,5366
+ditty/pipeline.py,sha256=0MEEQYRLYcWxyGGR0fIIJAYC3l4_ZHAsDGQOCl0anZM,7420
+ditty/trainer.py,sha256=JpwuOEEd5dQj27mmZIRKDe_CrxxlqDyw7Oe5vr9TbKY,9272
+ditty/utils.py,sha256=F0kAFPMhhyoQfWyhKj7aahM_yFRy6TDdcHiqTsQj9Ks,311
+ditty-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ditty-0.5.0.dist-info/METADATA,sha256=Z0L2XvPYscsfiWgPTEZVuwto3_o2wYDZcNru5CPtOp0,3616
+ditty-0.5.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ditty-0.5.0.dist-info/top_level.txt,sha256=I8lmXrgK9Q0CAbXxgggWtg6PPi_aJefcLKdM6uBjbyI,6
+ditty-0.5.0.dist-info/RECORD,,

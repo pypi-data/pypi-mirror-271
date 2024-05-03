@@ -1,0 +1,16 @@
+FedJust/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FedJust/aggregators/aggregator.py,sha256=KryS4KlLWYEwRTxFeXnU3ArXQNfxkM_lcL5fVo5xjzU,1052
+FedJust/aggregators/fedopt_aggregator.py,sha256=x6gF4Kn0AOebVH-RlKEOmapmm88op26_pRC45re2DdY,1443
+FedJust/files/archive.py,sha256=eg8kv5xSwBdNdg4JaI0z6L8vY_eDjGpyDUuJkOT7IBs,1515
+FedJust/files/handlers.py,sha256=hoK0QBfH85-kd9xZy7Xjzd0q9nr9XCBheK75HCrDf1k,1721
+FedJust/files/loggers.py,sha256=B6RrvR8DsBhBi2Mcw-A835xSnXPJOyM4ZvYzj_p0JAE,2187
+FedJust/model/federated_model.py,sha256=01UGO_FyvgeYv9YkEe2sNjYfaTSxCaxAZNmyCoFSjS4,15871
+FedJust/node/federated_node.py,sha256=eWcTs_CqAmuO_ANl8-NWCdpDwwvZWC-9bbAqH8O_pkA,5910
+FedJust/operations/evaluations.py,sha256=T52GHWTqlqdgpXHOCRDuSutaRZ-F56LgnsyNi77KdYo,3335
+FedJust/operations/orchestrations.py,sha256=UdTbdErssxdZc_fd7GR_ab378gbCJ2g3JV9oaqNNNrw,3430
+FedJust/simulation/adaptive_optimizer_simulation.py,sha256=qwVcMq1HF3QtMxALr2djkF2DMT3UZx07Mz-jsNojRJs,6205
+FedJust/simulation/simulation.py,sha256=oIILt4EOqeAbuzGVRr4efbwRACp6Yu_6bLT86Sl4skg,10659
+FedJust/utils/computations.py,sha256=JzTvW_D28n9LNDyYw8zq_y2b0YmRWJEgAnDSuDN5uzk,824
+fedjust-0.1.2.dist-info/METADATA,sha256=IHXhjSVFpNglJa00rzZXkcYTd99fcrgbeKY9OU8fW7s,3664
+fedjust-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fedjust-0.1.2.dist-info/RECORD,,

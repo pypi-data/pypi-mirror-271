@@ -1,0 +1,32 @@
+# required dependencies 
+meson
+meson-python
+ninja
+numpy
+f90wrap
+versioneer[toml]
+rasterio
+pandas
+h5py
+tqdm
+scipy
+pyyaml
+terminaltables
+
+# documentation
+sphinx
+numpydoc
+pydata-sphinx-theme
+ipython
+sphinxcontrib-bibtex
+sphinx-design
+sphinx-autosummary-accessors
+matplotlib
+
+# test
+pytest
+pytest-cov
+
+# format
+ruff
+fprettify

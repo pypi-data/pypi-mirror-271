@@ -1,0 +1,8 @@
+requests
+tabulate
+plotly
+pandas
+sqlparse
+kaleido
+flask
+sqlalchemy

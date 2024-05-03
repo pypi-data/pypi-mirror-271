@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sqlvana
+Version: 0.1.3
+Summary: SQL自然语言可视化查询
+Home-page: https://github.com/chuangyeshuo/sqlvana
+Author: fomo3d
+Author-email: fomo3d.wiki@gmail.com
+License: MIT
+Keywords: SQL 自然语言 可视化 查询
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: plotly
+Requires-Dist: pandas
+Requires-Dist: sqlparse
+Requires-Dist: kaleido
+Requires-Dist: flask
+Requires-Dist: sqlalchemy

@@ -1,0 +1,13 @@
+py_profiler/__init__.py,sha256=AvEN0G8r_e8vPcTQBx4kTScFmQzZOO4P8X1CiVIf1jY,79
+py_profiler/decorator.py,sha256=SNCcq3F8zuM-znwlSxl6qQQVSlxB8GQkbsJXcQ5juyY,1026
+py_profiler/fastapi_profiler_controller.py,sha256=K3rJ6bg88cOLQgfqdu39LjOchbxHypj7Uuv6C16l55E,330
+py_profiler/long_adder.py,sha256=R7ULEJ_FKEvAU8Y5_MF6s_hrDdBxeIrT8qDhGFiJHlo,522
+py_profiler/measure_service.py,sha256=FGJRbH9y8C_jid4vK-DXEA_mZkLxNwL9fSvPSi3KUxM,5555
+py_profiler/profiler_controller.py,sha256=W2ggxrBQVYrI2Od2OFSKzxiOpYSzPgfgH88ar5P-3Jw,260
+py_profiler/utils.py,sha256=sbRLEpwuWDXNlXWH-hVsMPHZoLOTg06QNj5bjhtK8k8,743
+py_profiler/templates/profiler.html,sha256=wlLwdLw2GttqJyioRTMKltBmQ1oPH_Iz_2tEjQO6GXI,3308
+py_profiler-0.2.7.dist-info/LICENSE,sha256=uFbon6_wgBHAoq94zjGolbRVBuChGRRw-Qk1D1ghoAI,1073
+py_profiler-0.2.7.dist-info/METADATA,sha256=x2DSoZhmyxxk9mvmCjOzWLtQEGwWOxa-GiljBgHlkHk,3702
+py_profiler-0.2.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+py_profiler-0.2.7.dist-info/top_level.txt,sha256=fNbVbCwJeczbIq9rImqd5kugzE0fLFRAkH7sXaTFBjE,12
+py_profiler-0.2.7.dist-info/RECORD,,

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: clbb-hermes
+Version: 0.1.6.2
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: geopandas
+Requires-Dist: osmnx
+Requires-Dist: networkx
+Requires-Dist: pandana
+Requires-Dist: osmnet
+Requires-Dist: pyarrow
+Requires-Dist: openpyxl

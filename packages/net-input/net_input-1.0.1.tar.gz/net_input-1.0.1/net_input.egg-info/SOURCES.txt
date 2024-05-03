@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+net_input/__init__.py
+net_input/py.typed
+net_input/server.py
+net_input.egg-info/PKG-INFO
+net_input.egg-info/SOURCES.txt
+net_input.egg-info/dependency_links.txt
+net_input.egg-info/entry_points.txt
+net_input.egg-info/requires.txt
+net_input.egg-info/top_level.txt

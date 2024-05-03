@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: xvlib
+Version: 0.1
+Summary: This lib will be updated every some months , helps you check username telegram status , auction taken available , and colorize your terminal and save file data.
+Author: aymen : @unpacket
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: bs4

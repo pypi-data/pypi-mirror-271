@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+setup.py
+xvlib/__init__.py
+xvlib/colorizer.py
+xvlib/empty.py
+xvlib/seconder.py
+xvlib/tg.py
+xvlib.egg-info/PKG-INFO
+xvlib.egg-info/SOURCES.txt
+xvlib.egg-info/dependency_links.txt
+xvlib.egg-info/requires.txt
+xvlib.egg-info/top_level.txt

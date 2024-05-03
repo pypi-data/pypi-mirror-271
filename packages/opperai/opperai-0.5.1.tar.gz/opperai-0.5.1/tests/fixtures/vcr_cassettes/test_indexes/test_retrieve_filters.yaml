@@ -1,0 +1,112 @@
+interactions:
+- request:
+    body: '{"name": "test_retrieve_filters"}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '33'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/indexes
+  response:
+    body:
+      string: '{"id":10,"name":"test_retrieve_filters","files":[],"created_at":"2024-05-02T09:18:08.481814Z"}'
+    headers:
+      content-length:
+      - '94'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 09:18:08 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": null, "uuid": null, "key": null, "content": "Bonjour", "metadata":
+      {"source": "test"}}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '93'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/indexes/10/index
+  response:
+    body:
+      string: '{"id":8,"uuid":"1ed107f4-29d9-40de-8b3a-550a61efe1d4","key":"1ed107f4-29d9-40de-8b3a-550a61efe1d4"}'
+    headers:
+      content-length:
+      - '99'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 09:18:08 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"q": "test", "k": 1, "filters": [{"key": "source", "operation": "=", "value":
+      "test"}]}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '88'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/indexes/10/query
+  response:
+    body:
+      string: '[{"uuid":"9c9adf6d-f446-4cb2-b701-602b211f9491","content":"Bonjour","metadata":{"source":"test"},"document_id":null,"score":4.736573219299316,"source_uuids":["9c9adf6d-f446-4cb2-b701-602b211f9491"]}]'
+    headers:
+      content-length:
+      - '199'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 09:18:08 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/indexes/10
+  response:
+    body:
+      string: 'true'
+    headers:
+      content-length:
+      - '4'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 09:18:08 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+version: 1

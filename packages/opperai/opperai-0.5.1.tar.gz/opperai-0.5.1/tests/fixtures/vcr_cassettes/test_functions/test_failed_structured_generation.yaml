@@ -1,0 +1,118 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/by_path/test/sdk/test_failed_structured_generation
+  response:
+    body:
+      string: '{"detail":"Function not found"}'
+    headers:
+      content-length:
+      - '31'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 09:17:50 GMT
+      server:
+      - uvicorn
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"id": null, "path": "test/sdk/test_failed_structured_generation", "description":
+      "test structured generation exception", "input_schema": null, "out_schema":
+      {"type": "object", "properties": {"universityName": {"type": "string"}, "location":
+      {"type": "string"}, "departments": {"type": "array", "items": {"type": "object",
+      "properties": {"departmentName": {"type": "string"}, "head": {"type": "string"},
+      "courses": {"type": "array", "items": {"type": "object", "properties": {"courseId":
+      {"type": "string"}, "courseName": {"type": "string"}, "credits": {"type": "integer",
+      "minimum": 1, "maximum": 10}}, "required": ["courseId", "courseName", "credits"]}}},
+      "required": ["departmentName", "head", "courses"]}}}, "required": ["universityName",
+      "location", "departments"]}, "instructions": "You translate the incoming text
+      to french", "model": "mistral/mistral-tiny-eu", "index_ids": [], "use_semantic_search":
+      null, "few_shot": null, "few_shot_count": null, "cache_configuration": null}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '985'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/functions
+  response:
+    body:
+      string: '{"id":30,"path":"test/sdk/test_failed_structured_generation","description":"test
+        structured generation exception","input_schema":null,"out_schema":null,"instructions":"You
+        translate the incoming text to french","few_shot":false,"few_shot_count":2,"dataset_uuid":"b6e23402-8fcf-49d0-9a30-3ada2f0b5742","use_semantic_search":false,"model":"mistral/mistral-tiny-eu","language_model_id":4,"index_ids":[],"linked_function_ids":null,"revision":1,"cache_configuration":null}'
+    headers:
+      content-length:
+      - '467'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 09:17:50 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"parent_span_uuid": null, "messages": [{"role": "user", "content": "hello"}]}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '78'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/chat/test/sdk/test_failed_structured_generation
+  response:
+    body:
+      string: '{"detail":"Structured generation failed, could not generate response
+        matching the schema."}'
+    headers:
+      content-length:
+      - '91'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 09:17:50 GMT
+      server:
+      - uvicorn
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/functions/30
+  response:
+    body:
+      string: ''
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 09:18:06 GMT
+      server:
+      - uvicorn
+    status:
+      code: 204
+      message: No Content
+version: 1

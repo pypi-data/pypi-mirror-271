@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ultima-scraper-detector"
+version = "0.1.3"
+description = ""
+authors = [
+    "DIGITALCRIMINAL <21285176+digitalcriminal@users.noreply.github.com>",
+]
+packages = [{ include = "ultima_scraper_detector" }]
+include = ["ultima_scraper_detector/py.typed"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
+nudenet = "^3.0.8"
+pillow = "^10.1.0"
+psutil = "^5.9.6"
+fastapi = "^0.100"
+uvicorn = "^0.24.0.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

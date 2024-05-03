@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: bioseba
+Version: 0.1.2
+Summary: 
+Author: liminghong.dev
+Author-email: lmh0066@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: einops (>=0.7.0,<0.8.0)
+Requires-Dist: gdown (>=5.1.0,<6.0.0)
+Requires-Dist: pandas (>=2.0,<3.0)
+Requires-Dist: peft (>=0.5.0,<0.6.0)
+Requires-Dist: transformers (==4.29.2)
+Requires-Dist: triton (==2.0.0.dev20221202)
+Description-Content-Type: text/markdown
+
+# SEBA
+conserved Sequence Engineering for the chromatin domain Boundary Architect
+
+## Installation
+**Dependency:**
+This project requires the GPU environment. Note that the code has only been tested with the specified versions and also expects a Linux environment.
+
+Install the seba via pip.
+``` bash
+pip install bioseba
+```
+
+Then, install the appropriate version of PyTorch. After experimental verification, hiclip works well in the environment of pytorch 2.0.1 + CUDA 11.7.
+``` bash
+# This is just an example, you can find the appropriate version in https://pytorch.org/get-started/previous-versions/
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+```
+
+## Quick start for generating CDB sequence
+``` bash
+# filter out seed sequences suitable for generation
+bioseba get-sequence-seed --data_dir_path /path/to/boundary_folder --fasta_path dna.primary_assembly.fa --output_path seed.bed
+# generate
+bioseba generate-sequence --seed_path seed.bed --output_path sequence.csv
+```
+

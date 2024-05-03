@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/wgdtree/__init__.py
+src/wgdtree/batch_run.py
+src/wgdtree/retention_rates.py
+src/wgdtree/rooting.py
+src/wgdtree/simulation.py
+src/wgdtree/split.py
+src/wgdtree.egg-info/PKG-INFO
+src/wgdtree.egg-info/SOURCES.txt
+src/wgdtree.egg-info/dependency_links.txt
+src/wgdtree.egg-info/top_level.txt

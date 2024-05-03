@@ -1,0 +1,12 @@
+raugraf/__init__.py,sha256=AwVl0NHDPotOpPCFFd7m3WRgiyzGOTGgg62dNZUX3gc,1134
+raugraf/_version.py,sha256=Tjb_poy6EuGRi7TlrksJa9Qpx1MXOCO3p3F6tJ8xa5o,142
+raugraf/noderadius.py,sha256=-aRB88GramZMKGcWYcq6PghVuJIGNa0hb4nW1BYrr8E,3960
+raugraf/draft/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+raugraf/draft/minimizer_diversity.py,sha256=IxryO3aV1-FEmwOQPPEsVqVlpZYCt6sagQo-YEj7VyU,6228
+raugraf/draft/syntenic_anchors.py,sha256=waEMqDgfmPOKrx7YudXVwnuA08vp_YDpxr9clFyKLZM,2903
+raugraf-0.0.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+raugraf-0.0.1.dist-info/METADATA,sha256=jzxfauzWx-xUYHw2r6Vr6K0hVkph8jwyNz5knuz9ePE,965
+raugraf-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+raugraf-0.0.1.dist-info/entry_points.txt,sha256=SSGQeZx4gCTfzU9ABPiAXx_qx6e6xd9ofjB5JMqgNxA,41
+raugraf-0.0.1.dist-info/top_level.txt,sha256=YEw5ZHYIAOkImIg2wU0Ct2QtKY1h-IvvMT1bqzu1AkQ,8
+raugraf-0.0.1.dist-info/RECORD,,

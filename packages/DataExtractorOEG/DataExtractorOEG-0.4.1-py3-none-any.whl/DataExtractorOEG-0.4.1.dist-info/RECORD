@@ -1,0 +1,15 @@
+doiExtractor/__init__.py,sha256=2fTXhdS-CQ4MZaBK08m7N8wJ_VtrxYzlp9pI2EaDYGk,21
+doiExtractor/doiExtractor.py,sha256=3IP5nwY_HaiQl4X6huMHI6EIoVt8fN7fa7v2KFZszPo,8394
+doiExtractor/main.py,sha256=ihnJKwZr8ufhckWdxiu6AAmyBjGc8OaRvJfHYMunDKM,2454
+doiExtractor/openAlex.py,sha256=y9O8IRfYe67h-LuBY9PgTHJqqpX_jreL75hZPVWWmbw,4105
+doiExtractor/ExistingPapers/Papers.csv,sha256=aEtyI1MGw82M3jzyoKdHNwMoSOaOYZgCtmQus0lNILs,542602
+doiExtractor/ExistingPapers/name_doi_papers.csv,sha256=qv_NWKDsWNT357chyU62SEUMNsCOYTmiMgbWm1ko-NQ,4080
+doiExtractor/Outputs/dois.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doiExtractor/Outputs/results.csv,sha256=jtC_kUlK7kkoTqC2FhcZfhw1NpgFXPGxGM1FMptfktM,54972
+doiExtractor/Outputs/results.json,sha256=PmoyJL3xvW0VJGrmExX2QlKkYAllfrQzAXkDwtOghZo,129283
+DataExtractorOEG-0.4.1.dist-info/LICENSE.txt,sha256=3PZNCY1c4_hB1P1nzAH_-uknnQ_Ewh2LjsJPmBbGPGg,1098
+DataExtractorOEG-0.4.1.dist-info/METADATA,sha256=PbuONk4JBEW6Qcvf94Hk7_y_mBbbyKNKuIy4D_UPpUE,3046
+DataExtractorOEG-0.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+DataExtractorOEG-0.4.1.dist-info/entry_points.txt,sha256=ULMf3EKC8xVb_5UljvoIbPokIVvZK7BsZKvw3ciK2MY,54
+DataExtractorOEG-0.4.1.dist-info/top_level.txt,sha256=AQfrW-1rnpuR7KkU0XAFHIG3weQJQtcIVe0KGVXeFfU,13
+DataExtractorOEG-0.4.1.dist-info/RECORD,,

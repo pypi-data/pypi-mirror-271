@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: xmonkey_namonica
+Version: 0.1.7
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: urllib3

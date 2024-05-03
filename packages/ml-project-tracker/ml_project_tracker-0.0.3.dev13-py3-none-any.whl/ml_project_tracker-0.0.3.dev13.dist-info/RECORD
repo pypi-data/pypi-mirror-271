@@ -1,0 +1,7 @@
+ml_project_tracker/__init__.py,sha256=rzrfEbEc0NH7mLlYNZ9hNedIWoGf70oGGG9_hkJK8qk,77
+ml_project_tracker/neptune_tools.py,sha256=gLAQ19g6EwnJIX3gX64g3bm8EuNN_GwZR9JEzL7Zxe8,7380
+ml_project_tracker/wandb_tools.py,sha256=jFabSfQ-AVt4B4ZFJxI_cNDf42oWzQv0WlTjMorOsMk,4921
+ml_project_tracker-0.0.3.dev13.dist-info/METADATA,sha256=te-MVbZVqT1mScxAbvEpyWwwHCtKnmxU6fvbj33SQSk,598
+ml_project_tracker-0.0.3.dev13.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ml_project_tracker-0.0.3.dev13.dist-info/top_level.txt,sha256=2ST-82k1CUexuQOZEo2WUxIJnGpVBZVhpuGqwX3ytfA,19
+ml_project_tracker-0.0.3.dev13.dist-info/RECORD,,

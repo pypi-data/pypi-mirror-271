@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pysideprocessing"
+dynamic = ["version"]
+description = "A python implementation of processing using pyside6"
+authors = [
+  { name="nomisge", email="nomisge@live.de" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+  "pyside6",
+  "processing",
+  "qt",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Natural Language :: German",
+    "Natural Language :: English",
+    "Topic :: Education",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+  "pyside6<=6.6.3.1",
+  "numpy",
+  "numba",
+  "makefun",
+]
+
+[tool.hatch.version]
+path = "src/pysideprocessing/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["src/pysideprocessing"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
+
+[project.urls]
+"Home" = "https://codeberg.org/nomisge/pysideprocessing"
+"PyPI-Site" = "https://pypi.org/project/pysideprocessing/"

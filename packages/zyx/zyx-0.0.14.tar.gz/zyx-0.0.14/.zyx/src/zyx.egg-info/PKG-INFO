@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zyx
+Version: 0.0.14
+Author: Hammad Saeed
+Author-email: hammad@supportvectors.com
+Requires-Python: >=3.8
+Requires-Dist: art
+Requires-Dist: ipython
+Requires-Dist: litellm
+Requires-Dist: loguru
+Requires-Dist: ollama
+Requires-Dist: pathlib
+Requires-Dist: prompt_toolkit
+Requires-Dist: psutil
+Requires-Dist: pydantic
+Requires-Dist: PyMuPDF
+Requires-Dist: rich
+Requires-Dist: semchunk
+Requires-Dist: tiktoken

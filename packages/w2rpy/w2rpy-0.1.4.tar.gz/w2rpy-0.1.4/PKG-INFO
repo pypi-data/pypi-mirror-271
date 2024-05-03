@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: w2rpy
+Version: 0.1.4
+Summary: Water Resource Functions For Fluvial Systems
+Author: Luke Russell
+Author-email: lrussell@wolfwaterresources.com
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: shapely
+Requires-Dist: geopandas
+Requires-Dist: rasterio
+Requires-Dist: pysheds
+Requires-Dist: scipy

@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+  "hatchling",
+  "hatch-requirements-txt",
+  "hatch-fancy-pypi-readme>=22.5.0",
+]
+build-backend = "hatchling.build"
+[project]
+name = "gradio_grid"
+version = "1.0.0"
+description = "Grid is a layout element within Blocks that renders all children in a two dimensional grid system."
+readme = "README.md"
+license = "apache-2.0"
+requires-python = ">=3.8"
+authors = [{ name = "Daniel Ialcin Misser Westergaard" }]
+keywords = ["gradio-custom-component", "gradio-template-Row", "layout", "grid", "two-dimensional"]
+dependencies = ["gradio>=4.0,<5.0"]
+classifiers = [
+  'Development Status :: 3 - Alpha',
+  'Operating System :: OS Independent',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3 :: Only',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Topic :: Scientific/Engineering',
+  'Topic :: Scientific/Engineering :: Artificial Intelligence',
+  'Topic :: Scientific/Engineering :: Visualization',
+]
+repository = "https://huggingface.co/spaces/dwancin/gradio_toggle"
+space = "https://huggingface.co/spaces/dwancin/gradio_grid"
+[project.optional-dependencies]
+dev = ["build", "twine"]
+[tool.hatch.build]
+artifacts = ["/backend/gradio_grid/templates", "*.pyi"]
+[tool.hatch.build.targets.wheel]
+packages = ["/backend/gradio_grid"]

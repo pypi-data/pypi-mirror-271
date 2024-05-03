@@ -1,0 +1,2 @@
+[data_agent.connectors]
+zip = data_agent_zip.connector:ZipConnector

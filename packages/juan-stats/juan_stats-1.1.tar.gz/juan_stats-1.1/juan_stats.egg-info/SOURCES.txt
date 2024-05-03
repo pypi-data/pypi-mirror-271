@@ -1,0 +1,10 @@
+setup.py
+juan_stats/Binomialdistribution.py
+juan_stats/Gaussiandistribution.py
+juan_stats/Generaldistribution.py
+juan_stats/__init__.py
+juan_stats.egg-info/PKG-INFO
+juan_stats.egg-info/SOURCES.txt
+juan_stats.egg-info/dependency_links.txt
+juan_stats.egg-info/not-zip-safe
+juan_stats.egg-info/top_level.txt

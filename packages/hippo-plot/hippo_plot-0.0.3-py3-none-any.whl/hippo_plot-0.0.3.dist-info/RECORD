@@ -1,0 +1,9 @@
+hippo-plot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hippo-plot/cli.py,sha256=U01ImT46VP-T8Iopl98LoFZ5uE0a-ja1FuzURmmCU6Y,1782
+hippo-plot/draw.py,sha256=3rYfzCrH67SzxQsew9XEScRBc9FpAfiNrYtXeJk2nJs,289
+hippo-plot/io.py,sha256=DUBHl71tjJkw98bWtLzv5-2SwWT-YGCINwaPHJr2nQU,407
+hippo-plot/prep.py,sha256=RsK0RZ289H2nvtM0msptYX-4Gx9id8NRL_0Hw1Ilfx4,157
+hippo_plot-0.0.3.dist-info/METADATA,sha256=Bz_hXKHl3cdCSFMuCgHk3yHlS6LDJu6IcFQE5ZssNRs,755
+hippo_plot-0.0.3.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+hippo_plot-0.0.3.dist-info/entry_points.txt,sha256=QRm_RlTBkx4ENq8ACUtdsGh2NnE37RvQYwUg1fViLaI,51
+hippo_plot-0.0.3.dist-info/RECORD,,

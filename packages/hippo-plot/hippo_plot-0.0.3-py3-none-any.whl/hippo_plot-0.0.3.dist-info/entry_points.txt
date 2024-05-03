@@ -1,0 +1,2 @@
+[console_scripts]
+hippo-plot = hippo-plot.cli:main

@@ -1,0 +1,14 @@
+daffodil/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+daffodil/daf.py,sha256=1eclErThqBrzFyF6HqDPvpiadIdZbk8M5RWYl4mHa3o,201066
+daffodil/lib/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+daffodil/lib/daf_indexing.py,sha256=m2KdtmH9Ig1OdcJcZdUU_TWB3YNN4k1aO6ar-vcEoJ8,43220
+daffodil/lib/daf_md.py,sha256=CknoVwiy0o_APfP4btLP-QcM1ECaQBD1vLGCyDT8Q-A,31645
+daffodil/lib/daf_pandas.py,sha256=DevoSKDlXLt8L1QvRigw_57WnQYGwdQ4EJuuix3ndOg,7708
+daffodil/lib/daf_types.py,sha256=Ok9dv-MkQ9Uq5WWAvDhgyCXhDnZwZNH7ElgfePb4Nbg,5174
+daffodil/lib/daf_utils.py,sha256=rCDkslG0G1OMo1vWhUGdvlri_m4Qwcz7IHuxi9-H-uM,51696
+daffodil/lib/md_demo.py,sha256=E1MhfU_HWZ6iZpdB-P0vroY2uhYFeD39XYpgsnqcySM,5796
+daffodil-0.4.4.dist-info/LICENSE,sha256=Fb82tF9m2N3tYJfDUj1HDuXKN2xzjnzk3_lpKc1iBaY,1090
+daffodil-0.4.4.dist-info/METADATA,sha256=IURPo3yZRkqheoOzyUfXqtGf4wj4nErEJu26Xm6VJFs,54022
+daffodil-0.4.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+daffodil-0.4.4.dist-info/top_level.txt,sha256=BsWJe0fx2AnlTCCeg94ubXcZ2HT_c5JHKQHvOwbv6V8,9
+daffodil-0.4.4.dist-info/RECORD,,

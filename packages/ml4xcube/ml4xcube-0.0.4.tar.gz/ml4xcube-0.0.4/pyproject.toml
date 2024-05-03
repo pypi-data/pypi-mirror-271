@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml4xcube"
+version = "0.0.4"
+dynamic = ["dependencies"]
+description = "ML package for data cubes"
+authors = [{ name = "Julia Peters", email = "julia.peters@informatik.uni-leipzig.de" }]
+readme = "./README.md"
+license = { file = "LICENSE" }
+keywords = ["machine learning", "tools", "data cube utilities"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    # Other relevant classifiers can be included here
+]
+requires-python = ">=3.8"
+
+[tool.setuptools.package-data]
+ml4xcube = ["gapfilling/helper/*"]
+

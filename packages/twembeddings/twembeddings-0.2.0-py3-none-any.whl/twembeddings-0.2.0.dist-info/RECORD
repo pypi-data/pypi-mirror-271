@@ -1,0 +1,11 @@
+twembeddings/__init__.py,sha256=Issd88FhRwHk5yBs3mZmPIE6D2RBXWQwxpa_3hlTmC8,228
+twembeddings/build_features_matrix.py,sha256=663jUKDI4uMIYFMifU1-UD9tFKBgnMy4wCGP-yZNdJg,17883
+twembeddings/clustering_algo.py,sha256=-N7XW_2rWO0OTJJ-egvdKisbnjAI7udTYYGQ2h-d3Xg,7524
+twembeddings/embeddings.py,sha256=MHhNQfv6DzgOBJ-J8PoePubZPBszU9M-Ni674jp05Kk,14145
+twembeddings/eval.py,sha256=95Uw953pUlMUWgU2rQPGI3hbymO6iThIpOKzszPGs3U,5813
+twembeddings/stop_words.py,sha256=Ns-u2qZVHmCrr69eMSI6eT3w4v7kPMnJaS-Gpxmp2Ao,5354
+twembeddings-0.2.0.dist-info/LICENSE,sha256=gVLbX3QUlSZ1oUJGqO1pYj0b4TnzEh32anVTKgnL8DE,1091
+twembeddings-0.2.0.dist-info/METADATA,sha256=KwkaYfFR8-Zh7OCCNt2Uha4uJHqYw5FLr6ziuOmeI-s,671
+twembeddings-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+twembeddings-0.2.0.dist-info/top_level.txt,sha256=uDsuT8XJ4TuRIkUoK1_YqIA4VFb8BTDqADie8cGzYas,13
+twembeddings-0.2.0.dist-info/RECORD,,

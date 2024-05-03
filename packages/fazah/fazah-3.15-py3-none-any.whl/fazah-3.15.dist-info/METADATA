@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: fazah
+Version: 3.15
+Summary: A library that enhances the multilingual capabilities of Large Language Models by manipulating model input, allowing responses in all languages to be equally coherent.
+Author: Aiden Lang, Will Foster
+Author-email: ajlang5@wisc.edu, wjfoster2@wisc.edu
+Requires-Dist: deep-translator
+Requires-Dist: langdetect
+

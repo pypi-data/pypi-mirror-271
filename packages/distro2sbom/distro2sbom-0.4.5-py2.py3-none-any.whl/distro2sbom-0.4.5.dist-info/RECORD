@@ -1,0 +1,15 @@
+distro2sbom/__init__.py,sha256=UXoScW29szuUhsP-AvPIJLEPeX_U31M1gxYUSooemy8,76
+distro2sbom/cli.py,sha256=Yvt0o09GKRhWMnKsjFUbQBUMpHvn0iTCiJxiEZ3tc9c,7852
+distro2sbom/test.py,sha256=m8yYYiZq9QUIqcNAKQOGPvboIvnZ8WrZUH2ELMm4c4E,462
+distro2sbom/version.py,sha256=RhzVdAnIAIeNpoZLjlCpx5ZgkvJyztkiWp-TZKe5hDc,100
+distro2sbom/distrobuilder/__init__.py,sha256=UXoScW29szuUhsP-AvPIJLEPeX_U31M1gxYUSooemy8,76
+distro2sbom/distrobuilder/distrobuilder.py,sha256=x_s_YoojCQsV5rUzdzSrzpd1zxXaXXM1G1AaRDZ-N4M,3246
+distro2sbom/distrobuilder/dpkgbuilder.py,sha256=70Et6Su52hUbmMSsL_m0Jf7Oxytsk-OTT1fnabnQLUA,13584
+distro2sbom/distrobuilder/rpmbuilder.py,sha256=p2Kphbayy_C6Vvd86xL2qzWMtRFEm_PIbSFhbt7wLc8,14116
+distro2sbom/distrobuilder/windowsbuilder.py,sha256=P-1xTEqHZHTEGobkbycf_Wgfa2KhlPRx5MqKVcQPLFY,4688
+distro2sbom-0.4.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+distro2sbom-0.4.5.dist-info/METADATA,sha256=xCHP_ZP-Sw3iQwJHDVz01G41UvKqGbVuvWvKYBDz6eY,11863
+distro2sbom-0.4.5.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+distro2sbom-0.4.5.dist-info/entry_points.txt,sha256=r5RioA3bp_Kbd1UJ5L1BTfSea9qEISrGmoSKSAHFBOU,53
+distro2sbom-0.4.5.dist-info/top_level.txt,sha256=wj3FBpfTya_uiJ4egUDQ4vv-BO5G5swycPOUc7qymJM,12
+distro2sbom-0.4.5.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+numpy
+tqdm
+progressbar
+scipy
+requests
+rarfile
+
+[docs]
+sphinx>=1.6
+sphinx-rtd-theme>=0.5

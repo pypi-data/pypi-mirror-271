@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonlinear_benchmarks/__init__.py
+nonlinear_benchmarks/benchmarks.py
+nonlinear_benchmarks/error_metrics.py
+nonlinear_benchmarks/not_splitted_benchmarks.py
+nonlinear_benchmarks/utilities.py
+nonlinear_benchmarks.egg-info/PKG-INFO
+nonlinear_benchmarks.egg-info/SOURCES.txt
+nonlinear_benchmarks.egg-info/dependency_links.txt
+nonlinear_benchmarks.egg-info/requires.txt
+nonlinear_benchmarks.egg-info/top_level.txt

@@ -1,0 +1,2503 @@
+Metadata-Version: 2.1
+Name: macal
+Version: 5.5.0a11
+Summary: Macal DSL is used for collecting and transforming data from various sources.
+Author-email: Marco Caspers <SamaDevTeam@westcon.com>
+Project-URL: Homepage, https://github.com/Sama-Developer/macal
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: unidecode
+Requires-Dist: keyring
+Requires-Dist: keyrings.alt
+Requires-Dist: meraki
+Requires-Dist: pydantic
+Requires-Dist: python-jose[cryptography]
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: click ==8.1.7
+
+# Macal DSL 5.5 Alpha 10
+
+## Index
+
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Usage](#usage)
+3.1. [mrepl](#mrepl)
+3.2. [mrun](#mrun)
+3.3. [mide](#mide)
+3.4. [mpm](#mpm)
+4. [Code comments](#code-comments)
+5. [Variables](#variables)
+6. [Constants](#constants)
+7. [Functions](#functions)
+8. [If statement](#if-statement)
+9. [Switch statement](#switch-statement)
+10. [While statement](#while-statement)
+11. [Foreach statement](#foreach-statement)
+12. [Halt statement](#halt-statement)
+13. [Select statement](#select-statement)
+14. [Include statement](#include-statement)
+15. [Builtin functions](#builtin-functions)
+16. [Libraries](#libraries)
+17. [Included libraries](#included-libraries)
+18. [CSV Library](#csv-library)
+19. [IO Library](#io-library)
+20. [Keyring Library](#keyring-library)
+21. [Math Library](#math-library)
+22. [Meraki_v1 Library](#meraki_v1-library)
+23. [Meraki_async_lib Library](#meraki_async_lib-library)
+24. [Strings Library](#strings-library)
+25. [Syslog Library](#syslog-library)
+26. [System Library](#system-library)
+27. [Time Library](#time-library)
+28. [Reserved words](#reserved-words)
+
+
+## Introduction
+
+This is version 5.5.0 of the Macal DSL language.
+
+It is written and maintained in Python.
+The language is a domain specific language (DSL) that is used to write scripts to manipulate data.
+The language is designed to be easy:
+- to use and read,
+- to extend with new functions and features, and
+- to integrate with other languages and systems.
+
+Unlike Python, it does not rely on indentation to define blocks of code.
+Instead it uses curly braces to define blocks of code.
+
+Unlike Python, it is not a general purpose language.
+The main feature of Macal DSL is its select statement, which is used to query 
+data from a data source, much like an SQL statement is used to query data from a database.
+There are differences with SQL that will be explained.
+
+I have removed the bytecode compiler and runtime from version 5.0.0.
+Version 5.5 is to fix several problems in regards to scope and the way functions were implemented.
+There is a significant performance cost to that because every time the code is ran the lexer and 
+parser have to run, and the interpreter is less efficient because it works directly off of the Abstract Syntax Tree (AST).
+On the other hand, for the purpose of where we use the DSL for, this only adds a number of milliseconds.
+It will be most noticeable in long loops and select statements on large datasets.
+However the gain in stability, compatibility and maintainability is much greater.
+
+The utilities mi and mr have been replaced with mrepl and mrun respectively.
+Utilities mc and md have been removed.
+mc had a nameclash with the midnight commander utility so it had to go anyways.
+
+The mide and mpm utilities have been added, they provide a text based editor and a package manager respectively.
+
+Known issues:
+1)  If you include a file for which there are multiple files in the file search path that have the same file name, 
+     there is no way of telling which one gets included.
+     A safeguard is in place to prevent importing a file from itself, but I can't exclude multiple files with
+     the same name on the search path other than the user controlling the search path.
+
+2)  This document uses the EBNF notation to describe the language. This is not a complete description of the language.
+     It is a work in progress and will be updated as the language evolves.
+
+
+TODO:
+
+- Add a feature that allows you to update a library that is installed on the system.
+
+What this document is:
+A reference manual for the Macal DSL language.
+
+What this document is not:
+- A training manual on how to program in general.
+- A training manual on how to program in Python.
+- Complete.
+
+
+## Installation
+
+```bash
+python3 -m pip install macal==5.5.0.alpha.5
+```
+
+In your system configuration setup the following environment variables:
+MACAL_DSL_PATH
+MACAL_DSL_LIB_PATH
+
+The MACAL_DSL_PATH environment variable is used to set the search path for the include statement.
+The MACAL_DSL_LIB_PATH environment variable is used to set a specific path for libraries, it is also used by the mpm utility to install libraries.
+
+Note that both path variables need to be set to a single path only.
+
+Once you have set up these environment variables you can install the libraries that are available for Macal DSL 5.5.0 using the mpm utility.
+
+```bash
+mpm --install base_library
+```
+
+This will install the base library that is available for Macal DSL 5.5.0.
+The base library contains the following libraries:
+- csv
+- io
+- keyring
+- math
+- strings
+- syslog
+- system
+- time
+
+You also have the option to install the Meraki libraries that are available for Macal DSL 5.5.0.
+
+```bash
+mpm --install meraki
+```
+
+This will install the meraki_v1 and meraki_async_lib libraries that are available for Macal DSL 5.5.0.
+
+## Usage
+
+Macal can be used in 3 main ways:
+
+1) Use it on the commandline with 'mrepl' to run interactively.
+
+2) Use it on the commandline with 'mrun' to run a file. (type mrun -h to get help).
+
+3) Include the class in your product and work from there.
+    An example will be provided in a later chapter.
+
+4) Use it on the commandline with 'mide' to write and run code interactively in a text based editor.
+
+
+### mrepl
+
+The mrepl utility is used to run the Macal DSL language interactively.
+It is a read-eval-print loop that allows you to enter code and see the result immediately.
+
+```bash
+mrepl
+```
+
+This will start the mrepl utility.
+You can enter code and see the result immediately.
+
+```bash
+mrepl -h
+```
+
+This will show the help message for the mrepl utility.
+
+### mrun
+
+The mrun utility is used to run a file that contains Macal DSL code.
+
+```bash
+mrun file.mcl
+```
+
+This will run the file file.mcl that contains Macal DSL code.
+
+```bash
+mrun -h
+```
+
+This will show the help message for the mrun utility.
+
+### mide
+
+The mide utility is a text based editor that can be used to write Macal DSL code and run it.
+
+```bash
+mide
+```
+
+This will start the mide utility.
+
+```bash
+mide -h
+```
+
+This will show the help message for the mide utility.
+
+
+### mpm
+
+The mpm utility is a package manager that can be used to install libraries that are available for Macal DSL 5.5.0.
+
+```bash
+mpm --install library_name
+```
+
+This will install the library library_name that is available for Macal DSL 5.5.0.
+
+```bash
+mpm --list
+```
+
+This will list all the libraries that are installed on the system.
+
+```bash
+
+mpm --uninstall library_name
+```
+
+This will uninstall the library library_name from the system.
+
+```bash
+mpm --help
+```
+
+This will show the help message for the mpm utility.
+
+## Code comments
+
+There are three different ways to include comments in the code.
+There is the python style comment that starts with a hash (#).
+There is the C style comment that starts with a double slash (//).
+There is the C style comment that starts with a slash and an asterisk (/*) and ends with an asterisk and a slash (*/).
+
+Example:
+```c++
+# This is a python style comment.
+// This is a C style comment.
+/* This is a C style comment. */
+```
+
+The lexer will lex the comments and include them in the token list that it returns.
+The parser will however remove the comment tokens prior to parsing the code.
+
+Note: While the lexer allows you to also include type annotations in the code, the parser will filter out those tokens.
+This is for backwards compatibility with the 4.x versions of the language.
+The downside of this is that the parser is limited in its capabilities of doing type checks on the code it increases performance, but it can cause more runtime errors because of type mismatches.
+
+
+## Variables
+
+Variables are used to store values.
+They are declared by assigning a value to them.
+The type of the variable is inferred from the value that is assigned to it.
+Variables can be reassigned to a different value of the same type.
+Variables can be reassigned to a different value of a different type.
+
+The following data types are supported:
+- integer
+- float
+- string
+- boolean
+- array
+- record
+- nil
+- function
+
+Variables can be declared in the following ways:
+
+```c++
+a = 1;          // integer type is inferred from the assignment
+f = 1.0;        // a float
+b = true;       // boolean
+s = "this is a string"; // string
+s2 = 'this is also a string';
+s3 = $"this is a string with {a} {b} {s} interpolation.";
+
+arr = ["item1", "item2", "item3"];  // create a variable arr that has an array with 3 elements.
+rec = {"key1": "value1", "key2": 2, "key3": nil}; // create a variable rec with 3 key/value pairs.
+
+// Legacy method to define the same array an record:
+arr = array;
+arr[] = "item1";
+arr[] = "item2";
+arr[] = "item3";
+
+rec = record;
+rec["key1"] = "value1";
+rec["key2"] = 2;
+rec["key3"] = nil;
+```
+
+Arrays and records can be accessed by index or key.
+Example:
+```c++
+print(arr[0]); // prints "item1"
+print(rec["key1"]); // prints "value1"
+```
+
+In version 5.5.0 of Macal DSL the array and record types are implemented as objects.
+The record members can also be accessed by using the dot notation.
+
+Example:
+```c++
+print(rec.key1); // prints "value1"
+```
+
+It is also possible to declare a variable without assigning a value to it.
+
+Example:
+```c++
+a; // declares a variable a without assigning a value to it. The type is nil. The value is nil.
+```
+
+Variables can be assigned to the result of a function call.
+
+Example:
+```c++
+a = func_name(1, 2); // assigns the result of the function call to the variable a.
+```
+
+Variables can also be assigned a function.
+
+Example:
+```c++
+a = func_name; // assigns the function to the variable a.
+print(a(1, 2)); // calls the function that is assigned to the variable a with the arguments 1 and 2.
+```
+
+# Constants
+
+Constants are used to store values that can not be changed.
+Constants are declared by assigning a value to them with the const keyword.
+
+Example:
+```c++
+const a = 1; // integer type is inferred from the assignment
+const f = 1.0; // a float
+const b = true; // boolean
+const s = "this is a string"; // string
+
+a = 2; // this will raise an error because a is a constant.
+```
+
+Apart from the fact that the value of a constant cannot be changed, they are functioning the same as variables.
+
+## Functions
+
+
+Functions are used to group statements together.
+Functions can be called with arguments.
+Functions can return a value.
+Functions can be defined in the following way:
+
+```c++
+func_name => (a, b) {
+    print(a);
+    print(b);
+    return a + b;
+}
+```
+
+This defines a function with the name function_name that takes two arguments a and b.
+The function prints the values of a and b and returns the sum of a and b.
+
+Functions can be called in the following way:
+
+```c++
+    c = func_name(1, 2);
+    print(c);
+```
+result:
+```bash
+1
+2
+3
+```
+
+This calls the function function_name with the arguments 1 and 2.
+The function prints the values of a and b and returns the sum of a and b.
+
+The return statement does not require a value to be returned.
+In this case the return value will be nil.
+
+Functions can have multiple return statements, this allows for early termination of the function.
+Example:
+```c++
+func_name => (a, b) {
+    if a == 0 {
+        return;
+    }
+    return a + b;
+}
+```
+
+This function will return nil if a is 0, otherwise it will return the sum of a and b.
+
+Functions can be defined to link an external function that is defined in a python module.
+Example:
+```c++
+func_name_2 => (a, b) external "module_name", "ext_func_name";
+```
+
+This function named func_name_2 will link to the external function ext_func_name that is defined in the python module module_name.
+
+This external python module must be available in the search path of either mrepl, mrun or mide, or the python code that utilizes the Macal class to run the code.
+
+The python module should look something like this:
+    
+```python
+
+    # module_name.py
+
+    def ext_func_name(a, b):
+        return a + b
+
+```
+
+The external function can return a value, if it doesn't, nil is assumed.
+The external module as you see has zero dependencies on the Macal class or the Macal DSL language.
+
+This makes it very easy to extend the language with python code.
+
+
+## If statement
+
+The if statement is used to execute a block of code if a condition is true.
+The if statement can have an optional else block that is executed if the condition is false.
+The if statement can have zero or more elif block that are executed when the if condition is false and the elif condition is true.
+
+Example:
+
+```c++
+a = 1; // change in 0, 1 or any other value to see the different outputs.
+
+if a == 0 {
+    print("a is zero");
+} elif a == 1 {
+    print("a is one");
+} else {
+    print("a is not zero nor one");
+}
+```
+
+This will print "a is zero" if a is 0, "a is one" if a is 1, otherwise it will print "a is not zero nor one".
+
+The if statement can be nested.
+
+Example:
+```c++
+a = 1;
+b = 2;
+
+if a == 1 {
+    if b == 2 {
+        print("a is one and b is two");
+    }
+}
+```
+
+This will print "a is one and b is two" if a is 1 and b is 2.
+It will first evaluate the if condition in a == 1, and if this is the case, it will enter the if block and evaluate the if condition in b == 2.
+Finally if that evaluate to true it will enter the inner if block and print the message.
+
+## The switch statement
+
+The switch statement is used to execute a block of code based on the value of an expression.
+The switch statement can have zero or more case blocks that are executed when the value of the expression matches the value of the case block.
+The switch statement can have an optional default block that is executed when none of the case blocks match the value of the expression.
+
+Example:
+```c++
+a = 1; // change in 0, 1 or any other value to see the different outputs.
+
+switch a {
+    case 0: {
+        print("a is zero");
+        break;
+    }
+    case 1: {
+        print("a is one");
+        break;
+    }
+    default: {
+        print("a is not zero nor one");
+    }
+}
+```
+
+This will print "a is zero" if a is 0, "a is one" if a is 1, otherwise it will print "a is not zero nor one".
+The break statement is used to break out of the switch statement.
+It also stops evaluation of the other case blocks.
+Theoretically if you do not use the break statement, all case blocks will be evaluated and the ones that match will be executed.
+A default block will always be executed if it is present and none of the case blocks match the value of the expression, of break was not used in the case blocks to stop the evaluation.
+
+## While statment
+
+The while statement is used to execute a block of code as long as a condition is true.
+
+Example:
+```c++
+a = 0;
+
+while a < 10 {
+    print(a);
+    a = a + 1;
+}
+```
+
+This will print the numbers from 0 to 9.
+
+The while loop can be exited with the break statement.
+The continue statement can be used to skip the rest of the block and continue with the next iteration of the loop.
+
+Example:
+```c++
+a = 0;
+
+while a < 10 {
+    a = a + 1;
+    if a == 5 {
+        continue;
+    }
+    if a == 8 {
+        break;
+    }
+    print(a);
+}
+```
+
+This will print the numbers from 1 to 4 and skip 5, then print 6 and 7 and break out of the loop when a is 8.
+
+## Foreach statement
+
+The foreach statement is used to iterate over an array or record.
+The foreach statement is modeled after the foreach statement in the jai language that is in development by Jonathan Blow and his company.
+
+Example:
+```c++
+arr = [1, 2, 3, 4, 5];
+
+foreach arr {
+    print(it);
+}
+```
+
+This will print the numbers from 1 to 5.
+As you can see the it variable contains the current value of the iterator that is iterating over the array.
+The it variable is local to the foreach block and cannot be accessed outside of the block.
+
+The foreach loop can be exited with the break statement.
+The continue statement can be used to skip the rest of the block and continue with the next iteration of the loop.
+
+Example:
+```c++
+arr = [1, 2, 3, 4, 5];
+
+foreach arr {
+    if it == 3 {
+        continue;
+    }
+    if it == 4 {
+        break;
+    }
+    print(it);
+}
+```
+
+This will print the numbers 1 and 2 and skip 3, then print 4 and break out of the loop.
+
+
+## Halt statement
+
+The halt statement is used to halt the execution of the script immediately.
+It can have an optional integer value that will be used as the exit code of the process.
+
+Example:
+```c++
+a = 1;
+
+if a == 1 {
+    halt;
+}
+print('this will not be printed');
+```
+
+This will halt the execution of the script immediately if a is 1.
+The print statement will not be executed.
+
+
+## Select statement
+
+The select statement is used to query data from a data source.
+The select statement is modeled after the select statement in SQL.
+The select statement can have an optional distinct keyword.
+
+In SQL, the distinct keyword is used to remove duplicate rows from the result set.
+In Macal, it is used to return only the first record of the result set.
+
+The required input for the select statement is a an array of records, or a single record.
+
+The select statement can have an optional merge keyword.
+The merge keyword is used to merge the result set into an existing array or record.
+
+The select statement can have an optional where clause.
+The where clause is used to filter the result set based on a condition.
+
+The order by clause is not implemented in the select statement yet.
+
+Example:
+```c++
+arr = [{ "it": 1}, {"it": 2}, {"it": 3}, {"it": 4}, {"it": 5}];
+arr2 = [{"it": 6}, {"it": 7}, {"it": 8}, {"it": 9}, {"it": 10}];
+
+select * from arr where it > 2 merge into arr2;
+```
+
+This will merge the records where 'it' has the values 3, 4 and 5 from arr into arr2.
+
+The result will look like this:
+```c++
+arr2 = [{"it": 6}, {"it": 7}, {"it": 8}, {"it": 9}, {"it": 10}, {"it": 3}, {"it": 4}, {"it": 5}];
+```
+
+Like SQL, you can provide an alias for the fields in the select statement.
+
+Example:
+```c++
+arr = [{ "it": 1, "value": 1}, {"it": 2, "value": 2}, {"it": 3, "value": 3}, {"it": 4, "value": 4}, {"it": 5, "value": 5}];
+
+select distinct it as number, value from arr where it > 2 into result;
+
+print(result);
+```
+
+This will print:
+```c++
+{"number": 3, "value": 3} 
+```
+
+The distinct keyword is used to return only the first record of the result set, which in this case is the record where 'it' has the value 3.
+
+There is a secondary feature to the distinct keyword.
+
+If the distinct keyword is used for a result set that would return a record that has only 1 member, the result will instead be the value of that member.
+
+Example:
+```c++
+arr = [{ "it": 1, "value": 1}, {"it": 2, "value": 2}, {"it": 3, "value": 3}, {"it": 4, "value": 4}, {"it": 5, "value": 5}];
+
+select distinct it from arr where it > 2 into result;
+
+print(result);
+```
+
+This will print:
+```c++
+3
+```
+
+The result is the value of the member 'it' of the record that is returned by the select statement because the distinct keyword is used and the result set would return a record with only 1 member.
+
+## Include statement
+
+The include statement is used to include a file as a 'library' in the current file.
+The include statement can have multiple file names separated by a comma.
+
+Example:
+```c++
+include file1, file2;
+```
+
+This will include the files file1.mcl and file2.mcl as 'libraries' in the current file. 
+The .mcl extensions is assumed by the interpreter.
+
+This causes the code in the included files to be executed one by one in the order that they are included.
+
+
+## Builtin functions
+
+The following builtin functions are available in Macal DSL:
+print
+isRecord
+isArray
+isString
+isInt
+isFloat
+isBool
+isNil
+isFunction
+isObject
+type
+
+The print function is used to print values to the console.
+
+Example:
+```c++
+print("hello", " world");
+```
+
+This will print "hello world" to the console.
+
+The isRecord function is used to check if a value is a record.
+
+Example:
+```c++
+a = {"key": "value"};
+
+if isRecord(a) {
+    print("a is a record");
+}
+```
+
+This will print "a is a record" to the console if a is a record.
+
+The other is*** functions work in the same way as the isRecord function.
+
+The type function is used to get the type of a value.
+
+Example:
+```c++
+a = 1;
+
+print(type(a));
+```
+
+This will print "int" to the console.
+
+Note: While the output of the type function can be displayed as a string, it is not a string.
+And because the parser removes the type annotations from the code you cannot use the type function to check the type of a variable in the code using an if statement.
+The type function is only useful for debugging purposes.
+
+## Libraries
+
+The Macal DSL language is designed to be easy to extend with new functions and features.
+This is done by creating libraries that contain the new functions and features.
+A library is a file that contains a set of functions that can be included in a script using the include statement.
+
+Example:
+```c++
+// file1.mcl
+func_name => (a, b) {
+    return a + b;
+}
+```
+
+This library contains a function named func_name that takes two arguments a and b and returns the sum of a and b.
+
+The library can be included in a script using the include statement.
+
+Example:
+```c++
+include file1;
+
+a = func_name(1, 2);
+print(a);
+```
+
+This will include the file file1.mcl as a library in the current script.
+The function func_name is called with the arguments 1 and 2 and the result is printed to the console.
+
+A special feature of Macal DSL version 5.5.0 is that libraries will define a constant with the same name as the file name.
+This constant is an object that contains information about the library.
+
+Example:
+```c++
+# system.mcl
+
+const system = object {
+    name: "system",
+    version: "5.5.0",
+    author: "Marco Caspers",
+    email: "SamaDevTeam@westcon.com",
+    license: "MIT",
+    description: "This is the Macal DSL 5.5 System Library",
+    external_module: "system.py"
+};
+```
+
+For the system library the constant system will be explicitly defined.
+However if a file that is included as a library does not implement a constant with the same name as the file name, the interpreter will create one automatically. Of course the information in this object will be limited to the file name and the version number of the DSL.
+
+## Included libraries
+
+The following libraries are available for Macal DSL 5.5.0:
+
+- csv
+- io
+- keyring
+- math
+- meraki_v1
+- meraki_async_lib
+- strings
+- syslog
+- system
+- time
+
+These libraries are *not* included in the Macal DSL package.
+They are available separately.
+
+## CSV Library
+
+HeadersToCsv(rec) => str
+
+This function takes a record as input and returns a csv string containing all the keys of the record as headers.
+
+Example:
+```c++
+rec = {"key1": "value1", "key2": "value2", "key3": "value3"};
+
+csv = HeadersToCsv(rec);
+
+print(csv);
+```
+
+This will print:
+```c++
+key1,key2,key3
+```
+
+ValuesToCsv(rec) => str
+
+This function takes a record as input and returns a csv string containing all the values of the record.
+
+Example:
+```c++
+rec = {"key1": "value1", "key2": "value2", "key3": "value3"};
+
+csv = ValuesToCsv(rec);
+
+print(csv);
+```
+
+This will print:
+```c++
+value1,value2,value3
+```
+
+ArrayToCsv(arr) => str
+
+This function takes an array as input and returns a csv string containing all the values of the array.
+
+Example:
+```c++
+arr = ["value1", "value2", "value3"];
+
+csv = ArrayToCsv(arr);
+
+print(csv);
+```
+
+This will print:
+```c++
+value1,value2,value3
+```
+
+## IO Library
+
+LoadTextFile(file) => str
+
+This function takes a file name as input and returns the contents of the file as a string.
+
+Example:
+```c++
+text = LoadTextFile("file.txt");
+
+print(text);
+```
+
+This will print the contents of the file file.txt.
+
+SaveTextFile(file, text)
+
+This function takes a file name and a string as input and saves the string to the file.
+
+Example:
+```c++
+SaveTextFile("file.txt", "hello world");
+```
+
+This will save the string "hello world" to the file file.txt.
+
+LoadJSONFile(file) => rec
+
+This function takes a file name as input and returns the contents of the file as a record.
+
+Example:
+```c++
+rec = LoadJSONFile("file.json");
+
+print(rec);
+```
+
+This will print the contents of the file file.json as a record.
+
+SaveJSONFile(file, rec)
+
+This function takes a file name and a record as input and saves the record to the file.
+
+Example:
+```c++
+rec = {"key": "value"};
+
+SaveJSONFile("file.json", rec);
+```
+
+This will save the record {"key": "value"} to the file file.json.
+
+Exists(file) => bool
+
+This function takes a file name as input and returns true if the file exists, otherwise it returns false.
+
+Example:
+```c++
+if Exists("file.txt") {
+    print("file exists");
+} else {
+    print("file does not exist");
+}
+```
+
+This will print "file exists" if the file file.txt exists, otherwise it will print "file does not exist".
+
+GetLastRun(name, defaultIsoNow) => str
+
+This function takes a name and a default iso date as input and returns the last run date of the script with the given name.
+If the script has not been run before, it returns the default iso date.
+
+Example:
+```c++
+lastRun = GetLastRun("script_name", "2022-01-01T00:00:00Z");
+
+print(lastRun);
+```
+
+This will print the last run date of the script with the name script_name, or "2022-01-01T00:00:00Z" if the script has not been run before.
+
+SetLastRun(name, isoNow)
+
+This function takes a name and an iso date as input and sets the last run date of the script with the given name to the iso date.
+
+Example:
+```c++
+SetLastRun("script_name", "2022-01-01T00:00:00Z");
+```
+
+This will set the last run date of the script with the name script_name to "2022-01-01T00:00:00Z".
+
+Pwd() => str
+
+This function returns the current working directory.
+
+Example:
+```c++
+dir = Pwd();
+
+print(dir);
+```
+
+This will print the current working directory.
+
+
+## Keyring Library
+
+SetPassword(username, password)
+
+This function takes a username and a password as input and sets the password for the username in the keyring.
+
+Example:
+```c++
+SetPassword("username", "password");
+```
+
+This will set the password "password" for the username "username" in the keyring.
+
+GetPassword(username) => str
+
+This function takes a username as input and returns the password for the username from the keyring.
+
+Example:
+```c++
+password = GetPassword("username");
+
+print(password);
+```
+
+This will print the password for the username "username" from the keyring.
+
+SetMerakiApiKey(customer, apikey)
+
+This function takes a customer name and an api key as input and sets the api key for the customer in the keyring.
+
+Example:
+```c++
+SetMerakiApiKey
+```
+
+This will set the api key for the customer "customer" in the keyring.
+
+GetMerakiApiKey(customer) => str
+
+This function takes a customer name as input and returns the api key for the customer from the keyring.
+
+Example:
+```c++
+apikey = GetMerakiApiKey("customer");
+
+print(apikey);
+```
+
+This will print the api key for the customer "customer" from the keyring.
+
+## Math Library
+
+const PI = 3.1415926535897932384626433832795;
+const E   = 2.7182818284590452353602874713527;
+const TAU = 6.283185307179586476925286766559005;
+
+Round(x, digits) => float
+
+This function takes a number and a number of digits as input and returns the number rounded to the specified number of digits.
+
+Example:
+```c++
+a = Round(3.14159, 2);
+
+print(a);
+```
+
+This will print 3.14.
+
+Ceil(x) => float
+
+This function takes a number as input and returns the smallest integer greater than or equal to the number.
+
+Example:
+```c++
+a = Ceil(3.14159);
+
+print(a);
+```
+
+This will print 4.
+
+Floor(x) => float
+
+This function takes a number as input and returns the largest integer less than or equal to the number.
+
+Example:
+```c++
+a = Floor(3.14159);
+
+print(a);
+```
+
+This will print 3.
+
+Cos(x) => float
+
+This function takes an angle in radians as input and returns the cosine of the angle.
+
+Example:
+```c++
+a = Cos(0);
+
+print(a);
+```
+
+This will print 1.
+
+Sin(x) => float
+
+This function takes an angle in radians as input and returns the sine of the angle.
+
+Example:
+```c++
+a = Sin(0);
+
+print(a);
+```
+
+This will print 0.
+
+Tan(x) => float
+
+This function takes an angle in radians as input and returns the tangent of the angle.
+
+Example:
+```c++
+a = Tan(0);
+
+print(a);
+```
+
+This will print 0.
+
+Acos(x) => float
+
+This function takes a number as input and returns the arccosine of the number in radians.
+
+Example:
+```c++
+a = Acos(1);
+
+print(a);
+```
+
+This will print 0.
+
+Asin(x) => float
+
+This function takes a number as input and returns the arcsine of the number in radians.
+
+Example:
+```c++
+a = Asin(0);
+
+print(a);
+```
+
+This will print 0.
+
+Atan(x) => float
+
+This function takes a number as input and returns the arctangent of the number in radians.
+
+Example:
+```c++
+a = Atan(0);
+
+print(a);
+```
+
+This will print 0.
+
+Sqrt(x) => float
+
+This function takes a number as input and returns the square root of the number.
+
+Example:
+```c++
+a = Sqrt(4);
+
+print(a);
+```
+
+This will print 2.
+
+Exp(x) => float
+
+This function takes a number as input and returns e raised to the power of the number.
+
+Example:
+```c++
+a = Exp(1);
+
+print(a);
+```
+
+This will print 2.718281828459045.
+
+Log(x) => float
+
+This function takes a number as input and returns the natural logarithm of the number.
+
+Example:
+```c++
+a = Log(2.718281828459045);
+
+print(a);
+```
+
+This will print 1.
+
+Log2(x) => float
+
+This function takes a number as input and returns the base 2 logarithm of the number.
+
+Example:
+```c++
+a = Log2(2);
+
+print(a);
+```
+
+This will print 1.
+
+Log10(x) => float
+
+This function takes a number as input and returns the base 10 logarithm of the number.
+
+Example:
+```c++
+a = Log10(100);
+
+print(a);
+```
+
+This will print 2.
+
+Expm1(x) => float
+
+This function takes a number as input and returns e raised to the power of the number minus 1.
+
+Example:
+```c++
+a = Expm1(1);
+
+print(a);
+```
+
+This will print 1.718281828459045.
+
+
+## Meraki_v1 Library
+
+GetLastErrorMessage() => str
+
+This function returns the last error message that was generated by the Meraki API.
+
+Example:
+```c++
+error = GetLastErrorMessage();
+
+print(error);
+```
+
+This will print the last error message that was generated by the Meraki API.
+
+
+InitDashboardApi(apikey)
+
+This function takes an api key as input and initializes the Meraki Dashboard API with the api key.
+
+Example:
+```c++
+apikey = GetMerakiApiKey("customer");
+InitDashboardApi(apikey);
+```
+
+This will initialize the Meraki Dashboard API with the api key for the customer "customer" from the keyring.
+
+getApiVersion() => str
+
+This function returns the version of the Meraki Dashboard API.
+
+Example:
+```c++
+version = getApiVersion();
+
+print(version);
+```
+
+This will print the version of the Meraki Dashboard API.
+
+get_org_Organizations() => array[record]
+
+This function returns a list of organizations that the user has access to.
+
+Example:
+```c++
+orgs = get_org_Organizations();
+
+print(orgs);
+```
+
+This will print a list of organizations that the user has access to.
+
+
+get_org_Organization(orgId) => record
+
+This function takes an organization id as input and returns the organization with the given id.
+
+Example:
+```c++
+org = get_org_Organization("1234");
+
+print(org);
+```
+
+This will print the organization with the id "1234".
+
+get_org_Inventory(orgId) => array[record]
+
+This function takes an organization id as input and returns the inventory of the organization with the given id.
+
+Example:
+```c++
+inventory = get_org_Inventory("1234");
+
+print(inventory);
+```
+
+This will print the inventory of the organization with the id "1234".
+
+get_org_Networks(orgId) => array[record]
+
+This function takes an organization id as input and returns the networks of the organization with the given id.
+
+Example:
+```c++
+networks = get_org_Networks("1234");
+
+print(networks);
+```
+
+This will print the networks of the organization with the id "1234".
+
+get_org_Devices(orgId) => array[record]
+
+This function takes an organization id as input and returns the active in use devices of the organization with the given id.
+
+Example:
+```c++
+devices = get_org_Devices("1234");
+
+print(devices);
+```
+
+This will print the active in use devices of the organization with the id "1234".
+
+get_dev_Device(serial) => record
+
+This function takes a device serial number as input and returns the device with the given serial number.
+
+Example:
+```c++
+device = get_dev_Device("Q2MN-9J3P-9J3P");
+
+print(device);
+```
+
+This will print the device with the serial number "Q2MN-9J3P-9J3P".
+
+get_org_DevicesStatuses(orgId) => array[record]
+
+This function takes an organization id as input and returns the status of the devices of the organization with the given id.
+
+Example:
+```c++
+statuses = get_org_DevicesStatuses("1234");
+
+print(statuses);
+```
+
+This will print the status of the devices of the organization with the id "1234".
+
+get_org_DevicesUplinksLossAndLatency(orgId) => array[record]
+
+This function takes an organization id as input and returns the uplinks loss and latency of the devices of the organization with the given id.
+
+Example:
+```c++
+uplinks = get_org_DevicesUplinksLossAndLatency("1234");
+
+print(uplinks);
+```
+
+This will print the uplinks loss and latency of the devices of the organization with the id "1234".
+Note: This function will return a list of multiple (5) records per uplink per device, these are the last 5 scores for the latency and/or packet loss of the link at an interval.
+
+
+get_org_DevicesUplinksLossAndLatencyEx(orgId) => array[record]
+
+This function takes an organization id as input and returns the uplinks loss and latency of the devices of the organization with the given id.
+
+Example:
+```c++
+uplinks = get_org_DevicesUplinksLossAndLatencyEx("1234");
+
+print(uplinks);
+```
+
+This will print the uplinks loss and latency of the devices of the organization with the id "1234".
+This function will return the average packetloss and latency for each uplink per device.
+
+
+get_org_DeviceManagementInterface(orgId) => array[record]
+
+This function takes an organization id as input and returns the management interface of the devices of the organization with the given id.
+
+Example:
+```c++
+interface = get_org_DeviceManagementInterface("1234");
+
+print(interface);
+```
+
+This will print the management interface of the devices of the organization with the id "1234".
+
+get_org_ConfigTemplates(orgId) => array[record]
+
+This function takes an organization id as input and returns the configuration templates of the organization with the given id.
+
+Example:
+```c++
+templates = get_org_ConfigTemplates("1234");
+
+print(templates);
+```
+
+This will print the configuration templates of the organization with the id "1234".
+
+get_net_Network(networkId) => record
+
+This function takes a network id as input and returns the network with the given id.
+
+Example:
+```c++
+network = get_net_Network("1234");
+
+print(network);
+```
+
+This will print the network with the id "1234".
+
+get_app_OrganizationApplianceUplinkStatuses(orgId) => array[record]
+
+This function takes an organization id as input and returns the appliance uplink statuses of the organization with the given id.
+
+Example:
+```c++
+statuses = get_app_OrganizationApplianceUplinkStatuses("1234");
+
+print(statuses);
+```
+
+This will print the appliance uplink statuses of the organization with the id "1234".
+
+get_app_OrganizationApplianceUplinkStatus(orgId, serials) => array[record]
+
+This function takes an organization id and a list of serial numbers as input and returns the appliance uplink statuses of the organization with the given id and the given serial numbers.
+
+Example:
+```c++
+statuses = get_app_OrganizationApplianceUplinkStatus("1234", ["Q2MN-9J3P-9J3P"]);
+
+print(statuses);
+```
+
+This will print the appliance uplink statuses of the organization with the id "1234" and the serial number "Q2MN-9J3P-9J3P".
+
+get_org_LicensesOverview(orgId) => array[record]
+
+This function takes an organization id as input and returns the licenses overview of the organization with the given id.
+
+Example:
+```c++
+licenses = get_org_LicensesOverview("1234");
+
+print(licenses);
+```
+
+This will print the licenses overview of the organization with the id "1234".
+
+get_org_Licenses(orgId) => array[record]
+
+This function takes an organization id as input and returns the licenses of the organization with the given id.
+
+Example:
+```c++
+licenses = get_org_Licenses("1234");
+
+print(licenses);
+```
+
+This will print the licenses of the organization with the id "1234".
+
+
+get_lic_AdministeredLicensingSubscriptionEntitlements(orgId) => array[record]
+
+This function takes an organization id as input and returns the administered licensing subscription entitlements of the organization with the given id.
+
+Example:
+```c++
+entitlements = get_lic_AdministeredLicensingSubscriptionEntitlements("1234");
+
+print(entitlements);
+```
+
+This will print the administered licensing subscription entitlements of the organization with the id "1234".
+
+get_org_DevicesAvailabilityChangeHistory(orgId, serials) => array[record]
+
+This function takes an organization id and a list of serial numbers as input and returns the devices availability change history of the organization with the given id and the given serial numbers.
+
+Example:
+```c++
+history = get_org_DevicesAvailabilityChangeHistory("1234", ["Q2MN-9J3P-9J3P"]);
+
+print(history);
+```
+
+This will print the devices availability change history of the organization with the id "1234" and the serial number "Q2MN-9J3P-9J3P".
+
+get_org_DevicesAvailabilityChangeHistoryTS(orgId, serials, timestamp) => array[record]
+
+This function takes an organization id, a list of serial numbers and a timestamp as input and returns the devices availability change history of the organization with the given id and the given serial numbers since the given timestamp.
+
+Example:
+```c++
+history = get_org_DevicesAvailabilityChangeHistoryTS("1234", ["Q2MN-9J3P-9J3P"], "2022-01-01T00:00:00Z");
+
+print(history);
+```
+
+This will print the devices availability change history of the organization with the id "1234" and the serial number "Q2MN-9J3P-9J3P" since the timestamp "2022-01-01T00:00:00Z".
+
+get_lic_OrganizationLicensingCotermLicenses(orgId) => array[record]
+
+This function takes an organization id as input and returns the organization licensing coterm licenses of the organization with the given id.
+
+Example:
+```c++
+licenses = get_lic_OrganizationLicensingCotermLicenses("1234");
+
+print(licenses);
+```
+
+This will print the organization licensing coterm licenses of the organization with the id "1234".
+
+get_app_Performance(serial) => record
+
+This function takes a serial number as input and returns the performance of the device with the given serial number.
+
+Example:
+```c++
+performance = get_app_Performance("Q2MN-9J3P-9J3P");
+
+print(performance);
+```
+
+This will print the performance of the device with the serial number "Q2MN-9J3P-9J3P".
+
+get_net_NetworkTraffic(networkId, timespan) => record
+
+This function takes a network id and a timespan as input and returns the network traffic of the network with the given id for the given timespan.
+
+Example:
+```c++
+traffic = get_net_NetworkTraffic("1234", "2022-01-01T00:00:00Z");
+
+print(traffic);
+```
+
+This will print the network traffic of the network with the id "1234" since the timestamp "2022-01-01T00:00:00Z".
+
+
+get_net_NetworkEvents(networkId, product_Type, start_After) => record
+
+This function takes a network id, a product type and a start after timestamp as input and returns the network events of the network with the given id for the given product type since the given timestamp.
+
+Example:
+```c++
+events = get_net_NetworkEvents("1234", "wireless", "2022-01-01T00:00:00Z");
+
+print(events);
+```
+
+This will print the network events of the network with the id "1234" for the product type "wireless" since the timestamp "2022-01-01T00:00:00Z".
+
+get_app_OrganizationSecurityEvents(orgId, timestamp) => record
+
+This function takes an organization id and a timestamp as input and returns the security events of the organization with the given id since the given timestamp.
+
+Example:
+```c++
+events = get_app_OrganizationSecurity("1234", "2022-01-01T00:00:00Z");
+
+print(events);
+```
+
+This will print the security events of the organization with the id "1234" since the timestamp "2022-01-01T00:00:00Z".
+
+
+get_switch_DeviceSwitchPortsStatuses(serial, timespan) => record
+
+This function takes a serial number and a timespan as input and returns the switch ports statuses of the device with the given serial number for the given timespan (in seconds).
+
+Example:
+```c++
+statuses = get_switch_DeviceSwitchPortsStatuses("Q2MN-9J3P-9J3P", 60);
+
+print(statuses);
+```
+
+This will print the switch ports statuses of the device with the serial number "Q2MN-9J3P-9J3P" for the last 60 seconds.
+
+
+get_switch_DeviceSwitchPortsStatusesT0(serial, t0) => record
+
+This function takes a serial number and a timestamp as input and returns the switch ports statuses of the device with the given serial number since the given timestamp.
+
+Example:
+```c++
+statuses = get_switch_DeviceSwitchPortsStatusesT0("Q2MN-9J3P-9J3P", "2022-01-01T00:00:00Z");
+
+print(statuses);
+```
+
+This will print the switch ports statuses of the device with the serial number "Q2MN-9J3P-9J3P" since the timestamp "2022-01-01T00:00:00Z".
+
+get_app_NetworkApplianceUplinkUsageHistory(networkId) => record
+
+This function takes a network id as input and returns the network appliance uplink usage history of the network with the given id.
+
+Example:
+```c++
+usage = get_app_NetworkApplianceUplinkUsageHistory("1234");
+
+print(usage);
+```
+
+This will print the network appliance uplink usage history of the network with the id "1234".
+
+get_net_ApplianceTrafficShapingUplinkBandwidth(networkId) => record
+
+This function takes a network id as input and returns the appliance traffic shaping uplink bandwidth of the network with the given id.
+
+Example:
+```c++
+bandwidth = get_net_ApplianceTrafficShapingUplinkBandwidth("1234");
+
+print(bandwidth);
+```
+
+This will print the appliance traffic shaping uplink bandwidth of the network with the id "1234".
+
+get_wireless_DeviceWirelessStatus(serial) => record
+
+This function takes a serial number as input and returns the wireless status of the device with the given serial number.
+
+Example:
+```c++
+status = get_wireless_DeviceWirelessStatus("Q2MN-9J3P-9J3P");
+
+print(status);
+```
+
+This will print the wireless status of the device with the serial number "Q2MN-9J3P-9J3P".
+
+get_org_SensorReadingsHistory(orgId) => record
+
+This function takes an organization id as input and returns the sensor readings history of the organization with the given id.
+
+Example:
+```c++
+readings = get_org_SensorReadingsHistory("1234");
+
+print(readings);
+```
+
+This will print the sensor readings history of the organization with the id "1234".
+
+get_org_GetApplianceVpnStats(orgId) => array[record]
+
+This function takes an organization id as input and returns the appliance vpn statistics of the organization with the given id.
+
+Example:
+```c++
+stats = get_org_GetApplianceVpnStats("1234");
+
+print(stats);
+```
+
+This will print the appliance vpn statistics of the organization with the id "1234".
+
+get_org_GetApplianceVpnStatuses(orgId) => array[record]
+
+This function takes an organization id as input and returns the appliance vpn statuses of the organization with the given id.
+
+Example:
+```c++
+statuses = get_org_GetApplianceVpnStatuses("1234");
+
+print(statuses);
+```
+
+This will print the appliance vpn statuses of the organization with the id "1234".
+
+
+## Meraki_async_lib Library
+
+This library contains the similar functions as the Meraki_v1 library, but the functions are asynchronous.
+Because the functions are asynchronous, they return a promise that resolves to the result of the function.
+
+Asynchronous functions can't be run directly in Macal DSL, because the interpreter is synchronous.
+To circumvent this limitation there is a special object the AsyncTaskList.
+This object is used to run asynchronous functions in parallel, wait until all tasks have completed and then return the
+results of the tasks in a record.
+
+InitAsyncTaskList(apikey)
+
+This function takes an api key as input and initializes the AsyncTaskList with the api key.
+
+Example:
+```c++
+apikey = GetMerakiApiKey("customer");
+InitAsyncTaskList(apikey);
+```
+
+This will initialize the AsyncTaskList with the api key for the customer "customer" from the keyring.
+
+AddAsyncTask(task)
+
+This function takes an asynchronous function as input and adds the function to the AsyncTaskList.
+
+AsyncGetOrgs()
+
+This function returns a promise that resolves to a list of organizations that the user has access to.
+This function needs to be added to the AsyncTaskList using the AddAsyncTask function.
+
+Example:
+```c++
+AddAsyncTask(AsyncGetOrgs);
+
+result = RunAsyncTasks();
+
+print(result);
+```
+
+This will print a list of organizations that the user has access to.
+
+AddOrgAsyncTask(orgId, task)
+
+This function takes an organization id and an asynchronous function as input and adds the function to the AsyncTaskList for the given organization.
+
+AsyncGetOrg(orgId)
+AsyncGetOrgInventory(orgId)
+AsyncGetOrgDevices(orgId)
+AsyncGetOrgNetworks(orgId)
+AsyncGetOrgDevicesStatuses(orgId)
+AsyncGetOrgConfigTemplates(orgId)
+AsyncGetOrgLicensesOverview(orgId)
+AsyncGetOrgLicenses(orgId)
+AsyncGetOrgDevicesUplinksLossAndLatency(orgId)
+AsyncGetOrgAppUplinkStatuses(orgId)
+AsyncGetOrgAppVPNStatuses(orgId)
+AsyncGetOrgAppVPNStats(orgId)
+AsyncGetOrgAppUplinksUsageByNetwork(org_id)
+
+These functions return a promise that resolves to the result of the function for the given organization.
+These functions need to be added to the AsyncTaskList using the AddOrgAsyncTask function.
+
+Example:
+```c++
+AddOrgAsyncTask("1234", AsyncGetOrg);
+
+result = RunAsyncTasks();
+
+print(result);
+```
+
+This will print the organization with the id "1234".
+
+AddDevAsyncTask(serial, task)
+
+This function takes a serial number and an asynchronous function as input and adds the function to the AsyncTaskList for the given device.
+
+AsyncDevAppDevicePerformance(serial)
+AsyncDevSwitchPortsStatuses(serial)
+
+These functions return a promise that resolves to the result of the function for the given device.
+These functions need to be added to the AsyncTaskList using the AddDevAsyncTask function.
+
+Example:
+```c++
+AddDevAsyncTask("Q2MN-9J3P-9J3P", AsyncDevAppDevicePerformance);
+
+result = RunAsyncTasks();
+
+print(result);
+```
+
+This will print the performance of the device with the serial number "Q2MN-9J3P-9J3P".
+
+AddNetAsyncTask(networkId, task)
+
+This function takes a network id and an asynchronous function as input and adds the function to the AsyncTaskList for the given network.
+
+AsyncNetApplianceUplinksUsageHistory(networkId)
+
+This function returns a promise that resolves to the result of the function for the given network.
+This function needs to be added to the AsyncTaskList using the AddNetAsyncTask function.
+
+Example:
+```c++
+AddNetAsyncTask("1234", AsyncNetApplianceUplinksUsageHistory);
+
+result = RunAsyncTasks();
+
+print(result);
+```
+
+This will print the network appliance uplink usage history of the network with the id "1234".
+
+RunAsyncTaskList() -> record
+
+This function runs all the asynchronous tasks in the AsyncTaskList in parallel and waits until all tasks have completed.
+It returns a record with the results of the tasks.
+The key for the tasks is the name of the async function for that task.
+
+In case multiple tasks of the same name are added to the async task list, the results will be stored in an array under the key of the function name.
+
+Example:
+```c++
+apikey = GetMeraakiApiKey("1234");
+InitAsyncTaskList(apikey);
+AddAsyncTask(AsyncGetOrgs);
+AddOrgAsyncTask("1234", AsyncGetOrg);
+
+result = RunAsyncTaskList();
+
+print(result);
+```
+
+This will print a record with the results of the tasks.
+
+
+## Strings Library
+
+const REPLACE_TOKENS = "` ~!@//$%^&*+=|\;:,?/'" + '"';
+
+Len(str) => int
+len(str) => int
+
+This function takes a string as input and returns the length of the string.
+
+Example:
+```c++
+a = Len("hello");
+
+print(a);
+```
+
+This will print 5.
+
+Left(str, n) => str
+left(str, n) => str
+
+This function takes a string and a number as input and returns the first n characters of the string.
+
+Example:
+```c++
+a = Left("hello", 3);
+
+print(a);
+```
+
+This will print "hel".
+
+Right(str, n) => str
+right(str, n) => str
+
+This function takes a string and a number as input and returns the last n characters of the string.
+
+Example:
+```c++
+a = Right("hello", 3);
+
+print(a);
+```
+
+This will print "llo".
+
+Mid(str, start, n) => str
+mid(str, start, n) => str
+
+This function takes a string, a start index and a number as input and returns n characters of the string starting from the start index.
+
+Example:
+```c++
+a = Mid("hello", 1, 3);
+
+print(a);
+```
+
+This will print "ell".
+
+
+ToString(value) => str
+toString(value) => str
+
+This function takes a value as input and returns the string representation of the value.
+
+Example:
+```c++
+a = ToString(1);
+
+print(a);
+```
+
+This will print "1".
+
+Contains(needle, haystack) => bool
+contains(needle, haystack) => bool
+
+This function takes a needle and a haystack as input and returns true if the needle is contained in the haystack, otherwise it returns false.
+
+Example:
+```c++
+a = Contains("el", "hello");
+
+print(a);
+```
+
+This will print true.
+
+Replace(str, old, new) => str
+replace(str, old, new) => str
+
+This function takes a string, an old substring and a new substring as input and returns the string with all occurrences of the old substring replaced by the new substring.
+
+Example:
+```c++
+a = Replace("hello", "l", "x");
+
+print(a);
+```
+
+This will print "hexxo".
+
+StartsWith(str, prefix) => bool
+startsWith(str, prefix) => bool
+
+This function takes a string and a prefix as input and returns true if the string starts with the prefix, otherwise it returns false.
+
+Example:
+```c++
+a = StartsWith("hello", "he");
+
+print(a);
+```
+
+This will print true.
+
+RemoveNonAscii(text) => str
+
+This function takes a string as input and returns the string with all non-ascii characters removed.
+
+Example:
+```c++
+a = RemoveNonAscii("hello");
+
+print(a);
+```
+
+This will print "hello".
+
+ReplaceEx(var, repl, by) => str
+
+This function takes a string, a list of strings to replace and a strings to replace with as input and returns the string with all occurrences of the strings in the list to replace replaced by the string.
+
+Example:
+```c++
+a = ReplaceEx("hello", ["l", "o"], "x");
+
+print(a);
+```
+
+This will print "hexx".
+
+PadLeft(str, char, amount) => str
+
+This function takes a string, a padding char and an amount as input and returns the string padded on the left with the padding character to the length of the number.
+
+Example:
+```c++
+a = PadLeft("1", "0", 3);
+
+print(a);
+```
+
+This will print "001".
+
+PadRight(str, char, amount) => str
+
+This function takes a string, a padding char and an amount as input and returns the string padded on the right with the padding character to the length of the number.
+
+Example:
+```c++
+a = PadRight("1", "0", 3);
+
+print(a);
+```
+
+This will print "100".
+
+PadCenter(str, char, amount) => str
+
+This function takes a string, a padding char and an amount as input and returns the string padded on the left and right with the padding character to the length of the number.
+
+Example:
+```c++
+a = PadCenter("1", "0", 3);
+
+print(a);
+```
+
+This will print "010".
+
+StrToInt(str) => int
+strToInt(str) => int
+
+This function takes a string as input and returns the integer representation of the string.
+
+Example:
+```c++
+a = StrToInt("1");
+
+print(a);
+```
+
+This will print 1.
+
+
+## Syslog Library
+
+Syslog(level, message)
+
+This function takes a syslog level and a message as input and sends the message to the syslog.
+
+Example:
+```c++
+Syslog("info", "hello world");
+```
+
+This will send the message "hello world" to the syslog with the level "info".
+
+SyslogInit(remote)
+
+This function initializes the syslog handler, the boolean value remote indicates if the syslog server is remote,
+or local on the same system.
+
+Example:
+```c++
+SyslogInit(true);
+```
+
+This will initialize the syslog handler for a remote syslog server.
+
+SyslogSetAddress(address, port)
+
+This function sets the address and port of the remote syslog server.
+
+Example:
+```c++
+SyslogSetAddress("10.1.1.1", 514);
+```
+
+This will set the address of the remote syslog server to "10.1.1.1" and the port to 514.
+
+
+## System Library
+
+Console(params)
+Print(params)
+
+These are aliases for the built in print function.
+
+Example:
+```c++
+Console("hello world");
+```
+
+This will print "hello world" to the console.
+
+
+Array(params) => array
+List(params) => array
+
+This function takes a list of parameters as input and returns an array containing the parameters.
+
+Example:
+```c++
+arr = Array(1, 2, 3);
+
+print(arr);
+```
+
+This will print [1, 2, 3].
+
+RecordHasField(rec, field) => bool
+
+This function takes a record and a field name as input and returns true if the record has the field, otherwise it returns false.
+
+Example:
+```c++
+rec = {"key": "value"};
+
+a = RecordHasField(rec, "key");
+
+print(a);
+```
+
+This will print true.
+
+Platform() => str
+
+This function returns the platform of the system.
+
+Example:
+```c++
+platform = Platform();
+
+print(platform);
+```
+
+This will print the platform of the system. For example "linux".
+
+Items(rec) => array
+
+This function takes a record as input and returns an array containing the keys and values of the record as records.
+
+Example:
+```c++
+rec = {"key": "value"};
+
+arr = Items(rec);
+
+print(arr);
+```
+
+This will print [{"key": "value"}].
+
+Keys(rec) => array
+
+This function takes a record as input and returns an array containing the keys of the record.
+
+Example:
+```c++
+rec = {"key": "value"};
+
+arr = Keys(rec);
+
+print(arr);
+```
+
+This will print ["key"].
+
+Values(rec) => array
+
+This function takes a record as input and returns an array containing the values of the record.
+
+Example:
+```c++
+rec = {"key": "value"};
+
+arr = Values(rec);
+
+print(arr);
+```
+
+This will print ["value"].
+
+Key(rec) => str
+
+This function takes a record with a single field as input and returns the key of the record.
+
+Example:
+```c++
+rec = {"key": "value"};
+
+key = Key(rec);
+
+print(key);
+```
+
+This will print "key".
+
+Value(rec) => str
+
+This function takes a record with a single field as input and returns the value of the record.
+
+Example:
+```c++
+rec = {"key": "value"};
+
+value = Value(rec);
+
+print(value);
+```
+
+This will print "value".
+
+
+Env(name) => str
+GetEnv(name) => str
+
+This function takes an environment variable name as input and returns the value of the environment variable.
+
+Example:
+```c++
+value = Env("HOME");
+
+print(value);
+```
+
+This will print the value of the HOME environment variable.
+
+SetEnv(name, value)
+
+This function takes an environment variable name and a value as input and sets the value of the environment variable.
+
+Example:
+```c++
+SetEnv("HOME", "/home/user");
+```
+
+This will set the value of the HOME environment variable to "/home/user".
+
+LoadEnv(file)
+
+This function takes a file name as input and loads the environment variables from the file.
+
+Example:
+```c++
+LoadEnv(".env");
+```
+
+This will load the environment variables from the file ".env".
+
+Args() => array
+
+This function returns an array containing the command line arguments.
+
+Example:
+```c++
+args = Args();
+
+print(args);
+```
+
+This will print the command line arguments.
+
+Arg(n) => str
+
+This function takes an index as input and returns the command line argument at the given index.
+
+Example:
+```c++
+arg = Arg(0);
+
+print(arg);
+```
+
+This will print the first command line argument.
+
+ArgCount() => int
+
+This function returns the number of command line arguments.
+
+Example:
+```c++
+count = ArgCount();
+
+print(count);
+```
+
+This will print the number of command line arguments.
+
+
+## Time Library
+
+DateToUnix(date) => int
+
+This function takes a date in iso format as input and returns the unix timestamp of the date.
+
+Example:
+```c++
+timestamp = DateToUnix("2022-01-01T00:00:00Z");
+
+print(timestamp);
+```
+
+This will print the unix timestamp of the date "2022-01-01T00:00:00Z".
+
+DateFromUnix(timestamp) => str
+
+This function takes a unix timestamp as input and returns the date in iso format of the timestamp.
+
+Example:
+```c++
+date = DateFromUnix(1640995200);
+
+print(date);
+```
+
+This will print the date in iso format of the unix timestamp 1640995200.
+
+IsoToUnix(iso) => int
+
+This function takes a date in iso format as input and returns the unix timestamp of the date.
+
+Example:
+```c++
+timestamp = IsoToUnix("2022-01-01T00:00:00Z");
+
+print(timestamp);
+```
+
+This will print the unix timestamp of the date "2022-01-01T00:00:00Z".
+
+IsoFromUnix(timestamp) => str
+
+This function takes a unix timestamp as input and returns the date in iso format of the timestamp.
+
+Example:
+```c++
+date = IsoFromUnix(1640995200);
+
+print(date);
+```
+
+This will print the date in iso format of the unix timestamp 1640995200.
+
+UtcNow() => str
+
+This function returns the current date and time in UTC in the system time format.
+
+Example:
+```c++
+date = UtcNow();
+
+print(date);
+```
+
+This will print the current date and time in UTC in the system time format.
+
+UtcIsoNow() => str
+
+This function returns the current date and time in UTC in iso format.
+
+Example:
+```c++
+date = UtcIsoNow();
+
+print(date);
+```
+
+This will print the current date and time in UTC in iso format.
+
+IsoNow() => str
+
+This function returns the current date and time in iso format.
+
+Example:
+```c++
+date = IsoNow();
+
+print(date);
+```
+
+This will print the current date and time in iso format.
+
+Now() => str
+
+This function returns the current date and time in the system time format.
+
+Example:
+```c++
+date = Now();
+
+print(date);
+```
+
+This will print the current date and time in the system time format.
+
+PerfCounter() => int
+
+This function returns the current value of the performance counter.
+
+Example:
+```c++
+counter = PerfCounter();
+
+print(counter);
+```
+
+This will print the current value of the performance counter.
+
+## Reserved words
+
+The following words are reserved and should not be used as variable or function names:
+
+```
+and
+array
+as
+
+bool
+boolean
+break
+
+case
+const
+continue
+
+default
+distinct
+
+elif
+else
+external
+
+false
+float
+foreach
+from
+function
+
+halt
+
+if
+include
+int
+integer
+into
+
+IsArray
+isArray
+IsBool
+isBool
+IsFloat
+isFloat
+IsFunction
+isFunction
+IsInt
+isInt
+IsInteger
+isInteger
+IsObject
+isObject
+IsString
+isString
+IsRecord
+isRecord
+
+merge
+
+not
+
+object
+or
+order
+
+params
+
+record
+return
+
+select
+string
+switch
+
+true
+Type
+type
+
+variable
+
+where
+while
+
+xor
+```
+
+Note:
+The parser will remove reserved words that match type names (bool, float, function, int, integer, params, string, variable) before parsing starts, this can lead to unexpected results.
+
+It is recommended to avoid using reserved words as variable or function names.
+
+
+## Credits
+
+The Macal DSL README.md file was edited by Bernard Drapeau (bernard.drapeau@westcon.com)
+The "Dragon book" was used to get me started on the path to creating this DSL.

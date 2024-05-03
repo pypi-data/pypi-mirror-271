@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: q2label
+Version: 0.0.3
+Summary: Transfer your data to our datalake and integrate in your computer vision pipeline. For more information, go to our website: www.q2label.com.
+Author-email: Erik van der Poel <erikvdpoel@hotmail.com>
+Project-URL: Homepage, https://www.q2label.com
+Keywords: data transfer image labelling
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: azure-common ==1.1.28
+Requires-Dist: azure-core ==1.30.1
+Requires-Dist: azure-identity ==1.15.0
+Requires-Dist: azure-mgmt-core ==1.4.0
+Requires-Dist: azure-mgmt-network ==25.3.0
+Requires-Dist: azure-storage-blob ==12.19.1
+Requires-Dist: azure-storage-file-datalake ==12.14.0
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: cffi ==1.16.0
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: cryptography ==42.0.5
+Requires-Dist: idna ==3.6
+Requires-Dist: isodate ==0.6.1
+Requires-Dist: msal ==1.28.0
+Requires-Dist: msal-extensions ==1.1.0
+Requires-Dist: packaging ==24.0
+Requires-Dist: portalocker ==2.8.2
+Requires-Dist: pycparser ==2.22
+Requires-Dist: PyJWT ==2.8.0
+Requires-Dist: python-dotenv ==1.0.1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: typing-extensions ==4.10.0
+Requires-Dist: urllib3 ==2.2.1
+
+Welcome to Q2label!

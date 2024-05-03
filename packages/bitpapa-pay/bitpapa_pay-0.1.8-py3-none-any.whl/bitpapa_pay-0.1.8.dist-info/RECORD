@@ -1,0 +1,13 @@
+bitpapa_pay/__init__.py,sha256=AM6sXna8duxNccm-Wpv32YEHAL3au2F3eOsAB2aBYl8,42
+bitpapa_pay/client.py,sha256=bxBpfcwXVeEDbDNcB2Dqy_qu8BQs5OebTLClXDgpSSs,6522
+bitpapa_pay/methods/addresses.py,sha256=kfR7skMNTwbAOGLr8NlZXfrZsN9XIqtHZbCtcqypRX8,3677
+bitpapa_pay/methods/base.py,sha256=hik53JSwu-xKDIZ478W7omWR_lrIK18GHJw9WpPDV9Q,608
+bitpapa_pay/methods/exchange_rates.py,sha256=uuK1mmKFcUrK-eTzz4gMbg67XzPQlw4G3XDrabO4tXo,686
+bitpapa_pay/methods/telegram.py,sha256=4CfJKijBPAF0JTTmHn7EZ7tb-8oC9wNj55kcA82I_6w,2405
+bitpapa_pay/types/base.py,sha256=WallnItYbjUT2gR1Dx1tm_-4mqbx-282eUjf5mTcGMs,261
+bitpapa_pay/types/exchange_rates.py,sha256=Frt_rXXNreLxJI28MKwPJo8YSNpGESLIEVV0bJQ0rpU,124
+bitpapa_pay/types/telegram.py,sha256=7VqpAumkmEBk2a7YjT5ID5okoCpasuZai9RqLyy0VrE,816
+bitpapa_pay/version.py,sha256=x251-fbcn8rATkvSMLIBz6j535zTcLDxgDQ9A0Ypgyw,18
+bitpapa_pay-0.1.8.dist-info/METADATA,sha256=9H6_uFlVGEkwkTnHSDRumjXQRhWmGIY7PNweZbmOHrA,1794
+bitpapa_pay-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bitpapa_pay-0.1.8.dist-info/RECORD,,

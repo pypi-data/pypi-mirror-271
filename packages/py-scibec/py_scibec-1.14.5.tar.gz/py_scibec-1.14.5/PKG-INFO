@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: py_scibec
+Version: 1.14.5
+Summary: Python Client for the BEC REST API
+Home-page: https://gitlab.psi.ch/bec/scibec
+Project-URL: Bug Tracker, https://gitlab.psi.ch/bec/scibec/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev

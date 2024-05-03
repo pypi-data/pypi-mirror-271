@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: nnfasta
+Version: 0.1.6
+Summary: Neural Net efficient Fasta
+License: MIT
+Author: arabidopsis
+Author-email: ian.castleden@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# nnfasta
+
+Neural Net efficient fasta Dataset for Training.
+
+Should be memory efficient across process boundaries.
+So useful as input to torch/tensorflow dataloaders etc.
+
+Presents a list of fasta files as a simple `abc.Sequence`
+so you can inquire about `len(dataset)` and retrieve
+`Record`s with `dataset[i]`
+
+## Install
+
+Install:
+
+```bash
+pip install nnfasta
+```
+
+There are **no** dependencies.
+
+## Usage
+
+```python
+from nnfasta import nnfastas 
+
+dataset = nnfastas(['athaliana.fasta','triticum.fasta','zmays.fasta'])
+
+# display the number of sequences
+print(len(dataset))
+
+# get a particular record
+rec = dataset[20]
+print('sequence', rec.id, rec.description, rec.seq)
+```
+
+**Warning**: No checks are made for the existence of
+the fasta files. Also files of zero length will be rejected
+by `mmap`.
+

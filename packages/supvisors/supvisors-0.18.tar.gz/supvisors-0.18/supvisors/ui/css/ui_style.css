@@ -1,0 +1,423 @@
+/*
+ * Copyright 2024 Julien LE CLEACH
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * Additional resources
+ */
+@font-face {
+    font-family: 'kingthings_calligraphica_2Rg';
+    src: url('Kingthings_Calligraphica_2-webfont.eot');
+    src: url('Kingthings_Calligraphica_2-webfont.eot?#iefix') format('embedded-opentype'),
+        url('Kingthings_Calligraphica_2-webfont.woff') format('woff'),
+        url('Kingthings_Calligraphica_2-webfont.ttf') format('truetype'),
+        url('Kingthings_Calligraphica_2-webfont.svg#kingthings_calligraphica_2Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+ * Declare all colors
+ */
+:root {
+    --title-color: #00e6b0;
+    --text-color: #a0d5dd;
+    --dark1-color: #052525;
+    --dark2-color: #053035;
+    --light1-color: #203535;
+    --light2-color: #305050;
+    --vlight1-color: #709090;
+    --vlight2-color: #506469;
+    --th-color: #053035;
+    --tr-color: #305050;
+    --selected-color: #00e6b0;
+    --border-color: #82aaaf;
+    --ok-color: #33ff33;
+    --stable-color: dodgerblue;
+    --error-color: #ff3333;
+    --blink-color: orangered;
+    --navbg-color: #1a1a1a;
+    --stopped-color: #b3b300;
+    --running-color: green;
+    --fatal-color: #cc0000;
+    --crash-color: orange;
+}
+
+
+/*
+ * Resource common design
+*/
+header, footer {
+    padding: 5px;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'kingthings_calligraphica_2Rg', Verdana, sans-serif;
+}
+
+h1 {
+    text-align: left;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2, h3 {
+    font-size: 1.2em;
+    margin: 0 0 8px 0;
+}
+
+h2 {
+    text-shadow: 3px 3px 2px black;
+}
+
+h4 {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: .8em;
+    text-align: right;
+    margin: 0 5px 0 0;
+}
+
+h6 {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-align: center;
+    font-size: .8em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+p {
+    font-size: .8em;
+    margin-top: 0.1em;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a.off {
+    cursor: not-allowed;
+}
+
+/*
+ * General Layout
+ */
+html, body, #body_block {
+    height: 100%;
+    min-height: 875px;
+}
+
+body {
+    margin: auto;
+}
+
+#body_block {
+    min-width: 1000px;
+    display: flex;
+}
+
+
+/*
+ * Left Side (Menu) Layout
+*/
+#left_side {
+    display: flex;
+    min-width: 230px;
+    max-width: 230px;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, var(--dark1-color), var(--light2-color));
+}
+
+#left_side header {
+    display: flex;
+    flex-direction: row;
+    min-height: 88px;
+    max-height: 88px;
+    margin: 0 6px;
+    background-color: var(--dark1-color);
+    border-bottom-right-radius: 6px;
+    box-shadow: 4px 4px 6px black;
+    justify-content: start;
+    text-align: center;
+    color: var(--title-color);
+}
+
+#left_side header div {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+}
+
+#left_side header h1 {
+    height: 35px;
+}
+
+#instance_list {
+    margin-top: 10px;
+}
+
+#instance_list div, #application_list div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden auto;
+}
+
+#left_side footer {
+    font-style: italic;
+    color: var(--text-color);
+}
+
+#left_side footer a {
+   color: var(--title-color);
+}
+
+#copyright {
+    font-size: .6em;
+}
+
+
+/*
+ * Right Side (Specific) Layout
+*/
+#right_side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    /*background-image: linear-gradient(90deg, var(--light1-color), var(--light2-color) 10%);*/
+    background-color: var(--light2-color);
+}
+
+.vertical_contents {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.horizontal_contents {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/*
+ * Blink Style
+ *
+ */
+.blink {
+    color: var(--blink-color);
+    animation: blinker 1.2s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0.0; }
+}
+
+
+/*
+ * Figure style
+ */
+figure {
+    margin: 6px;
+}
+
+figure img {
+    border: 1px solid black outset;
+    border-radius: 6px;
+    box-shadow: 4px 4px 6px black;
+}
+
+figcaption {
+    margin-top: 6px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: .8em;
+}
+
+/*
+ * Style for inline actions
+ */
+ul.linear, ul.vertical {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.linear li {
+    display: inline;
+}
+
+ul.vertical li {
+    margin: 2px 0;
+}
+
+
+/*
+ * Common Table style
+ */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    caption-side: top;
+    background-color: var(--tr-color);
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 3px 5px;
+    font-size: .7em;
+}
+
+tr:first-child th {
+    border-top: solid 1px var(--border-color);
+}
+
+tr:last-child th {
+    border-bottom: solid 1px var(--border-color);
+}
+
+td {
+    border-bottom: solid 1px var(--border-color);
+}
+
+th {
+    background-color: var(--th-color);
+    text-align: center;
+}
+
+caption {
+    padding-right: 4px;
+    font-size: .8em;
+    font-style: italic;
+}
+
+.brightened {
+    background-image: linear-gradient(180deg, var(--vlight2-color), var(--light2-color), var(--vlight2-color));
+}
+
+.shaded {
+    background-image: linear-gradient(180deg, var(--light1-color), var(--light2-color), var(--light1-color));
+}
+
+/*
+ * State gradients
+ */
+.state_cell.CHECKING {
+    background-image: linear-gradient(165deg, white, grey, var(--running-color), white);
+    color: black;
+}
+
+.state_cell.STOPPED, .state_cell.EXITED, .state_cell.SILENT {
+    background-image: linear-gradient(165deg, white, var(--stopped-color), var(--stopped-color), white);
+    color: black;
+}
+
+.state_cell.STARTING, .state_cell.BACKOFF {
+    background-image: linear-gradient(165deg, white, var(--stopped-color), var(--running-color), white);
+    color: black;
+}
+
+.state_cell.STOPPING {
+    background-image: linear-gradient(165deg, white, var(--running-color), var(--stopped-color), white);
+    color: black;
+}
+
+.state_cell.RUNNING, .state_cell.CHECKED {
+    background-image: linear-gradient(165deg, white, var(--running-color), var(--running-color), white);
+    color: black;
+}
+
+.state_cell.RUNNING.crashed, .state_cell.CHECKED.crashed {
+    background-image: linear-gradient(165deg, var(--crash-color), var(--running-color), var(--running-color), var(--crash-color));
+    color: black;
+}
+
+.state_cell.FATAL, .state_cell.ISOLATED {
+    background-image: linear-gradient(165deg, white, var(--fatal-color), var(--fatal-color), white);
+    color: black;
+}
+
+.state_cell.UNKNOWN, .state_cell.disabled {
+    background-image: linear-gradient(165deg, white, grey, grey, white);
+    color: black;
+}
+
+/*
+ * Failure LED
+ */
+h1 a.failure::after {
+    content: url(../img/red_light_30.png);
+    float: right;
+    position: relative;
+    top: -32px;
+    animation: blinker 1.2s linear infinite;
+}
+
+h2.failure::after {
+    content: url(../img/red_light_30.png);
+    float: right;
+    position: relative;
+    top: -3px;
+}
+
+/*
+ * Increase / Stable / Decrease styles
+ */
+.increase {
+    color: var(--error-color);
+}
+
+.increase::after {
+    content: "\2197";
+}
+
+.stable {
+    color: var(--stable-color);
+}
+
+.stable::after {
+    content: "\219d";
+}
+
+.decrease {
+    color: var(--ok-color);
+}
+
+.decrease::after {
+    content: "\2198";
+}
+
+/*
+ * Hide without removing
+ */
+.invisible {
+    opacity: 0;
+}

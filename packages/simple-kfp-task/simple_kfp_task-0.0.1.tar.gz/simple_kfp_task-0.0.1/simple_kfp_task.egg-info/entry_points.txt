@@ -1,0 +1,2 @@
+[console_scripts]
+simple-kfp-task = simple_kfp_task.cli:main

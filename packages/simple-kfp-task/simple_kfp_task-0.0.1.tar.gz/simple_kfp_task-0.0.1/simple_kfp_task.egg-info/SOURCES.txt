@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+simple_kfp_task/__init__.py
+simple_kfp_task/cli.py
+simple_kfp_task/deploykf.py
+simple_kfp_task/git.py
+simple_kfp_task/pipeline.py
+simple_kfp_task/task.py
+simple_kfp_task/utils.py
+simple_kfp_task.egg-info/PKG-INFO
+simple_kfp_task.egg-info/SOURCES.txt
+simple_kfp_task.egg-info/dependency_links.txt
+simple_kfp_task.egg-info/entry_points.txt
+simple_kfp_task.egg-info/top_level.txt

@@ -1,0 +1,98 @@
+[tool.poetry]
+name = "gramep"
+version = "0.1.0"
+description = "GRAMEP - Genome vaRiation Analysis from the Maximum Entropy Principle"
+authors = [
+    "Matheus Pimenta <matheus.pimenta@outlook.com>",
+    "Fabricio Lopes <fabricio@utfpr.edu.br>",
+    ]
+maintainers = [
+    "Matheus Pimenta <matheus.pimenta@outlook.com>",
+]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "gramep"}]
+classifiers = [
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Natural Language :: English",
+    "Environment :: Console",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.urls]
+"Code" = "https://github.com/omatheuspimenta/GRAMEP"
+"Bug Tracker" = "https://github.com/omatheuspimenta/GRAMEP/issues"
+"Documentation" = "https://gramep.readthedocs.io/en/latest/"
+
+[tool.poetry.scripts]
+gramep = "gramep.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^1.26.4"
+rich = "^13.7.1"
+biopython = "^1.83"
+gffpandas = "^1.2.0"
+pandas = "^2.2.1"
+joblib-progress = "^1.0.5"
+regex = "^2023.12.25"
+pathlib = "^1.0.1"
+levenshtein = "^0.25.1"
+matplotlib = "^3.8.4"
+scikit-learn = "^1.4.1.post1"
+seaborn = "^0.13.2"
+typer = "^0.12.3"
+joblib = "^1.4.0"
+thefuzz = "^0.22.1"
+polars = "^0.20.19"
+toytree = "^2.0.5"
+upsetplot = "^0.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+taskipy = "^1.12.2"
+ruff = "^0.3.5"
+mypy = "^1.9.0"
+isort = "^5.13.2"
+blue = "^0.9.1"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocstrings = "^0.24.3"
+mkdocstrings-python = "^1.9.2"
+mkdocs-macros-plugin = "^1.0.5"
+jinja2 = "^3.1.3"
+termynal = "^0.12.1"
+mkdocs-material = "9.5.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+codeck = "blue --check --diff . && isort --check --diff ."
+codecg = "blue . && isort ."
+docs = "mkdocs serve"
+lintck = "ruff check ."
+lintcg = "ruff check --fix ."
+pre_test = "task codeck"
+test = "pytest -s -x --cov=gramep -vv"
+post_test = "coverage html"
+
+[tool.mypy]
+ignore_missing_imports = true
+plugins = "numpy.typing.mypy_plugin"

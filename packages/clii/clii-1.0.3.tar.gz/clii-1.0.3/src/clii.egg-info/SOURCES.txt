@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/clii/__init__.py
+src/clii/clii.py
+src/clii/py.typed
+src/clii.egg-info/PKG-INFO
+src/clii.egg-info/SOURCES.txt
+src/clii.egg-info/dependency_links.txt
+src/clii.egg-info/top_level.txt
+src/tests/test_misc.py

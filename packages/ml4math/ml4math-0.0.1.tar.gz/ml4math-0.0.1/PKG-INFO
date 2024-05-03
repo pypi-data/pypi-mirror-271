@@ -1,0 +1,47 @@
+Metadata-Version: 2.3
+Name: ml4math
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/ml4math#readme
+Project-URL: Issues, https://github.com/unknown/ml4math/issues
+Project-URL: Source, https://github.com/unknown/ml4math
+Author-email: Mike Vaiana <mikevaiana@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: gitpython
+Requires-Dist: jupyter
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: replicate
+Description-Content-Type: text/markdown
+
+# ml4math
+
+[![PyPI - Version](https://img.shields.io/pypi/v/ml4math.svg)](https://pypi.org/project/math4ml)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ml4math.svg)](https://pypi.org/project/math4ml)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install ml4math
+```
+
+## License
+
+`ml4math` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

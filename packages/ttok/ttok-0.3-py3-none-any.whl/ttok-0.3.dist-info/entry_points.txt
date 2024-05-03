@@ -1,0 +1,2 @@
+[console_scripts]
+ttok = ttok.cli:cli

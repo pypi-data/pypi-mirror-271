@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-02 17:11-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/commit_msg_git_hook/commit_msg.py:76
+msgid "COMMIT MESSAGE TOO LONG"
+msgstr "MENSAGEM DE COMMIT MUITO LONGA"
+
+#: src/commit_msg_git_hook/commit_msg.py:78
+msgid "Configured max length (first line)"
+msgstr "Comprimento máx. configurado (primeira linha)"
+
+#: src/commit_msg_git_hook/commit_msg.py:93
+msgid "INVALID COMMIT MESSAGE"
+msgstr "MENSAGEM DE COMMIT INVÁLIDA"
+
+#: src/commit_msg_git_hook/commit_msg.py:95
+msgid "Use the Conventional Commits specification."
+msgstr "Use a especificação Conventional Commits."
+
+#: src/commit_msg_git_hook/commit_msg.py:96
+msgid "Valid types"
+msgstr "Tipos válidos"
+
+#: src/commit_msg_git_hook/commit_msg.py:97
+msgid "Valid scopes"
+msgstr "Escopos válidos"
+
+#: src/commit_msg_git_hook/commit_msg.py:98
+msgid "See the specification"
+msgstr "Veja a especificação"
+
+#: src/commit_msg_git_hook/commit_msg.py:99
+msgid "https://www.conventionalcommits.org/en/v1.0.0/"
+msgstr "https://www.conventionalcommits.org/pt-br/v1.0.0/"

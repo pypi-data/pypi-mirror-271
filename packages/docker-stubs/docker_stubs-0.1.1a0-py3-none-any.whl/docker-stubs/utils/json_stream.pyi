@@ -1,0 +1,16 @@
+from typing import Any, Callable, Iterable, Iterator
+
+from _typeshed import Incomplete
+import json
+
+json_decoder: json.JSONDecoder
+
+def stream_as_text(stream: Iterable[bytes | str]) -> Iterator[str]: ...
+def json_splitter(buffer: str) -> tuple[Any, str] | None: ...
+def json_stream(stream: Incomplete) -> Iterator[Incomplete]: ...
+def line_splitter(buffer: str, separator: str = ...) -> tuple[str, str]: ...
+def split_buffer(
+    stream: Iterable[str],
+    splitter: Callable[[str], tuple[Any, str] | None] | None = ...,
+    decoder: Callable[[str], str] = ...,
+) -> Iterator[str]: ...

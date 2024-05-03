@@ -1,0 +1,55 @@
+name: Reusable Tutorials Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      smoke_test:
+        required: true
+        type: boolean
+      pinned_botorch:
+        required: true
+        type: boolean
+  workflow_call:
+    inputs:
+      smoke_test:
+        required: true
+        type: boolean
+      pinned_botorch:
+        required: true
+        type: boolean
+
+jobs:
+
+  build-tutorials:
+    name: Tutorials
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - if: ${{ inputs.pinned_botorch }}
+      name: Install dependencies with pinned BoTorch
+      run: |
+        pip install -e ".[tutorial]"
+
+    - if: ${{ !inputs.pinned_botorch }}
+      name: Install dependencies with latest BoTorch
+      env:
+        ALLOW_BOTORCH_LATEST: true
+        ALLOW_LATEST_GPYTORCH_LINOP: true
+      run: |
+        pip install git+https://github.com/cornellius-gp/gpytorch.git
+        pip install git+https://github.com/pytorch/botorch.git
+        pip install -e ".[tutorial]"
+
+    - if: ${{ inputs.smoke_test }}
+      name: Build tutorials with smoke test
+      run: |
+        python scripts/make_tutorials.py -w $(pwd) -e -s
+    - if: ${{ !inputs.smoke_test }}
+      name: Build tutorials without smoke test
+      run: |
+        python scripts/make_tutorials.py -w $(pwd) -e

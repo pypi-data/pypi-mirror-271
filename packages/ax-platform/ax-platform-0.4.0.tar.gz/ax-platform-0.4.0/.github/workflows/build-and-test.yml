@@ -1,0 +1,72 @@
+name: Build and Test Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  tests-and-coverage:
+    name: Tests with latest BoTorch
+    uses: ./.github/workflows/reusable_test.yml
+    with:
+      pinned_botorch: false
+    secrets: inherit
+
+  lint:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      # Pin ufmt deps so they match intermal pyfmt.
+      run: |
+        pip install black==24.2.0
+        pip install usort==1.0.8
+        pip install libcst==1.1.0
+        pip install ufmt
+        pip install flake8
+    - name: ufmt
+      run: |
+        ufmt diff .
+    - name: Flake8
+      # run even if previous step (ufmt) failed
+      if: ${{ always() }}
+      run: |
+        flake8
+
+  docs:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      env:
+        ALLOW_BOTORCH_LATEST: true
+        ALLOW_LATEST_GPYTORCH_LINOP: true
+      run: |
+        # use latest Botorch
+        pip install git+https://github.com/cornellius-gp/gpytorch.git
+        pip install git+https://github.com/pytorch/botorch.git
+        pip install -e ".[unittest]"
+    - name: Validate Sphinx
+      run: |
+        python scripts/validate_sphinx.py -p "${pwd}"
+    - name: Run Sphinx
+      # run even if previous step (validate Sphinx) failed
+      if: ${{ always() }}
+      run: |
+        # warnings no longer treated as errors.
+        sphinx-build -T --keep-going sphinx/source sphinx/build

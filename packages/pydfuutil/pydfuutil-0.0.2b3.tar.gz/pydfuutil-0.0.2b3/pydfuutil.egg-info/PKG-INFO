@@ -1,0 +1,361 @@
+Metadata-Version: 2.1
+Name: pydfuutil
+Version: 0.0.2b3
+Summary: PyDfuUtil - Pure python fork of dfu-util wrappers to libusb
+Author-email: o-murphy <thehelixpg@gmail.com>
+License:                    GNU LESSER GENERAL PUBLIC LICENSE
+                               Version 3, 29 June 2007
+        
+         Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+         Everyone is permitted to copy and distribute verbatim copies
+         of this license document, but changing it is not allowed.
+        
+        
+          This version of the GNU Lesser General Public License incorporates
+        the terms and conditions of version 3 of the GNU General Public
+        License, supplemented by the additional permissions listed below.
+        
+          0. Additional Definitions.
+        
+          As used herein, "this License" refers to version 3 of the GNU Lesser
+        General Public License, and the "GNU GPL" refers to version 3 of the GNU
+        General Public License.
+        
+          "The Library" refers to a covered work governed by this License,
+        other than an Application or a Combined Work as defined below.
+        
+          An "Application" is any work that makes use of an interface provided
+        by the Library, but which is not otherwise based on the Library.
+        Defining a subclass of a class defined by the Library is deemed a mode
+        of using an interface provided by the Library.
+        
+          A "Combined Work" is a work produced by combining or linking an
+        Application with the Library.  The particular version of the Library
+        with which the Combined Work was made is also called the "Linked
+        Version".
+        
+          The "Minimal Corresponding Source" for a Combined Work means the
+        Corresponding Source for the Combined Work, excluding any source code
+        for portions of the Combined Work that, considered in isolation, are
+        based on the Application, and not on the Linked Version.
+        
+          The "Corresponding Application Code" for a Combined Work means the
+        object code and/or source code for the Application, including any data
+        and utility programs needed for reproducing the Combined Work from the
+        Application, but excluding the System Libraries of the Combined Work.
+        
+          1. Exception to Section 3 of the GNU GPL.
+        
+          You may convey a covered work under sections 3 and 4 of this License
+        without being bound by section 3 of the GNU GPL.
+        
+          2. Conveying Modified Versions.
+        
+          If you modify a copy of the Library, and, in your modifications, a
+        facility refers to a function or data to be supplied by an Application
+        that uses the facility (other than as an argument passed when the
+        facility is invoked), then you may convey a copy of the modified
+        version:
+        
+           a) under this License, provided that you make a good faith effort to
+           ensure that, in the event an Application does not supply the
+           function or data, the facility still operates, and performs
+           whatever part of its purpose remains meaningful, or
+        
+           b) under the GNU GPL, with none of the additional permissions of
+           this License applicable to that copy.
+        
+          3. Object Code Incorporating Material from Library Header Files.
+        
+          The object code form of an Application may incorporate material from
+        a header file that is part of the Library.  You may convey such object
+        code under terms of your choice, provided that, if the incorporated
+        material is not limited to numerical parameters, data structure
+        layouts and accessors, or small macros, inline functions and templates
+        (ten or fewer lines in length), you do both of the following:
+        
+           a) Give prominent notice with each copy of the object code that the
+           Library is used in it and that the Library and its use are
+           covered by this License.
+        
+           b) Accompany the object code with a copy of the GNU GPL and this license
+           document.
+        
+          4. Combined Works.
+        
+          You may convey a Combined Work under terms of your choice that,
+        taken together, effectively do not restrict modification of the
+        portions of the Library contained in the Combined Work and reverse
+        engineering for debugging such modifications, if you also do each of
+        the following:
+        
+           a) Give prominent notice with each copy of the Combined Work that
+           the Library is used in it and that the Library and its use are
+           covered by this License.
+        
+           b) Accompany the Combined Work with a copy of the GNU GPL and this license
+           document.
+        
+           c) For a Combined Work that displays copyright notices during
+           execution, include the copyright notice for the Library among
+           these notices, as well as a reference directing the user to the
+           copies of the GNU GPL and this license document.
+        
+           d) Do one of the following:
+        
+               0) Convey the Minimal Corresponding Source under the terms of this
+               License, and the Corresponding Application Code in a form
+               suitable for, and under terms that permit, the user to
+               recombine or relink the Application with a modified version of
+               the Linked Version to produce a modified Combined Work, in the
+               manner specified by section 6 of the GNU GPL for conveying
+               Corresponding Source.
+        
+               1) Use a suitable shared library mechanism for linking with the
+               Library.  A suitable mechanism is one that (a) uses at run time
+               a copy of the Library already present on the user's computer
+               system, and (b) will operate properly with a modified version
+               of the Library that is interface-compatible with the Linked
+               Version.
+        
+           e) Provide Installation Information, but only if you would otherwise
+           be required to provide such information under section 6 of the
+           GNU GPL, and only to the extent that such information is
+           necessary to install and execute a modified version of the
+           Combined Work produced by recombining or relinking the
+           Application with a modified version of the Linked Version. (If
+           you use option 4d0, the Installation Information must accompany
+           the Minimal Corresponding Source and Corresponding Application
+           Code. If you use option 4d1, you must provide the Installation
+           Information in the manner specified by section 6 of the GNU GPL
+           for conveying Corresponding Source.)
+        
+          5. Combined Libraries.
+        
+          You may place library facilities that are a work based on the
+        Library side by side in a single library together with other library
+        facilities that are not Applications and are not covered by this
+        License, and convey such a combined library under terms of your
+        choice, if you do both of the following:
+        
+           a) Accompany the combined library with a copy of the same work based
+           on the Library, uncombined with any other library facilities,
+           conveyed under the terms of this License.
+        
+           b) Give prominent notice with the combined library that part of it
+           is a work based on the Library, and explaining where to find the
+           accompanying uncombined form of the same work.
+        
+          6. Revised Versions of the GNU Lesser General Public License.
+        
+          The Free Software Foundation may publish revised and/or new versions
+        of the GNU Lesser General Public License from time to time. Such new
+        versions will be similar in spirit to the present version, but may
+        differ in detail to address new problems or concerns.
+        
+          Each version is given a distinguishing version number. If the
+        Library as you received it specifies that a certain numbered version
+        of the GNU Lesser General Public License "or any later version"
+        applies to it, you have the option of following the terms and
+        conditions either of that published version or of any later version
+        published by the Free Software Foundation. If the Library as you
+        received it does not specify a version number of the GNU Lesser
+        General Public License, you may choose any version of the GNU Lesser
+        General Public License ever published by the Free Software Foundation.
+        
+          If the Library as you received it specifies that a proxy can decide
+        whether future versions of the GNU Lesser General Public License shall
+        apply, that proxy's public statement of acceptance of any version is
+        permanent authorization for you to choose that version for the
+        Library.
+Project-URL: Homepage, https://github.com/o-murphy/pydfuutil
+Project-URL: Bug Reports, https://github.com/o-murphy/pydfuutil/issues
+Project-URL: Source, https://github.com/o-murphy/pydfuutil
+Keywords: dfu_util,dfu-util,pydfu,libusb,python,python3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyusb
+Requires-Dist: libusb-package
+Requires-Dist: construct
+Provides-Extra: build
+Requires-Dist: build; extra == "build"
+Provides-Extra: rich
+Requires-Dist: rich; extra == "rich"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pylint; extra == "test"
+
+# PyDfuUtil - Pure python fork of **[dfu-util](https://github.com/Stefan-Schmidt/dfu-util)** wrappers to **[libusb](https://github.com/libusb/libusb)**
+
+[![PyPI Version](https://img.shields.io/pypi/v/pydfuutil?label=PyPI&logo=pypi)](https://pypi.org/project/pydfuutil/)
+
+## Table of contents
+* **[Introduction](#introduction)**
+* **[Requirements](#requirements-and-platform-support)**
+* **[Installing](#installing)**
+* **[Todos](#todos)**
+* **[Getting help](#getting-help)**
+* **[About](#about)**
+* **[Footnotes](#footnotes)**
+
+
+## Introduction
+
+* **PyDFUUtil** provides for easy access to the devices that supports **DFU** interface over host machine's **Universal Serial Bus (USB)**
+system for Python 3.
+* **PyDFUUtil** is an open realisation of original **[dfu-util](https://github.com/Stefan-Schmidt/dfu-util)**
+and thin wrapper over **[libusb](https://github.com/libusb/libusb)** _(uses **[PyUsb](https://github.com/pyusb/pyusb)** library as a backend)_.
+
+> [!WARNING]
+> The current status of the project is BETA version.
+> Use it for your own risk
+
+> [!TIP]
+> Searching for contributors for testing the library
+
+## Requirements and platform support
+
+* Since **PyDFUUtil** uses the **[libusb](https://github.com/libusb/libusb)** library it has similar dependencies for using **[libusb](https://github.com/libusb/libusb)**
+* It uses python **[construct](https://github.com/construct/construct)** library for simple unpacking C-structs.
+* **PyDFUUtil** primarily tested on Linux and Windows, 
+but also can work on each platform where **[PyUsb](https://github.com/construct/construct)** and **[construct](https://github.com/construct/construct)** libraries are available, including MacOS
+
+
+## Installing
+
+**PyDFUUtil** is generally installed through pip
+
+    # the latest official release
+    python -m pip install pydfuutil
+
+    # install a specific version (e.g. 0.0.1b1)
+    python -m pip install pydfuutil==0.0.1b1
+
+## Usage
+
+### dfu-util
+```Bash
+pydfuutil -h 
+# or
+python -m pydfuutil -h
+
+####### usage:
+usage: pydfuutil [-h] [-V] [-v] [-l] [-e] [-d <deviceID>:<productID>] [-p <bus/port>] [-c <config>] [-i <intf_num>] [-a <alt>] [-t <size>] [-U <file>] [-D <file>] [-R] [-s <address>]
+
+Python implementation of DFU-Util tools
+
+options:
+  -h, --help            show this help message and exit
+  -V, --version         Print the version number
+  -v, --verbose         Print verbose debug statements
+  -l, --list            List the currently attached DFU capable USB devices
+  -e, --detach          Detach the currently attached DFU capable USB devices
+  -d <deviceID>:<productID>, --device <deviceID>:<productID>
+                        Specify Vendor/Product ID of DFU device
+  -p <bus/port>, --path <bus/port>
+                        Specify path to DFU device
+  -c <config>, --cfg <config>
+                        Specify the Configuration of DFU device
+  -i <interface>, --intf <interface>
+                        Specify the DFU Interface number
+  -a <alt>, --alt <alt>
+                        Specify the Altsetting of the DFU Interface
+  -t <size>, --transfer-size <size>
+                        Specify the number of bytes per USB Transfer
+  -U <file>, --upload <file>
+                        Read firmware from device into <file>
+  -D <file>, --download <file>
+                        Write firmware from <file> into device
+  -R, --reset           Issue USB Reset signalling once we`re finished
+  -s <address>, --dfuse-address <address>
+                        ST DfuSe mode, specify target address for raw file download or upload. Not applicable for DfuSe file (.dfu) downloads
+```
+
+### dfu-suffix
+```Bash
+pydfuutil-suffix -h
+# or 
+python -m pydfuutil.suffix -h
+
+
+usage: dfu-suffix [-h] [-V] (-c | -a | -D) [-p <productID>] [-v <vendorID>] [-d <deviceID>] [-s <address>] [-T] <file>
+
+positional arguments:
+  <file>                Target filename
+
+options:
+  -h, --help            Print this help message
+  -V, --version         Print the version number
+  -c, --check           Check DFU suffix of <file>
+  -a, --add             Add DFU suffix to <file>
+  -D, --delete          Delete DFU suffix from <file>
+  -p <productID>, --pid <productID>
+                        Add product ID into DFU suffix in <file>
+  -v <vendorID>, --vid <vendorID>
+                        Add vendor ID into DFU suffix in <file>
+  -d <deviceID>, --did <deviceID>
+                        Add device ID into DFU suffix in <file>
+  -s <address>, --stellaris-address <address>
+                        Specify lmdfu address for LMDFU_ADD
+  -T, --stellaris       Set lmdfu mode to LMDFU_CHECK
+
+```
+
+#### Done:
+- [x] dfu
+- [x] dfu_file
+- [x] dfu_load
+- [x] portable
+- [x] quirks
+- [x] suffix + cli entry point
+- [x] usb_dfu
+- [x] lmdfu
+- [x] dfuse_mem
+- [ ] dfuse (not fully supported yet)
+- [ ] dfu-util cli entry point (not fully supported yet)
+
+
+## Getting help
+* To report a bug or propose a new feature, use our issue tracker. But please search the database before opening a new issue.
+
+## About
+Dfu-util - Device Firmware Upgrade Utilities
+
+Dfu-util is the host side implementation of the 
+[DFU 1.0](http://www.usb.org/developers/devclass_docs/usbdfu10.pdf) and 
+[DFU 1.1](http://www.usb.org/developers/devclass_docs/DFU_1.1.pdf)
+specification of the USB forum.
+
+DFU is intended to download and upload firmware to devices connected over
+USB. It ranges from small devices like micro-controller boards up to mobile
+phones. With dfu-util you are able to download firmware to your device or
+upload firmware from it.
+
+dfu-util has been tested with Openmoko Neo1973 and Freerunner and many
+other devices.
+
+* **[The official website](http://dfu-util.gnumonks.org)**
+* **[DFU 1.0 spec](http://www.usb.org/developers/devclass_docs/usbdfu10.pdf)**
+* **[DFU 1.1 spec](http://www.usb.org/developers/devclass_docs/DFU_1.1.pdf)**
+
+## RISK NOTICE
+> [!IMPORTANT]
+> THE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.
+
+## Footnotes
+* On systems that still default to Python 2, replace python with python3
+* Project is in develop, it fulls of not implemented statements that's not according to original **[dfu-util](https://github.com/Stefan-Schmidt/dfu-util)**!
+

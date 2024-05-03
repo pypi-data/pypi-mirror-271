@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: RFKO_Xsuite
+Version: 0.1.1
+Summary: A package for wrapping up some funcitonalities from Xsuite
+Home-page: https://gitlab.cern.ch/wscarpa/rfko_xsuite.git
+Author: Wesley
+Author-email: wesley.scarpa@cern.ch
+License: MIT
+Requires-Dist: xsuite
+Requires-Dist: xpart
+Requires-Dist: xobjects
+Requires-Dist: xtrack
+Requires-Dist: xcoll
+Requires-Dist: cpymad
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+## Long description file
+
+This doesn't really describe anything, 
+but it will.

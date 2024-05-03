@@ -1,0 +1,9 @@
+xsuite
+xpart
+xobjects
+xtrack
+xcoll
+cpymad
+matplotlib
+numpy
+pandas

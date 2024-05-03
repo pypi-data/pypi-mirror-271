@@ -1,0 +1,865 @@
+# Change Log
+
+ - 2024-04-29 18:38:21 +0100 [1bda322](../../commit/1bda322ccb2093c262cb65777327b1d1133d2a5a) 2.19.4
+ - 2024-04-29 18:36:37 +0100 [a3cda63](../../commit/a3cda63d40e9bf25cbd90bef76b28ad16285c2ba) #186 - explain how to maps arguments
+ - 2024-04-29 18:28:56 +0100 [389029a](../../commit/389029a6c8c20cd125333c81f758ffb718169ab9) #188 - url now uses strings - as it should!
+ - 2024-04-29 18:07:15 +0100 [4bd76db](../../commit/4bd76dbd42a84a851719b7a5a3f47176db3a189f) #190 - remove Python 3.5 support because of f-string
+ - 2024-04-29 18:04:12 +0100 [02e513f](../../commit/02e513f1607be04f031ee9387872d6666cabeb1a) 2.19.3
+ - 2024-04-29 18:02:44 +0100 [8f2e7ad](../../commit/8f2e7ad974c71a4b507eb90ddc8d0210f318ab4e) Add version 3.0 code and pinning info to README
+ - 2024-04-29 18:01:58 +0100 [b4dbc6e](../../commit/b4dbc6e8ee954ae264f72e2ac38d4f9c47201e19) more api endpoints
+ - 2024-04-29 18:01:25 +0100 [63f1839](../../commit/63f18392d3346924f81e59e681a877a940cbd656) now that AI methods are in library - no need for CLOUDFLARE_API_EXTRAS code
+ - 2024-04-18 16:35:32 -0700 [0c1fb92](../../commit/0c1fb926b0bf0595b025272b9e80bc77ed7c5ad3) more api endpoints
+ - 2024-03-19 15:02:14 -0700 [839ac32](../../commit/839ac3206320206178fd67438a52e0f4357f3903) remove f-string for Python <3.6 compatibility
+ - 2024-03-11 22:25:20 -0300 [ab8a1aa](../../commit/ab8a1aaa189ac5afdab20f966ef44fd675e1437b) added documentation urls, etc for pypi
+ - 2024-03-11 22:21:01 -0300 [fc0e111](../../commit/fc0e1111e1824ea8c78cda43530b51343fb0a348) finally removed the VOID calls, added /ai/run endpoints
+ - 2024-03-04 19:50:56 -0500 [56ffcfc](../../commit/56ffcfc1557610ae4d18eb305fbeb418966f038e) still testing docs
+ - 2024-03-04 19:46:21 -0500 [82d2dcb](../../commit/82d2dcb2f8dc51bc72e3bca455bba38c55e66f8b) added more download stats
+ - 2024-03-04 19:32:03 -0500 [1ae9c2a](../../commit/1ae9c2aa7a67f8f15bce6cdabc3a2b71a8744c11) still testing docs
+ - 2024-03-04 19:29:14 -0500 [f9b565a](../../commit/f9b565a772c1ff06b2ed8a432734fa67ae2b24bc) added download stats
+ - 2024-03-04 00:02:19 -0500 [984284f](../../commit/984284f563e90c91e296a0c5d5d2f65dad9f8a4e) still testing docs
+ - 2024-03-04 00:01:25 -0500 [cf2b3d7](../../commit/cf2b3d7b6630f677e9224ed91ea4b8d462fbdd92) still testing docs
+ - 2024-03-01 12:05:09 -0800 [26f6af8](../../commit/26f6af8bc79ab6c3c8c0c8526a73012d46350c0d) still testing docs
+ - 2024-03-01 11:39:45 -0800 [35c0e06](../../commit/35c0e068df3459f6cfcb4c39cadd15f526386e4c) start of longstanding need for documentation, update of copyright string
+ - 2024-03-01 10:15:38 -0800 [4fe03ee](../../commit/4fe03eed3c7bcc2130846b1be6ea4c9427a1bb99) readthedocs initial setup - long overdue
+ - 2024-02-26 23:33:35 -0800 [77fee2e](../../commit/77fee2e5fcf9e3246f6f2d9f194dbb65e54cdcf4) pylint fixes
+ - 2024-02-26 23:30:57 -0800 [e7cc964](../../commit/e7cc96452fb84338525ed1537e3523157ba634de) moved all requests code/exceptions into network where it belongs, import cleanup, exception handling cleanup
+ - 2024-02-26 23:20:06 -0800 [dbaf7d6](../../commit/dbaf7d67c53e0baaf7a1ab6f33ee860c50672686) handle python < 3.10 to get utc time correctly
+ - 2024-02-23 16:47:01 -0800 [036c5ed](../../commit/036c5edeac4d40e8bd9584541ce4a84f2e686d20) document cli4 having --header flag
+ - 2024-02-23 16:39:32 -0800 [6eed220](../../commit/6eed2201254769b9bbcea69252fdad51bae62aa2) cli4 has --header flag, plus http_headers needed some more syntax checking
+ - 2024-02-22 19:03:24 -0800 [dec9835](../../commit/dec98352d027e205bed762bebdbc8ea0eecbd7c5) added Python 3.5 note
+ - 2024-02-22 15:10:24 -0800 [b3cf637](../../commit/b3cf637c2318e6aa09150a3f5f55e5a8a90221f3) remove excessive import statements
+ - 2024-02-22 15:09:41 -0800 [c5a5587](../../commit/c5a5587abff4213ffc9fdeac515390a0982f73ee) improved date/time rfc/iso code, lint fixes
+ - 2024-02-22 13:49:22 +0900 [9dca32b](../../commit/9dca32b2eb2511ce7b5ae3585ffec17b0eab8278) CHANGELOG.md pushed to github
+ - 2024-02-22 13:49:15 +0900 [28b768a](../../commit/28b768a0d02309cef9f150bfc41cb9c3d9c2eecd) 2.19.2
+ - 2024-02-22 13:48:52 +0900 [11d1270](../../commit/11d1270b65ce089b87b029483f517c56d288bff5) typo
+ - 2024-02-22 13:37:13 +0900 [287c8a7](../../commit/287c8a790b3adf80352972d9ca63c14eab2f8c3a) CHANGELOG.md pushed to github
+ - 2024-02-22 13:36:59 +0900 [6f9e5cf](../../commit/6f9e5cf637fb743e6e9a231ac2b3e37211d492d4) 2.19.1
+ - 2024-02-22 13:34:05 +0900 [08123c1](../../commit/08123c1cb1fd49c5727c89d5bfdac95f36f01624) http_headers documentation
+ - 2024-02-22 13:14:37 +0900 [44751a0](../../commit/44751a003c33d75d73d51889728e75be4bafb7f5) fix tag name creation
+ - 2024-02-22 11:25:20 +0900 [10d8af3](../../commit/10d8af3dce16af13127cb3e7fe2688acbdca9ad0) CHANGELOG.md pushed to github
+ - 2024-02-22 11:23:43 +0900 [32d1461](../../commit/32d1461896e7a11242ac51c619b1f38ada0867c7) 2.18.1.rc1
+ - 2024-02-22 11:23:09 +0900 [a71dd35](../../commit/a71dd354fe44b8802e205767f16b92f8b0b533ab) added http_headers
+ - 2024-02-22 09:32:55 +0900 [c2c4adf](../../commit/c2c4adf2d4f75ee76bb25d82ac8628945644bd98) solidfied the Python3 only mindset
+ - 2024-02-19 16:45:40 +0900 [64f3a01](../../commit/64f3a011bb68812493c926b87a7c7b777199e5c6) brought man page up to date
+ - 2024-02-18 18:48:47 +0900 [618d02e](../../commit/618d02e546a82f1c26f483cd46bc14c808d44508) create dummy loa document on-the-fly with very-basic pdf content
+ - 2024-02-17 08:13:17 +0900 [4b2ec55](../../commit/4b2ec5520fe6cf53974f0b6ab65dad9f3c68e139) CHANGELOG.md pushed to github
+ - 2024-02-17 08:12:56 +0900 [c7d9ae3](../../commit/c7d9ae3b7055b30fc2abfbd267d489ca2a1027f4) 2.19.0
+ - 2024-02-17 08:10:02 +0900 [9135f17](../../commit/9135f1774da0e8bba0981d35d7920e238676ddc2) typo introduced before 2.18.x - now fixed
+ - 2024-02-17 08:09:18 +0900 [3901158](../../commit/3901158a1de0993b6870c03600d67d503e335195) purge_cache test - was chasing a different bug
+ - 2024-02-14 13:42:44 -0800 [ba42673](../../commit/ba42673e3957b15c024b91e56e2963c4ef4aebe8) typo
+ - 2024-02-12 14:24:48 -0800 [c5b035a](../../commit/c5b035a637a55025dabae13e0db7b6aa30e32439) CHANGELOG.md pushed to github
+ - 2024-02-12 14:24:13 -0800 [b2ec8f7](../../commit/b2ec8f7e7e92d3319555adc1384ea2326c5b9618) 2.18.2
+ - 2024-02-12 13:18:19 -0800 [6245faf](../../commit/6245fafc1b42b514f79ad79239fb483d5711b3b7) coverage should only be CloudFlare/*.py files
+ - 2024-02-12 11:10:29 -0800 [6c309ec](../../commit/6c309ec74aeb8398e84ceaccd57efd2486a504af) when more than one Content-Type is recommended try to make a good choice
+ - 2024-02-12 10:03:18 -0800 [bf93a19](../../commit/bf93a1942ed82835d30113d3d0647dc08d175275) one more %r needed
+ - 2024-02-12 10:02:49 -0800 [664c992](../../commit/664c9920f6184956048cd2801e4e22b1bdfe2ae6) add error print for error chain - to test that code
+ - 2024-02-11 12:03:50 -0800 [212c080](../../commit/212c080f2d241f375e01777ef24088ab9be24dd6) more api calls
+ - 2024-02-10 22:43:29 -0800 [eeb1355](../../commit/eeb1355a00a1773f007820c51865effd129277af) Issue182 triggered some rethink of the exception code plus some longstanding cleanup
+ - 2024-02-10 22:26:12 -0800 [9f8fe7a](../../commit/9f8fe7aae4929623aea112706830ac72d3f45ce9) cleanup error message
+ - 2024-02-10 18:33:24 -0800 [60c67b6](../../commit/60c67b6b05ecc48958bc77a54a87aa9540b0096b) print error before assert
+ - 2024-02-10 15:21:38 -0800 [1acba51](../../commit/1acba516a8e6ca50ec708ff966eae1c6f3f57ae2) typo
+ - 2024-02-10 15:21:04 -0800 [5a314b1](../../commit/5a314b17b45a05a73ca31c9a16eabc7608d64b2b) CloudFlare/tests/test_find.py
+ - 2024-02-10 15:12:38 -0800 [4a8c255](../../commit/4a8c25559116ac7a87dad26f5933613fbf0017fd) cleaner AI examples using find() call
+ - 2024-02-10 15:11:05 -0800 [6f38180](../../commit/6f381806cf534820b4cc3d1b38c4a4054c7d9b8c) cleaner AI exampled using the find() call and/or sanitized calls without at-symbols
+ - 2024-02-10 15:00:34 -0800 [e588f6b](../../commit/e588f6b8fc43ff84f507bed5429edf6fbbc301b7) cleaner sanitize code for keywords, dashes, at-symbols. Cleaner API Exception returns. Added unified find() call to reduce code
+ - 2024-02-10 12:37:38 -0800 [abcdcee](../../commit/abcdcee61d506932c7a84b8a79a653e838141146) improved error message - minor
+ - 2024-02-09 16:32:14 -0800 [0e7bbec](../../commit/0e7bbecce85dd0ebe0ff0e25a7ea70ccc795ef7e) cleanup of _content_type value - not needed if None, which is the default
+ - 2024-02-09 13:25:10 -0800 [07348fe](../../commit/07348fe1fae35da8e052048b5a76a7814fca381a) CHANGELOG.md pushed to github
+ - 2024-02-09 13:24:46 -0800 [742c156](../../commit/742c15613ac0cf7762ccad53a54422a81afcfc7d) 2.18.1
+ - 2024-02-09 13:20:06 -0800 [2a3e059](../../commit/2a3e059df6a7f4e46c575c86030a90184c4b8917) add data and files to be present - which is not normall legal, convert code from dict to set for files data to improve requests() handling
+ - 2024-02-09 13:19:08 -0800 [10455f3](../../commit/10455f38d8d55665e5c3b007673cff73ce040d86) handle --form with set() - was missing
+ - 2024-02-09 12:14:25 -0800 [719c1f9](../../commit/719c1f96f0004184d55e30638be6a77cdbc257f2) cleanup of version checking code for readability
+ - 2024-02-09 11:32:08 -0800 [299ef93](../../commit/299ef93ec76b009e570beca417a851a30312dc70) CHANGELOG.md pushed to github
+ - 2024-02-09 11:31:47 -0800 [5de022e](../../commit/5de022e4c79817e99bf0119f72c2df657d2f41a6) start using mypy for a checking source code
+ - 2024-02-09 11:30:55 -0800 [61e8108](../../commit/61e810847fb47fe7d10b4db14cd746b6d3b25954) 2.18.0
+ - 2024-02-08 17:17:07 -0800 [99d4228](../../commit/99d4228005df9ee479587e58e6296932c8cf6e9b) now prints correct --form data in all cases
+ - 2024-02-08 17:07:29 -0800 [a7e1b77](../../commit/a7e1b777c68f24f78201c8ec5717690cd360b06a) handle versions 2.14.2 or below or 2.17.0 or any version above that
+ - 2024-02-08 16:44:05 -0800 [4bd5e3f](../../commit/4bd5e3fe6b6768a631fa9ac555bd4d15d687009b) example for /accounts/:id/images/v2/direct_upload
+ - 2024-02-08 14:19:04 -0800 [0a9cc41](../../commit/0a9cc412388298c84b2c4695b2cd75ed503e8a2e) passing params as files for multipart/form-data type APIs needed some work
+ - 2024-02-08 14:11:49 -0800 [cd078fb](../../commit/cd078fb4264664ddee723c088c28abc97075f08d) improve debug prints. handle all the files debug formats
+ - 2024-02-08 14:08:37 -0800 [cec7f5a](../../commit/cec7f5a074826327eee954057f2c73d6a7c18c47) added comment to remind how data/json/files behaves
+ - 2024-02-03 11:08:43 -0800 [397ee01](../../commit/397ee018c281ec34c520ef32019705e7a4a7185a) make more generic vs mp3 only, add many clips to default clips (including French clip)
+ - 2024-01-25 22:15:19 +0000 [bb5e1ac](../../commit/bb5e1ac4c7a12793fa5feda3a80bff902179a5e3) minor edit to handle mypy processing
+ - 2024-01-25 20:14:58 +0000 [5907454](../../commit/5907454784d24e963d127a9a6fd8e0bcbf9cd956) damn typos!
+ - 2024-01-23 13:42:33 +0000 [b721505](../../commit/b7215055df2abad96523ad56cf3f383b4bf83f7c) PEP8 edits via pycodestyle
+ - 2024-01-22 22:42:30 +0000 [e90d38e](../../commit/e90d38eaa5ab40bca52d93d81bf1b7549ab70bda) handle case where zone and account disallow load balancing
+ - 2024-01-22 22:29:06 +0000 [cf595ab](../../commit/cf595ab09a0f1da8146217229655c75709f77071) CHANGELOG.md pushed to github
+ - 2024-01-22 22:28:12 +0000 [fadbace](../../commit/fadbace4bbbb47e30089984b0fc88481249904c5) 2.17.0
+ - 2024-01-22 22:27:13 +0000 [ee72509](../../commit/ee725093486668f380a59cf68f208da110950cf6) make 4xx error handling more generic
+ - 2024-01-22 22:26:13 +0000 [ea9e609](../../commit/ea9e6094480612747c557a27148f6e7549537b52) testing load balancers becuase they return 412 HTTP errors
+ - 2024-01-21 17:38:08 +0000 [e09b075](../../commit/e09b075e740322382e15c67c01e519b3d9609370) debug messages line lenght needs to be longer so that error return messages are shown clearly
+ - 2024-01-20 18:21:28 +0000 [3b8e699](../../commit/3b8e69997a538e030fb63da1c8a81c4e65ca345b) issue-181 HTTP response code 412 not handled
+ - 2024-01-12 12:34:07 -0800 [2da9a7b](../../commit/2da9a7b56b3140c2d47d70f52ea8265d5b9d6dd4) handle 404 errors with invalid API error structure
+ - 2024-01-12 12:33:24 -0800 [f39b3c1](../../commit/f39b3c1824d52b09fa0b7aeeeb1f03a3750d5c9f) test get/put/patch/delete and post with no data - all expected return error
+ - 2024-01-12 11:42:56 -0800 [6acca0e](../../commit/6acca0ef657d703298a735011087619630897ab0) now testing api calls with four id values
+ - 2024-01-12 11:06:44 -0800 [604d2bd](../../commit/604d2bd96dd90e5c6638f8b01169dafbf1a23a35) now testing api calls with three id values
+ - 2024-01-12 11:05:06 -0800 [1a5a859](../../commit/1a5a8599b07e128f8834aa765537937e1d2974b7) improve error message responses for 400-405 http reponses code - they now decode Cloudflare error values
+ - 2024-01-11 15:32:09 -0800 [e3b2631](../../commit/e3b26318cb334f913b4c1c4c4d29be4cde80b8ab) tuna tweeks, coverage html added
+ - 2024-01-11 13:44:54 -0800 [dc18d57](../../commit/dc18d571b3533a69c2dfdc39fc25a97b7ff58977) lint found minor stuff
+ - 2024-01-11 13:44:19 -0800 [c7658a3](../../commit/c7658a38ee5143f06a5a99ea3201fdebc4487a6f) lint found minor stuff, fixed longstanding _parts list size
+ - 2024-01-11 11:48:33 -0800 [1ba1ca5](../../commit/1ba1ca5d6a209115a4c58b4673cc9d20fe887c30) lint found minor stuff
+ - 2024-01-11 11:47:37 -0800 [dbec555](../../commit/dbec555e4151cd8db0ef78b8ea79c04af4f2bca6) added lots of %s %r tests
+ - 2024-01-11 11:39:06 -0800 [e44bf75](../../commit/e44bf75ce6b4138c7b308bc91ae1d481a9bf8f16) lint found minor stuff
+ - 2024-01-11 11:38:12 -0800 [0ac418b](../../commit/0ac418bdec9b39f4a2990a54a3cc314c8a259386) updated lint rules
+ - 2024-01-05 15:44:19 -0800 [3d9f960](../../commit/3d9f960b7eef90f533e418007f062fc52b0cfcbf) cleanup of application/octet-stream duplicate code
+ - 2024-01-05 15:24:29 -0800 [cbf250f](../../commit/cbf250f71c1695ff8c66973b374e6cbcc3221ec2) /accounts/:id/urlscanner/scan/:id/screenshot returns a binary object - a png file
+ - 2024-01-05 12:39:27 -0800 [231b7a7](../../commit/231b7a7197fcc8c47aa44c901a409e4532e683d4) handle zero length content responses (normally 204 returns to delete)
+ - 2024-01-05 12:38:47 -0800 [ed08910](../../commit/ed08910ec5a4f5ec9dc9484cfdd19c5bf1770acf) testing rulesets where response is None to delete
+ - 2024-01-04 15:43:43 -0800 [26893b2](../../commit/26893b205f120f762d8ee3c462ce5c03237c9547) CHANGELOG.md pushed to github
+ - 2024-01-04 15:42:32 -0800 [ce080f3](../../commit/ce080f3da8061dabbc0fc1604e92eaba4f0a4cf1) 2.16.0
+ - 2024-01-04 15:42:09 -0800 [f2441b1](../../commit/f2441b1f2320840fed526d81370cbde5f00d8b4e) added CloudFlare/tests as a package - a better place to keep tests
+ - 2024-01-04 15:39:18 -0800 [401149c](../../commit/401149c20e074b824fc8f4467c92b08fa327f568) return http code 200 and more 2xx now accepted, check for decode() errors
+ - 2024-01-04 15:37:25 -0800 [68ab29c](../../commit/68ab29c6a6d8963025bfb29ba1908881edbb93a7) confine account to first one
+ - 2024-01-04 15:36:51 -0800 [7e88785](../../commit/7e88785a2439f76f7e9e6264d34f200550e6c4c6) testing pdf uploading and downloading
+ - 2024-01-02 09:00:43 -0800 [6ba9ced](../../commit/6ba9ced49892023377cff9298d652a6dbc857d0f) cleanup to show correct sequence of firewall and filter creation and deletion
+ - 2024-01-01 17:30:17 -0800 [8a04e95](../../commit/8a04e956687e42dafd244d65cb4eb32fa05f10ca) now builds TABLE-OF-COMMANDS.md
+ - 2024-01-01 17:29:31 -0800 [0c85423](../../commit/0c85423812fec5bd8720292259b189175da99590) more table - based on examples/example_list_api_from_web.py
+ - 2024-01-01 17:21:23 -0800 [38ea7a2](../../commit/38ea7a2cf476d098b4d391ae3fbc3eaec25ade67) moved to api_from_openapi()
+ - 2024-01-01 17:11:09 -0800 [f42454b](../../commit/f42454ba2b3e269d64e44126f364338865d88b1b) update email examples to reflect newer api
+ - 2024-01-01 13:09:11 -0800 [e6d9692](../../commit/e6d9692dfa29e12bcb4656b4c8542ae023a6ae9d) added workers create and delete
+ - 2023-12-31 16:55:20 -0800 [2ff132d](../../commit/2ff132db5e276238e387baaca11d96bdd62a477d) test invalid dns records
+ - 2023-12-31 16:19:21 -0800 [26a90c3](../../commit/26a90c3703d0960c7a6d8b78170a520f2408d157) more tests - invalid types and string returns
+ - 2023-12-31 16:15:12 -0800 [8dbf8cd](../../commit/8dbf8cd2cbcbccdbb28eb84b24345e6254089c26) force check for None on email/key/token/certtoken
+ - 2023-12-31 12:42:47 -0800 [e7224a8](../../commit/e7224a844c48abc7668ef5c8672654a14e3d81f7) /graphql tests
+ - 2023-12-31 12:04:15 -0800 [28a3fd7](../../commit/28a3fd7a686e6050f0aee3cf23d604c4c89aa0a9) incorrect coding of /zones/:id/logs/received/fields
+ - 2023-12-31 11:34:41 -0800 [0487170](../../commit/048717072aa7bef0b4826cd3fbb761f2fdd7fa09) typo
+ - 2023-12-31 11:11:43 -0800 [3124aa6](../../commit/3124aa6b0d999d8e7d2c3248cc241d58c878fc1a) easier date code
+ - 2023-12-31 10:47:45 -0800 [08d9d4c](../../commit/08d9d4cb5ea721f8e69ceb15799e82143bb77ef6) test raw=True calls via listing zones
+ - 2023-12-31 09:44:48 -0800 [0b6271a](../../commit/0b6271aebfbe77e099f42db5b7f46355dcfe295e) moved /tests to /CloudFlare/tests
+ - 2023-12-31 09:37:34 -0800 [74c7ce0](../../commit/74c7ce0920a67f34dde5a3cd7c6edd5a5fb42c8f) removed api_decode_from_web.py as the old api.cloudflare.com website has gone away
+ - 2023-12-31 09:36:06 -0800 [5795d40](../../commit/5795d4041b7107d16858804346ca96d4cf50850b) moved /tests to /CloudFlare/tests. Removed find_package - as it was installing /tests and conflicting with other packages
+ - 2023-12-31 09:33:59 -0800 [5622686](../../commit/562268622c679e261b405838708e93f3d78e3b0c) tests more return values
+ - 2023-12-31 09:33:05 -0800 [fb245ee](../../commit/fb245ee77f180cfb0401a6a1a19ff567aa446d18) OpenAPI code now returns clean errors and version number. cli4 prints fetch errors cleanly
+ - 2023-12-30 18:13:09 -0800 [d6cd999](../../commit/d6cd99988ff17af1c070c79b8d141e51e01fb51c) moved tests to under CloudFlare
+ - 2023-12-30 18:06:31 -0800 [5390d3d](../../commit/5390d3d5c81d6395de043c5c2084a49b8a6c8408) typo
+ - 2023-12-30 17:48:41 -0800 [609044f](../../commit/609044ffe134b098596ae33b0bfd61c049f3d34f) markdown cleanup
+ - 2023-12-30 17:21:07 -0800 [8c53a8a](../../commit/8c53a8a59db60e197716c7895c80b2941c07aa65) openapi url now in code where it belongs, args checked for type str, logging messgaes for various errors, http error code 400 & 429 handled
+ - 2023-12-30 17:16:24 -0800 [53af1a2](../../commit/53af1a2b0717d36bf3ec598d6030bf229f732b55) --openapi call now with optional argument as url is built into code
+ - 2023-12-30 17:15:35 -0800 [5558e19](../../commit/5558e19c1c65b468034fe3ab2c78ac92e0a6958b) all tests now similar structure, callable from command line, debug on by default for command line calls
+ - 2023-12-30 17:12:16 -0800 [b2c3eaa](../../commit/b2c3eaa581a25ea81f0e07d3898e2e7041a95495) move OPENAPI_URL into code where it belongs
+ - 2023-12-30 16:42:11 -0800 [e8ba3e3](../../commit/e8ba3e3c5b1193178efcf69ddc3baeac468b9338) only create one logger - longstanding issue solved
+ - 2023-12-30 16:09:50 -0800 [e460d78](../../commit/e460d7808fd83c8fb93499a7fead7b893c968557) added openapi_url config - rarely used outside of development
+ - 2023-12-29 14:12:05 -0800 [4383548](../../commit/4383548771b214862150b0c2bcd59fd516a56125) deal with /certificates case - which is unique
+ - 2023-12-28 14:02:39 -0800 [98c0526](../../commit/98c0526d92e517804dad136e6b8dbe638e654b5b) do not run tests if nothing has changed
+ - 2023-12-28 14:02:09 -0800 [4a8626f](../../commit/4a8626f9a20e2bd4781dd5f9b386010d1431ee02) make zone choice random, add delay for import as it is rate limited
+ - 2023-12-28 14:00:53 -0800 [3b17a03](../../commit/3b17a03d67d4f7d6b82b5cda2da3b56e7bf3055b) remove excess code
+ - 2023-12-28 12:38:27 -0800 [678b70a](../../commit/678b70a5d539dc6e87e59b75550ff3fcef625631) moved to use tempfile.TemporaryFile so more portable over many systems
+ - 2023-12-28 12:32:05 -0800 [01ebc72](../../commit/01ebc7286eddb67387b49f06939ebd8075d45fe2) moved to use tempfile.TemporaryFile so more portable over many systems
+ - 2023-12-28 11:59:04 -0800 [6b1cbe4](../../commit/6b1cbe4e446f877fad61f5b2d7cc60e2faeddad7) CHANGELOG.md pushed to github
+ - 2023-12-28 11:58:34 -0800 [aac4e6f](../../commit/aac4e6f1ee520f42c7ffa7fbf92195f955f27ea1) 2.15.1
+ - 2023-12-28 11:58:00 -0800 [fddc424](../../commit/fddc424adb7d9bb7d205bb8aedcf6bbd1d9536eb) fixed a bad edit from 241af4d which stopped data being send on PUT/POST/PATCH/DELETE
+ - 2023-12-28 11:49:45 -0800 [62eb860](../../commit/62eb8602e979ff7437728727444f3332c2f21b4b) example of purge_cache for free or enterprise accounts
+ - 2023-12-27 11:53:31 -0800 [64ee01b](../../commit/64ee01b4df74b4847e378485659d98a49c0d72a7) CHANGELOG.md pushed to github
+ - 2023-12-27 11:50:33 -0800 [6153da0](../../commit/6153da03fde5ab5c4869d6e021d9f8f0cf22826f) 2.15.0
+ - 2023-12-27 11:49:53 -0800 [d6ae4ea](../../commit/d6ae4eaed86bb8e3df4a68a91ccfdb2cd3ea032d) added Content-Type processing on add, removed old api web checking (hence remove bs4), refactoring of all add methods, network now handles data/json cleanly, results returned based on Content-Type via new code, setup/requirements removed BeautifulSoup/bs4
+ - 2023-12-26 15:18:00 -0800 [91bd97d](../../commit/91bd97d1778e533832ea06dd798deb4cd4c69eaf) corrected missing tests; added debug test - useful for coverage
+ - 2023-12-26 15:17:07 -0800 [25c981a](../../commit/25c981ad37bedb3156b414a8dca23988864e790f) test cf.add()
+ - 2023-12-26 15:16:44 -0800 [edf9e51](../../commit/edf9e511857ede29420c687ee142b8c17b7cecaa) complete rewrite - maybe better; maybe not; however, test runs are nicer to look at
+ - 2023-12-26 11:09:14 -0800 [61ca2d6](../../commit/61ca2d6ee7846403f892ea5a763ca67d9ae37458) automate the list of aliases - far better for future
+ - 2023-12-26 09:50:44 -0800 [75234ea](../../commit/75234ea40aff1d29860c386ec64db43b1a521854) Allow PUT and POST to both send files, move params into files when both types used
+ - 2023-12-25 16:17:21 -0800 [fc74b5a](../../commit/fc74b5ac5e5085763dae72e4a45641912e02b1b4) more test cases
+ - 2023-12-25 16:16:37 -0800 [a42d836](../../commit/a42d83616557376865990cd3af44c39ddc785765) more test cases
+ - 2023-12-25 12:56:15 -0800 [945afcc](../../commit/945afcc8ee9192b274e5800f35dfe70b89215176) more test cases and moved pytest to pytest with coverage
+ - 2023-12-25 12:54:04 -0800 [08da722](../../commit/08da7224adf0574729a242e9e8bb6090a193eccf) __init__.py needed for coverage to work
+ - 2023-12-23 16:23:36 -0800 [42d8a62](../../commit/42d8a62e48d78670d666e9076418e22994989467) added more AI examples
+ - 2023-12-23 10:26:50 -0800 [241af4d](../../commit/241af4dd12d5285f789d9c4a626c45dc66e4d905) cleanup of params vs content
+ - 2023-12-21 14:20:44 -0800 [57e9c0f](../../commit/57e9c0f10671b72be84db6c4ff302b4792ba8a43) updated to handle new keyword handling method
+ - 2023-12-21 14:15:59 -0800 [6769d9f](../../commit/6769d9f2678cca64737d108df9093b8f818e9ea2) updated to handle new keyword handling method
+ - 2023-12-14 17:40:29 +0000 [d7ca6d1](../../commit/d7ca6d1ba1a7e84ea843095d33f5eb55add7afdb) Added first pass at Content-Type processing from openapi data
+ - 2023-12-13 14:01:10 +0000 [d141d87](../../commit/d141d872876c4d3e88449c54fcdf246caee7343d) CHANGELOG.md pushed to github
+ - 2023-12-13 13:59:55 +0000 [9b0787e](../../commit/9b0787efa929d374392e9db4f6fcec05700de0fe) 2.14.3
+ - 2023-12-13 13:52:53 +0000 [ab6f4db](../../commit/ab6f4db695c8666489491abb503ada59f3c30f49) handle {account-identifier} with a dash vs underscore. Arggg!
+ - 2023-12-13 13:52:03 +0000 [f445051](../../commit/f445051a99a9b933e4b7ddf50ba82d477b3f74b1) /live added - but does not response yet
+ - 2023-11-25 20:05:23 -0800 [5b7b386](../../commit/5b7b386b91700d21cd24f5cefbcb90c6f08ccd45) CHANGELOG.md pushed to github
+ - 2023-11-25 20:04:41 -0800 [b80db60](../../commit/b80db60510874da0a268af10bd1f89cd109707f4) added AI info
+ - 2023-11-25 19:43:28 -0800 [c88bbfa](../../commit/c88bbfaec951db80130cdc3404801c29680c6c05) account name via -a flag now. should not be needed
+ - 2023-11-25 19:26:44 -0800 [3621a4d](../../commit/3621a4d18919f65a8f5b8979e76d3a0bd453fd12) clean up and more
+ - 2023-11-25 19:25:59 -0800 [282aa54](../../commit/282aa543947fe87aa16687a94a88a780a3883b1f) stable diffusion example
+ - 2023-11-25 19:25:07 -0800 [3e40a69](../../commit/3e40a69089db1c3f567117768e34e2a7247e2a01) clean up and more
+ - 2023-11-25 15:14:00 -0800 [1eeca98](../../commit/1eeca983753691186490dde261ffa69e6c731d2f) move config info into code
+ - 2023-11-25 15:00:14 -0800 [d79b0ec](../../commit/d79b0ece436b66daf210a25d90fc25333d52803b) first pass a new AI API calls
+ - 2023-11-25 13:06:07 -0800 [115fac8](../../commit/115fac8f32284e96df36ea98b0cdf5a416cdff56) CHANGELOG.md pushed to github
+ - 2023-11-25 13:05:33 -0800 [bf47169](../../commit/bf471698839dd7910480133620cfaecfe1e7c2ba) 2.14.1
+ - 2023-11-25 13:05:09 -0800 [d5f707d](../../commit/d5f707d2a9916ae8e860219a3f4dbaf8d3a2d1f8) cleanup of usage, added more flag descriptions
+ - 2023-11-25 13:04:33 -0800 [d23ed90](../../commit/d23ed909706259e8297fc5497b59cb41f32ffbb5) cleanup of usage and getops values - now consistent
+ - 2023-11-25 12:42:24 -0800 [142a01b](../../commit/142a01ba26f4600b375f0678c92226870d01368b) timeout values now work from config or api call, added support for image binary results, fixed logging if binary
+ - 2023-11-25 12:39:05 -0800 [453fed3](../../commit/453fed3e3c4d60946b5519bd236a983d9dcce272) handle raw byte output either via --image flag or if return from api is bytes
+ - 2023-11-25 10:22:15 -0800 [e08610b](../../commit/e08610bfaa5958c25f6dadb7c9a3842b7fe42793) CHANGELOG.md pushed to github
+ - 2023-11-25 10:21:56 -0800 [807f99b](../../commit/807f99bdd5e524da14b376f382622d14e77216c9) 2.13.1
+ - 2023-11-25 10:17:37 -0800 [7dd1888](../../commit/7dd1888758a88cccd8daed9fcac9867608d1d26a) Merge pull request #175 from Daic115/master
+ - 2023-11-25 10:10:15 -0800 [838ef13](../../commit/838ef13b811e1aed3ed498ee34e959fc42d2b102) remove Unicode from README - this caused issues on Windows install
+ - 2023-11-25 10:06:52 -0800 [cd6f7d1](../../commit/cd6f7d1cad868d105e5d27f0a2b4653d9ab9efdd) CHANGELOG.md pushed to github
+ - 2023-11-25 10:06:36 -0800 [541c8f6](../../commit/541c8f6983463bca0de98b57af370b2150e64133) 2.12.5
+ - 2023-11-25 10:06:19 -0800 [2610c98](../../commit/2610c98795703942cf7bf22b6e5cd3c278515414) more api endpoints
+ - 2023-11-15 15:58:23 +0800 [4524c50](../../commit/4524c5053c20c830093a35641f4f9a74210e997e) Update setup.py
+ - 2023-09-21 18:45:16 -0700 [419c90b](../../commit/419c90b24692c9a426c0d47c01dea4358f1fe909) 2.12.4
+ - 2023-09-21 12:18:54 -0700 [1982e4e](../../commit/1982e4ed03eac6614da51ee55de47f372551ca73) 2.12.3
+ - 2023-09-21 12:17:12 -0700 [4180462](../../commit/41804623aa6725cf677f29ccadebc2651f4aa798) added ips and issue114 tests
+ - 2023-09-21 10:33:13 -0700 [0cbfbd3](../../commit/0cbfbd3aca7ae409042d41ada8412208d87bc1d2) add importlib_resources info for older Python versions
+ - 2023-09-21 10:11:06 -0700 [b5aae7e](../../commit/b5aae7eb3ee51160e0529bd375d1c842e28a1c96) Merge pull request #156 from UsamaSadiq/remove-future-dependency
+ - 2023-09-21 10:10:57 -0700 [5b3e687](../../commit/5b3e687d80a7283dee1e8782a32c83d266ced061) Merge branch 'master' into remove-future-dependency
+ - 2023-09-21 10:03:51 -0700 [4e9eb55](../../commit/4e9eb55f7dfbc382ab07e504b4df4aa4965bc609) Merge branch 'UsamaSadiq-remove-future-dependency'
+ - 2023-09-21 10:03:38 -0700 [e715dd7](../../commit/e715dd707c086194fac85299568b934275b5df40) UsamaSadiq-remove-future-dependency - remove future
+ - 2023-09-21 09:52:22 -0700 [57fac2f](../../commit/57fac2fa1e234898aff130b55737bea38eb42d51) Merge branch 'BjoernPetersen-fix-invalid-escape-sequence'
+ - 2023-09-21 09:51:55 -0700 [2bccbb9](../../commit/2bccbb9988e9b193724bc74005e72ebdd623f726) Merge branch 'fix-invalid-escape-sequence' of https://github.com/BjoernPetersen/python-cloudflare into BjoernPetersen-fix-invalid-escape-sequence
+ - 2023-09-19 12:24:33 -0700 [65a7e3d](../../commit/65a7e3d565be62154c6990f2ae76ef2ba0e4e61b) CHANGELOG.md pushed to github
+ - 2023-09-19 12:24:18 -0700 [4b2254b](../../commit/4b2254bc24a2e87d937543efbfe06d54e3f4e4f2) 2.12.2
+ - 2023-09-19 12:23:45 -0700 [483a20b](../../commit/483a20bf6448a52dd5182ed0de9cead5acbc947f) more api endpoints
+ - 2023-09-19 12:13:49 -0700 [e3555cf](../../commit/e3555cf70abaa37d39c086b8d081e6859e0ed35e) 2.12.1
+ - 2023-09-19 12:12:22 -0700 [0f0a8a0](../../commit/0f0a8a04f0ce02ab8fdf42583256133e327e9e4c) Merge branch 'dkoston-requests_timeouts_and_retries' Added dkoston's network code to manage timeouts and retry's
+ - 2023-09-19 12:10:19 -0700 [ca72137](../../commit/ca72137d0a42c27f65929eac2df23b9632979881) Merge branch 'requests_timeouts_and_retries' of https://github.com/dkoston/python-cloudflare into dkoston-requests_timeouts_and_retries Pull Request 173 from dkoston - requests_timeouts_and_retries
+ - 2023-09-19 09:54:49 -0700 [8076d56](../../commit/8076d560f680731a63c94d7fd90c107ffe25b4b7) CHANGELOG.md pushed to github
+ - 2023-09-19 09:54:25 -0700 [14d734a](../../commit/14d734a1dabea2eb2689f8f14779c2238b791fab) 2.11.8
+ - 2023-09-19 09:53:33 -0700 [77c275c](../../commit/77c275cf31be71c83894a0bd87c26810dac5ed05) more twine tweaks
+ - 2023-09-19 09:51:14 -0700 [aa31bb3](../../commit/aa31bb386c9658cbe15dc25c4fd9ef4860899851) Added cli4 -e option to display example file path names
+ - 2023-09-19 10:51:06 -0500 [28e4244](../../commit/28e4244bc93787bff0ea37b0a5c28cecbf1962cc) Add `global_request_timeout` and `max_request_retries` configuration options. Set default request timeout to 5s. Add basic tests instantiating Cloudflare.Cloudflare
+ - 2023-08-19 09:23:43 -0700 [0ea52bc](../../commit/0ea52bca64e6c09ff4c6823321dec501e5d34e09) CHANGELOG.md pushed to github
+ - 2023-08-19 09:23:25 -0700 [3f1404b](../../commit/3f1404b4af674554657912de91804663b91d2ed6) 2.11.7
+ - 2023-08-19 09:22:52 -0700 [94f0b0b](../../commit/94f0b0b081736a36ee27dbb0b454219fe8038121) more api endpoints
+ - 2023-07-25 16:30:40 +0200 [77400ea](../../commit/77400ea62f181dfc07f7c32d157bb5232fefefe6) Make RegEx string a raw string literal
+ - 2023-06-24 12:58:51 -0700 [d08af99](../../commit/d08af997389e426e7323e8daffd8d9049ac8cd74) more api endpoints
+ - 2023-05-29 20:19:27 -0700 [26a05cf](../../commit/26a05cfe6b71076393f568906356ea8602082e62) update examples and README to use == for numberic values
+ - 2023-05-21 10:54:24 -0700 [a930e2c](../../commit/a930e2c7f139e3aafbac8f13323d4e62bbf39496) 2.11.6 release
+ - 2023-05-21 10:53:52 -0700 [6c12eee](../../commit/6c12eee7f7e818e39303a52701a7828f587a8c6e) more api endpoints
+ - 2023-05-21 10:27:14 -0700 [891f120](../../commit/891f12032e7ca149835b881b51038996171307a0) 2.11.5 release
+ - 2023-05-21 10:25:41 -0700 [74f1999](../../commit/74f19994c75e08a869eca9ac7aac4e109549a5b0) remove --api option and leave --openapi in place
+ - 2023-05-20 11:49:22 -0700 [6d6dd33](../../commit/6d6dd33fcc547d0ea8083e19cb3636b7c0d5d84c) 2.11.4 release
+ - 2023-05-20 11:48:30 -0700 [eab68ba](../../commit/eab68ba03525bfc1ae7ee46769a0368f5d393d5d) handle quoted strings
+ - 2023-05-19 17:42:57 -0700 [9ae8cba](../../commit/9ae8cba9c7ccbe814cb944048eeb6dda908f7021) CHANGELOG.md pushed to github
+ - 2023-05-19 17:42:40 -0700 [e644136](../../commit/e644136ab20f81743d94d3097ad7312262029ee0) 2.11.3 release
+ - 2023-05-19 17:42:07 -0700 [36c40ce](../../commit/36c40cefefe69e2c8cb5037ba59c231a8431096d) handle multipart/form-data correctly for more than one file and with params/data
+ - 2023-05-19 10:58:29 -0700 [13739c5](../../commit/13739c53ec96449924a872ee589e01b7171bcf8b) CHANGELOG.md pushed to github
+ - 2023-05-19 10:58:08 -0700 [31f7d0b](../../commit/31f7d0b7d6b27bcc925d0d74f2899239ddcc4389) 2.11.2 release
+ - 2023-05-19 10:56:25 -0700 [0a0b492](../../commit/0a0b49298fea6a2bc5fb430a3385ee80ac9bf703) python keywords not handled correctly at command level
+ - 2023-02-22 20:30:01 +0500 [144cc1e](../../commit/144cc1e5313f308f391ace5c18e15d3e19998cb0) fix: remove future dependency and imports
+ - 2022-11-26 23:37:57 +0100 [08a02ef](../../commit/08a02eff29dccdf2c6bdd1d903e8c26a05955ca8) added after openapi review
+ - 2022-11-26 23:36:42 +0100 [a67ad74](../../commit/a67ad74f3f6707b9cba1eefa8be70f7cfa82dab8) added deprecated processing, now shows version
+ - 2022-11-26 23:34:20 +0100 [47c7a3b](../../commit/47c7a3bb4bf4af554995c0b7b6a9e0f720c80aad) cleanup
+ - 2022-11-24 19:04:43 +0000 [a887285](../../commit/a8872852966b4ff4674cf3c9682adf209417d48f) CHANGELOG.md pushed to github
+ - 2022-11-24 19:04:23 +0000 [4267ff9](../../commit/4267ff98cf90b6e5d7a3d802cf90f7c5bdc8deba) 2.11.1 release
+ - 2022-11-24 19:03:24 +0000 [7315385](../../commit/731538589ba736ffcc47be69784139850136694f) more api endpoints
+ - 2022-11-24 18:51:51 +0000 [b70509b](../../commit/b70509b5f3c788bd4159982881932a83381ec265) firewall rules example
+ - 2022-11-24 18:43:40 +0000 [afa8cc0](../../commit/afa8cc02d7bc3e490da0fe89ac1fe6c055a9c09c) add openapi support, added tuna for testing
+ - 2022-11-24 18:43:02 +0000 [3af9aa8](../../commit/3af9aa8fbd1c1f8d1734a8466e61fffa21796012) add openapi support, delay yaml and jsonlines load to speed up everything, other cleanup
+ - 2022-11-24 18:41:20 +0000 [dc2a6f8](../../commit/dc2a6f8c633a995bf79dde9638baacbe4d1a2254) add openapi support, delay bs4 load to speed up everything, improve requests imports
+ - 2022-11-23 21:11:47 +0000 [f7b4a8c](../../commit/f7b4a8cbc5b2d89d544c96f08fe4773fceeb9433) missing import json, speed up to import requests
+ - 2022-11-17 20:53:40 +0000 [e62e39c](../../commit/e62e39cd9673c06a3f61cbeda295a628d355f43f) CHANGELOG.md pushed to github
+ - 2022-11-17 20:53:06 +0000 [e68245e](../../commit/e68245ef7b4b31c5f58971b965984cc88d969f51) 2.10.5 release
+ - 2022-11-17 20:52:00 +0000 [72a7f55](../../commit/72a7f55857b70e7504daa13fd27f4b8c48f0fe3a) reverse usage of utf-8 in README introduced in commit da73108
+ - 2022-11-09 18:57:19 -0800 [28c0f26](../../commit/28c0f26c4dc82c67b05c07fb6c64b6b54a65598a) deprecated apis
+ - 2022-11-09 18:56:40 -0800 [85d2108](../../commit/85d21082b6f3ca61d8ce233b2d894b2dc695ddf7) spelling typo
+ - 2022-11-09 08:52:50 -0800 [58280fa](../../commit/58280fab5f936df1511232aa99f46e0487157e70) add more api endpoints
+ - 2022-11-08 12:05:35 -0800 [95878c5](../../commit/95878c5115e54123a834a6107f1f55fb099cfd09) 2.10.4 release
+ - 2022-11-08 12:01:47 -0800 [0d1575d](../../commit/0d1575d141d81cc965a64a91adaaed39591f1996) Merge branch 'issue151-missing-calls'
+ - 2022-11-08 12:00:58 -0800 [cb85a20](../../commit/cb85a20f7677110af15d6457f5bc4e58fa4a3c88) issue151 added the missing calls found on developers site
+ - 2022-11-08 11:44:37 -0800 [1302a55](../../commit/1302a5587aa80f046687c41b0e32f5954c31a90c) simplify not found message - it was overly complicated code
+ - 2022-11-08 11:42:44 -0800 [45270f8](../../commit/45270f8b4ffe55b166a1b5d26c3cd2a3c747dd4d) The error message from unused/void parts of the tree should be simpler
+ - 2022-11-04 17:06:35 -0700 [1f588a3](../../commit/1f588a331a67bb84509aa1e2876ad96c8112fd89) changed /zones/:id/logs/control to not callable
+ - 2022-11-03 15:31:45 -0700 [713e306](../../commit/713e30602d4e137b6832d1c0664807ba28b6b4ca) CHANGELOG.md pushed to github
+ - 2022-11-03 15:31:25 -0700 [accb642](../../commit/accb642794ae1928be66376f0605b7fedb43a6b4) 2.10.3 release
+ - 2022-11-03 15:30:21 -0700 [da73108](../../commit/da7310880de4f1e41f31004e36a67eaeba98f064) add /logpush/edge/jobs info
+ - 2022-11-03 15:24:20 -0700 [f511729](../../commit/f51172947bad68529120980c22924003009733ae) handle tabs and spaces in passed JSON values - longstanding issue not noted till today
+ - 2022-11-03 15:23:13 -0700 [d4ac4a4](../../commit/d4ac4a48865782069d4629e966d7dae4bbe064a8) Handle /:id/:id plus camelcase id's
+ - 2022-11-03 15:22:20 -0700 [d8ec3ad](../../commit/d8ec3ad51e043fa9f593d1a64744ac386c26142b) /zones/logpush/edge plus other API endpoints
+ - 2022-10-02 12:49:28 -0700 [6dc4d7d](../../commit/6dc4d7deea58d9bef639ef308279468686b47111) more twine moves and cleanup of setup
+ - 2022-10-02 12:48:55 -0700 [145d51e](../../commit/145d51e57116cdd209d2ef857b35b2658c603e6b) tabs vs spaces
+ - 2022-10-02 09:36:34 -0700 [aa2072f](../../commit/aa2072fdcee6617021087036be13529908678cbb) CHANGELOG.md pushed to github
+ - 2022-10-02 09:36:04 -0700 [5169f67](../../commit/5169f675a5030f223f0fd4d9ae75bb36944313b1) 2.10.1 release (now signed by mahtin@mahtin.com)
+ - 2022-10-02 08:33:06 -0700 [0d831d8](../../commit/0d831d814dc0c51a96ed57f38a237c71f050f096) Merge pull request #149 from huangsen365/patch-1
+ - 2022-10-01 22:06:39 +0800 [515dff2](../../commit/515dff27959331a7cc41be572006e78db83ca61b) Update example_dns_export.py
+ - 2022-09-30 10:05:42 -0700 [e5ebd91](../../commit/e5ebd91d85ac9e9dad3fa078447d64217c247941) /radar API added
+ - 2022-09-14 17:55:28 -0700 [96747e2](../../commit/96747e20f286f23c9c8fc03b893c8c9bf85b1881) better messages
+ - 2022-09-14 17:47:32 -0700 [4f63908](../../commit/4f63908cdbe722efd84ec75f682fb120656809af) do something useful with api listing
+ - 2022-09-14 12:30:03 -0700 [4d7962d](../../commit/4d7962d599142747d817b81f388d6829fd81a4e9) issue 148 example
+ - 2022-09-09 09:20:34 -0700 [75649ed](../../commit/75649edeff796c01154fba7dfa065cec7317b9f5) more api calls - web3 stuff
+ - 2022-09-09 09:14:00 -0700 [d4a3cfe](../../commit/d4a3cfe565deed150f0043ddca2e6883aa088ce4) cleaned up error exit processing - because it was not correct
+ - 2022-09-07 16:47:59 -0700 [b15d20c](../../commit/b15d20c9a590d93351415bb8bc9e0bdbfeec5dff) CHANGELOG.md pushed to github
+ - 2022-09-07 16:47:42 -0700 [475022a](../../commit/475022ab2470d29719dad0112f7b92a88ea710cf) 2.10.1 release
+ - 2022-09-07 16:40:59 -0700 [1f433ac](../../commit/1f433acee99a9128fe53e5099018e8f9baf8c3db) handle exceptions
+ - 2022-09-07 16:40:34 -0700 [a28a13e](../../commit/a28a13e8312c98c3824dc2c50c551ebacb563d25) handle email/key or token as per issue-114, plus fix some small issues with exception handling
+ - 2022-09-07 16:39:07 -0700 [0523914](../../commit/0523914fccd552d1e007d9a126fdc8b223020991) updated docs to handle key vs token becuase of issue-114
+ - 2022-09-07 16:38:33 -0700 [3ba3fe3](../../commit/3ba3fe3011702b2d8e69f915a01851d07c497a2a) exit with error if error in api call
+ - 2022-09-01 17:32:24 -0400 [7bcec22](../../commit/7bcec22b8088cf95a0afdd278c4c66dce485a53c) more api calls
+ - 2022-08-25 10:30:25 -0700 [56207f7](../../commit/56207f70401b39c8278f4e6ff7931251911a1653) email/routing/enabled -> email/routing/enable
+ - 2022-08-23 16:13:55 -0700 [aad464c](../../commit/aad464c87017ca7c6fa81d32c81e333ea1c3740b) more api calls
+ - 2022-08-23 16:13:18 -0700 [977aa24](../../commit/977aa2429ae63126f70a8486710a0a36a9c181aa) pesky python keyword handling
+ - 2022-08-23 16:01:07 -0700 [13c1681](../../commit/13c1681502ac334dae8bed4faf43a31d39a6aa36) more pylint fixes
+ - 2022-08-23 15:25:07 -0700 [68f3f2f](../../commit/68f3f2f0db4b1348c3838d3e82fde60c67570af9) python3 class object fix (finally), function name cleanup, identifiers/parts major cleanup, logger pylint corrrections, other pylint cleanup
+ - 2022-08-23 11:39:48 -0700 [5af934e](../../commit/5af934ebd29f4bff0632ab6518b2aa0a1963d746) silenced some longstanding (and won't get fixed) messages
+ - 2022-08-23 11:38:58 -0700 [06b1185](../../commit/06b1185b30bbdcfbc9a3052de755d8b9d80838b6) semicolon?
+ - 2022-08-23 08:10:20 -0700 [7c25e8b](../../commit/7c25e8b15089dcc065469cdfa3c7eeee846a6c6b) made getattr() logic more explicit - could lead the way to on-the-fly tree building later
+ - 2022-08-16 10:30:15 -0700 [f96d558](../../commit/f96d558b2b06cf064ceba8cd14335d23e703ea39) script_monitor -> page_shield
+ - 2022-08-14 08:46:44 -0700 [b3b875a](../../commit/b3b875ae2166fa7e1cc5aa557d5f96e8edc33b6b) http_custom_errors & virtual_networks
+ - 2022-08-13 09:04:24 -0700 [3a957f0](../../commit/3a957f04141eec8528cfd8750a3255d2ce9e52ce) CHANGELOG.md pushed to github
+ - 2022-08-13 09:02:34 -0700 [bdaa1c5](../../commit/bdaa1c5d51742399a332eca8a15dfc24fa93ec4e) 2.9.12 release
+ - 2022-08-13 09:01:39 -0700 [3f0801d](../../commit/3f0801d2889aa6ca4fda171b478b9d1e576c79b9) CHANGELOG.md pushed to github
+ - 2022-08-11 18:10:41 -0700 [184ecd5](../../commit/184ecd55e3af6cdb22b78bf10fcc4fec97a0c23f) make api cleanup - not used in production
+ - 2022-08-11 18:10:10 -0700 [49a34bd](../../commit/49a34bd2ef5cf20b4fb49fe6eb1cfda6d7dcb513) stream/clip & api_gateway added
+ - 2022-08-10 15:12:59 -0700 [9334b13](../../commit/9334b13e2046108626b87756e286ffc67ab1c0dc) examples/example_time_calls.py - just a simple timer
+ - 2022-08-10 15:09:53 -0700 [bd220aa](../../commit/bd220aacaf5aeb2e85ca22069a96f89b2cd8a9db) __del__() added - not very fancy; but cleaner network close now
+ - 2022-08-10 14:29:13 -0700 [4a5da8b](../../commit/4a5da8b8b1d47b59f636dc78799e91de587097b8) finally fixed the quotes to make consistent
+ - 2022-08-10 14:20:19 -0700 [c22db3e](../../commit/c22db3e34977451c87e92b9de581888e191d42c8) cleanup of error handling for adding api calls
+ - 2022-08-10 13:03:59 -0700 [0db4961](../../commit/0db49616ffca6a3920780a7639567cd75672106c) typo in r2 calls
+ - 2022-08-09 16:42:55 -0700 [a44aaa3](../../commit/a44aaa348952910d95f33fd1b7eb51915ecf553e) updated email api call end points
+ - 2022-08-07 14:33:10 -0700 [2ba207a](../../commit/2ba207a10f9635ea587cf1bd24d7d14f67673ecc) allow binary files for file upload via --binary flag
+ - 2022-08-07 14:11:44 -0700 [10b30c9](../../commit/10b30c9ca57fd0e937fd7b9e224d352b4864924b) some R2 calls added - there is still some calls that are not yet documented
+ - 2022-08-02 16:39:17 -0500 [85d1404](../../commit/85d1404d04c77a9187646a530b588212118bac9b) .pypirc needed for twine
+ - 2022-08-02 16:37:42 -0500 [78e9c3b](../../commit/78e9c3b361c2065778371ab2c7dc73b578abebe9) wheel typo,setup to twine for pypi,api cleanup
+ - 2022-07-06 12:43:49 -0700 [aeaec3d](../../commit/aeaec3d943a2f544280909f1ea7749a784b939cb) added .../intel/miscategorization
+ - 2022-07-03 09:28:04 -0700 [a860114](../../commit/a86011497471b4fa1698295b44eb1a9db3bc79e1) edit of "Get deployment stage logs" call
+ - 2022-06-21 18:15:15 -0700 [b0d2335](../../commit/b0d2335e20f257a5f6280fa18562912c6e6123a8) CHANGELOG.md pushed to github
+ - 2022-06-21 18:15:01 -0700 [edc7b0b](../../commit/edc7b0b23043ae8955c94000c0b037b89232d786) 2.9.11 release
+ - 2022-06-21 18:14:13 -0700 [ec9970d](../../commit/ec9970dd381e083f95c38075a93a6ecd8aa45704) user token checking example added
+ - 2022-06-21 10:10:14 -0700 [fafa4e4](../../commit/fafa4e442d3614b8f56db04217172257e0c10d97) more api calls
+ - 2022-05-19 11:04:21 -0700 [c1347aa](../../commit/c1347aa583b659290a56398eccda4e2558b4ce77) more api calls
+ - 2022-05-14 12:44:20 -0700 [ac3e2cc](../../commit/ac3e2cc4153393af3e739a77d510c8adbddb5e3e) more api call
+ - 2022-05-14 12:43:54 -0700 [97eb933](../../commit/97eb9331a8c9b1282268b7ff438d32ff1b97f8c6) started uncallable endpoint reporting - but not finished yet
+ - 2022-04-19 15:30:14 -0700 [b9b91b6](../../commit/b9b91b612d3ac8818565cc2d3aee1c00c4cea0e9) more api calls
+ - 2022-04-07 12:16:45 -0700 [9168ee7](../../commit/9168ee7b40be8b6ddbf9a4a8394ce0d5ad6bb796) 2.9.10 release
+ - 2022-04-07 12:16:01 -0700 [c9a170c](../../commit/c9a170cc5f172fd3a0d05d6ce8274391cdced4e7) fixed getless calls failing
+ - 2022-04-01 21:27:13 -0700 [966fec9](../../commit/966fec9cd1201310254bb572126414bd81f7e3c3) CHANGELOG.md pushed to github
+ - 2022-04-01 21:26:53 -0700 [efa53f2](../../commit/efa53f27bd34a8ec7c84afb11363850b17e5a2d4) 2.9.9 release
+ - 2022-04-01 21:25:23 -0700 [0bc445a](../../commit/0bc445a3b09ed84bbca8998eaad73219150a9bbf) read_config() now compatible with older and newer ConfigParser usage
+ - 2022-04-01 10:44:55 -0700 [38ec20c](../../commit/38ec20c1be595549c03cee1f28460fc0e058d47b) CHANGELOG.md pushed to github
+ - 2022-04-01 10:34:32 -0700 [756fb08](../../commit/756fb08b211c248f60d5d83bc20e0c6fa7897afe) documented the "import" keywork issue for dns_records.import calls
+ - 2022-04-01 10:33:52 -0700 [3dcf29e](../../commit/3dcf29e53c9088969cee9e1139120c3bd82bb8a1) moved to newer authentication on PyPI
+ - 2022-03-30 20:59:46 -0700 [4365b80](../../commit/4365b804ec92a8625bd4ddcdd0fb436fcab5387a) CHANGELOG.md pushed to github
+ - 2022-03-30 20:59:28 -0700 [e748c42](../../commit/e748c422da389ef831435a168cc85bad7603ec9e) CHANGELOG.md pushed to github
+ - 2022-03-30 20:59:25 -0700 [fe751a9](../../commit/fe751a9e80684d2095c3baac624d52f9bd606430) 2.9.8 release
+ - 2022-03-30 16:17:41 -0700 [7b763f1](../../commit/7b763f1b57b076fcafce90664f919149ad4280f0) custom_csrs added
+ - 2022-03-30 16:04:28 -0700 [cbeee2c](../../commit/cbeee2c8c4bf0996ee28b4bb0c80707775e6a84b) #136 pointed out that the config file profile name has a capital F in it. Now it takes lower case "f" value
+ - 2022-03-30 15:41:14 -0700 [da1645c](../../commit/da1645c8aca27544b579029b3767369a94611d36) CHANGELOG.md pushed to github
+ - 2022-03-30 15:40:52 -0700 [38886f9](../../commit/38886f94b9e30abed1c09e66514b25011c100d4d) 2.9.7 release
+ - 2022-03-30 15:40:34 -0700 [f9486e6](../../commit/f9486e61e7e9bae4133e2b46436969969fbcedf7) Described the change to the enviornment variables
+ - 2022-03-30 15:29:45 -0700 [2c4ee60](../../commit/2c4ee603f53aab555aba764ad95b65bf2da012f1) config file processing was messed up
+ - 2022-03-30 15:28:39 -0700 [456ab7f](../../commit/456ab7ff528d1d3af9e5ecb09e14c136d51d634e) more api calls
+ - 2022-03-30 13:48:59 -0700 [c01370b](../../commit/c01370bd95772806a6445f28c4fa3af88c4e99ef) Merge branch 'Changaco-patch-1' Changaco patch-1
+ - 2022-03-30 13:48:19 -0700 [9c73821](../../commit/9c73821e68dddaf78585f5c8963ee0869bd0619d) Merge branch 'patch-1' of https://github.com/Changaco/python-cloudflare into Changaco-patch-1 Changaco patch-1
+ - 2022-03-30 13:45:11 -0700 [b5e7356](../../commit/b5e7356b9168958e9b3017210ef42a999b887506) print() was outdate - from pull #120
+ - 2022-03-30 13:35:48 -0700 [955430c](../../commit/955430c0c9b980a806fe9492ddef24c362a03524) example for email commands - shows the use of underscore vs dash
+ - 2022-03-30 13:23:03 -0700 [6f8ef61](../../commit/6f8ef6133d85c572d58eccf0dc134289e3a1b66c) Merge pull request #132 from phntom/master
+ - 2022-03-30 13:16:48 -0700 [f3dd7ae](../../commit/f3dd7ae3d1a1dbde554cdcde5c48bfa416eefc98) Merge pull request #133 from JaredPage/add-bot-management-handle-null-errors
+ - 2022-03-30 12:30:05 -0700 [5f444bc](../../commit/5f444bcde8014249d84aafe56a484dc8d917259b) CHANGELOG.md pushed to github
+ - 2022-03-30 12:29:39 -0700 [9c1198c](../../commit/9c1198c40b0d6b37117fbefcfb1e0a0de377f447) 2.9.6 release
+ - 2022-03-30 12:28:05 -0700 [d486194](../../commit/d4861943f9f669e9a3f6d62d57d19a15c5042448) two missing else statements
+ - 2022-03-30 12:20:12 -0700 [2d89fc7](../../commit/2d89fc7c249377aeafc956176625cc872649bc16) Move the somewhat out of date table of commands into its own file - which then needs to be created automatically in the Makefile
+ - 2022-03-30 12:06:36 -0700 [388ba06](../../commit/388ba06159415847a9976bd3404ac21a1210aab6) CHANGELOG.md pushed to github
+ - 2022-03-30 12:06:05 -0700 [0de3fa2](../../commit/0de3fa20a5023c2703eeb73cf3ce3e31f47cd02f) 2.9.5 release
+ - 2022-03-30 12:02:46 -0700 [88822c4](../../commit/88822c49c45fe645bc51177be6ddde46618bc8b2) Upgrade pandoc setup and remove tabs from README
+ - 2022-03-30 09:50:40 -0700 [0535bb4](../../commit/0535bb41c0a1c47c44af95d3d15b6b879f169de1) 2.9.4 release
+ - 2022-03-30 09:12:13 -0700 [d2622ed](../../commit/d2622ed0e7723f5a3e39f92d750cd41a9c44f2ca) CHANGELOG.md pushed to github
+ - 2022-03-30 09:11:40 -0700 [b01d16e](../../commit/b01d16ea503c5de00f168d2d6fe2b0a08576fd5a) 2.9.3 release
+ - 2022-03-30 09:07:21 -0700 [657772b](../../commit/657772be05cf8c6036fc66ee78686fa258962884) trailing slashes are not needed in API
+ - 2022-03-30 09:06:57 -0700 [2e4d26f](../../commit/2e4d26f3d03638ff4a6c1ebe0acbf12f763d04e2) API added yet another param
+ - 2022-03-10 06:02:12 +1100 [44d7d65](../../commit/44d7d65ea96a1dbe4577a164bb223abd5160c2d7) update environment variables to be prefixed with `CLOUDFLARE_`
+ - 2022-03-04 00:24:31 +1000 [a2640a0](../../commit/a2640a0403429bf5f8ed61a7c11888359a2d0d39) Added python example for pagerules
+ - 2022-03-04 00:07:22 +1000 [8b0d26c](../../commit/8b0d26c2ede79205048429397a4d9c3495e7b7fb) Added Bot Management ability and fixed an edge case for the API return
+ - 2022-03-02 14:52:13 +0200 [578a26b](../../commit/578a26bf9614fe82de8d936acbe174fb4fa7019c) Merge pull request #1 from phntom/phntom-patch-dash-typo-cloudflare-py
+ - 2022-03-02 14:51:03 +0200 [dd6d802](../../commit/dd6d8029a52cccf56923b370687be63aff4c0786) typo in cloudflare.py
+ - 2022-02-28 16:44:57 -0800 [6c0e470](../../commit/6c0e470dac2241e5a24e51a38b5da46d982a7751) CHANGELOG.md pushed to github
+ - 2022-02-28 16:44:34 -0800 [10f82a8](../../commit/10f82a8c4cc06fdca7588c51cc8bdb7fe2665896) 2.9.2 release
+ - 2022-02-28 16:43:45 -0800 [24d0991](../../commit/24d0991a34241ea8803b02c6ccfe0ffebf244919) show version number from api url
+ - 2022-02-28 16:34:41 -0800 [9be2aef](../../commit/9be2aef54016213abea93889a471f56f757000d1) handle ?params in API - which should not be there
+ - 2022-02-28 16:32:29 -0800 [1378ad8](../../commit/1378ad8311912d5244fbd6c40c307bbc2b172b85) api moved from accounts/cfd_tunnel/tunnels to accounts/cfd_tunnel
+ - 2022-02-23 12:09:30 -0800 [3d8740e](../../commit/3d8740ed4b7d49bbfd36c0f7c398b54097abf50d) more api calls
+ - 2022-02-23 12:07:41 -0800 [f1e3531](../../commit/f1e3531229d694ee0401b35163b2756dc22f9de8) keyword handling still needed fixes
+ - 2022-02-17 09:33:51 -0800 [1ca59e8](../../commit/1ca59e870751822c354f96b57bb8194e336f846b) finally handle KeyboardInterrupt cleanly - it was easy
+ - 2022-02-16 16:18:54 -0800 [4bb7894](../../commit/4bb78946aa0fc7a0d733a0cfebbaeaa0744b6825) CHANGELOG.md pushed to github
+ - 2022-02-16 16:18:06 -0800 [78a7616](../../commit/78a7616cb8e903954cd7043eb0af02c17f268bdd) 2.9.1 release
+ - 2022-02-16 16:15:15 -0800 [a25605c](../../commit/a25605cdf5bdfbf318b76900f0f5c43ac1f87e2c) instance4 added - its a hack, but will do for now
+ - 2022-02-16 15:59:15 -0800 [36692f3](../../commit/36692f3d8ef6697aad50f96607e5e14073807eb5) first batch of email api calls
+ - 2022-02-13 17:44:16 -0800 [4ae2013](../../commit/4ae20130dab0a55dca8765e72974e0f7ea7e39cd) API added yet another param
+ - 2022-02-13 17:18:26 -0800 [6125b75](../../commit/6125b754c29876a64c0080f087f03dcabdcc54d9) API added yet another param
+ - 2022-02-13 16:21:26 -0800 [9128600](../../commit/912860070e45955f73249304aa70558dd7f459a1) typo
+ - 2022-02-13 16:16:26 -0800 [d868c94](../../commit/d868c94ea624a199ae0c0f3fb23e5e680b4ad835) typo
+ - 2021-07-28 11:19:50 -0700 [7a0d715](../../commit/7a0d715203b886f80b27f475ea8f35b25017613b) sanitize passed variables, handle errors from network better, first pass at keywork conflict issues
+ - 2021-07-21 12:31:50 +0200 [c6b7423](../../commit/c6b74232b329e83785c93f8abe177cde860d6bba) bdist_wheel added as universal
+ - 2021-07-21 12:24:02 +0200 [eedf7c7](../../commit/eedf7c745d2450e28893272e34e90ec27ce12b7e) account rules list example
+ - 2021-07-21 11:55:47 +0200 [ee4e774](../../commit/ee4e77446410e80d9455c39d229ff72c72f4d8a1) dns import example - showing how to get around reserved word
+ - 2021-07-21 11:52:50 +0200 [e02c380](../../commit/e02c38067f2911106fff12d1e364eea484bf9ae6) handle <pre> within description - which should be ignored
+ - 2021-07-21 11:52:02 +0200 [cde763a](../../commit/cde763aaf0f0e9769689664b77378737af01b5a7) document :: option
+ - 2021-07-21 11:51:28 +0200 [23a9366](../../commit/23a936630ef052c92b9816acb91092f17154e7de) indents - what a pain!
+ - 2021-07-21 11:48:02 +0200 [215f5b2](../../commit/215f5b2f492ace78164547850712c4a696b9672f) bdist_wheel added as universal
+ - 2021-07-21 11:47:15 +0200 [ff66435](../../commit/ff664357f9fe2b24767e909a8777864f6d8efa11) handle /pages using {} for account_id
+ - 2021-04-01 12:02:16 +0200 [eb42047](../../commit/eb42047e2576ca7ec7b9b8b0edaa4e78f9138374) fix the installation path of the cli4 man page
+ - 2020-12-31 16:19:30 -0800 [4c80399](../../commit/4c80399ad27e67b88138058e76b12002db8e7829) CHANGELOG.md pushed to github
+ - 2020-12-31 16:18:47 -0800 [6ea3d2f](../../commit/6ea3d2f03dc15b3c59ce29529ce4a420a51758a4) 2.8.15 release
+ - 2020-12-31 16:17:37 -0800 [ebea9ea](../../commit/ebea9ea5ca1490e1388bfe0b8ac119ba405efb31) added cursor example
+ - 2020-12-31 16:15:51 -0800 [534fbde](../../commit/534fbde1a6a7bf1e8ced9053f1625f46aac845b5) zones/rulesets added
+ - 2020-12-31 13:52:03 -0800 [cd535c1](../../commit/cd535c1e26b6a1a6703d8ca03ee98f90fa13d364) Merge pull request #107 from Martin407/patch-1
+ - 2020-12-31 13:51:00 -0800 [c2cb66a](../../commit/c2cb66a8569d8e18d8f13be254e4e3c885778086) Merge pull request #106 from Martin407/patch-2
+ - 2020-12-03 14:24:07 -0800 [dc14687](../../commit/dc14687e4957c4ed93f65fe697b2821a0c6f4a93) CHANGELOG.md pushed to github
+ - 2020-12-03 14:22:47 -0800 [9e170eb](../../commit/9e170ebe2f9139d2b0620d7f31be2330dd532aaa) 2.8.14 release
+ - 2020-11-14 12:58:07 -0500 [acc3b99](../../commit/acc3b9963581ad5b875f6f80b517822261775d62) Removing excess trailing parenthesis
+ - 2020-11-14 12:51:53 -0500 [bf583e2](../../commit/bf583e2ccce999cdeaa27ac3a6860ef425eb9343) Removing excess trailing parenthesis
+ - 2020-09-20 15:58:25 -0700 [b70b520](../../commit/b70b5209664dc64ae4f0e5773806aec05b799cbd) first pass at adding travis CI
+ - 2020-09-17 14:17:45 -0700 [9975223](../../commit/997522321c61f08cc91bcc61f3ee707f38179f9a) zones/waiting_rooms, accounts/diagnostics, and more
+ - 2020-08-13 10:41:22 -0700 [8ed99e4](../../commit/8ed99e4899637a7d7bc11c4bee76982537fcc45f) CHANGELOG.md pushed to github
+ - 2020-08-13 10:41:11 -0700 [f926130](../../commit/f926130d61bd71203b5f91f4dae947538cce669b) 2.8.13 release
+ - 2020-08-13 10:40:42 -0700 [16b7e88](../../commit/16b7e88dd302959ae8d2b8ba3f16dc21f07e0bae) configparser added it haste, but not needed - oops!
+ - 2020-08-12 18:11:09 -0700 [76475a0](../../commit/76475a09e3ae941b740f80b1c6c59b9d23e30200) CHANGELOG.md pushed to github
+ - 2020-08-12 18:10:43 -0700 [e817165](../../commit/e817165797af62a5a4a241f403bbb2a74ac011fd) 2.8.12 release
+ - 2020-08-12 10:46:07 -0700 [a76518f](../../commit/a76518f3d5caac7772000f6e3edb942882289c4a) CHANGELOG.md pushed to github
+ - 2020-08-12 10:45:32 -0700 [9121e05](../../commit/9121e05bc2187ae1541df725bed7e780713c3a3f) 2.8.11 release
+ - 2020-08-12 10:45:10 -0700 [f020a0b](../../commit/f020a0b7a54f5b30fcbbc674ac18034e2d2c116f) /zones/:id/access/...
+ - 2020-08-12 10:30:56 -0700 [ff2a701](../../commit/ff2a701d4117c4291480b65a1b54a9537f297111) 2.8.10 release
+ - 2020-08-12 10:30:31 -0700 [97645f7](../../commit/97645f7167b35adba0cf10685e5a7807b1ad3e37) configparser missing - oops!
+ - 2020-08-04 14:40:24 -0700 [316a22c](../../commit/316a22c679a225bb5b967bfbd7b06ff31835db05) CHANGELOG.md pushed to github
+ - 2020-08-04 14:40:02 -0700 [827242e](../../commit/827242e926c88b02c95f5fd9a9fdeb39ac9ca2b5) 2.8.9 release
+ - 2020-08-04 14:39:17 -0700 [ef9a5f3](../../commit/ef9a5f3aee7b5230047cd20ab63b7c83d78bd8e7) cleaner and easier way to find missing api calls - this changes --dump/--api for the better
+ - 2020-08-04 14:30:11 -0700 [21649a9](../../commit/21649a9e9bf6bcaac7a9160d73e7f93f496f0e09) /zones/:id/access/apps/policies - fixed along with a bunch more similar typos
+ - 2020-07-30 20:21:48 -0700 [f4c5e0f](../../commit/f4c5e0f2e888b5c6e8588e965ae366d66b5cdb13) added more profile info
+ - 2020-07-30 20:16:18 -0700 [2f0a39d](../../commit/2f0a39d00c567bbd05b5404cd6d3d6f0b6002f3f) revoke-tokens -> revoke_tokens
+ - 2020-07-27 12:51:12 -0700 [f1df7b6](../../commit/f1df7b6177d6fd6dffc692900c2b61bf4073b36d) updated and included AMP RealURL/Signed Exchange API
+ - 2020-07-24 11:15:01 -0700 [5631b35](../../commit/5631b35295fa844e4d1c43cb638ee5fbc44879b7) CHANGELOG.md pushed to github
+ - 2020-07-24 11:14:39 -0700 [c138287](../../commit/c138287ebab6d231e47214f6336c554ff659d53c) 2.8.8 release
+ - 2020-07-24 11:11:00 -0700 [80918ea](../../commit/80918ea248c5c2cf3f9013ca762eb844d898de1e) now with curl style debug - i.e. matches api information page
+ - 2020-07-24 11:10:39 -0700 [586ba80](../../commit/586ba80e664da8974c963b9a16874ce3a63904af) now with curl style debug - i.e. matches api information page
+ - 2020-07-24 11:09:13 -0700 [3cd4064](../../commit/3cd4064bb3d01006c095669fbd9b4255584cd6b3) now with access_requests as underscore
+ - 2020-07-24 11:08:38 -0700 [fbd0582](../../commit/fbd0582e359bc27b9012184c333203f3b3773d40) make sure verbose, etc is always used
+ - 2020-07-20 12:18:57 -0700 [fc69383](../../commit/fc69383990659ce47f98bd098006049feec9d18b) CHANGELOG.md pushed to github
+ - 2020-07-20 12:18:36 -0700 [2952f9f](../../commit/2952f9fb1d29a2f89417cc3de4328d4830f32dda) 2.8.7 release
+ - 2020-07-20 12:17:32 -0700 [f3652ad](../../commit/f3652ad8f7ca67464d0949b28de111ed7359b53a) dashes vs underscores - finally tamed!
+ - 2020-07-20 12:16:42 -0700 [25ac677](../../commit/25ac67776d471cdf7378a1f66e3c7169ef74be18) /zones/:id/access/apps/:id/revoke-tokens - added
+ - 2020-07-20 12:15:50 -0700 [5aba7f0](../../commit/5aba7f04e6e10b0a20bc452f6d79cd42969391e8) improve deprecated code - add dates, check expire, improve parse of api webpage
+ - 2020-07-18 10:59:14 -0700 [5ca2b6f](../../commit/5ca2b6fd4944014cf56fc9a24acd9b268e02bea1) added support for dashes/underscores in commands and python calls - kinda overdue
+ - 2020-07-18 10:58:33 -0700 [88db48c](../../commit/88db48c181c0387d29b0616917e3e586bf7bf8be) cleanup of logic around uuid match. added support for dashes/underscores in commands
+ - 2020-07-18 10:47:21 -0700 [ca858f6](../../commit/ca858f6286d120a953534e2eae16fc5ea5f0cc58) /zones/:id/access/apps/revoke-tokens - removed as depricated
+ - 2020-07-18 09:21:37 -0700 [94e4236](../../commit/94e4236c551e1f8f88a5709db1b072ccd0415236) removed deprecated /organizations and /user/virtual_dns api
+ - 2020-07-17 16:34:25 -0700 [7edcc96](../../commit/7edcc96d8b836624c69ec7ebf8abc6dfeb7b2542) Added base_url to config and env variables
+ - 2020-07-17 16:31:55 -0700 [f23a419](../../commit/f23a419d88fc9a84a6a8bc2e1f6be954c86be28e) accounts/:id/rules/lists/bulk_operations/:operation_id - syntax fixed
+ - 2020-07-14 19:00:41 -0700 [16fec80](../../commit/16fec8047ca97d05abf73fd9ae730681c2a0e10f) CHANGELOG.md pushed to github
+ - 2020-07-14 19:00:30 -0700 [3ce15c1](../../commit/3ce15c1bd3e79f8deeef4eff1c184ac7f407fa75) 2.8.6 release
+ - 2020-07-14 18:59:59 -0700 [4aa1148](../../commit/4aa1148b3e9389b9654df64e255ed353947bd47f) Added working GraphQL examples
+ - 2020-07-14 15:35:50 -0700 [5c25aa8](../../commit/5c25aa80b15a78aee574724b115ce172d6ca2401) CHANGELOG.md pushed to github
+ - 2020-07-14 15:35:33 -0700 [ec0a1cc](../../commit/ec0a1cc492b14e2cd0d901c6034dbcfcf6c0828f) 2.8.5 release
+ - 2020-07-14 14:58:41 -0700 [a3bd103](../../commit/a3bd1032e9c4f4a56578af2011e0fc369841cc0f) improved debug for jSON based data/params
+ - 2020-07-13 13:00:32 -0700 [fdb3dc1](../../commit/fdb3dc13604885541ec8dbac20e0b6b87c4a1e0d) CHANGELOG.md pushed to github
+ - 2020-07-13 13:00:16 -0700 [a1ec29f](../../commit/a1ec29f9566e8e0c9bba7f2a9defbea987c6b214) 2.8.4 release
+ - 2020-07-13 12:57:06 -0700 [ae96ed4](../../commit/ae96ed4c2edc087ae06c50202765026d7bb8139a) rules,access/logs,access/apps,etc added
+ - 2020-07-13 12:56:06 -0700 [ccc96f1](../../commit/ccc96f1040da92db6b04a36de7883b6d61830b0e) api decode and Makefile now consistent - no leading slash
+ - 2020-07-13 12:46:35 -0700 [b5c1f60](../../commit/b5c1f60b42a6b48fc11faa8a69cfa8ce1a5a2609) moved network functions - but forgot one call - now fixed
+ - 2020-06-23 17:37:09 -0700 [5f3a974](../../commit/5f3a97494f9d3582a2be0b3baaf59f3d24c2b549) moved network functions into their own file - part of splitting up a large file
+ - 2020-06-22 18:45:20 -0700 [dd5e51f](../../commit/dd5e51fb4a6cab05f5bd8a678da1dce02d1846f2) CHANGELOG.md pushed to github
+ - 2020-06-22 18:45:09 -0700 [f617736](../../commit/f617736837ca83056cbfb6e4aedb201c4a14a2de) 2.8.3 release
+ - 2020-06-22 18:44:22 -0700 [1a3eb2a](../../commit/1a3eb2ad44ed66e575d50da80d4ab04e96be840f) added example code for custom_hostnames
+ - 2020-06-22 18:38:19 -0700 [806b626](../../commit/806b62626c373e9f269d63c355d22e4977dfa59e) added uuid support and converter for custom_hostnames
+ - 2020-06-22 18:36:49 -0700 [9dcb55f](../../commit/9dcb55f083ca2dc95facbd72f43a7ed5fb50d207) one more place where a missing error response could do harm
+ - 2020-06-22 18:36:14 -0700 [4262a2b](../../commit/4262a2b07e25c07980c164966d48eb3ce870bd22) added zone type and more dns info in dump - mainly for documentation reasons
+ - 2020-06-22 12:42:28 -0700 [b74a781](../../commit/b74a78115db17a31b65b1e4a7c5b8bb6d31033ad) CHANGELOG.md pushed to github
+ - 2020-06-22 12:42:03 -0700 [d82318f](../../commit/d82318fcb14d458b771805ef758abe9e5951dc78) 2.8.2 release
+ - 2020-06-22 12:41:17 -0700 [40ab439](../../commit/40ab4396b6cbf25df52f6ad44498b94222e3af01) removed excess imports including both __future__ and others
+ - 2020-06-22 12:29:07 -0700 [ff91110](../../commit/ff9111072169bc4849964e294c2d4fcf572f5ec9) Merge branch 'master' of github.com:cloudflare/python-cloudflare
+ - 2020-06-22 12:27:52 -0700 [61e73e3](../../commit/61e73e36d10d438942e46cd62e247d1662ad069a) Merge pull request #96 from FelixSchwarz/master
+ - 2020-06-22 09:22:46 +0200 [8680ef5](../../commit/8680ef56c538661d468fe271a610d87400a249f3) setup.py: remove unnecessary dependency on future
+ - 2020-06-19 22:54:28 -0700 [4ecb111](../../commit/4ecb11172749346bfe020e334ca956e6cf7bf7b2) added reference to CHANGELOG
+ - 2020-06-19 22:40:51 -0700 [fc501c0](../../commit/fc501c0f0fdef203fa3065519e0b33ce5699b0fe) made CHANGELOG smaller
+ - 2020-06-19 15:31:42 -0700 [b0caf37](../../commit/b0caf3746125681b76b8e1ea7e99ab6915655eb1) CHANGELOG.md pushed to github
+ - 2020-06-19 15:31:01 -0700 [23784a4](../../commit/23784a40db8b92c76447f7bf212938eb4605e2ae) 2.8.1 release
+ - 2020-06-19 15:28:48 -0700 [f8cc4a7](../../commit/f8cc4a73afef1329821884added6a792874dcdb4) now able to check and confirm API is up to date
+ - 2020-06-19 15:08:48 -0700 [f266fb5](../../commit/f266fb50e30d93ae1c32553703c9c514f2888903) added code to query api documentation (via beautifulsoup4) to build a current api listing
+ - 2020-06-18 17:03:24 -0700 [f25bdfa](../../commit/f25bdfaf59ad4d25948482b3fe98099912168898) pylint stuff
+ - 2020-06-18 16:56:59 -0700 [9c2424e](../../commit/9c2424e57e719c5e5a0e561d5b187e57dbf39610) moved connection to _connection() to accomodate additional call types
+ - 2020-06-18 16:42:43 -0700 [84f57b4](../../commit/84f57b4240acecc20eeb1e5aef2bd047e3eb77ca) handled  accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/values/:key_name return as binary data
+ - 2020-06-17 13:05:01 -0700 [355ae5d](../../commit/355ae5defff5c02880f553c5a16c84662c1571ca) handled any key_name for accounts/:account_identifier/storage/kv/namespaces/:namespace_identifier/values/:key_name
+ - 2020-06-17 12:28:09 -0700 [dc07708](../../commit/dc0770861e8fd7d45f431ee0bf38d87c6aeb4223) addressing/prefixes/delegations added
+ - 2020-05-12 18:44:20 -0700 [1906a68](../../commit/1906a680fca36f525610422ff7914afe0491f6e6) CHANGELOG.md pushed to github
+ - 2020-05-12 18:43:44 -0700 [8280ec9](../../commit/8280ec96a9387f685fa3bf4e7ec1779406fcd90c) cleaned up upload commands
+ - 2020-05-12 18:40:51 -0700 [916aa5b](../../commit/916aa5beb77481e6b891be75f91da404da07df99) 2.7.1 release
+ - 2020-05-12 18:34:25 -0700 [ddf442e](../../commit/ddf442eae8a8d29fe71d052669f5867ae0d62d4f) added zones/ssl/certificate_packs and zones/origin_tls_client_auth
+ - 2020-05-12 18:26:20 -0700 [0a5ec5b](../../commit/0a5ec5b39d8cdc1f20b9a57951d08304a839cb38) CHANGELOG.md pushed to github
+ - 2020-05-12 18:25:52 -0700 [1c05b7b](../../commit/1c05b7bb1f5a05e9fcfebdfaa2d12bec0e8547f8) 2.7.0 release
+ - 2020-05-12 18:25:10 -0700 [c1d9295](../../commit/c1d92955051e180dc4132d520830b5ba795097d2) added man page to dist
+ - 2020-05-12 18:24:20 -0700 [5a8844e](../../commit/5a8844e651925bea01f12f38cdfb1ba52bdd4907) added github signing commands to Makefile
+ - 2020-04-28 14:12:16 -0700 [82b5cb7](../../commit/82b5cb7565c0fdb6e4de81dbbea12b74801b753f) added graphql handling with no results in response, corrected handling when error code is missing
+ - 2020-04-28 14:09:49 -0700 [4c90fa8](../../commit/4c90fa8a0f8a88ff0a3962611a18b2eb8eaed47b) added graphql API endpoint
+ - 2020-04-28 14:09:04 -0700 [1e949db](../../commit/1e949db4ad705d1fd0ec6387d77f99cd08ca0198) fixed usage string - missing spaces, allowed PUT & POST for file uploading to handle graphql API call
+ - 2020-04-28 14:08:04 -0700 [65f3cba](../../commit/65f3cba24823e858f019ea4c3d0b528a93251f1c) updated man page - back in sync with code
+ - 2020-04-08 18:14:15 -0700 [13901c1](../../commit/13901c17dc42b00516275955c3d1e009c3fe0ac2) CHANGELOG.md pushed to github
+ - 2020-04-08 18:13:30 -0700 [1da709c](../../commit/1da709c2138491dc8316fad04d0221236f97439e) 2.6.5 release
+ - 2020-04-08 18:12:48 -0700 [450dd7d](../../commit/450dd7d721b5be7b257571018a6d49af2d90db13) updated api command list
+ - 2020-04-09 08:57:24 +0800 [c5d4890](../../commit/c5d489032c29e2d84d7611518a68a637ccf89b0d) Merge pull request #90 from pygrigori/master
+ - 2020-04-08 17:55:33 -0700 [513b92c](../../commit/513b92c0f7340d5e49ee134d7ca025d5b1d534d6) typo
+ - 2020-04-08 17:51:20 -0700 [d0ed19e](../../commit/d0ed19e619e95bcefc4cc09a28acb48886cd89f5) CHANGELOG.md pushed to github
+ - 2020-04-08 17:51:05 -0700 [d478bb3](../../commit/d478bb3cf8b36749ff2aeeb1d197550b2ccecf08) 2.6.4 release
+ - 2020-04-08 17:49:59 -0700 [fceb488](../../commit/fceb48839e4eab2da0a76f04a003ecfab2b74945) cli4 now accepts more than one call on the command line
+ - 2020-04-08 17:49:39 -0700 [4e67548](../../commit/4e6754846eb48edfd5d297c04b685fcfffd65683) cli4 now accepts more than one call on the command line
+ - 2020-04-08 17:42:21 -0700 [1c70a8e](../../commit/1c70a8e9b4b2e531d0e61a26f4cd729b86e2c51e) still not got tests done - but housekeeping moving along
+ - 2020-04-08 17:41:12 -0700 [5b28101](../../commit/5b28101c6d01ec7f4fec6cf2be64ba23181fbdea) an example of a more complex zone name search
+ - 2020-03-13 17:06:50 +0300 [d7cdb0c](../../commit/d7cdb0cd5b0408b30c403d4d83915466a1e3d558) added support for account audit logs
+ - 2020-02-09 12:40:13 -0800 [102286e](../../commit/102286ed5bb6f920d4f6270fd28f7b2d19e9b7bc) CHANGELOG.md pushed to github
+ - 2020-02-09 12:38:06 -0800 [017c240](../../commit/017c240d9d9c410352d94e1422249dce7234032b) 2.6.3 release
+ - 2020-02-09 12:27:51 -0800 [adfc471](../../commit/adfc471ca872faf1610444e0c52f3d689c28d549) Merge pull request #65 from xens/keep_proxied_state
+ - 2020-02-09 12:24:53 -0800 [b3809fe](../../commit/b3809fe7941a6461e2651cbf44f949f252ee5222) CHANGELOG.md pushed to github
+ - 2020-02-09 12:24:41 -0800 [c30609b](../../commit/c30609bfa4869718ecdbfdc45ba626bb527b6fba) 2.6.2 release
+ - 2020-02-09 12:22:46 -0800 [1d7ca2f](../../commit/1d7ca2fde4db9d4d5cf90ae598ae8336fcb85630) added /accounts/addressing/... & /zones/secondary_dns/force_axfr & /zones/logs/control/retention/...
+ - 2020-02-05 18:19:32 -0800 [365eed7](../../commit/365eed731d80cc48f07f4efc6b1b65f70b01303f) CHANGELOG.md pushed to github
+ - 2020-02-05 18:17:40 -0800 [ebabedc](../../commit/ebabedcbd3baaf7f9a9c34bb5a06ff5a71baee8d) 2.6.1 release
+ - 2020-02-05 18:17:00 -0800 [e0eb323](../../commit/e0eb323a713698be0e10f1d5066e982eace511f0) restored extras= config file functions
+ - 2020-01-17 22:01:20 -0800 [2ec542b](../../commit/2ec542b8274e2b6ae1a9a888922aafae8d5f5e0e) CHANGELOG.md pushed to github
+ - 2020-01-17 22:01:02 -0800 [d3d96c9](../../commit/d3d96c9d9f7838bc50d6293bfe668344baad32ed) 2.6.0 release
+ - 2020-01-17 21:59:50 -0800 [5f06e8a](../../commit/5f06e8a111258f2a8b08f267ed5193e61a5fbe2e) config file allows a per-method values
+ - 2020-01-17 21:50:54 -0800 [1a684ae](../../commit/1a684ae5e66cb2463288ff482ea99a3e2981c56a) rewrite of config file to bring up to spec and to allow for per-method auth values
+ - 2020-01-17 21:49:45 -0800 [8981db6](../../commit/8981db6cbb6eb80a045bcde13c28d2177c839307) started to handle pipe errors - not quite working yet
+ - 2020-01-16 19:53:50 -0800 [4905fcf](../../commit/4905fcf5d175ac4403d893b4e32e1243148f4de9) CHANGELOG.md pushed to github
+ - 2020-01-16 19:53:11 -0800 [99e8eeb](../../commit/99e8eeb992012fce2debec4a5d5397615143aa25) pylint made me do this! - yet there is still more to do
+ - 2020-01-16 10:12:44 -0800 [25cd7b9](../../commit/25cd7b902ffb737dc3688e183683f0273c590de3) Merge pull request #80 from acdha/patch-1
+ - 2020-01-15 21:43:24 -0800 [a3b4538](../../commit/a3b4538de8ac18c3c3011804f6b51cc7aef631cb) Merge pull request #80 from acdha/patch-1
+ - 2020-01-15 21:41:21 -0800 [f3ad952](../../commit/f3ad952fd2f06c90ada22d7e86bd17048161359e) Merge pull request #59 from mnordhoff/patch-1
+ - 2020-01-15 15:42:25 -0800 [77abe67](../../commit/77abe673a3001c1c07b7b2a6f305e1e52cafd518) CHANGELOG.md pushed to github
+ - 2020-01-15 15:41:34 -0800 [4acc9a3](../../commit/4acc9a33d9f9d9a676c08ec713b3a56b723e6800) 2.5.1 release
+ - 2020-01-15 15:17:51 -0800 [1efa5e9](../../commit/1efa5e92d9e243750d1fe36cb5414558d1ee4207) made sure error chain would correctly be passed with an exception
+ - 2020-01-15 15:16:55 -0800 [734a814](../../commit/734a814553a1769c4c12474e1cf8005c663a47ff) changed converters to have more meaningful error handlers
+ - 2020-01-15 15:15:30 -0800 [5cc639a](../../commit/5cc639a9dc8282dbd497ef35793f744fa3cd0aea) pylint cleanup
+ - 2020-01-15 11:53:20 -0800 [dbd874f](../../commit/dbd874f3ef2b0df53792cd5370b750a2fb0d5e9f) CHANGELOG.md pushed to github
+ - 2020-01-15 11:52:53 -0800 [9cc8427](../../commit/9cc8427c3076760d90af536062508beb8822c9d8) 2.5.0 release
+ - 2020-01-15 11:51:49 -0800 [d3ffa85](../../commit/d3ffa853bc2d00fad854b2f334a7c0eb6854d0ca) Added support for profiles - see README
+ - 2020-01-14 14:39:03 -0800 [12836e3](../../commit/12836e3d442886cc4c2423757eab874eb2114e9c) CHANGELOG.md pushed to github
+ - 2020-01-14 14:38:09 -0800 [7e9c358](../../commit/7e9c358e116674252965a9ca3a58eedef94d3491) 2.4.5 release
+ - 2020-01-14 14:37:45 -0800 [ddbd10d](../../commit/ddbd10dac23deefaf42056eb0420ad00e7db536c) added /accounts/ and other api calls
+ - 2020-01-14 13:42:51 -0800 [d79c539](../../commit/d79c53986dfe85ceaf833f6b004d4662562ae89b) CHANGELOG.ms pushed to github
+ - 2020-01-14 13:42:22 -0800 [5ec421b](../../commit/5ec421b2327013115c888192ce2a99066694b8de) 2.4.4 release
+ - 2020-01-14 13:41:58 -0800 [378f3a7](../../commit/378f3a7ce63a937baf5f09c5d152aa55f2261f5e) added logpush
+ - 2020-01-14 10:37:04 -0800 [e80cdf8](../../commit/e80cdf880d0ce5880b43bdc44b89528e2f53d7fc) CHANGELOG.ms pushed to github
+ - 2020-01-13 22:21:25 -0800 [9be691c](../../commit/9be691c7a9cf2bd1181bf85dd220c6f3d2ca914a) 2.4.3 release
+ - 2020-01-13 22:20:50 -0800 [defd8c1](../../commit/defd8c1f4f3ec550b2182ef06edba18d8e067490) added more API calls
+ - 2020-01-13 21:34:33 -0800 [eb6b260](../../commit/eb6b26043f19e32ba76dfe53883905067b1f5442) CHANGELOG.ms pushed to github
+ - 2020-01-13 21:34:00 -0800 [67fdfcb](../../commit/67fdfcb5e3480a1c99624c71e3a798d5698685cf) 2.4.2
+ - 2020-01-13 21:32:35 -0800 [b7311a3](../../commit/b7311a368f4822134c6a7576bb9e9e9433b157a7) --quite options yields TypeError - fixed!
+ - 2020-01-13 21:31:33 -0800 [9b31b51](../../commit/9b31b514a566c1b102d5960bf9be3d2a387426e2) --quite options yields TypeError - fixed!
+ - 2020-01-13 20:22:30 -0800 [1e356dc](../../commit/1e356dc30a2a4b7218b41e33f458711bae961791) typo
+ - 2020-01-13 20:19:46 -0800 [6347e64](../../commit/6347e64ea023143698da3793d9bc1f56092bf3bc) CHANGELOG.ms pushed to github
+ - 2020-01-13 20:17:20 -0800 [b5cd481](../../commit/b5cd4811925aa1aa14241b3cc34e35c19bad2c0e) Python 3.8 needed SyntaxWarning fixes - as annoying as that was!
+ - 2020-01-08 14:52:33 -0800 [d76dd70](../../commit/d76dd70ba7c8e07f8ef2e465e35e40fa74bd6949) CHANGELOG.md pushed to github
+ - 2020-01-08 14:51:45 -0800 [0eb6d73](../../commit/0eb6d735393a8b371bae5916fb14faf9262b41cb) 2.4.0 release
+ - 2020-01-08 14:50:06 -0800 [41c5348](../../commit/41c5348cc7b1a462f337ea553a464a3c827afd4d) removed python2 from setup.py so that pypi is only Python3
+ - 2020-01-08 14:40:56 -0800 [ca5cb96](../../commit/ca5cb961d772bc6b7b962bf33e25929960a18566) auth methods cleaned up to allow empty/null strings in values plus confirmed all authentication code is consistent. Updated README.
+ - 2019-11-20 10:37:17 -0800 [f71c3e2](../../commit/f71c3e221735ad50230918f3c9bee6d34471ae58) CHANGELOG.md pushed to github
+ - 2019-11-20 10:36:15 -0800 [b80a4dc](../../commit/b80a4dc6d516d1737f16be3c7c4f13a83be905bb) 2.3.1 release
+ - 2019-11-12 09:39:39 -0500 [2a5f24c](../../commit/2a5f24c5515d76bc7bedcd3e90a6e4c578303046) Explain zone lookup behaviour in cli4
+ - 2019-10-08 14:32:36 +0100 [ce30a10](../../commit/ce30a10d9dabe8dff3ff3941aff9568ffaaa0704) Merge pull request #78 from Tugzrida/patch-1
+ - 2019-10-08 14:10:33 +0100 [6e63048](../../commit/6e63048956493726414cc478d9234769d037c67e) Merge pull request #76 from nijel/patch-1
+ - 2019-09-20 11:03:08 +0200 [09d0605](../../commit/09d06054111cbc8f6454a3ae5568e240432dd22a) Clarify token use with env variables and config files (#2)
+ - 2019-09-16 14:05:30 +0200 [c4f9107](../../commit/c4f9107d47867926f60b4188aacabc5e0682593d) Enhance API Token documentation
+ - 2019-09-13 16:52:56 +1000 [de33ceb](../../commit/de33ceb5d4b87f60e01eff58bf53679eb93ee748) Spelling fix
+ - 2019-08-23 20:14:17 +0200 [9f28c65](../../commit/9f28c659d784fe06c705ea7977acee2bf3a2cc2e) Add support for API Tokens
+ - 2019-05-20 08:24:29 -0700 [cf084ee](../../commit/cf084ee22b454cbb50804c748ee969cab9c451a2) 2.2.0 release
+ - 2019-05-20 08:23:52 -0700 [b024609](../../commit/b0246091fc0d367e7e36bb422ebe7e55a93bf6c0) 2.2.0 release
+ - 2019-05-14 09:25:39 -0700 [630612a](../../commit/630612a52adad05fc9fc1ec05c52a9c08eacaa80) Add Python 3.7
+ - 2019-04-17 23:23:22 +0200 [a47bfcb](../../commit/a47bfcbe78f1d06412354540199832fbf19cca2d) Keep proxied state during IP-address update
+ - 2019-04-12 13:53:41 +0100 [286cb0f](../../commit/286cb0f25e5bf13adacdf9ce7956bd514e508214) Merge pull request #64 from aaranmcguire/support-secondary-dns
+ - 2019-04-12 13:52:50 +0100 [11cc361](../../commit/11cc361b17e39ebf4ff3c4ab21a9d9e1bacaa578) Merge pull request #57 from sulf1ron/master
+ - 2019-04-12 13:21:28 +0100 [2255073](../../commit/22550738c9680779dcdc5152eda8c355e0924f8c) Merge pull request #53 from weisi/master
+ - 2019-04-12 13:20:13 +0100 [f48ab53](../../commit/f48ab53cb7c1e5b7d69ce1cc86b84d5cafaed4a7) Merge pull request #58 from dargor/fix_typos
+ - 2019-04-12 10:06:58 +0100 [019393a](../../commit/019393a88f2e36730bb1efed45580cc9b756a8d3) DNS-3431: Support Secondary DNS Endpoints
+ - 2018-10-13 18:31:10 +0000 [6726add](../../commit/6726add5d35ee8bb5644e78506c2fe97743f8b6b) Remove logger from requirements.txt.
+ - 2018-10-09 17:02:00 +0200 [63a4159](../../commit/63a4159eb331b11e2a8c29641d101a08da9f4290) Fix some typos.
+ - 2018-10-02 22:48:39 +0800 [a8e47cd](../../commit/a8e47cd4b6759f255dc49377ab221d521ecc2904) Fix a minor bug in examples\example_update_dynamic_dns.py
+ - 2018-08-05 18:33:00 -0400 [f4eb124](../../commit/f4eb124be4c9817e826deb81bd7a0040c347ef30) README: Fix typo of kwarg "params" in sample code.
+ - 2018-03-05 01:56:27 -0800 [fd6464e](../../commit/fd6464e15b91263f1ce395e4336b1c1fac542880) requests needs to be newer than 2.4.2 it order to use json keyword
+ - 2018-02-25 03:42:55 -0800 [c07a6c5](../../commit/c07a6c5418ff1be83f8a828d211d5e56785254f4) CHANGELOG.md pushed to github
+ - 2018-02-25 03:42:04 -0800 [33feada](../../commit/33feada897f25b00f8728474e4050e68935c96b5) 2.1.0 release
+ - 2018-02-25 03:41:16 -0800 [b6d79dc](../../commit/b6d79dcb495a070946c7765a63d97623d1c64b19) minor lint thingy
+ - 2018-02-25 03:39:57 -0800 [ed9bb8d](../../commit/ed9bb8dc467745fc2d1b4d41760f37d7048ba2cb) added support for NDJSON, cheaned up command preload
+ - 2018-02-25 02:09:58 -0800 [c2224e4](../../commit/c2224e4fa466ba8372e2f5898fc299b8923c6c73) NDJSON output supported - used by Enterprise Logs
+ - 2018-02-25 01:05:45 -0800 [ead7bbd](../../commit/ead7bbdca170f1e126e9d09703fe43eb7a80b10f) added jsonlines package in order to handle NDJSON formatted responses
+ - 2018-02-23 21:50:51 -0800 [c73a674](../../commit/c73a674ac1835e4c9b3738797383fbc9d846f635) finally clean up the one large cli4 routine. it needed to be split a long time ago
+ - 2018-02-23 21:37:55 -0800 [1a6593c](../../commit/1a6593c728ee6b99d2a7bf37980945c932ceffd3) forgot files on some post calls
+ - 2018-02-22 23:20:56 -0800 [2d3ba3a](../../commit/2d3ba3a559bab6ee7ee3ef6cb31fa2a2366b0672) tweak of workers file upload syntax
+ - 2018-02-22 23:19:16 -0800 [a9995a7](../../commit/a9995a77679ce6c11852b77ba926e76a60639342) added support for cleaner command line filename passing - used for workers javascript uploads
+ - 2018-02-22 23:11:12 -0800 [71f7ddd](../../commit/71f7dddd44463c50ac74a49576f3668865d54c0c) major cleanup using add() method which is cleaner and makes pylint happy
+ - 2018-02-22 23:10:20 -0800 [d4f1ebd](../../commit/d4f1ebd78c069fda4823ff5fbf9e537884ea81e4) fixed logger lint issue, added add() for cleaner command loading, added html response support for madia
+ - 2018-02-14 22:22:16 -0800 [2988312](../../commit/2988312d61f14b2752747367188508b089366a03) CHANGELOG.md pushed to github
+ - 2018-02-14 22:21:55 -0800 [60e7c61](../../commit/60e7c61647b0b7726e7d3919d4a3059e3f8a15d9) 2.0.4 release
+ - 2018-02-14 22:21:35 -0800 [43bf227](../../commit/43bf2277ac99030381984704542eead0e65e66f8) Cloudflare Workers examples added
+ - 2018-02-14 22:20:59 -0800 [3129f8e](../../commit/3129f8e61071aef85a14251f4090fbb01c87f03e) workers typo
+ - 2018-02-14 20:26:35 -0800 [d9ea7e8](../../commit/d9ea7e8bbd6fa1c17ef3535e339d79643b817df5) CHANGELOG.md pushed to github
+ - 2018-02-14 20:25:04 -0800 [25ddfb3](../../commit/25ddfb3338115d65e7a7ae3640b91963aa0b0167) 2.0.3 release
+ - 2018-02-14 20:23:28 -0800 [0e3fc8a](../../commit/0e3fc8a4b81daed210f5809050b53f93838513ae) python2/python3 edits
+ - 2018-02-14 19:21:36 -0800 [9b60c39](../../commit/9b60c39ac2d6e5d99d92d0fd018cf55b1fba134d) CHANGELOG.md pushed to github
+ - 2018-02-14 19:20:24 -0800 [1b7012e](../../commit/1b7012e81e13d124fc5f02fda2a90e8344db082b) 2.0.1 release
+ - 2018-02-14 17:29:44 -0800 [db943d3](../../commit/db943d38ee5147bcd54cc7ac48ac7dee90a5eda3) python2/python3 updates - print functions part
+ - 2018-02-14 17:16:25 -0800 [04ef03f](../../commit/04ef03f0508515b82e3104e186e8d2eff7c93240) no changes, but documented how to lower level http debugging
+ - 2018-02-14 17:09:02 -0800 [d2d2f63](../../commit/d2d2f6323a41964f2280ce4d94eb4d7bf30a6eca) added javascript content-type for Cloudflare workers, added support for python2/python3 unicode differences, added params for DELETE method
+ - 2018-02-14 17:04:31 -0800 [c7f6759](../../commit/c7f675966ab7bb73cf7ef593bb42036c97ec15ab) added Cloudflare workers
+ - 2018-02-14 14:07:29 -0800 [1477dda](../../commit/1477dda07a92bdf0d22802808c1c7fb3ce897aa2) python2/python3 json output fixed for unicode, added cloudflare workers script/file uploading, added script name support
+ - 2018-02-07 03:34:47 -0800 [7d5cf4d](../../commit/7d5cf4df461526665eb340326219c6052e6ca542) CHANGELOG.md pushed to github
+ - 2018-02-07 03:34:27 -0800 [fdb6a7f](../../commit/fdb6a7f645ee47f3a1f2a93e6ce8b154031ff5e3) 2.0.1 release
+ - 2018-02-07 03:33:28 -0800 [25e3193](../../commit/25e31935af224f6adfe6f7d14c99fe26ff2cd47b) doing that python3 thingy
+ - 2018-02-07 03:33:06 -0800 [73d6386](../../commit/73d63864f4c0b91142bd4ad51009b5196425efed) doing that python3 thingy
+ - 2018-02-07 03:32:00 -0800 [7c0411c](../../commit/7c0411c86a5ccb8df1a2262a0864cc56c2e1ad1c) yet another fix for unicode/utf8 returned JSON data
+ - 2018-02-07 03:28:07 -0800 [99005c1](../../commit/99005c187795d7a46a52eb138404d7632829b031) settings/brotli & settings/privacy_pass added
+ - 2018-02-04 22:07:44 -0800 [cfa6b2a](../../commit/cfa6b2a89420870db632ab250d498bd376fa6769) tabs vs spaces - arggg!
+ - 2018-02-04 21:58:44 -0800 [930ce84](../../commit/930ce84c81cda5dcebe4be582b6a20a0bfb7b8b0) Merge pull request #46 from cloudflare/example_always_use_https
+ - 2018-02-04 21:58:25 -0800 [ecb32aa](../../commit/ecb32aa51483848d868ba1f45dfa733f626bcefe) added example of always_use_https which can be the basis of any settings value change
+ - 2018-02-04 21:54:06 -0800 [a39ef72](../../commit/a39ef72534bc7453e7583f3f02ab1afc96181ce7) added example of always_use_https which can be the basis of any settings value change
+ - 2018-01-21 19:35:49 -0800 [cadc0eb](../../commit/cadc0ebc21b631ae46e2a7262a4e52988ccc231c) CHANGELOG.md pushed to github
+ - 2018-01-21 19:35:15 -0800 [631f2b2](../../commit/631f2b2c60aff223f0ed3dd33d80084277c07f16) 2.0.0 release
+ - 2018-01-21 19:32:55 -0800 [1b4a7a8](../../commit/1b4a7a8bf57fabcb1e8086e492dded0477c5f525) moved to use requests.Session(), split network out, added upwrapped code for enterprise log share support
+ - 2018-01-21 19:29:22 -0800 [91c0cc2](../../commit/91c0cc258c4a8b0072c4f7d52d0be32b1c076b3e) added to api: load_balancing_analytics, audit_logs, logs/received, ssl/universal/settings
+ - 2017-10-31 04:57:47 -0700 [3831bb0](../../commit/3831bb066f2c7be8c37b6348421d743a1d19ba8e) typo
+ - 2017-10-31 04:46:11 -0700 [31da853](../../commit/31da8531efd1956171a88d958363d945e7fffd8b) CHANGELOG.md pushed to github
+ - 2017-10-31 04:45:40 -0700 [0c71205](../../commit/0c71205320597ef766f10ea4111dff482ba17d62) 1.8.1 release
+ - 2017-10-31 04:44:38 -0700 [378dede](../../commit/378dede277ad755b16fbfa5bd31cdc50f2a6ed9c) cleaned up string response for /zones/:id/dns_records/export API call
+ - 2017-10-09 08:21:04 -0700 [a25a4a9](../../commit/a25a4a99ffe3c86d143cf0c05b70fd303e94ac3f) unwonnd json write
+ - 2017-10-09 08:17:32 -0700 [0d61289](../../commit/0d6128920088961c62ff0b6c276cdc34c79053da) Merge branch 'master' of github.com:cloudflare/python-cloudflare
+ - 2017-10-09 08:15:59 -0700 [97cd013](../../commit/97cd013a3bab0c718f5e487565a524c9d8ae2e07) added with statement example
+ - 2017-10-09 08:13:14 -0700 [5c4a872](../../commit/5c4a87299ea6be802d9d7ad128b7f31daba13788) final json write mofified to help unicode mindset
+ - 2017-10-09 08:11:58 -0700 [0820e21](../../commit/0820e21dcab2d81d3a6cf2f5eb897ecea0f1473e) added code to handle python with construct, cleaned-up parts variable, allowed simple get() call without get method
+ - 2017-10-09 06:29:21 -0700 [409da8b](../../commit/409da8b15cf3d20a93a1fd8b766d9561a7314f89) Merge pull request #39 from drbachler/README
+ - 2017-10-09 15:10:16 +0200 [c69914a](../../commit/c69914a9d57ed3a2200e69ff885351bbc905cc37) Fixed typo in README.md
+ - 2017-09-27 15:12:51 -0700 [84ece92](../../commit/84ece92e5bb4309ae8d31a1e8ef8c8238669238b) CHANGELOG.md pushed to github
+ - 2017-09-27 15:12:36 -0700 [522595b](../../commit/522595bc8cadf85b74b354a54951d0342311b45f) 1.8.0 release
+ - 2017-09-27 15:02:40 -0700 [3358773](../../commit/3358773568ba1454bd0b423960ec2e290e7a270f) Cloudflare CA CLI examples added
+ - 2017-09-27 15:01:03 -0700 [3731c06](../../commit/3731c0600fd3b09131cde9d4d565a1d537fd0187) needed to handle files= paramater for all POST calls
+ - 2017-09-12 00:16:44 -0700 [593b06b](../../commit/593b06b4be3f4463b0bb1a93696189216b074d22) CHANGELOG.md pushed to github
+ - 2017-09-12 00:16:18 -0700 [49f428e](../../commit/49f428e52ed0f1ea8845b7fa241d8044bea7d776) 1.7.5 release
+ - 2017-09-11 08:30:00 -0700 [dfe0afb](../../commit/dfe0afbec237c3f217f63ea8a92990eecb43a437) added more API commands. Made some efficency edits to the python code
+ - 2017-08-30 10:37:45 -0700 [06b4c6b](../../commit/06b4c6b9c1adf0ce7520762ecf46b013c4d840da) added example python code for dns_records/export
+ - 2017-08-27 18:44:04 -0700 [b596a90](../../commit/b596a903600e2d20dee4435e90b18933615ecbe2) typo
+ - 2017-08-27 11:53:56 -0700 [61a13eb](../../commit/61a13eb6888d1ef4eab57f9d4025e35606865e91) CHANGELOG.md pushed to github
+ - 2017-08-27 11:53:43 -0700 [671758e](../../commit/671758e07830be2f9f1f70af393b92ba5e4ed46e) 1.7.4 release
+ - 2017-08-27 11:52:19 -0700 [510a4b6](../../commit/510a4b65fee4d22513474d28698e8f4359c6c335) added /zones/amp & /zones/dns_analytics API calls
+ - 2017-08-27 11:03:58 -0700 [a56ab78](../../commit/a56ab782de87d2fe9c94218b239c2bda0ac477be) CHANGELOG.md pushed to github
+ - 2017-08-27 11:03:46 -0700 [6d5952c](../../commit/6d5952cbda642328c06b3c71b87214aa9ecc5304) 1.7.3 release
+ - 2017-08-27 11:03:18 -0700 [434efb8](../../commit/434efb8f7d716e3c968b62db09fa8a7147787ac9) added dns_records/export documentation
+ - 2017-08-27 10:48:34 -0700 [9a35d4f](../../commit/9a35d4f5180d40d6754e9dcf203feb188d0fc24b) CHANGELOG.md pushed to github
+ - 2017-08-27 10:48:19 -0700 [c1bb920](../../commit/c1bb920a10b4ea017ef0c9b40896d30e49f5ed19) 1.7.2 release
+ - 2017-08-27 10:47:41 -0700 [680d5b9](../../commit/680d5b9f6a805625be1ce8b50c8ab9ebb4e25d22) added dns_records/export API endpoint hence added code to handle non-JSON responses. added some initial http error code processing
+ - 2017-08-27 09:28:57 -0700 [77a69b7](../../commit/77a69b72c76edd0cc76dde717ca85b1924ae17a9) CHANGELOG.md pushed to github
+ - 2017-08-27 09:28:31 -0700 [d443410](../../commit/d4434106da68ef1828caaf49e8a25c442bb2dba2) 1.7.1 release
+ - 2017-08-26 23:54:06 -0700 [a86700a](../../commit/a86700af42da5efe49ae9d6178aeec315a373150) typo
+ - 2017-08-26 23:49:40 -0700 [684b001](../../commit/684b001baa6fb772bc55ca59be3d24f0766eabc5) CHANGELOG.md pushed to github
+ - 2017-08-26 23:49:08 -0700 [de7bbee](../../commit/de7bbee0a048f300eec39cdf00f129b17e5df7d3) 1.7.0 release
+ - 2017-08-26 23:47:04 -0700 [ee52cb3](../../commit/ee52cb33f95502e4b2df861cc5201f3a537137ba) tags added and some general cleanup
+ - 2017-08-26 23:46:13 -0700 [d400c56](../../commit/d400c565cb1a29440a45319e7feca2a93b081c90) support for dns_records/import and file upload via library and cli4 command
+ - 2017-08-23 02:59:08 -0700 [412ced6](../../commit/412ced60ccefb3c38302d7e431c78512a27f4290) CHANGELOG.md pushed to github
+ - 2017-08-23 02:58:51 -0700 [b1481fa](../../commit/b1481fa3cbf08d7a5b054c4488cda1e8357611c1) 1.6.2 release
+ - 2017-08-23 02:57:48 -0700 [16129a3](../../commit/16129a394cdc43e07e67cea9b6c14358311f66f4) removed requirement for logger package as its not used. changed Logger class  to CFlogger to remove confusion - issues/30
+ - 2017-08-23 02:25:51 -0700 [90e3ea5](../../commit/90e3ea57e473b2cf332b7cc5ed22d5bf66ffe36a) added a delete dns record example - issues/33
+ - 2017-08-22 05:10:15 -0700 [3fc396c](../../commit/3fc396cb685bf57ce094299a7505216d78624ac2) missing chmod +x on examples/example_paging_thru_zones.py
+ - 2017-08-22 05:09:21 -0700 [1e13e8d](../../commit/1e13e8d5cbbe0c37f0a9d563869d51d91858cd50) CHANGELOG.md pushed to github
+ - 2017-08-22 04:51:51 -0700 [3a03516](../../commit/3a035163d3613756e8bb3e4bc26fb3642091861c) CHANGELOG.md pushed to github
+ - 2017-08-22 04:51:16 -0700 [cae98bb](../../commit/cae98bba8564d95a64ac6aa293805b1e587db2c6) 1.6.0 release
+ - 2017-08-22 04:39:52 -0700 [4745e20](../../commit/4745e20cc337d7d22a4c87ccc58a21961415a603) Merge pull request #35 from Bellardia/implement-argo
+ - 2017-08-22 04:37:06 -0700 [b07a3c9](../../commit/b07a3c99650b8a566116ff7ab68ba6860f4361fb) Merge pull request #34 from Bellardia/Bellardia-patch-1
+ - 2017-08-22 03:58:09 -0700 [fb12f30](../../commit/fb12f3000824051d34008a2c63e9eabce0822edc) fixed paging examples, as per pull request #28 & #29
+ - 2017-08-22 03:48:11 -0700 [152c9a1](../../commit/152c9a1fcdd447eca9aa6a5ef358aad1ac5307e1) Merge pull request #29 from crlorentzen/patch-1
+ - 2017-08-22 03:47:04 -0700 [9926050](../../commit/9926050443a81c821d93454c1745f420e1c2247c) Merge pull request #28 from crlorentzen/patch-2
+ - 2017-08-16 00:04:24 -0400 [d8d15c7](../../commit/d8d15c7163b19cec0859f4247de9c212d1bfecef) Add support for Argo
+ - 2017-08-15 11:03:51 -0400 [182a770](../../commit/182a7705d66ee8e9275066a703c734238eba59d3) Add support for organizational monitors and pools
+ - 2017-01-25 13:09:31 -0500 [6c86fef](../../commit/6c86fef75e01a2b8c1a92925cec3ac0dbac19bd6) Fixed pagination of raw example, same as c842b04
+ - 2017-01-25 13:05:46 -0500 [c842b04](../../commit/c842b04473627a22788d9e8bfac8729f72f504c9) Fix Pagination in example raw code
+ - 2016-12-30 10:34:40 -0800 [5358208](../../commit/5358208360c891cdabb954ba85c8ea269891a350) CHANGELOG.md pushed to github
+ - 2016-12-30 10:34:09 -0800 [f0a4fea](../../commit/f0a4fea03901b6547b861613769c758c439580dd) added reference to blog for historic reasons
+ - 2016-12-30 10:27:17 -0800 [c1c5096](../../commit/c1c5096e4c8e20609638dfde9b662be9c70c9c7b) 1.5.1 release
+ - 2016-12-30 10:27:06 -0800 [abf116c](../../commit/abf116c5f58a5e32ce7878bd7fc6ba6ccd2d4bba) added opportunistic_encryption, opportunistic_encryption, subscriptions API calls
+ - 2016-12-30 08:32:30 -0800 [37ddc7e](../../commit/37ddc7eea035b5629d5ec7e09ea6020c4c5520ff) removed import CloudFlare.exceptions from examples - as per @yesbox edits for python3
+ - 2016-12-30 08:18:51 -0800 [08aafa4](../../commit/08aafa4dc46fc3768ab046092bad6771691aa621) CHANGELOG.md pushed to github
+ - 2016-12-30 08:18:19 -0800 [dba1257](../../commit/dba1257bd75196d4811ab3051c4c3a1519f42271) 1.5.0 release
+ - 2016-12-30 08:13:26 -0800 [f82c055](../../commit/f82c055147250b15cf6378ffa17ba9c803e7ad92) Merge branch 'yesbox-refactor_imports'
+ - 2016-12-30 16:18:13 +0100 [c013305](../../commit/c0133052de575c2e277d51643b8c8d39bbf96fe3) Refactor imports
+ - 2016-12-29 20:25:27 -0800 [b4465b9](../../commit/b4465b9930441ebc9cc4ac454f38a28047e2c19e) 1.4.11 release
+ - 2016-12-29 20:24:05 -0800 [9c54a10](../../commit/9c54a10f9477232ea733ff99be07fd26ad7f21a0) moved converts into seperate file. corrected zone name converter to be simpler
+ - 2016-12-29 12:30:23 -0800 [9381a70](../../commit/9381a70f9c562eb606c808427006f86d23392dd0) CHANGELOG.md pushed to github
+ - 2016-12-29 12:29:51 -0800 [4413e7b](../../commit/4413e7b6b3187fbb538febf83da5174203bbf0d4) 1.4.10 release
+ - 2016-12-29 12:28:50 -0800 [0d17f04](../../commit/0d17f0438eb30484edcb5b229105a75ed6d1a21b) 1.4.9 release
+ - 2016-12-29 12:24:11 -0800 [12bb621](../../commit/12bb621300f68354cabc2d7eceaa75cd9d35cad4) Merge branch 'Sarga-master'
+ - 2016-12-29 13:00:10 +0200 [1d0ac45](../../commit/1d0ac45fbd08a8d7b5d57dd977ff81b11f19b59b) added http2,pseudo_ipv4 settings
+ - 2016-12-29 11:56:33 +0200 [5a2094f](../../commit/5a2094f39aab1f9060a7253a1876b9dc68f1b5b4) added http2,pseudo_ipv4 settings
+ - 2016-12-29 11:51:16 +0200 [cf90637](../../commit/cf90637ba83a3225fb63a6a2280911ab9c0b4c68) added http2,pseudo_ipv4 settings
+ - 2016-12-28 20:55:45 -0800 [180ea9c](../../commit/180ea9c27042db38317695d9c62989c54f8b55e2) CHANGELOG.md pushed to github
+ - 2016-12-28 20:55:07 -0800 [ed8a55d](../../commit/ed8a55db66352307a917433c93885491aabd5582) 1.4.8 release
+ - 2016-12-28 20:54:37 -0800 [61b316c](../../commit/61b316c7ef7dc095c3bb0b0da565facff70dd9c6) added rules support for /zones/:id/firewall/waf/packages/:id/rules/:id
+ - 2016-12-28 20:40:02 -0800 [520abbb](../../commit/520abbbf9127a9537aa976eda6f177003932a1c3) CHANGELOG.md pushed to github
+ - 2016-12-28 20:38:48 -0800 [a9ca66f](../../commit/a9ca66ff17d56009a81ecdc82060e846fbbccdf1) 1.4.7 release
+ - 2016-12-28 20:38:06 -0800 [8122b6d](../../commit/8122b6d911c1fee698241e82996201a1365587e1) Merge branch 'rita3ko-update/load-balancing'
+ - 2016-12-28 20:35:47 -0800 [bd1886d](../../commit/bd1886dfb414f64ce5d901dd6a5f8363dcb8fa21) Merge branch 'update/load-balancing' of https://github.com/rita3ko/python-cloudflare into rita3ko-update/load-balancing
+ - 2016-12-28 20:32:32 -0800 [ad841f5](../../commit/ad841f527bd5f3852e3a434a0f74557f59fe3c84) CHANGELOG.md pushed to github
+ - 2016-12-28 20:31:37 -0800 [e15a4ba](../../commit/e15a4ba6abc7b576d7401d8bdcd3215faccb4402) 1.4.6 release
+ - 2016-12-28 20:30:45 -0800 [d5529e4](../../commit/d5529e4f0f54908c2c15fb16b16c3e6e6c0e3f78) added API support for third param - used by /zones/:id/firewall/waf/packages/:id/groups/:id & /zones/:id/firewall/waf/packages/:id/rules/:id
+ - 2016-12-28 11:19:14 -0800 [b1407ac](../../commit/b1407ac432879f0c740f128e808fa6be281c5c1f) Update Load Balancing endpoints to reflect latest API changes
+ - 2016-12-27 10:27:23 -0800 [9c59aa3](../../commit/9c59aa3ea0847711b75e39b6d9d722c468c0ea05) CHANGELOG.md pushed to github
+ - 2016-12-27 10:26:52 -0800 [c27d098](../../commit/c27d098b90f3de1a40d1e56aab7ddd5c72dbe2f7) 1.4.5 release
+ - 2016-12-27 10:26:03 -0800 [9d722f1](../../commit/9d722f163a71d849868c77091efa695331c75b30) added User-Agent support to help debug calls - should have been done on day zero - oh well
+ - 2016-12-24 10:17:01 -0800 [cc467af](../../commit/cc467af835957cb316d563c39bb06a94985bf02c) added support for params being Null/None, floats, negative numbers plus added more error checking
+ - 2016-12-22 16:22:26 -0800 [35f8ca1](../../commit/35f8ca1b46d0164048a7f843e14a464f655c0184) missing newline on json output
+ - 2016-12-22 14:29:56 -0800 [f1f99bd](../../commit/f1f99bd26f621a5b0984d5cbb4c875108db672ff) CHANGELOG.md pushed to github
+ - 2016-12-22 14:29:29 -0800 [07fd70f](../../commit/07fd70fdb2d8d44814c7877ab4bff0073bf8631d) 1.4.4 release
+ - 2016-12-22 13:55:38 -0800 [0f670b5](../../commit/0f670b5ae88194a9ea314b8cc1f5b071dce56143) Added /zones/rate_limits API command
+ - 2016-12-22 13:46:42 -0800 [e144c66](../../commit/e144c663b5a4af1baf1791a422e00bcf3a239e66) CHANGELOG.md pushed to github
+ - 2016-12-22 13:46:09 -0800 [8231b76](../../commit/8231b76dd4b87996c73e539b36e36eedcf94637c) 1.4.3 release
+ - 2016-12-22 13:45:10 -0800 [1420966](../../commit/142096680954e7aa03c2620a0f545383c04686e1) pylint work
+ - 2016-12-22 13:44:41 -0800 [b8fe4da](../../commit/b8fe4da34ac997edae6be87f6cd58069e2ff0f59) pylint work because of a typo
+ - 2016-12-22 13:44:06 -0800 [a52baa4](../../commit/a52baa43a276630a7325503a6e7fc5a5788135d0) rewrite and restructure to handle modules of commands - was prompted by pylint output
+ - 2016-12-22 13:33:12 -0800 [5d7ddb0](../../commit/5d7ddb0db74e01c0add91a89542edf927414b422) was missing a newline at the end of the --dump command output
+ - 2016-12-22 13:31:53 -0800 [0193fcf](../../commit/0193fcf21864f43502f6bbd96137d6bbee26c0ff) more pylint work
+ - 2016-12-12 16:55:41 -0800 [6cdd04b](../../commit/6cdd04b0ced721d9f7116cd40b99cf8c27afa952) plenty of pylint edits - not that it changes anyway useful
+ - 2016-12-11 11:23:29 -0800 [824e1eb](../../commit/824e1ebc9968571c60f1fe48c80e3908c6da4698) CHANGELOG.md pushed to github
+ - 2016-12-11 11:23:05 -0800 [37fab98](../../commit/37fab98e08c814d7db066af60266c4d613960b97) 1.4.2 release
+ - 2016-12-11 11:22:02 -0800 [52dda2e](../../commit/52dda2ededa1aa8fd21e7bc2dff2c1f2d2c58a9a) sanatize the returned results - just in case API is messed up
+ - 2016-12-10 15:39:29 -0800 [080733b](../../commit/080733b58e144670116d7f3ccadf369d599bfc61) CHANGELOG.md pushed to github
+ - 2016-12-10 15:39:01 -0800 [f3d6377](../../commit/f3d637727d74acecd8faf4c9b6d652ee2cff183f) 1.4.1 release
+ - 2016-12-10 15:38:10 -0800 [8c66d32](../../commit/8c66d3253b6f257b61b0116600fb2b3d77e8f0fb) cleanup of yaml print output if yaml package isnt installed
+ - 2016-12-09 16:22:51 -0800 [894ae11](../../commit/894ae11788a2b1997e4f58895d205d1f74ab16f7) Moved walk into CloudFlare class - much cleaner
+ - 2016-12-06 08:24:29 -0800 [752ccb4](../../commit/752ccb45b40d2db245b6cd974b39e9c0f4880bf7) CHANGELOG.md pushed to github
+ - 2016-12-06 07:52:56 -0800 [b717f6c](../../commit/b717f6c3f5087bade8cb729ca798af1575eb0f8a) Merge branch 'corywright-fix-usage-docstring'
+ - 2016-12-06 07:52:35 -0800 [e87ab0a](../../commit/e87ab0ae9c88a44dc1e1274baddb8eb701fb0330) Merge branch 'fix-usage-docstring' of https://github.com/corywright/python-cloudflare into corywright-fix-usage-docstring
+ - 2016-12-05 11:03:04 -0800 [99a85fb](../../commit/99a85fb2c51f626f1f10ce3e0db164277d4137a9) CHANGELOG.md pushed to github
+ - 2016-12-05 11:02:16 -0800 [2d4a5ee](../../commit/2d4a5ee85ade3702013e92f3ee72b2491b9bddb6) 1.4.0 release
+ - 2016-12-05 10:58:59 -0800 [734204e](../../commit/734204e901dfcd486b24ed60dec2fcea75855412) cli4 can now do maps and regions in Cloudflare Load Balancer
+ - 2016-12-05 10:57:57 -0800 [957f9b0](../../commit/957f9b0af2d434e41249533c2180164215fb73d7) Removed CloudFlare Load Balancer region example - moved to cli4
+ - 2016-12-05 10:56:57 -0800 [dcb7456](../../commit/dcb74565cc0f1bc8aee6bd747043192accd6ff51) Cloudflare Load Balancer example updated
+ - 2016-12-04 16:17:25 -0800 [cc46b4d](../../commit/cc46b4d28aac69cf0811c8ac5973a15a0abad1dc) added unnamed data and param passing - used by CLB API
+ - 2016-12-04 13:43:50 -0800 [e57f421](../../commit/e57f421854a50e0c1954a80191f7efb70036ab81) changed most id values to all zeros
+ - 2016-12-04 13:34:31 -0800 [420d8da](../../commit/420d8dae3938d13f020d19f36683bfec31d9ea6b) added param examples
+ - 2016-11-28 12:53:44 -0800 [0e159f5](../../commit/0e159f5b938a319cf362061497f10565df3c2a34) typo
+ - 2016-11-28 12:51:42 -0800 [43afa2f](../../commit/43afa2f76f716cfa2b25ac0b06e99e5720e5fb41) CHANGELOG.md pushed to github
+ - 2016-11-28 12:51:07 -0800 [b41d1bb](../../commit/b41d1bb553a807fa245dd95dc2ba2df461ff0f70) Added documentation for error response
+ - 2016-11-23 15:26:02 -0500 [1f6e11c](../../commit/1f6e11c3cfeaeaa366af87257f34d32a13881cff) Fix usage typo: -put should be --put
+ - 2016-10-30 16:21:52 -0700 [bed3f77](../../commit/bed3f77009be4160e3f7aef78f079c0ce8d6c9f8) 1.3.2 more Python3 work
+ - 2016-10-30 16:18:23 -0700 [2008a53](../../commit/2008a534891191ca37154f78aed1fd7de18aa5e6) flushed out tabs, converted print to print() - all python3 stuff
+ - 2016-10-29 12:50:28 -0700 [e179521](../../commit/e1795216aea9935b19ab2340cd63f68a8ed4065e) Added more examples of using raw mode and updated README
+ - 2016-10-27 09:15:22 -0700 [8f7b510](../../commit/8f7b51064c54884c095f598f9f93107a24cf2b7f) CHANGELOG.md creation added to Makefile - and pushed to github
+ - 2016-10-27 09:09:47 -0700 [7711452](../../commit/7711452b94aa1cc556fef7e7430bcb005f7ca761) CHANGELOG.md creation added to Makefile
+ - 2016-10-25 05:14:20 -0700 [206a699](../../commit/206a6992005fdc891e60bdf298e330d6de701810) working CTM release
+ - 2016-10-25 05:10:25 -0700 [f107f40](../../commit/f107f40ad4388ad6f71c2e171d3b1a2eb9ba878a) support for CTM errors, cleaner exceptions for invalid methods, clearer cert exception message
+ - 2016-10-25 05:06:08 -0700 [e0336e1](../../commit/e0336e1172029e0f25ffc5924edf8fbe86bb324f) typo
+ - 2016-10-24 06:52:00 -0700 [1555a85](../../commit/1555a854655a3f4ca68dbcc7b4b46c72cb7451e9) typo
+ - 2016-10-22 11:03:26 -0700 [b5919ad](../../commit/b5919ad53dcd9a992879004eb82758bee1bd3134) typo
+ - 2016-10-22 10:58:46 -0700 [b0e6bb8](../../commit/b0e6bb8fdc0b7af5af726d2227acbdeaec3d7d41) add CTM (Cloudflare Traffic Manager) API calls
+ - 2016-10-21 17:29:47 -0700 [406fa56](../../commit/406fa56b8666ddee1082f1bac0b7ade527c39037) create zone and populate example needed FQDN for CNAME dns record
+ - 2016-10-21 14:08:43 -0700 [bc99cb5](../../commit/bc99cb513913ccc421543111d4631e1fa96fcebe) needed for package reasons
+ - 2016-10-21 14:06:03 -0700 [460d77b](../../commit/460d77bad7b255718e3986090b75458c6eef49a0) 1.3.0 - python3 finally works via pip install
+ - 2016-10-21 12:54:22 -0700 [110870b](../../commit/110870b4524cad34f7ddd780d9532f5b3e09d374) 1.2.6 - python3 does not need the import statement
+ - 2016-10-21 12:49:37 -0700 [968b93c](../../commit/968b93c301b51c6d44a1976d06164d518af49e11) 1.2.5 - error_chain can now be read when an error happens
+ - 2016-10-21 12:48:11 -0700 [3650b3e](../../commit/3650b3e841acb2e38b55722eb76e703a789a8d22) error_chain can now be read when an error happens
+ - 2016-10-20 18:12:24 -0700 [5f78fcd](../../commit/5f78fcd803c4e314de41816caba9144e1f0c8d81) added examples and man page to distributed files
+ - 2016-10-19 14:29:27 -0700 [c6c3175](../../commit/c6c3175543cfb11fa49a481565f7d8bfe3a22c65) fixed CloudFlare.exceptions in raise/except
+ - 2016-10-18 18:16:34 -0700 [5c59702](../../commit/5c5970256744cc711ce408e5e8d7b12cd48a1ee3) added cli4 --dump documentation
+ - 2016-10-18 17:42:50 -0700 [f89c64b](../../commit/f89c64b485e98366a0a942300cd26035f5931892) added more api calls - available_rate_plans  websockets ssl/analyze ssl/verification
+ - 2016-10-18 17:38:28 -0700 [6655fee](../../commit/6655fee7ecd5dadfaf6abe4831ff39d5d72a253e) walk the tree correctly for --dump option
+ - 2016-10-18 14:38:42 -0700 [3e177cf](../../commit/3e177cf0a4d29741822284980e46d93a143ff3ff) typo
+ - 2016-10-17 17:19:26 -0700 [88c4250](../../commit/88c4250c40bd0ae43a6dcb36fe635b03080a0e31) typo
+ - 2016-10-17 17:16:49 -0700 [d9f5930](../../commit/d9f593080a94178e9e703df1b78ab25af2e61c4d) added -d/--dump command to display list of API calls
+ - 2016-10-17 17:16:15 -0700 [22b85b1](../../commit/22b85b1ba22e686792b03e053caeaaa8258d7008) made add internal call start with _ and added a few missing API calls
+ - 2016-10-17 11:18:42 -0700 [a11c251](../../commit/a11c251c49253910cceac50286b4482934fc1807) first public raw mode release
+ - 2016-10-17 11:16:45 -0700 [2dfe728](../../commit/2dfe728f42947a6ed0f126329bcb52461d35c54d) typo - theres just "result" and "result_info" returned in raw mode
+ - 2016-10-17 11:07:17 -0700 [797b90f](../../commit/797b90f11889bca2be70d923ef31e139b0dded91) Added --raw mode examples
+ - 2016-10-17 10:38:39 -0700 [c1ead41](../../commit/c1ead419110b5e50bda69061ca2b8635eae085eb) Added more cleanup code and sdist/bdist options - not that bdist is useful
+ - 2016-10-16 19:05:36 -0700 [06e5fcc](../../commit/06e5fccff0ed2071b851f66dab10ed2e6822554e) with raw code added we bump the version number
+ - 2016-10-16 19:04:59 -0700 [052e1c0](../../commit/052e1c046bd36fe57dffaaefab7a430a207f094f) example of how to page thru data with raw option
+ - 2016-10-16 18:13:28 -0700 [3ae4626](../../commit/3ae4626c5703470fd50b00066af669f777d40646) added raw flag to class so that paging values can be returned
+ - 2016-10-16 18:11:59 -0700 [00ef9f8](../../commit/00ef9f8396c067d30c861b68336686d5680887a1) typo
+ - 2016-10-16 18:09:13 -0700 [1d41949](../../commit/1d4194916a580cc089b1d5daf80447a64aa76f12) added --raw flag to cli4 so that paging values can be returned
+ - 2016-10-16 18:07:35 -0700 [02df169](../../commit/02df169aff1113f47873cf70cf2c36ed592e9eb4) fixed typo
+ - 2016-10-16 11:07:11 -0700 [961c239](../../commit/961c239adf0cf763b9add03237daf664bcc3ad9a) Changed company name to Cloudflare - dropping the capital F
+ - 2016-10-15 08:25:18 -0700 [5e8bc5a](../../commit/5e8bc5a60934d8000f468f164116e01de2925d2e) Added python lint to make process - still with non-critical errors at this point
+ - 2016-10-15 08:14:30 -0700 [889d072](../../commit/889d072039c798fe7ce60319e77fbb7ab5a84564) cli adds version and json options. cli man page matches cli command
+ - 2016-07-04 17:17:33 -0700 [bb64ccd](../../commit/bb64ccd13754a181763c250ee525983a1bd1e4a9) bumped version number after various read_config fixes and logger requirements added
+ - 2016-07-04 17:10:21 -0700 [45f02de](../../commit/45f02dede419494bdd62b3816d7b6d5bc621aa6e) Added logger to requirements.txt and setup.py
+ - 2016-07-04 16:47:37 -0700 [4747180](../../commit/4747180fac0f31866834ea44b6de8d76a07be282) removed redudant code and confirmed extra code would work from an env variable
+ - 2016-07-04 16:38:32 -0700 [7c84046](../../commit/7c84046ee4d60a11f735e7c6eebc38cf38031974) Merge branch 'ad-m-patch-1'
+ - 2016-07-04 16:36:45 -0700 [1641115](../../commit/164111554a10e4d62d60a9aa194213788f5fc660) removed duplicate code because of multipul PRs
+ - 2016-07-04 16:29:40 -0700 [0e6a6fe](../../commit/0e6a6fe5d6a8ad6e8e2e2c966ef34f04ff55fbc2) Merge branch 'fix_no_config-20160628-0927' of https://github.com/nicholaskuechler/python-cloudflare
+ - 2016-07-04 16:19:25 -0700 [53da54b](../../commit/53da54b061fe8732fe3741272772d838c5d1d110) Merge branch 'niekrosink-FixEmptyExtraField'
+ - 2016-07-04 12:20:41 +0200 [6272de8](../../commit/6272de825eb8d85acb0bf9459b49cc8dadd9e8b8) Fix fail parse config if no section
+ - 2016-06-28 09:41:29 -0500 [f7b824f](../../commit/f7b824fb8a81b49f27e2d789c6fdaa71bcfae1bf) Fix handling of missing config when passing in email and token.
+ - 2016-06-27 10:47:02 +0200 [020601b](../../commit/020601b992e957fbf2387b3738f525a302e3219c) Fixed empty extras field
+ - 2016-06-21 19:08:49 -0700 [aeff51b](../../commit/aeff51b35c3841965d19ddd2561f232cb2422e24) Fixed documentation - thanks hlx98007 for pointing this out
+ - 2016-06-21 18:48:53 -0700 [f060792](../../commit/f0607922b1b492b12d5c930aa26ca11f269624e2) Fixed docs and bumped version to 1.1.3
+ - 2016-06-21 18:46:51 -0700 [eec307f](../../commit/eec307f1a8b677bdef55da35bbe7ab5ad643ae5a) Merge branch 'hlx98007-master'
+ - 2016-06-21 18:44:24 -0700 [4d20c09](../../commit/4d20c09eefa4a7fa3079f10945a6a869f9a176fc) Merge branch 'master' of https://github.com/hlx98007/python-cloudflare into hlx98007-master
+ - 2016-06-21 18:41:59 -0700 [01fe999](../../commit/01fe999ca8433e87f3b3f7334d82fa63e1092280) Fixed the issue with a missing extras= in the config file. You now dont need the extras= command
+ - 2016-06-21 18:37:33 -0700 [d4261a0](../../commit/d4261a0fb8372a9933373507bc0723467f8d2001) Nulled out setup.cfg entries as they are not used
+ - 2016-06-17 11:33:37 -0700 [e23e8fe](../../commit/e23e8fe1672a9321e4009cbac286360a0bac3cbd) Version 1.1.2
+ - 2016-06-17 11:33:05 -0700 [2c357a8](../../commit/2c357a89af1106d150a12066288d20d628fcd29c) Fixed exceptions. Added -V for version.
+ - 2016-06-17 11:32:05 -0700 [0004a42](../../commit/0004a42260d2fe7a312ab2aa64f8ad3e554df804) Typos and cleanup
+ - 2016-06-17 10:08:02 -0700 [cedda2b](../../commit/cedda2b0a68e0579398d16a0a01738f38bbc80d7) Version 1.1.1
+ - 2016-06-17 10:07:32 -0700 [cf2c59e](../../commit/cf2c59eb65ad2aeb254e4bb646bd269d237d764d) Fixed some exceptions. Cleaned up more code. More pylint work.
+ - 2016-06-17 10:03:26 -0700 [c5f8287](../../commit/c5f82875065a60042d57c1fc514b11eded50f918) Stopped build and dist dirs being owned by root
+ - 2016-06-14 20:01:21 -0300 [11320f0](../../commit/11320f0042a7f039837f8bc57c1a67ab78387f29) doc fix.
+ - 2016-06-14 11:17:06 -0700 [8168029](../../commit/8168029ab3d024b768824429d91dfdb553618bec) small pylint changes
+ - 2016-06-14 10:57:58 -0700 [02a13a5](../../commit/02a13a5601c1aa312dd3d0bdf4111375dc618459) small pylint changes
+ - 2016-06-14 10:57:03 -0700 [2ded713](../../commit/2ded7132c95656d18ef9c56baec5385bb89a8642) small pylint changes
+ - 2016-06-14 10:56:22 -0700 [f229482](../../commit/f2294821e85adf6d55a12cb87aab5f190d2521d2) small pylint changes
+ - 2016-06-14 10:55:55 -0700 [1ed0955](../../commit/1ed0955a8c3f6df9c8fff30e8c7dc3c45b7e47d3) small pylint changes
+ - 2016-06-13 12:50:51 -0700 [3d2d1de](../../commit/3d2d1dec078c92d97e1b9c309bb5493efde4ac85) Moved to version 1.1.0
+ - 2016-06-13 12:48:26 -0700 [589c0de](../../commit/589c0dedf074a206400aee0bdd6e3b6ca44c79db) Moved core logic into its own file - CloudFlare/cloudflare.py
+ - 2016-06-10 22:51:33 -0700 [78fff44](../../commit/78fff447cc8a682ed61a88a21cf89c8f39242f83) Initial pass a unix man page for cli4
+ - 2016-06-10 22:46:51 -0700 [bf45916](../../commit/bf459162254562a83fdd6b600e3dfa4a297f1112) Python 3.x porting
+ - 2016-06-10 22:38:42 -0700 [423120c](../../commit/423120ceedb7881984b6ba944410620571d86874) Python 3.x porting
+ - 2016-06-10 22:36:46 -0700 [adf1e5b](../../commit/adf1e5b4cfb0f77074ba3191b8e01ab74103e7ba) Added yaml output support. Python 3.x porting
+ - 2016-06-10 22:32:15 -0700 [9e850db](../../commit/9e850dbc9e635d52e24612e7ee47ce16dfb517e9) Added Python3.x documentation. Renamed files with dashes to underscores.
+ - 2016-05-18 05:48:02 -0700 [2e2f856](../../commit/2e2f8568d9e30d1f6e52be5b0f41b3e025a1b1f9) Moved to 1.0.7
+ - 2016-05-18 05:46:39 -0700 [3225f64](../../commit/3225f64e94e188362c5ed5c71c09d1a9207871e3) Cleanup of code and confirmed functionality with A/AAAA records present
+ - 2016-05-18 05:44:11 -0700 [ca88ab7](../../commit/ca88ab79ba558040ffdd1da45160e504d41bc01b) Fixed issues with lack of second instance arg
+ - 2016-05-18 04:20:15 -0700 [5b56376](../../commit/5b56376757baa83cb8f32b33c40b0f21f19c0e77) Now matches setup.py
+ - 2016-05-18 03:41:58 -0700 [27ec99f](../../commit/27ec99fbb982b66452c9698aeba57dbfcb9a41ff) typo
+ - 2016-05-18 03:28:30 -0700 [636658d](../../commit/636658dd2e4ca2fdddf9470c123e392926421a3a) Added documentation for DNS CLI commands and upped version to 1.0.6
+ - 2016-05-18 03:12:45 -0700 [ec9fef2](../../commit/ec9fef22ca873cab3cd63af28b97febb57acef84) Provided support for dns names to return more than one item. Allowed more complex json/yaml results
+ - 2016-05-18 02:01:20 -0700 [e9cf6aa](../../commit/e9cf6aa9125ff259b19df02bb72f48338702b2dc) Removed fqdn from list of DNS entries - not needed
+ - 2016-05-17 14:29:36 -0700 [27ad0c1](../../commit/27ad0c143927e2ab24d2480ebe7732f95542c7df) Added dns_records examples
+ - 2016-05-17 14:16:10 -0700 [834509f](../../commit/834509f5333149af5ac39356f31a800db062575e) Added support for DNS names after /dns_records/
+ - 2016-05-17 13:18:48 -0700 [637400e](../../commit/637400e3a30a22e942f4e7e8f8144d57e594d1a5) Added a example to update a dynamic DNS entry via CloudFlare v4 API
+ - 2016-05-17 08:25:29 -0700 [81113d1](../../commit/81113d1f3b3bb36a6a24fc80403da96861edf8fa) Added initial code to support Python3. A long was still to go
+ - 2016-05-17 04:45:46 -0700 [4560bb8](../../commit/4560bb81e4ea3a0b6c23da5eaf422551e51d5c33) Cleaned up tabs and space - tabs only now - Python3 ready
+ - 2016-05-17 04:37:39 -0700 [2a5fd9b](../../commit/2a5fd9bab88d1e68d64adec29a1af7ad111fe67f) Cleaned up tabs and space - tabs only now - Python3 ready
+ - 2016-05-17 04:29:13 -0700 [a23a777](../../commit/a23a777005fb5d9623b1f9ef0b0b682b247e9255) Make pagerule example more readable
+ - 2016-05-17 01:20:43 -0700 [ee50578](../../commit/ee505783f5d4a94354f61162f822505b107f9ee8) minor fix to make install work cleanly
+ - 2016-05-17 01:07:03 -0700 [d55f9d1](../../commit/d55f9d10ce96499c5b7a5862828680993077321d) Merge pull request #2 from carlkibler/master
+ - 2016-05-16 18:50:38 -0700 [f458c23](../../commit/f458c234abfcd1906556271d7958c44557c3fe9b) Added page_rule example
+ - 2016-05-16 18:50:12 -0700 [40b5b2b](../../commit/40b5b2bfcbb6b88e93b6bb02f58366004c664b60) Bumped version number
+ - 2016-05-16 18:49:48 -0700 [821b144](../../commit/821b144c26dd397d2c7e536c04dbd0e46ab694c4) Added YAML mode; added support for JSON POST data (needed for pagerules)
+ - 2016-05-16 15:34:35 -0600 [5c8afef](../../commit/5c8afef70593d464faa6ce6b275e2af7b30b7e12) Process 'extras' only if they are set
+ - 2016-05-16 14:28:49 -0700 [24bcf9d](../../commit/24bcf9d8929a9e899e159a1310ea256671f5577f) Added Makefile to help build and packaging process
+ - 2016-05-12 18:27:38 -0700 [680962c](../../commit/680962c8c2741e25cb54492b09ee554dc65713de) Project now available at https://pypi.python.org/pypi/cloudflare
+ - 2016-05-10 16:14:51 -0700 [6d8479d](../../commit/6d8479d273cc76c0fdb088460fbd6441dfe31068) Added files needed to get https://pypi.python.org/pypi working
+ - 2016-05-10 16:11:31 -0700 [d3c2d97](../../commit/d3c2d9748cef82e819280501b4da6ee493a9ac32) Added lots of structure to get https://pypi.python.org/pypi working
+ - 2016-05-09 21:37:43 -0700 [a6b6593](../../commit/a6b6593605019b111c794bf510650f1b331a98ab) Cleaned up API call list
+ - 2016-05-09 21:21:07 -0700 [1a7d102](../../commit/1a7d10279d431cfd5021d8f0aa2e40ef0d8c9784) Cleaned up API call list
+ - 2016-05-09 14:23:34 -0700 [e85e277](../../commit/e85e277297ecf369c2f563aaea2d0bd409e6e17a) Added support for two identifiers per command plus a third argument
+ - 2016-05-09 12:29:22 -0700 [77f3218](../../commit/77f32183d32f2ff0d6e6c35efade4dff21cebc30) Added /zones/:zone_id/firewall/waf/packages. Fixed /zones/ssl/certificate_packs. Removed /zones/:zone_id/dnssec/status
+ - 2016-05-05 13:36:08 -0700 [8ba8625](../../commit/8ba8625f7c937ace1289d771425069327b2d1a95) update highlighting
+ - 2016-05-04 16:54:41 -0700 [2283130](../../commit/22831301f43743c9981fc6089314017f2495dc5a) Added copyright. Corrected github address after repo move
+ - 2016-05-04 15:54:41 -0700 [113b27b](../../commit/113b27b7bd41bb82890d3ab1b6951291851ac8aa) typo
+ - 2016-05-04 15:39:46 -0700 [ac56c68](../../commit/ac56c689a172a122fdcf7e5543a84d96b20f8fc1) Added ability to pass interger in JSON data via item==value in CLI
+ - 2016-05-04 14:22:56 -0700 [e222ad7](../../commit/e222ad7c1e6c3d422dc4ff17c236bc009fcc9363) Made digits an integer in json data passed in PUT/POST/PATCH params
+ - 2016-05-04 13:35:18 -0700 [297ade8](../../commit/297ade8d82c1b9eb01297ff126e639671e13cff0) didn't handle /a/:b/c correctly when /a existed
+ - 2016-05-04 11:29:18 -0700 [9f61cbc](../../commit/9f61cbc00cb04025b8bcc7dddac68cf188a32f79) Added support for extra API calls via the configuration file. See README
+ - 2016-05-04 08:46:41 -0700 [7a42be0](../../commit/7a42be043e9c3dfd36d8dcbd91cb3b81f390f009) Added requirements.txt and appropriate stuff in setup.py to handle it
+ - 2016-05-04 08:39:43 -0700 [5a5a1ab](../../commit/5a5a1abbb811bec0f3e0f3e69dd2fcd81eaacc54) Added example of how to adjust proxy flag on the fly
+ - 2016-05-04 08:39:12 -0700 [94d5c2d](../../commit/94d5c2d25fdb7977c30235803fe5a6447d1063ae) Added proxed flag to show how to adjust DNS entries after creation
+ - 2016-05-04 08:38:30 -0700 [bc25c34](../../commit/bc25c3435aacff1feabf0d5f5e2e0547d7094c90) Added support for 40 or 48 length x509 certificate lengths. Fixed PUT paramaters
+ - 2016-05-04 08:35:37 -0700 [6edde36](../../commit/6edde369464317662b849df39ff74199aea16b80) /certificates only needs X-Auth-User-Service-Key header, no email or token
+ - 2016-05-04 08:34:22 -0700 [9893b45](../../commit/9893b451c5c8c9d1295bc394f89a1544d3075eb7) Added info about X-Auth-User-Service-Key which is used by /certificates API call
+ - 2016-05-03 10:00:20 -0700 [21025d1](../../commit/21025d1670cd30ba60855bb0ec345e8a0a157811) Moved API v4 into it's own file plus minor cleanup
+ - 2016-05-02 22:53:48 -0700 [8675a35](../../commit/8675a35af74a754092d4e83f0177f56b160196f1) README typos fixed
+ - 2016-05-02 22:40:41 -0700 [b0b585c](../../commit/b0b585c4338e93a9f18aa77e5a313d85d698261a) Added lots of examples to README
+ - 2016-05-02 22:28:22 -0700 [3e22b5e](../../commit/3e22b5efbd0504b2c1262096291a388600b45f61) Updated README and usage string in CLI
+ - 2016-05-02 22:23:19 -0700 [ddbc44f](../../commit/ddbc44f2576e4ba69badb3e1d5bad57a3dc21542) Updated README
+ - 2016-05-02 22:20:15 -0700 [1eed90b](../../commit/1eed90bb0ade23f73e663047650fee313449eb19) CloudFlare API v4 complete rewrite. Added all API calls. Added examples. Added CLU tool. Added initial tests. Updated README
+ - 2016-04-23 16:27:18 -0700 [edefd99](../../commit/edefd99cc85dca0c4349d0e28d92b029794c31a9) add license
+ - 2016-02-28 16:07:33 -0800 [d1de6c9](../../commit/d1de6c91900a1b216416bd0e61575385d6c8bdd8) Merge pull request #9 from servee/master
+ - 2016-02-28 13:40:16 -0800 [2502ef9](../../commit/2502ef957b527f0b68f033efc6428a9a6ebe86fa) Add PATCH method
+ - 2016-02-25 07:19:36 +0000 [1a88944](../../commit/1a889445561df8eac7a292a06728a115f912a3dc) fix terrible params bug in get
+ - 2015-12-05 17:43:26 -0800 [c765114](../../commit/c7651141d5d9d2ea5f0d881dc6f07e671dfc4235) Merge pull request #4 from tmrtn/http-put
+ - 2015-12-05 07:32:36 +0100 [7c0fc05](../../commit/7c0fc0546350baeb1031700996646ee56fd7884d) add missing HTTP method put, fix unknown exception class
+ - 2015-10-15 09:46:28 +0000 [6fff910](../../commit/6fff91091979660c32ca83bdb17ae9438c88fe87) fix delete method
+ - 2015-09-28 08:55:42 +0000 [3c48798](../../commit/3c487980e2ce0c6e6e8cbfb02d83a2f5fb0d6770) add exceptions + escaping urls
+ - 2015-09-17 09:39:12 +0000 [28daae8](../../commit/28daae894ed4409cebb7a72c7eb4c4884b933fba) fix delete endpoint
+ - 2015-08-30 02:23:06 -0700 [985ef56](../../commit/985ef5680f8bc9f7e1455ad28ba6a20a78b2c74d) fix get as well
+ - 2015-08-30 01:57:13 -0700 [efefa62](../../commit/efefa62c5c94f7e0aa654f974f9d760190f1868b) fix post and delete + add purge_cache
+ - 2015-08-30 01:23:14 -0700 [c37584d](../../commit/c37584d439b5e6996c49e8fc0e65e5840b5d2261) support second level urls
+ - 2015-08-02 02:56:35 -0700 [9b895b1](../../commit/9b895b133398423855357e2774d8ff3336320297) actually make methods slightly more dynamic
+ - 2015-04-03 23:47:41 -0700 [4a6acab](../../commit/4a6acab9ddc22413e4d46ef0687d55668a99fe8b) add purge all files in cache
+ - 2015-03-17 23:04:46 -0700 [f3cba51](../../commit/f3cba510e91cc9c7605a5912965994833df1180f) uppercase method once
+ - 2015-03-07 19:49:53 -0800 [710dbf9](../../commit/710dbf9f6a4a1c35da5f3a52b9955321192aa940) Update README.md
+ - 2015-03-07 18:02:10 -0800 [4b9ef71](../../commit/4b9ef716ecb04cb867593007c3ac956ce816e5eb) more hacking
+ - 2015-02-14 11:28:24 +0000 [8e79a53](../../commit/8e79a53d3cbc1f486fe027083712b9a9a0546552) posting dns_records to zone
+ - 2015-02-10 10:09:38 +0000 [0dee0ba](../../commit/0dee0badcc43ae2a019f4d206925df5fd7477224) add getting dns records
+ - 2015-02-10 09:50:51 +0000 [dcbc9a8](../../commit/dcbc9a8d2d18013112a9e0a280e73ec00a8b3a36) add logging and bug fixes
+ - 2015-02-10 06:36:48 +0000 [35e9bf5](../../commit/35e9bf5746a9660d3522a934849e878934d88bf5) more debugging
+ - 2015-01-26 08:42:51 +0000 [82c5020](../../commit/82c50206d3e6960d24bdefc26ef32ec95bb17c81) cleanup import
+ - 2015-01-26 08:42:08 +0000 [c933789](../../commit/c933789bac0a14765399f99292b5b7ced7dfca4e) initial code commit
+ - 2014-12-13 18:05:38 -0800 [948eed8](../../commit/948eed8afa9dd49213d8ac6f913d7a70e265d77a) Initial commit

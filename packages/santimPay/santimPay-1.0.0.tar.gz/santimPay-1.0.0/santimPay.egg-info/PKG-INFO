@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: santimPay
+Version: 1.0.0
+Summary: SantimPay Unofficial package
+Author: Nahom Dereje
+Author-email: dev@nahom.eu.org
+Keywords: SantimPay,Python,PaymentGateway,EthiopiaPaymentGateway
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: PyJWT==2.8.0
+Requires-Dist: httpx==0.27.0
+
+Santim pay python package which is directly made from the php laravel package https://github.com/ba5liel/santimpay-laravel/tree/main

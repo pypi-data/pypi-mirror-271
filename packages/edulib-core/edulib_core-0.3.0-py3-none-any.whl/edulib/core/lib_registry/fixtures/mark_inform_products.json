@@ -1,0 +1,42 @@
+[
+  {
+    "pk": 1,
+        "model": "lib_registry.libmarkinformproduct",
+        "fields": {
+            "code": "0+",
+            "name": "для детей всех возрастов"
+        }
+  },
+  {
+    "pk": 2,
+        "model": "lib_registry.libmarkinformproduct",
+        "fields": {
+            "code": "6+",
+            "name": "для детей старше 6 лет"
+        }
+  },
+  {
+    "pk": 3,
+        "model": "lib_registry.libmarkinformproduct",
+        "fields": {
+            "code": "12+",
+            "name": "для детей старше 12 лет"
+        }
+  },
+  {
+    "pk": 4,
+        "model": "lib_registry.libmarkinformproduct",
+        "fields": {
+            "code": "16+",
+            "name": "для детей старше 16 лет"
+        }
+  },
+  {
+    "pk": 5,
+        "model": "lib_registry.libmarkinformproduct",
+        "fields": {
+            "code": "18+",
+            "name": "запрещено для детей"
+        }
+  }
+]

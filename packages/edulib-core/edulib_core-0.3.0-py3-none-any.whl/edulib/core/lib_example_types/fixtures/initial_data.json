@@ -1,0 +1,68 @@
+[
+    {
+        "pk": 1, 
+        "model": "lib_example_types.libraryexampletype", 
+        "fields": {
+            "code": "85b62e45-6345-4b17", 
+            "name": "Учебник, учебная литература", 
+            "created": "2013-11-22T07:00:00.000+04:00", 
+            "modified": "2013-11-22T07:00:00.000+04:00"
+
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "lib_example_types.libraryexampletype", 
+        "fields": {
+            "code": "7f618ac0-1af6-425a", 
+            "name": "Художественная литература", 
+            "created": "2013-11-22T07:00:00.000+04:00", 
+            "modified": "2013-11-22T07:00:00.000+04:00"
+
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "lib_example_types.libraryexampletype", 
+        "fields": {
+            "code": "c90ae551-ec91-4377", 
+            "name": "Периодика: газета", 
+            "created": "2013-11-22T07:00:00.000+04:00", 
+            "modified": "2013-11-22T07:00:00.000+04:00"
+
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "lib_example_types.libraryexampletype", 
+        "fields": {
+            "code": "c7f78c95-82e2-45eb", 
+            "name": "Периодика: журнал", 
+            "created": "2013-11-22T07:00:00.000+04:00", 
+            "modified": "2013-11-22T07:00:00.000+04:00"
+
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "lib_example_types.libraryexampletype", 
+        "fields": {
+            "code": "be1687c6-53fd-489d", 
+            "name": "Медиафайл: звукозапись", 
+            "created": "2013-11-22T07:00:00.000+04:00", 
+            "modified": "2013-11-22T07:00:00.000+04:00"
+
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "lib_example_types.libraryexampletype", 
+        "fields": {
+            "code": "8ad3ba9c-42f6-4b02", 
+            "name": "Медиафайл: видеофильм", 
+            "created": "2013-11-22T07:00:00.000+04:00", 
+            "modified": "2013-11-22T07:00:00.000+04:00"
+
+        }
+    }
+]

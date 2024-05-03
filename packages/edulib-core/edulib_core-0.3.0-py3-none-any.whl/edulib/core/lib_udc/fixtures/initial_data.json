@@ -1,0 +1,272 @@
+[
+    {
+        "pk": 1, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "0",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Наука и знание, Информация, Документация", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "004",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Информационные технологии", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "005",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Управление Менеджмент", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "1",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Философия", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "2",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Религия, Богословие", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "3",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Общественные науки", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "5",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Естественные науки", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "6",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Прикладные науки", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "7",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Искусство", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "8",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Языкознание", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "9",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "История", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "15",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Психология", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "32",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Политика", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "33",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Экономика", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "34",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Право", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "37",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Образование", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "51",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Математика", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "52",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Астрономия", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "53",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Физика", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "54",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Химия", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "55",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Геология", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "56/59",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Биологические науки", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "60",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Биотехнология", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "61",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Медицина", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "62",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Техника", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "82",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "Литературоведение", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "lib_udc.libraryudc", 
+        "fields": {
+            "code": "91",
+            "modified": "2013-11-22T07:00:00.000+04:00", 
+            "name": "География", 
+            "created": "2013-11-22T07:00:00.000+04:00"
+        }
+    }
+]

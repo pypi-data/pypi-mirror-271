@@ -1,0 +1,10 @@
+opencf_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opencf_core/base_converter.py,sha256=49OC2fJ_Vw-GeuKC_Bdv87V_u_8Df52vWVmi949y_AM,19187
+opencf_core/converter_app.py,sha256=9oFwuSgf29WFMOu3FG2tRGCnPWgLBJKrKzB7-4_lzZk,6124
+opencf_core/filetypes.py,sha256=cMNhtQYZFk-HWrFmbdF0Ftsb_u95mg8WFcN7pAGDFrg,15473
+opencf_core/io_handler.py,sha256=WHfxQabh_YXVkFIZj913Xk-QBVv67ClK8NWoAsWLqCo,5891
+opencf_core/logging_config.py,sha256=3_0gE_d8yN_eayfMI1kLNvv_quj3uYOS1v9SoBL-2i8,2660
+opencf_core/mimes.py,sha256=CCXuscfV5jHafc0fMsM2xqkwswQUFj5Jc_6J-h6_gC8,2014
+opencf_core-0.2.1a0.dist-info/METADATA,sha256=y78ghqpSkhoyRcaapcv_mOtvNJ-gEPUgyEt88BJsCs0,8275
+opencf_core-0.2.1a0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+opencf_core-0.2.1a0.dist-info/RECORD,,

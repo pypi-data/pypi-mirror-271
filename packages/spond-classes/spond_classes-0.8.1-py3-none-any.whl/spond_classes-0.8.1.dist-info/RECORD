@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=rVD2jrX3A2iSoKLAv6-exr7_Z7inq3luGLt6Fut84ow,1742
+spond_classes/__init__.py,sha256=K-U7VABYqP_TROeEs0XnalfkGLyDIzLz-7CXLBEFkBY,336
+spond_classes/event.py,sha256=yiFkgeiXhrYb1tpvpHZUgqpzyyMGGCdAQOu1ZT_euQ8,3298
+spond_classes/group.py,sha256=rHL79F4ajXOwyeb_uBCceDoEUKUf5mH_VBq-IacaXME,5186
+spond_classes/member.py,sha256=FJyr1sq2E_jMqZNUxUml3ZjepmP__41qw8mw5R6mG48,3331
+spond_classes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spond_classes/role.py,sha256=jeUszt6ovBigIfo2Uv7eEdfGVvHwt41iomq7kaESxP8,1492
+spond_classes/subgroup.py,sha256=8cfSka7GPMX06tUFIBoW8q8WCAkb_oxjkHE6Sdn48e4,1476
+spond_classes-0.8.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+spond_classes-0.8.1.dist-info/METADATA,sha256=ozDFnXR_7Y2Txu11rFMZxbVMl_KKQTBGrNdCrOd7NIg,3499
+spond_classes-0.8.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+spond_classes-0.8.1.dist-info/RECORD,,

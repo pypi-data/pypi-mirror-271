@@ -1,0 +1,33 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "python: build wheel",
+            "type": "shell",
+            "group": "build",
+            "command": "${workspaceRoot}/.vscode/build.sh",
+            "presentation": {
+                "focus": true
+            },
+            "problemMatcher": []
+        }, {
+            "label": "python: upload to pypi",
+            "type": "shell",
+            "group": "build",
+            "command": "${workspaceRoot}/.vscode/upload2pypi.sh",
+            "presentation": {
+                "focus": true
+            },
+            "problemMatcher": []
+        }, {
+            "label": "python: build wheel and upload to pypi",
+            "dependsOrder": "sequence",
+            "dependsOn": ["python: build wheel", "python: upload to pypi"],
+            "type": "shell",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

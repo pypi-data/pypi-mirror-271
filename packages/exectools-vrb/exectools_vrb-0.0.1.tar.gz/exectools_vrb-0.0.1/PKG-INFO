@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: exectools_vrb
+Version: 0.0.1
+Summary: Various tools to execute functions in python
+Project-URL: Homepage, https://github.com/v-r-b/exectools_vrb
+Author-email: volker <volker@vrbdev.eu>
+Maintainer-email: volker <volker@vrbdev.eu>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# exectools_vrb
+
+Various tools to execute functions in python
+
+ - try_run
+ - TaskOnRequestThread

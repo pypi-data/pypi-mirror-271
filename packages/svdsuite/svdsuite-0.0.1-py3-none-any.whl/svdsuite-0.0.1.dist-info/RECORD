@@ -1,0 +1,14 @@
+svdsuite/__init__.py,sha256=MohSWIlApnElT3TzoePCm1lRKu8ZcKly7urDTHaidKI,1375
+svdsuite/_version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+svdsuite/parse.py,sha256=QuD-vB_CP1YLjNZJAuLS-DrCVIyF9fj5mQFai4RUXCk,30468
+svdsuite/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svdsuite/serialize.py,sha256=c_fSiSPthun1lMTTdBWpXGSiRWUlsBomiOPPmaZ__WU,687
+svdsuite/svd_model.py,sha256=BCFytanWwq84Qf_uRBOqXiAoPy4qIKBRheYL-nNPCDs,28962
+svdsuite/validate.py,sha256=VYZt83LFDhYeabExzAdQoTB44zc3eFCyQB4Cwn8UF5c,1979
+svdsuite/schema/1.3.10.xsd,sha256=8_JrIY3RRZ6ynMH5chlWn5BhkmCtJ1UyDx9tPLm_51U,36453
+svdsuite/schema/1.3.9.xsd,sha256=0l8aii9k5cnIRtHTYfgCQYOsjTqEpNgyH-utMLV0loE,39296
+svdsuite-0.0.1.dist-info/LICENSE,sha256=xs2kQsnVo99u97exlf61YtnUb26Sww39F292XD1nHGM,1062
+svdsuite-0.0.1.dist-info/METADATA,sha256=7A5M1u-oiH60a1YTRL7hHtGCOnLwmCYPhfRqUB4nWyo,15206
+svdsuite-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+svdsuite-0.0.1.dist-info/top_level.txt,sha256=JC5QJWAiF4N3AxUbqHwO4PtbFg0lq_UgVxAR11XtoRg,9
+svdsuite-0.0.1.dist-info/RECORD,,

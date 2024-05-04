@@ -1,0 +1,36 @@
+[tool.poetry]
+authors = ["Allen Chou <f1470891079@gmail.com>"]
+description = "A library has light-weight assorted utils in Prue-Python."
+license = "MIT"
+name = "pyassorted"
+readme = "README.md"
+version = "0.9.0"
+
+[tool.poetry.dependencies]
+python = ">=3.10.0, <4.0.0"
+pytz = "*"
+rich = "*"
+typing-extensions = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+flake9 = "*"
+isort = "*"
+pytest = "*"
+pytest-asyncio = "*"
+yapf = "*"
+
+[tool.poetry.group.doc.dependencies]
+sphinx = "*"
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+ignore = ["E203", "E704", "W503"]
+max-line-length = 88
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]

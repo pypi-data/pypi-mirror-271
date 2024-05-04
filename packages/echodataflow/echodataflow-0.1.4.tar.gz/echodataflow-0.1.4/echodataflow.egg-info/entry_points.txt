@@ -1,0 +1,2 @@
+[console_scripts]
+echodataflow = echodataflow.echodataflow_cli:main

@@ -1,0 +1,10 @@
+pandas
+pytest
+
+[dev]
+pytest
+pylint
+mypy
+black
+build
+twine

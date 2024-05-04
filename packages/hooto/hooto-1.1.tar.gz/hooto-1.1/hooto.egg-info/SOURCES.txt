@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hooto/__init__.py
+hooto/main.py
+hooto.egg-info/PKG-INFO
+hooto.egg-info/SOURCES.txt
+hooto.egg-info/dependency_links.txt
+hooto.egg-info/requires.txt
+hooto.egg-info/top_level.txt

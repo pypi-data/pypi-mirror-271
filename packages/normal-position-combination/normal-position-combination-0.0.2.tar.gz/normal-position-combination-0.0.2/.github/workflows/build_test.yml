@@ -1,0 +1,41 @@
+name: Build & Test
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ${{ matrix.platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: ["ubuntu-latest", "ubuntu-22.04", "ubuntu-20.04"]
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: 'recursive'
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install and Build Dependencies
+      run: |
+          sudo apt-get update
+          sudo apt-get install libsuitesparse-dev libglu1-mesa libglu1-mesa-dev libxi-dev build-essential
+          cd submodules/trimesh2
+          make -j
+
+    - name: Build and Install
+      run: python -m pip install pytest
+           pip install --verbose .
+
+    - name: Test
+      run: python -m pytest ./tests

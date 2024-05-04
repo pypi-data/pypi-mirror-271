@@ -1,0 +1,51 @@
+import enum
+from typing import overload
+
+
+class ClassicEnum(enum.Enum):
+    Item1: ClassicEnum
+
+    Item2: ClassicEnum
+
+class Enum(enum.Enum):
+    """enum-level docstring"""
+
+    A: Enum
+    """Value A"""
+
+    B: Enum
+    """Value B"""
+
+    C: Enum
+    """Value C"""
+
+class EnumProperty:
+    def __init__(self) -> None: ...
+
+    @property
+    def read_enum(self) -> Enum: ...
+
+Item1: ClassicEnum = ClassicEnum.Item1
+
+Item2: ClassicEnum = ClassicEnum.Item2
+
+class SEnum(enum.IntEnum):
+    A: SEnum
+
+    B: SEnum
+
+    C: SEnum
+
+@overload
+def from_enum(arg: Enum) -> int: ...
+
+@overload
+def from_enum(arg: SEnum) -> int: ...
+
+def from_enum_default_0(value: Enum = Enum.A) -> int: ...
+
+def from_enum_default_1(value: SEnum = SEnum.A) -> int: ...
+
+def from_enum_implicit(arg: Enum, /) -> int: ...
+
+def to_enum(arg: int, /) -> Enum: ...

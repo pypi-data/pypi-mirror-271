@@ -1,0 +1,101 @@
+name: Publish to Pypi
+
+on:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+
+jobs:
+  build_sdist:
+    name: Build SDist
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: 'recursive'
+
+    - name: Install and Build Dependencies
+      run: |
+          sudo apt-get update
+          sudo apt-get install libsuitesparse-dev libglu1-mesa libglu1-mesa-dev libxi-dev build-essential
+          cd submodules/trimesh2
+          make -j
+
+    - name: Build SDist
+      run: pipx run build --sdist
+
+    - name: Check metadata
+      run: pipx run twine check dist/*
+
+    - name: Upload wheels
+      uses: actions/upload-artifact@v4
+      with:
+        path: dist/*.tar.gz
+        name: dist-sdist
+
+  build_wheels:
+    name: Build Wheels on ${{ matrix.platform }} for Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [ubuntu-latest]
+        python-version: ["3.10"]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: 'recursive'
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Build Wheels
+      uses: pypa/cibuildwheel@v2.17
+
+    - name: Verify Clean Directory
+      run: git diff --exit-code
+      shell: bash
+
+    - name: Upload wheels
+      uses: actions/upload-artifact@v4
+      with:
+        path: wheelhouse/*.whl
+        name: dist-py${{ matrix.platform }}
+
+  merge_wheels:
+    name: Merge wheels into a combined artifact
+    runs-on: ubuntu-latest
+    needs: [build_wheels, build_sdist]
+    steps:
+      - name: Merge Artifacts
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: dist
+          pattern: dist-*
+
+  upload_all:
+    name: Upload if release
+    needs: [merge_wheels]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' && github.event.action == 'published'
+    environment:
+      name: pypi
+      url: https://pypi.org/p/normal-position-combination
+    permissions:
+      id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
+
+    steps:
+    - uses: actions/setup-python@v5
+
+    - uses: actions/download-artifact@v4
+      with:
+        name: dist
+        path: dist
+
+    - run: ls dist -l
+
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@v1.8.14

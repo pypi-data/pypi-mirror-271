@@ -1,0 +1,8 @@
+freezefs/__main__.py,sha256=uTfhd4xQas8E-coyZhvSf2506JPINH0pAwjy0EIhCZA,69
+freezefs/archive.py,sha256=-hvaXYGc82Svw0fhPcnFuRTPlG_HHehxOTyGn3ED7s8,12175
+freezefs/ffsextract.py,sha256=mjChk51JXCcTO4lTtGIwe2f71Vo37_pIprga5kX8WeM,3405
+freezefs/ffsmount.py,sha256=6L1Ih-8cNdyTitAW3NLsEhM4HhaVM6LKAlfFr-PaD2M,6622
+freezefs-2.4.dist-info/METADATA,sha256=kgSdb0Kq123dVA3Rm8kwGjcnZg5PWFCQZnr-slwfFok,18740
+freezefs-2.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+freezefs-2.4.dist-info/licenses/LICENSE,sha256=zWoNtgZjKopzY0GhBmET4r3YDM4G5zSVoKSQPgHc6W4,1064
+freezefs-2.4.dist-info/RECORD,,

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mkdocs_typedoc.egg-info/PKG-INFO
+mkdocs_typedoc.egg-info/SOURCES.txt
+mkdocs_typedoc.egg-info/dependency_links.txt
+mkdocs_typedoc.egg-info/entry_points.txt
+mkdocs_typedoc.egg-info/requires.txt
+mkdocs_typedoc.egg-info/top_level.txt
+typedoc/__init__.py
+typedoc/plugin.py

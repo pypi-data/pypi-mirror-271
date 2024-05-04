@@ -1,0 +1,17 @@
+LICENSE.txt
+README.rst
+setup.py
+fastboard/__init__.py
+fastboard/applications.py
+fastboard/channels.py
+fastboard/config.py
+fastboard/guilds.py
+fastboard/message.py
+fastboard/roles.py
+fastboard/threads.py
+fastboard/user.py
+fastboard/webhooks.py
+fastboard.egg-info/PKG-INFO
+fastboard.egg-info/SOURCES.txt
+fastboard.egg-info/dependency_links.txt
+fastboard.egg-info/top_level.txt

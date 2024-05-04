@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fastboard
+Version: 0.0.2
+Summary: A simple library for making a dashboard.
+Author: 0aaxs
+Author-email: 
+License: MIT
+License-File: LICENSE.txt
+
+A simple library for making a discord bot dashboard in a flask.

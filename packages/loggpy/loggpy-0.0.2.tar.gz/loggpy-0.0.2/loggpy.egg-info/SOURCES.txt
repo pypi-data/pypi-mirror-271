@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+loggpy/__init__.py
+loggpy/core.py
+loggpy/defaults.py
+loggpy.egg-info/PKG-INFO
+loggpy.egg-info/SOURCES.txt
+loggpy.egg-info/dependency_links.txt
+loggpy.egg-info/top_level.txt

@@ -1,0 +1,42 @@
+{
+  "users": {
+    "cithun": {
+      "name": "cithun",
+      "nodes": {
+        "/foo/bar/baz/qux": {
+          "[scope=main]": 7
+        },
+        "/command": {
+          "[scope=main]": 7
+        },
+        "/command/test": {
+          "[scope=main]": 7
+        },
+        "/command/test/sub": {
+          "[scope=main]": 7
+        },
+        "/command/test1": {
+          "[scope=main]": 7
+        },
+        "/command/test1/sub1": {
+          "[scope=main]": 7
+        }
+      },
+      "inherits": [
+        "admin"
+      ]
+    }
+  },
+  "groups": {
+    "admin": {
+      "name": "admin",
+      "priority": 100,
+      "nodes": {
+        "/foo/bar/baz": {
+          "[scope=main]": 5
+        }
+      },
+      "inherits": []
+    }
+  }
+}

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: super_rubik_cube
+Version: 0.0.0
+Summary: Library for simulating rubik's cubes of different sizes (N x N), and for solving 2 x 2 and 3 x 3 cubes with kociemba algorithm.
+Author: Ilmi28
+Author-email: <ilmialiev28@gmail.com>
+Keywords: python,rubik,cube,solve,3x3,2x2,rubik's cube,pocket cube,NxN,kociemba,supercube
+

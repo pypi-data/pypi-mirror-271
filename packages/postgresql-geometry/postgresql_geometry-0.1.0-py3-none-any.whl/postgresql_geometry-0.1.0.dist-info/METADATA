@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: postgresql-geometry
+Version: 0.1.0
+Summary: PostgreSQL geometry types for python
+Home-page: https://github.com/kozlek/postgresql-geometry
+License: MIT
+Keywords: django,geometry,postgresql
+Author: Thomas Berdy
+Author-email: thomas.berdy@outlook.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/kozlek/postgresql-geometry
+Description-Content-Type: text/markdown
+
+# postgresql-geometry
+

@@ -1,0 +1,14 @@
+postgresql_geometry/__init__.py,sha256=8FVmf51u2zc1EiRxC128CKUHYGOPkUD5CO3PYgUAmtk,98
+postgresql_geometry/datastructures.py,sha256=gNLvgJydrvLrkkXZtziq0lSV2cmW5D4n4i-TEVkMGos,1041
+postgresql_geometry/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgresql_geometry/django/models/__init__.py,sha256=N6cFF0bFc6v--_XRiI6xjpXynhRXz7UYb2Kgftqae3Y,158
+postgresql_geometry/django/models/fields.py,sha256=l1W-R676jECLGKxg1tjhPuInwIO82MOhBVBTw1hAtjc,1134
+postgresql_geometry/django/models/functions.py,sha256=dKByiiTLpAP2FNoKN_LB6ARVn8xfj_eAuL58f0tdhvc,225
+postgresql_geometry/django/models/operations.py,sha256=Dy2-TJOmVtSg9JbFxIJH2TYASNLRjecuBW8_59SX-YQ,321
+postgresql_geometry/faker/__init__.py,sha256=QQpzXOKvx3ugM3_INSH-sdudqcfxEnlXRwiQECuFhw8,115
+postgresql_geometry/faker/providers.py,sha256=m3h1hzPgolh9ruiJvyrqnvAspyVL3hcNscbxKkaTQRg,382
+postgresql_geometry/rest_framework/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgresql_geometry/rest_framework/fields.py,sha256=hpXdKZgj5tNsBbTnw8QP2dm8s01IDoaUVq8o-V9pxrk,789
+postgresql_geometry-0.1.0.dist-info/METADATA,sha256=F-dgAPUt4kfA26fQAvV7adivYJLi8-49MnUvKXw0_YA,641
+postgresql_geometry-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+postgresql_geometry-0.1.0.dist-info/RECORD,,

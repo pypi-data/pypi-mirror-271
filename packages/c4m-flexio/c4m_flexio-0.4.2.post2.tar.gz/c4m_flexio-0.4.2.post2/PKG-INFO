@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: c4m-flexio
+Version: 0.4.2.post2
+Summary: PDKMaster based scalable IO library
+Author: Chips4Makers contributors
+License: GPL-2.0-or-later OR AGPL-3.0-or-later OR CERN-OHL-S-2.0+
+Requires-Python: ~=3.8
+Requires-Dist: PDKMaster<0.12.0,>=0.10.2
+Requires-Dist: c4m-flexcell~=0.4.2
+Description-Content-Type: text/markdown
+
+# Flexible, scalable, IO library
+
+A IO library is a collection of cells that allows to do the input and output from on-chip signals to outside the chip. Typically these libraries with a fixed set of cells with a fixed layout and functionality and provided by the foundry or a third party.
+
+Purpose of c4m-flexio library is to have a library that is easily scalable between different technologies using the [PDKMaster](https://gitlab.com/Chips4Makers/PDKMaster) framework. It will also be configurable to adapt the cells to one's needs.
+
+## Release history
+
+* [v0.4.2](https://gitlab.com/Chips4Makers/c4m-flexio/-/commits/v0.4.2):
+  Several features for IHP SG13G2 support: RCClamp in IOPadVdd, custom layout manipulation
+  suport, prefix all cell names.
+* v0.4.1:
+  Implement layout without the bond pad included and pin that connects to the bond located at the
+  bottom of the cell. This also implements ESD using diodes between pad and iovdd/iovdd net.
+  This was done during development of IO library for the IHP sg13g2 process.
+* v0.4.0:
+  started implemented a new layout where no bond pad is present in the IO cell layout. This is for a
+  new IO library for the IHP SG13g2 process. This new layout is still considered WIP but the old
+  layout with a bond pad included should still be available.  
+  This release was made to allow to release a new Sky130 library with latest state of the IO cells
+  and updated for the latest version of PDKMaster and c4m-flexcell.
+* v0.3.1: no code change; mark IO cell code compatible with dev v0.4.0 of c4m-flexcell
+* v0.3.0: Update for [release v0.9.0 of PDKMaster](https://gitlab.com/Chips4Makers/PDKMaster/-/blob/v0.9.0/ReleaseNotes/v0.9.0.md)
+* no notes for older releases
+
+## Status
+
+This repository is currently considered experimental code with no backwards compatibility guarantees whatsoever. The library now progresses at the need of other related projects. It has been used to generate
+a set of IO cells for the open source IHPSG13G2 process.
+If interested head over to [gitter](https://gitter.im/Chips4Makers/community) for further discussion.
+
+## Project Arrakeen subproject
+
+This project is part of Chips4Makers' [project Arrakeen](https://gitlab.com/Chips4Makers/c4m-arrakeen). It shares some common guide lines and regulations:
+
+* [Contributing.md](https://gitlab.com/Chips4Makers/c4m-arrakeen/-/blob/redtape_v1/Contributing.md)
+* [LICENSE.md](https://gitlab.com/Chips4Makers/c4m-arrakeen/-/blob/redtape_v1/LICENSE.md): license of release code
+* [LICENSE_rationale.md](https://gitlab.com/Chips4Makers/c4m-arrakeen/-/blob/redtape_v1/LICENSE_rationale.md)

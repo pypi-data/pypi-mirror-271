@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pymongo[srv]
+python-dotenv
+pydantic-settings
+pyautogen
+sqlalchemy
+psycopg2-binary
+openai
+pytest

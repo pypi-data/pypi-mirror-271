@@ -1,0 +1,4 @@
+[console_scripts]
+evaluate_model = sparseypy.scripts.evaluate_model:main
+run_hpo = sparseypy.scripts.run_hpo:main
+train_model = sparseypy.scripts.train_model:main

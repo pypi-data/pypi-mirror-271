@@ -1,0 +1,60 @@
+Metadata-Version: 2.3
+Name: sparseypy
+Version: 0.0.3
+Summary: A Python implementation of the Sparsey algorithm.
+Project-URL: Homepage, https://sparsey.com
+Project-URL: Repository, https://github.com/Neurithmic-Systems/SparseyTestingSystem
+Project-URL: Issues, https://github.com/Neurithmic-Systems/SparseyTestingSystem/issues
+Author-email: Sashwat Anagolum <ssa5517@psu.edu>, JD Padrnos <jdp5888@psu.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11.0
+Requires-Dist: colorama==0.4.6
+Requires-Dist: contextlib2==21.6.0
+Requires-Dist: filelock==3.13.1
+Requires-Dist: fsspec==2023.10.0
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: jinja2==3.1.3
+Requires-Dist: markupsafe==2.1.3
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: networkx==3.2.1
+Requires-Dist: packaging==23.2
+Requires-Dist: pluggy==1.3.0
+Requires-Dist: pytest==7.4.3
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: schema==0.7.5
+Requires-Dist: sympy==1.12
+Requires-Dist: torch==2.1.1
+Requires-Dist: typing-extensions==4.8.0
+Description-Content-Type: text/markdown
+
+# SparseyTestingSystem
+A Python wrapper for the Sparsey Java implementation, with additional features such as result visualization, HPO, and more.
+
+
+# Development notes
+ 
+
+### CLI config validation
+We have some in-built schemas for models, trainers, hpo runs.
+	
+Models:
+	* Sparsey
+	* ResNeT
+	* ViT
+	* ConvNeXT
+
+Trainers:
+	* ASParsey trainer
+	* Any deep learning model trainer (most options are the same)
+
+HPO runs:
+	* Sparsey HPO runs (we need to cover all hyperparams)
+	* ResNet HPO runs (most options are the same)
+	* ViT HPO runs (most options are the same)
+	* ConvNeXT HPO runs (most options are the same)
+
+Use a config factory to create config schemas to valid the configs input by the user against.
+For custom schemas -> users need to use --custom_schema <FILEPATH_TO_PICKLED_CUSTOM_SCHEMA> option in all the scripts or the -disable_config_validation flag. 

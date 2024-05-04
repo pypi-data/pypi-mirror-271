@@ -1,0 +1,17 @@
+matplotlib
+pandas
+requests
+tqdm
+scikit-learn
+datasets
+underthesea
+dill
+transformers
+sentencepiece
+pyarrow
+unidecode
+wandb
+evaluate
+accelerate
+
+[dev]

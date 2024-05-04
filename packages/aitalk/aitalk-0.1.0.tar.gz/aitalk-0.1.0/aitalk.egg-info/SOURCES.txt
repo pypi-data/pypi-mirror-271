@@ -1,0 +1,9 @@
+setup.py
+aitalk/__init__.py
+aitalk/display.py
+aitalk/main_file.py
+aitalk.egg-info/PKG-INFO
+aitalk.egg-info/SOURCES.txt
+aitalk.egg-info/dependency_links.txt
+aitalk.egg-info/requires.txt
+aitalk.egg-info/top_level.txt

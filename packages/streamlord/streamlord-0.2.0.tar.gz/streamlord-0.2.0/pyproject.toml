@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "streamlord"
+version = "0.2.0"
+description = "Collection of tools to manipulate data streams"
+authors = ["Smairon <man@smairon.ru>"]
+repository = "https://github.com/smairon/streamlord"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

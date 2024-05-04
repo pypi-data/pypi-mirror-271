@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: logiclm
+Version: 1.0
+Summary: LogicLM
+Home-page: https://github.com/evgskv/logiclm
+Author: Evgeny Skvortsov
+Author-email: logica@evgeny.ninja
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LogicLM
+
+

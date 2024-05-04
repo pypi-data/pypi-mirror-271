@@ -1,0 +1,8 @@
+numpy<=1.26,>=1.19
+pandas<=1.4,>=1.1
+imbalanced-learn<=0.10,>=0.8
+scikit-learn<=1.2,>=1.0
+pandas-profiling<=3.3,>=2.9
+joblib<=1.2,>=1.0
+xgboost<=1.5,>=1.4
+optuna<=2.10,>=2.7

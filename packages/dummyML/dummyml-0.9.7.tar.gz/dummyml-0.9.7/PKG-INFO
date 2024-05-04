@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: dummyML
+Version: 0.9.7
+Summary: Automated data analysis pipelines on tabular data for data analyst
+Home-page: https://gitlab.com/YipengUva/end2endml_pkg
+Author: Yipeng Song
+Author-email: yipeng.song@hotmail.com
+Project-URL: Bug Tracker, https://gitlab.com/YipengUva/end2endml_pkg/-/issues
+Keywords: data analysis,machine learning,automation
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy<=1.26,>=1.19
+Requires-Dist: pandas<=1.4,>=1.1
+Requires-Dist: imbalanced-learn<=0.10,>=0.8
+Requires-Dist: scikit-learn<=1.2,>=1.0
+Requires-Dist: pandas-profiling<=3.3,>=2.9
+Requires-Dist: joblib<=1.2,>=1.0
+Requires-Dist: xgboost<=1.5,>=1.4
+Requires-Dist: optuna<=2.10,>=2.7
+
+# dummyML package
+
+The dummyML Python package is designed for data analysts to do automated data analysis on tabular data using machine learning algorithms. The package implemented all the components, data preprocessing, data splitting, model selection, model fitting and model evaluation, required for defining pipelines to automatically analyze tabular data. 
+
+### Installation
+
+Install dummyML package by running:
+
+```
+pip install dummyML
+```
+
+on the command line of a Linux system or the Anaconda Prompt on a Windows system. If you don't have root privileges, sometimes you need to add `--user` after the above commands, then pip will install the package in your home directory.
+
+If you want to install a specific version, please visit https://pypi.org/project/dummyML/ to find the exact version number. For example, you can install version 0.9.5 by `pip install dummyML==0.9.5`.
+
+### User guide
+
+The user guide is available at https://dummyml.readthedocs.io/en/latest/.

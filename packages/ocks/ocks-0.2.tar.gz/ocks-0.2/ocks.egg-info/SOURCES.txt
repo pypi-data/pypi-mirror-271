@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ocks/__init__.py
+ocks/ssd1306.py
+ocks.egg-info/PKG-INFO
+ocks.egg-info/SOURCES.txt
+ocks.egg-info/dependency_links.txt
+ocks.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+README.md
+setup.py
+tasks_logger/__init__.py
+tasks_logger/main.py
+tasks_logger.egg-info/PKG-INFO
+tasks_logger.egg-info/SOURCES.txt
+tasks_logger.egg-info/dependency_links.txt
+tasks_logger.egg-info/requires.txt
+tasks_logger.egg-info/top_level.txt

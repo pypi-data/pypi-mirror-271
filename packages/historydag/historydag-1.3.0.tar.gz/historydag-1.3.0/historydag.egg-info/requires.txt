@@ -1,0 +1,7 @@
+six
+PyQt5
+ete3
+biopython
+graphviz
+frozendict
+protobuf

@@ -1,0 +1,17 @@
+# PyCharm
+.idea/
+
+# venv
+bin/
+lib/
+pyvenv.cfg
+
+# MacOS detritus
+.DS_Store
+
+# pytest
+__pycache__/
+
+# build
+dist/
+*.egg-info/

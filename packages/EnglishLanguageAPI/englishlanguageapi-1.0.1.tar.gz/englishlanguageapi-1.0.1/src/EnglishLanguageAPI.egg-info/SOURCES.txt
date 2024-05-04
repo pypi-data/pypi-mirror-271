@@ -1,0 +1,9 @@
+pyproject.toml
+readme.md
+src/EnglishLanguageAPI/__init__.py
+src/EnglishLanguageAPI.egg-info/PKG-INFO
+src/EnglishLanguageAPI.egg-info/SOURCES.txt
+src/EnglishLanguageAPI.egg-info/dependency_links.txt
+src/EnglishLanguageAPI.egg-info/requires.txt
+src/EnglishLanguageAPI.egg-info/top_level.txt
+src/EnglishLanguageAPI/API/__init__.py

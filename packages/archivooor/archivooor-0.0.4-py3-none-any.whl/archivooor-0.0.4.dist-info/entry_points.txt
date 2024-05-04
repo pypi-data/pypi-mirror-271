@@ -1,0 +1,3 @@
+[console_scripts]
+archivooor=archivooor.__main__:main
+

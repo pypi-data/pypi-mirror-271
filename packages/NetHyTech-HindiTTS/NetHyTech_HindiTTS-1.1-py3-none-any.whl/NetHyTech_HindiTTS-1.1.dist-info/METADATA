@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: NetHyTech-HindiTTS
+Version: 1.1
+Summary: Text To Speech In British Brian Voice
+Home-page: https://github.com/AnubhavChaturvedi-GitHub/NetHyTech-TTS.git
+Author: Anubhav Chaturvedi
+Author-email: chaturvedianubhav520@example.com
+Project-URL: Source Code, https://github.com/AnubhavChaturvedi-GitHub/NetHyTech-TTS.git
+Project-URL: Demo Video, https://www.youtube.com/channel/UC7YDMgu0dMRZotLMuB3oEcQ
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Requires-Dist: chromedriver-autoinstaller
+
+# Text-to-Speech (TTS) using Edge TTS and Pygame
+
+This Python script provides a simple implementation of text-to-speech (TTS) using the Edge TTS API and Pygame library for audio playback.
+
+## Requirements
+
+- Python 3.11.4
+- edge_tts module (for Edge TTS API)
+- Pygame library
+
+## Installation
+
+1. Install the required modules:
+    ```bash
+    pip install NetHyTech-HindiTTS
+    ```
+
+## Usage
+
+The `Speak` function in the script takes the text input and an optional output file path as arguments. If no output file path is provided, it saves the audio file as "speech.mp3" in the current directory.
+
+Example usage:
+```python
+from NetHyTech_HindiTTS import Speak
+
+text = "Hello, how are you?"
+Speak(text, "output.mp3")  # Save audio to output.mp3
+```
+
+## Functionality
+
+- The `Speak` function converts the input text to speech using the Edge TTS API and saves it to the specified output file.
+- If no output file is provided, it saves the audio as "speech.mp3" in the current directory.
+- The script handles the asynchronous operation using asyncio for better performance.
+- Pygame is utilized for playing the generated audio file.
+
+## Additional Notes
+
+- Ensure you have valid credentials for the Edge TTS API and replace the `VOICE` variable with the desired voice.
+- The `remove_file` function handles the removal of temporary files after audio playback.
+- Error handling is implemented to catch any exceptions during the process.
+

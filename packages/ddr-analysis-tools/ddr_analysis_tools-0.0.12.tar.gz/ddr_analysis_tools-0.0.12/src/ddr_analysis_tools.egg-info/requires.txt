@@ -1,0 +1,9 @@
+numpy
+matplotlib
+psutil
+tqdm
+scipy
+h5py
+netcdf4
+xarray
+pyyaml

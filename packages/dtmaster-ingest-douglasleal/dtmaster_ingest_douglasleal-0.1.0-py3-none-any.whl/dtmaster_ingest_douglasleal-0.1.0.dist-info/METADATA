@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dtmaster-ingest-douglasleal
+Version: 0.1.0
+Summary: Framework para ingestao de dados em pyspark
+License: Apache-2.0
+Author: Leal
+Author-email: douglas.sleal@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Project-URL: Bug Tracker, https://github.com/lealdouglas/dtmaster-ingest-douglasleal/issues
+Project-URL: Código, https://github.com/lealdouglas/dtmaster-ingest-douglasleal
+Project-URL: Documentação, https://dtmaster-ingest-douglasleal.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+
+<img src="https://dtmaster-ingest-douglasleal.readthedocs.io/en/latest/assets/sabre.png" width="200">
+
+# DATA MASTER DOUGLAS LEAL
+
+[![Documentation Status](https://readthedocs.org/projects/dtmaster-ingest-douglasleal/badge/?version=latest)](https://dtmaster-ingest-douglasleal.readthedocs.io/en/latest/?badge=latest)
+[![CI](https://github.com/lealdouglas/dtmaster-ingest-douglasleal/actions/workflows/pipeline.yml/badge.svg)](https://github.com/lealdouglas/dtmaster-ingest-douglasleal/actions/workflows/pipeline.yml)
+[![codecov](https://codecov.io/gh/lealdouglas/dtmaster-ingest-douglasleal/graph/badge.svg?token=HOQYXV92XJ)](https://codecov.io/gh/lealdouglas/dtmaster-ingest-douglasleal)
+[![PyPI version](https://badge.fury.io/py/dtmaster-ingest-douglasleal.svg)](https://badge.fury.io/py/dtmaster-ingest-douglasleal)
+
+# DATA MASTER INGEST SDK
+

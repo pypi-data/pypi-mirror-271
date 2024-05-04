@@ -1,0 +1,13 @@
+aau_ais_dipaal-0.1.22.dist-info/METADATA,sha256=5XIXxIPOKuEiBY4j2eIwzMqxY6jvnwkST_JgWHrAb_c,543
+aau_ais_dipaal-0.1.22.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+dipaal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dipaal/convert/__init__.py,sha256=gGrHBmdcYOHJIIV8GAZanQWIOn0r0UceeONUpyQQkWI,237
+dipaal/convert/callsign.py,sha256=obXn4b8Y6ecU-zmouBp3VS4T4dnXYBhiZ7JbWjjiklE,1161
+dipaal/convert/converter.py,sha256=k_s0TZuFqRHxeGS26aLV9wL01TrynfcA65MQIEakC-E,1540
+dipaal/convert/imo.py,sha256=ZX5gx5zcf5ldkwJx20TBIaCqzZ_zeMxzzXyRgB-8zRY,1132
+dipaal/convert/mmsi.py,sha256=vPcbit_2-ph6JAyalukogKj7woo26nTekCXP-qJlW34,1142
+dipaal/export/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dipaal/export/map_exporter.py,sha256=LbY5Swbi4ydhBg2tQpBwN-v2-l9UiTFsHBJaoXRmF_o,7939
+dipaal/export/sql_map.py,sha256=CqRLRtpcZp26RATcr8syp6ckQNwBCMpbp15Wz8N34Pw,5863
+dipaal/settings.py,sha256=0yp_TwBuVoDa-B4-cLYSO4T1jGcVm8u562k6QFfMdoQ,389
+aau_ais_dipaal-0.1.22.dist-info/RECORD,,

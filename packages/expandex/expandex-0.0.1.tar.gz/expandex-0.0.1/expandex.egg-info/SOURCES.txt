@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+expandex/__init__.py
+expandex/main.py
+expandex.egg-info/PKG-INFO
+expandex.egg-info/SOURCES.txt
+expandex.egg-info/dependency_links.txt
+expandex.egg-info/requires.txt
+expandex.egg-info/top_level.txt

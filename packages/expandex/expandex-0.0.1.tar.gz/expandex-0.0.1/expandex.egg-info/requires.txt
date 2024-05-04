@@ -1,0 +1,8 @@
+opencv-python
+Pillow
+numpy
+requests
+cloudscraper
+antidupe
+featurecrop
+playwright

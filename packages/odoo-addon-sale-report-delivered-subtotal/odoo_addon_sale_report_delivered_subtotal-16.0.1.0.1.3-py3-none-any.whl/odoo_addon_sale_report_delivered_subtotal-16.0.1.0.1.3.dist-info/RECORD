@@ -1,0 +1,17 @@
+odoo/addons/sale_report_delivered_subtotal/README.rst,sha256=cNt73q0qaB9f-RZZqITO2KTj1G1y_XdtRtFdubPNSH0,3433
+odoo/addons/sale_report_delivered_subtotal/__init__.py,sha256=vNQQFpxcSZjtiz5aCVyNQ3n894NIOOzMF6ZRRhlyqLw,22
+odoo/addons/sale_report_delivered_subtotal/__manifest__.py,sha256=4LARhYRkuVeasyGKy0UvZwpt5H3WmLMCOnFkCblUXrE,490
+odoo/addons/sale_report_delivered_subtotal/i18n/es.po,sha256=k520NB0b3kV9hIHXXJABpfrJ9fETlGmkrmRXEut84ng,1201
+odoo/addons/sale_report_delivered_subtotal/i18n/it.po,sha256=WkY1U6kntzuEJ340pR4xt89Mu4h4DcyoYvuBB9Mz0GA,1163
+odoo/addons/sale_report_delivered_subtotal/i18n/sale_report_delivered_subtotal.pot,sha256=ThbB2ui3yl3HOLS0fD5e2eI3ty5qccfjfuWs1KTOMD4,929
+odoo/addons/sale_report_delivered_subtotal/readme/CONTRIBUTORS.rst,sha256=wjH8OtmJXYKTNcLqPBxJqZfjG-7_WeAPNsthupL8Jog,105
+odoo/addons/sale_report_delivered_subtotal/readme/DESCRIPTION.rst,sha256=gahZtli1UITDHYkPPLmTwcczd-HR_v4vsbveZPv9mr8,83
+odoo/addons/sale_report_delivered_subtotal/readme/USAGE.rst,sha256=rNl3jswNErX-Ce3U6D3-IBs7uqN25Pyf_nZHD4JlQLA,107
+odoo/addons/sale_report_delivered_subtotal/reports/__init__.py,sha256=ByYRbiCY7uWnvbKwYusgp99HtcOyGnzWogDif_GEsec,26
+odoo/addons/sale_report_delivered_subtotal/reports/sale_report.py,sha256=FXtO8QZv6nHUUGpfDrk6fMhOwrQ04-q_0mDqQhWiouQ,1008
+odoo/addons/sale_report_delivered_subtotal/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/sale_report_delivered_subtotal/static/description/index.html,sha256=RHS36s7PhCgDu8JzL19XNLk5k-zEhiY-JnzFUkDMjR8,12962
+odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.3.dist-info/METADATA,sha256=tlTzB9QYRlwgyCltMYaO6_rTosDFCqBRGMvhlUhvHVc,4047
+odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_sale_report_delivered_subtotal-16.0.1.0.1.3.dist-info/RECORD,,

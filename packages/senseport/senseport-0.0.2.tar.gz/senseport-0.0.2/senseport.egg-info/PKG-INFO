@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: senseport
+Version: 0.0.2
+Summary: Plug-and-Play modules in AI sensing can be inserted into your network
+Author-email: Xingwei Wang <wxwjkl123@gmail.com>
+Project-URL: Homepage, https://github.com/xibrer/senseport
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy

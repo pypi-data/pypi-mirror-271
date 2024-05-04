@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: raugraf
+Version: 0.0.4
+Author-email: "K.D. Murray" <foss@kdmurray.id.au>
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Environment :: Console
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: natsort
+
+# Raugraf
+
+Pangenomic diversity metrics
+
+# Install
+
+```
+pipx install raugraf
+```
+
+# Tools
+
+## Local Complexity/Node Radius
+
+```
+raugraf local-complexity \
+	--graph mygraph.gfa \        # GFA from PGGB (or at least passed thru smooothxg and odgi)
+	--jumps 20 \                 # Traverse up to 20 nodes away from the focal node
+	--node-bed out.bedGraph      # Bedgraph of local complexity per node for each path in the pangenome
+```

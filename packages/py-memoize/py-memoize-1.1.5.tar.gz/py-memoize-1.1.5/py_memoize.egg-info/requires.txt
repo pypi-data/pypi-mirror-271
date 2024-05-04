@@ -1,0 +1,6 @@
+
+[tornado]
+tornado<5,>4
+
+[ujson]
+ujson<2,>=1.35

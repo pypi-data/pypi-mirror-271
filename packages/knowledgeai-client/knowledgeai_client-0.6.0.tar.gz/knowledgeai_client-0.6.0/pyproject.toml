@@ -1,0 +1,141 @@
+[tool.poetry]
+authors     = ["Arvato Systems"]
+description = "A python client for the Avvia Intelligence - Knowledge AI Rest API"
+homepage    = "https://github.com/arvato-systems-aila-solutions/KnowledgeAI-Python-Client"
+keywords    = ["AI", "Knowledge Retrieval", "arvato systems", "avvia intelligence", "knowledgeai"]
+license     = "MIT"
+name        = "knowledgeai-client"
+packages    = [{ include = "knowledgeai", from = "." }]
+readme      = "README.md"
+version     = "0.6.0"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+
+httpx             = "0.27.0"
+pydantic          = "2.7.0"
+pydantic-settings = "2.2.1"
+python-iso639     = "2024.2.7"
+python-magic      = "0.4.27"
+tqdm              = "4.66.2"
+
+
+[tool.poetry.group.dev.dependencies]
+detect-secrets = "1.4.0"
+isort          = "5.13.2"
+mypy           = "1.9.0"
+pre-commit     = "3.7.0"
+ruff           = "0.4.1"
+types-requests = "2.31.0.20240406"
+types-tqdm     = "4.66.0.20240417"
+
+
+[tool.poetry.group.test.dependencies]
+codecov       = "2.1.13"
+coverage      = "7.4.4"
+pytest        = "8.1.1"
+pytest-dotenv = "0.5.2"
+
+[tool.pytest.ini_options]
+cache_dir = ".cache/pytest"
+testpaths = ["tests"]
+
+
+[tool.ruff]
+cache-dir = ".cache/ruff"
+indent-width = 4
+line-length = 88
+target-version = "py311"
+extend-exclude = [".cache", ".venv", ".venv.mac", "build", "dist"]
+ignore = [
+    "PT011",   # pytest-raises-too-broad
+    "PT012",   # pytest.raises() block should contain a single simple statement
+    "ISC001",  # Implicit string concatenation
+    "PLR0913", # Too many arguments in function
+    "RUF100",  # unused noqa
+    "N805",    # First argument of a method should be named `self`"
+    "N818",    # Exception name {name} should be named with an Error suffix
+    "N811",    # Constant {name} imported as non-constant {asname}
+    "RUF012",  # Mutable class attributes should be annotated with typing.ClassVar
+    "SIM300",  # Yoda conditions are discouraged, use {suggestion} instead
+    "C",
+]
+select = [
+    "E",      # Pyflakes
+    "W",      # pycodestyle
+    "F",      # Pyflakes
+    "N",      # Naming
+    "UP",     # PyUpgrade - will show hints for deprecated syntax in python 3.11
+    "ANN001",
+    "ANN201", # Missing return type annotation
+    "ASYNC",  # Flake8-async
+    "S",      # Flake8-bandit
+    "C4",     # Flake8-comprehensions
+    "DTZ",    # Flake8-datetimez
+    "ICN",    # Flake8-import-conventions
+    "LOG",    # Flake8-logging
+    "G",      # Flake8-logging-format
+    "T20",    # Flake8-print
+    "PT",     # Flake8-pytest-style
+    "SLF001", # Flake8-self
+    "SIM",    # Flake8-simplify
+    "TID",    # Flake8-tidy-imports
+    "PTH",    # Flake8-use-pathlib
+    "PL",     # PyLint
+    "PERF",   # Perflint
+    "RUF",    # Ruff
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]                              # {name} imported but unused
+"test_**.py"  = ["S101", "PLR2004", "ANN001", "S106"]
+
+[tool.ruff.format]
+quote-style                = "double"
+indent-style               = "space"
+skip-magic-trailing-comma  = false
+line-ending                = "auto"
+docstring-code-format      = true
+docstring-code-line-length = "dynamic"
+
+[tool.mypy]
+cache_dir              = ".cache/mypy"
+disallow_untyped_defs  = true
+exclude                = [".cache", "build", "dist"]
+ignore_missing_imports = false
+incremental            = true
+python_version         = "3.11"
+warn_return_any        = true
+warn_unused_configs    = true
+warn_unused_ignores    = true
+
+[[tool.mypy.overrides]]
+disallow_untyped_defs  = true
+ignore_missing_imports = true
+ignore_errors          = true
+module                 = ["iso639"]
+
+[tool.coverage.run]
+branch = true
+omit   = ["tests/*"]
+source = ["ailabackend"]
+
+[tool.coverage.report]
+exclude_lines = ["if TYPE_CHECKING:", "if __name__ == .__main__.:", "pragma: no cover"]
+fail_under    = 80
+show_missing  = true
+skip_covered  = true
+
+[[tool.poetry_bumpversion.replacements]]
+files   = ["knowledgeai/client/__init__.py"]
+replace = '__version__ = "{new_version}"'
+search  = '__version__ = "{current_version}"'
+
+[[tool.poetry_bumpversion.replacements]]
+files   = ["README.md"]
+replace = 'Version: {new_version}'
+search  = 'Version: {current_version}'
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires      = ["poetry-core"]

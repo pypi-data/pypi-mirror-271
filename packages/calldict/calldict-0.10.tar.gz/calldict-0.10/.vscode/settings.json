@@ -1,0 +1,18 @@
+{
+    "editor.rulers": [
+        {
+            "column": 80,
+        }
+    ],
+    "files.trimTrailingWhitespace": true,
+    "python.testing.pytestArgs": [
+        ".",
+        "-s",
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "editor.formatOnType": false,
+    "cSpell.words": [
+        "calldict"
+    ],
+}

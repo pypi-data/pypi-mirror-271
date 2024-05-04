@@ -1,0 +1,7 @@
+
+[dev]
+yapf
+
+[test]
+PyYAML
+pytest

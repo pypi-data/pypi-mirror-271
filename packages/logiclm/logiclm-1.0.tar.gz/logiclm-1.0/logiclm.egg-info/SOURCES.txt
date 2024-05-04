@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+logiclm.egg-info/PKG-INFO
+logiclm.egg-info/SOURCES.txt
+logiclm.egg-info/dependency_links.txt
+logiclm.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+bean
+bean_count_test
+bin
+build
+dist
+docs
+tests
+wheelhouse

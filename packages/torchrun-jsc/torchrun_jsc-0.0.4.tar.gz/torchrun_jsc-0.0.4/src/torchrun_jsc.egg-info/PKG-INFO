@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: torchrun_jsc
+Version: 0.0.4
+Summary: Fixed version of `torchrun` on Jülich Supercomputing Centre. Requires Slurm usage.
+Home-page: https://github.com/HelmholtzAI-FZJ/torchrun_jsc
+Author: Jan Ebert
+Author-email: ja.ebert@fz-juelich.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6,<4
+License-File: LICENSE
+Requires-Dist: packaging
+Requires-Dist: torch>=1.9

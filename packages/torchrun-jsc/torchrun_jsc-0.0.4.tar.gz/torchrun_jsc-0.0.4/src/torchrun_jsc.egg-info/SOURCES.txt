@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/torchrun_jsc/__init__.py
+src/torchrun_jsc/__main__.py
+src/torchrun_jsc/arg_patching.py
+src/torchrun_jsc/parsing.py
+src/torchrun_jsc/run.py
+src/torchrun_jsc/run_old.py
+src/torchrun_jsc.egg-info/PKG-INFO
+src/torchrun_jsc.egg-info/SOURCES.txt
+src/torchrun_jsc.egg-info/dependency_links.txt
+src/torchrun_jsc.egg-info/entry_points.txt
+src/torchrun_jsc.egg-info/requires.txt
+src/torchrun_jsc.egg-info/top_level.txt

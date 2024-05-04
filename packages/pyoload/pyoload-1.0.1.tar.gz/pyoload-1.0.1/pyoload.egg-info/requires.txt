@@ -1,0 +1,17 @@
+
+[ci]
+flake8
+flake8-commas
+flake8-quotes
+flake8-multiline-containers
+pytest
+pytest-cov
+coveralls
+
+[dev]
+flake8
+flake8-commas
+flake8-quotes
+flake8-multiline-containers
+pytest
+pytest-cov

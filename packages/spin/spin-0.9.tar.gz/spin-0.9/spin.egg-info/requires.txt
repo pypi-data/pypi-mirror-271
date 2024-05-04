@@ -1,0 +1,14 @@
+click
+importlib_metadata>=7
+
+[:platform_system == "Windows"]
+colorama
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+changelist==0.5
+
+[lint]
+pre-commit==3.7.0

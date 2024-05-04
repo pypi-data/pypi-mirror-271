@@ -1,0 +1,13 @@
+unico_device_setuper/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+unico_device_setuper/adb.py,sha256=uuzmnD3anWsS0vpcem5pBVRKTfjVFys81uW-XeX9F58,1430
+unico_device_setuper/cfg.py,sha256=QSMQk4hdGrzn8UTQNLyC91oAzQYaCHy0P8Fbn9YcSp4,1039
+unico_device_setuper/cfg.toml,sha256=z-8UrxJEpK_7-wxvM6v4mh3JCjJABNlYkBGkhUU66nM,424
+unico_device_setuper/datadir.py,sha256=su91xeVp8TLLePcYMwgl52yi3BbIYumgf9kTxYe1XkY,936
+unico_device_setuper/entrypoint.py,sha256=_KR3IQSi8-DZEzC0zxd3XVQWmssm7Re601ZkfJmpjtY,656
+unico_device_setuper/helpers.py,sha256=9-f6ZHdXIpCDpsDyW6NnPbUxoIJWT7HnsHoShlW60Tk,2684
+unico_device_setuper/local_db.py,sha256=M7WL0xj87luqU7ud6saQHLAbwsBe-gHtcN9Qf2T2kBk,899
+unico_device_setuper/main.py,sha256=wj8hEJXd9PeHvF6355IEjG4d2iLWyNDgW1EzUupuk6g,421
+unico_device_setuper-0.1.0.dist-info/METADATA,sha256=0IpMCOwymoXqbi72aE6A9Rqwqj8dcwTOLze9fM6UgTU,607
+unico_device_setuper-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+unico_device_setuper-0.1.0.dist-info/entry_points.txt,sha256=FKZKOfc9oNPGFlkU_JDEqmgIwSssv7NhlgAq4yymocw,70
+unico_device_setuper-0.1.0.dist-info/RECORD,,

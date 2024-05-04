@@ -1,0 +1,3 @@
+[console_scripts]
+device_setuper=unico_device_setuper.entrypoint:APP
+

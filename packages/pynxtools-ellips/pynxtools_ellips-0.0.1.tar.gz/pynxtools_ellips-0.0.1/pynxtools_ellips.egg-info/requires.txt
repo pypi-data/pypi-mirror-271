@@ -1,0 +1,15 @@
+pynxtools>=0.2.1
+
+[dev]
+mypy
+ruff==0.3.4
+pytest
+types-pyyaml
+pip-tools
+pre-commit
+
+[docs]
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-macros-plugin

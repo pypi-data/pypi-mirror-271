@@ -1,0 +1,2 @@
+[pynxtools.reader]
+ellips = pynxtools_ellips.reader:ELLIPSReader

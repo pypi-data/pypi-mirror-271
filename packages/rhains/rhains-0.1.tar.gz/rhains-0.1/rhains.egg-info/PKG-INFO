@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: rhains
+Version: 0.1
+Summary: a python framework for the web combining the         power of relational databases with Nosql databases
+Author: Hydromel Victor Doledji
+License-File: LICENSE

@@ -1,0 +1,1 @@
+from .fazah import polyglot

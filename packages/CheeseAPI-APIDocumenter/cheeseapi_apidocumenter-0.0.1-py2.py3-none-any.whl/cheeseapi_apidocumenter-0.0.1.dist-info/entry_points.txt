@@ -1,0 +1,2 @@
+[console_scripts]
+APIDocumenter = CheeseAPI_APIDocumenter.command:command

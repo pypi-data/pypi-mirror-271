@@ -1,0 +1,5 @@
+openai==1.25.1
+google-ai-generativelanguage==0.6.2
+anthropic==0.25.7
+groq==0.5.0
+ollama==0.1.9

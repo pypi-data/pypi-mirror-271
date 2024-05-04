@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: kelp-o-matic
+Version: 0.11.0
+Summary: Hakai Segment Tool for GeoTiff RPAS Imagery
+License: MIT
+Author: Taylor Denouden
+Author-email: taylor.denouden@hakai.org
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: rasterio (>=1.3.7,<2.0.0)
+Requires-Dist: rich (>=13.5,<14.0)
+Requires-Dist: torch (>=2.1.0,<3.0.0)
+Requires-Dist: torchvision (>=0.16.1,<0.17.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Project-URL: Documentation, https://kelp-o-matic.readthedocs.io
+Description-Content-Type: text/markdown
+
+<div align="center" style="overflow: hidden; display: flex; justify-content:center; gap:10px;">
+<a href="https://github.com/HakaiInstitute/kelp-o-matic/actions/workflows/test.yml">
+    <img alt="🧪 Test" src="https://github.com/HakaiInstitute/kelp-o-matic/actions/workflows/test.yml/badge.svg" height="20px" />
+</a>
+
+<a href="https://github.com/HakaiInstitute/kelp-o-matic/blob/main/LICENSE.txt">
+    <img alt="License" src="https://anaconda.org/conda-forge/kelp-o-matic/badges/license.svg" height="20px" />
+</a>
+
+<a href="https://anaconda.org/conda-forge/kelp-o-matic">
+    <img alt="Version" src="https://anaconda.org/conda-forge/kelp-o-matic/badges/version.svg" height="20px" />
+</a>
+
+<a href="https://zenodo.org/badge/latestdoi/462897183">
+    <img alt="DOI" src="https://zenodo.org/badge/462897183.svg" height="20px" />
+</a>
+</div>
+
+<p align="center">
+    <img src="./docs/images/kelp_o_matic_smaller.gif" alt="Kelp-O-Matic" />
+</p>
+
+<p align="center">
+    <i>Kelp Segmentation Tools for Aerial Imagery</i>
+</p>
+
+<h1 align="center">
+    <a href="https://kelp-o-matic.readthedocs.io">&#9758; Read the Docs &#9756;</a>
+</h1>
+

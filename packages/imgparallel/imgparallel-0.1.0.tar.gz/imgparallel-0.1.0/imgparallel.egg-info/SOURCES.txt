@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+imgparallel/__init__.py
+imgparallel/cli.py
+imgparallel.egg-info/PKG-INFO
+imgparallel.egg-info/SOURCES.txt
+imgparallel.egg-info/dependency_links.txt
+imgparallel.egg-info/entry_points.txt
+imgparallel.egg-info/requires.txt
+imgparallel.egg-info/top_level.txt
+tests/test_pipeline.py

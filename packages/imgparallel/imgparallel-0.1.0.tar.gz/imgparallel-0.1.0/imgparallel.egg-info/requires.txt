@@ -1,0 +1,8 @@
+opencv-python
+numpy
+
+[dev]
+black
+pytest
+build
+twine

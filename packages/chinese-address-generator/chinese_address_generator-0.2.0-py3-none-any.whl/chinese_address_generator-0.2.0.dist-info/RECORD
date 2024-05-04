@@ -1,0 +1,13 @@
+chinese_address_generator/__init__.py,sha256=8uJznwwaD2CRQZhZv52F6PmZCBLiXIKVQVUFSDfiQcI,887
+chinese_address_generator/__main__.py,sha256=f3y00F8yHNTSbyEKwn7R3JCF8jzIxF8wo89Ew-xNGxM,66
+chinese_address_generator/cnaddrgen.py,sha256=L30I3LB76Po5FS0kWcknYNRfBe9KTGTkWzbUmiZgg6A,1179
+chinese_address_generator/crawler.py,sha256=xdACgrRvB14MWdq5Dq_y6Iar2W9mOqetfYS1Jdekb3g,5646
+chinese_address_generator/generator.py,sha256=B3DEXEZpoaC7A--Yg_a6pFMCtzvhcn0JVHfdBKgJz7c,2733
+chinese_address_generator/src/new_level3.json,sha256=7GsqqngRCp0FGxeI0VzCJ61SjVmiBx49sOPmdpNq6BI,61783
+chinese_address_generator/src/new_level4.txt,sha256=9F8J6T-4AA33HsB3Qn5J3avdrOKMBNjPyqotrNGoCI8,160857
+chinese_address_generator-0.2.0.dist-info/LICENSE,sha256=Zg3681SIMTo35K75ALlx0EYlkzC9wQhJxikLD4BWtEc,1065
+chinese_address_generator-0.2.0.dist-info/METADATA,sha256=Tj-aIvbVmATVCidx5CfaNC7v-ljOZcgnk9XIn6SKVgY,2883
+chinese_address_generator-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+chinese_address_generator-0.2.0.dist-info/entry_points.txt,sha256=WtwV_fJKSKHa09_bYv0CQ95HfK2DDoBHuRlHuYytGtw,71
+chinese_address_generator-0.2.0.dist-info/top_level.txt,sha256=8SSYZ4MWncSMhjoeIOnSVybtOsYKZYcTas9ZIkOLH_o,26
+chinese_address_generator-0.2.0.dist-info/RECORD,,

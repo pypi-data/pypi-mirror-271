@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: helper_for_maxi
+Version: 1.1.6
+Summary: Contains all Functions
+Author: Maxi Myoga
+Project-URL: Github, https://github.com/CatMaxiMyoga/helper_for_maxi/tree/main/1.1.6/package
+Project-URL: Changelog, https://github.com/CatMaxiMyoga/helper_for_maxi/blob/main/1.1.6/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyperclip
+Requires-Dist: pynput
+Requires-Dist: pygetwindow
+
+# Helper for Maxi
+
+All the Functions I could need multiple times
+
+## Instructions
+
+1. Install:
+
+```sh
+pip install helper-for-maxi
+```
+
+2. Import package:
+
+```py
+import maximyoga
+import maximyoga.*
+from maximyoga import *
+from maximyoga.* import *
+# You can replace * with what you need!
+```

@@ -1,0 +1,15 @@
+matplotlib
+numpy
+pyyaml
+astro-p3>=1.2.11
+mastsel>=1.2.7
+torch>=2.1.2
+
+[docs]
+sphinx
+
+[gpu]
+mastsel[gpu]
+
+[gui]
+ipywidgets

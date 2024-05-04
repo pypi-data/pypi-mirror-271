@@ -1,0 +1,14 @@
+ieugwaspy/__init__.py,sha256=jmjAoFLsN0slT0xs6nHrHC6yydIryrS3wqOyysjT0jM,351
+ieugwaspy/api.py,sha256=vnE3C-AD0FeDJngHNEr-WEPaO7I3mLtupZlcfLyZ6Q4,728
+ieugwaspy/backwards.py,sha256=6bHvT8P9VysHqX8ifSUevJVmzcvUS7MupJ390Tbwrps,660
+ieugwaspy/config.py,sha256=BPdd78J8jc7EtIglVwUNIE5Bti2dKz6nc-VrUW6E27o,1268
+ieugwaspy/query.py,sha256=HDJgvyJYL8178jM4C2xZedAG0eotpV0aNNyFoaaBeLc,5628
+ieugwaspy/variants.py,sha256=ElBH1gw60KKZ1YE7cUgb3pWSvAW_ECmWVi7tjflTEGw,1047
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=kXvu0CvjWXEcQ5RqL12xV-NnwFsPXNguIApMQUuIheM,346
+tests/test_api.py,sha256=W1hJQ2QkLVR9xFYZxWtJIHTS-CruTt4FPjeIGEsp89I,1355
+ieugwaspy-1.0.0.dist-info/LICENSE,sha256=0w1THqEGF5Ul-iiWicNDHO-sQbyBYt1sAcF8ctsDak8,1090
+ieugwaspy-1.0.0.dist-info/METADATA,sha256=2hkgvgGS45UtQyerOElumJ_nMtXcoP4uTIrmGaozzWY,1936
+ieugwaspy-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ieugwaspy-1.0.0.dist-info/top_level.txt,sha256=v4aR37-lahFxOA0kjV5uCzQCJpLNKYNrCyVttM7e3go,16
+ieugwaspy-1.0.0.dist-info/RECORD,,

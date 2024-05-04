@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: oandadata
+Version: 0.1.2
+Summary: A Python library for retrieving financial data.
+Author: Lumi
+Author-email: jafari.nariman@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=1.3.3,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Financial Data Retrieval Library
+
+
+# oandadata
+
+`oandadata` is a Python library designed to retrieve financial data from the OANDA API. It provides a simple and efficient way to access candle data for a specified currency pair.
+
+## Features
+
+- **Easy-to-use API**: With just a few lines of code, you can retrieve candle data for any currency pair available on the OANDA platform.
+- **Flexible Parameters**: You can specify the number of candles to retrieve, the timeframe for each candle, the type of price data to retrieve, and the currency pair.
+- **Pandas Integration**: The retrieved data is returned as a pandas DataFrame, making it easy to analyze and manipulate the data.
+
+## Example
+
+Here's an example of how you can use `oandadata` to retrieve candle data:
+
+```python
+import oandadata
+
+# Define your parameters
+token = 'your_api_token'
+count = 100
+timeframe = 'H1'
+price_type = 'MBA'
+currency_pair = 'XAU_CAD'
+
+# Retrieve the candle data
+df = oandadata.get_candles(token, count, timeframe, price_type, currency_pair)
+
+# Now 'df' is a DataFrame containing the candle data
+
+

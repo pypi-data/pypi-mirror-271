@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: mle-agent
+Version: 0.0.1
+Summary: MLE-agent: An agent to automate your MLE processes
+Home-page: https://github.com/MLSysOps/MLE-agent
+Download-URL: https://github.com/MLSysOps/MLE-agent/archive/refs/heads/main.zip
+Author: Yizheng Huang, Huaizheng Zhang
+Author-email: huangyz0918@gmail.com
+Keywords: LLM,deep learning,MLOps,shell,neural networks
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: click
+Requires-Dist: openai
+Requires-Dist: pyyaml
+Requires-Dist: questionary
+Requires-Dist: prompt_toolkit
+Requires-Dist: chromadb~=0.4.24
+Requires-Dist: psutil~=5.9.8
+Requires-Dist: instructor~=0.6.8
+Requires-Dist: pydantic~=2.6.4
+Requires-Dist: setuptools~=68.2.2
+
+# MLE-agent
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+You need to set an OpenAI API key before running the agent. You can use the CLI to set the key:
+
+```bash
+mle config
+```
+
+## License
+
+Check [LICENSE](LICENSE) file for more information.
+
+

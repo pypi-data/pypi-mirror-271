@@ -1,0 +1,11 @@
+onnxruntime_genai/DirectML.dll,sha256=it3PSVO_NoJUHvoqZSbiQOjiMd-RqChTBrK5cl9CKWE,27383832
+onnxruntime_genai/__init__.py,sha256=WyndrmYs6k50zQuPLfbUFn6gpQG4_pg9lGhpWhBh6GI,599
+onnxruntime_genai/_dll_directory.py,sha256=E5HSXsCgGDX4bL09kOOOl5p2jeBJOVqD873KTfHOx7s,638
+onnxruntime_genai/onnxruntime.dll,sha256=pOj42wzwdw8iAazQi-Bya7M2QrKNAuCFtiYFeC0rkoE,13806528
+onnxruntime_genai/onnxruntime_genai.cp310-win_amd64.pyd,sha256=NyDa4ZiAhtenGQWzSneMNZMnP7oZcNOeopLfb0Gg9mY,932864
+onnxruntime_genai/models/builder.py,sha256=C-c7qluNMa1Le0BPS6jQbwoXExFhFD__Mx2dg67kHCE,116683
+onnxruntime_genai/models/gguf_model.py,sha256=kEyi9bVPCffoHgXgiOIpckaMVia7YsXSjEVtLUXcBxY,12767
+onnxruntime_genai_directml-0.2.0rc5.dist-info/METADATA,sha256=fBVpWSXwRDT9z6v9AoL_tm-F-Yvnd-3pPFWzmctuv60,123
+onnxruntime_genai_directml-0.2.0rc5.dist-info/WHEEL,sha256=lO6CqtLHCAi38X3Es1a4R1lAjZFvN010IMRCFo2S7Mc,102
+onnxruntime_genai_directml-0.2.0rc5.dist-info/top_level.txt,sha256=U92ZdtZYnKUmz1D94v3YxXHvRyNbrxkZ1gDYUzEJ_bc,18
+onnxruntime_genai_directml-0.2.0rc5.dist-info/RECORD,,

@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: backend_flit
+Version: 0.0.1
+Summary: Backend flit
+Author-email: Mohammad Mahfooz Alam <mahfooz.iiitian@gmail.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pytest >=8.2.0 ; extra == "test"
+Project-URL: Homepage, https://github.com/pypa/backend_flit
+Project-URL: Issues, https://github.com/pypa/backend_flit/issues
+Provides-Extra: test
+
+# Flit backed packaging tool
+
+Python package (i.e., wheel or sdist).
+
+It relies on Flit as a build backend with pyproject.toml for configuration.
+
+flit (like setuptools) doesn't manage your virtual environment.
+
+## Editable install:
+
+    flit install --symlink --deps=all
+
+## Run code:
+    python -c "import flit_demo_package"
+
+## Build:
+
+    flit build
+
+## Upload to PyPI:
+    flit publish
+

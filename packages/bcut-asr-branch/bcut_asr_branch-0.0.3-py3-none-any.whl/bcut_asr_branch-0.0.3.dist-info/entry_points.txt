@@ -1,0 +1,3 @@
+[console_scripts]
+bcut-asr=bcut_asr.__main__:main
+

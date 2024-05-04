@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+self_reasoning_tokens_pytorch/__init__.py
+self_reasoning_tokens_pytorch/attention_with_stop_graddable_qkv.py
+self_reasoning_tokens_pytorch/self_reasoning_tokens.py
+self_reasoning_tokens_pytorch.egg-info/PKG-INFO
+self_reasoning_tokens_pytorch.egg-info/SOURCES.txt
+self_reasoning_tokens_pytorch.egg-info/dependency_links.txt
+self_reasoning_tokens_pytorch.egg-info/requires.txt
+self_reasoning_tokens_pytorch.egg-info/top_level.txt

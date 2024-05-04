@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Massaki01
+Version: 0.1
+Summary: Biblioteca teste desenvolvida por Massaki Igarashi
+Home-page: https://github.com/massakiigarashi2
+Author: Massaki Igarashi
+Author-email: prof.massaki@gmail.com
+License: MIT
+Project-URL: Código fonte, https://github.com/massakiigarashi2
+Project-URL: Download, https://github.com/massakiigarashi2/
+Keywords: conversor temperatura alura
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE.txt
+
+Programming Language developed by MasaakiDesenvolvida por Massaki de O. Igarashiem 03 de maio de 2024

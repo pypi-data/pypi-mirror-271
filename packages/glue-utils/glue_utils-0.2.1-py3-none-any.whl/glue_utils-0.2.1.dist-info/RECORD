@@ -1,0 +1,9 @@
+glue_utils/__init__.py,sha256=tXv04BbiDd5S1AgXVHGZ1aKwb37ipel6nKckqApCJYY,96
+glue_utils/glueetl/__init__.py,sha256=KhATEMwLOv6r9QT_eSXOvD0Mo9vdgXTb8e1Wh1k_Rp0,68
+glue_utils/glueetl/job.py,sha256=ioNoAOuuVthyUbcqPCSMDxJPTMNF4CqETa_MAwK8B8k,3057
+glue_utils/options.py,sha256=LDFQrtj8hhNzKuCDgKG5IcNBNpwRPLXLg6iUuFmaMzw,794
+glue_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glue_utils-0.2.1.dist-info/LICENSE,sha256=xHoK3azWCziOZvME6V2UXbdWe7vM6_CFHgQdmhUMpGQ,1077
+glue_utils-0.2.1.dist-info/METADATA,sha256=sxRLDxgY0Tzm3q7eJD-qv8krcwBaRvVloDdvj0jXD8I,2201
+glue_utils-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+glue_utils-0.2.1.dist-info/RECORD,,

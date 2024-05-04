@@ -1,0 +1,35 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "black-formatter.args": [
+        "-l",
+        "{{ pythonLineLength }}"
+    ],
+    "flake8.args": [
+        "--ignore={% for rule in pythonIgnoredRules %}{% if loop.index > 1 %},{% endif %}{{rule}}{% endfor %}"
+    ],
+    "python.defaultInterpreterPath": "venv/bin/python",
+    "python.autoComplete.extraPaths": [{% for folder in pythonSrcFolders %}{% if loop.index > 1 %},{% endif %}
+        "{{folder}}"{% endfor %}
+    ],
+    "cSpell.words": [
+        "isort",
+        "noqa",
+        "pycache",
+        "pylint",
+        "pytest",
+        "pyvenv",
+        "sdist",
+        "venv",
+        "loadme"
+    ],
+    "python.analysis.extraPaths": [{% for folder in pythonSrcFolders %}{% if loop.index > 1 %},{% endif %}
+        "{{folder}}"{% endfor %}
+    ],
+    "python.testing.pytestEnabled": {% if pythonTestSrcFiles | length > 0 %}true{% else %}false{% endif %}
+}

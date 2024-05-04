@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+repocleaner/__init__.py
+repocleaner.egg-info/PKG-INFO
+repocleaner.egg-info/SOURCES.txt
+repocleaner.egg-info/dependency_links.txt
+repocleaner.egg-info/entry_points.txt
+repocleaner.egg-info/requires.txt
+repocleaner.egg-info/top_level.txt

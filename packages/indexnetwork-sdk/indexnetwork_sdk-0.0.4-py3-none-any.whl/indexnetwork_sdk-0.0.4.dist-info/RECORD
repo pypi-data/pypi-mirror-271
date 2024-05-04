@@ -1,0 +1,10 @@
+indexclient/__init__.py,sha256=C9zweDM-eU-ajmLXv2EUI_X7O7qjLsw-xDhqcKWtAmo,216
+indexclient/chroma.py,sha256=O0QID-qDhG6PZPGaMqiZtFiL8pHImeOSIpZM_sSNkzc,4850
+indexclient/client.py,sha256=FA0krKqaPJK5r8OXNFVSuRrCNw2OxuPHtQuFNufRvgY,5843
+indexclient/config.py,sha256=Sr9fAgW0J7n2keKrzH1STG2lxZzH1icWBbIa7OOLf1c,226
+indexclient/types.py,sha256=wsD0nN0lE0qHpwphkeHKhFCNCeklBjGSLmyloc1DtWk,1260
+indexclient/utils.py,sha256=AQNqvHOm_iRGuEDIPAIveTXuGqWFHBv_qMovQ3cBaiA,2984
+indexnetwork_sdk-0.0.4.dist-info/METADATA,sha256=XBtSOMRYqDYX2eQ2qnqP1J380qqshRHCPzoXmTQQqBY,4134
+indexnetwork_sdk-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+indexnetwork_sdk-0.0.4.dist-info/top_level.txt,sha256=qBkMEBM5QhU3CGy8gR1HXTGQQ_I--xqrRqygXtafe0M,12
+indexnetwork_sdk-0.0.4.dist-info/RECORD,,

@@ -1,0 +1,28 @@
+# Doc plugin definition
+refs:
+    - pip://nmk-base!plugin.yml
+    - doc.yml   # Doc generation handling
+    - badges.yml  # Badges generation logic
+
+# Extra config
+config:
+
+    # Plugin version
+    nmkDocPluginVersion:
+        __resolver__: nmk_doc.NmkDocVersionResolver
+
+    # Plugin versions dict
+    nmkPluginsVersions:
+        nmk-doc: ${nmkDocPluginVersion}
+
+    # Plugin help links dict
+    nmkPluginsDocs:
+        nmk-doc: https://nmk-doc.readthedocs.io/
+
+    # Extra VSCode words for CSpell extension
+    vscodeSettingsItems:
+        cSpell.words: [rtype]
+
+    # Contribution to VSCode extensions
+    vscodeExtensionsNames:
+        - ms-vscode.live-server # Used for live preview of generated documentation

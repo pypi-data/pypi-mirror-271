@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "nilm_usb"
+version = "0.0.3"
+authors = [
+  { name="UFOTECH", email="gerencia@ufotech.co" },
+  { name="Silvia Moreno", email="silvia.moreno@unisimon.edu.co" },
+]
+description = "A NILM images classifier"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "keras==3.2.0",
+    "opencv-python>=4.9",
+    "scikit-learn>=1.4",
+    "scipy==1.13.0",
+    "tensorflow==2.16.1",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ufotechco/nilm_usb"

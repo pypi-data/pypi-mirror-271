@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dcxht/__init__.py
+dcxht/main.py
+dcxht.egg-info/PKG-INFO
+dcxht.egg-info/SOURCES.txt
+dcxht.egg-info/dependency_links.txt
+dcxht.egg-info/requires.txt
+dcxht.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+image2grid/__init__.py,sha256=MRwaSfJldK1rQkoa1b7TOK4mOzZrRttcCJ_wzv2fbhM,65
+image2grid/cli.py,sha256=iUvcsGmY5L1oQOHpi_fRuImnzPYcC0qR-oAy30O5-qo,453
+image2grid/cropper.py,sha256=e24ND-WNRqSsfJF9SLSfj8JZcFBg7QA9lNdtv8NNPSk,4265
+image2grid-0.1.1.dist-info/LICENSE,sha256=wSLaOIA8ahAf7QURlLuv2EZpACtVNSXIqa7RFwF0rfc,1069
+image2grid-0.1.1.dist-info/METADATA,sha256=w8BHpz-Byn-_qg6P5bjFnDMsAqZlLXT4w2fmaA4SekY,2437
+image2grid-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+image2grid-0.1.1.dist-info/entry_points.txt,sha256=6vrTAItvenAPKd5jWanQKDWtQBTktWYFDS9HFO8WcAY,50
+image2grid-0.1.1.dist-info/RECORD,,

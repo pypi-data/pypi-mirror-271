@@ -1,0 +1,3 @@
+[console_scripts]
+image2grid=image2grid.cli:main
+

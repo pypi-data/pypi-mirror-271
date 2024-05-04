@@ -1,0 +1,81 @@
+[package]
+name = "avenger-wgpu"
+version = "0.0.7"
+edition = "2021"
+description = "WGPU rendering engine for the Avenger visualization framework"
+license = "BSD-3-Clause"
+
+[lib]
+crate-type = [ "cdylib", "rlib",]
+
+[features]
+default = [ "cosmic-text", "rayon",]
+cosmic-text = [ "dep:cosmic-text", "lazy_static",]
+deno = []
+
+[dependencies]
+cfg-if = "1"
+winit = "0.29.9"
+env_logger = "0.10"
+log = "0.4"
+wgpu = "0.19.3"
+pollster = "0.3"
+cgmath = "0.18.0"
+itertools = "0.12.0"
+image = "0.24.7"
+futures-intrusive = "^0.5"
+etagere = "0.2.10"
+colorgrad = "0.6.2"
+
+[dev-dependencies]
+dssim = "3.2.4"
+rstest = "0.18.2"
+
+[dependencies.avenger]
+path = "../avenger"
+version = "0.0.7"
+
+[dependencies.rayon]
+workspace = true
+optional = true
+
+[dependencies.tracing]
+workspace = true
+
+[dependencies.thiserror]
+workspace = true
+
+[dependencies.bytemuck]
+version = "1.14"
+features = [ "derive",]
+
+[dependencies.lazy_static]
+workspace = true
+optional = true
+
+[dependencies.pyo3]
+workspace = true
+optional = true
+
+[dependencies.cosmic-text]
+version = "0.11.2"
+optional = true
+
+[dependencies.lyon]
+workspace = true
+
+[dev-dependencies.avenger-vega]
+path = "../avenger-vega"
+features = [ "image-request", "svg",]
+version = "0.0.7"
+
+[dev-dependencies.serde_json]
+version = "1.0.111"
+
+[target."cfg(target_arch = \"wasm32\")".dependencies.wgpu]
+version = "0.19.3"
+default-features = false
+
+[target."cfg(target_arch = \"wasm32\")".dependencies.web-sys]
+version = "0.3.67"
+features = [ "Document", "Window", "Element", "HtmlCanvasElement",]

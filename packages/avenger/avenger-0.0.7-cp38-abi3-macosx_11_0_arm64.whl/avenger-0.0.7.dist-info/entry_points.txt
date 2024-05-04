@@ -1,0 +1,3 @@
+[altair.vegalite.v5.renderer]
+avenger-png=avenger.altair_utils:avenger_png_renderer
+avenger-html=avenger.altair_utils:avenger_html_renderer

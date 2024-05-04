@@ -1,0 +1,14 @@
+MANIFEST.in
+README.MD
+setup.py
+indexclient/__init__.py
+indexclient/chroma.py
+indexclient/client.py
+indexclient/config.py
+indexclient/types.py
+indexclient/utils.py
+indexnetwork_sdk.egg-info/PKG-INFO
+indexnetwork_sdk.egg-info/SOURCES.txt
+indexnetwork_sdk.egg-info/dependency_links.txt
+indexnetwork_sdk.egg-info/requires.txt
+indexnetwork_sdk.egg-info/top_level.txt

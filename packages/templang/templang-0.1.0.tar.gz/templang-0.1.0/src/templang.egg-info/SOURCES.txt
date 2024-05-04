@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/templang/__init__.py
+src/templang/main.py
+src/templang.egg-info/PKG-INFO
+src/templang.egg-info/SOURCES.txt
+src/templang.egg-info/dependency_links.txt
+src/templang.egg-info/requires.txt
+src/templang.egg-info/top_level.txt

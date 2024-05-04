@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+AGTEPyth/AGTPytGD.py
+AGTEPyth/DataResource_rc.py
+AGTEPyth/Functions.py
+AGTEPyth/PRINT_RESULST_TO_DOCX.py
+AGTEPyth/__init__.py
+AGTEPyth/inputData.py
+AGTEPyth.egg-info/PKG-INFO
+AGTEPyth.egg-info/SOURCES.txt
+AGTEPyth.egg-info/dependency_links.txt
+AGTEPyth.egg-info/requires.txt
+AGTEPyth.egg-info/top_level.txt

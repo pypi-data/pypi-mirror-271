@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "poly-crop"
+version = "0.3"
+description = "Python library for cropping polygons in images"
+readme = "README.md"
+authors = [
+  { name = "Elias Jensen", email = "ejkonge@gmail.com" }
+]
+keywords = ["image", "processing", "crop", "polygon"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+python = ">=3.8"
+
+[tool.poetry.dependencies]
+numpy = "^1.0"
+opencv-python = "^4.0"
+Pillow = "^8.0"

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/desgld/__init__.py
+src/desgld/desgld_alg.py
+src/desgld/evaluation.py
+src/desgld/network.py
+src/desgld.egg-info/PKG-INFO
+src/desgld.egg-info/SOURCES.txt
+src/desgld.egg-info/dependency_links.txt
+src/desgld.egg-info/requires.txt
+src/desgld.egg-info/top_level.txt

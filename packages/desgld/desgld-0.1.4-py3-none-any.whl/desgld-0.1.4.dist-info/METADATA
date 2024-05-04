@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: desgld
+Version: 0.1.4
+Summary: Package for decentralized stochastic gradient descent
+Home-page: https://github.com/mrislambd/desgld_package.git
+Author: Rafiq Islam
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# Decentralized Stochastic Gradient Langevin Diffusion
+
+
+This repo is to build the package for decentralized stochastic gradient Langevin diffusion. For more details please
+visit this https://mrislambd.github.io/desgld_package/

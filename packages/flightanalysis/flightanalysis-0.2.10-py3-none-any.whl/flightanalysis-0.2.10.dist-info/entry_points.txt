@@ -1,0 +1,3 @@
+[console_scripts]
+collect_logs = flightanalysis.scripts.batch_analyse:main
+flightline = flightanalysis.scripts.collect_scores:main

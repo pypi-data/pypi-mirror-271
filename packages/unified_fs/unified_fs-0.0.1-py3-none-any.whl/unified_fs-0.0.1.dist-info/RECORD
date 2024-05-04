@@ -1,0 +1,11 @@
+unified_fs/__init__.py,sha256=964jR6ezCkhtMB6j7n-xnu0-7iTcaF85dgDZ-TPNXkA,158
+unified_fs/config/file_extension_mapping.yaml,sha256=0ljehRvBHE7ccU9_PnN4XOgWXoRIBUEgtbj-pnb_mIY,206
+unified_fs/file_system.py,sha256=KoGjGZuPrE8vnjSqDn2mJMi0RRg5k6GpoOk6cYkek_M,2838
+unified_fs/operations.py,sha256=bzxGoHyIpOEfe4UG6-fy6bfyCxbUqu_pDGy6l2pISv4,8784
+unified_fs/readers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unified_fs/readers/text_readers.py,sha256=4uY5-NWMs2ISS2anGU9_EgWhrj_DWerZAyavNWibf_s,682
+unified_fs-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unified_fs-0.0.1.dist-info/METADATA,sha256=xEuv69zp4RLs7hetS0c80fySfPzMmoCbxkpNXzbNGoE,1926
+unified_fs-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+unified_fs-0.0.1.dist-info/entry_points.txt,sha256=lUKQ3xhfwNy9jbEq3x5FtfCalllIZXoQe2ZtFDs5ong,36
+unified_fs-0.0.1.dist-info/RECORD,,

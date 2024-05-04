@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+burgiir/__init__.py
+burgiir/main.py
+burgiir.egg-info/PKG-INFO
+burgiir.egg-info/SOURCES.txt
+burgiir.egg-info/dependency_links.txt
+burgiir.egg-info/requires.txt
+burgiir.egg-info/top_level.txt

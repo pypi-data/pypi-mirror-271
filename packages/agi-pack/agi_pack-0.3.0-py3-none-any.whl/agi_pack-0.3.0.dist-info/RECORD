@@ -1,0 +1,13 @@
+agipack/builder.py,sha256=4qn1RrPkW-EU9osyihjYpXsH-V2LMyfeM76guHRYrGU,8906
+agipack/cli.py,sha256=KomnLpzJwwQ7fjofk1esN1Rhaodnd0LdzoAXGd8k0cY,7711
+agipack/config.py,sha256=Pg1T4qHqPdhWdAhKYaqIWKQfGw8yX52ahPLBmkCmXKw,10415
+agipack/constants.py,sha256=cnUn5DQF9la7z05dJrYPVdf0qmX3MV2Mkfog_SFLIoY,337
+agipack/version.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+agipack/templates/Dockerfile.j2,sha256=fRBiC-AxdLMI8bbTxBJj4Ip6PaM5pFPzD1C41swIypc,5277
+agipack/templates/agibuild.sample.yaml,sha256=ysP_bpGeMGKPr3LqfzLhvEKPNJ86jVVeW66XjRxvut8,226
+agi_pack-0.3.0.dist-info/LICENSE,sha256=XtjSX1x06EhVZr1WvH_-AdrcfzmQ_Px2yawjdgmwA_E,1070
+agi_pack-0.3.0.dist-info/METADATA,sha256=z-WbWq8RUsg7Ll65pr_gHj-9QkRfMy9MNiQuGrUjzQs,11378
+agi_pack-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+agi_pack-0.3.0.dist-info/entry_points.txt,sha256=7mLhXFt8cKyG7XwcK7zwQKWpDvC3Wuj_f3WQG2S5uaU,45
+agi_pack-0.3.0.dist-info/top_level.txt,sha256=MdExAigXNzVF6N8W57fUAeHe5h3ygBijmKNRuJa2fnM,8
+agi_pack-0.3.0.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+nestedobjects/DependentObjects.py
+nestedobjects/NestedObjects.py
+nestedobjects/__init__.py
+nestedobjects.egg-info/PKG-INFO
+nestedobjects.egg-info/SOURCES.txt
+nestedobjects.egg-info/dependency_links.txt
+nestedobjects.egg-info/requires.txt
+nestedobjects.egg-info/top_level.txt

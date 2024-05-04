@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pdfplumber-aemc
+Version: 0.11.1
+Summary: Plumb a PDF for detailed information about each char, rectangle, and line.
+Home-page: https://github.com/jsvine/pdfplumber
+Author: Jeremy Singer-Vine + Liew Chun Fui
+Author-email: wargreymon28@gmail.com
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: Pillow >=9.1
+Requires-Dist: pypdfium2 >=4.18.0
+

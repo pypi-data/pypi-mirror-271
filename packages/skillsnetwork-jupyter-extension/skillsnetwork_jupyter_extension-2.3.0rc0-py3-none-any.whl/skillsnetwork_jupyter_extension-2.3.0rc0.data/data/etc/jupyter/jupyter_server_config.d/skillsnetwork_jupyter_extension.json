@@ -1,0 +1,7 @@
+{
+  "ServerApp": {
+    "jpserver_extensions": {
+      "skillsnetwork_jupyter_extension": true
+    }
+  }
+}

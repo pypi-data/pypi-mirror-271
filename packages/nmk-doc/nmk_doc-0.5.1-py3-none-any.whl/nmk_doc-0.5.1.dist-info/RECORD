@@ -1,0 +1,14 @@
+nmk_doc/__init__.py,sha256=UvBFTSpLBuLXYL3LLi9VxTFexsKMpY2r531IiCsMwz4,1019
+nmk_doc/badges.yml,sha256=sUrnNu-oS7eRFcu7t0S9Dwevzk9RrSfvfnSuSnmxJ8g,287
+nmk_doc/builders.py,sha256=USz24OEkPaVB-0qHU_AKEX2jq1SUcBZpWsf9RYuGCkE,707
+nmk_doc/doc.yml,sha256=AdJT4kYzgoXEBvqxd-NRBddtsgB4-aTscPub9Pcx0iQ,3046
+nmk_doc/plugin.yml,sha256=dIyeIJnLGTMIZx_3YzoFnRlhxa8Edr8bjkGzwwngFI4,715
+nmk_doc/resolvers.py,sha256=cidxLsx5L_M_eGkKqzly64R84AAPaQkUMsjiiJcSObE,805
+nmk_doc/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nmk_doc/templates/config.py.jinja,sha256=-3Z7KVKqWq388s_4RIy9SjcWa-eP4pZpb4AtUIYOmQI,810
+nmk_doc/templates/readthedocs.yaml.jinja,sha256=H4FR5kaN2DvyRNIzcdU77gfDn04GXPcAgf82HiaxWno,570
+nmk_doc-0.5.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+nmk_doc-0.5.1.dist-info/METADATA,sha256=2ofPIxKAA7_FPcziz2f1RPPSLIDRcOXNDEgjPRO8glw,2326
+nmk_doc-0.5.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nmk_doc-0.5.1.dist-info/top_level.txt,sha256=q4Xv7_m81nqE5b1JH4O_cAp7hbbeWNw83UqisImrgqI,8
+nmk_doc-0.5.1.dist-info/RECORD,,

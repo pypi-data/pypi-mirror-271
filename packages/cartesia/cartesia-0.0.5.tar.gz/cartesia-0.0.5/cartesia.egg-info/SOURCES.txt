@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+cartesia/__init__.py
+cartesia/tts.py
+cartesia/utils.py
+cartesia/version.py
+cartesia.egg-info/PKG-INFO
+cartesia.egg-info/SOURCES.txt
+cartesia.egg-info/dependency_links.txt
+cartesia.egg-info/requires.txt
+cartesia.egg-info/top_level.txt
+tests/test_tts.py

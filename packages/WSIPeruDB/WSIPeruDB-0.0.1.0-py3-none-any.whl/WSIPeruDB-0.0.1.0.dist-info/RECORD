@@ -1,0 +1,12 @@
+WSIPeruDB/FilterDepartment.py,sha256=BsVwHplAXhIlrT1AV1AnhSX7YrQJwPE9K0u3t6nF7Cw,2859
+WSIPeruDB/__init__.py,sha256=_918mapNomQ9_u7Z2zYO6veYNmyzw4okxG0Pm9Ke04c,351
+WSIPeruDB/dataset_downloading.py,sha256=Zu3Xgm1y-mc3PW24xUuYfM_sJT_ISYdM6ms7EqxLG0k,4650
+WSIPeruDB/departments_comparison.py,sha256=nriOb8YFX3CM03QI75x_9HeAohhHO35gzObwHd01YIw,5716
+WSIPeruDB/lmwl_filtering.py,sha256=DtIj17yoky0Mqa8x6Pijget26Y4_LRjL1t8n28890FY,5486
+WSIPeruDB/map.py,sha256=i2lBmgBxDhCHfUkR2ZrxvW1tFRnmuSwM-UY-khGYlHg,2885
+WSIPeruDB/siteinformation_downloading.py,sha256=roALjivmZdB5tbuKdak5qftl3EqTWPj-pR0qk849dmw,4273
+WSIPeruDB/temporalseries.py,sha256=p3bR4hp1m6nEfbSRGIg0PAU5o_mTSLlrJXkLQ6h-eK0,4816
+WSIPeruDB-0.0.1.0.dist-info/METADATA,sha256=0rQCB5aecM0CXB90-lsG_xZDLUClGRmCbnED_0au93k,2392
+WSIPeruDB-0.0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+WSIPeruDB-0.0.1.0.dist-info/top_level.txt,sha256=Bb4_iPPBbWuiVSQz43CEi-gwIPyUlV_8rRv4Wz9YsDc,10
+WSIPeruDB-0.0.1.0.dist-info/RECORD,,

@@ -1,0 +1,5 @@
+fastapi
+
+[test]
+async_asgi_testclient>=1.4
+pytest-asyncio>=0.23

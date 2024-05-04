@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+npywx.egg-info/PKG-INFO
+npywx.egg-info/SOURCES.txt
+npywx.egg-info/dependency_links.txt
+npywx.egg-info/requires.txt
+npywx.egg-info/top_level.txt
+pywx/__init__.py
+pywx/core.py
+pywx/events.py
+pywx/logger.py
+pywx/utils.py
+pywx/tools/faker.exe
+pywx/tools/pywx.dll
+pywx/tools/start-wechat.exe

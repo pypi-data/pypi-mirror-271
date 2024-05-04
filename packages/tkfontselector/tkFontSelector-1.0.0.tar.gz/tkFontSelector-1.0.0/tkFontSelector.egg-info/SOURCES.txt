@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+tkFontSelector.egg-info/PKG-INFO
+tkFontSelector.egg-info/SOURCES.txt
+tkFontSelector.egg-info/dependency_links.txt
+tkFontSelector.egg-info/top_level.txt
+tk_font_selector/__init__.py
+tk_font_selector/_version.py
+tk_font_selector/ask_font.py
+tk_font_selector/tkfontselector.py

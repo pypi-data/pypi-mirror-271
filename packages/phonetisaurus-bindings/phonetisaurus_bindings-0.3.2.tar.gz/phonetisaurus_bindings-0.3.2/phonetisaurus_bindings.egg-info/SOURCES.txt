@@ -1,0 +1,10 @@
+setup.py
+phonetisaurus/__init__.py
+phonetisaurus/commands.py
+phonetisaurus_bindings.egg-info/PKG-INFO
+phonetisaurus_bindings.egg-info/SOURCES.txt
+phonetisaurus_bindings.egg-info/dependency_links.txt
+phonetisaurus_bindings.egg-info/entry_points.txt
+phonetisaurus_bindings.egg-info/not-zip-safe
+phonetisaurus_bindings.egg-info/requires.txt
+phonetisaurus_bindings.egg-info/top_level.txt

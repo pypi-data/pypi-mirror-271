@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+exctrap/__init__.py
+exctrap/py.typed
+exctrap.egg-info/PKG-INFO
+exctrap.egg-info/SOURCES.txt
+exctrap.egg-info/dependency_links.txt
+exctrap.egg-info/top_level.txt

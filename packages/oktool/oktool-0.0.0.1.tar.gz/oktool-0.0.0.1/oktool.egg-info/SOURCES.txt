@@ -1,0 +1,6 @@
+README.md
+setup.py
+oktool.egg-info/PKG-INFO
+oktool.egg-info/SOURCES.txt
+oktool.egg-info/dependency_links.txt
+oktool.egg-info/top_level.txt

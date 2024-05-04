@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: openvoicechat
+Version: 0.1.1
+Home-page: http://www.fakhirali.pk/OpenVoiceChat/
+License-File: LICENSE
+Requires-Dist: sounddevice
+Requires-Dist: torch
+Requires-Dist: torchaudio
+Requires-Dist: pygame
+Requires-Dist: pyaudio
+Requires-Dist: librosa
+Requires-Dist: pydub
+Requires-Dist: python-dotenv
+Requires-Dist: phonemizer
+Requires-Dist: websockets
+Provides-Extra: transformers
+Requires-Dist: transformers; extra == "transformers"
+Provides-Extra: piper
+Requires-Dist: piper-tts; extra == "piper"
+Requires-Dist: piper-phonemize; extra == "piper"
+Provides-Extra: vosk
+Requires-Dist: vosk; extra == "vosk"
+Provides-Extra: llama
+Requires-Dist: llama-cpp-python; extra == "llama"
+Provides-Extra: open-ai
+Requires-Dist: openai; extra == "open-ai"
+Provides-Extra: tortoise
+Requires-Dist: tortoise-tts; extra == "tortoise"
+Provides-Extra: xtts
+Requires-Dist: TTS; extra == "xtts"

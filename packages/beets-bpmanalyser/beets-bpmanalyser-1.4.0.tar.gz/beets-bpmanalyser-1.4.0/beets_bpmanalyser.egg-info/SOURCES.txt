@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+beets_bpmanalyser.egg-info/PKG-INFO
+beets_bpmanalyser.egg-info/SOURCES.txt
+beets_bpmanalyser.egg-info/dependency_links.txt
+beets_bpmanalyser.egg-info/requires.txt
+beets_bpmanalyser.egg-info/top_level.txt
+beetsplug/bpmanalyser/__init__.py
+beetsplug/bpmanalyser/command.py
+beetsplug/bpmanalyser/get_song_bpm.py
+beetsplug/bpmanalyser/version.py

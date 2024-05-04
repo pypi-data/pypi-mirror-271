@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pico_server
+Version: 0.0.1
+Summary: Package to create a simple web server for the Raspberry Pi Pico W
+Author-email: Edward Lowe <EdwardTheLegend@proton.me>
+Project-URL: Homepage, https://github.com/EdwardTheLegend/pico_server
+Project-URL: Issues, https://github.com/EdwardTheLegend/pico_server/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pico_server

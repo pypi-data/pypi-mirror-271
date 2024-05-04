@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: alyx-setup-utils
+Version: 0.2.0
+Summary: Set of python utilitary tools acessible through URI REST requests, to link various setup's session configs from alyx session infos.
+Author-Email: Timothe Jost <timothe.jost@wanadoo.fr>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: flask>=3.0.3
+Requires-Dist: alyx-connector>=2.1.5
+Requires-Dist: flask-cors>=4.0.0
+Description-Content-Type: text/markdown

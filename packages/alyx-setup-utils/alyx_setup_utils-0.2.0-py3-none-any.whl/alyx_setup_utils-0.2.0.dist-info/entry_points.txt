@@ -1,0 +1,3 @@
+[console_scripts]
+alyx-setup-utils = alyx_setup_utils:run
+

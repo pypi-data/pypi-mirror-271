@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20240503.1
+-------------
+
+* Make it possible to specify the managed flavor profile (#881)

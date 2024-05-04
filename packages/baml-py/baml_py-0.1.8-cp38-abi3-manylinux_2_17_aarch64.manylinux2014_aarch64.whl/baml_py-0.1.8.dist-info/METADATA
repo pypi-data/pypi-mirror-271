@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: baml-py
+Version: 0.1.8
+License-File: LICENSE
+License-File: LICENSE
+Summary: BAML python bindings (pyproject.toml)
+Author: Boundary <contact@boundaryml.com>
+Author-email: Boundary <contact@boundaryml.com>
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+BAML python bindings (readme.md)
+

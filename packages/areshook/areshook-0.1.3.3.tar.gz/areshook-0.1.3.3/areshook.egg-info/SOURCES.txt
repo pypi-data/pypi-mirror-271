@@ -1,0 +1,15 @@
+.gitignore
+README.md
+README.zh.md
+requirements.txt
+setup.py
+upload_twine.sh
+areshook/__init__.py
+areshook/_exceptions.py
+areshook/_frida.py
+areshook/_modules.py
+areshook.egg-info/PKG-INFO
+areshook.egg-info/SOURCES.txt
+areshook.egg-info/dependency_links.txt
+areshook.egg-info/requires.txt
+areshook.egg-info/top_level.txt

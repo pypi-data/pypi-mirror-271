@@ -1,0 +1,4 @@
+frida
+frida-tools
+heradata
+pydantic

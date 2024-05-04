@@ -1,0 +1,6 @@
+frida~=16.2.1
+adbutils~=2.4.1
+click~=8.1.7
+pydantic
+setuptools~=68.2.0
+heradata

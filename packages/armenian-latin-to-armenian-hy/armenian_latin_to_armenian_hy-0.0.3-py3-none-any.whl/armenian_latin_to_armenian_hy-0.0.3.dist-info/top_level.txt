@@ -1,0 +1,2 @@
+armenian_latin_to_armenian_hy
+armenian_transliterate

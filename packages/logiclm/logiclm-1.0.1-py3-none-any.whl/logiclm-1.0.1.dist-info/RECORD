@@ -1,0 +1,11 @@
+logiclm/ai.py,sha256=w4mAnbtzpC_3HUXZOpM5t-tSZ1FwLIzP4SFbpvAByws,5908
+logiclm/logiclm.py,sha256=k4u029Q20UBBLnk7kUOL4UiuaIJezS7oVXgqB89YOYQ,2196
+logiclm/olap.py,sha256=Sjz-wAbEfUoovlPEfpyWsKkFVfaQQZ-BOnR9qExvKNE,16445
+logiclm/run_tests.py,sha256=LRStIqxwm_LLBdguWhzi5phpECo3sPReTYvM6TsGraM,2466
+logiclm/schema.py,sha256=UcPJ5ojjtPZzctwZCkmhutNd97f4-DBGyoOo8YUnTDI,2145
+logiclm/server.py,sha256=vvHhMIjPhnn2DD1HViIyN0szgkV17n63bbT4bDBwLmQ,9941
+logiclm-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+logiclm-1.0.1.dist-info/METADATA,sha256=egtDjSze-pLNv1-KrfMY11l0atQnu01oI1xdMI_1GV0,5617
+logiclm-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+logiclm-1.0.1.dist-info/top_level.txt,sha256=AucYfOC3VvClJnle8Zz5COIwbGpPENwEo-gbg0uhh6w,8
+logiclm-1.0.1.dist-info/RECORD,,

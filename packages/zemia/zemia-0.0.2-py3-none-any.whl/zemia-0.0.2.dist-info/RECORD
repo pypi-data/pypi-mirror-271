@@ -1,0 +1,9 @@
+zemia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zemia/common.py,sha256=EgDa0mR9AsXhINcTvX1Zsy1PcCA1lsL0wM8i2V1MDB4,1539
+zemia/file_edit.py,sha256=SWUwtjVbyR3G0azNIKETZOVpIvAaaIeQ5yO5Bi02D8I,4133
+zemia/spreadsheet.py,sha256=Y9HsDrh58mhiXDvjfIGgU5IEF9gF9U5FFIxEio24lDQ,5576
+zemia/sql.py,sha256=QcV-Rcrxh2huwC9Y6KhBjOlr-ZpyY-XrHM-sfYVddmA,3306
+zemia-0.0.2.dist-info/METADATA,sha256=WfmN4BgyqYBcZ5MWM9CkJ-ecnCMD12LkSGmJrLrWao8,738
+zemia-0.0.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+zemia-0.0.2.dist-info/licenses/LICENSE,sha256=bthSaRLoN3FjGWcbggIWp53blCiQwYl_xmLobmvPvDM,1086
+zemia-0.0.2.dist-info/RECORD,,

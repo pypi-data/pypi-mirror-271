@@ -1,0 +1,14 @@
+edgehog/__init__.py,sha256=IiCPQBdNOTr2WSYzCeUaa2x11ipNlAtV_ncJbjlqxYA,78
+edgehog/add_ons.py,sha256=FFu-yvjpAsB45eQaGLdLoL68rRhAMTc9wx7_V5jnfwc,4512
+edgehog/characterize_species_tree.py,sha256=1Y1KPLHAkDSnrwcPf1GXZom05HCUN3dMwc9nvLEFnuk,2153
+edgehog/check_args.py,sha256=GvTkxmlcns7efblXDEG6UJ62FweY0zrDsOflU8wgA1k,1895
+edgehog/edgehog.py,sha256=pHlA_4Wo39pNc69Yq2P3EsdyqazHMWmn_c6AI_2QmmM,5041
+edgehog/infer_ancestral_synteny_graphs.py,sha256=Iv1XNNZfSQdQPT9J30lYoG6fVNmjhdqdRn_mCD9cDos,25302
+edgehog/init_extant_synteny_graphs.py,sha256=aO6Vo9XhSQSejjwEdNbqEWJefnlYJC9BoBSi7f0SIZg,8713
+edgehog/process_hogs.py,sha256=vOiSfJlMyFxvAKGcZpdxkjq0csp3afRcwty2QBjpzdQ,1979
+edgehog/read_gff.py,sha256=sGvXYKosRtYxdIO5mleEQQRKQFm4J5TA3VBKM5WdDy4,7602
+edgehog/write_output.py,sha256=YZjz8J4OdX-s5dZcj1CXhuTJQTO3w7xYpwEkDC44DCE,11626
+edgehog-0.1.4.dist-info/METADATA,sha256=F6KR-Adea8HnNB4ctmq2MW6IrWEtWTLml6Ko0pk0qiM,6107
+edgehog-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+edgehog-0.1.4.dist-info/entry_points.txt,sha256=ZzldabjF0hJLEe40Wnhs2q1T9OO6G8xsecbJBKONJBw,48
+edgehog-0.1.4.dist-info/RECORD,,

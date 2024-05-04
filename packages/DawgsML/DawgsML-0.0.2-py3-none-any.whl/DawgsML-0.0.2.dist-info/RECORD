@@ -1,0 +1,13 @@
+dawgs_ml/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+dawgs_ml/models.py,sha256=G_57id6Uirnrw5aGdC6krWAQW62VTagcKRxGU2_WPY8,6083
+dawgs_ml/preprocess.py,sha256=uiSPHF5Wgtv-VKmfCb_NnEcYmIcChl4jnMvNxbr_m30,679
+dawgs_ml/dataframe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dawgs_ml/dataframe/dataframe.py,sha256=I5EeT9Tkgzp-GQYGa5rS0gM4qxPqdJJLOWs6BiX5OBU,16304
+dawgs_ml/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dawgs_ml/utils/model_utils.py,sha256=Z2E9YNAlMmhuT-eyQxwltGN3gc3N834fCSX8a6FxHZc,14184
+dawgs_ml/utils/utils.py,sha256=esXYyQwjDvlm_7nGwD2f7dJpYBVqRZSBysx2hlTtceU,585
+DawgsML-0.0.2.dist-info/LICENSE,sha256=FyJAFKbBiKsFEmqQCmtkH0LaSx2sEegiSWfXYSIo3XU,1084
+DawgsML-0.0.2.dist-info/METADATA,sha256=xrPS5Ycn-z53LTSiOwKEKZRcQIJnTiSAWJHR-m7by6s,1190
+DawgsML-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+DawgsML-0.0.2.dist-info/top_level.txt,sha256=UXYqCuLphc_fIP6Jyr5M6Ot9QzI8OdSQ2nhVzLiEaEs,9
+DawgsML-0.0.2.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+inegi_explorer/__init__.py
+inegi_explorer/config.py
+inegi_explorer/explorer.py
+inegi_explorer.egg-info/PKG-INFO
+inegi_explorer.egg-info/SOURCES.txt
+inegi_explorer.egg-info/dependency_links.txt
+inegi_explorer.egg-info/requires.txt
+inegi_explorer.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+__title__ = "async-twitter-api-client"
+__description__ = "Async Implementation of Twitter's v1, v2, and GraphQL APIs."
+__version__ = "0.4.0"
+__author__ = "obnoxious"
+__license__ = "MIT"

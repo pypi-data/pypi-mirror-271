@@ -1,0 +1,9 @@
+oeaudio/__init__.py,sha256=YpKDcdV7CqL8n45u267wKtyloM13FSVbOdrqgNZnSLM,22
+oeaudio/__main__.py,sha256=PWJzsNlseP3M1xDGgXdqHSt5PcbbSdNkPEm71n0vQRo,64
+oeaudio/core.py,sha256=pxp0UbNqA7PWtTsAGRNWEBrGtgl9qiVOqfmII4sDrgc,6534
+oeaudio/script.py,sha256=Ro5x227u2PqRdHIpNU4jpJHeD5Fw8gl3KEJN_aGTpqg,10413
+open_ephys_audio-0.1.7.dist-info/METADATA,sha256=3bpdCLt5DKauDilFtRgWDSdf31JK9R1VE1iha4c2GTY,803
+open_ephys_audio-0.1.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+open_ephys_audio-0.1.7.dist-info/entry_points.txt,sha256=_7VlRE_g-z4iOZ-94KlcVcOifPqs4efXtEDLbmEi_-0,56
+open_ephys_audio-0.1.7.dist-info/top_level.txt,sha256=ZPn1zwMVd-F_8Shs3Tr-A7zJgAMWzftYCcNBCm3z2Jg,8
+open_ephys_audio-0.1.7.dist-info/RECORD,,

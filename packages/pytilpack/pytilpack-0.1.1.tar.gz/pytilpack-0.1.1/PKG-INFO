@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pytilpack
+Version: 0.1.1
+Summary: Python Utility Pack
+Home-page: https://github.com/ak110/pytilpack
+License: MIT
+Author: aki.
+Author-email: mark@aur.ll.to
+Requires-Python: >=3.11.0rc1,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: all
+Provides-Extra: flask
+Provides-Extra: openai
+Provides-Extra: sqlalchemy
+Provides-Extra: tqdm
+Requires-Dist: flask (>=2.2) ; extra == "all" or extra == "flask"
+Requires-Dist: openai (>=1.25) ; extra == "all" or extra == "openai"
+Requires-Dist: sqlalchemy (>=2.0) ; extra == "all" or extra == "sqlalchemy"
+Requires-Dist: tqdm (>=4.66) ; extra == "all" or extra == "tqdm"
+Description-Content-Type: text/markdown
+
+# pytilpack
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Lint&Test](https://github.com/ak110/pytilpack/actions/workflows/python-app.yml/badge.svg)](https://github.com/ak110/pytilpack/actions/workflows/python-app.yml)
+[![PyPI version](https://badge.fury.io/py/pytilpack.svg)](https://badge.fury.io/py/pytilpack)
+
+Pythonの各種ライブラリのユーティリティ集。
+
+## インストール
+
+```bash
+pip install pytilpack
+```
+

@@ -1,0 +1,8 @@
+setuptools
+twine
+wheel
+
+[dev]
+requests
+dataclasses-json
+twine

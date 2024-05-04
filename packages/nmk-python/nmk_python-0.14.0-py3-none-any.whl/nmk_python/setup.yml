@@ -1,0 +1,37 @@
+config:
+    # Generated setup config files
+    pythonSetupCfg: ${PROJECTDIR}/setup.cfg
+
+    # Paths to setup.cfg fragments to be merged
+    pythonSetupCfgFiles: []
+
+    # Contributed setup items from yml files
+    pythonSetupItems: {}
+
+    # Python supported versions range (min-max)
+    pythonMinVersion: "3.8"
+    pythonMaxVersion: "3.12"
+    pythonSupportedVersions:
+        __resolver__: nmk_python.setup.PythonSupportedVersionsResolver
+
+    # Contribute to gitignore
+    gitIgnoredFiles:
+        - ${pythonSetupCfg}
+
+tasks:
+    py.setup:
+        description: Generate python setup files
+        emoji: ":snake:.:toolbox:"
+        input:
+            - ${pythonSetupCfgFiles}
+            - ${pythonVersionStamp}
+        output:
+            - ${pythonSetupCfg}
+        deps:
+            - py.version
+        appendToDeps: setup
+        if: ${pythonSrcFiles}   # Only if python source files are found
+        builder: nmk_python.setup.PythonSetupBuilder
+        params:
+            setup_cfg_files: ${pythonSetupCfgFiles}
+            setup_items: ${pythonSetupItems}

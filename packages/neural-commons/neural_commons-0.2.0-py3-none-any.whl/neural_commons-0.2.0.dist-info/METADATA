@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: neural-commons
+Version: 0.2.0
+Summary: A neural network utility library for PyTorch.
+Author: Jose Solorzano
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=1.23
+Requires-Dist: tqdm >=4.0.0
+Requires-Dist: torch >=2.1.0
+Requires-Dist: transformers >=4.28.0
+Requires-Dist: mpmath ==1.3.0
+
+# neural-commons
+
+
+
+Neural network utilities and helpers for PyTorch.
+
+
+
+## Installation
+
+
+
+    pip install neural-commons
+
+
+
+## Features and Utilities
+
+
+
+- [Closed-Form Optimization](https://github.com/jose-solorzano/neural-commons/blob/main/doc/closed-form-optimization.md)
+

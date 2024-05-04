@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lumberstack"
+version = "24.05.0300"
+authors = [
+  { name="ghostdisco", email="pypi@ghostdisco.me" },
+]
+description = "A simple abstraction of the logging package"
+readme = "README.md"
+requires-python = ">=3.8.1"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "logging>=0.4.9.6"
+]
+
+[project.urls]
+Homepage = "https://github.com/ghostdisco/lumberstack"
+Issues = "https://github.com/ghostdisco/lumberstack/issues"

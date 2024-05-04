@@ -1,0 +1,16 @@
+taswira/__init__.py,sha256=N2jRoYvXFTWdUFIy0pdW-zblPVDQHP5vOTjsVVSmVgM,177
+taswira/__main__.py,sha256=Q-LsZdF23mNzz0q6luL7wL-dCk50XQUrk_nkMA5wWgE,100
+taswira/app.py,sha256=Rq4fTLOqi9HxnyC8aLVWSn5UEkUfF5iHpp--5aUgEsQ,10020
+taswira/units.py,sha256=YY4CLOI7yXOCHEWhoy7llK7gbZr0oYV8vv2cn83aKe8,941
+taswira/scripts/__init__.py,sha256=eFqwGmxya8o3JWRgrok95DbHITFA3dtE7ucF6JUwdHE,339
+taswira/scripts/arg_types.py,sha256=a8V8TigV4Q2BH3FqJDzm7wAeC51E3IOwKPZbH1Gej98,1610
+taswira/scripts/console.py,sha256=8KCbTuoUu-cz_Bl5AM--YM72j9Yh3dY7twyjgNSsv8w,2953
+taswira/scripts/helpers.py,sha256=JKJaixj7CIVnFdOhdfExSXnamb3P5ZXoQUV4v9oGL0k,363
+taswira/scripts/ingestion.py,sha256=532c4YCMyCvKZdjnaMHmKV_DgZNgIdbfGI7chTz7y4E,2694
+taswira/scripts/metadata.py,sha256=MIGTOpYzXahcRKxc9ppgGBr6APba5DSw36h0B2vtIQI,2088
+taswira-0.1.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+taswira-0.1.0.dist-info/METADATA,sha256=sg8p-Pt6tM1QTQX_jktppAz-9tsldEBI78m8sleHX48,7515
+taswira-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+taswira-0.1.0.dist-info/entry_points.txt,sha256=wbRLbddv7ZAkCO8XzyQJqzOLdy0BRhHc7ErV9f2KUFc,41
+taswira-0.1.0.dist-info/top_level.txt,sha256=8UIHAIdZ6aSPhyvFNl70iOUqGfLaMk2JYwxGhAEg2WU,8
+taswira-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,15 @@
+_error_handler_version.py,sha256=bhi15cb3KVl9tPnATerbyVFoGUNgqJ4lEa48yJbRVCY,18
+error_handler/__init__.py,sha256=PLUTOykG56cGWi55I5P2OoiNrxHckNwEuXO4TW7QdTE,705
+error_handler/_extra.py,sha256=Ict5UvJQfiBDgGEQlHPU70_1aWhs85yrFlMFBQyvQDE,883
+error_handler/callback.py,sha256=qc5Adt_-KqVdT1YDJ1IL23bRxsXz6vgaBhZ0vteDkVE,6136
+error_handler/context_manager.py,sha256=vaV-MI7swkpeRnfcYqzrTPmOx4GglHRnZxXjFz7eGUI,1810
+error_handler/core.py,sha256=I_ge-h2-RdosNv3mub-C5WIFGzxDiP-5EWlDwUGhiv8,11416
+error_handler/decorator.py,sha256=eNDI2uMzA9BJWTjSEBKXgYBXPV_ep8Mw_uDKha7HWpY,15577
+error_handler/pipe.py,sha256=TCB5E3YJIBy20GGlxiK1DqmKmlLDJufnhEb4pDKe6iA,418
+error_handler/py.typed,sha256=ZvYa-_QF7Xg7F6Dow8m1zHvSP6kNHuhh3BEBVxjAdUQ,168
+error_handler/result.py,sha256=y0atBlovECQdEh2zQFsbrosharpq5F5RKoGtAMyE9EQ,1730
+error_handler/stream.py,sha256=TrjzEmMiErIrro3Vh5Lsedh0VpyflUEJJBoc4Lb4eOo,3721
+error_handler/types.py,sha256=QrPiHe95FT21KiEqjVFefCfHIGTZiS_zEOhPxttufHg,3252
+seviper-0.0.4.dist-info/METADATA,sha256=vBdpZrYUHbe2zRbMOk1KmlQA9OZeax8JkQaXQhIVA4c,4596
+seviper-0.0.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+seviper-0.0.4.dist-info/RECORD,,

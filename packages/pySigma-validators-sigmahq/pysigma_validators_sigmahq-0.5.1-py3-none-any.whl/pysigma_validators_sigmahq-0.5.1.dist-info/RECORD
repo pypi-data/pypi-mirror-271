@@ -1,0 +1,11 @@
+sigma/validators/sigmahq/__init__.py,sha256=w05ZQQsJBwkU4_g0QDkIRn8sEqg_Ear6sSpGKEKty9Q,830
+sigma/validators/sigmahq/config.py,sha256=bVU14D1U9KeDLUdDBG9M-LnnEjSvs3XLdHEwtKztBwc,52850
+sigma/validators/sigmahq/field.py,sha256=7ASOeMXUUQGjrkCeM9vcXDVbMfsrWyPdqphekfJ4Ex0,7066
+sigma/validators/sigmahq/filename.py,sha256=qBy0uEHOBkPzvidoaLuck4vQBbxwoSK6UrsACv5iNGs,2772
+sigma/validators/sigmahq/logsource.py,sha256=V93uxRcYoQz6b81RKjaYCXxib_hpka6exL_Ucc-mrMg,917
+sigma/validators/sigmahq/metadata.py,sha256=wx5pD6h-HKj_7CazkUkDbQmof2WoEXyV0A766HVgWBw,7349
+sigma/validators/sigmahq/title.py,sha256=VMthppU-BGpNZkjUk8R4FVpSlz2SN92GDowdj4-UuqE,2914
+pysigma_validators_sigmahq-0.5.1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+pysigma_validators_sigmahq-0.5.1.dist-info/METADATA,sha256=-9Hh34IDLCIPvtlvYFdmGCJtbAZV9dDKVdx_c_2NP4g,3980
+pysigma_validators_sigmahq-0.5.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pysigma_validators_sigmahq-0.5.1.dist-info/RECORD,,

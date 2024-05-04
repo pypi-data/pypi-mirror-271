@@ -1,0 +1,5 @@
+nonebot-adapter-onebot
+nonebot2
+nonebot-plugin-localstore
+nonebot-plugin-apscheduler
+aiohttp

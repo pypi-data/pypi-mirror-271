@@ -1,0 +1,2 @@
+[console_scripts]
+xlineparse=xlineparse.cli:main

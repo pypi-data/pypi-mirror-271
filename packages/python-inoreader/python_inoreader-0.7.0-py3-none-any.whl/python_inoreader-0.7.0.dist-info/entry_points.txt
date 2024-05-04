@@ -1,0 +1,2 @@
+[console_scripts]
+inoreader = inoreader.main:main

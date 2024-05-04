@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+supplies/__init__.py
+supplies.egg-info/PKG-INFO
+supplies.egg-info/SOURCES.txt
+supplies.egg-info/dependency_links.txt
+supplies.egg-info/top_level.txt
+supplies/reqh/__init__.py
+supplies/reqh/useragents.py

@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: antaress
+Version: 1.1.0
+Summary: High-resolution spectroscopy pipeline
+Author-email: Vincent Bourrier <vincent.bourrier@unige.ch>
+Project-URL: Homepage, https://gitlab.unige.ch/bourrier/ANTARESS
+Project-URL: Issues, https://gitlab.unige.ch/bourrier/ANTARESS/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.16
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: imageio
+Requires-Dist: pathos
+Requires-Dist: mpmath
+Requires-Dist: lmfit
+Requires-Dist: batman-package
+Requires-Dist: astropy
+Requires-Dist: emcee
+Requires-Dist: pandas
+Requires-Dist: dace-query
+Requires-Dist: statsmodels
+Requires-Dist: bindensity
+Requires-Dist: PyAstronomy
+Requires-Dist: pysme-astro
+
+# **A**dvanced and **N**eat **T**echniques for the **A**ccurate **R**etrieval of **E**xoplanetary and **S**tellar **S**pectra
+
+Read the documentation [here](https://obswww.unige.ch/~bourriev/antaress/doc/html/).
+
+## Contributors
+Omar Attia, Romain Allart, Khaled Al Moulla, Vincent Bourrier, Heather Cegla, Michaël Cretignier, William Dethier, Jean-Baptiste Delisle, Xavier Dumusque, David Ehrenreich, Erik Fridén, Nathan Hara, Christophe Lovis, Samson Jules Mercier, Dany Mounzer, Francesco Alfonso Pepe, Julia Victoria Seidel, Michal Steiner, Sara Tavella, Valentina Vaulato, Theo Vrignaud, Aurélien Wyttenbach.
+
+## References
+TBD
+
+## Contribute
+You are welcome to open issues and/or contribute code via pull-requests after signing in to your [SWITCH edu-ID account](https://gitlab.unige.ch).
+If you do not have an account, [create one](https://eduid.ch) and then [sign in](https://gitlab.unige.ch) by selecting "SWITCH edu-ID" as your organisation.
+
+You can contact [Vincent Bourrier](mailto:vincent.bourrier@unige.ch) if you are interested in collaborations and developments of this project. 
+

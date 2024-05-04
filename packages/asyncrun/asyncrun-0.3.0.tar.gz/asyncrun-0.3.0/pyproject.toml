@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asyncrun"
+version = "0.3.0"
+authors = [{ name = "Jack English", email = "jackjenglish@gmail.com" }]
+description = "A simple utility for running functions in parallel."
+readme = "README.md"
+license = { text = "MIT License" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "tqdm"
+]
+requires-python = ">=3.6"

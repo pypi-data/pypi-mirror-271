@@ -1,0 +1,3 @@
+[console_scripts]
+mutation-profile=mutation_profile.__main__:main
+

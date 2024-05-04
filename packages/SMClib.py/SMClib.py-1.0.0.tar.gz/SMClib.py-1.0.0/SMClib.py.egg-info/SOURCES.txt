@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+SMCLIB/__init__.py
+SMClib.py.egg-info/PKG-INFO
+SMClib.py.egg-info/SOURCES.txt
+SMClib.py.egg-info/dependency_links.txt
+SMClib.py.egg-info/top_level.txt

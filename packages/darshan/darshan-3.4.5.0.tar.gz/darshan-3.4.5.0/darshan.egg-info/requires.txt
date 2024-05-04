@@ -1,0 +1,17 @@
+cffi
+numpy
+pandas
+matplotlib
+seaborn
+mako
+humanize
+
+[test]
+packaging
+pytest
+lxml
+matplotlib
+humanize
+
+[test:python_version < "3.9"]
+importlib_resources

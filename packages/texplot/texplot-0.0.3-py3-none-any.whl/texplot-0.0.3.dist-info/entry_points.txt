@@ -1,0 +1,3 @@
+[console_scripts]
+restore = texplot.__main__:main
+restore-scan = texplot._scripts.scan:main

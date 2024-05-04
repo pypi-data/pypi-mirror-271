@@ -1,0 +1,16 @@
+.env
+__pycache__/
+.rinkus_experiments/
+.venv/
+venv/
+.vscode/**
+!.vscode/launch.json
+!.vscode/settings.json
+wandb/
+firebase_service_account_key.json
+datasets/preprocessed_dataset
+datasets/MNIST-1K
+artifacts/
+datasets/MNIST_5K
+scratch
+.ipynb_checkpoints

@@ -1,0 +1,11 @@
+shillelagh_gristapi/__init__.py,sha256=g4GDJTIfDK0sjHJT7NuP6Vnc0b7eWHfW9yad0W-ME1E,390
+shillelagh_gristapi/grist.py,sha256=tLRW1ueOkZndE0TVLxhWQ4khX3qkYJ1szdqLkzxfv4E,9070
+shillelagh_gristapi/__pycache__/__init__.cpython-310.pyc,sha256=k81j_wRzkJkiN2u3rNUIc76JCQOJHja1zz9c9xOh6rU,566
+shillelagh_gristapi/__pycache__/govinfo.cpython-310.pyc,sha256=j3MflcH0C2rTilpm1YXvCs7QQZVePVcqiuy-WVr1lzM,6995
+shillelagh_gristapi/__pycache__/grist.cpython-310.pyc,sha256=cosnyW7-Vh5Xo8wJog8N8_n2UOM4EKVaXqbbX7WdEOE,8295
+shillelagh_gristapi-0.0.7.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+shillelagh_gristapi-0.0.7.dist-info/METADATA,sha256=DYJNMzRnwv4f1zrIkqAZ2AmHav0-BNRK-S-28dFrk0I,3443
+shillelagh_gristapi-0.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+shillelagh_gristapi-0.0.7.dist-info/entry_points.txt,sha256=1gH2JsDNHjllhqbgqu_rHaBlLpboS9YKk0u2AckDMY0,67
+shillelagh_gristapi-0.0.7.dist-info/top_level.txt,sha256=MeW7qYpGfh_LcH69YuDD3GjHiW9odUCDIMkugN3SrjI,20
+shillelagh_gristapi-0.0.7.dist-info/RECORD,,

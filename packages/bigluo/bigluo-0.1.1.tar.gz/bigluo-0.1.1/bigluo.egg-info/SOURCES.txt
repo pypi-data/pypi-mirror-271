@@ -1,0 +1,9 @@
+README.md
+setup.py
+bgtest/__init__.py
+bgtest/main.py
+bigluo.egg-info/PKG-INFO
+bigluo.egg-info/SOURCES.txt
+bigluo.egg-info/dependency_links.txt
+bigluo.egg-info/entry_points.txt
+bigluo.egg-info/top_level.txt

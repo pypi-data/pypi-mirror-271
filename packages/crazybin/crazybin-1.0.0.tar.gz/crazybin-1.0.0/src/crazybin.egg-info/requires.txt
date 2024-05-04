@@ -1,0 +1,8 @@
+numpy
+matplotlib
+shapely
+
+[dev]
+check-manifest
+build
+twine

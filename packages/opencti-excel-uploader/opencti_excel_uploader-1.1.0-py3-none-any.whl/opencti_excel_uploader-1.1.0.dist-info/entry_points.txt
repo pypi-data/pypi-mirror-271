@@ -1,0 +1,2 @@
+[console_scripts]
+opencti-excel-uploader = opencti_excel_uploader.__main__:main

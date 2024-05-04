@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+bcra/__init__.py
+bcra/base.py
+bcra/client.py
+bcra/statistics/__init__.py
+bcra/statistics/variables.py
+bcra_api_client.egg-info/PKG-INFO
+bcra_api_client.egg-info/SOURCES.txt
+bcra_api_client.egg-info/dependency_links.txt
+bcra_api_client.egg-info/top_level.txt

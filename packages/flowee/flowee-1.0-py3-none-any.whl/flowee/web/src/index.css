@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.react-flow__node {
+  z-index: -1 !important;
+}
+
+.react-flow__edges {
+  z-index: 1 !important;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+}

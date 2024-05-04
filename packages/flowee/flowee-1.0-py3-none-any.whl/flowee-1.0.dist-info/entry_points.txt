@@ -1,0 +1,3 @@
+[console_scripts]
+flowee = flowee.cli:main
+

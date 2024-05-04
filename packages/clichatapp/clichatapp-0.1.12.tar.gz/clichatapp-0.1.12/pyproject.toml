@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "clichatapp"
+version = "0.1.12"
+description = ""
+authors = ["JoseMRodriguezM <jmrodriguezm13@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.12.3"}
+langchain ="^0.1.16"
+langchain-openai = "^0.1.4"
+python-dotenv = "^1.0.1"
+rich = "^13.7.1"
+yaspin = "^3.0.2"
+
+[tool.poetry.scripts]
+chat = "clichatapp.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

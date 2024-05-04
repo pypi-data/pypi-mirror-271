@@ -1,0 +1,16 @@
+dslog/__init__.py,sha256=i4c-DMiu_pZg92jy15W3mqQaINhXeMn9CoYUYWSEXxg,476
+dslog/logger.py,sha256=FXI6Dg9v5Dd8YWBGhYHgGuHEseg-iUP6hJT7ajJ-yP4,2081
+dslog/types.py,sha256=F3es1AAkdBY7m4DxG6oL_FLB9aX0cmRkZq36z8bN6Co,641
+dslog/formatters/__init__.py,sha256=mF4M_d6EiHbB9U9W_oKlKXYIyh8ZFn3gxe_382VXiLI,95
+dslog/formatters/__init__.pyi,sha256=wQEGNWz186_1TjaRqIwGWoyMDweceNLs5WGiCzFOSWU,108
+dslog/formatters/formatters.py,sha256=Baj8qXPcCuCG5pZIcArwZtQJ6qa3O6QuRpLd0qP4hXU,437
+dslog/loggers/__init__.py,sha256=mF4M_d6EiHbB9U9W_oKlKXYIyh8ZFn3gxe_382VXiLI,95
+dslog/loggers/__init__.pyi,sha256=5X5mO5jd7WMxQ0WcnBTicEpjMCUISzV1YoP2BqFLFZ4,75
+dslog/loggers/_file.py,sha256=v9voEDvjruGTDEAaIMKMfNewOXZ25cEANt3N5XD1b8o,502
+dslog/loggers/_rich.py,sha256=NWDz00x8hHNJPjfPh04xwqp9dg94XWQ5ijBfSWJdLO0,99
+dslog/util/__init__.py,sha256=8DiFJdbNLejbf78gXSgWuLEiZG6ig6RUx0SVd1ZgryU,38
+dslog/util/uvicorn.py,sha256=mv2OKyCCI-rNBfV7AQnfZ5QXMQJ2b1clZDdg0Gl9K24,1018
+dslog-0.1.5.dist-info/METADATA,sha256=Ugk3Whm9yPwehEr3r0gG43AGEl_8aOcM8V13JLdNsMU,1097
+dslog-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dslog-0.1.5.dist-info/top_level.txt,sha256=WTS8LSCXhi33aSRVvgvBT1fmjwuRNz-8ygnE0bqnRM0,6
+dslog-0.1.5.dist-info/RECORD,,

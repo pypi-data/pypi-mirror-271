@@ -1,0 +1,44 @@
+{% load static %}
+{% load django_vite %}
+
+{% vite_hmr_client app="cast_vue" %}
+{% vite_asset 'js/cast_vue/main.ts' app="cast_vue" %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Cast Vue Template!</title>
+    <meta name="description" content="Description of Cast Vue Template">
+
+    <!-- Try to set all vue configuration values in one go / script tag -->
+    <script id="vue-configuration"
+            {% block vuejs-data %}
+              data-blog-url="{{ blog.url }}" {# Used for vue router base url #}
+              data-csrf-token="{{ csrf_token }}" {# Used for posting comments #}
+              data-blog-id="{{ blog.pk }}" {# Used for blog api detail url and posts endpoint child_of=blog.pk #}
+              data-pagination-page-size="{{ blog.pagination_page_size }}" {# Used for pagination #}
+            {# Used for fetching posts #}
+              data-wagtail-api-pages-url="{{ request.scheme }}://{{ request.get_host }}{{ blog.wagtail_api_pages_url }}"
+            {# Used for fetching facet counts #}
+              data-api-facet-counts-url="{{ request.scheme }}://{{ request.get_host }}{{ blog.facet_counts_api_url }}"
+            {# Used for posting comments #}
+              data-post-comment-url="{{ request.scheme }}://{{ request.get_host }}{{ blog.comment_post_url }}"
+            {# Used for podlove player config #}
+              data-api-podlove-player-config-url="{{ request.scheme }}://{{ request.get_host }}{{ blog.podlove_player_config_url }}"
+            {# Used for theme selection #}
+              data-api-theme-list-url="{{ request.scheme }}://{{ request.get_host }}{{ blog.theme_list_api_url }}"
+              data-api-theme-update-url="{{ request.scheme }}://{{ request.get_host }}{{ blog.theme_update_api_url }}"
+            {% endblock vuejs-data %}
+    >
+    </script>
+    <script src={% static 'cast/js/web-player/embed.5.js' %}></script>
+  </head>
+  <body>
+    {% block main %}
+      <div id="app">
+      </div>
+    {% endblock main %}
+  </body>
+</html>

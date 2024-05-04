@@ -1,0 +1,11 @@
+gradio<5.0,>=4.0
+gradio-toggle
+gradio-grid
+gradio-imagefeed
+gradio-highlightedcode
+gradio-modal
+gradio-pdf
+gradio-calendar
+gradio-imageslider
+gradio_folium
+gradio-notebook

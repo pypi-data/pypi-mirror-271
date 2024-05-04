@@ -1,0 +1,8 @@
+README.md
+setup.py
+gradio_collection/__init__.py
+gradio_collection.egg-info/PKG-INFO
+gradio_collection.egg-info/SOURCES.txt
+gradio_collection.egg-info/dependency_links.txt
+gradio_collection.egg-info/requires.txt
+gradio_collection.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+froster = froster.froster:main

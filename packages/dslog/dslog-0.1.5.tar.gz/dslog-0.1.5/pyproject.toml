@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dslog"
+version = "0.1.5"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "Dead-simple logging: what python's logging should've been"
+dependencies = [
+  "lazy-loader"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.urls]
+repo = "https://github.com/marciclabas/dslog.git"
+
+[project.optional-dependencies]
+rich = ["rich"]

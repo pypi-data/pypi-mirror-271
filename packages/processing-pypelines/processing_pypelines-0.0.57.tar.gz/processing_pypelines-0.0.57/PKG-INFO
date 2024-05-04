@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: processing-pypelines
+Version: 0.0.57
+Summary: Framework to organize processing code outputs to/from disk, processing chaining and versionning with a common easy to use api
+Home-page: https://gitlab.pasteur.fr/haisslab/data-management/pypelines
+Author-Email: =?utf-8?q?Timoth=C3=A9_Jost-Mousseau?= <timothe.jost-mousseau@pasteur.fr>
+Maintainer-Email: =?utf-8?q?Timoth=C3=A9_Jost-Mousseau?= <timothe.jost-mousseau@pasteur.fr>
+License: MIT
+Project-URL: Homepage, https://gitlab.pasteur.fr/haisslab/data-management/pypelines
+Project-URL: Repository, https://gitlab.pasteur.fr/haisslab/data-management/pypelines
+Project-URL: Documentation, https://gitlab.pasteur.fr/haisslab/data-management/pypelines
+Requires-Python: >=3.10
+Requires-Dist: coloredlogs>=15.0.1
+Requires-Dist: dynaconf>=3.2.4
+Requires-Dist: natsort>=8.4.0
+Requires-Dist: networkx>=3.1
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas>=2.1.4
+Requires-Dist: celery>=5.3.5; extra == "celery"
+Requires-Dist: alyx_connector>=2.1.5; extra == "celery"
+Provides-Extra: celery
+Description-Content-Type: text/markdown
+
+# Pypelines
+
+
+![coverage](https://gitlab.example.com/<namespace>/<project>/badges/<branch>/coverage.svg?job=coverage)

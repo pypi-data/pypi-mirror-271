@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['boilerplate_0',['boilerplate',['../namespaceCope_1_1boilerplate.html',1,'Cope']]],
+  ['called_5fas_5fdecorator_1',['called_as_decorator',['../namespaceCope_1_1debugging_ae6e107ac356a65b42b3ec1220be34a29.html#ae6e107ac356a65b42b3ec1220be34a29',1,'Cope::debugging']]],
+  ['cat_5ffile_2',['cat_file',['../namespaceCope_1_1misc_a412c34f8e1b577608840c7d90b7f4411.html#a412c34f8e1b577608840c7d90b7f4411',1,'Cope::misc']]],
+  ['categorize_3',['categorize',['../namespaceCope_1_1sympy_a70186b55a5d7796e03dec4151adc5ab3.html#a70186b55a5d7796e03dec4151adc5ab3',1,'Cope::sympy']]],
+  ['check_5fchanged_4',['check_changed',['../classCope_1_1streamlit_1_1SS_a5967593b0a218e07ab134b645f338f4c.html#a5967593b0a218e07ab134b645f338f4c',1,'Cope::streamlit::SS']]],
+  ['close_5fenough_5',['close_enough',['../namespaceCope_1_1misc_a50d0f50ef6470832ba6b0022e057b636.html#a50d0f50ef6470832ba6b0022e057b636',1,'Cope::misc']]],
+  ['closest_6',['closest',['../namespaceCope_1_1misc_a9719a93133f8e18d1ad031172a931453.html#a9719a93133f8e18d1ad031172a931453',1,'Cope::misc']]],
+  ['colors_7',['colors',['../namespaceCope_1_1colors.html',1,'Cope']]],
+  ['commonresponses_8',['CommonResponses',['../classCope_1_1boilerplate_1_1CommonResponses.html',1,'Cope::boilerplate']]],
+  ['complimentary_5fcolor_9',['complimentary_color',['../namespaceCope_1_1colors_a15129c4dbb293ee2ce939583cb8a8023.html#a15129c4dbb293ee2ce939583cb8a8023',1,'Cope::colors']]],
+  ['confirm_10',['confirm',['../namespaceCope_1_1misc_a02f2794164118ddf21ab3f5ecaa3b196.html#a02f2794164118ddf21ab3f5ecaa3b196',1,'Cope::misc']]],
+  ['constrain_11',['constrain',['../namespaceCope_1_1misc_a345c57d139b743241d92107c63438f87.html#a345c57d139b743241d92107c63438f87',1,'Cope::misc']]],
+  ['cp_12',['cp',['../namespaceCope_1_1misc_a836e6afbb63bf95d7a688eeab0da606e.html#a836e6afbb63bf95d7a688eeab0da606e',1,'Cope::misc']]],
+  ['debugging_13',['debugging',['../namespaceCope_1_1debugging.html',1,'Cope']]],
+  ['decorators_14',['decorators',['../namespaceCope_1_1decorators.html',1,'Cope']]],
+  ['gym_15',['gym',['../namespaceCope_1_1gym.html',1,'Cope']]],
+  ['imports_16',['imports',['../namespaceCope_1_1imports.html',1,'Cope']]],
+  ['misc_17',['misc',['../namespaceCope_1_1misc.html',1,'Cope']]],
+  ['named_5fcolors_18',['named_colors',['../namespaceCope_1_1named__colors.html',1,'Cope']]],
+  ['plotly_19',['plotly',['../namespaceCope_1_1plotly.html',1,'Cope']]],
+  ['pygame_20',['pygame',['../namespaceCope_1_1experimental_1_1pygame.html',1,'Cope::experimental']]],
+  ['streamlit_21',['streamlit',['../namespaceCope_1_1streamlit.html',1,'Cope']]],
+  ['sympy_22',['sympy',['../namespaceCope_1_1sympy.html',1,'Cope']]]
+];

@@ -1,0 +1,15 @@
+btpytools/__init__.py,sha256=u-12PO5CoGWQDpjuCqeBkyU2kiZUPy31Dm08-75m77A,74
+btpytools/brainreg_bt.py,sha256=0J3fCS5rLpBFIg7d1fqHYspElv48IVj31ckViJQlSKQ,8668
+btpytools/btrfs.py,sha256=JLDcBnMIwF9uxAkGjUDWeygkSUtNuQS1cWrA3vwgHYM,2075
+btpytools/compressRawData.py,sha256=cXcgU8wyxW2vA6Eee86J6Z_dFNMTvRBN7XNw65AqbL8,8021
+btpytools/recipe.py,sha256=zCtdSRuR0XPmbx9skSxYl70l4na9U6UsNECzJclUC5o,1487
+btpytools/summariseAcquisitions.py,sha256=af9YeFffJ9jvp2D--Tcj5beTHXw4yOb-Pp9gmM860SY,801
+btpytools/tools.py,sha256=NFgJme0kDb057_APV29vOz42mTnoS37ue0uRKsl5eyE,16894
+btpytools/transferToServer.py,sha256=0YUz1no_iMq4gAQgXFO1rneSEBNIzgr4aTmHlGuKVEQ,22360
+btpytools/__pycache__/.gitignore,sha256=CUwlAx3P5cKIZmZxvCAShmKTs3l-pTx5aveYvaTDLwE,6
+btpytools-0.1.37.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+btpytools-0.1.37.dist-info/METADATA,sha256=dwGECTM-x0VU66eKuWLRetnMyEAHeWbTHMFxchJ3Was,5345
+btpytools-0.1.37.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+btpytools-0.1.37.dist-info/entry_points.txt,sha256=GUOctNAmgeRW2SWpovarLq5u5JWF1qi1Xgfs07StVxM,211
+btpytools-0.1.37.dist-info/top_level.txt,sha256=sO8RKNg-hIBrFKMRjwfMs5AGwF1M_spv8HrFOW_7FSo,10
+btpytools-0.1.37.dist-info/RECORD,,

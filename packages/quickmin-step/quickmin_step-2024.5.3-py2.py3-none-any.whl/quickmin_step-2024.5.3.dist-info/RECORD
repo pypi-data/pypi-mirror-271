@@ -1,0 +1,17 @@
+quickmin_step/__init__.py,sha256=70Hk25-uZE4wWaU2ABuz9tBdQOS-jIe4r58xsy5xH3M,694
+quickmin_step/_version.py,sha256=XZWKgH7k9QpQjv4pJs0Fh5dGOixN6Pm1gROCr_0OwGU,500
+quickmin_step/metadata.py,sha256=hv8v7nURJmg757aFCxBhzxvx1FvwcmnZ4ofs13xktko,3021
+quickmin_step/quickmin.py,sha256=a2fFKfJeGUuAHuYKJThtAXfsYYZCbc_grf8xcvOCUFI,17673
+quickmin_step/quickmin_parameters.py,sha256=WlpTZW6TjKl5TYPYqKcKB3enqMQ2N5jPAy83JsTVteo,5289
+quickmin_step/quickmin_step.py,sha256=6t8UfAMANz5OdF3qnYfuPNmQe-BM1NzNfvobWPQWxxM,3034
+quickmin_step/tk_quickmin.py,sha256=K26xGyMWrh0cOChw4acSP1KjPVWS1KVa-o9I8jrsI_4,5484
+quickmin_step/data/properties.csv,sha256=boDMLvFZ22YZfEkbBiDZSliJTrkqlM9VlAftGUOuIBU,102
+quickmin_step/data/references.bib,sha256=Kl09uRtw7PnDb1k6vJE4ES4zlxktQJRBayaoKjl9zYE,9326
+quickmin_step-2024.5.3.dist-info/AUTHORS.rst,sha256=HKy1QAUcENUPZZIAeLClJTLLQ0m438MWROo7bvLs41Q,126
+quickmin_step-2024.5.3.dist-info/LICENSE,sha256=Jj09mYQ26PB7RZo44TDqrC8EldY_KuMCoamplEqb4OQ,1534
+quickmin_step-2024.5.3.dist-info/METADATA,sha256=Y2OGdGdMJpYN-MalyHE997tHA5j9HpC0BFG1dX41TOk,6352
+quickmin_step-2024.5.3.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+quickmin_step-2024.5.3.dist-info/entry_points.txt,sha256=FK6YOL5vLfs2aDZ7zrcKiz6A8Ou0KOClaOK1Rvncubc,118
+quickmin_step-2024.5.3.dist-info/top_level.txt,sha256=UjixJu4mzoNnrskjCi0jbDQKRiYsAVSidSFSaMWhTlc,14
+quickmin_step-2024.5.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+quickmin_step-2024.5.3.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+openstack_flavor_manager/__init__.py,sha256=bG7Ffen4LvQtgnYPFEpFccsWs81t4zqqeqn9ZeirH6E,38
+openstack_flavor_manager/main.py,sha256=UXBh5b4JW7ThNvTg3-X6JhdQE6wMrbB_x_eBqPuZ6tY,6085
+openstack_flavor_manager-0.20240503.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+openstack_flavor_manager-0.20240503.0.dist-info/METADATA,sha256=9Sdey5XgMg0OZfw9M1L6ZE0qC3xLToZFNLh1vj4dHgE,14677
+openstack_flavor_manager-0.20240503.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+openstack_flavor_manager-0.20240503.0.dist-info/entry_points.txt,sha256=VlmbFJ8YfzRgx7pUPBqPXmXlTOpcKVSPoLkxgY3UJhE,80
+openstack_flavor_manager-0.20240503.0.dist-info/top_level.txt,sha256=M6NjujoaVUaRfTo4J47Kp41hTdC1xNoUdkA5AB2NRIc,25
+openstack_flavor_manager-0.20240503.0.dist-info/RECORD,,

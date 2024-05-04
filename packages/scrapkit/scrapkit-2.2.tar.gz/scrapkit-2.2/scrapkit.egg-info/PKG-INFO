@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: scrapkit
+Version: 2.2
+Summary: WebScrapping in 3 lines of code
+Author: Ali Lodhi
+Author-email: alilodhibusiness@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests==2.31.0
+Requires-Dist: bs4==0.0.2
+Requires-Dist: sapit==1.5
+
+# ScrapKit 2.2 - WebScrapping is now easy
+
+## Usage
+
+In ScrapKit 2.2 We added a Function from which Now you can scrape multiple pages of a website that you can print or save to any type of file. Also we added two more functions `cleanedText` and `getAttributeFromElements` 
+
+## Syntax
+
+```python
+import scrapkit as sk
+
+# Example URL
+url = "https://en.wikipedia.org"
+
+# Get attributes (example: get all 'src' attributes from 'img' tags)
+image_src_attributes = sk.getAttributeFromElements(url, 'img', 'src')
+sk.saveFile (image_src_attributes, filename = 'att.txt')
+# OR
+print (image_src_attributes)
+
+# Scrape multiple pages
+base_url = "https://pypi.org/"
+num_pages = 3
+all_links = sk.scrapeMultiplePages(base_url, num_pages)
+sk.saveFile (all_links, filename = 'links.txt')
+# OR
+print (all_links)
+
+# Clean text
+dirty_text = "<p>Hello <b>world</b>!</p>"
+cleaned_text = sk.cleanText(dirty_text)
+sk.saveFile (f'cleaned text: {cleaned_text}', filename = 'cleaned.txt')
+# OR
+print (cleaned_text)
+```
+
+# Founder
+
+ScrapKit is a very useful python package that is made by "Ali Lodhi". Ali Lodhi is from Pakistan, He loves to write code in python and to ease people's work. Recently Ali Lodhi is working on the next update of this package
+
+# Versions
+
+## ScrapKit 1 (Old)
+
+- ScrapKit 1.0 - It provide you to fetch whole HTML of the website
+- ScrapKit 1.1 - It provides you to fetch HTML, Title and the Text of the website
+- ScrapKit 1.2 - You can save the Fetched HTML in a `.html` file
+- ScrapKit 1.3 - Bug Fixes
+- ScrapKit 1.4 - You can fetch the links given in any website
+- ScrapKit 1.5 - You can fetch the URL of the image on the webpage
+- ScrapKit 1.6 - Now you can get Elements data by using their IDs and Classes
+- ScrapKit 1.7 - Bug Fixes
+
+## ScrapKit 2 (Latest)
+
+- ScrapKit 2.0 - Added 4 new functions
+- ScrapKit 2.1 - Added `saveFile` function
+- ScrapKit 2.2 - Added 3 new functions

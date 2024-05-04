@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/iccicd_cli.py
+src/iccicd/__init__.py
+src/iccicd/deploy.py
+src/iccicd.egg-info/PKG-INFO
+src/iccicd.egg-info/SOURCES.txt
+src/iccicd.egg-info/dependency_links.txt
+src/iccicd.egg-info/requires.txt
+src/iccicd.egg-info/top_level.txt
+test/test_iccid.py

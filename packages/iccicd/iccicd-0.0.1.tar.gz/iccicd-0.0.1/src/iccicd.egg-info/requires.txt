@@ -1,0 +1,10 @@
+build
+twine
+iccore
+
+[test]
+pytest
+pytest-cov
+pytest-sugar
+black
+mypy

@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gpt_batch
+Version: 0.1.0
+Summary: A package for batch processing with OpenAI API.
+Home-page: https://github.com/fengsxy/gpt_batch
+Author: Ted Yu
+Author-email: liddlerain@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: tqdm
+
+# GPT Batcher
+
+A simple tool to batch process messages using OpenAI's GPT models.
+
+## Installation
+
+Clone this repository and run:
+
+## Usage
+
+Here's how to use the `GPTBatcher`:
+
+```python
+from gpt_batch.batcher import GPTBatcher
+
+batcher = GPTBatcher(key='your_key_here', model_name='gpt-3.5-turbo-1106')
+result = batcher.handle_list(['your', 'list', 'of', 'messages'])
+print(result)
+

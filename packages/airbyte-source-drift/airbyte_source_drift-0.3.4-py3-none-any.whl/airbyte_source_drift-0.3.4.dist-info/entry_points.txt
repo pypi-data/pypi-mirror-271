@@ -1,0 +1,3 @@
+[console_scripts]
+source-drift=source_drift.run:run
+

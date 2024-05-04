@@ -1,0 +1,11 @@
+LICENSE.txt
+README.rst
+lektor_fixedlang.py
+pyproject.toml
+lektor_fixedlang.egg-info/PKG-INFO
+lektor_fixedlang.egg-info/SOURCES.txt
+lektor_fixedlang.egg-info/dependency_links.txt
+lektor_fixedlang.egg-info/entry_points.txt
+lektor_fixedlang.egg-info/requires.txt
+lektor_fixedlang.egg-info/top_level.txt
+tests/test_fixedlang.py

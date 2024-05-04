@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: AGTEPyth
+Version: 0.0.6
+Summary: A sample python package to start sharing your code with the world
+Home-page: https://github.com/PhamThanhQuyet/AGTEPyth
+Author: Pham Thanh Quyet
+Author-email: phamthanhquyet.kcd@gmail.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pyqt5
+Requires-Dist: python-docx
+
+# ![AGTEPyth](https://github.com/PhamThanhQuyet/AGTEPyth/blob/main/AGTEPyth/AGTEPyth.png)
+# AGTEPyth
+## How to install
+
+Run the following command:
+
+```shell
+pip install AGTEPyth
+```
+
+*** `AGTEPyth` program - AUTOMATION OF THERMAL CALCULATION OF THE WORKING PROCESS OF HELICOPTER TURBOSHAFT GAS TURBINE ENGINES USING PYTHON PROGRAMMING LANGUAGE***
+*This work describes a program to calculate thermal of the working process of helicopter turboshaft gas turbine engines using the developed program code in the Python programming language.*
+*According to the authors, the program will reduce time and labor intensity at the stage of cycle calculation and selection of rational parameters of turboshaft gas turbine engines.*
+
+## Project structure:
+*'inputData' class
+
+## Import
+
+```import AGTEPyth.inputData
+```
+## Examples input
+
+# ![AGTEPyth](https://github.com/PhamThanhQuyet/AGTEPyth/blob/main/AGTEPyth/Example.png)
+
+## Examples result
+
+# ![AGTEPyth](https://github.com/PhamThanhQuyet/AGTEPyth/blob/main/AGTEPyth/Result.png)
+
+

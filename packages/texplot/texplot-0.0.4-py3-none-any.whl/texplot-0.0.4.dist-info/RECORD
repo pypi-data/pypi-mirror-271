@@ -1,0 +1,16 @@
+texplot/__init__.py,sha256=omynFaBysDFLoNQuMh2PSfMJA5QqIorzoiUKMuyXzO8,687
+texplot/__main__.py,sha256=p5VpuCNq_4CpgWzFe65_cH4k7YN-VxkoW3NHDZKQV60,389
+texplot/__version__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+texplot/display_utilities.py,sha256=3aJFnx0iIkoqeav49LkXFSXwQqAcC7468ZzMDW9a8sg,947
+texplot/plot_utilities.py,sha256=-gvnlCfQFQs1rD-gMaSLsnouazSzCkxYJGSlU1lVHSY,15455
+texplot/examples/__init__.py,sha256=HKwrDkFmRlhs65vm46Be_YB5gXJ0aukh9XNGlwsPTfo,572
+texplot/examples/plot_bifurcation_diagram.py,sha256=JrzIly7spxJ6tTQKHpajT6YBj2oc4jtS1Ndr3myrn-E,1329
+texplot/examples/plot_function.py,sha256=ZwB9xnuLhNVr8Cq3w_OnqWrEeMN8xik-WywmFvvSf50,1250
+texplot/examples/plot_lorenz.py,sha256=cJGfO0uZeoM9JshoRmr3NXORykmX7-3Y-vgja1chDOE,5006
+texplot-0.0.4.dist-info/AUTHORS.txt,sha256=qS2RaEcytbbojENXEbG_9UZD71iIBc6fKzFkWc_-jEM,14
+texplot-0.0.4.dist-info/LICENSE.txt,sha256=UIp30ue1HZit7tMmSK0SS3swJBqOcLLnLJn5LY5YdNE,1036
+texplot-0.0.4.dist-info/METADATA,sha256=T-g4BSWwhNyWfjy6qKIveKMBW1SnuuBkRycOwbwUfXw,11690
+texplot-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+texplot-0.0.4.dist-info/entry_points.txt,sha256=c4wMFhI0HYcffBEpMfkGsyQy19LhenUd1Aie8EJWlQU,92
+texplot-0.0.4.dist-info/top_level.txt,sha256=p4TRyPOLd2yE1dJXNhhLKsqalDRbH5Iufi76TtBQomI,8
+texplot-0.0.4.dist-info/RECORD,,

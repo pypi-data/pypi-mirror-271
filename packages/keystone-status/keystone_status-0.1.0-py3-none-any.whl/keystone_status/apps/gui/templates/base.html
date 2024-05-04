@@ -1,0 +1,52 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Status monitoring page for Keystone application services.">
+  <meta name="author" content="Pitt Center for Research Computing">
+
+  <title>Keystone Status</title>
+
+  <link rel="stylesheet" href="{% static "/vendored/bootstrap/css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "/vendored/bootstrap-icons/font/bootstrap-icons.min.css" %}">
+  <link rel="stylesheet" href="{% static "/css/theme.css" %}">
+</head>
+
+<body class="d-flex flex-column vh-100">
+<header>
+<nav class="navbar navbar-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Keystone HPC</span>
+  </div>
+</nav>
+</header>
+
+<main>
+  <div id="content" class="container"></div>
+</main>
+
+<div class="d-flex flex-grow-1"></div>
+<div class="clearfix">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-5 mt-4 border-top">
+    <span class="mb-3 mb-md-0 text-muted">Keystone-Status V<span class="version"></span></span>
+    <span class="mb-3 mb-md-0 text-muted">
+      <a class="text-reset text-decoration-none" href="https://www.github.com/pitt-crc/keystone-status">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+    </span>
+  </footer>
+</div>
+
+<script src="{% static "/vendored/jquery/jquery-3.7.1.min.js" %}"></script>
+<script src="{% static "/vendored/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+<script>
+  $('.version').load(window.location.origin + "/api/version");
+</script>
+
+{% block javascript %}{% endblock %}
+
+</body>
+</html>

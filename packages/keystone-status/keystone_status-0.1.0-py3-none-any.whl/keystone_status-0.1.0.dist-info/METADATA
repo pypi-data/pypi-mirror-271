@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: keystone-status
+Version: 0.1.0
+Summary: Status mnitoring page for Keystone services.
+Author: Pitt Center for Research Computing
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=5.0.4,<6.0.0)
+Requires-Dist: django-environ (==0.11.2)
+Requires-Dist: djangorestframework (>=3.15.1,<4.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: whitenoise (>=6.6.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Keystone Status Dashboard
+
+A simple web dashboard for monitoring the status of Keystone applications and services.
+
+## Resources
+
+- [Keystone-API](https://github.com/pitt-crc/keystone-api): Backend REST API for managing HPC allocations and resources.
+- [Keystone-Web](https://github.com/pitt-crc/keystone-web): Website frontend for HPC administration and self-service.
+- [Keystone-Status](https://github.com/pitt-crc/keystone-status): Status dashboard for monitoring Keystone deployments.
+- [Keystone-Docs](https://github.com/pitt-crc/keystone-docs): Documentation for the Keystone project and its components.
+

@@ -1,0 +1,3 @@
+[console_scripts]
+keystone-status=keystone_status.__main__:main
+

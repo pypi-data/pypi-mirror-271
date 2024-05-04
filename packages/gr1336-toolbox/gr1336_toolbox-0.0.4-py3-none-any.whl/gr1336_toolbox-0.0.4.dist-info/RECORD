@@ -1,0 +1,11 @@
+gr1336_toolbox/__init__.py,sha256=5sRaOVoR6Z4emm3lO5roNjgGCURQvzlXuQr9WYQ1AyI,1323
+gr1336_toolbox/file_manager.py,sha256=gVlHr7qR5QgsGOjprZcLYUwV7BcIrL_XO8MGPNt1RP0,3000
+gr1336_toolbox/misc_tools.py,sha256=sS9nwJSAPJcq6O51_NqoyO0-BZmDWeuLhBwfkfUEk7Q,3679
+gr1336_toolbox/test_even_odd.py,sha256=ob6YHoClkiG_qOFXAUcPoqhsSgc9GOB-jldwZyC6Niw,4999
+gr1336_toolbox/text_tools.py,sha256=aneNkqmj9hpswrGIZVUzLkMlAwyGiTrdeKDF_1uO8Dc,1186
+gr1336_toolbox/types_check.py,sha256=A0jzMhlFZ63zkCyF9jzEj5us9prs1yRYRh1h9lPJiKU,4837
+gr1336_toolbox-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gr1336_toolbox-0.0.4.dist-info/METADATA,sha256=I2r2vFXt3QfsCJ7RXWzkZfC4Z_Xb2ZMRMvYtGppnnrw,902
+gr1336_toolbox-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gr1336_toolbox-0.0.4.dist-info/top_level.txt,sha256=3wqw_J5z3p1QYtR-KiaxUeUWe-3Lvj-mwgILWMnvA68,15
+gr1336_toolbox-0.0.4.dist-info/RECORD,,

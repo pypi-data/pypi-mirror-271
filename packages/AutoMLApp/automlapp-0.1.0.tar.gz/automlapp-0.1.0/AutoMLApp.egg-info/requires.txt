@@ -1,0 +1,17 @@
+pandas==2.2.1
+numpy==1.26.4
+imbalanced-learn==0.12.0
+streamlit==1.32.0
+streamlit-extras==0.4.0
+streamlit-modal==0.1.2
+plotly==5.18.0
+scikit-learn==1.4.1.post1
+lightgbm==4.3.0
+xgboost==2.0.3
+openpyxl==3.0.10
+scorecardpy==0.1.9.7
+
+[dev]
+pytest>=5.2
+check-manifest
+twine

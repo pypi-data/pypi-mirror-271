@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+AutoMLApp.egg-info/PKG-INFO
+AutoMLApp.egg-info/SOURCES.txt
+AutoMLApp.egg-info/dependency_links.txt
+AutoMLApp.egg-info/entry_points.txt
+AutoMLApp.egg-info/requires.txt
+AutoMLApp.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+edgegap_time/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+edgegap_time/__init__.py,sha256=IQ1dhbVefzgpHowJWFXJTs9ucwIlcWpX1WJlt38C-sA,63
+edgegap_time/_duration.py,sha256=geiTynIMUzfx06EuEAe4GSwY3D3d83vo0X2fz_r8K28,1329
+edgegap_time-1.1.1.dist-info/METADATA,sha256=YQ_Kck4RxdNWTY2IwXEeMLYSYNOglsfizNtoFdufhx4,490
+edgegap_time-1.1.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+edgegap_time-1.1.1.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tmticket
+Version: 0.0.1
+Summary: Python wrapper/SDK for the Ticketmaster Discovery API
+Home-page: https://github.com/hokiebrian/tmticket
+Author: BV
+Author-email: me@you.com
+License: MIT
+Keywords: Ticketmaster
+Requires-Dist: requests
+

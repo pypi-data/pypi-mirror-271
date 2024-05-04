@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "py4tga"
+version = "0.1.0"
+description = "Python for thermogravimetry analysis"
+authors = ["Rahul Ramesh Nair"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+scipy = "^1.13.0"
+pip = "^23.3.1"
+ipykernel ="^6.29.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lintception
+Version: 1.0.0
+Summary: Runs a few popular linters in series (mypy, vulture, vermin), and also does some other checks.
+Author-email: John Doknjas <jdoknjas@sfu.ca>
+Project-URL: Homepage, https://github.com/johndoknjas/lintception
+Keywords: linter,mypy,vulture,vermin,testing,linting,lintception
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mypy
+Requires-Dist: vulture
+Requires-Dist: vermin
+
+# lintception
+
+Runs a few popular linters in series (mypy, vulture, vermin), and also does some other checks.

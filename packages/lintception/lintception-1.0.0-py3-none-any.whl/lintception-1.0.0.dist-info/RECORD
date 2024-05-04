@@ -1,0 +1,10 @@
+lintception/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lintception/linters.py,sha256=5BoqZ7D4x3v9wYlwEKHLpD403P0aykZceU9WP0cg_ns,1970
+lintception/main.py,sha256=2xcUaHnRh4fsi6h-i1hNYWdHqcYH0guzevnkkKITciE,664
+lintception/my_linter.py,sha256=YNm2iAcFEtfU_dnG0rIVMhPx3IO_k0LLBKu-omKaTZs,2162
+lintception-1.0.0.dist-info/LICENSE,sha256=dDszbspRl6RfyAX_Fy2ZgNY9qcebtJx5U0QygSiI3P0,1069
+lintception-1.0.0.dist-info/METADATA,sha256=CMY2OZmEPqQ_E2Trzi3SqQ8-yQRkd_dobRA-WJJIFzQ,793
+lintception-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+lintception-1.0.0.dist-info/entry_points.txt,sha256=_F5tIYxhi31uCI7m8ps2HuX5Q9AT7bUnBv4BP1hqhYU,54
+lintception-1.0.0.dist-info/top_level.txt,sha256=gB7M30PMORbdt7iwO2khWi_pnnk6AZP7P1qXVBw1Uoo,12
+lintception-1.0.0.dist-info/RECORD,,

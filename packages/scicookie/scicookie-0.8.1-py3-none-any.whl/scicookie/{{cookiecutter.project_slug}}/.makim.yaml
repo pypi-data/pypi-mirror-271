@@ -1,0 +1,140 @@
+{%- if cookiecutter.project_layout == "src" -%}
+{%- set package_path = "src/" + cookiecutter.package_slug -%}
+{%- else -%}
+{%- set package_path = cookiecutter.package_slug -%}
+{%- endif -%}
+version: 1.0
+groups:
+  clean:
+    tasks:
+      all:
+        help: Clean unnecessary temporary files
+        run: |
+          rm -fr build/
+          rm -fr dist/
+          rm -fr .eggs/
+          rm -f .coverage
+          rm -fr htmlcov/
+          rm -fr .pytest_cache
+          rm -fr .mypy_cache
+          rm -fr .ruff_cache
+          find . -name '*.egg-info' -exec rm -fr {} +
+          find . -name '*.egg' -exec rm -f {} +
+          find . -name '*.pyc' -exec rm -f {} +
+          find . -name '__pycache__' -exec rm -fr {} +
+          find . -name '*.pyo' -exec rm -f {} +
+          find . -name '*~' -exec rm -f {} +
+
+  docs:
+    tasks:
+      build:
+        help: Build documentation
+        run: |
+          {%- if cookiecutter.documentation_engine == "jupyter-book" %}
+          rm -rf docs/_build
+          jupyter-book build docs
+          {%- elif cookiecutter.documentation_engine == "mkdocs" %}
+          mkdocs build --config-file mkdocs.yaml
+          {%- elif cookiecutter.documentation_engine == "sphinx" %}
+          sphinx-apidoc -o docs/_build {{ package_path }}
+          {%- elif cookiecutter.documentation_engine == "quarto" %}
+          cd docs
+          quartodoc build
+          quarto render
+          cd ..
+          {%- endif %}
+
+      preview:
+        help: Preview documentation page locally
+        dependencies:
+          - task: docs.build
+        run: |
+          {%- if cookiecutter.documentation_engine == "jupyter-book" %}
+          cd docs/_build/html/ && python -m http.server
+          {%- elif cookiecutter.documentation_engine == "mkdocs" %}
+          mkdocs serve --watch docs --config-file mkdocs.yaml
+          {%- elif cookiecutter.documentation_engine == "sphinx" %}
+          cd docs/_build && python -m http.server
+          {%- elif cookiecutter.documentation_engine == "quarto" %}
+          quarto preview docs
+          {%- endif %}
+
+  tests:
+    tasks:
+      linter:
+        help: Run linter tools
+        run: |
+          pre-commit install
+          pre-commit run --all-files --verbose
+
+      unit:
+        help: run tests
+        args:
+          path:
+            help: Specify the location of the tests
+            type: string
+            default: ""
+          params:
+            help: Specify parameters to be used for tests
+            type: string
+            default: "-vv"
+        run: |
+          {%- if cookiecutter.use_pytest == "yes" %}
+          pytest {{ "${{ args.path }} ${{ args.params }}" }}
+          {%- elif cookiecutter.use_hypothesis == "yes" %}
+          python -m unittest discover
+          {%- else %}
+          echo "No test library installed."
+          {%- endif %}
+
+      ci:
+        help: run the sames tests executed on CI
+        dependencies:
+          - task: tests.unit
+          - task: tests.linter
+
+  package:
+    tasks:
+      build:
+        help: "Build the package"
+        run: |
+          {%- if cookiecutter.build_system == "poetry" %}
+          poetry build
+          {%- elif cookiecutter.build_system == "flit" %}
+          flit build
+          {%- elif cookiecutter.build_system == "mesonpy" %}
+          meson build
+          {%- elif cookiecutter.build_system == "setuptools" %}
+          python -m build
+          {%- elif cookiecutter.build_system == "pdm" %}
+          pdm build
+          {%- elif cookiecutter.build_system == "hatch" %}
+          hatch build
+          {%- elif cookiecutter.build_system == "maturin" %}
+          maturin build
+          {%- elif cookiecutter.build_system == "pybind11" %}
+          python -m build
+          {%- endif %}
+
+  release:
+    vars:
+      app: |
+        npx --yes \
+        -p semantic-release \
+        -p "@semantic-release/commit-analyzer" \
+        -p "@semantic-release/release-notes-generator" \
+        -p "@semantic-release/changelog" \
+        -p "@semantic-release/exec" \
+        -p "@semantic-release/github" \
+        -p "@semantic-release/git" \
+        -p "@google/semantic-release-replace-plugin" \
+        semantic-release
+
+    tasks:
+      ci:
+        help: run semantic release on CI
+        run: {{ "${{ vars.app }} --ci" }}
+
+      dry:
+        help: run semantic release in dry-run mode
+        run: {{ "${{ vars.app }} --dry-run" }}

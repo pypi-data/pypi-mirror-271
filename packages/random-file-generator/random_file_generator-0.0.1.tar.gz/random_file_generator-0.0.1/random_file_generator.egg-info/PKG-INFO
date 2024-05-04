@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: random-file-generator
+Version: 0.0.1
+Summary: Generate random text files
+Home-page: https://github.com/NishithKashyap/Generate-Random-Files
+Author: NishithRaveeshKashyap
+Author-email: nishithkp175@gmail.com
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE

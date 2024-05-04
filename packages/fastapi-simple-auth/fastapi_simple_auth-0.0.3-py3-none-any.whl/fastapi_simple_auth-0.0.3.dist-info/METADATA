@@ -1,0 +1,69 @@
+Metadata-Version: 2.3
+Name: fastapi-simple-auth
+Version: 0.0.3
+Summary: FastAPI simple authentication
+Project-URL: Documentation, https://github.com/yaroslaff/fastapi-simple-auth#readme
+Project-URL: Issues, https://github.com/yaroslaff/fastapi-simple-auth/issues
+Project-URL: Source, https://github.com/yaroslaff/fastapi-simple-auth
+Author-email: Yaroslav Polyakov <yaroslaff@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: alembic
+Requires-Dist: click
+Requires-Dist: fastapi
+Requires-Dist: fastapi-simple-auth-basic
+Requires-Dist: itsdangerous
+Requires-Dist: jinja2
+Requires-Dist: passlib[bcrypt]
+Requires-Dist: pydantic-settings
+Requires-Dist: pydantic[email]
+Requires-Dist: python-dotenv
+Requires-Dist: python-jose[cryptography]
+Requires-Dist: python-multipart
+Requires-Dist: typer
+Requires-Dist: uvicorn
+Description-Content-Type: text/markdown
+
+# api-auth
+
+## Install
+
+~~~shell
+cp .env.example .env
+# now edit it
+vim .env
+
+alembic upgrade head
+~~~
+
+
+## Usage
+
+~~~
+# register
+http POST http://localhost:8000/auth/users/ username=me@example.com password=secret
+
+# simple auth (session)
+http -f POST http://localhost:8000/auth/login username=me@example.com password=secret
+
+# get token
+http -f POST http://localhost:8000/auth/token username=me@example.com password=secret
+~~~
+
+## Developer cheatsheet
+### Alembic cheatsheet
+~~~
+alembic revision --autogenerate -m "some desc"
+alembic upgrade head
+alembic current
+~~~

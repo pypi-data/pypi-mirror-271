@@ -1,0 +1,85 @@
+Metadata-Version: 2.3
+Name: pythonlt
+Version: 0.0.1
+Summary: python.lt static website generator.
+Project-URL: homepage, https://github.com/python.lt/python.lt
+Author-email: Albertas Gimbutas <albertasgim@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Provides-Extra: test
+Requires-Dist: deadcode; extra == 'test'
+Requires-Dist: hatch; extra == 'test'
+Requires-Dist: mypy; extra == 'test'
+Requires-Dist: pip-audit; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: ruff; extra == 'test'
+Description-Content-Type: text/markdown
+
+# python.lt
+
+## Pakeitimų darymas
+python.lt puslapyje yra rodomos šios repozitorijos `public` direktorijos turinys.
+Norint padaryti pakeitimų python.lt svetainėje užtenka sukurti Pull Requestą, kuris
+redaguoja `public` direktorijos turinį - patvirtinus ir sumerginus Pull Requestą
+į `main` branch bus įvykdytas CI/CD pipeline, kuris įdiegs pakeitimus ir po minutės
+jie matysis python.lt svetainėje.
+
+## Vizija
+Aidžio brainstormo mintys:
+- Nuorodos į konferencijas ir meetupus.
+- Nuoroda į Python Lietuva facebook grupę
+- Nuoroda į Angis
+- Nuorodos į mokymosi šaltinius, prioritetas turėtų būti skiriamas lietuviškiems arba lietuvių kurtiems. Taip pat aukštos kokybės atrinkti šaltiniais anglų kalba.
+- Nuoroda į twitter hashtagus ir userius
+- Nuorodos į youtube kūrėjus. Pvz Griaustinis Tech
+- Lietuvos kompanijų kuriose naudojamas Python aprašymas, įskaitant tai, kaip jose naudojamas Python.
+- Studijų programos, mokymai. Dėl šito dvejoju, nes čia for profit dalykas. Bet gal su atitinkamu kritišku aprašymu ir perspėjimais aklai nepasitikėti, gal ir paeitų.
+
+Apibendrinant įsivaizduoju kad python.lt turėtų būti trys ramsčiai
+- Python
+- Lietuvoje (Lietuviškos kompanijos, renginiai ir t.t.)
+- Lietuviškai (Bandom palaikyti lietuvių kalbą)
+
+Bei papildant labai aukštos kokybės informacija angliškai.
+
+
+## Kaip prisidėti
+- `python.lt` tinklapis yra sudarytas iš Python failų ir Jinja2 šablonų (stiliams naudojamas tailwindcss.com).
+Norint sugeneruoti statinį `public/index.html` puslapį užtenka parašyti `make` šios repozitorijos šakniniame kataloge.
+Ši komanda sukurs virtualią aplinką, parsiųs Python priklausomybes ir pergeneruos statinį `public/index.html` failą,
+kuris yra rodomas `python.lt` tinklapyje.
+
+Norėdami, kad jūsų padaryti pakeitimai atsirastų `python.lt` svetainėje:
+- Pasidarykite `gitlab.com/python.lt/python.lt` repozitorijos kopiją su `Fork` funkcija.
+- Padarykite kodo pakeitimus ir juos kartu su sugeneruotu puslapiu išsaugokite `Git` versijavimo sistemoje.
+- Sukurkite pakeitimų apjungimo pasiūlymą (Pull request) į `gitlab.com/python.lt/python.lt`.
+
+### Repozitorijos turinys
+- `src` - Python kodas ir šablonai iš kurių generuojamas statinis `python.lt` puslapis.
+- `public` - sugeneruoto `python.lt` tinklapio išeities failai.
+
+### Naudingos komandos
+Šis paketas naudoja `Makefile` dažniausiai naudojamų komandų trumpiniams. Komandinėje eilutėje įvykdžius:
+- `make check` - bus paleidžiami unitų testai ir kodo linteriai.
+- `make fix` - kodas bus automatiškai suformatuotas ir bus pataisytos pataisomos linterių klaidos.
+- `make render` - bus iš naujo sudaromas statinis `python.lt` puslaplis faile `public/index.html`.
+- `make compile` - bus pakeliamos ir užfiksuojamos priklausomybių versijos `requirements*.txt` failuose.
+- `make sync` - bus atnaujinamos priklausomybių versijos virtualioje aplinkoje, kaip nurodyta `requirements*.txt` failuose (vykdoma po `make compile`)
+
+### Priklausomybės
+Šis Python projektas naudoja naujausius įrankius užtikrinti Python kodo kokybei:
+- ruff - lintinimui ir kodo formatavimui.
+- mypy - tipų tikrinimui.
+- pip-audit - viešai žinomų pažeidžiamumų paieškai priklausomybėse.
+- deadcode - nenaudojamo kodo aptikimui.
+- pytest - unitų testų surinkimui ir įvykdymui.
+- coverage - kodo padengimo testais nustatymui.
+- uv - Python virtualios aplinkos ir priklausomybių valdymui (`pip`, `pip-tools` ir `virtualenv` atitikmuo).
+- pyproject.toml - projekto ir priklausomybių konfigūracijai saugoti.
+- Makefile - komandinės eilutės komandų trumpiniams saugoti.

@@ -1,0 +1,12 @@
+absl-py
+coverage
+flax
+grpcio
+jax
+jaxlib
+numpy
+portpicker
+pytest
+seqio
+tiktoken
+blobfile

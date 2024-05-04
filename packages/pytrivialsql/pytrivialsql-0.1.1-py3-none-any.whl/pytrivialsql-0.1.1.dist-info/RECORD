@@ -1,0 +1,9 @@
+pytrivialsql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytrivialsql/postgres.py,sha256=j0Ov_C1KBgvgbnIMK-vX7jyECD0f8azIHc87KqIuFUg,3332
+pytrivialsql/sql.py,sha256=_Vcil9XO9zdOgxv-TNo8gEmVJZqdauPx_ER9ecwoKFk,5365
+pytrivialsql/sqlite.py,sha256=cOfN9r69hY2XQZvJkKkuYciiEQt5kwTL0LhIjpcHLBE,3962
+pytrivialsql-0.1.1.dist-info/LICENSE,sha256=X3yHtgz2UuBig84PPX_Nd3L6MTTXK79QohXhwMZKxX0,1073
+pytrivialsql-0.1.1.dist-info/METADATA,sha256=RdPyDLi5BMfEyEirGUJNzGKX2t-Vydt-Xaqk28fAQBg,669
+pytrivialsql-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pytrivialsql-0.1.1.dist-info/top_level.txt,sha256=LxjorXdfkBu-LDGXE3YOH9KepJHizmVyDLXD98kRXYY,13
+pytrivialsql-0.1.1.dist-info/RECORD,,

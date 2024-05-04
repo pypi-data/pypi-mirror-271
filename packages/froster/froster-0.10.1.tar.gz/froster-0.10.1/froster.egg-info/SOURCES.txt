@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+froster/__init__.py
+froster/froster.py
+froster.egg-info/PKG-INFO
+froster.egg-info/SOURCES.txt
+froster.egg-info/dependency_links.txt
+froster.egg-info/entry_points.txt
+froster.egg-info/requires.txt
+froster.egg-info/top_level.txt

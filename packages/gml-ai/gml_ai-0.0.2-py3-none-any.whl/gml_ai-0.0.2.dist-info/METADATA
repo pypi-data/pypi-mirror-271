@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: gml-ai
+Version: 0.0.2
+Requires-Dist: torch-mlir-gml
+Requires-Dist: torch
+

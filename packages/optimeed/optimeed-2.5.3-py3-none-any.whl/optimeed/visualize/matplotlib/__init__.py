@@ -1,0 +1,1 @@
+from .default_options import set_matplotlib_theme

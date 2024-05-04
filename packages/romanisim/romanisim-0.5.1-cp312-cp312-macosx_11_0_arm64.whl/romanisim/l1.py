@@ -1,0 +1,570 @@
+"""Convert images into L1 images, with ramps.
+
+We imagine starting with an image that gives the total number of counts from
+all Poisson processes (at least: sky, sources, dark current).  We then need
+to redistribute these counts over the resultants of an L1 image.
+
+The easiest thing to do, and probably where I should start, is to sample the
+image read-by-read with a binomial draw from the total counts weighted by the
+chance that each count landed in this particular time window.  Then gather
+those for each resultant and average, as done on the spacecraft.
+
+It's tempting to go straight to making the appropriate resultants.  Following
+Casertano (2022?), the variance in each resultant is:
+
+.. math:: V = \\sigma_{read}^2/N + f \\tau
+
+where f is the count rate, N is the number of reads in the resultant, and :math:`\\tau`
+is the 'variance-based resultant time'
+
+.. math:: \\tau = 1/N^2 \\sum_{reads} (2 (N - k) - 1) t_k
+
+where the t_k is the time of the kth read in the resultant.
+
+For uniformly spaced reads,
+
+.. math:: \\tau = t_0 + d (N/3 + 1/6N - 1/2) \\, ,
+
+where t_0 is the time of the first read in the resultant and d is the spacing
+of the reads.
+
+So that gives the variance from Poisson counts in resultant.  But how should
+we draw random numbers to get that variance and the right mean?  I can
+separately control the mean and variance by scaling the Poisson distribution,
+but I'm not sure that's doing the right thing with the higher order moments.
+
+It probably isn't that expensive to just work out all of the reads,
+individually, which will also allow more natural incorporation of
+cosmic rays down the road.  So let's take that approach instead for
+the moment.
+
+How do we want to specify an L1 image?  An L1 image is defined by a
+total count image and a list of lists :math:`t_{i, j}`, where
+:math:`t_{i, j}` is the time at which the jth read in the ith
+resultant is made.  We demand :math:`t_{i, j} > t_{k, l}`
+whenever i > k or whenever i = k and j > l.
+
+Things this doesn't allow neatly:
+
+* jitter in telescope pointing: the rate image is the same for each read/resultant
+* weird non-linear systematics in darks?
+
+Some systematics need to be applied to the individual reads, rather than to
+the final image.  Currently linearity, persistenc, and CRs are implemented at
+individual read time.  I need to think about when in the chain
+things like IPC, etc., come in.  But it still seems correct to first generate the total
+number of counts that an ideal detector would measure from sources, and then apply
+these effects read-by-read as we build up the resultants---i.e., I expect the current
+framework will be able to handle this without major issue.
+
+This approach is not super fast.  For a high latitude set of resultants,
+generating all of the random numbers to determine the apportionment takes
+43 s on the machine I'm currently using; this will scale linearly with the
+number of reads.  That's longer than the actual image production for the
+dummy scene I'm using (though only ~2x longer).
+
+I don't have a good way to speed this up.  Explicitly doing the Poisson
+noise on each read from a rate image (rather than the apportionment of an
+image that already has Poisson noise) is 2x slower---generating billions
+of random numbers just takes a little while.
+
+Plausibly I could figure out how to draw numbers directly from what a
+resultant is rather than looking at each read individually.  That would
+likely bring a ~10x speed-up.  The read noise there is easy.  The
+poisson noise is a sum of scaled Poisson variables:
+
+.. math:: \\sum_{i=0, ..., N-1} (N-i) c_i \\, ,
+
+where :math:`c_i` is a Poisson-distributed variable.
+The sum of Poisson-distributed variables is Poisson-distributed, but I wasn't
+immediately able to find anything about the sum of scaled Poisson-distributed
+variables.  The result is clearly not Poisson-distributed, but maybe there's
+some special way to sample from that directly.
+
+If we did sample from that directly, we'd still also need to get the sum
+of the counts in the reads comprising the resultant.  So I think you'd need
+a separate draw for that, conditional on the number you got for the resultant.
+Or, reversing that, you might want to draw the total number of counts first,
+e.g., via the binomial distribution, and then you'd want to draw a number
+for what the average number of counts was among the reads comprising the
+resultant, conditional on the total number of counts.  Then
+
+.. math:: \\sum_{i=0, ..., N-1} (N-i) c_i
+
+is some kind of statistic of the multinomial distribution.  That sounds a
+little more tractable?
+
+.. math:: c_i \\sim \\mathrm{multinomial}(\\mathrm{total}, [1/N, ..., 1/N])
+
+We want to draw from :math:`\\sum (N-i) c_i`.
+I think the probabilities are always :math:`1/N`, with the possible small but
+important
+exception of 'skipped' or 'dropped' reads, in which case the first read would
+be more like :math:`2/(N+1)` and all the others :math:`1/(N+1)`.  If the probabilities
+were always 1/N, this looks vaguely like it could have a nice analytic
+solution.  Otherwise, I don't immediately see a route forward.  So I am not
+going to pursue this avenue further.
+"""
+
+import numpy as np
+import asdf
+import galsim
+from scipy import ndimage
+from . import parameters
+from . import log
+from astropy import units as u
+from . import cr
+
+
+def validate_times(tij):
+    """Verify that a set of times tij for a valid resultant.
+
+    Parameters
+    ----------
+    tij : list[list[float]]
+        a list of list of times at which each read in a resultant is performed
+
+    Returns
+    -------
+    bool
+        True if the tij are ascending, otherwise False
+    """
+    times = [t for resultant in tij for t in resultant]
+    return np.all(np.diff(times) > 0)
+
+
+def tij_to_pij(tij, remaining=False):
+    """Convert a set of times tij to corresponding probabilities for sampling.
+
+    The probabilities are those needed for sampling from a binomial
+    distribution for each read.  These are delta_t / sum(delta_t), the
+    fraction of time in each read over the total time, when `remaining` is
+    False.  When remaining is true, we scale these probabilities not by
+    the total time but by the remaining time, so that subsequent reads get
+    subsequent reads get scaled up so that each pij is
+    delta_t / time_remaining, and the last read always has pij = 1.
+
+    Parameters
+    ----------
+    tij : list[list[float]]
+        list of list of readout times for each read entering a resultant
+    remaining : bool
+        scale by remaining time rather than total time
+
+    Returns
+    -------
+    list[list[float]]
+        list of list of probabilities for each read, corresponding to the
+        chance that a photon not yet assigned to a read so far should be
+        assigned to this read.
+    """
+    if not validate_times(tij):
+        raise ValueError('The given tij are not valid ascending resultant '
+                         'times!')
+    texp = tij[-1][-1]  # total exposure time
+    tremaining = texp
+    pij = []
+    tlast = 0
+    for resultant in tij:
+        pi = []
+        for t in resultant:
+            pi.append(min([(t - tlast) / tremaining, 1]))
+            if remaining:
+                tremaining -= (t - tlast)
+            tlast = t
+        pij.append(pi)
+    return pij
+
+
+def apportion_counts_to_resultants(
+        counts, tij, inv_linearity=None, crparam=None, persistence=None,
+        tstart=None, rng=None, seed=None):
+    """Apportion counts to resultants given read times.
+
+    This finds a statistically appropriate assignment of counts to each
+    read composing a resultant, and averages the reads together to make
+    the resultants.
+
+    There's an alternative approach where you have a count rate image and
+    need to do Poisson draws from it.  That's easier, and isn't this function.
+    On some systems I've used Poisson draws have been slower than binomial
+    draws, so it's not clear that approach offers any advantages, either---
+    though I've had mixed experience there.
+
+    We loop over the reads, each time sampling from the counts image according
+    to the probability that a photon lands in that particular read.  This
+    is just np.random.binomial(number of counts left, p/p_left)
+
+    We then average the reads together to get a resultant.
+
+    We accumulate:
+
+    * a sum for the resultant, which is divided by the number of reads and
+      returned in the resultants array
+    * a sum for the total number of photons accumulated so far, so we know
+      where to start the next resultant
+    * the resultants so far
+
+    Parameters
+    ----------
+    counts : np.ndarray[nx, ny] (int)
+        The number of counts in each pixel from sources in the final image
+        This final image should be a ~conceptual image of the scene observed
+        by an idealized instrument seeing only backgrounds and sources and
+        observing until the end of the last read; no instrumental effects are
+        included beyond PSF & distortion.
+    tij : list[list[float]]
+        list of list of readout times for each read entering a resultant
+    inv_linearity : romanisim.nonlinearity.NL or None
+        Object implementing inverse non-linearity correction
+    crparam : dict
+        Dictionary of keywords sent to romanisim.cr.simulate_crs for simulating
+        cosmic rays.  If None, no CRs are added
+    persistence : romanisim.persistence.Persistence or None
+        Persistence object describing persistence-affected photons, or None
+        if persistence should not be simulated.
+    tstart : astropy.time.Time
+        Time of exposure start.  Used only if persistence is not None.
+    rng : galsim.BaseDeviate
+        random number generator
+    seed : int
+        seed to use for random number generator
+
+    Returns
+    -------
+    resultants, dq
+    resultants : np.ndarray[n_resultant, nx, ny]
+        array of n_resultant images giving each resultant
+    dq : np.ndarray[n_resultant, nx, ny]
+        dq array marking CR hits in resultants
+    """
+    if not np.all(counts == np.round(counts)):
+        raise ValueError('apportion_counts_to_resultants expects the counts '
+                         'to be integers!')
+    counts = np.clip(counts, 0, 2 * 10**9).astype('i4')
+
+    # Set rng for creating cosmic rays, persistence, and readnoise
+    if rng is None and seed is None:
+        seed = 46
+        log.warning(
+            'No RNG set, constructing a new default RNG from default seed.')
+    if rng is None:
+        rng = galsim.GaussianDeviate(seed)
+
+    rng_numpy_seed = rng.raw()
+    rng_numpy = np.random.default_rng(rng_numpy_seed)
+    rng_numpy_cr = np.random.default_rng(rng_numpy_seed + 1)
+    rng_numpy_ps = np.random.default_rng(rng_numpy_seed + 2)
+    # two separate generators so that if you turn off CRs / persistence
+    # you don't change the image
+
+    # Convert readout times for each read entering a resultant to probabilities,
+    # corresponding to the chance that a photon not yet assigned to a read so far
+    # should be assigned to this read.
+    pij = tij_to_pij(tij, remaining=True)
+
+    # Create arrays to store various photon or electron counts and dq
+    resultants = np.zeros((len(tij),) + counts.shape, dtype='f4')
+    counts_so_far = np.zeros(counts.shape, dtype='i4')
+    resultant_counts = np.zeros(counts.shape, dtype='f4')
+    dq = np.zeros(resultants.shape, dtype=np.uint32)
+
+    # Set initial instrument counts
+    instrumental_so_far = 0
+
+    if crparam is not None or persistence is not None:
+        instrumental_so_far = np.zeros(counts.shape, dtype='i4')
+
+    if persistence is not None and tstart is None:
+        raise ValueError('tstart must be set if persistence is set!')
+
+    if persistence is not None:
+        tstart = tstart.mjd
+
+    # Loop over read probabilities
+    for i, pi in enumerate(pij):
+        # Reset resultant counts
+        resultant_counts[...] = 0
+
+        # Loop over resultant probabilities
+        for j, p in enumerate(pi):
+            # Set read counts
+            read = rng_numpy.binomial(counts - counts_so_far, p)
+            counts_so_far += read
+
+            # Apply cosmic rays
+            if crparam is not None:
+                old_instrumental_so_far = instrumental_so_far.copy()
+                cr.simulate_crs(instrumental_so_far, parameters.read_time,
+                                **crparam, rng=rng_numpy_cr)
+                crhits = instrumental_so_far != old_instrumental_so_far
+                dq[i, crhits] |= parameters.dqbits['jump_det']
+
+            # Apply persistence
+            if persistence is not None:
+                tnow = tstart + tij[i][j] / (24 * 60 * 60)
+                persistence.add_to_read(
+                    instrumental_so_far, tnow, rng=rng_numpy_ps)
+
+            # Update counts for the resultant
+            if inv_linearity is not None:
+                # Apply inverse linearity
+                resultant_counts += inv_linearity.apply(
+                    counts_so_far + instrumental_so_far, electrons=True)
+            else:
+                resultant_counts += counts_so_far + instrumental_so_far
+
+        # set the read count to the average of the resultant count
+        resultants[i, ...] = resultant_counts / len(pi)
+
+    if inv_linearity is not None:
+        # Update data quality array for inverse linearty coefficients
+        dq |= inv_linearity.dq
+
+    if persistence is not None:
+        # should the electrons from persistence contribute to future
+        # persistence?  Here they do.  But hopefully this choice is second
+        # order enough that either decision would be fine.
+        persistence.update(counts_so_far + instrumental_so_far, tnow)
+
+    return resultants, dq
+
+
+def add_read_noise_to_resultants(resultants, tij, read_noise=None, rng=None,
+                                 seed=None):
+    """Adds read noise to resultants.
+
+    The resultants get Gaussian read noise with sigma = sigma_read/sqrt(N).
+    This is not quite right.  In reality read noise is added during each read.
+    This is the same as adding to the resultants and dividing by sqrt(N) except
+    for quantization; this additional subtlety is currently ignored.
+
+    Parameters
+    ----------
+    resultants : np.ndarray[n_resultant, nx, ny] (float)
+        resultants array, giving each of n_resultant resultant images
+    tij : list[list[float]]
+        list of list of readout times for each read entering a resultant
+    read_noise : float or np.ndarray[nx, ny] (float)
+        read noise or read noise image for adding to resultants
+    rng : galsim.BaseDeviate
+        Random number generator to use
+    seed : int
+        Seed for populating RNG.  Only used if rng is None.
+
+    Returns
+    -------
+    np.ndarray[n_resultant, nx, ny] (float)
+        resultants with added read noise
+    """
+    if rng is None and seed is None:
+        seed = 45
+        log.warning(
+            'No RNG set, constructing a new default RNG from default seed.')
+    if rng is None:
+        rng = galsim.GaussianDeviate(seed)
+    else:
+        rng = galsim.GaussianDeviate(rng)
+
+    if read_noise is None:
+        read_noise = parameters.reference_data['readnoise']
+    if read_noise is None:
+        log.warning('Not applying read noise due to weird reference data.')
+        return resultants
+
+    noise = np.zeros(resultants.shape, dtype='f4')
+    rng.generate(noise)
+    noise = noise * read_noise / np.array(
+        [len(x)**0.5 for x in tij]).reshape(-1, 1, 1)
+    resultants += noise
+    return resultants
+
+
+def make_asdf(resultants, dq=None, filepath=None, metadata=None, persistence=None):
+    """Package and optionally write out an L1 frame.
+
+    This routine packages an L1 data file with the appropriate Roman data
+    model.  It currently does not do anything with the necessary metadata,
+    and leaves that information as filler values.
+
+    Parameters
+    ----------
+    resultants : np.ndarray[n_resultant, nx, ny] (float)
+        resultants array, giving each of n_resultant resultant images
+    filepath : str
+        if not None, path of asdf file to L1 image into
+    dq : np.ndarray[n_resultant, nx, ny] (int)
+        dq array flagging saturated / CR hit pixels
+
+    Returns
+    -------
+    roman_datamodels.datamodels.ScienceRawModel
+        L1 image
+    extras : dict
+        dictionary of additionally tabulated quantities, potentially
+        including DQ images and persistence information.
+    """
+
+    try:
+        import roman_datamodels.testing.utils as maker_utils
+    except ImportError:
+        import roman_datamodels.maker_utils as maker_utils
+    nborder = parameters.nborder
+    npix = galsim.roman.n_pix + 2 * nborder
+    out = maker_utils.mk_level1_science_raw(
+        shape=(len(resultants), npix, npix))
+    if metadata is not None:
+        out['meta'].update(metadata)
+    extras = dict()
+    out['data'][:, nborder:-nborder, nborder:-nborder] = resultants
+    if dq is not None:
+        extras['dq'] = np.zeros(out['data'].shape, dtype='i4')
+        extras['dq'][:, nborder:-nborder, nborder:-nborder] = dq
+    if persistence is not None:
+        extras['persistence'] = persistence.to_dict()
+    if filepath:
+        af = asdf.AsdfFile()
+        af.tree = {'roman': out, 'romanisim': extras}
+        af.write_to(filepath)
+    return out, extras
+
+
+def read_pattern_to_tij(read_pattern):
+    """Get the times of each read going into resultants for a read_pattern.
+
+    Parameters
+    ----------
+    read_pattern : int or list[list]
+        If int, id of ma_table to use.
+        Otherwise a list of lists giving the indices of the reads entering each
+        resultant.
+
+    Returns
+    -------
+    list[list[float]]
+        list of list of readout times for each read entering a resultant
+    """
+    if isinstance(read_pattern, int):
+        read_pattern = parameters.read_pattern[read_pattern]
+    tij = [parameters.read_time * np.array(x) for x in read_pattern]
+    return tij
+
+
+def add_ipc(resultants, ipc_kernel=None):
+    """Add IPC to resultants.
+
+    Parameters
+    ----------
+    resultants : np.ndarray[n_resultant, nx, ny]
+        resultants describing scene
+
+    Returns
+    -------
+    np.ndarray[n_resultant, nx, ny]
+        resultants with IPC
+    """
+    # add in IPC
+    # the reference pixels have basically no flux, so for these real pixels we
+    # extend the array with a constant equal to zero.
+    if ipc_kernel is None:
+        ipc_kernel = parameters.ipc_kernel
+
+    log.info('Adding IPC...')
+    out = ndimage.convolve(resultants, ipc_kernel[None, ...],
+                           mode='constant', cval=0)
+    return out
+
+
+def make_l1(counts, read_pattern,
+            read_noise=None, rng=None, seed=None,
+            gain=None, inv_linearity=None, crparam=None,
+            persistence=None, tstart=None, saturation=None):
+    """Make an L1 image from a counts image.
+
+    This apportions the total counts among the different resultants and adds
+    some instrumental effects (linearity, IPC, CRs, persistence, ...).
+
+    Parameters
+    ----------
+    counts : galsim.Image
+        total counts delivered to each pixel
+    read_pattern : int or list[list]
+        MA table number or list of lists giving indices of reads entering each
+        resultant.
+    read_noise : np.ndarray[nx, ny] (float) or float
+        Read noise entering into each read
+    rng : galsim.BaseDeviate
+        Random number generator to use
+    seed : int
+        Seed for populating RNG.  Only used if rng is None.
+    gain : float or np.ndarray[float]
+        Gain (electrons / count) for converting counts to electrons
+    inv_linearity : romanisim.nonlinearity.NL or None
+        Object describing the inverse non-linearity corrections.
+    crparam : dict
+        Keyword arguments to romanisim.cr.simulate_crs.  If None, no
+        cosmic rays are simulated.
+    persistence : romanisim.persistence.Persistence
+        Persistence instance describing persistence-affected pixels
+    tstart : astropy.time.Time
+        time of exposure start
+
+    Returns
+    -------
+    l1, dq
+    l1: np.ndarray[n_resultant, nx, ny]
+        resultants image array including systematic effects
+    dq: np.ndarray[n_resultant, nx, ny]
+        DQ array marking saturated pixels and cosmic rays
+    """
+
+    tij = read_pattern_to_tij(read_pattern)
+    log.info('Apportioning counts to resultants...')
+    resultants, dq = apportion_counts_to_resultants(
+        counts.array, tij, inv_linearity=inv_linearity, crparam=crparam,
+        persistence=persistence, tstart=tstart,
+        rng=rng, seed=seed)
+
+    # roman.addReciprocityFailure(resultants_object)
+
+    add_ipc(resultants)
+
+    if not isinstance(resultants, u.Quantity):
+        resultants *= u.electron
+
+    if gain is None:
+        gain = parameters.reference_data['gain']
+    if gain is not None and not isinstance(gain, u.Quantity):
+        gain = gain * u.electron / u.DN
+        log.warning('Making up units for gain.')
+
+    resultants /= gain
+
+    if read_noise is not None and not isinstance(read_noise, u.Quantity):
+        read_noise = read_noise * u.DN
+        log.warning('Making up units for read noise.')
+
+    # resultants are now in counts.
+    # read noise is in counts.
+    log.info('Adding read noise...')
+    resultants = add_read_noise_to_resultants(
+        resultants, tij, rng=rng, seed=seed,
+        read_noise=read_noise)
+
+    # quantize
+    resultants = np.round(resultants)
+
+    # add pedestal
+    resultants += parameters.pedestal
+
+    if saturation is None:
+        saturation = parameters.reference_data['saturation']
+
+    # this maybe should be better applied at read time?
+    # it's not actually clear to me what the right thing to do
+    # is in detail.
+    resultants = np.clip(resultants, 0 * u.DN, saturation)
+    m = resultants >= saturation
+    dq[m] |= parameters.dqbits['saturated']
+
+    return resultants, dq

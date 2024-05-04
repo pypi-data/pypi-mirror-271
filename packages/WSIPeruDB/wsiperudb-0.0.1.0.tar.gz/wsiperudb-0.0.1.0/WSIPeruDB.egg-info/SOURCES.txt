@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+WSIPeruDB/FilterDepartment.py
+WSIPeruDB/__init__.py
+WSIPeruDB/dataset_downloading.py
+WSIPeruDB/departments_comparison.py
+WSIPeruDB/lmwl_filtering.py
+WSIPeruDB/map.py
+WSIPeruDB/siteinformation_downloading.py
+WSIPeruDB/temporalseries.py
+WSIPeruDB.egg-info/PKG-INFO
+WSIPeruDB.egg-info/SOURCES.txt
+WSIPeruDB.egg-info/dependency_links.txt
+WSIPeruDB.egg-info/not-zip-safe
+WSIPeruDB.egg-info/requires.txt
+WSIPeruDB.egg-info/top_level.txt

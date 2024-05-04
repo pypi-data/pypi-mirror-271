@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+mysql-connector-python
+folium
+scikit-learn
+plotly_express
+ipywidgets
+geopandas
+xlsxwriter

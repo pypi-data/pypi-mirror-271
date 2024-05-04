@@ -1,0 +1,23 @@
+[build-system]
+requires = ['setuptools>=68.2']
+build-backend = 'setuptools.build_meta'
+
+
+[project]
+name = "attribox"
+version = "0.1.26"
+authors = [
+  { name = "Asger Jon Vistisen", email = "asgerjon2@gmail.com" },
+]
+description = "Allows for deferred instantiation of class attributes."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AsgerJon/attribox"
+"Bug Tracker" = "https://github.com/AsgerJon/attribox"

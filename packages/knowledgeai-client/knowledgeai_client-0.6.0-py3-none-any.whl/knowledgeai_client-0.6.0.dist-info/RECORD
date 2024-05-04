@@ -1,0 +1,9 @@
+knowledgeai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+knowledgeai/client/__init__.py,sha256=8YKhYgD7KDKO89u6Jb4JwUcT1a5aTrSTJoeT_PLm12s,392
+knowledgeai/client/admin.py,sha256=tMCYZXkGrGcAzEEeU3EO2yjanY01mKZd_TOBP6iHDpE,5929
+knowledgeai/client/client.py,sha256=lhyW4e9oKxjJoweAh2Ta-b_i09JbLgzkxyCzgqcWNFc,15766
+knowledgeai/client/schema.py,sha256=eiUyb-HZ3h9DKLu2ngWi383zNySbYc8dJ7IN-MIBQro,2044
+knowledgeai_client-0.6.0.dist-info/LICENSE,sha256=5sqSea6ANLhLC3P9v6eezObpq0C2UsOzEMtZn_8uJ0A,1080
+knowledgeai_client-0.6.0.dist-info/METADATA,sha256=VRSeZ8P11o4PYYT0q3SrNVGiNJjf8bGY2zVJUlxq6IE,9126
+knowledgeai_client-0.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+knowledgeai_client-0.6.0.dist-info/RECORD,,

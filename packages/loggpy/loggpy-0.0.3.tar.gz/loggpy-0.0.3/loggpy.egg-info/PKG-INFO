@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: loggpy
+Version: 0.0.3
+Summary: Custom log levels for Python's logging module.
+Home-page: https://github.com/ReiDoBrega/loggpy
+License: MIT
+Keywords: logging,logger,verbose
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+UNKNOWN
+

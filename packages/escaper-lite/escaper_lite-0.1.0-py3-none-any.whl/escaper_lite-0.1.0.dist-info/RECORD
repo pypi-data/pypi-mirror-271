@@ -1,0 +1,11 @@
+escaper_lite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+escaper_lite/utils.cp310-win_amd64.pyd,sha256=kp_vzuKFWwVLaYb0fC-j5o9uV789xEl6ZnUeIvVRIhI,330752
+escaper_lite/utils.cpython-310-x86_64-linux-gnu.so,sha256=YpW7gUjbg98wb4nRtFFjnW-9NlbjK5IQWLNju00pLsU,2849024
+escaper_lite/utils.cpython-36m-x86_64-linux-gnu.so,sha256=L9knJZADJe-Vh8QPW6TtaAAdQsNgY0rxOufSZfbPeVA,722184
+escaper_lite/utils.cpython-37m-x86_64-linux-gnu.so,sha256=J53MtnhSaxzli64cmzfP8hw2Bdmp-ta5xvZap_4bXIA,714168
+escaper_lite/utils.cpython-38-x86_64-linux-gnu.so,sha256=Z6PsS8UdiXgZ9cBpqyg9NqkVLxuItkS2QghJVKSVVtM,706104
+escaper_lite/utils.cpython-39-x86_64-linux-gnu.so,sha256=kLYqOXiAjMqROVquyknnt5XTvkhDxCkrJlE8MP9iWEg,706048
+escaper_lite-0.1.0.dist-info/METADATA,sha256=TWt7rHAjNV-RWNqF_QMIFg8-NnS5f74Kym6oUpSXJXc,302
+escaper_lite-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+escaper_lite-0.1.0.dist-info/top_level.txt,sha256=R64-7RFlFGg0i2CB1onbs1tg7kd5w_WSIyij5KHxex8,13
+escaper_lite-0.1.0.dist-info/RECORD,,

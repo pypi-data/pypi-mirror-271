@@ -1,0 +1,14 @@
+README.md
+setup.py
+PySDKit.egg-info/PKG-INFO
+PySDKit.egg-info/SOURCES.txt
+PySDKit.egg-info/dependency_links.txt
+PySDKit.egg-info/requires.txt
+PySDKit.egg-info/top_level.txt
+emd/__init__.py
+ewt/__init__.py
+mvmd/__init__.py
+vmd/__init__.py
+vmd/vmd_c.py
+vmd/vmd_f.py
+vncmd/__init__.py

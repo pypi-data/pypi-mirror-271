@@ -1,0 +1,10 @@
+xtrain/__init__.py,sha256=HKzDrasUkHpxn3pB0lsoEwg3rNu3TMHQD2nUeMn-2Dw,203
+xtrain/base_trainer.py,sha256=w7Y92CR94rpbjniM71eEeGEA6xELLMxokGvkmyA7Kd4,11115
+xtrain/closure.py,sha256=URK80QOuuuEyDBEZJMqUr7ChzulavQ4UIJb2jD-jx6w,3986
+xtrain/loss.py,sha256=sFQvrS7cxG7yodYHuSByOANh641wyWZHmWDc9bY2t0k,1631
+xtrain/strategy.py,sha256=tX_Uagxpr9OI12OEP_eREbUg5Wyd2Bw6OAZ05khzkSo,4564
+xtrain/utils.py,sha256=RBckMFSqeoCPAP7ooHSW_S42lRplLQ8Y5oBOM2qyTdY,5517
+xtrain-0.2.3.dist-info/LICENSE,sha256=VwqyKijqQvysv0b7dDxbvdWDwrApqXQYdy6iUm6zJM8,1062
+xtrain-0.2.3.dist-info/METADATA,sha256=q1y9p8phFaQYm30WA-82dkG5Y3roWZGjAE6ET60V5zE,1591
+xtrain-0.2.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+xtrain-0.2.3.dist-info/RECORD,,

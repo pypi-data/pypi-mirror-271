@@ -1,0 +1,11 @@
+c4m/cell_canvas.ipynb,sha256=0Ic2NW1rMW-zDZt39ly7-Hd_YyKvNtcXrVXEeG_dpdo,2262
+c4m/flexcell/__init__.py,sha256=fcO7z20fqY0rkMF69ePLixwqpf2FcmSn7Rt1LB7_doo,143
+c4m/flexcell/_waiters.py,sha256=-oUX9wu2XuE8M7X-mmrfGruiNsyxaia6cgFfOHIhHrI,3738
+c4m/flexcell/activecolumnscell.py,sha256=_5vVp91Tp4DirLO_Br9AhUDU9X-sAG7YvwqcBQUAAMM,90310
+c4m/flexcell/canvas.py,sha256=mZkZCoIxYd89dwaU4UigzWZQXvdtEtvHuW1Ro-M9hHg,13887
+c4m/flexcell/cell.py,sha256=Do-crBLSXblNlOT0K9YubUJipT8SQkzLOfxDAitqSms,4311
+c4m/flexcell/factory.py,sha256=v-ykIExoIx42tvN9kWOpH4moN_phONXgxNf5tbUXpt0,132114
+c4m_flexcell-0.4.2.post3.dist-info/METADATA,sha256=5ED8ZR0FC3ep0R04KXo9GlUTC6iAfI1U_8IpxRnX8tQ,5304
+c4m_flexcell-0.4.2.post3.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+c4m_flexcell-0.4.2.post3.dist-info/licenses/LICENSE.md,sha256=WySi_zmty8jVjWn5zAGNWMRxsztAbM_TFbBfc_HgXk8,992
+c4m_flexcell-0.4.2.post3.dist-info/RECORD,,

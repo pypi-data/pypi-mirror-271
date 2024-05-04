@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: LorenzTelegram
+Version: 0.0.2
+Summary: A library to communicate with Lorenz Messtechnik sensors
+Author-Email: Mikkel Jeppesen <2756925+Duckle29@users.noreply.github.com>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/Duckle29/LorenzTelegram
+Project-URL: Repository, https://github.com/Duckle29/LorenzTelegram
+Requires-Python: >=3.11
+Requires-Dist: pyserial>=3.5
+Description-Content-Type: text/markdown
+
+# LorenzTelegram

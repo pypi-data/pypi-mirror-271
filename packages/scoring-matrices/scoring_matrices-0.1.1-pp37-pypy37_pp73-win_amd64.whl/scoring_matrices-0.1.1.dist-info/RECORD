@@ -1,0 +1,16 @@
+scoring_matrices/__init__.pxd,sha256=gDvgaPHbh8NuflIDtQHAEhM7uCS5eR1A04zAuexjc74,31
+scoring_matrices/__init__.py,sha256=sfeKrdgMppv_imWZhlXNX62ED-I91TDRgEeFIBvtuqg,180
+scoring_matrices/lib.pxd,sha256=_csoheJ2tsV3UxDYmArxeCKo_jXsMJ6LT3QoT2KLQpw,672
+scoring_matrices/lib.pyi,sha256=3ZYE4sRSHwCPG6IrTnnaOmlpgskoXrLGf7nzEv_ei4Q,1391
+scoring_matrices/lib.pypy37-pp73-win_amd64.pyd,sha256=sPMneEb0hwvjEXVGObp-ODFSM_YNU05Z2DIks4CwSMQ,270336
+scoring_matrices/lib.pyx,sha256=IgMHHWtnmqqY0a7RNlspuZVe_c9jd7MIzyoGL0qJuMU,12757
+scoring_matrices/matrices.pxd,sha256=drcEQLP0t7HAZtXDG0H9YoCnpZHA2q1pPGCDevwEdD4,151
+scoring_matrices/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scoring_matrices/tests/__init__.py,sha256=bZyxYIr969S4n6-nKCxtOU3VT_M-uIjK-EkvXXguaZI,266
+scoring_matrices/tests/test_doctest.py,sha256=54iNdjMh1H_HO0dsDigVSYa-4Mo3dCNXMhOFyiYdybw,2559
+scoring_matrices/tests/test_scoring_matrix.py,sha256=6CSmFu-dms-2LtY2kIQ7G7J2qbXM9Q72DT8v1E5G7lQ,3618
+scoring_matrices-0.1.1.dist-info/COPYING,sha256=WpSMpnu8fCvYt4QNIp0SCsWgeXIRr1KEXBfqiPwrPZ4,1119
+scoring_matrices-0.1.1.dist-info/METADATA,sha256=Z5r3KMSzxIXYf_G0MZQd1hIiJPQjDeH6W6aLsiZqeoI,8645
+scoring_matrices-0.1.1.dist-info/WHEEL,sha256=ML1L0FmYwxoYoLdb_Zqc0Tz4DrTT8EH0fLp885A_zI0,107
+scoring_matrices-0.1.1.dist-info/top_level.txt,sha256=78tj5SxBzGucfcTaA-IU2DT9Zhnq6qD_eIz1Eq3sAnY,17
+scoring_matrices-0.1.1.dist-info/RECORD,,

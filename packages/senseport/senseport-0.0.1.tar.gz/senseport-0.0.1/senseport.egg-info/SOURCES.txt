@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+senseport/__init__.py
+senseport.egg-info/PKG-INFO
+senseport.egg-info/SOURCES.txt
+senseport.egg-info/dependency_links.txt
+senseport.egg-info/requires.txt
+senseport.egg-info/top_level.txt

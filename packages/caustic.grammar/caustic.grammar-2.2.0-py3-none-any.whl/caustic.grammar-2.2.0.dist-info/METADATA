@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: caustic.grammar
+Version: 2.2.0
+Summary: Caustic's default grammar
+Author: Shae.c32
+Project-URL: Homepage, https://codeberg.org/Caustic/CausticGrammar
+Project-URL: Issues, https://codeberg.org/Caustic/CausticGrammar/issues
+Keywords: caustic,language,grammar
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Other
+Classifier: Topic :: File Formats
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: caustic.cst
+Requires-Dist: caustic.parser
+

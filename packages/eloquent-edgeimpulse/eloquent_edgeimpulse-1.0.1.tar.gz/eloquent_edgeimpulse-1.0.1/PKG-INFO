@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: eloquent_edgeimpulse
+Version: 1.0.1
+Summary: A wrapper for Edge Impulse Linux package
+Home-page: https://github.com/eloquentarduino/eloquent-edge-impulse-python
+Author: Simone Salerno
+Author-email: eloquentarduino@gmail.com
+License: MIT
+Keywords: ML,Edge Impulse,Edge AI
+License-File: LICENSE

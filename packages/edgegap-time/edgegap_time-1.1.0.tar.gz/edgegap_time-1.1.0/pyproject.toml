@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "edgegap-time"
+version = "1.1.0"
+description = "The Edgegap Time library. Handle generic time operations. Add custom type to manipulate time."
+authors = ["Maxime Boisvert <maxime.boisvert@edgegap.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytimeparse = "^1.1.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

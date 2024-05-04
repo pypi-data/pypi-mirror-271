@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: RTS-WebUIBuilder
+Version: 0.4
+Summary: A simple webserver with a simple webui builder.
+Home-page: https://github.com/RandomTimeLP/RTS_Webbuilder
+Author: RandomTimeTV
+Author-email: dergepanzerte1@gmail.com
+License: MIT with required credit to the author.
+Keywords: WebUIBuilder,Webserver,Work In Progress
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: aiohttp
+Requires-Dist: pygments
+
+# Work in Progress
+it is not recomendet to use this module as of now, but you can still try
+

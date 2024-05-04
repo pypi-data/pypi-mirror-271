@@ -1,0 +1,8 @@
+capstone
+cffi
+psutil
+pyelftools
+requests
+
+[dev]
+rich

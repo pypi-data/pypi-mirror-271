@@ -1,0 +1,10 @@
+README.md
+double_indent.py
+setup.cfg
+setup.py
+double_indent_shiku.egg-info/PKG-INFO
+double_indent_shiku.egg-info/SOURCES.txt
+double_indent_shiku.egg-info/dependency_links.txt
+double_indent_shiku.egg-info/entry_points.txt
+double_indent_shiku.egg-info/requires.txt
+double_indent_shiku.egg-info/top_level.txt

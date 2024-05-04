@@ -1,0 +1,119 @@
+## Used by Brian for developing Herbie
+
+name: herbie-dev
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - pip
+  - git
+  - curl
+  - rclone # Not required, but is an awesome alternative (https://rclone.org/)
+  - wgrib2 # ONLY AVAILABLE ON LINUX. Comment if not using Linux.
+
+  # ===========
+  # Handy Tools
+  # ===========
+  - cartopy>=0.22
+  - cfgrib>=0.9.10.4
+  - eccodes>=2.31
+  - geopandas
+  - h5py
+  - jupyter
+  - jupyterlab
+  - matplotlib>=3.4.3
+  - metpy
+  - netcdf4
+  - numpy>=1.25
+  - pandas>=2.0
+  - pygrib>=2.1.4
+  - pylint
+  - pyproj>=3.6
+  - requests>=2.31
+  - s3fs
+  - scipy
+  - scikit-learn
+  - toml
+  - xarray>=2023.7
+  - zarr
+
+  # ===================
+  # Formatter & Testing
+  # ===================
+  - ruff
+  - black
+  - black-jupyter
+  - isort
+  - pylint
+  - pytest
+  - line_profiler
+
+  # =============
+  # Documentation
+  # =============
+  - sphinx>=4.4.0
+  - nbsphinx
+  - nbconvert>=6.5
+  - pydata-sphinx-theme # PyData Sphinx Theme (i.e, Numpy, Pandas, MetPy)
+  - sphinx-design
+  - recommonmark
+  - sphinx-markdown-tables
+  - sphinxcontrib-mermaid # For mermaid diagram support
+  - autodocsumm
+  - sphinx-autosummary-accessors # pandas and xarray accessor docs
+  - latexmk
+  - myst-parser
+  - linkify-it-py
+
+  #- pip:
+      #- cartopy>=0.22
+  # Herbie: Development version from GitHub
+  #- git+https://github.com/blaylockbk/Herbie.git
+
+  # Install a specific branch
+  #- git+https://github.com/blaylockbk/Herbie.git@blaylockbk/issue98
+
+  # Borrow some tools from my garage
+  #- git+https://github.com/blaylockbk/Carpenter_Workshop.git
+
+  # Create idx files on the fly!!  -- Waiting for package maturity
+  #- git+https://github.com/joxtoby/beltzer.git
+# =============================================================================
+#                             Extra Setup Steps
+# =============================================================================
+# conda activate herbie-dev
+# cd Herbie
+# pip install -e .
+#
+# git clone https://github.com/blaylockbk/Carpenter_Workshop.git
+# cd Carpenter_Workshop
+# pi install -e .
+
+# =============================================================================
+#                                 Notes
+# =============================================================================
+# Being more specific with versions *may* help speed up conda
+# creating/updating environments
+# https://www.anaconda.com/blog/understanding-and-improving-condas-performance
+#
+
+# =============================================================================
+#                              Conda Tips
+# =============================================================================
+# To create this environment
+#
+#     curl -O https://raw.githubusercontent.com/blaylockbk/Herbie/main/environment-dev.yml
+#     conda env create -f environment-dev.yml
+#
+# To update this environment
+#
+#     conda env update -f environment-dev.yml --prune
+#
+# To remove this environment
+#
+#     conda env remove --name herbie-dev
+#
+# To do a conda clean
+#
+#     conda clean -tp
+# =============================================================================

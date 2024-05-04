@@ -1,0 +1,32 @@
+[project]
+name = "datasus-fetcher"
+authors = [
+    {name = "Daniel Komesu", email = "danielkomesu@gmail.com"},
+]
+description = "Downloader of DATASUS raw data files"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "data",
+    "open data",
+    "data fetcher",
+    "health",
+    "datasus",
+    "microdata",
+]
+license = {text = "MIT"}
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "datasus_fetcher.__version__"}
+
+[project.scripts]
+datasus-fetcher = "datasus_fetcher.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/viridisdata/datasus-fetcher"
+Issues = "https://github.com/viridisdata/datasus-fetcher/issues"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"

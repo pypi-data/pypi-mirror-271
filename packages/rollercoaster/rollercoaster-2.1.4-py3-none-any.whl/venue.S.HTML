@@ -1,0 +1,52 @@
+
+
+
+<pre>
+
+	<h1>rollecoaster</h1>
+		# vortex
+
+	<h2>docker with custom IP address</h2>
+		docker network create --subnet=192.168.0.0/24 bios_net
+		docker run --network bios_net --ip 192.168.0.34 -v .:/rollercoaster -v /online/locker/vaccines_rollercoaster:/online/locker/vaccines_rollercoaster -it jumps:v2.1.0
+		docker exec -it f524ed410d13 bash
+
+	<h2>dockers</h2>
+		docker run -p 127.0.0.1:20000:20000 -v .:/rollercoaster -v /online/crowns_safes/mint:/online/crowns_safes/mint -it jumps:v2.1.0
+		docker exec -it 598cd384d874 bash
+
+	<h2>prep</h2>
+		<h3>terminal 1</h3>
+		
+		
+		<h3>terminal 2</h3>
+		
+
+	<h2>publishing</h2>
+		
+		#
+		#	statuses
+		#
+		python3 /rollercoaster/venues/stages/rollercoaster/_status/status.proc.py
+		
+		#
+		#	git push
+		#
+		#		if Circle CI is successful, then publish
+		#
+		
+		#
+		#	increase version
+		#
+		
+		#
+		#	poetry auth
+		#
+		pip install poetry && rm -rf dist && poetry build --verbose && poetry publish --verbose;
+
+
+
+
+
+
+</pre>

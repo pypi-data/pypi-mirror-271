@@ -1,0 +1,13 @@
+README.md
+setup.py
+training/__init__.py
+training/training_model.py
+transactify/__init__.py
+transactify/find_my_txn_category.py
+transactify/predict_category.py
+transactify/transactify_model.pkl
+transactify.egg-info/PKG-INFO
+transactify.egg-info/SOURCES.txt
+transactify.egg-info/dependency_links.txt
+transactify.egg-info/requires.txt
+transactify.egg-info/top_level.txt

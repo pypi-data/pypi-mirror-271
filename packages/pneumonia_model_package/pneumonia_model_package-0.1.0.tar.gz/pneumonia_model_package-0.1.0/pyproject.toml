@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pneumonia_model_package"
+version = "0.1.0"
+description = "deep convolutional neural network for patient chest disease prediction"
+authors = ["chibuikeeugene <chibuikeeugene@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+scikit-learn = "^1.4.2"
+pydantic = "^2.7.0"
+strictyaml = "^1.7.3"
+tensorflow = "^2.16.1"
+scikeras = "^0.13.0"
+tensorflow-datasets = "^4.9.4"
+pillow = "^10.3.0"
+pydantic-settings = "^2.2.1"
+fastapi = "^0.110.3"
+uvicorn = "^0.29.0"
+loguru = "^0.7.2"
+python-multipart = "^0.0.9"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

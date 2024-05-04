@@ -1,0 +1,7 @@
+setup.py
+PathMePy/PathMePy.py
+PathMePy/__init__.py
+PathMePy.egg-info/PKG-INFO
+PathMePy.egg-info/SOURCES.txt
+PathMePy.egg-info/dependency_links.txt
+PathMePy.egg-info/top_level.txt

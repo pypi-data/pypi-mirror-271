@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: taskwarrior_flow
+Version: 0.1.0
+Summary: Set of helpers for improving Taskwarrior workflow
+Author: Ben Trinh
+Author-email: huantrinh1802@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: questionary (>=2.0.1,<3.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+# `twf`
+
+**Usage**:
+
+```console
+$ twf [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `task`: Run taskwarrior with the given data group
+* `utils`: Sub-commands for taskwarrior utilities
+
+## `twf task`
+
+Run taskwarrior with the given data group
+
+**Usage**:
+
+```console
+$ twf task [OPTIONS]
+```
+
+**Options**:
+
+* `-g, --group TEXT`: [default: default]
+* `--help`: Show this message and exit.
+
+## `twf utils`
+
+Sub-commands for taskwarrior utilities
+
+**Usage**:
+
+```console
+$ twf utils [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `add`: Add task, query, and template
+* `edit`: Edit query, and template
+* `view`: View task and template
+
+### `twf utils add`
+
+Add task, query, and template
+
+**Usage**:
+
+```console
+$ twf utils add [OPTIONS] [NAME]
+```
+
+**Arguments**:
+
+* `[NAME]`: [default: task]
+
+**Options**:
+
+* `-g, --group TEXT`: [default: default]
+* `--help`: Show this message and exit.
+
+### `twf utils edit`
+
+Edit query, and template
+
+**Usage**:
+
+```console
+$ twf utils edit [OPTIONS] [NAME]
+```
+
+**Arguments**:
+
+* `[NAME]`: [default: template]
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+### `twf utils view`
+
+View task and template
+
+**Usage**:
+
+```console
+$ twf utils view [OPTIONS] [NAME]
+```
+
+**Arguments**:
+
+* `[NAME]`: [default: task]
+
+**Options**:
+
+* `--help`: Show this message and exit.
+

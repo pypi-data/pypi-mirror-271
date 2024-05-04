@@ -1,0 +1,9 @@
+LICENSE
+README.md
+lyywinsubscribe.py
+setup.py
+lyywinsubscribe.egg-info/PKG-INFO
+lyywinsubscribe.egg-info/SOURCES.txt
+lyywinsubscribe.egg-info/dependency_links.txt
+lyywinsubscribe.egg-info/requires.txt
+lyywinsubscribe.egg-info/top_level.txt

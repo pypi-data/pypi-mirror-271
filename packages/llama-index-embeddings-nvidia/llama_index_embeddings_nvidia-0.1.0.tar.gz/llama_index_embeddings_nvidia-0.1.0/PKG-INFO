@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: llama-index-embeddings-nvidia
+Version: 0.1.0
+Summary: llama-index embeddings nvidia integration
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: llama-index-core (>=0.10.9,<0.11.0)
+Description-Content-Type: text/markdown
+
+# NVIDIA's Embeddings connector
+
+With this connector, you'll be able to connect to and generate from compatible models available as hosted [NVIDIA NIMs](https://ai.nvidia.com), such as:
+
+- NVIDIA's Retrieval QA Embedding Model [embed-qa-4](https://build.nvidia.com/nvidia/embed-qa-4)
+
+_First_, get a free API key. Go to https://build.nvidia.com, select a model, click "Get API Key".
+Store this key in your environment as `NVIDIA_API_KEY`.
+
+## Installation
+
+```bash
+pip install llama-index-embeddings-nvidia
+```
+
+## Usage
+
+```python
+from llama_index.embeddings.nvidia import NVIDIAEmbedding
+
+embedder = NVIDIAEmbedding()
+embedder.get_query_embedding("What's the weather like in Komchatka?")
+```
+

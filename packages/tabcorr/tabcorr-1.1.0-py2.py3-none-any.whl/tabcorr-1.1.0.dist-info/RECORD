@@ -1,0 +1,12 @@
+tabcorr/__init__.py,sha256=nY5cBMbsx8_aueYYPJwvFIKCBWM1zG_9xD3k21VyKuE,238
+tabcorr/aa_cosmos.txt,sha256=TLeEr_vabjl8cursqir9fxKxCVAbrkyVvFvNN92fT8o,4408
+tabcorr/aa_test_cosmos.txt,sha256=HZVu31_JaXTFl0hGFumddEd3ofzSu36HuZk5ylGHWc8,762
+tabcorr/as_cosmos.csv,sha256=d0HYAMPyOpyskrVCWp9UAtcG-vbVNlpIIwcbijWPizQ,22083
+tabcorr/corrfunc.py,sha256=TaTiSSZwSzYU_SpJxiquk7YCgHo6kdyns7zkcxa9IGY,6933
+tabcorr/database.py,sha256=rrRFejQDan0rm_ke2fRvAS1lQLPDY3eFONB3q_wHSR8,9333
+tabcorr/interpolator.py,sha256=j3OPkKplDVgtbvy9GnEKUVHd16kjs90Pegeg3pxD5bM,14077
+tabcorr/tabcorr.py,sha256=P3PpGPcmt_N5ny0O0ynwbla5WPXCariy-jdJyXV1TMI,38056
+tabcorr-1.1.0.dist-info/LICENSE,sha256=Fh6olMWhKzvcG_KvXO8c6kXreh9_tAUSXwt6mx551DM,1111
+tabcorr-1.1.0.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+tabcorr-1.1.0.dist-info/METADATA,sha256=nWigAfRt8C9PQDoOwkS0zSu0oDvZa3jFIvHM_T02XgQ,4318
+tabcorr-1.1.0.dist-info/RECORD,,

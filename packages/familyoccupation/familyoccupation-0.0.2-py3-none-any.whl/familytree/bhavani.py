@@ -1,0 +1,2 @@
+def occupation():
+    return "student"

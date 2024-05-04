@@ -1,0 +1,12 @@
+# Needs to be next to be:
+# - named cfg.toml
+# - next to cfg.py
+
+[uninav]
+package_name = 'com.unico.dev.appmobile'
+local_db_name = 'unico_database'
+
+[adb.download_urls]
+windows = 'https://dl.google.com/android/repository/platform-tools-latest-windows.zip'
+mac_os = 'https://dl.google.com/android/repository/platform-tools-latest-darwin.zip'
+linux = 'https://dl.google.com/android/repository/platform-tools-latest-linux.zip'

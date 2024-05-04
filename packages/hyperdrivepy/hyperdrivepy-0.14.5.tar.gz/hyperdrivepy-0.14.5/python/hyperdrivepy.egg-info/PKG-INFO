@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hyperdrivepy
+Version: 0.14.5
+Project-URL: Homepage, https://github.com/delvtech/hyperdrive-rs
+Project-URL: Issues, https://github.com/delvtech/hyperdrive-rs/issues
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hyperdrivepy
+
+Hyperdrivepy is the Python bindings for the Rust [hyperdrive](https://github.com/delvtech/hyperdrive) implementation.
+
+## Disclaimer
+
+The language used in this codebase is for coding convenience only, and is not
+intended to, and does not, have any particular legal or regulatory significance.

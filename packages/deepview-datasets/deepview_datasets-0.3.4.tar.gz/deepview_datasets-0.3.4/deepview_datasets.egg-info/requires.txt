@@ -1,0 +1,6 @@
+pillow
+polars
+tqdm
+
+[dev]
+bumpver

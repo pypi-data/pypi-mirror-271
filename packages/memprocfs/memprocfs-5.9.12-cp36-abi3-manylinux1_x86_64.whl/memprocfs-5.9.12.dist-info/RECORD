@@ -1,0 +1,10 @@
+memprocfs/__init__.py,sha256=GM1jGo-m7H2H2HS19w4bgVwlaydPU1I1O_zzGXHcugs,25
+memprocfs/info.db,sha256=SWYuM69hLghe0Bnlxy1aWaXdwg9i1zeuewYNkwGdDPU,2506752
+memprocfs/memprocfs.py,sha256=EUeq4qbOp6WkH19Q4hWTVuxnsv9AxD8aAPx8gYY1chU,14280
+memprocfs/vmm.so,sha256=mKeOw6jouFOX68FG3tIthMdwHQSLkwnP7ZpIlcuNBIs,1913048
+memprocfs/vmmpyc.abi3.so,sha256=fxXtxevMYXP6_smlACrI5BJcq5kgGXSWLktEdSyMMyc,753680
+memprocfs-5.9.12.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+memprocfs-5.9.12.dist-info/METADATA,sha256=8lDwEMy-845V3sigeopRuj2rdSBQghI1nnjd_t8oSPM,612
+memprocfs-5.9.12.dist-info/WHEEL,sha256=iE50AyNpUpr1VnCku1LYtAP2aC0BYITbLsr7dHjY5Gc,108
+memprocfs-5.9.12.dist-info/top_level.txt,sha256=AHMGWOo9AoyjchrjA28klXR60AijMZXtK_fdkrKKKCw,10
+memprocfs-5.9.12.dist-info/RECORD,,

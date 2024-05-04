@@ -1,0 +1,33 @@
+[project]
+name = "byteforge-coinmarketcap"
+version = "1.3"
+description = "Python SDK for the coinmarketcap.com API."
+readme = "README.md"
+license = { file="LICENSE" }
+keywords = ["cryptocurrency", "API", "coinmarketcap", "BTC", "Bitcoin", "LTC", "Litecoin", "XRP", "Ripple", "ETH", "Ethereum"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+authors = [
+  { name = "Jason Byteforgia"}
+]
+dependencies = [
+  "requests",
+  "requests-cache",
+  "python-dateutil"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project.urls]
+Homepage = "https://github.com/jmazzahacks/byteforge-coinmarketcap/"
+Issues = "https://github.com/jmazzahacks/byteforge-coinmarketcap/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["coinmarketcap"]

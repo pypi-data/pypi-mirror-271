@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+logiclm/ai.py
+logiclm/logiclm.py
+logiclm/olap.py
+logiclm/run_tests.py
+logiclm/schema.py
+logiclm/server.py
+logiclm.egg-info/PKG-INFO
+logiclm.egg-info/SOURCES.txt
+logiclm.egg-info/dependency_links.txt
+logiclm.egg-info/top_level.txt

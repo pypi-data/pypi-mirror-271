@@ -1,0 +1,63 @@
+/* General */
+
+nav {
+    background-color: #021c35;
+}
+
+body {
+    background-color: var(--bs-light);
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+}
+
+/* Lists */
+
+ul.history {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.history:before {
+    content: ' ';
+    background: #e0e0e0;
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 28px;
+    z-index: 100;
+}
+
+ul.history > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.history > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border: 3px solid var(--bs-secondary);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    left: 21px;
+    z-index: 100;
+}
+
+ul.history > li.li-success:before {
+    border-color: var(--bs-success);
+}
+
+ul.history > li.li-danger:before {
+    border-color: var(--bs-danger);
+}
+
+ul.history > li.li-secondary:before {
+    border-color: var(--bs-secondary);
+}

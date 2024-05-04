@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pivol
+Version: 0.1.0
+Summary: Pretrained Implied Volatility Models
+License: Apache-2.0
+Author: simu.ai
+Author-email: thijs@simu.ai
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ConfigArgParse (>=1.5,<2.0)
+Requires-Dist: numpy (>=1.21,<2.0)
+Requires-Dist: torch (>=2.1,<3.0)
+Description-Content-Type: text/markdown
+
+# pivol
+Pre-trained Implied Volatility Models
+

@@ -1,0 +1,5 @@
+llama_index/callbacks/argilla/__init__.py,sha256=RPSsjfLcy3R_MMVOWQvSepmCumLhaMmtP7wc-ASap7s,112
+llama_index/callbacks/argilla/base.py,sha256=B2fGsDKz9vK7RFlEPCDdS6trt9gWvgL5Cv0oaNTXQ_8,407
+llama_index_callbacks_argilla-0.1.4.dist-info/METADATA,sha256=fIMd_aKhj3U3go2CZQIth-cVX0dMdbPEPmE8XDtVWbU,4776
+llama_index_callbacks_argilla-0.1.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_callbacks_argilla-0.1.4.dist-info/RECORD,,

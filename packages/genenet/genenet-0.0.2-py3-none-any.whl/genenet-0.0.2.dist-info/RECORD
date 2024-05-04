@@ -1,0 +1,16 @@
+genenet/__init__.py,sha256=tsPnwqQbB-ru1-OISvXGR_nOsELU4aXKcg1drPwNEvA,16
+genenet/genbank_utils.py,sha256=yBWGTKbHhLGe4J8iQSrclc5QS5S8mckMQ2BU9SvmhJE,4784
+genenet/genenet.py,sha256=PkLifVHlmhLotQG7ZNXlPtPj2AvZfh7bIcGXnz82Ufg,12710
+genenet/identify_cid_utils.py,sha256=i3f6pvYFCsFaXnq0HA5zHBxN8gG-TZl_fN8gBlpcCaw,7226
+genenet/identify_significant_interactions_utils.py,sha256=sJHslryd615Cya9FPqasj4gmfILvyrymAR2cQl0QFLg,2143
+genenet/interaction_utils.py,sha256=IctBCp6EM8D9T25zO4DVWe9oyHwKqPeK31hyavcG404,13224
+genenet/multi_genbank_utils.py,sha256=4KavHOjgzgKvx26Ws1hI_0sd-PDFDHHYib-QBer0lik,18208
+genenet/multi_identify_cid_utils.py,sha256=toQsmPyemEyQh6EA4aAAqrauY8joTLaj-yOB8OXvbAg,15922
+genenet/multi_identify_significant_interactions_utils.py,sha256=t1TVex003s4bWoQmpxhvl5O1TXpNfnzz-8T91bRcqR4,2151
+genenet/multi_interaction_utils.py,sha256=apbJ4WCI2Eg2bv95NZkXnkGy1onQNG7hXdAr9KHs_II,8558
+genenet/multi_output_file_utils.py,sha256=t_5ppS6ngKARdB4WeCtNGyipB9PRXPLY-eWBLYLmUFA,2933
+genenet/output_file_utils.py,sha256=9WE-yEmkYocz-AsT7E1eqp4Qekem8GVX3qeN3G8Qufw,2903
+genenet-0.0.2.dist-info/METADATA,sha256=lXoNvvVHKX1YomYZJxoRxcNFtixDCSvDkMpFBeNGHoA,8266
+genenet-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+genenet-0.0.2.dist-info/top_level.txt,sha256=a2Z0IogFqfbwn7LV7flVdQJbd4j4DYewuVIKFCHWn-8,8
+genenet-0.0.2.dist-info/RECORD,,

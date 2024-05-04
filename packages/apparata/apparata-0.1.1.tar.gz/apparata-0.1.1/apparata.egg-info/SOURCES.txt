@@ -1,0 +1,9 @@
+README.md
+setup.py
+apparata/__init__.py
+apparata/apparata.py
+apparata.egg-info/PKG-INFO
+apparata.egg-info/SOURCES.txt
+apparata.egg-info/dependency_links.txt
+apparata.egg-info/requires.txt
+apparata.egg-info/top_level.txt

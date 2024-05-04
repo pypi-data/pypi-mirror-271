@@ -1,0 +1,8 @@
+convert_us_to_uk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convert_us_to_uk/converter.py,sha256=PhUdrwJqOlRXix-qwpUYe3gIolfZ_wRL8LvthO5bu_w,1533
+convert_us_to_uk/us_to_uk_trans.csv,sha256=8U77wjbdL56FMZMKxgvscJ1GzDqw3hZVNpNvthZc6Z8,39780
+convert_us_to_uk-0.1.6.dist-info/METADATA,sha256=zVRaRc2KUXxjF2eLw1WUZeA1WZN6Cx7i8ypR3GgxSBQ,1990
+convert_us_to_uk-0.1.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+convert_us_to_uk-0.1.6.dist-info/entry_points.txt,sha256=eatdxsO0frOTOnRjB_yk0Gi5XOgyB1nf1xhqFA8ws6Y,69
+convert_us_to_uk-0.1.6.dist-info/top_level.txt,sha256=wpC5Tetv2vzwIcLfypnWEWFnSYBpJrhQMxZHJda6Jug,17
+convert_us_to_uk-0.1.6.dist-info/RECORD,,

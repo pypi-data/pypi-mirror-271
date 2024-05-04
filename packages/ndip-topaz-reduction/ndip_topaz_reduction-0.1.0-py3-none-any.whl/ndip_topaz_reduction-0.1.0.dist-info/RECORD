@@ -1,0 +1,11 @@
+ndip_topaz_reduction/README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndip_topaz_reduction/__init__.py,sha256=3psLOSVsEJuzzZWbiieTTR4RBmXazIpA3t-UCKsHQMg,154
+ndip_topaz_reduction/dist/ndip_topaz_reduction-0.1.0.tar.gz,sha256=kDdff2qFyVQ7ad7lPN4JGedn9XiKkS_r1K8u9DaYksA,76
+ndip_topaz_reduction/galaxy_interface.py,sha256=g2pRcGToMJDAtQbIsDgkCHR-NtmIxXTOivN02BPrvgk,1141
+ndip_topaz_reduction/pyproject.toml,sha256=LS_NQLP7j9OYwy7db9D8mk3ToDk6rx6mx7UxDbHba3w,283
+ndip_topaz_reduction/utilities/__init__.py,sha256=XkSGtYmxmNkA4Jdw-BgMGBw6dzMfJbPU7Z4wJfNf_nk,83
+ndip_topaz_reduction/utilities/data_processing.py,sha256=rgZGGyoOFzwHuhzykn8M2G9ecXtMpi8tKGSVI_8vMgY,149
+ndip_topaz_reduction/utilities/job_management.py,sha256=T7EATDztdW02LKaP1eDUbuztE5paagy7T8DqESgG5ZE,321
+ndip_topaz_reduction-0.1.0.dist-info/METADATA,sha256=23Q4EQs5_s3px7DPNLdPQBOAKkKZtfFVhKCzWZ4Krfo,6585
+ndip_topaz_reduction-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ndip_topaz_reduction-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: subproptools
+Version: 0.4.3
+Summary: A plugin for extracting data from .sum files and manipuating them
+Keywords: qtaim,functional groups
+Author-email: Kevin Lefrancois-Gagnon <kgagnon@lakeheadu.ca>, Robert Mawhinney <mawhinn@lakeheadu.ca>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AiiDA
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinxcontrib-contentui ; extra == "docs"
+Requires-Dist: sphinxcontrib-details-directive ; extra == "docs"
+Requires-Dist: furo ; extra == "docs"
+Requires-Dist: markupsafe<2.1 ; extra == "docs"
+Requires-Dist: pandas ; extra == "docs"
+Requires-Dist: numpy ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme ; extra == "docs"
+Requires-Dist: pre-commit~=2.2 ; extra == "pre-commit"
+Requires-Dist: pylint~=2.15.10 ; extra == "pre-commit"
+Requires-Dist: pgtest~=1.3.1 ; extra == "testing"
+Requires-Dist: wheel~=0.31 ; extra == "testing"
+Requires-Dist: coverage ; extra == "testing"
+Requires-Dist: pytest~=6.0 ; extra == "testing"
+Requires-Dist: pytest-cov ; extra == "testing"
+Requires-Dist: pytest-regressions~=2.3 ; extra == "testing"
+Requires-Dist: coveralls ; extra == "testing"
+Project-URL: Source, https://github.com/kmlefran/subproptools
+Provides-Extra: docs
+Provides-Extra: pre-commit
+Provides-Extra: testing
+
+
+[![ci](https://github.com/kmlefran/subproptools/actions/workflows/ci.yml/badge.svg)](https://github.com/kmlefran/subproptools/actions/workflows/ci.yml)
+[![Documentation Status](https://readthedocs.org/projects/subproptools/badge/?version=latest)](https://subproptools.readthedocs.io/en/latest/?badge=latest)
+[![Coverage Status](https://coveralls.io/repos/github/kmlefran/subproptools/badge.svg?branch=main)](https://coveralls.io/github/kmlefran/subproptools?branch=main)
+[![PyPI version](https://badge.fury.io/py/subproptools.svg)](https://badge.fury.io/py/subproptools)
+# Molecule Reorientation and .sum file handling
+
+This package provides tools to extract data from .sum files (in the qtaimExtract module), and tools to reorient the molecule to defined coordinate systems (in the subreor module). The subreor module rotates to a defined coordinate system. First an atom is positioned at the origin. By convention, this is the atom of the group that is directly bonded to the rest of the molecule. The rest of the molecule is placed along the -x axis. The remaining axes are defined as follows:
+* if there is one lone pair(VSCC), that point lies on the +y
+* if there are two lone pairs, the average position of them lies on the +y
+* if there are no lone pairs, map the BCPs of the atom at the origin to a reference. Identify the closest match to the reference to determine a BCP to set as +y
+
+# Authors
+Kevin Lefrancois-Gagnon
+Robert C. Mawhinney
+
+# Installation prior to distribution
+```
+pip install git+https://github.com/kmlefran/subproptools
+```
+
+# User Facing Functions:
+## subreor
+* rotate_sheet - performs rotations to the desired coordinate system for many molecules as defined in a csv file
+* output_to_gjf - writes the reoreinted geometry to a .gjf file
+* rotate_substituent - performs the defined rotation for an individual substituent
+
+## qtaimExtract
+* get_sub_di - gets delocalization index between a substituent and the rest of the molecule
+* get bcp_properties - returns a dictionary of bcp properties for a given bcp
+* get_atomic_props - returns dictionary of atomic properties for all atoms in molecule
+* get_cc_props - returns dictionary of properties for all charge concentrations
+* identify_vscc - returns only the VSCC from a set of charge concentrations
+* get_sub_props - returns dictionary of one substituent's properties
+* extract_sub_props - returns dictionary of atomic, group, bcp and vscc properties for a substituent
+* sub_prop_frame - returns dictioanry of frames of group properties
+* get_xyz - extracts a molecule's xyz geometry from sum file
+

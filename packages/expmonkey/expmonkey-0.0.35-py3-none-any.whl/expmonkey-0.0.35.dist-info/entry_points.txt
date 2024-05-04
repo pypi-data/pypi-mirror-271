@@ -1,0 +1,3 @@
+[console_scripts]
+em-init-script = expmonkey:print_init_script
+expmonkey = expmonkey:cli

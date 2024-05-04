@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyusb-tree"
+version = "1.0.0"
+dependencies = ["pydantic"]
+requires-python = ">=3"
+authors = [{ name = "Pradish Bijukchhe", email = "pradish@sandbox.com.np" }]
+description = "Python package to parse USB Device Tree Viewer output to pydantic"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = []
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.urls]
+Homepage = "https://github.com/sandbox-pokhara/pyusb-tree"
+Issues = "https://github.com/sandbox-pokhara/pyusb-tree/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+"pyusb_tree" = "pyusb_tree"
+
+[tool.isort]
+line_length = 79
+force_single_line = true
+
+[tool.black]
+line-length = 79
+preview = true
+
+[tool.pyright]
+typeCheckingMode = "strict"

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mnists"
+authors = [
+  { name="Piotr Czarnik", email="ptr.czarnik@gmail.com" },
+]
+description = "MNISTs: All MNIST-like datasets in one package"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.22",
+    "numpy>=1.23.2; python_version>='3.11'",
+    "numpy>=1.26.0; python_version>='3.12'",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pczarnik/mnists"
+
+[tool.setuptools.dynamic]
+version = {attr = "mnists.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["mnists"]

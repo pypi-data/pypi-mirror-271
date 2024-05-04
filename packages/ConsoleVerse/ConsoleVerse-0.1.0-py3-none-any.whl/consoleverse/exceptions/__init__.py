@@ -1,0 +1,1 @@
+from consoleverse.exceptions.ex_console import *

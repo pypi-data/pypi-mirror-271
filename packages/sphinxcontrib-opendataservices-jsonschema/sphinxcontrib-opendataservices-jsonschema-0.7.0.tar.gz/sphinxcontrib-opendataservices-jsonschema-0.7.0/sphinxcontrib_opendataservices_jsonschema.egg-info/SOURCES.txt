@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/jsonschema.py
+sphinxcontrib_opendataservices_jsonschema.egg-info/PKG-INFO
+sphinxcontrib_opendataservices_jsonschema.egg-info/SOURCES.txt
+sphinxcontrib_opendataservices_jsonschema.egg-info/dependency_links.txt
+sphinxcontrib_opendataservices_jsonschema.egg-info/namespace_packages.txt
+sphinxcontrib_opendataservices_jsonschema.egg-info/not-zip-safe
+sphinxcontrib_opendataservices_jsonschema.egg-info/requires.txt
+sphinxcontrib_opendataservices_jsonschema.egg-info/top_level.txt
+tests/__init__.py
+tests/test_directive.py
+tests/test_jsonschema.py

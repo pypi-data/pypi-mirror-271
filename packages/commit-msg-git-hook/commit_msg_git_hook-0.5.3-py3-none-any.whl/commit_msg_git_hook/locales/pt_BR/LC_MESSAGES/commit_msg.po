@@ -1,0 +1,50 @@
+# commit-msg git-hook translation.
+# Copyright (C) 2024 Lucio Meira David
+# This file is distributed under the same license as the commit-msg git-hook package.
+# Lucio Meira David <lucio.meira@om30.com.br>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: commit_msg_git_hook-0.5.3\n"
+"Report-Msgid-Bugs-To: lucio.meira@om30.com.br\n"
+"POT-Creation-Date: 2024-05-02 18:14-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Lucio Meira David <lucio.meira@om30.com.br>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: commit_msg.py:80
+msgid "COMMIT MESSAGE TOO LONG"
+msgstr "MENSAGEM DE COMMIT MUITO LONGA"
+
+#: commit_msg.py:82
+msgid "Configured max length (first line)"
+msgstr "Comprimento máx. configurado (primeira linha)"
+
+#: commit_msg.py:97
+msgid "INVALID COMMIT MESSAGE"
+msgstr "MENSAGEM DE COMMIT INVÁLIDA"
+
+#: commit_msg.py:99
+msgid "Use the Conventional Commits specification."
+msgstr "Use a especificação Conventional Commits."
+
+#: commit_msg.py:100
+msgid "Valid types"
+msgstr "Tipos válidos"
+
+#: commit_msg.py:101
+msgid "Valid scopes"
+msgstr "Escopos válidos"
+
+#: commit_msg.py:102
+msgid "See the specification"
+msgstr "Veja a especificação"
+
+#: commit_msg.py:103
+msgid "https://www.conventionalcommits.org/en/v1.0.0/"
+msgstr "https://www.conventionalcommits.org/pt-br/v1.0.0/"

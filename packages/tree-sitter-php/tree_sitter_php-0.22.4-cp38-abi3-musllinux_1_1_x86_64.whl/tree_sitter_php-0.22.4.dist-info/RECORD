@@ -1,0 +1,14 @@
+tree_sitter_php/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_php/binding.c,sha256=velVUYG0vW6ZnViCcqjlH2fJVuf7pEfsLvWkARUSU4M,928
+tree_sitter_php/_binding.abi3.so,sha256=5yjRZzGMV3WSBLyNr516j_7dX5b1KjbNi0tVIC2uUso,1820648
+tree_sitter_php/__init__.py,sha256=mP-kDR1W0hBvENeQTksqTGuENX0KzE2G9W-PkJzqHRU,85
+tree_sitter_php/__init__.pyi,sha256=PdfEsdTefGyEAx3e7hScy6ZcFYn1gHgBpb_fD0uFh-4,68
+tree_sitter_php/queries/injections-text.scm,sha256=_4YHI-SbVvDEwpE-NxHnboIgZ-CvyOz77-zPWwxqQ4U,91
+tree_sitter_php/queries/injections.scm,sha256=jqa88y8ZpDyxAvuWLY-pOVpR0IECwKRJW2GpI4h_xc0,233
+tree_sitter_php/queries/tags.scm,sha256=AL3QrHouMP4I2wPG_1NggFQO5uauVfpQHTq8WFd8_Bk,916
+tree_sitter_php/queries/highlights.scm,sha256=Kf-s0hkLih1e7wtDxenmrjckWORvdB9lbZPcFUN_Zm0,2426
+tree_sitter_php-0.22.4.dist-info/LICENSE,sha256=Zkdk-r9AwLMY4GMkpaEjeQkqLfJbjL8kFfcbwLs1I0Y,1166
+tree_sitter_php-0.22.4.dist-info/METADATA,sha256=g9fhMH-iBQOyLq3GgL4hZTitr9y4Xbt7b_WWvspZFuU,1698
+tree_sitter_php-0.22.4.dist-info/RECORD,,
+tree_sitter_php-0.22.4.dist-info/top_level.txt,sha256=A5_a7v01eNpCom-y-s_WrQTQeQYI2-8_ruahNFKaDIE,25
+tree_sitter_php-0.22.4.dist-info/WHEEL,sha256=SLuAR4EQHH0r-qGFhMuV9c2WCtm9CXjP4961KF3hTEM,111

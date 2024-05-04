@@ -1,0 +1,2 @@
+[console_scripts]
+repocleaner = repocleaner:main

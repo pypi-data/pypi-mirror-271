@@ -1,0 +1,12 @@
+manabase_solver/__init__.py,sha256=OM3P4yJGMfw3nxnVy2HBDso11iwSoujdJcWj0tYJQmU,165
+manabase_solver/lands.py,sha256=GpNBikza29Rv6SdBj_qoj4FHDyieL559kpvXx0Okw0k,7811
+manabase_solver/manabase_solver.py,sha256=tGYEhlxmBiZGaq0ZriAHWQWOz0NZjbWxG6P4tkdnh9M,45565
+manabase_solver/manabase_solver_test.py,sha256=rqwOPSCJi6dNDDDTzFgxsa9HRyXCyEXjY48Aapx7LcE,11431
+manabase_solver/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+manabase_solver/remembering_model.py,sha256=ouDv5McBeSSokIEg2aDW6j2KSmbGwb57bpnYOCOesoE,2253
+manabase_solver/remembering_model_test.py,sha256=NL6TCTq87MRtfbJsuDjvSGFnhbj_3ABq8EY0hzl3VBM,325
+manabase_solver-0.1.2.dist-info/LICENSE,sha256=nMi2f--T7S6hAQMis6N5zDUNrP-naVB2dOUwrmk6XOM,1075
+manabase_solver-0.1.2.dist-info/METADATA,sha256=UETcgtQcD8xNDjlWuDxwk272-b_keVVJRiSE9gADkjU,3167
+manabase_solver-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+manabase_solver-0.1.2.dist-info/top_level.txt,sha256=loRjLV5mTCcZG86JFKlWQzW155vFgwWeGVR70b8Vyko,16
+manabase_solver-0.1.2.dist-info/RECORD,,

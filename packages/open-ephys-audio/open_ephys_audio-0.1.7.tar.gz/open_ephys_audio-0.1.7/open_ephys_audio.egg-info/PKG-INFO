@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: open-ephys-audio
+Version: 0.1.7
+Summary: Scripts for acoustic stimulus presentation with open-ephys
+Home-page: https://github.com/melizalab/open-ephys-audio
+Author: Dan Meliza
+Author-email: dan@meliza.org
+Maintainer: Dan Meliza
+Maintainer-email: dan@meliza.org
+License: BSD 3-Clause License
+Keywords: audio playback,neuroscience
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Requires-Dist: numpy<2
+Requires-Dist: sounddevice
+Requires-Dist: pyzmq
+Requires-Dist: soundfile
+Requires-Dist: PyYAML

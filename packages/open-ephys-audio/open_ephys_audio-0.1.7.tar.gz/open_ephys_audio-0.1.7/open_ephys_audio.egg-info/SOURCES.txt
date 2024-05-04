@@ -1,0 +1,15 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+oeaudio/__init__.py
+oeaudio/__main__.py
+oeaudio/core.py
+oeaudio/script.py
+open_ephys_audio.egg-info/PKG-INFO
+open_ephys_audio.egg-info/SOURCES.txt
+open_ephys_audio.egg-info/dependency_links.txt
+open_ephys_audio.egg-info/entry_points.txt
+open_ephys_audio.egg-info/not-zip-safe
+open_ephys_audio.egg-info/requires.txt
+open_ephys_audio.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+oeaudio-present = oeaudio.script:main

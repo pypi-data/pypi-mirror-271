@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PySDKit
+Version: 0.1
+Summary: name
+Home-page: https://github.com/wwhenxuan/PySDKit
+Author: whenxuan
+Author-email: wwhenxuan@gmail.com
+Keywords: signal,decomposition
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.24.3)
+Requires-Dist: scipy (>=1.11.1)
+Requires-Dist: matplotlib (>=3.7.2)
+
+# PySDKit
+A Python library for signal decomposition algorithms

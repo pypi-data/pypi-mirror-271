@@ -1,0 +1,59 @@
+# pyproject.toml
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python-repeatable-iterable"
+version = "2.1.7"
+description = """\
+Add a RepeatableIterable type and a function to obtain it\
+"""
+readme = "README.md"
+authors = [
+    { name = "Laurent Lyaudet", email = "laurent.lyaudet@gmail.com" },
+]
+maintainers = [
+    { name = "Laurent Lyaudet", email = "laurent.lyaudet@gmail.com" },
+]
+license = { file = "COPYING.LESSER" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    """\
+License :: OSI Approved :: \
+GNU Lesser General Public License v3 or later (LGPLv3+)\
+""",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+keywords = ["Python", "Iterable", "Repeatable", "RepeatableIterable"]
+dependencies = [
+   "python-none-objects==1.1.10",
+]
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+    "pylint",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/LLyaudet/python-repeatable-iterable"
+"Bug Tracker" = """\
+https://github.com/LLyaudet/python-repeatable-iterable/issues\
+"""
+
+[tool.black]
+line-length = 70
+
+[tool.isort]
+profile = "black"
+line_length = 70

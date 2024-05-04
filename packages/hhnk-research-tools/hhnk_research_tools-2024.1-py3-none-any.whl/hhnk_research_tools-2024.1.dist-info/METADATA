@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hhnk_research_tools
+Version: 2024.1
+Summary: General tools for analysis, data manipulation and threedi interaction for analysis of water systems
+Home-page: https://github.com/HHNK/hhnk-research-tools
+Author: Wietse van Gerwen
+Author-email: w.vangerwen@hhnk.nl
+Project-URL: Bug Tracker, https://github.com/HHNK/hhnk-research-tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+

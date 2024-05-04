@@ -1,0 +1,2 @@
+include src/*
+exclude src/llmdocgen/tests/*

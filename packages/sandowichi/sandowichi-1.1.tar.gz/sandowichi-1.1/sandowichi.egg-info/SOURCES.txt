@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sandowichi/__init__.py
+sandowichi/main.py
+sandowichi.egg-info/PKG-INFO
+sandowichi.egg-info/SOURCES.txt
+sandowichi.egg-info/dependency_links.txt
+sandowichi.egg-info/requires.txt
+sandowichi.egg-info/top_level.txt

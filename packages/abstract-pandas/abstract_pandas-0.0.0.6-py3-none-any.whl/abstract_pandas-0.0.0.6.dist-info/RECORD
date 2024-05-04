@@ -1,0 +1,13 @@
+abstract_pandas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abstract_pandas/class_manager.py,sha256=ZbF4fAoIcrl3-Eubs4MqoW14F0JSgKWoRhVIcgew0MU,285
+abstract_pandas/excel_gui.py,sha256=teRrERxwb4_yFY6BuGAbjK6Cl9vsm5viM-8nGNCeld0,20479
+abstract_pandas/excel_module.py,sha256=s_RTIpkUBa8qT6njDbBn2LL25dGfeb-1QPM7Ck44zkM,15967
+abstract_pandas/general_functions.py,sha256=57lNM8xMs0DKwOMqrpM8stzGWV12aDnI4Nr-Q1Ah8wk,3227
+abstract_pandas/geo_pandas.py,sha256=qeRL46BeTLdDADdOy51_42xhvGL2TueTDgYx2eiUxuU,5664
+abstract_pandas/geo_spec.py,sha256=Ad-eBdDHx_SpP9cF9rUMudGfT_Y8voU-R-IKOUYzXXU,1464
+abstract_pandas/test_sol.py,sha256=WsKhzckXLi_IPqYwXkDW0OSOO9W_lqrdlmBjGVqmWcI,290
+abstract_pandas/time_module.py,sha256=PzDaUVjN_3DtIge769gJ10OWavVhtsxKDg8LzT1kfl8,5426
+abstract_pandas-0.0.0.6.dist-info/METADATA,sha256=RKIJ5GKViFjUwFQjgAYEhWMRzZwjX-WPgs9kqWkHB-M,610
+abstract_pandas-0.0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+abstract_pandas-0.0.0.6.dist-info/top_level.txt,sha256=57uPfGqAyTX0wg5DQyywFh47gRKF6-5PPnzWNBlBIKo,16
+abstract_pandas-0.0.0.6.dist-info/RECORD,,

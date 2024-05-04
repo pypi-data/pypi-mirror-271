@@ -1,0 +1,1 @@
+from .fazahclass import fazah

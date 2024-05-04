@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: WGSE-NG
+Version: 0.0.4a4
+Summary: Whole Genome Sequencing data manipulation tool
+Home-page: https://github.com/chaplin89/WGSE-NG
+Author: Multiple
+Author-email: 
+Keywords: bioinformatics
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: setuptools
+Requires-Dist: pefile
+Requires-Dist: pycurl
+Requires-Dist: tqdm
+Requires-Dist: google-cloud-storage
+Requires-Dist: sphinx
+Requires-Dist: pytest
+Requires-Dist: pyqt6
+Requires-Dist: pyinstaller
+Requires-Dist: PySide6
+
+Whole Genome Sequencing data manipulation tool

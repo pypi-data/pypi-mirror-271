@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: db-api-server
+Version: 1.0.6
+Summary: db-api-server flask mysql.connector
+Home-page: https://gitlab.com/krink/db-api-server
+Author: K
+Author-email: k@rink.us
+Project-URL: Bug Tracker, https://gitlab.com/krink/db-api-server/issues
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Database :: Database Engines/Servers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: mysql.connector
+
+RESTful API for mysql/mariadb

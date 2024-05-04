@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+spleendatads.py
+spleendatads.egg-info/PKG-INFO
+spleendatads.egg-info/SOURCES.txt
+spleendatads.egg-info/dependency_links.txt
+spleendatads.egg-info/entry_points.txt
+spleendatads.egg-info/requires.txt
+spleendatads.egg-info/top_level.txt
+tests/test_example.py

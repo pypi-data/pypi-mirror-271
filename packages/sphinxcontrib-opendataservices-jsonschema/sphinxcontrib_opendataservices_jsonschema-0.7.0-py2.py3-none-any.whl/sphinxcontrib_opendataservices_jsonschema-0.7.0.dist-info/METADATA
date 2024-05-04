@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-opendataservices-jsonschema
+Version: 0.7.0
+Summary: Sphinx extension to define data structure using JSON Schema
+Home-page: https://github.com/OpenDataServices/sphinxcontrib-opendataservices-jsonschema
+Author: Takeshi KOMIYA & Open Data Services Co-operative
+Author-email: code@opendataservices.coop
+License: BSD
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: docutils
+Requires-Dist: jsonref
+Requires-Dist: jsonpointer
+Requires-Dist: myst-parser
+Requires-Dist: referencing
+Requires-Dist: jscc
+Provides-Extra: test
+Requires-Dist: flake8 <6 ; extra == 'test'
+Requires-Dist: lxml ; extra == 'test'
+Requires-Dist: defusedxml ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+sphinxcontrib-opendataservices-jsonschema
+=========================================
+
+`sphinxcontrib-opendataservices-jsonschema` is Sphinx extension to define data structure using `JSON Schema`_
+
+.. _JSON Schema: http://json-schema.org/
+
+Usage
+-----
+
+Include this extension in conf.py::
+
+    extensions = ['sphinxcontrib.jsonschema']
+
+Write ``jsonschema`` directive into reST file where you want to import schema::
+
+    .. jsonschema:: path/to/your.json
+
+
+Docs
+----
+
+https://sphinxcontrib-opendataservices-jsonschema.readthedocs.io/en/latest/ , or see the docs folder in this repository
+
+PyPi
+----
+
+Available at https://pypi.org/project/sphinxcontrib-opendataservices-jsonschema/
+
+Don't install this package and https://pypi.org/project/sphinxcontrib-jsonschema/ at the same time, as they use the same Python namespace.
+
+History
+-------
+
+This project was started as https://github.com/tk0miya/sphinxcontrib-jsonschema and forked by Open Data Services Co-operative in May 2020. Thanks to all the original authors.
+
+

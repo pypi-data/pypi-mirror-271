@@ -1,0 +1,11 @@
+psutil==5.9.8
+pillow==10.3.0
+requests==2.31.0
+wxpython==4.2.1
+reportlab==4.1.0
+PyMySQL==1.1.0
+DBUtils==3.1.0
+beautifulsoup4==4.12.3
+numpy==1.26.4
+matplotlib==3.8.4
+scipy==1.13.0

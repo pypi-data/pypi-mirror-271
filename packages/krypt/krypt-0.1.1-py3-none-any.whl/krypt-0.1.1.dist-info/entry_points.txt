@@ -1,0 +1,2 @@
+[console_scripts]
+krypt = krypt.main:launch

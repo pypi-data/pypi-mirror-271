@@ -1,0 +1,12 @@
+hklpy2/__init__.py,sha256=xQPTD6U1tV6sucFBmSVC9IqHAw_s2a4uh-1dgSx5WbE,762
+hklpy2/backends/__init__.py,sha256=ST-LIKSwOL8igWnCcClodfrIUjrPkk3w3RB_bzQMpzE,755
+hklpy2/backends/hkl_backend.py,sha256=A5cxa5jUTTds5mclLhBmnfVPas8-RuVrFe5Qm7JbO4o,241
+hklpy2/backends/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hklpy2/backends/tests/test_hkl_backend.py,sha256=ztTY3oEw3ai-Wjkj17NwK5NrcYPfl7JBloIvzFsowSU,146
+hklpy2/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hklpy2/tests/test_solver.py,sha256=wWt5PQNDaeziSIrPBtWUSak37s9mZ4dQ5CbSe-H9dzI,83
+hklpy2-0.0.4.dist-info/LICENSE,sha256=hs6nGlH8bJ_SIjuv5CUkXimJcWAzQNp7Gg1lvPo58Y8,1944
+hklpy2-0.0.4.dist-info/METADATA,sha256=LI6fQzVhudV3HdmHoKgWMvlSZQxlN6_Jjw4JP7B8o1k,4876
+hklpy2-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+hklpy2-0.0.4.dist-info/top_level.txt,sha256=dwdMhaxUP1ESuCJD1ESl_5O0AGMblH9mTP_R4k4aDDs,7
+hklpy2-0.0.4.dist-info/RECORD,,

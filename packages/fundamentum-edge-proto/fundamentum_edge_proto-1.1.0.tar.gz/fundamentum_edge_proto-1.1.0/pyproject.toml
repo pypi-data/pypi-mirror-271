@@ -1,0 +1,92 @@
+[project]
+name = "fundamentum-edge-proto"
+description = "fundamentum-edge protobufs"
+authors = [
+    { name = "Alex Sirois", email = "asirois@dimonoff.com" },
+    { name = "Jonathan Chouinard", email = "jchouinard@dimonoff.com" },
+]
+dynamic = []
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "protobuf>=3.20.3",
+]
+version = "1.1.0"
+
+[project.urls]
+repository = "https://bitbucket.org/amotus/fundamentum-edge-proto-python"
+
+[project.license]
+file = "LICENSE"
+
+[tool.pdm.dev-dependencies]
+build = [
+    "grpcio-tools",
+    "mypy-protobuf",
+    "protoletariat>=3.2.19",
+]
+type-check = [
+    "mypy>=1.9",
+    "types-protobuf>=4.24",
+    "grpc-stubs>=1.53",
+]
+lint = [
+    "ruff>=0.3",
+]
+
+[tool.pdm.scripts]
+compile-proto = "python -m grpc_tools.protoc\n  --proto_path ./proto\n  --python_out ./fundamentum_edge_proto\n  --pyi_out ./fundamentum_edge_proto\n  --grpc_python_out ./fundamentum_edge_proto\n  --mypy_grpc_out ./fundamentum_edge_proto\n  configuration.proto\n  provisioning.proto\n  qos.proto\n  states.proto\n  telemetry.proto\n"
+patch-proto = "protol \n  --in-place \n  --python-out ./fundamentum_edge_proto\n  protoc \n  --proto-path ./proto \n  configuration.proto\n  provisioning.proto\n  qos.proto\n  states.proto\n  telemetry.proto\n"
+test-import = "python -c 'import fundamentum_edge_proto'"
+lint = "ruff check fundamentum_edge_proto"
+type-check = "mypy fundamentum_edge_proto/__init__.py fundamentum_edge_proto/typed_stubs.py"
+
+[tool.pdm.scripts.build-proto]
+composite = [
+    "compile-proto",
+    "patch-proto",
+]
+
+[tool.pdm.scripts.validate]
+composite = [
+    "lint",
+    "type-check",
+    "test-import",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110
+src = [
+    "fundamentum_edge_proto",
+]
+
+[tool.ruff.lint]
+select = [
+    "ALL",
+]
+ignore = [
+    "D100",
+    "D103",
+    "D104",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+check_untyped_defs = true
+namespace_packages = true
+pretty = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[build-system]
+build-backend = "pdm.backend"
+requires = [
+    "pdm-backend",
+]

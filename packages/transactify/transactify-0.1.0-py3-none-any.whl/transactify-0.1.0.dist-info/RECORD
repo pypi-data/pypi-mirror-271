@@ -1,0 +1,10 @@
+training/__init__.py,sha256=DtcOYYQk2SFl_Tu5l28yL2YpT25_uoy7u6YZcA2q_8Q,232
+training/training_model.py,sha256=DMwqHwcT05F-CGo0j0iW7nn0FXgXgm1X7egJdru4nL4,4505
+transactify/__init__.py,sha256=R3WFMmqfEPfaGfEhLMMXukfbiFd_WfoHaORqJeqbzhg,280
+transactify/find_my_txn_category.py,sha256=eOTA5w1ESZSJBLVaj042YF1LJCqx6SmuopiQNYiEWzM,425
+transactify/predict_category.py,sha256=8KMpF9dLnb4-PzLDHeocL-fZ7TyDzenupMUdCRfhWrw,767
+transactify/transactify_model.pkl,sha256=e2xBXtwaCgltKapEc0I60g2O_B7qxRbAfcrtGO-g1SU,6951
+transactify-0.1.0.dist-info/METADATA,sha256=Zn-rIGn7gl-hVh3yliyA80MnxSQJw6ZWsmsg1-k1W94,1175
+transactify-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+transactify-0.1.0.dist-info/top_level.txt,sha256=P9iHieA9-j3e_SuMKQ7hBfMjpur3P6gEvfhrT2JJvfQ,21
+transactify-0.1.0.dist-info/RECORD,,

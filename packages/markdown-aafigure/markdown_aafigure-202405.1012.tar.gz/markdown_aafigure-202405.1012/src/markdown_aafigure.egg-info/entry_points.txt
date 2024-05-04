@@ -1,0 +1,2 @@
+[markdown.extensions]
+markdown_aafigure = markdown_aafigure.extension:AafigureExtension

@@ -1,0 +1,7 @@
+llama_index/vector_stores/vertexaivectorsearch/__init__.py,sha256=3hNd4o-iAVSbjog-VI0HZUZS1-kDdMaoTXdoYPmbaew,119
+llama_index/vector_stores/vertexaivectorsearch/_sdk_manager.py,sha256=wmTVSpe7hOCjX4Jv21I4H-2WIgcB-U7c6_FsCGQyF4Q,4083
+llama_index/vector_stores/vertexaivectorsearch/base.py,sha256=LxlN9_ssXEdV5_wcvL2cGbFHQ3MadNsbEk1nZ7O2w-s,9449
+llama_index/vector_stores/vertexaivectorsearch/utils.py,sha256=mzLQ70syBCw0w0kWQhyz4yh626f6f5am_M5LbMuuFKo,13607
+llama_index_vector_stores_vertexaivectorsearch-0.0.1.dist-info/METADATA,sha256=--fqgZqJvqUbexCN-KU7l5B8zSatATVrqutM7zvwO2E,1071
+llama_index_vector_stores_vertexaivectorsearch-0.0.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_vector_stores_vertexaivectorsearch-0.0.1.dist-info/RECORD,,

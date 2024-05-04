@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "xtdb"
+version = "0.0.0-dev0"
+description = ""
+authors = ["XTDB Team <hello@xtdb.com>"]
+license = "MPL-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+urllib3 = "^2.2.1"
+python-dateutil = "^2.9.0.post0"
+mypy = "^1.9.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+requests = "*"
+
+[tool.pytest_ini.options]
+testpaths = [
+          "xtdb/test/"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

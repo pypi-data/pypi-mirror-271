@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "PyA2Z"
+version = "0.0.1"
+authors = [
+  { name="Bastien Liagre", email="bastienliagre@hotmail.fr" },
+]
+description = "PyA2Z: python for asteroseismic global analysis"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/BLiagre/PyA2Z"
+Issues = "https://github.com/BLiagre/PyA2Z"
+

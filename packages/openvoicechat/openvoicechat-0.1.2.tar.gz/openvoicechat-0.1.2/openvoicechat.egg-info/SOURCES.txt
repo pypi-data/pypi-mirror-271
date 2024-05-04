@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+openvoicechat.egg-info/PKG-INFO
+openvoicechat.egg-info/SOURCES.txt
+openvoicechat.egg-info/dependency_links.txt
+openvoicechat.egg-info/requires.txt
+openvoicechat.egg-info/top_level.txt

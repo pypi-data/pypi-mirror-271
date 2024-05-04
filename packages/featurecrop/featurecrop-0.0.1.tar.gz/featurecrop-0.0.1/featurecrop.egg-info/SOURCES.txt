@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+featurecrop/__init__.py
+featurecrop.egg-info/PKG-INFO
+featurecrop.egg-info/SOURCES.txt
+featurecrop.egg-info/dependency_links.txt
+featurecrop.egg-info/requires.txt
+featurecrop.egg-info/top_level.txt

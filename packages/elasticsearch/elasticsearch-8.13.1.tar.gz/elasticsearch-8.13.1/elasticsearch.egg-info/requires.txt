@@ -1,0 +1,14 @@
+elastic-transport<9,>=8.13
+
+[async]
+aiohttp<4,>=3
+
+[orjson]
+orjson>=3
+
+[requests]
+requests<3.0.0,>=2.4.0
+
+[vectorstore_mmr]
+numpy>=1
+simsimd>=3

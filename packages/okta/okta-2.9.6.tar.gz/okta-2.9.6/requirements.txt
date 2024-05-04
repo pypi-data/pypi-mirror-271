@@ -1,0 +1,20 @@
+aiohttp
+flatdict
+pyyaml
+xmltodict
+yarl
+pycryptodomex
+python-jose==3.3.0
+    ecdsa==0.19.0
+aenum
+pydash
+flake8
+
+# Testing dependencies
+pytest
+pytest-asyncio
+pytest-mock
+pytest-recording
+pyfakefs
+aenum==3.1.11
+pydash

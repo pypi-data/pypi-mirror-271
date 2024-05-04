@@ -1,0 +1,9 @@
+aenum==3.1.11
+aiohttp
+flatdict
+pycryptodomex
+pydash
+python-jose
+pyyaml
+xmltodict
+yarl

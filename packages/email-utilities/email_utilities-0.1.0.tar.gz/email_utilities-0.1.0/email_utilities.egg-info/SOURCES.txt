@@ -1,0 +1,10 @@
+setup.py
+email_utilities/__init__.py
+email_utilities/email_conversion.py
+email_utilities/email_insights.py
+email_utilities.egg-info/PKG-INFO
+email_utilities.egg-info/SOURCES.txt
+email_utilities.egg-info/dependency_links.txt
+email_utilities.egg-info/top_level.txt
+tests/test_email_conversion.py
+tests/test_email_insights.py

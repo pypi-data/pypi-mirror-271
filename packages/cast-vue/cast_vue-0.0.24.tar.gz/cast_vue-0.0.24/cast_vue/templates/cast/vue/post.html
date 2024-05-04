@@ -1,0 +1,7 @@
+{% extends "./base.html" %}
+{% block vuejs-data %}
+  {{ block.super }}
+  data-vue-route-name="PostDetail" {# Used to determine the route name of vue route #}
+  data-post-slug="{{ page.slug }}" {# Used to determine the slug parameter of vue route #}
+  data-page-type="{{ page.page_type }}" {# Used to determine the type parameter for the api url #}
+{% endblock vuejs-data %}

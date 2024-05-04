@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+roysolver.egg-info/PKG-INFO
+roysolver.egg-info/SOURCES.txt
+roysolver.egg-info/dependency_links.txt
+roysolver.egg-info/top_level.txt

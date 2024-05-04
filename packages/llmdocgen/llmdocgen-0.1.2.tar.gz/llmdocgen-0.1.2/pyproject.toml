@@ -1,0 +1,19 @@
+[build-system]
+requires = ['setuptools>=40.8.0']
+build-backend = 'setuptools.build_meta'
+
+[tool.black]
+target-version = ['py39']
+
+[tool.bumpver]
+current_version = "0.1.2"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = false
+tag = false
+push = false
+
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"']
+"src/llmdocgen/__init__.py" = ["{version}"]

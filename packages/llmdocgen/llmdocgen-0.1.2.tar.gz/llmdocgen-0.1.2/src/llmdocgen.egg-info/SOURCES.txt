@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/llmdocgen/__init__.py
+src/llmdocgen/enrich.py
+src/llmdocgen/executor.py
+src/llmdocgen/main.py
+src/llmdocgen/settings.py
+src/llmdocgen.egg-info/PKG-INFO
+src/llmdocgen.egg-info/SOURCES.txt
+src/llmdocgen.egg-info/dependency_links.txt
+src/llmdocgen.egg-info/not-zip-safe
+src/llmdocgen.egg-info/requires.txt
+src/llmdocgen.egg-info/top_level.txt

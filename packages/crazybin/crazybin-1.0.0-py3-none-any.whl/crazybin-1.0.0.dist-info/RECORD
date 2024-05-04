@@ -1,0 +1,11 @@
+crazybin/__init__.py,sha256=HRw5zkK2NlqYTqJG6oJFaYcY854vk6GP-OqGaCyISRY,4149
+crazybin/objects.py,sha256=r4n9vNXbHocAX4H4XuliadTppvnqEjpeeE_xE4KyV2c,19298
+crazybin/tiles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crazybin/tiles/frog.json,sha256=SnG8WT1BX86DuUsaR8RKGOl1rXMxPFel4g17S3TFp1g,13239
+crazybin/tiles/hex.json,sha256=PBeG2j4LyMPGo7ouBTEj8jBle5GY6UBRlCU41Iae-ZI,866
+crazybin/tiles/hex_rhomb.json,sha256=1Wr3nrZZFM9StiS-ZY09l0WjWUyl3oilCys7bWjxBPc,4788
+crazybin/tiles/reptile.json,sha256=tV1KWG2CJTxYvgYQJ-WqBFIYAD-qUAsAUFoNi5wu2O4,14749
+crazybin-1.0.0.dist-info/METADATA,sha256=4ZzLbGrfue8nQ0LOec8769XFrTbvEFalOvS5zyiKO8Y,5934
+crazybin-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+crazybin-1.0.0.dist-info/top_level.txt,sha256=IDaFk-Sg13aBAueL19etXsfhLnlnFmEa7l5sh3xmSJs,9
+crazybin-1.0.0.dist-info/RECORD,,

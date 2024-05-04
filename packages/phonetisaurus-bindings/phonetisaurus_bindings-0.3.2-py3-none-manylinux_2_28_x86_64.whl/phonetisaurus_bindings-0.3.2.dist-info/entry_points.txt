@@ -1,0 +1,9 @@
+[console_scripts]
+estimate-ngram = phonetisaurus.commands:estimate_ngram
+evaluate-ngram = phonetisaurus.commands:evaluate_ngram
+interpolate-ngram = phonetisaurus.commands:interpolate_ngram
+phonetisaurus-align = phonetisaurus.commands:ph_align
+phonetisaurus-arpa2wfst = phonetisaurus.commands:ph_arpa2wfst
+phonetisaurus-g2pfst = phonetisaurus.commands:ph_g2pfst
+phonetisaurus-g2prnn = phonetisaurus.commands:ph_g2prnn
+rnnlm = phonetisaurus.commands:rnnlm

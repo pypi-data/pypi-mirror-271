@@ -1,0 +1,1 @@
+from phonetisaurus.Phonetisaurus import PhonetisaurusScript as Phonetisaurus

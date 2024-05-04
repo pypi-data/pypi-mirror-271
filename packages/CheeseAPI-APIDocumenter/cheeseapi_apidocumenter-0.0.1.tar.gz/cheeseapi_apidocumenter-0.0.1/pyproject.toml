@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project]
+name = "CheeseAPI_APIDocumenter"
+version = "0.0.1"
+description = "一款基于CheeseAPI的api接口文档管理器。"
+readme = "README.md"
+license-files = { paths = [ "LICENSE" ] }
+authors = [
+    { name = "Cheese Unknown", email = "cheese@cheese.ren" }
+]
+keywords = [ 'CheeseAPI', 'Document', 'Documenter', 'API' ]
+
+dependencies = [
+    "CheeseAPI==1.1.*",
+    "click"
+]
+
+[project.scripts]
+APIDocumenter = "CheeseAPI_APIDocumenter.command:command"
+
+[project.urls]
+Source = "https://github.com/CheeseUnknown/CheeseAPI_APIDocumenter"
+
+[tool.hatch.build.targets.sdist]
+include = [ "/CheeseAPI_APIDocumenter" ]

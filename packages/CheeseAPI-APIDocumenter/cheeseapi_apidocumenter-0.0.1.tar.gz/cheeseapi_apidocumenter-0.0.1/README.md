@@ -1,0 +1,102 @@
+# **CheeseAPI_APIDocumenter**
+
+一款基于[CheeseAPI](https://github.com/CheeseUnknown/CheeseAPI)的API接口文档管理器，在代码中使用装饰器进行文档注册，并构建出API文档。
+
+目前项目仍处于开发阶段，仅支持输出raw源文件以及markdown文档；在未来期望能支持更多类型的文档，以及创建支持APIDocumenter源文件格式的API文档体系。
+
+## **安装**
+
+系统要求：Linux。
+
+Python要求：目前仅保证支持3.11及以上版本的Python，新版本会优先支持Python的最新稳定版本。
+
+```bash
+pip install CheeseAPI_APIDocumenter
+```
+
+## **使用**
+
+CheeseAPI_APIDocumenter是[CheeseAPI](https://github.com/CheeseUnknown/CheeseAPI)的一款插件，但它并不需要在入口文件中注册。
+
+```python
+from CheeseAPI import app, WebsocketServer
+from CheeseAPI_APIDocumenter import documenter
+
+app.localModules.append('CheeseAPI_APIDocumenter') # 该行代码可省略
+
+@documenter('注册用户', {
+    'body': {
+        'type': 'form-data',
+        'params': [
+            {
+                'key': 'username',
+                'type': 'str',
+                'description': '用户名；长度为5-20。'
+            },
+            {
+                'key': 'password',
+                'type': 'str',
+                'description': '由sha256一次加密后的密码。'
+            },
+            {
+                'key': 'gender',
+                'type': 'str',
+                'default': '"UNKNOWN"',
+                'description': '支持“MALE”、“FEMALE”和“UNKNOWN”。'
+            },
+            {
+                'key': 'birthDate',
+                'type': 'timestamp',
+                'required': True,
+                'description': '出生日期。'
+            }
+        ]
+    }
+}, [
+    {
+        'status': 201,
+        'description': '注册成功',
+        'body': {
+            'type': 'text',
+            'description': '该用户的uuid。'
+        }
+    },
+    {
+        'status': 409,
+        'description': '该用户名已被注册'
+    }
+])
+@app.route.post('/register')
+async def register(**_):
+    ...
+
+@documenter('自定义websocket', example = '对于websocket，由于其通讯的灵活性，请在此进行更细节的描述')
+@app.route.websocket('/')
+class MyWebsocket(WebsocketServer):
+    ...
+
+if __name__ == '__main__':
+    app.run()
+```
+
+在当前目录下执行命令，会自动在`./document/`下生成API文档：
+
+```bash
+APIDocumenter
+```
+
+生成文档的规则为：
+
+- 每个本地模块会生成一个同模块名的文件，里面包含该模块内的所有受`@documenter`注册的API。
+
+- 非模块内的接口会统一生成在`index`文件内。
+
+- 依赖模块的接口并不会被加载。
+
+更多生成命令选项请查看[Command](https://github.com/CheeseUnknown/CheeseAPI_APIDocumenter/blob/master/document/Command.md)。
+
+## **更多...**
+
+### 1. [**Documenter**](https://github.com/CheeseUnknown/CheeseAPI_APIDocumenter/blob/master/document/Documenter.md)
+
+### 1. [**Command (命令参数)**](https://github.com/CheeseUnknown/CheeseAPI_APIDocumenter/blob/master/document/Command.md)

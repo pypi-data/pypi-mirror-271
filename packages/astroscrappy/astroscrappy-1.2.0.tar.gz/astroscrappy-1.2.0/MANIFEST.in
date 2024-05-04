@@ -1,0 +1,19 @@
+include README.rst
+include CHANGES.rst
+include setup.cfg
+include LICENSE.rst
+include pyproject.toml
+include astroscrappy/tests/coveragerc
+
+recursive-exclude . astroscrappy.c
+recursive-exclude astroscrappy/utils image_utils.c median_utils.c
+recursive-include astroscrappy *.pyx *.pxd
+recursive-include docs *
+recursive-include licenses *
+recursive-include scripts *
+
+prune build
+prune docs/_build
+prune docs/api
+
+global-exclude *.pyc *.o

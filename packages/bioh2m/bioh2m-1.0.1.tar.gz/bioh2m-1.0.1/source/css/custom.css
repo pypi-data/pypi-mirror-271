@@ -1,0 +1,12 @@
+/* custom.css */
+.scroll-table-container {
+    overflow-x: auto;
+    margin-bottom: 1em;
+}
+
+.wy-table-responsive table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/myfigure/__init__.py
+src/myfigure/myfigure.py
+src/myfigure.egg-info/PKG-INFO
+src/myfigure.egg-info/SOURCES.txt
+src/myfigure.egg-info/dependency_links.txt
+src/myfigure.egg-info/requires.txt
+src/myfigure.egg-info/top_level.txt
+tests/test_myfigure.py

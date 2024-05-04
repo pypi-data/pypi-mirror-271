@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: forcys
+Version: 0.1.3
+Summary: 
+Author: panagop
+Author-email: gpanagop@gmail.com
+Requires-Python: >=3.11,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: basemap (>=1.4.1,<2.0.0)
+Requires-Dist: cdsapi (>=0.6.1,<0.7.0)
+Requires-Dist: copernicusmarine (>=1.0.4,<2.0.0)
+Requires-Dist: eqsig (>=1.2.11,<2.0.0)
+Requires-Dist: imageio (>=2.34.0,<3.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: lab (>=8.1,<9.0)
+Requires-Dist: matplotlib (>=3.8.3,<4.0.0)
+Requires-Dist: netCDF4 (>=1.6.5,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: streamlit (>=1.31.1,<2.0.0)
+Requires-Dist: streamlit-authenticator (>=0.3.2,<0.4.0)
+Requires-Dist: twine (>=5.0.0,<6.0.0)
+Requires-Dist: virocon (>=2.3.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+

@@ -1,0 +1,10 @@
+forcys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forcys/nc/__init__.py,sha256=s64C5M9DuUUAtMcyqKCffpz7AwsSIwgjemX4EIQItQs,79
+forcys/nc/nc_datafile.py,sha256=1cbu8Bh0iSUXa_pmvcrJOdJbaiDVTZJxJzJ1pZuyH14,2960
+forcys/nc/nc_variable.py,sha256=xv9FVzT2atijz6Bh46VdJrL8OqJwjmkzf9_DbHBXkiE,4212
+forcys/time_funcs.py,sha256=25I4iStuZByhzhgm7IsXBmbSL3BPIzq5N9C5GnNuvw4,130
+forcys/wavedata.py,sha256=eem5kXptXhgvYUJPCAb_C0Tv7UA91-OHOtilJWcApvo,5280
+forcys-0.1.3.dist-info/LICENSE,sha256=IxEZlG-NvEEnlrrx4lAojSdKkd3h4GxxwzfEA5Erkkk,1084
+forcys-0.1.3.dist-info/METADATA,sha256=PzQ8MV0I0kXjMBVrFCvwBPQrnlXKUDz9WqLpJWIMu-Y,993
+forcys-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+forcys-0.1.3.dist-info/RECORD,,

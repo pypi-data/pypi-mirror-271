@@ -1,0 +1,3 @@
+xarray>=2022.12.0
+pyvista>=0.37
+scooby

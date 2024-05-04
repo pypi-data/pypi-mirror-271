@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pivol"
+version = "0.1.0"
+description = "Pretrained Implied Volatility Models"
+authors = ["simu.ai <thijs@simu.ai>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.21"
+ConfigArgParse = "^1.5"
+torch = "^2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+pytest-cov = "^5.0.0"
+sphinx = "^7.3.7"
+bump2version = "^1.0.1"
+sphinx-rtd-theme = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,12 @@
+tree_sitter_c_sharp/__init__.py,sha256=oLnV308DUXl6uLEDWZggOOeC2yNMWVPexuqY7IC0mMk,85
+tree_sitter_c_sharp/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_c_sharp/_binding.pyd,sha256=Rz5xt6dsTu2AMI69lrJcpVqXWnaIW1Ski4SN2F1KJ6E,5553152
+tree_sitter_c_sharp/binding.c,sha256=6SsF3yVxrvJfozX3hMh-3-G3tGxB8XoPxJwz_MqjVbc,638
+tree_sitter_c_sharp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_c_sharp/queries/highlights.scm,sha256=d89SCgJWphtm24S2g4YdeP3-TGckpcu3_WwutbVbxUQ,2776
+tree_sitter_c_sharp/queries/tags.scm,sha256=TtCNoBYuzUggasNL6-fql1eox7YX9q2PcMFo1oXVFP4,848
+tree_sitter_c_sharp-0.21.1.dist-info/LICENSE,sha256=d4-31juMGETaMVZIwC8yXEcTpvSl0ZZE_UE0IUIndtM,1133
+tree_sitter_c_sharp-0.21.1.dist-info/METADATA,sha256=npMe6HPK8jrVdSQFaEaNqxDj9fDLMlzIL1mleZDMCaE,2753
+tree_sitter_c_sharp-0.21.1.dist-info/WHEEL,sha256=UyMHzmWA0xVqVPKfTiLs2eN3OWWZUl-kQemNbpIqlKo,100
+tree_sitter_c_sharp-0.21.1.dist-info/top_level.txt,sha256=kh378M1Isj-_JaoT3wwTEKiVHM6hIw9MfQelghpONuU,29
+tree_sitter_c_sharp-0.21.1.dist-info/RECORD,,

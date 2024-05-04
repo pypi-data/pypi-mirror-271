@@ -1,0 +1,2 @@
+[console_scripts]
+coomer_favlink_generator = coomer_favlink_generator.link_generator:main

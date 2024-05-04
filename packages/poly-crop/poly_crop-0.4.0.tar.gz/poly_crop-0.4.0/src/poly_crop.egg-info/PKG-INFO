@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: poly-crop
+Version: 0.4.0
+Summary: Python library for cropping polygons in images
+Author-email: Elias Jensen <ejkonge@gmail.com>
+Keywords: image,processing,crop,polygon
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: opencv-python>=4.5.3
+Requires-Dist: pillow>=8.3.1
+
+# Poly_Crop
+poly_crop is a Python library for cropping polygons in images.
+
+## Installation
+You can install poly_crop via pip:
+
+```python
+pip install poly_crop
+```
+## Usage
+### Crop Function
+The `crop` function is used to crop a polygonal region from an image.
+
+```python
+from poly_crop import crop as pc
+
+# Example usage
+image_path = "path/to/your/image.jpg"
+image = cv2.imread(image_path)
+vertices = [(100, 100), (175, 50), (300, 100), (175, 150), (170, 100)]
+
+cropped_image = pc.crop(image, vertices, resize=False)
+```
+### Preview Function
+The `preview` function is used to draw a preview of a polygonal region on an image.
+
+```python
+from poly_crop import preview as pc
+
+# Example usage
+image_path = "path/to/your/image.jpg"
+image = cv2.imread(image_path)
+vertices = [(100, 100), (175, 50), (300, 100), (175, 150), (170, 100)]
+
+preview_image = pc.preview(image, vertices, colour=(255, 0, 0), width=2)
+```
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

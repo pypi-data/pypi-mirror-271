@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/poly_crop/__init__.py
+src/poly_crop/crop.py
+src/poly_crop.egg-info/PKG-INFO
+src/poly_crop.egg-info/SOURCES.txt
+src/poly_crop.egg-info/dependency_links.txt
+src/poly_crop.egg-info/requires.txt
+src/poly_crop.egg-info/top_level.txt

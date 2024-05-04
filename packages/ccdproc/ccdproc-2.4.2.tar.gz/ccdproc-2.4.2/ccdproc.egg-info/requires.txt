@@ -1,0 +1,14 @@
+numpy>=1.21
+astropy>=5.0.1
+scipy
+astroscrappy>=1.0.8
+reproject>=0.7
+scikit-image
+
+[docs]
+sphinx-astropy
+matplotlib
+
+[test]
+pytest-astropy>=0.10.0
+memory_profiler

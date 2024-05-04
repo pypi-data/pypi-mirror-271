@@ -1,0 +1,10 @@
+import_deps/__init__.py,sha256=wv__6rK_rUvLh5WbhBlChrxcaKHVav5hiazvKwxkQ5M,5124
+import_deps/__main__.py,sha256=0v5hWwOijAbBmpuk1-wEPU8QHFJ4akgqNLfoT_HDwz8,739
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_import_deps.py,sha256=1_aiAZzkoJP_BZI3Y0jTsomMA9IcpiU30BFDBwC7IIY,6545
+import_deps-0.3.0.dist-info/LICENSE,sha256=QwwteZq_vQLzLgHwUSS_GcRMw8xG4ZE8kn3nSnQ241s,1087
+import_deps-0.3.0.dist-info/METADATA,sha256=wZQ1DDaeG2bqofCty5T__o0ZddUU4hxVmO9cQElXkH4,4001
+import_deps-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+import_deps-0.3.0.dist-info/entry_points.txt,sha256=JTjbmaQ26nmZ3hc1XrJyrH8nwLLGJ-rK9Nq68lvbJts,59
+import_deps-0.3.0.dist-info/top_level.txt,sha256=RFkzTw86fFDJGYMvA0PfnJ-XKq03TRO9_1vHnJlPVyg,18
+import_deps-0.3.0.dist-info/RECORD,,

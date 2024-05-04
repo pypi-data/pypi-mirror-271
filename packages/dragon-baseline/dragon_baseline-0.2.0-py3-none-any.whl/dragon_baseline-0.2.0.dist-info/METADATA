@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dragon_baseline
+Version: 0.2.0
+Summary: Baseline training algorithm for the DRAGON Challenge
+Home-page: https://github.com/DIAGNijmegen/dragon_baseline
+Author: Joeran Bosma
+Author-email: Joeran.Bosma@radboudumc.nl
+Project-URL: Bug Tracker, https://github.com/DIAGNijmegen/dragon_baseline/issues
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch ==2.0.1
+Requires-Dist: transformers ==4.35.0
+Requires-Dist: datasets
+Requires-Dist: evaluate
+Requires-Dist: accelerate
+Requires-Dist: xformers
+Requires-Dist: pandas
+Requires-Dist: seqeval
+Requires-Dist: evalutils ==0.4.2
+Provides-Extra: testing
+Requires-Dist: pytest >=6.0 ; extra == 'testing'
+Requires-Dist: pytest-cov >=2.0 ; extra == 'testing'
+Requires-Dist: mypy >=0.910 ; extra == 'testing'
+Requires-Dist: flake8 >=3.9 ; extra == 'testing'
+Requires-Dist: tox >=3.24 ; extra == 'testing'
+
+# DRAGON Baseline Algorithm
+
+This repository provides the baseline code for the [DRAGON Challenge](https://dragon.grand-challenge.org).

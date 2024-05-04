@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: gradio_collection
+Version: 1.0.0
+Summary: A collection of Custom Gradio components.
+Home-page: https://github.com/dwancin/gradio-collection/
+Author: Daniel Ialcin Misser Westergaard
+Keywords: gradio,gradio-custom-component,meta-package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: gradio <5.0,>=4.0
+Requires-Dist: gradio-toggle
+Requires-Dist: gradio-grid
+Requires-Dist: gradio-imagefeed
+Requires-Dist: gradio-highlightedcode
+Requires-Dist: gradio-modal
+Requires-Dist: gradio-pdf
+Requires-Dist: gradio-calendar
+Requires-Dist: gradio-imageslider
+Requires-Dist: gradio-folium
+Requires-Dist: gradio-notebook
+
+# Gradio Collection
+<div style="display: flex; gap: 7px;">
+  <a href="https://pypi.org/project/gradio-collection/" target="_blank"><img alt="PyPI" src="https://img.shields.io/pypi/v/gradio-collection"></a>
+  <a href="https://github.com/dwancin/gradio-collection" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/GitHub-white?logo=github&logoColor=black"></a>
+  <a href="https://huggingface.co/spaces/dwancin/gradio_collection" target="_blank"><img alt="Space" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-%23097EFF?style=flat&logoColor=black"></a>
+</div>
+
+The `gradio_collection` package is a *meta-package* that consolidates a range of [custom Gradio components](https://www.gradio.app/guides/custom-components-in-five-minutes) into one easily installable collection.
+
+## Installation
+To install the package, execute this command in your terminal:
+
+```bash
+pip install gradio_collection
+```
+
+## Usage
+To use the package, add this import statement to your Python script:
+
+```python
+import gradio_collection as gc
+```
+
+## Components
+This package includes custom Gradio components designed to enhance your user interfaces:
+
+| Component           | Description                                                                                         |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| **Toggle**          | A button that toggles between on and off states.                                                    |
+| **Calendar**        | A Textbox for selecting dates with a built-in calendar.                                             |
+| **ImageFeed**       | A vertical feed of images that updates dynamically as new images are generated.                     |
+| **HighlightedCode** | Enhances the Code component with line highlighting capabilities.                                    |
+| **Modal**           | A popup modal for displaying additional information or collecting inputs without leaving the page.  |
+| **PDF**             | A component for displaying PDF files.                                                               |
+| **ImageSlider**     | Allows users to compare two images side-by-side.                                                    |
+| **Folium**          | Integrates Folium maps, enabling the display of interactive maps.                                   |
+| **Notebook**        | Creates a notebook playground within Hugging Face Spaces, simplifying the execution of live code.   |
+
+## Block Layouts
+The package also includes custom layout elements for Gradio Blocks:
+
+| Component           | Description                                                                                         |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| **Grid**            | A layout element that renders all children in a two dimensional grid system.                        |
+| **Modal**           | A popup modal within Blocks for displaying additional information or collecting inputs.             |
+| **Notebook**        | Creates a notebook playground within Hugging Face Spaces, simplifying the execution of live code.   |
+
+## Examples
+Below is an example using the `Toggle` component in a Gradio Blocks interface:
+
+```python
+import gradio as gr
+import gradio_collection as gc
+
+def toggle_action(value):
+    return "Toggle is **on**." if value else "Toggle is **off**."
+
+def run_test():
+    with gr.Blocks() as demo:
+        toggle = gc.Toggle(label="Input", show_label=True, info="Toggle this button.")
+        output = gr.Label(label="Output")
+    
+        toggle.change(fn=toggle_action, inputs=toggle, outputs=output)
+    
+    demo.launch()
+
+if __name__ == '__main__':
+    run_test()
+```
+
+## Acknowledgements
+Special thanks to the authors of the individual Gradio components included in this collection.
+
+| Author               | Packages                               
+|----------------------|--------------------------------------------------------------------------------------------------------------------------|
+| [**Daniel Ialcin Misser Westergaard**](https://huggingface.co/dwancin) | [*`gradio_collection`*](https://pypi.org/project/gradio-collection), [`gradio_toggle`](https://pypi.org/project/gradio-toggle), [`gradio_grid`](https://pypi.org/project/gradio-grid)                              |
+| [**Freddy Boulton**](https://huggingface.co/freddyaboulton) | [`gradio_pdf`](https://pypi.org/project/gradio-pdf), [`gradio_calendar`](https://pypi.org/project/gradio-calendar), [`gradio_folium`](https://pypi.org/project/gradio-folium)                      |
+| [**Ali Abdalla**](https://huggingface.co/aliabd) | [`gradio_imagefeed`](https://pypi.org/project/gradio-imagefeed)                              |
+| [**Abubakar Abid**](https://huggingface.co/abidlabs) | [`gradio_highlightedcode`](https://pypi.org/project/gradio-highlightedcode)              |
+| [**Ali Abid**](https://huggingface.co/aliabid94) | [`gradio_modal`](https://pypi.org/project/gradio-modal)                                      |
+| [**Pete**](https://huggingface.co/pngwn) | [`gradio_imageslider`](https://pypi.org/project/gradio-imageslider)                                  |
+| [**LastMile AI**](https://huggingface.co/lastmileai) | [`gradio_notebook`](https://pypi.org/project/gradio-notebook)                            |

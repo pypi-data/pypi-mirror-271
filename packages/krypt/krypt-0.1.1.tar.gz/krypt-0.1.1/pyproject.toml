@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "krypt"
+version = "0.1.1"
+authors = [
+  { name="Kubermate", email="168834048+kubermate@users.noreply.github.com" },
+]
+description = "A helper tool for file encryption in Git repositories primarily aimed at encrypting Kubernetes secrets and other sensitive information to be later used in a CI/CD pipeline"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+keywords=["kubernetes", "gitops", "encryption", "secrets", "ci/cd pipeline"]
+dependencies=[
+    "cffi>=1.16.0",
+    "cryptography>=42.0.5",
+    "pycparser>=2.22"
+]
+scripts={ krypt="krypt.main:launch" }
+
+[project.urls]
+Homepage = "https://github.com/kubertools/krypt"
+Issues = "https://github.com/kubertools/krypt/issues"

@@ -1,0 +1,2 @@
+[console_scripts]
+micview = micview.run:main

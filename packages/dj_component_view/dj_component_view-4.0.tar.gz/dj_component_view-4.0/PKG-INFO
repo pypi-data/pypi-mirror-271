@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: dj_component_view
+Version: 4.0
+Summary: Django component view for jinjax
+Author-email: Stephan Fitzpatrick <knowsuchagency@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: django
+Requires-Dist: jinjax
+Project-URL: Source, https://github.com/knowsuchagency/dj_component_view
+
+# dj_component_view
+
+This project lets you create reusable Django views from [jinjax](https://jinjax.scaletti.dev/) templates.
+
+## Usage
+
+### Greeting.jinja
+
+```jinja
+<h1>hello, {{ name }}</h1>
+```
+
+### views.py
+
+```python
+from dj_component_view import ComponentView
+from djecorator import Route
+
+route = Route()
+
+@route("/greet")
+class GreetView(ComponentView):
+    component = "Greeting"
+
+    def context(self, request):
+        return {
+            "name": request.GET.get("name", "World"),
+        }
+```
+
+### index.html with [htmx](https://htmx.org)
+
+```html
+<form hx-get="/greet" hx-trigger="submit">
+  <input type="text" name="name" placeholder="Enter your name" />
+  <button type="submit">Greet</button>
+</form>
+```
+
+### Specifying the Allowed HTTP Methods
+
+You can set the `methods` class variable in your ComponentView subclass to specify the allowed HTTP methods for the view. The default value is `["GET"]`.
+
+- If `methods` is set to `["GET"]`, only GET requests will be allowed.
+- If `methods` is set to `["POST"]`, only POST requests will be allowed.
+- If `methods` is set to `["GET", "POST"]`, both GET and POST requests will be allowed.
+
+```python
+class CustomView(ComponentView):
+    component = "CustomComponent"
+    methods = ["get"]
+
+    ...
+
+```
+
+If the incoming request's method does not match any of the specified methods, a 405 Method Not Allowed response will be returned.
+
+### Overriding the get and post Methods
+
+If you need more control over the handling of GET and POST requests, you can override the get and post methods in your ComponentView subclass.
+
+```python
+@route("/custom")
+class CustomView(ComponentView):
+    component = "CustomComponent"
+    methods = ["get"]
+
+    def get(self, request, *args, **kwargs):
+        # Custom implementation of the GET method
+        ...
+```
+

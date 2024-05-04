@@ -1,0 +1,2 @@
+[console_scripts]
+pack = deb_pack.main:main

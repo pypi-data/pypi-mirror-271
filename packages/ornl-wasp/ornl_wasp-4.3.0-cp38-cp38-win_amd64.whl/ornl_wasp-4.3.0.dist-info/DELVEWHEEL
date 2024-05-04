@@ -1,0 +1,2 @@
+Version: 1.6.0
+Arguments: ['J:\\GitLab-Runner\\builds\\BbC8WyFZ\\0\\lefebvre\\wasp\\build\\miniconda3\\envs\\wasp_ci\\Scripts\\delvewheel', 'repair', '-w', 'J:\\GitLab-Runner\\builds\\BbC8WyFZ\\0\\lefebvre\\wasp\\build\\wasppy\\dist', 'J:\\GitLab-Runner\\builds\\BbC8WyFZ\\0\\lefebvre\\wasp\\build\\wasppy\\dist\\ornl_wasp-4.3.0-cp38-cp38-win_amd64.whl']

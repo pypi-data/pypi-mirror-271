@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: py4tga
+Version: 0.1.0
+Summary: Python for thermogravimetry analysis
+License: MIT
+Author: Rahul Ramesh Nair
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ipykernel (>=6.29.4,<7.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pip (>=23.3.1,<24.0.0)
+Requires-Dist: scipy (>=1.13.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+ py4tga
+
+[![image](https://img.shields.io/pypi/v/py4tga.svg)](https://pypi.python.org/pypi/py4tga)
+
+[![image](https://img.shields.io/travis/rahulrameshnair/py4tga.svg)](https://travis-ci.com/rahulrameshnair/py4tga)
+
+[![Documentation Status](https://readthedocs.org/projects/py4tga/badge/?version=latest)](https://py4tga.readthedocs.io/en/latest/?version=latest)
+
+Python for thermogravimetry analysis
+
+-   Free software: MIT license
+-   Documentation: <https://py4tga.readthedocs.io>. (not added yet)
+
+## Features
+
+-   TODO
+
+## Credits
+
+This package was created with
+[Cookiecutter](https://github.com/audreyr/cookiecutter) and the
+[audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+project template.

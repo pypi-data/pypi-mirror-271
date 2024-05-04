@@ -1,0 +1,18 @@
+# ./swan/common/exception.py
+
+
+class SwanAPIException(Exception):
+    
+    def __init__(self, message: str = ""):
+        self.message = message
+
+    def __str__(self):
+        return 'SwanAPIRequestException: %s' % self.message
+
+
+class SwanRequestException(Exception):
+    pass
+
+
+class SwanParamsException(Exception):
+    pass

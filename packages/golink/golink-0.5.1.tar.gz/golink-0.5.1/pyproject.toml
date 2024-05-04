@@ -1,0 +1,13 @@
+[project]
+name = "golink"
+version = "0.5.1"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "golink"
+version = "0.5.1"
+description = "A simple URL shortener"
+authors = ["Max Vogel", "Logan Engstrom"]

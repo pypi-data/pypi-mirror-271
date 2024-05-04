@@ -1,0 +1,7 @@
+README.md
+armenian_transliterate.py
+setup.py
+armenian_latin_to_armenian_hy.egg-info/PKG-INFO
+armenian_latin_to_armenian_hy.egg-info/SOURCES.txt
+armenian_latin_to_armenian_hy.egg-info/dependency_links.txt
+armenian_latin_to_armenian_hy.egg-info/top_level.txt

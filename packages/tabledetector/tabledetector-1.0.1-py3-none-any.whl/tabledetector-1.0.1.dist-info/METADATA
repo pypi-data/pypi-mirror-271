@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: tabledetector
+Version: 1.0.1
+Summary: End-to-End table structure detector
+Home-page: https://github.com/rajban94/TableDetector
+Download-URL: https://github.com/rajban94/TableDetector.git
+Author: Rishav Banerjee
+Author-email: rishavbanerjee10.rb@gmail.com
+License: MIT License
+Keywords: table detector
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: scipy
+Requires-Dist: pdf2image
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: jinja2
+Requires-Dist: easyocr
+
+# Tabledetector
+
+[![PyPI](https://img.shields.io/pypi/v/tabledetector)](https://pypi.org/project/tabledetector/)
+
+Tabledetector is a Python package that takes PDFs or Images as input, checks the alignment, re-aligns if required, detects the table structure, extracts data, return as pandas dataframe for further use. The current implementation focuses on bordered, semibordered and unbordered table structures.
+
+## Features
+
+- **PDF Input:** Accepts PDF/Image files as input for table detection.
+- **Alignment Check:** Verifies and adjusts alignment of input.
+- **Table Detection:** Identifies bordered, semibordered and unbordered tables in the PDF/Image File.
+- **Table Extraction:** Extract the tabular data in the form of dataframe.
+
+## Libraries Used
+
+- Python 3.x
+- OpenCV
+- NumPy
+- pdf2image
+- Pillow
+- scipy
+- jinja2
+- easyocr
+- pandas
+
+## Create and Activate Environment
+```bash
+conda create -n <env_name> python=3.7
+conda activate <env_name>
+```
+## Installation of package using pip
+
+```bash
+pip install tabledetector
+```
+
+## Clone the repository for latest development release
+
+```bash
+git clone https://github.com/rajban94/TableDetector.git
+```
+
+## Dependency
+To utilize this library on Windows, ensure that Poppler is installed and its path is added to the environment variables.
+
+## Usage
+For bordered table detection:
+```bash
+import tabledetector as td
+result = td.detect(pdf_path="pdf_path", method="bordered")
+```
+
+For semibordered table detection:
+```bash
+import tabledetector as td
+result = td.detect(pdf_path="pdf_path", method="semibordered")
+```
+
+For unbordered table detection:
+```bash
+import tabledetector as td
+result = td.detect(pdf_path="pdf_path", method="unbordered")
+```
+If no method is mentioned in that case it will check for all the methods and will provide the result accordingly.

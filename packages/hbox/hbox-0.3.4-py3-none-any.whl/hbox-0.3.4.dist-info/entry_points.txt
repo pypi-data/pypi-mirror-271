@@ -1,0 +1,3 @@
+[console_scripts]
+hbox=hbox.main:run
+

@@ -1,0 +1,6 @@
+python-helios-client (0.4-git20240503-1-ct1) mantic; urgency=medium
+
+  * Build for Mantic.
+
+ -- Cartesian Theatre Packages <packages@cartesiantheatre.com>  Fri, 03 May 2024 17:49:00 -0700
+

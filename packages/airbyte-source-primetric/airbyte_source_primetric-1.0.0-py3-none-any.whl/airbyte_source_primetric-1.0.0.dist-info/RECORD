@@ -1,0 +1,9 @@
+main.py,sha256=RqoQB0P-Zo6mRmw-9e5P0QbqT66BYWN_ivO4f3Qb_Yk,137
+source_primetric/__init__.py,sha256=AN2iLgAjSurWD16Bfp-YXBBVJajZAohy8dC-QCIkuV4,130
+source_primetric/manifest.yaml,sha256=HJsLlFyq6-UA0lxStuNy-iS7W4jsZMka6fK-_prEqr8,35894
+source_primetric/run.py,sha256=OGjxlAO7h9N4G02D-iE1Iv6S1EdmIx8jU1J9ZFCIjD0,239
+source_primetric/source.py,sha256=F0LhAzSv7LVj4S5D6O8XTbSsbZjJ_GxHo9w0zLM6pUA,478
+airbyte_source_primetric-1.0.0.dist-info/METADATA,sha256=zm8WH90-pk3T3v7wvVmUELEfo1ZH_8C3rhlZMun9Bzk,5262
+airbyte_source_primetric-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_primetric-1.0.0.dist-info/entry_points.txt,sha256=LtbLo2voT_vQ-cSZSFmAJ9wC4eIvWA3ErmrkghdEeLg,61
+airbyte_source_primetric-1.0.0.dist-info/RECORD,,

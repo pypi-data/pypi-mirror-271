@@ -1,0 +1,3 @@
+[console_scripts]
+source-primetric=source_primetric.run:run
+

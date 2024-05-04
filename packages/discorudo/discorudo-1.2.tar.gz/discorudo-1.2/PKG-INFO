@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: discorudo
+Version: 1.2
+Summary: Just script on to discord
+Home-page: https://github.com/rizkychi/discorudo
+Author: rizkychi
+Author-email: rizkynhae@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/rizkychi/discorudo/
+Project-URL: Funding, https://www.paypal.me/rizkychi
+Project-URL: Say Thanks!, https://www.paypal.me/rizkychi
+Project-URL: Source, https://github.com/rizkychi/discorudo/
+Project-URL: Tracker, https://github.com/rizkychi/discorudo/issues
+Keywords: discord,ai,bot,messages,chatting
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: validators
+Requires-Dist: beautifulsoup4
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# Discorudo

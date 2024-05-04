@@ -1,0 +1,17 @@
+[project]
+name = "pico_server"
+version = "0.0.1"
+authors = [
+  { name="Edward Lowe", email="EdwardTheLegend@proton.me" },
+]
+description = "Package to create a simple web server for the Raspberry Pi Pico W"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/EdwardTheLegend/pico_server"
+Issues = "https://github.com/EdwardTheLegend/pico_server/issues"

@@ -1,0 +1,12 @@
+backoff
+attrdict3
+litellm
+environs
+
+[extras]
+flake8
+twine
+pytest
+pip-tools
+bumpver
+coverage

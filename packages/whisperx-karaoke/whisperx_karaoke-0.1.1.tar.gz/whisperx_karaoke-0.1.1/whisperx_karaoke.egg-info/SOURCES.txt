@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+whisperx_karaoke/__init__.py
+whisperx_karaoke/__main__.py
+whisperx_karaoke/ass.py
+whisperx_karaoke/cli.py
+whisperx_karaoke/resolver.py
+whisperx_karaoke.egg-info/PKG-INFO
+whisperx_karaoke.egg-info/SOURCES.txt
+whisperx_karaoke.egg-info/dependency_links.txt
+whisperx_karaoke.egg-info/entry_points.txt
+whisperx_karaoke.egg-info/requires.txt
+whisperx_karaoke.egg-info/top_level.txt

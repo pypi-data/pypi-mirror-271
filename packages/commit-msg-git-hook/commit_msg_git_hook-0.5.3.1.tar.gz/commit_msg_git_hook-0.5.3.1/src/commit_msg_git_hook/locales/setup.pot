@@ -1,0 +1,30 @@
+# commit-msg git-hook translation.
+# Copyright (C) 2024 Lucio Meira David
+# This file is distributed under the same license as the commit-msg git-hook package.
+# Lucio Meira David <lucio.meira@om30.com.br>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: commit_msg_git_hook-0.5.3\n"
+"Report-Msgid-Bugs-To: lucio.meira@om30.com.br\n"
+"POT-Creation-Date: 2024-05-02 18:14-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Lucio Meira David <lucio.meira@om30.com.br>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: setup.py:39
+msgid "Your OS type is"
+msgstr ""
+
+#: setup.py:79
+msgid "ERROR: Your OS type is currently unsupported."
+msgstr ""
+
+#: setup.py:86
+msgid "Success: commit-msg git-hook configured for"
+msgstr ""

@@ -1,0 +1,29 @@
+[project]
+name = "alyx-setup-utils"
+version = "0.2.0"
+description = "Set of python utilitary tools acessible through URI REST requests, to link various setup's session configs from alyx session infos."
+authors = [
+    { name = "Timothe Jost", email = "timothe.jost@wanadoo.fr" },
+]
+dependencies = [
+    "flask>=3.0.3",
+    "alyx-connector>=2.1.5",
+    "flask-cors>=4.0.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+alyx-setup-utils = "alyx_setup_utils:run"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true

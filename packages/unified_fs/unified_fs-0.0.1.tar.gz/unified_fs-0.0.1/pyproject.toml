@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "unified_fs"
+version = "0.0.1"
+description = "unified_fs"
+authors = ["Balakrishna Maduru <balakrishnamaduru@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fsspec = "^2024.2.0"
+s3fs = "^2024.2.0"
+pyyaml = "^6.0.1"
+pytest = "^8.0.1"
+autopep8 = "^2.0.4"
+
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0.1"
+
+[tool.poetry.scripts]
+test = "pytest tests"
+
+[tool.pytest.ini_options]
+python_files = [ "test_*.py",]
+

@@ -1,0 +1,4 @@
+".txt":  "unified_fs.readers.text_readers.ReadText"
+".csv":  "unified_fs.readers.text_readers.ReadCsv"
+".json": "unified_fs.readers.text_readers.ReadJson"
+".yaml": "unified_fs.readers.text_readers.ReadYaml"

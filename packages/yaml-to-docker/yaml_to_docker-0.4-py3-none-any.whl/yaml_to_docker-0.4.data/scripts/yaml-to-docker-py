@@ -1,0 +1,38 @@
+#!python
+
+import sys
+from ruamel.yaml import YAML
+
+if len(sys.argv) != 2:
+    print("Usage: {} <path_to_yaml>".format(sys.argv[0]))
+    sys.exit(1)
+
+yaml_file = sys.argv[1]
+docker_file = "Dockerfile"
+
+yaml = YAML(typ='safe')
+with open(yaml_file, 'r') as stream:
+    data = yaml.load(stream)
+
+image = data['Base']['image']
+workdir = data['Base']['workdir']
+files = data['ADDING']['files']
+apt_install = ' '.join(data['Install']['apt'])
+pip_install = ' '.join(data['Install']['pip'])
+apt_configure = data['Configure']['apt']
+start_shell = data['Start']['shell']
+start_type = ' '.join(data['Start']['type'])
+
+with open(docker_file, 'w') as f:
+    f.write("# Generated Dockerfile\n")
+    f.write("FROM {}\n".format(image))
+    f.write("WORKDIR {}\n".format(workdir))
+    f.write("ADD {} .\n".format(files))
+    f.write("RUN apt update && apt install -y {} && apt clean\n".format(apt_install))
+    if pip_install:
+        f.write("RUN pip install -r {}\n".format(pip_install))
+    f.write("RUN apt {}\n".format(apt_configure))
+    if start_shell:
+        f.write("CMD [\"{}\", \"-c\"]\n".format(start_type))
+
+print("Dockerfile successfully created.)

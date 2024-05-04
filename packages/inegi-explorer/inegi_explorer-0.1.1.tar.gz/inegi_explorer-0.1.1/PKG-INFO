@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: inegi_explorer
+Version: 0.1.1
+Summary: A Python package for exploring and fetching INEGI data without requiring an API key.
+Home-page: https://github.com/FabioSol/INEGIExplorer
+Author: Fabio Sol
+Author-email: fabioso2231@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+INEGI Explorer is a Python package that provides tools for exploring and fetching data from the Instituto Nacional de Estadística y Geografía (INEGI) of Mexico. It allows users to easily access and analyze INEGI data without the need for an API key. The package aims to simplify the process of retrieving and working with INEGI data for various purposes

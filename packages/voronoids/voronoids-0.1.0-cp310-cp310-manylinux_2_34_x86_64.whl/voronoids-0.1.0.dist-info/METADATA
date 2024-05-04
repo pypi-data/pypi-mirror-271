@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: voronoids
+Version: 0.1.0
+Summary: A library for generating Voronoi diagrams in parallel in Rust.
+Author: Kaze Wong <kazewong.physics@gmail.com>
+Author-email: Kaze Wong <kazewong.physics@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Voronoids
+A parallel code to compute Voronoi diagram for future cosmological surveys
+
+## Todo
+
+- [x] Optimize identify non-conflict points in parallel version. Currently, we check every pair of points within the set of vertices through indexing. But I think there might be gain in recording the boundary of the sites, and just use a n-box intersection algorithm. 
+- [x] Optimize computing sphere volume and radius
+- [ ] Optimize construction of neighbor relationship between the newly established points.
+- [x] Pipelining threads. Currently, there is a lot of dead time between pushing data into the new tree and computing. It would be nice to separate them using channel.
+- [x] Parallel insertion? For non-conflict points, the number of vertices and simplicies are known ahead of time. So it should be possible to partition the memory and insert them in parallel. For a vector of set of conflict points, the number of simplicies being inserted probably cannot be determined ahead of time. But the respective part of the tree are independent, so maybe it can be done?
+

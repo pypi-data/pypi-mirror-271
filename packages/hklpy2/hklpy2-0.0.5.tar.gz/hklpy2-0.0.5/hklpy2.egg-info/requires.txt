@@ -1,0 +1,12 @@
+numpy
+ophyd
+pint
+
+[all]
+hklpy2[libhkl,tests]
+
+[libhkl]
+pygobject
+
+[tests]
+packaging

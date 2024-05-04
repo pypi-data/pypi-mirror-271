@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+soosiz/__init__.py
+soosiz/main.py
+soosiz.egg-info/PKG-INFO
+soosiz.egg-info/SOURCES.txt
+soosiz.egg-info/dependency_links.txt
+soosiz.egg-info/requires.txt
+soosiz.egg-info/top_level.txt

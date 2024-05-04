@@ -1,0 +1,11 @@
+wgse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wgse/configuration.py,sha256=w9lJdLauWmdsLzL2GBOS34jObWVdGeoqof9KH5m-Hsk,3107
+wgse/external.py,sha256=TvSqsMHiqGbwAlvJQ2ZTqoxo7oXQouOjBrZZO3Znfuc,8857
+wgse/genome_file_finder.py,sha256=q1Ght__PdhY-E4bv1Y1rnM2J_oLZAuZcF8Ijusd9LBg,647
+wgse/installer.py,sha256=_EMJAfjopIgfaIrI8o0ZcfedSuBZ8ihTrg0RdACqUcg,123
+wgse/prerequisites.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wgse/variant_caller.py,sha256=B-zslJLBTloVGnYT1zt1t3mHWYXQjqmdNTX9dIUoxdk,815
+WGSE_NG-0.0.4a1.dist-info/METADATA,sha256=M5pXksOIs4jBaPcOgRaV-PcM8QYugPZUCYE3BpXRZnY,692
+WGSE_NG-0.0.4a1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+WGSE_NG-0.0.4a1.dist-info/top_level.txt,sha256=uBO_deIaQRbNLcbmkVM8PiCHfB4mr3qqrQnSE3eKWbM,5
+WGSE_NG-0.0.4a1.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mymorsecode"
+version = "0.3.0"
+description = ""
+license = "MIT"
+repository = "https://github.com/tct123/morsecode"
+authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+simpleaudio = "^1.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

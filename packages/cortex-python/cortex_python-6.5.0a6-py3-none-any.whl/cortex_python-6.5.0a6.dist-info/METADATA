@@ -1,0 +1,180 @@
+Metadata-Version: 2.1
+Name: cortex-python
+Version: 6.5.0a6
+Summary: Python module for the Tecnotree Sensa Platform
+License: Apache-2.0
+Author: Tecnotree
+Author-email: support@tecnotree.com
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: certifai
+Provides-Extra: models-dev
+Provides-Extra: models-runtime
+Requires-Dist: certifai-evaluator-plugin (>=1.3.17,<2.0.0) ; extra == "certifai"
+Requires-Dist: cortex-certifai-common (>=1.3.17,<2.0.0)
+Requires-Dist: cortex_certifai_engine (>=1.3.17,<2.0.0)
+Requires-Dist: cortex_certifai_model_sdk (>=1.3.17,<2.0.0)
+Requires-Dist: cortex_certifai_scanner (>=1.3.17,<2.0.0)
+Requires-Dist: cuid (>=0.3,<0.4)
+Requires-Dist: dill (<=0.3.4)
+Requires-Dist: ipython (>=8.10,<9) ; extra == "models-dev"
+Requires-Dist: jinja2 (<4) ; extra == "models-dev"
+Requires-Dist: matplotlib (>3,<4) ; extra == "models-dev"
+Requires-Dist: mlflow (>1) ; extra == "models-dev" or extra == "models-runtime"
+Requires-Dist: pandas (<3) ; extra == "models-dev"
+Requires-Dist: pyjwt[crypto] (<3)
+Requires-Dist: python-dateutil (>=2.8.2,<3)
+Requires-Dist: pytimeparse2 (>=1.7.1,<2.0.0)
+Requires-Dist: pyyaml (>=5.4.1)
+Requires-Dist: requests (>=2.31.0,<3)
+Requires-Dist: requests-toolbelt (>=1.0.0)
+Requires-Dist: seaborn (>0.13,<0.14) ; extra == "models-dev"
+Requires-Dist: setuptools
+Description-Content-Type: text/markdown
+
+# Python Module for the Cortex Cognitive Platform
+
+The Cortex Python module provides an API client library to easily integrate with the Cortex Cognitive Platform. 
+Refer to the Cortex documentation for details on how to use the library: 
+
+- Developer guide: https://cognitivescale.github.io/cortex-fabric/
+- Cortex Python references: https://cognitivescale.github.io/cortex-python/master/
+
+## Installation
+There are several installation options available: 
+
+* base library - for interacting with a Sensa cluster or developing skills 
+
+```bash
+poetry add cortex-python
+```
+
+* model development - for feature and model developing within jupyter notebooks 
+```bash
+poetry add cortex-python[model_development]
+```
+
+* model development extras - for developing model training and inference skills
+```bash
+poetry add cortex-python[model_runtime]
+```
+
+* Certifai Evaluator plugin - this must be installed with on of the model* extras
+    **NOTE:** extra config needed to access the Sensa python repository
+```bash
+poetry config http-basic.sensa <USER> <TOKEN> 
+poetry add cortex-python[model_development,certifai]
+```
+
+#### Install from source
+```bash
+git clone git@github.com:CognitiveScale/cortex-python.git
+cd cortex-python
+# Needed for certifai components
+poetry config http-basic.sensa <USER> <TOKEN> 
+poetry install
+```
+
+## Development 
+
+### Setup
+
+When developing, it's a best practice to work in a virtual environment. Create and activate a virtual environment:
+
+```bash
+poetry install
+poetry shell
+```
+
+Install developer dependencies:
+
+```bash
+git clone git@github.com:CognitiveScale/cortex-python.git
+cd cortex-python
+make dev.install
+```
+
+Run Developer test and linting tasks:
+Three types of checks are configured for this:
+1. [symilar](https://pylint.readthedocs.io/en/v2.16.2/symilar.html) - to test code duplication
+2. [pylint](https://pylint.readthedocs.io/en/v2.16.2/) - for linting
+3. [pytest](https://docs.pytest.org/en/7.2.x/) - for running the unit tests. These are orchestrated through [tox](https://tox.wiki/en/3.27.1/). The tox configuration is available at [`tox.ini`](/tox.ini)
+
+There's a convenience `Makefile` that has commands to common tasks, such as build, test, etc. Use it!
+
+### Testing
+
+#### Unit Tests
+
+Follow above setup instructions (making sure to be in the virtual environment and having the necessary dependencies)
+
+- `make test` to run test suite
+
+To run an individual file or class method, use pytest. Example tests shown below:
+
+- file: `pytest test/unit/agent_test.py` 
+- class method: `pytest test/unit/agent_test.py::TestAgent::test_get_agent`
+
+#### Publishing an alpha build
+
+Suppose you want to release new functionality so it can be installed without releasing a new official version. We need to use an alpha version in PyPi.
+
+- we need to create and publish an alpha release:
+- get credentials to the `cortex-python` pypi CognitiveScale account (via lastpass)
+- run `make dev.push`. The alpha pre-release number (the N in X.Y.ZaN) with be determined automatically.
+
+### Contribution 
+
+After contributing to the library, and before you submit changes as a PR, please do the following
+
+1. Run unit tests via `make test`
+2. Manually verification (i.e. try the new changes out in Cortex) to make sure everything is going well. Not required, but highly encouraged.
+3. Bump up `setup.py` version and update the `CHANGELOG.md` 
+
+### Documentation
+
+Activate your virtual environment:
+
+```bash
+poetry shell
+```
+
+Set up your environment, if you have not done so:
+
+```bash
+make dev.install 
+```
+
+The package documentation is built with Sphinx and generates versioned documentation for all tag matching the `release/X.Y.Z` pattern and for the `master` branch. To build the documentation:
+
+```bash
+make docs.multi
+```
+The documentation will be rendered in HTML format under the `docs/_build/${VERSION}` directory.
+
+### Pre-release to staging
+**Note:** this repository using git tag for versionning
+
+1. Create and push an alpha release:
+
+```bash
+git tag -a 6.5.0a<N> -m 'alpha tag'
+git push --tags
+make dev.push
+```
+    This will build an alpha-tagged package.
+2. Merge `develop` to `staging` branch:
+
+```bash
+make stage
+```
+
+3. In GitHub, create a pull request from `staging` to `master`.
+```
+git tag -a 6.5.0 -m 'rlease tag'
+git push --tags
+```
+

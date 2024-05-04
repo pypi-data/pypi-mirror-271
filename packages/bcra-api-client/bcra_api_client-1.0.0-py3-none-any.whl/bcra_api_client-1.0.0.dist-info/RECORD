@@ -1,0 +1,10 @@
+bcra/__init__.py,sha256=sjzY0X9Z_8mB7R5wSCLKQFsuatfJR6aaJCM3UOdKI3g,78
+bcra/base.py,sha256=OhnV7suKFLGGmHznuy9JXaPMWKGQO2jh-LtKK6bG_l4,1247
+bcra/client.py,sha256=CwvpO4PgkKbAaUmnznlvnQS3tWJnjLz7vRRBtADUv5I,289
+bcra/statistics/__init__.py,sha256=IKymDXGKaV2FWaSfyNymFihPNiaTKPclVqOQR9Ds-pE,167
+bcra/statistics/variables.py,sha256=eA5ge51Yh7L1QZzL0SAsRimA8tbEVYt2J2KqISenJxM,81
+bcra_api_client-1.0.0.dist-info/LICENSE,sha256=2w-LNhu9mK2QW3mEjvo8CfIjQbh5wrUZ8LoihJtI-ow,1082
+bcra_api_client-1.0.0.dist-info/METADATA,sha256=9OYOdQvQt-1b7mR_lSmhNutFMPnmFfV2LtiEtJIY3ic,708
+bcra_api_client-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bcra_api_client-1.0.0.dist-info/top_level.txt,sha256=oF3hENq6EyN2X7HJcolv5JnEmJ25nMLXyhwhDAeRWzU,5
+bcra_api_client-1.0.0.dist-info/RECORD,,

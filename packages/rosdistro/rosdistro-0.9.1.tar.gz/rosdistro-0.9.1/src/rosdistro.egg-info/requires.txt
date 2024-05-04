@@ -1,0 +1,10 @@
+PyYAML
+setuptools
+catkin_pkg
+rospkg
+
+[test]
+pytest
+
+[test:python_version < "3.3"]
+mock

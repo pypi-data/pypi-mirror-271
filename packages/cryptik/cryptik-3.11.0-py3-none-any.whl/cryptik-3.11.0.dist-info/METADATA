@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: cryptik
+Version: 3.11.0
+Summary: cryptocurrency prices on the command line
+Home-page: https://gitlab.com/drad/cryptik
+License: GPL-3.0-only
+Keywords: cli,crypto,currency,bitcoin,ticker
+Author: drad
+Author-email: sa@adercon.com
+Maintainer: drad
+Maintainer-email: sa@adercon.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: arrow (>=1.3.0,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Project-URL: Repository, https://gitlab.com/drad/cryptik
+Description-Content-Type: text/markdown
+
+## About
+
+a [cli](https://en.wikipedia.org/wiki/Command-line_interface) application for displaying the current price of a cryptocurrency, designed (but not limited) to be ran in conky. cryptik supports multiple exchanges and multiple currencies.
+
+Please see the project wiki for supported currencies and supported exchanges or to request new currencies/exchanges.
+
+
+## Latest Changes
+
+- changed version to use importlib.metadata
+- update copyright date
+- package updates: python-dateutil, types-python-dateutil
+- change python version requirement from 3.8+ to 3.11+ (for speed and to leverage internal tomllib)
+
+
+## NOTICES
+
+- version 3.11.0 requires python 3.11+ (for internal toml processing capabilities and...its faster)
+
+
+## Install
+
+We recommend using [pipx](https://github.com/pypa/pipx) to install cryptik: `pipx install cryptik`. You can also install via pip: `pip install --user cryptik`.
+
+cryptik uses a config file to store your setup. This file contains information such as the exchange(s) to use. You can grab the sample config file from  [cryptik/example/config.toml](https://gitlab.com/drad/cryptik/-/blob/master/example/config.toml) and place it in `~/.config/cryptik` as this is where cryptik looks for the file by default or you can place it anywhere you like and use the `--config-file` parameter to specify the location.
+
+
+## Usage
+
+- call cryptik from command line: `cryptik -e BITSTAMP -t BTC`
+  + show full response: `cryptik.py -d full`
+- list all available exchanges: `cryptik.py -l`
+- get help on cryptik: `cryptik.py -h`
+- example conky usage (note: this will show prices from two exchanges):
+
+```
+CRYPTIK
+  ${texeci 600 cryptik -e KRAKEN -t BTC}
+  ${texeci 600 cryptik -e BITSTAMP -t BTC}
+```
+
+## Example Response
+
+- direct call:
+```
+$ cryptik -e BITSTAMP -t BTC
+BTMP:BTC $9711.24 @12:33
+```
+

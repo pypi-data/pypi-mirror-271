@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bcra-api-client
+Version: 1.1.1
+Summary: Consumo de datos de la API del banco central de la Republica Argentina
+Author-email: Emmanuel Paiva <none@email.com>
+Project-URL: Homepage, https://github.com/paivae/BCRA-client-python
+Project-URL: Issues, https://github.com/paivae/BCRA-client-python/issues
+Keywords: Argentina,data,api,BCRA,client
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BCRA-client-python
+Consumo de datos de la API del Banco Centrar de la Republica Argentina

@@ -1,0 +1,11 @@
+magic_ringneck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magic_ringneck/directories.py,sha256=17GHuT8lOpu10IsIAqHXpztQduF0sgwlbswJx-PbPI8,179
+magic_ringneck/message.py,sha256=Rr4Wl4ToG-tVAptrms7NYPg-vjyddRKwSJ8VfhLMjUM,6429
+magic_ringneck/nestbox.py,sha256=MaJ9uYC1mmRUABFL8Uh4E_S49e6EzPmI0FPKsbxawZY,7861
+magic_ringneck/parakeet.py,sha256=fei-oGfwBoKYxebc8Dsiu7lq9CXi9CUGZ9R1wVYAg9U,1619
+magic_ringneck/ringneck.py,sha256=vi9jEffiK7EewuVxb8-odoOFEmC1sZDNRjG17xLOmmg,6107
+magic_ringneck/starter.py,sha256=q4ZCMbHW9dv6adJtHMZXWiF4TpqBUHYXhDCSl9dLtJo,1977
+magic_ringneck-1.dist-info/entry_points.txt,sha256=962TXnJXwT-tczZ5iRSynADWjRynDEAKyGxjlBFwrVE,131
+magic_ringneck-1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+magic_ringneck-1.dist-info/METADATA,sha256=Ac2DXckwIvO21HWua6rSvwN_otej5fB5FzSFX4ax-CA,6187
+magic_ringneck-1.dist-info/RECORD,,

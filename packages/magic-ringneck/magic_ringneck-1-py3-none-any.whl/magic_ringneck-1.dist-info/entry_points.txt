@@ -1,0 +1,5 @@
+[console_scripts]
+nestbox=magic_ringneck.nestbox:main
+parakeet=magic_ringneck.parakeet:main
+ringneck=magic_ringneck.ringneck:main
+

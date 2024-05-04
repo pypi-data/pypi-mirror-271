@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: clichatapp
+Version: 0.1.12.1
+Summary: 
+Author: JoseMRodriguezM
+Author-email: jmrodriguezm13@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langchain (>=0.1.16,<0.2.0)
+Requires-Dist: langchain-openai (>=0.1.4,<0.2.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: typer[all] (>=0.12.3,<0.13.0)
+Requires-Dist: yaspin (>=3.0.2,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Description
+
+This chatbot is made with groq, Groq use LPU Interfaces Engine, which is a new type of end-to-end processing unit system that provides the fastest inference for computationally intesive applications with a sequential component to them, such as IA LLMs applications.
+LPU allows to provide a faster response for the usrs' questions.
+
+# Show case
+
+![image](https://github.com/JoseMRodriguezM/AIChatbot/assets/76118394/38a070b3-5b70-41b0-8e1b-a51730b2c4d7)
+
+# Usage:
+
+```console
+$ chat [OPTIONS]
+```
+
+Writing /bye o /exit you can exit from the app
+

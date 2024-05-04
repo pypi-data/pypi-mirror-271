@@ -1,0 +1,13 @@
+bioh2m/__about__.py,sha256=Zky9ha0-UwBi7O4EOR8uKbKK_AzLajMBz5Q03c-fy0I,125
+bioh2m/__init__.py,sha256=4QDXhUZTicHLdjiSzbONoVYqibCcuuqPvCUjQ9IJCsk,124
+bioh2m/module.py,sha256=YwCnMUA6oAITIJEnBLk06mL15mN7vvfNCwbk1jGf3Ic,177483
+bioh2m/Data/__init__.py,sha256=cunFRH8wuDsy1JiXX61vjaAkGKP9hns2-kRApNeFOe4,103
+bioh2m/Data/dict_tx_h.json,sha256=WgY2xwpmj4yHXm1gTEIfrBs1tu6l23jFPJTCl0nzTn4,1758543
+bioh2m/Data/dict_tx_m.json,sha256=d2R42fvUNvtwmWijJ1jEdguGDBkbr0X8iianFWG5Ff4,759391
+bioh2m/Data/homo_dict.json,sha256=Dt3a8rKn1uYiwcr8mS3ndnUzLvm9THa7JEtK9Q7PqZg,3964080
+bioh2m/Data/homo_dict_mouse.json,sha256=LezDf_4G_mWPqT9Nqw1_4wl_qGJPOeeGlZDvvgkGvFY,2872517
+bioh2m/Data/human_name_dict.json,sha256=KErDMHEOnWCdI7qXRbFPkhuo-VYSGHvds_R9UxaCSNM,2051332
+bioh2m-1.0.1.dist-info/METADATA,sha256=FyReeKVDujL0rcZ9VkmLqMHrOYbq_JpPt9Kd5iZ0w8E,6250
+bioh2m-1.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+bioh2m-1.0.1.dist-info/licenses/LICENSE.txt,sha256=J-w-KyeYNpAZ-AKQBG-i2nsQT4ATczuUh2Lzs1faOtQ,1095
+bioh2m-1.0.1.dist-info/RECORD,,

@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: xtdb
+Version: 0.0.0.dev0
+Summary: 
+License: MPL-2.0
+Author: XTDB Team
+Author-email: hello@xtdb.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mypy (>=1.9.0,<2.0.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: urllib3 (>=2.2.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# XTDB Python SDK
+
+This is the Python SDK for the [XTDB](https://xtdb.com) database.
+
+
+## Development
+
+This library uses [Poetry](https://python-poetry.org/) for dependency management. 
+To install the dependencies, run:
+
+```shell
+poetry install
+```
+
+
+## Testing
+
+See the test harness README for how to nodes are spun up and down.
+
+You can run the http-proxy locally via the test harness:
+
+`./gradlew :lang:test-harness:httpProxy`
+
+This will run the http-proxy server on `http://localhost:3300`.
+You can then run the tests via:
+
+```shell
+poetry run pytest
+```
+
+
+## Deployment
+
+You'll need an account on [PyPI](https://pypi.org) to deploy the library.
+
+Create yourself an API token on PyPI and save it using Poetry:
+
+```shell
+poetry config pypi-token.pypi <your-api-token>
+```
+
+To deploy a new version of the library, update the version number in `pyproject.toml` and run:
+
+```shell
+poetry publish --build
+```
+

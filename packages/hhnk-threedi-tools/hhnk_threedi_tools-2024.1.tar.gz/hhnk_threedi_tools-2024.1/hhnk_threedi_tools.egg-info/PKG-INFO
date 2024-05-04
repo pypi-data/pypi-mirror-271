@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hhnk-threedi-tools
+Version: 2024.1
+Summary: HHNK watersystemen analysis tools
+Home-page: https://github.com/threedi/hhnk-threedi-tools
+Author: Wietse van Gerwen, Laure Ravier
+Author-email: w.vangerwen@hhnk.nl
+Maintainer: Wietse van Gerwen
+Project-URL: Bug Tracker, https://github.com/threedi/hhnk-threedi-tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7

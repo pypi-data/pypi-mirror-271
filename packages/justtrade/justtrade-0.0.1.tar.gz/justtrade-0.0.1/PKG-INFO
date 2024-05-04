@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: justtrade
+Version: 0.0.1
+Summary: Just a Trading Bot Algorithm and Simple Server
+Keywords: algorithm,trade,bot
+Maintainer-email: justpods <korawich.anu@gmail.com>
+Requires-Python: >=3.10.11
+Description-Content-Type: text/markdown
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click
+Requires-Dist: tzdata
+Requires-Dist: pydantic==2.7.1
+Requires-Dist: pyyaml==6.0.1
+Project-URL: Homepage, https://github.com/justpods/justtrade/
+Project-URL: Source Code, https://github.com/justpods/justtrade/
+
+# Just: _Trading Bot_
+
+Just a Trading Bot Algorithm and Simple Server.
+
+## Features
+
+## License
+
+This project was licensed under the terms of the [MIT license](LICENSE), and thanks
+all for reference public blogs that sharing knowledge to me.
+

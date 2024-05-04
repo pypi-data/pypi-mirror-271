@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: aaiotrello
+Version: 2.0.0
+Summary: Async Python library for interacting with the Trello API
+Home-page: https://trello.com/
+Download-URL: https://github.com/developerreva/aaiotrello
+Author: Developereva
+Author-email: developereva@protonmail.com
+License: BSD License
+Project-URL: Source Code, https://github.com/developerreva/aaiotrello
+Project-URL: Documentation, https://github.com/developerreva/aaiotrello#-getting-started
+Project-URL: Trello REST API Documentation, https://developer.atlassian.com/cloud/trello/rest/
+Keywords: python python3 api-client aiohttp api-wrapper trello trello-api trello-async
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: a
+Requires: i
+Requires: o
+Requires: h
+Requires: t
+Requires: t
+Requires: p
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.9.0
+
+## English
+
+# aaiotrello
+Async Trello API Client
+
+Python 3.7+
+
+## Install
+
+```bash
+pip install aaiotrello
+```
+
+## Auth
+
+#### TRELLO_APP_KEY: https://trello.com/app-key/
+#### TRELLO_APP_TOKEN:
+
+First you need gen auth url:
+```python
+from aaiotrello import TrelloApi
+
+trello = TrelloApi(config.TRELLO_KEY)
+trello.set_token(config.TRELLO_TOKEN)
+```
+Than you need copy value of token_url and auth your trello account in webbrowser
+After that you will get token
+
+#### Apply token in your app:
+```python
+trello_app.set_token(TRELLO_APP_TOKEN)
+```
+
+#### Sample usage
+
+Get board info:
+```python
+board = await trello_app.boards.get("5c49c07e48557d4e29414936")
+```

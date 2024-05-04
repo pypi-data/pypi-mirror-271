@@ -1,0 +1,144 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+# build the package with [flit](https://flit.readthedocs.io)
+requires = ["flit_core >=3.4,<4"]
+
+[project]
+authors = [{ name = "Edan Bainglass", email = "edan.bainglass@gmail.com" }]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Development Status :: 3 - Alpha",
+  "Framework :: AiiDA"
+]
+dependencies = ["aiida-core>=2.0,<3"]
+description = "A plugin for quantum transport calculations based on NEGF methods."
+dynamic = ["version"]
+keywords = ["quantum", "transport", "NEGF", "DMFT", "aiida", "plugin"]
+license = { file = "LICENSE" }
+# See https://www.python.org/dev/peps/pep-0621/
+name = "aiida-quantum-transport"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.entry-points."aiida.workflows"]
+"quantum_transport.coulomb_diamonds" = "aiida_quantum_transport.workchains.coulomb_diamonds:CoulombDiamondsWorkChain"
+
+[project.entry-points."aiida.calculations"]
+"quantum_transport" = "aiida_quantum_transport.calculations.custom:CustomCalculation"
+"quantum_transport.dft" = "aiida_quantum_transport.calculations.dft:DFTCalculation"
+"quantum_transport.localize" = "aiida_quantum_transport.calculations.localize:LocalizationCalculation"
+"quantum_transport.greens" = "aiida_quantum_transport.calculations.greens:GreensFunctionParametersCalculation"
+"quantum_transport.hybridize" = "aiida_quantum_transport.calculations.hybridize:HybridizationCalculation"
+"quantum_transport.dmft" = "aiida_quantum_transport.calculations.dmft:DMFTCalculation"
+"quantum_transport.transmission" = "aiida_quantum_transport.calculations.transmission:TransmissionCalculation"
+"quantum_transport.current" = "aiida_quantum_transport.calculations.current:CurrentCalculation"
+
+[project.entry-points."aiida.cmdline.data"]
+"quantum_transport" = "aiida_quantum_transport.cli.commands:data_cli"
+
+[project.entry-points."aiida.data"]
+"quantum_transport" = "aiida_quantum_transport.data.custom:CustomData"
+
+[project.entry-points."aiida.parsers"]
+"quantum_transport" = "aiida_quantum_transport.parsers.custom:CustomParser"
+"quantum_transport.dft" = "aiida_quantum_transport.parsers.dft:DFTParser"
+"quantum_transport.localize" = "aiida_quantum_transport.parsers.localize:LocalizationParser"
+"quantum_transport.greens" = "aiida_quantum_transport.parsers.greens:GreensFunctionParametersParser"
+"quantum_transport.hybridize" = "aiida_quantum_transport.parsers.hybridize:HybridizationParser"
+"quantum_transport.dmft" = "aiida_quantum_transport.parsers.dmft:DMFTParser"
+"quantum_transport.transmission" = "aiida_quantum_transport.parsers.transmission:TransmissionParser"
+"quantum_transport.current" = "aiida_quantum_transport.parsers.current:CurrentParser"
+
+[project.optional-dependencies]
+docs = ["sphinx-design~=0.4.1", "pydata-sphinx-theme==0.13.3"]
+pre-commit = ["pre-commit~=2.2", "mypy~=1.7.1"]
+testing = ["pytest~=7.0", "pytest-cov~=2.7,<2.11", "coverage~=6.0"]
+
+[project.urls]
+Source = "https://github.com/edan-bainglass/aiida-quantum-transport"
+
+[tool.coverage.run]
+# Configuration of [coverage.py](https://coverage.readthedocs.io)
+# reporting which lines of your plugin are covered by tests
+source = ["src/aiida_quantum_transport"]
+
+[tool.flit.module]
+name = "aiida_quantum_transport"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+  "ignore::DeprecationWarning:aiida:",
+  "ignore:Creating AiiDA configuration folder:",
+  "ignore::DeprecationWarning:plumpy:",
+  "ignore::DeprecationWarning:yaml:"
+]
+# Configuration for [pytest](https://docs.pytest.org)
+python_files = "test_*.py"
+
+[tool.ruff]
+ignore = [
+  "E501", # line too long
+  "F403", # Star imports unable to detect undefined names
+  "F405", # Import may be undefined or defined from star imports
+  "N802", # Uppercase functions
+  "N803", # Uppercase parameters
+  "N806", # Uppercase variables
+  "PLR0911", # Too many return statements
+  "PLR0912", # Too many branches
+  "PLR0913", # Too many arguments in function definition
+  "PLR0915", # Too many statements
+  "PLR2004", # Magic value used in comparison
+  "RUF005", # Consider iterable unpacking instead of concatenation
+  "RUF012"
+]
+line-length = 80
+select = [
+  "E", # pydocstyle
+  "W", # pydocstyle
+  "F", # pyflakes
+  "I", # isort
+  "N", # pep8-naming
+  "PLC", # pylint-convention
+  "PLE", # pylint-error
+  "PLR", # pylint-refactor
+  "PLW", # pylint-warning
+  "RUF"
+]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py39
+
+[testenv]
+usedevelop=True
+
+[testenv:py{39,310}]
+description = Run the test suite against a python version
+extras = testing
+commands = pytest {posargs}
+
+[testenv:py{39,310}-pre-commit]
+description = Run the pre-commit checks
+extras = pre-commit
+commands = pre-commit run {posargs}
+
+[testenv:docs]
+description = Build the documentation
+extras = docs
+commands = sphinx-build -nW --keep-going -b html {posargs} docs/source docs/build/html
+commands_post = echo "open file://{toxinidir}/docs/build/html/index.html"
+"""

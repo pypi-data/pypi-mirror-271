@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: revenge
+Version: 0.22
+Summary: REVerse ENGineering Environment
+Home-page: https://github.com/bannsec/revenge
+Author: Michael Bann
+Author-email: self@bannsecurity.com
+License: MIT
+Keywords: frida python3 reversing dbi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Requires-Dist: frida==16.2.1
+Requires-Dist: prettytable
+Requires-Dist: colorama
+Requires-Dist: termcolor
+Requires-Dist: psutil
+Requires-Dist: pyelftools
+Requires-Dist: pefile
+Requires-Dist: appdirs
+Requires-Dist: bs4
+Requires-Dist: requests
+Requires-Dist: unicorn
+Requires-Dist: prompt-toolkit
+Requires-Dist: r2pipe
+Requires-Dist: pygments
+Provides-Extra: dev
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: python-coveralls; extra == "dev"
+Requires-Dist: coverage==4.5.4; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: sphinxcontrib-napoleon; extra == "dev"
+Requires-Dist: sphinx_rtd_theme; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints; extra == "dev"
+Requires-Dist: pyOpenSSL; extra == "dev"
+Requires-Dist: numpy; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+
+See website for more info.

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pyusb_tree/__init__.py
+pyusb_tree/parser.py
+pyusb_tree/py.typed
+pyusb_tree.egg-info/PKG-INFO
+pyusb_tree.egg-info/SOURCES.txt
+pyusb_tree.egg-info/dependency_links.txt
+pyusb_tree.egg-info/requires.txt
+pyusb_tree.egg-info/top_level.txt
+pyusb_tree/bin/UsbTreeView.exe

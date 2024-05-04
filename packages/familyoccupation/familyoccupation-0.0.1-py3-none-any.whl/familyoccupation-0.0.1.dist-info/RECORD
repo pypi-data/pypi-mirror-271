@@ -1,0 +1,10 @@
+familytree/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+familytree/akhil.py,sha256=2I6rVK3o7_G-3DBsPJTC0SYm61jxbl9UrW4xt6kUuAc,49
+familytree/bhavani.py,sha256=bIrr_21H12d4aFEbDnULVynmwilWj9xcbWe85EKgMQU,38
+tester/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tester/test_akhil.py,sha256=NpgzQRm9yslFGbFrs_0A3iOoE80r-lWpQH9K3obCmKw,78
+tester/test_bhavani.py,sha256=Q6Bmo-AfzWea-qLKfQO2rCZSDueu-c6I1OEXB4pYhIs,78
+familyoccupation-0.0.1.dist-info/METADATA,sha256=tDm7XYC5y1RBAcRcY6HFH0U4usfeLQYKTL2JxGLV-WM,631
+familyoccupation-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+familyoccupation-0.0.1.dist-info/top_level.txt,sha256=MbNsK4tZJgD34WEoV-K87CcG4QZvbX2T_7ppOnVhfO8,18
+familyoccupation-0.0.1.dist-info/RECORD,,

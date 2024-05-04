@@ -1,0 +1,16 @@
+COPYRIGHT
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+logging_tree/__init__.py
+logging_tree/format.py
+logging_tree/nodes.py
+logging_tree.egg-info/PKG-INFO
+logging_tree.egg-info/SOURCES.txt
+logging_tree.egg-info/dependency_links.txt
+logging_tree.egg-info/top_level.txt
+logging_tree/tests/__init__.py
+logging_tree/tests/case.py
+logging_tree/tests/test_format.py
+logging_tree/tests/test_node.py

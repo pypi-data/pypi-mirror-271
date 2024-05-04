@@ -1,0 +1,6 @@
+black==24.2.0
+coverage
+isort
+pytest
+pylint
+accelerate  # for testing

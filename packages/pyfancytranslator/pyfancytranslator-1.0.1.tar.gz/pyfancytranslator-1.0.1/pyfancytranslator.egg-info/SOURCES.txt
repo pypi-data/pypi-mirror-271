@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+FancyTranslator/__init__.py
+FancyTranslator/classes.py
+pyfancytranslator.egg-info/PKG-INFO
+pyfancytranslator.egg-info/SOURCES.txt
+pyfancytranslator.egg-info/dependency_links.txt
+pyfancytranslator.egg-info/top_level.txt

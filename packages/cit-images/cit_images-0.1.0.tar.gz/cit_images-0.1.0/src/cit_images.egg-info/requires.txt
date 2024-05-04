@@ -1,0 +1,4 @@
+lazy-loader
+
+[ocr]
+tf-serving

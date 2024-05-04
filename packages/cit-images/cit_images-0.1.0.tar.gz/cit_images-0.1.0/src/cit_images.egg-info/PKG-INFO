@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cit-images
+Version: 0.1.0
+Summary: Tools to access and predict the CIT images
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/REPO.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: lazy-loader
+Provides-Extra: ocr
+Requires-Dist: tf-serving; extra == "ocr"
+
+# Cit Images
+
+> Tools to access and predict the CIT images

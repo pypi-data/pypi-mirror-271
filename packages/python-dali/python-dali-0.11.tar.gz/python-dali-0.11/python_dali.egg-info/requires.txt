@@ -1,0 +1,12 @@
+
+[driver-serial]
+pyserial-asyncio
+
+[driver-unipi]
+pymodbus
+pyusb
+
+[test]
+pyserial-asyncio
+pytest
+pytest-asyncio

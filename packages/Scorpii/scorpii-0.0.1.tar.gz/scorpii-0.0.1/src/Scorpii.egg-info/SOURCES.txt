@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/Scorpii/__init__.py
+src/Scorpii/file2.py
+src/Scorpii/number.py
+src/Scorpii/time2.py
+src/Scorpii.egg-info/PKG-INFO
+src/Scorpii.egg-info/SOURCES.txt
+src/Scorpii.egg-info/dependency_links.txt
+src/Scorpii.egg-info/top_level.txt

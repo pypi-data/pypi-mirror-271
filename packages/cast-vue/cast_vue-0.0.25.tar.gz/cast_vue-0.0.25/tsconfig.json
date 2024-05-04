@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "types": ["vite/client", "@types/jest", "@types/node"],
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "@/*": ["./cast_vue/static/src/js/cast_vue/*"]
+    }
+  },
+  "include": ["cast_vue/static/src/**/*.ts", "cast_vue/static/src/**/*.d.ts", "cast_vue/static/src/**/*.tsx", "cast_vue/static/src/**/*.vue", "tests/*.ts"]
+}

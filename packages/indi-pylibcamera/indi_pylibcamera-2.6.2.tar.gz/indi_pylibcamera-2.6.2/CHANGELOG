@@ -1,0 +1,50 @@
+2.6.2
+- fixed ROWORDER attribute in FITS files (KStars/EKOS ignores this but some postprocessing tools need this fix to
+  have the Bayer pattern in the correct order)
+- more details in install_requires of the wheel
+- adapted install instructions in README.md to meet newer OS versions (installation in virtual environment)
+- removed indi_pylibcamera_postinstall from installation: does not work from virtual environment
+
+2.6.0
+- support for monochrome cameras
+- support for new raw and RGB frame formats (including monochrome)
+- disable astropy to download the latest IERS-A table from internet to avoid errors during observation session
+- better stability of exposure loop
+
+2.5.0
+- fixed changed data alignment in Pi 5 raw images
+
+2.4.0
+- added INI switch "force_Restart" and implemented camera restart (solves crashes for IMX290 and IMX519)
+- forwarding log messages to client
+
+2.3.0
+- update FITS header formatting and timestamps
+- use lxml for construction of indi_pylibcamera.xml
+- renamed SwitchVector FRAME_TYPE(FRAMETYPE_RAW, FRAMETYPE_PROC) to CCD_CAPTURE_FORMAT(INDI_RAW, INDI_RGB)
+  to better support AstroDMX
+- removed "setSitchVector CCD_ABORT_EXPOSURE" after each exposure start (that did not allow CCDciel to run
+  exposures in loop)
+- reworked handling of CCD_ABORT_EXPOSURE
+- fixed Fast Exposure
+
+2.2.0
+- fixed Bayer pattern order for HQ camera (pycamera2 or libcamera have change they way they report Bayer pattern order),
+  BAYERPAT in FITS does not depend on "Rotation" property anymore (force_Rotation has no effect anymore),
+  but Bayer pattern can now be forced with force_BayerOrder
+- sorting raw modes by size and bit depth to make the mode with most pixel and most bits/pixel the default
+- saving and loading configurations
+- bug fix: after aborting an exposure the camera stayed busy and EKOS field solver could not start a new exposure
+
+2.1.0
+- fixed division by 0 when focal length equals 0
+- improved driver exit when indiserver is closed (to avoid driver continue to run)
+- more transparent implementation of snooping; snooped values are now also available as driver parameter
+  (in tab "Snooping")
+- removed empty line and XML declaration from driver XML
+- added driver vectors for camera controls (allows to enable automatic exposure control and AWB)
+- added uninstall instructions in README.md
+- minor improvements
+
+2.0.0
+- packaged for pip installation

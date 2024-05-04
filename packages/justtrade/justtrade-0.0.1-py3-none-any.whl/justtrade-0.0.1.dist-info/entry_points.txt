@@ -1,0 +1,3 @@
+[console_scripts]
+jtrade=justtrade:__main__
+

@@ -1,0 +1,17 @@
+satorisynapse/__init__.py,sha256=K2tVvoLtTSTQV5wSS860YesGgwHmwtLqRa-Q4Zosxuw,69
+satorisynapse/run.py,sha256=-pA8zU_mX865xHk_VYj6NXCiy3sfBURb6CarZsSAZ4U,1269
+satorisynapse/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satorisynapse/lib/domain.py,sha256=hsRqdCSQEaUZ9z-BLUyKpIgz__8AfQRXceHlCVA3Rwo,3746
+satorisynapse/lib/error.py,sha256=Om1u8JJxPdMIuZGncxmb1ajLNlUYxc-0bY8ZV66Nng4,464
+satorisynapse/lib/requests.py,sha256=5lT7TNdo22v5cjo7TLHIVbQHwC0yJWGXB34SiVDo0VE,1222
+satorisynapse/lib/utils.py,sha256=htJbqBlAO2-fWX4IO3fFJNjTcfIKXG5jdxZVtdD7EvI,211
+satorisynapse/synapse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satorisynapse/synapse/asynchronous.py,sha256=xXXcrd5kJ9fHuEj9ms0qEIthaDMc7WIj72E8X7sfgPs,13681
+satorisynapse/synapse/threaded.py,sha256=x_TQOYLUg1FxqDOE5iWfKiSZ8YqjiDr70WNx9m_JSZA,12964
+satorisynapse-0.0.14.dist-info/LICENSE,sha256=x_TQg_D-JDogh9jO6GgpwGwjzjMb_0qXyYgCaeLkc1Y,1078
+satorisynapse-0.0.14.dist-info/METADATA,sha256=lZ3qmzK16OBWWRiG6FtcE7rr9LyVKmbb_6h6DgvOzd8,579
+satorisynapse-0.0.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+satorisynapse-0.0.14.dist-info/dependency_links.txt,sha256=bliU4FUcDgsNe1rpDnxhQz_EFPOLWgmO2hrhtWuJZgE,81
+satorisynapse-0.0.14.dist-info/entry_points.txt,sha256=hblq__XpqCETpOXTwhNAAxsRmqIbvRNA_UJmJ76lv80,57
+satorisynapse-0.0.14.dist-info/top_level.txt,sha256=_mGF-xjkm9W2OqtI1J5l0jcOPfJ7k0I2nTfj0Z8WMrY,14
+satorisynapse-0.0.14.dist-info/RECORD,,

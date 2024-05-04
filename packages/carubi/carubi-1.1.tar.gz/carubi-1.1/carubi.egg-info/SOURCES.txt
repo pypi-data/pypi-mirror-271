@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+carubi/__init__.py
+carubi/main.py
+carubi.egg-info/PKG-INFO
+carubi.egg-info/SOURCES.txt
+carubi.egg-info/dependency_links.txt
+carubi.egg-info/requires.txt
+carubi.egg-info/top_level.txt

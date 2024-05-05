@@ -1,0 +1,12 @@
+aimDIAS/DIAS.py,sha256=ns-lSw1ZjMLZMOnIPNGkMczDiQHp9A34AdyTtRi59WE,33321
+aimDIAS/__init__.py,sha256=NdxAor4ACM-ft0Mb4WoeUBqrRSQUdOGI9wSU-xfGRm0,2704
+aimDIAS/aimnet2ase.py,sha256=9zT-Yjp0vj90h6HMTi--o4gTX7_gRPRyunngzpCD2JE,2800
+aimDIAS/samples.py,sha256=xMEKu4zAMyGUEhDwtG1kjoFprd2IqTKG5g7o9VP12Z0,2651
+aimDIAS/utilities.py,sha256=XvPh1v3LMCGtDfp3s_wwuXiEhwj5pdAHWmcopJNUal0,8558
+aimDIAS/models/aimnet2_b973c_ens.jpt,sha256=cwBIBS_bV1T6pWwtYMyqaLcicQsnMUcO7cqBjx7eVt8,46391881
+aimDIAS/models/aimnet2_wb97m-d3_ens.jpt,sha256=LopwCJPQjH-YK3jnNy08-VpIC11GEW-XEit_IKA8nYg,46391881
+aimDIAS-1.0.1.dist-info/LICENSE,sha256=7M8VVSAA4kZgKYLZ10yJzsS6iO22hN58cMZPgXnRFNU,1088
+aimDIAS-1.0.1.dist-info/METADATA,sha256=lDxMU0Yq-tR60Y78h3Es5TaN8YOTYUcDsypKFC-aVh0,3022
+aimDIAS-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aimDIAS-1.0.1.dist-info/top_level.txt,sha256=NVXISdwSwpyu8p6kdUAngguUk3Axq3mqQgajoVCgqsY,29
+aimDIAS-1.0.1.dist-info/RECORD,,

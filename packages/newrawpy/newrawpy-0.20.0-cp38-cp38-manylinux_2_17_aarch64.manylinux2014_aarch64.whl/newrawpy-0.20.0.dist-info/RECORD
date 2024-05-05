@@ -1,0 +1,15 @@
+rawpy/enhance.py,sha256=AIqOcLV_eAtCopQzR-BRqWDX1wVVEjFvzEKrpXETwAU,14017
+rawpy/__init__.py,sha256=-sXeXxLMDzFknnHiRmsqD0B0wCntdk_ie5C62iiMdd4,654
+rawpy/_rawpy.cpython-38-aarch64-linux-gnu.so,sha256=aDFb-H8wWM2ro_dzNMLI5zjfYutChc2Js2tw_xl6Zig,462961
+rawpy/_version.py,sha256=NGIecTe1EEM7UeBjKSJ4vCWuGDWF1ZX4PckW2Eguxps,23
+newrawpy.libs/libjpeg-bb5d9b88.so.9.4.0,sha256=71KwXCzu5lhfR4v3gGuT2sYPCi5ba0CT6VavlUqYJvE,1512041
+newrawpy.libs/libjasper-28e96e29.so.4.0.0,sha256=Kx3mu4bjmM7HSBBnhaL4JP0yrc7Ujxu0U2SErthj6jA,595561
+newrawpy.libs/liblcms2-cee87515.so.2.0.10,sha256=8DNVIvGFOFlkBM6JiCjn73qvsq15N-hWSnM3IJRTlJA,1845753
+newrawpy.libs/libraw_r-2b223eab.so.23.0.0,sha256=ynoMc4Egcv85jOohW3IZY6Sfo00YTgeJdaQPL9J-5TQ,1464897
+newrawpy.libs/libgomp-d22c30c5.so.1.0.0,sha256=BTGH6is2VDtn03gF_z6BiPXVdnSzH2mP6Hz-IiGkPtk,274665
+newrawpy-0.20.0.dist-info/LICENSE,sha256=LMDpihaeGpkn3uPILVnfrImKKq1aH83SldtAwvL-1RY,1080
+newrawpy-0.20.0.dist-info/LICENSE.LibRaw,sha256=7qFzpVarrANwRh5X4SqrJmiU6mvjh0wr4F_YeHH3VEk,24389
+newrawpy-0.20.0.dist-info/METADATA,sha256=bt3QWuXB0AAJ2MHA9NRT7LskxbDeR9ZaCOS1aEoA3kk,6020
+newrawpy-0.20.0.dist-info/RECORD,,
+newrawpy-0.20.0.dist-info/top_level.txt,sha256=7jsQajvqWcvbFz1mx9zyPC_MjCPZvXAJ_H4cGYOBn6k,6
+newrawpy-0.20.0.dist-info/WHEEL,sha256=4GeH8IQTGTPH95MsAPlniHs1H99pAGmPSEH5bd3hLWw,150

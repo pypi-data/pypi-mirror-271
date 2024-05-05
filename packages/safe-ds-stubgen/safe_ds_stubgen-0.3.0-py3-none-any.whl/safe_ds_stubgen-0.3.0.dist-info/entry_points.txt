@@ -1,0 +1,3 @@
+[console_scripts]
+safe-ds-stubgen=safeds_stubgen.main:main
+

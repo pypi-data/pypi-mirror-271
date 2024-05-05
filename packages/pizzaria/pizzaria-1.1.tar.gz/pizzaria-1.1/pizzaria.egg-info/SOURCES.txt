@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pizzaria/__init__.py
+pizzaria/main.py
+pizzaria.egg-info/PKG-INFO
+pizzaria.egg-info/SOURCES.txt
+pizzaria.egg-info/dependency_links.txt
+pizzaria.egg-info/requires.txt
+pizzaria.egg-info/top_level.txt

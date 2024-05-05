@@ -1,0 +1,14 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+types_unidiff.egg-info/PKG-INFO
+types_unidiff.egg-info/SOURCES.txt
+types_unidiff.egg-info/dependency_links.txt
+types_unidiff.egg-info/top_level.txt
+unidiff-stubs/METADATA.toml
+unidiff-stubs/__init__.pyi
+unidiff-stubs/__version__.pyi
+unidiff-stubs/constants.pyi
+unidiff-stubs/errors.pyi
+unidiff-stubs/patch.pyi
+unidiff-stubs/py.typed

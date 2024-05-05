@@ -1,0 +1,64 @@
+aaa: !!str
+  AAA
+bbb: !!bool
+  true
+ccc: !!int
+  123
+ccc2: !!str
+  123
+ddd: !!float
+  123.456
+ddd2: !!str
+  123.456
+eee:
+  - !!str
+    e
+  - !!str
+    ee
+  - !!str
+    eee
+fff:
+  f: !!str
+    f
+  ff: !!str
+    ff
+  fff: !!str
+    fff
+ggg:
+  -
+    g: !!str
+      g
+    gg: !!str
+      gg
+    ggg: !!str
+      ggg
+  -
+    g: !!str
+      g
+    gg: !!str
+      gg
+    ggg: !!str
+      ggg
+hhh:
+  h: !!str
+    h
+  hh: !!str
+    hh
+  hhh: !!str
+    hhh
+iii:
+  i:
+    ii: !!str
+      ii
+  ii: !!str
+    ii
+jjj: !!str |-
+  jj1
+  jj2
+  jj3
+kkk:
+  k:
+    kk: !!str |-
+      kk1
+      kk2
+      kk3

@@ -1,0 +1,15 @@
+[project]
+name = "habitat-suitability"
+version = "0.0.6"
+authors = [
+  { name="Niklas Henning", email="henning.github@gmail.com" },
+]
+description = "A Python package to run habitat suitability modeling, custom/boostrap habitat binning, and binning analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+

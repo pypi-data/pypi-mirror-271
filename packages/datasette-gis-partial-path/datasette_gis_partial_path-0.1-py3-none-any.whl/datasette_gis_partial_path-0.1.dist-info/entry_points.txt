@@ -1,0 +1,3 @@
+[datasette]
+gis_partial_path_lat = datasette_gis_partial_path_lat
+gis_partial_path_lng = datasette_gis_partial_path_lng

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: got-cli
+Version: 0.0.11
+Summary: Got is a library to help you make consistent commit messages with help of AI
+Home-page: https://github.com/GuiPimenta-Dev/got
+Author: Guilherme Alves Pimenta
+Author-email: guialvespimenta27@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

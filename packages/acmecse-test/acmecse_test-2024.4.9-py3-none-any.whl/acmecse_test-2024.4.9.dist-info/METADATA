@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: acmecse-test
+Version: 2024.4.9
+Summary: An open source CSE Middleware for Education
+Home-page: https://github.com/ankraft/ACME-oneM2M-CSE
+Author: Andreas Kraft
+Author-email: an.kraft@gmail.com
+License: BSD
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cbor2
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: InquirerPy
+Requires-Dist: isodate
+Requires-Dist: paho-mqtt
+Requires-Dist: plotext
+Requires-Dist: psycopg2-binary
+Requires-Dist: python3-dtls
+Requires-Dist: rdflib
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: shapely
+Requires-Dist: textual
+Requires-Dist: textual-plotext
+Requires-Dist: tinydb
+Requires-Dist: waitress
+Requires-Dist: websockets
+
+# ![](acme/webui/web/img/acme_sm.png) 
+
+# ACME oneM2M CSE
+An open source CSE Middleware for Education.
+
+Version 2024.DEV
+
+[![oneM2M](https://img.shields.io/badge/oneM2M-f00)](https://www.onem2m.org) [![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org) [![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/ankraft/ACME-oneM2M-CSE/graphs/commit-activity) [![License](https://img.shields.io/badge/License-BSD%203--Clause-green)](LICENSE) [![MyPy](https://img.shields.io/badge/MyPy-covered-green)](LICENSE)  
+[![Mastodon](https://img.shields.io/badge/-@acmeCSE@mstdn.social-FFF?label=mastodon&logo=mastodon&style=social)](https://mstdn.social/@acmeCSE)  
+[![Discord](https://img.shields.io/badge/-ACME%20oneM2M%20CSE-FFF?label=discord&logo=discord&style=social)](https://discord.gg/C7Qx33Xw)
+
+## Introduction
+
+This oneM2M compliant CSE implements a subset of the oneM2M standard (see [http://www.onem2m.org](http://www.onem2m.org)). The intention is to provide an easy to install, extensible, and easy to use and maintainable CSE for educational purposes.
+
+![](docs/images/title.png)
+
+## Documentation
+
+- [Installation](docs/Installation.md)
+- [Configuration](docs/Configuration.md)
+- [Running](docs/Running.md)
+	- [Console](docs/Console.md)
+	- [Text UI](docs/TextUI.md)
+	- [Docker](docs/Docker.md)
+	- [Notification Server](tools/notificationServer/README.md)
+    - [Web & Rest UI](docs/WebUI.md)
+- [CSE Startup, Importing Resources and Other Settings](docs/Importing.md)
+- [Operation](docs/Operation.md)
+- [ACMEScript](docs/ACMEScript.md)
+	- [Functions](docs/ACMEScript-functions.md)
+	- [Meta Tags](docs/ACMEScript-metatags.md)
+- [Supported Resource Types and Functionalities](docs/Supported.md)
+	- [Limitations](docs/Supported.md#limitations)
+- [Roadmap](docs/Roadmap.md)
+- [Development](docs/Development.md)
+- [Contributing](docs/Contributing.md)
+	- [Acknowledgements](docs/Contributing.md#acknowledgements)
+- [FAQ](docs/FAQ.md)
+
+## Changes
+
+Please see the [Changelog](CHANGELOG.md) and this [discussion](https://github.com/ankraft/ACME-oneM2M-CSE/discussions/131) for the detailed list of changes.
+
+### Highlights in this release
+
+  
+### Improvements
+
+### Breaking Changes
+
+
+
+### What to expect in the next release
+
+See the [announcement](https://github.com/ankraft/ACME-oneM2M-CSE/discussions/152) in the [discussions](https://github.com/ankraft/ACME-oneM2M-CSE/discussions).
+
+## Acknowledgements
+
+Many People have contributed to this project and helped to make it what it is today with their ideas, suggestions, and code. Please see the [Acknowledgements](docs/Contributing.md#acknowledgements) for the list of contributors.
+
+
+## Join the Discussions on Discord
+
+Join the ACME CSE community on [Discord ](https://discord.gg/C7Qx33Xw) to discuss the project, ask questions, and get help.
+
+
+## License
+
+BSD 3-Clause License for the CSE and its native components and modules. Please see the individual licenses of the used third-party components.
+

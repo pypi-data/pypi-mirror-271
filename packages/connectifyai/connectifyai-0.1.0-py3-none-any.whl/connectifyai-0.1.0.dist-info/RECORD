@@ -1,0 +1,13 @@
+connectifycli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connectifycli/cli.py,sha256=UUXjFKIBvYRy-n2unPj2V3ESXBngoLK24Qe7V2mfdK0,441
+connectifycli/graph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connectifycli/graph/graph.py,sha256=sb8I6TGH2S9UXxJGoLBMNblIjegL8dpjas1ugCIfNA4,3148
+connectifycli/graph/model_info.py,sha256=wsdtG2Fwlkg6zC6PJYiDDQySfGyYT-A1GN7hzqpfbxU,837
+connectifycli/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connectifycli/utils/json.py,sha256=z1MS4Xcy8JsJpIyTtKQ4w-1wiKlEwO0F6YD8hJxfq3c,1097
+connectifyai-0.1.0.dist-info/LICENSE.md,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+connectifyai-0.1.0.dist-info/METADATA,sha256=5wa2qNCwh5bwgZTmEySZwQJ5G1cOieXrVtGejNywqG0,922
+connectifyai-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+connectifyai-0.1.0.dist-info/entry_points.txt,sha256=Xfl3GHzAYlj1E-rs0nZCVOMOnq5CMWzw4LuGj1nJ_9M,51
+connectifyai-0.1.0.dist-info/top_level.txt,sha256=WZiTEigIXDd-mX8M1q5QxEsFjj2z4Z3FxDUu4Ps6RBU,14
+connectifyai-0.1.0.dist-info/RECORD,,

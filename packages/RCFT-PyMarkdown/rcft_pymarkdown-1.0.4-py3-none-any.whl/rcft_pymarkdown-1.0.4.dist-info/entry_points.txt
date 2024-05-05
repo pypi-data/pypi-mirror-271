@@ -1,0 +1,3 @@
+[console_scripts]
+rcft-pymarkdown=rcft_pymarkdown.console:run
+

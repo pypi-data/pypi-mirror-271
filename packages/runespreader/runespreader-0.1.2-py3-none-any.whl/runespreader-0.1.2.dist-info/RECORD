@@ -1,0 +1,10 @@
+runespreader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+runespreader/bot.py,sha256=_hkgKo3MKa9B5a_Igdxa7lh4WplssCWUvc5prxRNcpQ,2746
+runespreader/clickhouse.py,sha256=5y3xAb-MJA3bGomtc_Kw7PEhkaSVYWxgvJTmNte7-jk,848
+runespreader/runespreader.py,sha256=YWtpNl5waO7gmmGjZzxg2Vp_G458H0IcKDQnGnjG2ic,4175
+runespreader/spreadfinder.py,sha256=w1FDF-gkBmbRunCX9uqQLDxPNgUz1qjFU20t3jYWusI,7365
+runespreader/spreadseer.py,sha256=oPG6wRkE4XfCD2MmqnztWI3AXtBfi_ncYtTpvpQd0nA,1528
+runespreader-0.1.2.dist-info/METADATA,sha256=vFVPIpoUjM7pd2qpIWG4Oy6L-adfbCJQENRRzDHgths,1514
+runespreader-0.1.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+runespreader-0.1.2.dist-info/entry_points.txt,sha256=4ag8kgMsQYRQag3WooT0grk-QozPehkjgtBcjkvEHtM,61
+runespreader-0.1.2.dist-info/RECORD,,

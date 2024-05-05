@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: pyauth0
+Version: 0.1.4a0
+Summary: Python utilities for Auth0
+Home-page: https://svaponi.github.io/pyauth0
+License: MIT
+Author: svaponi
+Author-email: 10941963+svaponi@users.noreply.github.com
+Requires-Python: >=3.8,<3.13
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: async
+Requires-Dist: httpx (>=0.27.0,<0.28.0) ; extra == "async"
+Requires-Dist: python-jose (>=3.3.0,<4.0.0)
+Project-URL: Repository, https://github.com/svaponi/pyauth0
+Description-Content-Type: text/markdown
+
+# pyauth0
+
+[![Test](https://github.com/svaponi/pyauth0/actions/workflows/run-tests.yml/badge.svg)](https://github.com/svaponi/pyauth0/actions/workflows/run-tests.yml)
+[![Coverage Status](https://coveralls.io/repos/github/svaponi/pyauth0/badge.svg?branch=main)](https://coveralls.io/github/svaponi/pyauth0?branch=main)
+[![PyPI version](https://badge.fury.io/py/pyauth0.svg)](https://badge.fury.io/py/pyauth0)
+
+Python utilities for [Auth0](https://auth0.com/).
+
+- [Install](#install)
+- [Usage](#usage)
+  - [Get a machine-to-machine token](#get-a-machine-to-machine-token)
+  - [Get a machine-to-machine token asynchronously](#get-a-machine-to-machine-token-asynchronously)
+  - [Verify a token](#verify-a-token)
+- [Contribute](#contribute)
+
+## Install
+
+```shell
+pip install pyauth0
+```
+
+Or, if you plan to use async features:
+
+```shell
+pip install pyauth0[async]
+```
+
+## Usage
+
+### Get a machine-to-machine token
+
+```python
+import pyauth0
+from urllib.request import Request, urlopen
+
+token_provider = pyauth0.TokenProvider(
+    issuer="your-domain.auth0.com",
+    audience="https://api.your-domain.com",
+    client_id="1234",
+    client_secret="secret"
+)
+
+# Machine to machine request
+token: pyauth0.GetTokenResponse = token_provider.get_token()
+response = urlopen(Request(
+    "https://api.your-domain.com",
+    headers={"authorization": token.get_authorization()},
+))
+```
+
+### Get a machine-to-machine token asynchronously
+
+```python
+import httpx
+
+import pyauth0
+
+token_provider = pyauth0.TokenProvider(
+  issuer="your-domain.auth0.com",
+  audience="https://api.your-domain.com",
+  client_id="1234",
+  client_secret="secret"
+)
+
+# Machine to machine request
+token: pyauth0.GetTokenResponse = await token_provider.aget_token()
+async with httpx.AsyncClient() as client:
+  response = await client.get(
+    "https://api.your-domain.com",
+    headers={"authorization": token.get_authorization()},
+  )
+```
+
+### Verify a token
+
+```python
+from pyauth0 import TokenVerifier, Auth0Error
+
+token_verifier = TokenVerifier(
+    issuer="your-domain.auth0.com",
+    audience="https://api.your-domain.com",
+    jwks_cache_ttl=60,  # optional
+)
+try:
+    decoded_token = token_verifier.verify(
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...."
+    )
+except Auth0Error as error:
+    status_code = error.status_code  # suggested status code (401 or 403)
+    code = error.code  # pyauth0 error code (example "token_expired")
+    description = error.description  # pyauth0 error description (example "Token is expired.")
+    raise error
+
+claim_value = decoded_token.payload.get("http://your-domain.com/claim_name", "default value")
+```
+
+## Contribute
+
+If you want to contribute, open a [GitHub Issue](https://github.com/svaponi/pyauth0/issues) and motivate your request.
+

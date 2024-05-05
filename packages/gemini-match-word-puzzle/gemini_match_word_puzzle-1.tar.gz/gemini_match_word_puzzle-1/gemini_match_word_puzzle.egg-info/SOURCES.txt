@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gemini_match_word_puzzle/gemini_match_word_puzzle.py
+gemini_match_word_puzzle.egg-info/PKG-INFO
+gemini_match_word_puzzle.egg-info/SOURCES.txt
+gemini_match_word_puzzle.egg-info/dependency_links.txt
+gemini_match_word_puzzle.egg-info/entry_points.txt
+gemini_match_word_puzzle.egg-info/requires.txt
+gemini_match_word_puzzle.egg-info/top_level.txt

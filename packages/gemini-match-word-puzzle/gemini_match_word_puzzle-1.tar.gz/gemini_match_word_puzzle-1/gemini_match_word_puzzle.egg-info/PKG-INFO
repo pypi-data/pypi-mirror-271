@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: gemini_match_word_puzzle
+Version: 1
+Summary: This package contains implementation of a puzzle game on command-line interface with Google Gemini AI integrated into it.
+Home-page: https://github.com/SoftwareApkDev/gemini_match_word_puzzle
+Author: SoftwareApkDev
+Author-email: softwareapkdev2022@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gemini_ai_app_downloader
+
+# gemini_match_word_puzzle
+
+**Gemini Match Word Puzzle** is a puzzle game on command-line interface with Google Gemini AI integrated into it.
+
+# Source Code
+
+The source code of **Gemini Match Word Puzzle** is available in 
+[Source Code](https://github.com/SoftwareApkDev/gemini_match_word_puzzle/blob/master/gemini_match_word_puzzle/gemini_match_word_puzzle.py).
+
+# Installation
+
+```
+pip install gemini_match_word_puzzle
+```
+
+# How to Play the Game?
+
+Pre-requisites:
+
+1. [Python](https://www.python.org/downloads/) installed in your device.
+2. .env file in the same directory as <GEMINI_MATCH_WORD_PUZZLE_DIRECTORY> and has the value of GEMINI_API_KEY.
+
+```
+cd <GEMINI_MATCH_WORD_PUZZLE_DIRECTORY>
+python3 gemini_match_word_puzzle.py
+```
+
+**Note:** Replace <GEMINI_MATCH_WORD_PUZZLE_DIRECTORY> with the path to the directory of the 
+game **Gemini Match Word Puzzle**.
+
+Then, the game will start with something looking like in the screenshot below.
+
+![Game](images/Game.png)
+
+You will then be asked to input the following values.
+
+1. Temperature - between 0 and 1 inclusive
+2. Top P - between 0 and 1 inclusive
+3. Top K - at least 1
+4. Max output tokens - at least 1
+
+The following screenshot shows what is displayed after inputting the mentioned values.
+
+![Puzzle](images/Puzzle.png)
+
+Next, you will enter the x and y coordinates of the two tiles you want to open. If the contents of both tiles match,
+both tiles will be opened. Once all the tiles in the board are opened, you're done with the puzzle and will be asked
+whether you want to continue playing the game or not.

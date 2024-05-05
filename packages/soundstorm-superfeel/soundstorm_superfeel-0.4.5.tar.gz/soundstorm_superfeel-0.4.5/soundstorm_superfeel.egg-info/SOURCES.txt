@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+soundstorm_superfeel/__init__.py
+soundstorm_superfeel/attend.py
+soundstorm_superfeel/soundstorm.py
+soundstorm_superfeel/trainer.py
+soundstorm_superfeel.egg-info/PKG-INFO
+soundstorm_superfeel.egg-info/SOURCES.txt
+soundstorm_superfeel.egg-info/dependency_links.txt
+soundstorm_superfeel.egg-info/requires.txt
+soundstorm_superfeel.egg-info/top_level.txt

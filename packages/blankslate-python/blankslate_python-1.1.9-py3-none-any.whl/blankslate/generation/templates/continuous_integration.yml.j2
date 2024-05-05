@@ -1,0 +1,122 @@
+name: Continuous Integration (CI) Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+concurrency:
+  group: {% raw %}${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}{% endraw %}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install tox
+
+    - name: Cache tox environment
+      uses: actions/cache@v3
+      with:
+        path: .tox
+        key: {% raw %}3.11-tox-${{ hashFiles('pyproject.toml') }}-${{ hashFiles('tox.ini') }}{% endraw %}
+
+    - name: Cache pre-commit environment
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pre-commit
+        key: {% raw %}3.11-pre-commit-${{ hashFiles('pyproject.toml') }}-${{ hashFiles('.pre-commit-config.yaml') }}{% endraw %}
+
+    - name: Lint and format with tox
+      run: tox -e lint
+
+    - name: If linting passes, upload any formatting changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        message: "@auto Formatting"
+
+  test:
+    needs: lint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11']
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python {% raw %}${{ matrix.python-version }}{% endraw %}
+      uses: actions/setup-python@v4
+      with:
+        python-version: {% raw %}${{ matrix.python-version }}{% endraw %}
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install tox tox-gh-actions
+
+    - name: Cache tox environment
+      uses: actions/cache@v3
+      with:
+        path: .tox
+        key: {% raw %}${{ matrix.python-version }}-tox-${{ hashFiles('pyproject.toml') }}-${{ hashFiles('tox.ini') }}{% endraw %}
+
+    - name: Test with tox
+      run: tox
+
+  docs:
+    if: github.event_name != 'pull_request'
+    needs: test
+    runs-on: ubuntu-latest
+    concurrency: {% raw %}ci-${{ github.ref }}{% endraw %}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install tox
+
+      - name: Cache tox environment
+        uses: actions/cache@v3
+        with:
+          path: .tox
+          key: {% raw %}3.11-tox-${{ hashFiles('pyproject.toml') }}-${{ hashFiles('tox.ini') }}{% endraw %}
+
+      - name: Build documentation with tox
+        run: tox -e docs
+
+      - name: Add the the latest docs back to the repo if they've been updated
+        uses: EndBug/add-and-commit@v9
+        with:
+          pull: '--rebase --autostash'
+          message: "@auto Update docs"
+
+      - name: Deploy new docs if they've been updated
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: docs
+          folder: docs

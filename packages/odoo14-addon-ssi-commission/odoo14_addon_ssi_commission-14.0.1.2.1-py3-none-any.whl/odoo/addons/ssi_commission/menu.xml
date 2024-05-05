@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<menuitem
+        id="menu_root_commission_management"
+        name="Commission"
+        web_icon="ssi_commission,static/description/icon.png"
+    />
+
+<menuitem
+        id="menu_root_sales_commission"
+        name="Sales"
+        parent="menu_root_commission_management"
+        sequence="110"
+    />
+
+<menuitem
+        id="menu_root_marketing_commission"
+        name="Marketing"
+        parent="menu_root_commission_management"
+        sequence="120"
+    />
+
+<menuitem
+        id="menu_commission_management_reporting"
+        name="Reporting"
+        parent="menu_root_commission_management"
+        sequence="998"
+    />
+
+<menuitem
+        id="menu_commission_management_configuration"
+        name="Configuration"
+        parent="menu_root_commission_management"
+        sequence="999"
+    />
+
+<menuitem
+        id="menu_sales_commission_configuration"
+        name="Sales Commission"
+        parent="menu_commission_management_configuration"
+        sequence="110"
+    />
+
+<menuitem
+        id="menu_marketing_commission_configuration"
+        name="Marketing Commission"
+        parent="menu_commission_management_configuration"
+        sequence="120"
+    />
+</odoo>

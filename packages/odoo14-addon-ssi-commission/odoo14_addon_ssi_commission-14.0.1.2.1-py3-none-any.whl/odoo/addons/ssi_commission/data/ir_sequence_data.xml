@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl-3.0) -->
+<odoo>
+<data noupdate="1">
+<record id="sequence_commission" model="ir.sequence">
+    <field name="name">Commission</field>
+    <field name="code">commission</field>
+    <field name="prefix">COM/%(range_y)s/</field>
+    <field eval="1" name="number_next" />
+    <field eval="1" name="number_increment" />
+    <field name="padding" eval="6" />
+    <field name="use_date_range" eval="1" />
+    <field eval="False" name="company_id" />
+</record>
+
+<record id="sequence_marketing_commission" model="ir.sequence">
+    <field name="name">Marketing Commission</field>
+    <field name="code">marketing_commission</field>
+    <field name="prefix">MCM/%(range_y)s/</field>
+    <field eval="1" name="number_next" />
+    <field eval="1" name="number_increment" />
+    <field name="padding" eval="6" />
+    <field name="use_date_range" eval="1" />
+    <field eval="False" name="company_id" />
+</record>
+</data>
+</odoo>

@@ -1,0 +1,6 @@
+requests
+python>3.8
+boto3
+
+[:python_version > "3.8"]
+importlib-metadata

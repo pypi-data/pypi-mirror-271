@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+query_test_lib.egg-info/PKG-INFO
+query_test_lib.egg-info/SOURCES.txt
+query_test_lib.egg-info/dependency_links.txt
+query_test_lib.egg-info/requires.txt
+query_test_lib.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/AST_Stubgen.egg-info/PKG-INFO
+src/AST_Stubgen.egg-info/SOURCES.txt
+src/AST_Stubgen.egg-info/dependency_links.txt
+src/AST_Stubgen.egg-info/requires.txt
+src/AST_Stubgen.egg-info/top_level.txt
+src/Ast_Stubgen/__init__.py
+src/Ast_Stubgen/stubgen.py

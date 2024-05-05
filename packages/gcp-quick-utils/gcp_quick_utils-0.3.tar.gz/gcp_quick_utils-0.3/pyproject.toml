@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "gcp-quick-utils"
+version = "0.3"
+description = "Tools to help you navigate through GCP"
+authors = ["Guillaume W <guillaume.luc.wagner@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gcpq"}]
+license = "MIT"
+homepage = "https://github.com/faahren/gcp-quick-utils.git"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+click = "^8.1.7"
+pyyaml = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gcpq = "gcpq.main:main"

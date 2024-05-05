@@ -1,0 +1,2 @@
+[buildarr.plugins]
+sonarr = buildarr_sonarr.plugin:SonarrPlugin

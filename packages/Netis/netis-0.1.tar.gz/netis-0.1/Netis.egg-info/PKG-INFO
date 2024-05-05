@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: Netis
+Version: 0.1
+Summary: A simple file framework for Python
+Author: Franek S
+Author-email: znikafranek@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+**# Netis - File and Directory Manipulation Utility
+
+Netis is a Python utility class designed to simplify common file and directory operations. With Netis, you can perform tasks such as creating, deleting, copying, moving, renaming files and directories, as well as reading and writing file contents effortlessly.
+
+## Features
+
+- **File Operations:**
+  - Create new files with custom text content.
+  - Delete existing files securely.
+  - Copy files from one location to another.
+  - Move files between directories.
+  - Rename files with ease.
+
+- **Directory Operations:**
+  - Create new directories quickly.
+  - Remove directories along with all their contents safely.
+  - Copy entire directories and their contents recursively.
+  - Move directories to new locations effortlessly.
+  - Rename directories conveniently.
+
+- **File Content Handling:**
+  - Read the entire content of a file.
+  - Write custom text content to a file.
+  - Read file contents line by line.
+
+## Usage
+
+To use Netis in your Python projects, follow these simple steps:
+
+1. Import the `netis` class into your Python script.
+   ```python
+   from netis import netis
+```

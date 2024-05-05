@@ -1,0 +1,16 @@
+
+
+from wordc import wordc
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).parents[0]
+
+
+def test_nominal():
+    test_file = BASE_DIR / "resources" / "small.txt"
+    gen = wordc.read_file_chunks(test_file, "utf-8", 1024)
+    for text in gen:
+        assert text == "hello "
+
+

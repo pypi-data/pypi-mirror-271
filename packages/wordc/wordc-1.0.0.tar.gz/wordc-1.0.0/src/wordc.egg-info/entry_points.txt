@@ -1,0 +1,2 @@
+[console_scripts]
+wordc = wordc.wordc:main

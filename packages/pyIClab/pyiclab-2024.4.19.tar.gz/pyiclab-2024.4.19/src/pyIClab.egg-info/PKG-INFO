@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyIClab
+Version: 2024.4.19
+Summary: A python toolkit for ion chromatography
+Author-email: "Kai \"Kenny\" Zhang" <PyICLab@outlook.com>
+License: GPL-3.0
+Keywords: ion chromatography,hplc,analytical chemistry,model
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: COPYING
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: scipy>=1.12.0
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: pint>=0.23
+Requires-Dist: matplotlib>=3.8.2
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: phreeqpython>=1.5.0
+Requires-Dist: pyEQL>=0.12.2
+Requires-Dist: monty>=2024.2.2
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: quadprog
+Requires-Dist: deprecated
+
+# pyIClab

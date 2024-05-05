@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cvutil3d
+Version: 0.0.1
+Summary: Set of auxiliary scripts for 3D computer vision tasks
+Home-page: https://github.com/osmr/cvutil3d
+Author: Oleg Sémery
+Author-email: osemery@gmail.com
+License: MIT
+Keywords: datasets image video 3D processing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyrender
+
+# Computer Vision Auxiliary Scripts 3D
+
+Set of auxiliary scripts for 3D computer vision tasks.

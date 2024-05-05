@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cvutil3d/__init__.py
+cvutil3d/render.py
+cvutil3d.egg-info/PKG-INFO
+cvutil3d.egg-info/SOURCES.txt
+cvutil3d.egg-info/dependency_links.txt
+cvutil3d.egg-info/requires.txt
+cvutil3d.egg-info/top_level.txt

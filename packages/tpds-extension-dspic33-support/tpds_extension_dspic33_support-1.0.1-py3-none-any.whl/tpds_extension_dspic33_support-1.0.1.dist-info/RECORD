@@ -1,0 +1,10 @@
+tpds_extension/dspic33_support/extension.yaml,sha256=iBQmx2A-rc9BOOFvpA5la-IOwQhy4_UVicQh81kv6xw,75
+tpds_extension/dspic33_support/setup.py,sha256=hDrCbDikGrrleCULwPlBkZSzIKD2cyfZQQN6Qmj2z-c,38
+tpds_extension/dspic33_support/version.py,sha256=bMIenWosteoeUs51RbaWVZetIuzRhWymuyy-n0rfK0I,21
+tpds_extension/dspic33_support/backend/__init__.py,sha256=encIefsh3hZRY0d_2rD9a5piK99o5Oy5RskHhXa63eo,264
+tpds_extension/dspic33_support/backend/boards/DM240001-2.yaml,sha256=WslOisciquBwSWSK_r7_qZpkklXtMGHudXykAeaeV-k,543
+tpds_extension/dspic33_support/backend/boards/DM240001-2/DM240001-2.png,sha256=g-lYaSGZAaYTcqf1-PcyxY5FJemSWHahLqdxuL76j60,830029
+tpds_extension_dspic33_support-1.0.1.dist-info/METADATA,sha256=MHI3ZrM7Vk4m9tQnhFhOfScTWvk_yQiQbm_ameOMJgE,1510
+tpds_extension_dspic33_support-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tpds_extension_dspic33_support-1.0.1.dist-info/top_level.txt,sha256=CvrSPFJ0i_aZqR-9kHMw-9oKAWXwtI1bWfcG9WS43Is,15
+tpds_extension_dspic33_support-1.0.1.dist-info/RECORD,,

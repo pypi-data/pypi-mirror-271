@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: tpds-extension-dspic33-support
+Version: 1.0.1
+Summary: Microchip(SPG) Trust Platform - dsPIC33 extension
+Home-page: https://www.microchip.com/TrustPlatform
+Author: Microchip Technology
+Author-email: SPG.Tools@microchip.com
+Classifier: License :: Other/Proprietary License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tpds-core >=2.3.18
+Requires-Dist: tpds-helper >=2.3.14
+Requires-Dist: pykitinfo >=1.1.2.19
+
+# Trust Platform Design Suite - dsPIC33 Connect Extension
+
+This package is needed to add support for USB to UART conversion (over MCP2221A) which allows the Trust Platform Design Suite to communicate with dsPIC devices.
+
+## Setup
+
+Kit Protocol is required to provision a Secure Element using the Trust Platform Design Suite. This firmware can be installed through the CryptoAuthentication Library in MPLAB® Code Configurator. More information about this library can be found on [npm](https://www.npmjs.com/package/@mchp-mcc/crypto-authentication-library) and the [Microchip Online Docs](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=MCC.MELODY.CAL.RELEASENOTES&version=latest&redirect=true).
+
+## Release Notes
+
+### 1.0.x
+- Added [pykitinfo](https://pypi.org/project/pykitinfo/) dependency with minimum version 1.1.2.19
+- Initial public release
+- Added support for dsPIC33 devices in TPDS

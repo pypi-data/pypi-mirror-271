@@ -1,0 +1,16 @@
+---
+title: Proto Board Data
+boards:
+  DM240001-2:
+    description: Explorer 16/32 Development Board
+    partNumber: DM240001-2
+    web_link: https://www.microchip.com/en-us/development-tool/DM240001-2
+    img: https://www.microchip.com/content/dam/mchp/mrt-dam/devtools/1488-explorer16-32-developmentboard.jpg
+    serial_series: BUR2322
+    mcu_part_number: "N/A"
+    program_tool: pk3
+    kit_name: Explorer 16/32 PICkit on Board
+    product_string: Explorer 16/32 PICkit on Board
+    connection:
+      interfaceType: uart
+      baud: 115200

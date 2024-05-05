@@ -1,0 +1,7 @@
+name: dspic33_support
+
+backend:
+  path: "backend"
+  routers:
+    - router
+

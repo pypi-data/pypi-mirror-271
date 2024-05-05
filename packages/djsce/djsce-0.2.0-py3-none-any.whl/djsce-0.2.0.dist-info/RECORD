@@ -1,0 +1,13 @@
+djsce/__init__.py,sha256=ixAcPHsve0XIYkvYeEcemH2wk34RDZwdn1Qftfc8g34,138
+djsce/ai.py,sha256=88laChxD3Yuk94EmlcX70feytRGxQeQmFRq0Vyq-6Ko,18825
+djsce/daa.py,sha256=WjHyB-rKGqrnEkH4dBQJBf3a5MBkvPQScneOslrwwRA,33347
+djsce/de.py,sha256=LtPHbsQz4-V9FHoInxjukv9bxi2zWTw73C4dDIZbDVk,2533
+djsce/dsa.py,sha256=Su-wCeTaepAMuCzOYENzS50j194mirAl3OpiHlbG2os,78867
+djsce/os.py,sha256=KuJA8AsB41VNM4_CMcjTw65-c7Xs-keo8FrLIOZ97Bo,34344
+djsce/poa.py,sha256=mp6y4Ghr8oULLMAONe58RjAQaTEvt1pZPeO8R0yP2ys,25202
+djsce/python.py,sha256=IsJaXZS1eHt7LFpQV8yXyeA8M6mgGbumGH5LrPQe6L0,9690
+djsce-0.2.0.dist-info/LICENSE,sha256=TD9f2Bmla6G_La7XzmmaZT40tugTREScu-T9mM98Ba0,1095
+djsce-0.2.0.dist-info/METADATA,sha256=4JtJvHulun66WDeghYEYLIHGcC5zSSpi1bLwaaAjIXU,537
+djsce-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+djsce-0.2.0.dist-info/top_level.txt,sha256=ShQnddKOCQQHEuMfQ_DEAtott-2GF73-ioBqJf3z4SI,6
+djsce-0.2.0.dist-info/RECORD,,

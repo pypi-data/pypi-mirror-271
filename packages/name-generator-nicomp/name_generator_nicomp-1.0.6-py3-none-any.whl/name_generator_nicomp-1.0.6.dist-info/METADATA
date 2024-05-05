@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: name_generator_nicomp
+Version: 1.0.6
+Summary: Generate random names from a list of nouns and adjectives as you might see in a Kahoot game. I'm not affiliated with Kahoot except as an end-user.
+Project-URL: Homepage, https://github.com/nicomp42/name-generator-nicomp
+Project-URL: Issues, https://github.com/nicomp42/name-generator-nicomp/issues
+Author-email: Bill Nicholson <DirkGentlyHHGG@Gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Description: This project generates silly names from a list of adjectives and a list of nouns
+        
+        Example:
+        
+            >>> from name_generator_nicomp.NameGenerator import NameGenerator
+            >>> nameGenerator = NameGenerator()
+            >>> print(nameGenerator.generate_name())
+        
+        
+        

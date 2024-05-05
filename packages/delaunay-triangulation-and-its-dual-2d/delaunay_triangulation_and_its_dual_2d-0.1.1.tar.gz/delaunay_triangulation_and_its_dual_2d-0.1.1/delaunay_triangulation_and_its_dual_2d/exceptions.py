@@ -1,0 +1,2 @@
+class DuplicatedCircumcentersError(Exception):
+    pass

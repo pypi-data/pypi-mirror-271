@@ -1,0 +1,14 @@
+pyarrow>=8
+polars>=0.20.10
+jsonschema>=4.0.0
+meds==0.2.0
+typing_extensions>=4.0
+datasets>=2.0.0
+tqdm>=4.6.0
+psutil>=5.9.0
+
+[cpp]
+meds_etl_cpp==0.2.0
+
+[duckdb]
+duckdb>=0.10.1

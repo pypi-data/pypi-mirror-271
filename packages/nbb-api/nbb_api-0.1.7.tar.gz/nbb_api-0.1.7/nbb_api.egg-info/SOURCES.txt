@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+nbb_api.egg-info/PKG-INFO
+nbb_api.egg-info/SOURCES.txt
+nbb_api.egg-info/dependency_links.txt
+nbb_api.egg-info/requires.txt
+nbb_api.egg-info/top_level.txt

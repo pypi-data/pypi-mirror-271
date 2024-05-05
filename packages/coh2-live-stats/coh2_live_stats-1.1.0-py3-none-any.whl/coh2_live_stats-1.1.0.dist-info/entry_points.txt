@@ -1,0 +1,2 @@
+[console_scripts]
+coh2livestats = coh2_live_stats.__main__:run

@@ -1,0 +1,2 @@
+[console_scripts]
+request-tea-ok = main_module:make_request

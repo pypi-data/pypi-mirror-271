@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+uastyle/__config__.py
+uastyle/__init__.py
+uastyle/__main_imports__.py
+uastyle/apply_colors.py
+uastyle/constants.py
+uastyle/utils.py
+uastyle.egg-info/PKG-INFO
+uastyle.egg-info/SOURCES.txt
+uastyle.egg-info/dependency_links.txt
+uastyle.egg-info/requires.txt
+uastyle.egg-info/top_level.txt

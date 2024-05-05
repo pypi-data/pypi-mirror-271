@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: timeseries-shaper
+Version: 0.0.1
+Summary: timeseries-shaper filters, transforms and abstracts your timeseries dataframe
+Home-page: https://github.com/jakobgabriel/timeseries-shaper
+Author: Jakob Gabriel
+Author-email: jakob.gabriel5@googlemail.com
+Project-URL: Bug Tracker, https://github.com/jakobgabriel/timeseries-shaper
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# timeseries-shaper pypi
+

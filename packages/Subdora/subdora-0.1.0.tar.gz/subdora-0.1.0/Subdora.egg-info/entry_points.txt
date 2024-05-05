@@ -1,0 +1,2 @@
+[console_scripts]
+subdora = Subdora._subdora_cli:main

@@ -1,0 +1,7 @@
+graft Subdora
+include project.toml
+include setup.py
+global-exclude *.py[cod]
+
+include Subdora/corex64/linux/Subdora.so
+

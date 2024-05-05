@@ -1,0 +1,8 @@
+pandas
+numpy
+nltk
+collections
+beautifulsoup4
+networkx
+matplotlib
+holoviews

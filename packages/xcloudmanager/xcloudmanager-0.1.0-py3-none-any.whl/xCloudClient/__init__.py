@@ -1,0 +1,5 @@
+__version__ = '1.0.0'
+__author__ = 'bailu'
+__com__ = 'China telecom Shannxi'
+__mail__ = 'yabailu@chinatelecom.cn'
+__tel__ = '15399117834'

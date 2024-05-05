@@ -1,0 +1,84 @@
+# PT Pump Up Client
+
+## Use Cases
+
+### Train Semantic Role Labeller
+
+```python
+
+from pt_pump_up.benchmarking import TrainerFactory
+from pt_pump_up.benchmarking.training_strategies.SemanticRoleLabellingStrategy import SemanticRoleLabellingStrategy
+from datasets import load_dataset
+
+propbank_br = load_dataset("liaad/Propbank-BR", "flatten")
+
+for model_name in ['neuralmind/bert-base-portuguese-cased', 'neuralmind/bert-large-portuguese-cased', 'PORTULAN/albertina-100m-portuguese-ptpt-encoder' 'PORTULAN/albertina-900m-portuguese-ptpt-encoder']:
+
+    repository_name = f"SRL-{model_name.split('/')[1]}"
+
+    trainer = TrainerFactory.create(
+        nlp_task="SRL",
+        repository_name=repository_name,
+        model_name=model_name,
+        label_names=propbank_br['train'].features['frames'].feature.names,
+        max_epochs=30,
+        lr=1e-5,
+        train_dataset=propbank_br['train'],
+        eval_dataset=propbank_br['test'],
+    )
+
+    trainer.train()
+
+    SemanticRoleLabellingStrategy.create_pipeline(
+        hf_repo=repository_name,
+        model=trainer.model,
+        tokenizer=trainer.tokenizer,
+    )
+
+
+```
+
+### Train Sentiment Analyser
+
+```python
+
+from datasets import load_dataset
+
+# Usage of the PT-Pump-Up library is not mandatory, but it will make your life easier.
+# It reuses code previously developed for similar NLP tasks. That is already tested and validated.
+from pt_pump_up.benchmarking import TrainerFactory
+
+
+# Load dataset from huggingface/datasets.
+# StanfordNLP/IMDB is a dataset for sentiment analysis in English.
+# It is as simple as it can be. It has only two columns: text and label.
+imdb = load_dataset("stanfordnlp/imdb")
+
+# There are 4 transformers models that can be adapted for sentiment analysis in Portuguese:
+# - neuralmind/bertimbau version base (110M) and large (335M) (Bigger/Computational Expensive Architecture)
+# - PORTULAN/albertina version 100m and 900m. Avaiable in PT-PT and PT-BR
+for model_name in ['neuralmind/bert-base-portuguese-cased', 'neuralmind/bert-large-portuguese-cased', 'PORTULAN/albertina-100m-portuguese-ptpt-encoder' 'PORTULAN/albertina-900m-portuguese-ptpt-encoder']:
+    # You should specify the repository name for each model to be trained.
+    # It will be available in the Hugging Face Hub under that name.
+    # Ex: f"dataset-SRL-{model_name.split('/')[1]}" produced https://huggingface.co/liaad/propbank_br_srl_bert_base_portuguese_cased
+    repository_name = "<<REPOSITORY_NAME>>"
+
+    trainer = TrainerFactory.create(
+        # Sentiment Analysis is a Text Classification task.
+        nlp_task="Text Classification",
+        repository_name=repository_name,
+        model_name=model_name,
+        # label_names is a list of strings with the possible labels in the dataset.
+        # If the dataset is correctly loaded, you can access the label names with dataset['train'].features[<<LABEL_COLUMN_NAME>>].feature.names
+        # In this case, the label column name is 'label'.
+        # If not proprely loaded, you can use a list of strings with the possible labels. Ex: ['Positive', 'Negative'], assuming that the labels are 'Positive' and 'Negative'.
+        label_names=imdb['train'].features['label'].names,
+        max_epochs=30,
+        lr=1e-5,
+        train_dataset=imdb['train'],
+        eval_dataset=imdb['test'],
+    )
+
+    trainer.train()
+
+```

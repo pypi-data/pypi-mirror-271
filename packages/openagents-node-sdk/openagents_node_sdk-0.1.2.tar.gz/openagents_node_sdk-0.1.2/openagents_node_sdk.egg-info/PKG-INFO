@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: openagents-node-sdk
+Version: 0.1.2
+Summary: A Python SDK for OpenAgents Nodes
+Author: OpenAgents
+License-File: LICENSE

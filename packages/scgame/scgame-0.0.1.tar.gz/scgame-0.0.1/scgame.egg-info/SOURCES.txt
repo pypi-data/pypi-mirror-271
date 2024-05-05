@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+scgame/__init__.py
+scgame.egg-info/PKG-INFO
+scgame.egg-info/SOURCES.txt
+scgame.egg-info/dependency_links.txt
+scgame.egg-info/top_level.txt

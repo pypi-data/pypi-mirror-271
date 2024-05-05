@@ -1,0 +1,3 @@
+[console_scripts]
+hylpg=hylpg.__cli__:main
+

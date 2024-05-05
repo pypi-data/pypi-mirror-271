@@ -1,0 +1,6 @@
+_open_link_: False
+name: "HyFI-LPG"
+authors: "Young Joon Lee <entelecheia@hotmail.com>"
+description: "HyFI-LPG is a powerful HyFI plugin for seamless integration and utilization of large language models in text processing and analysis tasks, enabling efficient workflows for researchers and practitioners."
+homepage: "https://hyfi-lpg.entelecheia.ai"
+license: "MIT"

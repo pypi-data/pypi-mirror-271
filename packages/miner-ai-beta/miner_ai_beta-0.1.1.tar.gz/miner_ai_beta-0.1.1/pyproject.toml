@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "miner-ai-beta"
+version = "0.1.1"
+description = ""
+authors = ["Valerio Domenici <valeriodomenici93@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tqdm = "^4.66.4"
+python-pptx = "^0.6.23"
+pytube = "^15.0.0"
+youtube-transcript-api = "^0.6.2"
+langchain-openai = "^0.1.6"
+langchain = "^0.1.17"
+bs4 = "^0.0.2"
+selenium = "^4.20.0"
+python-docx = "^1.1.2"
+openpyxl = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

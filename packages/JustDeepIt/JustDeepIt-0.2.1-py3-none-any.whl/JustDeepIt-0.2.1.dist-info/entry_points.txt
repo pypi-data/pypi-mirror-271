@@ -1,0 +1,2 @@
+[console_scripts]
+justdeepit = justdeepit.app.app:run_app

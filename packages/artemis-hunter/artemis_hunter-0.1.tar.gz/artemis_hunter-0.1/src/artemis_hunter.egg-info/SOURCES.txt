@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/artemis_hunter.egg-info/PKG-INFO
+src/artemis_hunter.egg-info/SOURCES.txt
+src/artemis_hunter.egg-info/dependency_links.txt
+src/artemis_hunter.egg-info/top_level.txt

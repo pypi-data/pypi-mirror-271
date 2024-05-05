@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vkdispatch
+Version: 0.0.5
+Summary: A Python module for orchestrating and dispatching large computations across multi-GPU systems using Vulkan.
+Author-email: Shahar Sandhaus <shahar.sandhaus@gmail.com>
+Project-URL: Homepage, https://github.com/sharhar/vkdispatch
+Project-URL: Issues, https://github.com/sharhar/vkdispatch/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools>=61.0
+Requires-Dist: numpy
+
+# vkdispatch
+A Python module for orchestrating and dispatching large computations across multi-GPU systems using Vulkan.

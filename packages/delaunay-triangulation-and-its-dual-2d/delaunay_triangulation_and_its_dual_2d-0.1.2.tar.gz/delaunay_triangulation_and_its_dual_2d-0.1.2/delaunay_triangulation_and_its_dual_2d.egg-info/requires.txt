@@ -1,0 +1,16 @@
+matplotlib
+numpy
+scipy>=0.12.0
+
+[dev]
+black
+
+[dist]
+build
+twine
+
+[test]
+coverage
+matplotlib
+pytest
+tox

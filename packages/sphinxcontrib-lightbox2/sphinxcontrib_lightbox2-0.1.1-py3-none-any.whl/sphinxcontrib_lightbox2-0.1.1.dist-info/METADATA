@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-lightbox2
+Version: 0.1.1
+Summary: Sphinx extension to add lightbox2 to each figure and image added in HTML
+License: MIT
+Author: Jonas Ehrlich
+Author-email: jonas.ehrlich@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: sphinx (>=7.3.7,<8.0.0)
+Project-URL: Documentation, https://sphinxcontrib-lightbox2.readthedocs.io/
+Description-Content-Type: text/markdown
+
+# sphinxcontrib-lightbox2
+
+Sphinx extension to add [lightbox2](https://lokeshdhakar.com/projects/lightbox2/) to each figure and image added in HTML.
+
+---
+
+**[Read the documentation on ReadTheDocs!](https://sphinxcontrib-lightbox2.readthedocs.io/)**
+
+---
+
+Usually Sphinx themes limit their content width to a limit to improve readability. This creates a problem for large
+images and diagrams which might be needed in technical documentation.
+
+## Installation
+
+Install the package using
+
+```sh
+pip install sphinxcontrib-lightbox2
+```
+
+Add `sphinxcontrib.lightbox2` to the list of `extensions` in your *conf.py*:
+
+``` python
+extensions = ["sphinxcontrib.lightbox2"]
+```
+

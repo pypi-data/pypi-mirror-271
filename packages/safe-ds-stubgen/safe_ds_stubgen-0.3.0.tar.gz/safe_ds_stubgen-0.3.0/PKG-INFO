@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: safe-ds-stubgen
+Version: 0.3.0
+Summary: Generation of Safe-DS stubs for Python libraries.
+Home-page: https://github.com/Safe-DS/Stub-Generator
+License: MIT
+Keywords: data-science,machine-learning,dsl
+Author: Lars Reimann
+Author-email: mail@larsreimann.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: griffe (>=0.42,<0.45)
+Requires-Dist: mypy (>=1.6.1,<2.0.0)
+Project-URL: Documentation, https://stubgen.readthedocs.io
+Project-URL: Repository, https://github.com/Safe-DS/Stub-Generator
+Description-Content-Type: text/markdown
+
+# Stub Generator
+
+[![PyPI](https://img.shields.io/pypi/v/safe-ds-stubgen)](https://pypi.org/project/safe-ds-stubgen)
+[![Main](https://github.com/Safe-DS/Stub-Generator/actions/workflows/main.yml/badge.svg)](https://github.com/Safe-DS/Stub-Generator/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/Safe-DS/Stub-Generator/branch/main/graph/badge.svg?token=UyCUY59HKM)](https://codecov.io/gh/Safe-DS/Stub-Generator)
+[![Documentation Status](https://readthedocs.org/projects/safe-ds-stub-generator/badge/?version=stable)](https://stubgen.safeds.com)
+
+Automated generation of [Safe-DS stubs](https://dsl.safeds.com/en/stable/stub-language/) for Python libraries.
+
+## Installation
+
+Get the latest version from [PyPI](https://pypi.org/project/safe-ds-stubgen):
+
+```shell
+pip install safe-ds-stubgen
+```
+
+## Usage
+
+To run this program:
+
+```txt
+usage: safe-ds-stubgen [-h] [-v] -p PACKAGE [-s SRC] -o OUT [--docstyle {PLAINTEXT,EPYDOC,GOOGLE,NUMPYDOC,REST}] [-tr] [-nc]
+
+Analyze Python code.
+
+options:
+  -h, --help            show this help message and exit
+  -v, --verbose         show info messages
+  -p PACKAGE, --package PACKAGE
+                        The name of the package.
+  -s SRC, --src SRC     Source directory containing the Python code of the package.
+  -o OUT, --out OUT     Output directory.
+  --docstyle {PLAINTEXT,EPYDOC,GOOGLE,NUMPYDOC,REST}
+                        The docstring style.
+  -tr, --testrun        Set this flag if files in /test or /tests directories should be included.
+  -nc, --naming_convert
+                        Set this flag if the name identifiers should be converted to Safe-DS standard (UpperCamelCase for classes and camelCase for everything else).
+```
+
+## Documentation
+
+You can find the full documentation [here](https://stubgen.safeds.com).
+
+## Contributing
+
+We welcome contributions from everyone. As a starting point, check the following resources:
+
+* [Setting up a development environment](https://stubgen.safeds.com/en/latest/development/environment/)
+* [Project guidelines](https://stubgen.safeds.com/en/latest/development/project_guidelines/)
+* [Contributing page](https://github.com/Safe-DS/Stub-Generator/contribute)
+
+If you need further help, please [use our discussion forum][forum].
+
+[forum]: https://github.com/orgs/Safe-DS/discussions
+

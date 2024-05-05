@@ -1,0 +1,2 @@
+[console_scripts]
+shiftdata = shiftdata.cli:cli

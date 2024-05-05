@@ -1,0 +1,2 @@
+[console_scripts]
+mustache = mustache.mustache:main

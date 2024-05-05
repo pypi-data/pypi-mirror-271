@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "petrosa"
+version = "0.0.60"
+authors = [
+  { name="@yurisa2", email="yuri@sa2.com.br" },
+]
+description = "utilities for PETROSA"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["pandas",
+                "pymongo",
+                "kafka-python",
+                "requests",
+                "mysql-connector",
+                "opentelemetry-distro",
+                "opentelemetry-exporter-otlp"                ]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PetroSa2/petrosa-apps"
+"Bug Tracker" = "https://github.com/PetroSa2/petrosa-apps/issues"
+

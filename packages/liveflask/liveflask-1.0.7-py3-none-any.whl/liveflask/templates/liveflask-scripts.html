@@ -1,0 +1,8 @@
+<script>
+    var csrfToken = '{{ csrf_token() }}';
+</script>
+<script src="https://cdn.jsdelivr.net/npm/morphdom@2.7.2/dist/morphdom-umd.min.js"></script>
+<script src="/liveflask/static/lodash.min.js"></script>
+<script src="{{ url_for('live.bundle_js') }}"></script>
+<script src="{{ url_for('live.liveflask_js') }}" type="module"></script>
+

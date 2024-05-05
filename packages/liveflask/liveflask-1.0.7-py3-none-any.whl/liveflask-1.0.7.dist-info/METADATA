@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: liveflask
+Version: 1.0.7
+Summary: Seamlessly integrate modern reactive components into Flask templates, eliminating the need for mastering new templating languages or wrestling with complex JavaScript frameworks. With our solution, developers can enhance their Flask applications with dynamic functionality while maintaining a familiar development environment, streamlining the process and ensuring a smoother user experience.
+Home-page: https://github.com/JarriqTheTechie/liveflask
+Author: Jarriq Rolle
+Author-email: jrolle@baysidetechgroup.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: masonite-orm
+Requires-Dist: Flask-WTF
+
+# LiveFlask
+
+LiveFlask is a comprehensive framework for Flask that simplifies the creation of dynamic interfaces, all within the
+familiar environment of Flask.
+
+# Install LiveFlask
+
+```commandline
+pip install liveflask
+```
+
+```python
+from flask import Flask, render_template
+from liveflask import LiveFlask
+
+app = Flask(__name__)
+live = LiveFlask(app)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run()
+```

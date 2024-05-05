@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: llm-axe
+Version: 1.0.8
+Summary: A toolkit for quickly implementing llm powered functionalities.
+Author: Emir Sahin
+Author-email: emirsah122@gmail.com
+License: MIT
+Keywords: python,llm axe,llm toolkit,local llm,local llm internet,function caller llm
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: beautifulsoup4 >=4.12.3
+Requires-Dist: docstring-parser >=0.16
+Requires-Dist: google >=3.0.0
+Requires-Dist: ollama >=0.1.9
+Requires-Dist: pypdf >=4.2.0
+Requires-Dist: PyYAML >=6.0.1
+Requires-Dist: requests >=2.31.0
+
+llm_axe allows you to quickly implement complex interactions for local LLMs, such as function callers, online agents, pre-made generic agents, and more.

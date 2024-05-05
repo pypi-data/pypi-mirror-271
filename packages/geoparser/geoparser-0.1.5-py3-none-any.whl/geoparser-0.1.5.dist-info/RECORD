@@ -1,0 +1,11 @@
+geoparser/__init__.py,sha256=Pe_dq9M56T7oaWWuMUFly3CTK9rDpiTpPzUkjddkPUk,34
+geoparser/__main__.py,sha256=5SwPMhYIoJTBZfcgvFu9KSfvSmm5fBZE9O2B5_2o9Gk,890
+geoparser/database.py,sha256=3Y7PNyF7XuEyAMZHB2Prku2ZPHZwQfMZMYYFJs4bJ4w,6101
+geoparser/downloader.py,sha256=i10PsFACBJzyf9pbioC72fWvy7BUPXBTb5x62K79DFE,2663
+geoparser/entities.py,sha256=VeaFPieRNPcpNG-gGgOK-bdwvcYQREiYQP6qoZqW53I,1525
+geoparser/geoparser.py,sha256=F3oTsRTfgJUDV_f8lZq3Hqnhtq-ehSdp2lq93nEcfxE,11661
+geoparser-0.1.5.dist-info/LICENSE,sha256=mudTVjOKDTU8bh5CMdoGLZS5M3qqhX7SuD0858ufisE,1083
+geoparser-0.1.5.dist-info/METADATA,sha256=gZwZsQ8dp5h33-Fsz8lzn_j1Gc7cv28OW3_Mzm855Q0,5744
+geoparser-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+geoparser-0.1.5.dist-info/top_level.txt,sha256=3zhCNNepjJAvwa5vBk0KXkJLCTjgeapFXV8XR6hMpic,10
+geoparser-0.1.5.dist-info/RECORD,,

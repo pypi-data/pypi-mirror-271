@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/JaxNRSur.egg-info/PKG-INFO
+src/JaxNRSur.egg-info/SOURCES.txt
+src/JaxNRSur.egg-info/dependency_links.txt
+src/JaxNRSur.egg-info/requires.txt
+src/JaxNRSur.egg-info/top_level.txt
+src/jaxNRSur/DataLoader.py
+src/jaxNRSur/EIMPredictor.py
+src/jaxNRSur/Harmonics.py
+src/jaxNRSur/Kernels.py
+src/jaxNRSur/PolyPredictor.py
+src/jaxNRSur/Spline.py
+src/jaxNRSur/SurrogateModel.py
+src/jaxNRSur/__init__.py

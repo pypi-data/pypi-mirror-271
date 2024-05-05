@@ -1,0 +1,3 @@
+[console_scripts]
+fancy_new=fancy.cli:app
+

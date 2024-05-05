@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avideostream"
+version = "0.1.1"
+authors = [{ name = "SimplyPrint", email = "javad.asgari@simplyprint.io" }]
+description = "Directly use libav (ffmpeg) to read RTSP streams with python bindings."
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["video", "streaming", "ffmpeg"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://simplyprint.io"
+Repository = "https://github.com/SimplyPrint/python-videostream"
+Issues = "https://github.com/SimplyPrint/python-videostream/issues"

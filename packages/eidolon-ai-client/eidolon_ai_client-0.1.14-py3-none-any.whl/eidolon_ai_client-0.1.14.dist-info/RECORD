@@ -1,0 +1,14 @@
+eidolon_ai_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eidolon_ai_client/cli.py,sha256=rdlH_dovor9_iAxbuhdAm5O9qEVYmkqGlt7WLYjrNPI,6095
+eidolon_ai_client/client.py,sha256=9eo22EL-nJ92TFAsckfjLxK5NUuAwU2_DnUGh9b3jKk,8606
+eidolon_ai_client/events.py,sha256=vJKQuY2K_zBRxsFJ9VLox0bAQZCBBM_05nn09w9XGMo,5225
+eidolon_ai_client/group_conversation.py,sha256=hvQ_z1zUzy0B3n1Arwvvcd4H8QGEJ0YTI3zf2IuuovA,2454
+eidolon_ai_client/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eidolon_ai_client/util/aiohttp.py,sha256=wwd80YYnUlbtcrwhPymsCsMdKAPo5fxELNv_MfgLgds,3728
+eidolon_ai_client/util/logger.py,sha256=Aa9fOuCvMuQ0azCKfei_F_k-zVeNEfYdWMHV8XQY87A,448
+eidolon_ai_client/util/request_context.py,sha256=Is9AqlvN-WpneETMzg7T-KQj9LaO1k1acn4dYY8yRDs,2361
+eidolon_ai_client/util/stream_collector.py,sha256=dMPAeCtmnQFouZZD7_cFu5x3yzLenPftGvwKxyFmHvE,424
+eidolon_ai_client-0.1.14.dist-info/METADATA,sha256=21d4UpWoVYPLCY-mr02ZNx7-qgvKy-iw8OmqcalxAP0,792
+eidolon_ai_client-0.1.14.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+eidolon_ai_client-0.1.14.dist-info/entry_points.txt,sha256=BAVxQSx9chqN2X8wHKa3HrFIiH1vgI0DtZ04W66hVuo,57
+eidolon_ai_client-0.1.14.dist-info/RECORD,,

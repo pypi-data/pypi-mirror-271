@@ -1,0 +1,8 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/timeseries_shaper.egg-info/PKG-INFO
+src/timeseries_shaper.egg-info/SOURCES.txt
+src/timeseries_shaper.egg-info/dependency_links.txt
+src/timeseries_shaper.egg-info/top_level.txt

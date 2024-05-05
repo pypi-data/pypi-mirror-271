@@ -1,0 +1,11 @@
+name_generator_nicomp/NameGenerator.py,sha256=6AmgStkBgBJwymmkL7kcwQ3oAwSi9wNUkdRra6IjjsI,7173
+name_generator_nicomp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+name_generator_nicomp/adjectives.txt,sha256=xs0BzbJ-_lI6ZJGGwIdGPSgQ7IG9YQEeyuipi4_79PE,411
+name_generator_nicomp/adjectives_master.txt,sha256=xs0BzbJ-_lI6ZJGGwIdGPSgQ7IG9YQEeyuipi4_79PE,411
+name_generator_nicomp/nouns.txt,sha256=Cd85vMTSPgtYmoX591PY0C65OMPWSFImtX7m1b9mgYg,158
+name_generator_nicomp/nouns_master.txt,sha256=S8l4rh8yuOcGfEFzM3VffU4Hy-QqxxhL0xh_Q__taac,148
+name_generator_nicomp/utilities.py,sha256=h0gZ2xgLhSXb8yJRf3rT0KcjGRT7E7zrffm5jmgfnmo,435
+name_generator_nicomp-1.0.9.dist-info/METADATA,sha256=pGwFwc_ZbagfNn1AmL9vfoFb0S0LYq8ZfhO0UEclYj4,995
+name_generator_nicomp-1.0.9.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+name_generator_nicomp-1.0.9.dist-info/licenses/LICENSE,sha256=5FfWtNuMrzjfc-6QlmLsQ70XHCZxVdC3RCHVVT7ts3w,1067
+name_generator_nicomp-1.0.9.dist-info/RECORD,,

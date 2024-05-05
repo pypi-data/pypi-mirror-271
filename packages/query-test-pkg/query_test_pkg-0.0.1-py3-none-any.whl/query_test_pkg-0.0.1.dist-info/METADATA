@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: query_test_pkg
+Version: 0.0.1
+Summary: Query Service Package
+Author: Ankit Jangid
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: boto3
+Requires-Dist: importlib-metadata ; python_version > "3.8"
+

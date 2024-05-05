@@ -1,0 +1,6 @@
+query_test_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+query_test_pkg/query.py,sha256=sDwA6Dc1bVXiZLFpM_tsPBuKVvswVhlAdYwlg__x6ys,2020
+query_test_pkg-0.0.1.dist-info/METADATA,sha256=x6-g-zjcVwQY5VYdqQxZorv0NMpG2i2dCc3TvZ9TAIw,278
+query_test_pkg-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+query_test_pkg-0.0.1.dist-info/top_level.txt,sha256=rX__cCplXPsL8iikuunp3LlEn3oMEXEMRSqRsdgq2ZQ,15
+query_test_pkg-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+TrainingAnimation.egg-info/PKG-INFO
+TrainingAnimation.egg-info/SOURCES.txt
+TrainingAnimation.egg-info/dependency_links.txt
+TrainingAnimation.egg-info/requires.txt
+TrainingAnimation.egg-info/top_level.txt

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: thingking-machine
+Version: 0.0.1
+Summary: Description of the Machine
+Author-email: Alexander Fedotov <alex.fedotov@aol.com>
+Project-URL: Homepage, https://github.com/thingking-machine/thingking-machine
+Project-URL: Bug Tracker, https://github.com/thingking-machine/thingking-machine/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyGithub>=2.3.0
+Requires-Dist: PyYAML>=6.0.1
+
+# Thingking Machine
+This is a machine that can thingk.
+<pre>
+  pip install thingking-machine
+</pre>
+Then:
+```Python
+  # Python
+  import thingking_machine
+```

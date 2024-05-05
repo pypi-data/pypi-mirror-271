@@ -1,0 +1,33 @@
+[project]
+name = "atlas-db"
+version = "0.2.8"
+description = "turn apple health export.xml into parquet"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Thomas Schranz"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click",
+    "lxml>=5.2.1",
+    "polars>=0.20.22"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+atlas = "atlas.cli:cli"
+
+
+[project.urls]
+Homepage = "https://github.com/atlaslib/atlas"
+Changelog = "https://github.com/atlaslib/atlas/releases"
+Issues = "https://github.com/atlaslib/atlas/issues"
+CI = "https://github.com/atlaslib/atlas/actions"
+
+[project.optional-dependencies]
+test = ["pytest"]

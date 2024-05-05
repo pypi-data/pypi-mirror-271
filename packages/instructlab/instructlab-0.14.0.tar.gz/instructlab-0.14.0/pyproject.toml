@@ -1,0 +1,101 @@
+# SPDX-License-Identifier: Apache-2.0
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "instructlab"
+authors = [
+    { name="TBD", email="jon@example.com" },
+]
+description = "CLI for interacting with InstructLab"
+readme = "README.md"
+license = {text = "Apache-2.0 AND MIT"}
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: Apache Software License",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dynamic = ["dependencies", "version"]
+
+[project.scripts]
+# defines ilab executable
+ilab = "instructlab.lab:cli"
+
+[project.urls]
+homepage = "https://instructlab.io"
+source = "https://github.com/instructlab/instructlab"
+issues = "https://github.com/instructlab/instructlab/issues"
+
+[tool.setuptools_scm]
+version_file = "src/instructlab/_version.py"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["instructlab", "instructlab.chat", "instructlab.generator", "instructlab.train", "instructlab.train.lora_mlx", "instructlab.train.lora_mlx.models", "instructlab.llamacpp", "instructlab.mlx_explore", "instructlab.schema.v1", "instructlab.schema.v2"]
+
+[tool.setuptools.package-data]
+"instructlab.llamacpp" = ["quantize"]
+"instructlab.schema.v1" = ["*.json"]
+"instructlab.schema.v2" = ["*.json"]
+
+[tool.check-wheel-contents]
+# W002 - Wheel contains duplicate files:
+#  instructlab/mlx_explore/LICENSE
+#  instructlab/train/lora_mlx/LICENSE
+ignore = ["W002"]
+
+[tool.ruff]
+target-version = "py39"
+# same as black's default line length
+line-length = 88
+
+[tool.ruff.lint]
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Fixers will be enabled gradually.
+select = [
+    # "B",  # flake8-bugbear
+    # "E",  # pycodestyle
+    # "F",  # Pyflakes
+    "Q",  # flake8-quotes
+    # Ruff does not support isort's import_headings feature, yet.
+    # "I",  # isort
+    # "UP",  # pyupgrade
+    # "SIM",  # flake8-simplify
+]
+ignore = [
+    # some embedded strings are longer than 88 characters
+    "E501",  # line too long
+]
+
+[tool.ruff.lint.isort]
+# same as .isort.cfg
+from-first = true
+# not supported yet
+# import-heading-future=Future
+# import-heading-stdlib=Standard
+# import-heading-thirdparty=Third Party
+# import-heading-firstparty=First Party
+# import-heading-localfolder=Local
+known-local-folder = ["tuning"]

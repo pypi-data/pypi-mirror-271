@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "python-filmaffinity-fork"
+version = "0.0.20"
+description = "Simple python scraping for the FilmAffinity."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.13"
+setuptools = "^69.5.1"
+aarpy = "^0.1"
+appdirs = "^1.4.4"
+astroid = "^3.1.0"
+backports-shutil-get-terminal-size = "^1.0.0"
+beautifulsoup4 = "^4.12.3"
+bs4 = "^0.0.2"
+configparser = "^7.0.0"
+decorator = "^5.1.1"
+enum34 = "^1.1.10"
+ipython = "^8.24.0"
+ipython-genutils = "^0.2.0"
+isort = "^5.13.2"
+lazy-object-proxy = "^1.10.0"
+mccabe = "^0.7.0"
+packaging = "^24.0"
+pathlib2 = "^2.3.7.post1"
+pep8 = "^1.7.1"
+pexpect = "^4.9.0"
+pickleshare = "^0.7.5"
+prompt-toolkit = "^3.0.43"
+ptyprocess = "^0.7.0"
+pygments = "^2.18.0"
+pylint = "^3.1.0"
+pyparsing = "^3.1.2"
+pytest = "^8.2.0"
+requests = {extras = ["security"], version = "^2.31.0"}
+requests-cache = "^1.2.0"
+scandir = "^1.10.0"
+simplegeneric = "^0.8.1"
+singledispatch = "^4.1.0"
+traitlets = "^5.14.3"
+wcwidth = "^0.2.13"
+wrapt = "^1.16.0"
+certifi = "^2024.2.2"
+user-agent = "^0.1.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

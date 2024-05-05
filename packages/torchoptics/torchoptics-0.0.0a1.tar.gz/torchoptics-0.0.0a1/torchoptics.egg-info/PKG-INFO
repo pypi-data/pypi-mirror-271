@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: torchoptics
+Version: 0.0.0a1
+Summary: Differentiable diffractive optics simulator using PyTorch
+Author: Matthew Filipovich
+Author-email: matthew.filipovich@physics.ox.ac.uk
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TorchOptics
+
+> Differentiable diffractive optics simulator using PyTorch.
+
+## Usage
+Field propagation example:
+
+```python
+import torch
+from torchoptics.propagation import propagator
+
+input_field = torch.ones(100, 100)
+succeeding_shape = 200
+propagation_distance = .3
+wavelength = 780e-9
+grid_size = 10e-6
+
+output_field = propagator(input_field, succeeding_shape, propagation_distance, wavelength, grid_size)
+```

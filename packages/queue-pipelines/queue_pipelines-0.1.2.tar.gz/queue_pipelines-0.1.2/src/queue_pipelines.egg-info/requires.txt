@@ -1,0 +1,13 @@
+queue-api
+dslog
+prettyprinter
+
+[all]
+queue-kv
+templang
+
+[codegen]
+templang
+
+[local]
+queue-kv

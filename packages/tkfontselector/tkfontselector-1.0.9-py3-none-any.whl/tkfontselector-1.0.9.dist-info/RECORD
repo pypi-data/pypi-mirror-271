@@ -1,0 +1,9 @@
+tkfontselector/__init__.py,sha256=qlMEGA5emi6G9h8D8mDPtRZffTO2-MSZY5gkWXZnqIs,72
+tkfontselector/ask_font.py,sha256=05OX4VxIQ0UqFS5wXjbCEmzMvgr8ZOETW6XPcvpyUn0,2180
+tkfontselector/tkfontselector.py,sha256=_G-yEn5G5doaPJFM2JHAeVS0WS3LOifP_lsbIEz5ohM,20145
+tkfontselector/translations/__init__.py,sha256=ytaH2Yte-Ulc5NvBAaSmFxd7VTcMwDZwPVMCorqTsas,861
+tkfontselector/translations/get_system_locale.py,sha256=2SqkAvRNnqpqxmVyXU4-H1XGFxOV_JLQLAyaqT4UdCY,470
+tkfontselector-1.0.9.dist-info/LICENSE.txt,sha256=PVMlIqwbKtIuQvZgDXsHKzlbOxfnsDsE3EpUlToQE_8,1095
+tkfontselector-1.0.9.dist-info/METADATA,sha256=vpBtTf6L3CszwvHR7jVW9D_6tAXFCb6D3z1gHSmNYlg,4134
+tkfontselector-1.0.9.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+tkfontselector-1.0.9.dist-info/RECORD,,

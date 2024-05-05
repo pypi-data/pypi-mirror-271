@@ -1,0 +1,2 @@
+[console_scripts]
+rewardbench = rewardbench.rewardbench:main

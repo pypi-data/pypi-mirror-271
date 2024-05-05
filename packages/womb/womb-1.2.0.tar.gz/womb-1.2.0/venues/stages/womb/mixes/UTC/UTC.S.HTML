@@ -1,0 +1,76 @@
+
+
+
+
+<pre>
+
+	<h1>UTC</h1>
+	
+	<h2>possibilities</h2>
+	
+	
+		<h3></h3>
+			'''
+				2 BC
+				1 BC
+				1 AD
+				2 AD
+			'''
+	
+	
+		<h3>leaps</h3>
+			
+			'''
+			Every four years
+				except if divisible by
+
+
+				Leap Years:
+					2000
+					2004
+
+				Not Leap Years:
+					1900
+					1800
+					1700
+
+
+			'''
+			def is_leap_year (year):
+				if (year % 4 != 0):
+					return false;
+
+				'''
+					2000 -> Yes
+					1900 -> No
+					1800 -> No
+					1700 -> No
+					1600 -> Yes
+
+					Divisble by 100, but not divisible by 400 -> not a leap year
+				'''
+				if (year % 100 == 0 && year % 400 != 0):
+					return false
+
+				return true;
+
+			def is_leap_second ():
+				return;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>

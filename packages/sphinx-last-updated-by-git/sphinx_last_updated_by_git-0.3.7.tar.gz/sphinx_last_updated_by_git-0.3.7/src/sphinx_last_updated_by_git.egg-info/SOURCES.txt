@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+NEWS.rst
+README.rst
+pyproject.toml
+setup.py
+src/sphinx_last_updated_by_git.py
+src/sphinx_last_updated_by_git.egg-info/PKG-INFO
+src/sphinx_last_updated_by_git.egg-info/SOURCES.txt
+src/sphinx_last_updated_by_git.egg-info/dependency_links.txt
+src/sphinx_last_updated_by_git.egg-info/requires.txt
+src/sphinx_last_updated_by_git.egg-info/top_level.txt
+src/sphinx_last_updated_by_git.egg-info/zip-safe
+tests/test_example_repo.py
+tests/test_singlehtml.py
+tests/test_untracked.py

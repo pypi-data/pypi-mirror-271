@@ -1,0 +1,18 @@
+[project]
+name = "Resilience"
+version = "0.0.1"
+authors = [
+  { name="Pranavesh Panakkal", email="ppranavesh@gmail.com" },
+]
+description = "Open source resilience models"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/Resilience"
+Issues = "https://github.com/Pranavesh-Panakkal/Resilience/issues"

@@ -1,0 +1,14 @@
+# NodeJS
+node_modules
+package*.json
+
+# Python
+__pycache__
+
+# Pytest
+.pytest_cache
+.coverage
+/htmlcov
+
+# Build
+/dist

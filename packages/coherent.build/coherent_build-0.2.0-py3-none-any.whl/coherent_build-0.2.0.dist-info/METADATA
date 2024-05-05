@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: coherent.build
+Version: 0.2.0
+Author-Email: "Jason R. Coombs" <jaraco@jaraco.com>
+Summary: A zero-config Python project build backend
+Requires-Dist: jaraco.context
+Description-Content-Type: text/markdown
+
+A zero-config Python project build backend.
+
+Put your source in a repo and then build it with:
+
+```
+python -m coherent.build
+```

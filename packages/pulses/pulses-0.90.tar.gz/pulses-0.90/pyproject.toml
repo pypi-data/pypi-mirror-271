@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pulses"
+version = "0.90"
+description = "Pulse LEDs on RPi"
+authors = ["Andrea Mistrali <andrea@mistrali.pw>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+docopt = "^0.6.2"
+
+[tool.poetry.scripts]
+pulses = "pulses.cli:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

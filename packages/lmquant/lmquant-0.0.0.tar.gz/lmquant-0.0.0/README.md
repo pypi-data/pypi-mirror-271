@@ -1,0 +1,80 @@
+# Large Models Quantization (LMQuant)
+
+LMQuant is an open source large models quantization toolbox based on PyTorch. It supports accuracy evaluation with simulated pseudo quantization and dumps quantized weights with scaling factors for system evalation. Apart from LMQuant, we also released [QServe](https://github.com/mit-han-lab/qserve) for efficient GPU inference of large language models. 
+
+The current release supports:
+- SmoothQuant, AWQ, GPTQ-R, and QoQ quantization for large language models
+
+
+## News
+- [2024/05] 🔥 We released QoQ LLM quantization code.
+
+## Contents
+  - [News](#news)
+  - [Installation](#installation)
+  - [Highlights](#highlights)
+  - [Support List](#support-list)
+  - [Reference](#reference)
+  - [Related Projects](#related-projects)
+
+## Installation
+
+1. Clone this repository and navigate to lmquant folder
+```
+git clone https://github.com/mit-han-lab/lmquant
+cd lmquant
+```
+
+2. Install Package
+```
+conda env create -f environment.yml
+poetry install
+```
+
+## Highlights
+
+### QoQ: W4A8KV4 Quantization for Efficient LLM Serving
+
+[[Paper](https://arxiv.org/abs/)][[Code](/projects/llm)]
+
+We introduce W4A8KV4 (4-bit weights, 8-bit activations, and 4-bit KV cache) quantization algorithm **QoQ** and inference system **QServe** to accelerate LLM serving on GPUs. The key insight is that the efficiency of LLM serving on GPUs is mainly influenced by operations on low-throughput CUDA cores rather than high-throughput tensor cores. Building upon this insight, we propose progressive quantization that can substantially reduce weight dequantization cost through register-level parallelism and a subtraction after multiplication computation order. We also develop SmoothAttention to effectively mitigate the accuracy degradation incurred by 4-bit KV quantization. As a result, we improve the serving throughput of popular LLMs by up to 2.4× on A100, 3.5× on L40S, surpassing the leading industry solution TensorRT-LLM. Remarkably, our system on L40S GPU can achieve even higher throughput compared to TensorRT-LLM on A100, effectively reducing the dollar cost of LLM serving by 3×.
+
+![QoQ](/assets/qoq.png)
+
+## Support List
+
+### Large Language Model Quantization
+| Models  | Sizes       | [QoQ (W4A8KV8)](/projects/llm/scripts/qoq.sh) | [AWQ (W4A16)](/projects/llm/scripts/awq.sh) | [GPTQ-R (W4A16)](/projects/llm/scripts/gptq.sh) | [SmoothQuant (W8A8)](/projects/llm/scripts/smoothquant.sh) |
+| ------- | ------------| ------------- | ----------- | ---------------| ------------------ |
+| Llama3  | 8B/70B      | ✅             | ✅          | ✅             | ✅                 |
+| Llama2  | 7B/13B/70B  | ✅             | ✅          | ✅             | ✅                 |
+| Llama   | 7B/13B/30B  | ✅             | ✅          | ✅             | ✅                 |
+| Mistral | 7B          | ✅             | ✅          | ✅             | ✅                 |
+| Mixtral | 8x7B        | ✅             | ✅          | ✅             | ✅                 |
+| Yi      | 34B         | ✅             | ✅          | ✅             | ✅                 |
+
+## Reference
+
+If you find `lmquant` useful or relevant to your research, please kindly cite our paper:
+
+```
+@article{lin2024qserve,
+  title={QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving},
+  author={Lin, Yujun and Tang, Haotian and Yang, Shang and Zhang, Zhekai and Xiao, Guangxuan and Gan, Chuang and Han, Song},
+  year={2024}
+}
+```
+
+## Related Projects
+
+[QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving](https://github.com/mit-han-lab/qserve)
+
+[SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models](https://github.com/mit-han-lab/smoothquant)
+
+[AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration](https://github.com/mit-han-lab/llm-awq)
+
+[GPTQ: Accurate Post-training Compression for Generative Pretrained Transformers](https://github.com/IST-DASLab/gptq)
+
+[QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs](https://github.com/spcl/QuaRot)
+
+[Atom: Low-bit Quantization for Efficient and Accurate LLM Serving](https://github.com/efeslab/Atom)

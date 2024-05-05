@@ -1,0 +1,2 @@
+Jinja2>=2.7.0
+sqlexecx>=0.0.2

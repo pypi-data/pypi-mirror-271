@@ -1,0 +1,20 @@
+# Package overview
+package_name: unsupervised_model
+
+# Variables
+pipeline_name: kmeans_pca_pipe
+pipeline_save_file: unsupervised_model_output_v
+training_data_file: Country-data.csv
+
+# to set random seed
+random_state: 0
+
+# k-means parameters
+kmeans_init: k-means++
+n_init: 50
+max_iter: 500
+
+# kpca and pca parameters
+pca_components: 2
+kpca_components: 10
+kpca_kernel: rbf

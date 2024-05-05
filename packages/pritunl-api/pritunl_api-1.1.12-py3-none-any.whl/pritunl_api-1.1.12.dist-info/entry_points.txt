@@ -1,0 +1,3 @@
+[console_scripts]
+pritunl-api-cli=pritunl_api_cli:cli
+

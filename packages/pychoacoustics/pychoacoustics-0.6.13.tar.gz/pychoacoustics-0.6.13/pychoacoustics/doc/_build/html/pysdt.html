@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pysdt – Signal Detection Theory Measures &mdash; pychoacoustics 0.6.13 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pysdt" href="_autosummary/pysdt.html" />
+    <link rel="prev" title="sndlib" href="_autosummary/sndlib.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pychoacoustics
+          </a>
+              <div class="version">
+                0.6.13
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">What is <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphical_user_interface.html">Graphical User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commandline_user_interface.html">Command Line User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paradigms.html">Paradigms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="result_files.html">Result Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="default_experiments.html">Default Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="engine.html">The <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_experiments.html">Writing your own Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/sndlib.html">sndlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sndlib.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sndlib</span></code> – Sound Synthesis Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/pysdt.html">pysdt</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pysdt</span></code> – Signal Detection Theory Measures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.compute_proportions"><code class="docutils literal notranslate"><span class="pre">compute_proportions()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.dprime_ABX"><code class="docutils literal notranslate"><span class="pre">dprime_ABX()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.dprime_ABX_from_counts"><code class="docutils literal notranslate"><span class="pre">dprime_ABX_from_counts()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.dprime_SD"><code class="docutils literal notranslate"><span class="pre">dprime_SD()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.dprime_SD_from_counts"><code class="docutils literal notranslate"><span class="pre">dprime_SD_from_counts()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.dprime_mAFC"><code class="docutils literal notranslate"><span class="pre">dprime_mAFC()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.dprime_oddity"><code class="docutils literal notranslate"><span class="pre">dprime_oddity()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.dprime_yes_no"><code class="docutils literal notranslate"><span class="pre">dprime_yes_no()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.dprime_yes_no_from_counts"><code class="docutils literal notranslate"><span class="pre">dprime_yes_no_from_counts()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.gaussianPsy"><code class="docutils literal notranslate"><span class="pre">gaussianPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.gumbelPsy"><code class="docutils literal notranslate"><span class="pre">gumbelPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.invGaussianPsy"><code class="docutils literal notranslate"><span class="pre">invGaussianPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.invGumbelPsy"><code class="docutils literal notranslate"><span class="pre">invGumbelPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.invLogisticPsy"><code class="docutils literal notranslate"><span class="pre">invLogisticPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.invLogisticPsyWd"><code class="docutils literal notranslate"><span class="pre">invLogisticPsyWd()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.invWeibullPsy"><code class="docutils literal notranslate"><span class="pre">invWeibullPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.logisticPsy"><code class="docutils literal notranslate"><span class="pre">logisticPsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.logisticPsyWd"><code class="docutils literal notranslate"><span class="pre">logisticPsyWd()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.psychSlopeToWidth"><code class="docutils literal notranslate"><span class="pre">psychSlopeToWidth()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.psychWidthToSlope"><code class="docutils literal notranslate"><span class="pre">psychWidthToSlope()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pysdt.weibullPsy"><code class="docutils literal notranslate"><span class="pre">weibullPsy()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fdl.html">GNU Free Documentation License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pychoacoustics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pysdt</span></code> – Signal Detection Theory Measures</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/pysdt.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#module-pysdt" title="pysdt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pysdt</span></code></a></p></td>
+<td><p>A module for computing signal detection theory measures.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="module-pysdt">
+<span id="pysdt-signal-detection-theory-measures"></span><h1><a class="reference internal" href="#module-pysdt" title="pysdt"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pysdt</span></code></a> – Signal Detection Theory Measures<a class="headerlink" href="#module-pysdt" title="Permalink to this heading"></a></h1>
+<p>A module for computing signal detection theory measures.
+Some of the functions in this module have been ported to
+python from the ‘psyphy’ R package of Kenneth Knoblauch
+<a class="reference external" href="http://cran.r-project.org/web/packages/psyphy/index.html">http://cran.r-project.org/web/packages/psyphy/index.html</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.compute_proportions">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">compute_proportions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nCA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nIB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corr</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#compute_proportions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.compute_proportions" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>Compute proportions with optional corrections for extreme proportions.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nCA</strong><span class="classifier">float</span></dt><dd><p>Number of correct ‘A’ trials</p>
+</dd>
+<dt><strong>nTA</strong><span class="classifier">int</span></dt><dd><p>Number of total ‘A’ trials</p>
+</dd>
+<dt><strong>nIB</strong><span class="classifier">float</span></dt><dd><p>Number of incorrect ‘B’ trials</p>
+</dd>
+<dt><strong>nTB</strong><span class="classifier">int</span></dt><dd><p>Number of total ‘B’ trials</p>
+</dd>
+<dt><strong>corr</strong><span class="classifier">string</span></dt><dd><p>The correction to apply, <cite>none</cite> for no correction, ‘loglinear` for the
+log-linear correction, and <cite>2N</cite> for the ‘2N’ correction.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>HR</strong><span class="classifier">float</span></dt><dd><p>Hit rate</p>
+</dd>
+<dt><strong>FA</strong><span class="classifier">float</span></dt><dd><p>False alarm rate</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r6254f9a3f60f-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Hautus, M. J. (1995). Corrections for extreme proportions and their biasing effects on estimated values of <em>d’</em>. <em>Behavior Research Methods, Instruments, &amp; Computers, 27(I)</em>, 46–51. <a class="reference external" href="http://doi.org/10.3758/BF03203619">http://doi.org/10.3758/BF03203619</a></p>
+</div>
+<div class="citation" id="r6254f9a3f60f-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Macmillan, N. A., &amp; Creelman, C. D. (2004). <em>Detection Theory: A User’s Guide (2nd ed.)</em>. London: Lawrence Erlbraum Associates.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">H</span><span class="p">,</span><span class="n">F</span> <span class="o">=</span> <span class="n">compute_proportions</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;loglinear&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">H</span><span class="p">,</span><span class="n">F</span> <span class="o">=</span> <span class="n">compute_proportions</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;loglinear&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">H</span><span class="p">,</span><span class="n">F</span> <span class="o">=</span> <span class="n">compute_proportions</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;2N&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.dprime_ABX">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">dprime_ABX</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meth</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#dprime_ABX"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.dprime_ABX" title="Permalink to this definition"></a></dt>
+<dd><p>Compute <em>d’</em> for ABX task from ‘hit’ and ‘false alarm’ rates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>H</strong><span class="classifier">float</span></dt><dd><p>Hit rate.</p>
+</dd>
+<dt><strong>FA</strong><span class="classifier">float</span></dt><dd><p>False alarms rate.</p>
+</dd>
+<dt><strong>meth</strong><span class="classifier">string</span></dt><dd><p>‘diff’ for differencing strategy or ‘IO’ for independent observations strategy.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dprime</strong><span class="classifier">float</span></dt><dd><p><em>d’</em> value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r286f2dba82b0-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Macmillan, N. A., &amp; Creelman, C. D. (2004). <em>Detection Theory: A User’s Guide (2nd ed.)</em>. London: Lawrence Erlbraum Associates.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_ABX</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;IO&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_ABX</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;diff&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.dprime_ABX_from_counts">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">dprime_ABX_from_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nCA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nCB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corr</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#dprime_ABX_from_counts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.dprime_ABX_from_counts" title="Permalink to this definition"></a></dt>
+<dd><p>Compute <em>d’</em> for ABX task from counts of correct and total responses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nCA</strong><span class="classifier">int</span></dt><dd><p>Number of correct responses in ‘same’ trials.</p>
+</dd>
+<dt><strong>nTA</strong><span class="classifier">int</span></dt><dd><p>Total number of ‘same’ trials.</p>
+</dd>
+<dt><strong>nCB</strong><span class="classifier">int</span></dt><dd><p>Number of correct responses in ‘different’ trials.</p>
+</dd>
+<dt><strong>nTB</strong><span class="classifier">int</span></dt><dd><p>Total number of ‘different’ trials.</p>
+</dd>
+<dt><strong>meth</strong><span class="classifier">string</span></dt><dd><p>‘diff’ for differencing strategy or ‘IO’ for independent observations strategy.</p>
+</dd>
+<dt><strong>corr</strong><span class="classifier">logical</span></dt><dd><p>if True, apply the correction to avoid hit and false alarm rates of 0 or one.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dprime</strong><span class="classifier">float</span></dt><dd><p><em>d’</em> value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="rb5fc7648b429-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Macmillan, N. A., &amp; Creelman, C. D. (2004). <em>Detection Theory: A User’s Guide (2nd ed.)</em>. London: Lawrence Erlbraum Associates.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_ABX</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;IO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.dprime_SD">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">dprime_SD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meth</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#dprime_SD"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.dprime_SD" title="Permalink to this definition"></a></dt>
+<dd><p>Compute <em>d’</em> for one interval same/different task from ‘hit’ and ‘false alarm’ rates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>H</strong><span class="classifier">float</span></dt><dd><p>Hit rate.</p>
+</dd>
+<dt><strong>FA</strong><span class="classifier">float</span></dt><dd><p>False alarms rate.</p>
+</dd>
+<dt><strong>meth</strong><span class="classifier">string</span></dt><dd><p>‘diff’ for differencing strategy or ‘IO’ for independent observations strategy.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dprime</strong><span class="classifier">float</span></dt><dd><p><em>d’</em> value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="rbd483a14b71d-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Macmillan, N. A., &amp; Creelman, C. D. (2004). <em>Detection Theory: A User’s Guide (2nd ed.)</em>. London: Lawrence Erlbraum Associates.</p>
+</div>
+<div class="citation" id="rbd483a14b71d-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_SD</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;IO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.dprime_SD_from_counts">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">dprime_SD_from_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nCA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nCB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corr</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#dprime_SD_from_counts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.dprime_SD_from_counts" title="Permalink to this definition"></a></dt>
+<dd><p>Compute <em>d’</em> for one interval same/different task from counts of correct and total responses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nCA</strong><span class="classifier">int</span></dt><dd><p>Number of correct responses in ‘same’ trials.</p>
+</dd>
+<dt><strong>nTA</strong><span class="classifier">int</span></dt><dd><p>Total number of ‘same’ trials.</p>
+</dd>
+<dt><strong>nCB</strong><span class="classifier">int</span></dt><dd><p>Number of correct responses in ‘different’ trials.</p>
+</dd>
+<dt><strong>nTB</strong><span class="classifier">int</span></dt><dd><p>Total number of ‘different’ trials.</p>
+</dd>
+<dt><strong>meth</strong><span class="classifier">string</span></dt><dd><p>‘diff’ for differencing strategy or ‘IO’ for independent observations strategy.</p>
+</dd>
+<dt><strong>corr</strong><span class="classifier">logical</span></dt><dd><p>if True, apply the correction to avoid hit and false alarm rates of 0 or one.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dprime</strong><span class="classifier">float</span></dt><dd><p><em>d’</em> value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r99b1c1e8b8d6-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Macmillan, N. A., &amp; Creelman, C. D. (2004). <em>Detection Theory: A User’s Guide (2nd ed.)</em>. London: Lawrence Erlbraum Associates.</p>
+</div>
+<div class="citation" id="r99b1c1e8b8d6-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_SD</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;IO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.dprime_mAFC">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">dprime_mAFC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Pc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#dprime_mAFC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.dprime_mAFC" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>Compute <em>d’</em> corresponding to a certain proportion of correct
+responses in m-AFC tasks.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>Pc</strong><span class="classifier">float</span></dt><dd><p>Proportion of correct responses.</p>
+</dd>
+<dt><strong>m</strong><span class="classifier">int</span></dt><dd><p>Number of alternatives.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dprime</strong><span class="classifier">float</span></dt><dd><p><em>d’</em> value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r17a75a64a1d5-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Green, D. M., &amp; Swets, J. A. (1988). <em>Signal Detection Theory and Psychophysics</em>. Los Altos, California: Peninsula Publishing.</p>
+</div>
+<div class="citation" id="r17a75a64a1d5-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Green, D. M., &amp; Dai, H. P. (1991). Probability of being correct with 1 of M orthogonal signals. <em>Perception &amp; Psychophysics, 49(1)</em>, 100–101.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_mAFC</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.dprime_oddity">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">dprime_oddity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prCorr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'diff'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#dprime_oddity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.dprime_oddity" title="Permalink to this definition"></a></dt>
+<dd><p>Compute <em>d’</em> for oddity task from proportion of correct responses.
+Only valid for the case in which there are three presentation intervals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>prCorr</strong><span class="classifier">float</span></dt><dd><p>Proportion of correct responses.</p>
+</dd>
+<dt><strong>meth</strong><span class="classifier">string</span></dt><dd><p>‘diff’ for differencing strategy or ‘IO’ for independent observations strategy.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dprime</strong><span class="classifier">float</span></dt><dd><p><em>d’</em> value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r6be0f2a45aee-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Macmillan, N. A., &amp; Creelman, C. D. (2004). <em>Detection Theory: A User’s Guide (2nd ed.)</em>. London: Lawrence Erlbraum Associates.</p>
+</div>
+<div class="citation" id="r6be0f2a45aee-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Versfeld, N. J., Dai, H., &amp; Green, D. M. (1996). The optimum decision rules for the oddity task. <em>Perception &amp; Psychophysics, 58(1)</em>, 10–21.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_oddity</span><span class="p">(</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_oddity</span><span class="p">(</span><span class="mf">0.8</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.dprime_yes_no">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">dprime_yes_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FA</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#dprime_yes_no"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.dprime_yes_no" title="Permalink to this definition"></a></dt>
+<dd><p>Compute <em>d’</em> for one interval ‘yes/no’ type tasks from hits and false alarm rates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>H</strong><span class="classifier">float</span></dt><dd><p>Hit rate.</p>
+</dd>
+<dt><strong>FA</strong><span class="classifier">float</span></dt><dd><p>False alarms rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dprime</strong><span class="classifier">float</span></dt><dd><p><em>d’</em> value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="rbced6b78bedd-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Green, D. M., &amp; Swets, J. A. (1988). <em>Signal Detection Theory and Psychophysics</em>. Los Altos, California: Peninsula Publishing.</p>
+</div>
+<div class="citation" id="rbced6b78bedd-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Macmillan, N. A., &amp; Creelman, C. D. (2004). <em>Detection Theory: A User’s Guide (2nd ed.)</em>. London: Lawrence Erlbraum Associates.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_yes_no</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.dprime_yes_no_from_counts">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">dprime_yes_no_from_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nCA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTA</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nCB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corr</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#dprime_yes_no_from_counts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.dprime_yes_no_from_counts" title="Permalink to this definition"></a></dt>
+<dd><p>Compute <em>d’</em> for one interval ‘yes/no’ type tasks from counts of correct and total responses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>nCA</strong><span class="classifier">int</span></dt><dd><p>Number of correct responses in ‘signal’ trials.</p>
+</dd>
+<dt><strong>nTA</strong><span class="classifier">int</span></dt><dd><p>Total number of ‘signal’ trials.</p>
+</dd>
+<dt><strong>nCB</strong><span class="classifier">int</span></dt><dd><p>Number of correct responses in ‘noise’ trials.</p>
+</dd>
+<dt><strong>nTB</strong><span class="classifier">int</span></dt><dd><p>Total number of ‘noise’ trials.</p>
+</dd>
+<dt><strong>corr</strong><span class="classifier">logical</span></dt><dd><p>if True, apply the correction to avoid hit and false alarm rates of 0 or one.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>dprime</strong><span class="classifier">float</span></dt><dd><p><em>d’</em> value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r2cec5aa05daf-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Green, D. M., &amp; Swets, J. A. (1988). <em>Signal Detection Theory and Psychophysics</em>. Los Altos, California: Peninsula Publishing.</p>
+</div>
+<div class="citation" id="r2cec5aa05daf-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Macmillan, N. A., &amp; Creelman, C. D. (2004). <em>Detection Theory: A User’s Guide (2nd ed.)</em>. London: Lawrence Erlbraum Associates.</p>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dp</span> <span class="o">=</span> <span class="n">dprime_yes_no_from_counts</span><span class="p">(</span><span class="n">nCA</span><span class="o">=</span><span class="mi">70</span><span class="p">,</span> <span class="n">nTA</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">nCB</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">nTB</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">corr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.gaussianPsy">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">gaussianPsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">betax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#gaussianPsy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.gaussianPsy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the gaussian psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong></dt><dd><p>Stimulus level(s).</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>betax:</strong></dt><dd><p>The slope of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function (guess rate).</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>pc</dt><dd><p>Proportion correct at the stimulus level(s) <cite>x</cite>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="ra2e68c7e9b0a-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.gumbelPsy">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">gumbelPsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">betax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#gumbelPsy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.gumbelPsy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the gumbel psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong></dt><dd><p>Stimulus level(s).</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>betax:</strong></dt><dd><p>The slope of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function (guess rate).</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>pc</dt><dd><p>Proportion correct at the stimulus level(s) <cite>x</cite>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="rd54d8c3063e3-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.invGaussianPsy">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">invGaussianPsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">betax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#invGaussianPsy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.invGaussianPsy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the inverse gaussian psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>p</strong></dt><dd><p>Proportion correct on the psychometric function.</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>betax:</strong></dt><dd><p>The slope of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function.</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>x</dt><dd><p>Stimulus level at which proportion correct equals <cite>p</cite>
+for the listener specified by the function.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r685fb3c44a99-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.invGumbelPsy">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">invGumbelPsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">betax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#invGumbelPsy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.invGumbelPsy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the inverse gumbel psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>p</strong></dt><dd><p>Proportion correct on the psychometric function.</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>betax:</strong></dt><dd><p>The slope of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function.</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>x</dt><dd><p>Stimulus level at which proportion correct equals <cite>p</cite>
+for the listener specified by the function.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="ree9abbf269e9-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.invLogisticPsy">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">invLogisticPsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">betax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#invLogisticPsy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.invLogisticPsy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the inverse logistic psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>p</strong></dt><dd><p>Proportion correct on the psychometric function.</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>betax:</strong></dt><dd><p>The slope of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function.</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>x</dt><dd><p>Stimulus level at which proportion correct equals <cite>p</cite>
+for the listener specified by the function.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r0e06b7df51af-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.invLogisticPsyWd">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">invLogisticPsyWd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">perc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#invLogisticPsyWd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.invLogisticPsyWd" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the inverse logistic psychometric function
+parametrized by width.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>p</strong></dt><dd><p>Proportion correct on the psychometric function.</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>width:</strong></dt><dd><p>The width of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function.</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+<dt><strong>perc:</strong></dt><dd><p>The percentage of the psychometric function covered
+by the width. For example, if <cite>perc</cite> is 90, the width
+goes from 5% to 95% of the probability range covered by
+the psychometric function.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>x</dt><dd><p>Stimulus level at which proportion correct equals <cite>p</cite>
+for the listener specified by the function.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r95cad9a13f72-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+<div class="citation" id="r95cad9a13f72-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Alcalá-Quintana, R., &amp; García-Pérez, M. A. (2004). The Role of Parametric Assumptions in Adaptive Bayesian Estimation. Psychological Methods, 9(2), 250–271. <a class="reference external" href="https://doi.org/10.1037/1082-989X.9.2.250">https://doi.org/10.1037/1082-989X.9.2.250</a></p>
+</div>
+<div class="citation" id="r95cad9a13f72-3" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></span>
+<p>Kuss, M., Jäkel, F., &amp; Wichmann, F. A. (2005). Bayesian inference for psychometric functions. Journal of Vision, 5(5), 8. <a class="reference external" href="https://doi.org/10.1167/5.5.8">https://doi.org/10.1167/5.5.8</a></p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.invWeibullPsy">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">invWeibullPsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">betax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#invWeibullPsy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.invWeibullPsy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the inverse weibull psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>p</strong></dt><dd><p>Proportion correct on the psychometric function.</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>betax:</strong></dt><dd><p>The slope of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function.</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>x</dt><dd><p>Stimulus level at which proportion correct equals <cite>p</cite>
+for the listener specified by the function.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="rb935fe4d6be4-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.logisticPsy">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">logisticPsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">betax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#logisticPsy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.logisticPsy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the logistic psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong></dt><dd><p>Stimulus level(s).</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>betax:</strong></dt><dd><p>The slope of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function (guess rate).</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>pc</dt><dd><p>Proportion correct at the stimulus level(s) <cite>x</cite>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r8167c060c2f1-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.logisticPsyWd">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">logisticPsyWd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">perc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#logisticPsyWd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.logisticPsyWd" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the logistic psychometric function
+parametrized in terms of width.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong></dt><dd><p>Stimulus level(s).</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>width:</strong></dt><dd><p>The width of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function (guess rate).</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+<dt><strong>perc:</strong></dt><dd><p>The percentage of the psychometric function covered
+by the width. For example, if <cite>perc</cite> is 90, the width
+goes from 5% to 95% of the probability range covered by
+the psychometric function.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>pc</dt><dd><p>Proportion correct at the stimulus level(s) <cite>x</cite>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r5438418fb0cf-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+<div class="citation" id="r5438418fb0cf-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Alcalá-Quintana, R., &amp; García-Pérez, M. A. (2004). The Role of Parametric Assumptions in Adaptive Bayesian Estimation. Psychological Methods, 9(2), 250–271. <a class="reference external" href="https://doi.org/10.1037/1082-989X.9.2.250">https://doi.org/10.1037/1082-989X.9.2.250</a></p>
+</div>
+<div class="citation" id="r5438418fb0cf-3" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></span>
+<p>Kuss, M., Jäkel, F., &amp; Wichmann, F. A. (2005). Bayesian inference for psychometric functions. Journal of Vision, 5(5), 8. <a class="reference external" href="https://doi.org/10.1167/5.5.8">https://doi.org/10.1167/5.5.8</a></p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.psychSlopeToWidth">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">psychSlopeToWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">perc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigmoid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'logistic'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#psychSlopeToWidth"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.psychSlopeToWidth" title="Permalink to this definition"></a></dt>
+<dd><p>Convert psychometric function slope to width. Currently
+works only for a logistic psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>sl</strong></dt><dd><p>Psychometric function slope.</p>
+</dd>
+<dt><strong>perc:</strong></dt><dd><p>The percentage of the psychometric function covered
+by the width. For example, if <cite>perc</cite> is 90, the width
+goes from 5% to 95% of the probability range covered by
+the psychometric function.</p>
+</dd>
+<dt><strong>sigmoid:</strong></dt><dd><p>The psychometric function shape. Currently only
+logistic psychometric functions are accepted.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>width</dt><dd><p>The psychometric function width.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r1628f42fde8a-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Alcalá-Quintana, R., &amp; García-Pérez, M. A. (2004). The Role of Parametric Assumptions in Adaptive Bayesian Estimation. Psychological Methods, 9(2), 250–271. <a class="reference external" href="https://doi.org/10.1037/1082-989X.9.2.250">https://doi.org/10.1037/1082-989X.9.2.250</a></p>
+</div>
+<div class="citation" id="r1628f42fde8a-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Kuss, M., Jäkel, F., &amp; Wichmann, F. A. (2005). Bayesian inference for psychometric functions. Journal of Vision, 5(5), 8. <a class="reference external" href="https://doi.org/10.1167/5.5.8">https://doi.org/10.1167/5.5.8</a></p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.psychWidthToSlope">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">psychWidthToSlope</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">perc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigmoid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'logistic'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#psychWidthToSlope"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.psychWidthToSlope" title="Permalink to this definition"></a></dt>
+<dd><p>Convert psychometric function width to slope. Currently
+works only for a logistic psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>wd</strong></dt><dd><p>Psychometric function width.</p>
+</dd>
+<dt><strong>perc:</strong></dt><dd><p>The percentage of the psychometric function covered
+by the width. For example, if <cite>perc</cite> is 90, the width
+goes from 5% to 95% of the probability range covered by
+the psychometric function.</p>
+</dd>
+<dt><strong>sigmoid:</strong></dt><dd><p>The psychometric function shape. Currently only
+logistic psychometric functions are accepted.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>slope</dt><dd><p>The psychometric function slope.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r2c1ce7572151-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Alcalá-Quintana, R., &amp; García-Pérez, M. A. (2004). The Role of Parametric Assumptions in Adaptive Bayesian Estimation. Psychological Methods, 9(2), 250–271. <a class="reference external" href="https://doi.org/10.1037/1082-989X.9.2.250">https://doi.org/10.1037/1082-989X.9.2.250</a></p>
+</div>
+<div class="citation" id="r2c1ce7572151-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Kuss, M., Jäkel, F., &amp; Wichmann, F. A. (2005). Bayesian inference for psychometric functions. Journal of Vision, 5(5), 8. <a class="reference external" href="https://doi.org/10.1167/5.5.8">https://doi.org/10.1167/5.5.8</a></p>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pysdt.weibullPsy">
+<span class="sig-prename descclassname"><span class="pre">pysdt.</span></span><span class="sig-name descname"><span class="pre">weibullPsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">betax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gammax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pysdt.html#weibullPsy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pysdt.weibullPsy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the weibull psychometric function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong></dt><dd><p>Stimulus level(s).</p>
+</dd>
+<dt><strong>alphax:</strong></dt><dd><p>Mid-point(s) of the psychometric function.</p>
+</dd>
+<dt><strong>betax:</strong></dt><dd><p>The slope of the psychometric function.</p>
+</dd>
+<dt><strong>gammax:</strong></dt><dd><p>Lower limit of the psychometric function (guess rate).</p>
+</dd>
+<dt><strong>lambdax:</strong></dt><dd><p>The lapse rate.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>pc</dt><dd><p>Proportion correct at the stimulus level(s) <cite>x</cite>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r1944a55c9ed1-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Kingdom, F. A. A., &amp; Prins, N. (2010). <em>Psychophysics: A Practical Introduction</em>. Academic Press.</p>
+</div>
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="_autosummary/sndlib.html" class="btn btn-neutral float-left" title="sndlib" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="_autosummary/pysdt.html" class="btn btn-neutral float-right" title="pysdt" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2008-2024, Samuele Carcagno.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Command Line User Interface &mdash; pychoacoustics 0.6.13 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Paradigms" href="paradigms.html" />
+    <link rel="prev" title="Graphical User Interface" href="graphical_user_interface.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pychoacoustics
+          </a>
+              <div class="version">
+                0.6.13
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">What is <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphical_user_interface.html">Graphical User Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Line User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paradigms.html">Paradigms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="result_files.html">Result Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="default_experiments.html">Default Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="engine.html">The <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_experiments.html">Writing your own Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/sndlib.html">sndlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sndlib.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sndlib</span></code> – Sound Synthesis Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/pysdt.html">pysdt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pysdt.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pysdt</span></code> – Signal Detection Theory Measures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fdl.html">GNU Free Documentation License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pychoacoustics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Command Line User Interface</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/commandline_user_interface.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="command-line-user-interface">
+<span id="sec-cmd-user-interface"></span><h1>Command Line User Interface<a class="headerlink" href="#command-line-user-interface" title="Permalink to this heading"></a></h1>
+<p>In order to automate certain tasks, or perform some advanced operations,
+<code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> can be called from the command line with a number of
+command line options. The list of possible command line options is shown below:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-h,</span> <span class="pre">--help</span></code> Show help message.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-f,</span> <span class="pre">--file</span> <span class="pre">FILE</span></code> Load parameters file <code class="docutils literal notranslate"><span class="pre">FILE</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-r,</span> <span class="pre">--results</span> <span class="pre">FILE</span></code> Save the results to file <code class="docutils literal notranslate"><span class="pre">FILE</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-l,</span> <span class="pre">--listener</span> <span class="pre">LISTENER</span></code> Set listener label to <code class="docutils literal notranslate"><span class="pre">LISTENER</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-s,</span> <span class="pre">--session</span> <span class="pre">SESSION</span></code> Set session label to <code class="docutils literal notranslate"><span class="pre">SESSION</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-c,</span> <span class="pre">--conceal</span></code> Hide Control and Parameters Windows.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-p,</span> <span class="pre">--progbar</span></code> Show the progress bar.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-b,</span> <span class="pre">--blockprogbar</span></code> Show the progress bar.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-q,</span> <span class="pre">--quit</span></code> Quit after finished.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-a,</span> <span class="pre">--autostart</span></code> Automatically start the first stored block.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-k,</span> <span class="pre">--reset</span></code> Reset block positions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-z,</span> <span class="pre">--seed</span></code> Set random seed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-x,</span> <span class="pre">--recursion-depth</span></code> Set the maximum recursion depth (this
+overrides the maximum recursion depth set in the preferences window).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-g,</span> <span class="pre">--graphicssystem</span></code> sets the backend to be used for on-screen
+widgets and QPixmaps. Available options are raster and opengl.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-d,</span> <span class="pre">--display</span></code> This option is only valid for X11 and sets the X
+display (default is $DISPLAY).</p></li>
+</ul>
+<p>each command line option has a short (single dash, one letter) and long
+(double dash, one word) form, for example to show the help message, you
+can use either of the two following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pychoacoustics -h
+$ pychoacoustics --help
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="graphical_user_interface.html" class="btn btn-neutral float-left" title="Graphical User Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="paradigms.html" class="btn btn-neutral float-right" title="Paradigms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2008-2024, Samuele Carcagno.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

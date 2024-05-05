@@ -1,0 +1,26 @@
+
+include pychoacoustics/*.py
+include pychoacoustics/default_experiments/*
+include pychoacoustics/nnresample/*
+include pychoacoustics/sounds/*
+include scripts/*
+include icons/*
+include translations/*
+#include postinstall.py
+include INSTALL.txt
+include README.md
+include pychoacoustics.desktop
+include x-prm.xml
+include COPYING.txt
+include CREDITS.txt
+exclude windows_installer/*
+exclude mac_installer/*
+include pychoacoustics/doc/_build/html/*
+include pychoacoustics/doc/_build/html/_sources/*
+include pychoacoustics/doc/_build/html/_sources/_themes/*
+include pychoacoustics/doc/_build/html/_static/*
+include pychoacoustics/doc/_build/html/_static/css/*
+include pychoacoustics/doc/_build/html/_static/font/*
+include pychoacoustics/doc/_build/html/_static/js/*
+include pychoacoustics/doc/_build/html/_themes/*
+include pychoacoustics/doc/_build/latex/*.pdf

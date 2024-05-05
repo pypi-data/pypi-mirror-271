@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: django-surveyplus
+Version: 0.0.2
+Summary: Django Survey App
+Author-email: Wilmer Martinez <info@wilmermartinez.dev>
+License: MIT License
+        
+        Copyright (c) 2024 Wilmer Martinez
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/wilmerm/django-survey
+Project-URL: Issues, https://github.com/wilmerm/django-survey/issues
+Project-URL: Repository, https://github.com/wilmerm/django-survey
+Keywords: django,survey,polls
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Spanish
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django :: 3
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=3
+Requires-Dist: django-colorfield
+
+# django-survey
+The "django-survey" project is an application for Django that makes it easy to create and manage surveys on websites. This application provides functionalities to create surveys, define questions and response options, manage active and inactive surveys, collect user responses, and generate statistical reports on survey results. With this tool, developers can easily integrate surveys into their Django websites to collect user data and feedback.
+
+## Instalation
+
+```sh
+pip install django-surveyplus
+```
+
+## Use
+
+### Add to installed applications
+
+```py
+# settings.py
+
+INSTALLED_APPS = [
+    # ...
+    'survey',
+    # ...
+]
+```
+
+### Add the URLs
+
+```py
+urlpatterns = [
+    # ...
+    path('survey/', include('survey.urls')),
+    # ...
+]
+```
+
+### Run the migrations
+
+```sh
+python manage.py migrate
+```
+
+## Licence
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
+
+## Proyect Status
+
+This project is in Production/Stable ✔
+
+## Contribution 💗
+
+If you find value in this project and would like to show your support, please consider making a donation via PayPal:
+
+[Donate on PayPal](https://paypal.me/martinezwilmer?country.x=DO&locale.x=es_XC)
+
+Your generosity helps us to continue improving and maintaining this project. We appreciate every contribution, however small. Thanks for being part of our community!

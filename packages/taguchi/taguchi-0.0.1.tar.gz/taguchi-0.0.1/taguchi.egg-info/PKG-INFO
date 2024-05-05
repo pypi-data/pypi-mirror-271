@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: taguchi
+Version: 0.0.1
+Summary: A tool for optimising systems parameterised by environment variables, based on Taguchi/orthogonal array systems of experiments.
+Author: Jesse Cranney
+Author-email: jesse.cranney@anu.edu.au
+License: MIT license
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+
+# taguchi
+A tool for optimising systems parameterised by environment variables, based on Taguchi/orthogonal array systems of experiments.
+
+## Disclaimer
+All that I know and understand about this technique is at best a lossy interpretation of [this Youtube video](https://www.youtube.com/watch?v=5oULEuOoRd0) by [@Nighthawkinlight](https://www.youtube.com/@Nighthawkinlight), and at worst a complete misunderstanding of the basic scientific method. The video does a better job at explaining than I can hope for, so go check it out to understand the background.
+
+## Installation
+
+## Usage

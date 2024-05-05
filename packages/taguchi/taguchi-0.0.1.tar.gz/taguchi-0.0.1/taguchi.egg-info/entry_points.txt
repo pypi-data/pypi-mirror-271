@@ -1,0 +1,2 @@
+[console_scripts]
+taguchi = taguchi.__main__:__name__

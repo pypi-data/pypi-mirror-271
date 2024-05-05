@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: rdltr
+Version: 0.1.16
+Summary: simple read-it-later app
+Home-page: https://github.com/SamR1/rdltr
+Author: SamR1
+License: GNU General Public License v3.0
+Project-URL: Documentation, https://samr1.github.io/rdltr
+Platform: linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.8.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: Flask==3.0.3
+Requires-Dist: Flask-Bcrypt==1.0.1
+Requires-Dist: Flask-Migrate==4.0.7
+Requires-Dist: Flask-SQLAlchemy==3.0.5
+Requires-Dist: gunicorn==22.0.0
+Requires-Dist: lxml[html_clean]==5.2.1
+Requires-Dist: PyJWT==2.8.0
+Requires-Dist: readability-lxml==0.8.1
+Requires-Dist: requests==2.31.0
+Requires-Dist: sqlalchemy==1.4.52
+Provides-Extra: test
+Requires-Dist: bandit; extra == "test"
+Requires-Dist: pytest-black; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-flake8; extra == "test"
+Requires-Dist: pytest-html==3.2.0; extra == "test"
+Requires-Dist: pytest-isort; extra == "test"
+Requires-Dist: pytest-mypy; extra == "test"
+Requires-Dist: pytest-selenium; extra == "test"
+Requires-Dist: selenium==4.9.0; extra == "test"
+Requires-Dist: types-requests; extra == "test"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Requires-Dist: recommonmark; extra == "doc"
+
+# rdltr
+
+> ⚠️ **rdltr** is no longer maintained.
+
+[![PyPI version](https://img.shields.io/pypi/v/rdltr.svg)](https://pypi.org/project/rdltr/)
+[![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://python.org)
+[![Flask Version](https://img.shields.io/badge/flask-3.0-brightgreen.svg)](http://flask.pocoo.org/) [![code style: black](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black) 
+[![type check: mypy](https://img.shields.io/badge/type%20check-mypy-blue)](http://mypy-lang.org/)  
+[![Vue Version](https://img.shields.io/badge/vue-3.4-brightgreen.svg)](https://vuejs.org/)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) 
+[![types: TypeScript](https://img.shields.io/npm/types/typescript)](https://www.typescriptlang.org/)   
+[![Coverage Status](https://coveralls.io/repos/github/SamR1/rdltr/badge.svg?branch=master)](https://coveralls.io/github/SamR1/rdltr?branch=master)<sup><sup>1</sup></sup>
+[![pipeline status](https://github.com/SamR1/rdltr/actions/workflows/.tests-python.yml/badge.svg)](https://github.com/SamR1/rdltr/actions/workflows/.tests-python.yml)
+[![pipeline status](https://github.com/SamR1/rdltr/actions/workflows/.tests-javascript.yml/badge.svg)](https://github.com/SamR1/rdltr/actions/workflows/.tests-javascript.yml)
+
+----
+
+**rdltr** is a _read-it later_ web application: save articles for later reading.  
+Categories and tags can be used to classify articles.  
+
+It is also possible to add articles from [FreshRSS](https://freshrss.org/).  
+A Firefox add-on is available: [SamR1/rdltr-addon](https://github.com/SamR1/rdltr-addon), allowing
+ to add article from browser side.  
+➡️ see [documentation](https://samr1.github.io/rdltr/index.html) for installation instructions and features.  
+
+![application screenshot](https://raw.githubusercontent.com/SamR1/rdltr/master/docsrc/source/_images/screenshot.png)
+
+Initially a small project to learn Vue (with Flask)<sup>2</sup>, **rdltr** uses 
+**[readability-lxml](https://github.com/buriy/python-readability)** to parse HTML 
+content.
+
+---
+
+Notes:  
+_1. test coverage: only for Python_  
+_2. application structure inspired by this tutorial: [Full-stack single page application with Vue.js and Flask](https://codeburst.io/full-stack-single-page-application-with-vue-js-and-flask-b1e036315532)_  

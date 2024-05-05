@@ -1,0 +1,5 @@
+[console_scripts]
+meds_etl_from_flat = meds_etl.flat:convert_flat_to_meds_main
+meds_etl_mimic = meds_etl.mimic:main
+meds_etl_omop = meds_etl.omop:main
+meds_etl_to_flat = meds_etl.flat:convert_meds_to_flat_main

@@ -1,0 +1,7 @@
+README.md
+setup.py
+tg_setup_client.egg-info/PKG-INFO
+tg_setup_client.egg-info/SOURCES.txt
+tg_setup_client.egg-info/dependency_links.txt
+tg_setup_client.egg-info/requires.txt
+tg_setup_client.egg-info/top_level.txt

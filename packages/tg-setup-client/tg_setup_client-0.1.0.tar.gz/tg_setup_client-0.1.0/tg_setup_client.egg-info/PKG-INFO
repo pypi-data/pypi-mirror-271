@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tg_setup_client
+Version: 0.1.0
+Summary: A package to initialize and authenticate Telegram client using Telethon
+Home-page: https://github.com/thomasjjj/tg_setup_client
+Author: thomasjjj
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: telethon>=1.24.0

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html id="html" lang="en" {{ theme if theme }}>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+
+    <link href="/static/codehighlight.css" rel="stylesheet" type="text/css" />
+    <link href="/static/markdown.css" rel="stylesheet" type="text/css" />
+    <link href="/static/app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body hx-ext="swap-header">
+    <div id="content">
+        {% for element in root_element %}{{ element | safe}}{% endfor %}
+    </div>
+    <div id="toast" class="toast toast-top toast-end z-50"></div>
+
+    {{ libs | safe }}
+    <script src="/static/libs/htmx1.9.9.min.js"></script>
+    <script src="/static/libs/htmx-json-enc.js"></script>
+    <script src="/_static/default.js"></script>
+    {{ ext | safe }}
+</body>
+
+</html>

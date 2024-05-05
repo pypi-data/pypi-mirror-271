@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: gravitino
+Version: 0.5.0.dev6
+Summary: Python lib/client for Gravitino
+Home-page: https://github.com/datastrato/gravitino
+Author: datastrato
+Author-email: support@datastrato.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: dataclasses-json
+Provides-Extra: dev
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: dataclasses-json ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+<!-- 
+- Copyright 2024 Datastrato Pvt Ltd.
+- This software is licensed under the Apache License version 2. 
+-->
+[![License](https://img.shields.io/github/license/datastrato/gravitino)](https://github.com/datastrato/gravitino/blob/main/LICENSE)
+
+## Introduction
+
+Gravitino is a high-performance, geo-distributed, and federated metadata lake. 
+It manages the metadata directly in different sources, types, and regions. 
+It also provides users with unified metadata access for data and AI assets.
+
+Gravitino Python client helps you easily manage structure and unstructured data files in the Gravitino service.
+
+![gravitino-python-client-introduction.png](assets/gravitino-python-client-introduction.png)
+
+
+## Use Guidance
+You can use Gravitino Python client library in the Spark, Python, PyTorch, Tensorflow and Ray environment.
+First of all, You must have a Gravitino Service, You can refer document of [How to install Gravitino](https://datastrato.ai/docs/0.5.0/how-to-install) 
+ to build Gravitino Server from source code and install it in your local.
+or refer document of [How to use the playground#Launch AI components of playground](https://datastrato.ai/docs/0.5.0/how-to-use-the-playground/#launch-ai-components-of-playground) to running
+a Gravitino service Docker container in you local.
+
+### HDFS Fileset Sample
+
+Install hdfs Python package
+```python
+pip install hdfs
+```
+
+```python
+from hdfs import InsecureClient
+
+# Create a HDFS connector client
+client = InsecureClient('http://hive:50070', user='root')
+
+# List HDFS file and directories
+print(client.list('/'))
+```
+
+```python
+pip install requests dataclasses-json gravitino
+```
+
+
+```python
+import gravitino
+
+gravitino_admin_client = GravitinoAdminClient(uri="http://gravitino:8090")
+metalake = gravitino_admin_client.create_metalake(
+    ident=NameIdentifier.of("default"),
+    comment="metalake comment", properties={})
+
+catalog = gravitino_client.create_catalog(
+            ident=NameIdentifier.of("default", "testCatalog"),
+            type=CatalogDTO.Type.FILESET,
+            provider="hadoop",
+            comment="catalog comment",
+            properties={"k1": "v1"}
+        )
+
+catalog.as_schemas().create_schema(
+    ident=NameIdentifier.of("default", "testCatalog", "testSchema"), 
+    comment="comment", 
+    properties={"k1": "v1"})
+```
+
+## Development
+
+#### Prerequisites
+Python 3.8 or later
+
+### Build and testing
+
+1. Download source code
+    ```bash
+    git clone git@github.com:datastrato/gravitino.git
+    cd clients/client-python
+    ```
+
+1. Install current library in your local machine. 
+    ```bash
+    pip install -e .
+    ```
+
+# Development Environment
+
+1. Install dependency
+    ```bash
+    pip install -e '.[dev]'
+    ```
+
+2. Run integration tests
+    ```bash
+    cd gravitino
+    ./gradlew compileDistribution -x test
+    ./gradlew :clients:client-python:test
+    ```
+
+## Resources
++ Official website https://datastrato.ai/
++ Project home on GitHub: https://github.com/datastrato/gravitino/ 
++ Playground with Docker: https://github.com/datastrato/gravitino-playground
++ User documentation: https://datastrato.ai/docs/
++ Videos on Youtube: https://www.youtube.com/@Datastrato
++ Twitter: https://twitter.com/datastrato
++ Linkedin: https://www.linkedin.com/company/datastrato
++ Slack Community: [https://join.slack.com/t/datastrato-community](https://join.slack.com/t/datastrato-community/shared_invite/zt-2a8vsjoch-cU_uUwHA_QU6Ab50thoq8w)
++ Discourse Community: https://gravitino.discourse.group/

@@ -1,0 +1,9 @@
+api
+classification
+data_management
+detection
+docs
+md_utils
+md_visualization
+megadetector
+taxonomy_mapping

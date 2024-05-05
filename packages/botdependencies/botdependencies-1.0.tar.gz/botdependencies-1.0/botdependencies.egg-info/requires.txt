@@ -1,0 +1,5 @@
+nltk
+pandas
+numpy
+azure-storage-file-datalake
+azure-identity

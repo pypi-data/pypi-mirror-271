@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: botdependencies
+Version: 1.0
+Author: Emmanuel
+Requires-Dist: nltk
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: azure-storage-file-datalake
+Requires-Dist: azure-identity

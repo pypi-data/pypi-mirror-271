@@ -1,0 +1,8 @@
+setup.py
+botdependencies/__init__.py
+botdependencies/baseline.py
+botdependencies.egg-info/PKG-INFO
+botdependencies.egg-info/SOURCES.txt
+botdependencies.egg-info/dependency_links.txt
+botdependencies.egg-info/requires.txt
+botdependencies.egg-info/top_level.txt

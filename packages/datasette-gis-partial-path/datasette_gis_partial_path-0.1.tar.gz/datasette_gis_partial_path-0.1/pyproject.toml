@@ -1,0 +1,32 @@
+[project]
+name = "datasette-gis-partial-path"
+version = "0.1"
+description = "Datasette plugin that adds a custom SQL function that returns the coordinates of a fractional portion of a path between two points"
+readme = "README.md"
+authors = [{name = "Hamilton Carter"}]
+license = {text = "Apache License, Version 2.0"}
+classifiers=[
+    "Framework :: Datasette",
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "datasette",
+    "haversine"
+]
+
+[project.urls]
+Homepage = "https://github.com/hcarter333/datasette-gis-partial-path"
+Changelog = "https://github.com/hcarter333/datasette-gis-partial-path/releases"
+Issues = "https://github.com/hcarter333/datasette-gis-partial-path/issues"
+CI = "https://github.com/hcarter333/datasette-gis-partial-path/actions"
+
+[project.entry-points.datasette]
+gis_partial_path_lng = "datasette_gis_partial_path_lng"
+gis_partial_path_lat = "datasette_gis_partial_path_lat"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"

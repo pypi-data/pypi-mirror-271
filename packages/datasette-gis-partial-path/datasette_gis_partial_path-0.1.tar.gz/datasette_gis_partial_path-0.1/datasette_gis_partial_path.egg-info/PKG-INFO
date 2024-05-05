@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: datasette-gis-partial-path
+Version: 0.1
+Summary: Datasette plugin that adds a custom SQL function that returns the coordinates of a fractional portion of a path between two points
+Author: Hamilton Carter
+License: Apache License, Version 2.0
+Project-URL: Homepage, https://github.com/hcarter333/datasette-gis-partial-path
+Project-URL: Changelog, https://github.com/hcarter333/datasette-gis-partial-path/releases
+Project-URL: Issues, https://github.com/hcarter333/datasette-gis-partial-path/issues
+Project-URL: CI, https://github.com/hcarter333/datasette-gis-partial-path/actions
+Classifier: Framework :: Datasette
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: datasette
+Requires-Dist: haversine
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+# datasette-gis-partial-path
+Adds sqlite method that accepts two points on Earth defining a path and a length along the path, then returns the  coordinates at that length along the path.

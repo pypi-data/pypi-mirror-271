@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_gis_partial_path/__init__.py
+datasette_gis_partial_path.egg-info/PKG-INFO
+datasette_gis_partial_path.egg-info/SOURCES.txt
+datasette_gis_partial_path.egg-info/dependency_links.txt
+datasette_gis_partial_path.egg-info/entry_points.txt
+datasette_gis_partial_path.egg-info/requires.txt
+datasette_gis_partial_path.egg-info/top_level.txt
+tests/test_gis_partial_path.py

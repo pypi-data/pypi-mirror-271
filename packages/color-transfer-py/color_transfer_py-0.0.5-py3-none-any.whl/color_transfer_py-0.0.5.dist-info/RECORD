@@ -1,0 +1,9 @@
+color_transfer/__init__.py,sha256=d_fVvE85ajZtNDUp7H4_A1Vf1-gtQZPYhylYDck5DoY,105
+color_transfer/numpy.py,sha256=_IprX_arEEmfMz2HWiB2E1Aow0-WC2qOkrVgB2rNRXA,1108
+color_transfer/pytorch.py,sha256=CS_KV37KKdUQUOWnGQY7k_HFJqliXRdxCaksmFtFXkM,2871
+color_transfer/utils.py,sha256=DMS-Wt5E2OaJgqNoGsaAjOQLPdA--YFZVEUrdu5k1cY,8250
+color_transfer_py-0.0.5.dist-info/LICENSE.txt,sha256=XBhUg2mxGBpVXqIQqntAZHYUTa40cEZLvYZfrAen3AQ,1085
+color_transfer_py-0.0.5.dist-info/METADATA,sha256=ICU9hCZflymDpSIzo-s86-tokH0KQ5_4HnQAEOq3RJ4,2490
+color_transfer_py-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+color_transfer_py-0.0.5.dist-info/top_level.txt,sha256=7-f2GVjxb0W8YtrzJ52IYwu7R4PfJTFBNCk11WJ4ltA,15
+color_transfer_py-0.0.5.dist-info/RECORD,,

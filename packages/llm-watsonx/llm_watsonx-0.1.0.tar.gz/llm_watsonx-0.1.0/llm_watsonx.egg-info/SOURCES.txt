@@ -1,0 +1,10 @@
+LICENSE
+README.md
+llm_watsonx.py
+pyproject.toml
+llm_watsonx.egg-info/PKG-INFO
+llm_watsonx.egg-info/SOURCES.txt
+llm_watsonx.egg-info/dependency_links.txt
+llm_watsonx.egg-info/entry_points.txt
+llm_watsonx.egg-info/requires.txt
+llm_watsonx.egg-info/top_level.txt

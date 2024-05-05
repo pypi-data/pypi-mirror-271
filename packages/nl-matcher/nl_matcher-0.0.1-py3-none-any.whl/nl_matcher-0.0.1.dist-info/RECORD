@@ -1,0 +1,7 @@
+nl_matcher/__init__.py,sha256=yTtxkSMwbWB8wpVLkXaq5uUzLqPGjRWQ_jue7SxOcwc,76
+nl_matcher/location_matcher.py,sha256=nt4FcXhIgnQUvRgkuaZrYwtKKi9ll2ium-uscAFyuPw,2954
+nl_matcher/rules/cfg,sha256=ffdsLmVK9VnQHvE6hz0raEylBJ3yb94u3kkv9fcM-_U,74
+nl_matcher/rules/patterns.jsonl,sha256=D0NKrjm_f-zSbyfw89sn1rXRScxsQZhMOKLkdXS1C7k,703364
+nl_matcher-0.0.1.dist-info/METADATA,sha256=G8BXYrTthO1bFROzkSYMYHnX2ckvzYYetANo4ZRReiQ,585
+nl_matcher-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+nl_matcher-0.0.1.dist-info/RECORD,,

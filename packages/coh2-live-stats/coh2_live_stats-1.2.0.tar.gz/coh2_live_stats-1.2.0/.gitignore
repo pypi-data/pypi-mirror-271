@@ -1,0 +1,17 @@
+__pycache__
+# PyCharm
+.idea/
+# virtual environment
+venv/
+# setuptools build
+dist/
+src/coh2_live_stats.egg-info/
+## pyinstaller build
+dist_bundle/
+build/
+## generated
+version.py
+_coh2livestats.toml
+#logs
+coh2livestats.log*
+build.log*

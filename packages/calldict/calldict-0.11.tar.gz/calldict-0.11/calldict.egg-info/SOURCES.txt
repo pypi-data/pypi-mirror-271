@@ -1,0 +1,8 @@
+README.md
+setup.py
+calldict/__init__.py
+calldict.egg-info/PKG-INFO
+calldict.egg-info/SOURCES.txt
+calldict.egg-info/dependency_links.txt
+calldict.egg-info/requires.txt
+calldict.egg-info/top_level.txt

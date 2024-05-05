@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+color_transfer/__init__.py
+color_transfer/numpy.py
+color_transfer/pytorch.py
+color_transfer/utils.py
+color_transfer_py.egg-info/PKG-INFO
+color_transfer_py.egg-info/SOURCES.txt
+color_transfer_py.egg-info/dependency_links.txt
+color_transfer_py.egg-info/requires.txt
+color_transfer_py.egg-info/top_level.txt

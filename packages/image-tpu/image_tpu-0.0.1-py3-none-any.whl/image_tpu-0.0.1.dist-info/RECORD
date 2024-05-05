@@ -1,0 +1,8 @@
+test.py,sha256=7S8U2rYlJ9F_1YRWIbcudRt4OSV2e0Lh5qLisQElIq0,112
+image_tpu/__init__.py,sha256=tWFMHDxWmAIugf88KSGac-qfLt8OGJMn8evuAtRWwSE,24
+image_tpu/tpu.py,sha256=ugZV95mnvHbqeIN7vejIv-_SdNGIQh_xcNdPsoE4-zo,2073
+image_tpu-0.0.1.dist-info/LICENCE,sha256=JYEO0q_B47-TMgA6Mmw4_igNsFxuyeyDskSkEnXIVUI,19
+image_tpu-0.0.1.dist-info/METADATA,sha256=ZqqvQzYM3_FmJfGJdj-gl2m-To9EdyaOplkx1yQLcN0,510
+image_tpu-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+image_tpu-0.0.1.dist-info/top_level.txt,sha256=W_RResaze305s4YXgEbNUGiSoTuSMR7GjVIISEsIN60,15
+image_tpu-0.0.1.dist-info/RECORD,,

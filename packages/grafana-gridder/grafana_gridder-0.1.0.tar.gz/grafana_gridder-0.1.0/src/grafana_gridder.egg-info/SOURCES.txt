@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+.github/workflows/python-publish.yml
+src/grafana_gridder/__init__.py
+src/grafana_gridder/grafana_gridder.py
+src/grafana_gridder.egg-info/PKG-INFO
+src/grafana_gridder.egg-info/SOURCES.txt
+src/grafana_gridder.egg-info/dependency_links.txt
+src/grafana_gridder.egg-info/requires.txt
+src/grafana_gridder.egg-info/top_level.txt

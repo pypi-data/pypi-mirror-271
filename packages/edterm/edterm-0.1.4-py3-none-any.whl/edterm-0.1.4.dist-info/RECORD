@@ -1,0 +1,9 @@
+edterm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edterm/data_reader.py,sha256=nxALdolFO3l4N3wRJS7HS1Qril6czHBNgenp9Fqw5gs,265
+edterm/edterm.py,sha256=xH8zogrmiUWG-H02Vp_ibfv72FiLAKcxuhDFFxd3HR4,8182
+edterm-0.1.4.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+edterm-0.1.4.dist-info/METADATA,sha256=Dk3rSspbV-Xh2S-7Q6Q2AjlSWhUsoORvmMVzmM2X15A,3486
+edterm-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+edterm-0.1.4.dist-info/entry_points.txt,sha256=ofloX49fp8e1Quil3_qwJp-ksAbruErp6QJQnkMh6I0,46
+edterm-0.1.4.dist-info/top_level.txt,sha256=rueTcKYFzx2nYV8Frr2-z5E5GKKaExRSto65LpTJbpU,7
+edterm-0.1.4.dist-info/RECORD,,

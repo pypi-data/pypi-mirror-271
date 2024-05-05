@@ -1,0 +1,9 @@
+short_transformers/__init__.py,sha256=6BbVW9vSHTjWgQBnoq3TxOVjpAzKkeQiF1u3tpjiByc,98
+short_transformers/dist.py,sha256=SS62ZoS3pG-DNZrd-aQ2lg7Ttayjdq19AZxtoRmaVjs,748
+short_transformers/graph.py,sha256=2yLGapxMKi77cRwt3S7p140VuvM8n6pQWJ3g87Q69QA,945
+short_transformers/log.py,sha256=6nTaFx6eZtwgkhPmP6jc4_WTcMFR9h0HtrYZ8k2kDGw,529
+short_transformers/short_transformer.py,sha256=fsKxmyRIuxjn0bHfWHngYMsQYMq9wwIpu5WcYp5Bu4s,8463
+short_transformers/utils.py,sha256=zO6uTaDhZSkYIvYXWp-AiDk4x8lEuvEFoG2uxVML6wc,76
+short_transformers-0.2.0.dist-info/METADATA,sha256=ogAkcO_QDJikokNSNdWYTaXJFcjBXPXG8duLGbvyTx4,5598
+short_transformers-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+short_transformers-0.2.0.dist-info/RECORD,,

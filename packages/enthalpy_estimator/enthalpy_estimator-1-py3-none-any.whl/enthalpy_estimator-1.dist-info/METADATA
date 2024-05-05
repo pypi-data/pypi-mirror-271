@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: enthalpy_estimator
+Version: 1
+Summary: A package to automatically generate reactions and estimate enthalpy.
+License: GNU General Public License v3.0
+Author: Egor Nosach
+Requires-Python: >=3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.26)
+Requires-Dist: scipy (>=1.14)
+Description-Content-Type: text/markdown
+
+# enthalpy_estimator
+
+A package to automatically generate reactions and estimate enthalpy.
+
+## Installation
+
+```bash
+$ pip install enthalpy_estimator
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`enthalpy_estimator` was created by Egor Nosach. It is licensed under the terms of the GNU General Public License v3.0 license.
+
+## Credits
+
+`enthalpy_estimator` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+

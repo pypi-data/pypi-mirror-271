@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: justcard
+Version: 0.0.1
+Summary: Just a Card Game
+Keywords: algorithm,trade,bot
+Maintainer-email: justpods <korawich.anu@gmail.com>
+Requires-Python: >=3.10.11
+Description-Content-Type: text/markdown
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click
+Requires-Dist: pydantic==2.7.1
+Requires-Dist: pyyaml==6.0.1
+Project-URL: Homepage, https://github.com/justpods/justcard/
+Project-URL: Source Code, https://github.com/justpods/justcard/
+
+# Just: _Card Game_
+
+Just a Card Game that build from Python. The main propose is playing with
+websocket server that able to play some game together with any connected servers.
+
+## Features
+
+## Pocker
+
+* https://github.com/annaymj/Python-Code/blob/master/Poker.py
+
+## License
+
+This project was licensed under the terms of the [MIT license](LICENSE), and thanks
+all for reference public blogs that sharing knowledge to me.
+

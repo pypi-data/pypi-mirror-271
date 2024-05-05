@@ -1,0 +1,12 @@
+justcard/__init__.py,sha256=YZoDMFgikTmgL5EqRKa4mX-zXFr2c20J7dSZJ4dqSd0,27
+justcard/models.py,sha256=etv2DTuhbLooX7WQnhX7tHj9YSpVNwCgHiiPjMWdonw,1544
+justcard/utils.py,sha256=cOwFYoVuBXQ0ks6os3IoypJjcjBQPbq_y09keI5owjs,335
+justcard/poker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+justcard/poker/game.py,sha256=rQ9FYzo3ImbR2YPhhHX0JymGEZ9fijlz5Cfcgu9zEGw,9936
+justcard/poker/holdem.py,sha256=0uWGqQCJ5LAcQAe0kOW1eUJ5RqgkEj0XxHvXS9rIpxI,1019
+justcard/poker/models.py,sha256=muoqTYGed_PWoB1zF2Wr9Fm1GwpNFkKT4AOaD8ggLf0,314
+justcard-0.0.1.dist-info/entry_points.txt,sha256=H1Z9-IWovFfPQurjo7XARf5gnXhhOELSV_CxgsoUP_g,43
+justcard-0.0.1.dist-info/LICENSE,sha256=yWs9hyH8tKuNzxN01IgkHY7WCAzFhtLvhuvXyu_0_e0,1073
+justcard-0.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+justcard-0.0.1.dist-info/METADATA,sha256=k7pVOMK-34Yo9bw9jrg1Wqm_RbLG9zY5I_GeizaaayQ,1270
+justcard-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+jcard=justcard:__main__
+

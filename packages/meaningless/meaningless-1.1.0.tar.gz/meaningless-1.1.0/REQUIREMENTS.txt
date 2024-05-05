@@ -1,0 +1,4 @@
+# This is the minimal set of modules required for this library to work
+beautifulsoup4>=4.11.2
+ruamel.yaml>=0.17.21
+xmltodict>=0.13.0

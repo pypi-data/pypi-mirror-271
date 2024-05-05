@@ -1,0 +1,4 @@
+[console_scripts]
+meh=mehditor.main:main
+mehditor=mehditor.main:main
+

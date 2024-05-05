@@ -1,0 +1,11 @@
+gcpq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcpq/cfg_service.py,sha256=sSm-VVk26IalG9N_VnxDLc3liHQneE4THfvqbLlrQes,1154
+gcpq/config/services.yaml,sha256=5ZZjsobPQ51w0l0MA3b1KOhrG6JiARoYKvH5h3Ol-0s,7746
+gcpq/console_utils.py,sha256=DoWfgsB4xllsu9CaFVg7isMENW6bUHPyTouscakei6Y,182
+gcpq/gcp_cli_service.py,sha256=f0qvxCh5E_V1-6X3dfvBPU_nZ-6LpoTWmxSaxPnFPDE,1104
+gcpq/gcp_sections_service.py,sha256=CkLJOd1Mxrd-nrDR8CgEI0AVTp2dFi9QvuRQ3he6gGc,861
+gcpq/main.py,sha256=tcCLNa6M20-LDnEyyZcgfXVgfvBmASZ83tzDiVvfbEs,2102
+gcp_quick_utils-0.2.dist-info/METADATA,sha256=Ev9BdBXOC_hUDYlfVi41t4yJZu8g2ITDQm6ZuuZY76w,2847
+gcp_quick_utils-0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gcp_quick_utils-0.2.dist-info/entry_points.txt,sha256=oZvAKZWBmUEdx3xqQbBjcrnSZvNfDrgt0YkU2n0Ibc4,39
+gcp_quick_utils-0.2.dist-info/RECORD,,

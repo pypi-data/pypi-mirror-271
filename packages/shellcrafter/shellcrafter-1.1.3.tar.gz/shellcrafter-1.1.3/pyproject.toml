@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "numpy",
+    "keystone-engine",
+    "termcolor",
+    "rich",
+    "ropper",
+    "capstone",
+    "pefile"
+]
+build-backend = "setuptools.build_meta"

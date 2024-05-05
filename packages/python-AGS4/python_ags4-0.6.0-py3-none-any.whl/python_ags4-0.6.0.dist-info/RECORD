@@ -1,0 +1,17 @@
+COPYING.LESSER,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+python_ags4/AGS4.py,sha256=IJaEZ7n90dGcr0gDNCDeyzNKUaC-0kQuHDLqAlHerxg,47655
+python_ags4/Standard_dictionary_v4_0_3.ags,sha256=nSWxEdWWx67HLCYwQQ35wXTZn-iRejk0X7rVvxpPeXo,276189
+python_ags4/Standard_dictionary_v4_0_4.ags,sha256=gsWphKmqljECTR2jIR2vRfiCZWoh3-P5lbvZZVN9bfE,276942
+python_ags4/Standard_dictionary_v4_1.ags,sha256=SfZzsb5eW0XIl4RlbT6sopOveiSCJUh9ieZ3Fsp7yO4,377728
+python_ags4/Standard_dictionary_v4_1_1.ags,sha256=HTqKV_1kKEpBfoIBFePCxYAJGsM3fm4qHZkO67pLRdA,382078
+python_ags4/__init__.py,sha256=ZcwzLOxcjLJ8wm2_BYn9YT7I0eDCqFOLcGvQAFngtoc,138
+python_ags4/ags4_cli.py,sha256=1wNaDldIblcCL8WPF6En8EEAMQVEe_qgivttGK29MnM,16716
+python_ags4/check.py,sha256=ja_hkPTXmPZxsEbG1YJxv-axiVZ3YFTXUK5moYlO3pk,69508
+python_ags4/data/__init__.py,sha256=SL_XGNwiKxhXdncApaysKn5LbJcW9YlEDNfvzKhsDVQ,426
+python_ags4/data/test_data.ags,sha256=rebiaptIMgZHg1p6qVcgfGdwikM3IKixuJ2Mn4az6Tc,3253
+python_ags4-0.6.0.dist-info/COPYING.LESSER,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+python_ags4-0.6.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+python_ags4-0.6.0.dist-info/METADATA,sha256=YkLqUOW6xlssAm9MB11C94d6xUrxa-zVfsZvuHwRVG0,7917
+python_ags4-0.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+python_ags4-0.6.0.dist-info/entry_points.txt,sha256=hIm2KB0b5k-pz_PploXw9qIiP-z7V0VXe8aCE7UxXEM,54
+python_ags4-0.6.0.dist-info/RECORD,,

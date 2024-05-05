@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: simple-gcp-project-switcher
+Version: 0.1.11
+Summary: A simple GCP project switcher
+Home-page: https://github.com/faahren/simple_gcp_project_switcher.git
+License: MIT
+Author: Guillaume W
+Author-email: guillaume.luc.wagner@gmail.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Simple GCP Project Project Switcher
+
+This package has been renamed. Use `pipx install gcp-quick-utils` instead
+
+New package: https://pypi.org/project/gcp-quick-utils/

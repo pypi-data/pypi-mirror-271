@@ -1,0 +1,38 @@
+[project]
+name = "algomodule"
+version = "1.0.4"
+description = "CryptoCurrency Hashing Library"
+readme = "README.md"
+license = { text = "Proprietary"}
+requires-python = ">=2.6"
+authors = [
+    { name = "Ahmed Bodiwala", email = "ahmedbodi@crypto-expert.com" },
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: C",
+    "Programming Language :: Cython",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[project.urls]
+Code = "https://github.com/electrum-altcoin/AlgoLib"
+Homepage = "https://github.com/electrum-altcoin/AlgoLib"
+"Issue tracker" = "https://github.com/electrum-altcoin/AlgoLib/issues"
+
+[build-system]
+requires = [
+    'setuptools',
+    'cython',
+    'wheel'
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.distutils.bdist_wheel]
+universal = true

@@ -1,0 +1,16 @@
+README.md
+setup.py
+LegacyNeuralNetworks/02.py
+LegacyNeuralNetworks/03.py
+LegacyNeuralNetworks/Fill.py
+LegacyNeuralNetworks/LegacyNeuralNetworks.py
+LegacyNeuralNetworks/__init__.py
+LegacyNeuralNetworks/ann_fill.py
+LegacyNeuralNetworks/cl1.py
+LegacyNeuralNetworks/ds_fill.py
+LegacyNeuralNetworks/precarious.py
+LegacyNeuralNetworks.egg-info/PKG-INFO
+LegacyNeuralNetworks.egg-info/SOURCES.txt
+LegacyNeuralNetworks.egg-info/dependency_links.txt
+LegacyNeuralNetworks.egg-info/requires.txt
+LegacyNeuralNetworks.egg-info/top_level.txt

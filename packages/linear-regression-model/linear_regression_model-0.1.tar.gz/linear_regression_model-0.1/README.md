@@ -1,0 +1,32 @@
+## **Modelo de Regresión Lineal Simple**
+
+<img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/jupyter-%23000000.svg?style=for-the-badge&logo=jupyter&logoColor=white">
+<img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+<a href="https://medium.com/@sebasurdanegui">
+    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white">
+</a>
+
+### **Descripción**
+Proyecto de prueba para explicar cuáles son los pasos que se deben seguir para la creación de una librería en Python usando como herramienta PYPI para almacenar los metadatos y distribuirlos.
+
+### **Pasos a seguir**
+Link para leer el artículo en Medium: <a href="#">¿Cómo crear una librería en Python?</a>
+
+### **Instalación**
+Puedes instalar la librería 'linear_regression_model' usando pip.
+```Power Shell
+pip install linear_regression_model
+```
+
+### **Uso**
+A continuación, se muestra un ejemplo de cómo utilizar la librería:
+```python
+from linear_regression_model import linear_regression
+from linear_regression_model import linear_regression_plot
+```
+
+### **Licencia**
+Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE.md para más detalles.
+
+---

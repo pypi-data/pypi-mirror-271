@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing &mdash; libdicom  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Command line tools" href="tools.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            libdicom
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Command line tools</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#coding-style">Coding style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interface">Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementation">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dynamic-analysis">Dynamic analysis</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">libdicom</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Contributing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/contributing.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Link to this heading"></a></h1>
+<section id="coding-style">
+<h2>Coding style<a class="headerlink" href="#coding-style" title="Link to this heading"></a></h2>
+<p>Source code should be written following the <a class="reference external" href="https://en.wikipedia.org/wiki/Indentation_style#K&amp;R_style">K&amp;R (Kernighan &amp; Ritchie)
+style</a> with
+a few modifications.</p>
+<ul class="simple">
+<li><p>Line length: max 80 characters</p></li>
+<li><p>Indentation: 4 spaces (no tabs)</p></li>
+<li><p>Braces:</p>
+<ul>
+<li><p>Functions: opening brace at next line</p></li>
+<li><p>Control statements (mandatory): opening brace at same line</p></li>
+</ul>
+</li>
+<li><p>Spacing:</p>
+<ul>
+<li><p>2 lines between function definitions</p></li>
+<li><p>1 line between logical blocks within functions (and between variable
+declarations and definitions)</p></li>
+</ul>
+</li>
+<li><p>Comments:</p>
+<ul>
+<li><p>Documentation of functions and other symbols: balanced,
+multi-line <code class="docutils literal notranslate"><span class="pre">/**</span> <span class="pre">...</span> <span class="pre">*/</span></code> comments in <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> format using <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#field-lists">field lists</a>
+<code class="docutils literal notranslate"><span class="pre">:param:</span></code> and <code class="docutils literal notranslate"><span class="pre">:return:</span></code> to document function parameters and return
+values, respectively, and <code class="docutils literal notranslate"><span class="pre">:c:member:</span></code>, <code class="docutils literal notranslate"><span class="pre">:c:func:</span></code>, <code class="docutils literal notranslate"><span class="pre">:c:macro:</span></code>,
+<code class="docutils literal notranslate"><span class="pre">:c:struct:</span></code>, <code class="docutils literal notranslate"><span class="pre">:c:union:</span></code>, <code class="docutils literal notranslate"><span class="pre">:c:enum:</span></code>, <code class="docutils literal notranslate"><span class="pre">:c:enumerator:</span></code>,
+<code class="docutils literal notranslate"><span class="pre">:c:type:</span></code>, <code class="docutils literal notranslate"><span class="pre">:c:expr:</span></code>, <code class="docutils literal notranslate"><span class="pre">:c:var:</span></code> from the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#the-c-domain">Sphinx C domain</a>
+directive to <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#cross-referencing-c-constructs">cross-reference other C language constructs</a>
+or to insert a C expression as inline code.</p></li>
+<li><p>Inline comments in function body: single-line <code class="docutils literal notranslate"><span class="pre">//</span></code> C++ style comments</p></li>
+</ul>
+</li>
+<li><p>Naming conventions:</p>
+<ul>
+<li><p>Data structures (<code class="docutils literal notranslate"><span class="pre">struct</span></code> or <code class="docutils literal notranslate"><span class="pre">enum</span></code>) and types are named using
+upper camel case (e.g., <code class="docutils literal notranslate"><span class="pre">DcmDataSet</span></code>), while functions are named using
+all lower case with underscores (e.g., <code class="docutils literal notranslate"><span class="pre">dcm_dataset_create()</span></code>).</p></li>
+<li><p>Names of <code class="docutils literal notranslate"><span class="pre">external</span></code> functions, data structures, and types that are
+declared in the <code class="docutils literal notranslate"><span class="pre">dicom.h</span></code> header file are prefixed with <code class="docutils literal notranslate"><span class="pre">dcm_</span></code> or
+<code class="docutils literal notranslate"><span class="pre">Dcm</span></code>. Names of <code class="docutils literal notranslate"><span class="pre">static</span></code> functions, types, or data structures declared
+in <code class="docutils literal notranslate"><span class="pre">*.c</span></code> files are never prefixed.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="interface">
+<h2>Interface<a class="headerlink" href="#interface" title="Link to this heading"></a></h2>
+<p>The library exposes an “object-oriented” application programming interface
+(API), which provides data structures and functions to store, access,
+and manipulate the data.</p>
+<p>To facilitate portability, the <code class="docutils literal notranslate"><span class="pre">dicom.h</span></code> header file is restricted to</p>
+<ul class="simple">
+<li><p>C99 version of the standard (C89 + Boolean type from <code class="docutils literal notranslate"><span class="pre">stdbool.h</span></code> +
+fixed-width integer types from <code class="docutils literal notranslate"><span class="pre">stdint.h</span></code>/<code class="docutils literal notranslate"><span class="pre">inttypes.h</span></code>)</p></li>
+<li><p>Opaque data types</p></li>
+<li><p>Clear, exact-width integer types (<code class="docutils literal notranslate"><span class="pre">int16_t</span></code>, <code class="docutils literal notranslate"><span class="pre">int32_t</span></code>, <code class="docutils literal notranslate"><span class="pre">int64_t</span></code>,
+<code class="docutils literal notranslate"><span class="pre">uint16_t</span></code>, <code class="docutils literal notranslate"><span class="pre">uint32_t</span></code>, and <code class="docutils literal notranslate"><span class="pre">uint64_t</span></code>)</p></li>
+<li><p>Minimal use of enums</p></li>
+</ul>
+</section>
+<section id="implementation">
+<h2>Implementation<a class="headerlink" href="#implementation" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>The <code class="docutils literal notranslate"><span class="pre">dicom-data.c</span></code> (Part 5), <code class="docutils literal notranslate"><span class="pre">dicom-dict.c</span></code> (Part 6), and <code class="docutils literal notranslate"><span class="pre">dicom-file.c</span></code></dt><dd><p>and <code class="docutils literal notranslate"><span class="pre">dicom-parse.c</span></code> (Part 10) are implemented based on the C11 version
+of the standard.</p>
+</dd>
+</dl>
+<p>The Data Set and Sequence data structures are implemented using the
+battletested <a class="reference external" href="https://troydhanson.github.io/uthash">uthash</a> headers.</p>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading"></a></h2>
+<p>Documentation is written in <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a> format and HTML documents
+are autogenerated using <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a>.
+API documentation is automatically extracted from the comments in the source
+code in the <code class="docutils literal notranslate"><span class="pre">dicom.h</span></code> header file via the <a class="reference external" href="https://hawkmoth.readthedocs.io/en/latest/index.html">Hawkmoth Sphinx C Autodoc</a> extension, which
+relies on <a class="reference external" href="https://libclang.readthedocs.io/en/latest/index.html">Clang</a>
+to parse C code.</p>
+<p>Documentation files are located under the <code class="docutils literal notranslate"><span class="pre">doc/source</span></code> directory of the
+repository.  To build the documentation, install <code class="docutils literal notranslate"><span class="pre">libclang</span></code> development
+headers and the Python <code class="docutils literal notranslate"><span class="pre">venv</span></code> module, then build with <code class="docutils literal notranslate"><span class="pre">meson</span></code>:</p>
+<blockquote>
+<div><p>meson compile -C builddir html</p>
+</div></blockquote>
+<p>The generated documentation files will then be located under the
+<code class="docutils literal notranslate"><span class="pre">builddir/html</span></code> directory.  The <code class="docutils literal notranslate"><span class="pre">builddir/html/index.html</span></code> HTML document
+can be rendered in the web browser.</p>
+</section>
+<section id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Link to this heading"></a></h2>
+<p>Unit test cases are defined and run using <a class="reference external" href="https://github.com/libcheck/check">check</a>.</p>
+<p>Test files are located under <code class="docutils literal notranslate"><span class="pre">/tests</span></code> and can be built and run using
+<code class="docutils literal notranslate"><span class="pre">meson</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">meson</span> <span class="n">test</span> <span class="o">-</span><span class="n">C</span> <span class="n">builddir</span>
+</pre></div>
+</div>
+</section>
+<section id="dynamic-analysis">
+<h2>Dynamic analysis<a class="headerlink" href="#dynamic-analysis" title="Link to this heading"></a></h2>
+<p>The source code can be analysed using <a class="reference external" href="https://www.valgrind.org/">valgrind</a>.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">valgrind</span> <span class="o">--</span><span class="n">leak</span><span class="o">-</span><span class="n">check</span><span class="o">=</span><span class="n">full</span> <span class="n">dcm</span><span class="o">-</span><span class="n">dump</span> <span class="n">data</span><span class="o">/</span><span class="n">test_files</span><span class="o">/</span><span class="n">sm_image</span><span class="o">.</span><span class="n">dcm</span>
+</pre></div>
+</div>
+<p>Unit testing and dynamic analysis can also be performed using the provided
+<cite>Dockerfile</cite> (located in the root of the repository):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">build</span> <span class="o">-</span><span class="n">t</span> <span class="n">dcm</span><span class="o">-</span><span class="n">testing</span> <span class="o">.</span>
+<span class="n">docker</span> <span class="n">run</span> <span class="n">dcm</span><span class="o">-</span><span class="n">testing</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tools.html" class="btn btn-neutral float-left" title="Command line tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Markus D. Herrmann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

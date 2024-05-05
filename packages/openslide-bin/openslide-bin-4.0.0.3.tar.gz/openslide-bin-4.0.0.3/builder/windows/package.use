@@ -1,0 +1,6 @@
+dev-java/openjdk-bin headless-awt
+dev-libs/glib -elf -mime
+dev-vcs/git -perl
+
+cross-x86_64-w64-mingw32/gcc -fortran
+cross-x86_64-w64-mingw32/mingw64-runtime default-ucrt

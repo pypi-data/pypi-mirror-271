@@ -1,0 +1,2384 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API documentation &mdash; libdicom  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Command line tools" href="tools.html" />
+    <link rel="prev" title="Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            libdicom
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Command line tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">libdicom</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-documentation">
+<h1>API documentation<a class="headerlink" href="#api-documentation" title="Link to this heading"></a></h1>
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_AE">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_AE</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_AE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation AE.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_AS">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_AS</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_AS" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation AS.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_AT">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_AT</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_AT" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation AT.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_CS">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_CS</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_CS" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation CS.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_DA">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_DA</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_DA" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation DA.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_DS">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_DS</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_DS" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation DS.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_DT">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_DT</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_DT" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation DT.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_IS">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_IS</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_IS" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation IS.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_LO">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_LO</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_LO" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation LO.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_LT">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_LT</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_LT" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation LT.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_PN">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_PN</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_PN" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation PN.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_SH">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_SH</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_SH" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation SH.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_ST">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_ST</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_ST" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation ST.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_TM">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_TM</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_TM" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation TM.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_UC">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_UC</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_UC" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation UC.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_UI">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_UI</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_UI" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation UI.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_UR">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_UR</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_UR" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation UR.</p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.DCM_CAPACITY_UT">
+<span class="sig-name descname"><span class="n"><span class="pre">DCM_CAPACITY_UT</span></span></span><a class="headerlink" href="#c.DCM_CAPACITY_UT" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of characters in values with Value Representation UT.</p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_init">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_init</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_init" title="Link to this definition"></a><br /></dt>
+<dd><p>Start up libdicom.</p>
+<p>Call this from the main thread during program startup.</p>
+<p>This function can be called many times.</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated since version 1.1.0: </span>Calling this function is no longer necessary.</p>
+</div>
+</dd></dl>
+
+<dl class="c type">
+<dt class="sig sig-object c" id="c.DcmError">
+<span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DcmError</span></span></span><a class="headerlink" href="#c.DcmError" title="Link to this definition"></a><br /></dt>
+<dd><p>Error return object.</p>
+</dd></dl>
+
+<dl class="c enum">
+<dt class="sig sig-object c" id="c._DcmErrorCode">
+<span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_DcmErrorCode</span></span></span><a class="headerlink" href="#c._DcmErrorCode" title="Link to this definition"></a><br /></dt>
+<dd><p>Enumeration of error codes.</p>
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmErrorCode.DCM_ERROR_CODE_NOMEM">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_ERROR_CODE_NOMEM</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#c._DcmErrorCode.DCM_ERROR_CODE_NOMEM" title="Link to this definition"></a><br /></dt>
+<dd><p>Out of memory</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmErrorCode.DCM_ERROR_CODE_INVALID">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_ERROR_CODE_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#c._DcmErrorCode.DCM_ERROR_CODE_INVALID" title="Link to this definition"></a><br /></dt>
+<dd><p>Invalid parameter</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmErrorCode.DCM_ERROR_CODE_PARSE">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_ERROR_CODE_PARSE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><a class="headerlink" href="#c._DcmErrorCode.DCM_ERROR_CODE_PARSE" title="Link to this definition"></a><br /></dt>
+<dd><p>Parse error</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmErrorCode.DCM_ERROR_CODE_IO">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_ERROR_CODE_IO</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><a class="headerlink" href="#c._DcmErrorCode.DCM_ERROR_CODE_IO" title="Link to this definition"></a><br /></dt>
+<dd><p>IO error</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmErrorCode.DCM_ERROR_CODE_MISSING_FRAME">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_ERROR_CODE_MISSING_FRAME</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><a class="headerlink" href="#c._DcmErrorCode.DCM_ERROR_CODE_MISSING_FRAME" title="Link to this definition"></a><br /></dt>
+<dd><p>Missing frame</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_code_str">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_code_str</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmErrorCode</span></span><span class="w"> </span><span class="n"><span class="pre">code</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_code_str" title="Link to this definition"></a><br /></dt>
+<dd><p>Convert an error code to a human-readable string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>code</strong> – The error code</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A string that can be displayed to users</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_code_name">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_code_name</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmErrorCode</span></span><span class="w"> </span><span class="n"><span class="pre">code</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_code_name" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a symbolic name for a DcmErrorCode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>code</strong> – The error code</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A symbolic name for the code.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_set">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_set</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">DcmErrorCode</span></span><span class="w"> </span><span class="n"><span class="pre">code</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">summary</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_set" title="Link to this definition"></a><br /></dt>
+<dd><p>Set an error.</p>
+<p>Create a new DcmError object and store the pointer in error.</p>
+<p>You can’t set error twice – always check the error state and return
+immediately if set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to store the new error object in</p></li>
+<li><p><strong>code</strong> – Numeric error code</p></li>
+<li><p><strong>summary</strong> – Summary of error</p></li>
+<li><p><strong>format</strong> – printf-style format string</p></li>
+<li><p><strong>...</strong> – Format string arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_clear">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_clear</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_clear" title="Link to this definition"></a><br /></dt>
+<dd><p>Clear an error, if set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer holding the error object</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_get_summary">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_get_summary</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_get_summary" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a summary of the error.</p>
+<p>Do not free this result. The pointer will be valid as long as error is
+valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – DcmError to read the error from</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Short description of the error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_get_message">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_get_message</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_get_message" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the error message.</p>
+<p>Do not free this result. The pointer will be valid as long as error is
+valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Message stored in a error object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_get_code">
+<span class="n"><span class="pre">DcmErrorCode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_get_code</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_get_code" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the error code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Error code</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_log">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_log</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_log" title="Link to this definition"></a><br /></dt>
+<dd><p>Log an error message using information stored on the error object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error object</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_error_print">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_error_print</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_error_print" title="Link to this definition"></a><br /></dt>
+<dd><p>Print an error message to stderr.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error object</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_free">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_free</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">pointer</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_free" title="Link to this definition"></a><br /></dt>
+<dd><p>Free an allocated memory area.</p>
+<p>Any memory allocated by libdicom and returned to the calling program
+should be freed with this.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pointer</strong> – Memory area to free</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_calloc">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_calloc</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">n</span></span>, <span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_calloc" title="Link to this definition"></a><br /></dt>
+<dd><p>Allocate and zero an area of memory.</p>
+<p>Any memory which you pass to libdicom and which you ask libdicom to manage
+with a “steal” flag should be allcoatyed with one of the libdicom memory
+allocators.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>n</strong> – Number of items to allocate</p></li>
+<li><p><strong>size</strong> – Size of each item in bytes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to memory area</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c enum">
+<dt class="sig sig-object c" id="c._DcmLogLevel">
+<span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_DcmLogLevel</span></span></span><a class="headerlink" href="#c._DcmLogLevel" title="Link to this definition"></a><br /></dt>
+<dd><p>Enumeration of log levels</p>
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmLogLevel.DCM_LOG_CRITICAL">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_LOG_CRITICAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">50</span></span><a class="headerlink" href="#c._DcmLogLevel.DCM_LOG_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd><p>Critical</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmLogLevel.DCM_LOG_ERROR">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_LOG_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">40</span></span><a class="headerlink" href="#c._DcmLogLevel.DCM_LOG_ERROR" title="Link to this definition"></a><br /></dt>
+<dd><p>Error</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmLogLevel.DCM_LOG_WARNING">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_LOG_WARNING</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">30</span></span><a class="headerlink" href="#c._DcmLogLevel.DCM_LOG_WARNING" title="Link to this definition"></a><br /></dt>
+<dd><p>Warning</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmLogLevel.DCM_LOG_INFO">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_LOG_INFO</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">20</span></span><a class="headerlink" href="#c._DcmLogLevel.DCM_LOG_INFO" title="Link to this definition"></a><br /></dt>
+<dd><p>Info</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmLogLevel.DCM_LOG_DEBUG">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_LOG_DEBUG</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#c._DcmLogLevel.DCM_LOG_DEBUG" title="Link to this definition"></a><br /></dt>
+<dd><p>Debug</p>
+</dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c._DcmLogLevel.DCM_LOG_NOTSET">
+<span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DCM_LOG_NOTSET</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#c._DcmLogLevel.DCM_LOG_NOTSET" title="Link to this definition"></a><br /></dt>
+<dd><p>Not set (no logging)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_log_set_level">
+<span class="n"><span class="pre">DcmLogLevel</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_log_set_level</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmLogLevel</span></span><span class="w"> </span><span class="n"><span class="pre">log_level</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_log_set_level" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the log level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log_level</strong> – New log level.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>previous log level</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c type">
+<dt class="sig sig-object c" id="c.DcmLogf">
+<span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DcmLogf</span></span></span><a class="headerlink" href="#c.DcmLogf" title="Link to this definition"></a><br /></dt>
+<dd><p>Log function. See dcm_log_set_logf().</p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_log_set_logf">
+<a class="reference internal" href="#c.DcmLogf" title="DcmLogf"><span class="n"><span class="pre">DcmLogf</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_log_set_logf</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmLogf" title="DcmLogf"><span class="n"><span class="pre">DcmLogf</span></span></a><span class="w"> </span><span class="n"><span class="pre">logf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_log_set_logf" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the log function.</p>
+<p>This function will be used to log any error or warning messages from the
+library. The default DcmLogf function prints messages to stderr. Set to
+NULL to disable all logging.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>logf</strong> – New log function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>previous log function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_log_critical">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_log_critical</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_log_critical" title="Link to this definition"></a><br /></dt>
+<dd><p>Write critical log message to stderr stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>format</strong> – printf-style format string</p></li>
+<li><p><strong>...</strong> – Format string arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_log_error">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_log_error</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_log_error" title="Link to this definition"></a><br /></dt>
+<dd><p>Write error log message to stderr stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>format</strong> – printf-style format string</p></li>
+<li><p><strong>...</strong> – Format string arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_log_warning">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_log_warning</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_log_warning" title="Link to this definition"></a><br /></dt>
+<dd><p>Write warning log message to stderr stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>format</strong> – printf-style format string</p></li>
+<li><p><strong>...</strong> – Format string arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_log_info">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_log_info</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_log_info" title="Link to this definition"></a><br /></dt>
+<dd><p>Write info log message to stderr stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>format</strong> – printf-style format string</p></li>
+<li><p><strong>...</strong> – Format string arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_log_debug">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_log_debug</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_log_debug" title="Link to this definition"></a><br /></dt>
+<dd><p>Write debug log message to stderr stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>format</strong> – printf-style format string</p></li>
+<li><p><strong>...</strong> – Format string arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_get_version">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_get_version</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_get_version" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the version of the library.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>semantic version string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c enum">
+<dt class="sig sig-object c" id="c._DcmVR">
+<span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_DcmVR</span></span></span><a class="headerlink" href="#c._DcmVR" title="Link to this definition"></a><br /></dt>
+<dd><p>An enum of Value Representations.</p>
+<p>Value Representations which are not known to libdicom will be coded as
+DCM_VR_ERROR (unknown Value Representation).</p>
+<p>Note to maintainers: this enum must match the table in dicom-dict.c, and
+the DcmVRTag enum. As the DICOM standard evolves, numbering must be
+maintained for ABI compatibility.</p>
+</dd></dl>
+
+<dl class="c enum">
+<dt class="sig sig-object c" id="c._DcmVRClass">
+<span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_DcmVRClass</span></span></span><a class="headerlink" href="#c._DcmVRClass" title="Link to this definition"></a><br /></dt>
+<dd><p>The general class of the value associated with a Value Representation.</p>
+<p>DCM_VR_CLASS_STRING_MULTI – one or more null-terminated strings, cannot
+contain backslash</p>
+<p>DCM_VR_CLASS_STRING_SINGLE – a single null-terminated string, backslash
+allowed</p>
+<p>DCM_VR_CLASS_NUMERIC_DECIMAL – one or more binary floating point numeric
+values, other fields give sizeof(type)</p>
+<p>DCM_VR_CLASS_NUMERIC_INTEGER – one or more binary integer numeric
+values, other fields give sizeof(type)</p>
+<p>DCM_VR_CLASS_BINARY – an uninterpreted array of bytes, length in the
+element header</p>
+<p>DCM_VR_CLASS_SEQUENCE – Value Representation is a sequence</p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dict_vr_class">
+<span class="n"><span class="pre">DcmVRClass</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dict_vr_class</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmVR</span></span><span class="w"> </span><span class="n"><span class="pre">vr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dict_vr_class" title="Link to this definition"></a><br /></dt>
+<dd><p>Find the general class for a particular Value Representation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vr</strong> – The Value Representation</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The general class of that Value Representation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dict_vr_from_str">
+<span class="n"><span class="pre">DcmVR</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dict_vr_from_str</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">vr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dict_vr_from_str" title="Link to this definition"></a><br /></dt>
+<dd><p>Turn a string Value Representation into an enum value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vr</strong> – The Value Representation as a two character string.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the enum for that Value Representation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dict_str_from_vr">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dict_str_from_vr</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmVR</span></span><span class="w"> </span><span class="n"><span class="pre">vr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dict_str_from_vr" title="Link to this definition"></a><br /></dt>
+<dd><p>Turn an enum Value Representation into a character string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vr</strong> – The Value Representation as an enum value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the string representation of that Value Representation, or NULL</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dict_keyword_from_tag">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dict_keyword_from_tag</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dict_keyword_from_tag" title="Link to this definition"></a><br /></dt>
+<dd><p>Look up the Keyword of an Attribute in the Dictionary.</p>
+<p>Returns NULL if the tag is not recognised.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – Attribute Tag</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>attribute Keyword</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dict_tag_from_keyword">
+<span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dict_tag_from_keyword</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">keyword</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dict_tag_from_keyword" title="Link to this definition"></a><br /></dt>
+<dd><p>Look up the tag of an Attribute in the Dictionary.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">0xffffffff</span></code> if the keyword is not recognised.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – Attribute keyword</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>attribute tag</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_vr_from_tag">
+<span class="n"><span class="pre">DcmVR</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_vr_from_tag</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_vr_from_tag" title="Link to this definition"></a><br /></dt>
+<dd><p>Find the Value Representation for a tag.</p>
+<p>This will return DCM_VR_ERROR if the tag is unknown, or does not have a
+unique Value Representation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – Attribute Tag</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the unique Value Representation for this tag, or DCM_VR_ERROR</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_is_public_tag">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_is_public_tag</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_is_public_tag" title="Link to this definition"></a><br /></dt>
+<dd><p>Determine whether a Tag is public.</p>
+<p>A Tag is public if it is defined in the Dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – Attribute Tag</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_is_private_tag">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_is_private_tag</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_is_private_tag" title="Link to this definition"></a><br /></dt>
+<dd><p>Determine whether a Tag is private.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – Attribute Tag</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_is_valid_tag">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_is_valid_tag</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_is_valid_tag" title="Link to this definition"></a><br /></dt>
+<dd><p>Determine whether a Tag is valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag</strong> – Attribute Tag</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_is_valid_vr">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_is_valid_vr</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">vr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_is_valid_vr" title="Link to this definition"></a><br /></dt>
+<dd><p>Determine whether a Value Representation is valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vr</strong> – Attribute Value Representation</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_is_valid_vr_for_tag">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_is_valid_vr_for_tag</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmVR</span></span><span class="w"> </span><span class="n"><span class="pre">vr</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_is_valid_vr_for_tag" title="Link to this definition"></a><br /></dt>
+<dd><p>Determine whether a Value Representation is valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vr</strong> – Attribute Value Representation</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_is_encapsulated_transfer_syntax">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_is_encapsulated_transfer_syntax</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">transfer_syntax_uid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_is_encapsulated_transfer_syntax" title="Link to this definition"></a><br /></dt>
+<dd><p>Determine whether a Transfer Syntax is encapsulated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>transfer_syntax_uid</strong> – Transfer Syntax UID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c type">
+<dt class="sig sig-object c" id="c.DcmElement">
+<span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DcmElement</span></span></span><a class="headerlink" href="#c.DcmElement" title="Link to this definition"></a><br /></dt>
+<dd><p>Data Element.</p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_create">
+<a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span>, <span class="n"><span class="pre">DcmVR</span></span><span class="w"> </span><span class="n"><span class="pre">vr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_create" title="Link to this definition"></a><br /></dt>
+<dd><p>Create a Data Element for a tag.</p>
+<p>After creating a Data Element, you must
+attach an appropriate value using one of the setting functions.
+See for example <a class="reference internal" href="#c.dcm_element_set_value_string" title="dcm_element_set_value_string"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_element_set_value_string()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>tag</strong> – Tag</p></li>
+<li><p><strong>vr</strong> – The Value Representation for this Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to Data Element</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_group_number">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_group_number</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_group_number" title="Link to this definition"></a><br /></dt>
+<dd><p>Get group number (first part of Tag) of a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Tag group number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_element_number">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_element_number</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_element_number" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Element Number (second part of Tag) of a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Tag Element Number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_tag">
+<span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_tag</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_tag" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Tag of a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Tag</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_vr">
+<span class="n"><span class="pre">DcmVR</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_vr</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_vr" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Value Representation of a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Value Representation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_length">
+<span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_length</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_length" title="Link to this definition"></a><br /></dt>
+<dd><p>Get length of the entire value of a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Length of value of Data Element</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_vm">
+<span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_vm</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_vm" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Value Multiplicity of a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Value Multiplicity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_is_multivalued">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_is_multivalued</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_is_multivalued" title="Link to this definition"></a><br /></dt>
+<dd><p>Determine whether a Data Element has a Value Multiplicity greater than one.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_clone">
+<a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_clone</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_clone" title="Link to this definition"></a><br /></dt>
+<dd><p>Clone (i.e., create a deep copy of) a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to clone of Data Element</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_value_string">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_value_string</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_value_string" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a string from a string-valued Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>index</strong> – Zero-based index of value within the Data Element</p></li>
+<li><p><strong>value</strong> – Pointer to return location for value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_set_value_string">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_set_value_string</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n"><span class="pre">steal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_set_value_string" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the value of a Data Element to a character string.</p>
+<p>The Data Element must have a Tag that allows for a
+character string Value Representation.
+If that is not the case, the function will fail.</p>
+<p>On success, if <cite>steal</cite> is true, ownership of <cite>value</cite> passes to
+<cite>element</cite>, i.e. it will be freed when <cite>element</cite> is destroyed. If <cite>steal</cite> is
+false, then a copy is made of <cite>value</cite> and ownership is not transferred.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>value</strong> – String value</p></li>
+<li><p><strong>steal</strong> – if true, ownership of value passes to element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_set_value_string_multi">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_set_value_string_multi</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">vm</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n"><span class="pre">steal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_set_value_string_multi" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the value of a Data Element to an array of character strings.</p>
+<p>The Data Element must have a Tag that allows for a
+character string Value Representation and for a
+Value Multiplicity greater than one.
+If that is not the case, the function will fail.</p>
+<p>On success, if <cite>steal</cite> is true, ownership of <cite>value</cite> passes to
+<cite>element</cite>, i.e. it will be freed when <cite>element</cite> is destroyed. If <cite>steal</cite> is
+false, then a copy is made of <cite>value</cite> and ownership is not transferred.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>values</strong> – Pointer to memory location where values are written to</p></li>
+<li><p><strong>vm</strong> – Number of values</p></li>
+<li><p><strong>steal</strong> – if true, ownership of values passes to element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_value_integer">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_value_integer</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">index</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_value_integer" title="Link to this definition"></a><br /></dt>
+<dd><p>Get an integer from a 16, 32 or 64-bit integer-valued Data Element.</p>
+<p>The integer held in the Element will be cast to int64_t for return.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>index</strong> – Zero-based index of value within the Data Element</p></li>
+<li><p><strong>value</strong> – Pointer to return location for value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_set_value_integer">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_set_value_integer</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_set_value_integer" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the value of a Data Element to an integer.</p>
+<p>The Data Element must have a Tag that allows for a
+integer Value Representation.
+If that is not the case, the function will fail.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>value</strong> – Integer value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_set_value_numeric_multi">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_set_value_numeric_multi</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">vm</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n"><span class="pre">steal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_set_value_numeric_multi" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the value of a Data Element to a number.</p>
+<p>The Data Element must have a Tag that allows for a
+numeric Value Representation.
+If that is not the case, the function will fail.</p>
+<p>Although the value passed is <cite>void*</cite>, it should
+be a pointer to an array of 16- to 64-bit numeric values of the
+appropriate type for the Data Element Value Representation.</p>
+<p>On success, if <cite>steal</cite> is true, ownership of <cite>values</cite> passes to
+<cite>element</cite>, i.e. it will be freed when <cite>element</cite> is destroyed. If <cite>steal</cite> is
+false, then a copy is made of <cite>values</cite> and ownership is not transferred.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>values</strong> – Array of values</p></li>
+<li><p><strong>vm</strong> – Number of values</p></li>
+<li><p><strong>steal</strong> – if true, ownership of values passes to element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_value_decimal">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_value_decimal</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">index</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_value_decimal" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a floating-point value from a Data Element.</p>
+<p>The Data Element Value Reepresentation may be either single- or
+double-precision floating point.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>index</strong> – Zero-based index of value within the Data Element</p></li>
+<li><p><strong>value</strong> – Pointer to return location for value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_set_value_decimal">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_set_value_decimal</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_set_value_decimal" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the value of a Data Element to a floating-point.</p>
+<p>The Data Element must have a Tag that allows for a
+floating-point Value Representation.
+If that is not the case, the function will fail.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>value</strong> – Floating point value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_value_binary">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_value_binary</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_value_binary" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a binary value from a Data Element.</p>
+<p>Use <code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_element_length()</span></code> to get the length of the binary value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>value</strong> – Pointer to return location for value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_set_value_binary">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_set_value_binary</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">length</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n"><span class="pre">steal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_set_value_binary" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the value of a Data Element to binary data.</p>
+<p>The Data Element must have a Tag that allows for a binary Value
+Representation. If that is not the case, the function will fail.</p>
+<p>On success, if <cite>steal</cite> is true, ownership of <cite>value</cite> passes to
+<cite>element</cite>, i.e. it will be freed when <cite>element</cite> is destroyed. If <cite>steal</cite> is
+false, then a copy is made of <cite>value</cite> and ownership is not transferred.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>value</strong> – Pointer to binary value</p></li>
+<li><p><strong>length</strong> – Length in bytes of the binary value</p></li>
+<li><p><strong>steal</strong> – if true, ownership of the value passes to element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_get_value_sequence">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_get_value_sequence</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_get_value_sequence" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a sequence value from a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>value</strong> – Pointer to return location for value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_set_value_sequence">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_set_value_sequence</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_set_value_sequence" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the value of a Data Element to a Sequence.</p>
+<p>The Data Element must have a Tag that allows for
+Value Representation <code class="docutils literal notranslate"><span class="pre">&quot;SQ&quot;</span></code>.
+If that is not the case, the function will fail.</p>
+<p>The Data Element takes ownership of the value pointer on success.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>value</strong> – Pointer to Sequence</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_value_to_string">
+<span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_value_to_string</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_value_to_string" title="Link to this definition"></a><br /></dt>
+<dd><p>Make a string suitable for display to a user from the value of an element.</p>
+<p>The return result must be freed with free(). The result may be NULL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>string to display</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_print">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_print</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">indentation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_print" title="Link to this definition"></a><br /></dt>
+<dd><p>Print a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+<li><p><strong>indentation</strong> – Number of white spaces before text</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_element_destroy">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_element_destroy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_element_destroy" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy a Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c type">
+<dt class="sig sig-object c" id="c.DcmDataSet">
+<span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DcmDataSet</span></span></span><a class="headerlink" href="#c.DcmDataSet" title="Link to this definition"></a><br /></dt>
+<dd><p>Data Set</p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_create">
+<a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_create" title="Link to this definition"></a><br /></dt>
+<dd><p>Create an empty Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_clone">
+<a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_clone</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_clone" title="Link to this definition"></a><br /></dt>
+<dd><p>Clone (i.e., create a deep copy of) a Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to clone of Data Set</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_insert">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_insert</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span>, <a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_insert" title="Link to this definition"></a><br /></dt>
+<dd><p>Insert a Data Element into a Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+<li><p><strong>element</strong> – Pointer to Data Element</p></li>
+</ul>
+</dd>
+</dl>
+<p>On success, the dataset takes over ownership of <cite>element</cite>
+and frees it when the dataset is destroyed.</p>
+<p>If the insert operation fails, ownership does not pass and the caller is
+responsible for freeing <cite>element</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Whether insert operation was successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_remove">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_remove</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_remove" title="Link to this definition"></a><br /></dt>
+<dd><p>Remove a Data Element from a Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+<li><p><strong>tag</strong> – Attribute Tag of a Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Whether remove operation was successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_get">
+<a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_get</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_get" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a Data Element from a Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+<li><p><strong>tag</strong> – Attribute Tag of a Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to Data Element</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_get_clone">
+<a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_get_clone</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_get_clone" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a clone (deep copy) of a Data Element from a Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+<li><p><strong>tag</strong> – Attribute Tag of a Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to clone of Data Element</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_foreach">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_foreach</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">fn</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">element</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">)</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_foreach" title="Link to this definition"></a><br /></dt>
+<dd><p>Iterate over Data Elements in a Data Set.</p>
+<p>The user function should return true to continue looping, or false to
+terminate the loop early.</p>
+<p>The result is true if the whole Data Set returned true, or false if one
+call requested early termination.</p>
+<p>The function must not modify the Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seq</strong> – Pointer to Data Set</p></li>
+<li><p><strong>fn</strong> – Pointer to function that should be called for each Data Element</p></li>
+<li><p><strong>client</strong> – Client data for function</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true if all functions return true</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_contains">
+<a class="reference internal" href="#c.DcmElement" title="DcmElement"><span class="n"><span class="pre">DcmElement</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_contains</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">tag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_contains" title="Link to this definition"></a><br /></dt>
+<dd><p>Fetch a Data Element from a Data Set, or NULL if not present.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+<li><p><strong>tag</strong> – Attribute Tag of a Data Element</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Data Element, or NULL if not present</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_count">
+<span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_count</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_count" title="Link to this definition"></a><br /></dt>
+<dd><p>Count the number of Data Elements in a Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Number of Data Elements</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_copy_tags">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_copy_tags</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">tags</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">n</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_copy_tags" title="Link to this definition"></a><br /></dt>
+<dd><p>Obtain a copy of the Tag of each Data Element in a Data Set.</p>
+<p>The tags will be sorted in ascending order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+<li><p><strong>tags</strong> – Pointer to memory location to of the array into which to copy
+tags. Number of items in the array must match the number of
+Data Elements in the Data Set as determined by
+<a class="reference internal" href="#c.dcm_dataset_count" title="dcm_dataset_count"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_count()</span></code></a>.</p></li>
+<li><p><strong>n</strong> – Number of items in the array.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Ownership of the memory allocated for <cite>tags</cite> remains with the caller.
+Specifically, the function does not free the memory allocated for <cite>tags</cite> if
+the copy operation fails.</p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_lock">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_lock</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_lock" title="Link to this definition"></a><br /></dt>
+<dd><p>Lock a Data Set to prevent modification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_is_locked">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_is_locked</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_is_locked" title="Link to this definition"></a><br /></dt>
+<dd><p>Check whether a Data Set is locked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_print">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_print</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">indentation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_print" title="Link to this definition"></a><br /></dt>
+<dd><p>Print a Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+<li><p><strong>indentation</strong> – Number of white spaces before text</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_dataset_destroy">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_dataset_destroy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_dataset_destroy" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy a Data Set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> – Pointer to Data Set</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<p>Sequence</p>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_create">
+<span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_create" title="Link to this definition"></a><br /></dt>
+<dd><p>Create a Sequence, i.e., an ordered list of Data Set items that represent
+the value of a Data Element with Value Representation SQ (Sequence).</p>
+<p>Note that created object represents the value of a Data Element rather
+than a Data Element itself.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to Sequence</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_append">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_append</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span>, <a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">item</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_append" title="Link to this definition"></a><br /></dt>
+<dd><p>Append a Data Set item to a Sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>seq</strong> – Pointer to Sequence</p></li>
+<li><p><strong>item</strong> – Data Set item</p></li>
+</ul>
+</dd>
+</dl>
+<p>On success, the sequence takes over ownership of <cite>item</cite>
+and frees it when the sequence is destroyed.</p>
+<p>If the append fails, ownership does not pass and the caller is
+responsible for freeing <cite>item</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Whether append operation was successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_get">
+<a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_get</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_get" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a Data Set item from a Sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>seq</strong> – Pointer to Sequence</p></li>
+<li><p><strong>index</strong> – Zero-based index of the Data Set item in the Sequence</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to Data Set item</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_foreach">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_foreach</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">fn</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dataset</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">)</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_foreach" title="Link to this definition"></a><br /></dt>
+<dd><p>Iterate over Data Sets in a Sequence.</p>
+<p>The user function should return true to continue looping, or false to
+terminate the loop early.</p>
+<p>The result is true if the whole sequence returned true, or false if one
+call requested early termination.</p>
+<p>The function must not modify the seqeucence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seq</strong> – Pointer to Sequence</p></li>
+<li><p><strong>fn</strong> – Pointer to function that should be called for each Data Set</p></li>
+<li><p><strong>client</strong> – Client data for function</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pointer to Data Set item</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_remove">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_remove</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_remove" title="Link to this definition"></a><br /></dt>
+<dd><p>Remove a Data Set item from a Sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>seq</strong> – Pointer to Sequence</p></li>
+<li><p><strong>index</strong> – Zero-based index of the Data Set item in the Sequence</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Whether remove operation was successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_count">
+<span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_count</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_count" title="Link to this definition"></a><br /></dt>
+<dd><p>Count the number of Data Set items in a Sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seq</strong> – Pointer to Sequence</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number of Data Set items</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_lock">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_lock</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_lock" title="Link to this definition"></a><br /></dt>
+<dd><p>Lock a Sequence to prevent modification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seq</strong> – Pointer to Sequence</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_is_locked">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_is_locked</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_is_locked" title="Link to this definition"></a><br /></dt>
+<dd><p>Check whether a Sequence is locked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seq</strong> – Pointer to Sequence</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Yes/no answer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_sequence_destroy">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_sequence_destroy</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmSequence</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_sequence_destroy" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy a Sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seq</strong> – Pointer to Sequence</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c type">
+<dt class="sig sig-object c" id="c.DcmFrame">
+<span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DcmFrame</span></span></span><a class="headerlink" href="#c.DcmFrame" title="Link to this definition"></a><br /></dt>
+<dd><p>Frame Item of Pixel Data Element</p>
+<p>Encoded pixels of an individual pixel matrix and associated
+descriptive metadata.</p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_create">
+<a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">number</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">data</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">length</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">rows</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">columns</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">samples_per_pixel</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">bits_allocated</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">bits_stored</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">pixel_representation</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">planar_configuration</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">photometric_interpretation</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">transfer_syntax_uid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_create" title="Link to this definition"></a><br /></dt>
+<dd><p>Create a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>index</strong> – Index of the Frame within the Pixel Data Element</p></li>
+<li><p><strong>data</strong> – Pixel data of the Frame</p></li>
+<li><p><strong>length</strong> – Size of the Frame (number of bytes)</p></li>
+<li><p><strong>rows</strong> – Number of rows in pixel matrix</p></li>
+<li><p><strong>columns</strong> – Number of columns in pixel matrix</p></li>
+<li><p><strong>samples_per_pixel</strong> – Number of samples per pixel</p></li>
+<li><p><strong>bits_allocated</strong> – Number of bits allocated per pixel</p></li>
+<li><p><strong>bits_stored</strong> – Number of bits stored per pixel</p></li>
+<li><p><strong>pixel_representation</strong> – Representation of pixels
+(unsigned integers or 2’s complement)</p></li>
+<li><p><strong>planar_configuration</strong> – Configuration of samples
+(color-by-plane or color-by-pixel)</p></li>
+<li><p><strong>photometric_interpretation</strong> – Interpretation of pixels
+(monochrome, RGB, etc.)</p></li>
+<li><p><strong>transfer_syntax_uid</strong> – UID of transfer syntax in which data is encoded</p></li>
+</ul>
+</dd>
+</dl>
+<p>The object takes over ownership of the memory referenced by <cite>data</cite>,
+<cite>photometric_interpretation</cite>, and <cite>transfer_syntax_uid</cite>
+and frees it when the object is destroyed or if the creation fails.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Frame Item</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_number">
+<span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_number</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_number" title="Link to this definition"></a><br /></dt>
+<dd><p>Get number of a Frame Item within the Pixel Data Element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number (one-based index)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_length">
+<span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_length</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_length" title="Link to this definition"></a><br /></dt>
+<dd><p>Get length of a Frame Item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number of bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_rows">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_rows</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_rows" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Rows of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number of rows in pixel matrix</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_columns">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_columns</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_columns" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Columns of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number of columns in pixel matrix</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_samples_per_pixel">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_samples_per_pixel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_samples_per_pixel" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Samples per Pixel of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number of samples (color channels) per pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_bits_allocated">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_bits_allocated</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_bits_allocated" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Bits Allocated of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number of bits allocated per pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_bits_stored">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_bits_stored</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_bits_stored" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Bits Stored of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>number of bits stored per pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_high_bit">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_high_bit</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_high_bit" title="Link to this definition"></a><br /></dt>
+<dd><p>Get High Bit of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>most significant bit of pixels</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_pixel_representation">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_pixel_representation</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_pixel_representation" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Pixel Representation of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>representation of pixels (unsigned integers or 2’s complement)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_planar_configuration">
+<span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_planar_configuration</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_planar_configuration" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Planar Configuration of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>configuration of samples (color-by-plane or color-by-pixel)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_photometric_interpretation">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_photometric_interpretation</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_photometric_interpretation" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Photometric Interpretation of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>interpretation of pixels (monochrome, RGB, etc.)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_transfer_syntax_uid">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_transfer_syntax_uid</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_transfer_syntax_uid" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Transfer Syntax UID for a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>UID of the transfer syntax in which frame is encoded</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_get_value">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_get_value</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_get_value" title="Link to this definition"></a><br /></dt>
+<dd><p>Get pixel data of a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pixel data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_frame_destroy">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_frame_destroy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_frame_destroy" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy a Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Frame</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c type">
+<dt class="sig sig-object c" id="c.DcmFilehandle">
+<span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DcmFilehandle</span></span></span><a class="headerlink" href="#c.DcmFilehandle" title="Link to this definition"></a><br /></dt>
+<dd><p>Part 10 File</p>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c._DcmIO">
+<span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_DcmIO</span></span></span><a class="headerlink" href="#c._DcmIO" title="Link to this definition"></a><br /></dt>
+<dd><p>An object we can read from.</p>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c._DcmIOMethods">
+<span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_DcmIOMethods</span></span></span><a class="headerlink" href="#c._DcmIOMethods" title="Link to this definition"></a><br /></dt>
+<dd><p>A set of IO methods, see dcm_io_create().</p>
+<dl class="c member">
+<dt class="sig sig-object c" id="c._DcmIOMethods.open">
+<span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">open</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c._DcmIOMethods.open" title="Link to this definition"></a><br /></dt>
+<dd><p>Open an IO object</p>
+</dd></dl>
+
+<dl class="c member">
+<dt class="sig sig-object c" id="c._DcmIOMethods.close">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">close</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">io</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c._DcmIOMethods.close" title="Link to this definition"></a><br /></dt>
+<dd><p>Close an IO object</p>
+</dd></dl>
+
+<dl class="c member">
+<dt class="sig sig-object c" id="c._DcmIOMethods.read">
+<span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">read</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">io</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">buffer</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c._DcmIOMethods.read" title="Link to this definition"></a><br /></dt>
+<dd><p>Read from an IO object, semantics as POSIX read()</p>
+</dd></dl>
+
+<dl class="c member">
+<dt class="sig sig-object c" id="c._DcmIOMethods.seek">
+<span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">seek</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">io</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">whence</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c._DcmIOMethods.seek" title="Link to this definition"></a><br /></dt>
+<dd><p>Seek an IO object, semantics as POSIX seek()</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_io_create">
+<span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_io_create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">DcmIOMethods</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">methods</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">client</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_io_create" title="Link to this definition"></a><br /></dt>
+<dd><p>Create an IO object using a set of IO methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error structure pointer</p></li>
+<li><p><strong>io</strong> – Set of read methods</p></li>
+<li><p><strong>client</strong> – Client data for read methods</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>IO object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_io_create_from_file">
+<span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_io_create_from_file</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filename</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_io_create_from_file" title="Link to this definition"></a><br /></dt>
+<dd><p>Open a file on disk for IO.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error structure pointer</p></li>
+<li><p><strong>filename</strong> – Path to the file on disk</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>IO object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_io_create_from_memory">
+<span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_io_create_from_memory</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_io_create_from_memory" title="Link to this definition"></a><br /></dt>
+<dd><p>Open an area of memory for IO.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error structure pointer</p></li>
+<li><p><strong>buffer</strong> – Pointer to memory area</p></li>
+<li><p><strong>length</strong> – Length of memory area in bytes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>IO object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_io_close">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_io_close</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">io</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_io_close" title="Link to this definition"></a><br /></dt>
+<dd><p>Close an IO object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>io</strong> – Pointer to IO object</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_io_read">
+<span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_io_read</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">io</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_io_read" title="Link to this definition"></a><br /></dt>
+<dd><p>Read from an IO object.</p>
+<p>Read up to length bytes from the IO object. Returns the number of bytes
+read, or -1 for an error. A return of 0 indicates end of file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>io</strong> – Pointer to IO object</p></li>
+<li><p><strong>buffer</strong> – Memory area to read to</p></li>
+<li><p><strong>length</strong> – Size of memory area</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Number of bytes read</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_io_seek">
+<span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_io_seek</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">io</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n"><span class="pre">offset</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">whence</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_io_seek" title="Link to this definition"></a><br /></dt>
+<dd><p>Seek an IO object.</p>
+<p>Set whence to <cite>SEEK_CUR</cite> to seek relative to the current file position,
+<cite>SEEK_END</cite> to seek relative to the end of the file, or <cite>SEEK_SET</cite> to seek
+relative to the start.</p>
+<p>Returns the new absolute read position, or -1 for IO error.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error structure pointer</p></li>
+<li><p><strong>io</strong> – Pointer to IO object</p></li>
+<li><p><strong>offset</strong> – Seek offset</p></li>
+<li><p><strong>whence</strong> – Seek mode</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>New read position</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_create">
+<a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="n"><span class="pre">DcmIO</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">io</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_create" title="Link to this definition"></a><br /></dt>
+<dd><p>Create a representation of a DICOM File using an IO object.</p>
+<p>The File object tracks information like the transfer syntax and the byte
+ordering.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error structure pointer</p></li>
+<li><p><strong>io</strong> – IO object to read from</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>filehandle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_create_from_file">
+<a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_create_from_file</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filepath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_create_from_file" title="Link to this definition"></a><br /></dt>
+<dd><p>Open a file on disk as a DcmFilehandle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error structure pointer</p></li>
+<li><p><strong>filepath</strong> – Path to the file on disk</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>filehandle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_create_from_memory">
+<a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_create_from_memory</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_create_from_memory" title="Link to this definition"></a><br /></dt>
+<dd><p>Open an area of memory as a DcmFilehandle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Error structure pointer</p></li>
+<li><p><strong>buffer</strong> – Pointer to memory area</p></li>
+<li><p><strong>length</strong> – Length of memory area in bytes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>filehandle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_destroy">
+<span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_destroy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_destroy" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy a Filehandle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filehandle</strong> – File</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_get_file_meta">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_get_file_meta</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_get_file_meta" title="Link to this definition"></a><br /></dt>
+<dd><p>Get File Meta Information from a File.</p>
+<p>Reads the File Meta Information and saves it in the File handle. Returns a
+reference to this internal copy of the File Meta Information.</p>
+<p>The return result must not be destroyed. Make a clone of it with
+<a class="reference internal" href="#c.dcm_dataset_clone" title="dcm_dataset_clone"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_clone()</span></code></a> if you need it to remain valid after
+closing the File handle.</p>
+<p>After calling this function, the filehandle read point is always
+positioned at the start of the File metadata.</p>
+<p>It is safe to call this function many times.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>filehandle</strong> – Pointer to file handle</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>File Meta Information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_get_transfer_syntax_uid">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_get_transfer_syntax_uid</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_get_transfer_syntax_uid" title="Link to this definition"></a><br /></dt>
+<dd><p>Get Transfer Syntax UID for a fileahndle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filehandle</strong> – File</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>UID of the transfer syntax for this File.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_read_metadata">
+<a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_read_metadata</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">stop_tags</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_read_metadata" title="Link to this definition"></a><br /></dt>
+<dd><p>Read metadata from a File.</p>
+<p>Read slide metadata, stopping when one of the tags in the stop list is
+seen. If the stop list pointer is NULL, it will stop on any of the pixel
+data tags.</p>
+<p>The return result must be destroyed with <a class="reference internal" href="#c.dcm_dataset_destroy" title="dcm_dataset_destroy"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_destroy()</span></code></a>.</p>
+<p>After calling this function, the filehandle read point is always
+positioned at the tag that stopped the read. You can call this function
+again with a different stop set to read more of the metadata.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>filehandle</strong> – File</p></li>
+<li><p><strong>stop_tags</strong> – NULL, or Zero-terminated array of tags to stop on</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>metadata</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_get_metadata_subset">
+<span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#c.DcmDataSet" title="DcmDataSet"><span class="n"><span class="pre">DcmDataSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_get_metadata_subset</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_get_metadata_subset" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a fast subset of metadata from a File.</p>
+<p>Gets a subset of the File’s metadata and saves it in the File handle.
+Returns a reference to this internal copy of the File metadata.</p>
+<p>The subset is the part of the DICOM metadata that can be read quickly. It
+is missing tags such as PerFrameFunctionalGroupSequence. Use
+dcm_filehandle_read_metadata() if you need all file metadata.</p>
+<p>The return result must not be destroyed. Make a clone of it with
+<a class="reference internal" href="#c.dcm_dataset_clone" title="dcm_dataset_clone"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_clone()</span></code></a> if you need it to remain valid after
+closing the File handle.</p>
+<p>After calling this function, the filehandle read point is always
+positioned at the tag that stopped the read.</p>
+<p>It is safe to call this function many times.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>filehandle</strong> – File</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>metadata</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_prepare_read_frame">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_prepare_read_frame</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_prepare_read_frame" title="Link to this definition"></a><br /></dt>
+<dd><p>Read everything necessary to fetch frames from the file.</p>
+<p>Scans the PixelData sequence and loads the PerFrameFunctionalGroupSequence,
+if present.</p>
+<p>This function will be called automatically on the first call to
+<a class="reference internal" href="#c.dcm_filehandle_read_frame_position" title="dcm_filehandle_read_frame_position"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_read_frame_position()</span></code></a> or
+<a class="reference internal" href="#c.dcm_filehandle_read_frame" title="dcm_filehandle_read_frame"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_read_frame()</span></code></a>. It can take some time to execute,
+so it is available as a separate function call in case this delay needs
+to be managed.</p>
+<p>After calling this function, the filehandle read point is always
+positioned at the PixelData tag.</p>
+<p>It is safe to call this function many times.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>filehandle</strong> – File</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on success</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_read_frame">
+<a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_read_frame</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">frame_number</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_read_frame" title="Link to this definition"></a><br /></dt>
+<dd><p>Read an individual Frame from a File.</p>
+<p>Frames are numbered from 1 in the order they appear in the PixelData element.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>filehandle</strong> – File</p></li>
+<li><p><strong>index</strong> – One-based frame number</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Frame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_read_frame_position">
+<a class="reference internal" href="#c.DcmFrame" title="DcmFrame"><span class="n"><span class="pre">DcmFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_read_frame_position</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">column</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">row</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_read_frame_position" title="Link to this definition"></a><br /></dt>
+<dd><p>Read the frame at a position in a File.</p>
+<p>Read a frame from a File at a specified (column, row), numbered from zero.
+This takes account of any frame positioning given in
+PerFrameFunctionalGroupSequence.</p>
+<p>If the frame is missing, perhaps because this is a sparse file, this
+function returns NULL and sets the error
+<a class="reference internal" href="#c._DcmErrorCode.DCM_ERROR_CODE_MISSING_FRAME" title="DCM_ERROR_CODE_MISSING_FRAME"><code class="xref c c-enum docutils literal notranslate"><span class="pre">DCM_ERROR_CODE_MISSING_FRAME</span></code></a>. Applications can detect
+this and render a background image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>filehandle</strong> – File</p></li>
+<li><p><strong>column</strong> – Column number, from 0</p></li>
+<li><p><strong>row</strong> – Row number, from 0</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Frame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.dcm_filehandle_print">
+<span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dcm_filehandle_print</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.DcmError" title="DcmError"><span class="n"><span class="pre">DcmError</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error</span></span>, <a class="reference internal" href="#c.DcmFilehandle" title="DcmFilehandle"><span class="n"><span class="pre">DcmFilehandle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">filehandle</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.dcm_filehandle_print" title="Link to this definition"></a><br /></dt>
+<dd><p>Scan a file and print the entire structure to stdout.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> – Pointer to error object</p></li>
+<li><p><strong>filehandle</strong> – File</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true on successful parse, false otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tools.html" class="btn btn-neutral float-right" title="Command line tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Markus D. Herrmann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

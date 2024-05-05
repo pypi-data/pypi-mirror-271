@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage &mdash; libdicom  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API documentation" href="api.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            libdicom
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#api-overview">API overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#thread-safety">Thread safety</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#error-handling">Error handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#memory-management">Memory management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting started</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Command line tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">libdicom</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Usage</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h1>
+<section id="api-overview">
+<h2>API overview<a class="headerlink" href="#api-overview" title="Link to this heading"></a></h2>
+<p>A Filehandle (<a class="reference internal" href="api.html#c.DcmFilehandle" title="DcmFilehandle"><code class="xref c c-type docutils literal notranslate"><span class="pre">DcmFilehandle</span></code></a>) enables access of a <a class="reference external" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_3.html#glossentry_DICOMFile">DICOM file</a>,
+which contains an encoded Data Set representing a SOP Instance.
+A Filehandle can be created via <a class="reference internal" href="api.html#c.dcm_filehandle_create_from_file" title="dcm_filehandle_create_from_file"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_create_from_file()</span></code></a>
+or <a class="reference internal" href="api.html#c.dcm_filehandle_create_from_memory" title="dcm_filehandle_create_from_memory"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_create_from_memory()</span></code></a> , and destroyed via
+<a class="reference internal" href="api.html#c.dcm_filehandle_destroy" title="dcm_filehandle_destroy"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_destroy()</span></code></a>.  You can make your own load functions
+to load from other IO sources, see <a class="reference internal" href="api.html#c.dcm_filehandle_create" title="dcm_filehandle_create"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_create()</span></code></a>.</p>
+<p>The content of a Part10 file can be read using various functions.</p>
+<p>The <a class="reference external" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_3.html#glossentry_FileMetaInformation">File Meta Information</a>
+can be accessed via <a class="reference internal" href="api.html#c.dcm_filehandle_get_file_meta" title="dcm_filehandle_get_file_meta"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_get_file_meta()</span></code></a>.</p>
+<p>The principal metadata of the Data Set can be accessed via
+<a class="reference internal" href="api.html#c.dcm_filehandle_get_metadata_subset" title="dcm_filehandle_get_metadata_subset"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_get_metadata_subset()</span></code></a>. This function will stop
+read on tags which are likely to take a long time to process.</p>
+<p>You can read all metadata and control read stop using a sequence of calls to
+<a class="reference internal" href="api.html#c.dcm_filehandle_read_metadata" title="dcm_filehandle_read_metadata"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_read_metadata()</span></code></a>.</p>
+<p>In case the Data Set contained in a Part10 file represents an Image instance,
+individual frames may be read out with <a class="reference internal" href="api.html#c.dcm_filehandle_read_frame" title="dcm_filehandle_read_frame"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_read_frame()</span></code></a>.</p>
+<p>Use <a class="reference internal" href="api.html#c.dcm_filehandle_read_frame_position" title="dcm_filehandle_read_frame_position"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_filehandle_read_frame_position()</span></code></a> to read the frame at a
+certain (column, row) position. This will return NULL and set the error code
+<cite>DCM_ERROR_CODE_MISSING_FRAME</cite> if there is no frame at that position.</p>
+<p>A <a class="reference external" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_3.html#glossentry_DataElement">Data Element</a>
+(<a class="reference internal" href="api.html#c.DcmElement" title="DcmElement"><code class="xref c c-type docutils literal notranslate"><span class="pre">DcmElement</span></code></a>) is an immutable data container for storing values.</p>
+<p>Every data element has a tag indicating its purpose. Tags are 32-bit
+unsigned ints with the top 16 bits indicating the group and the bottom 16
+the element. They are usually written in hexadecimal, perhaps <code class="docutils literal notranslate"><span class="pre">0x00400554</span></code>,
+meaning element <code class="docutils literal notranslate"><span class="pre">0x554</span></code> of group <code class="docutils literal notranslate"><span class="pre">0x40</span></code>, or as keywords, in this case
+<code class="docutils literal notranslate"><span class="pre">&quot;SpecimenUID&quot;</span></code>. You can get the tag from its corresponding keyword with
+<a class="reference internal" href="api.html#c.dcm_dict_tag_from_keyword" title="dcm_dict_tag_from_keyword"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dict_tag_from_keyword()</span></code></a>, or find the keyword from a tag with
+<a class="reference internal" href="api.html#c.dcm_dict_keyword_from_tag" title="dcm_dict_keyword_from_tag"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dict_keyword_from_tag()</span></code></a>.</p>
+<p>Every Data Element has a <a class="reference external" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_6.2.html">Value Representation (VR)</a>,
+which specifies the data type and format of the contained value.  VRs can
+be conceptually grouped into numbers (integers or floating-point values),
+numeric strings (strings of characters encoding numbers using the decimal
+or scientific notation), character strings (text of restriction length and
+character repertoire), or byte strings (unicode).  Each VR is represented
+using a standard C type (e.g,. VR <code class="docutils literal notranslate"><span class="pre">&quot;US&quot;</span></code> has type <code class="docutils literal notranslate"><span class="pre">uint16_t</span></code> and VR
+<code class="docutils literal notranslate"><span class="pre">&quot;UI&quot;</span></code> has type <code class="docutils literal notranslate"><span class="pre">char</span> <span class="pre">*</span></code>) and additional value constraints may be
+checked at runtime (e.g., the maximal capacity of a character string).</p>
+<p>The VR must be appropriate for the tag. Use <a class="reference internal" href="api.html#c.dcm_vr_from_tag" title="dcm_vr_from_tag"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_vr_from_tag()</span></code></a> to
+find the set of allowed VRs for a tag. Use <a class="reference internal" href="api.html#c.dcm_is_valid_vr_for_tag" title="dcm_is_valid_vr_for_tag"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_is_valid_vr_for_tag()</span></code></a>
+to check if a VR is allowed for a tag.</p>
+<p>Depending on the VR, an individual Data
+Element may have a <a class="reference external" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_6.4.html">Value Multiplicity (VM)</a>
+greater than one, i.e., contain more than one value.  Under the hood,
+a Data Element may thus contain an array of values.</p>
+<p>A Data Element can be created with <a class="reference internal" href="api.html#c.dcm_element_create" title="dcm_element_create"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_element_create()</span></code></a>, it can have
+a value assigned to it with eg.
+<a class="reference internal" href="api.html#c.dcm_element_set_value_integer" title="dcm_element_set_value_integer"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_element_set_value_integer()</span></code></a>, and it can be destroyed with
+<a class="reference internal" href="api.html#c.dcm_element_destroy" title="dcm_element_destroy"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_element_destroy()</span></code></a>. See <a class="reference internal" href="#memory-management">Memory management</a> below for details on
+pointer ownership.</p>
+<p>An individual value can be retrieved via the getter functions like
+(e.g., <a class="reference internal" href="api.html#c.dcm_element_get_value_integer" title="dcm_element_get_value_integer"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_element_get_value_integer()</span></code></a>).  Note that in case of
+character
+string or binary values, the getter function returns the pointer to the
+stored character array  (<code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">char</span> <span class="pre">*</span></code>) and that pointer is only valid
+for the lifetime of the Data Element.  When a Data Element is destroyed,
+the memory allocated for contained values is freed and any pointers to the
+freed memory area become dangling pointers.</p>
+<p>A <a class="reference external" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_3.html#glossentry_DataSet">Data Set</a>
+(<a class="reference internal" href="api.html#c.DcmDataSet" title="DcmDataSet"><code class="xref c c-type docutils literal notranslate"><span class="pre">DcmDataSet</span></code></a>) is an ordered collection of
+Data Elements (<a class="reference internal" href="api.html#c.DcmElement" title="DcmElement"><code class="xref c c-type docutils literal notranslate"><span class="pre">DcmElement</span></code></a>).  A Data Set can be
+created via <a class="reference internal" href="api.html#c.dcm_dataset_create" title="dcm_dataset_create"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_create()</span></code></a> and destroyed via
+<a class="reference internal" href="api.html#c.dcm_dataset_destroy" title="dcm_dataset_destroy"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_destroy()</span></code></a>.  Data Elements can be added to a
+Data Set via <a class="reference internal" href="api.html#c.dcm_dataset_insert" title="dcm_dataset_insert"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_insert()</span></code></a>, removed from a Data Set
+via <a class="reference internal" href="api.html#c.dcm_dataset_remove" title="dcm_dataset_remove"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_remove()</span></code></a>, and retrieved from a Data Set via
+<a class="reference internal" href="api.html#c.dcm_dataset_get" title="dcm_dataset_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_get()</span></code></a> or <a class="reference internal" href="api.html#c.dcm_dataset_get_clone" title="dcm_dataset_get_clone"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_get_clone()</span></code></a>.</p>
+<p>When a Data Element is added to a Data Set, the Data Set takes over ownership
+of the memory allocated for contained Data Elements.  When a Data Element
+is retrieved from a Data Set, it may either be borrowed with ownership of
+the memory allocated for the Data Element remaining with the Data Set in
+case of <a class="reference internal" href="api.html#c.dcm_dataset_get" title="dcm_dataset_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_get()</span></code></a> or copied with the caller taking on
+ownership of the memory newly allocated for the Data Element in case of
+<a class="reference internal" href="api.html#c.dcm_dataset_get_clone" title="dcm_dataset_get_clone"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_dataset_get_clone()</span></code></a>.</p>
+<p>An individual Data Element can only be part of only one Data Set.  When a
+Data Element is removed from a Data Set, the memory allocated for the Data
+Element is freed.  When a Data Set is destroyed, all contained Data Elements
+are also automatically destroyed.</p>
+<p>A <a class="reference external" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_3.html#glossentry_SequenceOfItems">Sequence</a>
+(<code class="xref c c-type docutils literal notranslate"><span class="pre">DcmSequence</span></code>) is an ordered collection of <a class="reference external" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_3.html#glossentry_Item">Items</a>,
+each containing one Data Set.  A Sequence can be created
+via <a class="reference internal" href="api.html#c.dcm_sequence_create" title="dcm_sequence_create"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_sequence_create()</span></code></a> and destroyed via
+<a class="reference internal" href="api.html#c.dcm_sequence_destroy" title="dcm_sequence_destroy"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_sequence_destroy()</span></code></a>.  Data Sets can be added to a Sequence
+via <a class="reference internal" href="api.html#c.dcm_sequence_append" title="dcm_sequence_append"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_sequence_append()</span></code></a>, removed from a Sequence via
+<a class="reference internal" href="api.html#c.dcm_sequence_remove" title="dcm_sequence_remove"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_sequence_remove()</span></code></a>, and retrieved from a Sequence via
+<a class="reference internal" href="api.html#c.dcm_sequence_get" title="dcm_sequence_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_sequence_get()</span></code></a>.</p>
+<p>When a Data Set is added to a sequence, the sequence takes over ownership of
+the memory allocated for the Data Set (and consequently of each contained
+Data Element).  When a Data Set is retrieved from a sequence, it is only
+borrowed and ownership of the memory allocated for the Data Set remains
+with the sequence.  Retrieved Data Sets are immutable (locked).  When a
+Data Set is removed from a sequence, the Data Set is destroyed (i.e., the
+allocated memory is freed).  When a Sequence is destroyed, all contained
+Data Sets are also automatically destroyed.</p>
+</section>
+<section id="thread-safety">
+<h2>Thread safety<a class="headerlink" href="#thread-safety" title="Link to this heading"></a></h2>
+<p>By design, libdicom has no dependencies, not even on a threading
+library. This means it can’t be threadsafe, since it can’t lock any internal
+datastructures. However, there are no global structures, so as long as you
+don’t share a <cite>DcmFilehandle</cite> between threads, you’re fine.</p>
+<p>You can share <cite>DcmFilehandle</cite> between threads if you lock around calls into
+libdicom. The lock only needs to be per-<cite>DcmFilehandle</cite>, you don’t need a
+global lock.</p>
+</section>
+<section id="error-handling">
+<h2>Error handling<a class="headerlink" href="#error-handling" title="Link to this heading"></a></h2>
+<p>Library functions which can return an error take a double pointer to a
+<a class="reference internal" href="api.html#c.DcmError" title="DcmError"><code class="xref c c-type docutils literal notranslate"><span class="pre">DcmError</span></code></a> struct as a first argument. If an error is detected,
+this pointer will be updated to refer to an error object. You can extract
+a <code class="xref c c-type docutils literal notranslate"><span class="pre">DcmErrorCode</span></code> with <a class="reference internal" href="api.html#c.dcm_error_get_code" title="dcm_error_get_code"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_error_get_code()</span></code></a>, an error summary
+with <a class="reference internal" href="api.html#c.dcm_error_get_summary" title="dcm_error_get_summary"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_error_get_summary()</span></code></a>, and a detailed error message with
+<a class="reference internal" href="api.html#c.dcm_error_get_message" title="dcm_error_get_message"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_error_get_message()</span></code></a>. After presenting the error to the user,
+call <a class="reference internal" href="api.html#c.dcm_error_clear" title="dcm_error_clear"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_error_clear()</span></code></a> to clear the error pointer and free any
+allocated memory.</p>
+<p>You can pass <cite>NULL</cite> instead of an error pointer if you are not interested in
+error messages. In this case, any errors will be logged to debug instead, see
+<a class="reference internal" href="api.html#c.dcm_log_debug" title="dcm_log_debug"><code class="xref c c-func docutils literal notranslate"><span class="pre">dcm_log_debug()</span></code></a>.</p>
+<p>For example:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dicom/dicom.h&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">file_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;bad-file&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">DcmError</span><span class="w"> </span><span class="o">*</span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">DcmFilehandle</span><span class="w"> </span><span class="o">*</span><span class="n">filehandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dcm_filehandle_create_from_file</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">file_path</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">filehandle</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;error detected: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dcm_error_code_str</span><span class="p">(</span><span class="n">dcm_error_get_code</span><span class="p">(</span><span class="n">error</span><span class="p">)));</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;summary: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dcm_error_get_summary</span><span class="p">(</span><span class="n">error</span><span class="p">));</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;message: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dcm_error_get_message</span><span class="p">(</span><span class="n">error</span><span class="p">));</span>
+<span class="w">        </span><span class="n">dcm_error_clear</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">dcm_filehandle_destroy</span><span class="p">(</span><span class="n">filehandle</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="memory-management">
+<h2>Memory management<a class="headerlink" href="#memory-management" title="Link to this heading"></a></h2>
+<p>libdicom objects (Data Element, Data Set, Sequence, Frame Item, etc.) can
+contain references to other libdicom objects. For example, you can set a
+sequence as the value of an element like this:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">dcm_element_set_value_sequence</span><span class="p">(</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">element</span><span class="p">,</span><span class="w"> </span><span class="n">sequence</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">handle</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>If this function succeeds, ownership of the sequence object passes to the
+element, i.e., when the element is destroyed, the sequence will also be
+destroyed.</p>
+<p>If this function fails, ownership does not transfer.</p>
+<p>libdicom objects can also contain references to data structures allocated by
+other programs, for example, arrays of numeric values.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pointer</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">integers</span><span class="p">;</span>
+<span class="kt">uint32_t</span><span class="w"> </span><span class="n">vm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">ints</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">array</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="o">!</span><span class="n">dcm_element_set_value_numeric_multi</span><span class="p">(</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">element</span><span class="p">,</span><span class="w"> </span><span class="n">values</span><span class="p">,</span><span class="w"> </span><span class="n">vm</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">handle</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The final parameter, <cite>steal</cite>, sets whether ownership of the pointer to the
+array should be “stolen” by libdicom. If it is true, then libdicom will use
+<code class="xref c c-func docutils literal notranslate"><span class="pre">free()</span></code> to free the array when the element is freed. If it is false,
+libdicom will make a copy of the array.</p>
+</section>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<p>Below is an example for reading metadata from a DICOM Part10 file and
+printing an element to standard output:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dicom/dicom.h&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">file_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/path/to/file.dcm&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">DcmError</span><span class="w"> </span><span class="o">*</span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">DcmFilehandle</span><span class="w"> </span><span class="o">*</span><span class="n">filehandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dcm_filehandle_create_from_file</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">file_path</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">filehandle</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">dcm_error_log</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+<span class="w">        </span><span class="n">dcm_error_clear</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">DcmDataSet</span><span class="w"> </span><span class="o">*</span><span class="n">metadata</span><span class="w"> </span><span class="o">=</span>
+<span class="w">        </span><span class="n">dcm_filehandle_get_metadata_subset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">filehandle</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">metadata</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">dcm_error_log</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+<span class="w">        </span><span class="n">dcm_error_clear</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+<span class="w">        </span><span class="n">dcm_filehandle_destroy</span><span class="p">(</span><span class="n">filehandle</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">num_frames</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dcm_dict_tag_from_keyword</span><span class="p">(</span><span class="s">&quot;NumberOfFrames&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">DcmElement</span><span class="w"> </span><span class="o">*</span><span class="n">element</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dcm_dataset_get</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">metadata</span><span class="p">,</span><span class="w"> </span><span class="n">tag</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">element</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">||</span>
+<span class="w">        </span><span class="o">!</span><span class="n">dcm_element_get_value_string</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">element</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">num_frames</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">dcm_error_log</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+<span class="w">        </span><span class="n">dcm_error_clear</span><span class="p">(</span><span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+<span class="w">        </span><span class="n">dcm_filehandle_destroy</span><span class="p">(</span><span class="n">filehandle</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;NumerOfFrames == %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num_frames</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">dcm_filehandle_destroy</span><span class="p">(</span><span class="n">filehandle</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api.html" class="btn btn-neutral float-right" title="API documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Markus D. Herrmann.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

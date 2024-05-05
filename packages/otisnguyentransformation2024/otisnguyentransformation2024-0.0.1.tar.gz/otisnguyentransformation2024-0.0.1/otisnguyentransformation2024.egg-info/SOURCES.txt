@@ -1,0 +1,8 @@
+setup.py
+datatransformation/__init__.py
+datatransformation/analysis_algorithms.py
+datatransformation/transformation_algorithms.py
+otisnguyentransformation2024.egg-info/PKG-INFO
+otisnguyentransformation2024.egg-info/SOURCES.txt
+otisnguyentransformation2024.egg-info/dependency_links.txt
+otisnguyentransformation2024.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+pandas
+numpy
+matplotlib
+requests
+toolz
+rich
+lenses
+pyspecter
+graphviz
+schema
+finance_calculator
+dateparser
+
+[test]
+pytest
+jsondiff
+deepdiff

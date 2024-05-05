@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aldsim
+Version: 0.0.1
+Summary: Simple models for atomic layer deposition
+Home-page: https://github.com/anglyan/ald.git
+Author: Angel Yanguas-Gil
+Author-email: angel.yanguas@gmail.com
+Project-URL: Bug Tracker, https://github.com/anglyan/ald/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ald
+Simple models for thin film growth using atomic layer deposition

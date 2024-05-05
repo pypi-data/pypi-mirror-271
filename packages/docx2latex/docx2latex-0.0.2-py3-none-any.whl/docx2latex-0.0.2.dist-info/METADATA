@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: docx2latex
+Version: 0.0.2
+Summary: convert docx file to html code including latex linear equation
+Author: shadan
+Author-email: shadanparvez64@gmail.com
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# docx2latex
+Having function for convert docx to html and include feature of reading latex linear equations or Math equations
+
+
+## Installation
+
+Install using pip:
+
+
+## Usage
+
+Import the `Document` class from `docx2latex`:
+
+```python
+from docx2latex import Document
+
+
+docx_file_path = 'myfile.docx'
+obj = Document(docx_file_path)
+raw_data = obj.get_html_code()
+print(raw_data)

@@ -1,0 +1,11 @@
+requests
+
+[test]
+black
+coverage
+flake8
+mock
+pydocstyle
+pytest
+pytest-cov
+tox

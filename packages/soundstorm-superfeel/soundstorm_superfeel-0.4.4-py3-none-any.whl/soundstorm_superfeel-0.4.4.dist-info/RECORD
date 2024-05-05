@@ -1,0 +1,13 @@
+soundstorm_pytorch/__init__.py,sha256=NWo5KYEj693-XUHQbbBlMnOsnooEXOYhI8gtUc1lxMU,180
+soundstorm_pytorch/attend.py,sha256=kH9N9Je4RGWixDaIFyU6emkueIxuzvG3j4hwPcYCkKk,4919
+soundstorm_pytorch/soundstorm.py,sha256=AVGmvRRW3YcBn00M1ZF7c_JToPhh_JM8UbwN8o7z-pw,41029
+soundstorm_pytorch/trainer.py,sha256=xXXmX3A_TlHQ0PGBfGT_tioI1rXOALOVGZSe3n6Spyc,10302
+soundstorm_superfeel/__init__.py,sha256=NWo5KYEj693-XUHQbbBlMnOsnooEXOYhI8gtUc1lxMU,180
+soundstorm_superfeel/attend.py,sha256=kH9N9Je4RGWixDaIFyU6emkueIxuzvG3j4hwPcYCkKk,4919
+soundstorm_superfeel/soundstorm.py,sha256=AVGmvRRW3YcBn00M1ZF7c_JToPhh_JM8UbwN8o7z-pw,41029
+soundstorm_superfeel/trainer.py,sha256=xXXmX3A_TlHQ0PGBfGT_tioI1rXOALOVGZSe3n6Spyc,10302
+soundstorm_superfeel-0.4.4.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+soundstorm_superfeel-0.4.4.dist-info/METADATA,sha256=W5b2n-y1tu2XN1ea8Ae6WLjnRWb744v2IExYDoCismU,998
+soundstorm_superfeel-0.4.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+soundstorm_superfeel-0.4.4.dist-info/top_level.txt,sha256=5e8AHaTkb5h_zunMO6d8sz88YRxx4zp4OZTTv3Tlujk,21
+soundstorm_superfeel-0.4.4.dist-info/RECORD,,

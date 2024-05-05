@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: scrutinydebugger
+Version: 0.2.0
+Summary: Scrutiny debugger Python framework
+Home-page: https://github.com/scrutinydebugger/scrutiny-python
+Author: Pier-Yves Lessard
+License: MIT
+Requires-Python: >3.8
+License-File: LICENSE
+Requires-Dist: appdirs>=1.4.4
+Requires-Dist: pyelftools>=0.29
+Requires-Dist: websockets>=11.0.3
+Requires-Dist: sortedcontainers>=2.4
+Requires-Dist: pyserial>=3.5
+Provides-Extra: test
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: sphinx-book-theme==1.1.2; extra == "test"
+Requires-Dist: sphinx==7.2.6; extra == "test"
+Provides-Extra: dev
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Requires-Dist: autopep8; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: sphinx-book-theme==1.1.2; extra == "dev"
+Requires-Dist: sphinx==7.2.6; extra == "dev"

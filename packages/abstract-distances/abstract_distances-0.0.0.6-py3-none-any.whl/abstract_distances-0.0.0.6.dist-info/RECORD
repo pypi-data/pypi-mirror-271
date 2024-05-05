@@ -1,0 +1,16 @@
+abstract_distances/__init__.py,sha256=7yw8PSUvV7Lv3Zruug01bP9ix8J0BVqzomEZfc71VmE,24
+abstract_distances/char_compar.py,sha256=wyunJ-O4sZFYKTEqjUY684vOShlGIMyuHXAigXeaUFE,10114
+abstract_distances/distance_cals.py,sha256=6g1hJCU1lO4bwtfM1aI_Syokr4W7PauEkxjPUP_ABzY,9511
+abstract_distances/do_distance.py,sha256=ivp6XLu5c6ObLdxG0nYzW5jXV8whY8BdUnlXM2rJ8Us,8631
+abstract_distances/excel_module.py,sha256=gd0irP-r2udIyBCmD4FhZL8Z6yjp7UdT1AGqgE5P4QE,28890
+abstract_distances/functions.py,sha256=veRNHyINTUShOgVcOoGGPGR8pLjdpnGpHObsOfi0Ouo,8233
+abstract_distances/geo_pandas.py,sha256=GRVzsqel8jpFxQUgvlwYEojzOz5TZdMDZgYiaJvVzuw,5669
+abstract_distances/geo_spec.py,sha256=hNYj2MHfn_1StWMO72eF_Vui7Gp8oivHgQ0kcjMQq8Y,1460
+abstract_distances/get_conversion.py,sha256=jE3ko4lJ6qhO-9m1ZBHFwii7_G2byt3r7hoQChuughY,1975
+abstract_distances/get_zz.py,sha256=ExnE36CECvLtJYlQNExqAwScb1uNguTEi5deX6JWVFg,1691
+abstract_distances/test.py,sha256=Zm7U2uTi6jAb6ca5lOFeJJNaUBfZSdCEnjtxdQvUK4Y,9865
+abstract_distances/word_compare.py,sha256=_KZ9pTujdRAXHe0cCnJcsa3ZC0d_wZieHKYBzfqL8Co,8858
+abstract_distances-0.0.0.6.dist-info/METADATA,sha256=HzeiGZbRT3kXUm1tMq7avbuqDiTEZwF89YkLiPeRI5U,613
+abstract_distances-0.0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+abstract_distances-0.0.0.6.dist-info/top_level.txt,sha256=n57l5jsGhXnqsplVELZM1X_6zTFH0n9NWnoL3-eG7FA,19
+abstract_distances-0.0.0.6.dist-info/RECORD,,

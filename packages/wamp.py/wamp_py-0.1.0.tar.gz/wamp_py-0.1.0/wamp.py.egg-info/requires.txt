@@ -1,0 +1,10 @@
+websockets
+wampproto
+aiohttp
+uvloop
+
+[test]
+coverage
+pytest
+pytest-asyncio
+ruff

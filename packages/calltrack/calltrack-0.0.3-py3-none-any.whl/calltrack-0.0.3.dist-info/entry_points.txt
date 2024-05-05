@@ -1,0 +1,3 @@
+[console_scripts]
+calltrack-view=calltrack.cli:main
+

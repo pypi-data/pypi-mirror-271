@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "sphinxcontrib-lightbox2"
+version = "0.2.0"
+description = "Sphinx extension to add lightbox2 to each figure and image added in HTML"
+authors = ["Jonas Ehrlich <jonas.ehrlich@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+documentation = "https://sphinxcontrib-lightbox2.readthedocs.io/"
+packages = [{ include = "sphinxcontrib" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sphinx = "^7.3.7"
+
+
+[tool.poetry.group.docs.dependencies]
+myst-parser = "^3.0.1"
+furo = "^2024.4.27"
+sphinx-autobuild = "^2024.4.16"
+sphinxcontrib-plantuml = "^0.29"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+ruff = "^0.4.3"
+black = "^24.4.2"
+mypy = "^1.10.0"
+types-docutils = "^0.21.0.20240423"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+strict = true
+
+[tool.ruff]
+line-length = 120
+src = ["sphinxcontrib"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle error rules
+    "F",   # pycodestyle warning rules
+    "B",   # flake8-bugbear rules
+    "S",   # flake8-bandit rules
+    "PTH", # flake8-use-pathlib
+    "PLC", # pylint convention rules
+    "PLR", # pylint refactor rules
+    "PLE", # pylint error rules
+    "PLW", # pylint warning rules
+    "C90", # mccabe complexity rules
+]

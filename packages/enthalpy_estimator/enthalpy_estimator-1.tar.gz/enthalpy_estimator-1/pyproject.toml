@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "enthalpy_estimator"
+version = "1"
+description = "A package to automatically generate reactions and estimate enthalpy."
+authors = ["Egor Nosach"]
+license = "GNU General Public License v3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = ">=1.26"
+scipy = ">=1.14"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

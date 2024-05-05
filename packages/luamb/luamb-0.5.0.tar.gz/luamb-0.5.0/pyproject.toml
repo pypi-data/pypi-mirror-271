@@ -1,0 +1,88 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'luamb'
+description = 'Lua environment manager'
+readme = 'README.md'
+license = {text = 'MIT'}
+authors = [
+    {name = 'Dmitry Meyer', email = 'me@undef.im'},
+]
+classifiers = [
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: MacOS',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+requires-python = '>= 3.8'
+dynamic = ['version']
+
+[project.urls]
+Homepage = 'https://github.com/un-def/luamb'
+Repository = 'https://github.com/un-def/luamb.git'
+Changelog = 'https://github.com/un-def/luamb/blob/master/CHANGELOG.md'
+Issues = 'https://github.com/un-def/luamb/issues'
+
+[project.scripts]
+luamb = 'luamb._entrypoint:main'
+
+[tool.setuptools.dynamic]
+version = {attr = 'luamb.__version__'}
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = false
+
+[tool.isort]
+lines_after_imports = 2
+multi_line_output = 5
+include_trailing_comma = true
+use_parentheses = true
+skip_glob = ['.*']
+
+[tool.pytest.ini_options]
+testpaths = ['tests']
+markers = [
+    'shell: specify shells to include or exclude',
+]
+
+[tool.tox]
+legacy_tox_ini = '''
+[tox]
+envlist =
+    lint
+    py38
+    py39
+    py310
+    py311
+    py312
+
+[testenv]
+passenv = TEST_SHELL_*
+deps =
+    pytest
+    # hererocks is installed to check that we ignore it
+    hererocks
+commands = pytest {posargs}
+
+[testenv:test-ci]
+
+[testenv:lint]
+skip_install = true
+deps =
+    flake8
+    isort
+commands =
+    flake8
+    isort -c .
+'''

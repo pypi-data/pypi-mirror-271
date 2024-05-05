@@ -1,0 +1,7 @@
+[project]
+name = "cantus"
+authors = [
+    {name = "Tim Eipert", email = "tim.eipert@uni-wuerzburg.de"},
+]
+version = "0.0.0"
+description = "Coming soon"

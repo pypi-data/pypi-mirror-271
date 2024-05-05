@@ -1,0 +1,6 @@
+pyproject.toml
+cantus/__init__.py
+cantus.egg-info/PKG-INFO
+cantus.egg-info/SOURCES.txt
+cantus.egg-info/dependency_links.txt
+cantus.egg-info/top_level.txt

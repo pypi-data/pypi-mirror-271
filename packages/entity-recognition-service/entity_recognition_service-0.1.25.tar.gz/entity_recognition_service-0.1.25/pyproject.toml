@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "entity-recognition-service"
+version = "0.1.25"
+description = "A library for technology entity recognition and recommendation"
+authors = ["Cesar Goncalves <goncalves.cesaraugusto94@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+bertopic = "0.16.1"
+spacy = "^3.7.4"
+transformers = "^4.40.0"
+torch = "^2.2.2"
+scikit-learn = "^1.4.2"
+scipy = "^1.13.0"
+pandas = "^2.2.2"
+aiofiles = "^23.2.1"
+numpy = "^1.26.4"
+hdbscan = "^0.8.33"
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+coverage = "^7.5.1"
+pytest-asyncio = "^0.23.6"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 160
+lint.select = [
+    "F",    # Pyflakes
+    "E",    # Pycodestyle
+    "W",    # Pycodestyle warnings
+    "I001", # isort
+]
+lint.ignore = []
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+lint.per-file-ignores = {}
+lint.dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+target-version = "py311"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10

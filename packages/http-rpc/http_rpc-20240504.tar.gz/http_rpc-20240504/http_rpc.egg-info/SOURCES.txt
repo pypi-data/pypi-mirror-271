@@ -1,0 +1,10 @@
+LICENSE
+README.md
+httprpc.py
+setup.py
+bin/httprpc-self-signed
+bin/httprpc-sign-cert
+http_rpc.egg-info/PKG-INFO
+http_rpc.egg-info/SOURCES.txt
+http_rpc.egg-info/dependency_links.txt
+http_rpc.egg-info/top_level.txt

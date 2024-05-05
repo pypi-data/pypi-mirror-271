@@ -1,0 +1,25 @@
+[project]
+name = "bcra-api-client"
+version = "1.1.8"
+authors = [
+  { name="Emmanuel Paiva", email="none@email.com"},
+]
+description = "Consumo de datos de la API del banco central de la Republica Argentina"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+  "Argentina",
+  "data",
+  "api",
+  "BCRA",
+  "client"
+]
+
+[project.urls]
+Homepage = "https://github.com/paivae/BCRA-client-python"
+Issues = "https://github.com/paivae/BCRA-client-python/issues"

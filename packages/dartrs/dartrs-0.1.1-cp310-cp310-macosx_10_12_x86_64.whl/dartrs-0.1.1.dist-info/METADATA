@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: dartrs
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: 
+Author-email: Plat <contact@p1at.dev>
+License: Apache-2.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# dartrs
+
+> [!WARNING]
+> wip

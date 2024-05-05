@@ -1,0 +1,3 @@
+[console_scripts]
+sifaka=sifaka.main:app
+

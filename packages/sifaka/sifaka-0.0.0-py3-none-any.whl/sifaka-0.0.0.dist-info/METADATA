@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: sifaka
+Version: 0.0.0
+Summary: Test your API endpoints from the Terminal.
+Home-page: https://github.com/seapagan/sifaka
+License: MIT
+Author: Grant Ramsay
+Author-email: seapagan@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: textual (>=0.58.1,<0.59.0)
+Project-URL: Bug Tracker, https://github.com/seapagan/sifaka/issues
+Project-URL: Changelog, https://github.com/seapagan/sifaka/blob/main/CHANGELOG.md
+Project-URL: Pull Requests, https://github.com/seapagan/sifaka/pulls
+Project-URL: Repository, https://github.com/seapagan/sifaka
+Description-Content-Type: text/markdown
+
+# Sifaka <!-- omit in toc -->
+
+This aims to be a terminal-based application for testing your API endpoints.
+Think `Postman` but in the terminal. I also want to add the ability to run
+directly in the console, as an easier alternative to `curl` and similar.
+
+Currently, it is in the very early stages of development and is not yet ready
+for use.
+
+## Development setup
+
+Install the dependencies using Poetry:
+
+```console
+$ poetry install
+```
+
+Then, activate the virtual environment:
+
+```console
+$ poetry shell
+```
+
+The application can be run using the following command:
+
+```console
+$ sifaka
+```
+
+## Contributing
+
+Contributions are welcome! Please see the [contributing
+guidelines](CONTRIBUTING.md)
+
+## License
+
+This project is released under the terms of the MIT license.
+
+## Credits
+
+The original Python boilerplate for this package was created using my
+[Pymaker](https://github.com/seapagan/py-maker) package.
+

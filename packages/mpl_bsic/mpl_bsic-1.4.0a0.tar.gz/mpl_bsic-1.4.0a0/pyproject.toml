@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "mpl_bsic"
+description = "BSIC Plotting Library"
+authors = ["Andrea Franceschini <andrea.franceschini2@studbocconi.it>"]
+readme = "README.md"
+version = "1.4.0a0"    
+packages = [{include = "mpl_bsic"}, {include = "utils"}]
+# testpypi v1.2.1
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+matplotlib = "^3.7"
+numpy = "^1.25"
+pandas = "^2"
+xlsxwriter = "^3.2.0"
+
+[tool.poetry.group.testing]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.3.7"
+numpydoc = "^1.7.0"
+nbsphinx = "^0.9.3"
+sphinx-simplepdf = "^1.6.0"
+pydata-sphinx-theme = "^0.15.2"
+jupyter = "^1.0.0"
+
+[tool.poetry.group.testing.dependencies]
+pytest = ">=7.0"
+flaky = ">=3.6"
+
+[build-system]
+requires = ["poetry-core"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # "error",
+    "ignore::UserWarning",
+    "ignore::DeprecationWarning",
+    # note the use of single quote below to denote "raw" strings in TOML
+    # 'ignore:function ham\(\) is deprecated:DeprecationWarning',
+]

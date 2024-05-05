@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+llamascript/__init__.py
+llamascript/test.py
+llamascript.egg-info/PKG-INFO
+llamascript.egg-info/SOURCES.txt
+llamascript.egg-info/dependency_links.txt
+llamascript.egg-info/entry_points.txt
+llamascript.egg-info/requires.txt
+llamascript.egg-info/top_level.txt

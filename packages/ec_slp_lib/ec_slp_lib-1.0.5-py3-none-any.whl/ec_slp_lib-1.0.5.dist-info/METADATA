@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ec_slp_lib
+Version: 1.0.5
+Summary: Wrapper for Electron Cash commands based on its CLI and RPC commands
+Home-page: https://gitlab.com/uak/electron-cash-slp-basic-lib
+License: LGPLv3+
+Author: uak
+Author-email: 4626956-uak@users.noreply.gitlab.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Project-URL: Repository, https://gitlab.com/uak/electron-cash-slp-basic-lib

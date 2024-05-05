@@ -1,0 +1,170 @@
+# pyproject.toml
+# Python project configuration.
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buildarr-sonarr"
+description = "Sonarr PVR plugin for Buildarr"
+readme = "README.md"
+authors = [
+    {name = "Callum Dickinson",  email = "callum.dickinson.nz@gmail.com"},
+]
+license = {text = "GPL-3.0-or-later"}
+keywords = [
+    "buildarr",
+    "sonarr",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Pydantic",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Systems Administration",
+    "Typing :: Typed",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "buildarr>=0.8.0b0,<0.9.0",
+    "json5>=0.9.7",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://buildarr.github.io"
+Documentation = "https://buildarr.github.io/plugins/sonarr"
+Repository = "https://github.com/buildarr/buildarr-sonarr"
+Issues = "https://github.com/buildarr/buildarr-sonarr/issues"
+Changelog = "https://buildarr.github.io/plugins/sonarr/release-notes"
+
+[project.entry-points."buildarr.plugins"]
+sonarr = "buildarr_sonarr.plugin:SonarrPlugin"
+
+[tool.setuptools]
+packages = ["buildarr_sonarr"]
+
+[tool.setuptools_scm]
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "mkdocs==1.6.0",
+    "mkdocstrings[python]==0.24.3",
+]
+lint = [
+    "mypy==1.10.0",
+    "ruff==0.4.2",
+    "types-requests==2.31.0.20240406",
+]
+test = [
+    "pexpect>=4.9.0",
+    "pytest>=8.0.2",
+    "pytest-cov>=4.1.0",
+    "pytest-httpserver>=1.0.10",
+    "pytest-mock>=3.12.0",
+]
+
+[tool.pdm.scripts]
+lint = {cmd = "ruff check"}
+format = {cmd = "ruff format"}
+test = {cmd = "pytest"}
+
+[tool.ruff]
+fix = true
+indent-width = 4
+line-length = 100
+output-format = "grouped"
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+select = [
+    "A",
+    "B",
+    "BLE",
+    "E",
+    "F",
+    "G",
+    "I",
+    "INP",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "PTH",
+    "RUF",
+    "S",
+    "T10",
+    "T20",
+    "W",
+    "YTT",
+]
+extend-select = [
+    # COM812 is currently disabled due to a conflict with the Ruff formatter.
+    # https://github.com/astral-sh/ruff/issues/9216
+    # TODO: Decide whether to enable or remove.
+    # "COM812",
+    "COM818",
+    "UP009",
+]
+extend-ignore = [
+    "A003",
+    "B023",
+    "N805",
+    "N806",
+    "PLR0911",
+    "PLR0912",
+    "PLR0913",
+    "PLR0915",
+    "RUF012",
+]
+
+[tool.ruff.lint.isort]
+lines-between-types = 1
+combine-as-imports = true
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+[tool.mypy]
+python_version = "3.8"
+pretty = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--color=yes --cov=buildarr_sonarr --cov-config=pyproject.toml --cov-report=html:cover --cov-report=term --cov-report=xml:coverage.xml --junit-xml=rspec.xml -r A --showlocals --verbosity=3"
+filterwarnings = [
+    "error",
+]
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+branch = true
+disable_warnings = ["no-data-collected"]
+# omit = []
+
+[tool.coverage.report]
+exclude_also = [
+    "if TYPE_CHECKING:",
+    'if __name__ == "__main__":',
+    "raise NotImplementedError",
+]

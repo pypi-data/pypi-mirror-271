@@ -1,0 +1,44 @@
+site_name: Buildarr Sonarr Plugin
+
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_root_heading: false
+            show_source: false
+            show_bases: false
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Release Notes: "release-notes.md"
+  - Configuration:
+    - Host Configuration: "configuration/host.md"
+    - Media Management: "configuration/media-management.md"
+    - Profiles:
+      - Quality Profiles: "configuration/profiles/quality.md"
+      - Language Profiles: "configuration/profiles/language.md"
+      - Delay Profiles: "configuration/profiles/delay.md"
+      - Release Profiles: "configuration/profiles/release.md"
+    - Quality: "configuration/quality.md"
+    - Indexers: "configuration/indexers.md"
+    - Download Clients: "configuration/download-clients.md"
+    - Import Lists: "configuration/import-lists.md"
+    - Connect: "configuration/connect.md"
+    - Metadata: "configuration/metadata.md"
+    - Tags: "configuration/tags.md"
+    - General: "configuration/general.md"
+    - UI: "configuration/ui.md"
+  - Buildarr: "https://buildarr.github.io"
+
+watch:
+  - buildarr_sonarr

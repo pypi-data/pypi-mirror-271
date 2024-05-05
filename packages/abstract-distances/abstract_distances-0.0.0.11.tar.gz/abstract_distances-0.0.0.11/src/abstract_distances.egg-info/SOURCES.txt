@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/abstract_distances/__init__.py
+src/abstract_distances/char_compar.py
+src/abstract_distances/distance_cals.py
+src/abstract_distances/do_distance.py
+src/abstract_distances/functions.py
+src/abstract_distances/word_compare.py
+src/abstract_distances.egg-info/PKG-INFO
+src/abstract_distances.egg-info/SOURCES.txt
+src/abstract_distances.egg-info/dependency_links.txt
+src/abstract_distances.egg-info/requires.txt
+src/abstract_distances.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/example1.py,sha256=qh3yoAneUG4fJZp9BfVT5IzFmmE5BZvAUTP-TnB7evs,1366
+examples/example2.py,sha256=v86gj7GmPwBbg6Rm74Npv-Jfefth8T5WTZjQNZII7EI,2209
+examples/example3.py,sha256=6-Iv5p0vyMhe78Ru5sD1Teq5U3RddGu-UgZssNMFwG8,1097
+examples/example4.py,sha256=aBa0YC4E6ivCCFT-p7Pp0Co5jiX1Yo808LNE4v48xfI,1325
+examples/example5.py,sha256=2kPB0Qt3oh_NV6AAAknnXFE5cMmaKSgPBEjvR11S3tk,1553
+examples/sample_classes.py,sha256=wAPpuVepEKeITDSV6YFPYbDY9XiSJSb6PRheOOlIemo,1552
+mlforge/__init__.py,sha256=K3AbG3FTgWQAErO928JkROu2YXgkFAPRh7xm2uB_w_E,62
+mlforge/_version.py,sha256=SjNawyfReODX_p9pqO4JrmYJBlIecZXWUXejFcIuTAo,23
+mlforge/logconfig.py,sha256=2c6j65RVYSxwpO9x9nEK0wdi6fvD1NlbhT9kbF10JKY,1698
+mlforge/mlforge.py,sha256=uG6fZz-ZWi476ZyaLhBGF2v28qXQlr5YnEBZ3Enl23E,34441
+mlforge/progbar.py,sha256=oEUF3zE3FWh_ZjYNh6dKsDPEAHhbAbdRQb_r7BMUoxg,2616
+mlforge-0.1.4a0.dist-info/LICENSE.txt,sha256=JsvAd4khYPx7QEG5OitL_pH_5Ru7GDTbnBxqim3oy3E,1062
+mlforge-0.1.4a0.dist-info/METADATA,sha256=gsLvycCIb0KJRmRz1ajhuSJTb4z_x27DIlsFVAQZAss,6584
+mlforge-0.1.4a0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mlforge-0.1.4a0.dist-info/top_level.txt,sha256=AvLG3oJ1tO9gNpNq1HxNzz2b7uh0vseZWJEhzS8-rz4,17
+mlforge-0.1.4a0.dist-info/RECORD,,

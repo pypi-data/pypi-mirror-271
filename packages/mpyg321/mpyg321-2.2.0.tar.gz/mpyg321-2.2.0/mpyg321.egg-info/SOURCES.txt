@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+mpyg321/BasePlayer.py
+mpyg321/EventContext.py
+mpyg321/MPyg123Player.py
+mpyg321/MPyg321Player.py
+mpyg321/MpygError.py
+mpyg321/__init__.py
+mpyg321/consts.py
+mpyg321/mpyg321.py
+mpyg321.egg-info/PKG-INFO
+mpyg321.egg-info/SOURCES.txt
+mpyg321.egg-info/dependency_links.txt
+mpyg321.egg-info/requires.txt
+mpyg321.egg-info/top_level.txt

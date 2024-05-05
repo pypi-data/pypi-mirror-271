@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Tavin
+Version: 1.1.8
+Summary: A concise application framework.
+Home-page: https://github.com/lemonorangeapple/Tavin
+Author: lemonorangeapple
+Author-email: jcj1947725596@hotmail.com
+License: MIT
+Keywords: web framework
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: pywebview
+
+# Tavin
+
+一个简洁而不简单的应用框架。
+> A concise yet not simple application framework.
+
+使用方式：[test/test.py](https://github.com/lemonorangeapple/Tavin/blob/master/test/test.py)
+> Usage: [test/test.py](https://github.com/lemonorangeapple/Tavin/blob/master/test/test.py)
+

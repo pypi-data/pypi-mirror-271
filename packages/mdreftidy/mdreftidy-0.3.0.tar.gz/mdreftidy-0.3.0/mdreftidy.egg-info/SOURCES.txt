@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+mdreftidy/__init__.py
+mdreftidy/cli.py
+mdreftidy/mdreftidy.py
+mdreftidy.egg-info/PKG-INFO
+mdreftidy.egg-info/SOURCES.txt
+mdreftidy.egg-info/dependency_links.txt
+mdreftidy.egg-info/entry_points.txt
+mdreftidy.egg-info/requires.txt
+mdreftidy.egg-info/top_level.txt

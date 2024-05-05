@@ -1,0 +1,33 @@
+[tool.ruff]
+line-length = 88
+fix = true
+
+[tool.ruff.format]
+docstring-code-format = true
+indent-style = "space"
+quote-style = "double"
+line-ending = "auto"
+
+[tool.ruff.lint]
+extend-ignore = ["E731"]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+
+
+[tool.pyright]
+typeCheckingMode = "standard"
+pythonVersion = "3.12"
+pythonPlatform = "Linux"
+
+# enable subset of "strict"
+reportDuplicateImport = true
+reportInconsistentConstructor = true
+reportInvalidStubStatement = true
+reportOverlappingOverload = true
+reportPropertyTypeMismatch = true
+reportUntypedNamedTuple = true
+reportUnusedImport = true
+disableBytesTypePromotions = true
+reportAttributeAccessIssue = false
+reportCallIssue = false

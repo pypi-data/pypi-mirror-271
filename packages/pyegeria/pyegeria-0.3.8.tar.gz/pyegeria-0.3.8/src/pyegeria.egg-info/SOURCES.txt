@@ -1,0 +1,99 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+examples/.DS_Store
+examples/__init__.py
+examples/Coco_config/README.md
+examples/Coco_config/__init__.py
+examples/Coco_config/config_cocoMDS1.py
+examples/Coco_config/config_cocoMDS2.py
+examples/Coco_config/config_cocoMDS3.py
+examples/Coco_config/config_cocoMDS4.py
+examples/Coco_config/config_cocoMDS5.py
+examples/Coco_config/config_cocoMDS6.py
+examples/Coco_config/config_cocoMDSx.py
+examples/Coco_config/config_cocoView1.py
+examples/Coco_config/config_exchangeDL01.py
+examples/Coco_config/config_governDL01.py
+examples/Coco_config/config_monitorDev01.py
+examples/Coco_config/config_monitorGov01.py
+examples/Coco_config/globals.py
+examples/Doc_Samples/Create_Collection_Sample.py
+examples/Doc_Samples/Create_Sustainability_Collection_Sample.py
+examples/Jupyter Notebooks/P-egeria-server-config.ipynb
+examples/Jupyter Notebooks/README.md
+examples/Jupyter Notebooks/common/P-environment-check.ipynb
+examples/Jupyter Notebooks/common/__init__.py
+examples/Jupyter Notebooks/common/common-functions.ipynb
+examples/Jupyter Notebooks/common/environment-check.ipynb
+examples/Jupyter Notebooks/common/globals.ipynb
+examples/Jupyter Notebooks/common/globals.py
+examples/Jupyter Notebooks/common/orig_globals.py
+examples/__pycache__/__init__.cpython-312.pyc
+examples/widgets/.DS_Store
+examples/widgets/README.md
+examples/widgets/__init__.py
+examples/widgets/coco_status.py
+examples/widgets/collection_viewer.py
+examples/widgets/engine_action_status.py
+examples/widgets/find_todos.py
+examples/widgets/get_relationship_types.py
+examples/widgets/get_tech_details.py
+examples/widgets/get_tech_types.py
+examples/widgets/get_valid_metadata_values.py
+examples/widgets/glossary_view.py
+examples/widgets/gov_engine_status.py
+examples/widgets/integration_daemon_status.py
+examples/widgets/list_asset_types.py
+examples/widgets/multi-server_status.py
+examples/widgets/my_todos.py
+examples/widgets/open_todos.py
+examples/widgets/project_list_viewer.py
+examples/widgets/server_status.py
+examples/widgets/server_status_widget.py
+examples/widgets/view_my_profile.py
+examples/widgets/__pycache__/__init__.cpython-312.pyc
+examples/widgets/__pycache__/server_status_widget.cpython-312-pytest-7.4.4.pyc
+src/pyegeria/__init__.py
+src/pyegeria/_client.py
+src/pyegeria/_exceptions.py
+src/pyegeria/_globals.py
+src/pyegeria/_validators.py
+src/pyegeria/automated_curation_omvs.py
+src/pyegeria/collection_manager_omvs.py
+src/pyegeria/core_omag_server_config.py
+src/pyegeria/full_omag_server_config.py
+src/pyegeria/glossary_omvs.py
+src/pyegeria/gov_engine.py
+src/pyegeria/governance_author.py
+src/pyegeria/loaded_resources_omvs.py
+src/pyegeria/my_profile_omvs.py
+src/pyegeria/platform_services.py
+src/pyegeria/project_manager_omvs.py
+src/pyegeria/registered_info.py
+src/pyegeria/server_operations.py
+src/pyegeria/utils.py
+src/pyegeria/valid_metadata_omvs.py
+src/pyegeria.egg-info/PKG-INFO
+src/pyegeria.egg-info/SOURCES.txt
+src/pyegeria.egg-info/dependency_links.txt
+src/pyegeria.egg-info/requires.txt
+src/pyegeria.egg-info/top_level.txt
+tests/test_automated_curation_omvs.py
+tests/test_client.py
+tests/test_collection_manager_omvs.py
+tests/test_core_omag_server_config.py
+tests/test_full_omag_server_config.py
+tests/test_glossary_omvs.py
+tests/test_gov_engine.py
+tests/test_loaded_resources.py
+tests/test_my_profile_omvs.py
+tests/test_platform_services.py
+tests/test_project_manager_omvs.py
+tests/test_registered_info.py
+tests/test_server_operations.py
+tests/test_util_exp.py
+tests/test_valid_metadata_omvs.py
+tests/test_validators.py

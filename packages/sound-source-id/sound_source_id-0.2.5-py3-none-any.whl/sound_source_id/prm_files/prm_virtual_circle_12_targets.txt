@@ -1,0 +1,12 @@
+mode: headphones
+azimuths : 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330
+labels : 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330
+channels : 1, 2
+n_chan : 2
+n_blocks : 1
+stim_list_file : stim_list_circle_12_tgs.csv
+randomize : true
+demo_stim : pink_noises/noise1.wav
+demo_stim_lev : 65
+sofa_file_path: /media/ntfsShared/archives/auditory/Materials/KU100_Far_Field/HRIR_CIRC360.sofa
+sofa_az_coords: anticlockwise

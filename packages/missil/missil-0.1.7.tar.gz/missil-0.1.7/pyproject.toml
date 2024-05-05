@@ -1,0 +1,244 @@
+[project]
+name = "missil"
+version = "0.1.7"
+description = "Simple FastAPI declarative endpoint-level access control."
+authors = [
+    { name = "Eric Miguel", email = "eric.mrib@gmail.com" },
+]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Framework :: FastAPI",
+    "Framework :: Pydantic",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+    "fastapi>=0.104.1",
+    "python-jose[cryptography]>=3.3.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+show_error_codes = true
+warn_return_any = true
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(message)s"
+log_file = "pytest.log"
+log_file_level = "INFO"
+log_file_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_file_date_format = "%Y-%m-%d %H:%M:%S"
+
+[tool.ruff]
+fix = true
+include = [
+    "pyproject.toml",
+    "src/**/*.py",
+    "scripts/**/*.py",
+    "*.py",
+]
+extend-include = [
+    "*.ipynb",
+]
+respect-gitignore = true
+show-fixes = true
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+line-length = 88
+indent-width = 4
+target-version = "py311"
+
+[tool.ruff.lint]
+ignore-init-module-imports = false
+extend-safe-fixes = [
+    "F401",
+]
+select = [
+    "F",
+    "E",
+    "W",
+    "C901",
+    "B",
+    "D",
+    "D401",
+    "E",
+    "I001",
+]
+ignore = [
+    "D417",
+]
+fixable = [
+    "ALL",
+]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.flake8-bandit]
+check-typed-exception = true
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "single"
+
+[tool.ruff.lint.flake8-import-conventions.aliases]
+altair = "alt"
+"matplotlib.pyplot" = "plt"
+numpy = "np"
+pandas = "pd"
+seaborn = "sns"
+scipy = "sp"
+polars = "pl"
+
+[tool.ruff.lint.flake8-import-conventions.extend-aliases]
+"dask.dataframe" = "dd"
+
+[tool.ruff.lint.isort]
+force-single-line = true
+force-sort-within-sections = true
+lines-after-imports = 2
+lines-between-types = 0
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = [
+    "D100",
+    "D103",
+    "D104",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mypy>=1.4.1",
+    "pre-commit>=3.4.0",
+    "pytest>=7.4.4",
+    "pytest-cov>=4.1.0",
+    "pytest-cookies>=0.7.0",
+    "httpx>=0.26.0",
+    "uvicorn>=0.26.0",
+    "types-python-jose>=3.3.4.20240106",
+    "pre-commit>=3.6.0",
+    "mkdocs-material>=9.5.4",
+    "mkdocstrings[python]>=0.24.0",
+    "mkdocs>=1.5.3",
+    "termynal>=0.11.1",
+    "ruff>=0.4.3",
+    "vulture>=2.11",
+]
+
+[tool.pdm.scripts.format]
+shell = "ruff format"
+
+[tool.pdm.scripts.check]
+shell = "ruff check"
+
+[tool.pdm.scripts.check-dry-run]
+shell = "ruff check --no-fix"
+
+[tool.pdm.scripts.check-dead]
+shell = "vulture missil --min-confidence=90"
+
+[tool.pdm.scripts.check-dead-lax]
+shell = "vulture missil --min-confidence=80"
+
+[tool.pdm.scripts.check-dead-sensible]
+shell = "vulture missil --min-confidence=60"
+
+[tool.pdm.scripts.check-typing]
+shell = "mypy missil"
+
+[tool.pdm.scripts.test]
+shell = "pytest --cov=missil tests/"
+
+[tool.pdm.scripts.lint]
+composite = [
+    "check || true",
+    "check-dead || true",
+    "check-typing || true",
+]
+
+[tool.pdm.scripts.fix]
+composite = [
+    "format || true",
+]
+
+[tool.pdm.scripts.lint-fix]
+composite = [
+    "lint || true",
+    "fix || true",
+]
+
+[tool.pdm.scripts.lint-fix-test]
+cmd = [
+    "pre-commit",
+    "run",
+    "--all-files",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"

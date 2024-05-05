@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Default Experiments &mdash; pychoacoustics 0.6.13 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The pychoacoustics Engine" href="engine.html" />
+    <link rel="prev" title="Result Files" href="result_files.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pychoacoustics
+          </a>
+              <div class="version">
+                0.6.13
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">What is <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphical_user_interface.html">Graphical User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commandline_user_interface.html">Command Line User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paradigms.html">Paradigms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="result_files.html">Result Files</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Default Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.audiogram">Audiogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.audiogram_mf">Demo Audiogram Multiple Frequencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.freq">Demo Frequency Discrimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.sig_detect">Demo Signal Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.dummy_adaptive">Dummy Adaptive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.F0DL">F0DL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.level_discrimination">Level Discrimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.wav_ABX">WAV ABX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.wav_comparison">WAV Comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pychoacoustics.default_experiments.wav_sameDifferent">WAV Same/Different</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="engine.html">The <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_experiments.html">Writing your own Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/sndlib.html">sndlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sndlib.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sndlib</span></code> – Sound Synthesis Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/pysdt.html">pysdt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pysdt.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pysdt</span></code> – Signal Detection Theory Measures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fdl.html">GNU Free Documentation License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pychoacoustics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Default Experiments</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/default_experiments.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="default-experiments">
+<h1>Default Experiments<a class="headerlink" href="#default-experiments" title="Permalink to this heading"></a></h1>
+<section id="module-pychoacoustics.default_experiments.audiogram">
+<span id="audiogram"></span><h2>Audiogram<a class="headerlink" href="#module-pychoacoustics.default_experiments.audiogram" title="Permalink to this heading"></a></h2>
+<p>This experiment can be used to measure thresholds for detecting a signal in quiet.
+The signal can be either a pure tone or a narrow-band noise.</p>
+<p>The available fields are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Frequency (Hz) :</dt><dd><p>Signal center frequency in Hz</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Bandwidth (Hz) :</dt><dd><p>The bandwidth of the signal in Hz (only applicable if
+signal type is Narrowband Noise)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Level (dB SPL) :</dt><dd><p>Signal level (for constant procedures), or starting signal level
+(for adaptive procedures), in dB SPL. If the signal type is narrowband noise
+the level if the total level, not the spectrum level.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Duration (ms) :</dt><dd><p>Signal duration (excluding ramps), in ms</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Ramps (ms) :</dt><dd><p>Duration of each ramp, in ms</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The available choosers are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Ear: [<code class="docutils literal notranslate"><span class="pre">Right</span></code>, <code class="docutils literal notranslate"><span class="pre">Left</span></code>, <code class="docutils literal notranslate"><span class="pre">Both</span></code>]</dt><dd><p>The ear to which the signal will be presented</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Signal Type: [<code class="docutils literal notranslate"><span class="pre">Sinusoid</span></code>, <code class="docutils literal notranslate"><span class="pre">Narrowband</span> <span class="pre">Noise</span></code>]</dt><dd><p>The signal type. If <code class="docutils literal notranslate"><span class="pre">Sinusoid</span></code> the signal will be a pure tone, if <code class="docutils literal notranslate"><span class="pre">Narrowband</span> <span class="pre">Noise</span></code>, the signal will be a narrow-band noise</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="module-pychoacoustics.default_experiments.audiogram_mf">
+<span id="demo-audiogram-multiple-frequencies"></span><h2>Demo Audiogram Multiple Frequencies<a class="headerlink" href="#module-pychoacoustics.default_experiments.audiogram_mf" title="Permalink to this heading"></a></h2>
+<p>This experiment can be used to measure thresholds for detecting a signal in quiet.
+The signal can be either a pure tone or a narrow-band noise. Several signal frequencies
+can be tested within the same block of trials.</p>
+<p>The available fields are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Frequency (Hz) :</dt><dd><p>Signal center frequency in Hz</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Bandwidth (Hz) :</dt><dd><p>The bandwidth of the signal in Hz (only applicable
+if signal type is Narrowband Noise)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Level (dB SPL) :</dt><dd><p>Signal level (for constant procedures), or starting signal level (for adaptive procedures), in dB SPL</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Duration (ms) :</dt><dd><p>Signal duration (excluding ramps), in ms</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Ramps (ms) :</dt><dd><p>Duration of each ramp, in ms</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The available choosers are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Ear:         [<code class="docutils literal notranslate"><span class="pre">Right</span></code>, <code class="docutils literal notranslate"><span class="pre">Left</span></code>, <code class="docutils literal notranslate"><span class="pre">Both</span></code>]</dt><dd><p>The ear to which the signal will be presented</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Signal Type: [<code class="docutils literal notranslate"><span class="pre">Sinusoid</span></code>, <code class="docutils literal notranslate"><span class="pre">Narrowband</span> <span class="pre">Noise</span></code>]</dt><dd><p>The signal type. If <code class="docutils literal notranslate"><span class="pre">Sinusoid</span></code> the signal will be a pure tone,
+if <code class="docutils literal notranslate"><span class="pre">Narrowband</span> <span class="pre">Noise</span></code>, the signal will be a narrow-band noise</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="module-pychoacoustics.default_experiments.freq">
+<span id="demo-frequency-discrimination"></span><h2>Demo Frequency Discrimination<a class="headerlink" href="#module-pychoacoustics.default_experiments.freq" title="Permalink to this heading"></a></h2>
+<p>This experiment can be used to measure pure-tone frequency-discrimination
+thresholds.</p>
+<p>The available fields are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Frequency (Hz) :</dt><dd><p>Signal frequency in Hz</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Difference (%) :</dt><dd><p>Frequency difference (for constant procedures),
+or starting frequency difference (for adaptive procedures),
+between the standard and comparison stimuli. The difference
+is measured as a percentage of the standard frequency in Hz.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Level (dB SPL) :</dt><dd><p>Signal level in dB SPL</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Duration (ms) :</dt><dd><p>Signal duration (excluding ramps), in ms</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Ramps (ms) :</dt><dd><p>Duration of each ramp, in ms</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The available choosers are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Ear: [<code class="docutils literal notranslate"><span class="pre">Right</span></code>, <code class="docutils literal notranslate"><span class="pre">Left</span></code>, <code class="docutils literal notranslate"><span class="pre">Both</span></code>]</dt><dd><p>The ear to which the signal will be presented</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="module-pychoacoustics.default_experiments.sig_detect">
+<span id="demo-signal-detection"></span><h2>Demo Signal Detection<a class="headerlink" href="#module-pychoacoustics.default_experiments.sig_detect" title="Permalink to this heading"></a></h2>
+<p>Measure d’ for the detection of a pure tone in a Yes/No task.</p>
+<p>The available fields are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Frequency (Hz) :</dt><dd><p>The frequency of the pure tone signal</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Duration (ms) :</dt><dd><p>Tone duration (excluding ramps), in ms</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Ramps (ms) :</dt><dd><p>Duration of each ramp, in ms</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Level (dB SPL):</dt><dd><p>Level of the signal in dB SPL.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The available choosers are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Ear: [<code class="docutils literal notranslate"><span class="pre">Right</span></code>, <code class="docutils literal notranslate"><span class="pre">Left</span></code>, <code class="docutils literal notranslate"><span class="pre">Both</span></code>]</dt><dd><p>The ear to which the signal will be presented</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="module-pychoacoustics.default_experiments.dummy_adaptive">
+<span id="dummy-adaptive"></span><h2>Dummy Adaptive<a class="headerlink" href="#module-pychoacoustics.default_experiments.dummy_adaptive" title="Permalink to this heading"></a></h2>
+<p>Dummy experiment to test adaptive procedures</p>
+</section>
+<section id="module-pychoacoustics.default_experiments.F0DL">
+<span id="f0dl"></span><h2>F0DL<a class="headerlink" href="#module-pychoacoustics.default_experiments.F0DL" title="Permalink to this heading"></a></h2>
+<p>Measure thresholds for the detection of differences in
+fundamental frequency (F0) between two tones. Different tone
+types are supported, including harmonic complex tones, narrowband-noise
+complex tones, complex dichotic-pitch tones and iterated rippled noise.</p>
+<p>The available fields are:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>F0 (Hz) :</dt><dd><p>Fundamental frequency of the standard tones.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Lower F0 (Hz) :</dt><dd><p>Lowest F0 in case of F0 roving</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Upper F0 :</dt><dd><p>Highest F0 in case of F0 roving</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Starting Difference (%)<span class="classifier"></span></dt><dd><p>Starting F0 difference between standard and comparison stimuli in percent of the standard F0</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Delta F0 Limit (%)</dt><dd><p>Maximum F0 difference allowed between standard and comparison stimuli in percent of the standard F0</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Bandwidth (Hz)</dt><dd><p>Width of each harmonic band, in Hz (for Narrowband Noise, and Huggins Pitch).</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Bandwidth (Cents)</dt><dd><p>Width of each harmonic band, in cents (for Narrowband Noise, and Huggins Pitch).</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Bandwidth (ERB)</dt><dd><p>Width of each harmonic band, in ERBs (for Narrowband Noise, and Huggins Pitch).</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>ITD (micro s)</dt><dd><p>Interaural time difference of the decorralated frequency bands of dichotic pitch stimuli, in micro seconds</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>IPD (radians)</dt><dd><p>Interaural phase difference of the decorralated frequency bands of dichotic pitch stimuli</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Iterations :</dt><dd><p>Number of delay-add iteration for IRN generation</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Gain:</dt><dd><p>Gain applied to dealyed version of the signal in IRN generation</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Low Harmonic: </dt><dd><p>Lowest harmonic number</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>High Harmonic:</dt><dd><p>Highest harmonic number</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Low Freq. (Hz):</dt><dd><p>Low frequency cutoff for the filter applied to the tone</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>High Freq. (Hz):</dt><dd><p>High frequency cutoff for the filter applied to the tone</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Harmonic Level (dB SPL):</dt><dd><p>Level of each harmonic in dB SPL.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Spectrum Level (dB SPL):</dt><dd><p>Spectrum level of the noise used to generate the complex tone (for Narrowband Noise, IRN, and Huggings Pitch).</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Duration (ms) :</dt><dd><p>Tone duration (excluding ramps), in ms</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Ramps (ms) :</dt><dd><p>Duration of each ramp, in ms</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Noise 1 Low Freq. (Hz):</dt><dd><p>Low-frequency cutoff for the first noise band</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Noise 1 High Freq. (Hz):</dt><dd><p>High-frequency cutoff for the first noise band</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Noise 1 S. Level (dB SPL):</dt><dd><p>Spectrum level of the first noise band in dB SPL</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Noise 1 SL Ref. (Hz): </dt><dd><p>If the <code class="docutils literal notranslate"><span class="pre">Noise</span> <span class="pre">1</span> <span class="pre">Type</span></code> is pink, its spectrum level is specified relative to this reference frequency</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Noise 2 Low Freq. (Hz):</dt><dd><p>Low-frequency cutoff for the second noise band</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Noise 2 High Freq. (Hz):</dt><dd><p>High-frequency cutoff for the second noise band</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Noise 2 S. Level (dB SPL):</dt><dd><p>Spectrum level of the second noise band in dB SPL</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Noise 2 SL Ref. (Hz): </dt><dd><p>If the <code class="docutils literal notranslate"><span class="pre">Noise</span> <span class="pre">2</span> <span class="pre">Type</span></code> is pink, its spectrum level is specified relative to this reference frequency</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Stretch (%)’</dt><dd><p>Stretch to apply to each harmonic, in percentage of the F0.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The available choosers are:</p>
+<ul>
+<li><dl>
+<dt>Ear<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Right</span></code>, <code class="docutils literal notranslate"><span class="pre">Left</span></code>, <code class="docutils literal notranslate"><span class="pre">Both</span></code>, <code class="docutils literal notranslate"><span class="pre">Odd</span> <span class="pre">Left</span></code>, <code class="docutils literal notranslate"><span class="pre">Odd</span> <span class="pre">Right</span></code>]</span></dt><dd><p>The ear to which the tone will be presented. If <code class="docutils literal notranslate"><span class="pre">Odd</span> <span class="pre">Left</span></code>, or <code class="docutils literal notranslate"><span class="pre">Odd</span> <span class="pre">Right</span></code>, the odd harmonics will be
+presented to the left, or right ear, respectively. The even harmonics will be presented to the other ear</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Type<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Sinusoid</span></code>, <code class="docutils literal notranslate"><span class="pre">Narrowband</span> <span class="pre">Noise</span></code>, <code class="docutils literal notranslate"><span class="pre">IRN</span></code>, <code class="docutils literal notranslate"><span class="pre">Huggins</span> <span class="pre">Pitch</span></code>]</span></dt><dd><p>The type of complex tone. If <code class="docutils literal notranslate"><span class="pre">Sinusoid</span></code>, the complex tone will be composed of harmonically related pure tones
+If <code class="docutils literal notranslate"><span class="pre">Narrowband</span> <span class="pre">Noise</span></code>, the complex tone will be composed of harmonically related narrow bands of noise
+If <code class="docutils literal notranslate"><span class="pre">IRN</span></code>, an iterated rippled noise will be generated. If <code class="docutils literal notranslate"><span class="pre">Huggins</span> <span class="pre">Pitch</span></code>, a complex dichotic pitch
+will be generated by introducing interaural phase decorrelation at harmonically related frequency bands</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Phase<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Sine</span></code>, <code class="docutils literal notranslate"><span class="pre">Cosine</span></code>, <code class="docutils literal notranslate"><span class="pre">Alternating</span></code>, <code class="docutils literal notranslate"><span class="pre">Random</span></code>, <code class="docutils literal notranslate"><span class="pre">Schroeder-</span></code>, <code class="docutils literal notranslate"><span class="pre">Schroeder+</span></code>]</span></dt><dd><p>Phase relationship between the partials of the complex tone. If <code class="docutils literal notranslate"><span class="pre">Sine</span></code>, or <code class="docutils literal notranslate"><span class="pre">Cosine</span></code> each partial will 
+start in sine, or cosine phase, respectively. If <code class="docutils literal notranslate"><span class="pre">Alternating</span></code>, even partials will start in sine phase, and
+off partials will start in cosine phase. If <code class="docutils literal notranslate"><span class="pre">Random`,</span> <span class="pre">each</span> <span class="pre">partial</span> <span class="pre">will</span> <span class="pre">start</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">random</span> <span class="pre">phase.</span> <span class="pre">If</span> <span class="pre">``Schroeder-</span></code>,
+the partials will be added in negative Schroeder phase. If <code class="docutils literal notranslate"><span class="pre">Schroeder+</span></code>,
+the partials will be added in positive Schroeder phase.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Noise 1 Type<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">White</span></code>, <code class="docutils literal notranslate"><span class="pre">Pink</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]</span></dt><dd><p>The noise type for the first noise band. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, no noise will be presented</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Noise 2 Type<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">White</span></code>, <code class="docutils literal notranslate"><span class="pre">Pink</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code>]</span></dt><dd><p>The noise type for the second noise band. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, no noise will be presented</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Fix Spectrum Level<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Yes</span></code>, <code class="docutils literal notranslate"><span class="pre">No</span></code>]</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">Yes</span></code> the harmonic level of the comparison tone(s) will be adjusted so that the spectrum level of
+the standard and comparison tone(s) match. If <code class="docutils literal notranslate"><span class="pre">No</span></code> the standard and comparison tones will be presented at 
+the same harmonic level, but will have different spectrum levels (e.g. as the F0, and hence the harmonic
+spacing increase, the spectrum level for a fixed harmonic level decreases)</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Vary Harm. No.<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Yes</span></code>, <code class="docutils literal notranslate"><span class="pre">No</span></code>]</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">Yes</span></code> the number of the lowest and highest harmonics of the comparison tone(s) will be varied to fill the
+same spectral region as the standard tone(s)</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Roving<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Yes-Log</span></code>, <code class="docutils literal notranslate"><span class="pre">Yes-Linear</span></code>, <code class="docutils literal notranslate"><span class="pre">No</span></code>]</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">Yes-Log</span></code>, the F0 of the standard tone(s) on each trial is drawn from a distribution that is uniform in log space between
+<code class="docutils literal notranslate"><span class="pre">Lower</span> <span class="pre">F0</span> <span class="pre">(Hz)</span></code>, and <code class="docutils literal notranslate"><span class="pre">Upper</span> <span class="pre">F0</span> <span class="pre">(Hz)</span></code>. If <code class="docutils literal notranslate"><span class="pre">Yes-Linear</span></code> the F0 of the standard tone(s) on each trial is drawn from a 
+uniform distribution between <code class="docutils literal notranslate"><span class="pre">Lower</span> <span class="pre">F0</span> <span class="pre">(Hz)</span></code>, and <code class="docutils literal notranslate"><span class="pre">Upper</span> <span class="pre">F0</span> <span class="pre">(Hz)</span></code>.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Harmonicity<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Harmonic</span></code>, <code class="docutils literal notranslate"><span class="pre">Harmonic</span> <span class="pre">Stretched</span></code>]</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">Harmonic</span></code>, harmonic complex tones will be generated. If <code class="docutils literal notranslate"><span class="pre">Harmonic</span> <span class="pre">Stretched</span></code>, inharmonic complex tones 
+can be generated by increasing the frequency of each harmonic by a fixed amount (F0*stretch)/100.
+See <code class="docutils literal notranslate"><span class="pre">Strech</span> <span class="pre">%</span></code> in the available fields.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Bandwidth Unit<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Hz</span></code>, <code class="docutils literal notranslate"><span class="pre">Cent</span></code>, <code class="docutils literal notranslate"><span class="pre">ERB</span></code>]</span></dt><dd><p>Choose whether the bandwidth of the harmonic bands for <code class="docutils literal notranslate"><span class="pre">Narrowband</span> <span class="pre">Noise</span></code> and <code class="docutils literal notranslate"><span class="pre">Huggins</span> <span class="pre">Pitch</span></code> tone types is 
+specified in Hz, cents, or equivalent rectangulat bandwidth (ERB) units.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>IRN Type<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Same</span></code>, <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Original</span></code>]</span></dt><dd><p>Specify the algorithm for IRN generation.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Phase Relationship<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">NoSpi</span></code>, <code class="docutils literal notranslate"><span class="pre">NpiSo</span></code>]</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">NoSpi</span></code> the harmonically related frequency bands will be interaurally decorrelated. If <code class="docutils literal notranslate"><span class="pre">NpiSo</span></code> the frequency regions
+between the harmonically related frequency bands will be decorrelated.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Dichotic Difference<span class="classifier">[<code class="docutils literal notranslate"><span class="pre">IPD</span> <span class="pre">Stepped</span></code>, <code class="docutils literal notranslate"><span class="pre">IPD</span> <span class="pre">Linear</span></code>, <code class="docutils literal notranslate"><span class="pre">IPD</span> <span class="pre">Random</span></code>, <code class="docutils literal notranslate"><span class="pre">ITD</span></code>]</span></dt><dd><p>Choose whether the decorrelation in the target regions will be achieved
+by applying a costant interaural phase shift (IPD), an IPD shift that is linearly increasing from the low-frequency to
+the high-frequency edge of the decorrelated frequency band (IPD Linear), a random IPD shift across the decorrelated
+frequency band, or a costant interaural time difference (ITD).</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="module-pychoacoustics.default_experiments.level_discrimination">
+<span id="level-discrimination"></span><h2>Level Discrimination<a class="headerlink" href="#module-pychoacoustics.default_experiments.level_discrimination" title="Permalink to this heading"></a></h2>
+<p>This experiment can be used to measure thresholds for level discrimination.</p>
+</section>
+<section id="module-pychoacoustics.default_experiments.wav_ABX">
+<span id="wav-abx"></span><h2>WAV ABX<a class="headerlink" href="#module-pychoacoustics.default_experiments.wav_ABX" title="Permalink to this heading"></a></h2>
+<p>ABX task for WAV files.</p>
+</section>
+<section id="module-pychoacoustics.default_experiments.wav_comparison">
+<span id="wav-comparison"></span><h2>WAV Comparison<a class="headerlink" href="#module-pychoacoustics.default_experiments.wav_comparison" title="Permalink to this heading"></a></h2>
+<p>This experiment can be used to find out which of three different sounds is judged as the most dissimilar from the other two (the odd one out).</p>
+<p>The procedure used is similar to the odd-one-out procedure, however, in this experiment all three sounds are different, while in the odd-one-out procedure two of the sounds are the same, or the physical attribute of interest (e.g. frequency, intensity) is the same between two of the sounds. The task in this experiment is subjective, there is no correct response.</p>
+<p>This task was used by Carcagno and Plack [2011, JARO 12: 503–517, DOI:10.1007/s10162-011-0266-3] to test whether listeners would perceive an unresolved complex tone with partials summed in ALT phase as more similar (in pitch) to an unresolved complex tone with the same F0 with partials summed in SINE phase, or to a resolved complex tone with double the F0. The pitch of unresolved complex tones with harmonics summed in ALT phase is generally found to be an octave higher than the pitch of unresolved complex tones summed in SINE phase. Therefore, listeners should choose the 110 SINE stimulus
+as the odd one out.</p>
+</section>
+<section id="module-pychoacoustics.default_experiments.wav_sameDifferent">
+<span id="wav-same-different"></span><h2>WAV Same/Different<a class="headerlink" href="#module-pychoacoustics.default_experiments.wav_sameDifferent" title="Permalink to this heading"></a></h2>
+<p>Same-different experiment to compare WAV files.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="result_files.html" class="btn btn-neutral float-left" title="Result Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="engine.html" class="btn btn-neutral float-right" title="The pychoacoustics Engine" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2008-2024, Samuele Carcagno.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

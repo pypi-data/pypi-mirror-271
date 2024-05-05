@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphical User Interface &mdash; pychoacoustics 0.6.13 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Command Line User Interface" href="commandline_user_interface.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pychoacoustics
+          </a>
+              <div class="version">
+                0.6.13
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">What is <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Graphical User Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-control-window">The Control Window</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-widgets-left-panel">General Widgets (left panel)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-widgets-left-panel">Additional Widgets (left panel)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#general-widgets-right-panel">General Widgets (right panel)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#paradigm-widgets">Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pair-same-different-paradigm-widgets">1-Pair Same/Different Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#constant-1-interval-2-alternatives-paradigm-widgets">Constant 1-Interval 2-Alternatives Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#constant-m-intervals-n-alternatives-paradigm-widgets">Constant m-Intervals n-Alternatives Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiple-constants-abx-paradigm-widgets">Multiple Constants ABX Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiple-constants-1-interval-2-alternatives-paradigm-widgets">Multiple Constants 1-Interval 2-Alternatives Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiple-constants-m-intervals-n-alternatives-paradigm-widgets">Multiple Constants m-Intervals n-Alternatives Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#odd-one-out-paradigm-widgets">Odd One Out Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pest-paradigm-widgets">PEST Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#psi-paradigm-widgets">PSI Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#transformed-up-down-paradigm-widgets">Transformed Up-Down Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#transformed-up-down-interleaved-paradigm-widgets">Transformed Up-Down Interleaved Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uml-paradigm-widgets">UML Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#weighted-up-down-paradigm-widgets">Weighted Up-Down Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#weighted-up-down-interleaved-paradigm-widgets">Weighted Up-Down Interleaved Paradigm Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-menu-bar">The Menu Bar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-file-menu">The File Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-edit-menu">The Edit Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-tools-menu">The Tools Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-help-menu">The Help Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-whats-this-button">The “what’s this?” Button.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#process-results-dialog">Process Results Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edit-preferences-dialog">Edit Preferences Dialog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sound">Sound</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#response-box">Response Box</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eeg">EEG</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#edit-phones-dialog">Edit Phones Dialog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#calibrating-with-an-spl-meter">Calibrating with an SPL meter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calibrating-with-a-voltmeter">Calibrating with a voltmeter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#edit-experimenters-dialog">Edit Experimenters Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-response-box">The Response Box</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commandline_user_interface.html">Command Line User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paradigms.html">Paradigms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="result_files.html">Result Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="default_experiments.html">Default Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="engine.html">The <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_experiments.html">Writing your own Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/sndlib.html">sndlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sndlib.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sndlib</span></code> – Sound Synthesis Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/pysdt.html">pysdt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pysdt.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pysdt</span></code> – Signal Detection Theory Measures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fdl.html">GNU Free Documentation License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pychoacoustics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Graphical User Interface</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/graphical_user_interface.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="graphical-user-interface">
+<span id="sec-graphical-user-interface"></span><h1>Graphical User Interface<a class="headerlink" href="#graphical-user-interface" title="Permalink to this heading"></a></h1>
+<p>The user interface is divided into two windows: the “Control Window” and
+the “Response Box”. The “Control Window” is used to set the experimental
+parameters, while the “Response Box” is the interface with which
+listeners interact.</p>
+<section id="quickstart">
+<h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading"></a></h2>
+<p>When <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> is launched, the “Control Window” displays the
+default parameters for the “Audiogram” experiment. You can select
+another experiment using the “Experiment” drop-down menu, and edit any
+of the parameter fields you want to modify. Once you’re satisfied with
+the parameters, you can store them by pressing the “Store” button. This
+stores one experimental block with the chosen parameters. At this point
+you can either start running the experiment by pressing the “Start”
+button on the “Response Box”, or you can add more experimental blocks by
+clicking on the “New Block” button.</p>
+<p>To save the parameters to a file click on the “Save Prm” button.
+Parameter files that have been saved in this way can be later loaded
+into the program by using the “Load Prm” button.</p>
+<p>To save the results of your experiment to a file, click on the “Save
+Results” button. If you have forgotten to specify a results file in this
+way, <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> will save the results in a file called
+<code class="docutils literal notranslate"><span class="pre">test.txt</span></code> in the working directory.</p>
+</section>
+<section id="the-control-window">
+<h2>The Control Window<a class="headerlink" href="#the-control-window" title="Permalink to this heading"></a></h2>
+<p>The control window contains a set of widgets to manage the setup of the
+experiments, running the experiments, processing results files and
+managing application preferences. Some of the widgets are general, and
+some of them are specific either to a given paradigm (e.g. adaptive vs
+constant stimuli paradigm) or to a given experiment.</p>
+<p>In the next section the function of these widgets will be explained,
+starting with the widgets that are general to all experiments and
+paradigms.</p>
+<section id="general-widgets-left-panel">
+<span id="sec-gui-left-panel"></span><h3>General Widgets (left panel)<a class="headerlink" href="#general-widgets-left-panel" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Listener</strong> This is simply a label that you can use to identify the
+listener who is being tested. This label will be written in
+the header of the results file.</p></li>
+<li><p><strong>Experiment Label</strong>. This is a label to identify the experiment you
+are running. This label will be written in the header of the results
+file.</p></li>
+<li><p><strong>Session</strong> This is a label to identify the experimental session, it
+can be a number or a string. This label will be written in the header
+of the results file.</p></li>
+<li><p><strong>Condition Label</strong> This is a label to identify the experimental
+condition of the current block of trials. It is optional, but it may
+be useful when sorting the experimental results (see
+<a class="reference internal" href="result_files.html#sec-tabular-results-files"><span class="std std-ref">Tabular Results Files</span></a>).</p></li>
+<li><p><strong>Task Label</strong> This label will be shown in the response box to tell the listener which task s/he’s doing. Useful in case different tasks are mixed within a session.</p></li>
+<li><p><strong>Instructions</strong> This box allows to give task instructions to
+the listener. If the block of trials occurs at a block position in
+which task instructions are set to be shown (see “Show Instructions
+At BP” field below), the text written in this box will will be
+shown to listeners at the beginning of the block of trials (see
+<a class="reference internal" href="engine.html#sec-task-instructions"><span class="std std-ref">Displaying Task Instructions</span></a> for more info).</p></li>
+<li><p><strong>Show Instructions At BP</strong> Indicate the block positions (see
+<a class="reference internal" href="engine.html#sec-shuffling"><span class="std std-ref">Block Presentation Position</span></a> for a definition of block positions)
+at which the instructions should be shown to the listener. The
+block positions have to be indicated by a list of numbers separated
+by commas (see <a class="reference internal" href="engine.html#sec-task-instructions"><span class="std std-ref">Displaying Task Instructions</span></a> for more info).</p></li>
+<li><p><strong>End Command</strong> Here you can write an operating system command
+(e.g. a bash command on Unix systems or a DOS command on Windows
+systems) to be performed at the end of the experimental session. This
+could be used to run a custom script to analyse the result files,
+make a backup of the results files or other purposes. There are some
+variables (such as the name of the results file) that can be
+accessed with a special string. These are listed in
+Section <a class="reference internal" href="engine.html#sec-os-commands"><span class="std std-ref">OS Commands</span></a> Table <a class="reference internal" href="engine.html#tab-pycho-variables"><span class="std std-ref">pychoacoustics variables</span></a>
+Please refer to that section for further info on how to use them.</p></li>
+<li><p><strong>Shuffling Scheme</strong> By default when you click the “Shuffle” button,
+<code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> randomly shuffles all blocks, here you can specify
+different shuffling schemes (e.g. shuffle the first four blocks among
+themselves and the last four blocks among themselves). Please refer
+to Section <a class="reference internal" href="engine.html#sec-shuffling"><span class="std std-ref">Block Presentation Position</span></a> for more details.</p></li>
+<li><p><strong>Proc. Res.</strong> Process the “block summary” file at the end of the
+experimental session in order to obtain a “session summary” file
+(see <a class="reference internal" href="result_files.html#sec-results-files"><span class="std std-ref">Result Files</span></a>).</p></li>
+<li><p><strong>Proc. Res. Table</strong> Process the “table block summary” file at the
+end of the experimental session in order to obtain a
+“table session summary” file (see <a class="reference internal" href="result_files.html#sec-results-files"><span class="std std-ref">Result Files</span></a>).</p></li>
+<li><p><strong>Plot</strong> Plot the results at the end of the experimental session.
+This function is available only if both matplotlib and pandas
+are installed. Plots are available only for some experimental
+paradigms.</p></li>
+<li><p><strong>PDF Plot</strong> Create a PDF file plotting the results at the end of
+the experimental session. This function is available only if both
+matplotlib and pandas are installed. Plots are available only
+for some experimental paradigms.</p></li>
+<li><p><strong>Experimenter</strong> Here you can select one of the experimenters listed
+in the experimenter database. Please refer to
+Section <a class="reference internal" href="#sec-edit-experimenters-dia"><span class="std std-ref">Edit Experimenters Dialog</span></a> for further info on the
+experimenter database and how it can be used.</p></li>
+<li><p><strong>Experiment</strong> Selects the experiment for the current block.</p></li>
+<li><p><strong>Paradigm</strong> Selects the paradigm (e.g. transformed up-down, constant, etc…)
+for the current block. The list of paradigms available depends on the
+experiment that is selected.</p></li>
+<li><p><strong>Phones</strong> Choose from one of the phone models stored in the phones
+database. Please, refer to Section <a class="reference internal" href="#sec-edit-phones-dia"><span class="std std-ref">Edit Phones Dialog</span></a> for
+further info on how to enter phones and calibration values in the
+database.</p></li>
+<li><p><strong>Sample Rate (Hz)</strong> Set the sampling rate of the sounds to be
+played. Any value can be entered in the text fields. However, you
+should enter a value that is supported by your soundcard. A value
+that is not supported by your souncard may lead to issues, although
+it’s more likely that your computer will perform an automatic sample
+rate conversion to a supported sample rate.</p></li>
+<li><p><strong>Bits</strong> Set the bit depth that <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> uses to store
+sounds to a wav file or play them. Currently values of 16 and 32 bits
+are supported. A value of 32 bits can be used for 24-bit soundcards.
+Notice that achieving 24-bit output requires both a 24-bit souncard
+and a play command that can output 24-bit sounds. Therefore selecting
+a value of 32 bits here does not guarantee 24-bit playback even if
+you have a 24-bit souncard. Please, refere to
+Section <a class="reference internal" href="engine.html#sec-sound-output"><span class="std std-ref">Sound Output</span></a> for further information on this issue.</p></li>
+<li><p><strong>No. Repetitions</strong> Set the number of times the sequence of blocks stored
+in memory should be repeated. If the “Shuffle Mode” (see below) is
+set to “auto”, each time a new repetition starts the block positions
+will be shuffled. If the “Shuffle Mode” is set to “Ask”, each time a
+new repetition starts the user will be asked if s/he wants to shuffle
+the block positions. The “Reset” button resets the number of
+repetitions completed by the listener to zero.</p></li>
+<li><p><strong>Pre-Trial Silence (ms)</strong> Set a silent time interval before the
+start of each trial. Useful to avoid that a new trial starts
+immediately after the listener has given his/her response.</p></li>
+<li><p><strong>Warning Interval</strong> Choose whether to present a warning light at the
+beginning of each trial.</p></li>
+<li><p><strong>Warning Interval Duration (ms)</strong> Sets the duration of the warning
+interval light. This widget is shown only if the warning interval
+chooser is set to “Yes”.</p></li>
+<li><p><strong>Warning Interval ISI (ms)</strong> Sets the duration of the silent
+interval between the end of warning interval and the start of the
+first observation interval. This widget is shown only if the warning
+interval chooser is set to “Yes”.</p></li>
+<li><p><strong>Response Light</strong> Set the kind of feedback to give to participants
+at the end of each trial. “Feedback” will give feedback (e.g. flash
+a green, for a correct response, or red, for an incorrect response
+light. “Neutral” will acknowledge that a responses has been given,
+but will not give feedback as to whether the response was correct
+(e.g. flash a white light). “None” will not give any feedback or
+acknowledgment that a response has been given. (e.g. no light will
+be flashed, there will nonetheless be a silent interval equal to
+the response light duration, see below).</p></li>
+<li><p><strong>Response Light Type</strong> Determines the mode in which feedback
+or acknoledgment of listener responses is given. If “Light”, a
+colored light will be flashed (e.g. a green light to indicate a
+correct response, and a red light to indicate an incorrect
+response). If “Text”, a string will be presented (e.g. “Correct!”
+for a correct response, and “Incorrect!” for an incorrect
+response. If “Smiley”, a smiley will be painted in the response
+light box. Combinations of these three basic feedback presentation
+modes are also possible.</p></li>
+<li><p><strong>Response Light Duration (ms)</strong> Set the duration of the response
+light.</p></li>
+<li><p><strong>Results File</strong> Select a file for saving the results. Selecting an
+existing file will never overwrite its content, it will simply append
+the new results to its content. If no file is selected, the results
+will be saved in a file called <code class="docutils literal notranslate"><span class="pre">test.txt</span></code> in the current working
+directory. You can select a file to save the results even after you
+have started a block of trials, the results get written to the file
+only at the end of the block.</p></li>
+<li><p><strong>Shuffle Mode</strong> If the “Shuffle Mode” is “auto”, the block
+presentation positions will be automatically shuffled at the
+beginning of a series of blocks. If the “Shuffle Mode” is “Ask”, at
+the beginning of a series of blocks the user will be asked if the
+block presentation positions should be shuffled or not. If the
+“Shuffle Mode” is “No”, the block presentation positions will not be
+automatically shuffled at the beginning of a series of blocks. See
+Section <a class="reference internal" href="engine.html#sec-shuffling"><span class="std std-ref">Block Presentation Position</span></a> for further information on shuffling the
+block presentation positions.</p></li>
+<li><p><strong>Response Mode</strong> When “Real Listener” is selected,
+<code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> waits for responses from a human listener. When
+“Automatic” is selected the program will give responses by itself
+with a certain percentage correct, that can be specified in the
+“Percent Correct (%)” text field. This mode is mostly useful for
+debugging purposes, however it can also be used for experiments in
+which the participants are passively listening to the stimuli (e.g.
+some neuroimaging experiments that record cerebral responses rather
+than behavioural responses). In “Simulated Listener” mode
+<code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> will give responses on the bases of an auditory
+model. This model needs to be specified in the experiment file, the
+“Simulated Listener” mode provides just a hook to redirect the
+control flow to your model. When the “Psychometric” listener mode
+is selected responses are given automatically according to the
+shape of a psychometric function (see boxes below for specifying the
+psychometric function shape). The “Psychometric” listener mode works
+only for adaptive paradigms (e.g. tranformed up-down, weighted up-down, PEST, UML, PSI).
+Please, refer to Section <a class="reference internal" href="engine.html#sec-response-mode"><span class="std std-ref">Response Mode</span></a> for more information.</p></li>
+<li><p><strong>Psychometric Listener Function</strong> The function family for the psychometric listener. Currently supported functions
+are “Logistic”, “Gaussian” (normal), “Gumbel”, and “Weibull”.</p></li>
+<li><p><strong>Psychometric Listener Function Fit</strong> Whether the psychometric function is fitted on
+“Linear” or “Logarithmic” coordinates. With the transformed up-down, PEST, and weighted up-down
+paradigms you should choose “Logarithmic” if you’re using a geometric adaptive procedure.
+With the PSI and UML paradigms you should choose “Logarithmic” if your the stimulus scaling
+is set to “Logarithmic”.</p></li>
+<li><p><strong>Psychometric Listener Midpoint</strong>
+The midpoint of the psychometric function, that is the middle point between
+chance performance and maximum performance. For a two-alternative forced choice
+task this will correspond to the point at which the listener achieves a 75% correct
+performance.</p></li>
+<li><p><strong>Psychometric Listener Slope</strong>
+The slope of the psychometric function. Please note that slopes measured with different
+psychometric function families (e.g. “Logistic” and “Gaussian”) are not directly comparable.</p></li>
+<li><p><strong>Psychometric Listener Lapse</strong>
+The lapse rate of the psychometric listener.</p></li>
+<li><p><strong>Save psychometric listener data</strong>
+Save the psychometric listener data to a text file. The first column of the saved file corresponds
+to the probability of a correct response. The second column corresponds to the stimulus value at which
+the psychometric listener achieves that probability of a correct response.</p></li>
+<li><p><strong>Plot psychometric listener function</strong> Plot the psychometric function defined for the psychometric listener.</p></li>
+</ul>
+</section>
+<section id="additional-widgets-left-panel">
+<h3>Additional Widgets (left panel)<a class="headerlink" href="#additional-widgets-left-panel" title="Permalink to this heading"></a></h3>
+<p>The following widgets are present only in some experiments:</p>
+<ul class="simple">
+<li><p><strong>ISI (ms)</strong> Inter-stimulus silent interval, in ms.</p></li>
+<li><p><strong>Intervals</strong> Set the number of observation intervals.</p></li>
+<li><p><strong>Alternatives</strong> Set the number of response alternatives.</p></li>
+<li><p><strong>Alternated (AB) Reps.</strong> This setting makes it possible to present stimuli
+with the ABAB AAAA paradigm (see <a class="reference internal" href="references.html#kingetal2013" id="id1"><span>[KingEtAl2013]</span></a> ). If the value is set to
+zero, then on each interval only one stimulus will be presented, either
+the standard (A), or the comparison (B) stimulus. If the value is set
+to one, then the correct interval will contain the an alternation of
+the standard and comparison stimuli (AB), while the incorrect interval
+will contain two standards (AA). If the value is set to two, then the
+correct interval will contain two alternations of the standard and
+comparison stimuli (ABAB) while the incorrect interval will contain four
+repetitions of the standard and so on.</p></li>
+<li><p><strong>Alternated (AB) Reps. ISI (ms)</strong> Set silent interval between stimuli
+presented within each AAAA or ABAB interval.</p></li>
+<li><p><strong>Pre-Trial Interval</strong> Choose whether to present the pre-trial interval.</p></li>
+<li><p><strong>Pre-Trial Interval ISI (ms)</strong> Sets the duration of the silent
+interval between the end of pre-trial interval and the start of the
+next interval. This widget is shown only if the pre-trial interval
+chooser is set to “Yes”.</p></li>
+<li><p><strong>Precursor Interval</strong> Choose whether to present the precursor interval.</p></li>
+<li><p><strong>Precursor Interval ISI (ms)</strong> Sets the duration of the silent interval
+between the end of precursor interval and the start of the next interval.
+This widget is shown only if the precursor interval chooser is set to “Yes”.</p></li>
+<li><p><strong>Postcursor Interval</strong> Choose whether to present the postcursor interval.</p></li>
+<li><p><strong>Postcursor Interval ISI (ms)</strong> Sets the duration of the silent interval
+between the end of postcursor interval and the start of the next interval.
+This widget is shown only if the postcursor interval chooser is set to “Yes”.</p></li>
+</ul>
+</section>
+<section id="general-widgets-right-panel">
+<h3>General Widgets (right panel)<a class="headerlink" href="#general-widgets-right-panel" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Load Prm</strong> Load in memory experimental parameters stored in a
+<code class="docutils literal notranslate"><span class="pre">.prm</span></code> file. See Section <a class="reference internal" href="engine.html#sec-parameters-files"><span class="std std-ref">Parameters Files</span></a> for more
+info.</p></li>
+<li><p><strong>Save Prm</strong> Save experimental parameters stored in memory in a
+<code class="docutils literal notranslate"><span class="pre">.prm</span></code> file. See Section <a class="reference internal" href="engine.html#sec-parameters-files"><span class="std std-ref">Parameters Files</span></a> for more
+info.</p></li>
+<li><p><strong>Delete</strong> Delete the current block from the list of blocks stored
+in memory.</p></li>
+<li><p><strong>Undo Unsaved</strong> Reset the parameters in the current block to the
+parameters that were last saved.</p></li>
+<li><p><strong>Store</strong> Store the parameters changes in memory.</p></li>
+<li><p><strong>Store ’n’ add</strong> Store the parameter changes in memory and add a new
+parameters block.</p></li>
+<li><p><strong>Store ’n’ go</strong> Store the parameter changes in memory and move to
+the next block storage point.</p></li>
+<li><p><strong>New Block</strong> Create a new parameters block (the parameters of the
+current block will be copied in the new one).</p></li>
+<li><p><strong>Previous</strong> Move to the previous block storage point.</p></li>
+<li><p><strong>Next</strong> Move to the next block storage point.</p></li>
+<li><p><strong>Shuffle</strong> Shuffle the block presentation positions (see <a class="reference internal" href="engine.html#sec-shuffling"><span class="std std-ref">Block Presentation Position</span></a>).</p></li>
+<li><p><strong>Reset</strong> Reset the block presentation positions and move to the
+first block position (see <a class="reference internal" href="engine.html#sec-shuffling"><span class="std std-ref">Block Presentation Position</span></a>).</p></li>
+<li><p><strong>Jump to Block</strong> Jump to a given block storage point.</p></li>
+<li><p><strong>Previous Position</strong> Move to the previous block presentation
+position (see <a class="reference internal" href="engine.html#sec-shuffling"><span class="std std-ref">Block Presentation Position</span></a>).</p></li>
+<li><p><strong>Next Position</strong> Move to the next block presentation position (see <a class="reference internal" href="engine.html#sec-shuffling"><span class="std std-ref">Block Presentation Position</span></a>).</p></li>
+<li><p><strong>Jump to Position</strong> Jump to the given block presentation position (see <a class="reference internal" href="engine.html#sec-shuffling"><span class="std std-ref">Block Presentation Position</span></a>).</p></li>
+<li><p><strong>Shift Blk. Down</strong> Shift the current block to a lower storage point.</p></li>
+<li><p><strong>Shift Blk. Up</strong> Shift the current block to a higher storage point.</p></li>
+<li><p><strong>Experiment Doc</strong> Show the available documentation for the current experiment.</p></li>
+</ul>
+</section>
+<section id="paradigm-widgets">
+<h3>Paradigm Widgets<a class="headerlink" href="#paradigm-widgets" title="Permalink to this heading"></a></h3>
+</section>
+<section id="pair-same-different-paradigm-widgets">
+<h3>1-Pair Same/Different Paradigm Widgets<a class="headerlink" href="#pair-same-different-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>No. Trials</strong> Set the number of trials to be presented in the
+current block.</p></li>
+<li><p><strong>No. Practice Trials</strong> Set the number of practice trials to be
+presented in the current block. Practice trials are presented at the
+beginning of the block; the responses to these trials are not included in the statistics.</p></li>
+</ul>
+</section>
+<section id="constant-1-interval-2-alternatives-paradigm-widgets">
+<h3>Constant 1-Interval 2-Alternatives Paradigm Widgets<a class="headerlink" href="#constant-1-interval-2-alternatives-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>No. Trials</strong> Set the number of trials to be presented in the
+current block.</p></li>
+<li><p><strong>No. Practice Trials</strong> Set the number of practice trials to be
+presented in the current block. Practice trials are presented at the
+beginning of the block; the responses to these trials are not included in the statistics.</p></li>
+</ul>
+</section>
+<section id="constant-m-intervals-n-alternatives-paradigm-widgets">
+<h3>Constant m-Intervals n-Alternatives Paradigm Widgets<a class="headerlink" href="#constant-m-intervals-n-alternatives-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>No. Trials</strong> Set the number of trials to be presented in the
+current block.</p></li>
+<li><p><strong>No. Practice Trials</strong> Set the number of practice trials to be
+presented in the current block. Practice trials are presented at the
+beginning of the block; the responses to these trials are not included in the statistics.</p></li>
+</ul>
+</section>
+<section id="multiple-constants-abx-paradigm-widgets">
+<h3>Multiple Constants ABX Paradigm Widgets<a class="headerlink" href="#multiple-constants-abx-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>No. Trials</strong> Set the number of trials to be presented in the
+current block.</p></li>
+<li><p><strong>No. Practice Trials</strong> Set the number of practice trials to be
+presented in the current block. Practice trials are presented at the
+beginning of the block; the responses to these trials are not included in the statistics.</p></li>
+<li><p><strong>No. Differences</strong> Set the number of comparisons to perform.</p></li>
+</ul>
+</section>
+<section id="multiple-constants-1-interval-2-alternatives-paradigm-widgets">
+<h3>Multiple Constants 1-Interval 2-Alternatives Paradigm Widgets<a class="headerlink" href="#multiple-constants-1-interval-2-alternatives-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>No. Trials</strong> Set the number of trials to be presented in the
+current block for each condition.</p></li>
+<li><p><strong>No. Practice Trials</strong> Set the number of practice trials to be
+presented in the current block for each condition. The responses to
+these trials are not included in the statistics.</p></li>
+<li><p><strong>No. Differences</strong> Set the number of conditions to be used in the
+current block.</p></li>
+</ul>
+</section>
+<section id="multiple-constants-m-intervals-n-alternatives-paradigm-widgets">
+<h3>Multiple Constants m-Intervals n-Alternatives Paradigm Widgets<a class="headerlink" href="#multiple-constants-m-intervals-n-alternatives-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>No. Trials</strong> Set the number of trials to be presented in the
+current block for each condition.</p></li>
+<li><p><strong>No. Practice Trials</strong> Set the number of practice trials to be
+presented in the current block for each condition. The responses to
+these trials are not included in the statistics.</p></li>
+<li><p><strong>No. Differences</strong> Set the number of conditions to be used in the
+current block.</p></li>
+</ul>
+</section>
+<section id="odd-one-out-paradigm-widgets">
+<h3>Odd One Out Paradigm Widgets<a class="headerlink" href="#odd-one-out-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>No. Trials</strong> Set the number of trials to be presented in the
+current block.</p></li>
+<li><p><strong>No. Practice Trials</strong> Set the number of practice trials to be
+presented in the current block. Practice trials are presented at the
+beginning of the block; the responses to these trials are not included in the statistics.</p></li>
+<li><p><strong>No. Differences</strong> Set the number of comparisons to perform.</p></li>
+</ul>
+</section>
+<section id="pest-paradigm-widgets">
+<h3>PEST Paradigm Widgets<a class="headerlink" href="#pest-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<p><strong>WARNING</strong> PEST support is experimental and has received very little testing!</p>
+<ul class="simple">
+<li><p><strong>Procedure</strong> If “Arithmetic” the quantity defined by the step size
+will be added or subtracted to the parameter that is adaptively
+changing. If “Geometric” the parameter that is adaptively changing
+will be multiplied or divided by the quantity defined by the step
+size.</p></li>
+<li><p><strong>Corr. Resp. Move Track</strong> This determines whether correct responses
+move the adaptive track down, or up. Choose down if you want the adaptive
+parameter to <em>decrease</em> as a consequence of correct
+responses. Choose up if you want the adaptive parameter to <em>increase</em>
+as a consequence of correct responses. For example, in a signal detection
+task in which the signal level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Down</span></code> (signal level
+decreases as a consequence of correct responses). On the other hand, in a
+signal detection task in which the noise level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Up</span></code>
+(noise level increases as a consequence of correct responses).</p></li>
+<li><p><strong>Percent Correct Tracked</strong> Set the percentage correct point on the
+psychometric function to be tracked by the adaptive procedure.</p></li>
+<li><p><strong>Initial Step Size</strong> Set the initial step size.</p></li>
+<li><p><strong>Minimum Step Size</strong> Set the minimum step size. When the minimum
+step size is reached the block is terminated.</p></li>
+<li><p><strong>Maximum Step Size</strong> Set the maximum allowed step size.</p></li>
+<li><p><strong>W</strong> Deviation limit of the sequential test (see <a class="reference internal" href="references.html#taylorandcreelman1967" id="id2"><span>[TaylorAndCreelman1967]</span></a>).</p></li>
+</ul>
+</section>
+<section id="psi-paradigm-widgets">
+<h3>PSI Paradigm Widgets<a class="headerlink" href="#psi-paradigm-widgets" title="Permalink to this heading"></a></h3>
+</section>
+<section id="transformed-up-down-paradigm-widgets">
+<h3>Transformed Up-Down Paradigm Widgets<a class="headerlink" href="#transformed-up-down-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Procedure</strong> If <code class="docutils literal notranslate"><span class="pre">Arithmetic</span></code> the step size
+will be added or subtracted to the parameter that is adaptively
+varied. If <code class="docutils literal notranslate"><span class="pre">Geometric</span></code> the parameter that is adaptively varied
+will be multiplied or divided by the step size.</p></li>
+<li><p><strong>Corr. Resp. Move Track</strong> This determines whether correct responses
+move the adaptive track down, or up. Choose down if you want the adaptive
+parameter to <em>decrease</em> as a consequence of correct
+responses. Choose up if you want the adaptive parameter to <em>increase</em>
+as a consequence of correct responses. For example, in a signal detection
+task in which the signal level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Down</span></code> (signal level
+decreases as a consequence of correct responses). On the other hand, in a
+signal detection task in which the noise level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Up</span></code>
+(noise level increases as a consequence of correct responses).</p></li>
+<li><p><strong>Rule Down</strong> Set the number of consecutive correct, or incorrect responses,
+depending on which type of responses move the track down, needed to make a step down.</p></li>
+<li><p><strong>Rule Up</strong> Set the number of consecutive correct, or incorrect responses,
+depending on which type of responses move the track up, needed to make a step up.</p></li>
+<li><p><strong>Initial Turnpoints</strong> Set the number of initial turnpoints. The
+initial turnpoints serve to bring quickly the adaptive track towards
+the listener’s threshold. These turnpoints are not included in the
+threshold estimate.</p></li>
+<li><p><strong>Total Turnpoints</strong> Set the number of total turnpoints. The number
+of total turnpoints is equal to the number of initial turnpoints that
+are not included in the threshold estimate plus the number of
+turnpoints that you want to use for the threshold estimate.</p></li>
+<li><p><strong>Step Size 1</strong> Set the step size for the initial turnpoints.</p></li>
+<li><p><strong>Step Size 2</strong> Set the step size to be used after the number of
+initial turnpoints has been reached.</p></li>
+</ul>
+</section>
+<section id="transformed-up-down-interleaved-paradigm-widgets">
+<h3>Transformed Up-Down Interleaved Paradigm Widgets<a class="headerlink" href="#transformed-up-down-interleaved-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Procedure</strong> If “Arithmetic” the quantity defined by the step size
+will be added or subtracted to the parameter that is adaptively
+changing. If “Geometric” the parameter that is adaptively changing
+will be multiplied or divided by the quantity defined by the step
+size.</p></li>
+<li><p><strong>No. Tracks</strong> Set the number of adaptive tracks.</p></li>
+<li><p><strong>Max. Consecutive Trials x Track</strong> Set the maximum number of
+consecutive trials per track.</p></li>
+<li><p><strong>Turnpoints to Average</strong> Since track selection is pseudo-random, it
+may happen that for a track the number of total turnpoints collected
+is greater than the number of total turnpoints requested for that
+track. If “All final step size (even)” is selected, the threshold
+will be estimated using all the turnpoints collected after the
+initial turnpoints, unless the number of these turnpoints is odd, in
+which case the first of these turnpoints will be discarded. If “First
+N final step size” is selected the threshold will be estimated using
+only the number of requested turnpoints collected after the initial
+turnpoints. If “Last N final step size” is selected the threshold
+will be estimated using only the last <span class="math notranslate nohighlight">\(N\)</span> turnpoints, where
+<span class="math notranslate nohighlight">\(N\)</span> equals the number of requested turnpoints.</p></li>
+<li><p><strong>Corr. Resp. Move Track X</strong> This determines whether correct responses
+move the adaptive track down, or up. Choose <code class="docutils literal notranslate"><span class="pre">Down</span></code> if you want the adaptive
+parameter to <em>decrease</em> as a consequence of correct
+responses. Choose <code class="docutils literal notranslate"><span class="pre">Up</span></code> if you want the adaptive parameter to <em>increase</em>
+as a consequence of correct responses. For example, in a signal detection
+task in which the signal level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Down</span></code> (signal level
+decreases as a consequence of correct responses). On the other hand, in a
+signal detection task in which the noise level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Up</span></code>
+(noise level increases as a consequence of correct responses).</p></li>
+<li><p><strong>Rule Down Track X</strong> Set the number of consecutive correct responses
+needed to subtract the current step size from the adaptive parameter
+(for arithmetic procedures) or divide the adaptive parameter by the
+current step size (for geometric procedures) for track number
+<span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+<li><p><strong>Rule Up Track X</strong> Set the number of consecutive correct, or incorrect responses,
+depending on which type of responses move track <em>X</em> down, needed to make a step down
+for track <em>X</em>.</p></li>
+<li><p><strong>Initial Turnpoints Track X</strong> Set the number of consecutive correct, or incorrect responses,
+depending on which type of responses move track <em>X</em> up, needed to make a step up
+for track <em>X</em>.</p></li>
+<li><p><strong>Total Turnpoints Track X</strong> Set the number of total turnpoints for
+track number <span class="math notranslate nohighlight">\(X\)</span>. The number of total turnpoints is equal to
+the number of initial turnpoints that are not included in the
+threshold estimate plus the number of turnpoints that you want to use
+for the threshold estimate.</p></li>
+<li><p><strong>Step Size 1 Track X</strong> Set the step size for the initial turnpoints
+for track number <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+<li><p><strong>Step Size 2 Track X</strong> Set the step size to be used after the number
+of initial turnpoints has been reached for track number <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+</ul>
+</section>
+<section id="uml-paradigm-widgets">
+<h3>UML Paradigm Widgets<a class="headerlink" href="#uml-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Psychometric Function</strong> The shape of the psychometric function used to fit the
+responses of the listener.</p></li>
+<li><p><strong>Posterior Summary</strong> Choose whether to use the mean or the mode for the estimation</p></li>
+</ul>
+<p>of parameter values from the Bayesian posterior distribution of parameter values.</p>
+<ul class="simple">
+<li><p><strong>Plot UML Par. Space</strong> Generate a graphical summary of the parameter space used to</p></li>
+</ul>
+<blockquote>
+<div><p>initialize the UML procedure.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>No. Trials</strong> Set the number of trials to be presented in the
+current block.</p></li>
+<li><p><strong>Swpt. Rule</strong> Choose whether to use an up-down or a random sweetpoint selection rule.</p></li>
+<li><p><strong>Rule Down</strong> The number of consecutive correct responses necessary to move to the lower sweetpoint.</p></li>
+<li><p><strong>Stim. Min</strong> Set the minimum value of the stimulus dimension that is being varied adaptively (e.g. signal level, or frequency difference).</p></li>
+<li><p><strong>Stim. Max</strong> Set the maximum value of the stimulus dimension that is being varied adaptively (e.g. signal level, or frequency difference).</p></li>
+<li><p><strong>Stim. Scaling</strong> Indicate whether the stimulus dimension that is being varied adaptively should be scaled linearly or logarithmically. The</p></li>
+<li><p><strong>Suggested Lapse Swpt.</strong> The suggested stimulus value for the lapse rate sweetpoint. This value is used as the lapse rate sweetpoint
+unless the current estimate of the psychometric function at the probability value <code class="docutils literal notranslate"><span class="pre">Pr.</span> <span class="pre">Corr.</span> <span class="pre">at</span> <span class="pre">Est.</span> <span class="pre">Lapse</span> <span class="pre">Swpt</span></code> (see below) is larger.
+In the latter case the current estimate of the psychometric function at the probability value <code class="docutils literal notranslate"><span class="pre">Pr.</span> <span class="pre">Corr.</span> <span class="pre">at</span> <span class="pre">Est.</span> <span class="pre">Lapse</span> <span class="pre">Swpt</span></code> is used
+as the lapse rate sweetpoint, as long as it is smaller than <code class="docutils literal notranslate"><span class="pre">Stim.</span> <span class="pre">Max</span></code>, in which case <code class="docutils literal notranslate"><span class="pre">Stim.</span> <span class="pre">Max</span></code> will be used as the lapse rate
+sweet point.</p></li>
+<li><p><strong>Pr. Corr. at Est. Lapse Swpt.</strong> The proportion correct at the estimated lapse sweet point. If the estimated lapse sweetpoint exceeds the
+will be used the suggested lapse sweetpoint, the estimated lapse sweetpoint will be used as the lapse rate sweetpoint.</p></li>
+<li><p><strong>Mid Point Min</strong> The minimum possible value of the midpoint of the psychometric function.</p></li>
+<li><p><strong>Mid Point Max</strong> The maximum possible value of the midpoint of the psychometric function.</p></li>
+<li><p><strong>Mid Point Step</strong> The size of the step between successive points in the grid defining the parameter space for the midpoint of the psychometric function.</p></li>
+<li><p><strong>Mid Point Prior</strong> The shape of the prior distribution for the midpoint of the psychometric function.</p></li>
+<li><p><strong>Mid Point mu</strong> The mean of the prior distribution for the midpoint of the psychometric function.</p></li>
+<li><p><strong>Mid Point STD</strong> The standard deviation of the prior distribution for the midpoint of the psychometric function.</p></li>
+<li><p><strong>Slope Min</strong> The minimum possible value of the slope of the psychometric function.</p></li>
+<li><p><strong>Slope Max</strong> The maximum possible value of the slope of the psychometric function.</p></li>
+<li><p><strong>Slope Step</strong> The size of the step between successive points in the grid defining the parameter space for the slope of the psychometric function.</p></li>
+<li><p><strong>Slope Spacing</strong> Indicate whether the spacing between successive points in the grid defining the parameter space for the slope of the psychometric function should be linear or logarithmic.</p></li>
+<li><p><strong>Slope Prior</strong> The shape of the prior distribution for the slope of the psychometric function.</p></li>
+<li><p><strong>Slope mu</strong> The mean of the prior distribution for the slope of the psychometric function.</p></li>
+<li><p><strong>Slope STD</strong> The standard deviation of the prior distribution for the slope of the psychometric function.</p></li>
+<li><p><strong>Lapse Min</strong> The minimum possible value of the lapse rate of the psychometric function.</p></li>
+<li><p><strong>Lapse Max</strong> The maximum possible value of the lapse rate of the psychometric function.</p></li>
+<li><p><strong>Lapse Step</strong> The size of the step between successive points in the grid defining the parameter space for the lapse rate of the psychometric function.</p></li>
+<li><p><strong>Lapse Spacing</strong> Indicate whether the spacing between successive points in the grid defining the parameter space for the lapse rate of the psychometric function should be linear or logarithmic.</p></li>
+<li><p><strong>Lapse Prior</strong> The shape of the prior distribution for the lapse rate of the psychometric function.</p></li>
+<li><p><strong>Lapse mu</strong> The mean of the prior distribution for the lapse rate of the psychometric function.</p></li>
+<li><p><strong>Lapse STD</strong> The standard deviation of the prior distribution for the lapse rate of the psychometric function.</p></li>
+<li><p><strong>Load UML state from prev. blocks</strong> If <code class="docutils literal notranslate"><span class="pre">Yes</span></code>, at the end of each block the state of the UML posterior parameter distribution will be saved
+in a file named after the condition label of the block. When a subsequent block with the same condition label is encountered this file will be
+used to set the initial UML posterior parameter distribution for the block instead of the priors specified in the control window.</p></li>
+</ul>
+</section>
+<section id="weighted-up-down-paradigm-widgets">
+<h3>Weighted Up-Down Paradigm Widgets<a class="headerlink" href="#weighted-up-down-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Procedure</strong> If “Arithmetic” the quantity defined by the step size
+will be added or subtracted to the parameter that is adaptively
+changing. If “Geometric” the parameter that is adaptively changing
+will be multiplied or divided by the quantity defined by the step
+size.</p></li>
+<li><p><strong>Corr. Resp. Move Track</strong> This determines whether correct responses
+move the adaptive track down, or up. Choose down if you want the adaptive
+parameter to <em>decrease</em> as a consequence of correct
+responses. Choose up if you want the adaptive parameter to <em>increase</em>
+as a consequence of correct responses. For example, in a signal detection
+task in which the signal level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Down</span></code> (signal level
+decreases as a consequence of correct responses). On the other hand, in a
+signal detection task in which the noise level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Up</span></code>
+(noise level increases as a consequence of correct responses).</p></li>
+<li><p><strong>Percent Correct Tracked</strong> Set the percentage correct point on the
+psychometric function to be tracked by the adaptive procedure. The
+ratio of the “Up” and “Down” steps is automatically adjusted by the
+software to satisfy this criterion.</p></li>
+<li><p><strong>Initial Turnpoints</strong> Set the number of initial turnpoints. The
+initial turnpoints serve to bring quickly the adaptive track towards
+the listener’s threshold. These turnpoints are not included in the
+threshold estimate.</p></li>
+<li><p><strong>Total Turnpoints</strong> Set the number of total turnpoints. The number
+of total turnpoints is equal to the number of initial turnpoints that
+are not included in the threshold estimate plus the number of
+turnpoints that you want to use for the threshold estimate.</p></li>
+<li><p><strong>Step Size 1</strong> Set the “Down” step size for the initial turnpoints.
+The “Up” step size is automatically calculated to satisfy the
+“Percent Correct Tracked” criterion.</p></li>
+<li><p><strong>Step Size 2</strong> Set the “Down” step size to be used after the number
+of initial turnpoints has been reached. The “Up” step size is
+automatically calculated to satisfy the “Percent Correct Tracked”
+criterion.</p></li>
+</ul>
+</section>
+<section id="weighted-up-down-interleaved-paradigm-widgets">
+<h3>Weighted Up-Down Interleaved Paradigm Widgets<a class="headerlink" href="#weighted-up-down-interleaved-paradigm-widgets" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Procedure</strong> If “Arithmetic” the quantity defined by the step size
+will be added or subtracted to the parameter that is adaptively
+changing. If “Geometric” the parameter that is adaptively changing
+will be multiplied or divided by the quantity defined by the step
+size.</p></li>
+<li><p><strong>No. Tracks</strong> Set the number of adaptive tracks.</p></li>
+<li><p><strong>Max. Consecutive Trials x Track</strong> Set the maximum number of
+consecutive trials per track.</p></li>
+<li><p><strong>Turnpoints to Average</strong> Since track selection is pseudo-random, it
+may happen that for a track the number of total turnpoints collected
+is greater than the number of total turnpoints requested for that
+track. If “All final step size (even)” is selected, the threshold
+will be estimated using all the turnpoints collected after the
+initial turnpoints, unless the number of these turnpoints is odd, in
+which case the first of these turnpoints will be discarded. If “First
+N final step size” is selected the threshold will be estimated using
+only the number of requested turnpoints collected after the initial
+turnpoints. If “Last N final step size” is selected the threshold
+will be estimated using only the last <span class="math notranslate nohighlight">\(N\)</span> turnpoints, where
+<span class="math notranslate nohighlight">\(N\)</span> equals the number of requested turnpoints.</p></li>
+<li><p><strong>Corr. Resp. Move Track X</strong> This determines whether correct responses
+move the adaptive track number <em>X</em> down, or up. Choose <code class="docutils literal notranslate"><span class="pre">Down</span></code> if you want the adaptive
+parameter to <em>decrease</em> as a consequence of correct
+responses. Choose <code class="docutils literal notranslate"><span class="pre">Up</span></code> if you want the adaptive parameter to <em>increase</em>
+as a consequence of correct responses. For example, in a signal detection
+task in which the signal level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Down</span></code> (signal level
+decreases as a consequence of correct responses). On the other hand, in a
+signal detection task in which the noise level is varied you should choose <code class="docutils literal notranslate"><span class="pre">Up</span></code>
+(noise level increases as a consequence of correct responses).</p></li>
+<li><p><strong>Percent Correct Tracked</strong> Set the percentage correct point on the
+psychometric function to be tracked by the adaptive procedure for
+track number <span class="math notranslate nohighlight">\(X\)</span>. The ratio of the “Up” and “Down” steps is
+automatically adjusted by the software to satisfy this criterion.</p></li>
+<li><p><strong>Initial Turnpoints Track X</strong> Set the number of initial turnpoints
+for track number <span class="math notranslate nohighlight">\(X\)</span>. The initial turnpoints serve to bring
+quickly the adaptive track towards the listener’s threshold. These
+turnpoints are not included in the threshold estimate.</p></li>
+<li><p><strong>Total Turnpoints Track X</strong> Set the number of total turnpoints for
+track number <span class="math notranslate nohighlight">\(X\)</span>. The number of total turnpoints is equal to
+the number of initial turnpoints that are not included in the
+threshold estimate plus the number of turnpoints that you want to use
+for the threshold estimate.</p></li>
+<li><p><strong>Step Size 1 Track X</strong> Set the “Down” step size for the initial
+turnpoints for track number <span class="math notranslate nohighlight">\(X\)</span>. The “Up” step size is
+automatically calculated to satisfy the “Percent Correct Tracked”
+criterion.</p></li>
+<li><p><strong>Step Size 2 Track X</strong> Set the “Down” step size to be used after the
+number of initial turnpoints has been reached for track number
+<span class="math notranslate nohighlight">\(X\)</span>. The “Up” step size is automatically calculated to satisfy
+the “Percent Correct Tracked” criterion.</p></li>
+</ul>
+</section>
+<section id="the-menu-bar">
+<h3>The Menu Bar<a class="headerlink" href="#the-menu-bar" title="Permalink to this heading"></a></h3>
+<p>A screenshot of the menu bar is shown in Figure <a class="reference internal" href="#fig-menu-bar"><span class="std std-ref">The menu bar</span></a>. This bar
+is located in the upper left corner of the “Control Window”. Each menu
+will be described below.</p>
+<figure class="align-default" id="id6">
+<span id="fig-menu-bar"></span><a class="reference internal image-reference" href="_images/menuBar.png"><img alt="The menu bar" src="_images/menuBar.png" style="width: 216.0px; height: 48.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">The menu bar</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-file-menu">
+<h3>The File Menu<a class="headerlink" href="#the-file-menu" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Process Results (Plain Text)</strong> Process block summary results files to obtain
+session summary results files. For more info see
+Section <a class="reference internal" href="#sec-process-results-dialog"><span class="std std-ref">Process Results Dialog</span></a>.</p></li>
+<li><p><strong>Process Results Table</strong> Process block summary results table files
+to obtain session summary table results files. For more info see
+Section  <a class="reference internal" href="#sec-process-results-dialog"><span class="std std-ref">Process Results Dialog</span></a>.</p></li>
+<li><p><strong>Open Results File</strong> Open the file where <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> is
+currently saving data with the default text editor.</p></li>
+<li><p><strong>Exit</strong> Close <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code>.</p></li>
+</ul>
+</section>
+<section id="the-edit-menu">
+<h3>The Edit Menu<a class="headerlink" href="#the-edit-menu" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Edit Preferences</strong> Edit application preferences. See
+Section <a class="reference internal" href="#sec-edit-preferences-dia"><span class="std std-ref">Edit Preferences Dialog</span></a> for further info.</p></li>
+<li><p><strong>Edit Phones</strong> Edit the phones database, and set the calibration
+levels for your phones. See Section <a class="reference internal" href="#sec-edit-phones-dia"><span class="std std-ref">Edit Phones Dialog</span></a> for
+further info.</p></li>
+<li><p><strong>Edit Experimenters</strong> Edit the experimenters database. See
+Section <a class="reference internal" href="#sec-edit-experimenters-dia"><span class="std std-ref">Edit Experimenters Dialog</span></a> for further info.</p></li>
+</ul>
+</section>
+<section id="the-tools-menu">
+<h3>The Tools Menu<a class="headerlink" href="#the-tools-menu" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Swap Blocks</strong> Swap the storage position of two parameter blocks.</p></li>
+</ul>
+</section>
+<section id="the-help-menu">
+<h3>The Help Menu<a class="headerlink" href="#the-help-menu" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Manual (pdf)</strong> Open a pdf copy of the manual.</p></li>
+<li><p><strong>Manual (html)</strong> Open a html copy of the manual.</p></li>
+<li><p><strong>Fortunes</strong> Show psychoacoustics fortunes. I’m always collecting new
+ones, so if you happen to know any interesting ones, please, e-mail
+them to me &lt;<a class="reference external" href="mailto:sam&#46;carcagno&#37;&#52;&#48;gmail&#46;com">sam<span>&#46;</span>carcagno<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt; so that I can add them to the collection.</p></li>
+<li><p><strong>About pychoacoustics</strong> Show information about the licence, the
+version of the software and the version of the libraries it depends
+on.</p></li>
+</ul>
+</section>
+<section id="the-whats-this-button">
+<h3>The “what’s this?” Button.<a class="headerlink" href="#the-whats-this-button" title="Permalink to this heading"></a></h3>
+<p>If you click on this button, and then click on a widget, you can get
+some information about the widget (this is not implemented for all
+widgets).</p>
+</section>
+</section>
+<section id="process-results-dialog">
+<span id="sec-process-results-dialog"></span><h2>Process Results Dialog<a class="headerlink" href="#process-results-dialog" title="Permalink to this heading"></a></h2>
+<p>Figure <a class="reference internal" href="#fig-proc-res-dia"><span class="std std-ref">The process results dialog</span></a> show a screenshot of the
+process results dialog. The dialog is the same for all procedures,
+except that for procedures in which <em>d’</em> is computed, there is an
+additional checkbox asking whether to apply a correction to hit/false
+alarm rates of zero or one. For information on the format of the result
+files, please see Section <a class="reference internal" href="result_files.html#sec-results-files"><span class="std std-ref">Result Files</span></a>. For tabular results
+files, if both matplotlib and pandas are installed there are additional
+checkboxes allowing to plot the results in a window or on a pdf file.
+Not all experimental paradigms support plotting.</p>
+<figure class="align-default" id="id7">
+<span id="fig-proc-res-dia"></span><a class="reference internal image-reference" href="_images/proc_res_dia.png"><img alt="The process results dialog" src="_images/proc_res_dia.png" style="width: 354.0px; height: 327.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">The process results dialog</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Input File(s)</strong> Give the filepath of one or more files to be
+processed. The “Choose File” button can be used to select the
+file(s). Multiple filepaths should be separated by a semicolon
+“<code class="docutils literal notranslate"><span class="pre">;</span></code>”.</p></li>
+<li><p><strong>Output File</strong> Give the filename of the output file.</p></li>
+<li><p><strong>For each condition process:</strong></p>
+<ul>
+<li><p><strong>All Blocks</strong> If checked, all blocks in the result file(s) will
+be processd.</p></li>
+<li><p><strong>Last X Blocks</strong> If checked, only the last <span class="math notranslate nohighlight">\(X\)</span> blocks will
+be processed.</p></li>
+<li><p><strong>Blocks in the following range</strong> If checked, only blocks in the
+specified range will be processed (indexing starts from 1).</p></li>
+</ul>
+</li>
+<li><p><strong>d-prime correction</strong> If checked, convert hit rates of <span class="math notranslate nohighlight">\(0\)</span> and
+<span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(1/2N\)</span> and <span class="math notranslate nohighlight">\(1-1/(2N)\)</span> respectively, where
+<span class="math notranslate nohighlight">\(N\)</span> is the number of trials, to avoid infinite values of <em>d’</em>
+(see <a class="reference internal" href="references.html#macmillanandcreelman2005" id="id3"><span>[MacmillanAndCreelman2005]</span></a> p. 8). This checkbox is available only for some
+paradigms.</p></li>
+<li><p><strong>When finished, open results file</strong> If checked, the output file will
+be opened in the default text editor when processing has finished.</p></li>
+<li><p><strong>When finished, open results folder</strong> If checked, the folder
+containing the output file will be opened when processing has
+finished.</p></li>
+<li><p><strong>Run!</strong> Click this button to process the result files.</p></li>
+</ul>
+</section>
+<section id="edit-preferences-dialog">
+<span id="sec-edit-preferences-dia"></span><h2>Edit Preferences Dialog<a class="headerlink" href="#edit-preferences-dialog" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p>The preferences dialog is divided into several tabs. These are described in turn below.</p>
+</div></blockquote>
+<section id="general">
+<span id="sec-edit-pref-dia-gen"></span><h3>General<a class="headerlink" href="#general" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Language (requires restart)</strong> Choose the application language. At
+the moment and for the foreseeable future only English is supported.</p></li>
+<li><p><strong>Country (requires restart)</strong> Set the country locale to be used for
+the application. Some things (for example the way dates are written in
+result files) depend on this setting.</p></li>
+<li><p><strong>Response Box Language (requires restart)</strong> Choose the language to
+be used for the “Response Box”. This sets the language to be used for
+the button labels and other GUI elements that the experimental
+listener is presented with.</p></li>
+<li><p><strong>Response Box Country (requires restart)</strong> Set the country locale
+for the response box.</p></li>
+<li><p><strong>csv separator</strong> Choose the separator field to be used when writing
+the csv tabular result files.</p></li>
+<li><p><strong>Warn if listener name missing</strong> If checked, pop up a warning
+message if the listener name is missing at the beginning of a
+session.</p></li>
+<li><p><strong>Warning if session label missing</strong> If checked, pop up a warning
+message if the session label is missing at the beginning of a
+session.</p></li>
+<li><p><strong>Process results when finished</strong> If checked, process automatically
+the block summary file to generate the session summary file at the
+end of the experiment.</p></li>
+<li><p><strong>d-prime correction</strong> If checked, when automatically processing
+result files, convert hit rates of <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(1\)</span> to
+<span class="math notranslate nohighlight">\(1/2N\)</span> and <span class="math notranslate nohighlight">\(1-1/(2N)\)</span> respectively, where <span class="math notranslate nohighlight">\(N\)</span> is
+the number of trials, to avoid infinite values of <em>d’</em>
+(see <a class="reference internal" href="references.html#macmillanandcreelman2005" id="id4"><span>[MacmillanAndCreelman2005]</span></a> p. 8).</p></li>
+<li><p><strong>Max Recursion Depth (requires restart)</strong> Set the maximum recursion
+depth of the Python interpreter stack. This setting should be changed
+only if you intend to run <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> in automatic or
+simulated listener response mode (see <a class="reference internal" href="engine.html#sec-response-mode"><span class="std std-ref">Response Mode</span></a>).
+Beware, setting a max recursion depth value smaller than the default
+value may cause <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> to crash or not even start. In case
+<code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> does not start because of this, delete your
+preferences settings file to restore the default max recursion depth
+value.</p></li>
+<li><p><strong>Execute command at startup</strong> Executes an OS command at startup. May be useful
+to initialize a soundcard in certain situations.</p></li>
+</ul>
+</section>
+<section id="sound">
+<span id="sec-edit-pref-dia-sound"></span><h3>Sound<a class="headerlink" href="#sound" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Play Command</strong> Set an internal or external command to play sounds.</p></li>
+<li><p><strong>Device</strong> Set the soundcard to be used to play sounds. This chooser
+is available only for certain internal play commands (currently
+alsaaudio and pyaudio).</p></li>
+<li><p><strong>Buffer Size (samples)</strong> Set the buffer size in number of samples to
+be used to output sounds. This chooser is available only for certain
+internal play commands (currently alsaaudio and pyaudio).</p></li>
+<li><p><strong>Default Sampling Rate</strong> Set the default sampling rate.</p></li>
+<li><p><strong>Default Bits</strong> Set the default bit depth.</p></li>
+<li><p><strong>Wav manager (requires restart)</strong> Choose the wav manager.</p></li>
+<li><p><strong>Write wav file</strong> Write wav files with the sounds played on each
+trial in the current <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> working directory.</p></li>
+<li><p><strong>Write sound sequence segment wavs</strong> For sound sequences, write a
+wav file for each segment of the sequence in the current
+<code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> working directory.</p></li>
+<li><p><strong>Append silence to each sound (ms)</strong> Append a silence of the given
+duration at the end of each sound. This is useful on some versions of
+the Windows operating system that may cut the sound buffer before it
+has ended resulting in audible clicks.</p></li>
+</ul>
+</section>
+<section id="response-box">
+<span id="sec-edit-pref-dia-notifications"></span><h3>Response Box<a class="headerlink" href="#response-box" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Response Box Button Font</strong> Choose the font for the response box button.</p></li>
+<li><p><strong>Correct Light Color</strong> Choose the color of the feedback light after a
+correct response.</p></li>
+<li><p><strong>Incorrect Light Color</strong> Choose the color of the feedback light after an
+incorrect response.</p></li>
+<li><p><strong>Neutral Light Color</strong> Choose the color of the feedback light when
+specific feedback as to the correctness of the response is not given.
+A light is instead simply flashed to acknowledge that the response
+has been recorded.</p></li>
+<li><p><strong>Off Light Color</strong> Choose the color of the response light when the
+response light is off (that is when feedback of any kind is not being
+given.</p></li>
+<li><p><strong>Response Light Font</strong> Choose the font of used to present text in the
+response light area when feedback is textual.</p></li>
+<li><p><strong>Correct Response Text Feedback</strong> Choose the feedback text to show in case of
+a correct response. If left to <code class="docutils literal notranslate"><span class="pre">(Default)</span></code>, a default message will be shown
+in the language chosen for the response box (if available). Applies only if
+feedback is textual.</p></li>
+<li><p><strong>Incorrect Response Text Feedback</strong> Choose the feedback text to show in case
+of an incorrect response. If left to <code class="docutils literal notranslate"><span class="pre">(Default)</span></code>, a default message will be
+shown in the language chosen for response box (if available). Applies only if
+feedback is textual.</p></li>
+<li><p><strong>Neutral Response Text Feedback</strong> Choose the feedback text to show when
+specific feedback as to the correctness of the response is not given. If
+left to <code class="docutils literal notranslate"><span class="pre">(Default)</span></code>, a default message will be shown in the language
+chosen for response box (if available). Applies only if feedback is textual.</p></li>
+<li><p><strong>Correct Text Color</strong> Choose the color of the feedback text to show in case
+of a correct response. Applies only if feedback is textual.</p></li>
+<li><p><strong>Incorrect Response Text Feedback</strong> Choose the color of the feedback text to
+show in case of an incorrect response. Applies only if feedback is textual.</p></li>
+<li><p><strong>Neutral Response Text Feedback</strong> Choose the color of the feedback text to
+show when specific feedback as to the correctness of the response is not given.
+Applies only if feedback is textual.</p></li>
+</ul>
+</section>
+<section id="notifications">
+<span id="id5"></span><h3>Notifications<a class="headerlink" href="#notifications" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Play End Message</strong> If checked, play a wav file at the end of the
+experiment. This could be short message to let the listeners know
+they have finished and thank them for their participation in the
+experiment. One or more wav files need to be set through the “Choose
+wav” button for this work.</p></li>
+<li><p><strong>Choose wav</strong> Choose the wav file to be played as the end message.
+Clicking on this button brings up another dialog where you can select
+the wav files to be played and their output RMS. Only one of the wav
+files listed here and with the “Use” flag set to will be randomly
+chosen and played.</p></li>
+<li><p><strong>blocks before end of experiment</strong> Set how many blocks before the
+end of the experiment the two actions listed below (send notification
+e-mail and execute custom command) should be performed.</p></li>
+<li><p><strong>Send notification e-mail</strong> If checked, send a notification e-mail
+to the experimenter to notify her that the experiment is about to
+finish.</p></li>
+<li><p><strong>Execute custom command</strong> If checked, execute an operating system
+command before the end of the experiment. This command could be used
+to automatically send an sms for example.</p></li>
+<li><p><strong>Send data via e-mail</strong> At the end of the experiment, send the
+results file to the experimenter .</p></li>
+<li><p><strong>Execute custom command</strong> At the end of the experiment, execute an
+operating system command.</p></li>
+<li><p><strong>Outgoing Server (SMTP)</strong> Set the name of the SMTP server to be used
+by <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> to send e-mails.</p></li>
+<li><p><strong>Port</strong> Set the port number for the SMTP server.</p></li>
+<li><p><strong>Security</strong> Set the security protocol for network exchanges with the
+SMTP server.</p></li>
+<li><p><strong>Server requires identification</strong> Check this if the SMTP server
+requires identification.</p></li>
+<li><p><strong>Username</strong> Set the username for the SMTP server.</p></li>
+<li><p><strong>Password</strong> Set the password for the SMTP server.</p></li>
+<li><p><strong>Send test e-mail</strong> Send a test e-mail to check that the server
+settings are OK.</p></li>
+</ul>
+</section>
+<section id="eeg">
+<span id="sec-edit-pref-dia-eeg"></span><h3>EEG<a class="headerlink" href="#eeg" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>ON Trigger</strong> The ON trigger value (decimal).</p></li>
+<li><p><strong>OFF Trigger</strong> The OFF trigger value (decimal).</p></li>
+<li><p><strong>Trigger Duration (ms)</strong> The duration of the trigger in
+milliseconds.</p></li>
+</ul>
+</section>
+</section>
+<section id="edit-phones-dialog">
+<span id="sec-edit-phones-dia"></span><h2>Edit Phones Dialog<a class="headerlink" href="#edit-phones-dialog" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p>A screenshot of the “Edit Phones” dialog is</p>
+</div></blockquote>
+<p>shown in Figure <a class="reference internal" href="#fig-phones-database"><span class="std std-ref">Edit Phones Dialog</span></a>.</p>
+<figure class="align-default" id="id8">
+<span id="fig-phones-database"></span><a class="reference internal image-reference" href="_images/phones_database.png"><img alt="Edit Phones Dialog" src="_images/phones_database.png" style="width: 578.25px; height: 288.75px;" /></a>
+<figcaption>
+<p><span class="caption-text">Edit Phones Dialog</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Most of the fields should be pretty much self-explanatory. Using this
+dialog you can add headphones/earphones models to the phones database.
+The phone with the “Default” flag set will be selected by default
+when <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> is started. In the “Max Level” field you should
+enter the level in dB SPL that is output by the phone for a full
+amplitude sinusoid (a sinusoid with a peak amplitude of 1).
+This value will be used by <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> to output sounds at specific
+levels in dB SPL. On the rightmost panel of
+the dialog you have facilities to play a sinusoid with a specified
+level. You can use these facilities to check with a SPL meter (or a
+voltmeter depending on how you’re doing it) that the actual output level
+corresponds to the desired output level. Using these facilities you can
+also play a full amplitude sinusoid: you need to set the level of the
+sinuoid to the “Max Level” of the phone in the dialog (whatever it is).
+Be careful because it can be very loud! More detailed instructions on
+the calibration procedure are provided below.</p>
+<section id="calibrating-with-an-spl-meter">
+<h3>Calibrating with an SPL meter<a class="headerlink" href="#calibrating-with-an-spl-meter" title="Permalink to this heading"></a></h3>
+<p>Open the “Edit Phones” dialog. Select the phone for which you want to calibrate and note its
+<code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> (by default this is set to 100 dB SPL). Use the rightmost panel to play
+a 1-kHz sinusoid at the <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> (e.g. 100 dB), and read the measurement on the SPL
+meter. Change the <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> for the phone to the measurement you just read on the SPL meter.</p>
+<p>You don’t actually need to play the sinusoid at the <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> (and it may be better not to do so
+because you may get distortions at very high levels). Instead, you could for example
+play it at a level equal to <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> - 20. The reading that you would obtain from the SPL meter
+would then be 20 dB below the <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code>. You would then simply add 20 to the SPL meter reading
+and set <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> to this value.</p>
+</section>
+<section id="calibrating-with-a-voltmeter">
+<h3>Calibrating with a voltmeter<a class="headerlink" href="#calibrating-with-a-voltmeter" title="Permalink to this heading"></a></h3>
+<p>Open the “Edit Phones” dialog. Select the phone for which you want to calibrate and note its
+<code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> (by default this is set to 100 dB SPL). Use the rightmost panel to play
+a 1-kHz sinusoid at the <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> (e.g. 100 dB), and note the RMS voltage reading from
+a voltmeter connected to a cable receiving input from the soundcard.
+Manufacturers of professional phones usually provide datasheets indicating
+what is the dB SPL level output by the phone when it is driven by a 1-volt <sub>RMS</sub>
+sinusoid at 1 kHz. You can use this figure to calculate what the dB SPL output is for the
+1-kHz sinusoid. Suppose that the dB SPL output for a 1-volt <sub>RMS</sub> sinusoid at 1 kHz
+is <span class="math notranslate nohighlight">\(L_r\)</span>, and the voltage output for the sinusoid played at <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> is <span class="math notranslate nohighlight">\(V_x\)</span>,
+the dB SPL output for the sinusoid (<span class="math notranslate nohighlight">\(L_x\)</span>) will be:</p>
+<div class="math notranslate nohighlight">
+\[L_x = L_r + 20 log10(V_x)\]</div>
+<p>if the reference RMS voltage in the datasheet is not 1 but some other value <span class="math notranslate nohighlight">\(V_r\)</span>,
+<span class="math notranslate nohighlight">\(L_x\)</span> can be calculated as:</p>
+<div class="math notranslate nohighlight">
+\[L_x = L_r + 20 log10(V_x/V_r)\]</div>
+<p>Finally, set the <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> for the phone you’re calibrating to <span class="math notranslate nohighlight">\(L_x\)</span>. As for the SPL meter calibration
+you do not actually need to play the sinusoid at the <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> (and it may be better not to do so
+because you may get distortions at very high levels). Instead, you could for example
+play it at a level equal to <code class="docutils literal notranslate"><span class="pre">MaxLevel</span></code> - 20. You would then add back the 20 dBs in the equation to
+compute <span class="math notranslate nohighlight">\(L_x\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[L_x = L_r + 20 log10(V_x) + 20\]</div>
+</section>
+</section>
+<section id="edit-experimenters-dialog">
+<span id="sec-edit-experimenters-dia"></span><h2>Edit Experimenters Dialog<a class="headerlink" href="#edit-experimenters-dialog" title="Permalink to this heading"></a></h2>
+<p>A screenshot of the “Edit Experimenters” dialog is shown
+in Figure <a class="reference internal" href="#fig-experimenter-database"><span class="std std-ref">Edit Experimenters Dialog</span></a>.</p>
+<figure class="align-default" id="id9">
+<span id="fig-experimenter-database"></span><a class="reference internal image-reference" href="_images/experimenter_database.png"><img alt="Edit Experimenters Dialog" src="_images/experimenter_database.png" style="width: 357.0px; height: 249.75px;" /></a>
+<figcaption>
+<p><span class="caption-text">Edit Experimenters Dialog</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Most of the fields should be pretty much self-explanatory. Here you can
+add the details of the experimenters that work in your lab in the
+experimenter database. The main functions of this database at the moment
+are a) writing the experimenter name in the results file; b) using the
+experimenter e-mail for sending notifications and/or results files (see
+Section <span class="xref std std-ref">sec-edit_pref_dia_notifications</span>).</p>
+</section>
+<section id="the-response-box">
+<h2>The Response Box<a class="headerlink" href="#the-response-box" title="Permalink to this heading"></a></h2>
+<p>The “response box” consists of a large button (the “status button”) that
+is used to start a block of trials, a feedback light to display trial by
+trial feedback, interval lights to mark observation intervals, and
+response buttons. The responses can be given either by means of mouse
+clicks, or using the numeric keypad (key “1” for the first button, key
+“2” for the second button etc…). Responses given before all observation
+intervals have been presented are not accepted.</p>
+<p>The status button can be activated by pressing the <code class="docutils literal notranslate"><span class="pre">Ctrl+R</span></code> shortcut.
+At the start of each block the label of the “Status Button” is set to
+“Start”. Once the listener starts a block of trials the label of the
+status button changes to “Running”. When a whole series of blocks is
+finished the label of the status button changes to “Finish”. If no
+blocks are stored in memory the label of the status button is set to
+“Wait”.</p>
+<p>On the top left corner of the response box there is a semi-hidden menu
+signalled by a little hyphen (“-”). If you click on it you have access
+to two functions. The “Show/Hide Control Window” function can be used to
+hide the control window while the experiment is running. This is useful
+because it prevents the listener from accidentally changing your
+experimental parameters or accidentally closing <code class="docutils literal notranslate"><span class="pre">pychoacoustics</span></code> (the
+response box itself has no “close” button, so it is not possible to
+close that). The “Show/Hide progress Bar” function can be used to
+display a progress bar at the bottom of the response box. The progress
+bar estimates what percentage of the experiment has been completed. This
+estimate depends on the procedure used (for constant procedures it is
+based on the number of trials done, while for adaptive procedures it is
+based on the number of turnpoints reached) and on the specific
+parameters of a given experiment (trial duration, number of trials, or
+number or turnpoints, all of which can differ between blocks), so in
+some cases the estimate can be off the mark. The “Show/Hide block
+progress Bar” can be used to show the position of the current block and
+the total number of blocks.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="commandline_user_interface.html" class="btn btn-neutral float-right" title="Command Line User Interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2008-2024, Samuele Carcagno.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

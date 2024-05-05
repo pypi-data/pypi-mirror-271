@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: calltrack
+Version: 0.0.3
+Summary: 
+Author: WILLIAM PONS
+Author-email: wmpons.pro@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest (>=8.2.0,<9.0.0)
+Requires-Dist: pytest-mock (>=3.14.0,<4.0.0)
+Requires-Dist: setuptools (>=69.5.1,<70.0.0)
+Description-Content-Type: text/markdown
+
+Use: 
+
+```py
+from calltrack import jsonlog
+
+@jsonlog
+def f(x: int) -> int:
+    return x
+
+if __name__ == '__main__':
+    for i in range(10):
+        f(i)
+```
+
+This will save a single JSON file containing all the calls to `f` with some details, in a `logs` directory.

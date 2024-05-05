@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+request_tea_ok.egg-info/PKG-INFO
+request_tea_ok.egg-info/SOURCES.txt
+request_tea_ok.egg-info/dependency_links.txt
+request_tea_ok.egg-info/entry_points.txt
+request_tea_ok.egg-info/requires.txt
+request_tea_ok.egg-info/top_level.txt

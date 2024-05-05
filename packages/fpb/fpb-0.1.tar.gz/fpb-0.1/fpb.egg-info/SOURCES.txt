@@ -1,0 +1,8 @@
+setup.py
+fingerprint_browser/__init__.py
+fingerprint_browser/hubstudio.py
+fpb.egg-info/PKG-INFO
+fpb.egg-info/SOURCES.txt
+fpb.egg-info/dependency_links.txt
+fpb.egg-info/requires.txt
+fpb.egg-info/top_level.txt

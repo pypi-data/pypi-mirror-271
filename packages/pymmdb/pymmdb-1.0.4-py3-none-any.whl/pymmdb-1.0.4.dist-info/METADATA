@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pymmdb
+Version: 1.0.4
+Summary: scMMDB interface for python
+Home-page: https://mmdb.piaqia.com/
+Author: Jiawei Li
+Author-email: ljwstruggle@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: urllib3
+Requires-Dist: tqdm
+Requires-Dist: scanpy
+Requires-Dist: anndata
+

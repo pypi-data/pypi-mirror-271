@@ -1,0 +1,8 @@
+mbutil
+requests
+
+[Mapnik]
+Mapnik>=2.0.0
+
+[PIL]
+Pillow

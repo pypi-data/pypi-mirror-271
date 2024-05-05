@@ -1,0 +1,7 @@
+colorama
+command
+gradle
+java
+minecraft
+mint
+shulkr

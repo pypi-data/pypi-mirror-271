@@ -1,0 +1,2 @@
+[gui_scripts]
+HDFCompass = hdf_compass.compass_viewer.viewer:run

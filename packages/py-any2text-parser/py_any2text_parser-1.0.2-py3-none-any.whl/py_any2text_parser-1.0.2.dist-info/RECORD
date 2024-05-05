@@ -1,0 +1,10 @@
+py_any2text_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_any2text_parser/pdf2text.py,sha256=nVEKnBWIshq-KdRlQbz2qdwrwySJYhbvR2B-74q4chY,2037
+py_any2text_parser/include/pdfcoordhelper.py,sha256=qGdXqeQpk_hI0nk9NhPiYAP5akdb45KhVbMGDDCD3x8,4364
+py_any2text_parser/include/pdfpagehelper.py,sha256=11KXROvJ3bun2W4wqIbouQJcSlE3xgN9mLHJBeXMEIc,2898
+py_any2text_parser/include/pdftablehelper.py,sha256=WId6aelOj_MndOGGt-m6ktriO_V32Ohv7MQS4b8eiKs,10386
+py_any2text_parser/include/pdfunstructuredhelper.py,sha256=KFicWMcWIAy5QTnSLxOJpNLSO_iwHIP-TXoD863PpSc,10656
+py_any2text_parser-1.0.2.dist-info/METADATA,sha256=6MRZyXSyakHJF1QuKW3cJ34cGnv1fxSULTv8ZA4absI,1419
+py_any2text_parser-1.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+py_any2text_parser-1.0.2.dist-info/top_level.txt,sha256=NhkSDGtdRYwwI62h50xD3S6A7SIiQm1sMC_QEtqa9yk,19
+py_any2text_parser-1.0.2.dist-info/RECORD,,

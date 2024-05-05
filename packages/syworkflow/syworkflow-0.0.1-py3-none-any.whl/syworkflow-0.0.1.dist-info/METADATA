@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: syworkflow
+Version: 0.0.1
+Summary: A small python workflow scheduler
+Project-URL: Homepage, https://github.com/siyuany/sy-workflow
+Project-URL: Issues, https://github.com/siyuany/sy-workflow/issues
+Author-email: Yao Siyuan <siyuan89@163.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# sy-workflow
+Python workflow scheduler

@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: mtg_scryfall_api
+Version: 0.1.0
+Summary: A wrapper for the Scryfall REST API providing common queries
+Author: Samuel Shiels
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12.2
+Description-Content-Type: text/markdown
+
+# MTG-Scryfall-API

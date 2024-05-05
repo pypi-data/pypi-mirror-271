@@ -1,0 +1,229 @@
+Metadata-Version: 2.1
+Name: nbtof
+Version: 0.0.7
+Summary: nbtof: transfering notebook to function
+Home-page: https://github.com/Nodaka/nbtof
+Download-URL: https://github.com/Nodaka/nbtof
+Author: Haruka Nodaka
+Author-email: haruka.nodaka@gmail.com
+Maintainer: Haruka Nodaka
+Maintainer-email: haruka.nodaka@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Framework :: Jupyter
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nbtof <!-- omit in toc -->
+
+This module is used to convert .ipynb file to .py function.  
+
+- [Intoroduction](#intoroduction)
+- [Installation](#installation)
+- [Documantation](#documantation)
+  - [Marks list](#marks-list)
+  - [Details about marks](#details-about-marks)
+    - [#@param](#param)
+    - [#@default](#default)
+    - [#@default](#default-1)
+    - [#@args](#args)
+    - [#@kwargs](#kwargs)
+    - [#@return](#return)
+    - [#@ignore](#ignore)
+    - [#@help](#help)
+    - [#@advance](#advance)
+    - [#@r\_advance](#r_advance)
+
+
+
+## Intoroduction
+
+Only by writing the `#@~` marks in Jupyter Notebook file, you can easily convert Jupyter Notebook file to the python source file with the function which perform the same process as the Jupyter Notebook file. For example, in the case that you want to convert `sample.ipynb` to function,
+
+  
+**sample.ipynb**
+
+```python
+#@param
+a = 1
+b = 1
+```
+```python
+c = a + b
+```
+```python
+#@return
+c
+```
+  
+you can get `output.py` by executing the next code.
+
+```python
+import nbtof
+
+nbtof.nbtof_generate(
+    notebook_name='sample.ipynb',
+    func_py_name='sample_output.py',
+    )
+```
+
+**sample_output.py**
+
+```python
+def sample(a, b):
+    c = a + b
+    return c
+```
+
+
+## Installation
+The latest nbtof can be installed from PyPI:  
+
+```
+pip install nbtof
+```
+
+
+## Documantation
+
+### Marks list
+
+| Mark | Description |
+| ---- | ---- |
+| `#@param` | Variable names in the cell become function's argument names. The values assigned at the Jupyter Notebook is ignored. |
+| `#@default` | Variable names in the cell become function's argument names. The values assigned at the Jupyter Notebook get default values. |
+| `#@args` | Variable names in the cell become function's variable length argument *args names. The values assigned at the notebook is ignored. |
+| `#@kwargs` | Variable names in the cell become function's variable length argument **kwargs names. The values assigned at the notebook is ignored. |
+| `#@return` | The line after this mark become function's return value |
+| `#@ignore` | Anything in the cell is ignored. |
+| `#@help` | What you write in the cell becomes function's docstring. Please write it in quotation marks. |
+| `#@advance` | What you write in the cell is written before the function declaration as it is. (e.g., imports) |
+| `#@r_advance` | The comment line with `#` in the cell is written with the `#` removed before the function declaration. (e.g., relative imports) | 
+
+### Details about marks
+
+#### #@param
+
+The Jupyter Notebook
+
+**sample_param.ipynb**
+```python
+#@param
+a = 0
+```
+```python
+print("Hello World !")
+```
+
+is converted into
+
+
+```python
+
+def sample_param(a):
+    print('Hello world !')
+
+```
+
+#### #@default
+
+The Jupyter Notebook
+
+**sample_default.ipynb**
+```python
+#@default
+a = 0
+```
+```python
+print("Hello World !")
+```
+
+is converted into
+
+
+```python
+
+def sample_default(a=0):
+    print('Hello world !')
+
+```
+
+#### #@default
+
+The Jupyter Notebook
+
+**sample_default.ipynb**
+```python
+#@default
+a = 0
+```
+```python
+print("Hello World !")
+```
+
+is converted into
+
+
+```python
+
+def sample_default(a=0):
+    print('Hello world !')
+
+```
+
+#### #@args
+
+**sample_args.ipynb**
+```python
+#@args
+a = 0
+```
+```python
+print("Hello World !")
+```
+
+is converted into
+
+
+```python
+
+def sample_args(*a):
+    print('Hello world !')
+
+```
+
+
+#### #@kwargs
+
+**sample_kwargs.ipynb**
+```python
+#@kwargs
+a = 0
+```
+```python
+print("Hello World !")
+```
+
+is converted into
+
+
+```python
+
+def sample_kwargs(**a):
+    print('Hello world !')
+
+```
+
+
+#### #@return
+
+
+
+#### #@ignore
+#### #@help
+#### #@advance
+#### #@r_advance

@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nbtof/__init__.py
+nbtof/nbtof_base.py
+nbtof/nbtof_concat.py
+nbtof/nbtof_generate.py
+nbtof.egg-info/PKG-INFO
+nbtof.egg-info/SOURCES.txt
+nbtof.egg-info/dependency_links.txt
+nbtof.egg-info/top_level.txt

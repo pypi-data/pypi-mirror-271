@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: blankslate-python
+Version: 1.2.0
+Summary: A blank slate for Python projects
+Home-page: https://github.com/unkokaeru/blankslate
+License: MIT
+Author: William Fayers
+Author-email: wills@fayers.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: dev
+Provides-Extra: devlint
+Provides-Extra: docs
+Provides-Extra: lint
+Provides-Extra: release
+Provides-Extra: test
+Provides-Extra: types
+Requires-Dist: Jinja2 (>=3.0.0,<4.0.0)
+Requires-Dist: rich (>=12.0.0,<13.0.0)
+Project-URL: Repository, https://github.com/unkokaeru/blankslate
+Description-Content-Type: text/markdown
+
+# Blankslate
+
+![Continuous Integration (CI) Tests](https://github.com/unkokaeru/blankslate/actions/workflows/continuous_integration.yml/badge.svg)
+
+Blankslate automates the creation of Python projects, ensuring that every detail adheres to the best practices of Python development. It leverages GitHub Actions, NumPy docstrings, and a well-organised directory structure to deliver a ready-to-deploy project scaffold.
+
+## Installation
+
+To install Blankslate, simply run:
+
+```bash
+pip install blankslate-python
+```
+
+## Getting Started
+
+After installation, you can create a new project by executing:
+
+```bash
+blankslate-python
+```
+
+Follow the prompts to specify your project details. Blankslate will create the project in your designated directory. You can then push this project to GitHub and start programming in the `source/PROJECT_NAME/` directory.
+
+## Features
+
+- **Automatic Project Structure Creation**: Sets up a GitHub-ready Python project with best practices.
+- **Semantic Versioning**: Use the script `./scripts/release.sh VERSION_NUMBER` to auto-version and generate a changelog. Ensure `VERSION_NUMBER` follows [semantic versioning](https://semver.org). Note that this will automatically build and publish the project to PyPi, too.
+- **Commit Style**: Commits should follow the [Angular commit style](https://gist.github.com/brianclements/841ea7bffdb01346392c#commit-message-header).
+- **Documentation**: Automatically generates and pushes documentation to GitHub pages. Make sure your GitHub repository is configured under `Settings -> Pages`.
+- **TODO to GitHub Issues**: Converts `# TODO` comments in your Python code into GitHub issues. Configure this in `Settings -> Actions (General) -> Workflow permissions` and enable "Read and write permissions".
+
+## Extensions
+
+Enhance your Blankslate experience with the [Blankslate Extension Pack](https://marketplace.visualstudio.com/items?itemName=unkokaeru.blankslate-extension-pack) for [VS Code](https://code.visualstudio.com/download).
+
+## Contributing
+
+Contributions are welcome! Please refer to our `CONTRIBUTING.md` for more information.
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.

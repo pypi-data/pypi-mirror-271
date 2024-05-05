@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aimesh/__init__.py
+aimesh/core.py
+aimesh.egg-info/PKG-INFO
+aimesh.egg-info/SOURCES.txt
+aimesh.egg-info/dependency_links.txt
+aimesh.egg-info/requires.txt
+aimesh.egg-info/top_level.txt

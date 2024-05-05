@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "cccodes"
+version = "0.1.0"
+description = "Coupon codes algorithm"
+authors = ["birlorg"]
+license = "BSD 2-Clause License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^8.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest-ruff = "^0.3.1"
+
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+docstring-code-format = true

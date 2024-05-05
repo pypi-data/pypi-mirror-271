@@ -1,0 +1,9 @@
+drf_events/__init__.py,sha256=njcVgWBU8sU1NxC2fzGY2zFXhLsjxMX2_Yy6nTno_iU,80
+drf_events/event_handlers/__init__.py,sha256=CzCOSjX_hHa91BUs6T9qhqwuQIExcGynWABdv3Jr_R4,926
+drf_events/event_handlers/aws.py,sha256=rc0DJ-hlyDW6APlURHmlTS3usgoxSpvATGR74Mr0kxo,5732
+drf_events/event_handlers/log.py,sha256=WzoKhXDupGVvvgqOz4JKqRlaly7tVQ1twXd2hSfgkig,716
+drf_events/exceptions.py,sha256=Renby8BxY1f53DVmHgwBnBO9XDIoDZ5tSlOdC7lkl2s,104
+drf_events/mixins.py,sha256=XnkDuJGGlJU0AQU2i7TXZOrVTGK_LvkfmR5thUkhJmg,3570
+drf_events-0.1.1a7.dist-info/METADATA,sha256=LY8jEKB8Of3qEEzpUQGNJxXv0lPz7e7Kd8omVpnj0mo,647
+drf_events-0.1.1a7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+drf_events-0.1.1a7.dist-info/RECORD,,

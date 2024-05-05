@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: drf-events
+Version: 0.1.1a7
+Summary: Package for emitting DRF events
+License: MIT
+Author: Cloud9 Development
+Author-email: dev@cloud9.sh
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: aws
+Requires-Dist: Django (>=5.0.4,<6.0.0)
+Requires-Dist: djangorestframework (>=3.15.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+Make sphinx docs
+```bash
+cd docs
+make html
+```
+

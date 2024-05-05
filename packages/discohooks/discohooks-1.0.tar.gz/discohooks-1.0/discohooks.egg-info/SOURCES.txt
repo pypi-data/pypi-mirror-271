@@ -1,0 +1,7 @@
+README.md
+setup.py
+discohooks.egg-info/PKG-INFO
+discohooks.egg-info/SOURCES.txt
+discohooks.egg-info/dependency_links.txt
+discohooks.egg-info/requires.txt
+discohooks.egg-info/top_level.txt

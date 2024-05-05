@@ -1,0 +1,7 @@
+setup.py
+instatest/__init__.py
+instatest/main.py
+instatest.egg-info/PKG-INFO
+instatest.egg-info/SOURCES.txt
+instatest.egg-info/dependency_links.txt
+instatest.egg-info/top_level.txt

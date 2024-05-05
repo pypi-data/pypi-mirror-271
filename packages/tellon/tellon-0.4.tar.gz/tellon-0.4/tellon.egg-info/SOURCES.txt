@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+tellon/__init__.py
+tellon.egg-info/PKG-INFO
+tellon.egg-info/SOURCES.txt
+tellon.egg-info/dependency_links.txt
+tellon.egg-info/requires.txt
+tellon.egg-info/top_level.txt

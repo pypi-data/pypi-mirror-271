@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tellon
+Version: 0.4
+Summary: Hi ! By This Lib You Can Use Tellonym Tools And APIs ,
+Author: Ali-Mahmoud-Fadhil
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: cloudscraper

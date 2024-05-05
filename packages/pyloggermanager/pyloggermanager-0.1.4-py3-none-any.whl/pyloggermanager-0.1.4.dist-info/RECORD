@@ -1,0 +1,13 @@
+pyloggermanager/__init__.py,sha256=GI6iVRyrh0B81TIwHMaAbXsn2J7R-cz7aG7ZDIHn7aM,2238
+pyloggermanager/__main__.py,sha256=vXwmXNQHu9-yTBLhPxs1DY02XI6dI4UDGU4zL4ueBsY,86923
+pyloggermanager/formatters/__init__.py,sha256=L9GHzxkUHF_wkIIzNNYIFQnq2O1ngXQ672ynB1hR4aY,1287
+pyloggermanager/formatters/__main__.py,sha256=B8Y9O-hapXpkQPuO-_HzciTg7iGYceSKU_t3lXcAVK4,13717
+pyloggermanager/handlers/__init__.py,sha256=yuwSKoswuFsJuD1fTd-40kKFDpkGl_Kc2DI1K4iC31g,1200
+pyloggermanager/handlers/__main__.py,sha256=FhUVEQM5-sp-6H7xHHHENvrA4YzkwSLaqw0AGlqo9MU,19281
+pyloggermanager/streams/__init__.py,sha256=Iw_CSn7pWt0s76rw_GhGbgEL4acKSh_7u89BNJQoyuI,1321
+pyloggermanager/streams/__main__.py,sha256=SlYG1Vpj_oQiVPGz2rWQpNP20Lv_TlFQlTJ7-ZjRX98,3223
+pyloggermanager-0.1.4.dist-info/LICENSE,sha256=QDd-5ssO5cRVguOaD889uNuqyZlNg2DQS6VjttE-8Dk,1069
+pyloggermanager-0.1.4.dist-info/METADATA,sha256=BZmoKvZY17ztlE9fVWLK088Cu5zMa7GZN0r2rR56vjI,44916
+pyloggermanager-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyloggermanager-0.1.4.dist-info/top_level.txt,sha256=427AjoG4-piQ3UJzKdLsUN7od0ylEYhotMppwna1-sQ,16
+pyloggermanager-0.1.4.dist-info/RECORD,,

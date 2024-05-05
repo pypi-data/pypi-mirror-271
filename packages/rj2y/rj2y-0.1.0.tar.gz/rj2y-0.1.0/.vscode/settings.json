@@ -1,0 +1,6 @@
+{
+  "ruff.path": [ "rye", "run", "ruff" ],
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  }
+}

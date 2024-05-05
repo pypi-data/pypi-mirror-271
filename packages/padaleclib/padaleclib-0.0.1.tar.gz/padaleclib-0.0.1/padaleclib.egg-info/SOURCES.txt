@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+padaleclib/__init__.py
+padaleclib/collectionsutils.py
+padaleclib/inpututils.py
+padaleclib.egg-info/PKG-INFO
+padaleclib.egg-info/SOURCES.txt
+padaleclib.egg-info/dependency_links.txt
+padaleclib.egg-info/top_level.txt

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+<record id="marketing_commission_item_view_search" model="ir.ui.view">
+    <field name="name">marketing_commission_item - search</field>
+    <field name="model">marketing_commission_item</field>
+    <field
+            name="inherit_id"
+            ref="ssi_master_data_mixin.mixin_master_data_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="marketing_commission_item_view_tree" model="ir.ui.view">
+    <field name="name">marketing_commission_item - tree</field>
+    <field name="model">marketing_commission_item</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_tree" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="marketing_commission_item_view_form" model="ir.ui.view">
+    <field name="name">marketing_commission_item - form</field>
+    <field name="model">marketing_commission_item</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_form" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='active']" position="after">
+                <field name="product_id" />
+                <field name="usage_id" />
+            </xpath>
+            <xpath expr="//page[1]" position="before">
+                <page name="account" string="Journal Items">
+                </page>
+                <page name="computation" string="Computation">
+                    <field name="computation_python_code" widget="ace" />
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="marketing_commission_item_action" model="ir.actions.act_window">
+    <field name="name">Commission Items</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">marketing_commission_item</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="marketing_commission_item_menu"
+        name="Items"
+        parent="menu_marketing_commission_configuration"
+        action="marketing_commission_item_action"
+        groups="marketing_commission_item_group"
+        sequence="120"
+    />
+
+</odoo>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+<record id="commission_view_search" model="ir.ui.view">
+    <field name="name">commission - search</field>
+    <field name="model">commission</field>
+    <field
+            name="inherit_id"
+            ref="ssi_transaction_mixin.mixin_transaction_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+        </data>
+    </field>
+</record>
+
+<record id="commission_view_tree" model="ir.ui.view">
+    <field name="name">commission - tree</field>
+    <field name="model">commission</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_tree" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="salesperson_id" widget="many2one_avatar" />
+                <field name="date" />
+                <field name="date_due" optional="show" />
+                <field name="type_id" />
+                <field name="currency_id" invisible="1" />
+                <field name="date_start" optional="show" />
+                <field name="date_end" optional="show" />
+                <field
+                        name="amount_untaxed"
+                        string="Untaxed"
+                        sum="Total Untaxed"
+                        optional="hide"
+                    />
+                <field name="amount_tax" string="Tax" sum="Total Tax" optional="hide" />
+                <field name="amount_total" string="Total" sum="Total" optional="show" />
+                <field
+                        name="amount_realized"
+                        string="Realized"
+                        sum="Total Realized"
+                        optional="hide"
+                    />
+                <field
+                        name="amount_residual"
+                        string="Realized"
+                        sum="Total Realized"
+                        optional="show"
+                    />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="commission_view_form" model="ir.ui.view">
+    <field name="name">commission - form</field>
+    <field name="model">commission</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_form" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="company_currency_id" invisible="1" />
+                <field name="type_id" />
+                <field
+                        name="allowed_currency_ids"
+                        widget="many2many_tags"
+                        invisible="1"
+                    />
+                <field name="currency_id" domain="[('id','in',allowed_currency_ids)]" />
+                <field
+                        name="allowed_salesperson_ids"
+                        widget="many2many_tags"
+                        invisible="1"
+                    />
+                <field
+                        name="salesperson_id"
+                        widget="many2one_avatar"
+                        domain="[('id','in',allowed_salesperson_ids)]"
+                    />
+                <field name="partner_id" invisible="1" />
+                <field
+                        name="all_salesperson_ids"
+                        widget="many2many_tags"
+                        invisible="1"
+                    />
+            </xpath>
+            <xpath expr="//group[@name='header_right']" position="inside">
+                <field name="date" />
+                <field name="duration_id" />
+                <field name="date_due" />
+                <field name="date_start" />
+                <field name="date_end" />
+            </xpath>
+            <xpath expr="//group[@name='footer_left']" position="inside">
+                <field name="amount_untaxed" string="Untaxed" />
+                <field name="amount_tax" string="Tax" />
+                <field name="amount_total" string="Total" />
+                <field name="amount_realized" string="Realized" />
+                <field name="amount_residual" string="Residual" />
+            </xpath>
+            <xpath expr="//page[1]" position="before">
+                <page name="detail" string="Detail">
+                    <button
+                            name="action_compute"
+                            string="Compute"
+                            type="object"
+                            class="oe_highlight"
+                            icon="fa-gear"
+                            attrs="{'invisible':[('state','!=','draft')]}"
+                        />
+                    <field name="detail_ids">
+                        <tree editable="top">
+                            <field name="pricelist_id" invisible="1" />
+                            <field name="product_id" invisible="1" />
+                            <field name="computation_item_id" invisible="1" />
+                            <field name="item_id" />
+                            <field name="currency_id" invisible="1" />
+                            <field name="name" invisible="1" />
+                            <field name="usage_id" invisible="1" />
+                            <field name="account_id" />
+                            <field name="analytic_account_id" />
+                            <field name="uom_quantity" string="Qty." />
+                            <field
+                                    name="allowed_uom_ids"
+                                    widget="many2many_tags"
+                                    invisible="1"
+                                />
+                            <field
+                                    name="uom_id"
+                                    domain="[('id','in',allowed_uom_ids)]"
+                                />
+                            <field name="price_unit" />
+                            <field name="price_subtotal" string="Subtotal" />
+                        </tree>
+                        <form>
+                            <group name="detail_1" colspan="4" col="2">
+                                <group name="detail_1_1" colspan="1" col="2">
+                                    <field name="product_id" invisible="1" />
+                                    <field name="name" invisible="1" />
+                                    <field name="item_id" />
+                                    <field
+                                            name="allowed_usage_ids"
+                                            widget="many2many_tags"
+                                            invisible="1"
+                                        />
+                                    <field
+                                            name="usage_id"
+                                            domain="[('id', 'in', allowed_usage_ids)]"
+                                        />
+                                    <field name="account_id" />
+                                    <field name="analytic_account_id" />
+                                </group>
+                                <group name="detail_1_2" colspan="1" col="2">
+                                    <label for="uom_quantity" string="Quantity" />
+                                    <div class="o_row">
+                                        <field name="uom_quantity" class="oe_inline" />
+                                        <field
+                                                name="uom_id"
+                                                domain="[('id','in',allowed_uom_ids)]"
+                                                attrs="{'required':[('product_id','!=',False)]}"
+                                                class="oe_inline"
+                                            />
+                                    </div>
+                                    <field name="quantity" invisible="1" />
+                                    <field name="currency_id" force_save="1" />
+                                    <field name="pricelist_id" invisible="1" />
+                                    <field name="price_unit" />
+                                    <field
+                                            name="allowed_uom_ids"
+                                            widget="many2many_tags"
+                                            invisible="1"
+                                        />
+                                    <field name="tax_ids" widget="many2many_tags" />
+                                    <field name="price_subtotal" />
+                                    <field name="price_tax" />
+                                    <div
+                                            class="oe_subtotal_footer_separator oe_inline o_td_label"
+                                        >
+                                        <label for="price_total" />
+                                    </div>
+                                    <field
+                                            name="price_total"
+                                            nolabel="1"
+                                            class="oe_subtotal_footer_separator"
+                                        />
+                                </group>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+                <page name="computation_item" string="Computation Item">
+                    <field name="item_ids">
+                        <tree>
+                            <field name="sequence" widget="handle" />
+                            <field name="item_id" />
+                        </tree>
+                        <form>
+                            <group name="item_1" colspan="4" col="2">
+                                <group name="item_1_1" colspan="1" col="2">
+                                    <field name="sequence" />
+                                    <field name="item_id" />
+                                </group>
+                                <group name="item_1_2" colspan="1" col="2">
+                                    <field
+                                            name="allowed_account_ids"
+                                            widget="many2many_tags"
+                                            invisible="1"
+                                        />
+                                    <field
+                                            name="allowed_journal_ids"
+                                            widget="many2many_tags"
+                                            invisible="1"
+                                        />
+                                    <field
+                                            name="allowed_currency_ids"
+                                            widget="many2many_tags"
+                                            invisible="1"
+                                        />
+                                    <field
+                                            name="analytic_account_ids"
+                                            widget="many2many_tags"
+                                        />
+                                </group>
+                            </group>
+                            <field name="move_line_ids" />
+                        </form>
+                    </field>
+                </page>
+                <page name="accounting" string="Accounting">
+                    <group name="accounting_1" colspan="4" col="2">
+                        <group name="accounting_1_1" colspan="1" col="2">
+                            <field name="journal_id" />
+                            <field name="account_id" />
+                        </group>
+                        <group name="accounting_1_2" colspan="1" col="2">
+                            <field name="move_id" />
+                            <field name="move_line_id" />
+                            <field name="realized" />
+                        </group>
+                    </group>
+                    <field name="tax_ids">
+                        <tree editable="top">
+                            <field name="tax_id" />
+                            <field name="name" />
+                            <field name="currency_id" invisible="True" />
+                            <field name="account_id" />
+                            <field name="analytic_account_id" />
+                            <field name="manual" invisible="True" />
+                            <field name="base_amount" />
+                            <field name="tax_amount" />
+                        </tree>
+                        <form>
+                            <group name="tax" colspan="4" col="2">
+                                <field name="tax_id" />
+                                <field name="currency_id" invisible="True" />
+                                <field name="account_id" />
+                                <field name="analytic_account_id" />
+                                <field name="manual" invisible="True" />
+                                <field name="base_amount" />
+                                <field name="tax_amount" />
+                                <field name="account_move_line_id" />
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="commission_action" model="ir.actions.act_window">
+    <field name="name">Sales Commissions</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">commission</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="commission_menu"
+        name="Commission"
+        parent="menu_root_sales_commission"
+        action="commission_action"
+        groups="commission_viewer_group"
+        sequence="110"
+    />
+
+</odoo>

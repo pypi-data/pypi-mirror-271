@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+<!-- Configurator -->
+<record id="commission_type_group" model="res.groups">
+    <field name="name">Sales Commission Type</field>
+    <field
+            name="category_id"
+            ref="commission_management_configurator_module_category"
+        />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+
+<record id="commission_item_group" model="res.groups">
+    <field name="name">Sales Commission Item</field>
+    <field
+            name="category_id"
+            ref="commission_management_configurator_module_category"
+        />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+
+<record id="marketing_commission_item_group" model="res.groups">
+    <field name="name">Marketing Commission Item</field>
+    <field
+            name="category_id"
+            ref="commission_management_configurator_module_category"
+        />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+
+<record id="marketing_commission_type_group" model="res.groups">
+    <field name="name">Marketing Commission Type</field>
+    <field
+            name="category_id"
+            ref="commission_management_configurator_module_category"
+        />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+
+<!-- Commission: Workflow -->
+<record id="commission_viewer_group" model="res.groups">
+    <field name="name">Viewer</field>
+    <field name="category_id" ref="commission_module_category" />
+</record>
+
+<record id="commission_user_group" model="res.groups">
+    <field name="name">User</field>
+    <field name="category_id" ref="commission_module_category" />
+    <field name="implied_ids" eval="[(4, ref('commission_viewer_group'))]" />
+</record>
+
+<record id="commission_validator_group" model="res.groups">
+    <field name="name">Validator</field>
+    <field name="category_id" ref="commission_module_category" />
+    <field name="implied_ids" eval="[(4, ref('commission_user_group'))]" />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+
+<!-- Commission: Data Ownership -->
+<record id="commission_company_group" model="res.groups">
+    <field name="name">Company</field>
+    <field name="category_id" ref="commission_data_ownership_module_category" />
+</record>
+
+<record id="commission_company_child_group" model="res.groups">
+    <field name="name">Company and All Child Companies</field>
+    <field name="category_id" ref="commission_data_ownership_module_category" />
+    <field name="implied_ids" eval="[(4, ref('commission_company_group'))]" />
+</record>
+
+<record id="commission_all_group" model="res.groups">
+    <field name="name">All</field>
+    <field name="category_id" ref="commission_data_ownership_module_category" />
+    <field name="implied_ids" eval="[(4, ref('commission_company_child_group'))]" />
+</record>
+
+<!-- Commission: Workflow -->
+<record id="marketing_commission_viewer_group" model="res.groups">
+    <field name="name">Viewer</field>
+    <field name="category_id" ref="marketing_commission_module_category" />
+</record>
+
+<record id="marketing_commission_user_group" model="res.groups">
+    <field name="name">User</field>
+    <field name="category_id" ref="marketing_commission_module_category" />
+    <field name="implied_ids" eval="[(4, ref('marketing_commission_viewer_group'))]" />
+</record>
+
+<record id="marketing_commission_validator_group" model="res.groups">
+    <field name="name">Validator</field>
+    <field name="category_id" ref="marketing_commission_module_category" />
+    <field name="implied_ids" eval="[(4, ref('marketing_commission_user_group'))]" />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+
+<!-- Commission: Data Ownership -->
+<record id="marketing_commission_company_group" model="res.groups">
+    <field name="name">Company</field>
+    <field
+            name="category_id"
+            ref="marketing_commission_data_ownership_module_category"
+        />
+</record>
+
+<record id="marketing_commission_company_child_group" model="res.groups">
+    <field name="name">Company and All Child Companies</field>
+    <field
+            name="category_id"
+            ref="marketing_commission_data_ownership_module_category"
+        />
+    <field name="implied_ids" eval="[(4, ref('marketing_commission_company_group'))]" />
+</record>
+
+<record id="marketing_commission_all_group" model="res.groups">
+    <field name="name">All</field>
+    <field
+            name="category_id"
+            ref="marketing_commission_data_ownership_module_category"
+        />
+    <field
+            name="implied_ids"
+            eval="[(4, ref('marketing_commission_company_child_group'))]"
+        />
+</record>
+</odoo>

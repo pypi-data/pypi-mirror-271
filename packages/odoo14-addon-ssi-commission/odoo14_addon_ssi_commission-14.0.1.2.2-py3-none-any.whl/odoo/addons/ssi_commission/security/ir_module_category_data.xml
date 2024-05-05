@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="commission_management_module_category" model="ir.module.category">
+    <field name="name">Commission Management</field>
+</record>
+
+<record id="commission_management_workflow_module_category" model="ir.module.category">
+    <field name="name">Commission Management - Workflow</field>
+    <field name="parent_id" ref="commission_management_module_category" />
+</record>
+
+<record
+        id="commission_management_data_ownership_module_category"
+        model="ir.module.category"
+    >
+    <field name="name">Commission Management - Data Ownership</field>
+    <field name="parent_id" ref="commission_management_module_category" />
+</record>
+
+<record
+        id="commission_management_configurator_module_category"
+        model="ir.module.category"
+    >
+    <field name="name">Commission Management - Configurator</field>
+    <field name="parent_id" ref="commission_management_module_category" />
+</record>
+
+<record id="commission_management_wizard_module_category" model="ir.module.category">
+    <field name="name">Commission Management - Wizard</field>
+    <field name="parent_id" ref="commission_management_module_category" />
+</record>
+
+<record id="commission_management_report_module_category" model="ir.module.category">
+    <field name="name">Commission Management - Report</field>
+    <field name="parent_id" ref="commission_management_module_category" />
+</record>
+
+<!-- Commission -->
+<record id="commission_module_category" model="ir.module.category">
+    <field name="name">Sales Commission</field>
+    <field name="parent_id" ref="commission_management_workflow_module_category" />
+</record>
+
+<record id="commission_data_ownership_module_category" model="ir.module.category">
+    <field name="name">Sales Commission</field>
+    <field
+            name="parent_id"
+            ref="commission_management_data_ownership_module_category"
+        />
+</record>
+
+<!-- Marketing Commission -->
+<record id="marketing_commission_module_category" model="ir.module.category">
+    <field name="name">Marketing Commission</field>
+    <field name="parent_id" ref="commission_management_workflow_module_category" />
+</record>
+
+<record
+        id="marketing_commission_data_ownership_module_category"
+        model="ir.module.category"
+    >
+    <field name="name">Marketing Commission</field>
+    <field
+            name="parent_id"
+            ref="commission_management_data_ownership_module_category"
+        />
+</record>
+</odoo>

@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: sr.comp.scorer
+Version: 1.3.0
+Summary: Student Robotics Competition Score Entry Application
+Author: Student Robotics Competition Software SIG
+Author-email: srobo-devel@googlegroups.com
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Requires-Python: >=3.7
+License-File: AUTHORS.rst
+Requires-Dist: Flask<3,>=1.0
+Requires-Dist: sr.comp<2,>=1.2
+
+SRComp Scorer
+=============
+
+|Build Status|
+
+A web UI to edit scores from SRComp score files.
+
+Deployment
+----------
+
+For using the scorer at an event:
+
+.. code:: shell
+
+    script/install.sh
+
+The install script prints instructions regarding the setup of the corresponding
+compstate as well as how to run the resulting instance. Currently this is aimed
+at install on a user's own machine rather than being hosted externally.
+
+Development
+-----------
+
+**Install**:
+
+.. code:: shell
+
+    pip install git+https://github.com/PeterJCLaw/srcomp
+    pip install -e .
+
+**Run**:
+``python -m sr.comp.scorer`` (see the ``--help``) for details.
+
+Developers may wish to use the `SRComp Dev`_ repo to setup a dev instance.
+
+
+.. |Build Status| image:: https://circleci.com/gh/PeterJCLaw/srcomp-scorer.png?branch=main
+   :target: https://circleci.com/gh/PeterJCLaw/srcomp-scorer
+
+.. _`SRComp Dev`: https://github.com/PeterJCLaw/srcomp-dev

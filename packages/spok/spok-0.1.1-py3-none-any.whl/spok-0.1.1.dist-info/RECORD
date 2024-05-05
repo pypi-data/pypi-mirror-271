@@ -1,0 +1,16 @@
+spok/__init__.py,sha256=P-JkMApNPZLsOqXSY_7_RqH9qmeCSY5-qTvI9opWT5M,139
+spok/smath.py,sha256=ZrY6ZW_uqaqi0uQAvvIivNL72nnzkdMiaLcwIv-_YFo,1586
+spok/spok.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+spok/utils.py,sha256=WZV5Pogj1HCL_6M6b9b5rDNgyJrmrqyDI-FmO78Mv3E,3239
+spok/analysis/mva.py,sha256=8WqQsZ496H0l-9hM8oXrJJ3Qu8VNRf76V8l59XHBQ4s,3058
+spok/coordinates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spok/coordinates/coordinates.py,sha256=--c_vARjUIcJ7-RVu1Fb2J8AH-RkAjapSSdqaLWYrx8,3411
+spok/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spok/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spok/models/planetary.py,sha256=BHfUWtzXUmAG9-o8X2dK5tla7VeiOh6yXWAU0HmcG3w,29134
+spok/plot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spok/plot/planet_env.py,sha256=RFmUwc0PWBsl8K5RxfzAIM2cbFbEK1M-eRMqokCILe8,10484
+spok-0.1.1.dist-info/LICENSE,sha256=vtCeKvnLr6ggBh2hljrqyQuoCJgD6fvtef94mX3mCA0,1542
+spok-0.1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+spok-0.1.1.dist-info/METADATA,sha256=UaG_AXannxn9mYwwd7puRQPy4oGx1iOgetGUIC3fvWg,1908
+spok-0.1.1.dist-info/RECORD,,

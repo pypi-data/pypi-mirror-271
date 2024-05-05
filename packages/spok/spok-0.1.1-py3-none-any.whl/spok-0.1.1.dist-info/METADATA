@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: spok
+Version: 0.1.1
+Summary: Space Plasmas Observations Kit
+Keywords: spok,plasma-physics
+Author-email: Nicolas Aunai <nicolas.aunai@lpp.polytechnique.fr>
+Maintainer-email: Nicolas Aunai <nicolas.aunai@lpp.polytechnique.fr>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Project-URL: homepage, https://github.com/LaboratoryOfPlasmaPhysics/spok
+
+# SPOK
+
+[![PyPI](https://img.shields.io/pypi/v/spok)](https://pypi.python.org/pypi/spok)
+[![Tests](https://github.com/LaboratoryOfPlasmaPhysics/spok/actions/workflows/test_main.yml/badge.svg)](https://github.com/LaboratoryOfPlasmaPhysics/spok/actions/workflows/test_main.yml)
+[![Documentation Status](https://readthedocs.org/projects/spok/badge/?version=latest)](https://spok.readthedocs.io/en/latest/?badge=latest)
+[![Coverage Status](https://codecov.io/gh/LaboratoryOfPlasmaPhysics/spok/branch/main/graph/badge.svg?branch=main)](https://codecov.io/gh/LaboratoryOfPlasmaPhysics/spok/branch/main)
+
+spok Plasma Observations Kit
+
+![spok](https://user-images.githubusercontent.com/3200931/98716891-978e2180-238c-11eb-9487-07c66221e5bb.png)
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://spok.readthedocs.io.
+
+
+## Features
+
+
+## TODO
+
+

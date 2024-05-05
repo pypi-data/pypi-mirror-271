@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "devicebay"
+version = "0.1.18"
+description = "Devices for AI agents"
+authors = ["Patrick Barker <patrickbarkerco@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.29"
+toolfuse = "^0.1.21"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

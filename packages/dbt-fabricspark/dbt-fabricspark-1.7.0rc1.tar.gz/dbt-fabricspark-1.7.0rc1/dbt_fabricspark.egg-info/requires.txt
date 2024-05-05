@@ -1,0 +1,4 @@
+dbt-core~=1.7.0rc1
+azure-identity>=1.13.0
+azure-core>=1.26.4
+azure-cli==2.60.0

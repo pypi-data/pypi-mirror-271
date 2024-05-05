@@ -1,0 +1,11 @@
+catboost
+xgboost
+lightgbm==4.1.0
+optuna
+scikit-learn
+numpy
+pandas
+SQLAlchemy
+
+[shap]
+shap

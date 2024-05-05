@@ -1,0 +1,12 @@
+indexed_zstd.cp36-win_amd64.pyd,sha256=0P9BXlX1nZU5hcyaix4VK81oWsGQMw4MzlKMi4p1Q-M,106496
+indexed_zstd-1.6.1.data/platlib/.load-order-indexed_zstd-1.6.1,sha256=qewn3fwh9tcxIs3hWiZp-KEQhKHVb1ZkZJORCGt0zZk,95
+indexed_zstd-1.6.1.data/platlib/concrt140.dll,sha256=LcInbOOJ48oiQJhNg6uGn79KmboUrzdf7ihwkGPmVKc,316816
+indexed_zstd-1.6.1.data/platlib/libzstd-9214d5aabbd38a2e80e370197462427c.dll,sha256=A_u_Hyy15r6am1fa5NmvQD-DGhNhju_WyosSccKKWyc,1165512
+indexed_zstd-1.6.1.data/platlib/msvcp140.dll,sha256=hUSON2360YWXQK7aolRLVl6Kbk4uVV3mxGOPSrGyiEM,621960
+indexed_zstd-1.6.1.data/platlib/vcruntime140_1.dll,sha256=oRPxkhlfJF8XOJ5uy-2ABZkLyyR23a0z98TGyGMnr-U,49528
+indexed_zstd-1.6.1.dist-info/DELVEWHEEL,sha256=Z_SajGggTvBQFWxibodgC0d80YhnqQ_aRlnP21-Ma7E,382
+indexed_zstd-1.6.1.dist-info/LICENSE,sha256=iz4euWk84nPnREZc-ccGrTDrzSyhEMHs1PEiigKt81I,1094
+indexed_zstd-1.6.1.dist-info/METADATA,sha256=rgEYf7RUEY63WV7hxWNZIAyRXIsMrz7dnNE3Y16fBiU,3170
+indexed_zstd-1.6.1.dist-info/RECORD,,
+indexed_zstd-1.6.1.dist-info/top_level.txt,sha256=tkkGypvUTCsF8ay222j7gttRUTht3qmfqTsTGmJeriY,13
+indexed_zstd-1.6.1.dist-info/WHEEL,sha256=zukbZftcRdNfJ55Q_RYV9JZ3uVyqWKyq-wDJbmszs_U,101

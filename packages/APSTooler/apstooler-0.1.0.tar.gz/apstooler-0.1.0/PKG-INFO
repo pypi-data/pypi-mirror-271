@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: APSTooler
+Version: 0.1.0
+Summary: A Python toolkit for Autodesk Platform Services
+Home-page: https://github.com/01U2/APSTooler.git
+Author: Olufemi Akinwumi
+Author-email: cashimawo@gmail.com
+License: MIT
+Project-URL: Homepage, https://github.com/01U2/APSTooler
+Project-URL: Issues, https://github.com/01U2/APSTooler/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
+Project-URL: Documentation, https://github.com/01U2/APSTooler/blob/main/Documentation.md
+Keywords: Autodesk,APS,forge,Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# APSTooler
+
+The APSTooler is a Python toolkit designed to interact with the Autodesk BIM 360 and Autodesk Construction cloud (ACC) platform's API for managing projects, folders, and documents.
+
+## Features
+
+- Authentication using 2-legged OAuth
+- Retrieval of hub, project, folder, and model details
+- Handling of project files and documents
+- Customizable API requests
+
+## Installation
+
+To use the APSTooler toolkit, follow these steps:
+
+1. install using `pip install APSTooler`
+2. Add a config.json file and define `APS Client ID`  and `APS Client Secret`
+
+## Usage
+
+Refer to the documentation for detailed usage instructions and examples.
+
+## Contributing
+
+Contributions are welcome!

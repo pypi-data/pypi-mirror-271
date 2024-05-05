@@ -1,0 +1,2 @@
+[console_scripts]
+random-plus = src:interpret

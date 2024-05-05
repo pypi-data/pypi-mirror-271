@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+markcli/__init__.py
+markcli/markcli.py
+markcli.egg-info/PKG-INFO
+markcli.egg-info/SOURCES.txt
+markcli.egg-info/dependency_links.txt
+markcli.egg-info/entry_points.txt
+markcli.egg-info/requires.txt
+markcli.egg-info/top_level.txt

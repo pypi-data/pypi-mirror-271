@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pt_pump_up"
+version = "0.0.10"
+description = "Hub for Portuguese NLP resources"
+readme = "README.md"
+authors = [
+    {name = "Rúben Almeida", email = "ruben.f.almeida@inesctec.pt"},
+    {name = "Alípio Jorge", email = "alipio.jorge@inesctec.pt"},
+    {name = "Ricardo Campos", email = "ricardo.campos@inesctec.pt"},
+    {name = "Sérgio Nunes", email = "sergio.nunes@inesctec.pt"},
+]
+
+requires-python = ">=3.10"
+
+dependencies = [
+    "datasets >= 2.17.1",
+    "pytest >= 8.0.2",
+    "transformers >= 4.38.2",
+    "torch >= 2.2.0",
+    "pandas >= 2.2.1",
+    "accelerate >= 0.28.0",
+    "numpy >= 1.26.4",
+    "evaluate >= 0.4.1",
+    "seqeval >= 0.0.10",
+    "imbalanced-learn >= 0.12.0",
+    "spacy[cuda12x] >= 3.7.4",
+    "rouge-score>=0.1.2",
+    "nltk>=3.8.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pt_pump_up", "pt_pump_up.*"]
+namespaces = false

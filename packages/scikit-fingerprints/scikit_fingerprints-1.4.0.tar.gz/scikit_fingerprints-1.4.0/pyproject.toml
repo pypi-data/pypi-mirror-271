@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "scikit-fingerprints"
+version = "1.4.0"
+description = "Library for effective molecular fingerprints calculation"
+authors = [
+    "Scikit-Fingerprints Development Team <scikitfingerprints@gmail.com>",
+    "Jakub Adamczyk <jakub.adamczyk10@gmail.com>",
+    "Przemyslaw Kukla <przemek.kukla0703@gmail.com>",
+    "Piotr Ludynia <piotrztych@gmail.com>",
+    "Michal Szafarczyk <adammichal657@gmail.com>",
+]
+repository = "https://github.com/Arch4ngel21/scikit-fingerprints"
+license = "MIT"
+packages = [
+    { include = "skfp" }
+]
+
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+datasketch = "*"
+e3fp = "*"
+joblib = "*"
+mordredcommunity = "*"
+numpy = "^1.20.0"
+pandas = "*"
+rdkit = "*"
+scikit-learn = "*"
+scipy = "*"
+tqdm = "*"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+coverage = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+mypy = "*"
+pre-commit = "*"
+pytest = "*"
+
+[tool.poetry.group.doc]
+optional = true
+
+[tool.poetry.group.doc.dependencies]
+pydata-sphinx-theme = "*"
+sphinx = "*"
+
+[tool.poetry.group.eval]
+optional = true
+
+[tool.poetry.group.eval.dependencies]
+lightgbm = "*"
+ogb = "*"
+
+[tool.pytest.ini_options]
+python_files = "*.py"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,14 @@
+name: meta_machina
+description: A machine that creates and destroys machines.
+input_schema:
+  type: object
+  properties:
+    create:
+      type: string
+      description: Machine to be created.
+    context:
+      type: string
+      description: The context it operates within.
+    destroy:
+      type: string
+      description: Machine to be destroyed.

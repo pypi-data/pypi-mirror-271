@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: meta_machina
+Version: 0.0.8
+Summary: This machine creates machines.
+Author-email: Alexander Fedotov <alex.fedotov@aol.com>
+Project-URL: Homepage, https://github.com/meta-machina/meta-machina
+Project-URL: Bug Tracker, https://github.com/meta-machina/meta-machina/issues
+Keywords: meta-machina,ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyGithub>=2.3.0
+Requires-Dist: PyYAML>=6.0.1
+
+# Meta Machina
+This machine creates machines.
+<pre>
+  pip install meta-machina
+</pre>
+Then:
+```Python
+  # Python
+  import meta_machina
+```

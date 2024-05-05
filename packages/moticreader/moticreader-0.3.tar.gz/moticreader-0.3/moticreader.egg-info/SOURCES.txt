@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+moticreader/__init__.py
+moticreader/pyramid.py
+moticreader/trans.py
+moticreader.egg-info/PKG-INFO
+moticreader.egg-info/SOURCES.txt
+moticreader.egg-info/dependency_links.txt
+moticreader.egg-info/top_level.txt

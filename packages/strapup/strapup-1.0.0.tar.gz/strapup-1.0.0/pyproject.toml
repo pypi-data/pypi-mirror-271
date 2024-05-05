@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "strapup"
+version = "1.0.0"
+description = ""
+authors = ["Karl Rittner <k.rittner@hotmail.de>"]
+license = "MIT"
+readme = "README.txt"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: request-tea-ok
+Version: 1.0.0
+Summary: This function is designed to make HTTP requests to the website app.tea.xyz
+Home-page: https://github.com/wahdalo/tea-python
+Author: Wahdalo
+Author-email: ahdx.wtf@gmail.com
+Project-URL: Homepage, https://github.com/wahdalo/tea-python
+Project-URL: Source, https://github.com/wahdalo/tea-python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests>=2.20.0

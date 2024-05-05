@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: habitat-suitability
+Version: 0.0.6
+Summary: A Python package to run habitat suitability modeling, custom/boostrap habitat binning, and binning analysis.
+Author-email: Niklas Henning <henning.github@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Habitat Suitability Modeling 
+
+
+***
+
+# Documentation
+requires the installation of GDAL
+# Documentation
+https://github.com/HenningNiklas/Habitat-Suitability-Modeling-Docs
+-----------------------------------------------------------

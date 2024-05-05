@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+bw_interface_schemas/__init__.py
+bw_interface_schemas.egg-info/PKG-INFO
+bw_interface_schemas.egg-info/SOURCES.txt
+bw_interface_schemas.egg-info/dependency_links.txt
+bw_interface_schemas.egg-info/requires.txt
+bw_interface_schemas.egg-info/top_level.txt

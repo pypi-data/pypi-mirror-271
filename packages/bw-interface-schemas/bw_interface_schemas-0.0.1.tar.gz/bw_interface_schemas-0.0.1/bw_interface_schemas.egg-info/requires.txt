@@ -1,0 +1,16 @@
+pydantic>=2.7
+
+[dev]
+build
+pre-commit
+pylint
+pytest
+pytest-cov
+pytest-randomly
+setuptools
+
+[testing]
+bw_interface_schemas
+pytest
+pytest-cov
+python-coveralls

@@ -1,0 +1,8 @@
+setup.py
+src/timmins/__init__.py
+src/timmins/__main__.py
+src/timmins.egg-info/PKG-INFO
+src/timmins.egg-info/SOURCES.txt
+src/timmins.egg-info/dependency_links.txt
+src/timmins.egg-info/entry_points.txt
+src/timmins.egg-info/top_level.txt

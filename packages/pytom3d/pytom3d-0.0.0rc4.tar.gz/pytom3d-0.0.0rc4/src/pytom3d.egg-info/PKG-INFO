@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pytom3d
+Version: 0.0.0rc4
+Summary: PyToM-3D: Python Topography Manipulator in 3D
+Home-page: https://github.com/aletgn/pytom-3d.git
+Author: Alessandro Tognan
+Author-email: alessandro.tognan@gmail.com
+Project-URL: Bug Tracker, https://github.com/aletgn/pytom-3d/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: odfpy
+Requires-Dist: openpyxl
+Requires-Dist: scikit-learn
+Provides-Extra: test
+Requires-Dist: notebook; extra == "test"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+# PyToM-3D: Python Topography Manipulator in 3D
+
+PyToM-3D is a Python package to transform and fit 3-dimensional topographies. It provides methods to perform traditional geometric transformations and visualise the results as well. Please note that the package is still in its development stage.
+
+## Features
+
+- Geometric Transformations;
+
+- Singular Value Decomposition;
+
+- Data Regression;
+
+- Data Inspection.
+
+## Installation
+
+``` bash
+pip install pytom3d
+```
+
+## Resources
+
+- **Package**. [PyPI](https://pypi.org/project/pytom3d/)
+
+- **Documentation**. [ReadTheDocs](https://pytom-3d.readthedocs.io/en/latest/)

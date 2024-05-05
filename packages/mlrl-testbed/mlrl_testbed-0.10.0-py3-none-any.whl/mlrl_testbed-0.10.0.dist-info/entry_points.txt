@@ -1,0 +1,3 @@
+[console_scripts]
+boomer = mlrl.testbed.main_boomer:main [BOOMER]
+seco = mlrl.testbed.main_seco:main [SECO]

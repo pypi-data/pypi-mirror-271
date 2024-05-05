@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: SAM_ONNX
+Version: 0.0.1
+Summary: A simple package for using SAM (ONNX format) without pytorch dependencies
+Author-email: Girin Chutia <girin.iitm@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib >=3.8.3
+Requires-Dist: numpy >=1.26.4
+Requires-Dist: onnxruntime ==1.17.1
+Requires-Dist: opencv-python ==4.9.0.80
+Requires-Dist: gdown ==5.1.0
+Provides-Extra: dev
+Requires-Dist: jupyter ; extra == 'dev'
+
+# SAM ONNX 
+
+## Environment creation
+
+> python -m venv sam_onnx_env
+
+- Use pip 24.0 or higher version 
+
+## Installation
+In SAM_ONNX Folder
+> python -m pip install -e .
+
+## Usage
+![alt text](repo_assests/demo.png)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

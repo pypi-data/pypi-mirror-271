@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: JaxNRSur
+Version: 0.0.1
+Summary: Numerical relativity surrogate model for gravitational waveforms in Jax
+Home-page: https://github.com/kazewong/JaxNRSur
+Author: Kaze Wong, Max isi, contributor
+Author-email: kazewong.physics@gmail.com
+License: MIT
+Keywords: gravitational-wave,Numerical relativity,autodiff,jax
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax >=0.4.12
+Requires-Dist: jaxlib >=0.4.12
+Requires-Dist: equinox >=0.10.6
+Requires-Dist: lineax
+
+# JaxNRSur
+Numerical relativity surrogate waveform in Jax
+
+Download the relevant data here: Fill this in

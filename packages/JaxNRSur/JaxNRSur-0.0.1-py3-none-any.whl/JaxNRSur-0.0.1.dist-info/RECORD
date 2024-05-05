@@ -1,0 +1,13 @@
+jaxNRSur/DataLoader.py,sha256=-oFyNbJn7tMlW6n6FoTdesmZ_Fu9E6oUfS4TJcdDlsQ,9398
+jaxNRSur/EIMPredictor.py,sha256=OuFUkfXG-bn7YxVShfiiTAHSe45ZDsgLccQKd9j5WhU,4094
+jaxNRSur/Harmonics.py,sha256=9X0hh8wXGAByCchPWWkBwvBH8Be_VK49MOwDTAygvzw,2624
+jaxNRSur/Kernels.py,sha256=XW6_X6wmLWoDx7_FSus6wUyEk65Wz1q5TQX6FySazig,4393
+jaxNRSur/PolyPredictor.py,sha256=KyZWEGeyB7jWATQP17t2wxHCyISlouYsuBEkM8wJgsE,1814
+jaxNRSur/Spline.py,sha256=Cqvk3DYfUZmsx9qwjZunD7jeZSGH8aLbt3eGn_Qx5BU,3201
+jaxNRSur/SurrogateModel.py,sha256=4TTh9UlsMnJ1M_eaiNt5f-s3kptrU8AqMtciqn1REzA,17929
+jaxNRSur/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+JaxNRSur-0.0.1.dist-info/LICENSE,sha256=fBR18oFU5Pwxg6mUSxq1t5P7U61_ir7xiJaH7h8DreY,1066
+JaxNRSur-0.0.1.dist-info/METADATA,sha256=SOa678cmPTc5CFuN1QQX3NTNB3Yx2LArfwTwY_jqECU,642
+JaxNRSur-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+JaxNRSur-0.0.1.dist-info/top_level.txt,sha256=ZAmqQVxPMcYEbewQfHyunaMZ5D4SRbnrsA3Ta9i54L8,9
+JaxNRSur-0.0.1.dist-info/RECORD,,

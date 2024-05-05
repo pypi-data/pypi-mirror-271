@@ -1,0 +1,3 @@
+hdf_compass>=0.7b14
+hyo2.abc2>=2.3.7
+hyo2.bag>=1.2.4

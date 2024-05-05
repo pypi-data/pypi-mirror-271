@@ -1,0 +1,12 @@
+README.md
+setup.py
+mikrotik_bt5/__init__.py
+mikrotik_bt5/beacon.py
+mikrotik_bt5/client.py
+mikrotik_bt5.egg-info/PKG-INFO
+mikrotik_bt5.egg-info/SOURCES.txt
+mikrotik_bt5.egg-info/dependency_links.txt
+mikrotik_bt5.egg-info/requires.txt
+mikrotik_bt5.egg-info/top_level.txt
+tests/__init__.py
+tests/test_advertisements.py

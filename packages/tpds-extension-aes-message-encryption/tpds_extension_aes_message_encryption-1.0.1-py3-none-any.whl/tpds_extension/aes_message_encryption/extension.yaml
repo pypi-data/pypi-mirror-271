@@ -1,0 +1,17 @@
+name: spg_aes_message_enc
+
+frontend:
+  entrypoints:
+    - name: aes_message_encryption
+      title: AES Message encryption
+      description: Usecase to showcase AES message encryption on HOST
+      entry: TrustFlex/AES Message Encryption.ipynb
+      icon:
+        name: aes_message_encryption_png
+        path: TrustFlex/assets/images/aes_enc_ico.png
+      applications:
+        - IoT
+      devices:
+        - ATECC608-TFLXTLS
+      boards:
+        - DM320118

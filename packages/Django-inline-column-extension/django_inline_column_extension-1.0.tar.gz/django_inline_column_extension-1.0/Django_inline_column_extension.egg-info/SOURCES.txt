@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+Django_inline_column_extension.egg-info/PKG-INFO
+Django_inline_column_extension.egg-info/SOURCES.txt
+Django_inline_column_extension.egg-info/dependency_links.txt
+Django_inline_column_extension.egg-info/requires.txt
+Django_inline_column_extension.egg-info/top_level.txt
+inline_admin_extensions/__init__.py
+inline_admin_extensions/admin.py
+inline_admin_extensions/templates/admin3/edit_inline/tabular.html
+inline_admin_extensions/templates/admin3/edit_inline/tabular_header_row.html
+inline_admin_extensions/templates/admin3/edit_inline/tabular_inline_pagination.html
+inline_admin_extensions/templates/admin3/edit_inline/tabular_paginated.html
+inline_admin_extensions/templatetags/__init__.py
+inline_admin_extensions/templatetags/inline_admin_paginator.py

@@ -1,0 +1,15 @@
+ditto/__init__.py,sha256=smN5pQwD_7WuOdAwlR-pmDTKRavtHRquCtZtIp6LHAg,122
+ditto/_unittest.py,sha256=22yl-rC3PFTBz9r2Qfnkt5MLP7wamsTYJS-4h95usJU,716
+ditto/_version.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+ditto/plugin.py,sha256=CSLcdyO6AIWbu3sgxpqinOFZ_9CZ_b9uorgK-sb9ZBM,2162
+ditto/snapshot.py,sha256=rv7Up3vnIX5avD7xOJdRh_FTnxczAHL6c2zwdUAcWZU,2717
+ditto/io/__init__.py,sha256=Q4M3AzGv-M4eRE5WUgVvwJr3Vwib6XNrq4cJvJmoWu8,746
+ditto/io/_json.py,sha256=eAjlahThMQx4LnyEziYQ1uBum45Hcyu0bYEop5W7yHI,390
+ditto/io/_pandas_parquet.py,sha256=-z2a40TAYRGUonkTXs5MJ0hTAo_YMrF_BzupNBhCZs0,411
+ditto/io/_pickle.py,sha256=CXsQw7GtdgtmJtZ15nbuQXoZkHcltEkhM2tTXKuxqpo,444
+ditto/io/_yaml.py,sha256=TABy4bkwwVaUMkoL7brflr3mpf_lGfI3gmTtzuZB-e8,438
+ditto/io/protocol.py,sha256=8IoWxq0sCq4rc7cSRxQzDE4G7DY4S11_ZFXcnKlNypk,305
+pytest_ditto-0.0.1.dist-info/METADATA,sha256=ETenEuM-FR3xmacvlkbtSgJSVVNrWUiT_j3NN2zCTEU,1113
+pytest_ditto-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pytest_ditto-0.0.1.dist-info/entry_points.txt,sha256=fWr4gNTa3P2z6RxTlPu0Ec6QtJ4hz6RgP-ex-y4dMbk,36
+pytest_ditto-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,13 @@
+soda/__init__.py,sha256=wvIdedrfHY3fd21ZLk9z02x7CoHZTvxH25Xzwo-lEuk,317
+soda/config_mod.py,sha256=sARVTFqFDF0mdqLd-GY-Qp7gkO46jOiuGI5U4IfmGtk,123
+soda/custom_tags.py,sha256=ILDLYnnvF_bJqCS3El6vL4_52qa_yHBxUIBZgqlOyyM,2489
+soda/paths.py,sha256=eksTrfRF-Kqw9MUOF1Kt5KB42UxYtPjZpiQa5QUX2Z8,7357
+soda/point.py,sha256=MIMQ1lp6tTB_RXtMaxruFKQuwTMYOO1AQy1fhWZx9ZU,11689
+soda/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soda/tags.py,sha256=yasDfRDOQ-5IBgHLKZWHCrRPy-mNlV1cs0tVZGNoDzQ,11663
+soda/utils.py,sha256=VXGN79v1CRfziE1twNWYi_ixPr5mOd-_-yWmMaKn8R4,1838
+soda/xml_parse.py,sha256=AznQW7NKHSOntRZ3joxfoTcp5_ASzyfwRpeqOK4Ay1Y,1672
+soda_svg-2.0.1.dist-info/LICENSE,sha256=R4GoPJpzVG-ZdT75me9KbSk9QjuLEpD1bWj8-R6kIKk,1073
+soda_svg-2.0.1.dist-info/METADATA,sha256=GwwIWtD8naz4ByIVwHkDoW4Xd_j0XKejZ1qZ4xWkeX8,14127
+soda_svg-2.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+soda_svg-2.0.1.dist-info/RECORD,,

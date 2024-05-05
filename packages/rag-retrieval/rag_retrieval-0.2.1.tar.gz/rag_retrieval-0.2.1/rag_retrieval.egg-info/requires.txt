@@ -1,0 +1,4 @@
+pydantic
+tqdm
+torch
+transformers

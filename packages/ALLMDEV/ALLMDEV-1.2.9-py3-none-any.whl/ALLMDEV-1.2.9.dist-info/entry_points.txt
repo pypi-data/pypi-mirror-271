@@ -1,0 +1,13 @@
+[console_scripts]
+allm-agentapi = ALLMDEV.agentapi:main
+allm-agentapi-azure = ALLMDEV.azureagentapi:main
+allm-agentapi-vertex = ALLMDEV.vertexagentapi:main
+allm-agentchat = ALLMDEV.agentchat:main
+allm-agentchat-azure = ALLMDEV.azureagentchat:main
+allm-agentchat-vertex = ALLMDEV.vertexagentchat:main
+allm-newagent = ALLMDEV.newagent:main
+allm-run = ALLMDEV.cli:main
+allm-run-azure = ALLMDEV.azurecli:main
+allm-run-vertex = ALLMDEV.vertexcli:main
+allm-serve = ALLMDEV.serve:main
+allm-updateagent = ALLMDEV.updateagent:main

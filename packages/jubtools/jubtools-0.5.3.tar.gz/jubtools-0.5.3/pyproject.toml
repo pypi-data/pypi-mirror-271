@@ -1,0 +1,25 @@
+[project]
+name = "jubtools"
+description = "Shared tools for my own work"
+readme = "README.md"
+license = { file = "LICENSE" }
+version = "0.5.3"
+authors = [{ name = "Andrew Morcom", email = "jubulani@fastmail.fm" }]
+requires-python = ">=3.10"
+dependencies = ["fastapi"]
+
+[project.optional-dependencies]
+test = [
+    "async_asgi_testclient >= 1.4",
+    "pytest-asyncio >= 0.23"
+]
+
+[project.urls]
+Repository = "https://github.com/Jubulani/jubtools.git"
+
+[build-system]
+requires = ["setuptools>=68.0.0."]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+"jubtools" = ["py.typed"]

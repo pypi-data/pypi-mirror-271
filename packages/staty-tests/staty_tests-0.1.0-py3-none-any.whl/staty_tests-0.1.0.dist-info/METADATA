@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: staty-tests
+Version: 0.1.0
+Summary: A Python library for performing statistical tests like ANOVA and chi-square.
+Home-page: https://github.com/solab5/statistical-tests
+Author: Twinomugisha Morris
+Author-email: morristwinomugisha2000@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: tabulate
+
+# Statistical Tests
+
+Statistical Tests is a Python library for performing common statistical tests such as one-way ANOVA and chi-square test.
+
+## Installation
+
+You can install the library via pip:
+
+
+## Usage
+
+```python
+from statistical_tests.tests import StatisticalTests
+import pandas as pd
+
+# Create an instance of StatisticalTests with your dataframe
+dataframe = pd.read_csv('your_data.csv')
+tests = StatisticalTests(dataframe)
+
+# Perform one-way ANOVA
+tests.one_way_anova('dependent_variable', 'group_variable1', 'group_variable2')
+
+# Perform chi-square test
+tests.chi_square('variable1', 'variable2', 'variable3')

@@ -1,0 +1,13 @@
+wheel
+torch>=2.1.0
+torchvision>=0.16.2
+transformers
+tokenizers
+numpy
+supervision==0.19.0
+openmim
+mmdet>=3.0.0
+mmengine>=0.7.1
+opencv-python-headless
+mmcv
+mmyolo

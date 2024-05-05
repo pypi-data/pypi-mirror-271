@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "query_test_pkg"
+version = "0.0.1"
+authors = [
+    {name = "Ankit Jangid"},
+]
+description = "Query Service Package"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version>"3.8"',
+    "boto3"
+]

@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: phasors
+Version: 0.0.1
+Summary: Phasor - A means to measure complex values with magnitude and angle.
+Author-email: Joe Stanley <engineerjoe440@yahoo.com>
+Maintainer-email: Joe Stanley <engineerjoe440@yahoo.com>
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: pytest >=2.7.3 ; extra == "test"
+Project-URL: Documentation, https://phasors.readthedocs.io/en/latest/
+Project-URL: Home, https://github.com/engineerjoe440/phasors
+Project-URL: Issues, https://github.com/engineerjoe440/phasors/issues
+Project-URL: Repository, https://github.com/engineerjoe440/phasors
+Provides-Extra: test
+
+
+
+
+# Phasors
+
+*A means to measure complex values with magnitude and angle.*
+
+The `phasor` package provides a means to work with complex numbers in their
+polar coordinate form (with a magnitude and angle) allowing simple computation
+for advanced electrical engineering or other phasor-based work.
+
+## Installation
+
+Installing is as simple as:
+
+    pip install phasors
+
+## Usage
+
+```python
+from phasor import Phasor
+
+voltage = Phasor(67, 120)
+
+print(voltage)
+# 67 ∠ 120°
+```
+

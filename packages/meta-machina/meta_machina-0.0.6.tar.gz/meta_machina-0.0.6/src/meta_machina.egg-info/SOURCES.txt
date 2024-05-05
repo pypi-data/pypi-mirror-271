@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/manual_tests/try_init.py
+src/meta_machina/__init__.py
+src/meta_machina/githf.py
+src/meta_machina/machina.yaml
+src/meta_machina.egg-info/PKG-INFO
+src/meta_machina.egg-info/SOURCES.txt
+src/meta_machina.egg-info/dependency_links.txt
+src/meta_machina.egg-info/top_level.txt

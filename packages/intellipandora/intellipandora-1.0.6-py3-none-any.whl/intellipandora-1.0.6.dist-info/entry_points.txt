@@ -1,0 +1,2 @@
+[console_scripts]
+ipandora = ipandora.run:command_line

@@ -1,0 +1,10 @@
+dartrs-0.1.1.dist-info/METADATA,sha256=yWS8QL6wljpibqnNzXMzCCwFKOreDHPUNdcGvT1C3u8,444
+dartrs-0.1.1.dist-info/WHEEL,sha256=17FUFGo1E9B2pT1Ww8b2P2kvTGlkqRRSTjidYQfOsxo,131
+dartrs-0.1.1.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dartrs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dartrs/__init__.py,sha256=rmO9vIz9FGK6hlyGP1AoHIyayaQdHd2taI2GqcMw3dY,108
+dartrs/utils.py,sha256=QHjYb9FlJrhDEkvgNsnvgm4JZrZXeto_bxQMR6rnCFA,668
+dartrs/v2.py,sha256=1aZ5CS2iyBjUcVJjOrZTxxfz3d3STORkMz4ZF0Aho2E,2473
+dartrs/dartrs.pyi,sha256=fQKdHsbGs06r88Qk6wSUyiq3QSOae3tG-INVYyy-jf4,2304
+dartrs/dartrs.cpython-310-powerpc64le-linux-gnu.so,sha256=j2E_WKgcWkTLlwSmUXIUqNP0CgGsnPwJjTj33ceyxFo,17868872
+dartrs-0.1.1.dist-info/RECORD,,

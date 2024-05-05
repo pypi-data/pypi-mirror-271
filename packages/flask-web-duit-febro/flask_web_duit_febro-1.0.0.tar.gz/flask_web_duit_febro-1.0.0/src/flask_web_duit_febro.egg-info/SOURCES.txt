@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/flask_web_duit_febro.egg-info/PKG-INFO
+src/flask_web_duit_febro.egg-info/SOURCES.txt
+src/flask_web_duit_febro.egg-info/dependency_links.txt
+src/flask_web_duit_febro.egg-info/top_level.txt

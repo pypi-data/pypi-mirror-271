@@ -1,0 +1,6 @@
+_open_link_: False
+name: "HyFI-Chain"
+authors: "Young Joon Lee <entelecheia@hotmail.com>"
+description: "A wrapper library integrating LangChain's language model chaining with HyFI framework for building robust, scalable, and maintainable NLP applications."
+homepage: "https://hyfi-chain.entelecheia.ai"
+license: "MIT"

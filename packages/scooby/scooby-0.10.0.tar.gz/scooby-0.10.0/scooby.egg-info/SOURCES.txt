@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+scooby/__init__.py
+scooby/__main__.py
+scooby/knowledge.py
+scooby/py.typed
+scooby/report.py
+scooby/tracker.py
+scooby/version.py
+scooby.egg-info/PKG-INFO
+scooby.egg-info/SOURCES.txt
+scooby.egg-info/dependency_links.txt
+scooby.egg-info/entry_points.txt
+scooby.egg-info/requires.txt
+scooby.egg-info/top_level.txt

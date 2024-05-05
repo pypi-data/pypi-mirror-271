@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fancy-cli"
+version = "0.1.0-post1"
+description = "Folder Art with Neat Colors for You"
+authors = ["Kye <kye.urgolites@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://pythonkid90.github.io/fancy-cli"
+repository = "https://github.com/pythonkid90/fancy-cli"
+include = ["fancy-cli/assets/folders"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = {extras = ["all"], version = "^0.12.3"}
+pillow = "^10.3.0"
+
+[tool.poetry.scripts]
+fancy_new = "fancy-cli.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

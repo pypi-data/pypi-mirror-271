@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+cv_lab_aurct.egg-info/PKG-INFO
+cv_lab_aurct.egg-info/SOURCES.txt
+cv_lab_aurct.egg-info/dependency_links.txt
+cv_lab_aurct.egg-info/top_level.txt

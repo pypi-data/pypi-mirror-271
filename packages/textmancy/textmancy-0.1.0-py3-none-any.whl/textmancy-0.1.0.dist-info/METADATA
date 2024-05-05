@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: textmancy
+Version: 0.1.0
+Summary: LLM-driven package for mapping, analyzing and expanding text works.
+License: MIT
+Author: Caleb Case
+Author-email: caleb.case93@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langchain (>=0.0.331,<0.0.332)
+Requires-Dist: openai (==0.28.0)
+Requires-Dist: thefuzz (>=0.20.0,<0.21.0)
+Description-Content-Type: text/markdown
+
+

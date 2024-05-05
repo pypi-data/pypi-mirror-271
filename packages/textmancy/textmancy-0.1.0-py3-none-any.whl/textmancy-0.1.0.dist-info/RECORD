@@ -1,0 +1,13 @@
+textmancy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textmancy/components/__init__.py,sha256=pLhIGAw3saGn5bLFBhr3TOvETwwV85DdWrKi7N8aNaM,327
+textmancy/components/annotator.py,sha256=O17cIXfDgTBQc5D3qUWBwrl5xMATrKAkMsBOp69pVx0,3276
+textmancy/components/consolidator.py,sha256=hKCOsvA47WxlhxTDBUlbyO0nRcAK7c-kJ8uiD6GQjyc,4179
+textmancy/components/extractor.py,sha256=KNQ43XCW9gD7Nn5qhFgKv9XKD3_0y_W7PvjjjlOmcbM,4977
+textmancy/components/processor.py,sha256=H4ZPdhe_hlM5x_Y5C1fsJe9MfXujfscUMpXOEvGOtXM,1537
+textmancy/components/segmentor.py,sha256=6BBm61Ei6tyIEt--nsoY3l21PEY91Egkku3PMW2HBVw,2980
+textmancy/targets.py,sha256=JebxGl--qdumZw9m_7XJqS5PxakY7bJ0noDMW4wXs0g,1068
+textmancy/utils.py,sha256=plk02kVt1TeCu1y23b9BtUsSO3tt2_c0jafIfB1DaJ8,767
+textmancy-0.1.0.dist-info/LICENSE,sha256=MhQao26DVMaeXjq6zd5qwtNCkEXZ9k6amOd2sRP1QMg,1067
+textmancy-0.1.0.dist-info/METADATA,sha256=-UcC-w1jyph-VtbrKKF2ApVETqADniAwLOsIrWq-t2M,643
+textmancy-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+textmancy-0.1.0.dist-info/RECORD,,

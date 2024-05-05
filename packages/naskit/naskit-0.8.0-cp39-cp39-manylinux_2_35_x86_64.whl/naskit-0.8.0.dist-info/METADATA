@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: naskit
+Version: 0.8.0
+Summary: Library for processing nucleic acid secondary structure
+Home-page: https://github.com/NANOBIOROBOTS-INC/naskit
+License: LGPLv3
+Author: Artem Mukanov
+Author-email: artem.liamkrow@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: numpy (>=1.18.5,<2.0.0)
+Description-Content-Type: text/markdown
+
+<h1><b>N</b>ucleic <b>A</b>cid <b>S</b>tructure <b>kit</b></h1>
+
+<h2>Installation</h2>
+
+```
+python3 -m pip install -e .
+```
+
+Test naskit:
+```
+python3 -m pip install -e .[dev]
+pytest test
+```
+
+<h2>Usage</h2>
+
+See tutorial
+

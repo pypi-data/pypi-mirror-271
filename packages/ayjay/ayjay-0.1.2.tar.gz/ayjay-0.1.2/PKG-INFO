@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: ayjay
+Version: 0.1.2
+Summary: Small package for getting cached API requests with propper error handling.
+Author-email: Tobias Schnack <tobias.schnack@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: diskcache>=5.6.3
+Requires-Dist: pandas>=2.2.1
+Requires-Dist: requests>=2.31.0
+Description-Content-Type: text/markdown
+
+# ayjay
+
+ayjay is a simple python api (ay) json (jay) package that helps calling api
+endpoints and extracting json data in a convient and defensive way.

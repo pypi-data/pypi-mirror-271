@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+[project]
+name = "mtg_card_api"
+version = "0.1.1"
+authors = [
+    { name = "Samuel Shiels" },
+]
+description = "An unofficial wrapper for the Scryfall REST API providing common queries"
+readme = "README.md"
+requires-python = ">=3.12.2"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Other Environment",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "diskcache",
+    "jsonpickle",
+    "rest_client_micro",
+]

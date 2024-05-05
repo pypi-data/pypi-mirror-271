@@ -1,0 +1,3 @@
+[console_scripts]
+got = got.cli:got
+

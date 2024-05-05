@@ -1,0 +1,6 @@
+setup.py
+ChordReviewsVis.egg-info/PKG-INFO
+ChordReviewsVis.egg-info/SOURCES.txt
+ChordReviewsVis.egg-info/dependency_links.txt
+ChordReviewsVis.egg-info/requires.txt
+ChordReviewsVis.egg-info/top_level.txt

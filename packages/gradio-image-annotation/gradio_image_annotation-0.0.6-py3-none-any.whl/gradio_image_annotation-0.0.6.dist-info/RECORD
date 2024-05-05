@@ -1,0 +1,13 @@
+gradio_image_annotation/__init__.py,sha256=rtUcY7vH0x7NZ-r9koXlV0QGRgu2OSbRn7Rd-fAyRKc,81
+gradio_image_annotation/image_annotator.py,sha256=iCAnsLklANsY2Hpqn5RYLqWWscHp8Y8SoL2zVG-wLAI,13806
+gradio_image_annotation/image_annotator.pyi,sha256=sxeTNQ_4VXwwz0I4E9DyBWlwD5y3gPFoFJCp1tnoMoI,28944
+gradio_image_annotation/templates/component/__vite-browser-external-2447137e.js,sha256=-MRWAx5QAcDNpIN82e46M9eb7roSDsYz7J2ZBjL7KqY,41
+gradio_image_annotation/templates/component/index.js,sha256=nG6XMCSY_37Z83aTLF_VQR6NBYYGJm8N9vJqiV75vJg,313177
+gradio_image_annotation/templates/component/style.css,sha256=yCUIp5oIiNJw7vkfmwcoGI_hLkAiNJESeNHx1r1_rHA,24083
+gradio_image_annotation/templates/component/wrapper-6f348d45-19fa94bf.js,sha256=BDv2W5qnL9yyp0KhqiluGSjG5i9LY4OV9seIHQWuVWQ,78062
+gradio_image_annotation/templates/example/index.js,sha256=7EXfVZ3gXqnmSJJaYfxUES__VGk5LCZk3EIgUKltM8w,153257
+gradio_image_annotation/templates/example/style.css,sha256=Nasuf3wqUDO_rsrMkTTylx7MFThcphgRxEEZGnh70Bs,21565
+gradio_image_annotation-0.0.6.dist-info/METADATA,sha256=WmCMIQYGRz0UNkux6W88fFYaIl0kD0CW3N2_HaFBiZY,12679
+gradio_image_annotation-0.0.6.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+gradio_image_annotation-0.0.6.dist-info/licenses/LICENSE,sha256=vtQnXyZg4Gvb4BT5EYedPO0faJSPCgrw36r8YL-r_yE,1069
+gradio_image_annotation-0.0.6.dist-info/RECORD,,

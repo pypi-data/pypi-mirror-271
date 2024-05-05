@@ -1,0 +1,16 @@
+aiohttp
+eth_keys
+eth_utils
+eth_account
+
+[test]
+hypothesis
+ruff
+pyproj
+pytest
+pytest-cov
+sphinx
+pytest-asyncio
+tox
+build
+vcrpy

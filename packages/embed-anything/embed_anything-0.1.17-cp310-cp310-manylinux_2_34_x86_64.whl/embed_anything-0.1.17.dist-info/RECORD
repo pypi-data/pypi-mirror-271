@@ -1,0 +1,12 @@
+embed_anything-0.1.17.dist-info/METADATA,sha256=ggXLeRQk3L0e9DRlB5TXWX_8-lARojjDw-_KGOql550,6505
+embed_anything-0.1.17.dist-info/WHEEL,sha256=0CcHee4CufHNqskoVqu9XUT7WPeWhoGKAe2CwPZ8qoc,108
+embed_anything-0.1.17.dist-info/license_files/LICENSE,sha256=weCXH4BT1ccweEW9HE3pHzmVm0Z8bTAV14XuwsywG0k,1066
+embed_anything.libs/libssl-091d763c.so.3,sha256=no7PFDl4cVc-A46pzxY0ANadaidrEdUG4y9vm1YQ104,721753
+embed_anything.libs/libcrypto-801de193.so.3,sha256=c_2ejgsLf5WzlWv8vWfMso4lg2qo6mIja8M1IcO9Nso,4611145
+embed_anything.libs/libiomp5-b0e5301e.so,sha256=VAStqgNJanQPumFd3rB9RDiCRRjcig764IW15RNS_sY,2175713
+embed_anything/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embed_anything/embed_anything.pyi,sha256=ENAEmz6lndjFzMOxGXevkVplIHDCwUZfJCmz2glGAhU,1440
+embed_anything/__init__.py,sha256=_tb4B9TyRAPmHkamclDxeeO46ag-T_E2I0_moXc0WWk,149
+embed_anything/libiomp5md.dll,sha256=CtcfRm0RXTU9zpS6MrY-KI9IGY6J9VHUbczkYf7b0ZU,2047000
+embed_anything/embed_anything.cpython-310-x86_64-linux-gnu.so,sha256=9v5lklmt-eZ_4rPTmJ8nRZnVZSKhxVwxpMT-NhGTZpw,36804081
+embed_anything-0.1.17.dist-info/RECORD,,

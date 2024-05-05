@@ -1,0 +1,17 @@
+jx-python==4.625.24125
+mo-dots==10.623.24125
+mo-files==6.624.24125
+mo-future==7.584.24095
+mo-imports==7.584.24095
+mo-json==6.624.24125
+mo-kwargs==7.623.24125
+mo-logs==8.623.24125
+mo-math==7.623.24125
+mo-sql==4.624.24125
+mo-sql==4.624.24125
+mo-threads==6.624.24125
+mo-times==5.623.24125
+
+[tests]
+mo-testing>=8.591.24112
+beautifulsoup4>=4.12.3

@@ -1,0 +1,8 @@
+focuscreen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+focuscreen/app.py,sha256=aMhtn4_uxGox8bQr0PkpECbOrmw1RNPQeYwYWSakH40,4235
+focuscreen/cursor_renderer.py,sha256=3QIXKwBOVgB-q2j_8hD7dlul7cC_je-Vs4MXqL8u9Sc,2641
+focuscreen/focus_region_updater.py,sha256=eVGiwAQroh0UXozNHG4OSQtBxR6-NmtxNbDUXWeLfhE,2268
+focuscreen-0.8.dist-info/METADATA,sha256=3wU2dpGOvkzEirIfva35j7T8EFQbagoQTQ_yjZ7bk0Q,1051
+focuscreen-0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+focuscreen-0.8.dist-info/top_level.txt,sha256=ff-d4b55n1mm5O35TFYvqQKNFEV-GdxailN5mJkJc0k,11
+focuscreen-0.8.dist-info/RECORD,,

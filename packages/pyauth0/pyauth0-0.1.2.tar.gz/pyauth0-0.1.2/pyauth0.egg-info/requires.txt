@@ -1,0 +1,5 @@
+python-jose>=3.3.0
+
+[test]
+pytest
+python-dotenv

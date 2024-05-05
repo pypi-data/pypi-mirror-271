@@ -1,0 +1,3 @@
+[console_scripts]
+mpt=mptradelib.cli.new:commands
+

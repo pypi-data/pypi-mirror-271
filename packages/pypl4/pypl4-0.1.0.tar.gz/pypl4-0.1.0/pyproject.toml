@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "pypl4"
+version = "0.1.0"
+description = "O pacote pypl permite ler arquivos .pl4 e selecionar as oscilografias registradas nele."
+authors = ["Mauricio <mauricio_pavani@hotmail.com>"]
+readme = "README.md"
+license = "GPL-3.0-only"
+packages = [
+	 {include = "pypl4"},
+	 {include = "errors"},
+	 ]
+classifiers = [
+	   "Topic :: Education",
+	   "Environment :: Console",
+	   ]
+
+[tool.poetry.urls]
+"Código" = "https://github.com/MauricioPavani/pypl4"
+"Bug Tracker" = "https://github.com/MauricioPavani/pypl4/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+pytest-cov = "^4.1.0"
+blue = "^0.9.1"
+isort = "^5.13.2"
+taskipy = "^1.12.2"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.5.13"
+mkdocstrings = "^0.24.1"
+mkdocstrings-python = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts= "--doctest-modules"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "blue --check --diff . && isort --check --diff ."
+docs = "mkdocs serve"
+pre_test = "task lint"
+test = "pytest -s -x --cov=pypl4 -vv"
+post_test = "coverage html"

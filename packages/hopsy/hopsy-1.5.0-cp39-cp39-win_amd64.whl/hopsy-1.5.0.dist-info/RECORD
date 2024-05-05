@@ -1,0 +1,13 @@
+hopsy/__init__.py,sha256=ZkcYSZ6QmJQ731NxX5dAVYOM9kN-Z8T_1eIqAjVYtMc,244
+hopsy/callback.py,sha256=gNsaB_HBMyB7egYrZjK0NhqAflqZ5iBZhMErhkNcstA,6150
+hopsy/core.cp39-win_amd64.pyd,sha256=oRODJ6XUbXDKxTl0jxtearw8tfvyiJgrsdnUpfxzLCU,2799616
+hopsy/examples.py,sha256=JJi3FCDBiLPYkRIgsJmo9bdtPqvJQA9bDKcquSFwhNc,3844
+hopsy/lp.py,sha256=faY-1xT2PkPBDsklr_Th-_uED4N0UKZD41IZ0qbXEgw,1115
+hopsy/misc.py,sha256=jjChFxr_-UlHuplkN2AWUOnSf92PxZA--napGWBU1Zk,60227
+hopsy/setup.py,sha256=F90dk--oIDIlRw0nfMLPdBZb5RMvJGXStl3ddtbrk9s,2808
+hopsy/tuning.py,sha256=A2PDdBn9Gc1_YeMyCYNBCl0VVcy2UiJAAFRbxmSMzQY,18732
+hopsy-1.5.0.dist-info/LICENSE,sha256=mraIgWsAJNYgzYxUgcrnuvWC8Srh-lVhJryk9w1NE68,1104
+hopsy-1.5.0.dist-info/METADATA,sha256=sp3sy952XrniLwo_teLLClrY30e4kQ10jgIyjh8M2wo,6992
+hopsy-1.5.0.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+hopsy-1.5.0.dist-info/top_level.txt,sha256=g8QfGHQq4nGbh4Dk-sKfsQp5tf7AWb9UmrgF-fGuJik,17
+hopsy-1.5.0.dist-info/RECORD,,

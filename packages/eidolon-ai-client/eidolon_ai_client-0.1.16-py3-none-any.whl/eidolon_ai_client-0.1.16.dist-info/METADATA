@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: eidolon-ai-client
+Version: 0.1.16
+Summary: 
+Author: Luke Lalor
+Author-email: lukehlalor@gmail.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: cli
+Requires-Dist: aiostream (>=0.5.2,<0.6.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: httpx-sse (>=0.4.0,<0.5.0)
+Requires-Dist: jsonref (>=1.1.0,<2.0.0)
+Requires-Dist: pydantic (>=2.6.1,<3.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0) ; extra == "cli"
+Requires-Dist: setuptools (>=69.0.2,<70.0.0)
+Requires-Dist: simple-term-menu (>=1.6.4,<2.0.0) ; extra == "cli"
+Requires-Dist: sse-starlette (>=2.0.0,<3.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0) ; extra == "cli"
+Description-Content-Type: text/markdown
+
+# Eidolon Client
+[![Website Link](https://img.shields.io/badge/EidolonAI.com-grey)](https://www.eidolonai.com/docs/introduction/)
+[![GitHub Org stars](https://img.shields.io/github/stars/eidolon-ai?style=flat&logo=github)](https://github.com/eidolon-ai/eidolon)
+[![PyPI - Version](https://img.shields.io/github/actions/workflow/status/eidolon-ai/eidolon/test.yml?style=flat&label=test)](https://github.com/eidolon-ai/eidolon)
+
+## Eidolon Client and CLI
+
+This package contains a python client to interact with the Eidolon API. It also contains a CLI which can be called with `eidolon-cli`.
+```bash
+eidolon-cli --help
+```
+
+Visit [www.eidolonai.com](https://www.eidolonai.com/) for more details.
+
+🚨 To install the dependencies needed for the CLI run the following command: 
+```bash
+pip install 'eidolon-ai-client[cli]'
+```
+
+## Thanks for your support
+
+Eidolon is completely open source and free to use. If you like this project, [give it a star](https://github.com/eidolon-ai/eidolon) 🌟!
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+noodla/__init__.py
+noodla/main.py
+noodla.egg-info/PKG-INFO
+noodla.egg-info/SOURCES.txt
+noodla.egg-info/dependency_links.txt
+noodla.egg-info/requires.txt
+noodla.egg-info/top_level.txt

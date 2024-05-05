@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+aery/__init__.py
+aery.egg-info/PKG-INFO
+aery.egg-info/SOURCES.txt
+aery.egg-info/dependency_links.txt
+aery.egg-info/top_level.txt

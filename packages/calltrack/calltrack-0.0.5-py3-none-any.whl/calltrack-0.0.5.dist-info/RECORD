@@ -1,0 +1,12 @@
+calltrack/__init__.py,sha256=YyXEOErlQSlHmPZDQZttCMtfIaS_bv1xoJjTIHBmDjM,2928
+calltrack/calltrack.py,sha256=wZx-0AmuvxWNrtCnxxhHIErAcExGg-de4mN-dGl3kKo,2828
+calltrack/cli.py,sha256=qvdsvtYBHQMITizwZeJl9CKFOOb5x6ykXofRup-73Zk,377
+calltrack/dependencies.py,sha256=7cEcmYPCyI2brSuU8g1Bml-TFBQRvub8Pu3RnaAREPw,220
+calltrack/log_queue.py,sha256=mHi-NbWO752GR0s8IO83t_SjyeKtGVZBBp5fugZl-VI,488
+calltrack/setup.py,sha256=pfDalQSNAterEKj-BO2F5ISiN97UHLd3ZTV9BQuqHnQ,97
+calltrack/utils.py,sha256=Itx7Ez6n8MQoH6bjzCCFNEJVNGAX1qtqXog_Cr5iIUg,661
+calltrack/view.py,sha256=AEksW6J_Z3cI95iRMRad3JHcXzE1ae3bvAKMsZouroI,2070
+calltrack-0.0.5.dist-info/METADATA,sha256=rh9_4urSCVGM7Tu-2WZVL7RfALYZSeRLj-nuUJcGOVY,1420
+calltrack-0.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+calltrack-0.0.5.dist-info/entry_points.txt,sha256=NRLCQGlJ0mbqMYEDgTaGyX_6uxAsJ0s7SQD-3fObzks,54
+calltrack-0.0.5.dist-info/RECORD,,

@@ -1,0 +1,7 @@
+defusedxml
+Jinja2
+json5
+PyYAML
+
+[pam]
+python-pam

@@ -1,0 +1,5 @@
+llm
+ibm-watsonx-ai>=1.0.1
+
+[test]
+pytest

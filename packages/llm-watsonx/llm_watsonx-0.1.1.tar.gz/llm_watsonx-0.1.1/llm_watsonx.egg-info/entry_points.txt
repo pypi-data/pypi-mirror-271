@@ -1,0 +1,2 @@
+[llm]
+watsonx = llm_watsonx

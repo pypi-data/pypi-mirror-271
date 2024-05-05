@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: papers-dl
+Version: 0.0.4
+Summary: A command line application for downloading scientific papers
+Author-email: Ben Muthalaly <benmuthalaly@gmail.com>
+Project-URL: Homepage, https://github.com/benmuth/papers-dl
+Project-URL: Issues, https://github.com/benmuth/papers-dl/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 ==4.12.3
+Requires-Dist: bs4 ==0.0.2
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: cffi ==1.16.0
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: cryptography ==42.0.5
+Requires-Dist: easygui ==0.98.3
+Requires-Dist: feedparser ==6.0.11
+Requires-Dist: google ==3.0.0
+Requires-Dist: idna ==3.6
+Requires-Dist: pdf2doi ==1.5.1
+Requires-Dist: pdfminer.six ==20221105
+Requires-Dist: pdftitle ==0.11
+Requires-Dist: pycparser ==2.21
+Requires-Dist: PyMuPDF ==1.23.26
+Requires-Dist: PyMuPDFb ==1.23.22
+Requires-Dist: PyPDF2 ==2.0.0
+Requires-Dist: pyperclip ==1.8.2
+Requires-Dist: requests ==2.31.0
+Requires-Dist: retrying ==1.3.4
+Requires-Dist: sgmllib3k ==1.0.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: soupsieve ==2.5
+Requires-Dist: urllib3 ==2.2.1
+Requires-Dist: w3lib ==2.1.2
+
+# Overview
+`papers-dl` is a command line application for downloading scientific papers.
+
+## Usage
+```
+usage: papers-dl.py [-h] {fetch,parse} ...
+
+Download scientific papers from the command line
+
+positional arguments:
+  {fetch,parse}
+    fetch        try to download a paper from the given
+                 query
+    parse        parse identifiers from a file
+
+options:
+  -h, --help     show this help message and exit
+  
+# fetch
+usage: papers-dl.py fetch [-h] [-o path] (DOI|PMID|URL)
+
+positional arguments:
+  (DOI|PMID|URL)        the identifier to try to download
+
+options:
+  -h, --help            show this help message and exit
+  -o path, --output path
+                        optional output directory for
+                        downloaded papers
+
+# parse
+usage: papers-dl.py parse [-h] [-m type] path
+
+positional arguments:
+  path                  the path of the file to parse
+
+options:
+  -h, --help            show this help message and exit
+  -m type, --match type
+                        the type of identifier to match
+```
+This project includes a modified version of [scihub.py](https://github.com/zaytoun/scihub.py).

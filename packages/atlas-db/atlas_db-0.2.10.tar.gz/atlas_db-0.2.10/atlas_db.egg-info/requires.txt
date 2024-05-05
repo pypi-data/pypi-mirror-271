@@ -1,0 +1,6 @@
+click
+lxml>=5.2.1
+polars>=0.20.22
+
+[test]
+pytest

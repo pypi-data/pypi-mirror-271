@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+main_packg/__init__.py
+main_packg/main.py
+try_pub_pypi.egg-info/PKG-INFO
+try_pub_pypi.egg-info/SOURCES.txt
+try_pub_pypi.egg-info/dependency_links.txt
+try_pub_pypi.egg-info/entry_points.txt
+try_pub_pypi.egg-info/requires.txt
+try_pub_pypi.egg-info/top_level.txt

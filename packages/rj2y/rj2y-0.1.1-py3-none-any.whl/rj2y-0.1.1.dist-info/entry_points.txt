@@ -1,0 +1,2 @@
+[console_scripts]
+rj2y = rj2y.main:main

@@ -1,0 +1,7 @@
+setup.py
+ayoubinstadow/__init__.py
+ayoubinstadow/do.py
+ayoubinstadow.egg-info/PKG-INFO
+ayoubinstadow.egg-info/SOURCES.txt
+ayoubinstadow.egg-info/dependency_links.txt
+ayoubinstadow.egg-info/top_level.txt

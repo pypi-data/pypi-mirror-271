@@ -1,0 +1,15 @@
+colorama
+requests
+websocket-client
+websockets==11.0.3
+flask_restful
+cheroot
+flask
+lucit-licensing-python
+ujson
+psutil
+PySocks
+unicorn-fy
+unicorn-binance-rest-api
+typing_extensions
+Cython

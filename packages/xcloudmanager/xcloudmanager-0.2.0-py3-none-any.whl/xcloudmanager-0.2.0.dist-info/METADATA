@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xcloudmanager
+Version: 0.2.0
+Summary: 这是一个国信行云数据库并发查询python程序,主要应用于自动通报
+Home-page: https://github.com/bailulue
+Author: bailu
+Author-email: yabailu@chinatelecom.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: JayDeBeApi (==1.2.3)
+Requires-Dist: JPype1 (==1.5.0)
+
+行云数据库JDBC包。主要供中国电信、中国移动等通信公司或国家电网等使用国信行云数据库公司使用.
+

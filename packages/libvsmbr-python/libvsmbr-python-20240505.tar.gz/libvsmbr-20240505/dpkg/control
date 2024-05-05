@@ -1,0 +1,65 @@
+Source: libvsmbr
+Priority: extra
+Maintainer: Joachim Metz <joachim.metz@gmail.com>
+Build-Depends: debhelper (>= 9), dh-autoreconf, dh-python, pkg-config, python3-dev, python3-setuptools
+Standards-Version: 4.1.4
+Section: libs
+Homepage: https://github.com/libyal/libvsmbr
+Vcs-Git: https://github.com/libyal/libvsmbr.git
+
+Package: libvsmbr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libvsmbr1
+Replaces: libvsmbr1
+Suggests: libvsmbr-dbg
+Description: Library to access the Master Boot Record (MBR) volume system format
+ libvsmbr is a library to access the Master Boot Record (MBR) volume system format.
+
+Package: libvsmbr-dbg
+Architecture: any
+Section: debug
+Depends: libvsmbr (= ${binary:Version}), ${misc:Depends}
+Description: Debugging symbols for libvsmbr
+ Debugging symbols for libvsmbr.
+
+Package: libvsmbr-dev
+Section: libdevel
+Architecture: any
+Depends: libvsmbr (= ${binary:Version}), ${misc:Depends}
+Description: Header files and libraries for developing applications for libvsmbr
+ Header files and libraries for developing applications for libvsmbr.
+
+Package: libvsmbr-tools
+Section: utils
+Architecture: any
+Depends: libvsmbr (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libvsmbr-utils
+Replaces: libvsmbr-utils
+Description: Several tools for Several tools for reading Master Boot Record (MBR) volume systems
+ Several tools for Several tools for reading Master Boot Record (MBR) volume systems.
+
+Package: libvsmbr-tools-dbg
+Section: debug
+Architecture: any
+Depends: libvsmbr-tools (= ${binary:Version}), ${misc:Depends}
+Description: Debugging symbols for libvsmbr-tools
+ Debugging symbols for libvsmbr-tools.
+
+Package: libvsmbr-python3
+Section: python
+Architecture: any
+Depends: libvsmbr (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: python3-libvsmbr
+Replaces: python3-libvsmbr
+Suggests: libvsmbr-python3-dbg
+Description: Python 3 bindings for libvsmbr
+ Python 3 bindings for libvsmbr.
+
+Package: libvsmbr-python3-dbg
+Section: debug
+Architecture: any
+Depends: libvsmbr-python3 (= ${binary:Version}), ${misc:Depends}
+Description: Debugging symbols for libvsmbr-python3
+ Debugging symbols for libvsmbr-python3.
+

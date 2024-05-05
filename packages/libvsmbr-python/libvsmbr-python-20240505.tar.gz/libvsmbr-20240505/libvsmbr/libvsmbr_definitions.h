@@ -1,0 +1,74 @@
+/*
+ * The internal definitions
+ *
+ * Copyright (C) 2010-2024, Joachim Metz <joachim.metz@gmail.com>
+ *
+ * Refer to AUTHORS for acknowledgements.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+#if !defined( _LIBVSMBR_INTERNAL_DEFINITIONS_H )
+#define _LIBVSMBR_INTERNAL_DEFINITIONS_H
+
+#include <common.h>
+
+/* Define HAVE_LOCAL_LIBVSMBR for local use of libvsmbr
+ */
+#if !defined( HAVE_LOCAL_LIBVSMBR )
+#include <libvsmbr/definitions.h>
+
+/* The definitions in <libvsmbr/definitions.h> are copied here
+ * for local use of libvsmbr
+ */
+#else
+#define LIBVSMBR_VERSION			20240505
+
+/* The libvsmbr version string
+ */
+#define LIBVSMBR_VERSION_STRING			"20240505"
+
+/* The endian definitions
+ */
+#define LIBVSMBR_ENDIAN_BIG			_BYTE_STREAM_ENDIAN_BIG
+#define LIBVSMBR_ENDIAN_LITTLE			_BYTE_STREAM_ENDIAN_LITTLE
+
+/* The access flags definitions
+ * bit 1        set to 1 for read access
+ * bit 2        set to 1 for write access
+ * bit 3-8      not used
+ */
+enum LIBVSMBR_ACCESS_FLAGS
+{
+	LIBVSMBR_ACCESS_FLAG_READ		= 0x01,
+/* Reserved: not supported yet */
+	LIBVSMBR_ACCESS_FLAG_WRITE		= 0x02
+};
+
+/* The file access macros
+ */
+#define LIBVSMBR_OPEN_READ			( LIBVSMBR_ACCESS_FLAG_READ )
+/* Reserved: not supported yet */
+#define LIBVSMBR_OPEN_WRITE			( LIBVSMBR_ACCESS_FLAG_WRITE )
+/* Reserved: not supported yet */
+#define LIBVSMBR_OPEN_READ_WRITE		( LIBVSMBR_ACCESS_FLAG_READ | LIBVSMBR_ACCESS_FLAG_WRITE )
+
+#endif /* !defined( HAVE_LOCAL_LIBVSMBR ) */
+
+#define LIBVSMBR_MAXIMUM_CACHE_ENTRIES_SECTORS	16
+
+#define LIBVSMBR_MAXIMUM_RECURSION_DEPTH	256
+
+#endif /* !defined( _LIBVSMBR_INTERNAL_DEFINITIONS_H ) */
+

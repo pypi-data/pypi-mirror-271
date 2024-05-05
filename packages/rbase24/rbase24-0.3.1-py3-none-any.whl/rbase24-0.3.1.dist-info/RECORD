@@ -1,0 +1,12 @@
+rbase24-0.3.1.dist-info/METADATA,sha256=ABffIiSxVsF7dqwx3fGOGTUyzTY9Hc2bBZpuymPAizc,1494
+rbase24-0.3.1.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+rbase24-0.3.1.dist-info/entry_points.txt,sha256=EO1mxUB05bNoy-7MI30jlnXWLGiTn1GZg8_cHX8uc9I,46
+rbase24-0.3.1.dist-info/licenses/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+rbase24/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rbase24/__main__.py,sha256=KCU5vGQwlAfeGyph_b7qfoYifuyXmGFJhoFOHdvAuuQ,87
+rbase24/cli.py,sha256=bHysFvM7-Ex6YNWt0lAKV3pSGBBd1EnPnLMSXT7c4xE,2874
+rbase24/color.py,sha256=LYsqJTdypk4Otl81BpddkBVSrB8jJq6SZK_fzpr56rM,1884
+rbase24/config.py,sha256=jKljMDB3qjJKffNh_-G8psqvAN8dBi5lra0ixOA2v6c,2073
+rbase24/scheme.py,sha256=bdzBj7gBLEmV7NA245t4Y_bn1feD37jA2s74NYmY0S4,1941
+rbase24/typedefs.py,sha256=sdy9MWGlNnrDQM_OP2VGwRSsLHIOQUgQgV06BiOK_W0,858
+rbase24-0.3.1.dist-info/RECORD,,

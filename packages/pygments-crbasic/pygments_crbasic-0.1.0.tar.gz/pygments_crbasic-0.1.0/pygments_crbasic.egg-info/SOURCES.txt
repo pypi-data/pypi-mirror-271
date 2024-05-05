@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pygments_crbasic.py
+setup.cfg
+setup.py
+pygments_crbasic.egg-info/PKG-INFO
+pygments_crbasic.egg-info/SOURCES.txt
+pygments_crbasic.egg-info/dependency_links.txt
+pygments_crbasic.egg-info/entry_points.txt
+pygments_crbasic.egg-info/requires.txt
+pygments_crbasic.egg-info/top_level.txt

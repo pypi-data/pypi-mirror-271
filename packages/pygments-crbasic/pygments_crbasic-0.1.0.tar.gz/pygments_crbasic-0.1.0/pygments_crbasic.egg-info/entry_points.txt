@@ -1,0 +1,2 @@
+[pygments.lexers]
+crbasic = pygments_crbasic:CRBasicLexer

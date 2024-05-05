@@ -1,0 +1,11 @@
+pyyaml
+numpy
+pandas
+flask
+openai
+langchain
+langchain-community
+langchain-google-community
+dspy-ai
+tokencost
+google-api-python-client

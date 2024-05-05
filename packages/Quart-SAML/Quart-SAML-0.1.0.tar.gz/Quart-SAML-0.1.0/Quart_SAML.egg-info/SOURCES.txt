@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+quart_saml.py
+setup.py
+Quart_SAML.egg-info/PKG-INFO
+Quart_SAML.egg-info/SOURCES.txt
+Quart_SAML.egg-info/dependency_links.txt
+Quart_SAML.egg-info/not-zip-safe
+Quart_SAML.egg-info/requires.txt
+Quart_SAML.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+syngular/__init__.py,sha256=YL5kyYFpfpgkvSI4Rr31jXKby20dY7DnrBfUcXawzlE,324
+syngular/field.py,sha256=CGutdp5C-hiJlIBIJVrmO3-_MfHbY_2jIo0pECkA5o8,5151
+syngular/ideal.py,sha256=M7uJjidOc59eVrbvm1aTU-GGHEvH7l-yHnTYmD-LEWI,15274
+syngular/ideal_algorithms.py,sha256=PNKo4oGpBwnuVKYrDTzpaDszBBNmeycV4CMXFxQ9XhE,10676
+syngular/qring.py,sha256=FKaf_rClw3mfM7GF_VbKDG0nelFgXIOOoXqcmx1Vpy0,608
+syngular/ring.py,sha256=pfA7OYaxzZk8SA5exbba27pfEWt6h5WNad9VmH96ezc,2014
+syngular/tools.py,sha256=sL_Uquzi5tavzdHc65BDQPgs57h5WylG7i4qZEro-OY,2547
+syngular/variety.py,sha256=3A8ajI3NIcw0Cd18b8IqhEWgYKngp6nPgFh-gg7cb3k,17451
+syngular-0.2.1.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+syngular-0.2.1.dist-info/METADATA,sha256=oLO31syKC8-xdIdsUQkxzqcM88JqoSuIxEDpH0pA0mU,3809
+syngular-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+syngular-0.2.1.dist-info/top_level.txt,sha256=EAxQn18fD9BMMA9NoiMwsd46aYKjcbbjHQxwAHQmlVw,9
+syngular-0.2.1.dist-info/RECORD,,

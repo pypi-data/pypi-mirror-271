@@ -1,0 +1,9 @@
+README.md
+setup.py
+seffaflik2/__init__.py
+seffaflik2/seffaflik2.py
+seffaflik2.egg-info/PKG-INFO
+seffaflik2.egg-info/SOURCES.txt
+seffaflik2.egg-info/dependency_links.txt
+seffaflik2.egg-info/requires.txt
+seffaflik2.egg-info/top_level.txt

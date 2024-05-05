@@ -1,0 +1,307 @@
+# Standard Preamble
+
+# The types called "flag", "number", and "string" are built-in and do not need to be declared.
+# The turtle-graphics stuff that used to be here has moved to its own separate library.
+
+import:
+
+foreign "math" where
+
+	e, inf, nan, pi, tau : number;
+
+	acos, acosh, asin, asinh, atan, atanh,
+	ceil, cos, cosh, degrees, erf, erfc, exp, expm1,
+	abs@"fabs", factorial, floor, gamma,
+	lgamma, log, log10, log1p, log2,
+	radians, sin, sinh, sqrt,
+	tan, tanh, trunc, ulp : (number) -> number;
+
+	isfinite, isinf, isnan : (number) -> flag;
+
+	atan2, comb, copysign, dist, fmod, gcd, lcm, ldexp,
+	nextafter, perm, pow, remainder : (number, number) -> number;
+
+end;
+
+foreign "builtins" where
+	chr, str : (number) -> string;
+	len, ord : (string) -> number;
+	int : (number) -> number;
+end;
+
+foreign "sophie.adapters.yarn" where
+	mid : (string, number, number) -> string;
+	val : (string) -> maybe[number];
+	join: (list[string]) -> string;
+	is_match_at: (number, string, string) -> flag;
+	trim, ltrim, rtrim : (string) -> string;
+	split_lines : (string) -> list[string];
+end;
+
+foreign "operator" where
+	strcat@"add" : (string, string) -> string;
+end;
+
+# A few of Python's standard math functions are trouble (currently).
+	# ``dist`` computes Euclidean distance between two points specified as vectors, but Sophie still lacks these.
+	# ``fsum``, ``prod``, and ``hypot`` also work on vectors; same problem. (Pure-Sophie versions are provided.)
+	# ``frexp`` returns a tuple, which would confuse the evaluator. It needs an adapter to a known record type.
+	# Same goes for ``modf``, except it would be trivial in pure Sophie: ``pair(x-trunc(x), trunc(x))`` or similar.
+	# The combinatorics ``comb``, ``perm``, ``gcd``, and ``lcm`` have no analogue in the C library,
+	# so the VM does not (yet) support them. Numerical stability is a concern with these.
+	# ``factorial(x)`` is equivalent to ``gamma(x+1)`` except that Python uses arbitrary-precision integer math
+	# for the factorial. The VM may eventually bother with that, but not today.
+	# ``log`` in Python takes an optional base. Sophie does not do optional parameters.
+	# Therefore, Sophie's preamble provides ``log_base`` directly as the quotient of logs.
+	# At one time it was an alias to Python's ``log``, but C's math library has nothing comparable.
+	# ``isqrt`` demands an integer argument, which clashes with the intended semantics of "numbers are numbers".
+
+foreign "sophie.adapters.teletype_adapter"
+	where console : Console;
+end;
+
+foreign "sophie.adapters.fs_adapter" where
+    filesystem : FileSystem;
+end;
+
+type:
+
+	order is case:
+		less;
+		same;
+		more;
+	esac;
+
+	list[x] is CASE:
+		 nil;
+		 cons(head:x, tail:list[x]);
+	ESAC;
+
+	maybe[x] is case:
+		this(item:x);
+		nope;
+	esac;
+
+    entry[k,v] is (key: k, value:v);
+
+	pair[a,b] is (fst:a, snd:b);
+
+	folio[V,S] is case:
+		done;
+		step(view:V, state:S);
+	esac;
+
+	predicate[x] is (x)->flag;
+
+	Console is agent:
+		echo(list[string]);
+		read(!(string));
+		random(!(number));
+	end;
+
+	FileSystem is agent:
+		read_file(string, !(string));
+		read_lines(string, !(list[string]));
+	end;
+
+assume:
+	xs, ys: list[?];
+	xss: list[list[?]];
+	p, q: predicate;
+	n, idx: number;
+	s, needle, haystack: string;
+
+define:
+
+# Combinators:
+
+id(x) = x;
+non(p) = { x | not p(x) };
+compose(f,g) = { x | f(g(x)) };
+flip(f) = { a,b | f(b,a) };
+
+# List things:
+
+any(xs) = case xs of nil -> no; cons -> xs.head or any(xs.tail); esac;
+all(xs) = case xs of nil -> yes; cons -> xs.head and all(xs.tail); esac;
+
+map(fn, xs) = case xs of
+	nil -> nil;
+	cons -> cons(fn(xs.head), map(fn, xs.tail));
+esac;
+
+map2(fn, xs, ys) = case xs of  # Alternative to zip/apply forms
+	nil -> nil;
+	cons -> case ys of
+		nil -> nil;
+		cons -> cons(fn(xs.head, ys.head), map2(fn, xs.tail, ys.tail));
+	esac;
+esac;
+
+filter(p, xs) = case xs of
+	nil -> nil;
+	cons -> cons(xs.head, rest) if p(xs.head) else rest where
+		rest = filter(p, xs.tail);
+	end cons;
+esac;
+
+first(p:predicate[?x], xs:list[?x]):maybe[?x] = case xs of
+	nil -> nope;
+	cons -> this(xs.head) if p(xs.head) else first(p, xs.tail);
+esac;
+
+reduce(fn, strict a, xs) = case xs of
+	nil -> a;
+	cons -> reduce(fn, fn(a, xs.head), xs.tail);
+esac;
+
+unfold(fn, state) = case fn(state) as folio of
+	done -> nil;
+	step -> cons(folio.view, unfold(fn, folio.state));
+esac;
+
+cat(xs,ys) = case xs of
+	nil -> ys;
+	cons -> cons(xs.head, cat(xs.tail, ys));
+esac;
+
+flat(xss) = case xss of
+	nil -> nil;
+	cons -> cat(xss.head, flat(xss.tail));
+esac;
+
+take(n, xs) = nil if n < 1 else case xs of
+	nil -> nil;
+	cons -> cons(xs.head, take(n-1, xs.tail));
+esac;
+
+drop(n, xs) = xs if n < 1 else case xs of
+	nil -> nil;
+	cons -> drop(n-1, xs.tail);
+esac;
+
+take_while(p, xs) = case xs of
+	nil -> nil;
+	cons -> cons(xs.head, take_while(p, xs.tail)) if p(xs.head) else nil;
+esac;
+
+drop_while(p, xs) = case xs of
+	nil -> nil;
+	cons -> drop_while(p, xs.tail) if p(xs.head) else xs;
+esac;
+
+length_at(strict n, xs) = case xs of nil -> n; cons -> length_at(n+1, xs.tail); esac;
+
+length(xs) = length_at(0, xs);
+
+index(n, xs) = head(drop(n, xs));
+
+head(xs) = case xs of nil -> nope; cons -> this(xs.head); esac;
+
+iota(start, stop) : list[number]
+	# Count off a half-open range, stepping by one.
+	# For example, iota(3, 7) = [3,4,5,6]
+	# You can also start from an offset: iota(2.5, 4) = [2.5, 3.5]
+= nil if start >= stop else cons(start, iota(start+1, stop));
+
+count_off(strict n, xs) = case xs of
+	nil -> nil;
+	cons -> cons(entry(n, xs.head), count_off(n+1, xs.tail));
+esac;
+
+reverse(xs) = reduce(snoc, nil, xs);
+snoc(tail, head) = cons(head, tail);
+
+# You can have an infinite list as long as you don't try to use the whole thing.
+cycle(xs) = case xs of
+	nil -> absurd "infinite regress";  # However, an empty cycle is a bug.
+	cons -> loop;  # Maybe Sophie will detect these automatically some day?
+esac where
+	loop = cat(xs,loop);   # cat(xs, cycle(xs)) with a sufficiently smart optimizer.
+end cycle;
+
+iterated(fn, x) = inner(x) where inner(x) = cons(x, inner(fn(x))); end iterated;
+
+# Maybe Things
+
+either(x:maybe[?t], y:?t) = case x of
+	nope -> y;
+	this -> x.item;
+esac;
+
+surely(must:maybe[?x]) : ?x = case must of
+	nope -> absurd "caller gave assurances";
+	this -> must.item;
+esac;
+
+exists(x:maybe):flag = case x of nope -> no; this -> yes; esac;
+
+# Math Things
+
+add(a, b) = a + b;
+mul(a, b) = a * b;
+square(x) = x*x;
+
+max(a,b) = a if a >= b else b;
+min(a,b) = a if a <= b else b;
+
+sum(xs) = reduce(add, 0, xs);
+product(xs) = reduce(mul, 1, xs);
+hypot(xs) = sqrt(sum(map(square, xs)));
+sum_product(xs, ys) = sum(map2(mul, xs, ys));
+
+log_base(n, base) = log(n) / log(base);
+
+# String Things
+
+EOL = chr(10);
+
+left(s, size) = mid(s, 0, size);
+right(s, size) = mid(s, len(s)-size, size);
+
+interleave(x, ys) = case ys of
+	nil -> nil;
+	cons -> cons(ys.head, prefix(ys.tail));
+esac where
+	prefix(lst) = case lst of
+		nil -> nil;
+		cons -> cons(x, cons(lst.head, prefix(lst.tail)));
+	esac;
+end interleave;
+
+each_chr(s) = from(0) where
+	from(n) = nil if n >= len(s) else cons(mid(s,n,1), from(n+1));
+end each_chr;
+
+find_string(needle, haystack):maybe[number] = find_string_at(0, needle, haystack);
+
+find_string_at(offset, needle, haystack) = first(is_match, candidates) where
+	candidates = iota(offset, 1+len(haystack)-len(needle));
+	is_match(at) = is_match_at(at, needle, haystack);
+end find_string_at;
+
+replace_first(needle, haystack, with) = case find_string(needle, haystack) as found of
+	nope -> haystack;
+	this -> join [prefix, with, suffix] where
+		prefix = left(haystack, found.item);
+		suffix = mid(haystack, found.item+len(needle), len(haystack));
+	end this;
+esac;
+
+replace_all(needle, haystack, with) = join(from(0)) where
+	from(idx):list[string] = case find_string_at(idx, needle, haystack) as found of
+		nope -> [mid(haystack, idx, len(haystack))];
+		this -> cons(mid(haystack, idx, found.item-idx), cons(with, from(found.item+needle_size)));
+	esac;
+	needle_size = max(1, len(needle));
+end replace_all;
+
+# Algorithm things
+
+# Equivalent to first(is_done, iterated(advance, state)), but without consing.
+# (When the optimizer can do that by magic, I might switch to that simpler form.)
+until(is_done, advance, state) = run(state) where
+	run(x) = x if is_done(x) else run(advance(x));
+end until;
+
+end.

@@ -1,0 +1,73 @@
+# Types and functions useful for making 2-D interactive games. Oh, and a driver.
+#
+# Eventually.
+#
+
+import:
+	
+	sys."2d" (xy);
+	
+    foreign "sophie.adapters.game_adapter" (
+        xy, mouse_event, button_event, key_event
+    ) where
+        events : GameLoop;
+    end;
+
+type:
+
+# Let's represent color for games as an RGB triple of values in the range 0..255.
+# (Things outside this range will be taken modulo 256.)
+
+    rgb is (red:number, green:number, blue:number);
+
+    area is (left:number, top:number, width:number, height:number);
+
+    GameLoop is agent:
+        play(xy, number);
+        on_quit(!);
+        on_mouse(!(mouse_event));
+        on_button_down(!(button_event));
+        on_button_up(!(button_event));
+        on_key_down(!(key_event));
+        on_key_up(!(key_event));
+        on_tick(!(display));
+    end;
+    
+    mouse_event is (
+        pos : xy, rel : xy,
+        left : flag, middle : flag, right : flag,
+        is_touch : flag,
+    );
+
+    button_event is (pos:xy, button:number, is_touch:flag);
+    key_event is (unicode:string, key:number, mods:number, scancode:number);
+    
+    display is agent:
+        draw(list[image_element]);
+        # Maybe eventually some messages for setting screen mode, or grabs, or whatnot.
+    end;
+    
+    image_element is case:
+        fill(rgb:rgb);
+        stroke(rgb:rgb, strokes:list[stroke_element]);
+        # eventually, other kinds of image elements like bitmaps
+    esac;
+    
+    stroke_element is case:
+        hlin(x1:number, x2:number, y:number); 
+        vlin(x:number, y1:number, y2:number); 
+        line(start:xy, stop:xy);
+        polyline(points: list[xy]);
+        box(corner:xy, measure:xy);
+        fill_box(corner:xy, measure:xy);
+        circle(center:xy, radius:number);
+        ellipse(corner:xy, measure:xy);
+        arc(corner:xy, measure:xy, start_angle:number, stop_angle:number);
+    esac;
+
+
+define:
+
+    black = rgb(0,0,0);
+    white = rgb(255,255,255);
+

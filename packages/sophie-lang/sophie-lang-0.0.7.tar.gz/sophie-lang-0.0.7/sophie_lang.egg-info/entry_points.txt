@@ -1,0 +1,3 @@
+[console_scripts]
+sophie = sophie.cmdline:main
+

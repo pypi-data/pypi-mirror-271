@@ -1,0 +1,92 @@
+name: Vjer Build
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+env:
+  ARTIFACTS_DIR: artifacts
+  PYTHON_BUILD_VER: "3.11"
+  UNIT_TEST_DIR: unit_test_results
+  VJER_ENV: development
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        python-version:
+          - "3.11"
+          - "3.12"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+      - run: pip install flit && flit install --deps all && vjer "${{ github.job }}"
+
+  build:
+    needs:
+      - test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_BUILD_VER }}
+          cache: "pip"
+      - run: pip install flit && flit install --deps all && vjer "${{ github.job }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ARTIFACTS_DIR }}
+          path: ${{ env.ARTIFACTS_DIR }}
+
+  install-test:
+    needs: build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        python-version:
+          - "3.11"
+          - "3.12"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_BUILD_VER }}
+      - uses: actions/download-artifact@v4
+      - run: |
+          set -eu
+          pip install $ARTIFACTS_DIR/*.whl
+          cd tests
+          for test in test build release; do
+              vjer $test
+          done
+        if: matrix.os != 'windows-latest'
+      - run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+          pip install (Get-Item $env:ARTIFACTS_DIR\*.whl)
+          Set-Location tests
+          foreach ($test in @('test', 'build', 'release')) {
+              vjer $test }
+        if: matrix.os == 'windows-latest'
+
+  show-run-id:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.run_id }}
+
+# cSpell:ignore vjer venv

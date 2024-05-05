@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+src/test.py
+src/image_tpu/__init__.py
+src/image_tpu/tpu.py
+src/image_tpu.egg-info/PKG-INFO
+src/image_tpu.egg-info/SOURCES.txt
+src/image_tpu.egg-info/dependency_links.txt
+src/image_tpu.egg-info/top_level.txt

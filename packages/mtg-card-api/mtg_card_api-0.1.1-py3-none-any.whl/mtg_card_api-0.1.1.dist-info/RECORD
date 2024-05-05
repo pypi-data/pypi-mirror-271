@@ -1,0 +1,7 @@
+mtg_card_api/__init__.py,sha256=13tpRPrqk5QtiOeggkI3KBuRfb3qq7S5AfZGq4LzR10,121
+mtg_card_api/_utils.py,sha256=DOn2PAat-oQWvWf4a8X9EvwW6SeFNT85TbPlMjvHqSQ,149
+mtg_card_api/mtg_scryfall_api.py,sha256=ON4-J7DcOjZztRGcGFOiI9ywNxSE_5l0zj4o2-6IXi0,3754
+mtg_card_api-0.1.1.dist-info/METADATA,sha256=sndk7r1CJJe4hPZlKwyhCv7H8UZRCVVd9IGwSI1Chos,1511
+mtg_card_api-0.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+mtg_card_api-0.1.1.dist-info/licenses/LICENSE,sha256=0k7ecaO_VOSmLsvgsZSxxZLYNWFIYBAyxnFzBfamDUg,1069
+mtg_card_api-0.1.1.dist-info/RECORD,,

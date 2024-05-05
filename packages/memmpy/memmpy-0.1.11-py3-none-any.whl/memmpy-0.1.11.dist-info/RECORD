@@ -1,0 +1,13 @@
+memmpy/__init__.py,sha256=Vh8G3_UZOQJDpUgKcySNL8LrsNSdqucK98zWPNAIL_Q,445
+memmpy/_index.py,sha256=yM1fscVBp4pZj2Cjsg9pY5wlHzRWYdThcVMI_3P8408,1432
+memmpy/_jagged.py,sha256=mtC62GpIC_nP_CIyVJF5yG6124kYnH8vmKee2RrLAEA,19672
+memmpy/_labels.py,sha256=oKCTbdwe_9hWEZQu65BCtXsySY7Q5A28yOjSp1A9AQ4,3126
+memmpy/_loader.py,sha256=9y3lzL1G8DvjNDQH14KncCa-0gO_MIG4lhp17DDINOY,14781
+memmpy/_shuffle.py,sha256=T7WiDKQzedrmrJcEFRLi6R1W19kcilz5v-o7lPQghQk,2358
+memmpy/_subset.py,sha256=OqB4vZ7xNDeYvOfDyCO8XX88sd8efKhH3Kqg28dL9xk,2800
+memmpy/_vector.py,sha256=WALg_ZYa3aT5sJCgUOnFDJhfcnC9Be70kSCOfNAQAUc,2677
+memmpy/reroot.py,sha256=PDRvxG6Qn4oMrWB8iIo2No7bkZcMr6mB-XI26Xvd2bc,5795
+memmpy-0.1.11.dist-info/METADATA,sha256=7LO859CuCFXbUHmsOy_FgNcJYLNyMxZiymynMFiGqyU,2038
+memmpy-0.1.11.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+memmpy-0.1.11.dist-info/top_level.txt,sha256=0b95iyoZHRT_ZualRHKeIvcxA9kQflQZhlwWSXMtln8,7
+memmpy-0.1.11.dist-info/RECORD,,

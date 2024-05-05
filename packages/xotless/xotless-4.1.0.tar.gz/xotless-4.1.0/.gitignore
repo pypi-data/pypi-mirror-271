@@ -1,0 +1,15 @@
+dist/
+build/
+
+*.egg-info/
+*.pyc
+*.pyo
+
+.mypy_cache/
+.tox/
+.hypothesis/
+.coverage
+.python-version
+src/xotless/_version.py
+requirements-dev.lock
+requirements.lock

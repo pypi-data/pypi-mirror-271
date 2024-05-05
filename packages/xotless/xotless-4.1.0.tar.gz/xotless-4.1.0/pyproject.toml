@@ -1,0 +1,73 @@
+[project]
+name = "xotless"
+description = "Collection of small utilities that have not yet being promoted to xotl.tools."
+authors = [
+    { name = "Merchise Autrement [~º/~]", email = "info@merchise.de" }
+]
+dependencies = [
+    "xotl.tools>=2.2.1,<4.0; python_version <= '3.11'",
+    "xotl.tools>=3.0.0a5,<4.0; python_version > '3.11'",
+]
+readme = "README.rst"
+requires-python = ">=3.8"
+license = "MIT"
+dynamic = ["urls", "version"]
+
+[project.optional-dependencies]
+immutables = [
+    "immutables>=0.20",
+]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/xotless"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/xotless/_version.py"
+
+[tool.hatch.metadata.hooks.vcs]
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "sphinx~=7.1.2",
+    "ruff==0.4.2",
+    "ruff-lsp>=0.0.52",
+    "furo~=2024.1.29",
+    "hypothesis~=6.98.6",
+    "tox>=4.12.1",
+    "isort>=5.13.2",
+    "pip>=24.0",
+    "mypy==1.10.0",
+    "pytest>=8.0.1",
+    "pytest-cov>=4.1.0",
+    "pytest-xdist>=3.5.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+ignore = [
+  "E501", # line-length is left to the formatter
+]
+preview = true
+exclude = ["src/xotless/_version.py"]
+
+[tool.ruff.format]
+preview = true
+exclude = ["src/xotless/_version.py"]
+
+
+[tool.isort]
+profile = "black"
+line_length = 100
+src_paths = ["src/xotless/"]
+skip_gitignore = true

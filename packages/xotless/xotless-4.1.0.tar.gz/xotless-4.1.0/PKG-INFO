@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: xotless
+Version: 4.1.0
+Summary: Collection of small utilities that have not yet being promoted to xotl.tools.
+Author-email: "Merchise Autrement [~º/~]" <info@merchise.de>
+License-Expression: MIT
+Requires-Python: >=3.8
+Requires-Dist: xotl-tools<4.0,>=2.2.1; python_version <= '3.11'
+Requires-Dist: xotl-tools<4.0,>=3.0.0a5; python_version > '3.11'
+Provides-Extra: immutables
+Requires-Dist: immutables>=0.20; extra == 'immutables'
+Description-Content-Type: text/x-rst
+
+A collection of utilities which are not yet made part of xotl.

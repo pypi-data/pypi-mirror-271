@@ -1,0 +1,5 @@
+URL = "http://8.140.128.174:8019/homeApi/v1"
+WS_URL = "ws://8.140.128.174:32002"
+# DUWI_DOMAIN = "duwi_smart_hub"
+# APP_KEY = "2e479831-1fb7-751e-7017-7534f7f99fc1"
+# SECRET = "26af4883a943083a4c34083897fcea10"

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: duwi_smart_sdk
+Version: 0.0.1
+Summary: sdk for duwi third platform
+Home-page: https://github.com/Ledgerbiggg/duwi_smart_sdk
+Author: ledger
+Author-email: ledgerbiggg@gmail.com
+License: MIT
+Keywords: python,duwi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+Requires-Dist: aiohttp

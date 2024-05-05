@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: chord-reviews
+Version: 0.2.2
+Summary: Process reviews data, apply text preprocessing, and generate a chord plot visualization showing word co-occurrence patterns and sentiment analysis.
+Keywords: customer reviews,sentiment analysis,chord plot
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: nltk
+Requires-Dist: beautifulsoup4
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: holoviews
+

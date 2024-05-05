@@ -1,0 +1,7 @@
+[project]
+name = "verifia"
+authors = [
+    {name = "Houssem", email = "h.benbraiek@verifia.ai"},
+]
+version = "0.0.0"
+description = "Coming soon"

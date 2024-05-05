@@ -1,0 +1,6 @@
+pyproject.toml
+verifia/__init__.py
+verifia.egg-info/PKG-INFO
+verifia.egg-info/SOURCES.txt
+verifia.egg-info/dependency_links.txt
+verifia.egg-info/top_level.txt

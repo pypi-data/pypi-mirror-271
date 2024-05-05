@@ -1,0 +1,5 @@
+geopandas
+pandas
+plotly
+Pillow
+scikit-learn

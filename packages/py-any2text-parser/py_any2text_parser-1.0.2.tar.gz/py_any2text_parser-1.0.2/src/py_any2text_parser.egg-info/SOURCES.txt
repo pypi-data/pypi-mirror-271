@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+src/py_any2text_parser/__init__.py
+src/py_any2text_parser/pdf2text.py
+src/py_any2text_parser.egg-info/PKG-INFO
+src/py_any2text_parser.egg-info/SOURCES.txt
+src/py_any2text_parser.egg-info/dependency_links.txt
+src/py_any2text_parser.egg-info/top_level.txt
+src/py_any2text_parser/include/pdfcoordhelper.py
+src/py_any2text_parser/include/pdfpagehelper.py
+src/py_any2text_parser/include/pdftablehelper.py
+src/py_any2text_parser/include/pdfunstructuredhelper.py

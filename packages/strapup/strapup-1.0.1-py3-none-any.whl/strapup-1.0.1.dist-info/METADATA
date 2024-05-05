@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: strapup
+Version: 1.0.1
+Summary: 
+License: MIT
+Author: Karl Rittner
+Author-email: k.rittner@hotmail.de
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/plain
+
+
+Update pythonpath as need on startup of script. Create a custom logger, which can log to terminal and file at the same time, by simply choosing a name.
+
+python3 -m build
+python3 -m twine upload --verbose --skip-existing --repository pypi dist/*
+
+# python3 -m twine upload --repository testpypi dist/*
+# python3 -m twine upload --repository pypi dist/*
+
+# python3 -m pip install --upgrade build
+# python3 -m build
+
+# python3 -m pip install --upgrade twine
+# python3 -m twine upload --repository testpypi dist/*
+# python3 -m twine upload --repository pypi dist/*
+

@@ -1,0 +1,10 @@
+setup.py
+pytmtickets/__init__.py
+pytmtickets/client.py
+pytmtickets/model.py
+pytmtickets/query.py
+tmticket.egg-info/PKG-INFO
+tmticket.egg-info/SOURCES.txt
+tmticket.egg-info/dependency_links.txt
+tmticket.egg-info/requires.txt
+tmticket.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+constrainedlr/__init__.py
+constrainedlr/model.py
+constrainedlr/validation.py
+constrainedlr.egg-info/PKG-INFO
+constrainedlr.egg-info/SOURCES.txt
+constrainedlr.egg-info/dependency_links.txt
+constrainedlr.egg-info/requires.txt
+constrainedlr.egg-info/top_level.txt
+tests/test_fit.py

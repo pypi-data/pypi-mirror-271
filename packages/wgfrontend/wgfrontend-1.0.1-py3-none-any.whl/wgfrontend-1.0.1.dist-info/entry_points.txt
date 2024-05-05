@@ -1,0 +1,3 @@
+[console_scripts]
+wgfrontend = wgfrontend:main
+wgfrontend-password = wgfrontend.pwdtools:hash_password_interactively

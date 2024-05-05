@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+edterm/__init__.py
+edterm/data_reader.py
+edterm/edterm.py
+edterm.egg-info/PKG-INFO
+edterm.egg-info/SOURCES.txt
+edterm.egg-info/dependency_links.txt
+edterm.egg-info/entry_points.txt
+edterm.egg-info/requires.txt
+edterm.egg-info/top_level.txt

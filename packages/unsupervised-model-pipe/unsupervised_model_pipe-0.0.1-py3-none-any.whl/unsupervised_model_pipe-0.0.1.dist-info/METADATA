@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: unsupervised-model-pipe
+Version: 0.0.1
+Summary: Unsupervised model package from train to processed data.
+Author: Amirktb
+License: BSD-3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy <2.0.0,>=1.21.0
+Requires-Dist: pandas <2.0.0,>=1.3.5
+Requires-Dist: pydantic <2.0.0,>=1.8.1
+Requires-Dist: scikit-learn <2.0.0,>=1.1.3
+Requires-Dist: strictyaml <2.0.0,>=1.3.2
+Requires-Dist: ruamel.yaml <1.0.0,>=0.16.12
+Requires-Dist: joblib <2.0.0,>=1.0.1
+Requires-Dist: category-encoders
+Requires-Dist: kneed
+
+Unsupervised model package from train to processed data.

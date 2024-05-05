@@ -1,0 +1,108 @@
+LICENSE
+README.md
+setup.py
+parseq_XAS/XAS_fits.py
+parseq_XAS/XAS_nodes.py
+parseq_XAS/XAS_pipeline.py
+parseq_XAS/XAS_start.py
+parseq_XAS/XAS_tests.py
+parseq_XAS/XAS_transforms.py
+parseq_XAS/XAS_widgets.py
+parseq_XAS/__init__.py
+parseq_XAS/version.py
+parseq_XAS.egg-info/PKG-INFO
+parseq_XAS.egg-info/SOURCES.txt
+parseq_XAS.egg-info/dependency_links.txt
+parseq_XAS.egg-info/not-zip-safe
+parseq_XAS.egg-info/requires.txt
+parseq_XAS.egg-info/top_level.txt
+parseq_XAS/data/Cu2O_lnt1.fio
+parseq_XAS/data/Cu2O_lnt2.fio
+parseq_XAS/data/CuO_lnt.fio
+parseq_XAS/data/Cu_lnt1.fio
+parseq_XAS/data/Cu_lnt2.fio
+parseq_XAS/data/Cu_rt1.fio
+parseq_XAS/data/Cu_rt2.fio
+parseq_XAS/data/_Cu-WT_EXAFS_001.dat
+parseq_XAS/data/_Cu-WT_EXAFS_002.dat
+parseq_XAS/data/cu-ref-mix.res
+parseq_XAS/data/HERFD/20230318.h5
+parseq_XAS/data/HERFD/scan-24212_eiger_streaming.h5
+parseq_XAS/data/HERFD/scan-24213_eiger_streaming.h5
+parseq_XAS/data/foils/Ce-foil_EXAFS_23315.dat
+parseq_XAS/data/foils/Ce-foil_EXAFS_23316.dat
+parseq_XAS/data/foils/Ce-foil_EXAFS_23317.dat
+parseq_XAS/data/foils/Co-foil_EXAFS_23107.dat
+parseq_XAS/data/foils/Co-foil_EXAFS_23108.dat
+parseq_XAS/data/foils/Co-foil_EXAFS_23109.dat
+parseq_XAS/data/foils/Cr-foil_EXAFS_23293.dat
+parseq_XAS/data/foils/Cr-foil_EXAFS_23294.dat
+parseq_XAS/data/foils/Cr-foil_EXAFS_23295.dat
+parseq_XAS/data/foils/Cu-foil_EXAFS_23068.dat
+parseq_XAS/data/foils/Cu-foil_EXAFS_23069.dat
+parseq_XAS/data/foils/Cu-foil_EXAFS_23070.dat
+parseq_XAS/data/foils/Fe-foil_EXAFS_23147.dat
+parseq_XAS/data/foils/Fe-foil_EXAFS_23148.dat
+parseq_XAS/data/foils/Fe-foil_EXAFS_23149.dat
+parseq_XAS/data/foils/Ti-foil_EXAFS_23360.dat
+parseq_XAS/data/foils/Ti-foil_EXAFS_23361.dat
+parseq_XAS/data/foils/Ti-foil_EXAFS_23362.dat
+parseq_XAS/data/foils/V-foil_EXAFS_23339.dat
+parseq_XAS/data/foils/V-foil_EXAFS_23340.dat
+parseq_XAS/data/foils/V-foil_EXAFS_23341.dat
+parseq_XAS/doc/_images/01-currents Tr.png
+parseq_XAS/doc/_images/05-mud.png
+parseq_XAS/doc/_images/06-chi.png
+parseq_XAS/doc/_images/07-FT.png
+parseq_XAS/doc/_images/08-BFT-fit.png
+parseq_XAS/doc/_images/XAS-foils.gif
+parseq_XAS/doc/_images/XAS_icon.ico
+parseq_XAS/doc/_images/_read_.me
+parseq_XAS/doc/_images/about-0-parseq.png
+parseq_XAS/doc/_images/about-1-XAS.png
+parseq_XAS/doc/_images/about.gif
+parseq_XAS/doc/_images/corrections.png
+parseq_XAS/doc/_images/pipeline-data-tree.png
+parseq_XAS/doc/_images/pipeline-file-tree.png
+parseq_XAS/doc/_images/pipeline-fit-EXAFS.png
+parseq_XAS/doc/_images/pipeline-graph-XAS.png
+parseq_XAS/doc/_images/pipeline-line-props.png
+parseq_XAS/doc/_images/pipeline-proj-load.png
+parseq_XAS/doc/_images/pipeline-proj-save.png
+parseq_XAS/doc/_images/pipeline-timing.png
+parseq_XAS/doc/_images/pipeline-transform-apply.png
+parseq_XAS/doc/_images/pipeline-undo.png
+parseq_XAS/doc/_images/save.png
+parseq_XAS/doc/_images/start.png
+parseq_XAS/doc/_images/verbosity.png
+parseq_XAS/saved/CeRu2-1-currents Tr.png
+parseq_XAS/saved/CeRu2-5-µd.png
+parseq_XAS/saved/CeRu2-6-χ(k).png
+parseq_XAS/saved/CeRu2-7-FT, χ(r).png
+parseq_XAS/saved/CeRu2-8-BFT, χ̃(k).png
+parseq_XAS/saved/CeRu2.pspj
+parseq_XAS/saved/CrFeCoCu-foils-1-currents Tr.png
+parseq_XAS/saved/CrFeCoCu-foils-5-µd.png
+parseq_XAS/saved/CrFeCoCu-foils-6-χ(k).png
+parseq_XAS/saved/CrFeCoCu-foils-7-FT, χ(r).png
+parseq_XAS/saved/CrFeCoCu-foils-8-BFT, χ̃(k).png
+parseq_XAS/saved/CrFeCoCu-foils.pspj
+parseq_XAS/saved/Cu-1-currents Tr.png
+parseq_XAS/saved/Cu-5-µd.png
+parseq_XAS/saved/Cu-6-χ(k).png
+parseq_XAS/saved/Cu-7-FT, χ(r).png
+parseq_XAS/saved/Cu-8-BFT, χ̃(k).png
+parseq_XAS/saved/Cu-LCF-5-µd.png
+parseq_XAS/saved/Cu-LCF-6-χ(k).png
+parseq_XAS/saved/Cu-LCF-7-FT, χ(r).png
+parseq_XAS/saved/Cu-LCF-8-BFT, χ̃(k).png
+parseq_XAS/saved/Cu-LCF.pspj
+parseq_XAS/saved/Cu.pspj
+parseq_XAS/saved/Cu_corr.pspj
+parseq_XAS/saved/HERFDvsTr-1-currents Tr.png
+parseq_XAS/saved/HERFDvsTr-4-2D XES.png
+parseq_XAS/saved/HERFDvsTr-5-µd.png
+parseq_XAS/saved/HERFDvsTr-6-χ(k).png
+parseq_XAS/saved/HERFDvsTr-7-FT, χ(r).png
+parseq_XAS/saved/HERFDvsTr-8-BFT, χ̃(k).png
+parseq_XAS/saved/HERFDvsTr.pspj

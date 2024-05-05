@@ -1,0 +1,10 @@
+atlas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atlas/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+atlas/apple_health.py,sha256=UBfX1YXT2M8gfZ004lhls1TG4BDuWqAY2wsMeErcb4s,4940
+atlas/cli.py,sha256=viVjLOPw_l8nsWbs0afyiF0ubIlx7ghQfJxuTwpRlw8,694
+atlas_db-0.2.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+atlas_db-0.2.8.dist-info/METADATA,sha256=Srjd2HZZnBmGVKvJi_iKzj7M2mioVM6_zahDydOrIiQ,7695
+atlas_db-0.2.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+atlas_db-0.2.8.dist-info/entry_points.txt,sha256=oAyvOkyVWsHRQ_dBrmOOyj37WiTa0jtfBCkMRQiCU3I,40
+atlas_db-0.2.8.dist-info/top_level.txt,sha256=53ZN7cZuQ3hzKg-W7531I13UDIwjSNwHrLkgCFZMN2E,6
+atlas_db-0.2.8.dist-info/RECORD,,

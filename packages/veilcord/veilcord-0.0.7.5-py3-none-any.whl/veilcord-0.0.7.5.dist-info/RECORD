@@ -1,0 +1,13 @@
+veilcord/__init__.py,sha256=eP4IC76QwwtIP5GUcvlXs59dvDD_N7gHNzGmrhZXSVY,735
+veilcord/__main__.py,sha256=KiRvJm1wI-7z17CVxKI2WnYnOR8-OxzahN2mAdDbgdk,12878
+veilcord/__session__.py,sha256=RkUuWa1ThtMXLIrT3NP09aNhrQ_DuChex763sR-GyR0,8633
+veilcord/__solver__.py,sha256=S4lrwdgiCGTyXwxFmV4pJVtJFR1KsCpYdp6INymp2ys,9655
+veilcord/__udcord__.py,sha256=_BHZLdOOJI_BD6O1dYnGW6lOdy8lhIU_5x9vu9WWXRg,6226
+veilcord/models/device.py,sha256=Lb66k_8nEB23bLxWq05ix3uozeMod0UYoY7s6K2PJz8,4000
+veilcord/models/dynamic.py,sha256=Lr21hzfyVdn7hdNsG1J1r77jlyjBv-9hLf8QM4VCkqc,1202
+veilcord/models/websocket.py,sha256=YzPcI13iV77VBKgWrYODxuDUkEYWjwkAvEc0SrH-ycQ,2741
+veilcord-0.0.7.5.dist-info/LICENSE,sha256=-Jo9iGmMJBoXLZbot4aXWA3bA1pzs3G_aXi9IXS34WY,1085
+veilcord-0.0.7.5.dist-info/METADATA,sha256=k12nkBoHYlcbz48oraMHrxjMPbV6KuKp7T-Lt88aD9I,4118
+veilcord-0.0.7.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+veilcord-0.0.7.5.dist-info/top_level.txt,sha256=3SzsHbOVm6-nPt63kYSI_hrheA0moETb5LNK0Z94_DI,9
+veilcord-0.0.7.5.dist-info/RECORD,,

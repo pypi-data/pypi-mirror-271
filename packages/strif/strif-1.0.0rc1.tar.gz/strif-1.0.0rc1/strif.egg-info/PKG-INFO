@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: strif
+Version: 1.0.0rc1
+Summary: Tiny, useful lib for strings and files
+Home-page: https://github.com/jlevy/strif
+Author: Joshua Levy
+License: Apache 2
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6, <3.13
+License-File: LICENSE
+
+
+Strif is a tiny (<1000 loc) library of string and file utilities for Python 3.6+.
+
+More information: https://github.com/jlevy/strif

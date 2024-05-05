@@ -1,0 +1,17 @@
+[project]
+name = "py-any2text-parser"
+version = "1.0.1"
+description = "Any2Text - any format to text using Unstructured.io"
+authors = [
+	{ name="Vanson Leung", email="vanson@vanportdev.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.9',
+]

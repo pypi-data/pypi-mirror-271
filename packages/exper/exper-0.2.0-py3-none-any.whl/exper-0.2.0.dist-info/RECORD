@@ -1,0 +1,12 @@
+exper/__init__.py,sha256=CKlI53DkCV4xi4qe1mETtjQAX7IHku0a3ZVhyQdNwqo,245
+exper/comms.py,sha256=Imy4tIzTWB9kyWLd2oGROXAY8lqzGvXoL20IydiNbd8,8630
+exper/core.py,sha256=U4kVXK8DIfOG5WJxoOspRmyldiyTHdOX1mCC7w87l_c,6156
+exper/cuda_utils.py,sha256=15hr20A7C0w8kHZhQURqM8Y4jUFFaltP3qPU8JF9jZA,2495
+exper/engine.py,sha256=wp4Pqbq8paxFixRKVbUrstZyJvJgux-0fYhqmFpI9Vo,11431
+exper/loss_utils.py,sha256=MkBELviedci4Q3TjzJ6TDQvye_N9m9ivSFij-34LhR8,1640
+exper/pretty.py,sha256=nye0hEwa_j5hJM0J8meZSIhtlRN4sxSH-VE6ZDUVMi0,1109
+exper/tasks.py,sha256=10TA4wKGLdiEw0Ueq_tF29RCG1J-mFNXHHg2NWlXPgs,1385
+exper-0.2.0.dist-info/METADATA,sha256=Tp-jPVchbkUtAw0J7dPF3A5R63EpARmC0XNcyaGHtXY,1515
+exper-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+exper-0.2.0.dist-info/top_level.txt,sha256=HTGuEABUiFzAtEyVpDY_3QlZNGHa9F1hAOMX36t9cHc,6
+exper-0.2.0.dist-info/RECORD,,

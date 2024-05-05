@@ -1,0 +1,12 @@
+pyadic/__init__.py,sha256=R0E-JPLfK8lHV-s0-kw5maM5YfNnNBdLxlc6tZIMJC0,171
+pyadic/field_extension.py,sha256=_aXV_h4qfRgSdeqdznBUXdcqVlYgUC-g-6t7qeUZduA,4006
+pyadic/finite_field.py,sha256=eUNRwSa7o7m1LHtOcdK8789ssANHAhqSdSs068IGgeA,14075
+pyadic/gaussian_rationals.py,sha256=GMU_p_AoG3_q3xOj_0uKBDl3unVX4GM2mWVYOCLnUGs,3819
+pyadic/interpolation.py,sha256=yEWhTHw_vaFZGk5MhGPQClDunn2E4I8ROJW1DFoMT38,6466
+pyadic/padic.py,sha256=7DfabCUvVMOLLAZHje9PLmZMYlnTCJ-7KJ9tS3Cilss,14065
+pyadic/primes.py,sha256=5YrON98_OJ2OS8KrbiLBO4CJ0XGBfVmu4D3ws3iQgJE,1380
+pyadic-0.2.1.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyadic-0.2.1.dist-info/METADATA,sha256=cP7AM177bxnO3XIn0-d5rCorLClcORRz1O_CMPGmcH8,4359
+pyadic-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyadic-0.2.1.dist-info/top_level.txt,sha256=pMlHnKvbsW4l_7DrCR4Vbbhr66XZxZ8Dul59Nas-Hx0,7
+pyadic-0.2.1.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+pydantic
+tqdm
+
+[all]
+transformers
+torch
+requests
+
+[api]
+requests
+
+[dev]
+pytest
+
+[transformers]
+transformers
+torch

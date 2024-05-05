@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: setux_core
+Version: 0.2418.0
+Summary: System deployment
+Author-email: Louis RIVIERE <louis@riviere.xyz>
+License: MIT
+Project-URL: pypi, https://pypi.org/project/setux-core
+Project-URL: repository, https://github.com/louis-riviere-xyz/setux_core
+Keywords: utility
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pybrary >=0.2337.0
+
+# Setux Core
+
+[Setux] Base classes.
+
+[PyPI] - [Repo] - [Doc]
+
+
+[PyPI]: https://pypi.org/project/setux_core
+[Repo]: https://github.com/louis-riviere-xyz/setux_core
+[Doc]: https://setux-core.readthedocs.io/en/latest
+[Setux]: https://setux.readthedocs.io/en/latest

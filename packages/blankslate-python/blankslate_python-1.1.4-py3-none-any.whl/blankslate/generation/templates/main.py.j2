@@ -1,0 +1,27 @@
+"""main.py: The main entry point of the application."""
+
+from .logs.setup_logging import setup_logging
+
+main_logger = setup_logging()
+
+"""
+To-do:
+- Add the main function.
+
+To-fix:
+- Nothing, whoop whoop!
+"""
+
+
+def main() -> None:
+    """The main function of the application."""
+    main_logger.info("Application started.")
+
+    # Add your code here.
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        main_logger.info("Exiting application due to user interrupt...")

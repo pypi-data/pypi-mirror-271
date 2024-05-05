@@ -1,0 +1,6 @@
+requests
+pyperclip
+pystray
+psutil
+selenium
+requests

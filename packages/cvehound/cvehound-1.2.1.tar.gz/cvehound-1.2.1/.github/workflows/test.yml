@@ -1,0 +1,163 @@
+name: test
+
+on:
+  push:
+    paths:
+    - 'cvehound/**'
+    - 'tests/**'
+  pull_request:
+    paths:
+    - 'cvehound/**'
+    - 'tests/**'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * MON'
+
+env:
+  STABLE_BRANCHES: ("linux-6.6.y" "linux-6.1.y" "linux-5.15.y" "linux-5.10.y" "linux-5.4.y" "linux-4.19.y")
+
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+        - os: ubuntu-20.04
+          python-version: "3.5"
+        - os: ubuntu-latest
+          python-version: "3.11"
+        - os: macos-latest
+          python-version: "3.10"
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install CVEhound
+      run: python -m pip --disable-pip-version-check install .
+
+    - name: Run CVEHound
+      run: |
+        cvehound --help
+        cvehound --version
+
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8]
+        os: [ubuntu-20.04]
+        ocaml-version: [4.07.1]
+        coccinelle-version: [1.0.7, 1.0.8, 1.0.9, 1.1.0, 1.1.1, 1.2, git]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Get Date
+      id: date
+      run: echo "date=$(date +'%Y-%m')" >> $GITHUB_OUTPUT
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+        cache-dependency-path: setup.py
+
+    - name: Update Apt-Get Index
+      run: sudo apt-get update -qq
+
+    - name: Install system Coccinelle with apt
+      if: ${{ matrix.coccinelle-version == 'system' }}
+      run: |
+        sudo apt-get install -y coccinelle
+
+    - name: Setup Opam
+      if: ${{ matrix.coccinelle-version != 'system' }}
+      uses: ocaml/setup-ocaml@v2
+      with:
+        ocaml-compiler: ${{ matrix.ocaml-version }}
+        opam-disable-sandboxing: true
+        cache-prefix: ${{ matrix.coccinelle-version }}
+
+    - name: Install Coccinelle with opam (${{ matrix.coccinelle-version }})
+      if: ${{ matrix.coccinelle-version != 'system' && matrix.coccinelle-version != 'git' }}
+      run: opam install -y coccinelle.${{ matrix.coccinelle-version }}
+
+    - name: Clone Coccinelle
+      uses: actions/checkout@v4
+      if: ${{ matrix.coccinelle-version == 'git' }}
+      with:
+        repository: coccinelle/coccinelle
+        path: coccinelle
+
+    - name: Install latest Coccinelle from git
+      if: ${{ matrix.coccinelle-version == 'git' }}
+      run: |
+        eval $(opam env)
+        cd coccinelle
+        opam install -y .
+
+    - name: Spatch Version
+      run: |
+        which opam >/dev/null 2>&1 && eval $(opam env)
+        spatch --version
+        if [[ ${{ matrix.coccinelle-version }} != 'system' && ${{ matrix.coccinelle-version }} != 'git' ]]; then
+          spatch_version="$(spatch --version | head -1)"
+          if [[ ${{ matrix.coccinelle-version }} != '1.0.9' ]]; then
+            if [[ "$spatch_version" != "spatch version ${{ matrix.coccinelle-version }}"* ]]; then
+              echo "Wrong coccinelle version installed" >&2
+              exit 1
+            fi
+          elif [[ "$spatch_version" != "spatch version 1.0.8"* ]]; then
+              echo "Wrong coccinelle version installed" >&2
+              exit 1
+          fi
+        fi
+
+    - name: Install CVEhound
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install --upgrade pytest
+        python -m pip install -e '.[tests]'
+
+    - name: Cache Kernel Bundle
+      uses: actions/cache@v4
+      with:
+        path: clone.bundle
+        key: linux-${{ steps.date.outputs.date }}
+
+    - name: Download Linux Tree
+      run: |
+        if [[ ! -f clone.bundle ]]; then
+          sudo apt-get install -y axel
+          axel -q https://mirrors.edge.kernel.org/pub/scm/.bundles/pub/scm/linux/kernel/git/stable/linux/clone.bundle
+        fi
+        git clone clone.bundle tests/linux
+        cd tests/linux
+        git remote set-url origin git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+        git remote set-branches origin master
+        git remote add next --no-tags git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git
+        git remote set-branches next master
+        stable=${{env.STABLE_BRANCHES}}
+        git remote add stable --no-tags git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
+        git remote set-branches stable ${stable[@]}
+        git fetch --all
+        cd -
+
+    - name: Test with pytest
+      run: |
+        sudo setcap cap_sys_nice,cap_sys_admin+eip $(realpath $(which python3))
+        which opam >/dev/null 2>&1 && eval $(opam env)
+        readarray RULES < <(git diff --name-only ${{ github.event.before }}..${{ github.event.after }} | grep -o 'CVE-[[:digit:]]*-[[:digit:]]*')
+        if [[ ${#RULES[@]} -gt 0 && ${#RULES[@]} -le 5 ]]; then
+          pytest --runslow $(for rule in ${RULES[@]}; do echo " --cve=$rule "; done)
+        else
+          pytest
+        fi

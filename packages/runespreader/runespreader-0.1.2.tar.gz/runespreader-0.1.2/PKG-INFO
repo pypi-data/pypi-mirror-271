@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: runespreader
+Version: 0.1.2
+Summary: 
+Author: Charles Warren
+Author-email: ciwarren@mtu.edu
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: anyio (>=3.7.1,<4.0.0)
+Requires-Dist: black (>=23.7.0,<24.0.0)
+Requires-Dist: clickhouse-driver (>=0.2.6,<0.3.0)
+Requires-Dist: discord (>=2.3.2,<3.0.0)
+Requires-Dist: isort (>=5.12.0,<6.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: plotly (>=5.15.0,<6.0.0)
+Requires-Dist: pytest (>=7.4.0,<8.0.0)
+Requires-Dist: pytest-asyncio (>=0.21.1,<0.22.0)
+Requires-Dist: pytest-cov (>=4.1.0,<5.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+Clickhouse table creation statements:
+
+```
+CREATE TABLE default.rs_buys
+(
+    `high` UInt64 COMMENT 'Buy price',
+    `highTime` DateTime COMMENT 'Buy time',
+    `name` String COMMENT 'Friendly Name',
+    `id` UInt64 COMMENT 'Not friendly Name'
+)
+ENGINE = ReplacingMergeTree 
+ORDER BY (id, highTime)
+PRIMARY KEY (id, highTime)
+SETTINGS index_granularity = 8192 
+```
+
+```
+CREATE TABLE default.rs_sells
+(
+    `low` UInt64 COMMENT 'Sell price',
+    `lowTime` DateTime COMMENT 'Sell time',
+    `name` String COMMENT 'Friendly Name',
+    `id` UInt64 COMMENT 'Not friendly Name'
+)
+ENGINE = ReplacingMergeTree 
+ORDER BY (id, lowTime)
+PRIMARY KEY (id, lowTime)
+SETTINGS index_granularity = 8192
+```

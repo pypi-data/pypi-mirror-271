@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: moticreader
+Version: 0.3
+Summary: A package for managing Motic image
+Author: yyb
+Author-email: yyb2020123@163.com
+Requires-Python: >=3.6
+License-File: LICENSE
+

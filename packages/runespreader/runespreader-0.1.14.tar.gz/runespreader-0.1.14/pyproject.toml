@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "runespreader"
+version = "0.1.14"
+description = ""
+authors = ["Charles Warren <ciwarren@mtu.edu>"]
+include = ["runespreader", "tests"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.3"
+clickhouse-driver = "^0.2.6"
+pyyaml = "^6.0.1"
+discord = "^2.3.2"
+numpy = "^1.26.4"
+
+[tool.poetry.scripts]
+spreader = "runespreader.spreaderfinder:main"
+
+[tool.poetry.group.dev.dependencies]
+deptry = "^0.16.1"
+black = "^24.4.2"
+isort = "^5.13.2"
+pytest-cov = "^4.1.0"
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+line_length = 80
+
+[tool.deptry]
+ignore = ["DEP003"]

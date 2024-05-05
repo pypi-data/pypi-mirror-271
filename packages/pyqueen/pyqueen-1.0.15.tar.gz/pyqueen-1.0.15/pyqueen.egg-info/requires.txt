@@ -1,0 +1,5 @@
+pandas
+requests
+SQLAlchemy
+xlrd==1.2.0
+XlsxWriter

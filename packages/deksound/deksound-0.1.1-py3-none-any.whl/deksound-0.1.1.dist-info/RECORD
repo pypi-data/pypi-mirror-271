@@ -1,0 +1,10 @@
+deksound-0.1.1.dist-info/METADATA,sha256=5LRFfQMem7WC7yvbOZc11pOP757Dz6vzfdnE5I4ch7A,239
+deksound-0.1.1.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+deksound-0.1.1.dist-info/entry_points.txt,sha256=xDlZgu1d7nIyqbe6ev6zgW1lKK8BO_mCiAQ8NfDMGe4,60
+deksound/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deksound/click/__entry__.py,sha256=CMuxUzXoEe4TcHFZwv-MNFwHnu1HSZCDpXFpqQ814uM,42
+deksound/click/__init__.py,sha256=96n5wQAzMxLy5lssaOSEnAhHdBEnHyzAdSKuCPw5JcU,217
+deksound/core/__init__.py,sha256=FjAwCQAgsV_ZSwWxxjeYhZMkzx-ATEUkUEZrYBmrsZE,1143
+deksound/core/res/failure.mp3,sha256=tN4e2rmRIKI4spzkjK7zMOgDZLoWjHHDzPVQv7NS-Pk,26156
+deksound/core/res/success.mp3,sha256=W-9mSvvAtbhBsrZU46-bnpTYx22nnNLzVk-bX8nsUy4,31808
+deksound-0.1.1.dist-info/RECORD,,

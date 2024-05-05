@@ -1,0 +1,3 @@
+[console_scripts]
+deksound = deksound.click.__entry__:main
+

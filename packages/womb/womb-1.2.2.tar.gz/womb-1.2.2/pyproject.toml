@@ -1,0 +1,53 @@
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "womb"
+version = "1.2.2"
+description = "Drawings of the womb and fields."
+authors = []
+readme = "venues/stages/womb/readme.md"
+packages = [
+    { include = "womb", from = "venues/stages" },
+]
+license = "GPL 3.0 Standalone + non-business"
+
+exclude = [
+	"node_modules/**/*",
+	"monetary_trees/**/*"
+]
+
+
+
+[tool.poetry.urls]
+GitLab = "https://gitlab.com/status600/treasures/womb.1"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+biotech = "^1.1.10"
+law_dictionary = "^1.0.12"
+ships = "^1.2.6"
+somatic = "^3.0.3"
+click = "^8.1.7"
+docker = "^7.0.0"
+ecdsa = "0.19.0"
+pydash = "^8.0.0"
+pymongo = "^4.6.3"
+receptors = "^0.0.1"
+rich = "^13.7.1"
+sanic = "^23.12.1"
+sanic-ext = "^23.12.0"
+setuptools = "^69.5.1"
+
+
+[tool.poetry.scripts]
+womb = 'womb:clique'
+
+
+

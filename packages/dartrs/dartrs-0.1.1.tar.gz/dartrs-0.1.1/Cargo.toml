@@ -1,0 +1,31 @@
+[package]
+name = "dartrs"
+version = "0.1.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "dartrs"
+crate-type = ["cdylib", "lib"]
+
+
+[dependencies]
+anyhow = "1.0.82"
+candle-core = { git = "https://github.com/huggingface/candle.git", version = "0.5.0" }
+candle-nn = { git = "https://github.com/huggingface/candle.git", version = "0.5.0" }
+candle-transformers = { git = "https://github.com/huggingface/candle.git", version = "0.5.0" }
+hf-hub = { version = "0.3.2" }
+rand = "0.8.5"
+serde = "1.0.199"
+serde_json = "1.0.116"
+tokenizers = "0.19.1"
+pyo3 = { version = "0.21.2", features = ["extension-module"] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+openssl = { version = "*", features = ["vendored"] }
+
+
+[features]
+default = []
+cuda = ["candle-core/cuda", "candle-nn/cuda", "candle-transformers/cuda"]

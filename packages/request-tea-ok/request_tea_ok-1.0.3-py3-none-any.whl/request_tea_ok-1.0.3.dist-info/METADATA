@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: request-tea-ok
+Version: 1.0.3
+Summary: This function is designed to make HTTP requests to the website app.tea.xyz
+Home-page: https://github.com/wahdalo/tea-python
+Author: Wahdalo
+Author-email: ahdx.wtf@gmail.com
+Project-URL: Homepage, https://github.com/wahdalo/tea-python
+Project-URL: Source, https://github.com/wahdalo/tea-python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.20.0
+
+<h1 align="center">Welcome to request-tea-ok! 👋 </h1>
+
+<p align="center">This function is designed to make HTTP requests to the website app.tea.xyz. 💖 </p>
+        
+## 🎯 How does it work
+
+The project utilizes the `requests` library in Python to send HTTP requests. Its purpose is to simplify user interactions with the website and retrieve responses.
+        
+## Installation : `pip install true-random`
+        
+## 📝 License
+        
+* Copyright © 2024 Ahda

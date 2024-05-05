@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+api6/Encryption.py
+api6/__init__.py
+api6/client.py
+api6.egg-info/PKG-INFO
+api6.egg-info/SOURCES.txt
+api6.egg-info/dependency_links.txt
+api6.egg-info/top_level.txt

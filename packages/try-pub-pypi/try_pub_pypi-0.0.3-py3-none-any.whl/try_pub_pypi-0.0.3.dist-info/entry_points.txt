@@ -1,0 +1,2 @@
+[console_scripts]
+try_pub_pypi = main_packg.main:main

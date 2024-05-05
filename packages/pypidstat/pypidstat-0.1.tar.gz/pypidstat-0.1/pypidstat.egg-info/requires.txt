@@ -1,0 +1,3 @@
+dpkt>=1.9.8
+libpcap>=1.11.0b2
+pypcap>=1.3.0

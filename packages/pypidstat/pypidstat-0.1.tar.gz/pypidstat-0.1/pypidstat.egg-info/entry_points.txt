@@ -1,0 +1,3 @@
+[console_scripts]
+pypidstat = pypidstat:main
+

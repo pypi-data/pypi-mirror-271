@@ -1,0 +1,11 @@
+README.md
+setup.py
+memmpy/__init__.py
+memmpy/_index.py
+memmpy/_shuffle.py
+memmpy/_vector.py
+memmpy.egg-info/PKG-INFO
+memmpy.egg-info/SOURCES.txt
+memmpy.egg-info/dependency_links.txt
+memmpy.egg-info/requires.txt
+memmpy.egg-info/top_level.txt

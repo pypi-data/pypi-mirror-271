@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: asyncAminoLab
+Version: 1.0
+Summary: async libary for aminoapps.com. ton wallet: UQAeAZH2DkWqsU8zLtdpx9ELkM0agCtCoi8myYkPOJ-9ObNS
+Home-page: https://github.com/l0v3m0n3y/AminoLab
+Download-URL: https://github.com/l0v3m0n3y/AminoLab/archive/refs/heads/main.zip
+Author-email: pepsiritp@gmail.com
+Keywords: aminoapps,amino-py,amino,amino-bot,narvii,api,python,python3,python3.x,botamino,AminoLab
+Requires-Dist: setuptools
+Requires-Dist: aiohttp

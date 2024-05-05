@@ -1,0 +1,32 @@
+[project]
+name = "email-profile"
+version = "0.4.0"
+authors = [
+  { name="Fernando Celmer", email="email@fernandocelmer.com" },
+]
+license = {file = "LICENSE"}
+description = "📩 Email Profile"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  'Development Status :: 4 - Beta',
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+  'Intended Audience :: Developers',
+  'Natural Language :: English',
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/linux-profile/email-profile"
+Issues = "https://github.com/linux-profile/email-profile/issues"
+Repository = "https://github.com/linux-profile/email-profile"
+Documentation = "https://github.com/linux-profile/email-profile/blob/master/README.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

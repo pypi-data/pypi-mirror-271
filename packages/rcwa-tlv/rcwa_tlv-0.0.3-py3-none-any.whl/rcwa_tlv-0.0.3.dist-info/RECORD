@@ -1,0 +1,16 @@
+rcwa_tlv/__init__.py,sha256=3wseiFm7pe9J-1DSdZ9B8jqL-xK9yRTaS-YNRS3e5rA,141
+rcwa_tlv/rcwa.py,sha256=IHXou3J1YPtV0gIe6ySBkAs-MhTYBL3n8vVaQFLv6h8,20284
+rcwa_tlv/devices/device.py,sha256=mzc52yZHpKy1iLozK7ETghK0aPjN3xWf4UkI6z-2hfY,308
+rcwa_tlv/devices/normal_fields.py,sha256=-qYvJAKUT5oLUIJQUAgGg18y93r21NLnB8NutIWOJFo,38
+rcwa_tlv/devices/shapes.py,sha256=vy9KP7xqLzJm5CxMBQwBRi9zAHgzRWEML6NxUItjGHg,1762
+rcwa_tlv/devices/source.py,sha256=BOLmChxE9W2WeWeLJAWAoFv8Vnxpf7_kw8PrAeTwuhs,693
+rcwa_tlv/materials/Si.txt,sha256=YoIA3NXCrgGkNSpsaQnA_6DM_SAHHFtIF2B2Sd33Kfg,4146
+rcwa_tlv/materials/SiO2.txt,sha256=lFlaoLc-wVoSMGcbhEUcbI698stUJ-8fMAYufNBT00Q,279
+rcwa_tlv/materials/TiO2.txt,sha256=DX7rSsJIcvgxevYG-mcEFQqz0at013zHeoRbuosaAzs,370
+rcwa_tlv/materials/__init__.py,sha256=G_O_MDBrXg-Tte0a13KxFzDn9iTXtnPrgUbHmVhE_jc,57
+rcwa_tlv/materials/materials.py,sha256=wik7JkKYyF0OiVQF7Lw9hNuxBrc5c2Flmze3TbN5DNs,1725
+rcwa_tlv/utils/convmat.py,sha256=PufJZurFbNcE0xHIAAQSZo-VwpNhaPNOGhMTaVd-R4Y,1431
+rcwa_tlv/utils/normal_vector.py,sha256=jKhcvsX2oyuUrbXwTNmzxDqtN-kv-5238oJaIP5s0hs,698
+rcwa_tlv-0.0.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+rcwa_tlv-0.0.3.dist-info/METADATA,sha256=BfoBalCJAd642QA-iuNfOARFbbRt29jtnUVe_EOJgVM,1820
+rcwa_tlv-0.0.3.dist-info/RECORD,,

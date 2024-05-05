@@ -1,0 +1,107 @@
+# mmo_tools
+Đây là một thư viện Python chứa các hàm tiện ích để chuyển đổi dữ liệu và cấu hình proxy .
+
+## service
+- **convert_data**
+- **headers**
+- **checklive**
+## funciton
+
+### `convert_data`
+- Chuyển đổi dữ liệu từ tệp đầu vào thành danh sách các đối tượng từ điển.
+- **input**: path file input (str).
+- **result**: dict (`[{},{}`]).
+### `headers`
+- return dict facebook headers 
+
+### `checklive`
+- return status account facebook uid
+- **input** : user-id facebook account
+- **result** : + status live : 1 
+               + status die  : 0
+
+## example
+```python
+import os , sys
+from mmo_tools import *
+# Giả sử file_path là đường dẫn tới tệp dữ liệu
+file_path = 'data/mmo_tools.txt'
+def func1():
+    # Chuyển đổi dữ liệu từ tệp
+    data = convert_data(file_path)
+
+    print(data)  # [{'key': 'value'}, {'key2': 'value2'}]
+
+def func2():
+    headers = headers()
+    print(headers) # {'user-agent':'my user-agent','accept':'*/*'...}
+
+def func3():
+    status = checlive(506356883)
+    print(status) # result : 0 
+
+def func4():
+    text_header = """Accept:
+        application/json
+        Accept-Encoding:
+        gzip, deflate, br
+        Accept-Language:
+        vi,en;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6
+        Af-Ac-Enc-Dat:
+        76febcb9e58ec473
+        Af-Ac-Enc-Sz-Token:
+        Content-Type:
+        application/json
+        Cookie:
+        SPC_F=sd csrftoken=cqU0GeqIjPTFYa8sQVxErzCCL0; _sapid=878a8e52ceae1f37af41e782c4a107a2bb6f14b7f15a; _QPWSDCXHZQA=3dae8843-e342-492f-a3b8-da60beccb5f1; REC7iLP4Q=d67aaf93-f09f-4d75-b07d-2225dd63e14c; SPC_SEC_SI=v1-ZnA0YW5MYUVjbW5DYWtkMiFNIhMn3SkgaoHS2GGOkoPjrPTsG0xaWcq8h4iGLJ5I7jySj7dH46pGcL/xEDPYBPxZyPA=; SPC_SI=xE4vZgAAAAB0MGMyeWFNYjgijAAAAAAAakdhbmNBVDc=
+        Dnt:
+        1
+        Referer:
+        https://shopee.vn/product/812388782/19095894588
+        Sec-Ch-Ua:
+        "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+        Sec-Ch-Ua-Mobile:
+        ?0
+        Sec-Ch-Ua-Platform:
+        "Windows"
+        Sec-Fetch-Dest:
+        empty
+        Sec-Fetch-Mode:
+        cors
+        Sec-Fetch-Site:
+        same-origin
+        Sec-Gpc:
+        1
+        User-Agent:
+        Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+        X-Api-Source:
+        pc
+        X-Csrftoken:
+        cqU0GeqIjPTyrTm7hFYa8sQVxErzCCL0
+        X-Requested-With:
+        XMLHttpRequest
+        X-Sap-Ri:
+        b1433766d864a2832c216f3203012915742f41eef36d20ae281c
+        X-Sap-Sec:
+        cNj3T/Svgbrpw0FpBaJu8AXV8iyptfJuBaJn/Gv5NKaJuBjySyfdSyj4jBaJuBxJu/aJpBbJuKaJuBxJuBaI2BaJuIaJuBP/jvxgnbc5Ec7gVefOiDYqng9jVKaJuBjXXXirYmijABaJuB
+        X-Shopee-Language:
+        vi
+        X-Sz-Sdk-Version:
+        1.9.0"""
+    r = convert_headers_web(text_header)
+    print(r) # result : {'Accept': 'application/json', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'vi,en;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6', 'Af-Ac-Enc-Dat': '76febcb9e58ec473', 'Af-Ac-Enc-Sz-Token': '', 'Content-Type': 'application/json', 'Cookie': 'SPC_F=sd csrftoken=cqU0GeqIjPTFYa8sQVxErzCCL0; _sapid=878a8e52ceae1f37af41e782c4a107a2bb6f14b7f15a; _QPWSDCXHZQA=3dae8843-e342-492f-a3b8-da60beccb5f1; REC7iLP4Q=d67aaf93-f09f-4d75-b07d-2225dd63e14c; SPC_SEC_SI=v1-ZnA0YW5MYUVjbW5DYWtkMiFNIhMn3SkgaoHS2GGOkoPjrPTsG0xaWcq8h4iGLJ5I7jySj7dH46pGcL/xEDPYBPxZyPA=; SPC_SI=xE4vZgAAAAB0MGMyeWFNYjgijAAAAAAAakdhbmNBVDc=', 'Dnt': '1', 'Referer': 'https://shopee.vn/product/812388782/19095894588', 'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"Windows"', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin', 'Sec-Gpc': '1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 'X-Api-Source': 'pc', 'X-Csrftoken': 'cqU0GeqIjPTyrTm7hFYa8sQVxErzCCL0', 'X-Requested-With': 'XMLHttpRequest', 'X-Sap-Ri': 'b1433766d864a2832c216f3203012915742f41eef36d20ae281c', 'X-Sap-Sec': 'cNj3T/Svgbrpw0FpBaJu8AXV8iyptfJuBaJn/Gv5NKaJuBjySyfdSyj4jBaJuBxJu/aJpBbJuKaJuBxJuBaI2BaJuIaJuBP/jvxgnbc5Ec7gVefOiDYqng9jVKaJuBjXXXirYmijABaJuB', 'X-Shopee-Language': 'vi', 'X-Sz-Sdk-Version': '1.9.0'}
+
+```
+## install
+```bash
+pip install mmo_tools
+
+```
+## update new version
+``` update
+pip install --upgrade mmo_tools
+```
+# contact
+-  Youtube : [ilam](https://www.youtube.com/@iam_dlam)
+- Facebbok : [Le Dinh Lam](https://www.facebook.com/IT.Admin.InF/)
+- Telegram : [Lam](https://t.me/im_dlam)

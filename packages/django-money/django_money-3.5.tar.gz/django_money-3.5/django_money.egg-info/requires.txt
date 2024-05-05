@@ -1,0 +1,14 @@
+setuptools
+Django>=2.2
+py-moneyed<3.1,>=2.0
+
+[exchange]
+certifi
+
+[test]
+pytest<8.3,>=8.2
+pytest-django
+pytest-cov
+mixer
+mypy
+django-stubs

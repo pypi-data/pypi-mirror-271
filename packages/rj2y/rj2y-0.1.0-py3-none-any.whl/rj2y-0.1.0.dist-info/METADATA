@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: rj2y
+Version: 0.1.0
+Summary: Recursively convert JSON including json-string to YAML
+Project-URL: Homepage, https://github.com/pollenjp/rj2y-py
+Project-URL: Repository, https://github.com/pollenjp/rj2y-py
+Author-email: pollenjp <polleninjp@gmail.com>
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: click>=8.1.7
+Description-Content-Type: text/markdown
+
+# rj2y
+
+Describe your project here.

@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>JustDeepIt</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', path='/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ url_for('static', path='/tree.jquery.js') }}"></script>
+    <script src="{{ url_for('static', path='/utils.js') }}"></script>
+</head>
+<body>
+    <div id="app-module-panel">
+    
+    <table id="app-menu">
+    <tr>
+        <td><h1>JustDeepIt</h1></td>
+        <td><form id="shutdown-panel" method='POST' action="/app/shutdown"><button type="submit" id="shutdown"><span style="font-size:1.3em;">&#8864;</span> SHUTDOWN APP</button></form></td>
+    </tr>
+    </table>
+    
+    <div id="app-module-card">
+    <a href="/module/OD" class="card">
+        <div class="card-desc"><h2>Object Detection</h2></div>
+    </a>
+    
+
+    <a href="/module/IS" class="card">
+        <div class="card-desc"><h2>Instance Segmentation</h2></div>
+    </a>
+    
+    
+    <a href="/module/SOD" class="card">
+        <div class="card-desc"><h2>Salient Object Detection</h2></div>
+    </a>
+    </div>
+        
+    <div id="version">JustDeepIt v{{version}}</div>
+    </div>
+</body> 
+</html>

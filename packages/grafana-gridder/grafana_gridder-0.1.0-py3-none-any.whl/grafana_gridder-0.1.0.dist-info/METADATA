@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: grafana_gridder
+Version: 0.1.0
+Summary: Create Grid layouts for Grafana dashboards.
+Author-email: Eduard Dranca <ggridder@proton.me>
+License: MIT License
+        
+        Copyright (c) 2024 Eduard Dranca
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/EduardDranca/GrafanaGridder
+Project-URL: Issues, https://github.com/EduardDranca/GrafanaGridder/issues
+Keywords: grafana,grid,dashboard
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attr ==0.3.2
+Requires-Dist: attrs ==23.2.0
+Requires-Dist: grafanalib ==0.7.1
+
+Grafana Gridder
+---
+
+The Grafana Gridder is a grafanalib wrapper designed to simplify the organization and layout of panels within Grafana dashboards.
+It provides an intuitive way to define and position groups of panels in a grid layout, making it easier to create visually appealing and organized dashboards.
+
+### Features
+* Panel Grouping: Define groups of panels that can be positioned together within a dashboard.
+* Flexible Layout: Supports flexible grid layouts, allowing panels to be arranged in rows with customizable widths and heights.
+* Vertical Positioning: Easily position panel groups vertically within a dashboard.
+* Intuitive API: Simple and easy-to-use API for defining panel layouts and positioning.
+
+### Example
+```python
+from grafanalib.core import Dashboard, TimeSeries, BarGauge, RowPanel
+from grafana_gridder import PanelGroup, PanelPositioning, PanelSize
+
+# Define panel groups
+panel_group1 = PanelGroup(
+    layout=[[PanelSize.LARGE, PanelSize.MEDIUM], [PanelSize.SMALL, PanelSize.SMALL]],
+    panels=[TimeSeries(), TimeSeries(), BarGauge(), BarGauge()])
+panel_group2 = PanelGroup(
+    layout=[PanelSize.SMALL, PanelSize.MEDIUM, PanelSize.MEDIUM],
+    panels=[TimeSeries(), TimeSeries(), TimeSeries()],
+    row=RowPanel(title="RowTitle"))
+
+# Create panel positioning
+positioning = PanelPositioning(panel_groups=[panel_group1, panel_group2])
+
+# Generate dashboard
+dashboard = Dashboard(
+    title='My Dashboard',
+    panels=positioning.panels
+)
+```
+
+### Installation
+You can install the Grafana Panel Layout Wrapper using pip:
+
+```shell
+pip install grafana_gridder
+```

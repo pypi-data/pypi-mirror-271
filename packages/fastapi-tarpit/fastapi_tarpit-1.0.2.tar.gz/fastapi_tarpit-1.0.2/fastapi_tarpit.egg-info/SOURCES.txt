@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+fastapi_tarpit/__init__.py
+fastapi_tarpit/tarpit.py
+fastapi_tarpit.egg-info/PKG-INFO
+fastapi_tarpit.egg-info/SOURCES.txt
+fastapi_tarpit.egg-info/dependency_links.txt
+fastapi_tarpit.egg-info/requires.txt
+fastapi_tarpit.egg-info/top_level.txt

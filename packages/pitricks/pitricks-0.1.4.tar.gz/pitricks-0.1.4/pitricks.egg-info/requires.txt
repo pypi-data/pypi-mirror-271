@@ -1,0 +1,4 @@
+regex
+rich
+nest_asyncio
+pretty_errors

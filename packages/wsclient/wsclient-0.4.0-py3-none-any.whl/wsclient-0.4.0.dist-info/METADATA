@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wsclient
+Version: 0.4.0
+Summary: A framework for implementing websocket APIs
+Home-page: https://github.com/binares/wsclient
+Author: binares
+Author-email: binares@protonmail.com
+License: MIT
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.18.4
+Requires-Dist: websockets >=4.0.1
+Requires-Dist: python-socketio[asyncio_client] >=4.6.0
+Requires-Dist: fons >=0.4.0
+
+# wsclient
+A framework for implementing websocket APIs
+
+Examples to follow.

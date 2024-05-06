@@ -1,0 +1,8 @@
+manim
+manim-mobject-svg
+markdown-it-py
+mdformat
+mdit-py-plugins
+numpy
+pillow
+pyyaml

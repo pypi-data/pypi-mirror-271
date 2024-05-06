@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+drf_standardized_response/__init__.py
+drf_standardized_response/apps.py
+drf_standardized_response/openapi.py
+drf_standardized_response/renderers.py
+drf_standardized_response/response_standarizer.py
+drf_standardized_response/settings.py
+drf_standardized_response.egg-info/PKG-INFO
+drf_standardized_response.egg-info/SOURCES.txt
+drf_standardized_response.egg-info/dependency_links.txt
+drf_standardized_response.egg-info/requires.txt
+drf_standardized_response.egg-info/top_level.txt

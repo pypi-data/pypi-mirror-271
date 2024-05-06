@@ -1,0 +1,9 @@
+airthings_ble/__init__.py,sha256=Nxgb1FTUWlQPWDzIZCgJYKwhG25cWQBZfKWrHFkt9GU,304
+airthings_ble/const.py,sha256=hB9C3DotIIEUW9mOht2PfNAjMMOhqlf3NtOImJUpvZs,2165
+airthings_ble/device_type.py,sha256=eFVFh9CUVIG7ChRQemJoLwtgm336knuasvxM9DIOlSA,4048
+airthings_ble/parser.py,sha256=BAmUhep0X7aksHzsfXN5y1TZIXmO9_rv4bOjr-zBuM4,25525
+airthings_ble/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airthings_ble-0.9.0.dist-info/LICENSE,sha256=_hdUCmoRDzki4fYDJfn-5KpG7-7p6YJ6IsbMfrTXN6Y,1078
+airthings_ble-0.9.0.dist-info/METADATA,sha256=WyN_qZbUz_jMIpE0zDt0GQ477RxMgn8l9A5yfo8R-xA,2192
+airthings_ble-0.9.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airthings_ble-0.9.0.dist-info/RECORD,,

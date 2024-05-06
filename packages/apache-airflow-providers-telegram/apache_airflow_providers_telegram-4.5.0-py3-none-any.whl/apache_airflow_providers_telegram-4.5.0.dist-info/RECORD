@@ -1,0 +1,11 @@
+airflow/providers/telegram/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/telegram/__init__.py,sha256=I45ziG0xXBXSo8_ZooawNKEtB4uvtQV5zOWYLxD_fTU,1583
+airflow/providers/telegram/get_provider_info.py,sha256=s9jFeejdFby0QeQlpenBLE5Agaj4mgqYmZ6dPfErcp8,2743
+airflow/providers/telegram/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/telegram/hooks/telegram.py,sha256=QqX3H65L8DOZSIqmNO_Q5SqDOr6SEtPpep61MXBPlf8,5746
+airflow/providers/telegram/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/telegram/operators/telegram.py,sha256=fvKOeHwuf0o26wWVP2sER9ByCHD6dkNZCPzjIqp1D8k,3014
+apache_airflow_providers_telegram-4.5.0.dist-info/entry_points.txt,sha256=QbI_ZGIDTfpx3npCqi0CebJFs_NCjoG8Tn9dGkQDBkE,104
+apache_airflow_providers_telegram-4.5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_telegram-4.5.0.dist-info/METADATA,sha256=SF8gOKT0mQMnBB6_C1HmCusyD75aCS6oHR2og_d-1lQ,4794
+apache_airflow_providers_telegram-4.5.0.dist-info/RECORD,,

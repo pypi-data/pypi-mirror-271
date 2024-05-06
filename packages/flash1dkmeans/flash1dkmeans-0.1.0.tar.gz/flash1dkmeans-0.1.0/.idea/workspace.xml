@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ba58836-480f-43dd-9244-0130cb4b0f23" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flash1dkmeans/two_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/flash1dkmeans/two_cluster.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SyphonArch&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SyphonArch/flash1dkmeans.git&quot;,
+    &quot;accountId&quot;: &quot;78a9a325-3645-4dd5-ba30-89d57dcfc76e&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2g0ckhIOtcRZbf0wuNcUZcsVEhk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ba58836-480f-43dd-9244-0130cb4b0f23" name="Changes" comment="" />
+      <created>1714838079481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714838079481</updated>
+      <workItem from="1714838080524" duration="170000" />
+      <workItem from="1714838257640" duration="1013000" />
+      <workItem from="1714888190868" duration="167000" />
+      <workItem from="1714898221385" duration="481000" />
+      <workItem from="1714899699435" duration="2811000" />
+      <workItem from="1714905466256" duration="33030000" />
+    </task>
+    <task id="LOCAL-00001" summary="Drop start_idx and stop_idx">
+      <option name="closed" value="true" />
+      <created>1714905994757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714905994757</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix logic and semantics">
+      <option name="closed" value="true" />
+      <created>1714906248163</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714906248163</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add back start_idx and stop_idx">
+      <option name="closed" value="true" />
+      <created>1714912137226</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714912137226</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implementation without start_idx and stop_idx">
+      <option name="closed" value="true" />
+      <created>1714912671224</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714912671224</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add start_idx and stop_idx">
+      <option name="closed" value="true" />
+      <created>1714916169153</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714916169153</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial complete implementation">
+      <option name="closed" value="true" />
+      <created>1714922815609</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714922815609</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Cleanup">
+      <option name="closed" value="true" />
+      <created>1714925358837</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714925358837</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Drop numba for now">
+      <option name="closed" value="true" />
+      <created>1714928130547</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714928130547</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Make Numba work">
+      <option name="closed" value="true" />
+      <created>1714934013878</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714934013878</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Increment version">
+      <option name="closed" value="true" />
+      <created>1714934049075</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714934049075</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update README">
+      <option name="closed" value="true" />
+      <created>1714934232634</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714934232634</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactor code">
+      <option name="closed" value="true" />
+      <created>1714937209451</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714937209451</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Increment version">
+      <option name="closed" value="true" />
+      <created>1714937226459</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714937226459</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Change argument ordering">
+      <option name="closed" value="true" />
+      <created>1714937500698</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714937500698</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Drop start_idx and stop_idx" />
+    <MESSAGE value="Fix logic and semantics" />
+    <MESSAGE value="Add back start_idx and stop_idx" />
+    <MESSAGE value="Implementation without start_idx and stop_idx" />
+    <MESSAGE value="Add start_idx and stop_idx" />
+    <MESSAGE value="Initial complete implementation" />
+    <MESSAGE value="Cleanup" />
+    <MESSAGE value="Drop numba for now" />
+    <MESSAGE value="Make Numba work" />
+    <MESSAGE value="Update README" />
+    <MESSAGE value="Refactor code" />
+    <MESSAGE value="Increment version" />
+    <MESSAGE value="Change argument ordering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change argument ordering" />
+  </component>
+</project>

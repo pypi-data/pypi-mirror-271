@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: test_1_varify_ic
+Version: 0.1
+Summary: testing and debugging project
+Author: ic
+Author-email: quattroporte54@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+testing readme

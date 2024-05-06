@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: SimpleWorkTime
+Version: 0.2.0
+Summary: A simple command-line work time tracker
+Author: John Vouvakis Manousakis
+Author-email: ioannis_vm@berkeley.edu
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE

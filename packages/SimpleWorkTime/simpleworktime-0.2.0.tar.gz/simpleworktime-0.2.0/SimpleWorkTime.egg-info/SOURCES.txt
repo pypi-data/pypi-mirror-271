@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SimpleWorkTime.egg-info/PKG-INFO
+SimpleWorkTime.egg-info/SOURCES.txt
+SimpleWorkTime.egg-info/dependency_links.txt
+SimpleWorkTime.egg-info/entry_points.txt
+SimpleWorkTime.egg-info/top_level.txt
+src/__init__.py
+src/main.py

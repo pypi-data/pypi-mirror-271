@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.py
+comwatt/__init__.py
+comwatt.egg-info/PKG-INFO
+comwatt.egg-info/SOURCES.txt
+comwatt.egg-info/dependency_links.txt
+comwatt.egg-info/requires.txt
+comwatt.egg-info/top_level.txt

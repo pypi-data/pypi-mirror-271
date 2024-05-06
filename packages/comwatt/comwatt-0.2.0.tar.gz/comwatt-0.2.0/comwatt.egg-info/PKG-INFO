@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: comwatt
+Version: 0.2.0
+Summary: Python client for Comwatt
+Home-page: https://github.com/51CGO/comwatt
+Author: Christophe Godart
+Author-email: 51CGO@armaghast.eu
+License: MIT
+Keywords: Comwatt,client
+License-File: LICENSE
+Requires-Dist: selenium

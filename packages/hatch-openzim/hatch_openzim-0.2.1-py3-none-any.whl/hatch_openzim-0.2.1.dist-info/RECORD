@@ -1,0 +1,14 @@
+hatch_openzim/__about__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+hatch_openzim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hatch_openzim/build_hook.py,sha256=vb-rbSI4EVFd0WfeQeE83j3nR3wV7phWhTs1rKKnMNk,686
+hatch_openzim/files_install.py,sha256=mOJ7Bvq8vbl5jsPW0N0J720vOWH7l6XGXtDnd8Z6pEY,9044
+hatch_openzim/hooks.py,sha256=pIuQ3tAddDNSAQe92uWv4xF-Ln4kBnXQjxgOLc557U8,385
+hatch_openzim/metadata.py,sha256=uFVrt5s-nQOP3g7O-DEihh5SzLLJFZdUwUyHggKDynU,2686
+hatch_openzim/metadata_hook.py,sha256=cfqBp_2p7YWRPlP99mKc4cw0DsBO5nFDSVr4g8mZ7OM,628
+hatch_openzim/shared.py,sha256=Dc9m_ptWjTe1Fbgj-QCEbilbmHFDvuGg26PMlsNSpIA,474
+hatch_openzim/utils.py,sha256=9OXyeyuAuYE0VBIDNBejtUkkAHj60dnOc3OLtgOAQUk,2901
+hatch_openzim-0.2.1.dist-info/METADATA,sha256=OFGVgNLHPztVWxQ_fi9EC1qAeXd2FYphkVhHWokS7sI,13592
+hatch_openzim-0.2.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+hatch_openzim-0.2.1.dist-info/entry_points.txt,sha256=2XJsrtjGToQ6d5vttJpF8_WXTI1i7YjdRetJHqJ6Dlw,38
+hatch_openzim-0.2.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hatch_openzim-0.2.1.dist-info/RECORD,,

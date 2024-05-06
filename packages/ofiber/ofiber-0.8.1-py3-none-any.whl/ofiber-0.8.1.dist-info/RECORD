@@ -1,0 +1,14 @@
+ofiber/__init__.py,sha256=idxIRU7Rgu7pnquxfNAfcPMXj2POmVpEuNPSGioEdaI,1154
+ofiber/basics.py,sha256=AXitQ62BRj-B_KMdDOF8jD8IWn29BI3x2aEqBKCaReQ,8331
+ofiber/cylinder_step.py,sha256=3YJicPKhTbZU0BDzOjuDtE1IJECOxdeO857zOQlv1UI,30012
+ofiber/dispersion.py,sha256=IAXSCsmKF56ih1UXjJGXY95g8OKjzwQ2TtjcoMs3crA,3220
+ofiber/graded_index.py,sha256=We00_-hrSROcTVuqTSyCcVz6BZyH1Sp-_sSMVLxLqSo,2046
+ofiber/noise.py,sha256=KmKXj1cL1n-KhKnxWAGZugiTwPnBiygkkByO8pvXjMQ,4098
+ofiber/planar_parabolic.py,sha256=xgjl2_uFtX_5EndRC22gPvImYpDc4jToNn4yjw5qUIQ,3717
+ofiber/planar_step.py,sha256=mzt6s9ReJf5dmeKgVPZtGDVPuEhIYwnL_HFE0rCg5LU,11144
+ofiber/refraction.py,sha256=vUuXZVDppTqGQpxmQcQ9qGvEYQeWRhgJfroVUCeUqnA,30594
+ofiber-0.8.1.dist-info/LICENSE.txt,sha256=ejkB0xF2JdK2YDchdGllaDQXdk16qokdYB_J5J6dgcY,1055
+ofiber-0.8.1.dist-info/METADATA,sha256=5wztCpWkjqR4XLwcXEBCFC8BYcSBWAQORcJgUzZor74,5380
+ofiber-0.8.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ofiber-0.8.1.dist-info/top_level.txt,sha256=aO9Mefn6tnK7_9MC0gnGc2cn0dF7wOM2hX3uaxvLBBk,7
+ofiber-0.8.1.dist-info/RECORD,,

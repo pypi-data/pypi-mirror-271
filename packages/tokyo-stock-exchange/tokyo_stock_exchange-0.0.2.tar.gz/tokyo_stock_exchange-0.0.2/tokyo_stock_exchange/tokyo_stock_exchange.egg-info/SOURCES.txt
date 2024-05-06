@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+tokyo_stock_exchange/tse.csv
+tokyo_stock_exchange/tokyo_stock_exchange.egg-info/PKG-INFO
+tokyo_stock_exchange/tokyo_stock_exchange.egg-info/SOURCES.txt
+tokyo_stock_exchange/tokyo_stock_exchange.egg-info/dependency_links.txt
+tokyo_stock_exchange/tokyo_stock_exchange.egg-info/requires.txt
+tokyo_stock_exchange/tokyo_stock_exchange.egg-info/top_level.txt

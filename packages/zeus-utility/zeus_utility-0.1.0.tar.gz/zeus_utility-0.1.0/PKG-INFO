@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: zeus_utility
+Version: 0.1.0
+Summary: Just some useful utilities Zeus will use in almost every projects.
+Home-page: https://github.com/zeuscsc/zeus_utility.git
+Author: Zeus Chiu
+Author-email: zeuscsc@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pypdf==4.2.0
+Requires-Dist: tqdm==4.66.4
+
+
+# Zeus's Utility
+
+## Features
+- [x] Parallel Execute
+
+## Quick Usage:
+### Install:
+```shell
+pip install zeus-utility
+# or 
+pip install git+https://github.com/zeuscsc/zeus_utility.git
+```
+### Usage
+```python
+from zeus_utility.parallel_executor import QueueExecutor
+def print_a_plus_b(a,b):
+    print(a+b)
+executor=QueueExecutor(threads_count=5)
+for i in range(10):
+    executor.add_task(print_a_plus_b,a=i,b=i)
+executor.execute()
+```

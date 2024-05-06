@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: msmanager
+Version: 0.4.1
+Summary: Manager for managing Mindustry servers.
+License: MIT
+Author: Romanin
+Author-email: semina054@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8)
+Requires-Dist: platformdirs (>=3.5.1)
+Requires-Dist: pydantic (>=1.10.7)
+Requires-Dist: pydustry-py (>=2)
+Requires-Dist: rich (>=13.3)
+Requires-Dist: screens-py (>=0.5)
+Requires-Dist: vbml (>=1.1.post1)
+Requires-Dist: versioner.py (>=1.1.0)
+Description-Content-Type: text/markdown
+
+# MSManager
+## Description
+Manager for managing Mindustry servers.
+
+## Install
+```
+python3 -m pip install -U msmanager
+```
+
+## Usage
+```
+Usage: python -m msmanager [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --check-environment       Enables checks for GNU Screen, Java and system
+                            support.
+  -d, --debug               Enables debug mode of operation.
+  -f, --format [text|json]  The output format.  [default: text]
+  --version                 Show the version and exit.
+  --help                    Show this message and exit.
+
+Commands:
+  add      Add a server to the config.
+  list     List of servers in the config.
+  ping     Server status check.
+  remove   Remove the server from the config.
+  restart  Restart the server(s).
+  start    Run the server(s).
+  stop     Stop the server(s).
+```
+

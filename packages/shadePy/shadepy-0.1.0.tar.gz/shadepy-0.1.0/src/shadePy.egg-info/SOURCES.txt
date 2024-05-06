@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/shadePy/__init__.py
+src/shadePy/static.py
+src/shadePy.egg-info/PKG-INFO
+src/shadePy.egg-info/SOURCES.txt
+src/shadePy.egg-info/dependency_links.txt
+src/shadePy.egg-info/top_level.txt

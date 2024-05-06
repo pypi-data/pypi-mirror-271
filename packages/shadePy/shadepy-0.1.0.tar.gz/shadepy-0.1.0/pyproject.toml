@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shadePy"
+version = "0.1.0"
+authors = [
+  { name="Taiyo", email="autor@exemple.me" },
+]
+description = "ShadePy is a powerful Python package that provides a simple and intuitive way to work with colors in the terminal. by Taiyo"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

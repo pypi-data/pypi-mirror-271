@@ -1,0 +1,10 @@
+mapuche/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mapuche/map_parse.py,sha256=39kRkKRprpON20x9M5JZCc_xMlE4w1kzMyJRWtFnFQc,6062
+mapuche/mapuche.py,sha256=a-n9vh2u7yz8QDBWYwmbuI-3OKkRm-P6RdPhY8q_G3k,984
+mapuche/tree_table.py,sha256=bcMocMQvvky19gCRmZfzLSPN6VqqMHZP8MHG32dHz6Q,105566
+mapuche-0.0.1.dist-info/LICENSE,sha256=jS1YsWOvQ0dZO6rfy6uzJ56PM4SYgEH5y5vg5B69o30,1069
+mapuche-0.0.1.dist-info/METADATA,sha256=j54_JY2XVIds5u0lKSNPjn2dz4xLrxxC4Jdd_1U9MOY,1310
+mapuche-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mapuche-0.0.1.dist-info/entry_points.txt,sha256=uuO8lW_rQR8yZBK0jMxEcBGexgFZahqA8az1vGtyyq8,49
+mapuche-0.0.1.dist-info/top_level.txt,sha256=snLvSf2FqPNMr5KmDbW9FzgVA1YeXL7UjEQUn9xi8G8,8
+mapuche-0.0.1.dist-info/RECORD,,

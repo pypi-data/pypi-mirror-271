@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/pycsvtosqliteroh/__init__.py
+src/pycsvtosqliteroh/__main__.py
+src/pycsvtosqliteroh.egg-info/PKG-INFO
+src/pycsvtosqliteroh.egg-info/SOURCES.txt
+src/pycsvtosqliteroh.egg-info/dependency_links.txt
+src/pycsvtosqliteroh.egg-info/top_level.txt
+tests/test_csvtosqlite.py
+tests/test_sqlitetocsv.py

@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "goodow-workflow"
+version = "0.5.1"
+description = "A small example package"
+authors = ["Larry Tin <dev@goodow.com>"]
+#readme = "README.md"
+homepage = "https://github.com/larrytin/goodow-workflow"
+repository = "https://github.com/larrytin/goodow-workflow"
+license = "MIT"
+
+[[tool.poetry.packages]]
+include = "goodow/workflow/github/*"
+[[tool.poetry.packages]]
+include = "goodow/workflow/observability/*"
+
+[tool.poetry.scripts]
+# Add your scripts here
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+python-telegram-bot = {version = ">=21", extras = ["rate-limiter"], optional = true}
+
+[tool.poetry.dev-dependencies]
+# Add your dev dependencies here
+
+[tool.poetry.extras]
+telegram = ["python-telegram-bot"]

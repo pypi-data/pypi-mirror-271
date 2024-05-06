@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fact_checker
+Version: 0.1.0
+Summary: A fact checker with justification
+Author: Andrew Clayman
+Author-email: drewclayman@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: accelerate >=0.21.0
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: imbalanced-learn
+

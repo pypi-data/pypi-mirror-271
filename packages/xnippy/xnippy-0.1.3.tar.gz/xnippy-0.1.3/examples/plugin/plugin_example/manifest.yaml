@@ -1,0 +1,32 @@
+package: xnippy>=0.1.0
+plugin:
+  name: plugin_example
+  version: 0.1.0
+  description: "This plugin function calculates (a+b)+(a*b) and returns result in numpy array."
+
+meta:
+  authors:
+    - name: Xoani
+      email: xoani@xoani.org
+  license: MIT
+  documentation: "README.md"
+  citation: "CITATION.cff"
+
+source:
+  include:
+    - utils.py
+  entry_point: plugin_example.py:example_func
+
+dependencies:
+  module:
+    - numpy
+  plugin:
+    - plugin_template==0.1.0
+
+features:
+  preset:
+    path: preset
+  recipe:
+    path: recipe
+  spec:
+    path: spec

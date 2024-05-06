@@ -1,0 +1,435 @@
+#!python
+
+import os, subprocess, sys, shutil, platform
+from ruamel.yaml import YAML
+
+def cmd(command):
+    command = command.split()
+    subprocess.run(command)
+
+def echo(text):
+    print(text)
+
+def show_help(name):
+    if name == "create":
+        text = """Usage: create [OPTION]...
+
+Options:
+  --project, -p NAME            Create a new project with the specified NAME.
+  --modul, -m NAME MODULENAME   Create a new module MODULENAME in the project NAME.
+  --submodul, -sm NAME SUBMODULNAME FILE1 FILE2 ...   Create a new sub-module SUBMODULNAME in the project NAME with the specified files.
+  --script, -sc NAME SCRIPTNAME TYPE   Create a new script SCRIPTNAME in the project NAME with the specified type.
+  --help, -h                    Display this help and exit.
+        """
+        echo(text)
+    elif name == "init":
+        text = """Usage: init [OPTION]...
+
+Options:
+  --modul, -m NAME              Initialize modules in the project NAME.
+  --submodul, -sm NAME          Initialize sub-modules in the project NAME.
+  --readme, -r NAME             Initialize README in the project NAME.
+  --setup, -s NAME              Initialize setup.py in the project NAME.
+  --full, -f NAME               Initialize modules, sub-modules, README, and setup.py in the project NAME.
+  --help, -h                    Display this help and exit.
+        """
+        echo(text)
+    elif name == "yaml":
+        text = """Usage: yaml [OPTION]...
+
+Options:
+  --help, -h                    Display this help and exit.
+        """
+        echo(text)
+    elif name == "error":
+        text = """Error: Invalid command. Please use 'help' option for usage information."""
+        echo(text)
+    elif name == "help":
+        text = """Usage: help [COMMAND]...
+
+Commands:
+  create                        Display help for create command.
+  init                          Display help for init command.
+  yaml                          Display help for yaml command.
+  error                         Display help for error handling.
+  help                          Display this help and exit.
+        """
+        echo(text)
+def show_help(name):
+    if name == "create":
+        text = """Usage: create [OPTION]...
+
+Options:
+  --project, -p NAME            Create a new project with the specified NAME.
+  --modul, -m NAME MODULENAME   Create a new module MODULENAME in the project NAME.
+  --submodul, -sm NAME SUBMODULNAME FILE1 FILE2 ...   Create a new sub-module SUBMODULNAME in the project NAME with the specified files.
+  --script, -sc NAME SCRIPTNAME TYPE   Create a new script SCRIPTNAME in the project NAME with the specified type.
+  --help, -h                    Display this help and exit.
+        """
+        echo(text)
+    elif name == "init":
+        text = """Usage: init [OPTION]...
+
+Options:
+  --modul, -m NAME              Initialize modules in the project NAME.
+  --submodul, -sm NAME          Initialize sub-modules in the project NAME.
+  --readme, -r NAME             Initialize README in the project NAME.
+  --setup, -s NAME              Initialize setup.py in the project NAME.
+  --full, -f NAME               Initialize modules, sub-modules, README, and setup.py in the project NAME.
+  --help, -h                    Display this help and exit.
+        """
+        echo(text)
+    elif name == "yaml":
+        text = """Usage: yaml [OPTION]...
+
+Options:
+  --help, -h                    Display this help and exit.
+        """
+        echo(text)
+    elif name == "error":
+        text = """Error: Invalid command. Please use 'help' option for usage information."""
+        echo(text)
+    elif name == "help":
+        text = """Usage: help [COMMAND]...
+
+Commands:
+  create                        Display help for create command.
+  init                          Display help for init command.
+  yaml                          Display help for yaml command.
+  error                         Display help for error handling.
+  help                          Display this help and exit.
+        """
+        echo(text)
+
+
+def detect_package_manager():
+    system = platform.system()
+    
+    if system == "Linux":
+        try:
+            subprocess.run(["apt", "--version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+            return "apt install -y"
+        except FileNotFoundError:
+            pass
+        
+        try:
+            subprocess.run(["dnf", "--version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+            return "dnf install -y"
+        except FileNotFoundError:
+            pass
+
+        try:
+            subprocess.run(["pacman", "--version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+            return "pacman -S --noconfirm"
+        except FileNotFoundError:
+            pass
+        
+        try:
+            subprocess.run(["yum", "--version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+            return "yum install -y"
+        except FileNotFoundError:
+            pass       
+    elif system == "Darwin":
+        try:
+            subprocess.run(["brew", "--version"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+            return "brew install"
+        except FileNotFoundError:
+            pass
+    return None, None
+
+def check_depends():
+    install_command = detect_package_manager()
+    try:
+        subprocess.run(["nvim", "--version"], check=True)
+    except FileNotFoundError:
+        echo("Neovim not found, installing it...")
+        try:
+            subprocess.run([install_command, "neovim"], check=True)
+        except subprocess.CalledProcessError:
+            echo("Neovim could not be installed. Please install it manually.")
+
+HOME = os.environ.get('HOME')
+PYPA_PATH = f"{HOME}/.pypa"
+
+class Create:
+    def __init__(self):
+        pass
+    
+    def Project(self, name):
+        os.makedirs(f"{PYPA_PATH}/{name}", exist_ok=True)
+    
+    def Modul(self, name, modulname):
+        PROJECT_PATH = f"{PYPA_PATH}/{name}"
+        SRC_PATH = f"{PROJECT_PATH}/src/{name}"
+        os.makedirs(SRC_PATH, exist_ok=True)
+        os.chdir(SRC_PATH)
+        FILE = f"{modulname}.py"
+        text = "Add your Python script here"
+        with open(FILE, 'w') as f:
+            f.write(text)
+    
+    def Submodul(self, name, submodulname, *files):
+        PROJECT_PATH = f"{PYPA_PATH}/{name}"
+        SRC_PATH = f"{PROJECT_PATH}/src/{name}"
+        os.makedirs(SRC_PATH, exist_ok=True)
+        os.chdir(SRC_PATH)
+        os.mkdir(submodulname)
+        os.chdir(submodulname)
+        text = "Add your Python script here"
+        for file in files:
+            FILE = f"{file}.py"
+            with open(FILE, 'w') as f:
+                f.write(text)
+
+    def Script(self, name, scriptname, type):
+        PROJECT_PATH = f"{PYPA_PATH}/{name}"
+
+        if type == "ModulScript":
+            SRC_PATH = f"{PROJECT_PATH}/src/{name}"
+            SCRIPT_FILE = f"{SRC_PATH}/{name}.py"
+        elif type == "BinScript":
+            SCRIPT_FILE = f"{PROJECT_PATH}/{scriptname}.py"
+        else:
+            echo("Wrong Script Type, try again")
+        text = "Add your Python script here"
+        with open(SCRIPT_FILE, 'w') as f:
+            f.write(text)
+
+class Init:
+    def __init__(self):
+        pass
+
+    def Modul(self, name):
+        PROJECT_PATH = f"{PYPA_PATH}/{name}"
+        SRC_PATH = f"{PROJECT_PATH}/src/{name}"
+        os.makedirs(SRC_PATH, exist_ok=True)
+
+        for file in os.listdir(SRC_PATH):
+            if file.endswith(".py"):
+                module_name = os.path.splitext(file)[0]
+                import_line = f"from .{module_name} import *\n"
+                with open(os.path.join(SRC_PATH, "__init__.py"), 'a') as f:
+                    f.write(import_line)
+
+    def Submodul(self, name):
+        PROJECT_PATH = f"{PYPA_PATH}/{name}"
+        SRC_PATH = f"{PROJECT_PATH}/src/{name}"
+        
+        for folder in os.listdir(SRC_PATH):
+            folder_path = os.path.join(SRC_PATH, folder)
+            if os.path.isdir(folder_path):
+                for file in os.listdir(folder_path):
+                    if file.endswith(".py"):
+                        module_name = os.path.splitext(file)[0]
+                        import_line = f"from .{module_name} import *\n"
+
+                        with open(os.path.join(folder_path, "__init__.py"), 'a') as f:
+                            f.write(import_line)
+
+        for folder in os.listdir(SRC_PATH):
+            folder_path = os.path.join(SRC_PATH, folder)
+            if os.path.isdir(folder_path):
+
+                import_line = f"from . import {folder}\n"
+
+                with open(os.path.join(SRC_PATH, "__init__.py"), 'a') as f:
+                    f.write(import_line)
+
+    def Readme(self, name):
+        PROJECT_PATH = f"{PYPA_PATH}/{name}"
+        README_PATH = f"{PROJECT_PATH}/Readme.rst"
+        check_depends()
+        cmd(f"nvim {README_PATH}")
+
+    def Setup(self, name):
+        PROJECT_PATH = f"{PYPA_PATH}/{name}"
+        SETUP_PATH = f"{PROJECT_PATH}/setup.py"
+        check_depends()
+        cmd(f"nvim {SETUP_PATH}")
+
+
+class Yaml:
+    SUPPORTED_FILE_TYPES = ["pypa.yml", "pypa.yaml", "pypi.yml", "pypi.yaml"]
+
+    def __init__(self):
+        self.yaml = YAML()
+
+    def check_file_type(self, file):
+        if file in self.SUPPORTED_FILE_TYPES:
+            return True
+        else:
+            return False
+
+    def read(self, file):
+        if not self.check_file_type(file):
+            print("Please use a valid file type, supported: pypa.yml, pypa.yaml, pypi.yml and pypi.yaml")
+            sys.exit(1)
+
+        with open(file, 'r') as f:
+            data = self.yaml.load(f)
+
+        if 'ProjectName' in data:
+            projectname = data.get('ProjectName')
+            Create.Project(projectname)
+        else:
+            echo("ProjectName not Found, Read Failed, YAML invalid")
+            sys.exit(1)
+        
+        if 'Moduls' in data:
+            moduls = data['Moduls']
+            for modul_key, modul_data in moduls.items():
+                modul_name = modul_data.get('name')
+                modul_type = modul_data['source']['Type']
+                if not modul_type:
+                    Create.Modul(projectname, modul_name)
+                else:
+                    modul_path = modul_data['source']['Path']
+                    src_path = f"{PYPA_PATH}/{projectname}/src/{projectname}"
+                    modul_file = f"{src_path}/{modul_name}"
+                    shutil.copy(modul_path, modul_file)
+        else:
+            echo("Moduls not Found, Read Failed, YAML invalid")
+            sys.exit(1)
+
+        if 'SubModuls' in data:
+            submoduls = data['SubModuls']
+            for submodul_key, submodul_data in submoduls.items():
+                submodul_name = submodul_data.get('name')
+                submodul_type = submodul_data['source']['Type']
+                submodul_files = submodul_data['source']['Files']
+                if not submodul_type:
+                    for file in submodul_files:
+                        Create.Submodul(projectname, submodul_name, file)
+                else:
+                    base_path = submodul_data['source']['Path']
+                    src_path = f"{PYPA_PATH}/{projectname}/src/{projectname}"
+                    for file in submodul_files:
+                        file_path = f"{base_path}/{file}"
+                        target_path = f"{src_path}/{submodul_name}/{file}"
+                        shutil.copy(file_path, target_path)
+        else:
+            echo("Submoduls not Found, but is not Important, SKIP")
+
+        if 'Readme' in data:
+            readme = data['Readme']
+            readme_status = readme.get('Exist')
+            readme_path = readme.get('Path')
+            if not readme_status:
+                Init.Readme(projectname)
+            else:
+                project_path = f"{PYPA_PATH}/{projectname}"
+                readme_project = f"{project_path}/README.rst"
+                shutil.copy(readme_path, readme_project)
+        else:
+            echo("Readme not Found, but is not Important, SKIP")
+
+        if 'Setup' in data:
+            setup = data['Setup']
+            setup_status = setup.get('Exist')
+            setup_path = setup.get('Path')
+            if not setup_status:
+                Init.Setup(projectname)
+            else:
+                project_path = f"{PYPA_PATH}/{projectname}"
+                setup_project = f"{project_path}/setup.py"
+                shutil.copy(setup_path, setup_project)
+        else:
+            echo("Setup not Found, but is not Important, SKIP")
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        show_help("error")
+        sys.exit(1)
+
+    CMD = sys.argv[1]
+    if CMD in ["--create", "create", "-c"]:
+        if len(sys.argv) < 3:
+            show_help("error")
+            sys.exit(1)
+
+        OPTION = sys.argv[2]
+        if OPTION in ["--project", "project", "-p"]:
+            if len(sys.argv) < 4:
+                show_help("error")
+                sys.exit(1)
+            Create.Project(sys.argv[3])
+        elif OPTION in ["--modul", "modul", "-m"]:
+            if len(sys.argv) < 5:
+                show_help("error")
+                sys.exit(1)
+            Create.Modul(sys.argv[3], sys.argv[4])
+        elif OPTION in ["--submodul", "submodul", "-sm"]:
+            if len(sys.argv) < 6:
+                show_help("error")
+                sys.exit(1)
+            Create.Submodul(sys.argv[3], sys.argv[4], sys.argv[5:-1])
+        elif OPTION in ["--script", "script", "-sc"]:
+            if len(sys.argv) < 6:
+                show_help("error")
+                sys.exit(1)
+            Create.Script(sys.argv[3], sys.argv[4], sys.argv[5])
+        elif OPTION in ["--help", "help", "-h"]:
+            show_help("create")
+        else:
+            show_help("create")
+    elif CMD in ["--init", "init", "-i"]:
+        if len(sys.argv) < 3:
+            show_help("error")
+            sys.exit(1)
+
+        OPTION = sys.argv[2]
+        if OPTION in ["--modul", "modul", "-m"]:
+            if len(sys.argv) < 4:
+                show_help("error")
+                sys.exit(1)
+            Init.Modul(sys.argv[3])
+        elif OPTION in ["--submodul", "submodul", "-sm"]:
+            if len(sys.argv) < 4:
+                show_help("error")
+                sys.exit(1)
+            Init.Submodul(sys.argv[3])
+        elif OPTION in ["--readme", "readme", "-r"]:
+            if len(sys.argv) < 4:
+                show_help("error")
+                sys.exit(1)
+            Init.Readme(sys.argv[3])
+        elif OPTION in ["--setup", "setup", "-s"]:
+            if len(sys.argv) < 4:
+                show_help("error")
+                sys.exit(1)
+            Init.Setup(sys.argv[3])
+        elif OPTION in ["--full", "full", "-f"]:
+            if len(sys.argv) < 4:
+                show_help("error")
+                sys.exit(1)
+            NAME = sys.argv[3]
+            Init.Modul(NAME)
+            Init.Submodul(NAME)
+            Init.Readme(NAME)
+            Init.Setup(NAME)
+        elif OPTION in ["--help", "help", "-h"]:
+            show_help("init")
+        else:
+            if len(sys.argv) < 4:
+                show_help("error")
+                sys.exit(1)
+            NAME = sys.argv[3]
+            Init.Modul(NAME)
+            Init.Submodul(NAME)
+            Init.Readme(NAME)
+            Init.Setup(NAME)
+    elif CMD in ["--yaml", "--yml", "yaml", "yml", "-y"]:
+        if len(sys.argv) < 3:
+            show_help("error")
+            sys.exit(1)
+
+        OPTION = sys.argv[2]
+        if OPTION in ["--help", "help", "-h"]:
+            show_help("yaml")
+        else:
+            FILE = OPTION
+            Yaml.read(FILE)
+    elif CMD in ["--help", "help", "-h"]:
+        show_help("help")
+    else:
+        show_help("error")

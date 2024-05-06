@@ -1,0 +1,18 @@
+
+
+@import './base.css';
+
+a,
+.green {
+	text-decoration: none;
+	color: #ff50b3a6;
+	transition: 0.4s;
+	padding: 3px;
+}
+
+@media (hover: hover) {
+	a:hover {
+		background-color: #ff50b3a6;
+	}
+}
+

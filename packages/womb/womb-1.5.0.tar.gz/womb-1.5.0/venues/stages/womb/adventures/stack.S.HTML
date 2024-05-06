@@ -1,0 +1,34 @@
+
+
+
+<pre>
+
+	<h1>stack</h1>
+		# nodes
+		# organisms
+	
+	<h2>possibilities</h2>
+	
+		<h3>systemd</h3>
+			apt install systemd -y
+			systemctl --version
+			
+			
+			[Unit]
+			Description=VV_turbo
+			After=network.target
+
+			[Service]
+			Type=simple
+			User=myuser
+			Group=mygroup
+			WorkingDirectory=/path/to/your/application
+			ExecStart=/path/to/your/application/my_script.py
+			Restart=always
+
+			[Install]
+			WantedBy=multi-user.target
+
+
+
+</pre>

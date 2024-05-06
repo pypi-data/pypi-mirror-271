@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "notion-api-client"
+version = "0.0.2"
+dependencies = [
+"requests>=2.31.0"
+]
+authors = [
+ { name="Artem Shershnev", email="" },
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.9.6"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]

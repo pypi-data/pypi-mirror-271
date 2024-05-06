@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: parepy-toolbox
+Version: 0.0.0
+Summary: 
+Author: wmpjrufg
+Author-email: wanderlei_junior@ufcat.edu.br
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: scipy (>=1.13.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# PAREpy toolbox
+
+### **0.0.0**
+
+_feat_:  
+- sampling_algorithm_structural_analysis  
+  
+_improvement_:  
+  
+_bug_:  
+  
+_config_:  
+  

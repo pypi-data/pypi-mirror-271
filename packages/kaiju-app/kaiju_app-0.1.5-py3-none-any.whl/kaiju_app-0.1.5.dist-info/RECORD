@@ -1,0 +1,12 @@
+kaiju_app/__init__.py,sha256=_WOgxIp_mnJTW1BsQEJ7eaGWZriA49Rj-8tc65RxoME,314
+kaiju_app/app.py,sha256=Gcnbgrpm2dE5uPjdQeF04OYdxRx-Uy2unERgybXBilw,16909
+kaiju_app/bases.py,sha256=zDJFeBtZIUFaC6cEBJXLe7lsukK8vlr9HupDfOWsdyk,1909
+kaiju_app/configurator.py,sha256=J8UlUCghdGi7gvKGHa74htTPfrrngZwUpaHzcNT3t84,4546
+kaiju_app/loader.py,sha256=n7e7piO86Ym4rp_-wpeu7dfz5lOevF_vPeHnQP82-EQ,10494
+kaiju_app/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaiju_app/utils.py,sha256=zkaEx_wQIQ_YO8FtxDDQQz43z4Wmds3OJcEcOtHzdQo,14232
+kaiju_app-0.1.5.dist-info/LICENSE,sha256=VikX3YBzWiCgZEgI93vz50l4NdJDPjkmxFbYK9IogJ8,1069
+kaiju_app-0.1.5.dist-info/METADATA,sha256=6LZNuczPH0bKUhWbIxF-b5OvHvrIVRo3ckC4BnsH-J0,5207
+kaiju_app-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kaiju_app-0.1.5.dist-info/top_level.txt,sha256=oaPejx2Wf_jdrr583PfUJWkCx3c4XqOCJGPVrNTQVbg,10
+kaiju_app-0.1.5.dist-info/RECORD,,

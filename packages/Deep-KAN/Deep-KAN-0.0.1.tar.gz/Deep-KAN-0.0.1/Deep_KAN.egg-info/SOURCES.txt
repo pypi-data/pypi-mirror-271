@@ -1,0 +1,9 @@
+README.md
+setup.py
+Deep_KAN.egg-info/PKG-INFO
+Deep_KAN.egg-info/SOURCES.txt
+Deep_KAN.egg-info/dependency_links.txt
+Deep_KAN.egg-info/requires.txt
+Deep_KAN.egg-info/top_level.txt
+deepkan/__init__.py
+deepkan/deepkan.py

@@ -1,0 +1,3 @@
+[errbot.backend_plugins]
+aprs=aprs_backend:APRSBackend
+

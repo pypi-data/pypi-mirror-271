@@ -1,0 +1,7 @@
+upload_repository
+dist
+.gitignore
+telegram_credentials
+tests/telegram.ipynb
+__pycache__
+examples/log.ipynb

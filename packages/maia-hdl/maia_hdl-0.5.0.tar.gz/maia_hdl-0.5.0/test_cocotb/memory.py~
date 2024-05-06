@@ -1,0 +1,27 @@
+import array
+
+class Memory:
+    def __init__(self, size):
+        self._data = array.array('B', [0] * size)
+
+    @property
+    def _len(self):
+        return len(self._data)
+
+    def __getitem__(self, key):
+        if isinstance(key, int):
+            return self._data[key % self._len]
+        if isinstance(key, slice):
+            return self._data[
+                key.start % self._len:key.stop % self._len]
+        raise ValueError('unsupported key')
+
+    def __setitem__(self, key, value):
+        if isinstance(key, int):
+            self._data[key % self._len] = value
+            return
+        if isinstance(key, slice):
+            self._data[
+                key.start % self._len:key.stop % self._len] = value
+            return
+        raise ValueError('unsupported key')

@@ -1,0 +1,23 @@
+module tb
+  (
+   input wire        clk,
+   input wire        rst,
+   input wire        s_axi_lite_clk,
+   input wire        s_axi_lite_rst,
+   input wire [11:0] re_in,
+   input wire [11:0] im_in
+   );
+
+   dut dut
+     (.clk(clk), .rst(rst),
+      .s_axi_lite_clk(s_axi_lite_clk), .s_axi_lite_rst(s_axi_lite_rst),
+      .re_in(re_in), .im_in(im_in), .strobe_in(1'b1),
+      .m_axi_spectrometer_awready(1'b1), .m_axi_spectrometer_wready(1'b1));
+
+`ifdef COCOTB_SIM
+   initial begin
+      $dumpfile("dump.vcd");
+      $dumpvars(0, dut);
+   end
+`endif
+endmodule // tb

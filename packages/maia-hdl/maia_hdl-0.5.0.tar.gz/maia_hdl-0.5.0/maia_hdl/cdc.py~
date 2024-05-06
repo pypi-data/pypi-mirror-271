@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import amaranth.back.verilog
+from amaranth.lib.cdc import PulseSynchronizer
+
+
+class RegisterCDC(Elaboratable):
+    def __init__(i_domain: str, o_domain: str, address_width: int,
+                 width: int = 32, stages: int = 2):
+        self._i_domain = i_domain
+        self._o_domain = o_domain
+        self.w = width
+        self.aw = address_width
+        self.nstrobes = width // 8
+        self._stages = stages
+
+        self.i_ren = Signal()
+        self.i_rdone = Signal()
+        self.i_wstrobe = Signal(self.nstrobes)
+        self.i_wdone = Signal()
+        self.i_rdata = Signal(self.w, reset_less=True)
+        self.i_wdata = Signal(self.w)
+
+        self.o_ren = Signal()
+        self.o_rdone = Signal()
+        self.o_wstrobe = Signal(self.nstrobes)
+        self.o_wdone = Signal()
+        self.o_rdata = Signal(self.w)
+        self.o_wdata = Signal(self.w, reset_less=True)
+
+
+    def elaborate(self, platform):
+        request_sync = PulseSynchronizer(
+            self._i_domain, self._o_domain, stages=stages

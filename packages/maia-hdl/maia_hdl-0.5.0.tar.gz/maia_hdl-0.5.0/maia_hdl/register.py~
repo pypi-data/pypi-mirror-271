@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import amaranth.back.verilog
+
+import collections
+import enum
+
+Field = collections.namedtuple('RegisterField',
+                               ['access', 'width', 'reset'])
+
+class Access(enum.Enum):
+    R = enum.auto()
+    RW = enum.auto()
+    W = enum.auto()
+

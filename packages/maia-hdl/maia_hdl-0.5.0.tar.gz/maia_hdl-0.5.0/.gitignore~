@@ -1,0 +1,6 @@
+/ip/*/component.xml
+!/projects/*/*.v
+!/test_cocotb/*/*.v
+/test_cocotb/*/dut.v
+/test_cocotb/*/results.xml
+/test_cocotb/*/sim_build

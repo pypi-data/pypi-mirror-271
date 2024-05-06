@@ -1,0 +1,31 @@
+#
+# Copyright (C) 2024 Daniel Estevez <daniel@destevez.net>
+#
+# This file is part of maia-sdr
+#
+# SPDX-License-Identifier: MIT
+#
+
+from amaranth import *
+import amaranth.cli
+
+import numpy as np
+
+
+class Mixer(Elaboratable):
+    def __init__(self, domain_3x: str, width: int, *, nco_width: int = 28):
+        self._3x = domain_3x
+        self.w = width
+        self.nco_width = width
+
+        self.common_edge = Signal()
+        self.clken = Signal()
+        self.re_in = Signal(signed(self.w))
+        self.im_in = Signal(signed(self.w))
+        self.re_out = Signal(signed(self.w))
+        self.im_out = Signal(signed(self.w))
+
+    def elaborate(self, platform):
+        m = Module()
+
+        

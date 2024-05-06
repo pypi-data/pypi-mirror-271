@@ -1,0 +1,20 @@
+# Copyright (c) 2021 Daniel Estevez <daniel@destevez.net>
+
+# defaults
+SIM ?= icarus
+TOPLEVEL_LANG ?= verilog
+
+DUT = half_buffer
+VERILOG_SOURCES += $(PWD)/../../rtl/$(DUT).v
+VERILOG_SOURCES += $(PWD)/../../rtl/redundancy.v
+TOPLEVEL = $(DUT)
+MODULE = test_$(DUT)
+
+# module parameters
+WIDTH ?= 8
+COMPILE_ARGS += -Wall -I$(PWD)/../../rtl/ -P$(TOPLEVEL).WIDTH=$(WIDTH)
+
+export PYTHONPATH := $(PWD)/..:$(PYTHONPATH)
+
+# include cocotb's make rules to take care of the simulator setup
+include $(shell cocotb-config --makefiles)/Makefile.sim

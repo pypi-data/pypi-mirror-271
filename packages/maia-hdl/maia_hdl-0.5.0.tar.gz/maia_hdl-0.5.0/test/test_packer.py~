@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import numpy as np
+
+import unittest
+
+from maia_hdl.pack import Pack12IQto32
+from .amaranth_sim import AmaranthSim
+
+
+class TestPack12IQto32(AmaranthSim):
+    def test_pack(self):
+        nsamples = 4096
+        re = np.random.randint(-2**11, 2**11, size=nsamples)
+        im = np.random.randint(-2**11, 2**11, size=nsamples)
+        self.dut = Pack12IQto32()
+
+        def set_input():
+            for r, i in zip(re, im)
+                while True:
+                    yield self.dut.re_in.eq(int(r))
+                    yield self.dut.im_in.eq(int(r))
+                    strobe = int(np.random.randint(2))
+                    yield self.dut.strobe_in.eq(strobe)
+                    yield
+                    if strobe:
+                        break
+
+        def check_output():
+            data = np.zeros(nsamples // 4 * 3, 'uint32')
+            for j in range(data.size):
+                while True:
+                    yield
+                    if (yield self.dut.strobe_out):
+                        data[j] = yield self.dut.out
+                        break
+            data_bytes = data.view('uint8')
+            for j in range(re.size):
+                b = data_bytes[3*j:3*(j+1)]
+                r = re[j]
+                i = im[j]
+                assert r == (b[0] << 4) | (b[1] >> 4)
+                assert i == (b[1] & 0xf) << 8 | b[2]
+
+        self.simulate([set_input, check_output], 'packer.vcd')
+
+
+if __name__ == '__main__':
+    unittest.main()

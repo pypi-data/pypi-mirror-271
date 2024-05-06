@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import amaranth.cli
+
+
+class Pack12IQto32(Elaboratable):
+    def __init__(self):
+        self.re_in = Signal(12)
+        self.im_in = Signal(12)
+        self.strobe_in = Signal()
+        self.out = Signal(32)
+        self.strobe_out = Signal()
+
+    def elaborate(self):
+        m = Module()
+        re_q = Signal(12, reset_less=True)
+        im_q = Signal(12, reset_less=True)
+        with m.If(self.strobe_in):
+            m.d.sync += [re_q.eq(self.re_in),
+                         im_q.eq(self.im_in)]
+        

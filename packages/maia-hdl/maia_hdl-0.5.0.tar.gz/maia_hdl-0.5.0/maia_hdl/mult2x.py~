@@ -1,0 +1,59 @@
+#
+# Copyright (C) 2022-2023 Daniel Estevez <daniel@destevez.net>
+#
+# This file is part of maia-sdr
+#
+# SPDX-License-Identifier: MIT
+#
+
+from amaranth import *
+import amaranth.cli
+
+
+class Mult2x(Elaboratable):
+    """Complex by real multiplier at 2x clock
+
+    A real by complex multiplier that uses a clock at 2x the sample rate in
+    order to re-use the same multiplier for the two real multiplications.
+    This module is intended to be implemented on a DSP48E1.
+    """
+    def __init__(self, domain_2x: str, c_width: int, r_width: int,
+                 truncate: int = 0):
+        self._2x = domain_2x
+        self.cw = c_width
+        self.rw = r_width
+        self.outw = self.cw + self.rw + 1 - truncate
+        self.truncate = truncate
+
+        self.common_edge = Signal()
+        self.clken = Signal()
+        self.re_in = Signal(signed(self.cw))
+        self.im_in = Signal(signed(self.cw))
+        self.real_in = Signal(signed(self.rw))
+        self.re_out = Signal(signed(self.outw))
+        self.im_out = Signal(signed(self.outw))
+
+    @property
+    def delay(self):
+        return 'TODO'
+
+    def elaborate(self, platform):
+        m = Module()
+        a1 = Signal(signed(self.cw), reset_less=True)
+        d = Signal(signed(self.cw), reset_less=True)
+        ad = Signal(signed(self.cw), reset_less=True)
+        b1 = Signal(signed(self.rw), reset_less=True)
+        b2 = Signal(signed(self.rw), reset_less=True)
+        m = Signal(signed(self.cw + self.rw + 1), reset_less=True)
+        p = Signal(signed(len(m)), reset_less=True)
+        with m.If(self.clken):
+            m.d[self._2x] += [
+                a1.eq(self.re_in),
+                d.eq(self.im_in),
+                ad.eq(Mux(self.common_edge, a1, d)),
+                b1.eq(self.real_in),
+                b2.eq(b1),
+                m.eq(ad * b2),
+                p.eq(m),
+            ]
+        

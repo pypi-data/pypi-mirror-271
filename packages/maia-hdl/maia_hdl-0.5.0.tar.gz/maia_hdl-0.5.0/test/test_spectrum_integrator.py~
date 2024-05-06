@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import numpy as np
+
+import unittest
+
+from maia_hdl.spectrum_integrator import SpectrumIntegrator
+from .amaranth_sim import AmaranthSim
+
+
+class TestSpectrumIntegrator(AmaranthSim):
+    def setUp(self):
+        self.fft_radix_log2 = 12
+        self.dut = SpectrumIntegrator(16, 8, fft_radix_log2)
+        self.nfft = 2**fft_radix_log2
+
+    def test_integration(self):
+        integrations = 5
+        
+        def bench():
+            yield self.dut.nint.eq(integrations)
+            for j in range(2 * self.nfft * integrations):
+                yield self.dut.clken.eq(1)
+                yield self.dut.re_in.eq(j)
+                yield self.dut.im_in.eq(-j)
+                yield self.dut.input_last(j % self.nfft == self.nfft - 1)
+                yield
+
+        self.simulate(bench, 'integrator.vcd')

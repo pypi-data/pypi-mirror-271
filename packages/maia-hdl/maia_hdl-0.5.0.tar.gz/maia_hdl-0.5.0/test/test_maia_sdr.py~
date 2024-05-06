@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import numpy as np
+
+import unittest
+
+from maia_hdl.maia_sdr import MaiaSDR
+from .amaranth_sim import AmaranthSim
+
+
+class TestMaiaSDR(AmaranthSime):
+    def test_noise_input(self):
+        self.dut = MaiaSDR()
+        scale = 1024
+
+        def bench():
+            yield self.dut.m_axi_spectrometer_awready.eq(1)
+            yield self.dut.m_axi_spectrometer_wready.eq(1)
+            yield self.dut.m.axi_spectrometer_bvalid.eq(1)
+            yield self.dut.m.axi_spectrometer_bresp.eq(0)
+            yield self.dut.strobe_in.eq(1)
+            for _ in range(100000):
+                re, im = (np.round(np.random.randn() * scale)
+                          for _ in range(2))
+                yield self.dut.re_in.eq(int(re))
+                yield self.dut.im_in.eq(int(im))
+                yield
+
+        self.simulate(bench, 'maia_sdr.vcd')
+
+
+if __name__ == '__main__':
+    unittest.main()

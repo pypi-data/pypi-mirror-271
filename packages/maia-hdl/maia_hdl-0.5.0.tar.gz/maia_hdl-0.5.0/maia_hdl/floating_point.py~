@@ -1,0 +1,18 @@
+#
+# Copyright (C) 2024 Daniel Estevez <daniel@destevez.net>
+#
+# This file is part of maia-sdr
+#
+# SPDX-License-Identifier: MIT
+#
+
+from amaranth import *
+import amaranth.cli
+
+
+class ToFloatingPoint(Elaboratable):
+    def __init__(self, in_width, out_width):
+        self.iw = in_width
+        self.ow = out_width
+        # exponent width
+        self.ew = 

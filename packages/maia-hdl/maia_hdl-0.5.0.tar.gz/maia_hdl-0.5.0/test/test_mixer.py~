@@ -1,0 +1,19 @@
+#
+# Copyright (C) 2024 Daniel Estevez <daniel@destevez.net>
+#
+# This file is part of maia-sdr
+#
+# SPDX-License-Identifier: MIT
+#
+
+from amaranth import *
+import numpy as np
+
+import unittest
+
+from maia_hdl.mixer import Mixer
+from .amaranth_sim import AmaranthSim
+
+
+class TestMixer(AmaranthSim):
+    

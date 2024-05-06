@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import amaranth.back.verilog
+
+from .register import Access, Field, Registers, Register
+from .spectrometer import Spectrometer
+
+
+class MaiaSDR(Elaboratable):
+    def __init__(self):
+        self.spectrometer = Spectrometer()
+
+        self.strobe_in = Signal()
+        self.re_in = Signal(self.spectrometer.width_in)
+        self.im_in = Signal(self.spectrometer.width_in)
+        self.interrupt_out = Signal()
+
+    def elaborate(self, platform):
+        m = Module()
+        m.submodules.spectrometer = self.spectrometer
+        m.d.comb += [
+            self.spectrometer.strobe_in.eq(self.strobe_in),
+            self.spectrometer.re_in.eq(self.re_in),
+            self.spectrometer.im_in.eq(self.im_in),
+            self.interrupt_out.eq(self.spectromter.interrupt_out),
+        ]
+        m.submodules.sdr_registers = Registers

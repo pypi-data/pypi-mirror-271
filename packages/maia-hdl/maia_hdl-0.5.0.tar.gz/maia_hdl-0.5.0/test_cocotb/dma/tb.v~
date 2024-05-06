@@ -1,0 +1,8 @@
+`ifdef COCOTB_SIM
+module dump_trace;
+  initial begin
+     $dumpfile("dump.vcd");
+     $dumpvars(0, dut);
+  end
+endmodule // dump_trace
+`endif

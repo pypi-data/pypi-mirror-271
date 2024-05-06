@@ -1,0 +1,22 @@
+#
+# Copyright (C) 2023 Daniel Estevez <daniel@destevez.net>
+#
+# This file is part of maia-sdr
+#
+# SPDX-License-Identifier: MIT
+#
+
+
+class CommonEdgeTb(Elaboratable):
+    def __init__(self, domain_2x, dut):
+        self._2x = domain_2x
+        self.dut = window
+
+    def elaborate(self, platform):
+        m = Module()
+        m.submodules.dut = self.dut
+        if hasattr(self.dut, 'common_edge'):
+            common_edge = Signal()
+            m.d[self._2x] += common_edge.eq(~common_edge)
+            m.d.comb += self.window.common_edge.eq(common_edge)
+        return m

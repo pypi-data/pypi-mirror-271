@@ -1,0 +1,54 @@
+#
+# Copyright (C) 2024 Daniel Estevez <daniel@destevez.net>
+#
+# This file is part of maia-sdr
+#
+# SPDX-License-Identifier: MIT
+#
+
+from amaranth import *
+import numpy as np
+
+import unittest
+
+from maia_hdl.floating_point import IQToFloatingPoint
+from .amaranth_sim import AmaranthSim
+from .common_edge import CommonEdgeTb
+
+
+class TestIQToFloatingPoint(AmaranthSim):
+    def test_random_inputs(self):
+        in_width = 22
+        out_width = 18
+        self.dut = IQToFloatingPoint(in_width, out_width)
+
+        num_inputs = 1000
+        re, im = (np.random.randint(-2**(in_width-1), 2**(in_width-1),
+                                    size=num_inputs)
+                  for _ in range(2))
+
+        def bench():
+            for j in range(num_inputs):
+                yield self.dut.clken.eq(1)
+                yield self.dut.re_in.eq(int(re[j]))
+                yield self.dut.im_in.eq(int(im[j]))
+                yield
+                if j >= self.dut.delay:
+                    re_out = yield self.dut.re_out
+                    im_out = yield self.dut.im_out
+                    exponent_out = yield self.dut.exponent_out
+                    k = j - self.dut.delay
+                    re_expected, im_expected, exp_expected = self.dut.model(
+                        re[k], im[k])
+                    assert re_out == re_expected, \
+                        f're_out = {re_out}, expected = {re_expected} @ cycle = {j}'
+                    assert im_out == im_expected, \
+                        f'im_out = {im_out}, expected = {im_expected} @ cycle = {j}'
+                    assert exponent_out == exp_expected, \
+                        f'exponent_out = {exponent_out}, expected = {exp_expected} @ cycle = {j}'
+
+        self.simulate(bench, vcd)
+
+
+if __name__ == '__main__':
+    unittest.main()

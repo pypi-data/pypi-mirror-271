@@ -1,0 +1,2 @@
+[console_scripts]
+esb = esb.cli:main

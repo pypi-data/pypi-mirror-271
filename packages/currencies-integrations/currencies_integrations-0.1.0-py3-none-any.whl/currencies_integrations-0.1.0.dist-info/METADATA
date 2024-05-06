@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: currencies-integrations
+Version: 0.1.0
+Summary: Projeto para facilitar na busca por cotações de recursos financeiros.
+License: MIT
+Author: Daniel Guzman
+Author-email: dguzzz101@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Office/Business :: Financial
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Project-URL: Código, https://github.com/guzzz/currencies-integrations
+Project-URL: Documentação, https://currencies-integrations.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+
+![logo do projeto](docs/assets/logo_d1.png){ width="300" .center }
+# Cotações diversas
+
+## Como instalar o projeto
+
+Para instalação do cli do projeto recomendamos que use o `pipx` para fazer essa instalação:
+
+```bash
+pipx install currencies-integrations
+```
+
+Embora isso seja somente uma recomendação! Você também pode instalar o projeto com o gerenciador de sua preferência. Como o pip:
+
+```bash
+pip install currencies-integrations
+```
+
+## Como usar?
+
+### Dolar
+
+Você pode chamar as cotações via linha de comando. Por exemplo:
+
+
+```bash
+cotacoes dolar-comercial
+```
+
+O formato retornado será bem simples. 
+
+```
+┏━━━━━━━━━━━━━━━┓
+┃ USD Comercial ┃
+┡━━━━━━━━━━━━━━━┩
+│ R$ 5.1125     │
+└───────────────┘
+```

@@ -1,0 +1,3 @@
+[console_scripts]
+cotacoes=currencies_integrations.cli:app
+

@@ -1,0 +1,12 @@
+satisfactory_save_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satisfactory_save_reader/bin_file.py,sha256=ZAZZue2_ZqMYuLWNEWen59-tOwMjprcHUO6JQZ5BO-0,40226
+satisfactory_save_reader/data_file.py,sha256=n66looeCMeodrk7gSt7EqKLX4NdZAhK8AcinYKyM_ko,10777
+satisfactory_save_reader/file.py,sha256=AB67wPD6d5WJjA_wnv2sW8chkBB0BkbrpDB22Qw_uIE,1845
+satisfactory_save_reader/save_reader.py,sha256=I18DJj0FcQ4LJozk7U-ikmnFxP5AGEFCIRE8izfV5PU,506
+satisfactory_save_reader/utils.py,sha256=YcToBvYb0-3o0Qskfb3i8hBU0HEhxKBBeRmhJYjo8a0,3681
+satisfactory_save_reader/zlib_file.py,sha256=Rqy2BTv4CF5s7izejGYcr6e5WO3wTdboZXbh8KUzC1g,2815
+satisfactory_save_reader-0.8.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+satisfactory_save_reader-0.8.1.dist-info/METADATA,sha256=sBEmrDBbgvVz8Hzx0AgHIWQj5GA00-2qA_f-EHVHMVk,3682
+satisfactory_save_reader-0.8.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+satisfactory_save_reader-0.8.1.dist-info/top_level.txt,sha256=wKgMDa8nSxwgQ6kb2CqqMlZW4-LCap_uzT0IvVObQ0M,25
+satisfactory_save_reader-0.8.1.dist-info/RECORD,,

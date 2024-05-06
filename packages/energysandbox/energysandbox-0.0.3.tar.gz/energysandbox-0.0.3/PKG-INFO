@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: energysandbox
+Version: 0.0.3
+Summary: Energy Sandbox toolset for ETL in the oil and gas business
+Author: Sandstone Group
+Author-email: mtanner@sandstone-group.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+# This is Energy Sandbox
+
+Welcome

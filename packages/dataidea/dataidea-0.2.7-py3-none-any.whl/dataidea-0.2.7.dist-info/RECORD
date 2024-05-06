@@ -1,0 +1,11 @@
+dataidea/__init__.py,sha256=XHypfHSPdgXFKmOdoewn7czU670gt8InhHhzlP5j_aA,22
+dataidea/_modidx.py,sha256=oJJXtCRW6t4dVEjJX3oxwaZsXC64lawpyPLIPDzhnNg,417
+dataidea/core.py,sha256=XvYRFJnboqMdZHx5H7r0_lA-3XPdhaQT2VEq4mdIHEg,142
+dataidea/datasets.py,sha256=3Pc_LKynIiK3ADDn4ODcbG2YuBw4PZgFjQ5v181cAPM,1030
+dataidea/packages.py,sha256=YPjVG2sHl_A0kaCY1AZWcP6fbX8iB6Pg_ztcdtd5uvs,167
+dataidea-0.2.7.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+dataidea-0.2.7.dist-info/METADATA,sha256=UaDZiTvl3xne3vhPLVVY8NA5CYU12m8XzUPtbfIqNWM,2864
+dataidea-0.2.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dataidea-0.2.7.dist-info/entry_points.txt,sha256=Xz4ADxnjmT3Pkmv5byOk6JOtgRuwIrhcs3Mn_8LPp44,59
+dataidea-0.2.7.dist-info/top_level.txt,sha256=jLyClUFWSnpKaTXMsmLAZNt-dDtqzbxjlBrKJX4CBrg,9
+dataidea-0.2.7.dist-info/RECORD,,

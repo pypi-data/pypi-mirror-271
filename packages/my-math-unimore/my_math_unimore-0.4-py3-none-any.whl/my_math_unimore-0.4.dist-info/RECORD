@@ -1,0 +1,9 @@
+my_math_unimore/__init__.py,sha256=6wCus0uNXCBt3HZUIubCIAIvWaafIYmjj2aPlskhr14,25
+my_math_unimore/calculator.py,sha256=LRbg460iMx3kbQJlEuAbQF3CKm1hKPjJm9sF3sE4Pmc,452
+my_math_unimore/test_calculator.py,sha256=7sPKi89JPl4PgUuyaUeSIbGrrfN5oNSEy2z7fm3Oic0,519
+my_math_unimore/sub_folder/__init__.py,sha256=UQgJA3_IKg-u9jwLXbxjjGt-Ms4U6-fbzXmOlAJyr3Q,20
+my_math_unimore/sub_folder/pippo.py,sha256=9THT71ZcSdquUyO9Tr42-G0lMXmpBSNI63NBXiCPZW4,37
+my_math_unimore-0.4.dist-info/METADATA,sha256=HfdHZpeJqITuDkw4No0FDOiYIw7PJdBlYuxURONRdWQ,231
+my_math_unimore-0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+my_math_unimore-0.4.dist-info/top_level.txt,sha256=hCZGm2JkoRBE4XpNCNCsdrE_jvGQhKWbw7Y9FG4AX-4,16
+my_math_unimore-0.4.dist-info/RECORD,,

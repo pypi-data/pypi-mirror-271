@@ -1,0 +1,18 @@
+[project]
+name = "tokyo-stock-exchange"
+version = "0.0.1"
+authors = [
+  { name="AKB428", email="otoraru@gmail.com" },
+]
+description = "A Python library for accessing Tokyo Stock Exchange data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/AKB428/tokyo-stock-exchange"
+Issues = "https://github.com/AKB428/tokyo-stock-exchange/issues"

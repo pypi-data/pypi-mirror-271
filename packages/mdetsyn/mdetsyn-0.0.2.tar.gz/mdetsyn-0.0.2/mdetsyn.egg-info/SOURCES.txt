@@ -1,0 +1,11 @@
+README.md
+requirements.txt
+setup.py
+mdetsyn/__init__.py
+mdetsyn/detsyn.py
+mdetsyn/helpers.py
+mdetsyn.egg-info/PKG-INFO
+mdetsyn.egg-info/SOURCES.txt
+mdetsyn.egg-info/dependency_links.txt
+mdetsyn.egg-info/requires.txt
+mdetsyn.egg-info/top_level.txt

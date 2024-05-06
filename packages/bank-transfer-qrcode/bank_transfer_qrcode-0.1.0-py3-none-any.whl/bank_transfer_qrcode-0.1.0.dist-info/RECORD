@@ -1,0 +1,9 @@
+bank_transfer_qrcode/__init__.py,sha256=qGp56HKD48rIj8_5K5re6e82TVQ7ZHtYkpSwe8N6D0k,681
+bank_transfer_qrcode/bank_transfer_qr.py,sha256=vYsx017JUnp_Yke0h3OrWWiI3V1b76xTLKHg2ltK-0M,10259
+bank_transfer_qrcode/exceptions.py,sha256=niErwoNFjk2ZICuzShzAhdy1VeBCo8156EsC1stViF0,1349
+bank_transfer_qrcode/field_definitions.py,sha256=QWBZS-DSs_cV-WuQKTe3bmf8lI4xAhkRD53HHfssD_s,7481
+bank_transfer_qrcode-0.1.0.dist-info/LICENSE,sha256=VnwB541_zT-WUtpKcKjWoeyDvs8HTRJhujtnhnrvAWY,1502
+bank_transfer_qrcode-0.1.0.dist-info/METADATA,sha256=zDtMWPtoS2g4oYMLif36KdZvgYILrgtWt3tWFN1PBjA,4656
+bank_transfer_qrcode-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bank_transfer_qrcode-0.1.0.dist-info/top_level.txt,sha256=yBtaSV5yfwdQK2GV94nb0pPPJ6z__UDV2xHQCFPBFS0,21
+bank_transfer_qrcode-0.1.0.dist-info/RECORD,,

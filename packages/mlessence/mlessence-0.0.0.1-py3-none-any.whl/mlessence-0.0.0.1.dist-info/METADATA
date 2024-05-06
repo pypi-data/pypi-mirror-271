@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mlessence
+Version: 0.0.0.1
+Summary: A fundamentals first approach to ML prototyping. The emphasis of this package is not just to prototype faster models but to do so in the most basic coherent way keeping in my basic ML practices
+Home-page: https://github.com/neildias/mlessence
+Author: Neil Dias
+Author-email: neildias.ai@gmail.com
+Requires-Python: >=3.8
+License-File: LICENSE
+

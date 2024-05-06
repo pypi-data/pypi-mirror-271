@@ -1,0 +1,10 @@
+lapa_file_store/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lapa_file_store/configuration.py,sha256=ZD5QR1BIHUbrDBCQE3_k0g-AYW6UO2IYvl6reC4UVW4,1553
+lapa_file_store/main.py,sha256=81Du9V68YKPwmeZnMR6zVA6buskBgpCLS9B_BrP_OHA,6921
+lapa_file_store/data/config.ini,sha256=WgHa5ZOYMQMYczPxvaAC4dbLt56zpgr64AD6HCceDPY,164
+lapa_file_store/utils/Helper.py,sha256=UJEM2BviJDzueOWRmsXDyuXk6_iyCRZ_jVBkcO0EMq8,4300
+lapa_file_store/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lapa_file_store-0.0.9.dist-info/METADATA,sha256=UaxICo-3L4F7Bs3WqerOzeJzzfk6LrDNPbm5QaeSGCU,2259
+lapa_file_store-0.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+lapa_file_store-0.0.9.dist-info/top_level.txt,sha256=cISj0YgoSBCUCUSGD10qdcgMwj6e3D7yf7q010uSUWc,16
+lapa_file_store-0.0.9.dist-info/RECORD,,

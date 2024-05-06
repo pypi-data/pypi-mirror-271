@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+.github/workflows/build.yaml
+.github/workflows/python-publish.yml
+pytypelib/__init__.py
+pytypelib/__main__.py
+pytypelib/_pytypelib.py
+pytypelib.egg-info/PKG-INFO
+pytypelib.egg-info/SOURCES.txt
+pytypelib.egg-info/dependency_links.txt
+pytypelib.egg-info/top_level.txt

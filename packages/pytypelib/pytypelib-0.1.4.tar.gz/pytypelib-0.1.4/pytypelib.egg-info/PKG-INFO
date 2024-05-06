@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytypelib
+Version: 0.1.4
+Summary: Some more helpful python types and objects
+Author: @malachi196
+Author-email: "@malachi196" <malachiaaronwilson@gmail.com>
+Project-URL: Homepage, https://github.com/malachi196/pytypelib
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pytypelib 
+Some more helpful python types and objects

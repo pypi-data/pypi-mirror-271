@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hydra-ui
+Version: 1.1.0
+Summary: A framework for developing hybrid CLI/GUI programs.
+Home-page: https://github.com/rweathers/hydra
+Author: Ryan Weathers
+Author-email: ryanweathers63@gmail.com
+License: GPLv3+
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/x-rst
+
+Hydra is a framework for developing hybrid CLI/GUI programs in Python. It is a lightweight wrapper around Tk and is pure Python, with no external dependencies.

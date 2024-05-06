@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: EAPI_SDK
+Version: 1.0.0
+Summary: A Python SDK to interact with the EAPI Platform
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: licence.txt
+Requires-Dist: requests>=2.25.1

@@ -1,0 +1,17 @@
+az_angle;elev_angle;sound_file;condition;level;roving;feedback
+0;0;pink_noises/noise1.wav;;65;6;true
+45;0;pink_noises/noise2.wav;;65;6;true
+90;0;pink_noises/noise3.wav;;65;6;true
+135;0;pink_noises/noise4.wav;;65;6;true
+180;0;pink_noises/noise5.wav;;65;6;true
+225;0;pink_noises/noise6.wav;;65;6;true
+270;0;pink_noises/noise7.wav;;65;6;true
+315;0;pink_noises/noise8.wav;;65;6;true
+0;45;pink_noises/noise9.wav;;65;6;true
+45;45;pink_noises/noise10.wav;;65;6;true
+90;45;pink_noises/noise11.wav;;65;6;true
+135;45;pink_noises/noise12.wav;;65;6;true
+180;45;pink_noises/noise13.wav;;65;6;true
+225;45;pink_noises/noise14.wav;;65;6;true
+270;45;pink_noises/noise15.wav;;65;6;true
+315;45;pink_noises/noise16.wav;;65;6;true

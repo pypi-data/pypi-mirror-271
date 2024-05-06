@@ -1,0 +1,21 @@
+mode: headphones
+azimuths : 0, 45, 90, 135, 180, 225, 270, 315, 0, 45, 90, 135, 180, 225, 270, 315
+elevations: 0, 0, 0, 0, 0, 0, 0, 0, 45, 45, 45, 45, 45, 45, 45, 45
+labels : 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+channels : 1, 2
+n_chan : 2
+n_blocks : 1
+stim_list_file : stim_list_8_az_2_elev.csv
+randomize : true
+demo_stim : pink_noises/noise1.wav
+demo_stim_lev : 65
+sofa_file_path: /media/ntfsShared/archives/auditory/Materials/KU100_Far_Field/HRIR_FULL2DEG.sofa
+sofa_az_coords: anticlockwise
+resp_bt_wd: 25
+resp_bt_ht: 25
+play_bt_wd: 25
+play_bt_ht: 25
+resp_lt_wd: 25
+resp_lt_ht: 25
+resp_bt_rad_offset: 45
+play_bt_rad_offset: 55

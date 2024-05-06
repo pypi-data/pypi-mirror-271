@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: proxyrotation
+Version: 0.1.0
+Summary: automatic free proxy rotation
+License: MIT
+Keywords: proxy-rotation,web-scraping,anonymity
+Author: Federico Minutoli
+Author-email: fede97.minutoli@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: async
+Requires-Dist: aiohttp (>=3.9,<3.10) ; extra == "async"
+Requires-Dist: aiostream (>=0.5,<0.6) ; extra == "async"
+Requires-Dist: beautifulsoup4 (>=4.12,<4.13)
+Requires-Dist: more-itertools (>=10.2,<10.3)
+Requires-Dist: requests (>=2.31,<2.32)
+Requires-Dist: uvloop (>=0.19,<0.20) ; sys_platform != "win32"
+Description-Content-Type: text/markdown
+
+# proxy-rotation
+
+[![testing status](https://github.com/DiTo97/proxy-rotation/actions/workflows/testing.yaml/badge.svg?branch=contrib&event=pull_request)](https://github.com/DiTo97/proxy-rotation/actions/workflows/testing.yaml)
+
+automatic free proxy rotation for web scraping with caching and filtering.
+
+The proxy rotator API includes convenience features such as:
+- specifying various filtering options, such as anonymity level, security, and alpha-2 country code;
+- downloading proxy addresses from free public sources;
+- managing the state of positive and negative proxy addresses using caching;
+- automatically rotating proxy addresses when stale or exhausted.
+
+## installation
+
+To install `proxyrotation` in stable release, you should use `pip`:
+
+```bash
+pip install proxyrotation
+```
+
+## usage
+
+Here are some examples to get started with the proxy rotator API:
+
+### configuration
+
+```python
+from proxyrotation.modelling import Anonymity
+from proxyrotation.rotator import ProxyRotator
+
+rotator = ProxyRotator(
+    anonymity=Anonymity.high,  # desired anonymity level
+    cachedir="/path/to/cachedir",  # path to cachedir
+    countrycodeset={"US", "CN"},  # alpha-2 country codes of interest
+    livecheck=True,  # whether to check if proxy addresses are working while fetching
+    maxshape=100,  # max number of proxy addresses to keep
+    repository="sequential",  # repository type for downloading
+    schedule=3600.0,  # automatic refresh interval in secs
+    secure=True,  # whether to enforce secure connections (HTTPS)
+)
+```
+
+### rotating proxy addresses
+
+```python
+rotator.rotate()
+
+proxy = rotator.selected
+
+print(f"selected proxy: {proxy.peername}")
+```
+
+### checking crawledset
+
+```python
+print(f"free proxy addresses: {rotator.crawledset}")
+```
+
+### rotator shape
+
+```python
+print(f"rotator shape: {len(rotator)}")
+```
+
+## advanced usage
+
+TBC

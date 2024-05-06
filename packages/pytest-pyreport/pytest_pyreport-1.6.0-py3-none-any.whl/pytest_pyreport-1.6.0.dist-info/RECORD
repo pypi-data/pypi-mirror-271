@@ -1,0 +1,9 @@
+pytest_pyreport/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_pyreport/plugin.py,sha256=5jMauRen5vIHMWG4Z_G9qXam44E6DwP82bLYIpDvIBU,9130
+pytest_pyreport/templates/template.html,sha256=y6SodR9aOx0UzkZ7GLco9fmngmFJytEwuW6lmLQFeRA,9420
+pytest_pyreport-1.6.0.dist-info/LICENSE,sha256=RzA7r38PD7T3xeCYigI3wffas7PDN1o6-W8GPAG_pzU,1073
+pytest_pyreport-1.6.0.dist-info/METADATA,sha256=9hcDICynQTEzDemGuIkP7Lv2v2oQiZ6wO5Nf_2jwG8Q,4457
+pytest_pyreport-1.6.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pytest_pyreport-1.6.0.dist-info/entry_points.txt,sha256=0K-LCbRJ_3wEiH2NaCLrTnrfrlpQ6M3p0EvIbyE1FC8,52
+pytest_pyreport-1.6.0.dist-info/top_level.txt,sha256=MZXZRy6wKr9nHNE1mQCIYcpXJdaZE196_nQByS_2nDA,16
+pytest_pyreport-1.6.0.dist-info/RECORD,,

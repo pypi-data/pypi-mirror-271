@@ -1,0 +1,12 @@
+python-telegram-broadcast/__init__.py,sha256=P2ipQ6uKOl5YlLa7drj1qeU0Jda4p7864NlEaZoG1kQ,2673
+python-telegram-broadcast/custom_dataclass.py,sha256=PVh3jeNfHq0Sedfe83W5siyR3DnATUbh-8f3zgwZrOA,2963
+python-telegram-broadcast/custom_exception.py,sha256=e4FYuRXJ5wWk7E7QLRmVTDYFpcnOGhLa0ODnTLhzAQE,1616
+python-telegram-broadcast/custom_util.py,sha256=BPxHPLTwD9Ot-KxtpoAvGWWdxFm6136RvftU567sdvc,2236
+python-telegram-broadcast/main.py,sha256=4hOdfFDcZ8ZTOa3flNSJBPk3EKrACSMNZB1ha4qdIDA,2417
+python-telegram-broadcast/send_method.py,sha256=Ss2JDgzH_6sNzn-4P8oylmyxlNRcFCXj9EMbqwlLavk,16983
+python-telegram-broadcast/strategy.py,sha256=qRwb1k3uf54UJFmnCK0jhGn-C1DW8pkhlrCnOlT3fyQ,16160
+python_telegram_broadcast-0.2.dist-info/LICENSE,sha256=UlpESpLfJ_jm3HSO-N2iXhjPGb-JucQN9hKdvHr8hmU,1067
+python_telegram_broadcast-0.2.dist-info/METADATA,sha256=GaeCutB5JkBYlxXsUtrz_hgksWnoknO3UO9seUhORyE,615
+python_telegram_broadcast-0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+python_telegram_broadcast-0.2.dist-info/top_level.txt,sha256=4TjYz9lWFHJET2D0X0BFBm4VTrjdbGWID6T1KVDQ6iE,26
+python_telegram_broadcast-0.2.dist-info/RECORD,,

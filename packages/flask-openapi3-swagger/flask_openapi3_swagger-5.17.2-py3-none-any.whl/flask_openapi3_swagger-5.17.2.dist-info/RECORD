@@ -1,0 +1,12 @@
+flask_openapi3_swagger/__init__.py,sha256=g8mL4fFJ_WKRbUTvjzBvm1KlVg2nMxdnZpBiODnQnPE,70
+flask_openapi3_swagger/__version__.py,sha256=oVV5tJQ3K7pdn3T389zd6vpdXzgQuh5QXGqxuKVukno,48
+flask_openapi3_swagger/plugins.py,sha256=RfwuYh-YXyb3GsxNSziMdiwjay3xhl6C9KVfGHttBz0,1532
+flask_openapi3_swagger/templates/__init__.py,sha256=XTBjSDXdljmQLLLo2s9B0KyrSarcSwCPOOY0FzxkSwg,6057
+flask_openapi3_swagger/templates/swagger/css/swagger-ui.css,sha256=QBcPDuhZ0X-SExunBzKaiKBw5PZodNETZemnfSMvYRc,152071
+flask_openapi3_swagger/templates/swagger/images/swagger.svg,sha256=dALuowsK9KoS5K7D24w2DombAGxVI4CRhof5w2U3PkE,2551
+flask_openapi3_swagger/templates/swagger/js/swagger-ui-bundle.js,sha256=wC-PkpMphQmh2IMcYmnnuw_ehAMSuaQy5P1578MHrCc,1427395
+flask_openapi3_swagger/templates/swagger/js/swagger-ui-standalone-preset.js,sha256=vGnwb6NO6leP-7-45pbOYYEl-Ctnv-oljIARCObDGTA,230304
+flask_openapi3_swagger-5.17.2.dist-info/METADATA,sha256=d-6OTYxAM_jkk5gzs9R4TB7D7RQch6yCBHB6T2mb3Ns,936
+flask_openapi3_swagger-5.17.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+flask_openapi3_swagger-5.17.2.dist-info/entry_points.txt,sha256=sV9xaDZhQjIhwgrCFnAQy0zZHZbyUWdjEA3z-zuAUkY,82
+flask_openapi3_swagger-5.17.2.dist-info/RECORD,,

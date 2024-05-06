@@ -1,0 +1,8 @@
+cassoulet.py
+setup.py
+./cassoulet.py
+cassoulet.egg-info/PKG-INFO
+cassoulet.egg-info/SOURCES.txt
+cassoulet.egg-info/dependency_links.txt
+cassoulet.egg-info/entry_points.txt
+cassoulet.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+airflow/providers/apache/livy/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/apache/livy/__init__.py,sha256=TUiiNcUxNBfaaXN0DedAeL57yQDk0OsCWT_fZl8CTkU,1586
+airflow/providers/apache/livy/get_provider_info.py,sha256=AwARzzMO2Kl_jmcm7DIVjB1wl84Mja6YZQus81J4C80,3405
+airflow/providers/apache/livy/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/livy/hooks/livy.py,sha256=UPrnMt4srkopTJB4fBxbh6eRXq6MoM5hXyXy344ruN4,31502
+airflow/providers/apache/livy/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/livy/operators/livy.py,sha256=KwJHuO15LhelufWp62F0ksBqQgdpPGnRoG-d9in74cw,9998
+airflow/providers/apache/livy/sensors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/livy/sensors/livy.py,sha256=qqcYo10NUtqAijjrgq7vq7X_M-9hbSDStMPp3OTuXQg,2575
+airflow/providers/apache/livy/triggers/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/livy/triggers/livy.py,sha256=v_KhLZ5QFpsREMF-C7F1UQ4F4eYMmW2IgelUXj5Nj6A,7305
+apache_airflow_providers_apache_livy-3.8.0.dist-info/entry_points.txt,sha256=3I25slfU_7eSZ6-7QfcAoMoAnGdVxvkr-D4U7bqdljI,107
+apache_airflow_providers_apache_livy-3.8.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_apache_livy-3.8.0.dist-info/METADATA,sha256=tSeSS80TxRMM-NwIrZy2Z_O47vWXjJxCyqD14RR4Ai8,6028
+apache_airflow_providers_apache_livy-3.8.0.dist-info/RECORD,,

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+lintception/Utils.py
+lintception/__init__.py
+lintception/linters.py
+lintception/main.py
+lintception/my_linter.py
+lintception.egg-info/PKG-INFO
+lintception.egg-info/SOURCES.txt
+lintception.egg-info/dependency_links.txt
+lintception.egg-info/entry_points.txt
+lintception.egg-info/requires.txt
+lintception.egg-info/top_level.txt

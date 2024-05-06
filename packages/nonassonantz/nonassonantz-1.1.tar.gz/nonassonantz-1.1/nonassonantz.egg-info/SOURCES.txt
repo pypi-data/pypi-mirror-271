@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonassonantz/__init__.py
+nonassonantz/main.py
+nonassonantz.egg-info/PKG-INFO
+nonassonantz.egg-info/SOURCES.txt
+nonassonantz.egg-info/dependency_links.txt
+nonassonantz.egg-info/requires.txt
+nonassonantz.egg-info/top_level.txt

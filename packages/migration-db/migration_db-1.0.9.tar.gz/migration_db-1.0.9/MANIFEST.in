@@ -1,0 +1,11 @@
+global-exclude __pycache__
+recursive-include migration_db *.sql *.json *.py *.j2
+exclude *.log
+exclude migration_db/common/compare_two_dict.py
+exclude migration_db/common/create_folder.py
+exclude migration_db/common/database.py
+exclude migration_db/common/handle_git.py
+exclude migration_db/common/handle_remove_read_only.py
+exclude migration_db/common/lib.py
+exclude migration_db/common/my_db.py
+exclude migration_db/common/template_parse.py

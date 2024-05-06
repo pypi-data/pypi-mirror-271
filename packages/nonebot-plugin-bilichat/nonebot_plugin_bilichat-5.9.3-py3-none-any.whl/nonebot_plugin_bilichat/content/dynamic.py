@@ -1,0 +1,145 @@
+from typing import Literal
+
+from bilireq.exceptions import GrpcError, ResponseCodeError
+from bilireq.grpc.dynamic import grpc_get_dynamic_detail
+from bilireq.grpc.protos.bilibili.app.dynamic.v2.dynamic_pb2 import DynamicType, DynModuleType
+from google.protobuf.json_format import MessageToDict
+from httpx import TimeoutException
+from nonebot.log import logger
+from pydantic import BaseModel
+
+from ..config import plugin_config
+from ..lib.bilibili_request import get_b23_url, get_dynamic, hc
+from ..lib.bilibili_request.auth import AuthManager
+from ..lib.draw.dynamic import draw_dynamic
+from ..model.exception import AbortError
+from ..optional import capture_exception
+
+
+class Dynamic(BaseModel):
+    id: str
+    """动态编号"""
+    url: str
+    """b23 链接"""
+    dynamic_type: DynamicType.ValueType = DynamicType.dyn_none
+    "动态类型"
+    raw: dict = {}
+    """动态的原始信息"""
+    raw_type: Literal["web", "grpc", None] = None
+
+    @property
+    def bili_id(self) -> str:
+        return f"动态id: {self.id}"
+
+    async def _grpc(self):
+        logger.debug("正在使用 gRPC 获取动态信息")
+        for i in range(plugin_config.bilichat_neterror_retry):
+            try:
+                _dyn = await grpc_get_dynamic_detail(dynamic_id=self.id, auth=AuthManager.get_auth())
+                break
+            except TimeoutException:
+                logger.warning(f"请求超时，重试第 {i + 1}/{plugin_config.bilichat_neterror_retry} 次")
+        else:
+            raise AbortError("请求超时")
+        dyn = _dyn.item
+        self.raw = MessageToDict(dyn)
+        self.raw_type = "grpc"
+        self.dynamic_type = dyn.card_type
+        if dyn.card_type == DynamicType.av:
+            for module in dyn.modules:
+                if module.module_type == DynModuleType.module_dynamic:
+                    aid = module.module_dynamic.dyn_archive.avid
+                    self.url = await get_b23_url(f"https://www.bilibili.com/video/av{aid}")
+        elif dyn.card_type == DynamicType.article:
+            for module in dyn.modules:
+                if module.module_type == DynModuleType.module_dynamic:
+                    cvid = module.module_dynamic.dyn_article.id
+                    self.url = await get_b23_url(f"https://www.bilibili.com/read/cv{cvid}")
+
+    async def _web(self):
+        logger.debug("正在使用 RestAPI 获取动态信息")
+        for i in range(plugin_config.bilichat_neterror_retry):
+            try:
+                dyn = (await get_dynamic(self.id))["item"]
+                break
+            except TimeoutException:
+                logger.warning(f"请求超时，重试第 {i + 1}/{plugin_config.bilichat_neterror_retry} 次")
+        else:
+            raise AbortError("请求超时")
+        self.raw = dyn
+        self.raw_type = "web"
+
+        if dyn["type"] == "DYNAMIC_TYPE_AV":
+            self.dynamic_type = DynamicType.av
+            aid = dyn["modules"]["module_dynamic"]["major"]["archive"]["aid"]
+            self.url = await get_b23_url(f"https://www.bilibili.com/video/av{aid}")
+        elif dyn["type"] == "DYNAMIC_TYPE_ARTICLE":
+            self.dynamic_type = DynamicType.article
+            cvid = dyn["modules"]["module_dynamic"]["major"]["article"]["id"]
+            self.url = await get_b23_url(f"https://www.bilibili.com/read/cv{cvid}")
+        elif dyn["type"] == "DYNAMIC_TYPE_DRAW":
+            self.dynamic_type = DynamicType.draw
+
+    @classmethod
+    async def from_id(cls, bili_number: str):
+        if not bili_number.isdigit():
+            bili_number = bili_number.lstrip("qwertyuiopasdfghjklzxcvbnm/.")
+
+        dynamic = cls(id=bili_number, url="")
+
+        try:
+            await dynamic._grpc()
+        except Exception as e:
+            if isinstance(e, GrpcError):
+                logger.warning(f"无法使用 gRPC 获取动态信息: {e}")
+            else:
+                logger.exception(e)
+                if dynamic.raw:  # 如果存在动态内容，则很可能是数据结构变化了
+                    logger.debug(dynamic.raw)
+                    capture_exception(extra={"dynamic_data": dynamic.raw})
+            # web
+            try:
+                await dynamic._web()
+            except Exception as e:
+                if isinstance(e, ResponseCodeError):
+                    logger.warning(f"无法使用 RestAPI 获取动态信息: {e}")
+                else:
+                    logger.exception(e)
+                    if dynamic.raw:  # 如果存在动态内容，则很可能是数据结构变化了
+                        logger.debug(dynamic.raw)
+                        capture_exception(extra={"dynamic_data": dynamic.raw})
+                raise AbortError("动态查询信息异常，请查看控制台获取更多信息")
+
+        if not dynamic.url:
+            dynamic.url = await get_b23_url(f"https://t.bilibili.com/{bili_number}")
+        # with open("dynamic.json", "w", encoding="utf-8") as f:
+        #     import json
+        #     json.dump(dynamic.dict(), f, ensure_ascii=False)
+        return dynamic
+
+    async def get_image(self, style: str):
+        return await draw_dynamic(dynid=self.id, raw=self.raw, raw_type=self.raw_type)
+
+    async def fetch_content(self) -> list[bytes] | list[None]:
+        result = []
+        # 获取图文动态中的图片
+        if self.dynamic_type == DynamicType.draw:
+            if self.raw_type == "web":
+                items = self.raw["modules"]["module_dynamic"]["major"]["draw"]["items"]
+            elif self.raw_type == "grpc":
+                for module in self.raw["modules"]:
+                    if module["moduleType"] == "module_dynamic":
+                        items = module["moduleDynamic"]["dynDraw"]["items"]
+                        break
+            for c, item in enumerate(items):
+                logger.debug(f"获取图片({c}/{len(items)})：{item['src']}")
+                for i in range(plugin_config.bilichat_neterror_retry):
+                    try:
+                        resq = await hc.get(item["src"])
+                        break
+                    except TimeoutException:
+                        logger.warning(f"请求超时，重试第 {i + 1}/{plugin_config.bilichat_neterror_retry} 次")
+                result.append(resq.content)
+        else:
+            logger.debug(f"动态类型 {self.dynamic_type} 不是图文动态")
+        return result

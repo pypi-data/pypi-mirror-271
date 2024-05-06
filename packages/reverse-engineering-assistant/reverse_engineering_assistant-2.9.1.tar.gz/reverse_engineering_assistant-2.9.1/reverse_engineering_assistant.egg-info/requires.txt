@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-openai
+prompt_toolkit
+sentence_transformers
+PyYAML
+pydantic
+rich
+grpcio
+protobuf

@@ -1,0 +1,3 @@
+[console_scripts]
+reva-chat = reverse_engineering_assistant.chat_client:main
+reva-server = reverse_engineering_assistant.assistant_api_server:main

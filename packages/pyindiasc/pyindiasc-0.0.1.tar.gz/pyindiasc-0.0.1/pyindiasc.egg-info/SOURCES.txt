@@ -1,0 +1,7 @@
+setup.py
+pyindiasc/__init__.py
+pyindiasc/pyindiasc.py
+pyindiasc.egg-info/PKG-INFO
+pyindiasc.egg-info/SOURCES.txt
+pyindiasc.egg-info/dependency_links.txt
+pyindiasc.egg-info/top_level.txt

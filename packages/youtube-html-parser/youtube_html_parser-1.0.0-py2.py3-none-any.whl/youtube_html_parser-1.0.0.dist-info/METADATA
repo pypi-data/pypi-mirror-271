@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: youtube-html-parser
+Version: 1.0.0
+Summary: parses youtube content
+Home-page: https://github.com/TechWatchProject/youtube-html-parser
+Maintainer: Zachary Vorhies
+License: BSD 3-Clause License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: beautifulsoup4[lxml]
+Requires-Dist: pytest-xdist
+Requires-Dist: yt-dlp >=2023.12.30
+

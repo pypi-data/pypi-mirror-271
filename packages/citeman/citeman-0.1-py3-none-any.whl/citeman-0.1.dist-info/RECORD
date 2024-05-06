@@ -1,0 +1,14 @@
+citeman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+citeman/__main__.py,sha256=4lbJ-6zgi-pu04M_e-oidfp9nh4tNJxqMPviQEQ7O1A,67
+citeman/bibliography.py,sha256=u5En8vh1BgHc66-IpUMHv_0yCRfzro6qZR1DsXxCj_w,462
+citeman/library.py,sha256=Lt4domakg-b3oNPqAZVUwxTC01ayDkbztxQp2If7JLc,3092
+citeman/logo,sha256=Sc_T0deFPB8RnaEjllAb02ZDjp2Q6UJschYyuLLE628,4569
+citeman/processor.py,sha256=x2CcQR3PS_LYoutmqLv81q5Q_o2vJNMarOu3Nfr6ixc,7522
+citeman/query.py,sha256=OWSGUoojiQWv__trCiSmFg0ch637ojKsEKmB4Odkq4A,2882
+citeman/ui.py,sha256=7aF9Cg4uIQrpacC3cQJvviRieVZjau3haDezekbdZYc,7396
+citeman/utils.py,sha256=SjPybDBLjj-dwnhjs9qwLY1HPqNhBMbUZM1PNc8zGKg,87
+citeman-0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+citeman-0.1.dist-info/METADATA,sha256=QlEcHkq261czRkArJEfTRRV-p8KD-MTWMxUJdSWIfPE,2424
+citeman-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+citeman-0.1.dist-info/top_level.txt,sha256=RYZc0pTQuMSSgpoIws5VYmpHKvtUmlpRRWqdKiuGSt8,8
+citeman-0.1.dist-info/RECORD,,

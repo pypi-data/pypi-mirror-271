@@ -1,0 +1,12 @@
+nqrduck_spectrometer_limenqr/__init__.py,sha256=o9JLhi8cNuE946rtVVLHy8P1mqNkeKOThnlDzdM02Eg,61
+nqrduck_spectrometer_limenqr/controller.py,sha256=04dIhB3bbJMPMIUbOgzH6kRo8iwroTWEueT39iKon0o,30951
+nqrduck_spectrometer_limenqr/limenqr.py,sha256=RLDk0Y3s1QB1q05Yt4MCX1t_UhGOavnIcoizuPBNm6g,297
+nqrduck_spectrometer_limenqr/model.py,sha256=2AXQweULeo6V176ObUItREfVKHMCUCaXusAvF_E9cwk,12094
+nqrduck_spectrometer_limenqr/view.py,sha256=k05iKRAewT0E8qJWdcfoVmZ6Z6UoVtf_H3h1vxxZ9yw,460
+nqrduck_spectrometer_limenqr/resources/limenqr.ini,sha256=thuZ-coF5Im9uEs8iOk0hH1_OsE6qv3SAHKR_46Q9qc,156
+nqrduck_spectrometer_limenqr/resources/limenqr_widget.ui,sha256=tFfJ58fs4L0JVbNdk3STVL0WayHPt-hCMAtZXEne_Iw,834
+nqrduck_spectrometer_limenqr-0.0.6.dist-info/METADATA,sha256=-7iDVO3uWhtFNGb-5z14kmFsPKlZd7y3Dc55YraxNK0,4662
+nqrduck_spectrometer_limenqr-0.0.6.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+nqrduck_spectrometer_limenqr-0.0.6.dist-info/entry_points.txt,sha256=9ZCxEW9N0vIWsIBi5x2TKzRoHvx-KBkhq0N7QpDV-I0,86
+nqrduck_spectrometer_limenqr-0.0.6.dist-info/licenses/LICENSE,sha256=o5wva76OOX1_ay-xkzeOp-8ItiIqJYaAcZiD5wNoCjA,1062
+nqrduck_spectrometer_limenqr-0.0.6.dist-info/RECORD,,

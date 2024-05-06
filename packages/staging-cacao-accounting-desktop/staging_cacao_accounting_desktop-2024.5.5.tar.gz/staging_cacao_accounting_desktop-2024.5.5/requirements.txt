@@ -1,0 +1,6 @@
+appdirs
+#cacao-accounting
+staging-cacao-accounting
+flaskwebgui
+kivy
+pillow

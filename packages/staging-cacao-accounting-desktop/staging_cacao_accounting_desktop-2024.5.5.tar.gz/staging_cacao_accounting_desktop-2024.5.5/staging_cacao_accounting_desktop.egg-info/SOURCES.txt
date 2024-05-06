@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+cacao_accounting_desktop/__init__.py
+cacao_accounting_desktop/__main__.py
+staging_cacao_accounting_desktop.egg-info/PKG-INFO
+staging_cacao_accounting_desktop.egg-info/SOURCES.txt
+staging_cacao_accounting_desktop.egg-info/dependency_links.txt
+staging_cacao_accounting_desktop.egg-info/entry_points.txt
+staging_cacao_accounting_desktop.egg-info/requires.txt
+staging_cacao_accounting_desktop.egg-info/top_level.txt

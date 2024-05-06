@@ -1,0 +1,14 @@
+MontagePy-2.2.0.dist-info/METADATA,sha256=T-aZqMMkS28Np_bITkQvaY1jxQ3wd_gccVxF-D0A0-A,5938
+MontagePy-2.2.0.dist-info/top_level.txt,sha256=X64LF-f3F3BNnXurETV4hgxD_2td1QgfPlsOs9eAo8U,10
+MontagePy-2.2.0.dist-info/WHEEL,sha256=cKABCXepG3K1R_sVIg3THsYCeWdV74nJzRiaEFbFKF0,162
+MontagePy-2.2.0.dist-info/LICENSE.txt,sha256=4LYfgkU1sMjjH7mTloS7GOFylMMYynCkC244ToyN2uU,1682
+MontagePy-2.2.0.dist-info/RECORD,,
+MontagePy/_wrappers.pypy38-pp73-x86_64-linux-gnu.so,sha256=iO8u2rVKoQXYlR9OLMHeidvLPzeg0laFXvxGawVUG7A,16230848
+MontagePy/__init__.py,sha256=RkMTFtiahKkP2bvVw-bNk6E4w6aYIDd62YALsnUD6ng,1141
+MontagePy/main.pypy38-pp73-x86_64-linux-gnu.so,sha256=jSjUkObPHnivLYldgGGYQvPhZV6NHvK9VgVsA2PF7io,281352
+MontagePy/_wrappers.c,sha256=LbMl8mkDUQ74PVYZerayYMDDOVBTkF2ow075Bm9QF9Q,1652304
+MontagePy/FreeSans.ttf,sha256=pTN-8fWg3-Tcj6a08--EelNiSAC1kooO7vW4iM7sqrw,264072
+MontagePy/main.c,sha256=gtxp17dJhtliITkROLP9yhhdee62mhMyJ_xejpVJing,1037159
+MontagePy/archive/__init__.py,sha256=BRbyBIeNdQU4iTWh31HvWFrU1Y_4XkPf9PeRhLrusyw,124
+MontagePy/archive/mArchiveDownload.py,sha256=V4yJJDeascgeDNo7fukeWGCH9T8Bn3e0MdkzKW3-P2o,3301
+MontagePy/archive/mArchiveList.py,sha256=3Y5_rjDsERDl0KVp0qQYLk1U3Ogi4UlI2J2Qh9vXchM,1787

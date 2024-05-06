@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project]
+name = "matrix-reportbot"
+version = "0.0.1"
+
+authors = [
+  { name="Private.coffee Team", email="support@private.coffee" },
+]
+
+description = "Simple content report subscription bot for Matrix."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+
+packages = [
+    "src/matrix_reportbot"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "matrix-nio",
+    "pantalaimon",
+    "setuptools",
+    "markdown2",
+    ]
+
+[project.urls]
+"Homepage" = "https://git.private.coffee/PrivateCoffee/matrix-reportbot"
+"Bug Tracker" = "https://git.private.coffee/PrivateCoffee/matrix-reportbot/issues"
+
+[project.scripts]
+reportbot = "matrix_reportbot.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/matrix_reportbot"]

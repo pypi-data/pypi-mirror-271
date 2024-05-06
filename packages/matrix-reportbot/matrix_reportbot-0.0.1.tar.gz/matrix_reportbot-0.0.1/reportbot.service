@@ -1,0 +1,15 @@
+[Unit]
+Description=ReportBot
+Requires=network.target
+
+[Service]
+Type=simple
+User=reportbot
+Group=reportbot
+WorkingDirectory=/opt/reportbot
+ExecStart=/opt/reportbot/.venv/bin/python3 -um reportbot
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

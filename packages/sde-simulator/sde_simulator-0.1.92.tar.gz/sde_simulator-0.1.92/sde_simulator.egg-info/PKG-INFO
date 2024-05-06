@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sde_simulator
+Version: 0.1.92
+Summary: General base class implementation of Rung-Kutta SDE solver
+Home-page: https://github.com/odedwer/sde_simulator
+Author: Oded Wertheimer
+Author-email: oded.wertheimer@mail.huji.ac.il
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy
+Requires-Dist: tqdm
+
+This package provides a base class for simulating SDE using Rung-Kutta method.
+The base class implements the simulation and requires the override of the deterministic and stochastic methods of the model.

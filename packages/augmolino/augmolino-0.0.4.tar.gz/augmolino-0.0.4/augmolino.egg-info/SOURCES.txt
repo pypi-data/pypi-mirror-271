@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+augmolino/__init__.py
+augmolino/augmentation.py
+augmolino/augmenter.py
+augmolino/utils.py
+augmolino.egg-info/PKG-INFO
+augmolino.egg-info/SOURCES.txt
+augmolino.egg-info/dependency_links.txt
+augmolino.egg-info/not-zip-safe
+augmolino.egg-info/requires.txt
+augmolino.egg-info/top_level.txt
+tests/test_augmentation.py
+tests/test_augmenter.py
+tests/test_utils.py

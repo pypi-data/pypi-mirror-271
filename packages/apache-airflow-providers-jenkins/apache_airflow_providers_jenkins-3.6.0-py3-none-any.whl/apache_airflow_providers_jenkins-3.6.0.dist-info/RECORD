@@ -1,0 +1,13 @@
+airflow/providers/jenkins/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/jenkins/__init__.py,sha256=pa809LXlaxgtk3YWDN5er37zFT4krl_Z7-mfrpVVMG4,1582
+airflow/providers/jenkins/get_provider_info.py,sha256=u8djI8X-Sg3jwW-3y-4tUY0ZHkbwi3e03b44aVXzZL8,2866
+airflow/providers/jenkins/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/jenkins/hooks/jenkins.py,sha256=4ufi9lIx8cejHRI-cifdPxYhjBKFEuG-f88Ce0i76VY,3914
+airflow/providers/jenkins/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/jenkins/operators/jenkins_job_trigger.py,sha256=sdKgXXK63xdIKq_1LKHwHeY_348_g8nB2xR-3Dua4v8,10811
+airflow/providers/jenkins/sensors/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/jenkins/sensors/jenkins.py,sha256=q5oA-FVZ4qcdz856HR5kK2i0M3Ice-ukDFyFc69POjA,3044
+apache_airflow_providers_jenkins-3.6.0.dist-info/entry_points.txt,sha256=K2pyOD_XXMM1kuwvN36o19F8jYc47X24Z5iRRTzteJo,103
+apache_airflow_providers_jenkins-3.6.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_jenkins-3.6.0.dist-info/METADATA,sha256=_0erxWaubrZOdg4Ryqrs6oxi80m8uxGB6PC-pzz3b3E,4747
+apache_airflow_providers_jenkins-3.6.0.dist-info/RECORD,,

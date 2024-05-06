@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "fastapi-openid-google"
+version = "0.0.1.dev2"
+description = "Google OpenID integration for FastAPI"
+authors = ["svaponi <10941963+svaponi@users.noreply.github.com>"]
+readme = "README.md"
+homepage = "https://svaponi.github.io/fastapi_openid_google"
+repository = "https://github.com/svaponi/fastapi_openid_google"
+license = "MIT"
+classifiers = ['Development Status :: 3 - Alpha']
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+fastapi = "^0.111.0"
+oauthlib = "^3.2.2"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.29.0"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

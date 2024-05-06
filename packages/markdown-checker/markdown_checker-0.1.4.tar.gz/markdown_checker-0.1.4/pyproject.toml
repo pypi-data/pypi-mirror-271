@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-checker"
+description= "A markdown link validation reporting tool"
+version = "0.1.4"
+authors = [{ name = "John Aziz", email = "johnaziz269@gmail.com" }]
+maintainers = [{ name = "John Aziz", email = "johnaziz269@gmail.com" }]
+license = {file = "LICENSE"}
+readme = "README.md"
+
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "types-requests",
+    ]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    ]
+
+[project.urls]
+Homepage = "https://github.com/john0isaac/markdown-checker"
+Documentation = "https://markdown-checker.readthedocs.io/en/latest/"
+Issues = "https://github.com/john0isaac/markdown-checker/issues"
+Contributing = "https://github.com/john0isaac/markdown-checker/pulls"
+Releases = "https://github.com/john0isaac/markdown-checker/releases"
+
+[tool.setuptools.package-data]
+"*" = ["*.html", "*.txt", "*.xml", "*.md"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pre-commit",
+    "ruff",
+    "black",
+    "mypy",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"
+src = ["src"]
+output-format = "full"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.black]
+line-length = 120
+target-version = ["py38"]
+
+[project.scripts]
+markdown-checker = "markdown_checker.validate_markdown:main"

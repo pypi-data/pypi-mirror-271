@@ -1,0 +1,10 @@
+requests
+types-requests
+
+[dev]
+pytest
+pytest-cov
+pre-commit
+ruff
+black
+mypy

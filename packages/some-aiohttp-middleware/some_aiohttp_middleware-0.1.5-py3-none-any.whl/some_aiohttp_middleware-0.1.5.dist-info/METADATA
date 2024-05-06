@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: some-aiohttp-middleware
+Version: 0.1.5
+Summary: Middleware framework for aiohttp
+Home-page: https://github.com/tommmlij/some-aiohttp-middleware
+License: MIT
+Author: tommmlij
+Author-email: tommmlij@gmail.com
+Requires-Python: >=3.8.1,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.3,<4.0.0)
+Requires-Dist: aiohttp-pydantic (>=2.0.0,<3.0.0)
+Requires-Dist: asyncpg (>=0.29.0,<0.30.0)
+Requires-Dist: pydantic (>=2.6.4,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.27,<3.0.0)
+Project-URL: GitHub: issues, https://github.com/tommmlij/some-aiohttp-middleware/issues
+Project-URL: GitHub: repo, https://github.com/tommmlij/some-aiohttp-middleware
+Description-Content-Type: text/markdown
+
+![Static Badge](https://img.shields.io/badge/Python-3.8%2B-brightgreen?logo=python)
+![PyPI - Version](https://img.shields.io/pypi/v/some-aiohttp-middleware?logo=pypi&logoColor=yellow&color=brightgreen)
+![PyPI - License](https://img.shields.io/pypi/l/some-aiohttp-middleware)
+[![codecov](https://codecov.io/gh/tommmlij/some-aiohttp-middleware/graph/badge.svg?token=GDLHRPUVCG)](https://codecov.io/gh/tommmlij/some-aiohttp-middleware)
+![Static Badge](https://img.shields.io/badge/mypy-checked-blue)
+![Static Badge](https://img.shields.io/badge/flake8-linted-green)
+

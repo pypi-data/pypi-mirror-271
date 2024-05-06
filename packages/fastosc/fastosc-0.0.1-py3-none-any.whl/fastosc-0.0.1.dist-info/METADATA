@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: fastosc
+Version: 0.0.1
+Summary: Modern Python Library for OSC, using best practices such as typing, linting/formatting - inspired by FastAPI
+Author-email: Martin Sahlen <martin8900@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Requires-Python: >=3.7
+

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: flowchart_explorer
+Version: 0.1.1
+Summary: FlowChart Explorer is a GitHub-integrated tool that analyzes all execution paths in a flowchart. It helps identify bottlenecks and redundancies in your codebase, providing a new level of clarity and control.
+Home-page: https://github.com/sabi2345/flowchart-explorer
+License: MIT
+Author: sabi2345
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: diagrams (>=0.23.4,<0.24.0)
+Project-URL: Repository, https://github.com/sabi2345/flowchart-explorer
+Description-Content-Type: text/markdown
+
+# FlowChart Explorer
+FlowChart Explorer is a GitHub-integrated tool that analyzes all execution paths in a flowchart. It helps identify bottlenecks and redundancies in your codebase, providing a new level of clarity and control.
+

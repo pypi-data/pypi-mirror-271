@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pypa
+pypa-make-easy
+setup.py
+pypa_make_easy.egg-info/PKG-INFO
+pypa_make_easy.egg-info/SOURCES.txt
+pypa_make_easy.egg-info/dependency_links.txt
+pypa_make_easy.egg-info/requires.txt
+pypa_make_easy.egg-info/top_level.txt

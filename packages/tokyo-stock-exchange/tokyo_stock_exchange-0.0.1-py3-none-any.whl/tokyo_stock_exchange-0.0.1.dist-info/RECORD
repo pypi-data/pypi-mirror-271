@@ -1,0 +1,9 @@
+tokyo_stock_exchange/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tokyo_stock_exchange/tse.csv,sha256=IlV2AjlY04XpLx9FkjO3zK2dJaKmI1XSy7c88mZcCEU,534694
+tokyo_stock_exchange/tse.py,sha256=hHmvHI0cNJ4qvn8hnFxAKqyrYODoGgul0mSLiNPCgK4,6151
+tokyo_stock_exchange/tse20240229.csv,sha256=JaH6ZP9yeJkS79kYLKnDy5vSAYHNAiIBFxIFFWNekE4,533650
+tokyo_stock_exchange-0.0.1.dist-info/LICENSE,sha256=rlQc_lDSdEUPdEyuR5cN634QdheFi-ZPnoHXq0l9MDw,1067
+tokyo_stock_exchange-0.0.1.dist-info/METADATA,sha256=OcwOx9bh3XB1ez-ATd5xajVEYbtXci-Ko0Oxsp_J1ag,6445
+tokyo_stock_exchange-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tokyo_stock_exchange-0.0.1.dist-info/top_level.txt,sha256=PwWT5pFJB9ETaKHFLx6wDgHINobkSGj-6lyaPLhRhpE,21
+tokyo_stock_exchange-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,7 @@
+betty
+bin
+busted
+dist
+documentation
+node_modules
+playwright

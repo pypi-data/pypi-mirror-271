@@ -1,0 +1,29 @@
+#
+# Copyright (C) 2024 Daniel Estevez <daniel@destevez.net>
+#
+# This file is part of maia-sdr
+#
+# SPDX-License-Identifier: MIT
+#
+
+from amaranth import *
+import amaranth.cli
+
+
+class SkidBuffer(Elaboratable):
+    def __init__(self, width=1):
+        self.w = width
+
+        self.in_data = Signal(width)
+        self.in_valid = Signal()
+        self.in_ready = Signal()
+        self.out_data = Signal(width, reset_less=True)
+        self.out_valid = Signal()
+        self.out_ready = Signal()
+
+    def elaborate(self, platform):
+        m = Module()
+
+        skid = Signal(self.w, reset_less=True)
+        skid_valid = Signal()
+        

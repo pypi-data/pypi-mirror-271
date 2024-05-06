@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import amaranth.back.verilog
+
+from . import axi

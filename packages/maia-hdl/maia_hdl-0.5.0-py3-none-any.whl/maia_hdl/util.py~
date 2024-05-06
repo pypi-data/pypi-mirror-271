@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+def clamp_nbits(x, nbits):
+    offset = 2**(nbits - 1)
+    return ((x + offset) % 2**nbits) - offset

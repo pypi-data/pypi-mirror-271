@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+
+from .dma import DmaStreamWrite
+from .fifo import AsyncFifo18_36
+from .packer import Pack12IQto32, Pack8IQto32, PackFifoTwice
+
+class Recorder12IQ(Elaboratable):
+    def __init__(self, domain_in='sync', domain_dma='sync'):
+        self.domain_in = domain_in
+        self.domain_dma = domain_dma
+
+        self.re_in = Signal(12)
+        self.im_in = Signal(12)
+        
+        self.mode_8bit = Signal()
+
+    def elaborate(self, platform):
+        m.submodules.pack12 = pack12 = Pack12IQto32()
+        m.submodules.pack8 = pack8 = Pack8IQto32()
+        

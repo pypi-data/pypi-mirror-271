@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+import amaranth.cli
+
+
+class Cpwr(Elaboratable):
+    def __init__(self, width, add_width, truncate=0):
+        self.w = width
+        self.outw = 2 * width + 1 - truncate
+
+        self.clken = Signal()
+        self.add_in = Signal(signed(add_width))
+        self.re_in = Signal(signed(self.w))
+        self.im_in = Signal(signed(self.w))
+        self.re_out = Signal(signed(self.outw))
+        self.im_out = Signal(signed(self.outw))
+
+    @property
+    def delay(self):
+        return 6
+
+    def elaborate(self, platform):
+        m = Module()
+
+        
+        
+        

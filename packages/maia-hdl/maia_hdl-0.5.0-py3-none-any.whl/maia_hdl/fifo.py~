@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+
+
+class AsyncFifo18_36(Elaboratable):
+    def __init__(self):
+        pass
+
+    def elaborate(self, platform):
+        m = Module()
+        m.submodules.fifo18e1 = fifo18e1 = Instance(
+            'FIFO18E1',
+            a_DATA_WIDTH=36,
+            a_FIFO_MODE="FIFO18_36",
+            

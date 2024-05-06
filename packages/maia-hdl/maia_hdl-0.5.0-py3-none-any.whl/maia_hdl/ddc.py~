@@ -1,0 +1,11 @@
+#
+# Copyright (C) 2024 Daniel Estevez <daniel@destevez.net>
+#
+# This file is part of maia-sdr
+#
+# SPDX-License-Identifier: MIT
+#
+
+from amaranth import *
+import amaranth.cli
+

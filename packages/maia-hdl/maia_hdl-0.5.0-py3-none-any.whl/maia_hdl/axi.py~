@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+from amaranth import *
+
+from enum import Enum
+import enum
+from typing import List
+
+
+class AxiDevice(Enum):
+    MANAGER = enum.auto()
+    SUBORDINATE = enum.auto()
+
+
+class AxiDirection(Enum):
+    READ = enum.auto()
+    WRITE = enum.auto()
+
+
+class AxiChannel:
+    def __init__(self, direction: AxiDirection, address_width: int, data_width: int):
+        self.address_width = address_width
+        self.data_width = data_width
+
+
+class AxiInterface:
+    def __init__(self, device: AxiDevice, channels: List[AxiChannel],
+                 

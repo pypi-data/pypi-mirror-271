@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my_math_unimore
+Version: 0.3
+Summary: A sample Python package to test CI/CD
+Author: Angelo Ferrando
+Author-email: angelo.ferrando42@gmail.com
+Requires-Dist: pytest
+
+A sample Python package to test CI/CD

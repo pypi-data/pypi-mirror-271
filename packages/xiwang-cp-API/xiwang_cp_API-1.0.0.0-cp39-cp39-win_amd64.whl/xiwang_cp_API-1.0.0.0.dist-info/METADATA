@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: xiwang_cp_API
+Version: 1.0.0.0
+Summary: flask的API插件
+Home-page: https://www.xi-wang.cn
+Download-URL: https://www.xi-wang.cn/download/
+Author: xiwang
+Author-email: xiwang0439@hotmail.com
+Keywords: pack,api
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+
+# cp_API插件包 [![Version][version-badge]][version-link] ![MIT License][license-badge]
+
+这是一个基于Flask的API模块插件包，它将服务于另一个项目common_platform，作为一个插件提供基础功能。
+
+
+### 使用方式
+```commandline
+pip install cp_API
+```

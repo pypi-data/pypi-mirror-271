@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+yamllm/__init__.py
+yamllm.egg-info/PKG-INFO
+yamllm.egg-info/SOURCES.txt
+yamllm.egg-info/dependency_links.txt
+yamllm.egg-info/top_level.txt

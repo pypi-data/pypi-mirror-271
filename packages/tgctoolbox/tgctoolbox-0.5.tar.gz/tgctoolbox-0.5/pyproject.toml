@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tgctoolbox"
+version = "0.5"
+description = "Comprehensive toolbox with all of the utils and tools used in various TGC projects."
+authors = ["Jakub Muszyński <jakub.m.muszynski@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytube = "*"
+moviepy = "*"
+tqdm = "*"
+requests = "*"
+vosk = "*"
+websocket = "*"
+starlette = "*"
+colorama = "*"
+pyyaml = "^6.0.1"
+
+[tool.poetry.extras]
+audio = ["pyaudio"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

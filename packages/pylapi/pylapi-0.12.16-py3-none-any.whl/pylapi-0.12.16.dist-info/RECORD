@@ -1,0 +1,12 @@
+pylapi/__init__.py,sha256=w90aAZ9V6xxuVglnc9A7_SXrogxvHha3sJ7OxkT9Lw4,22
+pylapi/__version__.py,sha256=WauR7aXriiFmEKvGCoXzu0arD8-2GmlH4J9J6ux26wY,246
+pylapi/autogen.py,sha256=3QYx11tBIu1ROT03jUycK2NPS09bcRA3gIXQwQyT9jU,29461
+pylapi/autogen_template.py,sha256=rMCLUImY1A7h3tMNlAVkJIRbK0O44GgY3MbTLit103Q,2703
+pylapi/config.py,sha256=9O568EUaWyH3WUZ_Bgz-4hEcszDHTM8OaM2Rl-4WUdk,567
+pylapi/pylapi.py,sha256=tjhWktVc6q5Sn815TN4xsSrIt01G98W41bmJVbIufhk,40269
+pylapi-0.12.16.dist-info/LICENSE,sha256=fxPwHsWjzOrhUnwlZIve77S5kTsKjx3WsOEIxwR1XEE,1065
+pylapi-0.12.16.dist-info/METADATA,sha256=M3sWkImSKRSswFJkwjwaCeOd0-RWMgNIb8MqutlQSWU,6527
+pylapi-0.12.16.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+pylapi-0.12.16.dist-info/entry_points.txt,sha256=-7YLn0QHrtQnCngxAbdceD1allOldsn_6t4saxbeFPo,55
+pylapi-0.12.16.dist-info/top_level.txt,sha256=RfLwPR2ynR8M7Um2HW4fpG-FuFX3U1r4YO6KKPKpids,7
+pylapi-0.12.16.dist-info/RECORD,,

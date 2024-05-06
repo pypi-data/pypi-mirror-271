@@ -1,0 +1,14 @@
+include:
+    # https://r2devops.io/marketplace/gitlab/swepy/cicd-templates/ruff/ruff
+    -   remote: 'https://gitlab.com/swepy/cicd-templates/ruff/-/raw/ruff@1.0.2/ruff.yml'
+    # https://r2devops.io/marketplace/gitlab/dorianturba-templates/r2devops_catalog/r2_metadata/pytest
+    -   remote: 'https://gitlab.com/dorianturba-templates/r2devops_catalog/-/raw/main/templates/python/testing/pytest/pytest.yml'
+    # https://r2devops.io/marketplace/gitlab/swepy/cicd-templates/release-by-changelog/release-by-changelog
+    -   remote: 'https://gitlab.com/swepy/cicd-templates/release-by-changelog/-/raw/release-by-changelog@0.2.2/release-by-changelog.yml'
+
+variables:
+    PACKAGE_NAME: "release_by_changelog"
+
+pytest:
+    variables:
+        PYTHON_SETUP: "pip install .[test]"

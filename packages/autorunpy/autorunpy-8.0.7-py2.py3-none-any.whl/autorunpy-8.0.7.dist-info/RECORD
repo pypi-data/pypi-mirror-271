@@ -1,0 +1,10 @@
+autorunpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autorunpy/make_venv.py,sha256=nonFdHYdoR1s9gtMJtwmrYlIrEDC8AVHUMn0jFmh3uU,626
+autorunpy/ret_module_2_run.py,sha256=2ssJvQUHiIktfSkWjhtjhv4W-CJFgExtfJFlwjeHwl0,353
+autorunpy/ret_pkg_name.py,sha256=7s35sx0PIw7BldIQbLaIVe7njPyUzar3bGGSFpLGFp8,187
+autorunpy/rm_venv.py,sha256=orOo0O1HINOKGXj8tktX4-W7T1IHNwyT-zN8yG8MCQE,467
+autorunpy/util.py,sha256=QOeqZ-SsGqZWqtMPabBsCWOMKA3fUTu32o82N6X0ruQ,458
+autorunpy-8.0.7.dist-info/METADATA,sha256=_cB6lfMbn-S8zZtlSSOrkov7Aj607lJO1x6fMWryOVg,1479
+autorunpy-8.0.7.dist-info/WHEEL,sha256=cDcbFFSNXOE-241I5PFuLkIYfR_FM7WTlPEi33njInY,105
+autorunpy-8.0.7.dist-info/licenses/LICENSE,sha256=uPRgxU7YXOcDR4gQRcEzK05-SyOV1_AEyhHBAPFct9c,1062
+autorunpy-8.0.7.dist-info/RECORD,,

@@ -1,0 +1,16 @@
+numpy
+pytools>=2022.1.13
+platformdirs>=2.2.0
+
+[:python_version < "3.9"]
+importlib-resources
+
+[oclgrind]
+oclgrind_binary_distribution>=18.3
+
+[pocl]
+pocl_binary_distribution>=1.2
+
+[test]
+pytest>=7.0.0
+Mako

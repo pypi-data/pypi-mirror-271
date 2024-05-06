@@ -1,0 +1,17 @@
+cvprocessor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvprocessor/authors.py,sha256=xe5WGQpkpTk1FfnEsNKOiNmfKzseLj0Nv3kJL09m86U,5851
+cvprocessor/common.py,sha256=1Ojowh-laMlcVTb5brbHCvyRUArTZzSoDDfBIvzq-zI,148
+cvprocessor/cv.py,sha256=xw8BDym6cxQKyaofZDgti6S_VvueMuL4DeyFozO1pW4,2106
+cvprocessor/education.py,sha256=Nn534cl7Tsx3wBSyzJYDnFPRmkmvHhIoB2a9S_3rRJM,3514
+cvprocessor/experience.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvprocessor/institutes.py,sha256=Kk3StDcXMcyau0IYcM7JvnEKOYVnjIvBREgP0Gl_lAs,3340
+cvprocessor/intro.py,sha256=5x7qNPeRtU73eKsNFFONk5P9JGmONPwbpb5hh-XdPTw,1396
+cvprocessor/news.py,sha256=JMKn-oNZlntQQEll-nLwQvQquAki79OWCa2xXzOIjdk,2088
+cvprocessor/publications.py,sha256=xO6cq01J5VW1MRyimyElBWhJg7Sc6ElNRrK1SyFdEUo,9424
+cvprocessor/research_interests.py,sha256=IBN1jpDvpvtdHRrGG3vtfkjwCqC4SbXX_v0WbHQkiNw,1050
+cvprocessor/software.py,sha256=rplU3y6JfVlnKcA64YLdZG82pu4FEMHvudQP1_OjGhk,2967
+cvprocessor-0.0.13.dist-info/LICENSE,sha256=d361mL5tfbiVFGBlb-EFYc04nvK9n6KAwrVssQ0DC54,1081
+cvprocessor-0.0.13.dist-info/METADATA,sha256=SKzc_2unZ0jRaNGvewscYw3R81hSdszd9nVbIztVGSw,1690
+cvprocessor-0.0.13.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cvprocessor-0.0.13.dist-info/top_level.txt,sha256=TmbMfSkrBnLaq11YYhJdVWJgBb-_6-_FjyXj-_tr7J8,12
+cvprocessor-0.0.13.dist-info/RECORD,,

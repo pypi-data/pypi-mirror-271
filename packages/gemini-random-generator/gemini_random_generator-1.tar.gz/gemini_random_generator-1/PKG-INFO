@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: gemini_random_generator
+Version: 1
+Summary: This package contains implementation of a random generator with Google Gemini AI integrated into it.
+Home-page: https://github.com/SoftwareApkDev/gemini_random_generator
+Author: SoftwareApkDev
+Author-email: softwareapkdev2022@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gemini_ai_app_downloader
+
+# gemini_random_generator
+
+**Gemini Random Generator** is a random generator which can generate random texts, with Google Gemini AI integrated
+into it.
+
+# Source Code
+
+The source code of the application **Gemini Random Generator** is available in 
+[Source Code](https://github.com/SoftwareApkDev/gemini_random_generator/blob/master/gemini_random_generator/gemini_random_generator.py).
+
+# Installation
+
+```
+pip install gemini_random_generator
+```
+
+# How to Use the Application?
+
+Pre-requisites:
+
+1. [Python](https://www.python.org/downloads/) installed in your device.
+2. .env file in the same directory as <GEMINI_RANDOM_GENERATOR_DIRECTORY> and has the value of GEMINI_API_KEY.
+
+```
+cd <GEMINI_RANDOM_GENERATOR_DIRECTORY>
+python3 gemini_random_generator.py
+```
+
+**Note:** Replace <GEMINI_RANDOM_GENERATOR_DIRECTORY> with the path to the directory of 
+the application **Gemini Random Generator**.
+
+Then, the application will start with something looking like in the screenshot below.
+
+![Application](images/Application.png)
+
+You will then be asked to input the following values.
+
+1. Temperature - between 0 and 1 inclusive
+2. Top P - between 0 and 1 inclusive
+3. Top K - at least 1
+4. Max output tokens - at least 1
+
+The following screenshot shows what is displayed after inputting the mentioned values.
+
+![File Path Input](images/File%20Path%20Input.png)
+
+You will be required to input the path to the **.rndgen** file you want to parse. Then, you will be asked to enter
+the path of the text file you want the randomly generated text to be placed in.
+
+![Text File Path Input](images/Text%20File%20Path%20Input.png)
+
+After that, the text file containing the randomly generated text will be created.
+
+Then, you will be asked whether you want to continue using the application or not. 
+Enter "Y" for yes. Enter anything else for no.
+
+![Continuation](images/Continuation.png)
+
+# Output Text File
+
+The output text file containing randomly generated text looks like below.
+
+![Output Text File](images/Output%20Text%20File.png)
+
+# .rndgen File
+
+An **.rndgen** file is a script containing text with some variables to be replaced with random texts. Such variables
+are the words enclosed in **${}**. Below are some screenshots of how **.rndgen** files look like.
+
+![Sample File 1](images/Sample%20File%201.png)
+
+![Sample File 2](images/Sample%20File%202.png)
+
+![Sample File 3](images/Sample%20File%203.png)

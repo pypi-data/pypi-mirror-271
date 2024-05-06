@@ -1,0 +1,3 @@
+[console_scripts]
+anydoor=anydoor.consoles.application:main
+

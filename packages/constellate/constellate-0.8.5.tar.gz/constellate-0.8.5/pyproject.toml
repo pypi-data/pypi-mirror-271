@@ -1,0 +1,107 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "constellate"
+authors = [{ name = "David Andreoletti", email = "none@provided.yet" }]
+requires-python = ">=3.8, <3.13"
+description = "A bunch of utilities aggregated over time"
+keywords = ["constellate"]
+dynamic = ["version", "readme"]
+
+classifiers = [
+    "License :: Other/Proprietary License",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "Pebble>=4.6.3",
+    "decorator>=5.1.0",
+    "aioitertools>=0.8.0",
+    "psutil>=5.7.0",
+    "pendulum>=2.1.2",
+    "requests>=2.25.0",
+    "memory-tempfile>=2.2.3",
+    "narration>=0.2.16",
+    "bidict>=0.21.4",
+    "attrs>=20.3.0",
+    "portion>=2.2.0",
+    "jsonmerge>=1.8.0",
+    "jsonschema>=4.7.2",
+    "Deprecated>=1.2.12",
+    "importlib-resources>=5.1.4",
+    "typing-extensions>=4.3.0",
+    "tqdm>=4.62.3",
+    "regex>=2021.11.10",
+    "blake3>=0.3.1",
+    "sqlparse>=0.4.2",
+    "stackeddag>=0.3.3",
+]
+
+[project.optional-dependencies]
+# Required by
+# - constellate.cli.arg package
+cli_args = [
+    "argunparse>=0.1.3",
+]
+# Required by
+# - constellate.database.migration package
+# - constellate.database.sqlalchemy package
+sqlalchemy = [
+    "SQLAlchemy>=2.0.11",
+    "sqlalchemy-utils>=0.37.9",
+    "sqlalchemy-json>=0.4.0",
+    "sqlalchemy_mixins>=2.0",
+    "aiosqlite>=0.17.0",
+    "asyncpg>=0.23.0",
+    "networkx>=2.8.5",
+]
+# Required by
+# - constellate.thirdparty.pandas package
+# - constellate.datetime.timeinterval package
+pandas = [
+    "pandas>=1.3.4",
+    "pandas-log>=0.1.7",
+    "pandera>=0.14.5,!=0.13.4",
+    "hypothesis>=6.54.4",
+]
+# - constellate.datetime.timeinterval package
+numpy = ["numpy>=1.21.4"]
+# - constellate.thirdparty.numba package
+"numba"= ["numba-progress>=0.0.3"]
+# - constellate.database.sparql package
+sparql = ["rdflib>=6.3.0", "SPARQL-Burger>=1.0.2"]
+
+[project.urls]
+repository = "https://github.com/davidandreoletti/constellate"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [ "constellate*"]
+
+[tool.setuptools.package-data]
+constellate = ["py.typed"]
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.setuptools.dynamic]
+version = { attr = "constellate.__version__.__version__" }
+readme = { file = "README.rst", content-type = "text/x-rst" }
+
+

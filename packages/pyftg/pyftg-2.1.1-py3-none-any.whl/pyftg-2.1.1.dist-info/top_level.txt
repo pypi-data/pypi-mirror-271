@@ -1,0 +1,10 @@
+DisplayInfo
+KickAI
+Main_Capture
+Main_Collector
+Main_FDG
+Main_PyAIvsPyAI
+Main_SinglePyAI
+Main_SoundAI
+TestSoundAI
+pyftg

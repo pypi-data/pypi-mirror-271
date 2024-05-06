@@ -1,0 +1,11 @@
+pandas>=2.0
+pyarrow
+openpyxl
+refparse
+
+[dev]
+black
+coverage
+mypy
+pre-commit
+pytest

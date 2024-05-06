@@ -1,0 +1,11 @@
+TijaToolsProgressRing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TijaToolsProgressRing/progress_ring.py,sha256=dOUtCj68Ief8jq37mKp1kKqg00E1bOymcKjtJKqa0no,2174
+TijaToolsProgressRing/tijatools_terminal_progress_ring_tests.py,sha256=GYbfN151N-5gPDsINXaBwBD6QRHmxcYiUvGsVU6ktNI,1049
+tijatools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tijatools/progress_ring.py,sha256=dOUtCj68Ief8jq37mKp1kKqg00E1bOymcKjtJKqa0no,2174
+tijatools/tijatools_terminal_progress_ring_tests.py,sha256=GYbfN151N-5gPDsINXaBwBD6QRHmxcYiUvGsVU6ktNI,1049
+tijatools-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tijatools-0.1.0.dist-info/METADATA,sha256=SMFrFKkskAXevt44QZanDs7oNbplbp3i66t8ZiBCf7E,942
+tijatools-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tijatools-0.1.0.dist-info/top_level.txt,sha256=Ulq68NyYW4xLqKHEv4lZRw_T7uKPWpMVSZMdIi3Leh4,10
+tijatools-0.1.0.dist-info/RECORD,,

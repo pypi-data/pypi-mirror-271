@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tijatools
+Version: 0.1.0
+Summary: A customizable progress ring for terminal applications.
+Author: Janos Tigyi
+Author-email: tigyi.janos@bugfactory.hu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncio
+
+# tijatools
+
+## Descriptions
+
+The tijatools is a Python package that allows you to display dynamic and customizable progress rings in the terminal. It's an ideal tool for providing visual feedback on the status of long-running operations.
+
+## Installation
+
+```bash
+pip install tijatools
+
+## HasznĂˇlat
+from tijatools import ProgressRing
+
+# PĂ©ldĂˇnyosĂ­tsd a ProgressRing osztĂˇlyt
+ring = ProgressRing()
+
+# IndĂ­tsd el az animĂˇciĂłt
+ring.run_with_animation()

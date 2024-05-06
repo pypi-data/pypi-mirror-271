@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[project]
+name = "jfk-django-core"
+description = "JFK Django Core"
+authors = [
+    {name = "JFK344"},
+]
+license = {text = "All-Rights-Reserved"}
+readme = "README.md"
+dynamic = ["version"]
+requires-python = ">= 3.8"
+dependencies = [
+]
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "dirty-tag"

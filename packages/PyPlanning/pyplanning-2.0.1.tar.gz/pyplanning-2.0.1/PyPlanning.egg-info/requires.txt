@@ -1,0 +1,15 @@
+PyQt5
+PyQtWebEngine
+guidata>=3.1
+svgwrite
+python-dateutil
+
+[dev]
+black
+isort
+pylint
+Coverage
+
+[doc]
+sphinx>6
+pydata_sphinx_theme

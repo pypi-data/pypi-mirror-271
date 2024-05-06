@@ -1,0 +1,16 @@
+takion_tls/__init__.py,sha256=M1OfX36pysWx1OSoowmF9gEX4864NhqSInL77jpHN_Y,29
+takion_tls/__version__.py,sha256=qSLVfOrMI2mt_sQ51jYvPUbL9Xs-QUwcuiv9vjGzZkQ,259
+takion_tls/exceptions.py,sha256=BVJom-ZXIKACPT80T54mAKbjKiwkg8GgUUvf3JibMZU,73
+takion_tls/sessions.py,sha256=A2-YqaLpZIi3rpmOLbD46BGHLxAN280Rhni67dcM1tU,19680
+takion_tls/c/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+takion_tls/c/cffi.py,sha256=6IZmJQC-jCfdrqkttQIdj_RA0NNe1nz7eSSLP-SEdaw,5780
+takion_tls/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+takion_tls/models/clients.py,sha256=NhYoPD6w19OHVMzapIgghOXDt9GSdvETL63xqVyr9bk,1379
+takion_tls/models/cookies.py,sha256=5ujSFL6V8bDMCH8Mow6qoj5dP5GjfMJTd8_jWottvpM,15153
+takion_tls/models/response.py,sha256=I0yjEfmrKH89rqRUr7W5hxTkqNpULzs0YXEFCJ91qv8,2377
+takion_tls/models/structures.py,sha256=zb1wflxxWoKFqe8NMT2qEvIh7RA-kN459ZcNhW8p_Uo,2443
+takion_tls-0.1.0.dist-info/LICENSE,sha256=UO0PMCHOEETPW5rv6crhtRiHAw5gjqNKFhRexnUjLWU,1071
+takion_tls-0.1.0.dist-info/METADATA,sha256=SEq2kdC16MpT5YnxmYaohw0QJiKM5QHpQ38DSoqB0IA,13918
+takion_tls-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+takion_tls-0.1.0.dist-info/top_level.txt,sha256=87wVkLutUpyN6HkjK01TzbYjuJQaT5M0vSkLEezVuzA,11
+takion_tls-0.1.0.dist-info/RECORD,,

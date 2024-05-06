@@ -1,0 +1,21 @@
+{
+    "type": "form_task",
+    "inputs": {
+        "text": "str",
+        "text_type": "str",
+        "sentiment_class": "str"
+    },
+    "outputs": {
+        "spans_starts": "List[int]",
+        "spans_ends": "List[int]",
+        "text": "List[str]",
+        "labels": "List[str]"
+    },
+    "prediction_type": "List[Tuple[str,str]]",
+    "metrics": [
+        "metrics.ner"
+    ],
+    "augmentable_inputs": [
+        "text"
+    ]
+}

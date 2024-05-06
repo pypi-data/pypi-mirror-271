@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: geohub
+Version: 0.0.6
+Summary: A python package created with some data and geospatial analysis skills
+Author-email: Mahnaz Meem <mahnazsarkermeem@gmail.com>
+License: BSD License
+Project-URL: Homepage, https://github.com/mahnaz-meem/geohub
+Keywords: geohub
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: ipyleaflet
+Requires-Dist: geopandas
+Requires-Dist: pandas
+Requires-Dist: localtileserver
+Requires-Dist: rasterio
+Requires-Dist: matplotlib
+Requires-Dist: leafmap
+Requires-Dist: folium
+Requires-Dist: ee
+Requires-Dist: earthengine-api >=0.1.398
+Provides-Extra: all
+Requires-Dist: geohub[extra] ; extra == 'all'
+Provides-Extra: extra
+Requires-Dist: pandas ; extra == 'extra'
+
+[![image](https://img.shields.io/pypi/v/geohub.svg)](https://pypi.python.org/pypi/geohub)
+[![image](https://img.shields.io/conda/vn/conda-forge/geohub.svg)](https://anaconda.org/conda-forge/geohub)
+
+
+# Welcome to geohub
+
+[![Logo](https://img.shields.io/pypi/pyversions/geohub.svg)](docs/images/geohub_logo.jpg)
+
+** A hub for geospatial analysis **
+
+-   Free software: BSD License
+-   Documentation: <https://mahnaz-meem.github.io/geohub>
+-   Interactive streamlit app: <https://geolit.streamlit.app/>
+
+## Introduction
+
+`geohub` is a python package for geospatial analysis. It provides a set of tools for geospatial visualization, analysis, and interactive mapping. The package is built on top of popular libraries like `ipyleaflet`, `folium`, `rasterio`, `leafmap`, `matplotlib`, `streamlit`, and `google earth engine`.
+    
+
+## Features
+
+-   Geospatial visualization with vector and raster data
+-   Maps with interactive widgets
+-   Geospatial analysis with 'Google Eartth Engine'
+-   Heatmap
+-   Split map
+-   Time slider for time series spatial data
+![image](docs/examples/landsat.gif)
+-   Interactive map with folium
+
+## Installation Instructions
+
+Install `geohub` using pip:
+```bash
+$ pip install geohub
+```
+
+### Test Notebook: Split Map
+[![image](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mahnaz-meem/geohub/blob/main/docs/examples/split_map.ipynb)
+
+

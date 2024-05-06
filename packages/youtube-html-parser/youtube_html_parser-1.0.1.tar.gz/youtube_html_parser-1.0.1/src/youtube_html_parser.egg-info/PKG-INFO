@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: youtube-html-parser
+Version: 1.0.1
+Summary: parses youtube content
+Home-page: https://github.com/TechWatchProject/youtube-html-parser
+Maintainer: Zachary Vorhies
+License: BSD 3-Clause License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# youtube-html-parser
+
+
+
+[![Linting](../../actions/workflows/lint.yml/badge.svg)](../../actions/workflows/lint.yml)
+
+[![MacOS_Tests](../../actions/workflows/push_macos.yml/badge.svg)](../../actions/workflows/push_macos.yml)
+[![Ubuntu_Tests](../../actions/workflows/push_ubuntu.yml/badge.svg)](../../actions/workflows/push_ubuntu.yml)
+[![Win_Tests](../../actions/workflows/push_win.yml/badge.svg)](../../actions/workflows/push_win.yml)
+
+
+To develop software, run `. ./activate.sh`
+
+# Windows
+
+This environment requires you to use `git-bash`.
+
+# Linting
+
+Run `./lint.sh` to find linting errors using `pylint`, `flake8` and `mypy`.

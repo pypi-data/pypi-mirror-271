@@ -1,0 +1,10 @@
+mysql-connector>=2.2.9
+python-dotenv>=1.0.0
+pymysql>=1.1.0
+logzio-python-handler>=4.1.1
+pytest>=7.4.3
+logger-local>=0.0.71
+transformers>=4.35.0
+torch>=2.3.0
+numpy>=1.26.1
+pandas>=2.1.2

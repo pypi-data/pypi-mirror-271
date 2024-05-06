@@ -1,0 +1,9 @@
+.gitignore
+README.md
+__init__.py
+setup.py
+oscillators.egg-info/PKG-INFO
+oscillators.egg-info/SOURCES.txt
+oscillators.egg-info/dependency_links.txt
+oscillators.egg-info/requires.txt
+oscillators.egg-info/top_level.txt

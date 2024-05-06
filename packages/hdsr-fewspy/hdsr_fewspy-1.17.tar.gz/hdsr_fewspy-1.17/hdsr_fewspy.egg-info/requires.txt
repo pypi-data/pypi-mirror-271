@@ -1,0 +1,7 @@
+requests
+geopandas
+pandas
+hdsr-pygithub
+
+[test]
+pytest

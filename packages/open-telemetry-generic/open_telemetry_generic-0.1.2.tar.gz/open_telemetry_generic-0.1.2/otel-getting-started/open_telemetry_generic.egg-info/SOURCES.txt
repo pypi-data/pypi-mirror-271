@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+otel-getting-started/open_telemetry_generic.egg-info/PKG-INFO
+otel-getting-started/open_telemetry_generic.egg-info/SOURCES.txt
+otel-getting-started/open_telemetry_generic.egg-info/dependency_links.txt
+otel-getting-started/open_telemetry_generic.egg-info/requires.txt
+otel-getting-started/open_telemetry_generic.egg-info/top_level.txt
+test/test.py

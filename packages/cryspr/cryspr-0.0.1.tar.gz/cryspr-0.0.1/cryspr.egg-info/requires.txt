@@ -1,0 +1,8 @@
+ase
+pymatgen
+pyxtal
+torch
+matgl
+chgnet
+mace-torch
+scikit-opt

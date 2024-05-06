@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: alwhatsapp
+Version: 0.2
+Summary: Provides a WhatsApp Notification client supports Meta templates and custom messages and forms part of the AL Notificaiton Modules Suite
+Home-page: https://al.co.za/
+Author: Autumn Leaf IT South Africa
+Author-email: jason@al.co.za
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Provides a WhatsApp Notification client supports Meta templates and custom messages and forms part of the AL Notificaiton Modules Suite

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+moviesampler/__init__.py
+moviesampler/framegrabber.py
+moviesampler/imagecomposer.py
+moviesampler/main.py
+moviesampler.egg-info/PKG-INFO
+moviesampler.egg-info/SOURCES.txt
+moviesampler.egg-info/dependency_links.txt
+moviesampler.egg-info/entry_points.txt
+moviesampler.egg-info/requires.txt
+moviesampler.egg-info/top_level.txt
+moviesampler/fonts/3270-Regular.otf
+moviesampler/fonts/3270Condensed-Regular.otf

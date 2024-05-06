@@ -1,0 +1,8 @@
+*.egg-info
+AUTHORS
+ChangeLog
+dist/
+build/
+.tox/
+docs/_build*
+docs/*.db

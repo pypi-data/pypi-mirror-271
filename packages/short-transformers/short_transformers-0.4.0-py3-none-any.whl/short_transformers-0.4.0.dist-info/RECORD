@@ -1,0 +1,10 @@
+short_transformers/__init__.py,sha256=6BbVW9vSHTjWgQBnoq3TxOVjpAzKkeQiF1u3tpjiByc,98
+short_transformers/dist.py,sha256=bPaeq6KoPplp4zMr7p_t5UA4LUOeRusfaTQ-7PuVE-w,1137
+short_transformers/short_transformer.py,sha256=W0DstuaCZ63QhI7ODnlvDl_q_DjM7Niqq0ibXazTqkQ,6977
+short_transformers/utils/__init__.py,sha256=ZW3dK1vea8FqVwZ2mvrtlhxXmws1Ilr8Z6xvOEmk4JQ,281
+short_transformers/utils/log.py,sha256=6nTaFx6eZtwgkhPmP6jc4_WTcMFR9h0HtrYZ8k2kDGw,529
+short_transformers/utils/plot.py,sha256=qI8kO1VQvrKGHC_jUiJKZYuXrKdaebuOfLxCY7TU3uQ,965
+short_transformers/utils/utils.py,sha256=wumaTBW0qkXlWj_FjJ5zHd1ZLpNOKLUVKaZYxd0lBTA,1200
+short_transformers-0.4.0.dist-info/METADATA,sha256=SRKJW9q5gF_Py7DSkve3m9ys56K78l0LYj4v-EChh5o,5960
+short_transformers-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+short_transformers-0.4.0.dist-info/RECORD,,

@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: MontagePy
+Version: 2.2.0
+Summary: Montage toolkit for reprojecting, mosaicking, and displaying astronomical images.
+Author-email: John Good <jcg@ipac.caltech.edu>
+License: 
+        Copyright (c) 2017 California Institute of Technology, Pasadena, California.
+        
+        Based on Cooperative Agreement Number NCC5-626 between NASA and the California
+        Institute of Technology. All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without 
+        modification, are permitted provided that the following conditions of this 
+        BSD 3-clause license are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, 
+           this list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its contributors
+           may be used to endorse or promote products derived from this software 
+           without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+        ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+        LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+        CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+        SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+        CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+        ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+        POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/Caltech-IPAC/Montage
+Keywords: astronomy,astronomical,image,reprojection,mosaic,visualization
+Description-Content-Type: text/plain
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+
+Building a Montage Python Binary Extension
+------------------------------------------
+
+If you want to build a complete set of Montage Python binary extension wheels
+for all current versions of Python, Linux and Mac OSX, things get complicated.
+This is covered for Linux and MacOS in two subdirectories (linux_wheels
+and macos_wheels).  However building a wheel just for the local machine and
+your current Python is quite straightforward and that is what is covered here.
+
+For Linux, all you need to do is install a few packages in Python and run the
+"make_local.sh" script included here.  The result is a wheel (zip) file in
+the "dist" subdirectory which you can then "pip install" into Python (if
+you already have Montage install using the same version number, you might
+have to run "pip uninstall MontagePy" first).
+
+The packages needed are "jinja2", "importlib-resources" and "build".
+
+For MacOSX, there are a couple of additional things that have to be done.
+The most important has to do with the way OSX builds code that needs to
+run on multiple OS versions.  Mac executables are generally forward version
+compatible.  That is, if you build it for an older version it will also run
+on anything newer.  Their compiler can be told to build for a previous
+OS version (the "deployment target").  So people building distributable code
+usually target a version a few years old.
+
+It gets more complicated when you need to link with libraries built by
+someone else (as we have to do with Python).  Then your choice of target
+version has to match theirs.  Right now, the current MacOSX version is 14.4
+but the Python version we can install are all built with a target of 11.1
+(for Anaconda; the version of the build from python.org is 10.9).
+
+Therefore we have to make sure all our code is compiled to the same target.
+This is done with an environment variable:
+
+   MACOSX_DEPLOYMENT_TARGET='11.1'
+
+Also, the Mac comes in two hardware flavors, x86_64 chips and ARM64.
+Their recommended approach is to construct "universal2" object code, where
+both versions are generated and kept in a single file (executable, .o
+ or .so).  Since here we are just building for the local hardware, we
+can let the compiler default that.
+
+After that the process described in the second paragraph above is the same.

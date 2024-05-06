@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: data-quality-validation-pydeequ
+Version: 0.1
+Summary: A library for data quality validation using PyDeequ.
+Author: Ketan Kirange
+Requires-Dist: pandas
+Requires-Dist: pydeequ
+Requires-Dist: boto3

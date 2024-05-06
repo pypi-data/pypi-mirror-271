@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fetchdep
+Version: 0.0.0.dev0
+Summary: A tool to help fetch sources for a project
+Author-email: James Knight <james.d.knight@live.com>
+License: BSD-2-Clause
+Project-URL: Download, https://pypi.python.org/pypi/fetchdep
+Project-URL: Source, https://github.com/jdknight/fetchdep
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Version Control
+Requires-Python: >=2.7
+

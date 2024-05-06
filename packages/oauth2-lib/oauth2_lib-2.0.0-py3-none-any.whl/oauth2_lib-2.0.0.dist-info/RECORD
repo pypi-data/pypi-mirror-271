@@ -1,0 +1,10 @@
+oauth2_lib/__init__.py,sha256=de8-3GhCeJeO34s7KycJNEhkVzLmmLCFghrOib8coB4,671
+oauth2_lib/async_api_client.py,sha256=Ygou_QR3PX0Ho6M1DFRm4FhFkEZGn5xUleBYY2nLHVM,5285
+oauth2_lib/fastapi.py,sha256=vWt5NKObPcfKfY624GTagszT1e4y4o1m22T4TSTgMuQ,16732
+oauth2_lib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oauth2_lib/settings.py,sha256=pfrcAZn0FKY-3zCuI7Aq3GPRADloLLCbhyIv7NlEkSM,1433
+oauth2_lib/strawberry.py,sha256=GTf8gYqHJ0430CdN9nhX45GCedgvEdRvzL5ANt9dkzo,8450
+oauth2_lib-2.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+oauth2_lib-2.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+oauth2_lib-2.0.0.dist-info/METADATA,sha256=At2ULddM7QHxoAKRfSA0XKDadHNYM1txX_UgL62uDsY,4257
+oauth2_lib-2.0.0.dist-info/RECORD,,

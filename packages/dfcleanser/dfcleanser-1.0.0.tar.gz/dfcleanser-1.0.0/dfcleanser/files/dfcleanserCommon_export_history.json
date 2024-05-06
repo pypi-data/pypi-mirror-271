@@ -1,0 +1,70 @@
+[
+    [0, "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes.csv", ["Crime_Scenes", "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes.csv", "c:/dfcleanser/TestData/dfc_files/Crime_Scenes_updated.csv", "True", "True", ""],
+        [],
+        []
+    ],
+    [0, "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes_Sex_Offenders.csv", ["Crime_Scenes_Sex_Offenders", "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes_Sex_Offenders.csv", "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes_Updated.csv", "True", "True", ""],
+        [],
+        []
+    ],
+    [0, "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes_Updated.csv", ["Crime_Scenes_Updated", "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes_Updated.csv", "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes_Updated.csv", "True", "True", ""],
+        [],
+        []
+    ],
+    [1, "c:/dfcleanser/TestData/TestCases/LA_CrimeScenes.xlsx", ["Crime_Scenes", "c:/dfcleanser/TestData/TestCases/LA_CrimeScenes.xlsx", "c:/dfcleanser/TestData/TestCases/LA_CrimeScenes.xlsx", "", "True", "True", ""],
+        [],
+        []
+    ],
+    [1, "c:/dfcleanser/TestData/TestCases/LA_CrimeScenes_Updated.xlsx", ["Crime_Scenes_Updated", "c:/dfcleanser/TestData/TestCases/LA_CrimeScenes.xlsx", "", "True", "True", ""],
+        [],
+        []
+    ],
+    [1, "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes_Locations.xlsx", ["LA_Crime_Scenes_Locations", "c:/dfcleanser/TestData/TestCases/LA_Crime_Scenes_Locations.xlsx", "c:/dfcleanser/TestData/TestCases/LA_CrimeScenes_Updated.xlsx", "", "True", "True", ""],
+        [],
+        []
+    ],
+    [2, "c:/dfcleanser/TestData/TestCases/LA_Sex_Offenders.json", ["LA_Sex_Offenders", "c:/dfcleanser/TestData/TestCases/LA_Sex_Offenders.json", "c:/dfcleanser/TestData/dfc_files/Sex_Offenders.json", "columns", ""],
+        [],
+        []
+    ],
+    [3, "c:/tech/Projects/Jupyter/Python/dfcleansergit/dfcleanser_test_data/Clean_crime_scenes3.html", ["crime_scenes3", "", "True", "True", ""],
+        [],
+        []
+    ],
+    [4, "crime_anew", ["Crime_Scenes", "crime_anew", "", "fail", "False", "", "", "", "None"],
+        [],
+        []
+    ],
+    [4, "crime_anew1", ["Crime_Scenes", "crime_anew1", "", "fail", "False", "", "", "", "None"],
+        [],
+        []
+    ],
+    [4, "killjoy", ["Crime_Scenes", "killjoy", "", "fail", "False", "", "", "", "None"],
+        [],
+        []
+    ],
+    [4, "killjoy2", ["Crime_Scenes", "killjoy2", "", "fail", "False", "", "", "", "None"],
+        [],
+        []
+    ],
+    [4, "rewind", ["Crime_Scenes", "rewind", "", "fail", "False", "", "", "", "None"],
+        [],
+        []
+    ],
+    [4, "tryagain", ["Crime_Scenes", "tryagain", "", "fail", "False", "", "", "", "None"],
+        [],
+        []
+    ],
+    [5, "Custom_file_path_0", ["Crime_Scenes", "from dfcleanser.common.cfg import get_dfc_dataframe_df\ndf  =   get_dfc_dataframe_df('Crime_Scenes')\n"],
+        [],
+        []
+    ],
+    [5, "Custom_file_path_1", ["Crime_Scenes", "from dfcleanser.common.cfg import get_dfc_dataframe_df\ndf  =   get_dfc_dataframe_df('Crime_Scenes')\n"],
+        [],
+        []
+    ],
+    [6, "c://dfcleanser/TestData/test_xml.xml", ["Crime_Scenes", "c:\\\\dfcleanser\\TestData\\test_xml.xml", "", "True", "", "", "", ""],
+        [],
+        []
+    ]
+]

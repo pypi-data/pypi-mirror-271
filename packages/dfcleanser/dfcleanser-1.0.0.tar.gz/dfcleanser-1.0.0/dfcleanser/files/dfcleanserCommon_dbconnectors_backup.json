@@ -1,0 +1,11 @@
+[
+    ["c5309178-e0e9-4fd5-9fec-26f1b8c1c7fd", 0, "mysql.connector", "localhost", "sakila", "PythonTest", "PythonPW2021"],
+    ["7f60391a-9235-41f7-ad15-72bf039a5163", 0, "pymysql", "localhost", "sakila", "PythonTest", "PythonPW2021"],
+    ["bc8ffb68-3462-4272-9bdd-cd5d2d5e54c0", 1, "pymssql", "RICKSWIN7", "pubs", "PythonTest", "NewPythonPW"],
+    ["0a463a52-9343-4f57-b66c-202cb3d9b616", 1, "pyodbc", "RICKSWIN7", "pubs", "PythonTest", "NewPythonPW"],
+    ["09c75ceb-f1e2-4d76-9cc0-7808b51a56a1", 2, "sqlite3", "c:\\sqlite\\db\\chinook.db", "", "", ""],
+    ["6fb69005-913d-4fad-9c33-67bb52f3f955", 3, "psycopg2", "localhost", "postgres", "postgres", "PostgresSQLPW"],
+    ["4e533d6c-d8f8-412c-b5ad-bff7f9a9bb55", 4, "cx_Oracle", "localhost", "", "PythonTest", "ORACLEPW"],
+    ["2c999cd3-f1e7-4753-8650-73f87b64d6e0", 5, "mysql+mysqlconnector://PythonTest:PythonPW2021@localhost/sakila"],
+    ["9980bbfe-63fd-4872-8fa6-cc28779f34b7", 5, "mssql+pyodbc:///?odbc_connect=DRIVER%3D%7BSQL+Server%7D%3BSERVER%3DRICKSWIN7%3BDATABASE%3Dpubs%3BUID%3DPythonTest%3BPWD%3DNewPythonPW"]
+]

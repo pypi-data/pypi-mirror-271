@@ -1,0 +1,3608 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url("https://github.com/6pac/SlickGrid/blob/master/dist/styles/css/slick.grid.css");
+@import url("http://6pac.github.io/SlickGrid/css/smoothness/jquery-ui.css");
+@import url("https://github.com/6pac/SlickGrid/tree/master/examples/examples.css");
+@import url("https://github.com/6pac/SlickGrid/tree/master/lib/select2.css");
+@import url("https://rickkrasinski.github.io/dfcleanser/help/nature.css");
+@import url("https://rickkrasinski.github.io/dfcleanser/help/pygments.css");
+
+/*
+// --------------------------
+//       dfCleanser css      
+// --------------------------
+*/
+
+a {
+    background-color: transparent !important;
+}
+
+.output_png img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Jupyter output cell size defs                     */
+
+.output_wrapper,
+.output {
+    height: auto !important;
+    max-height: 8000px;
+    align-items: center;
+    /* your desired max-height here */
+}
+
+.output_scroll {
+    box-shadow: none !important;
+    webkit-box-shadow: none !important;
+}
+
+.jupyter-widgets-output-area .output_scroll {
+    height: unset !important;
+    border-radius: unset !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+.jupyter-widgets-output-area {
+    height: auto !important;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+.dc-container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.dc-table-container {
+    max-width: 100% !important;
+    margin-left: 2px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+
+/* 
+----------------------------------------------------------------- 
+------- Dropdown component style dependencies -------- 
+-----------------------------------------------------------------
+*/
+
+body {
+    padding-top: 0px;
+    margin: 0;
+    font-family: 'tahoma'
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background: #428bca;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    display: inline-block;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 20px 0 0;
+    float: left;
+    display: inline-block;
+}
+
+.menu {
+    z-index: 1;
+}
+
+.menu-small {
+    height: 28px;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.dropdown {
+    z-index: 2;
+}
+
+li>a:after {
+    content: ' »';
+}
+
+
+/* Change this in order to change the Dropdown symbol */
+
+li>a:only-child:after {
+    content: '';
+}
+
+nav ul li a {
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    opacity: 0.5;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #428bca;
+    float: left;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Condensed");
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+
+/* footer css */
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: gray;
+    font-size: 12px;
+}
+
+
+/* 
+----------------------------------------------------------------- 
+--------------------- Vertical Navbar styles -------------------- 
+-----------------------------------------------------------------
+*/
+
+#divMenu,
+ul,
+li,
+li li {
+    padding-top: 0px;
+    margin: 0;
+    font-family: 'tahoma'
+}
+
+#divMenu {
+    width: 150px;
+    height: 37px;
+}
+
+#divMenu ul {
+    line-height: 35px;
+}
+
+#divMenu li {
+    list-style: none;
+    position: relative;
+    background: #428bca;
+}
+
+#divMenu li li {
+    list-style: none;
+    position: relative;
+    background: #428bca;
+    left: 148px;
+    top: -37px;
+}
+
+#divMenu ul li a {
+    width: 150px;
+    height: 35px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #ffffff;
+    border: 1px solid #eee;
+    background-color: #945c7d;
+}
+
+#divMenu ul li ul li {
+    background-color: #945c7d;
+}
+
+#divMenu ul li ul li:hover {
+    background-color: #945c7d;
+}
+
+#divMenu ul li:hover ul {
+    display: block;
+    background-color: #945c7d;
+}
+
+#divMenu ul li a:hover {
+    opacity: 0.5;
+    background-color: #945c7d;
+    color: #ffffff;
+}
+
+#divMenu ul ul {
+    position: absolute;
+    visibility: hidden;
+    top: 37px;
+}
+
+#divMenu ul li:hover ul {
+    visibility: visible;
+}
+
+#divMenu li:hover {
+    background-color: #428bca;
+}
+
+#divMenu ul li:hover ul li a:hover {
+    background-color: #945c7d;
+}
+
+#divMenu a:hover {
+    font-weight: normal;
+}
+
+
+/* 
+----------------------------------------------------------------- 
+------- Bootstrap check box component style dependencies -------- 
+-----------------------------------------------------------------
+*/
+
+
+/* Hiding the checkbox, but allowing it to be focused */
+
+.badgebox {
+    opacity: 0;
+}
+
+.badgebox+.badge {
+    /* Move the check mark away when unchecked */
+    text-indent: -999999px;
+    /* Makes the badge's width stay the same checked and unchecked */
+    width: 27px;
+}
+
+.badgebox:focus+.badge {
+    /* Set something to make the badge looks focused */
+    /* This really depends on the application, in my case it was: */
+    /* Adding a light border */
+    box-shadow: inset 0px 0px 5px;
+    /* Taking the difference out of the padding */
+}
+
+.badgebox:checked+.badge {
+    /* Move the check mark back when checked */
+    text-indent: 0;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 
+--------------------------------------------------- 
+------------------- Table Styles ------------------ 
+---------------------------------------------------
+*/
+
+
+/* 
+------------------------------------------------------
+Dataframe Cleanser table component style dependencies  
+------------------------------------------------------
+*/
+
+.table td {
+    text-align: center;
+}
+
+.table th {
+    text-align: center;
+}
+
+td.dccolleft {
+    text-align: left;
+    margin-left: 0px;
+}
+
+d.dccolright {
+    text-align: right;
+    margin-right: 0px;
+}
+
+td.dccolwrap {
+    word-wrap: break-word;
+    word-break: break-all;
+    text-decoration: none;
+}
+
+th.dccolleft {
+    text-align: left;
+}
+
+table.dcsearchtable th {
+    font-size: 10px;
+}
+
+table.dcsearchtable td {
+    font-size: 9px;
+}
+
+table.dc-table td {
+    font-size: 10px;
+    font-family: Arial;
+}
+
+table.dc-table11 td {
+    font-size: 11px;
+    font-family: Arial;
+}
+
+table.dc-table12 td {
+    font-size: 12px;
+    font-family: Arial;
+}
+
+table.dc-table13 td {
+    font-size: 13px;
+    font-family: Arial;
+}
+
+div.panel-heading {
+    height: 50px;
+    font-size: 14px;
+}
+
+.dc-table-panel-heading {
+    font-size: 12px;
+    height: 40px;
+}
+
+.dc-note-panel-heading {
+    font-size: 10px;
+    height: 30px;
+}
+
+.dc-table-row {
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.dc-small-table-panel-heading {
+    font-size: 10px;
+    font-family: Arial;
+    height: 35px;
+}
+
+.dc-small-table-noheader-panel-heading {
+    height: 0px;
+    background-color: white;
+}
+
+.dc-table-title {
+    font-size: 14px;
+    padding-top: 0px;
+    padding-bottom: 11px;
+    margin-top: 0px;
+    margin-bottom: 11px;
+}
+
+button.dc-table-button {
+    padding-top: 2.0px;
+    height: 20px;
+    width: 60px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.btn-grp-center {
+    text-align: center;
+}
+
+.btn-center {
+    display: inline-block;
+}
+
+.table-scrollbar-wrapper {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+/* 
+------------------------------------------------------
+- dc table title panel styles  
+------------------------------------------------------
+*/
+
+.panel-title {
+    font-size: 16px;
+}
+
+table.inner {
+    display: inline-table;
+    width: auto;
+}
+
+
+/* 
+------------------------------------------------------
+Dataframe Describe table component style dependencies  
+------------------------------------------------------
+*/
+
+.dc-describe-table-panel-heading {
+    height: 30px;
+    background-color: rgb(61, 126, 216);
+}
+
+.dc-describe-table-panel-title {
+    background-color: rgb(61, 126, 216);
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.dc-describe-table-head {
+    background-color: rgb(61, 126, 216);
+    font-size: 10px;
+    font-family: Arial;
+    margin-right: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.dc-describe-table-head-col {
+    width: 10%;
+    color: white;
+    font-size: 11px;
+    font-family: Arial;
+}
+
+.dc-describe-table-body-row {
+    background-color: #F8F5E1;
+}
+
+.dc-describe-table-body-row12 {
+    font-size: 12px;
+    font-family: Arial;
+    height: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.dc-describe-table-body-col12 {
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.dc-describe-table-body-first-col {
+    background-color: rgb(61, 126, 216);
+    color: white;
+    font-size: 10px;
+    font-family: Arial;
+}
+
+.dc-tbl-container {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.dc-form-div {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.dchdr h6 {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.dchdr h5 {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+tr.dcrowhead {
+    color: white;
+    background-color: #6FA6DA;
+}
+
+.dc-table-link {
+    color: white;
+}
+
+.dc-table-row-link {
+    color: #6FA6DA;
+    font-size: 12px;
+}
+
+.dccolhead {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial;
+}
+
+.dccolheadleft {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial;
+    text-align: left;
+}
+
+.table-note {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial;
+}
+
+
+/* 
+--------------------------------------------------- 
+---------------- End Table Styles ----------------- 
+---------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------------------- 
+---------------- Input Form Styles ---------------- 
+---------------------------------------------------
+*/
+
+
+/*
+--------------------------------------------------- 
+* --------- dfCleanser default input forms --------
+--------------------------------------------------- 
+*/
+
+.dc-default-input-div {
+    padding: 5px;
+    margin: auto;
+    width: 80%;
+}
+
+.dc-default-short-input-div {
+    padding: 5px;
+    margin: auto;
+    width: 40%;
+}
+
+.dc-default-input-inner-div {
+    margin-bottom: 10px;
+    overflow-y: hidden;
+    background-color: #F8F5E1;
+}
+
+.dc-default-input-button-container {
+    text-align: center;
+}
+
+.dc-default-input-button-left-container {
+    text-align: left;
+}
+
+.textarea-scroll {
+    overflow-y: scroll;
+}
+
+
+/*
+--------------------------------------------------- 
+* ----------- dfCleanser search forms -------------
+--------------------------------------------------- 
+*/
+
+input.dc-form-search-more-input {
+    font-size: 12px;
+    height: 30px;
+    width: 120px;
+    size: 14;
+    margin-left: 5%;
+}
+
+.dc-form-search-select {
+    font-size: 12px;
+}
+
+.glyphicon-search {
+    width: 25px;
+}
+
+.dc-btn-primary {
+    width: 80px;
+}
+
+.dc-doc-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group-sm {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+
+/* 
+-------------------------------------------
+* ---------- Input full parms -------------
+-------------------------------------------
+*/
+
+.dc-show-full {
+    height: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+div.fullparms {
+    background: white;
+}
+
+button.fullparms-custom {
+    color: black;
+    background: #D3D2C4;
+    text-align: center;
+    font-family: Fira Sans;
+    font-size: 12px;
+    height: 30px;
+    width: 140px;
+    margin-left: 5px;
+}
+
+button.fullparms {
+    color: black;
+    background: #D3D2C4;
+    text-align: center;
+    font-family: Fira Sans;
+    font-size: 12px;
+    height: 30px;
+    width: 140px;
+    margin-left: 5px;
+}
+
+.dc-btn-subset {
+    background: #e0e0d1;
+    color: #0F2D58;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+
+/* 
+--------------------------------------------------- 
+------------ Dataframe Schema styles -------------
+--------------------------------------------------- 
+*/
+
+
+/*
+button.dc-schema-button {
+    font-size: 10px;
+    height: 50px;
+    width: 90px;
+    background-color: #67a1f3;
+    color: white;
+    margin-left: 10px;
+}
+
+div.dc-schema-nanuniques-div {
+    height: 20px;
+    margin-top: 5px;
+    width: 60%;
+    margin-left: 25px;
+}
+
+div.dc-schema-chkdtype-div {
+    height: 20px;
+    margin-top: 5px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+div.dc-schema-chkdtype-vals-div {
+    height: 20px;
+    margin-top: 5px;
+    width: 60%;
+    margin-left: 32px;
+}
+
+.custom-select {
+    font-size: 12px;
+    margin-top: 1px;
+}
+*/
+
+
+/* 
+--------------------------------------------------- 
+------------ Bulk Geocoding Settings  -------------
+--------------------------------------------------- 
+*/
+
+dfc-console-title {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: auto;
+}
+
+dfc-console-container {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #428bca;
+}
+
+dfc-progress-title {
+    width: 20%;
+    font-size: 14px;
+    font-family: Arial;
+    text-align: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+dfc-progress-row {
+    height: 30px;
+}
+
+dfc-progress-col {
+    width: 80%;
+    margin-left: 20px;
+}
+
+dfc-progress-div {
+    height: 20px;
+}
+
+dfc-progress-bar {
+    height: 20px;
+}
+
+
+/*
+.df-display-wrapper {
+    display: grid;
+    grid-template-columns: 984px;
+    grid-template-areas: "header" "content";
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 20px;
+}
+
+.df-display-wrapper-content {
+    grid-area: content;
+    margin-left: 0px;
+}
+*/
+
+
+/* 
+--------------------------------------------------- 
+-------------- documentation styles ---------------
+--------------------------------------------------- 
+*/
+
+p.DCTitleChapterstext {
+    width: 80%;
+    margin-left: 12%;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Fira Sans;
+}
+
+h2.DCTitleChaptersh2 {
+    margin-left: 2%;
+}
+
+
+/* 
+--------------------------------------------------- 
+---------------- exception styles -----------------
+--------------------------------------------------- 
+*/
+
+div.exception-status {
+    font-size: 13px;
+    width: 90%;
+    margin: auto;
+    font-weight: normal;
+    font-style: normal;
+    border: 1px solid #428bca;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+div.exception-status-detail {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: normal;
+    font-style: normal;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.dfc-notes-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'top';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-notes-short-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'top';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+--------------------------------------------------- 
+----------------- note styles ------------------- 
+--------------------------------------------------- 
+*/
+
+div.note-line {
+    margin-left: 9px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial;
+}
+
+th.a:link {
+    color: #262729;
+}
+
+
+/* 
+------------------------------------------------------------------------------------------- 
+------------------------------ Dataframe Cleanser Geocode Styles -------------------------- 
+-------------------------------------------------------------------------------------------
+*/
+
+.df-geocode-geocoder-wrapper {
+    display: grid;
+    grid-template-columns: 150px 670px;
+    grid-template-areas: 'left right';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
+.df-geocode-bing-bulk-reverse-wrapper {
+    display: grid;
+    grid-template-columns: 240px 580px;
+    grid-template-areas: 'left right';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
+.df-geocode-bing-bulk-query-adjust-wrapper {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-areas: 'top' 'middle' 'bottom';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
+.df-geocode-bing-bulk-query-data-wrapper {
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-areas: 'left right';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
+.df-geocode-google-bulk-reverse-wrapper {
+    display: grid;
+    grid-template-columns: 240px 580px;
+    grid-template-areas: 'top right' 'middle right' 'bottom footer';
+    grid-gap: 5px;
+    background-color: #fff;
+    padding: 5px;
+    margin-left: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.geocode-table {
+    border: 4px solid black;
+    border-collapse: collapse;
+}
+
+.geocode-header {
+    background-color: #428bca;
+    text-align: left;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.geocode-column {
+    background-color: #F8F5E1;
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.geocode-error-column {
+    background-color: #ff6666;
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.column-body {
+    height: 600px;
+    overflow: auto;
+}
+
+.column-body-reverse {
+    height: 400px;
+    overflow: auto;
+}
+
+.column-body-addr-comps {
+    height: 350px;
+    overflow: auto;
+}
+
+.column-body-loc-types {
+    height: 140px;
+    overflow: auto;
+}
+
+.geocode-bulk-query-wrapper {
+    margin-left: 5px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 240px 580px;
+    grid-template-areas: "header header" "left right" "bottom right";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.geocode-console-wrapper {
+    display: grid;
+    grid-template-columns: 740px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcleanser-common-grid-notes {
+    grid-area: header;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial;
+    margin-left: 20px;
+}
+
+.column-body tr:hover {
+    background: #99ff99 !important;
+}
+
+.column-body tr:hover td {
+    background: transparent;
+}
+
+.column-body-addr-comps tr:hover {
+    background: #99ff99 !important;
+}
+
+.column-body-addr-comps tr:hover td {
+    background: transparent;
+}
+
+.column-body-loc-types tr:hover {
+    background: #99ff99 !important;
+}
+
+.column-body-loc-types tr:hover td {
+    background: transparent;
+}
+
+.geocoder-column tr:hover {
+    background: #99ff99 !important;
+}
+
+.geocoder-column tr:hover td {
+    background: transparent;
+}
+
+.geocoder-column {
+    background-color: #F8F5E1;
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/* 
+------------------------------------------------------------------------------------------- 
+------------------------------ Dataframe Cleanser Grid Components ------------------------- 
+-------------------------------------------------------------------------------------------
+*/
+
+.dfc-left {
+    grid-area: left;
+    margin-left: 2px;
+}
+
+.dfc-right {
+    grid-area: right;
+    margin-right: 2px;
+}
+
+.dfc-main {
+    grid-area: main;
+    justify-content: center;
+}
+
+.dfc-top {
+    grid-area: top;
+    justify-content: center;
+}
+
+.dfc-middle {
+    grid-area: middle;
+    justify-content: center;
+}
+
+.dfc-top-center {
+    grid-area: top;
+    justify-content: center;
+    align-items: center;
+}
+
+.dfc-bottom {
+    grid-area: bottom;
+    justify-content: center;
+}
+
+.dfc-footer {
+    grid-area: footer;
+    justify-content: center;
+}
+
+.dfc-header {
+    grid-area: header;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial;
+    margin-left: 0px;
+}
+
+.dfcleanser-common-grid-header {
+    grid-area: header;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial;
+    margin-left: 0px;
+}
+
+.dfcleanser-common-grid-header-small {
+    grid-area: sub-header;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial;
+    margin-left: 0px;
+}
+
+.dfcleanser-common-grid-header-medium {
+    grid-area: sub-header;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial;
+    margin-left: 0px;
+}
+
+.dfcleanser-common-grid-header-large {
+    grid-area: header;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial;
+    margin-left: 0px;
+}
+
+.dfcleanser-common-grid-note {
+    text-align: center;
+    margin-left: 14%;
+    width: 75%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #67a1f3;
+    color: #67a1f3;
+    background-color: #F8F5E1;
+}
+
+
+/* (2)) */
+
+
+/*
+.dfc-short-note-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-df-index-wrapper {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-areas: 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    margin-left: 0px;
+    padding: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------------------------------------------------                 
+-------------- dfcleanser Common Grids -------------                 
+----------------------------------------------------                 
+*/
+
+.dfc-taskbar-wrapper {
+    display: grid;
+    grid-template-columns: 980px;
+    grid-template-areas: 'header';
+    grid-gap: 5px;
+    background-color: #fff;
+    padding: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-taskbar-wrapper-short {
+    display: grid;
+    grid-template-columns: 680px;
+    grid-template-areas: 'header';
+    grid-gap: 5px;
+    background-color: #fff;
+    padding: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+----------------------------------------------------                 
+------------------- dbutils Grids ------------------                 
+----------------------------------------------------                 
+*/
+
+
+/* 
+---------------- SQL Connector Grid ---------------                 
+*/
+
+
+/*
+.sql-connector-wrapper {
+    margin-left: 5px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 160px 680px;
+    grid-template-areas: "header header" "left right";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------------------------------------------------                 
+------------ dfcleanser System Grids ---------------                 
+----------------------------------------------------                 
+*/
+
+
+/*
+.dfcleanser-chapters-wrapper {
+    margin-left: 60px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 880px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    color: #444;
+}
+
+.dfcleanser-dfc-dfs-wrapper {
+    margin-left: 130px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 760px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    color: #444;
+}
+
+.dfcleanser-dfc-dfs-ops-wrapper {
+    margin-left: 100px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 820px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    color: #444;
+}
+
+.dfcleanser-dfc-dfs-ops-code-wrapper {
+    margin-left: 5px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 725px;
+    grid-template-areas: "main" "footer";
+    background-color: #fff;
+    color: #444;
+}
+
+.dfcleanser-dfc-dfs-ops-code-note-wrapper {
+    margin-left: 5px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 725x;
+    grid-template-areas: "main";
+    background-color: #fff;
+    color: #444;
+}
+*/
+
+
+/* 
+-------------- load.py look for common --------------                 
+*/
+
+.dfcleanser-main-pop-up-title-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 480px;
+    grid-template-areas: "header";
+    background-color: #F8F5E1;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+----------------------------------------------------                 
+----------- Data Import/Export Grids ---------------                 
+----------------------------------------------------                 
+*/
+
+
+/* 
+-------------- Import SQL Table Grid --------------                 
+*/
+
+
+/*
+.import_sql_table_wrapper {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 160px 680px;
+    grid-template-areas: "header header" "sidebar content" "footer  footer";
+    background-color: #fff;
+    color: #444;
+}
+*/
+
+
+/* 
+-------------- Export SQL Table Grid --------------                 
+*/
+
+
+/*
+.export_sql_table_wrapper {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 240px 740px 10px;
+    grid-template-areas: "....... header header" "sidebar content content" "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+}
+*/
+
+
+/* 
+--------------- Data Import Stat Grids --------------                 
+*/
+
+
+/*
+.data-import-stats-wrapper {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-areas: 'top' 'main' 'bottom';
+    grid-gap: 5px;
+    background-color: #fff;
+    padding: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.data-import-sql-table-wrapper {
+    display: grid;
+    grid-template-columns: 240px 680px;
+    grid-template-areas: 'header header' 'left right' 'bottom right';
+    grid-gap: 5px;
+    background-color: #fff;
+    padding: 5px;
+    margin-left: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.data-import-main-wrapper {
+    display: grid;
+    grid-template-columns: 330px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 1px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
+.data-import-single-wrapper {
+    display: grid;
+    grid-template-columns: 330px;
+    grid-template-areas: 'main';
+    grid-gap: 1px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
+.df-import-history-combined-wrapper {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    grid-template-areas: 'left right';
+    grid-gap: 20px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
+.data-import-details-title-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'header';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.data-import-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'header' 'footer';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.data-import-addl-wrapper {
+    display: grid;
+    grid-template-columns: 280px 540px;
+    grid-template-areas: 'header header' 'top main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.data-import-history-wrapper {
+    display: grid;
+    grid-template-columns: 330px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.data-import-type-history-wrapper {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-import-type-history-tb-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-import-type-history-details-wrapper {
+    display: grid;
+    grid-template-columns: 620px;
+    grid-template-areas: 'main' 'bottom';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------------------------------------------------                 
+--------------- Data Inspection Grids --------------                 
+----------------------------------------------------                 
+*/
+
+
+/* 
+------------ Data Inspection Input Grid ------------                 
+*/
+
+
+/*
+.df-inspection-wrapper {
+    display: grid;
+    grid-template-columns: 780px;
+    grid-template-areas: 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-inspection-wrapper-footer {
+    grid-area: footer;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.df-inspection-reset-wrapper {
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-areas: 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+.df-select-df-wrapper {
+    display: grid;
+    grid-template-columns: 780px;
+    grid-template-areas: 'footer';
+    grid-gap: 5px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+------- Data Inspection Column Data Grid ---------                 
+*/
+
+
+/*
+.df-inspection-column-data-wrapper {
+    display: grid;
+    grid-template-columns: 240px 360px;
+    grid-template-areas: 'top top' 'left right';
+    grid-gap: 2px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.df-inspection-pop-up-column-data-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'left' 'right';
+    grid-gap: 2px;
+    background-color: #F8F5E1;
+    padding: 1px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-inspection-outliers-data-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'main';
+    grid-gap: 2px;
+    padding: 1px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-inspection-outliers-pop-up-data-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'main';
+    grid-gap: 2px;
+    background-color: #F8F5E1;
+    padding: 1px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+--------- Data Inspection Data Type Grid ---------                 
+*/
+
+
+/*
+
+.df-inspection-datatypes-wrapper {
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-areas: 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------- Data Inspection Nan Grid -----------                 
+*/
+
+
+/*
+.df-inspection-nan-wrapper {
+    display: grid;
+    grid-template-columns: 440px;
+    grid-template-areas: 'header' 'top' 'main' 'bottom' 'footer';
+    grid-gap: 1px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
+
+.df-inspection-nan-combined-wrapper {
+    display: grid;
+    grid-template-columns: 440px 440px;
+    grid-template-areas: 'left right';
+    grid-gap: 20px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+--------- Data Inspection Row Data Grid ---------                 
+*/
+
+.df-stats-wrapper {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-areas: 'main';
+    grid-gap: 0 px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*
+.df-inspection-row-data-wrapper {
+    display: grid;
+    grid-template-columns: 960px;
+    grid-template-areas: 'top';
+    grid-gap: 0 px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.df-inspection-row-scroll-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+--------- Data Inspection Category Data Grid ---------                 
+*/
+
+
+/*
+.df-inspection-category-data-wrapper {
+    display: grid;
+    grid-template-columns: 980px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 1px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------------------------------------------------                 
+---------------- Data Cleansing Grids --------------                 
+----------------------------------------------------                 
+*/
+
+
+/*
+.display-df-unique-columns-base-wrapper {
+    display: grid;
+    grid-template-columns: 920px;
+    grid-template-areas: 'header' 'top';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-dfcleansing-graphs-wrapper {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-areas: 'top';
+    grid-gap: 1px;
+    padding: 1px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-dfcleansing-graphs-480-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'top';
+    grid-gap: 1px;
+    padding: 1px;
+    margin-left: 85px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-cleanser-unique-columns-find-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'top' 'bottom';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-cleanser-unique-columns-wrapper {
+    display: grid;
+    grid-template-columns: 540px 280px;
+    grid-template-areas: 'left header' 'left right' 'left footer';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-cleanser-unique-columns-no-find-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'left';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* geocoding move to */
+
+.display-bulk-geocode-csv-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'top';
+    grid-gap: 2px;
+    background-color: #ffff;
+    padding: 2px;
+    margin-left: 2px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-geocode-coords-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'top';
+    grid-gap: 2px;
+    background-color: #ffff;
+    padding: 2px;
+    margin-left: 2px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*
+.display-zipcode-lists-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'main';
+    grid-gap: 2px;
+    background-color: #ffff;
+    padding: 2px;
+    margin-left: 2px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* data import html move to */
+
+
+/*
+.display-html-dfs-wrapper {
+    display: grid;
+    grid-template-columns: 750px;
+    grid-template-areas: 'header' 'top' 'bottom' 'footer';
+    grid-gap: 2px;
+    background-color: #ffff;
+    padding: 2px;
+    margin-left: 2px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-html-dfs-df-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'main';
+    grid-gap: 2px;
+    background-color: #ffff;
+    padding: 2px;
+    margin-left: 2px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-cleanser-input-wrapper {
+    display: grid;
+    grid-template-columns: 320px 480px;
+    grid-template-areas: 'header header' 'left right' 'left bottom' 'footer footer';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.display-df-cleanser-uniques-wrapper {
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-areas: 'main';
+    grid-gap: 1px;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-cleanser-uniques-find-wrapper {
+    display: grid;
+    grid-template-columns: 520px;
+    grid-template-areas: 'main' 'bottom';
+    grid-gap: 1px;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+*/
+
+
+/*
+.display-df-row-cleanser-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'header' 'footer';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-row-cleanser-rows-wrapper {
+    display: grid;
+    grid-template-columns: 960px;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-row-cleanser-criteria-rows-wrapper {
+    display: grid;
+    grid-template-columns: 520px;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-row-cleanser-sequence-wrapper {
+    display: grid;
+    grid-template-columns: 620px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-row-cleanser-define-criteria-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-subset-header-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'top';
+    grid-gap: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-subset_sequence1-wrapper {
+    display: grid;
+    grid-template-columns: 240px;
+    grid-template-areas: 'top';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-subset_sequence2-wrapper {
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-areas: 'top main';
+    grid-gap: 10px;
+    border: 2px;
+    border-color: #3281B8;
+    padding: 5px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-subset_sequence3-wrapper {
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-areas: 'top main bottom';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-subset_sequence4-wrapper {
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-template-areas: 'top main bottom footer';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.save-df-row-cleanser-criteria-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 960px;
+    grid-template-areas: "header" "top" "bottom";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-col-names-row-wrapper {
+    display: grid;
+    grid-template-columns: 960px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-col-cleanser-wrapper {
+    display: grid;
+    grid-template-columns: 850px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-col-cleanser-cols-wrapper {
+    display: grid;
+    grid-template-columns: 854px;
+    grid-template-areas: 'main';
+    grid-gap: 0x;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display-df-col-cleanser-index-wrapper {
+    display: grid;
+    grid-template-columns: 560px;
+    grid-template-areas: 'main';
+    grid-gap: 0x;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------------------------------------------------                 
+---------------- Data Transform Grids --------------                 
+----------------------------------------------------                 
+*/
+
+
+/*
+.df-common-df-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.df-index-common-wrapper {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-areas: 'header' 'top' 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-index-sort-wrapper {
+    display: grid;
+    grid-template-columns: 520px;
+    grid-template-areas: 'header' 'top' 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.display-df-apply-fn-wrapper {
+    display: grid;
+    grid-template-columns: 490px;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* data cleansing move to */
+
+
+/*
+.col-change-datatype-fn-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 320px 480px;
+    grid-template-areas: "left header" "left footer";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.col-change-datatype-transform-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 610px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.col-convert-category-transform-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 240px 480px;
+    grid-template-areas: "header header" "left right";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.col-change-datatype-table-transform-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 600px;
+    grid-template-areas: "header" "main" "footer";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.col-change-datatype-uniques-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 560px 280px;
+    grid-template-areas: "left header" "left footer";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.col-cat-uniques-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 560px;
+    grid-template-areas: "main";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.col-change-datatype-dt-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 360px 480px;
+    grid-template-areas: "header header" "left right";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* data cleansing move to */
+
+
+/*
+.check-compatability-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 400px 420px;
+    grid-template-areas: "left header" "left right";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.check-compatability-status-wrapper {
+    margin-left: 0px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 820px;
+    grid-template-areas: "main";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+------------- datetime Format Grid ----------------                 
+*/
+
+.dfc-common-480px-single-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 480px;
+    grid-template-areas: "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-common-select-cols-wrapper {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 500px;
+    grid-template-areas: "header" "main" "footer";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 1px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-common-480px-2-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 480px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*
+.dfc-common-620px-2-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 680px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-common-620px-2-vert-no-padding-wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 680px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 0px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.dfc-common-short-taskbar-2-wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 680px;
+    grid-template-areas: "top" "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 0px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-common-short-taskbar-console-wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 680px;
+    grid-template-areas: "top" "bottom";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 0px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-common-short-taskbar-wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 680px;
+    grid-template-areas: "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 0px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-common-620px-3-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 620px;
+    grid-template-areas: "header" "main" "footer";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+.dfc-common-grid-div-height {
+    height: 5px;
+}
+
+
+/*
+.dfc-common-620px-1-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 620px;
+    grid-template-areas: "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+.dfc-common-720px-1-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 720px;
+    grid-template-areas: "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*
+.dfc-common-720px-2-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 720px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-common-480px-3-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 480px;
+    grid-template-areas: "header" "main" "bottom";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-transform-480px-3-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 480px;
+    grid-template-areas: "header" "main" "bottom";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfc-transform-440px-4-vert-wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 440px;
+    grid-template-areas: "header" "main" "bottom" "footer";
+    background-color: #fff;
+    overflow-y: hidden;
+    color: #444;
+    padding: 2px;
+    margin-left: 1px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+--------------- Dataframe Reorder Columns Grids --------------                 
+*/
+
+
+/*
+.df-reorder-colnames-wrapper {
+    display: grid;
+    grid-template-columns: 502px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+--------------- Dataframe Datatype Columns Grids --------------                 
+*/
+
+
+/*
+.df-datatype-colnames-wrapper {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-cols-common-data-wrapper {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-cols-common-data-2-wrapper {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-cols-common-data-3-wrapper {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+--------------- Dataframe Drop Columns Grids --------------                 
+*/
+
+
+/*
+.df-drop-colnames-wrapper {
+    display: grid;
+    grid-template-columns: 522px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.df-dummies-colnames-wrapper {
+    display: grid;
+    grid-template-columns: 522px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-copy-colnames-wrapper {
+    display: grid;
+    grid-template-columns: 562px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-map-colnames-wrapper {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-mappings-wrapper {
+    display: grid;
+    grid-template-columns: 840px;
+    grid-template-areas: 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+--------------- Dataframe Drop Columns Grids --------------                 
+*/
+
+
+/*
+.df-cats-colnames-wrapper {
+    display: grid;
+    grid-template-columns: 542px;
+    grid-template-areas: 'header' 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+.df-common-colnames-wrapper {
+    display: grid;
+    grid-template-columns: 542px;
+    grid-template-areas: 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+--------------- Dataframe Add Columns Grids --------------                 
+*/
+
+
+/*
+.df-add-col-from-df-wrapper {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-template-areas: 'header header' 'left right' 'footer footer';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-datetime-stats-wrapper {
+    display: grid;
+    grid-template-columns: 520px;
+    grid-template-areas: 'main';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------------------------------------------------                 
+---------------- SW Utilities Grids ----------------                 
+----------------------------------------------------                 
+*/
+
+
+/* 
+----------------------------------------------------                 
+------------------ Common Grids --------------------                 
+----------------------------------------------------                 
+*/
+
+
+/*
+.sw-utils-wrapper {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 720px;
+    grid-template-areas: "header" "bottom" "footer";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sw-utils-subset-wrapper {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 680px;
+    grid-template-areas: "top" "main" "header" "bottom";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sw-utils-subset-run-wrapper {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 720px;
+    grid-template-areas: "top" "main" "header" "bottom";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sw-utils-subset-main-wrapper {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 720px;
+    grid-template-areas: "header" "main";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sw-utils-listdict-wrapper {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 700px;
+    grid-template-areas: "header" "bottom" "footer";
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------------------------------------------------                 
+----------------- Geoocoding Grids -----------------                 
+----------------------------------------------------                 
+*/
+
+
+/* 
+--------------Geocoding Query Grid -----------------                 
+*/
+
+
+/*
+.geocode-query-wrapper {
+    margin-left: 40px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 240px 680px;
+    grid-template-areas: "header header" "left right" "footer  footer";
+    background-color: #fff;
+    color: #444;
+}
+*/
+
+.geocode-connector-wrapper {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 920px;
+    grid-template-areas: 'header' 'right';
+    background-color: #fff;
+    color: #444;
+}
+
+.geocode-connector-wrapper-with-notes {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 720px;
+    grid-template-areas: "header header" "left right" "left bottom";
+    background-color: #fff;
+    color: #444;
+}
+
+.geocode-connector-wrapper-with-status {
+    margin-left: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 720px;
+    grid-template-areas: "header header" "left right" "left bottom" "left footer";
+    background-color: #fff;
+    color: #444;
+}
+
+
+/* 
+--------------- Geocode Console Grids --------------                 
+*/
+
+.geocode-console-header {
+    grid-area: header;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* 
+--------------- Geocode Utilities Grids --------------                 
+*/
+
+.geocode-utility-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'header' 'footer';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+--------------- Geocode Process Results Grids --------------                 
+*/
+
+.geocode-final-wrapper {
+    display: grid;
+    grid-template-columns: 860px;
+    grid-template-areas: 'header' 'top' 'main' 'bottom' 'footer';
+    grid-gap: 20px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+----------------------------------------------------                 
+------------------- Census Grids -------------------                 
+----------------------------------------------------                 
+*/
+
+.dfcensus-download-data-wrapper {
+    display: grid;
+    grid-template-columns: 360px 480px;
+    grid-template-areas: 'header header' 'left right' 'main main' 'footer footer';
+    background-color: #ffffff;
+    grid-gap: 60px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-show-selects-wrapper {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-areas: 'header header' 'left right';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-show-selects-attrs-wrapper {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-areas: 'header header' 'left sub-header' 'left right';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-show-col-attrs-wrapper {
+    display: grid;
+    grid-template-columns: 620px;
+    grid-template-areas: 'header' 'main';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-insert-cols-df-wrapper {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-areas: 'header header' 'left right';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-join-cols-df-wrapper {
+    display: grid;
+    grid-template-columns: 360px 480px;
+    grid-template-areas: 'header header' 'left right';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-show-select-cols-wrapper {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-areas: 'header header' 'left sub-header' 'left right' 'bottom right';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-show-selects-subdata-wrapper {
+    display: grid;
+    grid-template-columns: 360px 480px;
+    grid-template-areas: 'header header' 'left top' 'left right';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-configure-data-wrapper {
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-areas: 'header header' 'left right' 'main main' 'footer footer';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-loaded-dfs-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'top' 'bottom';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-short-note-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'main';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-load-data-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'main' 'footer' 'bottom';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-get-cols-wrapper {
+    display: grid;
+    grid-template-columns: 680px;
+    grid-template-areas: 'header' 'main' 'bottom';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-get-cols-load-data-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'header' 'main' 'footer' 'bottom';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-get-cols-load-full-data-wrapper {
+    display: grid;
+    grid-template-columns: 440px;
+    grid-template-areas: 'header' 'main' 'footer' 'bottom';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-datasets-none-data-wrapper {
+    display: grid;
+    grid-template-columns: 440px;
+    grid-template-areas: 'header' 'main' 'footer' 'bottom';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-datasets-loaded-wrapper {
+    display: grid;
+    grid-template-columns: 360px 480px;
+    grid-template-areas: 'header header' 'left right' 'main right';
+    background-color: #ffffff;
+    grid-gap: 20px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-datasets-in-dfs-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'header' 'main' 'bottom' 'footer';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.dfcensus-datasets-to-export-wrapper {
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-areas: 'header' 'main' 'footer';
+    background-color: #ffffff;
+    grid-gap: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+----------------------------------------------------                 
+------------------- System Grids -------------------                 
+----------------------------------------------------                 
+*/
+
+
+/*
+.df-sys-info-wrapper {
+    display: grid;
+    grid-template-columns: 620px;
+    grid-template-areas: 'header' 'top' 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-sys-info-libs-wrapper {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-areas: 'main';
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.df-sys-eula-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'top';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
+
+
+/* 
+----------------------------------------------------                 
+------------ dfcleanser splash Grids ---------------                 
+----------------------------------------------------                 
+*/
+
+.dfcleanser-console-wrapper {
+    display: grid;
+    grid-template-columns: 140px 600px;
+    grid-template-areas: 'top top' 'left right';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*
+.dfcleanser-chapter-wrapper {
+    display: grid;
+    grid-template-columns: 140px 542px;
+    grid-template-areas: 'top top' 'left right';
+    grid-gap: 0px;
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+----------------------------------------------------                 
+----------- dfc common isplay utils Grids ----------                 
+----------------------------------------------------                 
+*/
+
+.dfc-help-note-wrapper {
+    text-align: center;
+    border: 1px solid #67a1f3;
+    color: #67a1f3;
+    background-color: #F8F5E1;
+    font-size: 12px;
+}
+
+.dfc-display-help-note-wrapper {
+    display: grid;
+    grid-template-columns: 720px;
+    grid-template-areas: 'main';
+    grid-gap: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* 
+------------------------------------------------------------------------------------------------ 
+------------------------------ end Dataframe Cleanser Grid Wrappers ----------------------------                 
+------------------------------------------------------------------------------------------------
+*/
+
+
+/* 
+   -------------------------------------------------
+   --------------------- Fonts ---------------------
+   -------------------------------------------------
+*/
+
+.arial {
+    font-family: Arial, sans-serif;
+}
+
+.helvetica {
+    font-family: Helvetica, sans-serif;
+}
+
+.timesnewroman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.couriernew {
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+}
+
+.verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.arialblack {
+    font-family: 'Arial Black' Arial, sans-serif;
+}
+
+
+/*
+// --------------------------
+//   PopUpCodeCell xss      
+// --------------------------
+*/
+
+#dfcleanser-PopUpCodeCell {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    background-color: #F8F5E1;
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    z-index: 105;
+}
+
+#dfcleanser-PopUpCodeCell .cell-wrapper {
+    height: 100%;
+    overflow: auto;
+}
+
+.PopUpCodeCell-btn {
+    float: right;
+    margin-right: 24px;
+    opacity: 0.2;
+    font-size: 24px;
+    title: 'Minimize dfc';
+    z-index: 106;
+}
+
+.PopUpCodeCellReset-btn {
+    float: left;
+    margin-left: 24px;
+    opacity: 0.2;
+    font-size: 24px;
+    z-index: 106;
+}
+
+.PopUpCodeCellClear-btn {
+    float: left;
+    margin-left: 48px;
+    opacity: 0.2;
+    font-size: 24px;
+    z-index: 107;
+}
+
+.PopUpCodeCellRun-btn {
+    float: left;
+    margin-left: 72px;
+    opacity: 0.2;
+    font-size: 24px;
+    z-index: 108;
+}
+
+.PopUpCodeCell-btn:hover {
+    opacity: 1;
+}
+
+.PopUpCodeCellReset-btn:hover {
+    opacity: 1;
+}
+
+.PopUpCodeCellClear-btn:hover {
+    opacity: 1;
+}
+
+.PopUpCodeCellRun-btn:hover {
+    opacity: 1;
+}
+
+.PopUpCodeCell-close {
+    display: none;
+    position: absolute;
+    float: right;
+    bottom: 8px;
+    right: 0;
+}
+
+.PopUpCodeCell-reset {
+    display: none;
+    position: absolute;
+    float: left;
+    bottom: 8px;
+    left: 0;
+}
+
+.PopUpCodeCell-clear {
+    display: none;
+    position: absolute;
+    float: left;
+    bottom: 8px;
+    left: 0;
+}
+
+.PopUpCodeCell-run {
+    display: none;
+    position: absolute;
+    float: left;
+    bottom: 8px;
+    left: 0;
+}
+
+
+/*
+// --------------------------
+//      end dfCleanser css      
+// --------------------------
+*/

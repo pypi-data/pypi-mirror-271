@@ -1,0 +1,5 @@
+{
+    "columnNames": [],
+    "Address_Components": ["street_number", "route", "neighborhood", "locality", "sublocality", "administrative_area_level_1", "administrative_area_level_2", "administrative_area_level_3", "administrative_area_level_4", "country", "postal_code"],
+    "Location_Types": ["APPROXIMATE", "GEOMETRIC_CENTER", "RANGE_INTERPOLATED", "ROOFTOP"]
+}

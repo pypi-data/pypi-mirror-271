@@ -1,0 +1,136 @@
+Metadata-Version: 2.1
+Name: TeleCryptoBot
+Version: 1.3
+Summary: Библиотека для удобного использования API CryptoPay
+Home-page: https://github.com/vh1dz/TeleCryptoBot
+Author: vh1dz
+Author-email: vh1dz@vh1dz.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pypandoc ==1.5
+Requires-Dist: pydantic >=2.3.0
+
+**Module CryptoBot API(non-official)**
+
+--------------------------------------
+
+
+
+**Docs:** https://help.crypt.bot/crypto-pay-api
+
+
+
+**Install**
+
+
+
+.. code:: bash
+
+
+
+   pip install TeleCryptoBot
+
+
+
+**Basic Methods**
+
+
+
+.. code:: python
+
+
+
+   import TeleCryptoBot
+
+
+
+   crypto = TeleCryptoBot.TeleCryptoBot("0000:qwertyuiop")
+
+
+
+   info_profile = crypto.getMe()
+
+   balance = crypto.getBalance()
+
+
+
+   print(info_profile, balance, sep='\n')
+
+
+
+**Create and Delete Invoice**
+
+
+
+.. code:: python
+
+
+
+   import TeleCryptoBot
+
+
+
+   crypto = TeleCryptoBot.TeleCryptoBot("0000:qwertyuiop")
+
+   #create invoice
+
+   invoice = crypto.createInvoice(asset="USDT", amount=1.0)
+
+   print(invoice.invoice_id)
+
+   # delete invoice
+
+   delete = crypto.deleteInvoice(invoice_id=invoice.invoice_id)
+
+
+
+**Create and Delete Check**
+
+
+
+.. code:: python
+
+
+
+   import TeleCryptoBot
+
+
+
+   crypto = TeleCryptoBot.TeleCryptoBot("0000:qwertyuiop")
+
+   #create invoice
+
+   check = crypto.createCheck(asset="USDT", amount=1.0, pin_to_username="durov")
+
+   print(check.check_id)
+
+   # delete invoice
+
+   delete = crypto.deleteCheck(check_id.check.check_id)
+
+
+
+**Get Amount By Fiat**
+
+
+
+.. code:: python
+
+
+
+   import TeleCryptoBot
+
+
+
+   crypto = TeleCryptoBot.TeleCryptoBot("0000:qwertyuiop")
+
+   # Get amount in crypto by fiat summ
+
+   amount = crypto.getAmountByFiat(summ=13, asset='TON', target='USD')
+
+   invoice = crypto.createInvoice(asset='TON', amount=amount)
+
+   print(invoice.bot_invoice_url)
+

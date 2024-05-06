@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jupyterdartkernel
+Version: 0.1.0
+Summary: package_description
+Project-URL: repo, https://github.com/moveread/REPO.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Jupyterdart
+
+> package_description

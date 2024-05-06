@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/jupyterdart/__init__.py
+src/jupyterdart/__main__.py
+src/jupyterdart/install_kernelspec.py
+src/jupyterdart/kernel.py
+src/jupyterdartkernel.egg-info/PKG-INFO
+src/jupyterdartkernel.egg-info/SOURCES.txt
+src/jupyterdartkernel.egg-info/dependency_links.txt
+src/jupyterdartkernel.egg-info/top_level.txt

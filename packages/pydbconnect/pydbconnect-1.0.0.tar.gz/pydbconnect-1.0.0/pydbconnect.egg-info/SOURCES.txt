@@ -1,0 +1,8 @@
+setup.py
+pydbconnect/PyDBConnect.py
+pydbconnect/__init__.py
+pydbconnect.egg-info/PKG-INFO
+pydbconnect.egg-info/SOURCES.txt
+pydbconnect.egg-info/dependency_links.txt
+pydbconnect.egg-info/requires.txt
+pydbconnect.egg-info/top_level.txt

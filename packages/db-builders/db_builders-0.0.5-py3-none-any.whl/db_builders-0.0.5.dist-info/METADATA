@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: db_builders
+Version: 0.0.5
+Requires-Dist: langchain
+Requires-Dist: langchain-openai
+Requires-Dist: aiohttp
+Requires-Dist: python-dotenv
+Requires-Dist: openai
+

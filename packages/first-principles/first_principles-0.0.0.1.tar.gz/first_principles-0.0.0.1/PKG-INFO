@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: first_principles
+Version: 0.0.0.1
+Summary: A package that applies fundamental approach to solving ML problem
+Home-page: https://github.com/neildias/first_principles
+Author: Neil Dias
+Author-email: neildias.ai@gmail.com
+Requires-Python: >=3.8
+License-File: LICENSE

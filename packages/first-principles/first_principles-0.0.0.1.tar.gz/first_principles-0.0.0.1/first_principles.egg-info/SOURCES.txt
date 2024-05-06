@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+first_principles/__init__.py
+first_principles.egg-info/PKG-INFO
+first_principles.egg-info/SOURCES.txt
+first_principles.egg-info/dependency_links.txt
+first_principles.egg-info/top_level.txt

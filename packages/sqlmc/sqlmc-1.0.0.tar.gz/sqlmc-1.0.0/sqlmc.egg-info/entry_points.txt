@@ -1,0 +1,2 @@
+[console_scripts]
+sqlmc = sqlmc.sqlmc:main

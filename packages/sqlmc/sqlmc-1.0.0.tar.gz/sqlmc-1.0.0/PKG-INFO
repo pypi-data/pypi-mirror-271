@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sqlmc
+Version: 1.0.0
+Summary: SQL Injection Massive Checker for a domain
+Home-page: https://github.com/malvads/sqlmc
+Author: Miguel Álvarez
+License: AGPL-3.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: beautifulsoup4
+Requires-Dist: pyfiglet
+Requires-Dist: tabulate

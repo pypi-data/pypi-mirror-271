@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+sqlmc/VERSION
+sqlmc/__init__.py
+sqlmc/sqlmc.py
+sqlmc.egg-info/PKG-INFO
+sqlmc.egg-info/SOURCES.txt
+sqlmc.egg-info/dependency_links.txt
+sqlmc.egg-info/entry_points.txt
+sqlmc.egg-info/requires.txt
+sqlmc.egg-info/top_level.txt
+sqlmc/lib/__init__.py
+sqlmc/lib/error.py
+sqlmc/lib/scanner.py

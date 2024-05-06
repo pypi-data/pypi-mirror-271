@@ -1,0 +1,6 @@
+setup.py
+llmcategorizer.egg-info/PKG-INFO
+llmcategorizer.egg-info/SOURCES.txt
+llmcategorizer.egg-info/dependency_links.txt
+llmcategorizer.egg-info/requires.txt
+llmcategorizer.egg-info/top_level.txt

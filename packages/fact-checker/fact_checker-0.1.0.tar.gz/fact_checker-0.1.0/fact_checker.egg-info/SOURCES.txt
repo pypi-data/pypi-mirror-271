@@ -1,0 +1,8 @@
+setup.py
+fact_checker/__init__.py
+fact_checker/main.py
+fact_checker.egg-info/PKG-INFO
+fact_checker.egg-info/SOURCES.txt
+fact_checker.egg-info/dependency_links.txt
+fact_checker.egg-info/requires.txt
+fact_checker.egg-info/top_level.txt

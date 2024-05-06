@@ -1,0 +1,8 @@
+tantivy-0.22.0.dist-info/METADATA,sha256=Cs8KsgyZa9bRWiIegpdILs4h2rAOEV3Mcg7JyrJkVjg,1245
+tantivy-0.22.0.dist-info/WHEEL,sha256=OprMS2naDorSbwA8iKcdHqTZxziV66mHbPoM4mu_CWk,103
+tantivy-0.22.0.dist-info/license_files/LICENSE,sha256=PdByIFb3JHNqufb7s3DAQsOTRkG3Ylcl8pqZK1f5Qzo,1086
+tantivy/__init__.py,sha256=pwQME6G-2TdBk9Rn8JTxvlyxtmky6BA9_WCjkyC29pI,22
+tantivy/tantivy.pyi,sha256=N2KoX-NaCQVB36UDjMmICrwwHqc7dM-2oK2r4GJywP4,8491
+tantivy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tantivy/tantivy.cpython-38-darwin.so,sha256=Te9C_pGkoQhUPap-npVlFAvhyjj3aSRgC8TV7J7PZws,9654512
+tantivy-0.22.0.dist-info/RECORD,,

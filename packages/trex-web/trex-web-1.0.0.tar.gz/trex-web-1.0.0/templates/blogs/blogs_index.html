@@ -1,0 +1,68 @@
+
+{% extends "skeleton/ai/ai_simple_template.html" %}
+
+{% block documentReady %}
+
+{% endblock %}
+
+{% block javascript_extra %}
+{% endblock %}
+
+{% block styling_extra %}
+
+
+{% endblock %}
+
+{% block header_content %}
+{% endblock %}
+	
+{% block content %}	
+
+
+<div class="container py-3" style="line-height: 25px">
+
+<div class="row">		
+	<div class="card" style="width: 24rem;">
+	  <img class="card-img-top mt-2" 
+		src="{{ url_for('static', filename='app/assets/img/blogs/know-customers.jpeg')}}" 
+		alt="Know Your Customer">
+	  <div class="card-body">
+	    <h5 class="card-title">Know Your Customer</h5>
+	    <p class="card-text">
+			Understand your customers and conduct in-depth research 
+			and analysis of consumer behavior to create customized strategies. 
+		</p>
+		<div class="d-flex justify-content-center">
+		    <a href="{{ url_for('blogs_bp.know_your_customer') }}" class="btn btn-primary">
+			Read
+			</a>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="card" style="width: 24rem;">
+	  <img class="card-img-top mt-2" 
+		src="{{ url_for('static', filename='app/assets/img/blogs/customer-loyalty-programs-min.png')}}" 
+		alt="Customer loyalty programs of 2024 + How they work">
+	  <div class="card-body">
+	    <h5 class="card-title">Customer loyalty programs of 2024 + How they work</h5>
+	    <p class="card-text">
+			A customer loyalty program, also known as a rewards program, 
+			is a strategy that helps retain customers and encourages them to continue purchasing 
+			from your brand. Read on for examples of the best loyalty programs.
+		</p>
+		<div class="d-flex justify-content-center">
+		    <a href="{{ url_for('blogs_bp.latest_customer_loyalty_programs') }}" class="btn btn-primary">
+			Read
+			</a>
+		</div>
+	  </div>
+	</div>
+</div>
+
+
+
+
+</div>	
+{% endblock %}
+

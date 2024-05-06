@@ -1,0 +1,43 @@
+{% extends "skeleton/ai/ai_structure.html" %}
+
+
+{% block documentReady %}
+
+var url = $("#watch_video").data('src');
+
+$("#video_modal").on('hide.bs.modal', function(){
+    $("#watch_video").attr('src', '');
+});
+
+$("#video_modal").on('show.bs.modal', function(){
+    $("#watch_video").attr('src', url);
+});
+
+
+
+{% endblock %}
+
+{% block content %}
+{% include "skeleton/ai/ai_hero_content.html" %}
+
+{% include "main/solutions_content.html" %}
+{% include "main/program_steps_content.html" %}
+
+{% include "main/become_partner_content.html" %}
+
+{#
+
+{% include "skeleton/ai/ai_feature_content.html" %}
+{% include "skeleton/ai/ai_case_studies_content.html" %}
+{% include "landing/slider_content.html" %}
+{% include "main/overview_slider_content.html" %}
+{% include "skeleton/ai/ai_faq_content.html" %}
+#}
+
+
+
+
+{#
+{% include "skeleton/ai/ai_team_members_content.html" %}
+#}
+{% endblock %}

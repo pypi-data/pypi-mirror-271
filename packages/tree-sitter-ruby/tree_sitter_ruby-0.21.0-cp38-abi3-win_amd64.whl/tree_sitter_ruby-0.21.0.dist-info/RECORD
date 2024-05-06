@@ -1,0 +1,13 @@
+tree_sitter_ruby/__init__.py,sha256=vrMEyz2j3AC-AVHBXwQEcbyoEsgBJuAOp3IFV3GYRcY,87
+tree_sitter_ruby/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_ruby/_binding.pyd,sha256=V2ptd2FTlPN04aaOdzDiImE3fykPENCx0gIKtIOFD4I,2096640
+tree_sitter_ruby/binding.c,sha256=X3Yet8cYnp2YR8NiRpCuWeE8yLvKjSlH2AfeZ9YnEkk,632
+tree_sitter_ruby/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_ruby/queries/highlights.scm,sha256=CFjen-7Obc00CKVB-ZWjSRjVh6wsVSCWAmsOR-KzMuY,2377
+tree_sitter_ruby/queries/locals.scm,sha256=8AF46UucLqZy_U7i5grF19kL5Zxy6GKS4iYgNYrJ27A,895
+tree_sitter_ruby/queries/tags.scm,sha256=7R59wHqVuHrvJn5_lxXGcXpw8J7717b0i71Rx7dRDPM,1087
+tree_sitter_ruby-0.21.0.dist-info/LICENSE,sha256=7gBvAqPYVt8oLkCb4qhuJKZbtXOpi5woNDdxFBNRu2s,1075
+tree_sitter_ruby-0.21.0.dist-info/METADATA,sha256=IEHe1mvIqaR11c8Q2jlX1zzjr7mHnfS74748Mtot6FE,1878
+tree_sitter_ruby-0.21.0.dist-info/WHEEL,sha256=UyMHzmWA0xVqVPKfTiLs2eN3OWWZUl-kQemNbpIqlKo,100
+tree_sitter_ruby-0.21.0.dist-info/top_level.txt,sha256=alWEhf5fKHtvsyRJqRJ9G5X6vcvgNm8TM-WwzWCnReY,26
+tree_sitter_ruby-0.21.0.dist-info/RECORD,,

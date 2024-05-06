@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "msmanager"
+version = "0.4.0"
+description = "Manager for managing Mindustry servers."
+authors = ["Romanin <semina054@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "msmanager"}]
+classifiers = [
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+pydantic = ">=1.10.7"
+platformdirs = ">=3.5.1"
+"versioner.py" = ">=1.1.0"
+vbml = ">=1.1.post1"
+click = ">=8"
+screens-py = ">=0.5"
+rich = ">=13.3"
+pydustry-py = ">=2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

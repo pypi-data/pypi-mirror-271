@@ -1,0 +1,4 @@
+gymnasium==0.29.1
+numpy==1.26.4
+JaxFin==0.3.3
+jax==0.4.23

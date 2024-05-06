@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: emblematic
+Version: 2.0.0
+Summary: Generate emblems from an icon and a background
+Home-page: https://github.com/Steffo99/emblematic/
+License: EUPL-1.2
+Keywords: icon,avatar,emblem,logo,symbol
+Author: Stefano Pigozzi
+Author-email: me@steffo.eu
+Maintainer: Stefano Pigozzi
+Maintainer-email: me@steffo.eu
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Typing :: Typed
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=7.3.7,<8.0.0) ; extra == "docs"
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: lxml (>=5.2.1,<6.0.0)
+Requires-Dist: sphinx-rtd-theme (>=2.0.0,<3.0.0) ; extra == "docs"
+Project-URL: Documentation, https://emblematic.readthedocs.io/latest/
+Project-URL: Repository, https://github.com/Steffo99/emblematic/
+Description-Content-Type: text/markdown
+
+# ![](media/icon-round-100x100.png) Emblematic
+
+Generate emblems from an icon and a background
+
+## Requirements
+
+Emblematic requires Inkscape to be installed and in the PATH.
+
+## Links
+
+[![PyPI](https://img.shields.io/pypi/v/emblematic)](https://pypi.org/project/emblematic)
+ 
+[![Documentation](https://img.shields.io/readthedocs/emblematic
+)](https://emblematic.readthedocs.io/en/latest/)
+

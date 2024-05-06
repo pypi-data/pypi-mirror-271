@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "scenebuilder"
+version = "0.1.2"
+description = ""
+authors = ["Adrian del Ser <adrian.delser@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+numpy = "^1.26.1"
+matplotlib = "^3.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+scenebuilder = "main:main"

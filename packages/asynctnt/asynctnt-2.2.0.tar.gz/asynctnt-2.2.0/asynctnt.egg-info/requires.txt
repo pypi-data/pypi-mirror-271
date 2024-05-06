@@ -1,0 +1,23 @@
+PyYAML>=5.0
+
+[docs]
+Sphinx>=5
+sphinx_rtd_theme
+sphinxcontrib-asyncio
+myst-parser
+sphinx-autodoc-typehints
+sphinx-autoapi
+
+[test]
+isort
+black
+ruff
+pytest
+pytest-cov
+coverage[toml]
+pytz
+python-dateutil
+Cython==3.0.7
+
+[test:platform_system != "Windows" and platform_python_implementation != "PyPy"]
+uvloop>=0.12.3

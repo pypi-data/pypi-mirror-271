@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: LibHus
+Version: 0.1
+Summary: test lib
+Author: HUSSAM.FA
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pyfiglet
+Requires-Dist: termcolor
+Requires-Dist: requests

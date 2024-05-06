@@ -1,0 +1,11 @@
+SQLConn/SQLConn.py,sha256=Nks0eu4RX1tLZnJ5K2G5B5FD9hvHXx08inSW413WuSc,2565
+SQLConn/__init__.py,sha256=BBCLRbQYbMbDM4x7uJx3nfDc3e96Ty9A_keiOMVd_VE,290
+SQLConn/mssql.py,sha256=XtsgewyOhko81DrIj_TiEB-so4NH5im_bESrL-12qG0,699
+SQLConn/mysql.py,sha256=pnIRudE7inRdMtU6cnKJCQL9_hfe2kQj2Ltx6wUlxy4,696
+SQLConn/oracle.py,sha256=3GEPu2DgcW9th4S7oxyDBNPlsL73bLz7Tur3WWcgyW0,693
+SQLConn/postgresql.py,sha256=OlCGBI6BVrNFF-jpAwxHcW70UxgDsui0cpibYLMqm5k,707
+SQLConn/sqlite.py,sha256=HqCXwpBZtLozir94DLYQg4ytzfFKols3qMK2rzhj190,350
+SQLConn-0.0.1.dist-info/METADATA,sha256=gNvUfdm3zMJuCRtTwoj2Wxg_-20Sf_ybMy8pSaAtAK8,9233
+SQLConn-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+SQLConn-0.0.1.dist-info/top_level.txt,sha256=FFTRgT1bsRYdSy0kyLIN0w399vXlchgrHbLcv0LtyxY,8
+SQLConn-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tijatools/__init__.py
+tijatools/progress_ring.py
+tijatools/tijatools_terminal_progress_ring_tests.py
+tijatools.egg-info/PKG-INFO
+tijatools.egg-info/SOURCES.txt
+tijatools.egg-info/dependency_links.txt
+tijatools.egg-info/requires.txt
+tijatools.egg-info/top_level.txt

@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "VizBeauty"
+version = "0.1.0"
+description = "VizBeauty is a Python package for beautiful and insightful visualizations, including descriptive statistics, bar plots, regression scatter plots, and hyperparameter tuning visualizations for machine learning models."
+readme = "README.rst"
+authors = [
+  {name = "Cristian Del Gobbo", email = "cristian.delgobbo@lyon.edu"}
+]
+maintainers = [
+  {name = "Cristian Del Gobbo", email = "cristian.delgobbo@lyon.edu"}
+]
+classifiers = [
+
+]
+license = {text = "MIT license"}
+dependencies = [
+  
+]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",  # testing
+    "mypy",  # linting
+    "pytest",  # testing
+    "ruff"  # linting
+]
+
+[project.urls]
+
+bugs = "https://github.com/cris1618/VizBeauty/issues"
+changelog = "https://github.com/cris1618/VizBeauty/blob/master/changelog.md"
+homepage = "https://github.com/cris1618/VizBeauty"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+
+
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+# Don't require test functions to include types
+module = "tests.*"
+allow_untyped_defs = true
+disable_error_code = "attr-defined"
+

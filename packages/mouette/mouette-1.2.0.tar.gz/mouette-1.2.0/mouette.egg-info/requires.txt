@@ -1,0 +1,7 @@
+aenum
+numpy
+osqp
+plyfile
+scipy
+stl-reader
+tqdm

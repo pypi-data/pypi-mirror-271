@@ -1,0 +1,2 @@
+[console_scripts]
+xbstrap-version-bumper = xbstrap_version_bumper.main:main

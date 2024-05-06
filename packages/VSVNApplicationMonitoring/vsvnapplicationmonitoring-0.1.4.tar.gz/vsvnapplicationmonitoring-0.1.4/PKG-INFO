@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: VSVNApplicationMonitoring
+Version: 0.1.4
+Summary: Used for integration with Application monitoring systems
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+To integrate application data into the Application Monitoring system, there are 2 functions:
+
+    saveActiveUser: Save user information of the system every time they log in. The data passed includes:
+        api_url = "http://localhost:5000"; // the API url of the Application Monitoring system
+        data_user = {
+            application_code: "app_1", // code of the application registered in the Application Monitoring system. Different applications have different codes
+            user_name: "user_1" // username logged into the application
+        }
+    saveRequestCost: Store the cost information for each request. The data passed includes:
+        api_url = "http://localhost:5000"; // the API url of the Application Monitoring system
+        data_request = {
+        service_code: "app_1", // code of the service registered in the Application Monitoring system. Different services have different codes
+        cost: 0.5 // Cost for this request. Unit: dollars
+        }
+The return result when calling these functions has a statusCode of 200 if the data is stored successfully. Otherwise, please call again.

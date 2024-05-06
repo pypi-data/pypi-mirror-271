@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+VSVNApplicationMonitoring/__init__.py
+VSVNApplicationMonitoring/run.py
+VSVNApplicationMonitoring.egg-info/PKG-INFO
+VSVNApplicationMonitoring.egg-info/SOURCES.txt
+VSVNApplicationMonitoring.egg-info/dependency_links.txt
+VSVNApplicationMonitoring.egg-info/top_level.txt

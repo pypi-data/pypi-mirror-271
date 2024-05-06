@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: shocker
+Version: 0.1.1
+Summary: PySpark extension for dataframe keys and relation algebra DAGs
+Author: Fabio Siotane
+Author-email: siotanef@proton.me
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pyspark

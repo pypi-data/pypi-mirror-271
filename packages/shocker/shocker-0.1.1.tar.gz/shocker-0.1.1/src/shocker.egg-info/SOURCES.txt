@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/shocker/__init__.py
+src/shocker.egg-info/PKG-INFO
+src/shocker.egg-info/SOURCES.txt
+src/shocker.egg-info/dependency_links.txt
+src/shocker.egg-info/requires.txt
+src/shocker.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+README.md
+setup.py
+mlx_micrograd/__init__.py
+mlx_micrograd/engine.py
+mlx_micrograd/nn.py
+mlx_micrograd.egg-info/PKG-INFO
+mlx_micrograd.egg-info/SOURCES.txt
+mlx_micrograd.egg-info/dependency_links.txt
+mlx_micrograd.egg-info/requires.txt
+mlx_micrograd.egg-info/top_level.txt
+tests/test_engine.py
+tests/tests.py

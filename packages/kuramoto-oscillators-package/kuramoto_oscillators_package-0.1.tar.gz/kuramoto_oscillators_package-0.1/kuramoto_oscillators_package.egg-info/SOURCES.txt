@@ -1,0 +1,9 @@
+.gitignore
+README.md
+__init__.py
+setup.py
+kuramoto_oscillators_package.egg-info/PKG-INFO
+kuramoto_oscillators_package.egg-info/SOURCES.txt
+kuramoto_oscillators_package.egg-info/dependency_links.txt
+kuramoto_oscillators_package.egg-info/requires.txt
+kuramoto_oscillators_package.egg-info/top_level.txt

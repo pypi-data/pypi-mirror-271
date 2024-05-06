@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+VisionForge/Exceptions.py
+VisionForge/OpencvProcessing.py
+VisionForge/Tracking.py
+VisionForge/YOLOProcessing.py
+VisionForge/__init__.py
+VisionForge.egg-info/PKG-INFO
+VisionForge.egg-info/SOURCES.txt
+VisionForge.egg-info/dependency_links.txt
+VisionForge.egg-info/requires.txt
+VisionForge.egg-info/top_level.txt

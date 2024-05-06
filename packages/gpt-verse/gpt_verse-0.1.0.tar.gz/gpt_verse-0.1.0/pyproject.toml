@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gpt-verse"
+version = "0.1.0"
+description = ""
+authors = ["Valerio Domenici"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langgraph = "^0.0.44"
+langchain = "^0.1.17"
+langchain-openai = "^0.1.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

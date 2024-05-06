@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyeconomics
+Version: 0.1.0
+Summary: A library for economic and financial analysis
+Home-page: https://github.com/nathanramoscfa/pyeconomics
+Author: Nathan Ramos, CFA
+Author-email: nathan.ramos.github@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+

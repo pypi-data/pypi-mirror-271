@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+yuzutea/__init__.py
+yuzutea/main.py
+yuzutea.egg-info/PKG-INFO
+yuzutea.egg-info/SOURCES.txt
+yuzutea.egg-info/dependency_links.txt
+yuzutea.egg-info/requires.txt
+yuzutea.egg-info/top_level.txt

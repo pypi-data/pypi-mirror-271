@@ -1,0 +1,9 @@
+html_sanitizer/__init__.py,sha256=dsjftpEZjLvCftufW_qPK7w7nejZ7e_HzdJltbqtB-E,126
+html_sanitizer/__main__.py,sha256=OAEJc_Z6g_p1SurzXE_WyaYQgyE0-Umq1m2yoKZaqa4,280
+html_sanitizer/django.py,sha256=eQjLCy3DWk9zdnfsfnlN-K5EG2e0q_EmBDR5ieY7o_8,1136
+html_sanitizer/sanitizer.py,sha256=Wd6qE7M5B4xw-wmo6njMz0uxLyPTlEW9MCBui47WvMM,13787
+html_sanitizer/tests.py,sha256=IFug8n59SuqXIomNh4pro2GtOVtPbEnN35m1YoAvios,24536
+html_sanitizer-2.4.2.dist-info/METADATA,sha256=G9-gbcEMZH3-GIQD7GzQvLB0vYI55KLIeXfbrvKkNJY,7924
+html_sanitizer-2.4.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+html_sanitizer-2.4.2.dist-info/licenses/LICENSE,sha256=cvWEVlfKiCpJ5EsYq5rG7bCveEZFdBT43o_uXa656v4,1553
+html_sanitizer-2.4.2.dist-info/RECORD,,

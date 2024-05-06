@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tmrl
+Version: 0.6.5
+Summary: Network-based framework for real-time robot learning
+Home-page: https://github.com/trackmania-rl/tmrl
+Download-URL: https://github.com/trackmania-rl/tmrl/archive/refs/tags/v0.6.5.tar.gz
+Author: Yann Bouteiller, Edouard Geze
+Author-email: yann.bouteiller@polymtl.ca, edouard.geze@hotmail.fr
+License: MIT
+Keywords: reinforcement learning,robot learning,trackmania,self driving,roborace
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TMRL
+
+[![PyPI version](https://badge.fury.io/py/tmrl.svg)](https://badge.fury.io/py/tmrl)
+[![PyPI - License](https://img.shields.io/pypi/l/tmrl?color=blue)](https://github.com/trackmania-rl/tmrl/blob/master/LICENSE)
+[![DOI](https://zenodo.org/badge/277973609.svg)](https://zenodo.org/badge/latestdoi/277973609)
+
+| **`API reference`**                                                                                                                         |
+|---------------------------------------------------------------------------------------------------------------------------------------------|
+| [![Documentation Status](https://readthedocs.org/projects/tmrl/badge/?version=latest)](https://tmrl.readthedocs.io/en/latest/?badge=latest) |
+
+
+`tmrl` is a fully-fledged distributed RL framework for robotics, designed to help you train Deep Reinforcement Learning AIs in real-time applications.
+
+`tmrl` comes with a readily implemented pipeline for the TrackMania 2020 video game.
+
+Find all information on our [GitHub page](https://github.com/trackmania-rl/tmrl).

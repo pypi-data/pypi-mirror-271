@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mdetsyn
+Version: 0.0.0.dev2
+Summary: Data Synthesis pipeline to generate object detection data
+Author: PD-Mera
+Author-email: phuongdong1772000@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+
+# Object Detection Data Synthesis
+
+## How to run
+
+Run with pip
+
+
+
+Run with command line
+
+``` bash
+python synthesis.py --backgrounds ./backgrounds --objects ./objects --savename ./synthesis --class_mapping ./class_mapping.json --number 1000
+```

@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brazilcep"
+version = "6.3.0"
+description = "Minimalist and easy-to-use python library designed to query CEP (brazilian zip codes) data"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Michell Stuttgart", email = "michellstut@gmail.com" }]
+requires-python = ">=3.8"
+classifiers = [
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Libraries",
+  "Natural Language :: English",
+  "Natural Language :: Portuguese (Brazilian)",
+]
+
+dependencies = ["zeep>=4.2.1", "requests>=2.28.2"]
+
+[project.optional-dependencies]
+dev = ["nox>=2022.11.21"]
+
+test = ["pytest>=7.3.1", "requests-mock>=1.10.0"]
+
+lint = ["pylint"]
+
+coverage = ["coveralls>=3.3.1", "pytest-cov>=4.0.0", "requests-mock>=1.10.0"]
+
+docs = ["mkdocs-material>=9.1.6", "mkdocs>=1.4.2"]
+
+[project.urls]
+Documentation = "https://github.com/mstuttgart/brazilcep/tree/main#readme"
+Source = "https://github.com/mstuttgart/brazilcep"
+Tracker = "https://github.com/mstuttgart/brazilcep/issues"
+
+[tool.check-manifest]
+ignore = [".*", "test/**", "docs/**", "bin/**", "*.yml", "noxfile.py", ".pylintrc"]

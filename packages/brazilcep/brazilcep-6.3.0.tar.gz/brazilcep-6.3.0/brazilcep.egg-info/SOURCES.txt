@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+brazilcep/__init__.py
+brazilcep/apicep.py
+brazilcep/client.py
+brazilcep/exceptions.py
+brazilcep/viacep.py
+brazilcep.egg-info/PKG-INFO
+brazilcep.egg-info/SOURCES.txt
+brazilcep.egg-info/dependency_links.txt
+brazilcep.egg-info/requires.txt
+brazilcep.egg-info/top_level.txt
+tests/test_apicep.py
+tests/test_client.py
+tests/test_viacep.py

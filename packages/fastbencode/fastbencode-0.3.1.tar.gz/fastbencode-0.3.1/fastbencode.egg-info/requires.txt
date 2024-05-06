@@ -1,0 +1,6 @@
+
+[cext]
+cython>=0.29
+
+[dev]
+ruff==0.4.3

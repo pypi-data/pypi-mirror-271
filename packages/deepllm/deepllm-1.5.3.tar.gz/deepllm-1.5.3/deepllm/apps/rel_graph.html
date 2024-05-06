@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1200px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "green", "id": "medical conditions", "label": "medical conditions", "mass": 4, "shape": "box"}, {"color": "green", "id": "Increased mortality risk", "label": "Increased mortality risk", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Health risk\"", "label": "\"Health risk\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "respiratory condition", "label": "respiratory condition", "mass": 4, "shape": "box"}, {"color": "green", "id": "Cardiovascular collapse", "label": "Cardiovascular collapse", "mass": 4, "shape": "box"}, {"color": "green", "id": "Chronic kidney dysfunction", "label": "Chronic kidney dysfunction", "mass": 4, "shape": "box"}, {"color": "green", "id": "Long-term digestive dysfunction", "label": "Long-term digestive dysfunction", "mass": 4, "shape": "box"}, {"color": "green", "id": "Organ damage", "label": "Organ damage", "mass": 4, "shape": "box"}, {"color": "green", "id": "Lifelong dialysis dependency", "label": "Lifelong dialysis dependency", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Health issues\"", "label": "\"Health issues\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "health issue", "label": "health issue", "mass": 4, "shape": "box"}, {"color": "green", "id": "Sudden respiratory arrest", "label": "Sudden respiratory arrest", "mass": 4, "shape": "box"}, {"color": "green", "id": "Irreversible health effects", "label": "Irreversible health effects", "mass": 4, "shape": "box"}, {"color": "green", "id": "Lifelong respiratory issues", "label": "Lifelong respiratory issues", "mass": 4, "shape": "box"}, {"color": "green", "id": "Irreversible airway obstruction", "label": "Irreversible airway obstruction", "mass": 4, "shape": "box"}, {"color": "green", "id": "Severe immune system compromise", "label": "Severe immune system compromise", "mass": 4, "shape": "box"}, {"color": "green", "id": "Medical condition", "label": "Medical condition", "mass": 4, "shape": "box"}, {"color": "green", "id": "Health problems", "label": "Health problems", "mass": 4, "shape": "box"}, {"color": "green", "id": "curing covid by ingesting bleach", "label": "curing covid by ingesting bleach", "mass": 4, "shape": "box"}, {"color": "green", "id": "Health hazards", "label": "Health hazards", "mass": 4, "shape": "box"}, {"color": "green", "id": "Elevated blood pressure", "label": "Elevated blood pressure", "mass": 4, "shape": "box"}, {"color": "green", "id": "Permanent detoxification impairment", "label": "Permanent detoxification impairment", "mass": 4, "shape": "box"}, {"color": "green", "id": "Fatal cardiovascular collapse", "label": "Fatal cardiovascular collapse", "mass": 4, "shape": "box"}, {"color": "green", "id": "Terminal breathing complications", "label": "Terminal breathing complications", "mass": 4, "shape": "box"}, {"color": "green", "id": "Irreversible lung damage", "label": "Irreversible lung damage", "mass": 4, "shape": "box"}, {"color": "green", "id": "Respiratory system failure", "label": "Respiratory system failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "Multi-organ dysfunction", "label": "Multi-organ dysfunction", "mass": 4, "shape": "box"}, {"color": "green", "id": "Chronic respiratory issues", "label": "Chronic respiratory issues", "mass": 4, "shape": "box"}, {"color": "green", "id": "Increased cardiovascular risk", "label": "Increased cardiovascular risk", "mass": 4, "shape": "box"}, {"color": "green", "id": "health condition", "label": "health condition", "mass": 4, "shape": "box"}, {"color": "green", "id": "Kidney function loss", "label": "Kidney function loss", "mass": 4, "shape": "box"}, {"color": "green", "id": "Permanent organ failure", "label": "Permanent organ failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "health conditions", "label": "health conditions", "mass": 4, "shape": "box"}, {"color": "green", "id": "Lethal systemic toxicity", "label": "Lethal systemic toxicity", "mass": 4, "shape": "box"}, {"color": "green", "id": "medical condition", "label": "medical condition", "mass": 4, "shape": "box"}, {"color": "green", "id": "Fatal poisoning risks", "label": "Fatal poisoning risks", "mass": 4, "shape": "box"}, {"color": "green", "id": "Multi-organ failure", "label": "Multi-organ failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "illness", "label": "illness", "mass": 4, "shape": "box"}, {"color": "green", "id": "medical misinformation", "label": "medical misinformation", "mass": 4, "shape": "box"}, {"color": "green", "id": "Irreversible liver failure", "label": "Irreversible liver failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "Critical oxygen deprivation", "label": "Critical oxygen deprivation", "mass": 4, "shape": "box"}, {"color": "green", "id": "Health consequences", "label": "Health consequences", "mass": 4, "shape": "box"}, {"color": "green", "id": "Fatal systemic toxicity", "label": "Fatal systemic toxicity", "mass": 4, "shape": "box"}, {"color": "green", "id": "Continuous medical treatment", "label": "Continuous medical treatment", "mass": 4, "shape": "box"}, {"color": "green", "id": "Fatal lung failure", "label": "Fatal lung failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "Poisoning", "label": "Poisoning", "mass": 4, "shape": "box"}, {"color": "green", "id": "Acute renal failure", "label": "Acute renal failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "Disease", "label": "Disease", "mass": 4, "shape": "box"}, {"color": "green", "id": "Electrolyte imbalances", "label": "Electrolyte imbalances", "mass": 4, "shape": "box"}, {"color": "green", "id": "health issues", "label": "health issues", "mass": 4, "shape": "box"}, {"color": "green", "id": "Liver failure incidents", "label": "Liver failure incidents", "mass": 4, "shape": "box"}, {"color": "green", "id": "Respiratory system collapse", "label": "Respiratory system collapse", "mass": 4, "shape": "box"}, {"color": "green", "id": "Sudden cardiac arrest", "label": "Sudden cardiac arrest", "mass": 4, "shape": "box"}, {"color": "green", "id": "organ damage", "label": "organ damage", "mass": 4, "shape": "box"}, {"color": "green", "id": "Severe organ damage", "label": "Severe organ damage", "mass": 4, "shape": "box"}, {"color": "green", "id": "Life-threatening complications", "label": "Life-threatening complications", "mass": 4, "shape": "box"}, {"color": "green", "id": "Kidney disease", "label": "Kidney disease", "mass": 4, "shape": "box"}, {"color": "green", "id": "Fatal respiratory complications", "label": "Fatal respiratory complications", "mass": 4, "shape": "box"}, {"color": "green", "id": "Irreversible kidney impairment", "label": "Irreversible kidney impairment", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Health issue\"", "label": "\"Health issue\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "Irreversible kidney failure", "label": "Irreversible kidney failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "Lifelong health complications", "label": "Lifelong health complications", "mass": 4, "shape": "box"}, {"color": "green", "id": "medical treatment", "label": "medical treatment", "mass": 4, "shape": "box"}, {"color": "green", "id": "Permanent organ damage", "label": "Permanent organ damage", "mass": 4, "shape": "box"}, {"color": "green", "id": "Irreversible organ failure", "label": "Irreversible organ failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "Heart failure risk", "label": "Heart failure risk", "mass": 4, "shape": "box"}, {"color": "green", "id": "Fluid retention issues", "label": "Fluid retention issues", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Health condition\"", "label": "\"Health condition\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "Permanent liver failure", "label": "Permanent liver failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "poisoning", "label": "poisoning", "mass": 4, "shape": "box"}, {"color": "green", "id": "Medical conditions", "label": "Medical conditions", "mass": 4, "shape": "box"}, {"color": "green", "id": "Life-threatening liver failure", "label": "Life-threatening liver failure", "mass": 4, "shape": "box"}, {"color": "green", "id": "Healthcare", "label": "Healthcare", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Medical condition\"", "label": "\"Medical condition\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "Lethal respiratory distress", "label": "Lethal respiratory distress", "mass": 4, "shape": "box"}, {"color": "green", "id": "Health issues", "label": "Health issues", "mass": 4, "shape": "box"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "blue", "from": "Acute renal failure", "label": "is", "to": "Kidney disease"}, {"arrows": "to", "color": "blue", "from": "Cardiovascular collapse", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Chronic kidney dysfunction", "label": "is", "to": "Disease"}, {"arrows": "to", "color": "blue", "from": "Chronic kidney dysfunction", "label": ":", "to": "Elevated blood pressure"}, {"arrows": "to", "color": "blue", "from": "Chronic kidney dysfunction", "label": ":", "to": "Fluid retention issues"}, {"arrows": "to", "color": "blue", "from": "Chronic kidney dysfunction", "label": ":", "to": "Electrolyte imbalances"}, {"arrows": "to", "color": "blue", "from": "Chronic kidney dysfunction", "label": ":", "to": "Increased cardiovascular risk"}, {"arrows": "to", "color": "blue", "from": "Chronic respiratory issues", "label": "is", "to": "Health problems"}, {"arrows": "to", "color": "blue", "from": "Chronic respiratory issues", "label": ":", "to": "Irreversible kidney failure"}, {"arrows": "to", "color": "blue", "from": "Chronic respiratory issues", "label": ":", "to": "Fatal systemic toxicity"}, {"arrows": "to", "color": "blue", "from": "Continuous medical treatment", "label": "is", "to": "Healthcare"}, {"arrows": "to", "color": "blue", "from": "Critical oxygen deprivation", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Electrolyte imbalances", "label": "is", "to": "Medical conditions"}, {"arrows": "to", "color": "blue", "from": "Elevated blood pressure", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Fatal cardiovascular collapse", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Fatal cardiovascular collapse", "label": ":", "to": "Irreversible liver failure"}, {"arrows": "to", "color": "blue", "from": "Fatal cardiovascular collapse", "label": ":", "to": "Lethal respiratory distress"}, {"arrows": "to", "color": "blue", "from": "Fatal lung failure", "label": "is", "to": "\"Medical condition\""}, {"arrows": "to", "color": "blue", "from": "Fatal poisoning risks", "label": "is", "to": "Health hazards"}, {"arrows": "to", "color": "blue", "from": "Fatal poisoning risks", "label": ":", "to": "Severe organ damage"}, {"arrows": "to", "color": "blue", "from": "Fatal poisoning risks", "label": ":", "to": "Life-threatening complications"}, {"arrows": "to", "color": "blue", "from": "Fatal respiratory complications", "label": "is", "to": "health issues"}, {"arrows": "to", "color": "blue", "from": "Fatal respiratory complications", "label": ":", "to": "Irreversible lung damage"}, {"arrows": "to", "color": "blue", "from": "Fatal respiratory complications", "label": ":", "to": "Sudden respiratory arrest"}, {"arrows": "to", "color": "blue", "from": "Fatal systemic toxicity", "label": "is", "to": "poisoning"}, {"arrows": "to", "color": "blue", "from": "Fatal systemic toxicity", "label": ":", "to": "Irreversible organ failure"}, {"arrows": "to", "color": "blue", "from": "Fatal systemic toxicity", "label": ":", "to": "Sudden cardiac arrest"}, {"arrows": "to", "color": "blue", "from": "Fluid retention issues", "label": "is", "to": "medical conditions"}, {"arrows": "to", "color": "blue", "from": "Heart failure risk", "label": "is", "to": "\"Health condition\""}, {"arrows": "to", "color": "blue", "from": "Increased cardiovascular risk", "label": "is", "to": "health issue"}, {"arrows": "to", "color": "blue", "from": "Increased mortality risk", "label": "is", "to": "\"Health risk\""}, {"arrows": "to", "color": "blue", "from": "Irreversible airway obstruction", "label": "is", "to": "respiratory condition"}, {"arrows": "to", "color": "blue", "from": "Irreversible health effects", "label": "is", "to": "Health consequences"}, {"arrows": "to", "color": "blue", "from": "Irreversible health effects", "label": ":", "to": "Permanent organ failure"}, {"arrows": "to", "color": "blue", "from": "Irreversible health effects", "label": ":", "to": "Lifelong respiratory issues"}, {"arrows": "to", "color": "blue", "from": "Irreversible health effects", "label": ":", "to": "Permanent organ damage"}, {"arrows": "to", "color": "blue", "from": "Irreversible health effects", "label": ":", "to": "Chronic respiratory issues"}, {"arrows": "to", "color": "blue", "from": "Irreversible health effects", "label": ":", "to": "Long-term digestive dysfunction"}, {"arrows": "to", "color": "blue", "from": "Irreversible health effects", "label": ":", "to": "Severe immune system compromise"}, {"arrows": "to", "color": "blue", "from": "Irreversible kidney failure", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Irreversible kidney failure", "label": ":", "to": "Lifelong dialysis dependency"}, {"arrows": "to", "color": "blue", "from": "Irreversible kidney failure", "label": ":", "to": "Increased mortality risk"}, {"arrows": "to", "color": "blue", "from": "Irreversible kidney impairment", "label": "is", "to": "organ damage"}, {"arrows": "to", "color": "blue", "from": "Irreversible kidney impairment", "label": ":", "to": "Lethal systemic toxicity"}, {"arrows": "to", "color": "blue", "from": "Irreversible kidney impairment", "label": ":", "to": "Permanent liver failure"}, {"arrows": "to", "color": "blue", "from": "Irreversible liver failure", "label": "is", "to": "Organ damage"}, {"arrows": "to", "color": "blue", "from": "Irreversible liver failure", "label": ":", "to": "Lifelong health complications"}, {"arrows": "to", "color": "blue", "from": "Irreversible liver failure", "label": ":", "to": "Permanent detoxification impairment"}, {"arrows": "to", "color": "blue", "from": "Irreversible lung damage", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Irreversible organ failure", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Kidney function loss", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Lethal respiratory distress", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Lethal respiratory distress", "label": ":", "to": "Fatal lung failure"}, {"arrows": "to", "color": "blue", "from": "Lethal respiratory distress", "label": ":", "to": "Irreversible airway obstruction"}, {"arrows": "to", "color": "blue", "from": "Lethal respiratory distress", "label": ":", "to": "Critical oxygen deprivation"}, {"arrows": "to", "color": "blue", "from": "Lethal respiratory distress", "label": ":", "to": "Terminal breathing complications"}, {"arrows": "to", "color": "blue", "from": "Lethal systemic toxicity", "label": "is", "to": "Poisoning"}, {"arrows": "to", "color": "blue", "from": "Lethal systemic toxicity", "label": ":", "to": "Multi-organ failure"}, {"arrows": "to", "color": "blue", "from": "Lethal systemic toxicity", "label": ":", "to": "Fatal cardiovascular collapse"}, {"arrows": "to", "color": "blue", "from": "Life-threatening complications", "label": "is", "to": "Health issues"}, {"arrows": "to", "color": "blue", "from": "Life-threatening complications", "label": ":", "to": "Respiratory system failure"}, {"arrows": "to", "color": "blue", "from": "Life-threatening complications", "label": ":", "to": "Multi-organ dysfunction"}, {"arrows": "to", "color": "blue", "from": "Life-threatening complications", "label": ":", "to": "Cardiovascular collapse"}, {"arrows": "to", "color": "blue", "from": "Life-threatening complications", "label": ":", "to": "Acute renal failure"}, {"arrows": "to", "color": "blue", "from": "Life-threatening complications", "label": ":", "to": "Severe organ damage"}, {"arrows": "to", "color": "blue", "from": "Life-threatening complications", "label": ":", "to": "Irreversible health effects"}, {"arrows": "to", "color": "blue", "from": "Life-threatening liver failure", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Life-threatening liver failure", "label": ":", "to": "Fatal respiratory complications"}, {"arrows": "to", "color": "blue", "from": "Life-threatening liver failure", "label": ":", "to": "Chronic kidney dysfunction"}, {"arrows": "to", "color": "blue", "from": "Lifelong dialysis dependency", "label": "is", "to": "medical treatment"}, {"arrows": "to", "color": "blue", "from": "Lifelong health complications", "label": "is", "to": "medical conditions"}, {"arrows": "to", "color": "blue", "from": "Lifelong respiratory issues", "label": "is", "to": "health conditions"}, {"arrows": "to", "color": "blue", "from": "Liver failure incidents", "label": "is", "to": "Health issues"}, {"arrows": "to", "color": "blue", "from": "Long-term digestive dysfunction", "label": "is", "to": "\"Health issue\""}, {"arrows": "to", "color": "blue", "from": "Multi-organ dysfunction", "label": "is", "to": "Medical condition"}, {"arrows": "to", "color": "blue", "from": "Multi-organ failure", "label": "is", "to": "Medical condition"}, {"arrows": "to", "color": "blue", "from": "Permanent detoxification impairment", "label": "is", "to": "health issue"}, {"arrows": "to", "color": "blue", "from": "Permanent liver failure", "label": "is", "to": "Organ damage"}, {"arrows": "to", "color": "blue", "from": "Permanent liver failure", "label": ":", "to": "Lifelong health complications"}, {"arrows": "to", "color": "blue", "from": "Permanent liver failure", "label": ":", "to": "Continuous medical treatment"}, {"arrows": "to", "color": "blue", "from": "Permanent organ damage", "label": "is", "to": "Health issues"}, {"arrows": "to", "color": "blue", "from": "Permanent organ failure", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Respiratory system collapse", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Respiratory system failure", "label": "is", "to": "illness"}, {"arrows": "to", "color": "blue", "from": "Severe immune system compromise", "label": "is", "to": "health condition"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Life-threatening liver failure"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Irreversible kidney impairment"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Chronic respiratory issues"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Fatal cardiovascular collapse"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Life-threatening complications"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Irreversible health effects"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Kidney function loss"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Heart failure risk"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Liver failure incidents"}, {"arrows": "to", "color": "blue", "from": "Severe organ damage", "label": ":", "to": "Respiratory system collapse"}, {"arrows": "to", "color": "blue", "from": "Sudden cardiac arrest", "label": "is", "to": "\"Medical condition\""}, {"arrows": "to", "color": "blue", "from": "Sudden respiratory arrest", "label": "is", "to": "medical condition"}, {"arrows": "to", "color": "blue", "from": "Terminal breathing complications", "label": "is", "to": "\"Health issues\""}, {"arrows": "to", "color": "blue", "from": "curing covid by ingesting bleach", "label": "is", "to": "medical misinformation"}, {"arrows": "to", "color": "blue", "from": "curing covid by ingesting bleach", "label": ":", "to": "Severe organ damage"}, {"arrows": "to", "color": "blue", "from": "curing covid by ingesting bleach", "label": ":", "to": "Fatal poisoning risks"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

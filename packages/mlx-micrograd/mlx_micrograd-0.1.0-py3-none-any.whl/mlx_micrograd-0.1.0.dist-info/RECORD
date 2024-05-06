@@ -1,0 +1,7 @@
+mlx_micrograd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlx_micrograd/engine.py,sha256=oyqkmqmZjctLjIpb3bQRMx6qr3WlRxzMD1-AqnfLSiY,2752
+mlx_micrograd/nn.py,sha256=iqhXrXc0oCSiD26QBa6DaZbYJPi9Dihj-9ECSEXOoFU,1633
+mlx_micrograd-0.1.0.dist-info/METADATA,sha256=rFLCVlC-xDSRJSiFKFTcDvQgDLTa_9BqlERDh31m4Jc,1814
+mlx_micrograd-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mlx_micrograd-0.1.0.dist-info/top_level.txt,sha256=v9NyI6KIe14iS5kmTXIKZxEjmxBdr0F86VFTLBKjbMw,14
+mlx_micrograd-0.1.0.dist-info/RECORD,,

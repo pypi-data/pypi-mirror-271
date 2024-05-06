@@ -1,0 +1,10 @@
+#!/bin/bash
+# WF 2024-05-05
+# restore the snapquery database
+db=$HOME/.solutions/snapquery/storage/named_queries.db
+rm $db
+for f in $(find samples -name '*.json')
+do
+  snapquery --import  $f | grep -iv warning
+done
+#sqlite_web $db

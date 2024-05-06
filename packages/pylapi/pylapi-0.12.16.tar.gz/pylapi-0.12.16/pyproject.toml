@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylapi"
+description = "Python Lightweight API (PyLapi)"
+readme = "OVERVIEW.md"
+urls.Changelog = "https://github.com/jackyko8/pylapi/blob/main/RELEASE.md"
+urls.Code = "https://github.com/jackyko8/pylapi"
+urls.Download = "https://pypi.org/project/pylapi/"
+urls.Homepage = "https://www.pylapi.org/"
+urls."Issue tracker" = "https://github.com/jackyko8/pylapi/issues"
+requires-python = ">=3.7"
+dynamic = ["version"]
+
+dependencies = [
+    "magico>=1.0",
+    "urllib3>=1.21.1,<1.27",
+    "requests>=2.5",
+    "PyYAML>=5.1",
+]
+
+[project.scripts]
+pylapi-autogen = "pylapi.autogen:main"

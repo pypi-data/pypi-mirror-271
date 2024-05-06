@@ -1,0 +1,17 @@
+LICENSE
+OVERVIEW.md
+README.md
+pyproject.toml
+setup.py
+src/pylapi/__init__.py
+src/pylapi/__version__.py
+src/pylapi/autogen.py
+src/pylapi/autogen_template.py
+src/pylapi/config.py
+src/pylapi/pylapi.py
+src/pylapi.egg-info/PKG-INFO
+src/pylapi.egg-info/SOURCES.txt
+src/pylapi.egg-info/dependency_links.txt
+src/pylapi.egg-info/entry_points.txt
+src/pylapi.egg-info/requires.txt
+src/pylapi.egg-info/top_level.txt

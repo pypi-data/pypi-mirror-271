@@ -1,0 +1,4 @@
+accelerate
+beartype
+torch>=1.6
+torchvision>=0.8

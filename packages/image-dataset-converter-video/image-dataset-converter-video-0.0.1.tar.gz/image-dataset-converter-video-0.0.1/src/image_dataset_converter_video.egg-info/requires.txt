@@ -1,0 +1,5 @@
+cap_from_youtube
+image-dataset-converter
+opencv-python
+termplotlib
+vidgear

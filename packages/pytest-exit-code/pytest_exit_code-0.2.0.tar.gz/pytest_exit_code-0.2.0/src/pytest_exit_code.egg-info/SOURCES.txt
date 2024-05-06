@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/pytest_exit_code/__init__.py
+src/pytest_exit_code/plugin.py
+src/pytest_exit_code.egg-info/PKG-INFO
+src/pytest_exit_code.egg-info/SOURCES.txt
+src/pytest_exit_code.egg-info/dependency_links.txt
+src/pytest_exit_code.egg-info/entry_points.txt
+src/pytest_exit_code.egg-info/requires.txt
+src/pytest_exit_code.egg-info/top_level.txt
+tests/test_exit_code.py

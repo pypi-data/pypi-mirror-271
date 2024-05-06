@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: byte-unit
+Version: 1.0.0
+Summary: 
+Author: Jaya Bharath
+Author-email: bharath21196@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+## byte_unit
+Library to support the below
+* Byte unit string parsing
+* Conversion between specific unit
+* Readable conversion of bytes to the closest byte unit
+
+## Usage
+
+```shell
+pip install byte_unit
+```
+
+## Dev setup
+
+### initial setup
+
+```shell
+pip install poetry
+make setup
+```
+
+### publish to testpypi
+
+```shell
+poetry config repositories.testpypi https://test.pypi.org/legacy/
+poetry publish --build -r testpypi -p <password> -u <username:=__token__>
+```
+
+### useful poetry commands
+
+```shell
+poetry add <dependencies>
+poetry add --dev <dependencies> # dev dependencies
+poetry update
+poetry lock --no-update
+```
+
+## Contribution
+
+Contributions are very welcome. Tests can be run with `make test`, please ensure the coverage at least stays the same
+before you submit a pull request.
+
+## License
+
+Distributed under the terms of the `MIT` license, "byte-unit" is free and open source software
+
+### Repository
+
+> [Repo-url]()
+

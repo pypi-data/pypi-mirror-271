@@ -1,0 +1,2 @@
+[console_scripts]
+dalle3-gen-save = dalle3_gen_save:main

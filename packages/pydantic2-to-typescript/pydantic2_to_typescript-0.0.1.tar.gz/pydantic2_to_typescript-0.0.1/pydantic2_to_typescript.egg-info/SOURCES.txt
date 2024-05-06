@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.py
+pydantic2_to_typescript.egg-info/PKG-INFO
+pydantic2_to_typescript.egg-info/SOURCES.txt
+pydantic2_to_typescript.egg-info/dependency_links.txt
+pydantic2_to_typescript.egg-info/entry_points.txt
+pydantic2_to_typescript.egg-info/requires.txt
+pydantic2_to_typescript.egg-info/top_level.txt
+pydantic2ts/__init__.py
+pydantic2ts/cli/__init__.py
+pydantic2ts/cli/script.py
+tests/test_script.py

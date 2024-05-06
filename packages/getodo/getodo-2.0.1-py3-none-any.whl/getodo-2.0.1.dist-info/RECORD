@@ -1,0 +1,11 @@
+getodo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getodo/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getodo/getodo.py,sha256=BuN9ML4OeZ8H9iepvcxTun704x5suOVWFQK5djC3ak4,6087
+getodo/getodo_cfg.json,sha256=XFC5Q39TnXsU3J-0nBFpN9acB3wS41KV044dwp_NC-4,738
+getodo/getodo_cli.py,sha256=rbjnuiSYfyy_SWJNibuA-CQwiTW_xwI7YsTM1JOQdio,1768
+getodo/utils.py,sha256=RFgm1r9UPy3w-NdR_X76YeXlNC6aGmdp9mHHjyPoXjo,2089
+getodo-2.0.1.dist-info/LICENSE,sha256=QdV32tNz6V2r90z56NNpLPoQmO2MlnFXheq2Y5e5kBo,1070
+getodo-2.0.1.dist-info/METADATA,sha256=J4juwy-XEMUeCZqGygeimoOg64yJjYPcQKWtsxCUNz4,4277
+getodo-2.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+getodo-2.0.1.dist-info/entry_points.txt,sha256=TpmIF6TbDqOaLMAyJ7q2YfjthGj148E41kNoCquYXkI,49
+getodo-2.0.1.dist-info/RECORD,,

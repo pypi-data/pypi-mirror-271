@@ -1,0 +1,3 @@
+[console_scripts]
+getodo=getodo.getodo_cli:main
+

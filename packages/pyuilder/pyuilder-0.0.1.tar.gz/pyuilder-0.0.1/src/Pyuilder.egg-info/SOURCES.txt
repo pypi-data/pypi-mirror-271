@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/Pyuilder.egg-info/PKG-INFO
+src/Pyuilder.egg-info/SOURCES.txt
+src/Pyuilder.egg-info/dependency_links.txt
+src/Pyuilder.egg-info/requires.txt
+src/Pyuilder.egg-info/top_level.txt
+src/pyuilder/__init__.py
+src/pyuilder/pyuilder.py
+test/test_pyuilder.py

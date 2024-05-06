@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/xbstrap_version_bumper/__init__.py
+src/xbstrap_version_bumper/__main__.py
+src/xbstrap_version_bumper/linecounted_yaml.py
+src/xbstrap_version_bumper/main.py
+src/xbstrap_version_bumper.egg-info/PKG-INFO
+src/xbstrap_version_bumper.egg-info/SOURCES.txt
+src/xbstrap_version_bumper.egg-info/dependency_links.txt
+src/xbstrap_version_bumper.egg-info/entry_points.txt
+src/xbstrap_version_bumper.egg-info/requires.txt
+src/xbstrap_version_bumper.egg-info/top_level.txt

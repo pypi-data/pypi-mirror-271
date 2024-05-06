@@ -1,0 +1,16 @@
+googly/__init__.py,sha256=oUM4yoQA2Kk67Jm5206sogNpVd7NAzCg8zI7naxhKIs,463
+googly/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+googly/api.py,sha256=f8issI8gFmunMuAxRJ3gXJUltlI761I28OEtYX9Vgjo,3958
+googly/scope.py,sha256=ce7uEmZqW60HWOC-HBA1GzFnmIzBxA2pczSnKjhzzV4,440
+googly/util.py,sha256=Vd_46ssGGJt89e-79-qdh9Skyb454DUp_I0Ooy6VkHY,1130
+googly/apps/calendar.py,sha256=AASAYKzUVUuRTuPwpcpCsttctv9mQ0eHiIBiw6RfSNA,656
+googly/apps/drive.py,sha256=G7M_iHK_YO0oQgV5duyRonOkTTZx4KxK73dzc1poDAg,759
+googly/apps/gmail.py,sha256=UJjDP0f4W0b_75gzM2edQ130v31FR-VpXQH6fArgGLk,4772
+googly/apps/people.py,sha256=3kM19ff6cNLXtQS4OiW1xqAcbuXzEoeJi1DE5ZtT94Y,2263
+googly/apps/photos.py,sha256=ZZVImPtlQw7qs03LeCo9Qn0OI569yh79Fmv6Jt0uicU,1009
+googly/apps/sheets.py,sha256=mR18md1s0nqYe0N6QU4fVvzxwajdyYWIOCD-C6RpiDs,3748
+googly/apps/youtube.py,sha256=tuw2xu8CZBmzf-Jvet_4bjksZkEvEl_S-1cEdk-kvMk,946
+googly-0.1.0.dist-info/METADATA,sha256=BNivsILS41iGd5rCIWfink9exZd0p9PZuBjpI94e7wU,2072
+googly-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+googly-0.1.0.dist-info/licenses/LICENSE,sha256=T0VPAlCsTYpcMmFr6YCmt759oqbTIlVcCgW-0yKKb5w,1500
+googly-0.1.0.dist-info/RECORD,,

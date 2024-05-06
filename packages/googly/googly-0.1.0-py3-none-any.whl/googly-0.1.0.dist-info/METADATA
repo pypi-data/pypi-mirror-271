@@ -1,0 +1,51 @@
+Metadata-Version: 2.3
+Name: googly
+Version: 0.1.0
+Summary: A simple unofficial Python API for many Google APIs
+Project-URL: Homepage, https://github.com/DLu/googly
+Project-URL: Bug Tracker, https://github.com/DLu/googly/issues
+Author-email: "David V. Lu!!" <davidvlu@gmail.com>
+Maintainer-email: "David V. Lu!!" <davidvlu@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Internet
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Classifier: Topic :: Office/Business :: Scheduling
+Requires-Python: >=3.8
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Provides-Extra: docs
+Requires-Dist: myst-parser>=0.13; extra == 'docs'
+Requires-Dist: sphinx>=4.0; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest-cov>=2; extra == 'test'
+Requires-Dist: pytest>=4; extra == 'test'
+Description-Content-Type: text/markdown
+
+# ![googly](docs/source/_static/logo.gif)
+<!-- SPHINX-START -->
+* googly (adjective) /ˈɡuɡli/
+   1. (of the eyes) Bulging.
+* googly (noun) /ˈɡuɡli/
+   1. (cricket) A ball that spins from off to leg
+   2. (python) **A simple unofficial Python API for many Google APIs**
+* googly eye (noun) /ˈɡuɡli aɪ/
+   1. craft supplies that resemble eyes
+* googley (adjective) /ˈɡuɡəli/
+   1. having qualities in line with the Google's corporate culture
+
+[adapted from en.wiktionary.org](https://en.wiktionary.org/wiki/googly)
+
+<!-- SPHINX-STOP -->
+
+![GH action status](https://github.com/DLu/googly/actions/workflows/main.yaml/badge.svg)
+[![codecov](https://codecov.io/gh/DLu/googly/graph/badge.svg?token=M11YQ62JK6)](https://codecov.io/gh/DLu/googly)
+
+## Documentation
+
+[![Documentation Status](https://readthedocs.org/projects/googly/badge/?version=latest)](https://googly.readthedocs.io/en/latest/?badge=latest)
+[`http://googly.readthedocs.org/`](http://googly.readthedocs.org/)

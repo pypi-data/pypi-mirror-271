@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: litellm_types
+Version: 0.0.1
+Requires-Dist: pydantic
+Requires-Dist: litellm
+Requires-Dist: beartype

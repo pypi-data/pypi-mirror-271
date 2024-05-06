@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+disardz/__init__.py
+disardz/main.py
+disardz.egg-info/PKG-INFO
+disardz.egg-info/SOURCES.txt
+disardz.egg-info/dependency_links.txt
+disardz.egg-info/requires.txt
+disardz.egg-info/top_level.txt

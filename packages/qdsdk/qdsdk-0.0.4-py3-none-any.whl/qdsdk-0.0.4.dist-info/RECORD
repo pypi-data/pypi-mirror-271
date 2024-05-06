@@ -1,0 +1,12 @@
+qdsdk/__init__.py,sha256=cizDpLE9bdyf7ZbeqzyVnglM_ylqy0YHJ7xOPNNcpRQ,511
+qdsdk/aio_api.py,sha256=GLWK8YI7sb2ePjndR06UIN7Zf8Pjh3x9pxgY9G7wpXs,4498
+qdsdk/api.py,sha256=Qdvn0jAIl0cdiKQgwTUTHKEc51HmtYYnJPRolgSht5Q,31311
+qdsdk/client.py,sha256=mty9ce7tPS1a76okp_6m_Ex86fqHxXSKsUU92WKgeiU,8348
+qdsdk/config.py,sha256=TR6gSUdfAt2N34c264j3vIRiWs2E9HwA_Kf4dIzwyZ0,170
+qdsdk/qedata.thrift,sha256=4oPG9aPQkcUx-vLgnsmhWGgJEwu4eTWYFpm1-4H98nA,599
+qdsdk/utils.py,sha256=c00bmS3V3KcoQvDkzrAZq5GXqWQKjaQ6SrC_xgmdtoo,675
+qdsdk-0.0.4.dist-info/LICENSE,sha256=Yft-ni3EP3rKk9FMerJwbh5DOzoKLQzak-sPdvXDJ1g,1087
+qdsdk-0.0.4.dist-info/METADATA,sha256=d__rcguoHJay-O7_fXKiLDH3qV9aOun8slWxerxum-o,6166
+qdsdk-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+qdsdk-0.0.4.dist-info/top_level.txt,sha256=GWO5hVlW4utctMeoJcqXmBZV_b0vDrEwy0hslxXkHSw,6
+qdsdk-0.0.4.dist-info/RECORD,,

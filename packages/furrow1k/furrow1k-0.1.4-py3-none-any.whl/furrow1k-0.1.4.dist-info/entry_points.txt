@@ -1,0 +1,3 @@
+[console_scripts]
+furrow1k=furrow1k.furrow1k:main
+

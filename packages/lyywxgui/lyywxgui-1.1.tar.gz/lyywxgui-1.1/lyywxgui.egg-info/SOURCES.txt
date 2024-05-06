@@ -1,0 +1,9 @@
+LICENSE
+README.md
+lyywxgui.py
+setup.py
+lyywxgui.egg-info/PKG-INFO
+lyywxgui.egg-info/SOURCES.txt
+lyywxgui.egg-info/dependency_links.txt
+lyywxgui.egg-info/requires.txt
+lyywxgui.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fastosc
+Version: 0.0.3
+Summary: Modern Python Library for OSC, using best practices such as typing, linting/formatting - inspired by FastAPI
+Author-email: Martin Sahlen <martin8900@gmail.com>
+Project-URL: Homepage, https://github.com/oslo1989/fastosc
+Project-URL: Issues, https://github.com/oslo1989/fastosc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Requires-Python: >=3.7
+

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: whatsapp-chat-analyze
+Version: 0.1.1
+Summary: Ingest and analyze WhatsApp chat data, and plot beautiful visualizations.
+Home-page: https://github.com/tddschn/whatsapp-chat-analyze
+License: MIT
+Keywords: cli,utility,whatsapp,chat,analyze,visualization
+Author: Teddy Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Dist: matplotlib (>=3.8.4,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: plotly (>=5.22.0,<6.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Project-URL: Bug Tracker, https://github.com/tddschn/whatsapp-chat-analyze/issues
+Project-URL: Repository, https://github.com/tddschn/whatsapp-chat-analyze
+Description-Content-Type: text/markdown
+
+

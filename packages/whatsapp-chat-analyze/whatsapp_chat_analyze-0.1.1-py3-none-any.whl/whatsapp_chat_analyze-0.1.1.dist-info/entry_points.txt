@@ -1,0 +1,3 @@
+[console_scripts]
+whatsapp-chat-analyze=whatsapp_chat_analyze.cli:main
+

@@ -1,0 +1,22 @@
+[project]
+name = "highctidh"
+version = "1.0.2024050500"
+description = "highctidh bindings with included C library"
+readme = "README.md"
+requires-python = ">=3.9.6"
+keywords = ["post-quantum cryptography", "cryptography", "csidh", "ctidh", "C", "highctidh"]
+authors = [ {email = "jacob@appelbaum.net"}, {name = "Jacob Appelbaum"} ]
+maintainers = [ {email = "jacob@appelbaum.net"}, {name = "Jacob Appelbaum"} ]
+dependencies = [ ]
+license = { text = "Public Domain" }
+
+[build-system]
+requires = ["setuptools", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+test = ['pytest']
+
+[project.urls]
+Documentation = "https://codeberg.org/vula/highctidh"
+Source = "https://codeberg.org/vula/highctidh"

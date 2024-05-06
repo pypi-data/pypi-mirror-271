@@ -1,0 +1,189 @@
+VERSION := $(shell cat VERSION)
+export WORKDIR ?= $(shell pwd)
+export SOURCE_DATE_EPOCH := $(shell git log -1 --pretty=%ct)
+export PODMAN_ARCH ?= amd64
+CC ?=gcc
+DIST :=sid
+ARCH := $(shell uname -m)
+PLATFORM_SIZE ?= $(shell getconf LONG_BIT)
+export DEB_BUILD_OPTIONS=nocheck
+
+ifeq    ($(ARCH), $(filter $(ARCH), x86_64))
+ifeq	($(PLATFORM_SIZE),32)
+	DEB_ARCH:=i386
+else
+	DEB_ARCH:=amd64
+endif
+else
+	DEB_ARCH:=$(ARCH)
+endif
+
+PODMAN_ARCH ?= ${ARCH}
+.PHONY: deb test packages sdist pypi-upload prepare-artifacts-for-upload
+KERNEL := $(shell uname -s|tr A-Z a-z)
+DEB_NAME := ${WORKDIR}/dist/python3-highctidh_${VERSION}-1_${DEB_ARCH}.deb
+WHEEL_NAME := ${WORKDIR}/dist/highctidh-${VERSION}-cp311-cp311-${KERNEL}_${ARCH}.whl
+SDIST_GZ := ${WORKDIR}/dist/highctidh-${VERSION}.tar.gz
+
+version:
+	echo ${VERSION} on ${ARCH}/${KERNEL}
+
+update-golang-ctidh511:
+	cd ./ctidh511 && ls -1|egrep -v ".go|.mod|.sum|golang-misc.c"|xargs -I'{}' cp ../'{}' .
+update-golang-ctidh512:
+	cd ./ctidh512 && ls -1|egrep -v ".go|.mod|.sum|golang-misc.c"|xargs -I'{}' cp ../'{}' .
+update-golang-ctidh1024:
+	cd ./ctidh1024 && ls -1|egrep -v ".go|.mod|.sum|golang-misc.c"|xargs -I'{}' cp ../'{}' .
+update-golang-ctidh2048:
+	cd ./ctidh2048 && ls -1|egrep -v ".go|.mod|.sum|golang-misc.c"|xargs -I'{}' cp ../'{}' .
+
+update-golang-modules: update-golang-ctidh511 update-golang-ctidh512 update-golang-ctidh1024 update-golang-ctidh2048
+	echo "Upstream sync finished; do not forget to git add and commit";
+
+go-test-cross-gcc:
+	../misc/test-golang-cross-gcc.sh
+
+go-test-cross-clang:
+	../misc/test-golang-cross-clang.sh
+
+go:
+	cd ctidh511 && go test -v;
+	cd ctidh512 && go test -v;
+	cd ctidh1024 && go test -v;
+	cd ctidh2048 && go test -v;
+
+deb: ${SDIST_GZ} ${DEB_NAME}
+${DEB_NAME}:
+	-mkdir -p dist/source
+	-mkdir -p build/tmp
+	HIGHCTIDH_PORTABLE=$(HIGHCTIDH_PORTABLE) python3 setup.py --command-packages=stdeb.command sdist_dsc --compat=10 --dist-dir=${WORKDIR}/dist/ --use-premade-distfile=${SDIST_GZ}
+	cp debian-rules ${WORKDIR}/dist/highctidh-$(VERSION)/debian/rules
+	cd ${WORKDIR}/dist/highctidh-$(VERSION) && DEB_BUILD_OPTIONS=nocheck CC=${CC} HIGHCTIDH_PORTABLE=$(HIGHCTIDH_PORTABLE) dpkg-buildpackage -rfakeroot -uc -us
+	-ls -alh ${WORKDIR}/dist/*.deb
+	-sha256sum ${WORKDIR}/dist/*.deb
+
+wheel: ${SDIST_GZ} ${WHEEL_NAME}
+${WHEEL_NAME}:
+	-mkdir -p dist/source
+	-mkdir -p build/tmp
+	SOURCE_DATE_EPOCH=${SOURCE_DATE_EPOCH} python3 -m build --wheel
+	-ls -alh ${WORKDIR}/dist/*.whl
+	-sha256sum ${WORKDIR}/dist/*.whl
+
+test:
+	python3 setup.py test
+
+test-python:
+	mkdir -p build/src
+	mkdir -p dist/tmp
+	python3 -m build
+	pip install --break-system-packages --force-reinstall dist/highctidh-*.whl
+	python3 -c 'from highctidh import bench; bench.simple_bench()'
+	python3 -m pytest -v -n auto --doctest-modules -k 511
+	python3 -m pytest -v -n auto --doctest-modules -k 512
+	python3 -m pytest -v -n auto --doctest-modules -k 1024
+	python3 -m pytest -v -n auto --doctest-modules -k 2048
+
+
+sdist: ${SDIST_GZ}
+${SDIST_GZ}:
+	-mkdir -p dist/source
+	-mkdir -p build/tmp
+	SOURCE_DATE_EPOCH=${SOURCE_DATE_EPOCH} flit build \
+			  --format sdist
+	-ls -alh ${SDIST_GZ}
+	-sha256sum ${SDIST_GZ}
+
+packages: wheel deb
+	echo "Finished building deb and wheel targets for ${ARCH}"
+	find .|grep .whl$
+	find .|grep .deb$
+
+docker-setup-multiarch:
+	echo "Please run ./misc/docker-priv-setup.sh as root to prepare the system"
+	../misc/docker-setup.sh
+
+docker-clean:
+	../misc/docker-clean.sh
+
+docker-fiat-setup:
+	../misc/docker-setup-fiat.sh
+
+docker-fiat-generate: docker-fiat-setup
+	../misc/docker-generate-fiat.sh
+
+# NOTE:
+#   twine accepts our whl files but pypi does not due to not using the
+#   `manywheels` docker trusting trust container
+pypi-upload:
+	python3 -m twine check ${WORKDIR}/docker_build_output/upload/build-artifacts/highctidh-$(VERSION).tar.gz
+	python3 -m twine upload --repository pypi ${WORKDIR}/docker_build_output/upload/build-artifacts/highctidh-$(VERSION).tar.gz
+
+prepare-artifacts-for-upload:
+	mkdir -p ${WORKDIR}/docker_build_output/upload/build-artifacts;
+	cp ${WORKDIR}/dist/highctidh-$(VERSION).tar.gz ${WORKDIR}/docker_build_output/upload/build-artifacts/
+	for arch in $(shell ls -1  ${WORKDIR}/docker_build_output |grep -v upload|grep -v .log); do \
+		echo "Copying deb and whl builds for $$arch..."; \
+		cp -v ${WORKDIR}/docker_build_output/$$arch/dist/*.deb \
+			${WORKDIR}/docker_build_output/upload/build-artifacts/ && \
+		cp -v ${WORKDIR}/docker_build_output/$$arch/dist/*.whl \
+			${WORKDIR}/docker_build_output/upload/build-artifacts/; \
+	done
+	for arch in $(shell ls -1  ${WORKDIR}/docker_build_output |grep -v upload|grep -v .log); do \
+		cd ${WORKDIR}/docker_build_output/$$arch/dist/ && \
+		echo "Creating $$arch artefact tar.gz..." && \
+		tar -cvzf \
+		highctidh_${VERSION}-src-$$arch.tar.gz.new \
+		*.buildinfo \
+		*.changes \
+		*.dsc \
+		*.tar.gz \
+		*.tar.xz && \
+		mv -v highctidh_${VERSION}-src-$$arch.tar.gz.new \
+			../../upload/build-artifacts/highctidh_${VERSION}-src-$$arch.tar.gz && \
+		cd ../../../; \
+	done
+
+# This target calls the other targets present in this makefile from within a Docker container.
+# Our use of QEMU means that the Docker container appears to be running on
+# ${ARCH} regardless of the host CPU architecture.
+multi-arch-build: sdist
+	../misc/docker-multi-arch-package-build.sh
+
+deb-and-wheel-in-podman:
+	echo "Building ${VERSION} for ${ARCH}...";
+	podman run -v `pwd`:/highctidh --workdir /highctidh --rm -it debian:bookworm bash -c '/highctidh/misc/install-debian-deps.sh && make -f Makefile.packages sdist wheel deb && sha256sum dist/*.{deb,tar.gz,whl} && exit';
+	echo "Built ${VERSION} for ${ARCH}";
+
+deb-and-wheel-in-podman-arch:
+	echo "Building ${VERSION} for ${ARCH}...";
+	podman run --memory=4g --arch ${PODMAN_ARCH} -v `pwd`:/highctidh --workdir /highctidh --rm -it debian:bookworm bash -c '/highctidh/misc/install-debian-deps.sh && /highctidh/misc/docker-fixup.sh && make -f Makefile.packages sdist wheel deb && sha256sum dist/*.{deb,tar.gz,whl} && exit';
+	echo "Built ${VERSION} for ${ARCH}";
+
+deb-and-wheel-in-docker-arch-sid:
+	echo "Building ${VERSION} for ${ARCH}...";
+	docker run \
+		-e "ARCH=${PODMAN_ARCH}" -e "CC=${CC}" \
+		-e "DEBIAN_FRONTEND=noninteractive" \
+		-e "DEB_BUILD_OPTIONS=nocheck" \
+		-e "SOURCE_DATE_EPOCH=${SOURCE_DATE_EPOCH}" \
+		-e "WORKDIR=/highctidh" \
+		-v `pwd`:/highctidh \
+		--workdir /highctidh \
+		--rm -it debian-${PODMAN_ARCH}-${DIST}-libhighctidh \
+		bash -c 'git config --global --add safe.directory /highctidh && mkdir -p build && make -f Makefile.packages sdist wheel deb && sha256sum dist/*.{deb,tar.gz,whl} && exit';
+	echo "Built ${VERSION} for ${ARCH}";
+
+clean:
+	-rm -f *.a *.o *.out *.so
+	-rm -f bench1024cycles bench1024mults bench1024untuned bench2048cycles bench2048mults bench2048untuned bench511cycles bench511mults bench511untuned bench512cycles bench512mults bench512untuned
+	-rm -f checkct1024cycles checkct1024mults checkct1024untuned checkct2048cycles checkct2048mults checkct2048untuned checkct511cycles checkct511mults checkct511untuned checkct512cycles checkct512mults checkct512untuned costpoly1024 costpoly2048 costpoly511 example-ctidh1024 example-ctidh2048
+	-rm -f example-ctidh511 example-ctidh512 test1024 test2048 test511 test511 test512 test512-dyn test*-dyn testrandom tunecycles1024 tunecycles2048 tunecycles511 tunecycles512 tunemults1024 tunemults2048 tunemults511 tunemults512 ubench1024 ubench2048 ubench511 ubench512 umults1024 umults2048 umults511 umults512
+	-rm -rf UNKNOWN.egg-info/ __pycache__/
+	-rm -rf build/ deb_dist/ dist/
+	-rm -rf highctidh.egg-info/ highctidh/__pycache__/
+	-rm -rf tests/__pycache__/
+	-rm -rf docker_build_output/
+	-rm -rf examples-static
+	-rm -rf highctidh-*.tar.gz
+	-rm -rf venv/

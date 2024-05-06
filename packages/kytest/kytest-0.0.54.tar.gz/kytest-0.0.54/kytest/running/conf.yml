@@ -1,0 +1,11 @@
+common:
+  base_url: null
+  browser: null
+  cookies: null
+  full: false
+  headers: null
+  headless: false
+  ocr_service: null
+  project: null
+  size: null
+  state: null

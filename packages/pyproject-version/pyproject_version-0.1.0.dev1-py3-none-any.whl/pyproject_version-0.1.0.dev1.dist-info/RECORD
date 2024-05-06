@@ -1,0 +1,8 @@
+pyproject_version/__init__.py,sha256=d2LbBgHv73DkA_UGovZc827erFSDRLSfVeeneNB47KY,53
+pyproject_version/cli.py,sha256=rx5eVIV5_OHyDhqmgmOCFK9yyMvO3wc_tHUqdqAlfaE,1998
+pyproject_version/tools.py,sha256=FqykCoqvxwkpJOSM072InK0ocL56sv2WkVfrQ2GDrwQ,3636
+pyproject_version-0.1.0.dev1.dist-info/LICENSE,sha256=sGKSkAATVmDXlrH6FQILFLk7I0qooSjymrLdR-q3nmA,1073
+pyproject_version-0.1.0.dev1.dist-info/METADATA,sha256=p87O5HsHsnuu1L4MUec6VnDiN2wTZbbaS5NAcem8eQc,1620
+pyproject_version-0.1.0.dev1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pyproject_version-0.1.0.dev1.dist-info/entry_points.txt,sha256=Wux8aKOPHAP8nSKGEuIPTCMmS1ESv6LL6j-Zn__VDDI,77
+pyproject_version-0.1.0.dev1.dist-info/RECORD,,

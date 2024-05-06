@@ -1,0 +1,2 @@
+[pytest11]
+artemis_hunter = src.artemis_hunter

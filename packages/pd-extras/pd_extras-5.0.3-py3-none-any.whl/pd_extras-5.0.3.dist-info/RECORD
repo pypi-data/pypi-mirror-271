@@ -1,0 +1,16 @@
+pd_extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/check/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/check/sanitize.py,sha256=uSQGGtKCYDDvab8qmDUuCuFyQlaZJRyxueNvXjjsrso,3245
+pd_extras/extra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/extra/flattener.py,sha256=TA-yS1Y8Y9nyJqbexBFbslGBKyJeeDO03_DCuH9rRus,3794
+pd_extras/extra/operations.py,sha256=zjC3NntVcsOfkFihsQazo2QIJNTMyUIRrjoF5x2jQcQ,2635
+pd_extras/optimize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/optimize/df_ops.py,sha256=KVtHI8hyrCMhzJVW8yFLxFSzmMiU8HopRFaqdphL0fA,1775
+pd_extras/write/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/write/common.py,sha256=AVzZy6LXksgMVdb57BzpEpnAeCaSMQx_QlhLUA5W8WM,1388
+pd_extras/write/nosql_writer.py,sha256=DjcTtp-xZOd6Q0jHZGZ9WJftlYqyNyd4jSR8nWzR5f8,5682
+pd_extras/write/sql_writer.py,sha256=c0RugsIzqSReeb4ieEfekeg3I-lKubOpsqASwsMiJWU,8962
+pd_extras-5.0.3.dist-info/LICENSE,sha256=kJDQNXGKS-wAqrpBRA35TWB8_dHL-Vpq6mhEgXC_mAk,1069
+pd_extras-5.0.3.dist-info/METADATA,sha256=r0vvih3j16sviyz71Ork7U9KZRHphNmFTsjByGHTD6U,3284
+pd_extras-5.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pd_extras-5.0.3.dist-info/RECORD,,

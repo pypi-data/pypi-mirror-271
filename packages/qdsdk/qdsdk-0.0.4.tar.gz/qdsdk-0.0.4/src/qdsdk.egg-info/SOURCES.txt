@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/qdsdk/__init__.py
+src/qdsdk/aio_api.py
+src/qdsdk/api.py
+src/qdsdk/client.py
+src/qdsdk/config.py
+src/qdsdk/qedata.thrift
+src/qdsdk/utils.py
+src/qdsdk.egg-info/PKG-INFO
+src/qdsdk.egg-info/SOURCES.txt
+src/qdsdk.egg-info/dependency_links.txt
+src/qdsdk.egg-info/requires.txt
+src/qdsdk.egg-info/top_level.txt

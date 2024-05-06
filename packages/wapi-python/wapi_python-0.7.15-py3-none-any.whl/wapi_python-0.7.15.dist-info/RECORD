@@ -1,0 +1,12 @@
+wapi/VERSION,sha256=W9BQYMmjIjo9DMDh1bdLJMMjTJQQckg86bNQPdU0bQ8,7
+wapi/__init__.py,sha256=fgmPt4cz4EyzsUCn5ZDQcObxbaDrvL_NTGGY8gv4Mjs,269
+wapi/auth.py,sha256=z8pm3dMm9ZhRjqt4hlTDr34raGEmCr6BIVhuI14q8QA,2106
+wapi/curves.py,sha256=nC8opznllJxzGRkH-A4sVusdyHYfzzwLh_e1fpjQaF0,64230
+wapi/events.py,sha256=LtW7_D91MLZxqrR9JwYW9bUx7_pCNRmZTP0uhpvnHKc,4214
+wapi/session.py,sha256=nrsz2HatvRxqEX15DxYufQs2krCJazZ_Acb0MxyOb-k,19646
+wapi/util.py,sha256=WxE_AChvAOBmRJ_RoukmkpAVrOElWTWUrmssazmjAOw,9064
+wapi_python-0.7.15.dist-info/LICENSE,sha256=QW5nSxE0LozNpYWdyJm_0hco_PidycTnelwYzKdW7ZM,1069
+wapi_python-0.7.15.dist-info/METADATA,sha256=KxvEwyawDOXtJaT4b7ppx3kNAqsnogqY8pKBh8OG18U,636
+wapi_python-0.7.15.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+wapi_python-0.7.15.dist-info/top_level.txt,sha256=Yw2tD_VBpHu2xV4CRIBSTQm_zpx4wSI5zHBHU3ZJ5aM,5
+wapi_python-0.7.15.dist-info/RECORD,,

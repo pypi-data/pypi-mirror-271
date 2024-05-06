@@ -1,0 +1,5 @@
+rebdhuhn>=0.2.3
+python-docx
+more_itertools
+attrs
+click

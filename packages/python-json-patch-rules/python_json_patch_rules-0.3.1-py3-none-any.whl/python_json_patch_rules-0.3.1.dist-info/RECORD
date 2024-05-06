@@ -1,0 +1,10 @@
+json_patch_rules/__init__.py,sha256=s-tl6e7t56eRzNWT64X_p8GjAkP1b8k6c2kJiA1I-3s,6626
+json_patch_rules/__symbols__.py,sha256=6TmkBAy8GkG_ME0xhTDtnFsSSp9Kl7Hh6bcPKG_FRCc,482
+json_patch_rules/paths.py,sha256=NOY0CE8Gj5qTOIh09KPPPmqMWOJ7qiLHjtKK4aJERdk,519
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_module.py,sha256=jghZuV2R8lLxjEqQ6R4hoTESH_kk_pI3v85XuzFqk-M,11566
+python_json_patch_rules-0.3.1.dist-info/LICENSE,sha256=LumaS_HTtCPvUEHNTmFjnpLFz5bVNYQknKKJjGrbY64,1069
+python_json_patch_rules-0.3.1.dist-info/METADATA,sha256=qLuKWMtMr25hYiX1rkC5ZPJDaV1sM5lZw--eYqOA6z4,8898
+python_json_patch_rules-0.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+python_json_patch_rules-0.3.1.dist-info/top_level.txt,sha256=6ZRkTZ-3Fe8ER5XPTbuOo5UIFv_PT1kAnKN42PVEk0E,23
+python_json_patch_rules-0.3.1.dist-info/RECORD,,

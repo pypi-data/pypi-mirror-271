@@ -1,0 +1,3 @@
+[console_scripts]
+haphap=furrow1k.furrow1k:hello_world
+

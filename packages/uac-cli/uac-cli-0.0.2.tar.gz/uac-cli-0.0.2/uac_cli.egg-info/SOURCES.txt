@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+uac_cli/__init__.py
+uac_cli/uac.py
+uac_cli/utils.py
+uac_cli.egg-info/PKG-INFO
+uac_cli.egg-info/SOURCES.txt
+uac_cli.egg-info/dependency_links.txt
+uac_cli.egg-info/entry_points.txt
+uac_cli.egg-info/requires.txt
+uac_cli.egg-info/top_level.txt

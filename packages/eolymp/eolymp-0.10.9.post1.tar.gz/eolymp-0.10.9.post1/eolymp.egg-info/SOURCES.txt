@@ -1,0 +1,6 @@
+README.md
+setup.py
+eolymp.egg-info/PKG-INFO
+eolymp.egg-info/SOURCES.txt
+eolymp.egg-info/dependency_links.txt
+eolymp.egg-info/top_level.txt

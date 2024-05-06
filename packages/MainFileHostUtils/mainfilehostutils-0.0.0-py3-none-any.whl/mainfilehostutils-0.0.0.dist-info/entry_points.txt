@@ -1,0 +1,4 @@
+[console_scripts]
+MFHU-c-download=MainFileHostUtils.client.script:download
+MFHU-s-upload=MainFileHostUtils.server.script:upload
+

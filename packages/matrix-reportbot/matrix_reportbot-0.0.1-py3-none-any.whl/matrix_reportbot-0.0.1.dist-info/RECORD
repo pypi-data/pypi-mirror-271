@@ -1,0 +1,10 @@
+matrix_reportbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matrix_reportbot/__main__.py,sha256=Z4Vn-4FHRKhbG_1Jhn_j9M0JJYTy5YZngGCrCQlOP7U,1338
+matrix_reportbot/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matrix_reportbot/classes/bot.py,sha256=fgpZP4b5j8WeIN2z23sDNtiFfrdNA0y_5AL8w1jRsfg,18187
+matrix_reportbot/classes/logging.py,sha256=KWcVGyvated2pfdMYdVSqNlmW6ZchPoHJEJbynEFdDI,943
+matrix_reportbot-0.0.1.dist-info/METADATA,sha256=Crsqe69tg0Z3ssa5vTI9iWE8clLp6FzEOWI9mPTtOhQ,3546
+matrix_reportbot-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+matrix_reportbot-0.0.1.dist-info/entry_points.txt,sha256=Vxccwrhc1pdTQaNcZu7uJ4HyDIrwu8cygISa389VkMA,61
+matrix_reportbot-0.0.1.dist-info/licenses/LICENSE,sha256=IpiKjAAg5wWrWp9flzsSdyagJDJPa3fOsIhs-AfxuSc,1087
+matrix_reportbot-0.0.1.dist-info/RECORD,,

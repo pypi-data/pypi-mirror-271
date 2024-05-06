@@ -1,0 +1,2 @@
+[console_scripts]
+reportbot = matrix_reportbot.__main__:main

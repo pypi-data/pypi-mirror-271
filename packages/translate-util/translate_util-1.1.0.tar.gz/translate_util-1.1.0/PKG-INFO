@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: translate_util
+Version: 1.1.0
+Summary: translate tool support(google,baidu,iciba,youdao)
+Home-page: https://github.com/abo123456789/translate_util
+Author: cc
+Author-email: abcdef123456chen@sohu.com
+Maintainer: cc
+Maintainer-email: abcdef123456chen@sohu.com
+License: MIT License
+Description: ![avatar](https://github.com/translate/translate/workflows/Test/badge.svg)  
+        translate utils support google,baidu,iciba,youdao
+        ### [introduction]
+        
+        * support version: python 3.0+
+        
+        ### down install
+        
+        * pip install:
+        ```shell
+        pip install translate-util
+        ```
+        
+        ### DEMO
+        
+        ```python
+            from translate_util.translate_tool import translate_other2cn,translate_other2en,translate_text
+            
+            # translate other language to chinese (default use google)
+            print(translate_other2cn('china'))
+            
+            # translate other language to english (default use google)
+            print(translate_other2en('中国'))
+            
+            # translate other language to de ,support any language
+            print(translate_text('china', tl='de'))
+            
+            
+        ```
+        
+        ### OTHER SUPPORT
+        any customization demand,contact me with email
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

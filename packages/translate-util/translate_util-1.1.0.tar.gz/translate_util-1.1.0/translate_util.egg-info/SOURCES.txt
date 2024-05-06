@@ -1,0 +1,15 @@
+README.md
+setup.py
+translate_util/__init__.py
+translate_util/base_translate.py
+translate_util/common_request.py
+translate_util/translate_baidu.py
+translate_util/translate_google.py
+translate_util/translate_iciba.py
+translate_util/translate_tool.py
+translate_util/translate_youdao.py
+translate_util.egg-info/PKG-INFO
+translate_util.egg-info/SOURCES.txt
+translate_util.egg-info/dependency_links.txt
+translate_util.egg-info/requires.txt
+translate_util.egg-info/top_level.txt

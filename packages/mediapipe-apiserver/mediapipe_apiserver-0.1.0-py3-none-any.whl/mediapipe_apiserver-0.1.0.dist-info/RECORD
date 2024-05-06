@@ -1,0 +1,17 @@
+mediapipe_apiserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mediapipe_apiserver/__main__.py,sha256=-PGOMylLKRMNPmZ2rlPPjOpF1gJSoWPTCdIgDciIGHc,182
+mediapipe_apiserver/camera/__init__.py,sha256=7JuxMyTca-la-7K7lujuxjohKxx8D2aZAjH_Jomii9A,39
+mediapipe_apiserver/camera/camera_interface.py,sha256=IbaO9nqAkJuIHRnfgGc6s4RP65yrnMnv3-yE3jHqU9k,1081
+mediapipe_apiserver/camera/kinect_camera.py,sha256=gby8XVkIOx7kmtOUefVxvKBOMOfeW0Jush-yyAAExUY,3446
+mediapipe_apiserver/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mediapipe_apiserver/common/option.py,sha256=fJsEBFcDY4jhWOHUiDS9TgXPu_l7p3xGuhmfHR-3lYs,138
+mediapipe_apiserver/common/utils.py,sha256=Vcqsltx0LQwBfvMH6AOPOvBP_gsL_UEbYmGRuHUPgrA,213
+mediapipe_apiserver/detector/__init__.py,sha256=pA1eixhwqC1aIPeCxy-9DooyHQpPm3vM5AwgAThWfs4,40
+mediapipe_apiserver/detector/mediapipe.py,sha256=LVtnhhmSf50rFREAsbxEMA5m4HUvfsfyJ3CTd3628Bc,2507
+mediapipe_apiserver/restful/__init__.py,sha256=DwvZf9kql4x1lYRqt2WvRgE2VtqUL91HMy7JiAVi3aw,45
+mediapipe_apiserver/restful/controller.py,sha256=fIMBpbdM_9884iJ5kBVBJD2eEXN6NRQvF31xIzkVsss,348
+mediapipe_apiserver/restful/detector.py,sha256=SWE-53e4V9QuDrhybjjCot1jNpLf0nWScjsgWvqueyk,1529
+mediapipe_apiserver-0.1.0.dist-info/METADATA,sha256=iGDnaRxmoEuKAgLhAhN4J1vp6_xL2ZFJhoE3nAk9mTI,567
+mediapipe_apiserver-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mediapipe_apiserver-0.1.0.dist-info/top_level.txt,sha256=aegXnOPad686_b05A9F4-jdio1ClYqi7yp7EM1jRxzw,20
+mediapipe_apiserver-0.1.0.dist-info/RECORD,,

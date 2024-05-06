@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: llama-kg
+Version: 0.0.3
+Summary: Utilities for indexing a corpus with llama-index
+License-File: LICENSE
+
+Utilities for indexing a corpus with llama-index

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: CategorAI
+Version: 1.0.1
+Summary: A package for categorizing columns of data and outputing responses in a CSV format
+Home-page: https://github.com/chrissoria/CategorAI
+Author: Chris Soria
+Author-email: chrissoria@berkeley.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+CategorAI is a Python package for automatically categorizing columns of data and outputing responses in a CSV format.

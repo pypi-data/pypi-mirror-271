@@ -1,0 +1,12 @@
+ADViewpy/ADViewpy.py,sha256=mYevbvJ1AlJTO7qcbswrXFTFsK84iwKVjdygBQuUJuw,44335
+ADViewpy/__init__.py,sha256=QbXnvHFZQeEBl-k1I5DYNwH5gPoQmZKaFU0qGKQ2am4,190
+ADViewpy/myCanvas.py,sha256=BUSC1oZLuNRK5ZQeKUJsLOd8bon3O43iBgWzw8Qhs0s,18629
+ADViewpy/myUtils.py,sha256=751a8FQhNl7PRPz6r8nJuadedUGkXxJEbYcP5xUw3u8,3014
+ADViewpy/pairwiseCanvas.py,sha256=4NIaYLjfNkgkVLNmpLpah3NMuJ31ou1QGrjTZJOuUZ0,46111
+ADViewpy/rtCanvas.py,sha256=uxCIKRMCXSGW7Rz9PJ9gdyrevaL30YtjgBor3PwRHqA,22890
+ADViewpy/tcCanvas.py,sha256=e5bRB0ABt-90OqPfVBvoLv8IvDDbWsEIdD4HLNEnE7k,64944
+ADViewpy/treeDistributionView.py,sha256=2b1ol6xAW8SIC0_lBKTKmIA93KrtlCdsNFVkSHau2ro,21925
+ADViewpy-0.0.1.dist-info/METADATA,sha256=SrOExixO4a45rrv6FLF2jkPLwDUFLDlwA6bywhN1Fgs,95
+ADViewpy-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ADViewpy-0.0.1.dist-info/top_level.txt,sha256=jhLA5JAQyC_8PMfJue9Auc6qd5BjvuaMvhL2Er6klsE,9
+ADViewpy-0.0.1.dist-info/RECORD,,

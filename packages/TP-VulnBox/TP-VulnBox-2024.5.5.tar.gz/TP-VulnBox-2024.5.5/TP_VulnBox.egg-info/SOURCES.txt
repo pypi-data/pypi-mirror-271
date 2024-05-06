@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+TP_VulnBox.egg-info/PKG-INFO
+TP_VulnBox.egg-info/SOURCES.txt
+TP_VulnBox.egg-info/dependency_links.txt
+TP_VulnBox.egg-info/entry_points.txt
+TP_VulnBox.egg-info/requires.txt
+TP_VulnBox.egg-info/top_level.txt
+VulnBox/__init__.py

@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/attackai/__init__.py
+src/attackai/attackai.py
+src/attackai.egg-info/PKG-INFO
+src/attackai.egg-info/SOURCES.txt
+src/attackai.egg-info/dependency_links.txt
+src/attackai.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+thebeans = thebeans.cli:main

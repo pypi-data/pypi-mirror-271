@@ -1,0 +1,16 @@
+tgctoolbox/__init__.py,sha256=BtxJ12z7vAYYV8eEWmdXQsT9mElCb-nzU7bhY-WBBWo,1883
+tgctoolbox/downloaders.py,sha256=liqr0pzacYRchM3w1MzG97LRvYnHpB6mYnsLKwr0_HI,2965
+tgctoolbox/ffmpeg.py,sha256=e8p0lpLuY5LldbM11LHurCAqD7LGe0MALDEAYP4WzcQ,6398
+tgctoolbox/logger.py,sha256=urpfXgCmYmCg8TaBFQ4eMia7JE9Xlj0llX0KPJnhu-Q,3699
+tgctoolbox/meta.py,sha256=OxAakduPmrwbpiE_Y5sDai2woqwCjpLUD5tUwq-7My4,125
+tgctoolbox/operations.py,sha256=XoQWThWyp0H2qI-_T0bio6ghrvjyhQR0g1rrxCPpXC8,3532
+tgctoolbox/recorder.py,sha256=jlINy-L8rOtUoxXWyGsiSWu58YMusJ1huhbakeWbn5o,2536
+tgctoolbox/settings.py,sha256=ZHhykNWb7TOgVqOpl_J2tlx68x3GVRWtWAoNeO6WA8Y,7701
+tgctoolbox/sound.py,sha256=ZfvbthBDMcqcemMLt0d2LW_DfrQ4w-awcqr_6VHZ1TM,4338
+tgctoolbox/timing.py,sha256=KkwrR0tTED1_NlfLKB4RhyMKmSOie4Q-ehz-ls591cc,2541
+tgctoolbox/vosk.py,sha256=txwApzVAUswofaJui3S11DoA6oi0S1VoLHA5EOXyH0E,1787
+tgctoolbox/wait_run.py,sha256=IMdl1DYS8aJOsPffRcHjtqPNC8NvgTHllXoE1-bM9CY,3415
+tgctoolbox/wrapper.py,sha256=ChxouAJGTh9fHioPK0Z_3Gs6TKjv6QMFZ9TSz0IBG2c,2740
+tgctoolbox-0.4.dist-info/METADATA,sha256=QA8TyJBlYm3BZIGa0lcPpxUno2dqDWoI2sF42AFAAt0,635
+tgctoolbox-0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tgctoolbox-0.4.dist-info/RECORD,,

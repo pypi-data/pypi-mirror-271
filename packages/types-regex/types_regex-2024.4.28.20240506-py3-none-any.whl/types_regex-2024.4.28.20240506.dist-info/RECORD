@@ -1,0 +1,10 @@
+regex-stubs/METADATA.toml,sha256=7lOqRfiI9xJuOCmB0ru0UUpFAz2EQpR61lmLNI9u51E,87
+regex-stubs/__init__.pyi,sha256=dRHbnggsRYhBpwhHkZhLvxX5Tct21I8bJksynwRBWAU,21
+regex-stubs/_regex.pyi,sha256=FboBpWCY5P1mTSXIX9Ueatt8LkmaP72hhEaiOpkvf7c,812
+regex-stubs/_regex_core.pyi,sha256=LRgTqAsCL9kxBICA7zctFHjP18hODKYZG6KA_PTEJcA,1527
+regex-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regex-stubs/regex.pyi,sha256=ZTAxPI-92rivbbnco2EQ33pm5plLJdB-oVoJqqTqweY,19584
+types_regex-2024.4.28.20240506.dist-info/METADATA,sha256=EFDg7OCSzx0hfJs3HfagYCS8RhSRl8Qc33ORukTdlZI,1558
+types_regex-2024.4.28.20240506.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+types_regex-2024.4.28.20240506.dist-info/top_level.txt,sha256=f3TLEOp0P1pbBY2jUQii9WD4Vuam1DNhh_xn0E4yEOA,12
+types_regex-2024.4.28.20240506.dist-info/RECORD,,

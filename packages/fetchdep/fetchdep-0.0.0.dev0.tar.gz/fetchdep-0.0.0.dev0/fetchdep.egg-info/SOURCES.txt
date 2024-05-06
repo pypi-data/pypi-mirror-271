@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+setup.py
+fetchdep/__init__.py
+fetchdep.egg-info/PKG-INFO
+fetchdep.egg-info/SOURCES.txt
+fetchdep.egg-info/dependency_links.txt
+fetchdep.egg-info/top_level.txt

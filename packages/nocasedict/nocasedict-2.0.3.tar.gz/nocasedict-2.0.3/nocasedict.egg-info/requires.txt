@@ -1,0 +1,12 @@
+
+[test]
+pytest>=7.0.0
+packaging>=17.0
+pluggy>=0.13.1
+six>=1.14.0
+
+[test:python_version <= "3.11"]
+virtualenv>=20.15.0
+
+[test:python_version >= "3.12"]
+virtualenv>=20.23.0

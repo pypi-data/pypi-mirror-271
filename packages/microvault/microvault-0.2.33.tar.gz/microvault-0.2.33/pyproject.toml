@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "microvault"
+version = "0.2.33"
+description = "Microvault - RL for Navigation"
+authors = ["Nicolasalan <grottimeireles@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{ include = "microvault" }]
+
+[tool.poetry.urls]
+documentation = "https://microvault.vercel.app"
+bugs = "https://github.com/microvault/microvault/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+accelerate = "^0.18.0"
+fastrand = "^1.3.0"
+gymnasium = "^0.28.1"
+hydra-core = "^1.3.2"
+matplotlib = "^3.4.3"
+numpy = "^1.24.2"
+omegaconf = "^2.3.0"
+torch = "^2.0.1"
+transformers = "^4.36.0"
+pyyaml = "^6.0.1"
+pymunk = "^6.6.0"
+psutil = "^5.9.8"
+wget = "^3.2"
+lightning = "^2.2.0"
+scipy = "^1.12.0"
+openai = "^1.12.0"
+cython = "^3.0.8"
+scikit-image = "*"
+numba = "^0.59.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+black = "^24.1.1"
+isort = "^5.13.2"
+taskipy = "^1.12.2"
+ruff = "^0.2.1"
+codespell = "^2.2.6"
+commitizen = "^3.14.1"
+pre-commit = "^3.7.0"
+shapely = "^1.8.0"
+
+# [tool.poetry.group.doc.dependencies]
+# furo = "2024.4.27"
+# sphinx = "7.3.7"
+# sphinx-toolbox = "3.5.0"
+# sphinx-notfound-page = "1.0.0"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "black --check --diff --exclude docs . --exclude data && ruff check --diff --exclude docs . && isort --check --diff --skip docs . && codespell --skip=*.css,*.js,*.map,*.scss,*.svg,*.html,*.json,*.yml,*.yaml,*.md,*.jsx,*.mdx,*.pyx,*.cpp,./data/map/*,./docs/*"
+docs = "mkdocs serve"
+pre_test = "task lint"
+test = "pytest -s -x --cov=microvault -vv"
+post_test = "coverage html"
+publish = "poetry publish --build -u __token__ -p $MICROVAULT_PYPI_TOKEN"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

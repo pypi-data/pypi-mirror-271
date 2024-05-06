@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-stabs-package-sample"
+version = "0.1.1"
+description = "{project description}"
+authors = ["0num4 <r.oonuma@matsuri-tech.com>"]
+homepage = "https://github.com/0num4"
+repository = "https://github.com/0num4/poetry-stabs-package-sample"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.2"
+black = "^24.4.2"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

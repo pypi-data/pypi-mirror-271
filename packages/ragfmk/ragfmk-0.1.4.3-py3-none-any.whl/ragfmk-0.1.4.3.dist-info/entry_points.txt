@@ -1,0 +1,3 @@
+[console_scripts]
+RagAdhocQueryDoc = RagAdhocQueryDoc:main
+RagPrompt = RagPrompt:main

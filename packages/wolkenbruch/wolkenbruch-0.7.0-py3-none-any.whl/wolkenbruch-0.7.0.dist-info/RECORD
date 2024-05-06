@@ -1,0 +1,12 @@
+wolkenbruch/__init__.py,sha256=IaGraPhdmjOQgC1JLWqPhtBaEN4qGdjpdGxuSuBG278,1057
+wolkenbruch/__main__.py,sha256=BxBqt2Tq5ecP533SDYwppcYeN5rsp8cgDGHe8zMKVu8,1151
+wolkenbruch/config.py,sha256=myOFH0W1KBYW_ffwqWEw0G3CN_DwdoAtyd3-70xtRYE,4035
+wolkenbruch/emailsender.py,sha256=4Xnfm3ClPDKHVOBxiievuPI329pHi6UvL6QSD0d6SyQ,3039
+wolkenbruch/precipitationchecker.py,sha256=kBOsyhvSIkTrNVkLntJPTso5jxiPxhojvGISXrFSn8c,2869
+wolkenbruch/wolkenbruch.py,sha256=GA0BSUtR-bLCtaVcZfXgB2mD1fCM9PREd4XNM4goJEU,3071
+wolkenbruch/wolkenbruch.yml.template,sha256=PCGzQKYuzE_2uR8JPNZcxz8OYfPy95oNz5XqY0zAZIA,396
+wolkenbruch-0.7.0.dist-info/METADATA,sha256=j_-hCbXehLILRuhZDt6HFP6TlhSGDovkFDkoVS1uD3w,5333
+wolkenbruch-0.7.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+wolkenbruch-0.7.0.dist-info/entry_points.txt,sha256=RUBxC5hBBmpS_5lhunb_tY-InAg92fT3-3EtCg4SJC0,58
+wolkenbruch-0.7.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+wolkenbruch-0.7.0.dist-info/RECORD,,

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  {{ project_name }}:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    {% if framework == 'gin' %}container_name: gin
+    {% elif framework == 'echo' %}container_name: echo
+    {% elif framework == 'chi' %}container_name: chi
+    {% elif framework == 'fiber' %}container_name: fiber
+    {% endif %}ports:
+      - "{{ port }}:{{ port }}"
+    # Add additional configurations as needed

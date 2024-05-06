@@ -1,0 +1,2 @@
+[console_scripts]
+podman-init = src:podman_init

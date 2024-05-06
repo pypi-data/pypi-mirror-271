@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  {{ project_name }}:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    {% if framework == 'actix' %}container_name: actix
+    {% elif framework == 'axum' %}container_name: axum
+    {% elif framework == 'rocket' %}container_name: rocket
+    {% elif framework == 'warp' %}container_name: warp
+    {% elif framework == 'tide' %}container_name: tide     
+    {% endif %}ports:
+      - "{{ port }}:{{ port }}"
+    # Add additional configurations as needed

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  {{ project_name }}: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    {% if framework == 'dot-net_core' %}container_name: dot-net_core
+    {% elif framework == 'blazor' %}container_name: blazor
+    {% endif %}ports:
+      - "{{ port }}:80"   
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      
+    # Add additional configurations as needed

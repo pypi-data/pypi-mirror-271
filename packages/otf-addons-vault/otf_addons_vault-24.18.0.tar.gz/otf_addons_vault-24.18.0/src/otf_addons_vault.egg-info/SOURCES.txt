@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/opentaskpy/plugins/lookup/hashicorp/vault.py
+src/otf_addons_vault.egg-info/PKG-INFO
+src/otf_addons_vault.egg-info/SOURCES.txt
+src/otf_addons_vault.egg-info/dependency_links.txt
+src/otf_addons_vault.egg-info/requires.txt
+src/otf_addons_vault.egg-info/top_level.txt
+tests/test_plugin_vault.py

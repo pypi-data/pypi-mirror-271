@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+sqlalchemy_multilingual.egg-info/PKG-INFO
+sqlalchemy_multilingual.egg-info/SOURCES.txt
+sqlalchemy_multilingual.egg-info/dependency_links.txt
+sqlalchemy_multilingual.egg-info/top_level.txt

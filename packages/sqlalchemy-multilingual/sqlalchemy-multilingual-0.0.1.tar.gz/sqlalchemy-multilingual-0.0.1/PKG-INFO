@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-multilingual
+Version: 0.0.1
+Summary: ""
+Home-page: https://github.com/DJWOMS/GSpot
+Author: Kosenko Viktor
+Author-email: kosenkoviktor11@gmail.com
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

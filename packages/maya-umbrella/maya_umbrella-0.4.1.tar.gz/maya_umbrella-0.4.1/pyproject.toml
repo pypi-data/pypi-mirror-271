@@ -1,0 +1,165 @@
+[tool.poetry]
+name = "maya_umbrella"
+version = "0.4.1"
+description = "Check and fix maya virus."
+homepage = "https://github.com/loonghao/maya_umbrella"
+repository = "https://github.com/loonghao/maya_umbrella"
+documentation = "https://github.com/loonghao/maya_umbrella"
+keywords = ["notifiers", "python", "Maya", "dcc"]
+authors = ["longhao <hal.long@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+packages = [
+    { include = "maya_umbrella" },
+]
+[tool.poetry.build]
+generate-setup-file = false
+
+[tool.poetry.dependencies]
+python = ">=2.7,<2.8 || >=3.6.0"
+
+[tool.poetry.dev-dependencies]
+nox = {version = "^2024.3.2", python = ">=3.8.1,<3.11"}
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.4.1"
+tag_format = "v$version"
+version_files = [
+    "pyproject.toml:version",
+    "maya_umbrella/__version__.py"
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py36', 'py37', 'py38', 'py39']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.nox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+
+[tool.isort]
+profile = "black"
+atomic = true
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+use_parentheses = true
+src_paths = ["maya_umbrella", "tests"]
+filter_files = true
+known_first_party = "maya_umbrella"
+
+# Enforce import section headers.
+import_heading_future = "Import future modules"
+import_heading_stdlib = "Import built-in modules"
+import_heading_thirdparty = "Import third-party modules"
+import_heading_firstparty = "Import local modules"
+
+force_sort_within_sections = true
+force_single_line = true
+
+# All project unrelated unknown imports belong to third-party.
+default_section = "THIRDPARTY"
+skip_glob = "*/docs/conf.py"
+
+
+# https://beta.ruff.rs/docs/configuration/
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+    "dev",
+    "noxfile.py"
+]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = [
+    "Q",
+    "RUF100",
+    "C90",
+    "UP",
+    "I",
+    "D",
+    "DTZ005", # https://docs.astral.sh/ruff/rules/call-datetime-now-without-tzinfo/
+] # add "T" to disallow prints
+flake8-quotes = { inline-quotes = "double", multiline-quotes = "double" }
+mccabe = { max-complexity = 14 }
+ignore = [
+    "I001",
+    "D107", # ignore missing docstring in __init__ methods
+    "D100", # ignore missing docstring in module
+    "D104", # ignore missing docstring in public package
+    "D105", # ignore missing docstring in magic methods
+    "C901", # ignore too complex functions, doesn't seem to be worth it
+    "UP032",
+    "UP004",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["D"]
+"docs/*.py" = ["D"]
+"dev/*.py" = ["D"]
+
+[tool.ruff.format]
+docstring-code-format = true
+quote-style = "double"

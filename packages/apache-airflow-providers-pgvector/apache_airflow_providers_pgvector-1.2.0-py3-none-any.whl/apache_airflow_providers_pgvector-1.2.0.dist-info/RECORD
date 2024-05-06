@@ -1,0 +1,11 @@
+airflow/providers/pgvector/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/pgvector/__init__.py,sha256=EJHIvCIzuCVqfJCsKAbkAAaU1QzsXd-12hNqYSyWepE,1583
+airflow/providers/pgvector/get_provider_info.py,sha256=tAtxq8ZzHn5a84Uh_AvlagY1xNX6PjftpIWVSc16LM4,2204
+airflow/providers/pgvector/hooks/__init__.py,sha256=h9YaOHsHa6a7IrJjzUqViwwFxsB0g3c50MYN9re6-dM,1053
+airflow/providers/pgvector/hooks/pgvector.py,sha256=CvnR5OM_zpaLPH_0LRr-2Bp704aK68dCvH-sWZKSGUI,3367
+airflow/providers/pgvector/operators/__init__.py,sha256=h9YaOHsHa6a7IrJjzUqViwwFxsB0g3c50MYN9re6-dM,1053
+airflow/providers/pgvector/operators/pgvector.py,sha256=_MKQWMPbXfIewOSGaklkH7kK6a1al6Yjkcdm3twyE5Q,1876
+apache_airflow_providers_pgvector-1.2.0.dist-info/entry_points.txt,sha256=orTBlRnXI4HbcT1bnbSczTv3jjeEJpVscfsJC8K-YrU,104
+apache_airflow_providers_pgvector-1.2.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_pgvector-1.2.0.dist-info/METADATA,sha256=QLPkx6sS9lfJK7wgxJ2toW-A0mB2ddUcrMgnGPMoiYc,6346
+apache_airflow_providers_pgvector-1.2.0.dist-info/RECORD,,

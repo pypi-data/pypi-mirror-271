@@ -1,0 +1,5 @@
+six
+python-dateutil
+aiofiles~=23.2.1
+crcmod~=1.7
+pycryptodome~=3.20.0

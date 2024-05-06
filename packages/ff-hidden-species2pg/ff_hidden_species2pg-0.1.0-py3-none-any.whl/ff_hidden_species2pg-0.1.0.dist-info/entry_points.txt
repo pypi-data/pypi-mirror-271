@@ -1,0 +1,3 @@
+[console_scripts]
+ff_hidden_species_rules=ff_hidden_species2pg.main:cli
+

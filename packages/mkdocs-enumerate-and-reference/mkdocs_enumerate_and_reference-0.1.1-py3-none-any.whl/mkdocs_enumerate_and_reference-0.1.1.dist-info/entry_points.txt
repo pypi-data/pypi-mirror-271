@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+enumerate-and-reference=mkdocs_enumerate_and_reference.plugin:EnumerateAndReference
+

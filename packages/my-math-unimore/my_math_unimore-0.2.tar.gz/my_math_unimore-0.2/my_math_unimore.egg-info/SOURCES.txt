@@ -1,0 +1,10 @@
+README.md
+setup.py
+my_math_unimore/__init__.py
+my_math_unimore/calculator.py
+my_math_unimore/test_calculator.py
+my_math_unimore.egg-info/PKG-INFO
+my_math_unimore.egg-info/SOURCES.txt
+my_math_unimore.egg-info/dependency_links.txt
+my_math_unimore.egg-info/requires.txt
+my_math_unimore.egg-info/top_level.txt

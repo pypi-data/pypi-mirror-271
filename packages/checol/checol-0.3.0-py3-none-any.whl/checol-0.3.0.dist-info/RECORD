@@ -1,0 +1,10 @@
+checol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+checol/__main__.py,sha256=Vdhw8YA1K3wPMlbJQYL5WqvRzAKVeZ16mZQFO9VRmCo,62
+checol/gpt.py,sha256=tVvVJebW9D4nhGHtfcassFo1Qh10bJ9MmxQrtRuNjks,863
+checol/main.py,sha256=HLA83kPt0kIwXCt-YZgSOJpawtz59DDBM790Hcz-Hm0,1895
+checol/vcs.py,sha256=8LfFmZVM1CSuzaxgfZ4a9vo7cJkksi8ghv3OJ9QJuT4,279
+checol-0.3.0.dist-info/METADATA,sha256=WBGr3MctB84kMkUq0z0LYkhWnhYk-gx1rO9dhMiLN5Q,1793
+checol-0.3.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+checol-0.3.0.dist-info/entry_points.txt,sha256=b9LdREjNBOan7GqfR1kEa0R25wnjAUEH4OyweeGneOE,44
+checol-0.3.0.dist-info/licenses/LICENSE,sha256=wY1DS4BaCrmzxu0cXN5YigW0sT1IG0a-8e8axn473tE,1083
+checol-0.3.0.dist-info/RECORD,,

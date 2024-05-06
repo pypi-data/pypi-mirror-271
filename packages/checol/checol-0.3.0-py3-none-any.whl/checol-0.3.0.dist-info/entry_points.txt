@@ -1,0 +1,2 @@
+[console_scripts]
+checol = checol.main:main

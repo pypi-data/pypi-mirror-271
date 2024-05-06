@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/thingking_machine/__init__.py
+src/thingking_machine/githf.py
+src/thingking_machine/machina.yaml
+src/thingking_machine.egg-info/PKG-INFO
+src/thingking_machine.egg-info/SOURCES.txt
+src/thingking_machine.egg-info/dependency_links.txt
+src/thingking_machine.egg-info/requires.txt
+src/thingking_machine.egg-info/top_level.txt

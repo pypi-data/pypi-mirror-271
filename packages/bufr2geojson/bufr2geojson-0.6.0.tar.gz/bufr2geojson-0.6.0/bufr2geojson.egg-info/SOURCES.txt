@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bufr2geojson/__init__.py
+bufr2geojson/cli.py
+bufr2geojson.egg-info/PKG-INFO
+bufr2geojson.egg-info/SOURCES.txt
+bufr2geojson.egg-info/dependency_links.txt
+bufr2geojson.egg-info/entry_points.txt
+bufr2geojson.egg-info/requires.txt
+bufr2geojson.egg-info/top_level.txt
+bufr2geojson/resources/schemas/wmo-om-profile-geojson.yaml

@@ -1,0 +1,3 @@
+[main]
+persistance_pair_extractor = pyperspairdiamorse.extract
+

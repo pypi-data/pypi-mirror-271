@@ -1,0 +1,2 @@
+[console_scripts]
+pgs3 = pgs3.cli:cli

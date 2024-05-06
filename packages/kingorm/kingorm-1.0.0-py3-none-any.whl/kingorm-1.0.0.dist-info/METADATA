@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: kingorm
+Version: 1.0.0
+Summary: King is an ORM for Python and SQLite. It is designed to be a lightweight solution for simple programs, where objects have to be stored. A programmer just needs to define fields in the model classes and that's it!
+Home-page: https://github.com/king-orm/orm/
+Author: Anatoly Frolov
+Author-email: contact@anafro.ru
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: SQL
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![The Anafro's Profile Page Banner](https://raw.githubusercontent.com/anafro/anafro/main/Banners/King-Main.svg "Press the right mouse button and click 'Copy link address' to copy the URL to my GitHub page")](https://github.com/anafro)
+
+# About King ORM
+
+> [!WARNING]
+> 
+> рџљ§ The King's README will be added as soon as the project requirements will be collected.
+> 
+> ![](https://media.giphy.com/media/8KWG2s3MR6SXbjccBO/giphy.gif?cid=790b7611z311xmbzoaosscemctsxdi7uzjc7lbyika34ufgd&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+> 

@@ -1,0 +1,10 @@
+kingorm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kingorm/__main__.py,sha256=AsCoA7f7KAfW9OQFdaLNPYTK2QXPvFNZJBvyRBa5Esc,117
+kingorm/migration.py,sha256=0l9tu14CI_CyeN-VFL60JWlqxWkEBshOWjiJNqzguEY,723
+kingorm/model.py,sha256=T13VgYeBgkoqH1pldbnGLNhM5yYR_cPggOO9t_nILN8,12189
+kingorm/strings.py,sha256=hti98nIeqS5iVVjkcYmKzz19HtAGqm4XGU0Q8h9B5VY,301
+kingorm-1.0.0.dist-info/LICENSE,sha256=nONwZAeM_ehyjiuFDvi7zOEW8s6gyVDIP5E9_ZEHy7Y,1086
+kingorm-1.0.0.dist-info/METADATA,sha256=HiKtbhCx28lGvRHwDwOpxy4DCdKWlA0KBJ84h4n80TE,1337
+kingorm-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kingorm-1.0.0.dist-info/top_level.txt,sha256=CU1LvgC2Pz4AS4QArMghZsd2OKnwmp6WuM3lK2b9Cr0,8
+kingorm-1.0.0.dist-info/RECORD,,

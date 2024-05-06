@@ -1,0 +1,11 @@
+tree_sitter_regex-0.21.0.dist-info/LICENSE,sha256=LgEQ4Hq-98JUiybsnWlpd1YXylOaDcjb7rFNZFLHEdE,1080
+tree_sitter_regex-0.21.0.dist-info/METADATA,sha256=PcoJIYWI5B-5_Wcad3fxHq8qraH4AZvq8WIgfe8dXV4,1725
+tree_sitter_regex-0.21.0.dist-info/RECORD,,
+tree_sitter_regex-0.21.0.dist-info/top_level.txt,sha256=HoBWnD3ya0sdHcXsSEZ0rok6sHlWSSLiWxWuKy_iigQ,27
+tree_sitter_regex-0.21.0.dist-info/WHEEL,sha256=SLuAR4EQHH0r-qGFhMuV9c2WCtm9CXjP4961KF3hTEM,111
+tree_sitter_regex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_regex/binding.c,sha256=vTFXc3ba6rrJXxEtDzAtX2eqr2kysVzUXrKpqvJ69O4,634
+tree_sitter_regex/_binding.abi3.so,sha256=avb_gW7KM390h5L0BH15JHp8aovYARA8Dm4LWEcKG9M,57472
+tree_sitter_regex/__init__.py,sha256=5vjyfYHT2OrKXxImh9mnTQv_vrToYXoojjc3fs_tnKM,88
+tree_sitter_regex/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_regex/queries/highlights.scm,sha256=WTAGJ0nhjdcc_T-p5mKiIPHtq-DWmJCpDwrV7RRBm3s,591

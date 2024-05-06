@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytube = "*"
+rapidfuzz = "*"
+ytmusicapi = "*"
+python-slugify = "*"
+spotipy = "*"
+yt-dlp = "*"
+python-ffmpeg = "*"
+mutagen = "*"
+requests = "*"
+beautifulsoup4 = "*"
+
+[dev-packages]
+black = "*"
+build = "*"
+mkdocs-material = "*"
+mkdocs = "*"
+mkdocstrings = { extras = ["python"], version = "*" }
+mkdocs-gen-files = "*"
+mkdocs-awesome-pages-plugin = "*"
+
+[requires]
+python_version = "3.12"

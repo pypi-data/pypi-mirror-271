@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: ldc-doc
+Version: 0.0.1
+Summary: Python3 library that adds MS Word .doc support to the llm-dataset-converter library.
+Home-page: https://github.com/waikato-llm/ldc-doc
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Description: The **ldc-doc** library is an extension to **llm-dataset-converter**
+        with plugins for handling MS Word .doc files.
+        
+        It requires *antiword* to be installed on the system, which *textract*
+        uses internally for obtaining the text from .doc files.
+        
+        
+        Changelog
+        =========
+        
+        0.0.1 (????-??-??)
+        ------------------
+        
+        - initial release
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3

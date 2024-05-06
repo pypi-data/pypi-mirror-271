@@ -1,0 +1,13 @@
+translate_util/__init__.py,sha256=poqd0w9-6I71rHPcH1Pplq4fFuNCx5UzCLHkX0JoxQs,60
+translate_util/base_translate.py,sha256=vpmc8U6YJNnN9-YQktXb_XzhpjQxjSn2CpmlV4YgJGs,713
+translate_util/common_request.py,sha256=q-3Ea6dcV730oJSjaGq48fh2rHhcta1sUWTpD6Eqjb8,756
+translate_util/translate_baidu.py,sha256=AveZYwSYQAkGJttbci-lJWg9P-J60SgwO4HtBWKrTYc,5817
+translate_util/translate_google.py,sha256=eG2j7B5E5br_wZIVGw7IgB6MzCrxrZq5jaTTtnIxmSI,2937
+translate_util/translate_iciba.py,sha256=wXNcM7dv4iFf22WTu-0A5mSLlleLmb3TV8Ge3QU3Wu4,1608
+translate_util/translate_tool.py,sha256=Zt4lD7AU-fxEh1SrSMFL05qnOMCrWB_qhoCyw4Z16-Q,4178
+translate_util/translate_youdao.py,sha256=1EDS6DdblctMuSFZ6zBIWkZNTxTGS9P47NFCDmOloxM,1801
+translate_util-1.1.0.dist-info/LICENSE.rst,sha256=30IOXTFlSKrgSttPZB_MZfF_8SOooMmMR8opZ-Hn0TQ,1068
+translate_util-1.1.0.dist-info/METADATA,sha256=89LpYtP7IzOxr2OEODkivcNRUIOSwjcgjwQeYJGbg88,1646
+translate_util-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+translate_util-1.1.0.dist-info/top_level.txt,sha256=8KYMN812MNbj7mXQFHHadD_-SxcgXyB9Pb9EHr27qEY,15
+translate_util-1.1.0.dist-info/RECORD,,

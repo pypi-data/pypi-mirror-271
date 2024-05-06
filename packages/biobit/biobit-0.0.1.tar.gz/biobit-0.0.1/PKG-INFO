@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: biobit
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: attrs >=23.2.0, <24
+Requires-Dist: cattrs[pyyaml] >=23.2.3, <24
+Requires-Dist: pysam >=0.21.0, <1
+Requires-Dist: intervaltree >=3.1.0, <4
+Requires-Dist: pybedtools >=0.9.1, <1
+Requires-Dist: sortedcontainers >=2.4.0, <3
+Requires-Dist: pandas >=2.0.0, <3
+Requires-Dist: joblib >=1.2.0, <2
+Requires-Dist: sortedcontainers-stubs >=2.4.2, <2.4.3 ; extra == 'dev'
+Requires-Dist: pandas-stubs >=2.1.4, <2.1.5 ; extra == 'dev'
+Requires-Dist: mypy >=1.9.0, <2.0.0 ; extra == 'dev'
+Requires-Dist: pytest >=8.1.1, <8.1.2 ; extra == 'dev'
+Requires-Dist: ruff >=0.3.5, <0.3.6 ; extra == 'dev'
+Provides-Extra: dev
+Summary: Rust-powered Python library for biological data analysis
+Home-Page: https://github.com/terabio
+Author: Aleksandr Fedorov
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/terabio
+
+

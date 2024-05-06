@@ -1,0 +1,317 @@
+%!/usr/bin/env bash
+% This file is part of python-none-objects library.
+%
+% python-none-objects is free software:
+% you can redistribute it and/or modify it under the terms
+% of the GNU Lesser General Public License
+% as published by the Free Software Foundation,
+% either version 3 of the License,
+% or (at your option) any later version.
+%
+% python-none-objects is distributed in the hope
+% that it will be useful,
+% but WITHOUT ANY WARRANTY;
+% without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+% See the GNU Lesser General Public License for more details.
+%
+% You should have received a copy of
+% the GNU Lesser General Public License
+% along with python-none-objects.
+% If not, see <https://www.gnu.org/licenses/>.
+%
+% ©Copyright 2023-2024 Laurent Lyaudet
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{subfigure}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[pdftex]{hyperref}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage[round]{natbib}
+\usepackage{fancyhdr}
+\usepackage{amsfonts}
+\usepackage{times}
+\usepackage{ifpdf}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{pmboxdraw}
+\usepackage{fancyvrb}
+
+% *** les environnements ***
+%\theoremstyle{break}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{openproblem}[definition]{Open problem}
+
+\begin{document}
+
+\author{
+  Laurent Lyaudet\\
+  \url{https://lyaudet.eu/laurent/}\\
+  laurent.lyaudet@gmail.com
+}
+\title{python-none-objects}
+
+\maketitle
+\begin{abstract}
+A collection of "None" objects
+compatible with various Python types
+\end{abstract}
+
+Current version: 2024-05-06
+
+Current number of commits: 35
+
+Current git SHA1: a6e1c03e16282891adccf4a0879af0a6a083029c
+
+Code lines: 1710 total lines, 1448 not empty lines, 262 empty lines.
+
+\section{Files tree}
+\label{section:tree}
+
+\begin{verbatim}
+.
+├── build_and_checks.sh
+├── COPYING
+├── COPYING.LESSER
+├── dist
+│   ├── python_none_objects-1.0.0-py3-none-any.whl
+│   ├── python_none_objects-1.0.0.tar.gz
+│   ├── python_none_objects-1.0.1-py3-none-any.whl
+│   ├── python_none_objects-1.0.1.tar.gz
+│   ├── python_none_objects-1.1.0-py3-none-any.whl
+│   ├── python_none_objects-1.1.0.tar.gz
+│   ├── python_none_objects-1.1.10-py3-none-any.whl
+│   ├── python_none_objects-1.1.10.tar.gz
+│   ├── python_none_objects-1.1.1-py3-none-any.whl
+│   ├── python_none_objects-1.1.1.tar.gz
+│   ├── python_none_objects-1.1.2-py3-none-any.whl
+│   ├── python_none_objects-1.1.2.tar.gz
+│   ├── python_none_objects-1.1.3-py3-none-any.whl
+│   ├── python_none_objects-1.1.3.tar.gz
+│   ├── python_none_objects-1.1.4-py3-none-any.whl
+│   ├── python_none_objects-1.1.4.tar.gz
+│   ├── python_none_objects-1.1.5-py3-none-any.whl
+│   ├── python_none_objects-1.1.5.tar.gz
+│   ├── python_none_objects-1.1.6-py3-none-any.whl
+│   ├── python_none_objects-1.1.6.tar.gz
+│   ├── python_none_objects-1.1.7-py3-none-any.whl
+│   ├── python_none_objects-1.1.7.tar.gz
+│   ├── python_none_objects-1.1.8-py3-none-any.whl
+│   ├── python_none_objects-1.1.8.tar.gz
+│   ├── python_none_objects-1.1.9-py3-none-any.whl
+│   └── python_none_objects-1.1.9.tar.gz
+├── .gitignore
+├── latex
+│   ├── python-none-objects.tex
+│   └── python-none-objects.tex.tpl
+├── pyproject.toml
+├── python-none-objects.pdf
+├── README.md
+├── README.md.tpl
+├── src
+│   └── python_none_objects
+│       ├── __init__.py
+│       └── py.typed
+├── typing_test
+│   └── __init__.py
+└── wget_sha512.sh
+
+6 directories, 40 files
+\end{verbatim}
+
+\begin{verbatim}
+[4.0K May  6 04:00]  ./
+├── [1.6K May  6 03:55]  build_and_checks.sh*
+├── [ 34K May  2  2018]  COPYING
+├── [7.5K Jul 24  2018]  COPYING.LESSER
+├── [4.0K May  6 03:40]  dist/
+│   ├── [ 20K Nov 10 15:35]
+│   │ python_none_objects-1.0.0-py3-none-any.whl
+│   ├── [ 16K Nov 10 15:35]  python_none_objects-1.0.0.tar.gz
+│   ├── [ 20K Nov 11 19:04]
+│   │ python_none_objects-1.0.1-py3-none-any.whl
+│   ├── [ 17K Nov 11 19:04]  python_none_objects-1.0.1.tar.gz
+│   ├── [ 20K Dec 30 21:39]
+│   │ python_none_objects-1.1.0-py3-none-any.whl
+│   ├── [ 17K Dec 30 21:39]  python_none_objects-1.1.0.tar.gz
+│   ├── [ 21K May  4 03:00]
+│   │ python_none_objects-1.1.10-py3-none-any.whl
+│   ├── [ 20K May  4 03:00]  python_none_objects-1.1.10.tar.gz
+│   ├── [ 21K Dec 30 22:09]
+│   │ python_none_objects-1.1.1-py3-none-any.whl
+│   ├── [ 17K Dec 30 22:09]  python_none_objects-1.1.1.tar.gz
+│   ├── [ 21K Mar 20 01:19]
+│   │ python_none_objects-1.1.2-py3-none-any.whl
+│   ├── [ 18K Mar 20 01:19]  python_none_objects-1.1.2.tar.gz
+│   ├── [ 21K Mar 20 01:22]
+│   │ python_none_objects-1.1.3-py3-none-any.whl
+│   ├── [ 18K Mar 20 01:22]  python_none_objects-1.1.3.tar.gz
+│   ├── [ 21K Mar 20 02:46]
+│   │ python_none_objects-1.1.4-py3-none-any.whl
+│   ├── [ 18K Mar 20 02:46]  python_none_objects-1.1.4.tar.gz
+│   ├── [ 21K Mar 21 20:36]
+│   │ python_none_objects-1.1.5-py3-none-any.whl
+│   ├── [ 18K Mar 21 20:36]  python_none_objects-1.1.5.tar.gz
+│   ├── [ 21K May  2 00:32]
+│   │ python_none_objects-1.1.6-py3-none-any.whl
+│   ├── [ 20K May  2 00:32]  python_none_objects-1.1.6.tar.gz
+│   ├── [ 21K May  2 00:34]
+│   │ python_none_objects-1.1.7-py3-none-any.whl
+│   ├── [ 21K May  2 00:34]  python_none_objects-1.1.7.tar.gz
+│   ├── [ 21K May  3 03:52]
+│   │ python_none_objects-1.1.8-py3-none-any.whl
+│   ├── [ 21K May  3 03:52]  python_none_objects-1.1.8.tar.gz
+│   ├── [ 21K May  3 04:11]
+│   │ python_none_objects-1.1.9-py3-none-any.whl
+│   └── [ 21K May  3 04:11]  python_none_objects-1.1.9.tar.gz
+├── [  31 May  4 02:58]  .gitignore
+├── [4.0K May  6 04:00]  latex/
+│   ├── [3.8K May  6 04:00]  python-none-objects.tex
+│   └── [3.8K May  5 13:32]  python-none-objects.tex.tpl
+├── [1.3K May  6 03:58]  pyproject.toml
+├── [ 76K May  6 03:58]  python-none-objects.pdf
+├── [4.6K May  6 04:00]  README.md
+├── [4.7K Apr 28 21:25]  README.md.tpl
+├── [4.0K Nov 10 15:03]  src/
+│   └── [4.0K May  6 04:00]  python_none_objects/
+│       ├── [1.8K May  6 04:00]  __init__.py
+│       └── [   0 Jul 15  2020]  py.typed
+├── [4.0K May  6 04:00]  typing_test/
+│   └── [1.7K May  6 04:00]  __init__.py
+└── [1.1K May  4 02:54]  wget_sha512.sh
+
+6 directories, 40 files
+\end{verbatim}
+
+\section{Listing of files}
+\label{section:listing}
+
+The following source code is covered by LGPLv3+.
+The text of the license is available at:
+\url{https://www.gnu.org/licenses/}.
+The git repository of this source code is also available at:
+\url{https://github.com/LLyaudet/python-none-objects/}.
+
+
+\subsection{
+  build\_and\_checks.sh
+}
+\label{
+  build_and_checkssh
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  build_and_checks.sh
+}
+
+
+\subsection{
+  .gitignore
+}
+\label{
+  gitignore
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  .gitignore
+}
+
+
+\subsection{
+  latex/python-none-objects.tex.tpl
+}
+\label{
+  latex:python-none-objectstextpl
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  latex/python-none-objects.tex.tpl
+}
+
+
+\subsection{
+  pyproject.toml
+}
+\label{
+  pyprojecttoml
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  pyproject.toml
+}
+
+
+\subsection{
+  README.md.tpl
+}
+\label{
+  READMEmdtpl
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  README.md.tpl
+}
+
+
+\subsection{
+  src/python\_none\_objects/\_\_init\_\_.py
+}
+\label{
+  src:python_none_objects:__init__py
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  src/python_none_objects/__init__.py
+}
+
+
+\subsection{
+  src/python\_none\_objects/py.typed
+}
+\label{
+  src:python_none_objects:pytyped
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  src/python_none_objects/py.typed
+}
+
+
+\subsection{
+  typing\_test/\_\_init\_\_.py
+}
+\label{
+  typing_test:__init__py
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  typing_test/__init__.py
+}
+
+
+\subsection{
+  wget\_sha512.sh
+}
+\label{
+  wget_sha512sh
+}
+
+\VerbatimInput[numbers=left,xleftmargin=-5mm]{
+  wget_sha512.sh
+}
+
+
+Merci Dieu ! Merci P\`ere ! Merci Seigneur ! Merci Saint Esprit !
+
+\end{document}

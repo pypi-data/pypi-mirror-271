@@ -1,0 +1,16 @@
+pyretailscience/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyretailscience/customer.py,sha256=okmLnPtZVYqiLMICsJk6rDTPu_xN_4n8LYUxojMrIzA,15090
+pyretailscience/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyretailscience/data/cli.py,sha256=bIB2qaQ7h8qd2PY1yd7E56jQkNuY9I0y8IF8fgB_kHg,1165
+pyretailscience/data/contracts.py,sha256=yoiHX18VsKaHBuNeXUlgZYn8psRrwIKXbyELuHTd8m8,17162
+pyretailscience/data/simulation.py,sha256=JF3pqqyIsMdGe8JLJCnSo0FCYz9515nd3MDcLpV_wq4,16021
+pyretailscience/range_planning.py,sha256=bWBKoNSEnFezdpnri5dmCRQng9g6zWqQL3Bc-t9Xa1o,12898
+pyretailscience/segmentation.py,sha256=jY8RSHj_2Sg4BFOsn2iRQk9ZocyAOWsx7szMfEFnZ04,9192
+pyretailscience/standard_graphs.py,sha256=PcahhRYhD9jXoUMKbenhFsQz0EgQkvxclBwgfvTdEtA,3528
+pyretailscience/style/graph_utils.py,sha256=Vjq9y4nvs7LE1jlrogmoGeP3V7Qol4Zr-ipMBkqCzzM,2488
+pyretailscience/style/tailwind.py,sha256=Z-6JD9giGzNMDHXi4GgYpYAAxYI58xRDtQVGuBr_wro,9316
+pyretailscience-0.3.1.dist-info/LICENSE,sha256=SCVQGLQfwOllsRFa9-Z3m8IYu4pnR9Vh2oANUCJiKqI,3860
+pyretailscience-0.3.1.dist-info/METADATA,sha256=qRTJa6IeIMDvxDpgeiY5cxDsZwN_81-NTF9OZyL5ajA,3707
+pyretailscience-0.3.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyretailscience-0.3.1.dist-info/entry_points.txt,sha256=VJFsbNuCLiNNiOxZ_JYZ_4ZerEQ5rRTpc5jfvkh8Fys,69
+pyretailscience-0.3.1.dist-info/RECORD,,

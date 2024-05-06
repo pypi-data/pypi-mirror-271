@@ -1,0 +1,9 @@
+setup.py
+atitpackage.egg-info/PKG-INFO
+atitpackage.egg-info/SOURCES.txt
+atitpackage.egg-info/dependency_links.txt
+atitpackage.egg-info/top_level.txt
+my_package/__init__.py
+my_package/mymodule.py
+tests/__init__.py
+tests/test_module.py

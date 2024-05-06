@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: unnecessary-abstraction
+Version: 1.0.1
+Summary: For smooth brains who don't SQL good.
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Description-Content-Type: text/markdown
+
+

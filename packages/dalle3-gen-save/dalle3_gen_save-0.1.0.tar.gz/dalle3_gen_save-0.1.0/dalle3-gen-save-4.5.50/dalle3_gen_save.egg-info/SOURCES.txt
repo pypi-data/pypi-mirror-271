@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+dalle3_gen_save.py
+requirements.txt
+setup.py
+dalle3_gen_save.egg-info/PKG-INFO
+dalle3_gen_save.egg-info/SOURCES.txt
+dalle3_gen_save.egg-info/dependency_links.txt
+dalle3_gen_save.egg-info/entry_points.txt
+dalle3_gen_save.egg-info/requires.txt
+dalle3_gen_save.egg-info/top_level.txt

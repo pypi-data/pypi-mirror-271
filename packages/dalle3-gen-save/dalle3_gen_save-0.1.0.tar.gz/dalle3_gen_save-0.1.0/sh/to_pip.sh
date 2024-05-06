@@ -1,0 +1,1 @@
+python -m to_pip -n dalle3-gen-save -v 4.5.50 -e requirements.txt -r README.md dalle3_gen_save.py

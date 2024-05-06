@@ -1,0 +1,6 @@
+{% load allauth %}
+
+<strong class="text-{% if "success" in attrs.tags %}success{% elif "warning" in attrs.tags %}danger{% endif %}">
+    {% slot %}
+    {% endslot %}
+</strong>

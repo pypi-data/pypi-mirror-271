@@ -1,0 +1,10 @@
+{% extends "allauth/layouts/base.html" %}
+{% load i18n %}
+
+{% block body %}
+  <main class="mx-auto d-flex align-items-center">
+    <div class="bg-white p-5 rounded-3 shadow">
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+{% endblock %}

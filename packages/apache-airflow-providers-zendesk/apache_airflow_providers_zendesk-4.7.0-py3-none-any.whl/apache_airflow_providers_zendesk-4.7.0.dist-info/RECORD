@@ -1,0 +1,9 @@
+airflow/providers/zendesk/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/zendesk/__init__.py,sha256=_tpsGYolyjzBLfMedn5EnvQy-wdh-aFIHGwsuNCZSCE,1582
+airflow/providers/zendesk/get_provider_info.py,sha256=XrOvKdEAV4N6GdmKd6DZkyohZs16QzNSYVEVwWojbL8,2418
+airflow/providers/zendesk/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/zendesk/hooks/zendesk.py,sha256=qU_WFbZ6HpDE515Q7kERxojmTfKROyBOd1DYn8gf6ew,4844
+apache_airflow_providers_zendesk-4.7.0.dist-info/entry_points.txt,sha256=g-reNvSxl2TqOKMKUrK2cuRy9cpsNLeHfmGh5w0nVCg,103
+apache_airflow_providers_zendesk-4.7.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_zendesk-4.7.0.dist-info/METADATA,sha256=0hj-Dh5mBTQ00zUuFuMtJMToaJXRcyYklHgW-jtUVP8,4745
+apache_airflow_providers_zendesk-4.7.0.dist-info/RECORD,,

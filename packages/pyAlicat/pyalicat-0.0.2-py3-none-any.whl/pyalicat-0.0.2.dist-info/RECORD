@@ -1,0 +1,11 @@
+pyalicat/__init__.py,sha256=SMhoGE-4LYJBALaer-kZhbRTYTJWFuRrSS--aC_yN0I,491
+pyalicat/codes.json,sha256=21k0qXG2mqTebGIdqK--qyAD39AWByM8Gna6wEv4FlA,16371
+pyalicat/comm.py,sha256=ztS-pAYBEJ8_js0GRXiBnTGJ0WlS8LGg8UPb3Hm3vIQ,7708
+pyalicat/daq.py,sha256=HWKx4ifae82NbYt-v8xkfkFzoRzEpJ59W7UW4HUsWY8,4346
+pyalicat/device.py,sha256=KxvV3sq9NnoyitI0YbXI5FCtnhYdMA3BjIPJIM9Umb8,65629
+pyalicat/example.py,sha256=TEJBHWUS8CrW3hl5WWrvlkmtHaQypmrZDD1N5sNnAxk,740
+pyalicat/util.py,sha256=G82y_bsMjfClT-Ky0Vi5nxO75km1mJxnCdIz8czMZrA,2782
+pyalicat-0.0.2.dist-info/LICENSE,sha256=RrU-bWElTCtRsZg4kUczGhcG3tOg_N3GmSm1j_Y1pW8,1090
+pyalicat-0.0.2.dist-info/METADATA,sha256=t_GVq4SNoIDjaC8bIGoWx8ADE4GCpTqJKFEOFrACq7o,7574
+pyalicat-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyalicat-0.0.2.dist-info/RECORD,,

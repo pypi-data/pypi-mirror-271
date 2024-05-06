@@ -1,0 +1,10 @@
+manage_requirements_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+manage_requirements_files/cli.py,sha256=YLuExGPiHZoW5ejPQ4k0kgImXIJpr0MajZeoVuioFSA,2033
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=AtZfgLCx05C0iFhiFRE7JNQ-8d6KE_SD_QWMQRVoefc,7338
+manage_requirements_files-0.1.1.dist-info/LICENSE,sha256=46dVMQ30FQHnNOeoF5dKHtt1N_-WsYngOtd1XtAABUo,1070
+manage_requirements_files-0.1.1.dist-info/METADATA,sha256=TIQwq1YxGM1CTfkzxMM41u1-qTTveMRYj-hEzNiRbyc,3270
+manage_requirements_files-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+manage_requirements_files-0.1.1.dist-info/entry_points.txt,sha256=9pma9v-_ecGBNvP6-ZoRCswf0wzj_qlFLQPro7qOoHY,76
+manage_requirements_files-0.1.1.dist-info/top_level.txt,sha256=6kfqsumG1O9cEMnfkoIuCPA7oSX7SKot7cI0IJUfSno,32
+manage_requirements_files-0.1.1.dist-info/RECORD,,

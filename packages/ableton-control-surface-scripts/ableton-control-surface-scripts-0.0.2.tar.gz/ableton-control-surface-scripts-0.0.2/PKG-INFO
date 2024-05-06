@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ableton-control-surface-scripts
+Version: 0.0.2
+Summary: Decompiled control surface scripts from Ableton Live's Python API to help with reverse engineering and how other well known interfaces work.
+Author-email: Martin Sahlen <martin8900@gmail.com>
+Project-URL: Homepage, https://github.com/oslo1989/ableton-control-surface-toolkit
+Project-URL: Issues, https://github.com/oslo1989/ableton-control-surface-toolkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Requires-Python: >=3.7

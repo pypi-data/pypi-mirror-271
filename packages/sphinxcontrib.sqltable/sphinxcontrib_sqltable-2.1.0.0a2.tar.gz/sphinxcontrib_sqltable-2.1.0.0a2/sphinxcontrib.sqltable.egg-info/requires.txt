@@ -1,0 +1,13 @@
+Sphinx>=2.0.0
+SQLAlchemy>=2.0
+
+[build]
+build
+twine
+
+[linter]
+flake8
+
+[test]
+pytest
+beautifulsoup4

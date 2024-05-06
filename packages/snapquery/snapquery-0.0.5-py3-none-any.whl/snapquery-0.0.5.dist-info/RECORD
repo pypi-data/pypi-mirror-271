@@ -1,0 +1,15 @@
+snapquery/__init__.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+snapquery/mwlogin.py,sha256=EsaUUuxd9SMyLR2it_WUvfAt4F9Hdz7Rk1rgiyTRF3k,1587
+snapquery/qimport.py,sha256=XY9n-kwe2XnhVnL6zehClY_A11PyDWE5ibPYYb4LVnQ,2738
+snapquery/qimport_view.py,sha256=z3zwxx6Mu0s8HaJ22zzy4OpTTsS1l3W8OC6gSY1HVgM,2821
+snapquery/scholia.py,sha256=IEnzf4e_1CjBW7Hl4Hy9nFFOEfaB65ydGczG2Rv3z4s,1751
+snapquery/snapquery_cmd.py,sha256=1bxiHYLXYS4BcdMaS3m2ePH-6IYLf4DQk3ogxReV11w,4158
+snapquery/snapquery_core.py,sha256=ANHDqEtcNHBG_MXGZ92CeeH-9L9U29o1YVoQDC8oYlI,21153
+snapquery/snapquery_view.py,sha256=u68dd2hE1IW4vRwMQKWwSxfYEsvLviLw53NytqC14I0,6575
+snapquery/snapquery_webserver.py,sha256=ac_p7zBewzwd1RR9V_RpQcPT2AAv9jUhIsbMATNXgzU,9132
+snapquery/version.py,sha256=vYlJd-QOf5GtDnLtzeD9r3fU6UCpL6OFgf2t02Ao9-g,981
+snapquery-0.0.5.dist-info/METADATA,sha256=-Pxqs9LogQA1eZus1I7WAnvJKrbiM94bcqfMtlCwdhk,10004
+snapquery-0.0.5.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+snapquery-0.0.5.dist-info/entry_points.txt,sha256=vbjJuvNenfG5-1DdbNOXkAw5yesA7szx0a137H5KT80,59
+snapquery-0.0.5.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+snapquery-0.0.5.dist-info/RECORD,,

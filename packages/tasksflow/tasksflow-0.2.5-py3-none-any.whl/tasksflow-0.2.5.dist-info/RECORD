@@ -1,0 +1,10 @@
+tasksflow/__init__.py,sha256=OmvE1gtJ5ZAKOzjoW70mGl34eGoMqPwWhLn7p93Y4g4,55
+tasksflow/cache.py,sha256=EC3tChevSqYJRAffjCLtia_FZ-9Q9FP4L3hupddl1gk,5186
+tasksflow/common.py,sha256=noXxWoMaRRSqQHmC8a5VVevbAfvxu5Rd3dMD3YQbvo8,79
+tasksflow/executer.py,sha256=tVNMi7GOqtbWNlIMS2ofH2J0xU8hS9qRb-__uYoNPP8,7288
+tasksflow/pool.py,sha256=mm8_Qzpq9mi3xcELkNcUKutLTlnET8An5mi2r9gIcrg,1461
+tasksflow/task.py,sha256=Pxs5cuiMGbzyrTBD_nP8_hVIUIo4GwT1Z3_RTecdeQE,1427
+tasksflow-0.2.5.dist-info/METADATA,sha256=myrIpPHB_Y2yMc9V_hdfqCQMVQ-tSkd1DoM8u8Le6Dg,4650
+tasksflow-0.2.5.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+tasksflow-0.2.5.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+tasksflow-0.2.5.dist-info/RECORD,,

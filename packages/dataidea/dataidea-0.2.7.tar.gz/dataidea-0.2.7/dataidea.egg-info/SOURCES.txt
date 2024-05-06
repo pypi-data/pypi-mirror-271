@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+dataidea/__init__.py
+dataidea/_modidx.py
+dataidea/core.py
+dataidea/datasets.py
+dataidea/packages.py
+dataidea.egg-info/PKG-INFO
+dataidea.egg-info/SOURCES.txt
+dataidea.egg-info/dependency_links.txt
+dataidea.egg-info/entry_points.txt
+dataidea.egg-info/not-zip-safe
+dataidea.egg-info/requires.txt
+dataidea.egg-info/top_level.txt

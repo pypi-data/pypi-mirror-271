@@ -1,0 +1,10 @@
+
+[docs]
+sphinx
+sphinx-copybutton
+sphinx-design
+furo
+
+[tests]
+pytest
+pytest-cov

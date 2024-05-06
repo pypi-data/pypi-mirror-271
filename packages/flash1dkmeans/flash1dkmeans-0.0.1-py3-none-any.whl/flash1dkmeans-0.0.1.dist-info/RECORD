@@ -1,0 +1,10 @@
+flash1dkmeans/__init__.py,sha256=6tJz85chEMKNU3epnPJLxsxyO0huXrnJqCGU3qRdUlE,28
+flash1dkmeans/config.py,sha256=jCGWED26FWxhDtss3TOcn4Jl0AJ1hAZAMIhMHY6H4kk,189
+flash1dkmeans/k_cluster.py,sha256=WY16GQ2iPZkVL3RPS80y1lzrwGmwdYYS9b_uakTavCc,13940
+flash1dkmeans/main.py,sha256=wcq7P-ASS6PmL_cQNcW57mMbEd1ww4AvD8j33WvQirY,12325
+flash1dkmeans/two_cluster.py,sha256=7yMl0DxjzVcmh2_tSJcNigyceq-MqXel76dRCeY7zg4,7119
+flash1dkmeans/utils.py,sha256=awQlNNN7GRQsG4s2H03WcMObH4aCAH6xT36wGSS0G3o,1179
+flash1dkmeans-0.0.1.dist-info/METADATA,sha256=lN-J-4YS7g2XYWqxf10EhPb8elGJAVW00k9Nm2hSeBQ,4076
+flash1dkmeans-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+flash1dkmeans-0.0.1.dist-info/licenses/LICENSE,sha256=4fb3Ics16RwglL3QyYyQvyIkTdTOJ825dCytbUqaDu0,1066
+flash1dkmeans-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mailhog"
+version = "0.1.1"
+description = "A python client for the Mailhog API"
+keywords = ["mailhog", "client", "wrapper", "api"]
+authors = ["nklsw"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/nklsw/mailhog-python"
+repository = "https://github.com/nklsw/mailhog-python"
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+requests = "^2.28.1"
+dataclass-wizard = "^0.22.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+flake8 = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

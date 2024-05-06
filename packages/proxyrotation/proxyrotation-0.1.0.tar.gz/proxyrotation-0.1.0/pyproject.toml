@@ -1,0 +1,55 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "proxyrotation"
+version = "0.1.0"
+description = "automatic free proxy rotation"
+authors = ["Federico Minutoli <fede97.minutoli@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["proxy-rotation", "web-scraping", "anonymity"]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+aiohttp = { version = "~3.9", optional = true }
+aiostream = { version = "~0.5", optional = true }
+beautifulsoup4 = "~4.12"
+more-itertools = "~10.2"
+requests = "~2.31"
+uvloop = { version = "~0.19", markers = "sys_platform != 'win32'" }
+
+[tool.poetry.extras]
+async = ["aiohttp", "aiostream"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2"
+pytest-asyncio = "^0.23"
+pytest-cov = "^5.0"
+pytest-mock = "^3.14"
+
+[tool.black]
+include = ".pyi?$"
+exclude = """
+/(
+    .git
+    | .hg
+    | .mypy_cache
+    | .tox
+    | .venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+"""
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+include_trailing_comma = true
+lines_after_imports = 2
+multi_line_output = 3
+profile = "black"
+py_version = 310

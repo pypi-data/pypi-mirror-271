@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: fastapi-openid-google
+Version: 0.0.1.dev2
+Summary: Google OpenID integration for FastAPI
+Home-page: https://svaponi.github.io/fastapi_openid_google
+License: MIT
+Author: svaponi
+Author-email: 10941963+svaponi@users.noreply.github.com
+Requires-Python: >=3.8,<3.13
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.111.0,<0.112.0)
+Requires-Dist: oauthlib (>=3.2.2,<4.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/svaponi/fastapi_openid_google
+Description-Content-Type: text/markdown
+
+# fastapi-openid-google
+
+Google OpenID integration for FastAPI.
+
+## Usage
+
+```python
+import fastapi
+
+from fastapi_openid_google import setup_openid
+
+app = fastapi.FastAPI()
+setup_openid(app)
+
+
+@app.get("/")
+def home(
+    request: fastapi.Request,
+):
+    if request.state.user:
+        return {
+            "current_user": request.state.user,
+            "logout": f"/logout",
+        }
+    else:
+        return {"login": f"/login"}
+```
+

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: a5
+Version: 0.0.4
+Summary: a5
+Author: Aapeli
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Requires-Dist: boto3
+Requires-Dist: gunicorn
+Requires-Dist: pico-acme
+Requires-Dist: pynacl

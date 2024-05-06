@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bert-local
+Version: 0.0.11
+Summary: PyPI Package for Circles Local Google Bert Python
+Home-page: https://github.com/circles
+Author: Circlez
+Author-email: info@circles.zone
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: mysql-connector >=2.2.9
+Requires-Dist: python-dotenv >=1.0.0
+Requires-Dist: pymysql >=1.1.0
+Requires-Dist: logzio-python-handler >=4.1.1
+Requires-Dist: pytest >=7.4.3
+Requires-Dist: logger-local >=0.0.71
+Requires-Dist: transformers >=4.35.0
+Requires-Dist: torch >=2.3.0
+Requires-Dist: numpy >=1.26.1
+Requires-Dist: pandas >=2.1.2
+
+This is a package for sharing Google Bert functions i.e. for Job Title

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+context_cite/__init__.py
+context_cite/context_citer.py
+context_cite/context_partitioner.py
+context_cite/solver.py
+context_cite/utils.py
+context_cite.egg-info/PKG-INFO
+context_cite.egg-info/SOURCES.txt
+context_cite.egg-info/dependency_links.txt
+context_cite.egg-info/requires.txt
+context_cite.egg-info/top_level.txt
+tests/test_class.py

@@ -1,0 +1,12 @@
+numpy
+torch
+transformers
+datasets
+pandas
+nltk
+spacy
+scikit-learn
+tqdm
+
+[test]
+pytest

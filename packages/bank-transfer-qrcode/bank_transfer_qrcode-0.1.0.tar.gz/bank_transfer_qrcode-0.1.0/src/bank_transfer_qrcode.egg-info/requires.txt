@@ -1,0 +1,9 @@
+segno>=1.6.1
+
+[build]
+build
+twine
+
+[dev]
+bumpver
+pytest

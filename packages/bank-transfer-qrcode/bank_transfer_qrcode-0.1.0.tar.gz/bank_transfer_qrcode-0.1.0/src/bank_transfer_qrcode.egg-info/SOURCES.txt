@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/bank_transfer_qrcode/__init__.py
+src/bank_transfer_qrcode/bank_transfer_qr.py
+src/bank_transfer_qrcode/exceptions.py
+src/bank_transfer_qrcode/field_definitions.py
+src/bank_transfer_qrcode.egg-info/PKG-INFO
+src/bank_transfer_qrcode.egg-info/SOURCES.txt
+src/bank_transfer_qrcode.egg-info/dependency_links.txt
+src/bank_transfer_qrcode.egg-info/requires.txt
+src/bank_transfer_qrcode.egg-info/top_level.txt
+tests/test_bank_transfer_qr.py

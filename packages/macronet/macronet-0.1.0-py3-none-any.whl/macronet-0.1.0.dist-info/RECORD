@@ -1,0 +1,11 @@
+macronet/__init__.py,sha256=3awYQbB9lAoZhZN6Y-UyGRirAIazCabRjRYu1Xfo6rc,303
+macronet/_monet.py,sha256=QMfGU5qxzYVybLPNS43_LSXilKtfNRc5vlERKMNTBgE,10156
+macronet/base.py,sha256=3d99mTstz1jCj6dflDh2Ywiy4Ilt_bmveLj3qa7wbz4,7524
+macronet/defdef.py,sha256=bkahDFPaq7R9LU1mInMoyGLUoF63L5uMOhjzgaiYEKo,15297
+macronet/example.py,sha256=spw4-srcVYvmvDE4BEFwKAZ4LzQIPpqMkllvLtAbOq0,3838
+macronet/flowfunc.py,sha256=uoeZztdflxhKx9FDfR_9sEvqGO41_5mx2kV6QSsMRSk,15814
+macronet/torch_ddf.py,sha256=NxgJSxcLApRZ6DGi09SetYrYDg2QUsrABbkHSodh6OM,4649
+macronet-0.1.0.dist-info/METADATA,sha256=Fb-EZqlf9JTBGxOTNCw6Yq59j3II1dvSr5K6gZiJQTA,18457
+macronet-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+macronet-0.1.0.dist-info/top_level.txt,sha256=-HUrKVSu-YwtJeCfzfC42JZ_QtyGHCcncSNK8ckpGsg,9
+macronet-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,26 @@
+[console_scripts]
+az-brute-add-app-secret = aze.az_brute_add_app_secret:main
+az-brute-blob-containers = aze.az_brute_blob_containers:main
+az-brute-passwords = aze.az_brute_passwords:main
+az-brute-service-subdomains = aze.az_brute_service_subdomains:main
+az-brute-usernames = aze.az_brute_usernames:main
+az-download-blob = aze.az_download_blob:main
+az-download-deployment-template = aze.az_download_deployment_template:main
+az-get-login-info = aze.az_get_login_info:main
+az-get-tenant-domains = aze.az_get_tenant_domains:main
+az-get-tenant-id = aze.az_get_tenant_id:main
+az-inspect-token = aze.az_inspect_token:main
+az-list-administrative-unit-members = aze.az_list_administrative_unit_members:main
+az-list-administrative-unit-role-members = aze.az_list_administrative_unit_role_members:main
+az-list-blobs = aze.az_list_blobs:main
+az-list-role-assignment = aze.az_list_role_assignment:main
+az-list-sp-app-role-assignment = aze.az_list_sp_app_role_assignment:main
+az-list-subscriptions = aze.az_list_subscriptions:main
+az-list-user-memberof = aze.az_list_user_memberof:main
+az-list-vm-extensions = aze.az_list_vm_extensions:main
+az-list-vm-permissions = aze.az_list_vm_permissions:main
+az-login-with-token = aze.az_login_with_token:main
+az-search-token-in-cache = aze.az_search_token_in_cache:main
+az-show-ad-role = aze.az_show_ad_role:main
+az-show-administrative-unit = aze.az_show_administrative_unit:main
+az-whoami = aze.az_whoami:main

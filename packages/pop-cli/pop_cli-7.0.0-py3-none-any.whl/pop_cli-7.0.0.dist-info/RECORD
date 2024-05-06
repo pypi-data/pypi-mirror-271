@@ -1,0 +1,14 @@
+hub/__main__.py,sha256=azXRJnU-wRAnbHSMazudxAzan5AOdyd5efzsh9Lh1Go,1000
+pop_cli/config.yaml,sha256=6eH9kozik16Y_EJ72f9PDyZVqGvVB0STiVItkz1BBnE,1277
+pop_cli/plugin/cli.py,sha256=Lzvt-2hYyrm-dfGrcSVtOmnGwdR9J0_jCF8X_pNTEUw,4269
+pop_cli/plugin/completer.py,sha256=gz4dWoViqNendvVj1hYqBaDSsIACbt8HdtJB62Vn3Uc,5197
+pop_cli/plugin/config.py,sha256=t00PfGpWIihrEx4oGP43HUvzUwPANeYjcxSdurKdMxI,1261
+pop_cli/plugin/console.py,sha256=eoSDOi0dM_n4jA3PhnN0_U6ixdH5gI_A18QoQz4vgA4,2918
+pop_cli/plugin/init.py,sha256=TauzBzEnRFI6n7Kk1p9UGae3u27cas1ExKj4EUz5CLU,2436
+pop_cli/plugin/legacy.py,sha256=DnurjKd1H7nTJLGAVtO-CfZ5ld-DMsXpRAUtOS0ziLQ,1756
+pop_cli/plugin/ref.py,sha256=TtAb7owTVumqjRvG7N2vm9k93qTPCKshBHrBgkFS334,1848
+pop_cli/plugin/state.py,sha256=qmLgqb7m-xOnxJwUizhK6A_8HHGd0SMPVBxvMjzYklo,2107
+pop_cli-7.0.0.dist-info/METADATA,sha256=vqDmuv4ZraFf7UQesX4SiJwR8gZFNBGwLEpyhGAJXQA,2520
+pop_cli-7.0.0.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+pop_cli-7.0.0.dist-info/entry_points.txt,sha256=c_1DYmxMa2n54qzpzDCSsVEZwJ5eZsDLl57xGer_xAI,42
+pop_cli-7.0.0.dist-info/RECORD,,

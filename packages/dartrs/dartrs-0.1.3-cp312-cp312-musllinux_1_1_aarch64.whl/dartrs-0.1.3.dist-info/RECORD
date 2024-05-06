@@ -1,0 +1,12 @@
+dartrs-0.1.3.dist-info/METADATA,sha256=KzlCC3H5gULBLGANjmRSAHPZT9DCtqWe6xELRf5CsKU,1720
+dartrs-0.1.3.dist-info/WHEEL,sha256=Ig0HM5AhsW2BPwbLRZXegC0mgHmAl5Zz7mXJ9fSx-V8,108
+dartrs-0.1.3.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dartrs.libs/libgcc_s-60abea67.so.1,sha256=5Ymeh-PwFBkI5B-deNMLyVYu2EYmgIu7iQGitm7d2t4,724137
+dartrs.libs/libstdc++-d4365bce.so.6,sha256=xvZYg836nm3txcBGNd1ET--dS8hK9jA6mKWZEFn9-0A,22442841
+dartrs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dartrs/__init__.py,sha256=rmO9vIz9FGK6hlyGP1AoHIyayaQdHd2taI2GqcMw3dY,108
+dartrs/utils.py,sha256=CVHkXMJ09iAEIBhMD7Eq9e2GzZqdmaQttlVofyQmhD4,749
+dartrs/v2.py,sha256=Fu_MJaFfX-rZhqJ6AjKGBsfmn-IvNjaQG9ydehBT3lE,3483
+dartrs/dartrs.pyi,sha256=KmrgZFJaJXN0W-fo3vSa-qdaF1I-IGWs9D-UCFv9raU,3930
+dartrs/dartrs.cpython-312-aarch64-linux-musl.so,sha256=mRap-LK9QjLm9DSU7YXbPNktWJrBORAsw4yAT9pwk4I,15470537
+dartrs-0.1.3.dist-info/RECORD,,

@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: data-encode-tool
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# data-encode-tool
+
+# useage
+```
+import data_encode_tool
+
+num = "01234567890123"
+data = data_encode_tool.encode_u40(num)
+ret = data_encode_tool.decode_u40(data)
+assert ret==num
+
+
+gene = "ATCG"
+data = data_encode_tool.encode_gene(gene)
+ret = data_encode_tool.decode_gene(data)
+assert ret==gene
+```
+
+## gene text encode
+基因文本包含4个元素 ATCG ，将4个基因编码到一个 bytes, 基因数据末尾不足4个元素的，添加一个bytes标记多余基因
+
+## number text encode 
+对数值文本进行编码， 包括 0，1，2，3，4，5，6，7，8，9，. 十一个文本，使用 u40 作为数值编码基础，u40 的范围是 0~1_099_511_627_775， 编码工具只使用前12位对数值进行编码，每次编码12位数值，超过12位的编码空间对小数点和不足12位的数值进行编码

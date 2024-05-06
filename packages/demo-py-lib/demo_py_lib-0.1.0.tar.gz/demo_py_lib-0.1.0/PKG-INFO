@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: demo-py-lib
+Version: 0.1.0
+Summary: A demo test lib
+Author: Luigi Corollo
+Author-email: corollo@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Demo-PY-Lib
+
+A demo package
+

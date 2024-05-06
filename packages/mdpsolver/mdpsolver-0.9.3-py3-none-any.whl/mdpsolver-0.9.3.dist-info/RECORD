@@ -1,0 +1,13 @@
+mdpsolver/__init__.py,sha256=XNNskfjRp98435Pz_-fPEY57g9pnJGRDLfn-tyPp0DE,33
+mdpsolver/model.py,sha256=QlkG68hYw5izG2aeYId_t0yyxB7qTrCxu1-bSJOYobU,4692
+mdpsolver/solvermodule.cp310-win_amd64.pyd,sha256=i1ztR45SNH9DzlZGK7oxTszL3G8pEL-vLUEmh3awGPw,243200
+mdpsolver/solvermodule.cp311-win_amd64.pyd,sha256=y5nKgu-a1UvDgQHS2fYkrlKJUAYccvxpyLS1-vaZhBw,245248
+mdpsolver/solvermodule.cp312-win_amd64.pyd,sha256=KVCSJWnYO1WxdCQcgHHj-EiifF-WPjZtl1k_L56N0sI,247808
+mdpsolver/solvermodule.cpython-310-x86_64-linux-gnu.so,sha256=DdZXRiYkBrL85rqOWlAVoVHUkkAVUKsVhLAJkbCWQsA,436592
+mdpsolver/problems/cbmaux.py,sha256=DYhjMnvBhef-jeVV7i9IYT_iDhbWgAOV1T3ecyAiECQ,1371
+mdpsolver/problems/tbmaux.py,sha256=qkZHL7nKGEHRir5vQEvi0zR8-J-kjTDrxHqmmD6XV-I,1366
+mdpsolver-0.9.3.dist-info/LICENSE,sha256=idR6MmkARrzA7Lxiz2TrylVqQRDM9VsWgz8KBX0PC6s,1106
+mdpsolver-0.9.3.dist-info/METADATA,sha256=BSPDyBE6NU6nC4e1fCeqY2xE_WmoNva4XIXy5mNwPqw,4247
+mdpsolver-0.9.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mdpsolver-0.9.3.dist-info/top_level.txt,sha256=oOQECrRiRerD3VsXTB2hQd1MV3y-waG9n_vAdanxIwM,10
+mdpsolver-0.9.3.dist-info/RECORD,,

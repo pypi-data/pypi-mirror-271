@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: beanhub-import
+Version: 0.0.6
+Summary: The simple library for import extracted transactions provided by beanhub-extract and generate corresponding Beancount transactions based on predefined rules
+License: MIT
+Author: Fang-Pen Lin
+Author-email: fangpen@launchplatform.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beancount-black (>=1.0.2,<2.0.0)
+Requires-Dist: beancount-parser (>=1.1.0,<2.0.0)
+Requires-Dist: beanhub-extract (>=0.0.5,<0.0.6)
+Requires-Dist: jinja2 (>=3.1.3,<4.0.0)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: pytz (>=2024.1,<2025.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+# beanhub-import
+The simple library for import extracted transactions provided by beanhub-extract and generate corresponding Beancount transactions based on predefined rules
+

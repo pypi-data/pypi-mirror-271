@@ -1,0 +1,15 @@
+tiktoken
+IPython
+graphviz
+openai
+pandas
+PyMuPDF
+pytesseract
+Pillow
+gensim
+nltk
+textblob
+scikit-learn
+pandasql
+spacy
+requests

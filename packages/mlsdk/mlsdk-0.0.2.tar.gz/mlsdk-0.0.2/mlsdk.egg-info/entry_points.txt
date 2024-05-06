@@ -1,0 +1,3 @@
+[console_scripts]
+mlsdk = mlsdk.__main__:main
+

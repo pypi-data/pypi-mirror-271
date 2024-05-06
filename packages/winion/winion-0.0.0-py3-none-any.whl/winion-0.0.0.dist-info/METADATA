@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: winion
+Version: 0.0.0
+Summary: A producer/consumer async runtime for Python
+Author-email: Alex Kwiatkowski <alex+pypi@fremantle.io>
+Project-URL: Homepage, https://github.com/rupurt/winion
+Project-URL: Issues, https://github.com/rupurt/winion/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anyio >=4.3.0
+Requires-Dist: pydantic >=2.5.0
+Requires-Dist: uvloop >=0.19.0
+Provides-Extra: test
+Requires-Dist: build >=1.2.1 ; extra == 'test'
+Requires-Dist: ruff >=0.3.4 ; extra == 'test'
+Requires-Dist: pip-tools >=7.4.1 ; extra == 'test'
+Requires-Dist: pygments >=2.17.0 ; extra == 'test'
+Requires-Dist: pyhamcrest >=2.1.0 ; extra == 'test'
+Requires-Dist: pyright >=1.1.0 ; extra == 'test'
+Requires-Dist: pytest >=8.1.0 ; extra == 'test'
+Requires-Dist: pytest-asyncio >=0.23.0 ; extra == 'test'
+Requires-Dist: pytest-cov >=5.0.0 ; extra == 'test'
+Requires-Dist: pytest-unordered >=0.6.0 ; extra == 'test'
+Requires-Dist: pytest-watcher >=0.4.0 ; extra == 'test'
+Requires-Dist: twine >=5.0.0 ; extra == 'test'
+
+# winion
+![pypi](https://img.shields.io/pypi/v/winion.svg)
+![versions](https://img.shields.io/pypi/pyversions/winion.svg)
+
+A producer/consumer async runtime for Python
+
+## Usage
+
+1. Install the package from pypi
+
+```console
+> pip install winion
+```
+
+## Development
+
+This repository manages the dev environment as a Nix flake and requires [Nix to be installed](https://github.com/DeterminateSystems/nix-installer)
+
+```console
+> nix develop -c $SHELL
+```
+
+```console
+> make setup
+```
+
+```console
+> make test
+```
+
+## Publish Package to PyPi
+
+```console
+> make pypi
+```
+
+## License
+
+`winion` is released under the [MIT license](./LICENSE)

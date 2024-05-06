@@ -1,0 +1,16 @@
+CHANGES.rst
+DESCRIPTION.rst
+MANIFEST.in
+README.md
+setup.py
+src/idc/imgstats/__init__.py
+src/idc/imgstats/class_lister.py
+src/idc/imgstats/writer/__init__.py
+src/idc/imgstats/writer/_area_histogram.py
+src/idc/imgstats/writer/_label_dist.py
+src/image_dataset_converter_imgstats.egg-info/PKG-INFO
+src/image_dataset_converter_imgstats.egg-info/SOURCES.txt
+src/image_dataset_converter_imgstats.egg-info/dependency_links.txt
+src/image_dataset_converter_imgstats.egg-info/entry_points.txt
+src/image_dataset_converter_imgstats.egg-info/requires.txt
+src/image_dataset_converter_imgstats.egg-info/top_level.txt

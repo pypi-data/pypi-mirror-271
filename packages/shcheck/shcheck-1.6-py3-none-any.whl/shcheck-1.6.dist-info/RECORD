@@ -1,0 +1,8 @@
+shcheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shcheck/shcheck.py,sha256=8Hx-qnzN8EamDiCMUttklEVeV4O3e84URi562po4MIo,16301
+shcheck-1.6.data/scripts/shcheck.py,sha256=wGrwTcCQc93CpNluq49u2HPlgCvqmsIx0MCTBwmDXnU,804
+shcheck-1.6.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+shcheck-1.6.dist-info/METADATA,sha256=EVlwBUX-fTqVUZpLgGxKT6L0eG_kv7mZ2pboxViL9Xg,2629
+shcheck-1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+shcheck-1.6.dist-info/top_level.txt,sha256=Ne0IQ0JlfkHCZRUx-OelJudSHWzlDfOKiBEQEwZKpm8,8
+shcheck-1.6.dist-info/RECORD,,

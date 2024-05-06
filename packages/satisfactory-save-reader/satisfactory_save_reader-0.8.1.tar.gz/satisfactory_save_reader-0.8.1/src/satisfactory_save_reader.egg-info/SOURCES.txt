@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/satisfactory_save_reader/__init__.py
+src/satisfactory_save_reader/bin_file.py
+src/satisfactory_save_reader/data_file.py
+src/satisfactory_save_reader/file.py
+src/satisfactory_save_reader/save_reader.py
+src/satisfactory_save_reader/utils.py
+src/satisfactory_save_reader/zlib_file.py
+src/satisfactory_save_reader.egg-info/PKG-INFO
+src/satisfactory_save_reader.egg-info/SOURCES.txt
+src/satisfactory_save_reader.egg-info/dependency_links.txt
+src/satisfactory_save_reader.egg-info/top_level.txt

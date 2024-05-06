@@ -1,0 +1,8 @@
+byol_pytorch/__init__.py,sha256=HT6W8-d_39pU3GDAaRvTf7RnvJl1J_gMlAn-29jNbvQ,101
+byol_pytorch/byol_pytorch.py,sha256=aa-X8DAd6g3W5DKTxYtfdil7jzD_vSFOyzQ7_JimLVU,9190
+byol_pytorch/trainer.py,sha256=uEzxm9Uu3WWH9R1fcNrqI1yc4__LshocQ6dEQOw5sYI,3829
+byol_pytorch-0.8.1.dist-info/LICENSE,sha256=As9u198X-U-vph5noInuUfqsAG2zX_oXPHDmdjwlPPY,1066
+byol_pytorch-0.8.1.dist-info/METADATA,sha256=PQi3_dSUs56SH_38VFIGms_6837OH8WOWqV_E6JXauQ,725
+byol_pytorch-0.8.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+byol_pytorch-0.8.1.dist-info/top_level.txt,sha256=-WseKa1EvduqtplfMF17gLAnSer6xoP12U4S73bVdOI,13
+byol_pytorch-0.8.1.dist-info/RECORD,,

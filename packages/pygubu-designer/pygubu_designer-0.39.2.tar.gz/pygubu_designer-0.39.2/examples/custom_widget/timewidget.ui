@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.4" author="PygubuDesigner 0.39.1">
+  <project>
+    <settings />
+    <customwidgets />
+  </project>
+  <object class="ttk.Frame" id="frame1">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout manager="pack">
+      <property name="expand">true</property>
+      <property name="fill">both</property>
+      <property name="side">top</property>
+    </layout>
+    <containerlayout manager="grid">
+      <property type="col" id="0" name="weight">1</property>
+      <property type="col" id="2" name="weight">1</property>
+      <property type="col" id="4" name="weight">1</property>
+      <property type="row" id="0" name="weight">1</property>
+    </containerlayout>
+    <child>
+      <object class="ttk.Entry" id="entry1">
+        <property name="justify">right</property>
+        <property name="width">4</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label1">
+        <property name="font">TkFixedFont</property>
+        <property name="text" translatable="yes">h</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="padx">2</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry2">
+        <property name="justify">right</property>
+        <property name="width">4</property>
+        <layout manager="grid">
+          <property name="column">2</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label2">
+        <property name="font">TkFixedFont</property>
+        <property name="text" translatable="yes">m</property>
+        <layout manager="grid">
+          <property name="column">3</property>
+          <property name="padx">2</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry3">
+        <property name="justify">right</property>
+        <property name="width">4</property>
+        <layout manager="grid">
+          <property name="column">4</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label3">
+        <property name="font">TkFixedFont</property>
+        <property name="text" translatable="yes">s</property>
+        <layout manager="grid">
+          <property name="column">5</property>
+          <property name="padx">2</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

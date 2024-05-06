@@ -1,0 +1,2 @@
+django>=2.2
+jdatetime>=4.1.1

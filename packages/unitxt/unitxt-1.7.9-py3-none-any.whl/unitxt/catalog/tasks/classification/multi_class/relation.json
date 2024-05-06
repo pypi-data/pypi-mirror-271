@@ -1,0 +1,24 @@
+{
+    "type": "form_task",
+    "inputs": {
+        "text_a": "str",
+        "text_a_type": "str",
+        "text_b": "str",
+        "text_b_type": "str",
+        "classes": "List[str]",
+        "type_of_relation": "str"
+    },
+    "outputs": {
+        "label": "str"
+    },
+    "prediction_type": "str",
+    "metrics": [
+        "metrics.f1_micro",
+        "metrics.accuracy",
+        "metrics.f1_macro"
+    ],
+    "augmentable_inputs": [
+        "text_a",
+        "text_b"
+    ]
+}

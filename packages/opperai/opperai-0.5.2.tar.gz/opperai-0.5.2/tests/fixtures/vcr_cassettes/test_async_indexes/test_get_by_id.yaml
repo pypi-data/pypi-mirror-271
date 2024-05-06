@@ -1,0 +1,78 @@
+interactions:
+- request:
+    body: '{"name": "test_get_by_id"}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '26'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/indexes
+  response:
+    body:
+      string: '{"id":24,"name":"test_get_by_id","files":[],"created_at":"2024-05-02T10:54:43.425668Z"}'
+    headers:
+      content-length:
+      - '87'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 10:54:43 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/indexes/24
+  response:
+    body:
+      string: '{"id":24,"name":"test_get_by_id","files":[],"created_at":"2024-05-02T10:54:43.425668Z"}'
+    headers:
+      content-length:
+      - '87'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 10:54:43 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/indexes/24
+  response:
+    body:
+      string: 'true'
+    headers:
+      content-length:
+      - '4'
+      content-type:
+      - application/json
+      date:
+      - Thu, 02 May 2024 10:54:43 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+version: 1

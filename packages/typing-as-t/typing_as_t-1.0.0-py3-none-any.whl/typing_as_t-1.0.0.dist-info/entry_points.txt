@@ -1,0 +1,3 @@
+[console_scripts]
+typing-as-t=typing_as_t.entrypoint:run
+

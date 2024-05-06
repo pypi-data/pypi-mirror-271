@@ -1,0 +1,3 @@
+[console_scripts]
+TP-VulnBox = VulnBox:main
+

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: MainFileHostUtils
+Version: 0.0.0
+Summary: null
+Home-page: https://github.com/MainPlay-TG/MainFileHostUtils.py
+Author: MainPlay TG
+Author-email: xbox.roman6666666666@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: MainShortcuts (>=1.6.82,<2.0.0)
+Project-URL: Repository, https://github.com/MainPlay-TG/MainFileHostUtils.py
+Description-Content-Type: text/markdown
+
+It's empty here for now
+ 
+

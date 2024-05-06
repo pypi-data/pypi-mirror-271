@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: pytigon-batteries
+Version: 0.240505
+Summary: Pytigon library
+Author: Sławomir Chołaj
+Author-email: slawomir.cholaj@gmail.com
+License: LGPLv3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: pytigon
+Requires-Dist: html5lib
+Requires-Dist: reportlab
+Requires-Dist: svglib
+Requires-Dist: graphviz
+Requires-Dist: pypdf
+Requires-Dist: fs.sshfs
+Requires-Dist: psutil
+Requires-Dist: netifaces2
+Requires-Dist: pygments
+Requires-Dist: PyYAML
+Requires-Dist: uritemplate
+Requires-Dist: ldap3
+Requires-Dist: pyopenssl
+Provides-Extra: all
+Requires-Dist: redis ; extra == 'all'
+Requires-Dist: channels ; extra == 'all'
+Requires-Dist: channels-redis ; extra == 'all'
+Requires-Dist: daphne ; extra == 'all'
+Requires-Dist: easy-thumbnails ; extra == 'all'
+Requires-Dist: croniter ; extra == 'all'
+Requires-Dist: Twisted[http2,tls] ; extra == 'all'
+Requires-Dist: autobahn ; extra == 'all'
+Requires-Dist: graphene ; extra == 'all'
+Requires-Dist: graphene-django ; extra == 'all'
+Requires-Dist: django-graphql-jwt ; extra == 'all'
+Requires-Dist: djangorestframework ; extra == 'all'
+Requires-Dist: drf-yasg ; extra == 'all'
+Requires-Dist: llvmlite ; extra == 'all'
+Requires-Dist: numba ; extra == 'all'
+Requires-Dist: gql ; extra == 'all'
+Requires-Dist: waitress ; extra == 'all'
+Requires-Dist: uvicorn[standard] ; extra == 'all'
+Requires-Dist: django-filter ; extra == 'all'
+Requires-Dist: django-compressor ; extra == 'all'
+Requires-Dist: django-filer ; extra == 'all'
+Requires-Dist: django-redis ; extra == 'all'
+Requires-Dist: django-log-viewer ; extra == 'all'
+Requires-Dist: django-python3-ldap ; extra == 'all'
+Requires-Dist: django-sql-explorer ; extra == 'all'
+Requires-Dist: django-allauth ; extra == 'all'
+Requires-Dist: django-oauth-toolkit ; extra == 'all'
+Requires-Dist: django-polymorphic ; extra == 'all'
+Requires-Dist: django-mptt ; extra == 'all'
+Requires-Dist: django-guardian ; extra == 'all'
+Requires-Dist: django-pwa-webpush ; extra == 'all'
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: pyarrow ; extra == 'all'
+Requires-Dist: duckdb ; extra == 'all'
+Requires-Dist: plotly ; extra == 'all'
+Requires-Dist: dulwich ; extra == 'all'
+Requires-Dist: cffi ; extra == 'all'
+Requires-Dist: wasmtime ; extra == 'all'
+Requires-Dist: ziglang ; extra == 'all'
+Requires-Dist: xonsh ; extra == 'all'
+Requires-Dist: httpie ; extra == 'all'
+Requires-Dist: pyzmq ; extra == 'all'
+Provides-Extra: data
+Requires-Dist: numpy ; extra == 'data'
+Requires-Dist: pandas ; extra == 'data'
+Requires-Dist: pyarrow ; extra == 'data'
+Requires-Dist: duckdb ; extra == 'data'
+Requires-Dist: plotly ; extra == 'data'
+Provides-Extra: interface
+Requires-Dist: dulwich ; extra == 'interface'
+Requires-Dist: cffi ; extra == 'interface'
+Requires-Dist: wasmtime ; extra == 'interface'
+Requires-Dist: ziglang ; extra == 'interface'
+Requires-Dist: xonsh ; extra == 'interface'
+Requires-Dist: httpie ; extra == 'interface'
+Requires-Dist: pyzmq ; extra == 'interface'
+Provides-Extra: server
+Requires-Dist: redis ; extra == 'server'
+Requires-Dist: channels ; extra == 'server'
+Requires-Dist: channels-redis ; extra == 'server'
+Requires-Dist: daphne ; extra == 'server'
+Requires-Dist: easy-thumbnails ; extra == 'server'
+Requires-Dist: croniter ; extra == 'server'
+Requires-Dist: Twisted[http2,tls] ; extra == 'server'
+Requires-Dist: autobahn ; extra == 'server'
+Requires-Dist: graphene ; extra == 'server'
+Requires-Dist: graphene-django ; extra == 'server'
+Requires-Dist: django-graphql-jwt ; extra == 'server'
+Requires-Dist: djangorestframework ; extra == 'server'
+Requires-Dist: drf-yasg ; extra == 'server'
+Requires-Dist: llvmlite ; extra == 'server'
+Requires-Dist: numba ; extra == 'server'
+Requires-Dist: gql ; extra == 'server'
+Requires-Dist: waitress ; extra == 'server'
+Requires-Dist: uvicorn[standard] ; extra == 'server'
+Requires-Dist: django-filter ; extra == 'server'
+Requires-Dist: django-compressor ; extra == 'server'
+Requires-Dist: django-filer ; extra == 'server'
+Requires-Dist: django-redis ; extra == 'server'
+Requires-Dist: django-log-viewer ; extra == 'server'
+Requires-Dist: django-python3-ldap ; extra == 'server'
+Requires-Dist: django-sql-explorer ; extra == 'server'
+Requires-Dist: django-allauth ; extra == 'server'
+Requires-Dist: django-oauth-toolkit ; extra == 'server'
+Requires-Dist: django-polymorphic ; extra == 'server'
+Requires-Dist: django-mptt ; extra == 'server'
+Requires-Dist: django-guardian ; extra == 'server'
+Requires-Dist: django-pwa-webpush ; extra == 'server'
+

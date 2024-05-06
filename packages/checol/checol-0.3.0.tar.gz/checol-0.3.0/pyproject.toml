@@ -1,0 +1,50 @@
+[project]
+name = "checol"
+version = "0.3.0"
+description = ""
+authors = [
+    { name = "HAYASAKA Ryosuke", email = "hayasaka.ryosuke@gmail.com" }
+]
+dependencies = [
+    "gitpython>=3.1.42",
+    "fire>=0.6.0",
+    "anthropic>=0.21.3",
+    "halo>=0.0.31",
+    "prompt-toolkit>=3.0.43",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/checol"]
+
+[tool.hatch.envs.default.scripts]
+checol = "main.py"
+
+[project.scripts]
+checol = 'checol.main:main'
+
+[tool.rye.scripts]
+format = { chain = ["rye:lintFix", "rye:fmt"] }
+"rye:lintFix" = "rye lint . --fix"
+"rye:fmt" = "rye fmt ."
+
+[tool.ruff.lint]
+select = [
+  "F",
+  "I",
+  "E",
+  "W",
+]

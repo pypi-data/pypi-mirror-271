@@ -1,0 +1,2 @@
+[console_scripts]
+xconn = xconn.__main__:main

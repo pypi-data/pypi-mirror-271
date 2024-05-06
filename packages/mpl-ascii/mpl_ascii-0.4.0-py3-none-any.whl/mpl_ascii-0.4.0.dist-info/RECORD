@@ -1,0 +1,11 @@
+mpl_ascii/__init__.py,sha256=Jv_YN37mOHStz-aGQvDgCrV_Q1sV0agvo4ptUyYsJbE,3413
+mpl_ascii/ascii_canvas.py,sha256=2DbkcZrRX2DdIpLFPhrpDZ1jWCVDuKWex-9Uw6n-1bs,1239
+mpl_ascii/color_map.py,sha256=geT3W3d1O-UbnuPW_GsDYiiQjSbDsZFHwufMZlXVR50,2055
+mpl_ascii/draw.py,sha256=sTbTiQ815aOwrFUTvywU4ga-xhPcAUsc6f_5Ay5mLsY,12382
+mpl_ascii/overlay.py,sha256=6SWeFn128TI4nEHexPhMlFy63vgVzzIknY3jT5sSTjo,1342
+mpl_ascii/tools.py,sha256=DC793v5vgM5AdXMx8rqNf_RyZeruYlSeOMYc7QsiU_w,274
+mpl_ascii-0.4.0.dist-info/LICENSE,sha256=0K1VAV-BYP2WxAFHVHl17SGwygpZqSJ2h3vnSk-G6a8,1066
+mpl_ascii-0.4.0.dist-info/METADATA,sha256=CAq1KNN1eX8P2qXgBQaOOVn8E9fxiO57jmdMW1HcrCE,5654
+mpl_ascii-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mpl_ascii-0.4.0.dist-info/top_level.txt,sha256=5cb39_gh21hVjOLI2GaYHxNEIM9kuv6NClqrUkve6SA,10
+mpl_ascii-0.4.0.dist-info/RECORD,,

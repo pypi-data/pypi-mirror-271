@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Pokemon-t2-tap
+Version: 1.0.0
+Summary: Una biblioteca que contiene la clase RandomPokemon para generar un Pokemon aleatorio
+Author: Uriel Franco
+Author-email: <202227011_FRANCO@tesch.edu.mx>
+Requires-Dist: pandas

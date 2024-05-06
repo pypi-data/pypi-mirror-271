@@ -1,0 +1,12 @@
+spotify-dlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spotify-dlp/spotify_api.py,sha256=nmo0Iy-oHJYi5PWJ664JBYlUeZ06y84S3tzbchtp26w,3610
+spotify-dlp/spotify_dlp.py,sha256=x9coFwoD2zNV9ZhBB-nrM1AryOd4DGgo9PMCIxRmluI,4429
+spotify_dlp/__init__.py,sha256=urnI4NEKnRVqgtExfmUTiEZFq-SO2aKBiuWUBnJyMFs,95
+spotify_dlp/spotify_api.py,sha256=x5HatMluC5VTVa5OYpXeFX2-jvudszAO1ea5fAE1l6U,3611
+spotify_dlp/spotify_dlp.py,sha256=T4J3Gx0Jz1jt5NP4pEz7P65ZJHlJns5P3rqq3hVYDSQ,4602
+spotify_dlp-2.0.0.dist-info/LICENSE,sha256=4CGWekgt7btC-cT2Rho1_3Jjus5o69w54UAs4wdpO_A,1066
+spotify_dlp-2.0.0.dist-info/METADATA,sha256=Jer8Eoyj_SIzw_CMMyDj_oKpHFP08CFG8VnSZIc0PbY,3915
+spotify_dlp-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+spotify_dlp-2.0.0.dist-info/entry_points.txt,sha256=e1TB0H8U6xhEEbh97fWFs56IUxshRUuEld6bvbo8usA,50
+spotify_dlp-2.0.0.dist-info/top_level.txt,sha256=V6B5cV5TwDqF_zJM0DId3RYqJDRy-I60IevPjABqeYo,12
+spotify_dlp-2.0.0.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+build
+diffilqrax
+dist
+examples
+fig_dump
+notebook
+tests
+venv

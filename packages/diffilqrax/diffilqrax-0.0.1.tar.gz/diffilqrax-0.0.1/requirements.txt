@@ -1,0 +1,7 @@
+numpy
+jax
+jaxopt
+chex
+pytest
+matplotlib
+build

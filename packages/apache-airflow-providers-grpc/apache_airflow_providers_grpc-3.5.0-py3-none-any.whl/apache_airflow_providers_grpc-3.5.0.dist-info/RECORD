@@ -1,0 +1,11 @@
+airflow/providers/grpc/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/grpc/__init__.py,sha256=oEoXmBDkPFkf9ikZRh1S4FEH1sdeC5nJXhJVcikkvuM,1579
+airflow/providers/grpc/get_provider_info.py,sha256=9wa3lDImFIlbmA6JDGCTpDw1bNjZK0HMu_Incf2qCqo,2407
+airflow/providers/grpc/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/grpc/hooks/grpc.py,sha256=TEToo3g8XbBQbyI-lLtQbm-V9Z7GkZTYINQOP0zO02Q,6852
+airflow/providers/grpc/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/grpc/operators/grpc.py,sha256=E73-ySpGj_FpwYM_Z4jgnF-pyItUw5mdI7TbaxS0a9g,3800
+apache_airflow_providers_grpc-3.5.0.dist-info/entry_points.txt,sha256=vdqfHu7fTGjXW2aPflLd88eYQKOBiBpTQwVxJ5MQxfI,100
+apache_airflow_providers_grpc-3.5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_grpc-3.5.0.dist-info/METADATA,sha256=7Q1CGA_YGTLY8qFKYWHmj0aZgWh1ARm4yMYwQltRF8A,4906
+apache_airflow_providers_grpc-3.5.0.dist-info/RECORD,,

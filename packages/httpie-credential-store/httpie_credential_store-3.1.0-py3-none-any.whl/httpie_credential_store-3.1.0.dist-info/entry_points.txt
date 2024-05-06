@@ -1,0 +1,4 @@
+[httpie.plugins.auth.v1]
+credential-store=httpie_credential_store:CredentialStoreAuthPlugin
+creds=httpie_credential_store:CredsAuthPlugin
+

@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/__init__.py
+src/AICelltype/__init__.py
+src/AICelltype/aicelltype.py
+src/AICelltype.egg-info/PKG-INFO
+src/AICelltype.egg-info/SOURCES.txt
+src/AICelltype.egg-info/dependency_links.txt
+src/AICelltype.egg-info/requires.txt
+src/AICelltype.egg-info/top_level.txt

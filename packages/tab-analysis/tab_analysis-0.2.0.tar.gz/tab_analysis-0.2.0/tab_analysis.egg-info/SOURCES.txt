@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+tab_analysis/__init__.py
+tab_analysis/analysis.py
+tab_analysis.egg-info/PKG-INFO
+tab_analysis.egg-info/SOURCES.txt
+tab_analysis.egg-info/dependency_links.txt
+tab_analysis.egg-info/top_level.txt
+tests/tests_analysis.py
+tests/tests_mixte.py

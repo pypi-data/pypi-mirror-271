@@ -1,0 +1,53 @@
+
+
+
+data:
+    peak_bed: "data/example/K562_h3k27ac_peaks.bed"
+    plus: "data/example/K562_h3k27ac_plus.bw"
+    minus: "data/example/K562_h3k27ac_minus.bw"
+    # genome: "data/genome/hg38/hg38.fa"
+    # chrom_sizes: "data/genome/hg38/hg38.chrom.sizes"
+    input_dim: 2114
+    output_dim: 1000
+    shift: 128
+    batch_size: 64
+
+trainer:
+    # seed: 42
+    max_epochs: 100
+    accelerator: "gpu"
+    devices: 1
+    logger:
+        class_path: lightning.pytorch.loggers.TensorBoardLogger
+        init_args:
+            save_dir: "lightning_logs"
+            name: "BPNet"
+            # version: "0.1"
+            # sub_dir: "K562_h3k27ac"
+    callbacks:
+    # - class_path: pytorch_lightning.callbacks.ModelCheckpoint
+    #   init_args:
+    #       monitor: "val_loss"
+    #       mode: "min"
+    #       save_top_k: 1
+    #       dirpath: "lightning_logs"
+    #       filename: "checkpoint"
+    - class_path: lightning.pytorch.callbacks.EarlyStopping
+      init_args:
+          monitor: "val_loss"
+          patience: 10
+          mode: "min"
+    # - class_path: pytorch_lightning.callbacks.LearningRateMonitor
+    # - class_path: pytorch_lightning.callbacks.GPUStatsMonitor
+    # - class_path: pytorch_lightning.callbacks.ProgressBar
+
+optimizer:
+    class_path: torch.optim.Adam
+    init_args:
+        lr: 0.001
+        # weight_decay: 0.01
+
+# lr_scheduler:
+#     class_path: torch.optim.lr_scheduler.CosineAnnealingLR
+#     init_args:
+#         T_max: 10

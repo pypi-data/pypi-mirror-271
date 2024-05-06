@@ -1,0 +1,8 @@
+*ipynb_checkpoints
+notebooks/*
+data/*
+!data/.gitkeep
+external/*
+lightning_logs/*
+scripts/*
+*__pycache__

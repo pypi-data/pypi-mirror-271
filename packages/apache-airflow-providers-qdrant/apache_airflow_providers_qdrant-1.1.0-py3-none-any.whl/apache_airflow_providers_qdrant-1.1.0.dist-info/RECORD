@@ -1,0 +1,11 @@
+airflow/providers/qdrant/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/qdrant/__init__.py,sha256=Wo00cUX3NeE0TNgPT44d0DFNaQipbfGUwHbZsJ42fpY,1581
+airflow/providers/qdrant/get_provider_info.py,sha256=HW7gqYQbRQfZ54MKptzxn7yvnJAJJYpogdUjhHIAWSA,2233
+airflow/providers/qdrant/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/qdrant/hooks/qdrant.py,sha256=DOrZJVRkwZXMPvTK_96gOc6DTVgdSERTzJaR4xuvtak,4921
+airflow/providers/qdrant/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/qdrant/operators/qdrant.py,sha256=3y7_Jw9DtKWJkZNIbwUfRDmQqiJv-h-R7iaYFmhrQUk,3912
+apache_airflow_providers_qdrant-1.1.0.dist-info/entry_points.txt,sha256=s8eSjSjUi82NXyU_VpIRIpEuRYhj9pyJvYcSjcFkCts,102
+apache_airflow_providers_qdrant-1.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_qdrant-1.1.0.dist-info/METADATA,sha256=jt36RvA0OW1udHUM8gZ7JE-P-eq43zaNLaUQUCbmaXg,4748
+apache_airflow_providers_qdrant-1.1.0.dist-info/RECORD,,

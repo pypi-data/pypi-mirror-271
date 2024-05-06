@@ -1,0 +1,89 @@
+site_name: wellwiz
+site_description: A developing python package to gather information about the gas and oil wells and know the risk through a map visualization.
+site_author: OmiimO05
+site_url: https://OmiimO05.github.io/wellwiz
+repo_url: https://github.com/OmiimO05/wellwiz
+
+copyright: "Copyright &copy; 2024 - 2024 Shabiha Hossain"
+
+theme:
+    palette:
+        - scheme: default
+          #   primary: blue
+          #   accent: indigo
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+        - scheme: slate
+          primary: indigo
+          accent: indigo
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
+    name: material
+    icon:
+        repo: fontawesome/brands/github
+    # logo: assets/logo.png
+    # favicon: assets/favicon.png
+    features: To visualize the oil and gas wells in Knoxville, TN, To know their names and purpose and To identify the risk of fracking exposure.
+        - navigation.instant
+        - navigation.tracking
+        - navigation.top
+        - search.highlight
+        - search.share
+    custom_dir: "docs/overrides"
+    font:
+        text: Google Sans
+        code: Regular
+
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - git-revision-date-localized:
+          enable_creation_date: true
+          type: timeago
+    # - pdf-export
+    - mkdocs-jupyter:
+          include_source: True
+          ignore_h1_titles: True
+          execute: True
+          allow_errors: false
+          ignore: ["conf.py"]
+          execute_ignore: ["Oil and Gas Well Permits.csv", "Oil&Gas.csv", "folium.ipynb"]
+          
+markdown_extensions:
+    - admonition
+    - abbr
+    - attr_list
+    - def_list
+    - footnotes
+    - meta
+    - md_in_html
+    - pymdownx.superfences
+    - pymdownx.highlight:
+          linenums: true
+    - toc:
+          permalink: true
+
+# extra:
+#     analytics:
+#         provider: google
+#         property: UA-XXXXXXXXX-X
+
+nav:
+    - Home: index.md
+    - Installation: installation.md
+    - Usage: usage.md
+    - Web App: https://homepy-5jkvf5cmrtwn7hpdntlxap.streamlit.app/
+    - Contributing: contributing.md
+    - FAQ: faq.md
+    - Changelog: changelog.md
+    - Report Issues: https://github.com/OmiimO05/wellwiz/issues
+    - Examples:
+        - examples/intro.ipynb
+        - examples/well.ipynb
+        - examples/folium.ipynb
+    - API Reference:
+          - wellwiz module: wellwiz.md
+          - common module: common.md

@@ -1,0 +1,2 @@
+[console_scripts]
+smb-sync = smb_sync.cli:main

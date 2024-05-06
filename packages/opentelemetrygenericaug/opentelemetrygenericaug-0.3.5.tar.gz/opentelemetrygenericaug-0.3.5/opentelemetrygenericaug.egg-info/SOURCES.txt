@@ -1,0 +1,9 @@
+README.md
+app.py
+setup.py
+opentelemetrygenericaug.egg-info/PKG-INFO
+opentelemetrygenericaug.egg-info/SOURCES.txt
+opentelemetrygenericaug.egg-info/dependency_links.txt
+opentelemetrygenericaug.egg-info/requires.txt
+opentelemetrygenericaug.egg-info/top_level.txt
+test/test.py

@@ -1,0 +1,10 @@
+pyauth0/__init__.py,sha256=1TYg7gbAy_8LQ1eIq9bsa2kRyBKTHCecVFLd-AVxYaw,147
+pyauth0/errors.py,sha256=-oASkzmtMbvkuzT9k15uimILukZv95uOX1jKyc8vZKs,241
+pyauth0/token_creator.py,sha256=1Y3Yw0U1MTzsVPFKgxIQ9LQ1bCtaHtLzEbHvscJbC-c,5640
+pyauth0/token_provider.py,sha256=qtePuNlzdNENrTrjMlLHL9kH8kxlncl54m-pgGjxrLo,3471
+pyauth0/token_verifier.py,sha256=7FFebOJylebPU7-beo7wCDVzdvhyt2Pa_w-xH2uU5O4,5618
+pyauth0/utils.py,sha256=9IPKBxVorHGr-bwWRYcgpFfsOoGl1hBDxa8-aLmHOhI,287
+pyauth0-0.2.0.dist-info/LICENSE,sha256=k9W2BZ8UpPo2yWg5Wlfbhvw4LXmtoICNstASc_uj0O4,1070
+pyauth0-0.2.0.dist-info/METADATA,sha256=xg0wqzNW-EuQFCgf2kBeBfnlQTM1T5GfzyUS63Dt5Jw,3197
+pyauth0-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyauth0-0.2.0.dist-info/RECORD,,

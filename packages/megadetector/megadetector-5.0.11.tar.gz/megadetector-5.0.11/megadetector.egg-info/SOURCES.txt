@@ -1,0 +1,9 @@
+LICENSE
+README-package.md
+README.md
+pyproject.toml
+megadetector.egg-info/PKG-INFO
+megadetector.egg-info/SOURCES.txt
+megadetector.egg-info/dependency_links.txt
+megadetector.egg-info/requires.txt
+megadetector.egg-info/top_level.txt

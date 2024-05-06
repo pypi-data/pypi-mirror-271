@@ -1,0 +1,2 @@
+[console_scripts]
+pypular = pypular.__main__:main

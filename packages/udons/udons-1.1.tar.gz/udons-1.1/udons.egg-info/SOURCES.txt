@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+udons/__init__.py
+udons/main.py
+udons.egg-info/PKG-INFO
+udons.egg-info/SOURCES.txt
+udons.egg-info/dependency_links.txt
+udons.egg-info/requires.txt
+udons.egg-info/top_level.txt

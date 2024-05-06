@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "structured-outputs"
+version = "0.0.1"
+description = "LLM Structured Outputs for Humans™"
+authors = ["Yi ZHANG <yizhang.dev@gmail.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://pypi.org/project/structured-outputs"
+repository = "https://github.com/imyizhang/structured-outputs"
+documentation = "https://structured-outputs.readthedocs.io/en/latest/"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

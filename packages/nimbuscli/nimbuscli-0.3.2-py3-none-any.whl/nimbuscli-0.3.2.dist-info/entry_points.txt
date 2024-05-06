@@ -1,0 +1,3 @@
+[console_scripts]
+ni=nimbuscli.main:main
+

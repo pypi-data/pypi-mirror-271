@@ -1,0 +1,7 @@
+LICENSE
+my_decimal.py
+setup.py
+my_decimal.egg-info/PKG-INFO
+my_decimal.egg-info/SOURCES.txt
+my_decimal.egg-info/dependency_links.txt
+my_decimal.egg-info/top_level.txt

@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "lazymap"
+# Version is overwritten at build time by CI based on git tag
+version = "1.0.0"
+description = "A lazy mapping whose values are evaluated when accessed"
+authors = ["Abraham Murciano <abrahammurciano@gmail.com>"]
+license = "GPLv3"
+readme = "README.md"
+repository = "https://github.com/abrahammurciano/python-lazymap"
+documentation = "https://abrahammurciano.github.io/python-lazymap/lazymap"
+keywords = []
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typing-extensions = "^4.11.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "*"
+pdoc3 = "*"
+toml = "*"
+types-toml = "*"
+mypy = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+exclude = [".venv", "venv"]

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: azc-sdk
+Version: 1.1.0
+Summary: AZC SDK for Python
+Home-page: https://git.code.tencent.com/open_sdk/azc-sdk-python
+Author: ai
+Author-email: azc@tencent.com
+License: UNKNOWN
+Project-URL: Source, https://git.code.tencent.com/open_sdk/azc-sdk-python
+Keywords: AZC,SDK
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# 简介
+欢迎使用该sdk。
+

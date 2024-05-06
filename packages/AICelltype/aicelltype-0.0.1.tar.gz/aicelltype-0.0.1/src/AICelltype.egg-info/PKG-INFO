@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: AICelltype
+Version: 0.0.1
+Summary: AICelltype: Annotate cell type through AI/LLM/GPT
+Author-email: renzhg <rzgedu@163.com>
+Project-URL: Homepage, https://github.com/renzhonggan/AICelltype
+Project-URL: Bug Tracker, https://github.com/renzhonggan/AICelltype/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dashscope==1.17.1
+Requires-Dist: requests==2.31.0
+
+# AICelltype
+
+Please refer to the 
+[AICelltype](https://github.com/renzhonggan/AICelltype) for detailed tutorial.
+

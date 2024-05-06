@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: rfproto
+Version: 0.0.7
+Summary: Python for RF and SDR prototyping.
+Author-email: John Gentile <johncgentile17@gmail.com>
+Project-URL: Homepage, https://github.com/JohnnyGOX17/rfproto
+Project-URL: Documentation, https://johnnygox17.github.io/rfproto/
+Project-URL: Issues, https://github.com/JohnnyGOX17/rfproto/issues
+Project-URL: Repository, https://github.com/JohnnyGOX17/rfproto.git
+Keywords: RF,SDR,prototyping
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Provides-Extra: docs
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# rfproto
+
+[![CI Pipeline](https://github.com/JohnnyGOX17/rfproto/actions/workflows/ci.yml/badge.svg)](https://github.com/JohnnyGOX17/rfproto/actions/workflows/ci.yml)
+
+Python for RF and SDR prototyping.
+
+
+## Building & CI
+
+* Trigger GitHub action to publish to PyPI with a tagged commit (e.x. `git tag -am "test auto versioning" 0.0.2`) on `main` branch. Note versioning is also inferred from the git tag value, and this will only run on push on tag.
+* Documentation uses [mkdocs-material](https://squidfunk.github.io/mkdocs-material/), preview with `$ mkdocs serve`. Publishes with GitHub action as well.
+

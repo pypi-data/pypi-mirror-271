@@ -1,0 +1,8 @@
+zint.cpython-310-x86_64-linux-gnu.so,sha256=2L_RiZpzX1RZXMISRuQFtOaK65FZari-UQLp3h7vn2M,1785601
+zint_bindings.libs/libstdc++-2f15e5cf.so.6.0.30,sha256=XOx1OYhEkc-kgx_GXwKJPtpusMtz6_vt9wX6qlpOP6M,3172217
+zint_bindings.libs/libgcc_s-fd2fd9f2.so.1,sha256=nXsXlQcQ7Wc_-kj5vdcz6xVByu9_tw0xDIB3uKDaLPE,126617
+zint-stubs/__init__.pyi,sha256=wX18SlT8UDxD3qu9fgoptReNQRZvwTTOoR4NH4cYzac,28744
+zint_bindings-1.1.0.dist-info/METADATA,sha256=wLtwjM-XKE8m65uQQdbqKR2NA2N7XSkank8voNFsNA4,3219
+zint_bindings-1.1.0.dist-info/RECORD,,
+zint_bindings-1.1.0.dist-info/WHEEL,sha256=Sco3EWRRb1L6wkD4npr2327REDhy9mQe2F6JsX1VTNE,116
+zint_bindings-1.1.0.dist-info/licenses/LICENSE.md,sha256=gNL2T9Q_te_VwdrYvrQeD2gVvcKM9b7gLz0uabsB2fE,10483

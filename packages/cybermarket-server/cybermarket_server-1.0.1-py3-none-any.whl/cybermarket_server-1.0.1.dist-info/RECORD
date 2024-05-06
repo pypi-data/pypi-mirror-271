@@ -1,0 +1,15 @@
+cybermarket_server/__init__.py,sha256=D6UDY8T0P4rEMN9h6RNHYh2-cqBwSsJyCIii69O_yZg,30
+cybermarket_server/__main__.py,sha256=usZUiCFDu29TTwnjSSBDDJGyLwQPV-NceGl6VXrOMvU,3164
+cybermarket_server/cmd_process.py,sha256=wTOpe-6c-BfQB-GbjjeTYD5kJ9Nui0HLK8zmbjKs4R4,28969
+cybermarket_server/invitation.py,sha256=uVtox4kAlZJwo-jkjwUruIBe3x8QayemOzfPUZ8deVY,2111
+cybermarket_server/lang.py,sha256=iwggzC2cUvTjWsP5tg-3Ydbn7i8rNNWU4nZd2OChG6E,786
+cybermarket_server/model.py,sha256=djXzVWH2GVGh9KTPlbBFZPikv5GhGWpXxk7kGQQnpg4,17058
+cybermarket_server/setting.py,sha256=bZVmdZOlQDeWOsvTUXr-pywV15I0uKjPSCTXPK7hiiE,1366
+cybermarket_server/database/cybermarket.db,sha256=eSUw8KgpqsLkfHKR1Xbw2UOzIzg3GXrLPi46iGn9qFk,32768
+cybermarket_server/locale/ru_RU/LC_MESSAGES/Russian.mo,sha256=5dhiVEAcv-9Zy8t5i7ehvEwcl26uRFS8XmMwv60q3xo,5078
+cybermarket_server/locale/zh_CN/LC_MESSAGES/Chinese.mo,sha256=8bynWKHw7vYBvtNXOV3FG7q01OKA-KOzj0e_N3YWhM0,3594
+cybermarket_server-1.0.1.dist-info/LICENSE,sha256=lKGwaS9yYwcq-QaXgAGynGeWLrBCOfXDzqW_RtFdjTM,1088
+cybermarket_server-1.0.1.dist-info/METADATA,sha256=lpwE8cU1AALJTyJakKliWm90eIqwbzhNITgn3PtRJng,3998
+cybermarket_server-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cybermarket_server-1.0.1.dist-info/top_level.txt,sha256=rDqAIWRG4xQOwCM8KKpP2k0qJqASc3t8w3P_LmoCkug,19
+cybermarket_server-1.0.1.dist-info/RECORD,,

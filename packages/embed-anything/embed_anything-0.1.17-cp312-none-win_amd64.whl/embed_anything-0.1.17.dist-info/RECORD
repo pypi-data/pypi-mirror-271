@@ -1,0 +1,9 @@
+embed_anything-0.1.17.dist-info/METADATA,sha256=dKTGMUYrdFO2OONZLijp3asF70IhNEMYyxxfmHIunRQ,6531
+embed_anything-0.1.17.dist-info/WHEEL,sha256=2DMsMEuToPssnNZjzCLc-JDvpJNvE9njw6VIV5f_RP4,95
+embed_anything-0.1.17.dist-info/license_files/LICENSE,sha256=weCXH4BT1ccweEW9HE3pHzmVm0Z8bTAV14XuwsywG0k,1066
+embed_anything/embed_anything.pyi,sha256=AvoVDumUa7R9w527ogzjJQ6Fdkd9ymZvjAHHYyqOpcw,1486
+embed_anything/libiomp5md.dll,sha256=CtcfRm0RXTU9zpS6MrY-KI9IGY6J9VHUbczkYf7b0ZU,2047000
+embed_anything/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embed_anything/__init__.py,sha256=k-CHMxl2aNi4U6wp8OhuVZskyaPB-oht3JWwWCXtjbY,154
+embed_anything/embed_anything.cp312-win_amd64.pyd,sha256=pVnROWvC7MC2wOaGbnFw10B6LJXwaBG44Cz8wqbvnW0,37625856
+embed_anything-0.1.17.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+ariane = ariane_lib.commands.main:main

@@ -1,0 +1,3 @@
+[console_scripts]
+zed=zed_assistant.cli:main
+

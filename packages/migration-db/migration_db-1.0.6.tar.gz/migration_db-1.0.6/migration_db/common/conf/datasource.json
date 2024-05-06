@@ -1,0 +1,86 @@
+{
+  "108": {
+    "host": "200.200.101.108",
+    "port": 3306,
+    "user": "root",
+    "password": "Admin123"
+  },
+  "113": {
+    "host": "200.200.101.113",
+    "port": 3306,
+    "user": "root",
+    "password": "Admin123"
+  },
+  "cn_uat_prod": {
+    "host": "eclinical40-prod-02-db.cg2ehesbx6ya.rds.cn-northwest-1.amazonaws.com.cn",
+    "port": 3306,
+    "user": "root",
+    "password": "vBlgTamJc1cv7KW3q4wp"
+  },
+  "cn_uat_dev": {
+    "host": "eclinical40-dev-01.cg2ehesbx6ya.rds.cn-northwest-1.amazonaws.com.cn",
+    "port": 3306,
+    "user": "root",
+    "password": "Welcome1!"
+  },
+  "115": {
+    "host": "200.200.101.115",
+    "port": 3306,
+    "user": "root",
+    "password": "Admin123"
+  },
+  "sk.new": {
+    "host": "172.130.195.164",
+    "port": 3306,
+    "user": "root",
+    "password": "Admin@123@skDB"
+  },
+  "97": {
+    "host": "200.200.101.97",
+    "port": 3306,
+    "user": "root",
+    "password": "Admin123"
+  },
+  "39": {
+    "host": "200.200.101.39",
+    "port": 3310,
+    "user": "root",
+    "password": "Admin123"
+  },
+  "38_3307": {
+    "host": "200.200.101.38",
+    "port": 3307,
+    "user": "root",
+    "password": "Admin123"
+  },
+  "55": {
+    "host": "200.200.102.55",
+    "port": 3306,
+    "user": "root",
+    "password": "12345678"
+  },
+  "dev03": {
+    "host": "dev-03.c9qe4y0vrvda.rds.cn-northwest-1.amazonaws.com.cn",
+    "port": 3306,
+    "user": "root",
+    "password": "8YTJWOuA7XRK17wRQnw4"
+  },
+  "test01": {
+    "host": "test-01.c9qe4y0vrvda.rds.cn-northwest-1.amazonaws.com.cn",
+    "port": 3306,
+    "user": "root",
+    "password": "HUlWHzVM1J1K0QO1yhhV"
+  },
+  "dev01": {
+    "host": "dev-01.c9qe4y0vrvda.rds.cn-northwest-1.amazonaws.com.cn",
+    "port": 3306,
+    "user": "root",
+    "password": "3fgRCcB72Px1FvBfDBNL"
+  },
+  "dev03-new": {
+    "host": "dev-03.cluster-c9qe4y0vrvda.rds.cn-northwest-1.amazonaws.com.cn",
+    "port": 3306,
+    "user": "root",
+    "password": "8YTJWOuA7XRK17wRQnw4"
+  }
+}

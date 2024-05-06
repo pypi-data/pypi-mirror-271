@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: STCAT
+Version: 0.5
+Summary: An automated T cell type annotation tool for scRNA-seq datasets.
+Home-page: https://github.com/GuoBioinfoLab/STCAT
+License: MIT
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8

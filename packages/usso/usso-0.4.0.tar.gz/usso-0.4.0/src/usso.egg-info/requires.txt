@@ -1,0 +1,14 @@
+peppercorn
+
+[dev]
+check-manifest
+
+[django]
+Django>=3.2
+
+[fastapi]
+fastapi>=0.65.0
+uvicorn[standard]>=0.13.0
+
+[test]
+coverage

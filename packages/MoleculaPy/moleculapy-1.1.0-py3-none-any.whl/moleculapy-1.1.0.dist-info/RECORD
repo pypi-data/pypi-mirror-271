@@ -1,0 +1,15 @@
+CHANGELOG.md,sha256=5mKnkhuWkY6ZmxAEWV73nnH8eRfXud6bR6o_pXDn5Ys,562
+LICENSE.md,sha256=BpfyWIOUbFLXYMLEYIdFo5ftU8jtObiLCVNUlkg-Cd4,1088
+MoleculaPy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MoleculaPy/cli.py,sha256=nud4ZeUTTUN3MgtC0ahQR6i4PXznR58WeDNuXzGgMHY,1705
+MoleculaPy/data/smiles_desc_output.csv,sha256=bXGRVUERpqZ_dX4YV0-vJJcSWHCABAz-N3f2PcH3G6g,225300
+MoleculaPy/data/smiles_fing_atom_1024_output.csv,sha256=0c-5JurGEkCGuy0onIOX9LO7j1cwh-83waoiISc1l5A,428487
+MoleculaPy/data/smiles_sample.csv,sha256=mkxFf34mOlElpRNPZfJdeCUP5g2fzCXoBgqJI3WHW5I,12827
+MoleculaPy/helpers.py,sha256=DIGmM1XG3T5CaeHNQtyaRSrFkruMg69DTxBEUIDUsl4,1230
+MoleculaPy/moleculapy.py,sha256=Fdx5A0miStUc0o4kj63R7EW-5A9wzm3jSpTNQnULfrw,1999
+MoleculaPy/molecule_utils.py,sha256=tQ_aIxRV5yJtPDUYfMvJmoLHlB4vaxFw1B6ujcJZAcg,3016
+moleculapy-1.1.0.dist-info/entry_points.txt,sha256=_EeSmyqL2I_IGKp2pKG9aMP-lDvtOwh_TT-yDMejL2Q,57
+moleculapy-1.1.0.dist-info/LICENSE.md,sha256=BpfyWIOUbFLXYMLEYIdFo5ftU8jtObiLCVNUlkg-Cd4,1088
+moleculapy-1.1.0.dist-info/METADATA,sha256=nNI0HI6DdwHfmRLa9yJC1xUTR30BOBCiMRMUgsfIEFs,7871
+moleculapy-1.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+moleculapy-1.1.0.dist-info/RECORD,,

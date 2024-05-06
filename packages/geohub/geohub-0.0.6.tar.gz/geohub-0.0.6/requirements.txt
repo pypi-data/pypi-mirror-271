@@ -1,0 +1,11 @@
+numpy
+ipyleaflet
+geopandas
+pandas
+localtileserver
+rasterio
+matplotlib
+leafmap
+folium
+ee
+earthengine-api>=0.1.398

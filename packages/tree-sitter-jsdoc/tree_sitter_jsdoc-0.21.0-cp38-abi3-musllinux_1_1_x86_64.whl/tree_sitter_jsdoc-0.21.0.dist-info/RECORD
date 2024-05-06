@@ -1,0 +1,11 @@
+tree_sitter_jsdoc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_jsdoc/binding.c,sha256=3w421bqvwNCIk4Yn_08fsCMc9crXyMR6wlqD-aqYkUs,634
+tree_sitter_jsdoc/_binding.abi3.so,sha256=xVO9nkFcxkGG5FnMqVQkiaRhGfCyE2CvRK0Pw1YUN-A,82600
+tree_sitter_jsdoc/__init__.py,sha256=ERaaEkGd2Y7VI_ICfKOvd_qnEFF3mHi2jbFQePzaBOg,88
+tree_sitter_jsdoc/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_jsdoc/queries/highlights.scm,sha256=1FXWtUG8A9YkueV7KVff4hNOmnXuB3PmLFlMHJuinbY,33
+tree_sitter_jsdoc-0.21.0.dist-info/LICENSE,sha256=_67-ytaEZxNPjHARIKJBCiOE__96YFtjY4zwtR59Fsw,1105
+tree_sitter_jsdoc-0.21.0.dist-info/METADATA,sha256=FtR4VDNkJ6Fu9K6tc8R7acN5BwmdJNm48_gGzB0S43k,1752
+tree_sitter_jsdoc-0.21.0.dist-info/RECORD,,
+tree_sitter_jsdoc-0.21.0.dist-info/top_level.txt,sha256=7QRUjp6RHPLKrIWmi3uxjFYcjCmk49-6cjRAux9xvXc,27
+tree_sitter_jsdoc-0.21.0.dist-info/WHEEL,sha256=SLuAR4EQHH0r-qGFhMuV9c2WCtm9CXjP4961KF3hTEM,111

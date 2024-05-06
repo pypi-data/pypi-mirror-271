@@ -1,0 +1,2 @@
+[console_scripts]
+platform-gen-ai = gen_ai.cli:create_repo

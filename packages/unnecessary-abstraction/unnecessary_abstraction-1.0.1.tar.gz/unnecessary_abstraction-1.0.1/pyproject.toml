@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "unnecessary-abstraction"
+version = "1.0.1"
+description = "For smooth brains who don't SQL good."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "unnecessary-abstraction"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2-binary = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

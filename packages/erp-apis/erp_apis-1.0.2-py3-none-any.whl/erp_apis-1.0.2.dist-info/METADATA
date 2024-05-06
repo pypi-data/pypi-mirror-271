@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: erp-apis
+Version: 1.0.2
+Summary: erp_apis
+Home-page: https://gitee.com/li_fucheng/erp_sdk_python
+Author: 李福成
+Author-email: lfct@qq.com
+License: MIT
+Project-URL: Bug Tracker, https://gitee.com/li_fucheng/erp_sdk_python/issues
+Project-URL: Documentation, https://gitee.com/li_fucheng/erp_sdk_python
+Project-URL: Source Code, https://gitee.com/li_fucheng/erp_sdk_python
+Keywords: erp_apis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: lxml
+
+
+
+## 1.项目简介
+
+ 
+
+erp_sdk_python对聚水潭常用的一些api进行了封装
+
+ 
+
+ 
+
+### 安装
+
+ pip install erp_apis
+
+
+
+
+
+#### 案例：获取订单数据
+
+    # 获取订单数据
+
+    from apis.user import login
+
+    from apis.order import OrderList
+
+    from erp_apis.request import Session
+
+
+
+    session = Session()
+
+
+
+    session.erpSend(login(
+
+        username="erp账号",
+
+        password="erp密码"
+
+    ))
+
+
+
+    res = session.erpSend(OrderList())
+
+    print(res)
+
+ 
+

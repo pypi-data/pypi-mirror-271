@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ceotr-git-manager
+Version: 1.2.1
+Summary: Common python library for CEOTR data team to manage git repositories programically
+Home-page: https://gitlab.oceantrack.org/ceotr-public/ceotr_app_common/ceotr_git_manager
+Author: CEOTR
+Author-email: support@ceotr.ca
+License: GNU General Public License v3 (GPLv3)
+Platform: UNKNOWN
+License-File: LICENSE.md
+
+UNKNOWN
+

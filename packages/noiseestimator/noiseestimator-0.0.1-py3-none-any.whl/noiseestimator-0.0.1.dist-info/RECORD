@@ -1,0 +1,11 @@
+noiseestimator/__init__.py,sha256=SZHESbe01VldWgD3KxVNMhnYGXafCRz_7dKq254u0HY,173
+noiseestimator/_version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+noiseestimator/noiseestimator.py,sha256=fY4WSacwJ4WJ_HfPasMdyctH04sNRY_2PFpzx8Kg_jE,8257
+noiseestimator/py.typed,sha256=o_skYYOgBqbwMt-5lUZDunyM7CcemHaJt2k9MsSACeY,61
+noiseestimator/tests/__init__.py,sha256=nRKPWsTbB025bJRfX6ZOZayBVXMs3HMdd_JXUPpjWnA,113
+noiseestimator/tests/test_noiseestimator.py,sha256=zSL4h3lSx4Oh0e9-Zr8wjM3sqQ4LVleg7ry2llxbd0M,4724
+noiseestimator-0.0.1.dist-info/LICENSE,sha256=DiR6LDHX80_OTN9h7wiHNPsw4uY8Pipezrt8gbs2Gqg,1070
+noiseestimator-0.0.1.dist-info/METADATA,sha256=zoySJOjYev9_b6ma8yJqBp31QEglwWIRwg-vJ8x1C9M,1992
+noiseestimator-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+noiseestimator-0.0.1.dist-info/top_level.txt,sha256=aUkNyLIE6Vmrucj4OPjsMqi9XJLNuqkzrL7oEaXMbT0,15
+noiseestimator-0.0.1.dist-info/RECORD,,

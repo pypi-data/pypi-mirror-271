@@ -1,0 +1,8 @@
+ciscoconfparse
+rich
+
+[dev]
+pre-commit
+bumpver
+black
+isort

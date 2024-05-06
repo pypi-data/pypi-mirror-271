@@ -1,0 +1,10 @@
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+src/ciscoconfaudit/__init__.py
+src/ciscoconfaudit.egg-info/PKG-INFO
+src/ciscoconfaudit.egg-info/SOURCES.txt
+src/ciscoconfaudit.egg-info/dependency_links.txt
+src/ciscoconfaudit.egg-info/requires.txt
+src/ciscoconfaudit.egg-info/top_level.txt

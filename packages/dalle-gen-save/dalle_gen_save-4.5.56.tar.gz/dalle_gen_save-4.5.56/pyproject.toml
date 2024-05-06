@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dalle_gen_save"
+version = "4.5.56"
+dependencies = [
+    "openai",
+    "python-dotenv"
+]
+readme = "README.md"
+scripts = { "dalle-gen-save" = "dalle_gen_save:main" }

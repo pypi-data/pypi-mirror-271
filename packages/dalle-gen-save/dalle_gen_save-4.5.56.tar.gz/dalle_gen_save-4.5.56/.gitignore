@@ -1,0 +1,6 @@
+venv
+.env
+.idea
+users
+dist
+__pycache__

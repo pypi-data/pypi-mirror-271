@@ -1,0 +1,11 @@
+odoo/addons/ssi_transaction_tax_address_mixin/README.rst,sha256=axRDCj1Q0mXDMagRYu5Kc-9kbDVomMFaW0vetsy4QkY,1228
+odoo/addons/ssi_transaction_tax_address_mixin/__init__.py,sha256=VAkFvJXefoz7CVUwbL97HBfpLAYmvQPYXfYs71LOpzU,181
+odoo/addons/ssi_transaction_tax_address_mixin/__manifest__.py,sha256=9y1lt8ZZ8Udi9Ea06Lrczz-Lo07LXVk8n9_oo235bdI,468
+odoo/addons/ssi_transaction_tax_address_mixin/models/__init__.py,sha256=ANjtX5vCHXb6vSWQvGDzpBMyR70OO8E-PY-vw7YXGC8,221
+odoo/addons/ssi_transaction_tax_address_mixin/models/mixin_transaction_tax_address.py,sha256=X1VOTipgM5eC-7pAOoecq5kc2ixP5aCJR3BikFfTAAs,2053
+odoo/addons/ssi_transaction_tax_address_mixin/models/res_partner.py,sha256=j_rMry75zbNDE8xrcIIiqYKvRWblSbyZpSlY6hzW5WY,405
+odoo/addons/ssi_transaction_tax_address_mixin/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_transaction_tax_address_mixin-14.0.1.0.0.dist-info/METADATA,sha256=1UUbsp5N6qY2itJDXaE9vCkJApOjDac0K67CaWA94dY,1797
+odoo14_addon_ssi_transaction_tax_address_mixin-14.0.1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_ssi_transaction_tax_address_mixin-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_transaction_tax_address_mixin-14.0.1.0.0.dist-info/RECORD,,

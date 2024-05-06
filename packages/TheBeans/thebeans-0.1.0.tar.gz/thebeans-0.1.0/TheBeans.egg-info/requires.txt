@@ -1,0 +1,13 @@
+numpy
+ipyleaflet
+ipywidgets
+pysheds
+pandas
+geopandas
+matplotlib
+
+[all]
+TheBeans[extra]
+
+[extra]
+pandas

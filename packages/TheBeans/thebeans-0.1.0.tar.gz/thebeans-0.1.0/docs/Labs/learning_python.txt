@@ -1,0 +1,4 @@
+In Python you can read files and run processing on them for complex visualizations.
+In Python you can as for user input and store the data for later use.
+In Python you can make jokes about snakes.
+In Python you can build functions to carry out processes.

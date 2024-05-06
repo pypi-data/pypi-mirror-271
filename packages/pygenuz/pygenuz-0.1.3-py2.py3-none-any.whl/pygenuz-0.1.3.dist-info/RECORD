@@ -1,0 +1,8 @@
+pygenuz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygenuz/app.py,sha256=Jge06k3HceQf86wO6NtkD32KRMpOHh6hdbgzj3Q1tqA,3785
+pygenuz/middelware.py,sha256=Nw7FU4oj3ssCIob_zL9u0uzx36zlwVAdyESB-c9QKEc,680
+pygenuz/response.py,sha256=ZvREb9yGlXJvfh9c_Z83cu9xddSSfhsJv4gTuQgPsZI,953
+pygenuz-0.1.3.dist-info/METADATA,sha256=jNaSylK4HCRH8Ikz4n2TKs63olRSoUNvS9GZTjTL2M4,9239
+pygenuz-0.1.3.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+pygenuz-0.1.3.dist-info/top_level.txt,sha256=A7NgFnoOaIZhEGAzpT5k1dJczF6OYvTA9Yd_NVo-ZGE,8
+pygenuz-0.1.3.dist-info/RECORD,,

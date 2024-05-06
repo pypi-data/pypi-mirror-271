@@ -1,0 +1,157 @@
+Dockerfile
+LICENSE
+Licencias_de_Terceros.md
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+wsgi.py
+cacao_accounting/I18N.py
+cacao_accounting/__init__.py
+cacao_accounting/__main__.py
+cacao_accounting/cli.py
+cacao_accounting/config.py
+cacao_accounting/decorators.py
+cacao_accounting/desktop.py
+cacao_accounting/loggin.py
+cacao_accounting/metadata.py
+cacao_accounting/modulos.py
+cacao_accounting/server.py
+cacao_accounting/version.py
+cacao_accounting/admin/__init__.py
+cacao_accounting/admin/registros/__init__.py
+cacao_accounting/admin/templates/admin.html
+cacao_accounting/admin/templates/admin/modulos.html
+cacao_accounting/ajax/__init__.py
+cacao_accounting/app/__init__.py
+cacao_accounting/app/templates/app.html
+cacao_accounting/app/templates/development.html
+cacao_accounting/auth/__init__.py
+cacao_accounting/auth/forms.py
+cacao_accounting/auth/permisos.py
+cacao_accounting/auth/roles.py
+cacao_accounting/auth/registros/__init__.py
+cacao_accounting/auth/templates/login.html
+cacao_accounting/auth/templates/test_roles.html
+cacao_accounting/bancos/__init__.py
+cacao_accounting/bancos/templates/bancos.html
+cacao_accounting/compras/__init__.py
+cacao_accounting/compras/templates/compras.html
+cacao_accounting/contabilidad/__init__.py
+cacao_accounting/contabilidad/auxiliares.py
+cacao_accounting/contabilidad/forms.py
+cacao_accounting/contabilidad/ctas/__init__.py
+cacao_accounting/contabilidad/ctas/catalogos/base.csv
+cacao_accounting/contabilidad/registros/__init__.py
+cacao_accounting/contabilidad/registros/ccosto.py
+cacao_accounting/contabilidad/registros/cuenta.py
+cacao_accounting/contabilidad/registros/entidad.py
+cacao_accounting/contabilidad/registros/moneda.py
+cacao_accounting/contabilidad/registros/periodo.py
+cacao_accounting/contabilidad/registros/proyecto.py
+cacao_accounting/contabilidad/registros/tasa_cambio.py
+cacao_accounting/contabilidad/registros/unidad.py
+cacao_accounting/contabilidad/templates/contabilidad.html
+cacao_accounting/contabilidad/templates/contabilidad/centro-costo.html
+cacao_accounting/contabilidad/templates/contabilidad/centro-costo_lista.html
+cacao_accounting/contabilidad/templates/contabilidad/cuenta.html
+cacao_accounting/contabilidad/templates/contabilidad/cuenta_lista.html
+cacao_accounting/contabilidad/templates/contabilidad/entidad.html
+cacao_accounting/contabilidad/templates/contabilidad/entidad_crear.html
+cacao_accounting/contabilidad/templates/contabilidad/entidad_editar.html
+cacao_accounting/contabilidad/templates/contabilidad/entidad_lista.html
+cacao_accounting/contabilidad/templates/contabilidad/moneda_lista.html
+cacao_accounting/contabilidad/templates/contabilidad/periodo_lista.html
+cacao_accounting/contabilidad/templates/contabilidad/proyecto_lista.html
+cacao_accounting/contabilidad/templates/contabilidad/tc_lista.html
+cacao_accounting/contabilidad/templates/contabilidad/unidad.html
+cacao_accounting/contabilidad/templates/contabilidad/unidad_crear.html
+cacao_accounting/contabilidad/templates/contabilidad/unidad_lista.html
+cacao_accounting/database/__init__.py
+cacao_accounting/database/helpers.py
+cacao_accounting/datos/__init__.py
+cacao_accounting/datos/base/__init__.py
+cacao_accounting/datos/dev/__init__.py
+cacao_accounting/exceptions/__init__.py
+cacao_accounting/exceptions/mensajes.py
+cacao_accounting/inventario/__init__.py
+cacao_accounting/inventario/templates/inventario.html
+cacao_accounting/misc/ejemplos/cacao-accounting.unit
+cacao_accounting/registro/__init__.py
+cacao_accounting/static/manifest.json
+cacao_accounting/static/package-lock.json
+cacao_accounting/static/package.json
+cacao_accounting/static/css/cacaoaccounting.css
+cacao_accounting/static/css/dashboard.css
+cacao_accounting/static/css/purecss-treeview.css
+cacao_accounting/static/css/signin.css
+cacao_accounting/static/media/Cacao Accounting SVG.svg
+cacao_accounting/static/media/Cacao Accounting-01.png
+cacao_accounting/static/media/brand.svg
+cacao_accounting/static/media/cacao_accounting _logo.png
+cacao_accounting/static/media/cacao_accounting _logo.svg
+cacao_accounting/static/media/cacao_accounting.png
+cacao_accounting/static/media/cacao_accounting.svg
+cacao_accounting/static/media/cacao_logo.svg
+cacao_accounting/static/media/circle-solid.svg
+cacao_accounting/static/media/favicon-16x16.png
+cacao_accounting/static/media/favicon-32x32.png
+cacao_accounting/static/media/Linux/Cacao Accounting 16px.png
+cacao_accounting/static/media/Linux/Cacao Accounting 256px.png
+cacao_accounting/static/media/Linux/Cacao Accounting 32px.png
+cacao_accounting/static/media/Linux/Cacao Accounting 48px.png
+cacao_accounting/static/media/Linux/Cacao Accounting 64px.png
+cacao_accounting/static/media/Linux/Cacao Accounting Ícono SVG.svg
+cacao_accounting/static/media/Web/Cacao Accounting SVG.svg
+cacao_accounting/static/media/Web/Cacao Accounting Ícono SVG.svg
+cacao_accounting/static/media/Web/Cacao Accounting-01.png
+cacao_accounting/static/media/Web/Cacao Accounting.png
+cacao_accounting/static/media/Windows/Cacao Accounting 16px.ico
+cacao_accounting/static/media/Windows/Cacao Accounting 256px.ico
+cacao_accounting/static/media/Windows/Cacao Accounting 32px.ico
+cacao_accounting/static/media/Windows/Cacao Accounting 48px.ico
+cacao_accounting/static/media/Windows/Cacao Accounting 64px.ico
+cacao_accounting/static/media/Windows/Cacao Accounting múltilple tamaño.ico
+cacao_accounting/static/media/favicon/android-icon-144x144.png
+cacao_accounting/static/media/favicon/android-icon-192x192.png
+cacao_accounting/static/media/favicon/android-icon-36x36.png
+cacao_accounting/static/media/favicon/android-icon-48x48.png
+cacao_accounting/static/media/favicon/android-icon-72x72.png
+cacao_accounting/static/media/favicon/android-icon-96x96.png
+cacao_accounting/static/media/favicon/apple-icon-114x114.png
+cacao_accounting/static/media/favicon/apple-icon-120x120.png
+cacao_accounting/static/media/favicon/apple-icon-144x144.png
+cacao_accounting/static/media/favicon/apple-icon-152x152.png
+cacao_accounting/static/media/favicon/apple-icon-180x180.png
+cacao_accounting/static/media/favicon/apple-icon-57x57.png
+cacao_accounting/static/media/favicon/apple-icon-60x60.png
+cacao_accounting/static/media/favicon/apple-icon-72x72.png
+cacao_accounting/static/media/favicon/apple-icon-76x76.png
+cacao_accounting/static/media/favicon/apple-icon-precomposed.png
+cacao_accounting/static/media/favicon/apple-icon.png
+cacao_accounting/static/media/favicon/favicon-16x16.png
+cacao_accounting/static/media/favicon/favicon-32x32.png
+cacao_accounting/static/media/favicon/favicon-96x96.png
+cacao_accounting/static/media/favicon/favicon.ico
+cacao_accounting/static/media/favicon/ms-icon-144x144.png
+cacao_accounting/static/media/favicon/ms-icon-150x150.png
+cacao_accounting/static/media/favicon/ms-icon-310x310.png
+cacao_accounting/static/media/favicon/ms-icon-70x70.png
+cacao_accounting/templates/400.html
+cacao_accounting/templates/403.html
+cacao_accounting/templates/404.html
+cacao_accounting/templates/base.html
+cacao_accounting/templates/macros.html
+cacao_accounting/templates/setup/setup.html
+cacao_accounting/transaccion/__init__.py
+cacao_accounting/validaciones/__init__.py
+cacao_accounting/ventas/__init__.py
+cacao_accounting/ventas/templates/ventas.html
+staging_cacao_accounting.egg-info/PKG-INFO
+staging_cacao_accounting.egg-info/SOURCES.txt
+staging_cacao_accounting.egg-info/dependency_links.txt
+staging_cacao_accounting.egg-info/entry_points.txt
+staging_cacao_accounting.egg-info/requires.txt
+staging_cacao_accounting.egg-info/top_level.txt
+tests/test_basicos.py

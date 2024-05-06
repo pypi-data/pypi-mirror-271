@@ -1,0 +1,15 @@
+name="Shall we? / I wonder / -(으)ㄹ까요?"
+levels=[
+    {resource_name="TTMIK", level="Level 3"},
+    {resource_name="HTSK", level="Unit 3"},
+    {resource_name="King Sejong Institute Practical Korean", level="3. Intermediate"},
+]
+links=[
+    "https://www.howtostudykorean.com/unit-3-intermediate-korean-grammar/unit-3-lessons-59-66/lesson-63/#633"
+]
+exercises=[
+    """
+    S -> 'Shall we {verb}' | P 'wonder if it is {adj}'
+    P -> 'I' | 'he' | 'she' | 'it' | 'they' | 'you'
+    """
+]

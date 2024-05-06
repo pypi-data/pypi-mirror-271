@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: keras-vision
+Version: 0.4.3
+Summary: Building Vision models in Keras3 for framework agnostic training and inference.
+Home-page: https://github.com/veb-101/keras-vision
+Author: Vaibhav Singh
+Author-email: vaibhav.singh.3001@gmail.com
+License: Apache 2.0
+Keywords: keras3 tensorflow Jax PyTorch Vision
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: keras>=3.3.3
+
+Porting all models from everywhere to Keras for leveraging multi-backend support.
+
+Cause why not?🤷🏻‍♂️
+
+### Updates
+
+1. [2024-05-04] Converted MobileViT to Keras 3 and released weights of all 3 variants.
+   1. Jax backend currently not working, I'm working on a fix.
+   2. Release: <https://github.com/veb-101/keras-vision/releases/tag/v0.4>

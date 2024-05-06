@@ -1,0 +1,25 @@
+[project]
+name="cohdl"
+version="0.2.1"
+
+authors = [
+    { name = "Alexander Forster", email = "alexander.forster123@gmail.com" }
+]
+
+description="A Python to VHDL compiler"
+readme = "README.md"
+requires-python = ">= 3.10"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+Homepage = "https://github.com/alexander-forster/cohdl"
+
+[tool.setuptools.packages.find]
+exclude = ["tests", "tests.*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi"]

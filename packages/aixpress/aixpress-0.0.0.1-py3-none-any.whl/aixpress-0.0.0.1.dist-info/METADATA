@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: aixpress
+Version: 0.0.0.1
+Summary: A package for rapid prototyping
+Home-page: https://github.com/neildias/aixpress
+Author: Neil Dias
+Author-email: neildias.ai@gmail.com
+Requires-Python: >=3.8
+License-File: LICENSE
+

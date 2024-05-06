@@ -1,0 +1,1 @@
+print("package successfully installed")

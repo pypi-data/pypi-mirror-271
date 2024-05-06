@@ -1,0 +1,16 @@
+torch
+torchvision
+torchaudio
+faiss-gpu
+bitarray
+datasets
+gitpython
+ninja
+scipy
+spacy
+tqdm
+transformers
+ujson
+more_itertools
+ir_datasets
+ir_measures

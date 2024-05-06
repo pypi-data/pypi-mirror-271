@@ -1,0 +1,6 @@
+include plaidx/indexing/codecs/*.cpp
+include plaidx/indexing/codecs/*.cu
+include plaidx/indexing/codecs/*.cu
+include plaidx/modeling/*.cpp
+include plaidx/search/*.cpp
+include requirements.txt

@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: dalle3_gen_save
+Version: 4.5.53
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Description-Content-Type: text/markdown
+
+use dalle3 to gen image, and save to local disk

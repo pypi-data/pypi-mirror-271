@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: llmcategorizer
+Version: 1.0.0
+Summary: A package for categorizing columns of data and outputting responses in a CSV format
+Home-page: https://github.com/chrissoria/LLMCategorizer
+Author: Chris Soria
+Author-email: chrissoria@berkeley.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: openai >=1.0
+Requires-Dist: pandas >=1.0
+Requires-Dist: numpy >=1.15
+
+LLMCategorizer is a Python package for automatically categorizing columns of data and outputting responses in a CSV format.

@@ -1,0 +1,10 @@
+README.md
+setup.py
+Pokemon-t2-tap/__init__.py
+Pokemon-t2-tap/pokemon.csv
+Pokemon-t2-tap/random_pokemon.py
+Pokemon_t2_tap.egg-info/PKG-INFO
+Pokemon_t2_tap.egg-info/SOURCES.txt
+Pokemon_t2_tap.egg-info/dependency_links.txt
+Pokemon_t2_tap.egg-info/requires.txt
+Pokemon_t2_tap.egg-info/top_level.txt

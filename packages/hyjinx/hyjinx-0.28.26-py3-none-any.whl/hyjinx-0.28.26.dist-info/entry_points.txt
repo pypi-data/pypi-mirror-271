@@ -1,0 +1,2 @@
+[console_scripts]
+hy-beautify = hyjinx.beautify:cli_grind_files

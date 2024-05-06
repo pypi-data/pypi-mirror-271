@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mediapipe_apiserver
+Version: 0.1.0
+Summary: MediaPipe API Server
+Home-page: https://github.com/<your-github-username>/mediapipe_apiserver
+Author: davidliyutong
+Author-email: david.liyutong@outlook.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

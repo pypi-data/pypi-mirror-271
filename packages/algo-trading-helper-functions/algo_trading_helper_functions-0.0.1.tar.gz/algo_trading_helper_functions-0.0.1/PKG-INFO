@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: algo_trading_helper_functions
+Version: 0.0.1
+Summary: Starting with creating algo trading helper functions
+Author: Kiddo (Dhaval Chheda)
+Author-email: <kiddo.dhaval@gmail.com>
+Keywords: python,algo,trading,candlestick patterns,zerodha,kite
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas-ta
+
+A package that allows to do algo trading using these helper functions.

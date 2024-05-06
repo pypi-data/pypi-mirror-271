@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pypular
+Version: 0.1
+Summary: Increase the popularity of your PYPI package by downloading it many times.
+Home-page: https://codeberg.org/ltworf/pypular/
+Author: Salvo 'LtWorf' Tomaselli
+Author-email: tiposchi@tiscali.it
+License: AGPL3
+Keywords: pypi counter popularity
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE

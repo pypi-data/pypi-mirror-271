@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pypular/__init__.py
+pypular/__main__.py
+pypular.egg-info/PKG-INFO
+pypular.egg-info/SOURCES.txt
+pypular.egg-info/dependency_links.txt
+pypular.egg-info/entry_points.txt
+pypular.egg-info/top_level.txt

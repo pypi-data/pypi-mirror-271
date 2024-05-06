@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: auto-circuit
+Version: 0.1.2
+Summary: 
+Author: UFO-101
+Author-email: josephmiller101@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: blobfile (==2.0.2)
+Requires-Dist: einops (>=0.6.1,<0.7.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: ordered-set (>=4.1.0,<5.0.0)
+Requires-Dist: plotly (>=5.18.0,<6.0.0)
+Requires-Dist: torch (>=2.1.1,<3.0.0)
+Requires-Dist: tracr-pypi (==1.0.0)
+Requires-Dist: transformer-lens (>=1.13.0,<2.0.0)
+Requires-Dist: vscode-tqdm (==4.66.2)
+Requires-Dist: word2word (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+[![PyPI - Version](https://img.shields.io/pypi/v/auto-circuit?logo=pypi&logoColor=white)](https://pypi.org/project/auto-circuit/)
+[![GitHub Release](https://img.shields.io/github/v/release/UFO-101/auto-circuit?logo=github&logoColor=white)](https://github.com/UFO-101/auto-circuit/releases)
+# AutoCircuit
+![](docs/assets/Edge_Patching_Rounded.png)
+
+A library for efficient patching and automatic circuit discovery.
+
+[![Static Badge](https://img.shields.io/badge/Read%20the%20Docs-414A82?style=for-the-badge&logo=Google%20Docs&logoColor=white&labelColor=CB5AD9)](https://UFO-101.github.io/auto-circuit)
+
+## Read the draft paper
+[Transformer Circuit Metrics are not Robust](Transformer%20Circuit%20Metrics%20are%20not%20Robust.pdf)
+
+## Getting Started
+
+```bash
+pip install auto-circuit
+```
+
+## Easy and Efficient Edge Patching
+https://github.com/UFO-101/auto-circuit/blob/03ce552ccdea98fc6fed3b05cfb2df9b0eb4e323/experiments/demos/zero_ablate_an_edge.py#L20-L26
+
+## Different Ablation Methods
+https://github.com/UFO-101/auto-circuit/blob/03ce552ccdea98fc6fed3b05cfb2df9b0eb4e323/experiments/demos/patch_an_edge.py#L37
+
+## Automatic Circuit Discovery
+https://github.com/UFO-101/auto-circuit/blob/03ce552ccdea98fc6fed3b05cfb2df9b0eb4e323/experiments/demos/patch_an_edge.py#L49-L55
+

@@ -1,0 +1,7 @@
+# default configuration for brkraw
+xnippet:
+  repo:
+  - name: xnippet-example
+    url: https://github.com/xoani/xnippet.git
+    plugin:
+      path: examples/plugin

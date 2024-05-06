@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: noiseestimator
+Version: 0.0.1
+Summary: Estimate maximum performance bounds based on experimental errors for ML datasets
+Author-email: Daniel Crusius <daniel.crusius@univ.ox.ac.uk>
+License: MIT
+Project-URL: Source, https://github.com/d-cru/noiseestimator/
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: importlib-resources; python_version < "3.10"
+Requires-Dist: numpy>=1.21
+Requires-Dist: pandas>=1.3
+Requires-Dist: seaborn>=0.11
+Requires-Dist: scikit-learn>=1.0
+Requires-Dist: scipy>=1.7
+Provides-Extra: test
+Requires-Dist: pytest>=6.1.2; extra == "test"
+Requires-Dist: pytest-runner; extra == "test"
+
+NoiseEstimator
+==============================
+[//]: # (Badges)
+[![GitHub Actions Build Status](https://github.com/d-cru/NoiseEstimator/workflows/CI/badge.svg)](https://github.com/d-cru/NoiseEstimator/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/d-cru/NoiseEstimator/branch/main/graph/badge.svg)](https://codecov.io/gh/d-cru/NoiseEstimator/branch/main)
+
+# Noise estimation of ML datasets in chemistry
+
+Estimate maximum performance bounds based on experimental errors for ML datasets
+
+### Copyright
+
+Copyright (c) 2024, Daniel Crusius
+
+
+#### Acknowledgements
+ 
+Project based on the 
+[Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.1.

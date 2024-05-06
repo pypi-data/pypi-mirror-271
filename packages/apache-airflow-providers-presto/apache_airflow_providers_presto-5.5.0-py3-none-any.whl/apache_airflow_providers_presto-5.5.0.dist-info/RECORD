@@ -1,0 +1,11 @@
+airflow/providers/presto/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/presto/__init__.py,sha256=SZJc_dUFmcw_DLFYpMC3CLMqAOU7NM-m0in7R_aWdrY,1581
+airflow/providers/presto/get_provider_info.py,sha256=ca3NHZaAn-emPGmkUnz1LYSkieizKzhidXRgoOH4RKk,3196
+airflow/providers/presto/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/presto/hooks/presto.py,sha256=sNldjH8ULkH_2J-uAY-LhbNzIOIOzD5yiS-_8hqGXiA,8486
+airflow/providers/presto/transfers/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/presto/transfers/gcs_to_presto.py,sha256=FdWFMLfLFZDDmBwk9qFH_oZRX1TYVXZtihuxqXZNOYw,4837
+apache_airflow_providers_presto-5.5.0.dist-info/entry_points.txt,sha256=ymuqAFfpJDIPUtKMIY5P4KEeX-QlOgDJQr1eDonBthA,102
+apache_airflow_providers_presto-5.5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_presto-5.5.0.dist-info/METADATA,sha256=XnOqV4_MXcWUv0a8Z9zYUodqTlpGEWvXwHd7OX5dk9A,6416
+apache_airflow_providers_presto-5.5.0.dist-info/RECORD,,

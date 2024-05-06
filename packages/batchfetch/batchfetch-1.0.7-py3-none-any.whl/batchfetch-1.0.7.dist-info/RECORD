@@ -1,0 +1,11 @@
+batchfetch/__init__.py,sha256=fdQBM03c2huzVOtfvzZ9K0drFvNL0fUD4EGvAGTVeGU,774
+batchfetch/batchfetch_base.py,sha256=HVxCzMlYkFJuMEs3-HeezfS9En1AyztohZOBFO8Icrk,5437
+batchfetch/batchfetch_cli.py,sha256=yL2QQwjyUlS_RKTXhlfjblholSY_eR0VRhEPuuCuyp4,9639
+batchfetch/batchfetch_git.py,sha256=k7HY-0RYkQTBlewmxpU6Evb-bCyKHJU7aml1pmiMKt0,13084
+batchfetch/helpers.py,sha256=I2gcHHIuAkQtrDgSpIbK-2azbxkGxDqEC_4JxAztaMU,4101
+batchfetch-1.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+batchfetch-1.0.7.dist-info/METADATA,sha256=-Qg6LmsWEKgPxrIRqzI6X_jXWQQ-DxUH_P6K88uAm4c,4433
+batchfetch-1.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+batchfetch-1.0.7.dist-info/entry_points.txt,sha256=IKX_ByKq_-ojhtgnFAGDuOtfU06ZlYxuAIdreOBUaNs,80
+batchfetch-1.0.7.dist-info/top_level.txt,sha256=JnTT76c5-6ZHOmbAZb35PwHYV7ojy17kmi82dPGO40s,11
+batchfetch-1.0.7.dist-info/RECORD,,

@@ -1,0 +1,1 @@
+python -m twine upload --repository dalle3_gen_save dist/*

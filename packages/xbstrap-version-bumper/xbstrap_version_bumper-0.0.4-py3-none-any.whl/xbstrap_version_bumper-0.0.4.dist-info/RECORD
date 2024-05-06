@@ -1,0 +1,10 @@
+xbstrap_version_bumper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbstrap_version_bumper/__main__.py,sha256=kqq5hqc_rBFi_ZXq5jr9aqthII4Vqr8VqfgdlCnej2M,102
+xbstrap_version_bumper/linecounted_yaml.py,sha256=LymP9IC7SssRSFJ8cX_-1candGbEGbnTccHEle6MS6A,8430
+xbstrap_version_bumper/main.py,sha256=C9WlMJfCemEhXy8Uxo86sc_6PMB_xvKv8F4XI9XjxV0,13455
+xbstrap_version_bumper-0.0.4.dist-info/LICENSE,sha256=POHtE03TNlEIiq_mRv2TKF60xUJcXLXMjibfrtKoGxc,1075
+xbstrap_version_bumper-0.0.4.dist-info/METADATA,sha256=rgJ_l0Mhukn3dOZH6Ehv7O-8ukpghUvynoyOUY0kGGQ,877
+xbstrap_version_bumper-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xbstrap_version_bumper-0.0.4.dist-info/entry_points.txt,sha256=Ks-uXOWOaFlxsleVHQUWbSCvToO4BWM0MVQ4o2x-N9c,76
+xbstrap_version_bumper-0.0.4.dist-info/top_level.txt,sha256=3VJp-0ulI6UIhYXA6Rtt5PkgZt91J7waG-Tvvo0iIow,23
+xbstrap_version_bumper-0.0.4.dist-info/RECORD,,

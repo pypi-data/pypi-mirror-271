@@ -1,0 +1,9 @@
+README.md
+setup.py
+potatoscript.egg-info/PKG-INFO
+potatoscript.egg-info/SOURCES.txt
+potatoscript.egg-info/dependency_links.txt
+potatoscript.egg-info/top_level.txt
+python/obfuscation.py
+python/potatoscript.o.py
+python/potatoscript.py

@@ -1,0 +1,6 @@
+pyproject.toml
+pytruco/__init__.py
+pytruco.egg-info/PKG-INFO
+pytruco.egg-info/SOURCES.txt
+pytruco.egg-info/dependency_links.txt
+pytruco.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+[project]
+name = "pytruco"
+authors = [{name = "JP Filevich", email = "juanfilevich@gmail.com"}]
+version = "0.0.0"
+description = "Coming soon"
+

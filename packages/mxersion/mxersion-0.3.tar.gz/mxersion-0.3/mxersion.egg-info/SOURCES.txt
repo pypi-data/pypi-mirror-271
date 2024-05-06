@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mxersion/__init__.py
+mxersion/hello.py
+mxersion.egg-info/PKG-INFO
+mxersion.egg-info/SOURCES.txt
+mxersion.egg-info/dependency_links.txt
+mxersion.egg-info/top_level.txt

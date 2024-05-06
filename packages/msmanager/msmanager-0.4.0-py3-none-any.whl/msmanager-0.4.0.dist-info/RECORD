@@ -1,0 +1,14 @@
+msmanager/__init__.py,sha256=DfKT4hGMyateZr5Q8HP1A5p-_3mhbebeT6sHvZwSvfo,267
+msmanager/__main__.py,sha256=3oJWNFTaZYGphnt2unLlP1aEOtjMSZ3JD3-0tRnQVjU,67
+msmanager/cli.py,sha256=gsWd_E-5xoaxXvbGnCUmjgE82JTg6pmgZE8L2lsV3pM,14071
+msmanager/config.py,sha256=ukvd4QYef7sKVKCD_VlZhv6DjC2P1C4oCmo62CF0xos,2488
+msmanager/exceptions.py,sha256=VmEUwxMMZFccNJacCCg4Hoi8gaYfjvlY84kn-k_MVQk,3307
+msmanager/functions.py,sha256=s6qISLZAcuF7QK9HrPO9k222fKLV57M9eOPS2bYMXn8,4201
+msmanager/models.py,sha256=KfojSiy84t5Pw5yQtQesGdLwJN1Yz8VJpWyWaErg2uQ,562
+msmanager/msm.py,sha256=oEgdYHhovMt5jtynqFj2k7SBVG56GMiAm8Nhwv1hIdw,3232
+msmanager/types.py,sha256=Im20_UdHJQBgwDi3pUa6KgKVFj8pMQVqfXnroPsnQDY,143
+msmanager/units.py,sha256=lW0asmju-Rxmgmee9yVtqh5AXiztsGS7yXp3SaetkJ4,596
+msmanager-0.4.0.dist-info/LICENSE,sha256=wadLikkAc86JaHzwp7yYCIpoyK-hWhI6Bjz2c6Z664I,1081
+msmanager-0.4.0.dist-info/METADATA,sha256=T8CcgV9WnHIVnHY5t64qeBqHEtlnylejaF3jHN_d8UU,1674
+msmanager-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+msmanager-0.4.0.dist-info/RECORD,,

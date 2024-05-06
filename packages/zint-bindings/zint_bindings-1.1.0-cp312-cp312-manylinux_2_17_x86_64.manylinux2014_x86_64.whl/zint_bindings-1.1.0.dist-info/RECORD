@@ -1,0 +1,6 @@
+zint.cpython-312-x86_64-linux-gnu.so,sha256=rUoP-O31sWp3ZDe_YKxkIngitzkjgFpMNL0g2OxqUNM,1780632
+zint-stubs/__init__.pyi,sha256=rXsuSLB5AxMVG-pEvpNdQGTiKmzvngkPNFf3krpMQt8,29177
+zint_bindings-1.1.0.dist-info/METADATA,sha256=wLtwjM-XKE8m65uQQdbqKR2NA2N7XSkank8voNFsNA4,3219
+zint_bindings-1.1.0.dist-info/RECORD,,
+zint_bindings-1.1.0.dist-info/WHEEL,sha256=u2rnRwWeN719o9wsfKKXdmekZfmUSjtilaBEvVzF1CI,155
+zint_bindings-1.1.0.dist-info/licenses/LICENSE.md,sha256=gNL2T9Q_te_VwdrYvrQeD2gVvcKM9b7gLz0uabsB2fE,10483

@@ -1,0 +1,9 @@
+include *
+include docs/*
+include docs/source/*
+include locale/*/*/*
+include src/*
+include src/cybermarket_server/*
+include src/cybermarket_server/database/*
+include src/cybermarket_server/locale/*/*/*
+include tests/*

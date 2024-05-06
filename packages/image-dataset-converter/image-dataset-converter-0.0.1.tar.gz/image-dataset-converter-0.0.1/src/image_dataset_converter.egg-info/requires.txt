@@ -1,0 +1,10 @@
+defusedxml
+imagesize
+matplotlib
+numpy
+opex
+pillow
+seppl>=0.2.4
+shapely
+wai.common>=0.0.44
+wai.logging

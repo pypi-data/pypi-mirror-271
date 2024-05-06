@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: image-dataset-converter
+Version: 0.0.1
+Summary: Python3 library for converting between various image annotation dataset formats.
+Home-page: https://github.com/waikato-datamining/image-dataset-converter
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Description: The **image-dataset-converter** library allows the conversion between
+        various dataset formats for image annotation datasets.
+        Filters can be supplied as well, e.g., for cleaning up the data.
+        
+        Dataset formats:
+        
+        - image classification: ADAMS (r/w), sub-dir (r/w)
+        - object detection: ADAMS (r/w), COCO (r/w), OPEX (r/w), ROI (r/w), VOC (r/w), YOLO (r/w)
+        - image segmentation: blue-channel (r/w), grayscale (r/w), indexed PNG (r/w), layer segments (r/w)
+        
+        
+        Changelog
+        =========
+        
+        
+        0.0.1 (2024-05-06)
+        ------------------
+        
+        - initial release
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing

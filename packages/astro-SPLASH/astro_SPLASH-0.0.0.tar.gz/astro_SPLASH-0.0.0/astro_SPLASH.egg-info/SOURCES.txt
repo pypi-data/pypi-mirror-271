@@ -1,0 +1,14 @@
+setup.py
+SPLASH/__init__.py
+SPLASH/pipeline.py
+SPLASH/trained_models/__init__.py
+astro_SPLASH.egg-info/PKG-INFO
+astro_SPLASH.egg-info/SOURCES.txt
+astro_SPLASH.egg-info/dependency_links.txt
+astro_SPLASH.egg-info/requires.txt
+astro_SPLASH.egg-info/top_level.txt
+astro_splash.egg-info/PKG-INFO
+astro_splash.egg-info/SOURCES.txt
+astro_splash.egg-info/dependency_links.txt
+astro_splash.egg-info/requires.txt
+astro_splash.egg-info/top_level.txt

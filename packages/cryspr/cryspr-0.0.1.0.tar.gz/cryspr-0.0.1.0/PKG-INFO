@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: cryspr
+Version: 0.0.1.0
+Summary: Python implementation of crystal structure pre-relaxation and predcition (CrySPR).
+Author-email: Wei Nong <nw2y47@outlook.com>, Ruiming Zhu <raymond_zhurm@outlook.com>, Kedar Hippalgaonkar <kedar@ntu.edu.sg>
+Maintainer-email: Wei Nong <nw2y47@outlook.com>, Ruiming Zhu <raymond_zhurm@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2024 Kedar Hippalgaonkar's Materials by Design Lab
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Tosykie/CrySPR
+Project-URL: Issues, https://github.com/Tosykie/CrySPR/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ase
+Requires-Dist: pymatgen
+Requires-Dist: pyxtal
+Requires-Dist: torch
+Requires-Dist: matgl
+Requires-Dist: chgnet
+Requires-Dist: mace-torch
+Requires-Dist: scikit-opt
+
+# CrySPR
+
+**Maintainers**: [Wei Nong](https://github.com/Tosykie) [email: nw2y47@outlook.com] ; [Ruiming Zhu](https://github.com/RaymondZhurm) [email: raymond_zhurm@outlook.com]
+
+**CrySPR** /ˈkrɪspɚ/ is a Python interface for crystal structure pre-relaxation and prediction using machine-learning interatomic potentials (ML-IAPs). Features include:
+
+- Implement structure generation from the input info (e.g., formula, Z, space group, etc.)  via `pyxtal` and local structure optimization/relaxation through `ase` calculator using ML-IAPs;
+- Implement global search task for crystal structure prediction using 1) random search (done), and 2) particle swarm optimization (PSO) for a given reduced formula (in dev ...);
+- More in development
+
+The original old repo [Fast-Universal-CSP-Platform](https://github.com/RaymondZhurm/Fast-Universal-CSP-Platform) @[RaymondZhurm](https://github.com/RaymondZhurm)
+
+## Python dependencies
+
+```
+python >= 3.9
+ase # https://wiki.fysik.dtu.dk/ase/install.html
+pymatgen # https://pymatgen.org/installation.html
+pyxtal # https://pyxtal.readthedocs.io/en/latest/Installation.html#installation
+torch # https://pytorch.org/get-started/locally/#linux-installation
+matgl # https://matgl.ai/#installation
+chgnet # https://chgnet.lbl.gov/#installation
+mace-torch # https://mace-docs.readthedocs.io/en/latest/guide/installation.html
+scikit-opt # https://scikit-opt.github.io/scikit-opt/#/en/README?id=install
+```
+
+
+
+## Installation
+
+### PyPI distribution
+
+```bash
+$ pip install cryspr
+```
+
+### Source code (GitHub)
+
+1. Download the repo or git clone.
+
+2. Add the CrySPR project into the system PYTHONPATH either by, e.g., on Linux/Mac OS
+
+```bash
+$ export PYTHONPATH=/path/to/CrySPR:$PYTHONPATH
+```
+
+or by in the python code
+
+```python
+import sys
+sys.path.insert(0, '/path/to/CrySPR')
+```
+
+
+
+## Usage
+
+To be updated.
+
+
+
+## Examples
+
+### Ground-state CaTiO3
+
+This example shows the implementation of crystal structure relaxation and prediction from three test space groups (No. 62, 74, 140) through a random prediction mode. The ML-IAP calculator is CHGNet.
+
+Refers to [`examples/cryspr_random_predict_CaTiO3.ipynb`](https://github.com/Tosykie/CrySPR/blob/main/examples/cryspr_random_predict_CaTiO3.ipynb)
+
+
+

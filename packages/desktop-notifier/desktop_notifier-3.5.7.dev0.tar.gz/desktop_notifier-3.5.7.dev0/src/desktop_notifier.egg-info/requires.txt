@@ -1,0 +1,30 @@
+packaging
+
+[:sys_platform == "darwin"]
+rubicon-objc
+
+[:sys_platform == "linux"]
+dbus-next
+
+[:sys_platform == "win32"]
+winrt-windows.applicationmodel.core
+winrt-windows.data.xml.dom
+winrt-windows.foundation
+winrt-windows.foundation.collections
+winrt-windows.foundation.interop
+winrt-windows.ui.notifications
+
+[dev]
+black
+bump2version
+flake8
+flake8-pyproject
+mypy
+pytest
+pytest-cov
+
+[docs]
+furo==2024.4.27
+sphinx==7.3.7
+sphinx-autoapi==3.0.0
+sphinx-mdinclude==0.6.0

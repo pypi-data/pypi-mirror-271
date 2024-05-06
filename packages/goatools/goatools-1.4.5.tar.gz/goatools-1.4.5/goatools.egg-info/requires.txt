@@ -1,0 +1,11 @@
+docopt
+ftpretty
+numpy
+openpyxl
+pandas
+pydot
+requests
+rich
+scipy
+statsmodels
+xlsxwriter

@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+aassempdf.egg-info/PKG-INFO
+aassempdf.egg-info/SOURCES.txt
+aassempdf.egg-info/dependency_links.txt
+aassempdf.egg-info/top_level.txt

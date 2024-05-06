@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: mlsdk
+Version: 0.0.1
+Summary: Model Zoo SDK
+Home-page: UNKNOWN
+Author: EUR
+Author-email: eur@gmail.com
+License: MIT
+Description: Model Zoo - SDK 
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

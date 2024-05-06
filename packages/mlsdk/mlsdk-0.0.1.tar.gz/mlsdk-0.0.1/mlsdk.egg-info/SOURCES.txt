@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+mlsdk/__init__.py
+mlsdk/__main__.py
+mlsdk/base_class.py
+mlsdk.egg-info/PKG-INFO
+mlsdk.egg-info/SOURCES.txt
+mlsdk.egg-info/dependency_links.txt
+mlsdk.egg-info/entry_points.txt
+mlsdk.egg-info/requires.txt
+mlsdk.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.json
+setup.py
+lazydock/__init__.py
+lazydock/__version__.py
+lazydock.egg-info/PKG-INFO
+lazydock.egg-info/SOURCES.txt
+lazydock.egg-info/dependency_links.txt
+lazydock.egg-info/entry_points.txt
+lazydock.egg-info/requires.txt
+lazydock.egg-info/top_level.txt
+lazydock/storage/lazydock-cli-scripts-list.json

@@ -1,0 +1,11 @@
+mbapy>=0.7.3
+ujson
+Markdown
+imageio
+pillow_heif
+wget
+pyteomics
+opencv-python
+pygame
+easyocr
+nicegui

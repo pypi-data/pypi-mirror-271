@@ -1,0 +1,9 @@
+README.md
+setup.py
+SQLConn/SQLConn.py
+SQLConn/__init__.py
+SQLConn.egg-info/PKG-INFO
+SQLConn.egg-info/SOURCES.txt
+SQLConn.egg-info/dependency_links.txt
+SQLConn.egg-info/requires.txt
+SQLConn.egg-info/top_level.txt

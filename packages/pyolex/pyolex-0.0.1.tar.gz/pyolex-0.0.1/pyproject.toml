@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyolex"
+version = "0.0.1"
+authors = [
+    { name="Joakim Skjefstad", email="skjefstad.joakim@gmail.com" },
+]
+description = "A python library for reading and writing Olex plotlayer ('Ruter') files"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest >= 3.7",
+    "twine",
+    "check-manifest"
+]
+
+[project.urls]
+Homepage = "https://github.com/joakimsk/pyolex"
+Issues = "https://github.com/joakimsk/pyolex/issues"

@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/korean_news_crawler.egg-info/PKG-INFO
+src/korean_news_crawler.egg-info/SOURCES.txt
+src/korean_news_crawler.egg-info/dependency_links.txt
+src/korean_news_crawler.egg-info/requires.txt
+src/korean_news_crawler.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+mojo/startup/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+mojo/startup/converters.py,sha256=B3ujV0nPTm7Nrsmh1LETCrr1G0BPpVOmRDFeoCzlCUM,1426
+mojo/startup/startupconfigloader.py,sha256=20WjEsn9ZMNm9kjTkK6VEcohS-3UBvZVV0KIgOWY_ns,2160
+mojo/startup/startupvariables.py,sha256=MFCqaPj4ZycpaDMEPWl1AIRkPryBh_gaOBbXLoqlHO4,717
+mojo/startup/wellknown.py,sha256=h5cJS1h4JOVTCNu8z9vXFclOpkW7VgN_87eE5U-oJNA,894
+mojo_startup-1.3.8.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mojo_startup-1.3.8.dist-info/LICENSE.txt,sha256=i9hLhagKiDVsa4ql3Tup3i7qtJVLL-1D3ruSJO-L8jc,1083
+mojo_startup-1.3.8.dist-info/METADATA,sha256=nZTbZDTOd40o__1Ea6Pif7nEnwVDplywal6piFZPnkM,2855
+mojo_startup-1.3.8.dist-info/RECORD,,

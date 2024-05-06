@@ -1,0 +1,8 @@
+pytest_exit_code/__init__.py,sha256=FSDiYIXh1fTl3uczg6M7-o3yV55p4nT-BhG_PL-cz74,203
+pytest_exit_code/plugin.py,sha256=-tlzooEwayjbisOidu-v7PI8UUMQ2UqbEn1buah1O4I,1527
+pytest_exit_code-0.2.0.dist-info/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+pytest_exit_code-0.2.0.dist-info/METADATA,sha256=RdLZW7qeed-fhUwSmaCk6F2O5cPVQ-HRLG7s3U-DKfE,16017
+pytest_exit_code-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pytest_exit_code-0.2.0.dist-info/entry_points.txt,sha256=xxC_jsE6gBe61UgtLIv6mdUvsv4NldUR39IDel0QPwA,44
+pytest_exit_code-0.2.0.dist-info/top_level.txt,sha256=cOcgV4pYixUt8MZTdeZz79wb1jTLTC7UbTI9-2bL-aQ,17
+pytest_exit_code-0.2.0.dist-info/RECORD,,

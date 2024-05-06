@@ -1,0 +1,2 @@
+[console_scripts]
+simpleworktime = src.main:run_timer

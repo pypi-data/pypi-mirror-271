@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+sqs_client/__init__.py
+sqs_client/client.py
+sqs_client/publisher.py
+sqs_client/task.py
+sqs_client.egg-info/PKG-INFO
+sqs_client.egg-info/SOURCES.txt
+sqs_client.egg-info/dependency_links.txt
+sqs_client.egg-info/top_level.txt

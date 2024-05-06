@@ -1,0 +1,5 @@
+setup.py
+pcplayground.egg-info/PKG-INFO
+pcplayground.egg-info/SOURCES.txt
+pcplayground.egg-info/dependency_links.txt
+pcplayground.egg-info/top_level.txt

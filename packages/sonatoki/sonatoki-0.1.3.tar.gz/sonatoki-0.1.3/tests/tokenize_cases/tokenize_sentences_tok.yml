@@ -1,0 +1,37 @@
+---
+- name: "basic1"
+  input: "mu. mu."
+  output:
+    - "mu."
+    - "mu."
+- name: "basic2"
+  input: "mu! mu!"
+  output:
+    - "mu!"
+    - "mu!"
+- name: "basic3"
+  input: "mu? mu?"
+  output:
+    - "mu?"
+    - "mu?"
+- name: "basic4"
+  input: "mi mu. mi wawa."
+  output:
+    - "mi mu."
+    - "mi wawa."
+- name: "dash"
+  input: "mi sona ala e ni- sina seme a"
+  output:
+    - "mi sona ala e ni-"
+    - "sina seme a"
+- name: "comma"
+  input: "mi mu tawa sina, mi wawa e sina."
+  output:
+    - "mi mu tawa sina, mi wawa e sina."
+- name: "quotes"
+  input: "toki li tan kulupu Kuko li ni: 'o ike ala!'"
+  output: # expected; we split on right of all sentence-ending puncts
+    - "toki li tan kulupu Kuko li ni:"
+    - "'"
+    - "o ike ala!"
+    - "'"

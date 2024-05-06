@@ -1,0 +1,13 @@
+[console_scripts]
+dem-hello = biodem.cli_dem:hello
+dem-impute = biodem.cli_dem:cli_dem_impute
+dem-predict = biodem.cli_dem:cli_dem_predict
+dem-rank = biodem.cli_dem:cli_dem_rank
+dem-s2g-pipe = biodem.cli_dem:cli_s2g_pipe
+dem-select-rf = biodem.cli_dem:cli_dem_select_rf
+dem-select-varpca = biodem.cli_dem:cli_dem_select_varpca
+dem-train-pipe = biodem.cli_dem:cli_dem_train_pipe
+filter-pheno = biodem.cli_dem:cli_filter_pheno
+ncv-prep-c = biodem.cli_dem:cli_ncv_prep_class
+ncv-prep-r = biodem.cli_dem:cli_ncv_prep_regre
+rm-ckpt = biodem.cli_dem:cli_rm_ckpt

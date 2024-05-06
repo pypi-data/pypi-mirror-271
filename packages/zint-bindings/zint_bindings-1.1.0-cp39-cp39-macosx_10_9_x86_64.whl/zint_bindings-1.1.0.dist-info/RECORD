@@ -1,0 +1,6 @@
+zint.cpython-39-darwin.so,sha256=7QcSHjqAfnT93K_aa-7FlFbCl1zavR37x7MTdZnnt5Q,1559040
+zint_bindings-1.1.0.dist-info/RECORD,,
+zint_bindings-1.1.0.dist-info/WHEEL,sha256=ydwo_m7npId_zkksgJXC47My8mFLcH_6D0hr8b-PLwE,112
+zint_bindings-1.1.0.dist-info/METADATA,sha256=wLtwjM-XKE8m65uQQdbqKR2NA2N7XSkank8voNFsNA4,3219
+zint_bindings-1.1.0.dist-info/licenses/LICENSE.md,sha256=gNL2T9Q_te_VwdrYvrQeD2gVvcKM9b7gLz0uabsB2fE,10483
+zint-stubs/__init__.pyi,sha256=wX18SlT8UDxD3qu9fgoptReNQRZvwTTOoR4NH4cYzac,28744

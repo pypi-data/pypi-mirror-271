@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+drf_pagination_meta_wrap/__init__.py
+drf_pagination_meta_wrap/apps.py
+drf_pagination_meta_wrap/mixins.py
+drf_pagination_meta_wrap/settings.py
+drf_pagination_meta_wrap/utils.py
+drf_pagination_meta_wrap.egg-info/PKG-INFO
+drf_pagination_meta_wrap.egg-info/SOURCES.txt
+drf_pagination_meta_wrap.egg-info/dependency_links.txt
+drf_pagination_meta_wrap.egg-info/requires.txt
+drf_pagination_meta_wrap.egg-info/top_level.txt

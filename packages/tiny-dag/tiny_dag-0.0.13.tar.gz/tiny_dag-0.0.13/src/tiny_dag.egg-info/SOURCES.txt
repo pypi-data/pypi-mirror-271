@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tiny_dag.egg-info/PKG-INFO
+src/tiny_dag.egg-info/SOURCES.txt
+src/tiny_dag.egg-info/dependency_links.txt
+src/tiny_dag.egg-info/requires.txt
+src/tiny_dag.egg-info/top_level.txt
+src/tinydag/__init__.py
+src/tinydag/exceptions.py
+src/tinydag/graph.py
+src/tinydag/graph_parallel_working.py
+src/tinydag/node.py
+src/tinydag/rendering.py
+src/tinydag/utils.py

@@ -1,0 +1,5 @@
+setup.py
+bda2020239019.egg-info/PKG-INFO
+bda2020239019.egg-info/SOURCES.txt
+bda2020239019.egg-info/dependency_links.txt
+bda2020239019.egg-info/top_level.txt

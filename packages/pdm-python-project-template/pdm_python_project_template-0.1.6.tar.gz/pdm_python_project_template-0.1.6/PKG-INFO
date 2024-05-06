@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: pdm-python-project-template
+Version: 0.1.6
+Summary: A template for python projects in PDM
+Author-email: Daniel Tan <dtch1997@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.12
+Provides-Extra: test
+Requires-Dist: pyright>=1.1.361; extra == 'test'
+Requires-Dist: pytest>=8.2.0; extra == 'test'
+Requires-Dist: ruff>=0.4.3; extra == 'test'
+Description-Content-Type: text/markdown
+
+# python-project-template
+
+# Quickstart
+
+```bash
+pip install pdm-python-project-template
+```
+
+# Development
+
+Refer to [Setup](docs/setup.md) for how to set up development environment.

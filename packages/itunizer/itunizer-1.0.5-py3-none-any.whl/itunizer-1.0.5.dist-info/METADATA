@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: itunizer
+Version: 1.0.5
+Summary: A command line tool to search and compare prices of apps and music on the Apple Store
+Author: James Campbell
+Author-email: james@jamescampbell.us
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: certifi (>=2024.2.2,<2025.0.0)
+Requires-Dist: chardet (>=5.2.0,<6.0.0)
+Requires-Dist: idna (>=3.7,<4.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: pytz (>=2024.1,<2025.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Requires-Dist: urllib3 (>=2.2.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# itunizer
+🎵🎵🎵🎵🎵🎵🎵🎵🎵🎵
+
+## What
+
+Gather market data into a machine readable form from iTunes store data. 
+
+## Install
+
+The easiest way is pip: `pip3 install itunizer`. 
+
+## Usage
+
+Use the `-h` for options:   
+
+```
+$ itunizer -h
+usage: itunizer [-h] [-s SEARCH_TERM] [-c CATEGORY_LOCATION] [-p] [-n] [-t]
+                [--country STORE_COUNTRY] [--version]
+
+collects and processes itunes data including ibook, application, and other
+store items with metadata, example: itunizer -c ibook -s "corn" -t
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SEARCH_TERM, --search SEARCH_TERM
+                        search term to search itunes store for (default:
+                        nginx)
+  -c CATEGORY_LOCATION, --category CATEGORY_LOCATION
+                        category in store to search for (default: software)
+  -p, --print           print to screen results, helpful for testing (default:
+                        False)
+  -n, --no-logo         disables printing logo (default: False)
+  -t, --table           prints out table as format for data (default: False)
+  --country STORE_COUNTRY
+                        the store country you want to use for search results
+                        (default: us)
+  --version, -v         prints the version (default: False)
+  ```
+
+## Why?
+
+It is difficult to get nice structured data from Apple. This helps with that.
+
+## Example search
+
+!['example'](https://user-images.githubusercontent.com/616585/35492868-5dcf0e90-047d-11e8-974f-0dd7a0f33311.png)
+

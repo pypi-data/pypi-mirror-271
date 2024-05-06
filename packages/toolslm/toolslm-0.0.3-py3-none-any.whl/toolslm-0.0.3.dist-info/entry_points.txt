@@ -1,0 +1,2 @@
+[nbdev]
+toolslm = toolslm._modidx:d

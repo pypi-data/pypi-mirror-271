@@ -1,0 +1,3 @@
+[console_scripts]
+generate-shorts=scripts.generate_shorts:main
+

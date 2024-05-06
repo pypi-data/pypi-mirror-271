@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: shorts-generator
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/python-poetry/poetry
+License: MIT
+Author: Jingun Hong
+Author-email: jingun.hong@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: moviepy (>=1.0.3,<2.0.0)
+Requires-Dist: openai (>=1.25.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/python-poetry/poetry
+Description-Content-Type: text/markdown
+
+# ShortsGenerator
+
+Youtube Shorts movie generation using GenAI
+
+
+## Prerequisite
+
+### ImageMagick
+
+Install [ImageMagick](https://www.imagemagick.org/script/download.php) for MoviePy text clips.
+

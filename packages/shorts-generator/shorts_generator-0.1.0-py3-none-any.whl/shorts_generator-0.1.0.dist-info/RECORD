@@ -1,0 +1,17 @@
+scripts/generate_shorts.py,sha256=1uTzNBPeS4QCQpmExjwSfzKlB-NiYVXSNBPcrlxeZi8,1518
+shorts_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shorts_generator/configs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shorts_generator/configs/actor.py,sha256=-NC5lrmJfnbSfNQb2-96TxZUGl-Gx1XZ_2hqzH-tlEU,699
+shorts_generator/configs/voice.py,sha256=aY69J4BEMQTllFpjT-x1AHQsVAirA6v9NnCqI2aFDcQ,293
+shorts_generator/generator.py,sha256=f3pskm7J1iPbPz8GMeR8Q_H2pfHIyLML8puGRu4m0xk,2197
+shorts_generator/generators/__init__.py,sha256=OIQ1vbe72WFp6I_vIwGwqRbLeiJyCJZL9Bd1AIVUoYM,371
+shorts_generator/generators/audio.py,sha256=0QEp9iMaAMLickJc5QJwFlOeApQ1psggXiNQLK_PY9U,327
+shorts_generator/generators/image.py,sha256=3-DkSmdRAc8PdoNMQHbGtDUfaOJ6yFuHTqBNg-HtgCA,648
+shorts_generator/generators/script.py,sha256=idTS3_z7u6B-BsUScrNMbTmm3A2hFMwv0qg2ZhbPtL8,2035
+shorts_generator/generators/video.py,sha256=rt1hVJ-V7XSyyEIAWCPpglhvFiaFI-iH77Rp2fRL4sI,2478
+shorts_generator/workspace.py,sha256=J4BKmsGVpzqWmXRS3DiqHPRa89CnyQnbyvLUXlx8m8A,1573
+shorts_generator-0.1.0.dist-info/LICENSE,sha256=C2iyVF0UnnBhe-Xg-c8NZ863E1fKlxaZE8l_kpT1bEI,1068
+shorts_generator-0.1.0.dist-info/METADATA,sha256=Oa6gcnP_1LH_y7o9XO0p_5Ckw8jDJmAf1gLRKIOGmsg,884
+shorts_generator-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+shorts_generator-0.1.0.dist-info/entry_points.txt,sha256=N4iFoTfz8JrDh_y59dGCEVTNrFbNeKPE5_g3pSfHsOM,64
+shorts_generator-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+code_to_text/__init__.py
+code_to_text/code_to_text.py
+easy_code_to_text.egg-info/PKG-INFO
+easy_code_to_text.egg-info/SOURCES.txt
+easy_code_to_text.egg-info/dependency_links.txt
+easy_code_to_text.egg-info/top_level.txt
+tests/__init__.py
+tests/test_code_to_text.py

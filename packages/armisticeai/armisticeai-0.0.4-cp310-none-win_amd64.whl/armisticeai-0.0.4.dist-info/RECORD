@@ -1,0 +1,10 @@
+armisticeai-0.0.4.dist-info/METADATA,sha256=K0d2n-Xg_slhgya_MBdhhQta03S2wwuo00E0IGaqoSo,778
+armisticeai-0.0.4.dist-info/WHEEL,sha256=5HyBAIXy6w_lmX9AQnFspp6An6SPZJwRKkYM1H8iHP0,95
+armisticeai/_cli.py,sha256=XL6ptxowddr-zu7id3uKjFDuNPShAs6sWzi0aQ--LVs,2544
+armisticeai/_client.py,sha256=A3KJYftkqeLF4w3xmoTIjlYAfsRfLuMbOZJZCXYkwtE,12304
+armisticeai/_exceptions.py,sha256=Tz4nl1m10BaH8KMPIkTJzxK8Vmh897gqBOT1z3e2Vt4,46
+armisticeai/_utils.py,sha256=ZgqSkgK9eqTHENfEMcla6wLyGn5hvds852cVUDGudwY,4512
+armisticeai/__init__.py,sha256=Y0mjRpRCvMFyiaLG-9BP-M3dHVCHvAFFO8Jox7Xr0qM,108
+armisticeai/__main__.py,sha256=om58BgLAI-r-FujVpuhjEgXBsXlXTiPUs6FAyeWJkKQ,32
+armisticeai/armisticeai.cp310-win_amd64.pyd,sha256=x67cq5lb3hV90rQOXQTr9fo8jeLWAG35GbBYlrL0Xrw,5032960
+armisticeai-0.0.4.dist-info/RECORD,,

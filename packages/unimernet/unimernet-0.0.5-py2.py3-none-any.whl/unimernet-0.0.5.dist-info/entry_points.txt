@@ -1,0 +1,5 @@
+[console_scripts]
+Unimernet_eval=test:main
+unimernet=demo:main
+unimernet_gui=streamlit_app:main
+

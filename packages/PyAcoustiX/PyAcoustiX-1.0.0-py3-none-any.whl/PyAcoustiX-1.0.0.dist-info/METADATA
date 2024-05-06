@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: PyAcoustiX
+Version: 1.0.0
+Summary: A Python package for acoustic analysis
+Home-page: https://github.com/Shaoqigit/PyXfem
+Author: Shaoqi WU
+Author-email: shaoqiwu@outlook.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: numba
+
+# **S**imple **A**coustic **S**imulator(SAcouS)
+[comment]: <> ( - AcoustiX based Sound simulation library)
+
+                   based on Finite Element Method
+                    contact: Shaoqiwu@outlook.com
+
+**AcoustiX** is Finite Element (FEM) modular Library, mainly designed for Acoustic simulation but can be used (extended) to other physics. This labrary aims at providing the simplest, clearest and easily conprehensive tool to use FEM for purpose of research, education or industry prototype.
+
+## Main special features/architecture of the library compared to other existing lib:
+* Apart from classical Linear/Quadratic Larange polynomial, **High order (lobatto)** shape functions are supported
+* The element type (interpolation order of shape functions) can be **varied** on each element (mesh)
+* **Extended elements** and double node techinique are used to deal with discontitnuity
+* Various common Acoustic materials are supported, including porous rigid, Limp and **Biot-up** models.
+* FEM-**TMM** coupling is supported to model multi-layered configuration in general geometry problems
+
+
+### Up to this moment:
+* High order lobatto shape function supported (up to $p=4$)
+* JCA and Limp model to account for porous acoustic materials
+* **Biot equation** modeling for poro-elastic materials
+* Impedence boundary condition supported
+* Weakly enforced essential boundary condition (penalty method and **Nitche's method**)
+* Biot UP and Fluid coupling model (implemented but not fully validated)
+* Modal domain reduction method
+
+### To do list
+* MoR for damped systems (RB+EIM algorithme for porous materials)
+* Perfect Matched Layer (PML) for free field boundary condition
+* Infinite Element for free field boundary condition
+* Finite Admittance Method (FAM) for high precision multi-layered configuration
+* TMM embeded for multi-layered configuration
+* higher order shape function and integration ($p=10$)
+
+### Roadmap:
+* Message and log system
+
+## For development and contribution
+Every time one new feature is developed, a new test case has to be added in the /tests folder. The run_test must to be run and passed with all green light before created Pull Request as:
+```bash
+Test case:  main_test1_two_layer.py                                      SUCCESS
+Test case:  main_test2_impedance_bc.py                                   SUCCESS
+Test case:  main_test3_lobatto.py                                        SUCCESS
+Test case:  main_test4_biot.py                                           SUCCESS
+Test case:  main_test5_biot_up.py                                        SUCCESS
+Test case:  main_absorption_comp.py                                      SUCCESS
+```

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lddtestgitforjenkins
+Version: 1.0.0
+Summary: add test jinkins
+Home-page: https://gitee.com/liu-dingdong/testgit.git
+Author: Dingdong Liu
+Author-email: dingdongliu@quanta.org.cn
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pyqcas
+Requires-Dist: pyqcisim
+Requires-Dist: colorama
+Requires-Dist: termcolor
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+你好，再见
+我是ldddevelop
+这里是dev2
+我们使用其来进行一个小测试

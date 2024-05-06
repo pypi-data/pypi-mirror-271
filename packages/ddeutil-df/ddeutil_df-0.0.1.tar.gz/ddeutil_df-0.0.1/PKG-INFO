@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ddeutil-df
+Version: 0.0.1
+Summary: Data Developer & Engineer Dataframe Utility Functions
+Author-email: ddeutils <korawich.anu@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/ddeutils/ddeutil-df/
+Project-URL: Source Code, https://github.com/ddeutils/ddeutil-df/
+Keywords: data,dataframe,utility
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ddeutil
+Provides-Extra: dev
+Requires-Dist: clishelf; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: python-dotenv==1.0.1; extra == "dev"
+
+# Data Utility Package: _Dataframe_
+
+**Table of Contents**:
+
+- [Installation](#installation)
+
+Data Developer & Engineer Dataframe Utility Functions
+
+## Installation
+
+> [!IMPORTANT]
+> The project does not deploy to the **PyPI** repository yet.
+
+```shell
+pip install ddeutil-df
+```
+
+## License
+
+This project was licensed under the terms of the [MIT license](LICENSE).

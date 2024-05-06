@@ -1,0 +1,6 @@
+ddeutil
+
+[dev]
+clishelf
+pre-commit
+python-dotenv==1.0.1

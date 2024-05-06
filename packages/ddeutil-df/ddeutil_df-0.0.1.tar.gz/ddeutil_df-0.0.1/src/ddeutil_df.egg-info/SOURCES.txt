@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/ddeutil/df/__about__.py
+src/ddeutil/df/__init__.py
+src/ddeutil/df/pandas/__init__.py
+src/ddeutil/df/polars/__init__.py
+src/ddeutil/df/polars/database.py
+src/ddeutil/df/polars/deltalake.py
+src/ddeutil/df/pyspark/__init__.py
+src/ddeutil/df/pyspark/client.py
+src/ddeutil_df.egg-info/PKG-INFO
+src/ddeutil_df.egg-info/SOURCES.txt
+src/ddeutil_df.egg-info/dependency_links.txt
+src/ddeutil_df.egg-info/requires.txt
+src/ddeutil_df.egg-info/top_level.txt
+tests/test_echo.py

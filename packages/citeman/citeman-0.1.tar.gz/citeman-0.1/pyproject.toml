@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "citeman"
+authors = [
+    {name = "Dylan Russell, MD", email = "dyl.russell@gmail.com"}
+]
+maintainers = [
+   {name = "Dylan Russell, MD", email = "dyl.russell@gmail.com"}
+]
+description = "A simple command line citation manager for your academic manuscript."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "bibtexparser>=2.0.0b7",
+    "console-menu",
+    "ansicolors",
+    "habanero"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dynamic = ["version"]
+
+# https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+# for all [tool.*] headings below
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+citeman = ["logo"]
+
+[tool.setuptools_scm]
+
+[project.urls]
+Homepage = "https://github.com/dylanrussellmd/pycite"
+Issues = "https://github.com/dylanrussellmd/pycite/issues"

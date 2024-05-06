@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-telegram-broadcast
+Version: 0.2
+Summary: Package that wraps the python-telegram-bot library to make broadcasting easier.
+Author: jonah_whaler_2348
+Author-email: jk_saga@proton.me
+License: MIT
+Keywords: python,telegram,broadcast,bot
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-telegram-bot==21.1.1
+Requires-Dist: mypy
+
+# Python Telegram Broadcast

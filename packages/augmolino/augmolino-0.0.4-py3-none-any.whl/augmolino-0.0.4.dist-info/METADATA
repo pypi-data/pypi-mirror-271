@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: augmolino
+Version: 0.0.4
+Summary: augmentation for audio based datasets for machine learning
+Home-page: https://github.com/jake-is-ESD-protected/augmolino
+Download-URL: https://github.com/jake-is-ESD-protected/augmolino/archive/refs/tags/0.0.2.tar.gz
+Author: Jakob Tschavoll
+Author-email: jt@tschavoll.at
+License: GPL 3.0
+Keywords: ML,augmentation,audio
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: librosa
+Requires-Dist: soundfile
+

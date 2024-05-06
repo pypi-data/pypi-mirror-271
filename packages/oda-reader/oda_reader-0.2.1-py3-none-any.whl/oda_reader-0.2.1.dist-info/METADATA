@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: oda_reader
+Version: 0.2.1
+Summary: A simple package to import ODA data using the OECD Data API
+License: MIT
+Author: Jorge Rivera
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pyarrow (>=16.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# oda_reader
+Tools to import data from the OECD DAC. 
+
+This is a very simple package to make working with the Explorer API
+easier. 
+
+This package is under active development.
+
+
+It includes a basic implementation of an API call for DAC1. It also includes
+tools to translate the API response into the old .Stat schema.
+

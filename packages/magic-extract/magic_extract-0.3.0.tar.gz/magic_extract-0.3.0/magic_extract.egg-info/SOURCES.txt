@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+magic_extract/__init__.py
+magic_extract/test_basic.py
+magic_extract.egg-info/PKG-INFO
+magic_extract.egg-info/SOURCES.txt
+magic_extract.egg-info/dependency_links.txt
+magic_extract.egg-info/top_level.txt

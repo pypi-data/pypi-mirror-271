@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: magic-extract
+Version: 0.3.0
+Summary: A pip installable version of https://andyljones.com/posts/post-mortem-plotting.html for regular python
+Home-page: https://github.com/wuthefwasthat/magic_extract
+Author: Jeffrey Wu
+Requires-Python: >=3.7
+License-File: LICENSE

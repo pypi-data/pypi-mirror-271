@@ -1,0 +1,10 @@
+django_harlequin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_harlequin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_harlequin/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_harlequin/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_harlequin/management/commands/harlequin.py,sha256=HiZ55YiZnjydtP1288J3udA3cpBDh-JqAN9OU5ehoNs,5891
+django_harlequin-1.0.0.dist-info/LICENSE,sha256=kenjLfSGHhA4y7zIF1D9Pu4w3o0G70L-IScp9zVr86U,1069
+django_harlequin-1.0.0.dist-info/METADATA,sha256=s8pb6IrltDkYY7ZIbb4F7dzOvtZlRc8nWxPqBfdLLZo,4274
+django_harlequin-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_harlequin-1.0.0.dist-info/top_level.txt,sha256=4ep-vRG_aA9CKPGwsIqIcIXVPMgDZxlxP5SeoE49m1w,17
+django_harlequin-1.0.0.dist-info/RECORD,,

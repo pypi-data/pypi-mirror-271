@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: smartschoolapi_tkbstudios
+Version: 1.0.1
+Summary: A python package to interact with SmartSchool, a Belgian School Management System
+Project-URL: Homepage, https://github.com/tkbstudios/SmartSchoolPyClient
+Project-URL: Issues, https://github.com/tkbstudios/SmartSchoolPyClient/issues
+Author-email: TKB Studios <tkbstudios@mail.tkbstudios.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# SmartSchool Client
+I made this library to communicate with smartschool for some reason.  
+I was able to bind it with a voice assistant to tell me when I get a new message. (Home Assistant for reference)
+
+# How to use
+Install using ``pip install smartschoolapi-tkbstudios -U``
+
+# Legal
+This library complies with the [SmartSchool User Agreement](https://www.smartschool.be/gebruikersovereenkomst/).  
+I am **NOT** responsible for anything that a user does with this library.  
+Please comply with the SS User Agreement! Not doing so will result in legal consequences.  
+Again, please do **NOT** break those rules, it's for your best.
+
+
+# License
+This project is licensed under the [MIT license](https://github.com/tkbstudios/SmartSchoolPyClient/blob/master/LICENSE)

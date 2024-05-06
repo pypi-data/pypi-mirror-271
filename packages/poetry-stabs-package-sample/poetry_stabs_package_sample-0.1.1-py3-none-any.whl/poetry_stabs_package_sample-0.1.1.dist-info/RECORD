@@ -1,0 +1,5 @@
+poetry_stabs_package_sample/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_stabs_package_sample/sample.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_stabs_package_sample-0.1.1.dist-info/METADATA,sha256=V-AkNYsZF-xqk7WNaW9skKtd3jui0rlo9hfyPXfBe3Y,3145
+poetry_stabs_package_sample-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+poetry_stabs_package_sample-0.1.1.dist-info/RECORD,,

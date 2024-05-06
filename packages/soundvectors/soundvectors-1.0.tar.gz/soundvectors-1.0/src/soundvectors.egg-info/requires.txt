@@ -1,0 +1,16 @@
+
+[dev]
+pyclts
+cltoolkit
+scikit-learn
+seaborn
+numpy
+matplotlib
+lingpy
+build
+
+[test]
+pyclts
+linse
+pytest
+pytest-cov

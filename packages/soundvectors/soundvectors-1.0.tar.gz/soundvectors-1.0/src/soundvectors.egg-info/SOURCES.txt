@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/soundvectors.py
+src/soundvectors.egg-info/PKG-INFO
+src/soundvectors.egg-info/SOURCES.txt
+src/soundvectors.egg-info/dependency_links.txt
+src/soundvectors.egg-info/not-zip-safe
+src/soundvectors.egg-info/requires.txt
+src/soundvectors.egg-info/top_level.txt
+tests/test_examples_from_paper.py
+tests/test_soundvectors.py

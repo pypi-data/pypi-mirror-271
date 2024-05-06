@@ -1,0 +1,9 @@
+management_command_decorator/__init__.py,sha256=OU_09gBHvOb4diJ2QbiWmNlApVU3hzoqQ0UAVqf9Bcc,66
+management_command_decorator/apps.py,sha256=c8YOnv5yoC72izCtYegd9p2TeQmNKvOhRmE_w4nyYiA,1085
+management_command_decorator/commands.py,sha256=FutsnQ5EgpG9B-LjjfsRZDDhhqZyOLhXkXiEdS1d44w,392
+management_command_decorator/decorator.py,sha256=ejAF1jU6fZmiKRjJVKlv42WkBWJeR8s8BnM5vrIqJ1g,1147
+management_command_decorator/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_management_command_decorator-0.0.1.dist-info/METADATA,sha256=HzBxBhfg_RSss3FD9Ize9hk-on5a2M6F-Wb0tsUxwiw,1623
+django_management_command_decorator-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+django_management_command_decorator-0.0.1.dist-info/licenses/LICENSE,sha256=coy4cSdthWWGKFT3Wz_uiBaGoYkCdDugX02Wpdo0IM0,1072
+django_management_command_decorator-0.0.1.dist-info/RECORD,,

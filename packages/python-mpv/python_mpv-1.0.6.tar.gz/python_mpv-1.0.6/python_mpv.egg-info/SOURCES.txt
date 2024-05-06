@@ -1,0 +1,11 @@
+LICENSE.GPL
+LICENSE.LGPL
+README.rst
+mpv.py
+pyproject.toml
+python_mpv.egg-info/PKG-INFO
+python_mpv.egg-info/SOURCES.txt
+python_mpv.egg-info/dependency_links.txt
+python_mpv.egg-info/requires.txt
+python_mpv.egg-info/top_level.txt
+tests/test_mpv.py

@@ -1,0 +1,2 @@
+[console_scripts]
+demystify = demystify.demystify:main

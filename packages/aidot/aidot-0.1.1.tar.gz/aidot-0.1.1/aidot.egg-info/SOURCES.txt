@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aidot/__init__.py
+aidot/aes_utils.py
+aidot/discover.py
+aidot/lan.py
+aidot/login_const.py
+aidot/login_control.py
+aidot/login_data.py
+aidot.egg-info/PKG-INFO
+aidot.egg-info/SOURCES.txt
+aidot.egg-info/dependency_links.txt
+aidot.egg-info/requires.txt
+aidot.egg-info/top_level.txt

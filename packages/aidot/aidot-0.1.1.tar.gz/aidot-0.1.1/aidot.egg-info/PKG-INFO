@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aidot
+Version: 0.1.1
+Summary: aidot control wifi lights
+Author: aidotdev2024
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: setuptools
+
+
+aidot is a Python library to control the aidot Wi-Fi Lights with home assistant.

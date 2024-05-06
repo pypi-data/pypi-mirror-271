@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tgctoolbox
+Version: 0.5
+Summary: Comprehensive toolbox with all of the utils and tools used in various TGC projects.
+Author: Jakub Muszyński
+Author-email: jakub.m.muszynski@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: audio
+Requires-Dist: colorama
+Requires-Dist: moviepy
+Requires-Dist: pytube
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: requests
+Requires-Dist: starlette
+Requires-Dist: tqdm
+Requires-Dist: vosk
+Requires-Dist: websocket

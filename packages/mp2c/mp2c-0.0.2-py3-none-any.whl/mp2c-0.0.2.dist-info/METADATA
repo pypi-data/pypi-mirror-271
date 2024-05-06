@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: mp2c
+Version: 0.0.2
+Summary: A Python package that convert MiniPascal code to C code
+

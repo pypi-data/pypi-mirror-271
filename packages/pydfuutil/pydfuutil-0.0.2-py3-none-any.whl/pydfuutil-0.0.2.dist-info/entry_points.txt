@@ -1,0 +1,3 @@
+[console_scripts]
+pydfuutil = pydfuutil.__main__:main
+pydfuutil-suffix = pydfuutil.suffix:main

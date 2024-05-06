@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+exclude =['.git', '__pycache__', 'docs']
+
+[tool.ruff.lint]
+select = ["D", "E", "F", "W"]
+ignore = ["D212", "F403"]
+pydocstyle.convention = "google"
+
+[tool.check-manifest]
+ignore = [
+    ".readthedocs.yaml",
+    "docs/*",
+    "Makefile",
+    "release.txt",
+    "requirements.txt",
+    "todo.rst",
+]

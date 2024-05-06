@@ -1,0 +1,10 @@
+README.md
+setup.py
+drop_needle/Needle.py
+drop_needle/Table.py
+drop_needle/__init__.py
+drop_needle.egg-info/PKG-INFO
+drop_needle.egg-info/SOURCES.txt
+drop_needle.egg-info/dependency_links.txt
+drop_needle.egg-info/not-zip-safe
+drop_needle.egg-info/top_level.txt

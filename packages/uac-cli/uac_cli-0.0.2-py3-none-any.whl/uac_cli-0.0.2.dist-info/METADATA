@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: uac-cli
+Version: 0.0.2
+Summary: A CLI tool for executing commands against the Stonebranch UAC API
+Author: Stonebranch
+Author-email: huseyim@gmail.com
+License: CC BY-NC 4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: uac-api
+Requires-Dist: colorama (>=0.4.4)
+Requires-Dist: setuptools (>=44.1.1)
+Requires-Dist: python-dotenv (==1.0.1)
+Requires-Dist: click (==8.1.6)
+Requires-Dist: jsonpath-ng (==1.5.3)
+
+# UAC-CLI: Command line tool for executing Stonebranch API calls
+

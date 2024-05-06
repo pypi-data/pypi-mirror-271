@@ -1,0 +1,16 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+  - package_and_publish
+
+package_and_publish:
+  stage: package_and_publish
+  script:
+    - make IMAGE_TAG_TIMESTAMP=$(date +"%y%m%d%H%M%S") package publish
+  tags:
+    - dev-k8s
+
+cache:
+  key: cache-$CI_PROJECT_ID-$CI_PROJECT_PATH-$CI_COMMIT_REF_NAME-20231101
+  untracked: true

@@ -1,0 +1,6 @@
+.git
+*.building
+public
+.coverage
+_unittestreports/
+.pytest_cache

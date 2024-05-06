@@ -1,0 +1,13 @@
+ddeutil/df/__about__.py,sha256=YZoDMFgikTmgL5EqRKa4mX-zXFr2c20J7dSZJ4dqSd0,27
+ddeutil/df/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddeutil/df/pandas/__init__.py,sha256=ob8Ozq9ASiky8SwxWcR8HUr_j-qQoJez6EEckHrfR3s,1693
+ddeutil/df/polars/__init__.py,sha256=6ShTYXbGeU7PsoSG1SpGbJEjitHvjLeSP-Nhd6ZwPeY,88
+ddeutil/df/polars/database.py,sha256=oDzqru_4XMPxRZiukARfgCD0SFguqFEYOXt0TtI3SGQ,588
+ddeutil/df/polars/deltalake.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddeutil/df/pyspark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddeutil/df/pyspark/client.py,sha256=tsDOVzOwQ9Hb21cNBfeCr691rwLz1-aaq1S9JA9qUmI,263
+ddeutil_df-0.0.1.dist-info/LICENSE,sha256=qXa3kjnkfEHaB-O_L2poDHx8tJrkFhKmCJe543dbyUc,1095
+ddeutil_df-0.0.1.dist-info/METADATA,sha256=ZEuBcDwJFpvt8FJZUcksuNDgf3_lr9qLU_htcnG5Giw,1433
+ddeutil_df-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ddeutil_df-0.0.1.dist-info/top_level.txt,sha256=m9M6XeSWDwt_yMsmH6gcOjHZVK5O0-vgtNBuncHjzW4,8
+ddeutil_df-0.0.1.dist-info/RECORD,,

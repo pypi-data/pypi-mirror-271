@@ -1,0 +1,11 @@
+numpy>=1.21
+matplotlib>=3.8
+scikit-learn>=1.1
+pandas>=1.0
+datashader>=0.16
+colorspacious>=1.1
+scikit-image>=0.22
+numba>=0.56
+pylabeladjust
+requests
+jinja2

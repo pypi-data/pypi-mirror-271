@@ -1,0 +1,17 @@
+vf/Exceptions.py,sha256=R3XxWpslnBk90ZU_B48JnTrtj3sc4UYQgMBIyboueRs,160
+vf/OpencvProcessing.py,sha256=sTmbh65fSeuL3R-2WXgl8xuXmt8hL63REdKIk0UtVxI,6248
+vf/VisionForge.py,sha256=u5djG_Pt4iC5VHqRBZgbx9usQunr-Xi6pDNZ-bmqs6k,3919
+vf/YOLOProcessing.py,sha256=_l81sbLh2G0FtDaLTIy4cxuZ0ZM_kgN_AnbIenfkdwc,2432
+vf/__init__.py,sha256=bN3MFJK_9Kx16iH4s87tE9HrIgZaCQSXTC95eS3XOYM,100
+visionforge/Exceptions.py,sha256=R3XxWpslnBk90ZU_B48JnTrtj3sc4UYQgMBIyboueRs,160
+visionforge/OpencvProcessing.py,sha256=c9GhxfVrkyZ-BkzO8pCSZF816Ip3glHDF2P3Jg-9MEo,6284
+visionforge/Tracking.py,sha256=gUYoqBue79S_pHuKP9vfHFvT_mCkuVPhh0tC_AG2A_I,3901
+visionforge/VisionForge.py,sha256=S1AWwx51wpx65RqLxM-h1beaPqAH2I2PvWRczA49GgU,3869
+visionforge/YOLOProcessing.py,sha256=_l81sbLh2G0FtDaLTIy4cxuZ0ZM_kgN_AnbIenfkdwc,2432
+visionforge/__init__.py,sha256=bN3MFJK_9Kx16iH4s87tE9HrIgZaCQSXTC95eS3XOYM,100
+visionforge/exception.py,sha256=R3XxWpslnBk90ZU_B48JnTrtj3sc4UYQgMBIyboueRs,160
+VisionForge-1.0.0.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+VisionForge-1.0.0.dist-info/METADATA,sha256=Z7HS-7hPXvBpXl63L_Qe7sz3Y_Luss07u4KNpCCeV6o,9391
+VisionForge-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+VisionForge-1.0.0.dist-info/top_level.txt,sha256=HuAoSyD79cZjiCfMnxKLwEOJhd3A5Mtf67gL5iri9ro,12
+VisionForge-1.0.0.dist-info/RECORD,,

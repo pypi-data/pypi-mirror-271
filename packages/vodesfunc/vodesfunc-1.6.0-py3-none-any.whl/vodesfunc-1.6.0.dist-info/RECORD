@@ -1,0 +1,15 @@
+vodesfunc/__init__.py,sha256=44wkP5WtH6Y7ldPCk8f8BaGf5DFq-SaCy8dCwpLA1oY,318
+vodesfunc/aa.py,sha256=n_XgkYQ366QUO3t8GCOzgM0YzLqKHGDDlckXBPM4-sk,5968
+vodesfunc/denoise.py,sha256=dTTVIkjAr4LyejCrQYG9_BmXw-20KZfapDyXRbAJnCI,5101
+vodesfunc/descale.py,sha256=C6w_zN1r4FTzEic2z1DeNbna6m_abLPS-l79tFIxH54,21732
+vodesfunc/misc.py,sha256=Sq1hfVWM91zutuohGfAPvWrXD2lOQ9DPk1aVwmc6UGE,2510
+vodesfunc/noise.py,sha256=5XJixx2O768TmQ1TUL1iwpbzTBedvI_r_xT6xyWqrGs,7403
+vodesfunc/rescale.py,sha256=X1TMidIhsHbShWDUL5c61Y2O5d6WI5D3y1qYqaLOKc4,16866
+vodesfunc/scale.py,sha256=0nLHlE6gaZnt7lhH9jr7eBN_-Sde7J-E8LVc1GWkMVA,13347
+vodesfunc/spikefinder.py,sha256=czrOSWtHwevC22gfpMG3REYPxnzPFuT2TAyzLky7TGs,6746
+vodesfunc/util.py,sha256=RUe4MGGYIa66iNTL7A0UaN6X6x8MWCUqBaOrosH3Kqg,2607
+vodesfunc-1.6.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+vodesfunc-1.6.0.dist-info/METADATA,sha256=5msaJuFTOW7pOyDsHRwvFB-vETJICOyXsug_EjU8CRQ,1379
+vodesfunc-1.6.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vodesfunc-1.6.0.dist-info/top_level.txt,sha256=AyS6_vnD9hHHKMKBkALSG4NnLZ3D1PjFQWZBjYTSjL8,10
+vodesfunc-1.6.0.dist-info/RECORD,,

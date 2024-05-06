@@ -1,0 +1,3 @@
+[console_scripts]
+llmail=llmail.__main__:main
+

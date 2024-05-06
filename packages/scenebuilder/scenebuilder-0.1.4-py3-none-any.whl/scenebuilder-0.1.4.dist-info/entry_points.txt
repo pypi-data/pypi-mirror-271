@@ -1,0 +1,3 @@
+[console_scripts]
+scenebuilder=scenebuilder.main:main
+

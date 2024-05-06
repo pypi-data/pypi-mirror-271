@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "scholia.404-chemical_related",
+    "namespace": "scholia",
+    "name": "404-chemical_related",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/404-chemical_related.sparql",
+    "title": "404-chemical_related",
+    "description": null,
+    "sparql": "SELECT ?mol ?molLabel ?InChIKey ?CAS ?ChemSpider ?PubChem_CID WITH {\n  SELECT ?mol ?InChIKey WHERE {\n    SERVICE wikibase:mwapi {\n        bd:serviceParam wikibase:endpoint \"www.wikidata.org\";\n        wikibase:api \"Search\";\n        mwapi:srsearch \"_shortkey_ haswbstatement:P235\";\n        mwapi:srlimit \"max\".\n        ?mol wikibase:apiOutputItem mwapi:title.\n      }\n    ?mol wdt:P235 ?InChIKey .\n    FILTER (regex(str(?InChIKey), \"^_shortkey_\"))\n  }\n} AS %MOLS {\n  INCLUDE %MOLS\n  OPTIONAL { ?mol wdt:P231 ?CAS }\n  OPTIONAL { ?mol wdt:P661 ?ChemSpider }\n  OPTIONAL { ?mol wdt:P662 ?PubChem_CID }\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}\n"
+  },
+  {
+    "query_id": "scholia.ask_venue_cito",
+    "namespace": "scholia",
+    "name": "ask_venue_cito",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/ask_venue_cito.sparql",
+    "title": "ask_venue_cito",
+    "description": null,
+    "sparql": "ASK {\n    [] pq:P3712 / wdt:P31 wd:Q96471816 ; ps:P2860 / wdt:P1433 wd:{{q}} . BIND(\"venue-cito\" AS ?aspectsubpage)\n}\n"
+  },
+  {
+    "query_id": "scholia.ask_work_cito",
+    "namespace": "scholia",
+    "name": "ask_work_cito",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/ask_work_cito.sparql",
+    "title": "ask_work_cito",
+    "description": null,
+    "sparql": "ASK {\n    [] pq:P3712 / wdt:P31 wd:Q96471816 ; ps:P2860 wd:{{q}} . BIND(\"work-cito\" AS ?aspectsubpage)\n}\n"
+  },
+  {
+    "query_id": "scholia.ask_work_gallery",
+    "namespace": "scholia",
+    "name": "ask_work_gallery",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/ask_work_gallery.sparql",
+    "title": "ask_work_gallery",
+    "description": null,
+    "sparql": "ASK {\n  wd:{{q}} wdt:P373 ?gallery  .\n}\n"
+  },
+  {
+    "query_id": "scholia.author-curation_missing-author-resolving",
+    "namespace": "scholia",
+    "name": "author-curation_missing-author-resolving",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/author-curation_missing-author-resolving.sparql",
+    "title": "author-curation_missing-author-resolving",
+    "description": null,
+    "sparql": "#title: Variants of author name strings\nPREFIX target: <http://www.wikidata.org/entity/{{ q }}>\n\nSELECT \n  (COUNT(?work) AS ?count)\n  ?string\n  (CONCAT(\"https://author-disambiguator.toolforge.org/names_oauth.php?doit=Look+for+author&name=\", \n        ENCODE_FOR_URI(?string)) AS ?author_resolver_url) \nWITH\n{\n  # Find strings associated with the target author\n  SELECT DISTINCT ?string_\n  WHERE\n  {\n    { target: rdfs:label ?string_. } # in label\n    UNION\n    { target: skos:altLabel ?string_. } # in alias\n    UNION\n    {\n      ?author_statement ps:P50 target: ; \n                        pq:P1932 ?string_. # in \"stated as\" strings for \"author\" statements on work items\n    }\n  }\n} AS %RAWstrings\nWITH\n# This part is due to Dipsacus fullonum, as per https://w.wiki/5Brk\n{\n  # Calculate capitalization variants of these raw strings\n  SELECT DISTINCT ?string\n  WHERE\n  {\n    {\n      INCLUDE %RAWstrings\n      BIND(STR(?string_) AS ?string) # the raw strings\n    }\n    UNION\n    {\n      INCLUDE %RAWstrings\n      BIND(UCASE(STR(?string_)) AS ?string) # uppercased versions of the raw strings\n    }\n    UNION\n    {\n      INCLUDE %RAWstrings\n      BIND(LCASE(STR(?string_)) AS ?string) # lowercased versions of the raw strings\n    }\n  }\n} AS %NORMALIZEDstrings\nWHERE {\n  # Find works that have \"author name string\" values equal to these normalized strings\n  INCLUDE %NORMALIZEDstrings\n  OPTIONAL { ?work wdt:P2093 ?string. }\n}\nGROUP BY ?string\nORDER BY DESC (?count)\n"
+  },
+  {
+    "query_id": "scholia.author-curation_missing-citing-author-items",
+    "namespace": "scholia",
+    "name": "author-curation_missing-citing-author-items",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/author-curation_missing-citing-author-items.sparql",
+    "title": "author-curation_missing-citing-author-items",
+    "description": null,
+    "sparql": "PREFIX target: <http://www.wikidata.org/entity/{{ q }}>\n\nSELECT\n  # Number of works with the coauthor\n  ?count\n\n  # The citing author as a string, - rather than as an item\n  ?citing_author\n\n  # Build URL to the Author disambiguator tool\n  (CONCAT(\n      'https://author-disambiguator.toolforge.org/names_oauth.php?doit=Look+for+author&name=',\n      ENCODE_FOR_URI(?citing_author)) AS ?resolver_url)\n\n  ?example_citing_work ?example_citing_workLabel\n  (CONCAT(\"/work/\", SUBSTR(STR(?example_citing_work), 32)) AS ?example_citing_workUrl)\nWITH {\n  SELECT\n    (COUNT(?work) as ?count)\n    ?citing_author\n    (SAMPLE(?citing_work) AS ?example_citing_work) \n  WHERE {\n    ?work wdt:P50 target: .\n    ?citing_work wdt:P2860 ?work .\n    ?citing_work wdt:P2093 ?citing_author .\n  }\n  GROUP BY ?citing_author\n} AS %result\nWHERE {\n  INCLUDE %result\n  # Label the results\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,da,de,es,fr,jp,nl,no,ru,sv,zh\". }\n}\nORDER BY DESC(?count)\nLIMIT 1000"
+  },
+  {
+    "query_id": "scholia.author-curation_missing-coauthor-items",
+    "namespace": "scholia",
+    "name": "author-curation_missing-coauthor-items",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/author-curation_missing-coauthor-items.sparql",
+    "title": "author-curation_missing-coauthor-items",
+    "description": null,
+    "sparql": "PREFIX target: <http://www.wikidata.org/entity/{{ q }}>\n\nSELECT\n  # Number of works with the coauthor\n  ?count\n\n  # The coauthor as a string, - rather than as an item\n  ?coauthor\n\n  # Build URL to the Author disambiguator tool\n  (CONCAT(\n      'https://author-disambiguator.toolforge.org/names_oauth.php?doit=Look+for+author&name=',\n      ENCODE_FOR_URI(?coauthor)) AS ?resolver_url)\nWITH {\n  SELECT (COUNT(?work) as ?count) ?coauthor WHERE {\n    ?work wdt:P50 target: .\n    ?work wdt:P2093 ?coauthor .\n  }\n  GROUP BY ?coauthor\n} AS %result\nWHERE {\n  INCLUDE %result\n  # Label the results\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,da,de,es,fr,jp,nl,no,ru,sv,zh\". }\n}\nORDER BY DESC(?count)"
+  },
+  {
+    "query_id": "scholia.author-curation_missing-topic",
+    "namespace": "scholia",
+    "name": "author-curation_missing-topic",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/author-curation_missing-topic.sparql",
+    "title": "author-curation_missing-topic",
+    "description": null,
+    "sparql": "PREFIX target: <http://www.wikidata.org/entity/{{ q }}>\n\nSELECT\n?citations  ?work ?workLabel (CONCAT(\"/work/\", SUBSTR(STR(?work), 32)) AS ?workUrl)\n(?work AS ?wikidata_url)\nWITH {\n  SELECT (COUNT(?work) as ?count) ?work WHERE {\n  # Works by author\n    ?work wdt:P50 target: .\n  # Work does not have a main subject statement\n    FILTER NOT EXISTS { ?work wdt:P921 ?topic . }\n  }\n  GROUP BY ?work\n  ORDER BY DESC(?count)\n  LIMIT 2000\n} AS %works\nWITH {\n  SELECT (COUNT(?work1) as ?citations) ?work WHERE {\n  INCLUDE %works\n  # Works cited\n    OPTIONAL { ?work1 wdt:P2860 ?work }.\n  }\n  GROUP BY ?work\n  ORDER BY DESC(?citations)\n  LIMIT 200\n} AS %result\nWHERE {\n  INCLUDE %result\n  \n  # Label the results\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en,da,de,es,fr,jp,nl,no,ru,sv,zh\". }\n}\nORDER BY DESC(?citations)"
+  },
+  {
+    "query_id": "scholia.author-curation_missing-use-as-reference",
+    "namespace": "scholia",
+    "name": "author-curation_missing-use-as-reference",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/author-curation_missing-use-as-reference.sparql",
+    "title": "author-curation_missing-use-as-reference",
+    "description": null,
+    "sparql": "PREFIX target: <http://www.wikidata.org/entity/{{ q }}>\n\nSELECT ?citations ?work ?workLabel (CONCAT(\"/work/\", SUBSTR(STR(?work), 32)) AS ?workUrl)\nWITH {\n  SELECT ?work (COUNT(DISTINCT ?statement) AS ?count) WHERE {\n    ?work wdt:P50 target: .\n\tOPTIONAL { ?statement prov:wasDerivedFrom/pr:P248 ?work . }\n  } GROUP BY ?work\n} AS %works\nWITH {\n  SELECT (COUNT(?work1) as ?citations) ?work WHERE {\n    INCLUDE %works\n    FILTER (?count = 0)\n    # Works cited\n    OPTIONAL { ?work1 wdt:P2860 ?work }.\n  }\n  GROUP BY ?work\n} AS %result\nWHERE {\n  INCLUDE %result\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],en\" . }\n} ORDER BY DESC(?citations)\n  LIMIT 200\n"
+  },
+  {
+    "query_id": "scholia.author-use_works",
+    "namespace": "scholia",
+    "name": "author-use_works",
+    "url": "https://raw.githubusercontent.com/WDscholia/scholia/master/scholia/app/templates/author-use_works.sparql",
+    "title": "author-use_works",
+    "description": null,
+    "sparql": "PREFIX target1: <http://www.wikidata.org/entity/{{ q1 }}>\nPREFIX target2: <http://www.wikidata.org/entity/{{ q2 }}>\n\nSELECT\n  ?publication_date\n  ?work ?workLabel (CONCAT(\"/work/\", SUBSTR(STR(?work), 32)) AS ?workUrl)\nWHERE {\n  ?work wdt:P50 target1: ;\n        wdt:P4510 target2: .\n  OPTIONAL {\n    ?work wdt:P577 ?publication_datetime .\n    BIND(xsd:date(?publication_datetime) AS ?publication_date)\n  }\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],en,da,de,es,fr,jp,nl,no,ru,sv,zh\". }\n}\nORDER BY DESC(?publication_date)"
+  }
+]

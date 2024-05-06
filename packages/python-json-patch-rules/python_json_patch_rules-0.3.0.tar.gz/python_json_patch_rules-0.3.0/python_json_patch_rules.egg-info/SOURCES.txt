@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./json_patch_rules/__init__.py
+./json_patch_rules/__symbols__.py
+./json_patch_rules/paths.py
+./tests/__init__.py
+./tests/test_module.py
+python_json_patch_rules.egg-info/PKG-INFO
+python_json_patch_rules.egg-info/SOURCES.txt
+python_json_patch_rules.egg-info/dependency_links.txt
+python_json_patch_rules.egg-info/requires.txt
+python_json_patch_rules.egg-info/top_level.txt
+tests/test_module.py

@@ -1,0 +1,2 @@
+[console_scripts]
+trye = rye_tui.app:run

@@ -1,0 +1,185 @@
+
+Tab {
+    width: 1fr;
+}
+
+Switch > .switch--slider {
+        color: $error;
+    }
+
+Switch.-on > .switch--slider {
+        color: rgb(132,164,50);
+    }
+/* ConfigTab */
+ConfigTab Container {
+    height: auto;
+}
+.section {
+    border: rgb(132,164,50) heavy;
+}
+
+/* Default */
+.config-default-container {
+    layout: grid;
+    grid-size:2;
+    height: auto;
+}
+.config-default-container > Static {
+    
+    color: white;
+    height: auto;
+    width: 1fr;
+    content-align: left middle;
+    margin: 1 0 0 0;
+}
+.config-default-container Select{
+    
+    color: white;
+    height: auto;
+    content-align: left middle;
+    width: 1fr;
+}
+
+.config-default-container Input {
+    
+    height: auto;
+    width: 1fr;
+    margin: 0 0 0 0;
+}
+
+/* Behavior */
+.config-behavior-container {
+    layout: grid;
+    grid-size:2;
+    height: auto;
+}
+.config-behavior-container Static {
+    
+    color: white;
+    height: auto;
+    width: 3fr;
+    content-align: left middle;
+    margin: 1 0 0 0;
+}
+
+.config-behavior-container Switch {
+    
+    height: auto;
+    width: 1fr;
+    margin: 0 0 0 0;
+}
+
+/* Proxy */
+.config-proxy-container {
+    layout: grid;
+    grid-size:2;
+    height: auto;
+}
+.config-proxy-container > Static {
+    
+    color: white;
+    height: auto;
+    width: 3fr;
+    content-align: left middle;
+    margin: 1 0 0 0;
+}
+
+.config-proxy-container > Input {
+    
+    height: auto;
+    width: 1fr;
+    margin: 0 0 0 0;
+}
+
+/* Sources */
+.config-sources-container {
+    layout: grid;
+    grid-size:2;
+    height: auto;
+}
+.config-sources-container Static {
+    
+    color: white;
+    height: auto;
+    width: 3fr;
+    content-align: left middle;
+    margin: 1 0 0 0;
+}
+
+.config-sources-container Input {
+    
+    height: auto;
+    width: 1fr;
+    margin: 0 0 0 0;
+}
+
+.config-sources-container Switch {
+    
+    height: auto;
+    width: 1fr;
+    margin: 0 0 0 0;
+}
+
+/* Projects */
+ProjectTab Vertical{
+    height: auto;
+}
+/* ProjectList */
+ProjectListItem{
+    layout:grid;
+    grid-size: 4;
+}
+ProjectListItem Label {
+    height:auto;
+    width: auto;
+    column-span: 2;
+    margin: 1 0 0 0;
+}
+ProjectListItem Button {
+    height:auto;
+    width: 1fr;
+}
+/* ProjectInteraction */
+ProjectInteraction {
+    border: rgb(132,164,50) heavy;
+}
+ProjectInteraction Horizontal {
+    height: 1fr;
+    width: auto;
+    layout: grid;
+    grid-size:3;
+    margin: 1 0 1 0;
+}
+ProjectInteraction Button {
+    height: 1fr;
+    width: 1fr;
+    background: rgb(44,55,58);
+    margin: 0 1 0 1;
+}
+/* ProjectPreview */
+ProjectPreview{
+    align:center middle;
+}
+ProjectPreview RichLog{
+    height: auto;
+    width: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+/* Header Footer */
+
+Header {
+    background: rgb(132,164,50);
+}
+Footer {
+    background: rgb(132,164,50);
+}
+Footer .footer--key {
+    background: rgb(132,164,50);
+}
+Footer .footer--highlight {
+    background: rgb(132,164,50);
+}
+Footer .footer--highlight-key {
+    background: rgb(132,164,50);
+}

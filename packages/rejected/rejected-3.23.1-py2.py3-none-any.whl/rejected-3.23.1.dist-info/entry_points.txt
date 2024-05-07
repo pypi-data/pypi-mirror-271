@@ -1,0 +1,2 @@
+[console_scripts]
+rejected = rejected.controller:main

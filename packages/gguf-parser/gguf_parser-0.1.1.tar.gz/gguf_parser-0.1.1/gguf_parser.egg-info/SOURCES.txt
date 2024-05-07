@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+gguf_parser/__init__.py
+gguf_parser/__main__.py
+gguf_parser/gguf_parser.py
+gguf_parser.egg-info/PKG-INFO
+gguf_parser.egg-info/SOURCES.txt
+gguf_parser.egg-info/dependency_links.txt
+gguf_parser.egg-info/requires.txt
+gguf_parser.egg-info/top_level.txt
+tests/__init__.py
+tests/test_gguf_parser.py

@@ -1,0 +1,70 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "mkdocs-spellcheck"
+description = "A spell checker plugin for MkDocs."
+authors = [
+    { name = "Timothée Mazzucotelli", email = "dev@pawamoy.fr" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = []
+dynamic = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = []
+version = "1.1.0"
+
+[project.license]
+text = "ISC"
+
+[project.optional-dependencies]
+all = [
+    "mkdocs-spellcheck[codespell,symspellpy]",
+]
+codespell = [
+    "codespell>=2.2.2",
+]
+symspellpy = [
+    "symspellpy>=6.7.6",
+    "importlib-resources>=6.4; python_version < '3.9'",
+]
+
+[project.urls]
+Homepage = "https://pawamoy.github.io/mkdocs-spellcheck"
+Documentation = "https://pawamoy.github.io/mkdocs-spellcheck"
+Changelog = "https://pawamoy.github.io/mkdocs-spellcheck/changelog"
+Repository = "https://github.com/pawamoy/mkdocs-spellcheck"
+Issues = "https://github.com/pawamoy/mkdocs-spellcheck/issues"
+Discussions = "https://github.com/pawamoy/mkdocs-spellcheck/discussions"
+Gitter = "https://gitter.im/mkdocs-spellcheck/community"
+Funding = "https://github.com/sponsors/pawamoy"
+
+[project.entry-points."mkdocs.plugins"]
+spellcheck = "mkdocs_spellcheck.plugin:SpellCheckPlugin"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+package-dir = "src"
+editable-backend = "editables"

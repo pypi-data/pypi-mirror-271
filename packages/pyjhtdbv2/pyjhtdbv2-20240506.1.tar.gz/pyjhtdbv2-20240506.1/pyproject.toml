@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "pyjhtdbv2"
+version = "20240506.1"
+description = "Python wrapper for the Johns Hopkins turbulence database library"
+authors = ["Johns Hopkins Turbulence Database Group <turbulence@pha.jhu.edu>"]
+license = "Apache License 2.0"
+packages = [
+    { include = "pyJHTDB", from = "." },
+]
+readme = "README.md"
+include = [
+    {path = "pyJHTDB/data/channel_xgrid.npy"},
+    {path = "pyJHTDB/data/channel_ygrid.npy"},
+    {path = "pyJHTDB/data/channel_zgrid.npy"},
+    {path = "pyJHTDB/data/channel5200_ygrid.npy"},
+    {path = "pyJHTDB/data/transition_bl_ygrid.npy"},
+    {path = "pyJHTDB/lib/**/*.so", format = "wheel"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = ">=1.15.0"
+scipy = ">=1.1.0"
+sympy = ">=1.2"
+h5py = ">=2.8.0"
+matplotlib = ">=3.0.0"
+wurlitzer = ">=2.0.2"
+
+
+[build-system]
+requires = ["poetry-core", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+# 2 pass build
+# [tool.poetry.build]
+# script = "build.py"
+# generate-setup-file = true

@@ -1,0 +1,2 @@
+src/sqlalchemy_multilingual
+src/sqlalchemy_multilingual/alembic

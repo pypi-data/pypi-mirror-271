@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyiron_workflow
+Version: 0.7.0
+Summary: Graph-and-node based workflow tools.
+Home-page: https://github.com/pyiron/pyiron_workflow
+Author: Max-Planck-Institut für Eisenforschung GmbH - Computational Materials Design (CM) Department
+Author-email: liamhuber@greyhavensolutions.com
+License: BSD
+Keywords: pyiron
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: bidict >=0.23.1
+Requires-Dist: cloudpickle >=3.0.0
+Requires-Dist: graphviz >=0.20.3
+Requires-Dist: h5io >=0.2.2
+Requires-Dist: h5io-browser >=0.0.12
+Requires-Dist: matplotlib >=3.8.4
+Requires-Dist: pyiron-base >=0.8.3
+Requires-Dist: pyiron-contrib >=0.1.16
+Requires-Dist: pympipool >=0.8.0
+Requires-Dist: toposort >=1.10
+Requires-Dist: typeguard >=4.2.1
+Provides-Extra: node_library
+Requires-Dist: ase >=3.22.1 ; extra == 'node_library'
+Requires-Dist: atomistics >=0.1.27 ; extra == 'node_library'
+Requires-Dist: numpy >=1.26.4 ; extra == 'node_library'
+Requires-Dist: phonopy >=2.22.1 ; extra == 'node_library'
+Requires-Dist: pyiron-atomistics >=0.5.4 ; extra == 'node_library'
+
+http://pyiron.org

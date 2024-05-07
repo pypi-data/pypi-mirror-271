@@ -1,0 +1,13 @@
+LICENSE.py
+README.md
+setup.py
+src/UCMPhoenix.egg-info/PKG-INFO
+src/UCMPhoenix.egg-info/SOURCES.txt
+src/UCMPhoenix.egg-info/dependency_links.txt
+src/UCMPhoenix.egg-info/entry_points.txt
+src/UCMPhoenix.egg-info/requires.txt
+src/UCMPhoenix.egg-info/top_level.txt
+test/test_UCM-Phoenix-Interp.py
+test/test_UCM-Phoenix-Scale.py
+test/test_calculator.py
+test/test_functions.py

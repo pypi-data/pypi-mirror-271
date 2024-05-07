@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sphinx_tutorials
+Version: 0.0.3
+Summary: Tools for docs in Python
+Author-email: Bernardo Dionisi <bernardo.dionisi@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/bernardodionisi/sphinx_tutorials
+Project-URL: Source, https://github.com/bernardodionisi/sphinx_tutorials
+Project-URL: Issues, https://github.com/bernardodionisi/sphinx_tutorials/issues
+Project-URL: Documentation, https://bernardodionisi.github.io/sphinx_tutorials/latest/
+Keywords: tools for docs
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sphinx <7.3
+Requires-Dist: sphinx-immaterial ==0.11.11
+Requires-Dist: myst-parser ==0.18.1
+Requires-Dist: sphinx-design ==0.5.0
+Requires-Dist: sphinx-last-updated-by-git ==0.3.6
+Requires-Dist: sphinx-math-dollar ==1.2.1
+Requires-Dist: ipykernel ==6.26.0
+Requires-Dist: myst-nb ==0.17.2
+Requires-Dist: pickleshare ==0.7.5
+Requires-Dist: typing-extensions >=4.0.0
+Provides-Extra: dev
+
+# `sphinx_tutorials`

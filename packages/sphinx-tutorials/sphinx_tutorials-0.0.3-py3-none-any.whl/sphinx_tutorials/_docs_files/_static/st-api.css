@@ -1,0 +1,115 @@
+/* parameters names and descriptions*/
+
+dl.simple.api-field.highlight dt {
+    background: none; /* Removes the background */
+    font-size: 12pt;
+    text-decoration: underline;
+    text-underline-offset: 5px; /* Adjust the spacing as needed */
+    text-decoration-thickness: 1px; /* Makes the underline thinner */
+}
+
+dl.simple.api-field.highlight dt span {
+    display: none; /* Hide all span elements by default */
+}
+
+dl.simple.api-field.highlight dt code {
+    display: none; /* Hide all span elements by default */
+}
+
+dl.simple.api-field.highlight dt span.sig-name {
+    display: inline; /* Only display spans with the class 'sig-name' */
+}
+
+
+/*----------------*/
+
+[data-md-color-scheme="default"] dt.field-odd#parameters {
+    background: #D7DEE3; /* Example background color, change as needed */
+    padding: 5px; /* Adds 10 pixels of padding on all sides */
+
+}
+
+[data-md-color-scheme="default"] p.example.rubric#examples {
+    background: #D7DEE3; /* Example background color, change as needed */
+    padding: 5px; /* Adds 10 pixels of padding on all sides */
+
+}
+
+
+[data-md-color-scheme="slate"] dt.field-odd#parameters {
+    background: #071C2A; /* Example background color, change as needed */
+    padding: 5px; /* Adds 10 pixels of padding on all sides */
+
+}
+
+[data-md-color-scheme="slate"] p.example.rubric#examples {
+    background: #071C2A; /* Example background color, change as needed */
+    padding: 5px; /* Adds 10 pixels of padding on all sides */
+
+}
+
+
+/*----------------*/
+
+
+.py.class.summary.objdesc dd p {
+    opacity: 0.5;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.py.class.summary.objdesc dd p,
+.py.function.summary.objdesc dd p,
+.py.method.summary.objdesc dd p,
+.py.property.summary.objdesc dd p {
+    opacity: 0.5;
+    padding-top: 5px;
+    font-size: 15px;
+    /*text-align: right;*/
+    /*font-family: 'Courier New', Courier, monospace; !* Retro-style monospaced font *!*/
+}
+
+
+
+/* Modify Sphinx Immaterial python-apigen linkable parameter coloring. */
+.sig-param a.reference span .pre {
+    color: var(--md-code-hl-generic-color);
+    /*color: #77A681;*/
+}
+
+.desctype span.pre {
+    /*color: var(--md-code-hl-generic-color);*/
+    color: #7796A6;
+    opacity: 0.8;
+}
+
+/*------- UNDERLINE ALL REFERENCES WHEN HOVER-----*/
+
+a.reference:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px; /* Adjust the spacing as needed */
+    color: var(--md-primary-fg-color);
+    text-underline-color: var(--md-primary-fg-color);
+    text-decoration-thickness: 1px; /* Makes the underline thinner */
+}
+
+/*----------------*/
+
+
+.py.class.objdesc h2 {
+    border-bottom: 0.5px solid #717578; /* Uses a light gray color for a more subdued line */
+    padding-bottom: 5px; /* Adds a little space between the text and the line */
+}
+
+
+/*----------------*/
+
+
+/*.desctype a.reference span.pre:hover {*/
+/*    color: var(--md-accent-fg-color);*/
+/*    !*color: #77A681;*!*/
+/*}*/
+
+/*.sig-param a.reference span .pre:hover {*/
+/*    color: var(--md-accent-fg-color);*/
+/*}*/

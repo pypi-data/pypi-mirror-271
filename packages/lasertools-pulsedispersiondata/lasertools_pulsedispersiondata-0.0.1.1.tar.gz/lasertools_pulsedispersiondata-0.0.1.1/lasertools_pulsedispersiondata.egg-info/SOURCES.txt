@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lasertools_pulsedispersiondata.egg-info/PKG-INFO
+lasertools_pulsedispersiondata.egg-info/SOURCES.txt
+lasertools_pulsedispersiondata.egg-info/dependency_links.txt
+lasertools_pulsedispersiondata.egg-info/requires.txt
+lasertools_pulsedispersiondata.egg-info/top_level.txt

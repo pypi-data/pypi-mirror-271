@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lasertools_pulsedispersiondata
+Version: 0.0.1.1
+Summary: A module to store data for laser pulse dispersion
+Home-page: https://github.com/lasertools/lasertools_pulsedispersiondata
+Author: brittonm
+Author-email: 68578865+brittonm@users.noreply.github.com
+License: GPLv3
+Download-URL: https://github.com/lasertools/lasertools_pulsedispersiondata/archive/refs/tags/v_0_0_1_1.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+# pulsedispersiondata
+A module to store data for laser pulse dispersion
+

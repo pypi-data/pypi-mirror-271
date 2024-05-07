@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: SQLLink
+Version: 1.0.0
+Summary: SQLLink is a simple library which enables you to use SQLite databases without SQL.
+Home-page: https://github.com/TRC-Loop/SQLLink
+Author: AK
+Author-email: ak@stellar-code.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlite3
+
+# SQLLink
+
+SQLLink is a Python library designed to simplify interactions with SQLite databases, abstracting away the need for direct SQL queries.
+
+## Features
+
+- Simplified database operations through intuitive Python functions.
+- Automatic SQL query generation based on user input.
+- Custom exception handling for robust error management.
+
+## Installation
+
+Install SQLLink using pip:
+
+```bash
+pip3 install sqllink
+```
+
+## Usage
+
+### Creating a Table
+
+```python
+from sqllink import db_utils
+import sqlite3
+s
+conn = sqlite3.connect('example.db')
+columns = {
+    'id': 'integer PRIMARY KEY',
+    'name': 'text NOT NULL',
+    'salary': 'real'
+}
+db_utils.create_table(conn, 'employees', columns)
+```
+
+### Adding Data
+
+```python
+data = [(1, 'Alice', 80000.0), (2, 'Bob', 90000.0)]
+db_utils.add_data(conn, 'employees', data)
+```
+
+### Querying Data
+
+```python
+results = db_utils.query_data(conn, 'employees', "salary > 85000")
+print(results)
+```
+
+### Deleting a Table
+
+```python
+db_utils.delete_table(conn, 'employees')
+```
+
+## Troubleshooting
+
+If you encounter any issues:
+- Verify that SQLite is correctly installed and accessible in your environment.
+- Ensure that you're using Python 3.6 or later.
+- Review the error messages carefully; they are designed to provide insights into potential issues.
+
+## Contributions
+
+Contributions to SQLLink are welcome! Please fork the repository and submit a pull request to contribute.
+
+## License
+
+SQLLink is released under the MIT License. View the license [here](https://github.com/TRC-Loop/SQLLink/blob/main/LICENSE).
+
+## Repository
+
+Link to the repository: [SQLLink Repository](https://github.com/TRC-Loop/SQLLink)

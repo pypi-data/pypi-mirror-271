@@ -1,0 +1,9 @@
+pre_commit_download/__init__.py,sha256=pk81OEQxgon20VSYHcmQs1tzNHQ9rZvBHptp83W3SbQ,74
+pre_commit_download/_backend.py,sha256=w1FrlBiLrcJzdxfQvZgPWj2P4o-og7PSy4MZ0M0sIg4,7815
+pre_commit_download/hooks.py,sha256=iLdHGx_VZpRPBFbcuQI3tEIb1XBMjtqoVzOclHYmBRI,186
+pre_commit_download/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pre_commit_download-0.1.0.dist-info/LICENSE,sha256=3PKDMHbZVS7V0qsuKfdDPd1VC6G728yqXKGHwHKlvSA,1073
+pre_commit_download-0.1.0.dist-info/METADATA,sha256=vr1d4XSAfA4UI0yezAaxGklAWTuXtjgdze6ERiHYyPA,3105
+pre_commit_download-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pre_commit_download-0.1.0.dist-info/top_level.txt,sha256=lZWk29y5IS1D16zt66gSTFCcH3beSUDAntAJrHKgZv8,20
+pre_commit_download-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,15 @@
+rastervision_pipeline
+rastervision_core
+numpy
+pillow
+torch
+torchvision
+tensorboard
+albumentations
+cython
+pycocotools
+psutil
+opencv-python-headless
+matplotlib
+tqdm
+onnx

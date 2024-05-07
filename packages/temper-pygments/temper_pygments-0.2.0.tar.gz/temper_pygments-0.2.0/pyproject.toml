@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "temper-pygments"
+version = "0.2.0"
+description = ""
+authors = ["Tom <tom@temper.systems>"]
+readme = "README.md"
+packages = [{include = "temper_pygments"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pygments = "^2.12.0"
+temper-core = "0.2.1"
+temper-syntax = "0.2.0"
+
+[tool.poetry.plugins."pygments.lexers"]
+temper = "temper_pygments:TemperLexer"
+tempermd = "temper_pygments:TemperMdLexer"
+
+[tool.poetry.scripts]
+bundle = 'scripts:bundle'
+test = 'scripts:test'
+
+[tool.poetry.group.dev.dependencies]
+stickytape = "^0.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

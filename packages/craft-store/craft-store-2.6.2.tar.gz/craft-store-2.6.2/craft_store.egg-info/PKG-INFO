@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: craft-store
+Version: 2.6.2
+Summary: Store bindings for Snaps and Charms
+Author-email: "Canonical Ltd." <snapcraft@lists.snapcraft.io>
+Project-URL: Documentation, https://craft-store.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/canonical/craft-store
+Project-URL: Issues, https://github.com/canonical/craft-store/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: keyring<25.0,>=23.0
+Requires-Dist: overrides>=7.0.0
+Requires-Dist: requests>=2.27.0
+Requires-Dist: requests-toolbelt>=1.0.0
+Requires-Dist: macaroonbakery!=1.3.3,>=1.3.0
+Requires-Dist: pydantic<2.0,>=1.10
+Requires-Dist: pyxdg
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: pyyaml>=6.0.0; extra == "dev"
+Requires-Dist: coverage[toml]==7.4.1; extra == "dev"
+Requires-Dist: pytest==7.4.4; extra == "dev"
+Requires-Dist: pytest-cov==4.1.0; extra == "dev"
+Requires-Dist: pytest-mock==3.12.0; extra == "dev"
+Requires-Dist: pytest-check>=2.0; extra == "dev"
+Requires-Dist: pytest-subprocess>=1.5; extra == "dev"
+Requires-Dist: pytest-timeout>=2.0; extra == "dev"
+Provides-Extra: lint
+Requires-Dist: black==23.12.1; extra == "lint"
+Requires-Dist: codespell[toml]==2.2.6; extra == "lint"
+Requires-Dist: ruff==0.1.15; extra == "lint"
+Requires-Dist: yamllint==1.33.0; extra == "lint"
+Provides-Extra: types
+Requires-Dist: mypy[reports]==1.8.0; extra == "types"
+Requires-Dist: pyright==1.1.349; extra == "types"
+Requires-Dist: types-PyYAML; extra == "types"
+Requires-Dist: types-Pygments; extra == "types"
+Requires-Dist: types-colorama; extra == "types"
+Requires-Dist: types-docutils; extra == "types"
+Requires-Dist: types-requests; extra == "types"
+Requires-Dist: types-setuptools; extra == "types"
+Provides-Extra: docs
+Requires-Dist: furo==2023.9.10; extra == "docs"
+Requires-Dist: lxd-sphinx-extensions==0.0.16; extra == "docs"
+Requires-Dist: myst-parser==2.0.0; extra == "docs"
+Requires-Dist: pyspelling==2.10; extra == "docs"
+Requires-Dist: sphinx==7.2.6; extra == "docs"
+Requires-Dist: sphinx-autobuild==2021.3.14; extra == "docs"
+Requires-Dist: sphinxcontrib-jquery==4.1; extra == "docs"
+Requires-Dist: sphinx-copybutton==0.5.2; extra == "docs"
+Requires-Dist: sphinx-design==0.5.0; extra == "docs"
+Requires-Dist: sphinxext-opengraph==0.9.1; extra == "docs"
+Requires-Dist: sphinx-lint==0.9.1; extra == "docs"
+Requires-Dist: sphinx-notfound-page==1.0.0; extra == "docs"
+Requires-Dist: sphinx-reredirects==0.1.3; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Requires-Dist: sphinx-tabs==3.4.5; extra == "docs"
+Requires-Dist: sphinx-toolbox>=2.5.0; extra == "docs"
+Provides-Extra: release
+Requires-Dist: twine; extra == "release"
+Requires-Dist: wheel; extra == "release"

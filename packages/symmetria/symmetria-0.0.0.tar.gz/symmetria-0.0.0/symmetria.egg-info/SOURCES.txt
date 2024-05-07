@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+symmetria/__init__.py
+symmetria/interfaces.py
+symmetria.egg-info/PKG-INFO
+symmetria.egg-info/SOURCES.txt
+symmetria.egg-info/dependency_links.txt
+symmetria.egg-info/requires.txt
+symmetria.egg-info/top_level.txt
+symmetria/elements/__init__.py
+symmetria/elements/cycle.py
+symmetria/elements/cycle_decomposition.py
+symmetria/elements/permutation.py
+symmetria/groups/__init__.py
+symmetria/groups/symmetric.py
+tests/tests_factory.py

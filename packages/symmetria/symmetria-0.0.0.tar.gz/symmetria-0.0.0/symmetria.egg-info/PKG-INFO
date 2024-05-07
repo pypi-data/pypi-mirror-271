@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: symmetria
+Version: 0.0.0
+Summary: TO-DO
+Author: Vasco Schiavo
+Maintainer: Vasco Schiavo
+Project-URL: Homepage, https://github.com/VascoSch92/symmetria
+Project-URL: Repository, https://github.com/VascoSch92/symmetria
+Project-URL: Documentation, https://github.com/VascoSch92/symmetria
+Project-URL: Download, https://github.com/VascoSch92/symmetria
+Keywords: math,mathematics,symmetry,permutation
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: jupyter; extra == "docs"
+Requires-Dist: myst-parser; extra == "docs"
+Requires-Dist: nbsphinx>=0.8.6; extra == "docs"
+Requires-Dist: numpydoc; extra == "docs"
+Requires-Dist: pydata-sphinx-theme; extra == "docs"
+Requires-Dist: sphinx!=7.2.0,<8.0.0; extra == "docs"
+Requires-Dist: sphinx-design<0.6.0; extra == "docs"
+Requires-Dist: sphinx-issues<5.0.0; extra == "docs"
+Requires-Dist: sphinx-gallery<0.17.0; extra == "docs"
+Requires-Dist: sphinx-panels; extra == "docs"
+Requires-Dist: tabulate; extra == "docs"
+
+# symmetria
+
+This is a little bit of blabla.

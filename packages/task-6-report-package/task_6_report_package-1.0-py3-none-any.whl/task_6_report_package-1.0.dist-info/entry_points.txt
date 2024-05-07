@@ -1,0 +1,2 @@
+[console_scripts]
+task_6_report_package = report_application.report_app:cli

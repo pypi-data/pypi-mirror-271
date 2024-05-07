@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: llama_tools
+Version: 0.1.1
+Summary: Llama Tools: A collection of utilities for handling function calls with local llama.cpp models.
+Home-page: https://yourpackage.example.com
+License: MIT
+Keywords: llama, function-call
+Author: Yingbei Tong
+Author-email: yingbei@acorn.io
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# llama-tools
+

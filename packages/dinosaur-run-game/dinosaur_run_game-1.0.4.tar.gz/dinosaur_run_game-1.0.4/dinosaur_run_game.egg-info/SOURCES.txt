@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dinosaur_run_game.egg-info/PKG-INFO
+dinosaur_run_game.egg-info/SOURCES.txt
+dinosaur_run_game.egg-info/dependency_links.txt
+dinosaur_run_game.egg-info/entry_points.txt
+dinosaur_run_game.egg-info/requires.txt
+dinosaur_run_game.egg-info/top_level.txt

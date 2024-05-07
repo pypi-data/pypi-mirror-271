@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dinosaur-run-game
+Version: 1.0.4
+Summary: A simple dinosaur run game.
+Home-page: https://github.com/your_username/dinosaur-run-game
+Author: Your Name
+License-File: LICENSE
+Requires-Dist: pygame

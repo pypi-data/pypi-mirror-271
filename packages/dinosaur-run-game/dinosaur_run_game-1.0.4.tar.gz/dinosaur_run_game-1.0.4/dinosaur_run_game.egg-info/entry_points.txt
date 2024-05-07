@@ -1,0 +1,2 @@
+[console_scripts]
+dino-game = dino_game:main

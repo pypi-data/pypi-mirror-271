@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aerospike-vector-search"
+description = "Aerospike Proximus Client Library for Python"
+authors = [
+    { name = "Aerospike, Inc.", email = "info@aerospike.com" }
+]
+readme = "README.md"
+license = { text = "Apache Software License" }
+keywords = ["aerospike", "vector", "database", "ANN"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Database"
+]
+version = "0.5.1"
+requires-python = ">3.8"
+dependencies = [
+    "grpcio",
+    "protobuf"
+]
+
+[project.urls]
+"Homepage" = "https://aerospike.com"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+packages = ["aerospike_vector_search", "aerospike_vector_search.aio", "aerospike_vector_search.shared", "aerospike_vector_search.shared.proto_generated", "aerospike_vector_search.internal", "aerospike_vector_search.aio.internal"]
+package-dir={"" = "src"}

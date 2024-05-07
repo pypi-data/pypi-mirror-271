@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mlable
+Version: 0.1.0
+Summary: Tensorflow and pyTorch libs + atomic projects and drafts.
+Author: apehex
+Author-email: apehex@protonmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tensorflow (>=2.14)
+Requires-Dist: tensorflow-datasets (>=4.9)
+Requires-Dist: torch (>=2.2)
+Description-Content-Type: text/markdown
+
+# MLable
+
+Atomic ML projects to get started.
+
+## TODO
+
+See [TODO](TODO.md).
+
+## Credits
+
+[Andrej Karpathy][video-karpathy] reconnected my ML synapses with [micrograd][code-micrograd].
+
+## License
+
+Licensed under the [aGPLv3](LICENSE.md).
+
+[code-micrograd]: https://github.com/karpathy/micrograd
+[video-karpathy]: https://www.youtube.com/@AndrejKarpathy/videos
+

@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: stack-graphs-python-bindings
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Stack-Graphs Python bindings
+
+Opinionated Python bindings for the [tree-sitter-stack-graphs](https://github.com/github/stack-graphs) rust library.
+
+It exposes very few, easy to use functions to index files and query references.
+
+This is a proof of concept draft, to test scripting utilities using stack-graphs easily.
+
+It uses pyo3 and maturin to generate the bindings.
+
+## Ressources
+
+https://pyo3.rs/v0.21.2/getting-started
+
+## Setup
+
+TODO
+
+```bash
+pipx install maturin
+```
+
+## Development
+
+TODO
+
+```bash
+maturin develop
+```
+
+## Install
+
+TODO
+

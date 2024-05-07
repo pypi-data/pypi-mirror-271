@@ -1,0 +1,6 @@
+numpy
+tqdm
+rsa
+pyserial
+matplotlib
+hidapi

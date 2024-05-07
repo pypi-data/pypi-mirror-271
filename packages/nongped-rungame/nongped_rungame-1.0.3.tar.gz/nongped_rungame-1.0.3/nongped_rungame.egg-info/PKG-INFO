@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: nongped-rungame
+Version: 1.0.3
+Summary: A simple dinosaur run game.
+Home-page: https://github.com/worasit/speech_recognition
+Author: Worasit D.
+License-File: LICENSE
+Requires-Dist: pygame

@@ -1,0 +1,2 @@
+[console_scripts]
+nongped-rungame = dino_game:main

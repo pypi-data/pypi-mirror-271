@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+python_telegram_broadcast/__init__.py
+python_telegram_broadcast/custom_dataclass.py
+python_telegram_broadcast/custom_exception.py
+python_telegram_broadcast/custom_util.py
+python_telegram_broadcast/main.py
+python_telegram_broadcast/send_method.py
+python_telegram_broadcast/strategy.py
+python_telegram_broadcast.egg-info/PKG-INFO
+python_telegram_broadcast.egg-info/SOURCES.txt
+python_telegram_broadcast.egg-info/dependency_links.txt
+python_telegram_broadcast.egg-info/requires.txt
+python_telegram_broadcast.egg-info/top_level.txt

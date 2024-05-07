@@ -1,0 +1,17 @@
+kgraphmemory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kgraphmemory/kginteraction_graph.py,sha256=u93sQ9HfXb_tjTKdUJ0fWqxX6QimsfC711NH8UpIvrY,13263
+kgraphmemory/kgraph.py,sha256=cNh6Y_9f3OcngFSGItW_9u1lWnWYFP7p259Rw6qnDGQ,243
+kgraphmemory/kgraph_memory.py,sha256=TeD55kPunQfCKfbr1x71_MH4gK7ICZDrSuVKGgthfGk,3283
+kgraphmemory/kgresult_list.py,sha256=uF7sCyn6EOy4SogUZZ4gwobIKHcV6RrS9e_kfpBMMhE,402
+kgraphmemory/kgresult_match.py,sha256=4lG3hpues4TfE9A7IM-Mysw5rd3e8BLhvHatGt56Gio,858
+kgraphmemory/kgstatus.py,sha256=vi1hV9Kl2ivAzWfoymcYthA_poncXgI1-2-rCXR3WXY,293
+kgraphmemory/entitymodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kgraphmemory/entitymodel/entitymodel.py,sha256=5TBbC6AG9qg0u5Fy2nhmvD14pDKzBncvTBzjDOIlgdk,30
+kgraphmemory/entitymodel/spacy_en_core_web_model.py,sha256=Wdcm-olWjqj6fhosPub3nQEYRpdJR1rPwI2Dgkzq6to,2844
+kgraphmemory/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kgraphmemory/utils/uri_generator.py,sha256=fSAECX1fZMHCILJdEO6P184vsqo56KAirl8GhAlBYJo,288
+kgraphmemory-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kgraphmemory-0.0.4.dist-info/METADATA,sha256=3ilgE0ecUWzRBs0FtfzJZ2ujG9UhUKhc4u9HwM9RJO4,790
+kgraphmemory-0.0.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+kgraphmemory-0.0.4.dist-info/top_level.txt,sha256=Ml6sSKO4pkXm4UIun_mWRzDuPm2-Vx9IbRrTpQ4lRPI,13
+kgraphmemory-0.0.4.dist-info/RECORD,,

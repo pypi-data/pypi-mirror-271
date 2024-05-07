@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+seismometer.egg-info/PKG-INFO
+seismometer.egg-info/SOURCES.txt
+seismometer.egg-info/dependency_links.txt
+seismometer.egg-info/top_level.txt
+src/seismometer/__init__.py
+src/seismometer/seismometer.py

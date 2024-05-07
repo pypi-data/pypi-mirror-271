@@ -1,0 +1,12 @@
+hello_world_henrique/__init__.py,sha256=bpT73UG7mZL_JjEqMwbYx6q69jA8J5Jcoul1LcDokhA,81
+hello_world_henrique/tools/__init__.py,sha256=bpT73UG7mZL_JjEqMwbYx6q69jA8J5Jcoul1LcDokhA,81
+hello_world_henrique/tools/hello_world_tool_henrique.py,sha256=oBVZKdWU3fNTffVPlqf8zYvT99FVyXGbJ2jtgHBF-r4,477
+hello_world_henrique/tools/utils.py,sha256=JfavnyUYcJGy1XlVOOlkRB-FFWuMOaRSRWpYGieMxTQ,535
+hello_world_henrique/yamls/hello_world_tool_henrique.yaml,sha256=OGhv69Oeb5p5ECr9_9Y7RjgvzxbBNYa9zRa0kCkG0ik,356
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_hello_world_tool_henrique.py,sha256=8usY4x0pO_GQemLzhvI81ffpMWtk4nReQR0CdNs59-8,734
+hello_world_henrique-0.0.1.dist-info/METADATA,sha256=9mS4TV4iGMtblaqzZhYUje0WdkOTUgm_Sq_vg0ojQiA,99
+hello_world_henrique-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+hello_world_henrique-0.0.1.dist-info/entry_points.txt,sha256=WZJrhHhoPS-aJOgs4RjW14OvHjG-820KRxeVMspaDfY,96
+hello_world_henrique-0.0.1.dist-info/top_level.txt,sha256=I6Qc6AMfBzIWMhZDl6J-vRwgVqg6tpzkkC-nOc3NLW4,27
+hello_world_henrique-0.0.1.dist-info/RECORD,,

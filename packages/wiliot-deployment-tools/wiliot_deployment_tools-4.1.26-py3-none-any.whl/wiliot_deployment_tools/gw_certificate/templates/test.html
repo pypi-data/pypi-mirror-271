@@ -1,0 +1,8 @@
+<div class="container">
+    <h3>{{ test_name }}: {% if test_pass %}<span class="pass">PASS</span>{% else %}<span class="fail">FAIL</span>{% endif %}</h3>
+    <h4>Running Time: {{ running_time }}</h4>
+    {% for stage_html in stages %}
+        {{ stage_html }}
+    {% endfor %}
+</div>
+<br>

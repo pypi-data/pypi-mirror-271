@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+        {{ stage_name }}: {% if stage_pass %}<span class="pass">PASS</span>{% else %}<span class="fail">FAIL</span>{% endif %}
+    </div>
+    <div class="card-body" id="card-body">
+        <samp>
+            {% for line in stage_report %}
+            {{ line | safe}}<br />
+            {% endfor %}
+        </samp>
+    </div>
+    <!-- Insert table here if available-->
+    {{ table|safe }}
+    <!-- Insert graph here if available-->
+    {{ graph|safe }}
+</div>
+<br>

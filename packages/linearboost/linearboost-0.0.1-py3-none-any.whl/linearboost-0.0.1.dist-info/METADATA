@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: linearboost
+Version: 0.0.1
+Summary: LinearBoost Python Package
+Author-email: Hamidreza Keshavarz <hamid9@outlook.com>, Reza Rawassizadeh <rezar@bu.edu>
+License: MIT License
+Project-URL: Homepage, https://github.com/LinearBoost/linearboost-classifier
+Project-URL: Documentation, https://linearboost.readthedocs.io
+Project-URL: Issues, https://github.com/LinearBoost/linearboost-classifier/issues
+Keywords: classification,classifier,linear,adaboost,boosting,boost
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.24.3
+Requires-Dist: scikit-learn >=1.2.2
+
+LinearBoost is a classification algorithm based on boosting a linear classifier named SEFR. It can be used for classification tasks.

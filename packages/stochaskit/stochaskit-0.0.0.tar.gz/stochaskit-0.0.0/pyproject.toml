@@ -1,0 +1,8 @@
+[project]
+name = "stochaskit"
+authors = [
+	{name = "Normal Computing", email = "info@normalcomputing.ai"},
+]
+version = "0.0.0"
+description = "Coming soon"
+

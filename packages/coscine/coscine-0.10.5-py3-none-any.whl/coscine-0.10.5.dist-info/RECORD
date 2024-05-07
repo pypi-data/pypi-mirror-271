@@ -1,0 +1,14 @@
+coscine/__about__.py,sha256=AitfhvM0OncvLO4Leiaoqlr8FCSPiUVrqEGTscI4dWs,517
+coscine/__init__.py,sha256=2QoGOSJ_3gZJYJz92UvgHr_XdFRF_DaEQxgkP6fKJHs,904
+coscine/client.py,sha256=_x1Wcu-rKuAE3CHMYTaVVnowYwZz6cQcttfcBxK5luc,34522
+coscine/common.py,sha256=WLEEJV98Yr8w2aHIsLhexBuchWt45EAle0rjOa7Jrmg,10342
+coscine/exceptions.py,sha256=BN9pWdqsA8Ryh5ib44iwr9ldbQdYy9LB4tiWsqSb9Pg,1388
+coscine/metadata.py,sha256=1ln0vNxV1peFothi5ToIi1ZdXgT5RR17tP9ibkUVvVQ,36050
+coscine/project.py,sha256=vEJulyx2trKw71DrxZR1hqKfqQvYEfl1t7xu-AknzY0,20576
+coscine/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coscine/resource.py,sha256=vKyiSLPDV3AwxDUChxLbP-XvNY5hrCJ6VqThrVKCu7I,39533
+coscine-0.10.5.dist-info/LICENSE.txt,sha256=01PtLK-sair9_2rFb-syXhEnYw7fXtGfWQ9VgGtj_cg,1084
+coscine-0.10.5.dist-info/METADATA,sha256=qiAhbYkZXRAjvN0u3ZXqGWHg5cAw1lraZX2xV0MleiQ,3782
+coscine-0.10.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+coscine-0.10.5.dist-info/top_level.txt,sha256=QLNIni4zqMAj39wvnLZEyZmu8GhYRuSFRv2h3061jeA,8
+coscine-0.10.5.dist-info/RECORD,,

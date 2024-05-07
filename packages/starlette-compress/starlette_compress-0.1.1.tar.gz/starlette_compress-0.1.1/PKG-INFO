@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: starlette-compress
+Version: 0.1.1
+Summary: Compression middleware for Starlette - supporting ZStd, Brotli, and GZip
+Home-page: https://github.com/Zaczero/starlette-compress
+License: Unlicense
+Keywords: starlette,middleware,compression,zstd,brotli,gzip,http
+Author: Kamil Monicz
+Author-email: kamil@monicz.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AnyIO
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Trio
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware
+Classifier: Typing :: Typed
+Requires-Dist: brotli (>=1) ; platform_python_implementation == "CPython"
+Requires-Dist: brotlicffi (>=1) ; platform_python_implementation != "CPython"
+Requires-Dist: starlette
+Requires-Dist: zstandard (>=0.15)
+Project-URL: Repository, https://github.com/Zaczero/starlette-compress
+Description-Content-Type: text/markdown
+
+

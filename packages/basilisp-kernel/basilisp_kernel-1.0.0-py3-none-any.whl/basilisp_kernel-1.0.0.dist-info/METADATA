@@ -1,0 +1,97 @@
+Metadata-Version: 2.3
+Name: basilisp-kernel
+Version: 1.0.0
+Summary: Basilisp kernel for Jupyter
+Project-URL: Homepage, https://github.com/ikappaki/basilisp-kernel
+Author: ikappaki
+License: BSD 3-Clause License
+        
+        Copyright (c) 2017, Project Jupyter Contributors
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: basilisp
+Requires-Dist: ipykernel
+Requires-Dist: jupyter-client
+Provides-Extra: test
+Requires-Dist: jupyter-kernel-test; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Basilisp Kernel for Jupyter
+
+Welcome to the Basilisp Kernel for Jupyter! This kernel allows you to run Basilisp code directly in your Jupyter notebooks.
+
+Basilisp is a dialect Lisp compatible with Clojure, implemented in Python, that brings the expressiveness of Lisp to the python community. With the Basilisp Kernel, you can combine Lisp's powerful macro system with the extensive ecosystem of Python's scientific computing tools.
+
+## Features
+
+- Full integration with Jupyter Notebook and JupyterLab
+- Enhanced autocompletion features
+- Ability to use Basilisp's macros and special forms in notebooks
+- Seamless interoperability with Python libraries
+
+## Installation
+
+Ensure you have Jupyter installed. If not, install it using pip:
+
+```shell
+pip install jupyter
+
+```
+
+To install the Basilisp Kernel, run:
+
+```shell
+pip install basilisp-kernel
+```
+
+## Usage
+
+Start your Jupyter notebook server:
+
+```shell
+jupyter notebook
+```
+
+In the Jupyter interface, select the Basilisp kernel when creating a new notebook.
+
+
+## Documentation
+
+For full documentation on Basilisp, visit [Basilisp Documentation](https://basilisp.readthedocs.io/en/latest/).
+
+## Examples
+
+This project includes a series of Jupyter notebooks that demonstrate various features and capabilities. You can find these notebooks in the [notebooks](notebooks) directory of this repository.
+
+## Acknowledgments
+
+This kernel was developed based on the [echo_kernel](https://github.com/jupyter/echo_kernel) as a starting point.
+

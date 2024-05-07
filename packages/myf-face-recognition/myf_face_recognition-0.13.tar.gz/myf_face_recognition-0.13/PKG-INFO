@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: myf_face_recognition
+Version: 0.13
+Summary: An easy-to-use yet powerful Python library for face recognition tasks.
+Home-page: https://github.com/VirNotFound/myf_face_recognition_updated
+Author: Virendrakumar Bind
+Author-email: finalyearprojectetc@gmail.com
+License: MIT
+Keywords: face-recognition
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: keras-facenet
+Requires-Dist: opencv-python
+Requires-Dist: mtcnn
+Requires-Dist: ultralytics

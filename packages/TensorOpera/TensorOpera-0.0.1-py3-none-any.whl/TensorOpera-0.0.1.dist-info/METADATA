@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: TensorOpera
+Version: 0.0.1
+Summary: TensorOpera: Your Genearative AI Platform at Scale
+Author: TensorOpera
+Author-email: "TensorOpera, Inc." <h@tensoropera.ai>
+Project-URL: Homepage, https://tensoropera.ai
+Project-URL: Bug Tracker, https://github.com/tensoropera
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: wheel
+Requires-Dist: bar
+Requires-Dist: greek
+
+https://TensorOpera.ai
+
+https://TensorOpera.com

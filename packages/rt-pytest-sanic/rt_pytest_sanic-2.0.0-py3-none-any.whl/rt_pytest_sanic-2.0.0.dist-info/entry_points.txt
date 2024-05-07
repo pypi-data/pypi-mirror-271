@@ -1,0 +1,3 @@
+[pytest11]
+sanic=rt_pytest_sanic.plugin
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ornithotrophyz/__init__.py
+ornithotrophyz/main.py
+ornithotrophyz.egg-info/PKG-INFO
+ornithotrophyz.egg-info/SOURCES.txt
+ornithotrophyz.egg-info/dependency_links.txt
+ornithotrophyz.egg-info/requires.txt
+ornithotrophyz.egg-info/top_level.txt

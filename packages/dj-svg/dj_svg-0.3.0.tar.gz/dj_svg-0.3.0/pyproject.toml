@@ -1,0 +1,92 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dj-svg"
+dynamic = ["version"]
+description = "SVG template tag for Django"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [{ name = "Max Shapira", email = "max@winoutt.com" }]
+maintainers = [{ name = "Max Shapira", email = "max@winoutt.com" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Plugins",
+  "Environment :: Web Environment",
+  "Framework :: Django",
+  "Framework :: Django :: 4.0",
+  "Framework :: Django :: 4.1",
+  "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.0",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+dependencies = ["Django>=4.0", "docutils"]
+
+[tool.hatch.envs.default]
+installer = "uv"
+dependencies = ["pytest", "pytest-cov", "pytest-django", "ruff"]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11"]
+django = ["4.0", "4.1", "4.2"]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10", "3.11", "3.12"]
+django = ["5.0"]
+
+[tool.hatch.envs.test]
+dependencies = ["django~={matrix:django}.0"]
+
+[tool.hatch.envs.test.scripts]
+test = "python runtests.py"
+run-ruff-lint = "ruff check dj_svg"
+run-ruff-format = "ruff format dj_svg --check"
+
+[project.urls]
+Homepage = "https://github.com/xshapira/dj-svg"
+Documentation = "https://github.com/xshapira/dj-svg"
+
+[tool.hatch.version]
+path = "dj_svg/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["/dj_svg"]
+exclude = ["/.github"]
+
+[tool.ruff]
+line-length = 88
+exclude = [
+  '.git',
+  '__pycache__',
+  '__init__.py',
+  '.mypy_cache',
+  '.pytest_cache',
+  '.tox/*',
+]
+lint.select = [
+  "E",  # pycodestyle errors
+  "W",  # pycodestyle warnings
+  "F",  # pyflakes
+  "I",  # isort
+  "C",  # flake8-comprehensions
+  "B",  # flake8-bugbear
+  "UP", # pyupgrade
+]
+lint.ignore = [
+  "E501", # line too long
+  "C901", # Comprehension is too complex (11 > 10)
+  "W191", # indentation contains tabs
+  "E402",
+]

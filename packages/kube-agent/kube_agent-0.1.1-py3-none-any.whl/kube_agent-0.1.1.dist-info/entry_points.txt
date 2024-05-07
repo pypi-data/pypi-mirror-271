@@ -1,0 +1,3 @@
+[console_scripts]
+kube-agent=kube_agent.cli:main
+

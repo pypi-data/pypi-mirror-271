@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: markov_random_field
+Version: 0.1.0
+Summary: Markov Random Field for Image Segmentation
+Author-email: James Haberberger <jhaberbe@stanford.edu>
+Maintainer-email: James Haberberger <jhaberbe@stanford.edu>
+License: MIT license
+Project-URL: bugs, https://github.com/jhaberbe/markov_random_field/issues
+Project-URL: changelog, https://github.com/jhaberbe/markov_random_field/blob/master/changelog.md
+Project-URL: homepage, https://github.com/jhaberbe/markov_random_field
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: sklearn
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
+===================
+Markov Random Field
+===================
+
+
+.. image:: https://img.shields.io/pypi/v/markov_random_field.svg
+        :target: https://pypi.python.org/pypi/markov_random_field
+
+.. image:: https://img.shields.io/travis/jhaberbe/markov_random_field.svg
+        :target: https://travis-ci.com/jhaberbe/markov_random_field
+
+.. image:: https://readthedocs.org/projects/markov-random-field/badge/?version=latest
+        :target: https://markov-random-field.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Markov Random Field for Image Segmentation
+
+
+* Free software: MIT license
+* Documentation: https://markov-random-field.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package borrows almost everything from this repository:
+        https://github.com/lucananni93/Hidden-Markov-Random-Fields/blob/master/image_segmentation/main.py
+
+I made small QoL improvements (using scipy.signal.convolve2d instead of iterating through all the pixels to make this faster). 
+
+
+As a small benchmark, an image of size (14930, 20226) with 4 classes takes 20m 40.7s to run on a cluster with 20 cores and 100 GB of RAM. 
+Likely it doesn't require that much memory to run, however your mileage will vary.
+
+
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage

@@ -1,0 +1,38 @@
+wheel>=0.37.0
+appdirs
+beautifulsoup4
+boto3==1.15.18
+botocore==1.18.18
+click==6.7
+cssselect
+lxml
+nltk
+python-dateutil
+requests==2.21.0
+six
+python-crfsuite
+tabledataextractor
+PyYAML
+selenium==3.141.0
+protobuf==3.*
+yaspin
+deprecation
+allennlp==0.9.0
+tokenizers==0.12.1
+scikit-learn==0.22.1
+overrides==3.1.0
+stanza==1.6.1
+
+[:python_version < "3.7.0"]
+DAWG
+numpy==1.16
+
+[:python_version < "3.8"]
+pdfminer.six<=20220524,>=20160614
+
+[:python_version >= "3.7.0"]
+DAWG-Patched
+numpy<1.23,>=1.16
+
+[:python_version >= "3.8"]
+pdfminer.six

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: igc-processor
+Version: 0.1.0
+Summary: package for processing glider flight log data in IGC file format
+License: MIT
+Author: suikabar
+Author-email: mizuho.suikabar@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# igc-processor

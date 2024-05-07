@@ -1,0 +1,7 @@
+igc_processor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+igc_processor/parser.py,sha256=K-liVhgFIv4T-CD8Uv_V7axtC0b6OGcayaZlzXKRqWQ,4343
+igc_processor/util.py,sha256=lwUmceFX-t7NKLfVoi2lYkmxLlKYsNbi4zcBboGsmlo,290
+igc_processor-0.1.0.dist-info/LICENSE,sha256=OS6fctNDisve_g40QgmGO_qte-qMuEnBT4HbESHjey8,1067
+igc_processor-0.1.0.dist-info/METADATA,sha256=Fii0SOXV3yVCWYUqFxsRJDbC-l-Z5mEXDSF5skoueqU,476
+igc_processor-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+igc_processor-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,211 @@
+@import url('base.css');
+@import './variables.css';
+
+/* Set the default typography for monospace elements */
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+}
+
+body[data-jp-deck-mode='presenting']
+  #jp-main-content-panel {
+    width: 100vw !important;
+    height: 100vh !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    background-image: url('./KULeuven.svg'),
+      linear-gradient(#fff 91vh, var(--kuleuven-blue0) 91vh);
+    background-position: right 11vw bottom 1.5vh, bottom;
+    background-size: 15vh, 100%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  
+body[data-jp-deck-mode='presenting']
+  .jp-NotebookPanel{
+    height: 91vh !important;
+    justify-content: stretch;
+  }  
+  
+body[data-jp-deck-mode='presenting'] h1,
+body[data-jp-deck-mode='presenting'] h2,
+body[data-jp-deck-mode='presenting'] h3,
+body[data-jp-deck-mode='presenting'] h4,
+body[data-jp-deck-mode='presenting'] h5,
+body[data-jp-deck-mode='presenting'] h6 {
+    color: var(--kuleuven-blue0);
+    margin: 0 0 0.2vh;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-shadow: none;
+    word-wrap: break-word;
+  }
+  
+body[data-jp-deck-mode='presenting'] h1 {
+    font-size: 11vh;
+		height: 20vh;
+		max-height: 85vh;
+    width: 90vw;
+		max-width: 95vw;
+		object-fit: contain;
+		text-align: center;
+		top: 20vh;
+  }
+  
+body[data-jp-deck-mode='presenting'] h2 {
+    font-size: 4vh;
+    text-align: left;
+    position: relative;
+    left: 2vw;
+  }
+  
+body[data-jp-deck-mode='presenting'] h3 {
+    font-size: 3vh;
+    text-align: left;
+    position: relative;
+    left: 5vw;
+  }
+  
+body[data-jp-deck-mode='presenting'] h4 {
+    font-size: 2vh;
+    text-align: left;
+    position: relative;
+    left: 8vw;
+  }
+  
+body[data-jp-deck-mode='presenting'] h5 {
+    font-size: 3vh;
+    text-align: center;
+    top: 0;
+    height: 9vh;
+    max-height: 9vh;
+  }
+  
+body[data-jp-deck-mode='presenting'] h6 {
+    font-size: 4vh;
+    text-align: center;
+    top: 0;
+    height: 9vh;
+    max-height: 9vh;
+  }
+  
+body[data-jp-deck-mode='presenting'] .jp-RenderedSVG svg,
+body[data-jp-deck-mode='presenting'] .jp-RenderedImage img {
+    position: relative;
+    top: 0vh;  
+    left: 2vw;
+    width: 95vw;
+    height: 75vh;
+    max-height: 75vh;
+    object-fit: contain;
+  }
+
+body[data-jp-deck-mode='presenting'] .jp-MarkdownOutput {
+    font-size: 2vh;
+    text-align: left;
+    position: relative;
+    width: 95vw;
+    max-width: 95vw;
+    left: 8vw;
+  }
+
+  
+body[data-jp-deck-mode='presenting'] .BottomSlideReference {
+  position: fixed;
+  text-align: left;
+  font-size: 2vh;
+  left: 12vh;
+  height: 3vh;
+  bottom: 2vh;
+  color: #fff;
+  background-color: transparent; }
+  
+body[data-jp-deck-mode='presenting'] .endquote { 
+  position: fixed;
+  text-align: centre;
+  font-size: 5vh;
+  left: 5vh;
+  width: 70vw;
+  top: 25vh;
+  height: 6vh;
+  color: var(--kuleuven-blue0);
+  background-color: transparent; }
+
+body[data-jp-deck-mode='presenting'] .quoteauthor { 
+  position: fixed;
+  text-align: right;
+  font-size: 3vh;
+  right: 32vh;
+  height: 3vh;
+  bottom: 25vh;
+  color: var(--kuleuven-blue0);
+  background-color: transparent; }
+
+body[data-jp-deck-mode='presenting'] .MathJax_Display {
+  font-size: 6vh;
+  max-width: 95vw;}   
+
+body[data-jp-deck-mode='presenting'] .date {
+  position: fixed;
+  top: 82vh;
+  height: 5 vh;
+  width: 100vw;
+  font-size: 2vh; 
+  }
+
+body[data-jp-deck-mode='presenting'] .location {
+  position: fixed;
+  top: 76vh;
+  height: 5 vh;
+  width: 100vw;
+  font-size: 2vh;
+   }
+
+body[data-jp-deck-mode='presenting'] .speaker {
+  position: fixed;
+  top: 70vh;
+  height: 5 vh;
+  width: 100vw;
+  font-size: 3vh;
+  text-transform: uppercase;
+    }
+
+body[data-jp-deck-mode='presenting'] .subtitle {
+  color: #fff;
+  position: fixed;
+  top: 45vh; 
+  height: 15vh;
+  width: 75vw;
+  font-size: 5vh;
+  text-transform: uppercase;
+  text-shadow: none;
+  word-wrap: break-word;}
+
+
+/* Replace the default JupyterLab Logo */
+#jp-MainLogo > svg {
+  visibility: hidden;
+}
+
+#jp-MainLogo {
+  background-image: url('./KULeuven2.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jp-ApplicationShell-header .jp-Toolbar-logo {
+  background-image: url('./KULeuven.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+}

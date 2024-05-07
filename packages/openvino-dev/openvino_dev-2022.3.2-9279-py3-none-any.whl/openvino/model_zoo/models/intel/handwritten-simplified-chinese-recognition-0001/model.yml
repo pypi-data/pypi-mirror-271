@@ -1,0 +1,49 @@
+# Copyright (c) 2022-2023 Intel Corporation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+description: >-
+  Recognizes handwritten simplified Chinese text. Architecture is CNN-like: VGG16-like
+  backbone.
+task_type: optical_character_recognition
+files:
+  - name: FP32/handwritten-simplified-chinese-recognition-0001.xml
+    size: 85357
+    checksum: e84805d0f35ff3cb2b91c39b6d0740f67669ea5c7577cdd48e4a9a3486ebb70427bdecaead2579414d88c88abf5ed2cb
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/handwritten-simplified-chinese-recognition-0001/FP32/handwritten-simplified-chinese-recognition-0001.xml
+  - name: FP32/handwritten-simplified-chinese-recognition-0001.bin
+    size: 69071616
+    checksum: 122d3bf6520f1671f8e4fd2a83c575af95785b5a5fe49a3b39e1c17b32816a373f0a025ba3aa5be0ac61b7fc099da333
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/handwritten-simplified-chinese-recognition-0001/FP32/handwritten-simplified-chinese-recognition-0001.bin
+  - name: FP16/handwritten-simplified-chinese-recognition-0001.xml
+    size: 110274
+    checksum: 837b5f03e289431a79e974dcd4854f66f1e8a5c3617850616fafcf05024200597356c7e7a706f9764712711d4bdfc1a2
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/handwritten-simplified-chinese-recognition-0001/FP16/handwritten-simplified-chinese-recognition-0001.xml
+  - name: FP16/handwritten-simplified-chinese-recognition-0001.bin
+    size: 34535880
+    checksum: 85a911ef5e9982f3871ecfce688f2d0befd19379d3e5fb1182d72f0c66b07ea53c4e6fff602564ba558127c16d5bab92
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/handwritten-simplified-chinese-recognition-0001/FP16/handwritten-simplified-chinese-recognition-0001.bin
+  - name: FP16-INT8/handwritten-simplified-chinese-recognition-0001.xml
+    size: 199979
+    checksum: f3bfaa9dc004a58a5becd75e268a174b5e0bca083514b8a131b01a84701dd851af06731cf0267e342c9f00b0b0b3a272
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/handwritten-simplified-chinese-recognition-0001/FP16-INT8/handwritten-simplified-chinese-recognition-0001.xml
+  - name: FP16-INT8/handwritten-simplified-chinese-recognition-0001.bin
+    size: 17321072
+    checksum: dc59c9390486ca8acfe657aa894c6e21e7e1e21de7b32bf75686bf1d34f033cafe458055253df2a30112a977e52caef7
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/handwritten-simplified-chinese-recognition-0001/FP16-INT8/handwritten-simplified-chinese-recognition-0001.bin
+input_info:
+  - name: actual_input
+    shape: [1, 1, 96, 2000]
+    layout: NCHW
+framework: dldt
+license: https://raw.githubusercontent.com/openvinotoolkit/open_model_zoo/master/LICENSE

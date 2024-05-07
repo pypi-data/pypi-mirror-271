@@ -1,0 +1,48 @@
+# Copyright (c) 2022-2023 Intel Corporation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+description: >-
+  ICNet trained on CamVid in TensorFlow (69.54% mIoU)
+task_type: semantic_segmentation
+files:
+  - name: FP32/icnet-camvid-ava-0001.xml
+    size: 384372
+    checksum: 45b566ab3ff1a138ac084605f2b6e5a32bc1a24c116d895310135e15494ca16cdc3cc06f94aa4d5e4fb928dde0608026
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/icnet-camvid-ava-0001/FP32/icnet-camvid-ava-0001.xml
+  - name: FP32/icnet-camvid-ava-0001.bin
+    size: 106816904
+    checksum: 5a951ce7d3b52729cc5b800207064b311a175e779c0486d02f129fc6a7045d6712f410b1e9f080d070135cc86c506d87
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/icnet-camvid-ava-0001/FP32/icnet-camvid-ava-0001.bin
+  - name: FP16/icnet-camvid-ava-0001.xml
+    size: 462604
+    checksum: 3cf5354b4c759013a437cd1906ac44abaf96f036dee5dc5da6e2fead17aa6acbb59f16020d049e641965d410dd1b6ac4
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/icnet-camvid-ava-0001/FP16/icnet-camvid-ava-0001.xml
+  - name: FP16/icnet-camvid-ava-0001.bin
+    size: 53408610
+    checksum: 6268d290665b7a01c67f559b524e3ee4085d6fe2434ce5f93c207c408375884a1441d8abbbe771b2fa777e5735b24ce4
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/icnet-camvid-ava-0001/FP16/icnet-camvid-ava-0001.bin
+  - name: FP16-INT8/icnet-camvid-ava-0001.xml
+    size: 714645
+    checksum: 46cd9e9303cedde946e93fa93d6c0044fe46a3d59f0ec7f126071f790f14413d69f9b4b10ebddda02d70136437726723
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/icnet-camvid-ava-0001/FP16-INT8/icnet-camvid-ava-0001.xml
+  - name: FP16-INT8/icnet-camvid-ava-0001.bin
+    size: 26847742
+    checksum: 5fcf1523aae521898e138b0c70d42aa631f82602f7f96e2ac7600b3f99c92cd602c7f1a71ac8931fc6193556e192e88e
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/icnet-camvid-ava-0001/FP16-INT8/icnet-camvid-ava-0001.bin
+input_info:
+  - name: data
+    shape: [1, 720, 960, 3]
+    layout: NHWC
+framework: dldt
+license: https://raw.githubusercontent.com/openvinotoolkit/open_model_zoo/master/LICENSE

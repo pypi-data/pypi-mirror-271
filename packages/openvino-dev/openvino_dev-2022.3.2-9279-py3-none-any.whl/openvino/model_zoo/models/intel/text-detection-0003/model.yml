@@ -1,0 +1,48 @@
+# Copyright (c) 2022-2023 Intel Corporation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+description: >-
+  Detects oriented text.
+task_type: detection
+files:
+  - name: FP32/text-detection-0003.xml
+    size: 259461
+    checksum: a138465e5864300d700251c02412184e7da47e10f7d7339972e67f55846e3c2b8836483a23d85d8df2264036c2b164b0
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/text-detection-0003/FP32/text-detection-0003.xml
+  - name: FP32/text-detection-0003.bin
+    size: 26986360
+    checksum: 3a67b983bdf046b26d198410e0ac547ec83de369006559e48ff31f9216547ebfaf4e168adb909aaf4ddf3f350efee04d
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/text-detection-0003/FP32/text-detection-0003.bin
+  - name: FP16/text-detection-0003.xml
+    size: 344029
+    checksum: c752d8adee120a7feb5b80939de3fe4f3d8e9edee4ebab5c4e0d5f3ac0ec1356adaec52dc708c07587ac4e1b8096ba27
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/text-detection-0003/FP16/text-detection-0003.xml
+  - name: FP16/text-detection-0003.bin
+    size: 13493136
+    checksum: b0845764135d39aa24dbf3c86378c502ea1a23cc2f63a15b276394c6d72ab02c4a241d7760e6d31544201e463f032733
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/text-detection-0003/FP16/text-detection-0003.bin
+  - name: FP16-INT8/text-detection-0003.xml
+    size: 658634
+    checksum: 2a9eaa06062a100e46a2249327a3ef7c24d2f9b4e1e22f86b961510a91e1e1554b8bdaedf77a9d3e3378c5e563e687b2
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/text-detection-0003/FP16-INT8/text-detection-0003.xml
+  - name: FP16-INT8/text-detection-0003.bin
+    size: 6928356
+    checksum: badfa47ffa14b81ba4ef84e3490e402a30528bb683cb53301e41567caa949f85a1e7292c6ddee173469989aade692497
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/text-detection-0003/FP16-INT8/text-detection-0003.bin
+input_info:
+  - name: Placeholder
+    shape: [1, 768, 1280, 3]
+    layout: NHWC
+framework: dldt
+license: https://raw.githubusercontent.com/openvinotoolkit/open_model_zoo/master/LICENSE

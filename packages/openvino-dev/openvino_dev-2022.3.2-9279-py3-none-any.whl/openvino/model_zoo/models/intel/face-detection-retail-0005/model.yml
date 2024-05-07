@@ -1,0 +1,48 @@
+# Copyright (c) 2022-2023 Intel Corporation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+description: >-
+  Face Detection based on MobileNetV2.
+task_type: detection
+files:
+  - name: FP32/face-detection-retail-0005.xml
+    size: 159595
+    checksum: 46433ad49f3a42a407b3e773306eea6f9338c7008dc7239cef6786d530ba04adc01f72059db09d8fa1c78e22086d691b
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/face-detection-retail-0005/FP32/face-detection-retail-0005.xml
+  - name: FP32/face-detection-retail-0005.bin
+    size: 4083140
+    checksum: 0a57c20f5aea425f9e3a6dd258f7a17b02e413ebfd89974ebc9e1898a40649924fb97dbdb3ef3f0c9ef1acb9d52c92aa
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/face-detection-retail-0005/FP32/face-detection-retail-0005.bin
+  - name: FP16/face-detection-retail-0005.xml
+    size: 224416
+    checksum: 8ad18467abcfcc3e914029997aac8a75625eb397b477271902eba43111b8bb8d2c8b9affa8fe434428fa5d58e2f90c72
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/face-detection-retail-0005/FP16/face-detection-retail-0005.xml
+  - name: FP16/face-detection-retail-0005.bin
+    size: 2041626
+    checksum: adeb381bda95a2a161482dd61eda3051277a1fdbddb5ebe39f42071e0adc44556616fc04940ca78cd6c188f2cbe58d56
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/face-detection-retail-0005/FP16/face-detection-retail-0005.bin
+  - name: FP16-INT8/face-detection-retail-0005.xml
+    size: 447248
+    checksum: 1091a56ac577da967cd4e76dc244d82eab2fb05be1698d211c794a52fbb2a5b12a10b1ba5a18c8e41a4bb935114f32d1
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/face-detection-retail-0005/FP16-INT8/face-detection-retail-0005.xml
+  - name: FP16-INT8/face-detection-retail-0005.bin
+    size: 1115038
+    checksum: c0fa7682cc20bf70a27244eeaea676d78648eac16bf8b0e1bda44172ba4808489f0504a741a59d6207b9e0a0e95016b2
+    source: https://storage.openvinotoolkit.org/repositories/open_model_zoo/2022.3/models_bin/1/face-detection-retail-0005/FP16-INT8/face-detection-retail-0005.bin
+input_info:
+  - name: input.1
+    shape: [1, 3, 300, 300]
+    layout: NCHW
+framework: dldt
+license: https://raw.githubusercontent.com/openvinotoolkit/open_model_zoo/master/LICENSE

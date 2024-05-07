@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: toycv
+Version: 0.3.2
+Summary: A simple and flexible tool for building and training neural network models.
+Home-page: https://github.com/coderelease
+Author: Yang Xiang
+Author-email: btk@qq.com
+License: MIT
+Keywords: toycv
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# toycv
+A simple and flexible tool for building and training neural network models.

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+worrierz/__init__.py
+worrierz/main.py
+worrierz.egg-info/PKG-INFO
+worrierz.egg-info/SOURCES.txt
+worrierz.egg-info/dependency_links.txt
+worrierz.egg-info/requires.txt
+worrierz.egg-info/top_level.txt

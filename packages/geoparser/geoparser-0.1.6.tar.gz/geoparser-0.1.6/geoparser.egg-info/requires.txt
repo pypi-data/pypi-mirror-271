@@ -1,0 +1,8 @@
+pandas
+numpy
+spacy
+sentence_transformers
+tqdm
+torch
+requests
+appdirs

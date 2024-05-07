@@ -1,0 +1,8 @@
+README.md
+setup.py
+swiki.egg-info/PKG-INFO
+swiki.egg-info/SOURCES.txt
+swiki.egg-info/dependency_links.txt
+swiki.egg-info/entry_points.txt
+swiki.egg-info/requires.txt
+swiki.egg-info/top_level.txt

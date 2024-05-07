@@ -1,0 +1,40 @@
+name: test
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+  pull_request:
+  schedule:
+    # Weekly Tuesday 9:05 PM build
+    - cron: "5 21 * * 2"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@v1
+    with:
+      envs: |
+        - linux: security
+        - linux: style
+        - linux: build-docs
+  test:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@v1
+    with:
+      envs: |
+        - linux: py310
+        - macos: py310
+        - linux: py311
+          pytest-results-summary: true
+        - linux: py311-cov
+          coverage: codecov
+        - macos: py311
+          pytest-results-summary: true
+        - linux: py312
+        - macos: py312

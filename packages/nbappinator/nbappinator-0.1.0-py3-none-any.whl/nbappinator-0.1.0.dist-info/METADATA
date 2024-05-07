@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nbappinator
+Version: 0.1.0
+Summary: Jupyter Notebook Application Builder
+Author: Your Name
+Author-email: Paul Timmins <paul@iqmo.com>
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: ipywidgets ~=7.8.0
+Requires-Dist: plotly
+Requires-Dist: ipyvuetify >=1.9
+Requires-Dist: ipyaggrid
+Requires-Dist: ipytree
+Requires-Dist: pandas >=1.5.3
+

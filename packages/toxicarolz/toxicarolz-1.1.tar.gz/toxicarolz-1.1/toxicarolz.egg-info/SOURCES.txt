@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+toxicarolz/__init__.py
+toxicarolz/main.py
+toxicarolz.egg-info/PKG-INFO
+toxicarolz.egg-info/SOURCES.txt
+toxicarolz.egg-info/dependency_links.txt
+toxicarolz.egg-info/requires.txt
+toxicarolz.egg-info/top_level.txt

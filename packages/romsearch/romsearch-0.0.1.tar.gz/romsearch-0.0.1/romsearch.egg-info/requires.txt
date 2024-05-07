@@ -1,0 +1,10 @@
+discordwebhook
+numpy
+packaging
+pathvalidate
+pyyaml
+xmltodict
+
+[docs]
+sphinx-automodapi
+sphinx-rtd-theme

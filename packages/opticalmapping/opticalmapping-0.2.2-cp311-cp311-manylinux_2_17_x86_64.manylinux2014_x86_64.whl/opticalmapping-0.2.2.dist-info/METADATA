@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: opticalmapping
+Version: 0.2.2
+Summary: A toolbox for analyzing optical mapping and fluorescence imaging data.
+Home-page: https://github.com/cardiacvision/optimap
+Author: Jan Lebert
+Author-email: jan.lebert@ucsf.edu
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: scikit-video
+Requires-Dist: tqdm
+Requires-Dist: pooch
+Requires-Dist: seasonal
+Requires-Dist: static-ffmpeg
+Requires-Dist: mpl-pan-zoom
+Requires-Dist: monochrome-viewer
+Requires-Dist: Pillow >=10.0.1
+Provides-Extra: all
+Requires-Dist: opencv-contrib-python ; extra == 'all'
+Requires-Dist: PySide6 ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'docs'
+Requires-Dist: sphinxcontrib-video ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-codeautolink ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: myst-nb >=1.0.0 ; extra == 'docs'
+Requires-Dist: jupytext ; extra == 'docs'
+Requires-Dist: jupyter-cache ; extra == 'docs'
+Requires-Dist: sphinx-remove-toctrees ; extra == 'docs'
+Requires-Dist: sphinx-design ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# optimap
+
+[![docs](https://readthedocs.org/projects/optimap/badge/?version=latest&style=)](https://optimap.readthedocs.org)
+[![tests](https://github.com/cardiacvision/optimap/actions/workflows/main.yml/badge.svg)](https://github.com/cardiacvision/optimap/actions/workflows/main.yml)
+[![PyPI](https://img.shields.io/pypi/v/opticalmapping.svg)](https://pypi.org/project/opticalmapping/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/opticalmapping.svg)](https://python.org)
+[![DOI](https://zenodo.org/badge/677528623.svg)](https://zenodo.org/badge/latestdoi/677528623)
+
+### optimap: An open-source library for the processing of fluorescence video data
+
+`optimap` is an open-source Python toolbox for exploring, visualizing, and analyzing high-speed fluorescence imaging data with a focus on cardiac optical mapping data. It includes modules for loading, processing and exporting videos, extracting and measuring optical traces, visualizing action potential or calcium waves, tracking motion and compensating motion artifacts, computing activation maps, conduction velocities, action potential durations, as well as measuring contractility and further analyzing and visualizing the results. Refer to the [Tutorials](https://optimap.readthedocs.io/en/latest/tutorials/) and the [Documentation](https://optimap.readthedocs.io/en/latest/) for more information about optimap's features.
+
+> ⚠️ optimap is currently in early development, expect breaking changes and bugs.
+
+## Installation
+
+`optimap` is available for macOS, Windows and Linux, see the [Getting Started](https://optimap.readthedocs.io/en/latest/chapters/getting_started/) guide for more information.
+
+### Installing pre-built binaries (macOS, Windows, Linux)
+
+Pre-built binaries can be installed using pip:
+
+```bash
+pip install opticalmapping[all]
+```
+
+The above command will install optimap and all recommended dependencies including OpenCV and PySide2. If you wish to install your own version of OpenCV (e.g. for CUDA support) or Qt implementation use:
+
+```bash
+pip install opticalmapping
+```
+
+To update optimap to the latest version run
+
+```bash
+pip install --upgrade opticalmapping[all]
+```
+
+## About optimap
+
+`optimap` is an interactive, script or notebook-based software library created for cardiovascular scientists in particular, but might also be useful for scientists in other fields. For instance, when performing calcium imaging or physiological research with moving cells or tissues. It is designed to be a flexible and customizable analysis workflow toolkit, which allows for a wide range of analyses and visualizations. See the [Tutorials](https://optimap.readthedocs.io/en/latest/tutorials/) for examples and more information about the usage of `optimap`. The tutorials can be downloaded by clicking on the link in the green box at the top of each tutorial page.
+
+`optimap` is developed by members of the [Cardiac Vision Laboratory](https://cardiacvision.ucsf.edu) at the [University of California, San Franicsco](https://www.ucsf.edu). It is open-source, freely available, and relies on open-source packages such as NumPy, SciPy, Matplotlib and OpenCV.
+
+## Links
+
+- [Documentation](https://optimap.readthedocs.io)
+- [Issue tracker](https://github.com/cardiacvision/optimap/issues)
+- [Source code](https://github.com/cardiacvision/optimap)
+
+## Contributing
+
+We welcome bug reports, questions, ideas for new features and pull-requests to fix issues or add new features to optimap. See [Contributing](https://optimap.readthedocs.io/en/latest/chapters/contributing/) for more information.
+
+## License
+
+optimap is licensed under the [MIT License](https://github.com/cardiacvision/optimap/blob/main/LICENSE.md).

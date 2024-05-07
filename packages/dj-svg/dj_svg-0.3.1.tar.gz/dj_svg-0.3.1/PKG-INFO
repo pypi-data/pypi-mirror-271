@@ -1,0 +1,112 @@
+Metadata-Version: 2.3
+Name: dj-svg
+Version: 0.3.1
+Summary: SVG template tag for Django
+Project-URL: Homepage, https://github.com/xshapira/dj-svg
+Project-URL: Documentation, https://github.com/xshapira/dj-svg
+Author-email: Max Shapira <max@winoutt.com>
+Maintainer-email: Max Shapira <max@winoutt.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+Requires-Dist: django>=4.0
+Description-Content-Type: text/markdown
+
+# dj-svg
+
+[![PyPI version](https://badge.fury.io/py/dj-svg.svg)](https://badge.fury.io/py/dj-svg)
+[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/dj-svg.svg)](https://pypi.python.org/pypi/dj-svg/)
+[![PyPI Supported Django Versions](https://img.shields.io/pypi/djversions/dj-svg.svg)](https://docs.djangoproject.com/en/dev/releases/)
+[![GitHub Actions (Code quality and tests)](https://github.com/xshapira/dj-svg/workflows/Code%20quality%20and%20tests/badge.svg)](https://github.com/xshapira/dj-svg)
+
+dj-svg is a fork of [django-inline-svg](https://github.com/mixxorz/django-inline-svg) which works with Django >4, it's a simple plugin that adds an `svg` template tag to inline your SVGs in your
+Django templates.
+
+## Installation
+
+Install it from pypi.
+
+```bash
+pip install dj-svg
+```
+
+Add `dj_svg` to your `INSTALLED_APPS`.
+
+```python
+    INSTALLED_APPS = (
+        ...
+        'dj_svg',
+        ...
+    )
+```
+
+## Usage
+
+Store your SVGs in folder named `svg` at the root of any of your static file
+directories.
+
+```bash
+    my_app
+    |-- static
+    |   |-- svg
+    |       |-- logo.svg
+    |       |-- check.svg
+    |       |-- cross.svg
+```
+
+Use the `svg` template tag.
+
+```django
+    {% load svg %}
+
+    <h1 class="logo">{% svg 'logo' class="css-class" height="16" width="16" %}</h1>
+```
+
+You can set `SVG_DIRS` to control where to look for your svgs.
+
+```python
+    # settings.py
+
+    SVG_DIRS=[
+        os.path.join(BASE_DIR, 'my-svgs')
+    ]
+```
+
+### Passing html attributes to svg templatetag
+
+With inlining SVG's, it's helpful to give them class names so you can change the fill color using CSS. And if you're using a framework like tailwind, you can do it like so:
+
+```jinja
+{% svg 'icon-search' class='h-10 mt-6' %}
+```
+
+This will add fixed height and top margin to SVG.
+
+Thanks to [Jure Cuhalev](https://github.com/jurecuhalev) for this one.
+
+## Support
+
+The tests are run against Django 4.0 to 5.0.4 on Python 3.8 to 3.12.
+
+## License
+
+MIT

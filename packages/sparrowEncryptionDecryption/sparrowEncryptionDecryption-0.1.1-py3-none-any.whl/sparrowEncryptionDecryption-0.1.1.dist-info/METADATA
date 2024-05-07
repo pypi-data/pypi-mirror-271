@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: sparrowEncryptionDecryption
+Version: 0.1.1
+Summary: 基于进制转换的浅加密工具
+Requires-Python: >=3.11
+

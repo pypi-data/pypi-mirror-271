@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-dragdata"></script>
+    <title>Chartjs Charts</title>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="height: 60vh; width: 50%;">
+            <canvas id="myChart1"></canvas>
+        </div>
+        <div style="height: 60vh; width: 50%;">
+            <canvas id="myChart2"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const pink = 'rgb(255, 99, 132)';
+        const data1 = {
+            datasets: [{
+                label: 'Sales 1',
+                backgroundColor: pink,
+                borderColor: pink,
+                data: {{ data1 | tojson}},
+            }]
+        };
+
+        const config1 = {
+            type: 'scatter',
+            data: data1,
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    dragData: {
+                        showTooltip: true,
+						dragX: true
+                    }
+                }
+            }
+        };
+
+        const myChart1 = new Chart(
+            document.getElementById('myChart1'),
+            config1
+        );
+
+        // Second Chart
+        const blue = 'rgb(54, 162, 235)';
+        const data2 = {
+            datasets: [{
+                label: 'Sales 2',
+                backgroundColor: blue,
+                borderColor: blue,
+                data: {{ data2 | tojson}},
+            }]
+        };
+
+        const config2 = {
+            type: 'scatter',
+            data: data2,
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    dragData: {
+						dragX: true,
+                        showTooltip: true
+                    }
+                }
+            }
+        };
+
+        const myChart2 = new Chart(
+            document.getElementById('myChart2'),
+            config2
+        );
+    </script>
+</body>
+
+</html>

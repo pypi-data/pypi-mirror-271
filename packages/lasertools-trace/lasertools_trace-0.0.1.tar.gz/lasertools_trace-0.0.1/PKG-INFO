@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lasertools_trace
+Version: 0.0.1
+Summary: A module to represent a pulse measurement trace
+Home-page: https://github.com/lasertools/lasertools_trace
+Author: brittonm
+Author-email: 68578865+brittonm@users.noreply.github.com
+License: GPL
+Download-URL: https://github.com/lasertools/lasertools_trace/archive/refs/tags/v_0_0_1.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+# trace
+A module to represent a pulse measurement trace
+

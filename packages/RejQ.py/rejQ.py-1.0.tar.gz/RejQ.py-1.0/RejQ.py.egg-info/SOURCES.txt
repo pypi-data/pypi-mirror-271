@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+LIB/__init__.py
+LIB/module1.py
+RejQ.py.egg-info/PKG-INFO
+RejQ.py.egg-info/SOURCES.txt
+RejQ.py.egg-info/dependency_links.txt
+RejQ.py.egg-info/requires.txt
+RejQ.py.egg-info/top_level.txt
+rejQ.py.egg-info/PKG-INFO
+rejQ.py.egg-info/SOURCES.txt
+rejQ.py.egg-info/dependency_links.txt
+rejQ.py.egg-info/requires.txt
+rejQ.py.egg-info/top_level.txt

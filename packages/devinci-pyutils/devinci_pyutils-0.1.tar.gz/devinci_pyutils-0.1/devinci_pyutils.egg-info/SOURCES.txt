@@ -1,0 +1,10 @@
+README.md
+setup.py
+devinci_pyutils/__init__.py
+devinci_pyutils/banner.py
+devinci_pyutils/file_utils.py
+devinci_pyutils/writer.py
+devinci_pyutils.egg-info/PKG-INFO
+devinci_pyutils.egg-info/SOURCES.txt
+devinci_pyutils.egg-info/dependency_links.txt
+devinci_pyutils.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: smb_sync
+Version: 0.0.5
+Summary: A tool for copying files between local drive and smb network drive
+Author-email: Grey Wang <aguang.xyz@gmail.com>
+Requires-Python: >=3.11
+Requires-Dist: diskcache>=5.6.1
+Requires-Dist: pysmb>=1.2.9.1
+Description-Content-Type: text/markdown
+
+# SMB Sync
+
+_**A tool for copying files between local drive and smb network drive.**_

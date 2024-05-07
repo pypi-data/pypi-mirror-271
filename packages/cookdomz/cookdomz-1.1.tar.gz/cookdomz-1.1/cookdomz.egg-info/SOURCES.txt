@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cookdomz/__init__.py
+cookdomz/main.py
+cookdomz.egg-info/PKG-INFO
+cookdomz.egg-info/SOURCES.txt
+cookdomz.egg-info/dependency_links.txt
+cookdomz.egg-info/requires.txt
+cookdomz.egg-info/top_level.txt

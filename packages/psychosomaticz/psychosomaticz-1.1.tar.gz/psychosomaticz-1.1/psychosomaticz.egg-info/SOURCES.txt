@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+psychosomaticz/__init__.py
+psychosomaticz/main.py
+psychosomaticz.egg-info/PKG-INFO
+psychosomaticz.egg-info/SOURCES.txt
+psychosomaticz.egg-info/dependency_links.txt
+psychosomaticz.egg-info/requires.txt
+psychosomaticz.egg-info/top_level.txt

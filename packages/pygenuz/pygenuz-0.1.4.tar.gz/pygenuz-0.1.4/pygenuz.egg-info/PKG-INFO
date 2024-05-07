@@ -1,0 +1,296 @@
+Metadata-Version: 2.1
+Name: pygenuz
+Version: 0.1.4
+Summary: My first Python web framework.
+Home-page: https://github.com/me/myproject
+Author: E'zozbek Kholbutayev
+Author-email: cssezozbel@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+
+
+# PyGenUz: Python Web Framewrok build for learning purposes
+
+![purpose](https://img.shields.io/badge/purpose-learning-green)
+![PyPI Version](https://img.shields.io/pypi/v/pygenuz)
+
+PyGenUz is a Python web framewrok built for learning purposes.
+
+It's a WSGI framework and can be used with any WSGI aplication server such as Gunicorn.
+
+## Installation
+```shell
+pip install pygenuz
+```
+## How to use it
+
+### Basic usage
+    ```
+    from pygenuz.app import PyGenUz
+    from pygenuz.middelware import Middleware
+
+    app = PyGenUz()
+
+
+    @app.route('/home', allowed_methods="get")
+    def home(request, response):
+        response.text = "Hello from home page"
+
+
+    @app.route('/about')
+    def about(request, response):
+        response.text = "Hello from about page"
+
+
+    @app.route("/hello/{name}")
+    def greeting(request, response, name):
+        response.text = f"Hello, {name}"
+
+
+    @app.route('/books')
+    class Books:
+        def get(self, request, response):
+            response.text = "Books page"
+
+        def post(self, request, response):
+            response.text = "endpoint to create a book"
+
+        def delete(self, request, response):
+            response.text = "deleted"
+    ```
+
+## How we cam use Templates? 
+### Using Templates
+#### We have to make dir name called temps/ 
+```
+    @app.route("/temp")
+    def template_handler(req, resp):
+        resp.html = app.template(
+            "home.html",
+            context = {"new_title": "New title", "new_body": "New body"}
+        )
+
+```
+
+## How we can use json?
+```
+    @app.route("/json")
+    def json_handler(req, resp):
+        response_data = {"name": "some name"}
+        resp.json = response_data
+
+``` 
+
+## How we can use Static files 
+### We have to make dir name called static/
+
+#### .html
+```
+    <link rel="stylesheet" href="/static/test.css">
+```
+
+### Unit Tests
+
+#### Here is hard code of Unit Tests
+```
+    import pytest
+    from pygenuz.middelware import Middleware
+
+    def test_basic_route_adding(app):
+        @app.route("/home")
+        def home(req, resp):
+            resp.text = "Hello from Home"
+
+
+    def test_duplicate_routes_throws_exception(app):
+        @app.route("/home")
+        def home(req, resp):
+            resp.text = "Hello from Home"
+
+        with pytest.raises(AssertionError):
+            @app.route("/home")
+            def home2(req, resp):
+                resp.text = "Hello from Home"
+
+
+    def test_requests_can_be_send_by_test_client(app, test_client):
+        @app.route("/home")
+        def home(req, resp):
+            resp.text = "Hello from Home"
+        response = test_client.get("http://testserver/home")
+        assert response.text == "Hello from Home"
+
+
+    def test_parameterized_routing(app, test_client):
+        @app.route("/hello/{name}")
+        def greeting(request, response, name):
+            response.text = f"Hello, {name}"
+        
+        assert test_client.get("http://testserver/hello/Ezozbek").text == "Hello, Ezozbek"
+        assert test_client.get("http://testserver/hello/Bob").text == "Hello, Bob"
+
+    def test_default_response(test_client):
+        response = test_client.get("http://testserver/nonexsistent")
+        assert response.text == "Not Found."
+        assert response.status_code == 404
+
+
+    def test_class_based_get(app, test_client):
+        @app.route("/books")
+        class Books:
+            def get(self, req, resp):
+                resp.text = "Books page"
+        
+        assert test_client.get("http://testserver/books").text == "Books page"
+
+    def test_class_based_post(app, test_client):
+        @app.route("/books")
+        class Books:
+            def post(self, req, resp):
+                resp.text = "endpoint to create a book"
+        
+        assert test_client.post("http://testserver/books").text == "endpoint to create a book"
+        
+    def test_class_based_method_not_allowed(app, test_client):
+        @app.route("/books")
+        class Books:
+            def post(self, req, resp):
+                resp.text = "endpoint to create a book"
+        
+        response = test_client.get("http://testserver/books")
+        assert response.text == "Method Not Allowed"
+        assert response.status_code == 405
+
+    def test_alternative_router_adding(app, test_client):
+        def new_handler(req, resp):
+            resp.text = "From new handler"
+
+        app.add_route('/newhandler', new_handler)
+
+        assert test_client.get("http://testserver/newhandler").text == "From new handler"
+
+    def test_template_handler(app,test_client):
+        @app.route("/temp")
+        def template(req, resp):
+            resp.body = app.template(
+                "home.html",
+                context = {"new_title": "Best title", "new_body": "Best body"}
+            )
+        
+        response = test_client.get("http://testserver/temp")
+        print(response.headers)
+        assert "Best title" in response.text 
+        assert "Best body" in response.text
+
+        assert "text/html" in response.headers["Content-Type"]
+
+
+    def test_custom_exception_handler(app, test_client):
+        def on_exception(req, resp, exc):
+            resp.text = "Something bad happened"
+
+        app.add_exception_handler(on_exception)
+
+
+        @app.route("/exception")
+        def exeption_throwing_handler(req, resp):
+            raise AttributeError("some error")
+        
+        response = test_client.get("http://testserver/exception")
+        assert response.text == "Something bad happened"
+
+
+    def test_non_existent_static_file(test_client):
+        assert test_client.get("http://testserver/nonexsistent.css").status_code == 404
+
+    def test_serving_static_file(test_client):
+        response = test_client.get("http://testserver/static/test.css")
+
+        assert response.text == "body {background-color: chocolate;}"
+
+    def test_middleware_methods_are_called(app, test_client):
+        process_request_called = False
+        process_response_called = False
+        class SimpleMiddleware(Middleware):
+            def __init__(self, app):
+                super().__init__(app)
+            
+            def process_request(self, req):
+                nonlocal process_request_called
+                process_request_called = True
+
+            def process_response(self, req, resp):
+                nonlocal process_response_called
+                process_response_called = True
+
+        app.add_middleware(SimpleMiddleware)
+        
+        @app.route("/home")
+        def index(req, resp):
+            resp.text = "Hello from home page"
+        
+        test_client.get("http://testserver/home")
+
+        assert process_request_called is True
+        assert process_response_called is True
+
+
+    def test_allowed_methods_for_function_based_handlers(app, test_client):
+        @app.route("/home", allowed_methods=["post"])
+        def home(req, resp):
+            resp.text = "Hello from home"
+        resp = test_client.get("http://testserver/home")
+
+        assert resp.status_code == 405
+        assert resp.text == "Method Not Allowed"
+
+    def test_json_response_helper(app, test_client):
+        @app.route("/json")
+        def json_handler(req, resp):
+            resp.json = {"name": "Ezozbek"}
+
+        resp = test_client.get("http://testserver/json")
+
+        # Print out response content and headers for debugging
+        print("Response Content:", resp.content)
+        print("Response Headers:", resp.headers)
+
+        resp_data = resp.json()  # Corrected line
+
+        assert resp.headers["Content-Type"] == "application/json"
+        assert resp_data["name"] == "Ezozbek"
+
+
+    def test_text_response_helper(app, test_client):
+        @app.route("/text")
+        def text_handler(req, resp):
+            resp.text = "plain text"
+
+        response = test_client.get("http://testserver/text")
+
+        assert "text/plain" in response.headers["Content-Type"]
+        assert response.text == "plain text"
+
+    def test_html_response_helper(app, test_client):
+        @app.route("/html")
+        def html_handler(req, resp):
+            resp.body = app.template(
+                "home.html",
+                context = {"new_title": "Best title", "new_body": "Best body"}
+            )
+        
+        response = test_client.get("http://testserver/html")
+
+        assert "text/html" in response.headers["Content-Type"]
+        assert "Best title" in response.text
+        assert "Best body" in response.text
+```
+

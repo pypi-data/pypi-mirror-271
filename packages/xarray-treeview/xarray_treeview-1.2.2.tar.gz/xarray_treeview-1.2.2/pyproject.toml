@@ -1,0 +1,54 @@
+[project]
+name = "xarray-treeview"
+description = "PyQt/PySide model/view for tree of Xarray datasets."
+dynamic = []
+authors = [
+    { name = "Marcel Goldschen-Ohm", email = "goldschen-ohm@utexas.edu" },
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.26.2",
+    "xarray>=2023.12.0",
+    "qtpy>=2.4.1",
+    "qtawesome>=1.3.0",
+    "pyqt-ext>=1.1.0",
+    "xarray-datatree>=0.0.14",
+]
+readme = "README.md"
+keywords = [
+    "PyQt",
+    "PySide",
+    "xarray",
+    "tree",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+version = "1.2.2"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/marcel-goldschen-ohm/xarray-treeview"
+repository = "https://github.com/marcel-goldschen-ohm/xarray-treeview"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-type = "library"
+
+[tool.pdm.version]
+source = "scm"

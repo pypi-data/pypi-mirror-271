@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jestbookz/__init__.py
+jestbookz/main.py
+jestbookz.egg-info/PKG-INFO
+jestbookz.egg-info/SOURCES.txt
+jestbookz.egg-info/dependency_links.txt
+jestbookz.egg-info/requires.txt
+jestbookz.egg-info/top_level.txt

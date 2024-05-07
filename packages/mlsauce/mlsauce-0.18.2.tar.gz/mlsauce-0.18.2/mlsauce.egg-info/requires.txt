@@ -1,0 +1,11 @@
+numpy
+Cython
+joblib
+matplotlib
+pandas
+requests
+scikit-learn
+scipy
+tqdm
+jax
+jaxlib

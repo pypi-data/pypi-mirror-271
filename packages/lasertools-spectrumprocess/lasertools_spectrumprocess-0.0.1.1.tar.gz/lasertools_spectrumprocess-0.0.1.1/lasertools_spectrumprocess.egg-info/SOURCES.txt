@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lasertools_spectrumprocess/__init__.py
+lasertools_spectrumprocess/process.py
+lasertools_spectrumprocess.egg-info/PKG-INFO
+lasertools_spectrumprocess.egg-info/SOURCES.txt
+lasertools_spectrumprocess.egg-info/dependency_links.txt
+lasertools_spectrumprocess.egg-info/requires.txt
+lasertools_spectrumprocess.egg-info/top_level.txt
+lasertools_spectrumprocess/utilities/__init__.py
+lasertools_spectrumprocess/utilities/background.py
+lasertools_spectrumprocess/utilities/maxima.py
+lasertools_spectrumprocess/utilities/normalize.py
+lasertools_spectrumprocess/utilities/smooth.py
+lasertools_spectrumprocess/utilities/threshold.py

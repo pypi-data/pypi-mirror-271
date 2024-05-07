@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flumpingz/__init__.py
+flumpingz/main.py
+flumpingz.egg-info/PKG-INFO
+flumpingz.egg-info/SOURCES.txt
+flumpingz.egg-info/dependency_links.txt
+flumpingz.egg-info/requires.txt
+flumpingz.egg-info/top_level.txt

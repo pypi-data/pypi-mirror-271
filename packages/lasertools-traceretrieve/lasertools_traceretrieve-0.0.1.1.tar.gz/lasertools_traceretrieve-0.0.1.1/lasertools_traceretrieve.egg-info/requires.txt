@@ -1,0 +1,6 @@
+numpy
+matplotlib
+numba
+lasertools_pulse
+lasertools_trace
+lasertools_traceprocess

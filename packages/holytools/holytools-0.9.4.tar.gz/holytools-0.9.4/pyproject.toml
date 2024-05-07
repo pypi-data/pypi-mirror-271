@@ -1,0 +1,16 @@
+[project]
+name = "holytools"
+version = "0.9.4"
+authors = [{name = "Daniel Hollarek", email = "daniel.hollarek@googlemail.com"}]
+description = "Collection of general python utilities for future projects"
+readme = "readme.md"
+dynamic = ["dependencies"]
+urls = { "repository" = "https://github.com/Somerandomguy10111/holytools" }
+
+[tool.setuptools.package-data]
+"holytools.file.mock" = ["*"]
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+

@@ -1,0 +1,13 @@
+awcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awcli/anilist.py,sha256=Jd1utsBOQVSjL6yAwsl12JIMEEJYA8AXKA4D9822fOA,4424
+awcli/anime.py,sha256=GIOJ5ttBfjaTlOLWr-cnyhHNFcL6HcQW7ZPKFoFeZ1k,3874
+awcli/arg_parser.py,sha256=6J9ffaA7Up0HW1lPFCUfMTSyGxjbNdfkELLVBBEINBU,2930
+awcli/run.py,sha256=wSEkY5zaRmfRQMhPrP9An6XSlAq05izOqxuwl_ErXLw,27145
+awcli/utilities.py,sha256=GkvG4My16nUQSXzvjnZwZXlosU_EKM3-T6yWW4kWo48,9327
+awcli/version.py,sha256=MSOrcC14bfb90F7rUUcgm91mIxskBV_3TJ66lSUx9TU,18
+aw_cli-1.8.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aw_cli-1.8.1.dist-info/METADATA,sha256=KEqcACJcIubMZG3jriihNn2xE6ZAaubZ0hbNMOEhOO4,5439
+aw_cli-1.8.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aw_cli-1.8.1.dist-info/entry_points.txt,sha256=8vcGEOqgTYi6viL7fijNUoVXwPjlkCv5TUO-t1AoDjA,42
+aw_cli-1.8.1.dist-info/top_level.txt,sha256=cTVMPr9wJNeJEVu8-fJZZEDedALb2FUQ4jaM2ZvsuZ0,6
+aw_cli-1.8.1.dist-info/RECORD,,

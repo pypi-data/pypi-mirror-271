@@ -1,0 +1,7 @@
+edgegap_time/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+edgegap_time/__init__.py,sha256=GSRIiDHB9Wmk2PN2XttGYcI9i6fxN9iAb-HOJHQtIFc,147
+edgegap_time/_duration.py,sha256=geiTynIMUzfx06EuEAe4GSwY3D3d83vo0X2fz_r8K28,1329
+edgegap_time/_pydantic.py,sha256=fLdPgZnQMhGQhGB59zZxVMl70eoKsk6SG8izJUM2zBg,1999
+edgegap_time-1.1.8.dist-info/METADATA,sha256=Tw2ljona8lrekztarNj8IT4UK-HMUqnCvmSmzdEdEzM,490
+edgegap_time-1.1.8.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+edgegap_time-1.1.8.dist-info/RECORD,,

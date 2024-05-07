@@ -1,0 +1,10 @@
+PennyLane_Lightning_GPU.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+pennylane_lightning/lightning_gpu_ops.cpython-310-x86_64-linux-gnu.so,sha256=9ke7y7tJUVXqR_OlM1fg8K0xgbE2zKn-Ddxid43F-rM,30266961
+pennylane_lightning/lightning_gpu/lightning_gpu.py,sha256=1SYiDhNfj9hl_TG9AwiAkwL9YyijiSP7531aEElXfgk,38925
+pennylane_lightning/lightning_gpu/__init__.py,sha256=IDYP67iDwmZCW9HEWPKDZ_S2FbCIMkuTyRFJQavMeVc,728
+PennyLane_Lightning_GPU-0.36.0.dist-info/LICENSE,sha256=_zKpiTfJGLmlVz4pw88ztD4wTe2QkkUNBGSaac54sjM,11720
+PennyLane_Lightning_GPU-0.36.0.dist-info/METADATA,sha256=nZLZC8OV_M_SQG9M2gqNyraGxZ5dJfiN7Y2WC3QScpc,21510
+PennyLane_Lightning_GPU-0.36.0.dist-info/RECORD,,
+PennyLane_Lightning_GPU-0.36.0.dist-info/top_level.txt,sha256=wK5mAlgMgBfO7LZRgRYoWGSUB2mLo9_mHaLkJAz7uZI,38
+PennyLane_Lightning_GPU-0.36.0.dist-info/entry_points.txt,sha256=ZNlzh_hiToXhHw5uZ6MXgu17iGXefJBa6cmaMZzBqbA,83
+PennyLane_Lightning_GPU-0.36.0.dist-info/WHEEL,sha256=1FEjxEYgybphwh9S0FO9IcZ0B-NIeM2ko8OzhFZeOeQ,152

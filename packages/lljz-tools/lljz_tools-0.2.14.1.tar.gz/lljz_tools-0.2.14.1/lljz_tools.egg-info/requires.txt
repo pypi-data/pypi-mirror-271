@@ -1,0 +1,3 @@
+openpyxl
+gevent
+colorlog>=6.8.2

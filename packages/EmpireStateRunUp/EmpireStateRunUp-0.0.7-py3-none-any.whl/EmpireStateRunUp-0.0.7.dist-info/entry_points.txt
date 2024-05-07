@@ -1,0 +1,8 @@
+[console_scripts]
+esru_browser = empirestaterunup.runners:run_browser
+esru_csv_cleaner = empirestaterunup.runners:run_csv_cleaner
+esru_numbers = empirestaterunup.runners:run_5_number
+esru_outlier = empirestaterunup.runners:run_outlier
+esru_plot = empirestaterunup.runners:simple_plot
+esru_raw_cleaner = empirestaterunup.runners:run_raw_cleaner
+esru_scraper = empirestaterunup.runners:run_scraper

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+manipuimg/__init__.py
+manipuimg/core.py
+manipuimg.egg-info/PKG-INFO
+manipuimg.egg-info/SOURCES.txt
+manipuimg.egg-info/dependency_links.txt
+manipuimg.egg-info/requires.txt
+manipuimg.egg-info/top_level.txt

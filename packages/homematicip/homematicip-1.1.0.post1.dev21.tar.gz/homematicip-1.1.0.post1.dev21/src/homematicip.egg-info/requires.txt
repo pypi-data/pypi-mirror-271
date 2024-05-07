@@ -1,0 +1,5 @@
+pydantic
+websockets
+httpx
+click
+alive-progress

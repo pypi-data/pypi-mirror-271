@@ -1,0 +1,16 @@
+LICENCE
+README.md
+pyproject.toml
+model_checker.egg-info/PKG-INFO
+model_checker.egg-info/SOURCES.txt
+model_checker.egg-info/dependency_links.txt
+model_checker.egg-info/entry_points.txt
+model_checker.egg-info/requires.txt
+model_checker.egg-info/top_level.txt
+package/__init__.py
+package/test_complete.py
+package/modules/__init__.py
+package/modules/model_definitions.py
+package/modules/model_structure.py
+package/modules/semantics.py
+package/modules/syntax.py

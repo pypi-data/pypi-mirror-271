@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rastervision-aws-sagemaker
+Version: 0.30.1
+Summary: A rastervision plugin that adds an AWS SageMaker pipeline runner
+Home-page: https://github.com/azavea/raster-vision
+Author: Azavea
+Author-email: info@azavea.com
+License: Apache License 2.0
+Keywords: raster deep-learning ml computer-vision earth-observation geospatial geospatial-processing
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: rastervision-pipeline
+Requires-Dist: sagemaker
+

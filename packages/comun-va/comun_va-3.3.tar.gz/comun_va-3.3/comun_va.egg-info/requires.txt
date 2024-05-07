@@ -1,0 +1,5 @@
+comun_sqlsrv
+opencv-python
+tensorflow
+numpy
+pyzbar

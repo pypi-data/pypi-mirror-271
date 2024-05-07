@@ -1,0 +1,4 @@
+requests
+pycryptodome
+DownloadKit
+m3u8

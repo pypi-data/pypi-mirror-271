@@ -1,0 +1,10 @@
+gguf_parser/__init__.py,sha256=Og1dy5o2xk6pPVQNYXA468S0k2z0Svt_7swQ5VGf1rI,107
+gguf_parser/__main__.py,sha256=KquNFHfCLYiE6P3cnBgOqCA5Ho5nen9vq-7jzYfQx-E,777
+gguf_parser/gguf_parser.py,sha256=GVQkCbbvrPJiDJVCkBBFLb93qbW9kP33poQ5qC2ZIKg,6020
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gguf_parser.py,sha256=dgwXimdi6QBoWmBMb17Bl05PlZ9hWwCZrl-Vh4VyGaw,779
+gguf_parser-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gguf_parser-0.1.0.dist-info/METADATA,sha256=rcarbyGhXlUaOk56JrJtrW3YrPPQKVNZt19Td6kngLI,8688
+gguf_parser-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gguf_parser-0.1.0.dist-info/top_level.txt,sha256=7rvvnWQRwSXW__83r2PPohIqKpHG5nrBSPJMAmXvYy0,18
+gguf_parser-0.1.0.dist-info/RECORD,,

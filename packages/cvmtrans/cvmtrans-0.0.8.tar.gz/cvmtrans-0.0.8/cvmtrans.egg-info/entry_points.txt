@@ -1,0 +1,5 @@
+[console_scripts]
+cvmtrans = cvmtrans.cvmtrans:main
+cvmtrans_cut_tags = cvmtrans.cvmtrans_cut_tags:main
+cvmtrans_extract_reads = cvmtrans.cvmtrans_extract_reads:main
+

@@ -1,0 +1,4 @@
+[console_scripts]
+cyl = quill.fold.cli:cyl_cli
+ql = quill.fold.cli:standup_cli
+

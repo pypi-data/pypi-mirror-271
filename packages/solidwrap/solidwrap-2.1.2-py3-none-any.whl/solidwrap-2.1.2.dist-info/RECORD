@@ -1,0 +1,9 @@
+solidwrap/__init__.py,sha256=vrOWKwpWbkOhGJsOPnrqOr1qGORH2DbQHL6th1oOb3M,409
+solidwrap/containers.py,sha256=ulS8Fdju4gtsc2Jj6xfijDF6ZNLmjGfWiNvGIjeuzCU,1680
+solidwrap/logger.py,sha256=iX3LGl2gxESzB_MRtU5lRZUEUML-acEmEJKyXoak6Cw,623
+solidwrap/solidwrap.py,sha256=8UeFidDMaFx3Nxgau9n-sJCmAfJ9GvT4L74eGHZtLhA,19209
+solidwrap/utilities.py,sha256=Sy6JFbl_URaaDYjCSRlhPKZCeOIHAX6pxXZzjJMrdtw,2496
+solidwrap-2.1.2.dist-info/METADATA,sha256=vg6FKucK1ONvgvWWXPmspHP7-kSYZf_XR8Di7NrUfqQ,4017
+solidwrap-2.1.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+solidwrap-2.1.2.dist-info/licenses/LICENSE.txt,sha256=qUnEqk2onZ4PLi0qQLNobjSAkZFFdByJeeINYW9irV0,1074
+solidwrap-2.1.2.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+numpy
+scipy
+lasertools_pulse
+lasertools_rffthelper

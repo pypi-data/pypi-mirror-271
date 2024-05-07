@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: shrillecho
+Version: 1.0.0a0
+Summary: Music Tool
+Author: simon balfe
+Author-email: sbmain17@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anyio (>=3.7.1,<3.8.0)
+Requires-Dist: attrs (>=23.1.0,<23.2.0)
+Requires-Dist: cleo (>=2.1.0,<2.2.0)
+Requires-Dist: crashtest (>=0.4.1,<0.5.0)
+Requires-Dist: dnspython (>=2.4.2,<2.5.0)
+Requires-Dist: esper (>=3.0,<4.0)
+Requires-Dist: fastapi (>=0.104.0,<0.105.0)
+Requires-Dist: fastclasses-json (>=0.7.0,<0.8.0)
+Requires-Dist: fuzzywuzzy (>=0.18.0,<0.19.0)
+Requires-Dist: graphene (>=3.3,<4.0)
+Requires-Dist: h11 (>=0.14.0,<0.15.0)
+Requires-Dist: httpcore (>=1.0.1,<1.1.0)
+Requires-Dist: httpx (>=0.25.1,<0.26.0)
+Requires-Dist: idna (>=3.4,<4.0)
+Requires-Dist: jinja2 (>=3.1.2,<3.2.0)
+Requires-Dist: numpy (>=1.26.4,<1.27.0)
+Requires-Dist: opencv-python (>=4.8.1.78,<4.9.0.0)
+Requires-Dist: pillow (>=10.2.0,<10.3.0)
+Requires-Dist: pip (>=23.2.1,<23.3.0)
+Requires-Dist: psycopg2 (>=2.9.9,<2.10.0)
+Requires-Dist: pymongo (>=4.5.0,<4.6.0)
+Requires-Dist: python-dotenv (>=1.0.0,<1.1.0)
+Requires-Dist: redis (>=5.0.1,<5.1.0)
+Requires-Dist: requests (>=2.31.0,<2.32.0)
+Requires-Dist: scikit-image (>=0.22.0,<0.23.0)
+Requires-Dist: scikit-learn (>=1.4.0,<1.5.0)
+Requires-Dist: selenium (>=4.14.0,<4.15.0)
+Requires-Dist: setuptools (>=65.5.0,<65.6.0)
+Requires-Dist: spotipy (>=2.23.0,<2.24.0)
+Requires-Dist: trio (>=0.22.2,<0.23.0)
+Requires-Dist: uv (>=0.1.10,<0.2.0)

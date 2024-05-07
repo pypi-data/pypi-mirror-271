@@ -1,0 +1,12 @@
+package/__init__.py,sha256=Uz1NqDCC-3ualzuaSKrsXf-VKUiiK8F_U6ZO4rvvSmY,647
+package/examples.py,sha256=lfJ7io_FVeFcxyzKnL0W3xTQrmF7pkpKctynOWS6g8A,4335
+package/model_definitions.py,sha256=ulrEL3kNYWuxsYpOzUtwepZcobcrW8IBU6cRXxHK3BQ,16022
+package/model_structure.py,sha256=txKPUV8nR-jTyWt_xwNbEEeh33yjxmPhtZzqfoQmrOo,34588
+package/semantics.py,sha256=AE_OD4DQzOf3B528gVUl1Qd2SE6E57FP-nEbeMjgOg4,19659
+package/syntax.py,sha256=B8PKi1bECwJPPESx4No--UQfY6CnxxORx2QoVN7Fp9Y,7265
+package/test_complete.py,sha256=tfSQXZBgET-iyjt12cjgL7qc74_FCn4jF6FJWjb_xw4,5838
+model_checker-0.2.4.dist-info/LICENCE,sha256=1b7pP-AWYWwdmQvnAd2F4oWWP2zuFwBk4fFju8Jnm94,1064
+model_checker-0.2.4.dist-info/METADATA,sha256=6UMe_KuVBaAsk4mkNV20IUJ_HhwYx5tErYZBS_R2Z9I,1357
+model_checker-0.2.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+model_checker-0.2.4.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+model_checker-0.2.4.dist-info/RECORD,,

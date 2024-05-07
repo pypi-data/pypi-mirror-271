@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+sz/__init__.py
+sz/sz_utils.py
+sz_utils.egg-info/PKG-INFO
+sz_utils.egg-info/SOURCES.txt
+sz_utils.egg-info/dependency_links.txt
+sz_utils.egg-info/requires.txt
+sz_utils.egg-info/top_level.txt
+szutils/__init__.py

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pentarchz/__init__.py
+pentarchz/main.py
+pentarchz.egg-info/PKG-INFO
+pentarchz.egg-info/SOURCES.txt
+pentarchz.egg-info/dependency_links.txt
+pentarchz.egg-info/requires.txt
+pentarchz.egg-info/top_level.txt

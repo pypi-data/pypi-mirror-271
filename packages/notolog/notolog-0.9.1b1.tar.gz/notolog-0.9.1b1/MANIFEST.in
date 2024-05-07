@@ -1,0 +1,8 @@
+include app_config.toml
+include CHANGELOG.md
+include LICENSE
+include README.md
+include requirements.txt
+recursive-include docs *
+recursive-include app/lexemes *
+recursive-include app/assets *

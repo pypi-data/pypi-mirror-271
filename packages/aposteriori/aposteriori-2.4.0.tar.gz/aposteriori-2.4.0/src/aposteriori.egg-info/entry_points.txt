@@ -1,0 +1,2 @@
+[console_scripts]
+make-frame-dataset = aposteriori.data_prep.cli:cli

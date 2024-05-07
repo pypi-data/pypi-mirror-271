@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aposteriori"
+version = "2.4.0"
+requires-python = ">= 3.8"
+readme = "README.md"
+dependencies = [
+    "ampal==1.5.1",
+    "click==8.1.7",
+    "h5py==3.8.0",
+    "numpy",
+    "flake8"
+    ]
+
+[project.scripts]
+make-frame-dataset = "aposteriori.data_prep.cli:cli"

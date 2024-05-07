@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/aposteriori/__init__.py
+src/aposteriori/config.py
+src/aposteriori.egg-info/PKG-INFO
+src/aposteriori.egg-info/SOURCES.txt
+src/aposteriori.egg-info/dependency_links.txt
+src/aposteriori.egg-info/entry_points.txt
+src/aposteriori.egg-info/requires.txt
+src/aposteriori.egg-info/top_level.txt
+src/aposteriori/data_prep/__init__.py
+src/aposteriori/data_prep/cli.py
+src/aposteriori/data_prep/create_frame_data_set.py
+tests/test_create_frame_data_set.py

@@ -1,0 +1,85 @@
+# SMSCallBomber
+
+## English
+
+### Description
+
+This library provides functionality for SMS and call bombing.
+
+### Usage
+
+```python
+import SMSCallBomber
+from argparse import Namespace
+
+# Creating an instance of SMSCallBomber
+args = Namespace(country="Country Code by number (Specify ALL for all countries)", phone="Phone number for attack (without +)", time="Attack time in seconds", threads="Number of threads", timeout="Request timeout")
+args.time += time.time()
+t = SMSCallBomber(args)
+
+# Starting the attack
+t.start()
+
+# Stopping the attack
+t.stop()
+
+# Returns the result of the attack after it ends
+print(t)
+```
+
+### Donation
+
+If you find this project helpful and would like to support its development, you can make a donation to the author.
+
+- SBP, Sberbank, Tinkoff: +79024314981
+- YooMoney: 4100118510603906
+- Cards:
+  - 2200 7009 6755 8080 - Tinkoff
+  - 2202 2068 1279 8101 - Sberbank
+- Other methods: [t.me/BabayVadimovich](https://t.me/BabayVadimovich)
+
+### License
+
+This project is licensed under the MIT License.
+
+## Русский
+
+### Описание
+
+Эта библиотека предоставляет функционал для SMS бомбера со звонками.
+
+### Использование
+
+```python
+import SMSCallBomber
+from argparse import Namespace
+
+# Создание экземпляра SMSCallBomber
+args = Namespace(country="Код страны числом (Укажите ALL для всех стран)", phone="Номер телефона для атаки (без +)", time="Время атаки в секундах", threads="Количество потоков", timeout="Время ожидания запроса")
+args.time += time.time()
+t = SMSCallBomber(args)
+
+# Запуск атаки
+t.start()
+
+# Остановка атаки
+t.stop()
+
+# Возвращает результат атаки, после её окончания
+print(t)
+```
+
+### Пожертвование
+
+Если вы нашли этот проект полезным и хотели бы поддержать его развитие, вы можете сделать пожертвование автору.
+
+- СБП, Сбербанк, Тинькофф: +79024314981
+- ЮMoney: 4100118510603906
+- Карты:
+  - 2200 7009 6755 8080 - Тинькофф
+  - 2202 2068 1279 8101 - Сбербанк
+- Другие способы: [t.me/BabayVadimovich](https://t.me/BabayVadimovich)
+
+### Лицензия
+
+Этот проект распространяется под лицензией MIT License.

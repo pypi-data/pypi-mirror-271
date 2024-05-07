@@ -1,0 +1,10 @@
+testcontainers<3.8
+ytsaurus-client<0.14
+
+[release]
+bump-my-version==0.18.3
+generate-changelog==0.10.0
+
+[tests]
+pytest<9
+requests<3

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: testcontainers-yt-local
+Version: 0.7.0
+Summary: Testcontainer for Yt
+Author: Dmitriy Fedorov
+License: Apache 2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: testcontainers<3.8
+Requires-Dist: ytsaurus-client<0.14
+Provides-Extra: tests
+Requires-Dist: pytest<9; extra == "tests"
+Requires-Dist: requests<3; extra == "tests"
+Provides-Extra: release
+Requires-Dist: bump-my-version==0.18.3; extra == "release"
+Requires-Dist: generate-changelog==0.10.0; extra == "release"
+
+A way to run https://ytsaurus.tech/docs/en/overview/try-yt#using-docker via testcontainers.

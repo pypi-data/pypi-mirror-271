@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: external-resources-io
+Version: 0.0.1
+Summary: Util classes for AppSRE External Resources system
+Author: Jordi Piriz
+Author-email: jpiriz@redhat.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.5.3,<2.6.0)
+Description-Content-Type: text/markdown
+
+# External Resources IO
+
+This is a WIP
+
+Utility library to parse INPUT data from App-Interface into External Resource modules.
+

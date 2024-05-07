@@ -1,0 +1,87 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositivo ya est\u00e1 configurado",
+            "no_status": "No se informa ning\u00fan estado del host"
+        },
+        "error": {
+            "cannot_connect": "No se pudo conectar"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Puerto"
+                },
+                "description": "Introduce el host y el puerto en el que se sirve el NIS apcupsd."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "apc_model": {
+                "name": "Modelo"
+            },
+            "apc_status": {
+                "name": "Datos de estado"
+            },
+            "line_voltage": {
+                "name": "Tensi\u00f3n de entrada"
+            },
+            "load_capacity": {
+                "name": "Carga"
+            },
+            "low_battery_signal": {
+                "name": "Se\u00f1al de bater\u00eda baja"
+            },
+            "manufacture_date": {
+                "name": "Fecha de fabricaci\u00f3n"
+            },
+            "max_battery_charge": {
+                "name": "Apagado de la bater\u00eda"
+            },
+            "self_test_interval": {
+                "name": "Intervalo de autocomprobaci\u00f3n"
+            },
+            "self_test_result": {
+                "name": "Resultado de la autocomprobaci\u00f3n"
+            },
+            "sensitivity": {
+                "name": "Sensibilidad"
+            },
+            "serial_number": {
+                "name": "N\u00famero de serie"
+            },
+            "shutdown_delay": {
+                "name": "Retardo de apagado"
+            },
+            "startup_time": {
+                "name": "Tiempo de inicio"
+            },
+            "status": {
+                "name": "Estado"
+            },
+            "time_left": {
+                "name": "Tiempo restante"
+            },
+            "time_on_battery": {
+                "name": "Tiempo en bater\u00eda"
+            },
+            "total_time_on_battery": {
+                "name": "Tiempo total en bater\u00eda"
+            },
+            "ups_mode": {
+                "name": "Modo"
+            },
+            "ups_name": {
+                "name": "Nombre"
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml": {
+            "description": "Se va a eliminar la configuraci\u00f3n de APC UPS Daemon mediante YAML. \n\nTu configuraci\u00f3n YAML existente se ha importado a la IU autom\u00e1ticamente. \n\nElimina la configuraci\u00f3n YAML de APC UPS Daemon de tu archivo configuration.yaml y reinicia Home Assistant para solucionar este problema.",
+            "title": "Se va a eliminar la configuraci\u00f3n YAML de APC UPS Daemon"
+        }
+    }
+}

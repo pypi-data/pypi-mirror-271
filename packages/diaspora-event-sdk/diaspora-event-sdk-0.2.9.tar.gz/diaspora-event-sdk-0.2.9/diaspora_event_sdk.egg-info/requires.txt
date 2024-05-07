@@ -1,0 +1,12 @@
+globus-sdk<4,>=3.20.1
+
+[kafka-python]
+kafka-python
+
+[test]
+pytest
+pytest-cov
+coverage
+mypy
+tox
+check-manifest

@@ -1,0 +1,163 @@
+[
+  {
+    "actions": { "score_P1": { "set": 1 } },
+    "conditions": {
+      "any": [
+        {
+          "all": [
+            {
+              "variable": "DiasMoraInternos",
+              "operator": "less_than_or_equal_to",
+              "value": 0.0
+            },
+            {
+              "variable": "DiasMoraExternos",
+              "operator": "less_than_or_equal_to",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "actions": { "score_P2": { "set": 1 } },
+    "conditions": {
+      "any": [
+        {
+          "all": [
+            {
+              "variable": "Referencias_Cant",
+              "operator": "greater_than_or_equal_to",
+              "value": 2.0
+            },
+            {
+              "variable": "Referencia_Meses_Antig",
+              "operator": "greater_than_or_equal_to",
+              "value": 12.0
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "variable": "Referencias_Cant",
+              "operator": "greater_than_or_equal_to",
+              "value": 1.0
+            },
+            {
+              "variable": "Referencia_Meses_Antig",
+              "operator": "greater_than_or_equal_to",
+              "value": 24.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "actions": { "score_P3": { "set": 1 } },
+    "conditions": {
+      "any": [
+        {
+          "all": [
+            {
+              "variable": "TC_Meses_Vigencia",
+              "operator": "greater_than_or_equal_to",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "actions": { "score_P4": { "set": 1 } },
+    "conditions": {
+      "any": [
+        {
+          "all": [
+            {
+              "variable": "Tipo_Act_Economica",
+              "operator": "equal_to",
+              "value": "Pensionado"
+            },
+            {
+              "variable": "Vl_Porc_Ingre_minimo",
+              "operator": "greater_than_or_equal_to",
+              "value": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "actions": { "score_P5": { "set": 1 } },
+    "conditions": {
+      "any": [
+        {
+          "all": [
+            {
+              "variable": "Cant_CreditosBanca_Al_dia",
+              "operator": "greater_than_or_equal_to",
+              "value": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "actions": { "score_P6": { "set": 1 } },
+    "conditions": {
+      "any": [
+        {
+          "all": [
+            {
+              "variable": "Cant_Separados_Anno",
+              "operator": "greater_than_or_equal_to",
+              "value": 3.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "actions": { "optional_rules": { "set": 1 } },
+    "conditions": {
+      "any": [
+        { "variable": "score_P2", "operator": "equal_to", "value": 1 },
+        { "variable": "score_P3", "operator": "equal_to", "value": 1 },
+        { "variable": "score_P4", "operator": "equal_to", "value": 1 },
+        { "variable": "score_P5", "operator": "equal_to", "value": 1 },
+        { "variable": "score_P6", "operator": "equal_to", "value": 1 }
+      ]
+    }
+  },
+  {
+    "actions": { "mandatory_rules": { "set": 1 } },
+    "conditions": {
+      "all": [{ "variable": "score_P1", "operator": "equal_to", "value": 1 }]
+    }
+  },
+  {
+    "actions": { "score_credito": { "set": 2 } },
+    "conditions": {
+      "all": [
+        { "variable": "mandatory_rules", "operator": "equal_to", "value": 1 },
+        { "variable": "optional_rules", "operator": "equal_to", "value": 0 }
+      ]
+    }
+  },
+  {
+    "actions": { "score_credito": { "set": 1 } },
+    "conditions": {
+      "all": [
+        { "variable": "mandatory_rules", "operator": "equal_to", "value": 1 },
+        { "variable": "optional_rules", "operator": "equal_to", "value": 1 }
+      ]
+    }
+  }
+]

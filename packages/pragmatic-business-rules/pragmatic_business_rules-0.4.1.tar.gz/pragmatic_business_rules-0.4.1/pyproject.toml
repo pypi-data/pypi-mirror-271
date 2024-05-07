@@ -1,0 +1,25 @@
+[project]
+name = "pragmatic-business-rules"
+version = "0.4.1"
+authors = [{ name = "Soremwar", email = "stephenguerrero43@gmail.com" }]
+description = "Pragmatic business rules"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/Soremwar/pragmatic_business_rules"
+Issues = "https://github.com/Soremwar/pragmatic_business_rules/issues"
+
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]

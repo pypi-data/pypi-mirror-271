@@ -1,0 +1,13 @@
+# Python environment
+__pycache__/
+env/
+
+# Build
+dist/
+
+# Development
+.mypy_cache/
+
+# Testing
+.pytest_cache/
+test.py

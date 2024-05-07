@@ -1,0 +1,66 @@
+# Ref: https://jekyllrb.com/docs/usage/
+# Local dev: bundle exec jekyll serve --livereload
+
+title: Stock Indicators for Python
+tagline: "Transform price quotes into trading insights."
+repository: facioquo/stock-indicators-python
+locale: en_US
+baseurl: ""
+url: "https://python.stockindicators.dev"
+
+# social media information
+image:
+  path: /assets/social-banner.png
+  height: 640
+  width: 1280
+
+logo: /assets/icons/android-chrome-192x192.png
+
+# .NET site URL refs
+dotnet:
+  repo: "https://github.com/DaveSkender/Stock.Indicators"
+  src: "https://github.com/DaveSkender/Stock.Indicators/blob/main/src"
+  charts: "https://raw.githubusercontent.com/DaveSkender/Stock.Indicators/main/docs/assets/charts"
+
+ # this site URL refs
+python:
+  src: "https://github.com/facioquo/stock-indicators-python/blob/main/stock_indicators/indicators"
+
+clarity: false
+
+# site plugins and settings
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-last-modified-at
+  - jekyll-redirect-from
+  - jekyll-minifier
+
+exclude:
+  [
+    "*.lock",
+    "*.yml",
+    "*.pptx",
+    ".offline",
+    "docs/README.md",
+    "GemFile",
+    "node_modules",
+    "vendor",
+  ]
+
+permalink: pretty
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "base"
+      image: /assets/social-banner.png
+
+# page collections
+collections:
+  indicators:
+    output: true
+    permalink: /:path
+    sort_by: "title"

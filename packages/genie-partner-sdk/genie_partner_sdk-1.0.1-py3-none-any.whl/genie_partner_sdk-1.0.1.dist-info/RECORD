@@ -1,0 +1,8 @@
+genie_partner_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genie_partner_sdk/auth.py,sha256=cj3t_oEEOz9kkdKc71u6e4A0Dy8Nuq-IxJ8ljsS7_mQ,1119
+genie_partner_sdk/client.py,sha256=oywNX6bfFDP4TBvhgeLmjLEww6fZphyPhHzHzAnwubU,3226
+genie_partner_sdk/model.py,sha256=z2fujwT9tECh8W-xmtfBe1k_E2qy3bNzxLoWTbpdX4w,683
+genie_partner_sdk-1.0.1.dist-info/METADATA,sha256=24mr3ukuT8C08x0cSZmGnav2acDtUMkmBJJGytJ1QOk,3639
+genie_partner_sdk-1.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+genie_partner_sdk-1.0.1.dist-info/licenses/LICENSE,sha256=X3lftuP0MBea8EQb-6n99zuMjlDs4clsJBZTlhFYGdM,1043
+genie_partner_sdk-1.0.1.dist-info/RECORD,,

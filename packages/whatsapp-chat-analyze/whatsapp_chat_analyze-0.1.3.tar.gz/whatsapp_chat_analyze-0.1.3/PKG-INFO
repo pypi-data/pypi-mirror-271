@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: whatsapp-chat-analyze
+Version: 0.1.3
+Summary: Ingest and analyze WhatsApp chat data, and plot beautiful visualizations.
+Home-page: https://github.com/tddschn/whatsapp-chat-analyze
+License: MIT
+Keywords: cli,utility,whatsapp,chat,analyze,visualization
+Author: Teddy Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Dist: matplotlib (>=3.8.4,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: plotly (>=5.22.0,<6.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Project-URL: Bug Tracker, https://github.com/tddschn/whatsapp-chat-analyze/issues
+Project-URL: Repository, https://github.com/tddschn/whatsapp-chat-analyze
+Description-Content-Type: text/markdown
+
+# whatsapp-chat-analyze
+
+Command line tool to analyze WhatsApp exported chat data (accepts .txt and .zip) and plot pretty interactive charts.
+
+- [whatsapp-chat-analyze](#whatsapp-chat-analyze)
+  - [Demo](#demo)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [pipx](#pipx)
+    - [pip](#pip)
+  - [Usage](#usage)
+  - [Develop](#develop)
+
+## Demo
+
+## Features
+
+- Extracts chat data from .txt or .zip files
+- Export to csv (`-c`)
+
+## Installation
+
+### pipx
+
+This is the recommended installation method.
+
+```
+$ pipx install whatsapp-chat-analyze
+```
+
+### [pip](https://pypi.org/project/whatsapp-chat-analyze/)
+
+```
+$ pip install whatsapp-chat-analyze
+```
+
+## Usage
+
+```plain
+$ whatsapp-chat-analyze --help
+
+usage: whatsapp-chat-analyze [-h] [-n name] [-o base] [-d] [-E] [-c] [-a] file
+
+Analyze Whatsapp Exported .txt or .zip (will be automatically extracted) chat file
+
+positional arguments:
+  file                  Chat file (_chat.txt or *.zip) to analyze
+
+options:
+  -h, --help            show this help message and exit
+  -n name, --chat-name name
+                        Name of the chat (default: Chat)
+  -o base, --output-base-name base
+                        Output base name for the plots (default: whatsapp-chat)
+  -d, --by-day-only     Plot messages per day only (default: False)
+  -E, --extract-only    Extract the chat and exit (default: False)
+  -c, --to-csv-only     Convert chat to csv and exit (default: False)
+  -a, --anonymize       Anonymize the chat by replacing author names with generic names (default: False)
+
+```
+
+## Develop
+
+```
+$ git clone https://github.com/tddschn/whatsapp-chat-analyze.git
+$ cd whatsapp-chat-analyze
+$ poetry install
+```

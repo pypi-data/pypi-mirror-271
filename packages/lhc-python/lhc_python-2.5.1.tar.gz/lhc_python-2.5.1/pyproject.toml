@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lhc-python"
+version = "2.5.1"
+description = "My personal package for bioinformatics related stuff"
+readme = "README.md"
+authors = [{ name = "Liam H. Childs", email = "liam.h.childs@gmail.com" }]
+license = { file = "LICENSE.txt" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+dependencies = [
+  'sortedcontainers >= 2.4.0',
+  'numpy >= 1.26.4',
+  'pysam >= 0.22.1'
+]
+requires-python = ">=3.0"
+
+[project.urls]
+Homepage = "https://github.com/childsish/lhc-python"
+
+[tool.setuptools.package-data]
+"lib.digen" = ["*.h"]
+"lib.bitap" = ["*.h"]
+"lhc.data" = ["gc.prt", "Emolwt.dat"]

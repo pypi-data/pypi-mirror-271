@@ -1,0 +1,12 @@
+pytorch_volumetric/__init__.py,sha256=_NH4T1UxNC-n8PS_nvwqXmHCAm13k9lj59ZHJUulxRM,670
+pytorch_volumetric/chamfer.py,sha256=KDCIMU8RMXOG55g51S4Hl-tL4cEs3h-5qRbz5QCCM-s,7183
+pytorch_volumetric/model_to_sdf.py,sha256=INf6tpVFJQt83x7Puu62B9NknuRc571BOVk_alB4dhQ,8121
+pytorch_volumetric/sdf.py,sha256=rfyGw7VI_2JAbx3qMLS3j0x43oDG5uT8y3RkwtUeI7w,30680
+pytorch_volumetric/visualization.py,sha256=N8Lq82j3ZbfzyWJFK58HK5c7nUzq3x7Zwjr5ZR4G6xc,3779
+pytorch_volumetric/volume.py,sha256=OZ4OaRuNVwE4cNh21frY6PJgFt5jvLeHQFtWOeNtFa8,428
+pytorch_volumetric/voxel.py,sha256=R0mEsQywGQvkUJJH9fIjkzmb7KqmBkkAcBnTw8lYARQ,6245
+pytorch_volumetric-0.5.2.dist-info/LICENSE.txt,sha256=eahFSPSgykRKwod_HlbwhGNEvwP910E1LXb6jvN2geg,1075
+pytorch_volumetric-0.5.2.dist-info/METADATA,sha256=J8YK1i3kYuvoWdI2bkfpKXx83I1SnCkI0vj8zAanHLc,8759
+pytorch_volumetric-0.5.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pytorch_volumetric-0.5.2.dist-info/top_level.txt,sha256=hAMRVhGeTJqJqKjpvvjD_DIuTgF5xeIMHX5FVmuAoKw,19
+pytorch_volumetric-0.5.2.dist-info/RECORD,,

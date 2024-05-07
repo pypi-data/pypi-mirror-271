@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+battlesomez/__init__.py
+battlesomez/main.py
+battlesomez.egg-info/PKG-INFO
+battlesomez.egg-info/SOURCES.txt
+battlesomez.egg-info/dependency_links.txt
+battlesomez.egg-info/requires.txt
+battlesomez.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+cibran.egg-info/PKG-INFO
+cibran.egg-info/SOURCES.txt
+cibran.egg-info/dependency_links.txt
+cibran.egg-info/top_level.txt
+libraries/__init__.py
+libraries/analyze_correlations.py
+libraries/analyze_descriptors.py
+libraries/common_library.py
+libraries/identify_diffusion.py
+tests/__init__.py
+tests/test_DIE.py
+tests/test_MDR.py
+tests/test_SPR.py

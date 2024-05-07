@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+spetrans.egg-info/PKG-INFO
+spetrans.egg-info/SOURCES.txt
+spetrans.egg-info/dependency_links.txt
+spetrans.egg-info/requires.txt
+spetrans.egg-info/top_level.txt

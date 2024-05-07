@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+leucousz/__init__.py
+leucousz/main.py
+leucousz.egg-info/PKG-INFO
+leucousz.egg-info/SOURCES.txt
+leucousz.egg-info/dependency_links.txt
+leucousz.egg-info/requires.txt
+leucousz.egg-info/top_level.txt

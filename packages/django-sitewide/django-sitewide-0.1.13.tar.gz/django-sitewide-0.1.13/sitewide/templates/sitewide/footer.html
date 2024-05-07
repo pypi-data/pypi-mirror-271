@@ -1,0 +1,22 @@
+{% if sitewide.footer.rows %}
+    <div class="footer-rows-group">
+    {% for row in sitewide.footer.rows.entries %}
+        <div class="footer-row">
+            {{ row.output }}
+        </div>
+    {% endfor %}
+    </div>
+{% elif sitewide.footer.columns %}
+    <div class="footer-columns-group">
+    {% for column in sitewide.footer.columns.entries %}
+        <div class="footer-column">
+            {% if column.image %}
+                <img src="{{ column.image }}">
+            {% endif %}
+            {% if column.output %}
+                <p>{{ column.output }}</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+    </div>
+{% endif %}

@@ -1,0 +1,10 @@
+numpy
+pymoo
+pydantic
+ropt>=0.3.0
+
+[test]
+ruff
+mypy
+pytest
+ruamel.yaml

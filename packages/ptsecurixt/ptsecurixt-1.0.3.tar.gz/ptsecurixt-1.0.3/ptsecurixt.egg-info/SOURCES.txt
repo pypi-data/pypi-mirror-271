@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ptsecurixt/__init__.py
+ptsecurixt/_version.py
+ptsecurixt/ptsecurixt.py
+ptsecurixt.egg-info/PKG-INFO
+ptsecurixt.egg-info/SOURCES.txt
+ptsecurixt.egg-info/dependency_links.txt
+ptsecurixt.egg-info/entry_points.txt
+ptsecurixt.egg-info/requires.txt
+ptsecurixt.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: linknlink
+Version: 0.2.3
+Summary: Python API for controlling linknlink devices
+Home-page: https://github.com/xuanxuan000/python-linknlink
+Author: Zhao Zehua
+Author-email: huahua.zzh@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+License-File: LICENSE
+Requires-Dist: cryptography>=3.2

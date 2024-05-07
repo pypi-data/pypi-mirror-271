@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: vault-explorer
+Version: 0.1.0
+Summary: A module to recursively retrieve values from HashiCorp Vault KV store and apply functions on them.
+Project-URL: Homepage, https://github.com/asakalys/vault-explorer
+Project-URL: Issues, https://github.com/asakalys/vault-explorer/issues
+Author-email: Aurimas Šakalys <aurimas.sakalys@vinted.com>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: flatten-json~=0.1.14
+Requires-Dist: hvac~=2.2.0
+Description-Content-Type: text/markdown
+
+# vault-explorer
+
+A module to recursively retrieve values from HashiCorp Vault KV store and apply functions on them.
+
+## Usage
+
+```python
+def main():
+    vault_url = os.getenv("VAULT_ADDR")
+    vault_token = os.getenv("VAULT_TOKEN")
+    
+    client = hvac.Client(
+        url=vault_url,
+        token=vault_token
+    )
+    
+    client.secrets.kv.v2.configure(
+        mount_point = "secrets"
+    )
+    
+    explorer = VaultExplorer(client, flattenJson=True)
+    explorer.apply("/", lambda path, secret: print(path, str(secret)))
+```

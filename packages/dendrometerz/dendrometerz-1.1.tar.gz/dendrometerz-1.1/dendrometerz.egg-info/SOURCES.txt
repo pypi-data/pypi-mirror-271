@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dendrometerz/__init__.py
+dendrometerz/main.py
+dendrometerz.egg-info/PKG-INFO
+dendrometerz.egg-info/SOURCES.txt
+dendrometerz.egg-info/dependency_links.txt
+dendrometerz.egg-info/requires.txt
+dendrometerz.egg-info/top_level.txt

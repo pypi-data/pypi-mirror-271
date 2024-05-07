@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pytest-kookit
+Version: 0.0.1
+Summary: Your simple but kooky integration testing with pytest
+License: MIT
+Keywords: Integration Testing,External Services' mocks
+Author: Dmitry Makarov
+Author-email: mit.makaroff@gmail.com
+Requires-Python: >=3.8,<3.13
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: fastapi (>=0.69.0)
+Requires-Dist: httpx
+Requires-Dist: multiprocess
+Requires-Dist: pytest-mock
+Requires-Dist: uvicorn
+Project-URL: Changelog, https://github.com/Mityuha/pytest-kookit/releases
+Project-URL: Source, https://github.com/Mityuha/pytest-kookit
+Project-URL: Tracker, https://github.com/Mityuha/pytest-kookit/issues
+Description-Content-Type: text/markdown
+
+Your simple but kooky integration testing with pytest
+

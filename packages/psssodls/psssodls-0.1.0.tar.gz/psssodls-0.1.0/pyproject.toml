@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "psssodls"
+version = "0.1.0"
+description = "Generate PSSSODLS in Minion 3 format."
+authors = ["Matthew Henderson <matthew.james.henderson@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

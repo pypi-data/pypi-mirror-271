@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: heartbeat-library
+Version: 0.0.1
+Summary: Library for sending pulses to a process monitoring server
+Author: Pedro Ferreira Braz
+Author-email: pbraz.pedrof@gmail.com
+License: MIT License
+Keywords: heartbeat,heartbeat-library,heartbeat-api,heartbeat-wrapper,heartbeat-python,heartbeat-python-wrapper,heartbeat-python-api,heartbeat-python-wrapper-api,heartbeat-python-api-wrapper,multithreading,threading,requests,python-requests,python-threading,python-multithreading,python-heartbeat,python-heartbeat-api,python-heartbeat-wrapper,python-heartbeat-python,python-heartbeat-python-wrapper,python-heartbeat-python-api,python-heartbeat-python-wrapper-api,python-heartbeat-python-api-wrapper
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: threading
+
+# Python Heartbeat Library
+
+The Python Heartbeat Library is a simple utility that allows you to send regular "pulses" to a specific endpoint. These pulses serve as confirmation that your main script is functioning correctly. If the main script stops for any reason, the heartbeat will also cease, indicating that something went wrong.
+
+# Installation
+
+You can install the Python Heartbeat Library using pip:
+
+pip install heartbeat
+
+# Example
+
+```python
+===============================================================================================================================
+from heartbeat import defineUrl, heartbeat
+
+# Set the URL for sending pulses
+defineUrl("https://")
+
+# Start the heartbeat with a pulse every 10 seconds
+heartbeat(interval = 600, name = 'process name', description = 'process description', additional_info = '', show_response = True)
+
+# Your main script logic goes here...
+
+# When your script ends or encounters an error, stop the heartbeat
+killHeartbeat()
+===============================================================================================================================
+```
+
+# License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

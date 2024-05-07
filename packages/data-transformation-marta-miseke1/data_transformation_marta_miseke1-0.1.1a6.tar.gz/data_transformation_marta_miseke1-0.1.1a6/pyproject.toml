@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "data-transformation-marta-miseke1"
+version = "0.1.1a6"
+description = ""
+authors = ["Marta <marta.miseke@seb.se>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+numpy = "~1.26.4"
+logging = "~0.4.9.6"
+pytest = "~8.2.0"
+
+
+[[tool.poetry.source]]
+name = "fpho"
+url = "https://files.pythonhosted.org"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

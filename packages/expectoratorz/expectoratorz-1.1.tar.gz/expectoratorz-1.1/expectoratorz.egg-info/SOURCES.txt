@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+expectoratorz/__init__.py
+expectoratorz/main.py
+expectoratorz.egg-info/PKG-INFO
+expectoratorz.egg-info/SOURCES.txt
+expectoratorz.egg-info/dependency_links.txt
+expectoratorz.egg-info/requires.txt
+expectoratorz.egg-info/top_level.txt

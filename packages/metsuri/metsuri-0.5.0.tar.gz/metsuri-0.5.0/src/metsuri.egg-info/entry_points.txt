@@ -1,0 +1,6 @@
+[console_scripts]
+log-check = metsuri.log_check:main
+log-download = metsuri.log_download:main
+log-generate = metsuri.log_generate:main
+log-uploader = metsuri.log_uploader:main
+serial-logger = metsuri.serial_logger:main

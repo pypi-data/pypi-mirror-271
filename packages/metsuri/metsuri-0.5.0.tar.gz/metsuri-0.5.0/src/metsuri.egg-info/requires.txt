@@ -1,0 +1,11 @@
+docopt>=0.6.2
+boto3>=1.16
+pyserial>=3.4
+rich>=9.0
+
+[dev]
+freezegun
+pytest
+tox
+tox-pyenv
+wheel

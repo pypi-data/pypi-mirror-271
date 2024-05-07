@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sapphire.py
+Version: 0.2.3
+Summary: Sapphire transaction wrapper
+Home-page: https://github.com/oceanprotocol/sapphirepy
+Author: oceanprotocol
+Author-email: devops@oceanprotocol.com
+License: Apache Software License 2.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+trekit/__init__.py
+trekit.egg-info/PKG-INFO
+trekit.egg-info/SOURCES.txt
+trekit.egg-info/dependency_links.txt
+trekit.egg-info/requires.txt
+trekit.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+ntv_numpy
+tab_analysis
+tab_dataset
+json_ntv
+numpy
+pandas
+shapely

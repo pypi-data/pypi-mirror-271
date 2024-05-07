@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ebb-events"
+version = "0.1.0"
+description = "Package for building and standardizing MQTT event messages."
+authors = ["Ryan Bloom <ryan.bloom@ebbcarbon.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+marshmallow = "^3.21.1"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+black = "^24.4.0"
+pytest = "^8.1.1"
+pytest-cov = "^5.0.0"
+pytz = "^2024.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+source = ["ebb_events"]
+omit = [
+    "ebb_events/__init__.py"
+]

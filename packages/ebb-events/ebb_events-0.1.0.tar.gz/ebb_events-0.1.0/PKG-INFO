@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: ebb-events
+Version: 0.1.0
+Summary: Package for building and standardizing MQTT event messages.
+Author: Ryan Bloom
+Author-email: ryan.bloom@ebbcarbon.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: marshmallow (>=3.21.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# ebb-events:
+EbbCarbon package to standardize MQTT event message structures. For environmental and industrial automation montioring, we are using many physical sensors to read/gather data about our systems and the environment. In order to communicate this information across systems, we utilize the MQTT messaging protocol to publish and subscribe to various messages and topics. In an attempt to standardize the MQTT event message structure, this package works to define a standard topic hierarchy, standard event types to use, and a standard payload structure that can be replicated and re-used throughout the industry. This structure will be consistent with the CloudEvent structure defined [here] (https://cloudevents.io/) while implementing some additional standards and best practices so that these events can be consumed and used by CloudEvent users as well.
+
+# Use:
+Install the ebb-events package from pip installer and use it to format your MQTT event messages and topics.
+```python
+from ebb_events.builders.event_builder import EventEnvelope
+
+event_envelope = EventEnvelope(
+    organization="test-org",
+    system_id="test-system",
+    event_type="data",
+    subsystem_id="test-subsystem",
+    device_id="test-device-01",
+)
+
+event_topic = event_envelope.build_event_topic()
+event_payload = event_envelope.build_event_payload(message={...}, metadata={...})  # Builds a payload of the expected ebb-events structure
+```
+
+Use ebb-events package to consume events published with this expected ebb-events structure
+```python
+from ebb_events.consumers.event_consumer import EventConsumer
+
+my_payload = {...}
+event_consumer = EventConsumer(payload=my_payload)
+
+event_consumer.get_event_message()  # Retrieves the json message found in the payload's `data` field
+event_consumer.get_event_time()
+event_conumser.get_event_system_id()
+```
+
+# Topic Structure:
+One thing that this package enforces is a topic structure for publishing MQTT messages to a broker. Well defined topics help Our topic structure is as follows:
+* _\<organization\>/\<system-id\>/\<event-type\>/\<subsystem-id\>/\<device-id\>_
+
+### Topic Naming Rules:
+* Lower case only (subscriptions are case sensitive)
+* Dashes (not underscores)
+* Alphanumeric topics only (Illegal characters: #, +, *, \<spaces\>)
+* No leading “/”
+* 50 character maximum per topic section (256 maximum total)
+
+### Topic Hierarchy Explained:
+1. **\<organization\>:** The highest level in the hierarchy representing the \<organization\> that is publishing and owning this event.
+    * Example: `ebb`
+2. **\<system-id\>:** The unique \<system-id\> from which this message is originating. The \<system-id\> should be unique and un-changing (e.g. don't rely on things like geographic location if the producer might move locations).
+    * Example: `system-name`
+3. **\<event-type\>:** The specific type of event being published. As of now, we support four event-types.
+    * `data`: Sensor readings and measurements
+    * `state`: Sensor current state (e.g. online status, battery life, memory, power, etc.)
+    * `config`: Sensor setup (e.g. calibration coefficients, calibration date, physical location, configured outputs/fields, etc.)
+    * `cmd`: Instructions for subscribing clients
+4. **\<subsystem-id\>:** Systems are typically made up of several subsystems, each of which contains numberous sensors monitoring their own data and readings. This section of the topic hierarchy should define which subsystem the sensor data is coming from.
+    * Example: `system-name` is made up of 4 subsystems, 3 of which are different "my-subsystem-name" subsystems -> the various "my-subsystem-name" subsystems could be labeled `my-subsystem-name-01`, `my-subsystem-name-02`, and `my-subsystem-name-03`
+5. **\<device-id\>:** The unique identity of a device _as it relates to the subsystem_ on which it lives. This is _not_ the device's serial number or physical unique ID since the physical device might be replaced.
+    * Example: `my-subsystem-name-01` has sensors ("my-sensor") in slots 01, 02, and 03. Therefore \<device-id\> could be `my-sensor-02`
+        * If the physical "my-sensor" in slot 02 fails and is replaced with a new "my-sensor", even though the serial number is now different, the \<device-id\> in your topic would remain the same because this part of the topic refers to the \<device-id\> as it relates to the overall subsystem, not as it relates to the physical device itself.
+        * The new "my-sensor" is still `my-sensor-02`.
+### Topic Example:
+For a data message being published by one of Ebb's edge-nodes with measurements from "my-sensor" in sensor slot 02 of subsystem 1, which makes up system-name:
+* `ebb/system-name/data/subsystem-1/my-sensor-02`
+
+# Event Payload Structure:
+This package defines the event payload schema to follow for all event types. The schema includes relavant metadata in the EventEnvelope and the actual message information in the "data" field of the payload. Specific message structures of the "data" field differ based on event type and the context of the event. The envelope + data make up the overall event payload. All MQTT event messages that are published and consumed should subscribe to this general structure making it easier to share data across organizations and systems. Names of payload fields follow attribute names from [CloudEvents](https://cloudevents.io/) as well.
+
+### Event Payload:
+Structure shared by all event messages regardless of event type
+```python
+{
+    "id": str(uuid),
+    "time": str,  # [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339) format
+    "source": str,  # same as topic string
+    "type": str,
+    "data": {
+        "metadata": {
+            "serial_number": str,  # Example of potential metadata, this is not a required metadata field
+            ...
+        },
+        ...  # unique nested json dependent on event-type
+    }
+}
+```
+
+### EventEnvelope Class:
+The EventEnvelope class is used to consolidate all of the pieces of aa event payload and build the expected structure for a user so that users don't have to worry about constructing the properly formatted topic or payload. The `EventEnvelope` class expects to be provided with certain fields that are then used to build the topic and payload via class methods. These methods handle all the validation and formatting needed to ensure that your events follow the ebb-events standards.
+
+Required fields: `organization`, `system_id`, `event_type`, `subsystem_id`, `device_id`
+Useful methods: `EventEnvelope().build_event_topic()`, `EventEnvelope().build_event_payload()`
+
+# Event Consumer:
+This package defines an event consumer that can be used to process incoming events that follow this ebb-events structure. To use this consumer, initialize the class with a given json payload: `EventConsumer(payload=my_payload)`. Then, you can use the various getters present on the class in order to retrieve different pieces of the payload depending on your needs (e.g. system_id, message, metadata, etc.). If you need all the parts of the payload that go into building it (e.g. an entire `EventEnvelope` wrapper for the payload) you may also use the `get_event_envelope()` method to do so.
+
+### Exception Handling
+If you attempt to consume an event that _DOES NOT_ match the ebb-events structure, you can still initialize an `EventConsumer(payload=my_payload)` object and the payload will live as `EventConsumer().raw_payload`. However, all of the getter methods will raise `PayloadFormatExceptions` because the payload does not match the expected format. Therefore, for a payload that does not match the ebb-events structure, you must process the payload as a raw json/dict object instead.
+

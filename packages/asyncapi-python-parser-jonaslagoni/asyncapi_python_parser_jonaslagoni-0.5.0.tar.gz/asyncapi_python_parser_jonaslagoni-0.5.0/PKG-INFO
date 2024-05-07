@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: asyncapi_python_parser_jonaslagoni
+Version: 0.5.0
+Summary: An AsyncAPI python parser, that supports all versions
+Project-URL: Homepage, https://github.com/jonaslagoni/asyncapi-python-parser
+Project-URL: Issues, https://github.com/jonaslagoni/asyncapi-python-parser/issues
+Author-email: jonaslagoni <jonas-lt@live.dk>
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# asyncapi-python-parser

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/lagsync/__init__.py
+src/lagsync/lagsync.py
+src/lagsync.egg-info/PKG-INFO
+src/lagsync.egg-info/SOURCES.txt
+src/lagsync.egg-info/dependency_links.txt
+src/lagsync.egg-info/entry_points.txt
+src/lagsync.egg-info/top_level.txt

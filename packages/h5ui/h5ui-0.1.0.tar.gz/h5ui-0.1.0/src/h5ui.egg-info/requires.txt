@@ -1,0 +1,11 @@
+textual
+textual-imageview
+h5py
+pillow
+
+[dev]
+textual-dev
+
+[rel]
+build
+twine

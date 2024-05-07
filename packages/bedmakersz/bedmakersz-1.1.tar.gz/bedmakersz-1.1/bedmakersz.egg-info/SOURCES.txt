@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bedmakersz/__init__.py
+bedmakersz/main.py
+bedmakersz.egg-info/PKG-INFO
+bedmakersz.egg-info/SOURCES.txt
+bedmakersz.egg-info/dependency_links.txt
+bedmakersz.egg-info/requires.txt
+bedmakersz.egg-info/top_level.txt

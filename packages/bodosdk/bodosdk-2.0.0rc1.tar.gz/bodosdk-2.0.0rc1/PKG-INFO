@@ -1,0 +1,3191 @@
+Metadata-Version: 2.1
+Name: bodosdk
+Version: 2.0.0rc1
+Summary: Bodo Platform SDK 2.0.0RC1
+Home-page: https://github.com/Bodo-inc/bodo-sdk
+Author: Bodo, Inc.
+Author-email: noreply@bodo.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic~=1.9
+Requires-Dist: requests~=2.27.1
+Requires-Dist: pyjwt~=2.3.0
+Requires-Dist: typing_extensions>=4
+Requires-Dist: callee~=0.3.1
+
+# Bodo Platform SDK
+
+Bodo Platform SDK is a Python library that provides a simple way to interact with the Bodo Platform API. It allows you
+to create, manage, and monitor resources such as clusters, jobs, and workspaces.
+
+## Getting Started
+
+### Installation
+
+```shell
+pip install bodosdk
+```
+
+### Creating workspace client
+
+First you need to access your workspace in `https://platform.bodo.ai/` and create an _API Token_ in the Bodo Platform
+for
+Bodo SDK authentication.
+
+Navigate to _API Tokens_ in the Admin Console to generate a token.
+Copy and save the token's _Client ID_ and _Secret Key_ and use them to define a client (`BodoClient`) that can interact
+with the Bodo Platform.
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient(
+    client_id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    secret_key="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+)
+```
+
+Alternatively, set `BODO_CLIENT_ID` and `BODO_SECRET_KEY` environment variables
+to avoid requiring keys:
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+```
+
+To get workspace data, you can access the `workspace_data` attribute of the client:
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+print(my_workspace.workspace_data)
+```
+
+### Additional Configuration Options for `BodoClient`
+
+- `print_logs`: defaults to False. All API requests and responses are printed to the console if set to True.
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient(print_logs=True)
+```
+
+### Create first cluster
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.create(
+    name='My first cluster',
+    instance_type='c5.large',
+    workers_quantity=1
+)
+```
+
+Above example creates a simple one node cluster, with latest bodo version available and returns cluster object.
+Platform will create cluster in your workspace.
+
+### Waiting for status
+
+To wait till cluster will be ready for interaction you can call
+method `wait_for_status`
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.create(
+    name='My first cluster',
+    instance_type='c5.large',
+    workers_quantity=1
+)
+my_cluster.wait_for_status(['RUNNING'])
+```
+
+This method will wait until any of provided statuses will occur or `FAILED` status will be set in case of some failure.
+Check your workspace on `https://platform.bodo.ai/` and you will see your cluster, you can use Notebook to connect with
+it.
+
+### Updating Cluster
+
+Now let's update our cluster, on `RUNNING` cluster you can update `name`, `description`, `auto_pause`, `auto_stop`
+and `workers_quantity`(this will trigger scaling) only:
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.create(
+    name='My first cluster',
+    instance_type='c5.large',
+    workers_quantity=1
+)
+my_cluster.wait_for_status(['RUNNING'])
+my_cluster.update(
+    description='My description',
+    name="My updated cluster",
+    auto_pause=15,
+    auto_stop=30
+)
+```
+
+All other modifcations like `instance_type`, `bodo_version` etc need `STOPPED` cluster
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.get("cluster_id")
+if my_cluster.status != 'STOPPED':
+    my_cluster.stop(wait=True)
+my_cluster.update(instance_type='c5.2xlarge', workers_quantity=2)
+```
+
+### Create Fisrst Job
+
+On running cluster you can schedule a job in very simple way:
+First on `https://platform.bodo.ai` navigate to notebook in your workspace and
+create following `test.py` file in your main directory:
+
+```python
+import pandas as pd
+import numpy as np
+import bodo
+import time
+
+NUM_GROUPS = 30
+NUM_ROWS = 20_000_000
+
+df = pd.DataFrame({
+    "A": np.arange(NUM_ROWS) % NUM_GROUPS,
+    "B": np.arange(NUM_ROWS)
+})
+df.to_parquet("my_data.pq")
+time.sleep(1) # wait till file will be available on all nodes
+@bodo.jit(cache=True)
+def computation():
+    t1 = time.time()
+    df = pd.read_parquet("my_data.pq")
+    df1 = df[df.B > 4].A.sum()
+    print("Execution time:", time.time() - t1)
+    return df1
+
+result = computation()
+print(result)
+```
+
+then define job on cluster through SDK, wait till `SUCCEEDED` and check logs
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.get("cluster_id")
+my_job = my_cluster.run_job(
+    code_type='PYTHON',
+    source={'type': 'WORKSPACE', 'path': '/'},
+    exec_file='test.py'
+)
+print(my_job.wait_for_status(['SUCCEEDED']).get_stdout())
+```
+
+You can use almost same confiuration to run SQL file, all you need is to define your `test.sql` file and Catalog `https://platform.bodo.ai`:
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.get("cluster_id")
+my_job = my_cluster.run_job(
+    code_type='SQL',
+    source={'type': 'WORKSPACE', 'path': '/'},
+    exec_file='test.sql',
+    catalog="MyCatalog"
+)
+print(my_job.wait_for_status(['SUCCEEDED']).get_stdout())
+
+```
+
+### Cluster List and executing jobs on it's elements
+
+Now let's try to run same job on different clusters:
+
+```python
+from bodosdk import BodoWorkspaceClient
+import random
+
+my_workspace = BodoWorkspaceClient()
+
+random_val = random.random() # just to avoid conflicts on name
+clusters_conf = [('c5.large', 8), ('c5.xlarge',4), ('c5.2xlarge',2)]
+for  i, conf in enumerate(clusters_conf):
+    my_workspace.ClusterClient.create(
+        name=f'Test {i}',
+        instance_type=conf[0],
+        workers_quantity=conf[1],
+        custom_tags={'test_tag': f'perf_test{random_val}'} # let's add tag to easy filter our clusters
+    )
+# get list by tag
+clusters = my_workspace.ClusterClient.list(filters={
+    'tags': {'test_tag': f'perf_test{random_val}'}
+})
+# run same job 3 times, once per each cluster
+jobs = clusters.run_job(
+    code_type='PYTHON',
+    source={'type': 'WORKSPACE', 'path': '/'},
+    exec_file='test.py'
+)
+#wait for jobs to finish and print results
+for job in jobs.wait_for_status(['SUCCEEDED']):
+    print(job.name, job.cluster.name)
+    print(job.get_stdout())
+#remove our clusters
+jobs.clusters.delete() # or clusters.delete()
+```
+
+### Execute SQL query
+
+You can also execute SQL queries by passing just query text like following:
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_sql_job = my_workspace.JobClient.run_sql_query(sql_query="SELECT 1", catalog="MyCatalog", cluster={
+    "name": 'Temporary cluster',
+    "instance_type": 'c5.large',
+    "workers_quantity": 1
+})
+print(my_sql_job.wait_for_status(['SUCCEEDED']).get_stdout())
+```
+
+In above case, when you provide cluster configuration but not existing cluster it will be terminated as soon
+as SQL job will finish.
+
+If you want to execute sql job on existing cluster just use `run_sql_query` on cluster:
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.create(
+    name='My cluster',
+    instance_type='c5.large',
+    workers_quantity=1
+)
+my_sql_job = my_cluster.run_sql_query(sql_query="SELECT 1", catalog="MyCatalog")
+print(my_sql_job.wait_for_status(['SUCCEEDED']).get_stdout())
+```
+
+### Connector
+
+You can also execute SQL queries using connector for cluster:
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.create(
+    name='My cluster',
+    instance_type='c5.large',
+    workers_quantity=1
+)
+connection = my_cluster.connect('MyCatalog') # or connection = my_workspace.ClusterClient.connect('MyCatalog', 'cluster_id')
+print(connection.cursor().execute("SELECT 1").fetchone())
+my_cluster.delete()
+```
+
+### Job Templates
+
+Against defining jobs from scratch you can create a template for your jobs, and then easily run them, e.g.:
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+tpl = my_workspace.JobTemplateClient.create(
+    name='My template',
+    cluster={
+        'instance_type': 'c5.xlarge',
+        'workers_quantity': 1
+    },
+    code_type="SQL",
+    catalog="MyCatalog",
+    exec_text="SELECT 1"
+)
+job1 = tpl.run() # you can simply run it
+job2 = tpl.run(exec_text="SELECT 2") # or run it with overriding template values
+job3 = tpl.run(cluster={'instance_type': 'c5.large'}) # you can override even part of cluster configuration
+
+jobs = my_workspace.JobClient.list(filters={'template_ids':[tpl.id]}) # you can filter jobs by it's template_id
+for job in jobs.wait_for_status(['SUCCEEDED']):
+    print(job.name, job.cluster.instance_type, job.get_stdout())
+
+```
+
+You can also run your template on specific cluster e.g:
+
+```python
+from bodosdk import BodoWorkspaceClient
+from bodosdk.models import JobTemplateFilter
+
+my_workspace = BodoWorkspaceClient()
+tpls = my_workspace.JobTemplateClient.list(filters=JobTemplateFilter(names=['My template']))
+my_cluster = my_workspace.ClusterClient.create(
+    name='My cluster',
+    instance_type='c5.large',
+    workers_quantity=1
+)
+print(my_cluster.run_job(template_id=tpls[0].id).wait_for_status(['SUCCEEDED']).get_stdout())
+my_cluster.delete()
+```
+
+## Statuses
+
+Each resource, Cluster, Job or Workspace has own set of statuses which are following:
+
+### Cluster:
+
+- NEW
+- INPROGRESS
+- PAUSING
+- PAUSED
+- STOPPING
+- STOPPED
+- INITIALIZING
+- RUNNING
+- FAILED
+- TERMINATED
+
+### Job:
+
+- PENDING
+- RUNNING
+- SUCCEEDED
+- FAILED
+- CANCELLED
+- CANCELLING
+- TIMEOUT
+
+### Workspace:
+
+- NEW
+- INPROGRESS
+- READY
+- FAILED
+- TERMINATING
+- TERMINATED
+
+## Organization client and workspaces:
+
+To manage workspaces you need different keys (generated for organization) and differenct SDK client, for start let's list
+all our workspaces:
+
+```python
+from bodosdk import BodoOrganizationClient
+
+my_org = BodoOrganizationClient(
+    client_id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    secret_key="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+) # or BodoOrganizationClient() if `BODO_ORG_CLIENT_ID` and `BODO_ORG_SECRET_KEY` are exported
+for w in my_org.list_workspaces():
+    print(w.name)
+```
+
+You can filter workspaces providing valid filters:
+
+```python
+from bodosdk import BodoOrganizationClient
+from bodosdk.models import WorkspaceFilter
+my_org = BodoOrganizationClient()
+
+for w in my_org.list_workspaces(filters=WorkspaceFilter(statuses=['READY'])):
+    print(w.name)
+```
+
+You can provide filters as 'WorkspaceFilter' imported from `bodosdk.models` or as a dictionary:
+
+```python
+from bodosdk import BodoOrganizationClient
+my_org = BodoOrganizationClient()
+
+for w in my_org.list_workspaces(filters={"statuses": ['READY']}):
+    print(w.name)
+```
+
+### Create new Workspace
+
+```python
+from bodosdk import BodoOrganizationClient
+my_org = BodoOrganizationClient()
+my_workspace = my_org.create_workspace(
+    name="SDK test",
+    region='us-east-2',
+    cloud_config_id="a0d1242c-3091-42de-94d9-548e2ae33b73",
+    storage_endpoint_enabled=True
+).wait_for_status(['READY'])
+assert my_workspace.id == my_org.list_workspaces(filters={"names": ['SDK test'], "statuses": ['READY']})[0].id
+my_workspace.delete() # remove workspace at the end
+```
+
+### Upgrade workspace infra
+
+In some cases when you have workspace existing for a long time you may want to re-run terraform to
+apply fresh changes to workspace infrastructure. You can do it following way:
+
+```python
+from bodosdk import BodoOrganizationClient
+my_org = BodoOrganizationClient()
+my_org.list_workspaces(filters={'ids': ['workspace_to_update1_id', 'workspace_to_update2_id']}).update_infra()
+```
+
+# Advanced
+
+In this section we will present more examples of bodosdk usages.
+
+## Workspace created in existing VPC
+
+There is possibility to create workspace on existing infrastructure. The only requirement is that VPC need access to
+Internet, either NAT or IGW. It's needed to allow clusters to authorize in external auth service.
+
+```python
+from bodosdk import BodoOrganizationClient
+my_org = BodoOrganizationClient()
+my_workspace = my_org.create_workspace(
+    cloud_config_id="cloudConfigId",
+    name="My workspace",
+    region="us-east-1",
+    storage_endpoint_enabled=True,
+    vpc_id="existing-vpc-id",
+    private_subnets_ids=['subnet1', 'subnet2'],
+    public_subnets_ids=['subnet3']
+)
+my_workspace.wait_for_status(['READY'])
+```
+
+## Spot instances, auto AZ
+
+You can create Cluster using spot instances, to reduce cost of usage, downside is that you cannot PAUSE
+this kind of cluster, and from time to time cluster may be unavailable (when spot instance is released).
+
+Auto AZ is mechanism which retries cluster creation in another AZ, when in current AZ
+there is no enough instances of desired type.
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.create(
+    name='Spot cluster',
+    instance_type='c5.large',
+    workers_quantity=1,
+    use_spot_instance=True,
+    auto_az=True,
+)
+```
+
+## Accelerated networking
+
+Accelerated networking set to True enables EFA for instances (raises error when instance type does not support)
+
+You can get list of all supported instances using ClusterClient, it returns list of
+InstanceType objects. For AWS field `efa` informs about network acceleration. For Azure it's
+`network_acceleration` field.
+
+```python
+from bodosdk import BodoWorkspaceClient
+
+my_workspace = BodoWorkspaceClient()
+
+efa_supported_instances = [x for x in my_workspace.ClusterClient.get_instances() if x.efa]
+
+my_cluster = my_workspace.ClusterClient.create(
+    name='Spot cluster',
+    instance_type=efa_supported_instances[0].name,
+    workers_quantity=1,
+    accelerated_networking=True
+)
+```
+
+## Preparing clusters for future use:
+
+In Bodo, Cluster may be in two states responsible for suspended status: `PAUSED` and `STOPPED`.
+Spot clusters cannot be `PAUSED`. There are 3 differences between those states: cost, start up time, error rate.
+
+### Costs
+
+`PAUSED` > `STOPPED` - In `PAUSED` state we are paying for disks while in `STOPPED` we don't.
+
+### Start up time
+
+`STOPPED` > `PAUSED` - Bringing back machines in `PAUSED` state is much faster, as those machines are already
+defined in cloud
+
+### Error rate
+
+`PAUSED` > `STOPPED` - By error rate we mean situation when number of available instances of descired types is lower
+than number of requested workers. As in `PAUSED` state, instance entities are already defined,
+and we request for reesources at once it's more likely to happen than in `STOPPED` state,
+where asg is maintaining instance creation and it waits for available resources.
+
+Prepare clusters for further use and make them `PAUSED`
+
+```python
+from bodosdk import BodoWorkspaceClient
+from bodosdk.models import ClusterFilter
+my_workspace = BodoWorkspaceClient()
+
+clusters_conf = {
+    'Team A': {
+        'instance_type': 'c5.2xlarge',
+        'workers': 4,
+    },
+    'Team b': {
+        'instance_type': 'c5.xlarge',
+        'workers': 2,
+    },
+    'Team C': {
+        'instance_type': 'c5.16xlarge',
+        'workers': 2,
+    }
+}
+for owner, conf in clusters_conf.items():
+    my_workspace.ClusterClient.create(
+        name = f"{owner} Cluster",
+        instance_type=conf['instance_type'],
+        workers_quantity=conf['workers'],
+        custom_tags={'owner': owner, 'purpose': 'test'}
+    )
+
+my_workspace.ClusterClient.list(
+    filters=ClusterFilter(tags={'purpose': 'test'})
+).wait_for_status(
+    ['RUNNING', 'INITIALIZING']
+).pause().wait_for_status(['PAUSED'])
+```
+
+## Use another cluster as a template for cluster definition in job
+
+Let's imagine that you have a cluster (in any state) and you wan't to run job on the same specification, but you don't
+want to use previously defined cluster. You can do following
+
+```python
+from bodosdk import BodoWorkspaceClient
+my_workspace = BodoWorkspaceClient()
+my_cluster = my_workspace.ClusterClient.get('existing_cluster')
+cluster_conf = my_cluster.dict()
+del cluster_conf['uuid']
+my_sql_job = my_workspace.JobClient.run_sql_query(sql_query="SELECT 1", catalog="MyCatalog", cluster=cluster_conf)
+```
+
+In that case job will create a new cluster with provided configuration, executes and after job is finished
+removes cluster.
+
+
+ #INDEX 
+
+# bodosdk package contents
+
+<a id="module-bodosdk.clients.cluster"></a>
+
+### _class_ bodosdk.clients.cluster.ClusterClient(workspace_client: IBodoWorkspaceClient)
+
+Bases: `IClusterClient`
+
+A client for managing cluster operations in a Bodo workspace.
+
+#### \_deprecated_methods
+
+A dictionary of deprecated methods.
+
+- **Type:**
+  Dict
+
+#### \_images
+
+A list of available Bodo images.
+
+- **Type:**
+  List[IBodoImage]
+
+- **Parameters:**
+  **workspace_client** (_IBodoWorkspaceClient_) – The workspace client used for operations.
+
+#### _property_ Cluster _: [Cluster](#bodosdk.models.cluster.Cluster)_
+
+Provides access to cluster operations.
+
+- **Returns:**
+  An instance of Cluster for cluster operations.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### _property_ ClusterList _: [ClusterList](#bodosdk.models.cluster.ClusterList)_
+
+Provides access to listing clusters.
+
+- **Returns:**
+  An instance of ClusterListAPIModel for listing clusters.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+#### connect(catalog: str, cluster_id: str)
+
+#### create(name: str, instance_type: str = None, workers_quantity: int = None, description: str | None = None, bodo_version: str = None, auto_stop: int | None = None, auto_pause: int | None = None, image_id: str | None = None, accelerated_networking: bool | None = None, auto_az: bool | None = None, use_spot_instance: bool | None = None, aws_deployment_subnet_id: str | None = None, availability_zone: str | None = None, instance_role: [InstanceRole](#bodosdk.models.instance_role.InstanceRole) | Dict | None = None, custom_tags: Dict | None = None)
+
+Creates a new cluster with the specified configuration.
+
+- **Parameters:**
+  - **name** (_str_) – The name of the cluster.
+  - **instance_type** (_str_ _,_ _optional_) – The type of instance to use for the cluster nodes.
+  - **workers_quantity** (_int_ _,_ _optional_) – The number of worker nodes in the cluster.
+  - **description** (_str_ _,_ _optional_) – A description of the cluster.
+  - **bodo_version** (_str_ _,_ _optional_) – The Bodo version to use for the cluster.
+  - **auto_stop** (_int_ _,_ _optional_) – The auto-stop time in minutes for the cluster.
+  - **auto_pause** (_int_ _,_ _optional_) – The auto-pause time in minutes for the cluster.
+  - **image_id** (_str_ _,_ _optional_) – The ID of the image to use for the cluster.
+  - **accelerated_networking** (_bool_ _,_ _optional_) – Whether to use accelerated networking.
+  - **auto_az** (_bool_ _,_ _optional_) – Whether to automatically select the availability zone.
+  - **use_spot_instance** (_bool_ _,_ _optional_) – Whether to use spot instances for the cluster.
+  - **aws_deployment_subnet_id** (_str_ _,_ _optional_) – The AWS deployment subnet ID.
+  - **availability_zone** (_str_ _,_ _optional_) – The availability zone for the cluster.
+  - **instance_role** ([_InstanceRole_](#bodosdk.models.instance_role.InstanceRole) _|_ _Dict_ _,_ _optional_) – The instance role or a custom role configuration.
+  - **custom_tags** (_Dict_ _,_ _optional_) – Custom tags to assign to the cluster resources.
+- **Returns:**
+  The created Cluster object.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### get(id: str)
+
+Retrieves a cluster by its ID.
+
+- **Parameters:**
+  **id** (_str_) – The ID of the cluster to retrieve.
+- **Returns:**
+  The retrieved Cluster object.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### get_bodo_versions()
+
+Retrieves a list of available Bodo versions.
+
+- **Returns:**
+  A list of available Bodo versions.
+- **Return type:**
+  List[str]
+
+#### get_images()
+
+Retrieves a list of available images.
+
+- **Returns:**
+  A list of image IDs available for clusters.
+- **Return type:**
+  List[str]
+
+#### get_instance_types()
+
+Retrieves list of all supported instance types
+
+- **Returns:**
+  List[InstanceType]
+
+#### _property_ latest*bodo_version *: str\_
+
+Retrieves the latest Bodo version available.
+
+- **Returns:**
+  The latest Bodo version.
+- **Return type:**
+  str
+
+#### list(filters: Dict | [ClusterFilter](#bodosdk.models.cluster.ClusterFilter) | None = None, order: Dict | None = None)
+
+Lists clusters based on the provided filters and order.
+
+- **Parameters:**
+  - **filters** (_Dict_ _|_ [_ClusterFilter_](#bodosdk.models.cluster.ClusterFilter) _,_ _optional_) – The filters to apply to the cluster listing.
+  - **order** (_Dict_ _,_ _optional_) – The order in which to list the clusters.
+- **Returns:**
+  A list of clusters matching the criteria.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+#### pause(id: str, wait=False)
+
+Pauses the specified cluster.
+
+- **Parameters:**
+  **id** (_str_) – The ID of the cluster to pause.
+- **Returns:**
+  The paused Cluster object.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### remove(id: str, wait=False)
+
+Removes the specified cluster.
+
+- **Parameters:**
+  **id** (_str_) – The ID of the cluster to remove.
+- **Returns:**
+  None
+
+#### resume(id: str, wait=False)
+
+Resumes the specified paused cluster.
+
+- **Parameters:**
+  **id** (_str_) – The ID of the cluster to resume.
+- **Returns:**
+  The resumed Cluster object.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### scale(id: str, new_size: int)
+
+Scales the specified cluster to the new size.
+
+- **Parameters:**
+  - **id** (_str_) – The ID of the cluster to scale.
+  - **new_size** (_int_) – The new size for the cluster in terms of the number of worker nodes.
+- **Returns:**
+  The scaled Cluster object.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### start(id: str, wait=False)
+
+Starts the specified stopped cluster.
+
+- **Parameters:**
+  **id** (_str_) – The ID of the cluster to start.
+- **Returns:**
+  The started Cluster object.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### stop(id: str, wait=False)
+
+Stops the specified cluster.
+
+- **Parameters:**
+  **id** (_str_) – The ID of the cluster to stop.
+- **Returns:**
+  The stopped Cluster object.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### update(id: str, name: str | None = None, description: str | None = None, auto_stop: int | None = None, auto_pause: int | None = None, workers_quantity: int | None = None, instance_role: [InstanceRole](#bodosdk.models.instance_role.InstanceRole) | Dict | None = None, instance_type: str | None = None, bodo_version: str | None = None, auto_az: bool | None = None, availability_zone: str | None = None, custom_tags: Dict | None = None)
+
+Updates the specified cluster with the given configuration.
+
+- **Parameters:**
+  - **id** (_str_) – The ID of the cluster to update.
+  - **name** (_str_ _,_ _optional_) – The new name for the cluster.
+  - **description** (_str_ _,_ _optional_) – A new description for the cluster.
+  - **auto_stop** (_int_ _,_ _optional_) – The new auto-stop time in minutes.
+  - **auto_pause** (_int_ _,_ _optional_) – The new auto-pause time in minutes.
+  - **workers_quantity** (_int_ _,_ _optional_) – The new number of worker nodes.
+  - **instance_role** ([_InstanceRole_](#bodosdk.models.instance_role.InstanceRole) _|_ _Dict_ _,_ _optional_) – The new instance role or custom role configuration.
+  - **instance_type** (_str_ _,_ _optional_) – The new instance type for the cluster nodes.
+  - **bodo_version** (_str_ _,_ _optional_) – The new Bodo version for the cluster.
+  - **auto_az** (_bool_ _,_ _optional_) – Whether to automatically select the availability zone.
+  - **availability_zone** (_str_ _,_ _optional_) – The new availability zone for the cluster.
+  - **custom_tags** (_Dict_ _,_ _optional_) – New custom tags for the cluster resources.
+- **Returns:**
+  The updated Cluster object.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+#### wait_for_status(id: str, statuses: List, timeout: int | None = 300, tick: int | None = 30)
+
+Waits for the specified cluster to reach any of the given statuses within the timeout period.
+
+- **Parameters:**
+  - **id** (_str_) – The ID of the cluster to monitor.
+  - **statuses** (_List_) – The list of statuses to wait for.
+  - **timeout** (_int_ _,_ _optional_) – The timeout period in seconds.
+  - **tick** (_int_ _,_ _optional_) – The interval in seconds between status checks.
+- **Returns:**
+  The Cluster object if it reaches the desired status within the timeout period.
+- **Return type:**
+  [Cluster](#bodosdk.models.cluster.Cluster)
+
+<a id="module-bodosdk.clients.instance_role"></a>
+
+### _class_ bodosdk.clients.instance_role.InstanceRoleClient(workspace_client: IBodoWorkspaceClient)
+
+Bases: `IInstanceRoleClient`
+
+#### _property_ InstanceRole _: [InstanceRole](#bodosdk.models.instance_role.InstanceRole)_
+
+#### _property_ InstanceRoleList _: [InstanceRoleList](#bodosdk.models.instance_role.InstanceRoleList)_
+
+#### create(role_arn: str, description: str, name: str = None)
+
+#### delete(id: str)
+
+#### get(id: str)
+
+#### list(filters: Dict | [InstanceRoleFilter](#bodosdk.models.instance_role.InstanceRoleFilter) | None = None, order: Dict | None = None)
+
+<a id="module-bodosdk.clients.job"></a>
+
+### _class_ bodosdk.clients.job.JobClient(workspace_client: IBodoWorkspaceClient)
+
+Bases: `IJobClient`
+
+#### _property_ JobRun _: [JobRun](#bodosdk.models.job.JobRun)_
+
+#### _property_ JobRunList _: [JobRunList](#bodosdk.models.job.JobRunList)_
+
+#### cancel_job(id: str)
+
+#### cancel_jobs(filters: Dict | [JobFilter](#bodosdk.models.job.JobFilter) | None = None)
+
+#### get(id: str)
+
+#### list(filters: Dict | [JobFilter](#bodosdk.models.job.JobFilter) | None = None, order: Dict | None = None)
+
+#### run(template_id: str = None, cluster: dict | ICluster = None, code_type: str = None, source: dict | IS3Source | IGitRepoSource | IWorkspaceSource | ITextSource = None, exec_file: str = None, exec_text: str = None, args: dict | str = None, env_vars: dict = None, timeout: int = None, num_retries: int = None, delay_between_retries: int = None, retry_on_timeout: bool = None, name: str = None, catalog: str = None)
+
+#### run_sql_query(template_id: str = None, catalog: str = None, sql_query: str = None, cluster: dict | ICluster = None, name: str = None, args: dict = None, timeout: int = None, num_retries: int = None, delay_between_retries: int = None, retry_on_timeout: bool = None)
+
+#### wait_for_status(id: str, statuses: List[str], timeout: int = 3600, tick: int = 30)
+
+<a id="module-bodosdk.clients.job_tpl"></a>
+
+### _class_ bodosdk.clients.job_tpl.JobTemplateClient(workspace_client: IBodoWorkspaceClient)
+
+Bases: `IJobTemplateClient`
+
+#### _property_ JobTemplate _: [JobTemplate](#bodosdk.models.job.JobTemplate)_
+
+#### _property_ JobTemplateList _: [JobTemplateList](#bodosdk.models.job.JobTemplateList)_
+
+#### create(name: str = None, description: str = None, cluster: dict | ICluster = None, code_type: str = None, source: dict | IS3Source | IGitRepoSource | IWorkspaceSource | ITextSource = None, exec_file: str = None, exec_text: str = None, args: dict | str = None, env_vars: dict = None, timeout: int = None, num_retries: int = None, delay_between_retries: int = None, retry_on_timeout: bool = None, catalog: str = None)
+
+#### get(id: str)
+
+#### list(filters: Dict = None)
+
+#### remove(id: str)
+
+<a id="module-bodosdk.clients.organization"></a>
+
+### _class_ bodosdk.clients.organization.BodoOrganizationClient(client_id=None, secret_key=None, api_url='https://api.bodo.ai/api', auth_url='https://auth.bodo.ai', print_logs=False)
+
+Bases: `IBodoOrganizationClient`
+
+#### _property_ AwsCloudConfig _: [AwsCloudConfig](#bodosdk.models.cloud_config.AwsCloudConfig)_
+
+#### _property_ AzureCloudConfig _: [AzureCloudConfig](#bodosdk.models.cloud_config.AzureCloudConfig)_
+
+#### _property_ CloudConfig _: [CloudConfigBase](#bodosdk.models.cloud_config.CloudConfigBase)_
+
+#### _property_ CloudConfigList _: [CloudConfigList](#bodosdk.models.cloud_config.CloudConfigList)_
+
+#### _property_ Workspace _: [Workspace](#bodosdk.models.workspace.Workspace)_
+
+#### _property_ WorkspaceList _: [WorkspaceList](#bodosdk.models.workspace.WorkspaceList)_
+
+#### create_workspace(name: str, region: str, storage_endpoint_enabled: bool, cloud_config_id: str = None, vpc_id: str | None = None, public_subnets_ids: List[str] | None = None, private_subnets_ids: List[str] | None = None, custom_tags: dict | None = None)
+
+#### delete_workspace(id)
+
+#### get_cloud_config(id)
+
+#### get_workspace(id)
+
+#### list_cloud_configs(filters: dict | None = None)
+
+#### list_workspaces(filters: [WorkspaceFilter](#bodosdk.models.workspace.WorkspaceFilter) | dict | None = None)
+
+<a id="module-bodosdk.clients.workspace"></a>
+
+### _class_ bodosdk.clients.workspace.BodoWorkspaceClient(client_id=None, secret_key=None, api_url='https://api.bodo.ai/api', auth_url='https://auth.bodo.ai', print_logs=False)
+
+Bases: `IBodoWorkspaceClient`
+
+#### ClusterClient _: IClusterClient_
+
+#### JobClient _: IJobClient_
+
+#### JobTemplateClient _: IJobTemplateClient_
+
+#### _property_ workspace*data *: IWorkspace\_
+
+#### _property_ workspace*id *: str\_
+
+<a id="module-bodosdk.models.catalog"></a>
+
+### _class_ bodosdk.models.catalog.Catalog(workspace_client: IBodoWorkspaceClient = None, \*, uuid: str | None = None, name: str | None = None, description: str | None = None, catalogType: str | None = None, details: [SnowflakeDetails](#bodosdk.models.catalog.SnowflakeDetails) | dict | None = None)
+
+Bases: `SDKBaseModel`, `ICatalog`
+
+#### delete()
+
+### _class_ bodosdk.models.catalog.CatalogFilter(\*, names: List[str] | None = None, ids: List[str] | None = None)
+
+Bases: `SDKBaseModel`, `ICatalogFilter`
+
+#### ids _: List[str] | None_
+
+#### names _: List[str] | None_
+
+### _class_ bodosdk.models.catalog.CatalogList(workspace_client: IBodoWorkspaceClient = None, \*, page: int | None = 0, pageSize: int | None = 10, total: int | None = None, order: dict | None = None, filters: dict | [CatalogFilter](#bodosdk.models.catalog.CatalogFilter) | None = None)
+
+Bases: `ICatalogList`, `SDKBaseModel`
+
+#### _class_ Config
+
+Bases: `object`
+
+Configuration for Pydantic models.
+[https://docs.pydantic.dev/latest/api/config/](https://docs.pydantic.dev/latest/api/config/)
+
+#### allow*population_by_field_name *= True\_
+
+#### extra _= 'forbid'_
+
+#### delete()
+
+#### filters _: dict | [CatalogFilter](#bodosdk.models.catalog.CatalogFilter) | None_
+
+#### order _: dict | None_
+
+#### page _: int | None_
+
+#### page*size *: int | None\_
+
+#### total _: int | None_
+
+### _class_ bodosdk.models.catalog.SnowflakeDetails(\*, port: int | None = None, db_schema: str | None = None, database: str | None = None, userRole: str | None = None, username: str | None = None, warehouse: str | None = None, accountName: str | None = None, password: str | None = None)
+
+Bases: `SDKBaseModel`
+
+#### account*name *: str | None\_
+
+#### database _: str | None_
+
+#### db*schema *: str | None\_
+
+#### password _: str | None_
+
+#### port _: int | None_
+
+#### user*role *: str | None\_
+
+#### username _: str | None_
+
+#### warehouse _: str | None_
+
+<a id="module-bodosdk.models.cloud_config"></a>
+
+### _class_ bodosdk.models.cloud_config.AwsCloudConfig(org_client: IBodoOrganizationClient = None, \*, cloudProvider: str | None = None, name: str | None = None, status: str | None = None, organizationUUID: str | None = None, customTags: dict | None = None, uuid: str | UUID | None = None, awsProviderData: [AwsProviderData](#bodosdk.models.cloud_config.AwsProviderData) | None = None)
+
+Bases: [`CloudConfigBase`](#bodosdk.models.cloud_config.CloudConfigBase), `IAwsCloudConfig`
+
+#### data _: [AwsProviderData](#bodosdk.models.cloud_config.AwsProviderData) | None_
+
+### _class_ bodosdk.models.cloud_config.AwsProviderData(\*, roleArn: str | None = None, tfBucketName: str | None = None, tfDynamoDbTableName: str | None = None, tfBackendRegion: str | None = None, externalId: str | None = None, accountId: str | None = None)
+
+Bases: `SDKBaseModel`, `IAwsProviderData`
+
+#### account*id *: str | None\_
+
+#### external*id *: str | None\_
+
+#### role*arn *: str | None\_
+
+#### tf*backend_region *: str | None\_
+
+#### tf*bucket_name *: str | None\_
+
+#### tf*dynamo_db_table_name *: str | None\_
+
+### _class_ bodosdk.models.cloud_config.AzureCloudConfig(org_client: IBodoOrganizationClient = None, \*, cloudProvider: str | None = None, name: str | None = None, status: str | None = None, organizationUUID: str | None = None, customTags: dict | None = None, uuid: str | UUID | None = None, azureProviderData: [AzureProviderData](#bodosdk.models.cloud_config.AzureProviderData) | None = None)
+
+Bases: [`CloudConfigBase`](#bodosdk.models.cloud_config.CloudConfigBase), `IAzureCloudConfig`
+
+#### data _: [AzureProviderData](#bodosdk.models.cloud_config.AzureProviderData) | None_
+
+### _class_ bodosdk.models.cloud_config.AzureProviderData(\*, tfBackendRegion: str | None = None, resourceGroup: str | None = None, subscriptionId: str | None = None, tenantId: str | None = None, tfStorageAccountName: str | None = None, applicationId: str | None = None)
+
+Bases: `SDKBaseModel`, `IAzureProviderData`
+
+#### application*id *: str | None\_
+
+#### resource*group *: str | None\_
+
+#### subscription*id *: str | None\_
+
+#### tenant*id *: str | None\_
+
+#### tf*backend_region *: str | None\_
+
+#### tf*storage_account_name *: str | None\_
+
+### _class_ bodosdk.models.cloud_config.CloudConfigBase(org_client: IBodoOrganizationClient = None, \*, cloudProvider: str | None = None, name: str | None = None, status: str | None = None, organizationUUID: str | None = None, customTags: dict | None = None, uuid: str | UUID | None = None, data: [AwsProviderData](#bodosdk.models.cloud_config.AwsProviderData) | [AzureProviderData](#bodosdk.models.cloud_config.AzureProviderData) | None = None)
+
+Bases: `SDKBaseModel`, `ICloudConfig`
+
+#### cloud*provider *: str | None\_
+
+#### custom*tags *: dict | None\_
+
+#### data _: [AwsProviderData](#bodosdk.models.cloud_config.AwsProviderData) | [AzureProviderData](#bodosdk.models.cloud_config.AzureProviderData) | None_
+
+#### delete()
+
+#### _property_ id
+
+#### name _: str | None_
+
+#### organization*uuid *: str | None\_
+
+#### status _: str | None_
+
+#### uuid _: str | UUID | None_
+
+### _class_ bodosdk.models.cloud_config.CloudConfigList(org_client: IBodoOrganizationClient = None, \*, page: int | None = 0, pageSize: int | None = 10, total: int | None = None, order: dict | None = None, filters: dict | None = None)
+
+Bases: `ICloudConfigList`, `SDKBaseModel`
+
+#### _class_ Config
+
+Bases: `object`
+
+Configuration for Pydantic models.
+[https://docs.pydantic.dev/latest/api/config/](https://docs.pydantic.dev/latest/api/config/)
+
+#### allow*population_by_field_name *= True\_
+
+#### extra _= 'forbid'_
+
+#### delete()
+
+#### filters _: dict | None_
+
+#### order _: dict | None_
+
+#### page _: int | None_
+
+#### page*size *: int | None\_
+
+#### total _: int | None_
+
+<a id="module-bodosdk.models.cluster"></a>
+
+### _class_ bodosdk.models.cluster.BodoImage(\*, image_id: str, bodo_version: str)
+
+Bases: `SDKBaseModel`
+
+Represents an image configuration for Bodo, encapsulating the image ID and the specific Bodo version.
+
+This class is a data model that holds information about a Bodo environment image.
+
+#### image_id
+
+The unique identifier for the Bodo image.
+
+- **Type:**
+  str
+
+#### bodo_version
+
+The version of Bodo used in the image.
+
+- **Type:**
+  str
+
+#### bodo*version *: str\_
+
+#### image*id *: str\_
+
+### _class_ bodosdk.models.cluster.Cluster(workspace_client: IBodoWorkspaceClient = None, \*, name: str | None = None, uuid: str | None = None, status: str | None = None, description: str | None = None, instanceType: str | None = None, workersQuantity: int | None = None, autoStop: int | None = None, autoPause: int | None = None, bodoVersion: str | None = None, imageId: str | None = None, coresPerWorker: int | None = None, acceleratedNetworking: bool | None = None, createdAt: datetime | None = None, updatedAt: datetime | None = None, isJobDedicated: bool | None = None, autoAZ: bool | None = None, useSpotInstance: bool | None = None, lastKnownActivity: datetime | None = None, inStateSince: datetime | None = None, clusterAgentVersion: str | None = None, clusterInitStatus: str | None = None, clusterHealthStatus: str | None = None, primaryAgentIP: str | None = None, awsDeploymentSubnetId: str | None = None, nodeMetadata: List[[NodeMetadata](#bodosdk.models.cluster.NodeMetadata)] | None = None, availabilityZone: str | None = None, instanceRole: [InstanceRole](#bodosdk.models.instance_role.InstanceRole) | None = None, workspace: dict | None = None, autoscalingIdentifier: str | None = None, lastAsgActivityId: str | None = None, nodesIp: List[str] | None = None, customTags: Dict | None = None)
+
+Bases: `SDKBaseModel`, `ICluster`
+
+Represents a cluster in the SDK model, encapsulating various properties and operations
+related to a compute cluster.
+
+#### name
+
+The name of the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### uuid
+
+The unique identifier of the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### status
+
+The current status of the cluster (e.g., ‘RUNNING’, ‘STOPPED’).
+
+- **Type:**
+  Optional[str]
+
+#### description
+
+A description of the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### instance_type
+
+The type of instances used in the cluster (e.g., ‘c5.large’).
+
+- **Type:**
+  Optional[str]
+
+#### workers_quantity
+
+The number of worker nodes in the cluster.
+
+- **Type:**
+  Optional[int]
+
+#### auto_stop
+
+The auto-stop configuration in minutes.
+The cluster automatically stops when idle for this duration.
+
+- **Type:**
+  Optional[int]
+
+#### auto_pause
+
+The auto-pause configuration in minutes.
+The cluster automatically pauses when idle for this duration.
+
+- **Type:**
+  Optional[int]
+
+#### bodo_version
+
+The version of Bodo being used in the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### image_id
+
+The ID of the image used for the cluster’s instances.
+
+- **Type:**
+  Optional[str]
+
+#### cores_per_worker
+
+The number of CPU cores per worker node.
+
+- **Type:**
+  Optional[int]
+
+#### accelerated_networking
+
+Whether accelerated networking is enabled.
+
+- **Type:**
+  Optional[bool]
+
+#### created_at
+
+The creation timestamp of the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### updated_at
+
+The last update timestamp of the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### is_job_dedicated
+
+Whether the cluster is dedicated to a specific job.
+
+- **Type:**
+  Optional[bool]
+
+#### auto_az
+
+Whether automatic availability zone selection is enabled.
+
+- **Type:**
+  Optional[bool]
+
+#### use_spot_instance
+
+Whether spot instances are used for the cluster.
+
+- **Type:**
+  Optional[bool]
+
+#### last_known_activity
+
+The last known activity timestamp of the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### in_state_since
+
+The timestamp since the cluster has been in its current state.
+
+- **Type:**
+  Optional[str]
+
+#### cluster_agent_version
+
+The version of the cluster agent.
+
+- **Type:**
+  Optional[str]
+
+#### cluster_init_status
+
+The initialization status of the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### cluster_health_status
+
+The health status of the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### primary_agent_ip
+
+The IP address of the primary agent in the cluster.
+
+- **Type:**
+  Optional[str]
+
+#### aws_deployment_subnet_id
+
+The subnet ID used for deploying AWS resources.
+
+- **Type:**
+  Optional[str]
+
+#### node_metadata
+
+Metadata information for each node in the cluster.
+
+- **Type:**
+  Optional[List[[NodeMetadata](#bodosdk.models.cluster.NodeMetadata)]]
+
+#### availability_zone
+
+The AWS availability zone in which the cluster is located.
+
+- **Type:**
+  Optional[str]
+
+#### instance_role
+
+The IAM role used by instances in the cluster.
+
+- **Type:**
+  Optional[[InstanceRole](#bodosdk.models.instance_role.InstanceRole)]
+
+#### workspace
+
+A dictionary containing workspace-related information for the cluster.
+
+- **Type:**
+  Optional[dict]
+
+#### autoscaling_identifier
+
+The identifier for autoscaling configuration.
+
+- **Type:**
+  Optional[str]
+
+#### last_asg_activity_id
+
+The identifier of the last activity in the autoscaling group.
+
+- **Type:**
+  Optional[str]
+
+#### nodes_ip
+
+A list of IP addresses for the nodes in the cluster.
+
+- **Type:**
+  Optional[List[str]]
+
+#### accelerated*networking *: bool | None\_
+
+#### auto*az *: bool | None\_
+
+#### auto*pause *: int | None\_
+
+#### auto*stop *: int | None\_
+
+#### autoscaling*identifier *: str | None\_
+
+#### availability*zone *: str | None\_
+
+#### aws*deployment_subnet_id *: str | None\_
+
+#### bodo*version *: str | None\_
+
+#### cancel_jobs()
+
+Cancels all jobs associated with the cluster.
+
+- **Returns:**
+  The Cluster instance.
+
+#### cluster*agent_version *: str | None\_
+
+#### cluster*health_status *: str | None\_
+
+#### cluster*init_status *: str | None\_
+
+#### connect(catalog: str)
+
+Establishes a connection to the specified catalog from Cluster.
+
+This method is responsible for creating and returning a new Connection instance based on the provided catalog.
+
+Parameters:
+catalog (str): The name of the catalog to which the connection should be established.
+
+Returns:
+Connection: An instance of Connection initialized with the specified catalog and the current class instance.
+
+#### cores*per_worker *: int | None\_
+
+#### created*at *: datetime | None\_
+
+#### custom*tags *: Dict | None\_
+
+#### delete(force: bool = False, mark_as_terminated: bool = False, wait: bool = False)
+
+Deletes the cluster, optionally forcing removal or marking as terminated.
+
+- **Parameters:**
+  - **force** – If True, forces the deletion of the cluster.
+  - **mark_as_terminated** – If True, marks the cluster as terminated instead of deleting.
+  - **wait** – If True, waits till cluster will be TERMINATED.
+- **Returns:**
+  The Cluster instance, potentially updated to reflect its new state.
+
+Handles:
+: ResourceNotFound: Silently if the cluster is already deleted or not found.
+
+#### description _: str | None_
+
+#### _property_ id _: str_
+
+The UUID of the cluster.
+
+- **Returns:**
+  The UUID string of the cluster.
+
+#### image*id *: str | None\_
+
+#### in*state_since *: datetime | None\_
+
+#### instance*role *: [InstanceRole](#bodosdk.models.instance_role.InstanceRole) | None\_
+
+#### instance*type *: str | None\_
+
+#### is*job_dedicated *: bool | None\_
+
+#### last*asg_activity_id *: str | None\_
+
+#### last*known_activity *: datetime | None\_
+
+#### name _: str | None_
+
+#### node*metadata *: List[[NodeMetadata](#bodosdk.models.cluster.NodeMetadata)] | None\_
+
+#### nodes*ip *: List[str] | None\_
+
+#### pause(wait: bool = False)
+
+Pauses the cluster if it is running.
+
+- **Parameters:**
+  **wait** – If True, waits till cluster will be PAUSED.
+- **Returns:**
+  The Cluster instance with updated status.
+- **Raises:**
+  **ConflictException** – If the cluster cannot be paused due to its current status.
+
+#### primary*agent_ip *: str | None\_
+
+#### resume(wait: bool = False)
+
+Resumes the cluster if it was paused or stopped.
+
+- **Parameters:**
+  **wait** – If True, waits till cluster will be RUNNING.
+- **Returns:**
+  The Cluster instance with updated status.
+- **Raises:**
+  **ConflictException** – If the cluster cannot be resumed due to its current status.
+
+#### run_job(template_id: str = None, code_type: str = None, source: dict | IS3Source | IGitRepoSource | IWorkspaceSource | ITextSource = None, exec_file: str = None, args: dict | str = None, env_vars: dict = None, timeout: int = None, num_retries: int = None, delay_between_retries: int = None, retry_on_timeout: bool = None, name: str = None, catalog: str = None)
+
+Submits a batch job for execution using specified configurations and resources.
+
+This method creates and dispatches a job within a computing cluster, allowing for extensive customization of
+execution parameters including source data, runtime environment, and failure handling strategies.
+
+- **Parameters:**
+  - **template_id** (_str_ _,_ _optional_) – Identifier for the job template to use.
+  - **code_type** (_str_ _,_ _optional_) – Type of code to execute (e.g., Python, Java).
+  - **source** (_Union_ _[\*\*dict_ _,_ _IS3Source_ _,_ _IGitRepoSource_ _,_ _IWorkspaceSource_ _,_ _ITextSource_ _]_ _,_ _optional_) – Source of the code to be executed. Can be specified as a dictionary
+    or an instance of one of the predefined source interfaces.
+  - **exec_file** (_str_ _,_ _optional_) – Path to the executable file within the source.
+  - **args** (_Union_ _[\*\*dict_ _,_ _str_ _]_ _,_ _optional_) – Arguments to pass to the executable.
+  - **parameters.** (_Can be a string_ _or_ _a dictionary of_) –
+  - **env_vars** (_dict_ _,_ _optional_) – Environment variables to set for the job.
+  - **timeout** (_int_ _,_ _optional_) – Maximum runtime (in seconds) before the job is terminated.
+  - **num_retries** (_int_ _,_ _optional_) – Number of times to retry the job on failure.
+  - **delay_between_retries** (_int_ _,_ _optional_) – Time to wait between retries.
+  - **retry_on_timeout** (_bool_ _,_ _optional_) – Whether to retry the job if it times out.
+  - **name** (_str_ _,_ _optional_) – Name of the job.
+  - **catalog** (_str_ _,_ _optional_) – Catalog to log the job under.
+- **Returns:**
+  An object representing the submitted job, capable of providing status and results.
+- **Return type:**
+  IJobRun
+
+#### run_sql_query(template_id: str = None, catalog: str = None, sql_query: str = None, name: str = None, args: dict = None, timeout: int = None, num_retries: int = None, delay_between_retries: int = None, retry_on_timeout: bool = None)
+
+> Submits an SQL query for execution on the cluster, returning a job run object.
+
+> This method handles the execution of an SQL query within a defined cluster environment.
+> It supports customization of execution parameters such as query arguments,
+> job name, execution timeouts, and retry strategies.
+
+> Parameters:
+> : template_id (str, optional): Identifier for the job template to use.
+> catalog (str, optional): Catalog under which to log the SQL job.
+> sql_query (str, optional): The SQL query string to be executed.
+> name (str, optional): Descriptive name for the SQL job.
+> args (dict, optional): Dictionary of arguments that are passed to the SQL query.
+> timeout (int, optional): Maximum allowable runtime in seconds before the job is terminated.
+> num_retries (int, optional): Number of times the job will be retried on failure.
+> delay_between_retries (int, optional): Interval in seconds between job retries.
+> retry_on_timeout (bool, optional): Whether to retry the job if it times out.
+
+> Returns:
+> : IJobRun: An object representing the status and result of the executed SQL job.
+
+```
+`
+```
+
+#### start(wait: bool = False)
+
+Starts the cluster.
+
+- **Parameters:**
+  **wait** – If True, waits till cluster will be RUNNING.
+- **Returns:**
+  The Cluster instance with updated status.
+
+#### status _: str | None_
+
+#### stop(wait: bool = False)
+
+Stops the cluster.
+
+- **Parameters:**
+  **wait** – If True, waits till cluster will be STOPPED.
+- **Returns:**
+  The Cluster instance with updated status.
+
+#### update(auto_stop: int | None = None, auto_pause: int | None = None, description: str | None = None, name: str | None = None, workers_quantity: int | None = None, instance_role: [InstanceRole](#bodosdk.models.instance_role.InstanceRole) | None = None, instance_type: str | None = None, bodo_version: str | None = None, auto_az: bool | None = None, availability_zone: str | None = None, custom_tags: Dict | None = None)
+
+Updates the cluster’s configuration with the provided values.
+
+- **Parameters:**
+  - **auto_stop** – Optional; configures auto-stop feature.
+  - **auto_pause** – Optional; configures auto-pause feature.
+  - **description** – Optional; updates the cluster’s description.
+  - **name** – Optional; updates the cluster’s name.
+  - **workers_quantity** – Optional; updates the number of workers.
+  - **instance_role** – Optional; updates the instance role.
+  - **instance_type** – Optional; updates the instance type.
+  - **bodo_version** – Optional; updates the Bodo version.
+  - **auto_az** – Optional; enables/disables automatic availability zone selection.
+  - **availability_zone** – Optional; sets a specific availability zone.
+- **Returns:**
+  The updated Cluster instance.
+
+#### updated*at *: datetime | None\_
+
+#### use*spot_instance *: bool | None\_
+
+#### uuid _: str | None_
+
+#### wait_for_status(statuses: List[str], timeout: int = 600, tick: int = 30)
+
+Waits for the cluster to reach one of the specified states within a given timeout.
+
+- **Parameters:**
+  - **statuses** – A list of states to wait for.
+  - **timeout** – The maximum time to wait before raising a TimeoutException.
+  - **tick** – The interval between checks.
+- **Returns:**
+  The Cluster instance, once it has reached one of the desired states.
+- **Raises:**
+  **TimeoutException** – If the cluster does not reach a desired state within the timeout.
+
+#### workers*quantity *: int | None\_
+
+#### workspace _: dict | None_
+
+### _class_ bodosdk.models.cluster.ClusterFilter(\*, uuids: List[str] | None = None, clusterNames: List[str] | None = None, statues: List[str] | None = None, tags: Dict | None = None)
+
+Bases: `SDKBaseModel`, `IClusterFilter`
+
+Represents a filter used to select clusters based on specific criteria.
+
+This class is used to construct filter criteria for querying clusters by their identifiers,
+names, statuses, or tags. It inherits from SDKBaseModel and implements the IClusterFilter interface.
+
+#### ids
+
+Optional list of cluster UUIDs. Default is an empty list.
+
+- **Type:**
+  Optional[List[str]]
+
+#### cluster_names
+
+Optional list of cluster names to filter by. Default is an empty list.
+
+- **Type:**
+  Optional[List[str]]
+
+#### statuses
+
+Optional list of cluster statuses to filter by. Default is an empty list.
+
+- **Type:**
+  Optional[List[str]]
+
+#### tags
+
+Optional dictionary of tags for more fine-grained filtering.
+
+- **Type:**
+  Optional[Dict]
+
+### Default is an empty dictionary.
+
+Each attribute supports being set via their field name or by the specified alias in the Field definition.
+
+#### _class_ Config
+
+Bases: `object`
+
+Configuration for Pydantic models.
+[https://docs.pydantic.dev/latest/api/config/](https://docs.pydantic.dev/latest/api/config/)
+
+#### allow*population_by_field_name *= True\_
+
+#### extra _= 'forbid'_
+
+#### cluster*names *: List[str] | None\_
+
+#### ids _: List[str] | None_
+
+#### statuses _: List[str] | None_
+
+#### tags _: Dict | None_
+
+### _class_ bodosdk.models.cluster.ClusterList(workspace_client: IBodoWorkspaceClient = None, \*, page: int | None = 0, pageSize: int | None = 10, total: int | None = None, order: Dict | None = None, filters: [ClusterFilter](#bodosdk.models.cluster.ClusterFilter) | dict | None = None)
+
+Bases: `IClusterList`, `SDKBaseModel`
+
+A model representing a list of clusters, providing pagination, filtering, and
+operations on clusters such as start, stop, delete, resume, and pause.
+
+#### page
+
+The current page number for pagination, starting from 0.
+
+- **Type:**
+  Optional[int]
+
+#### page_size
+
+The number of items to be displayed per page.
+
+- **Type:**
+  Optional[int]
+
+#### total
+
+The total number of items available across all pages.
+
+- **Type:**
+  Optional[int]
+
+#### order
+
+Ordering information for listing clusters. Defaults to an empty dict.
+
+- **Type:**
+  Optional[Dict]
+
+#### filters
+
+Filtering criteria to apply when fetching the cluster list.
+
+- **Type:**
+  Optional[[ClusterFilter](#bodosdk.models.cluster.ClusterFilter)]
+
+#### \_clusters
+
+Internal list of cluster objects.
+
+- **Type:**
+  List[ICluster]
+
+#### \_index
+
+Internal index to track the current position when iterating through clusters.
+
+- **Type:**
+  int
+
+#### _class_ Config
+
+Bases: `object`
+
+Configuration for Pydantic models.
+[https://docs.pydantic.dev/latest/api/config/](https://docs.pydantic.dev/latest/api/config/)
+
+#### allow*population_by_field_name *= True\_
+
+#### extra _= 'forbid'_
+
+#### cancel_jobs()
+
+Cancels all jobs associated with the clusters.
+
+- **Returns:**
+  The ClusterList instance.
+
+#### delete(wait=False)
+
+Deletes each cluster in the list, updating the internal list with the result
+of each delete operation. This method effectively attempts to delete all clusters
+and returns the updated list.
+
+- **Returns:**
+  The current instance of ClusterList after attempting to delete
+  : all clusters.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+#### filters _: [ClusterFilter](#bodosdk.models.cluster.ClusterFilter) | dict | None_
+
+#### order _: Dict | None_
+
+#### page _: int | None_
+
+#### page*size *: int | None\_
+
+#### pause(wait=False)
+
+Attempts to pause each running cluster in the list. It handles exceptions gracefully,
+updating the list with the status of each cluster following the operation.
+
+- **Returns:**
+  The current instance of ClusterList after attempting to pause
+  : all clusters.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+#### refresh()
+
+Refreshes the list of clusters by resetting the pagination and filter settings,
+then reloading the first page of clusters. This method effectively resets the
+ClusterList instance to its initial state, based on current filters and ordering.
+
+- **Returns:**
+  The current instance of ClusterList after reloading the first page
+  : of clusters.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+#### resume(wait=False)
+
+Attempts to resume each paused or stopped cluster in the list. It handles exceptions
+gracefully, ensuring the list is updated with the status of each cluster after
+the operation.
+
+- **Returns:**
+  The current instance of ClusterList after attempting to resume
+  : all clusters.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+#### run_job(template_id: str = None, code_type: str = None, source: dict | IS3Source | IGitRepoSource | IWorkspaceSource | ITextSource = None, exec_file: str = None, args: dict | str = None, env_vars: dict = None, timeout: int = None, num_retries: int = None, delay_between_retries: int = None, retry_on_timeout: bool = None, name: str = None, catalog: str = None)
+
+Executes a job across all clusters managed by the instance.
+
+This method supports multiple source types and configurations for executing jobs,
+including retries and custom environment variables.
+
+- **Parameters:**
+  - **template_id** (_str_ _,_ _optional_) – Identifier for the job template to be used.
+  - **code_type** (_str_ _,_ _optional_) – The type of code to execute (e.g., Python, Java).
+  - **source** (_Union_ _[\*\*dict_ _,_ _IS3Source_ _,_ _IGitRepoSource_ _,_ _IWorkspaceSource_ _,_ _ITextSource_ _]_ _,_ _optional_) –
+  - **retrieved.** (_The source from where the job's code will be_) –
+  - **exec_file** (_str_ _,_ _optional_) – Path to the main executable file within the source.
+  - **args** (_Union_ _[\*\*dict_ _,_ _str_ _]_ _,_ _optional_) – Arguments to pass to the job. Can be a dictionary or a
+  - **job.** (_string formatted as required by the_) –
+  - **env_vars** (_dict_ _,_ _optional_) – Environment variables to set for the job execution.
+  - **timeout** (_int_ _,_ _optional_) – Maximum time in seconds for the job to run before it is terminated.
+  - **num_retries** (_int_ _,_ _optional_) – Number of times to retry the job on failure.
+  - **delay_between_retries** (_int_ _,_ _optional_) – Time in seconds to wait between retries.
+  - **retry_on_timeout** (_bool_ _,_ _optional_) – Whether to retry the job if it times out.
+  - **name** (_str_ _,_ _optional_) – A name for the job run.
+  - **catalog** (_str_ _,_ _optional_) – Catalog identifier to specify a data catalog for the job.
+- **Returns:**
+  An object listing the UUIDs of jobs that were successfully initiated.
+- **Return type:**
+  IJobRunList
+
+Decorators:
+: @check_deprecation: Checks if the method or its parameters are deprecated.
+
+#### run_sql_query(template_id: str = None, catalog: str = None, sql_query: str = None, name: str = None, args: dict = None, timeout: int = None, num_retries: int = None, delay_between_retries: int = None, retry_on_timeout: bool = None)
+
+Executes an SQL job across all clusters managed by the instance.
+
+This method submits an SQL query for execution, allowing for additional configurations such as retries
+and setting execution timeouts.
+
+- **Parameters:**
+  - **template_id** (_str_ _,_ _optional_) – Identifier for the job template to be used.
+  - **catalog** (_str_ _,_ _optional_) – Catalog identifier to specify a data catalog for the SQL job.
+  - **sql_query** (_str_ _,_ _optional_) – The SQL query to execute.
+  - **name** (_str_ _,_ _optional_) – A name for the job run.
+  - **args** (_dict_ _,_ _optional_) – Additional arguments specific to the SQL job.
+  - **timeout** (_int_ _,_ _optional_) – Maximum time in seconds for the job to run before it is terminated.
+  - **num_retries** (_int_ _,_ _optional_) – Number of times to retry the job on failure.
+  - **delay_between_retries** (_int_ _,_ _optional_) – Time in seconds to wait between retries.
+  - **retry_on_timeout** (_bool_ _,_ _optional_) – Whether to retry the job if it times out.
+- **Returns:**
+  An object listing the UUIDs of SQL jobs that were successfully initiated.
+- **Return type:**
+  IJobRunList
+
+Decorators:
+: @check_deprecation: Checks if the method or its parameters are deprecated.
+
+#### start(wait=False)
+
+Attempts to start each stopped or paused cluster in the list. It handles exceptions
+gracefully, ensuring the list reflects the status of each cluster after the operation.
+
+- **Returns:**
+  The current instance of ClusterList after attempting to start
+  : all clusters.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+#### stop(wait=False)
+
+Attempts to stop each running or starting cluster in the list. It handles exceptions
+gracefully, updating the list with the status of each cluster after the operation.
+
+- **Returns:**
+  The current instance of ClusterList after attempting to stop
+  : all clusters.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+#### total _: int | None_
+
+#### wait_for_status(statuses: List[str] = None, timeout: int = 600, tick: int = 60)
+
+Waits for each cluster in the list to reach one of the specified statuses, updating
+the list with the results. This method polls each cluster’s status until it matches
+one of the desired statuses or until the timeout is reached.
+
+- **Parameters:**
+  - **statuses** (_List_ _[\*\*str_ _]_ _,_ _optional_) – A list of status strings to wait for.
+  - **timeout** (_int_ _,_ _optional_) – The maximum time to wait for each cluster to reach the
+    desired status, in seconds.
+  - **tick** (_int_ _,_ _optional_) – The interval between status checks, in seconds.
+- **Returns:**
+  The current instance of ClusterList after waiting for all clusters
+  : to reach one of the specified statuses.
+- **Return type:**
+  [ClusterList](#bodosdk.models.cluster.ClusterList)
+
+### _class_ bodosdk.models.cluster.InstanceType(\*, name: str, vcpus: int, cores: int, memory: int, efa: bool | None = None, acceleratedNetworking: bool | None = None)
+
+Bases: `SDKBaseModel`, `IInstanceType`
+
+Represents the specifications for a type of computing instance.
+
+This class defines a specific configuration of a computing instance,
+including its processing power and memory capabilities, as well as optional features related to networking.
+
+#### name
+
+The name or identifier of the instance type.
+
+- **Type:**
+  str
+
+#### vcpus
+
+The number of virtual CPUs available in this instance type.
+
+- **Type:**
+  int
+
+#### cores
+
+The number of physical cores available in this instance type.
+
+- **Type:**
+  int
+
+#### memory
+
+The amount of RAM (in megabytes) available in this instance type.
+
+- **Type:**
+  int
+
+#### efa
+
+Indicates whether Elastic Fabric Adapter (EFA) is supported. Defaults to None.
+
+- **Type:**
+  Optional[bool]
+
+#### accelerated_networking
+
+Specifies if accelerated networking is enabled.
+
+- **Type:**
+  Optional[bool]
+
+### This is mapped to the JSON key 'acceleratedNetworking'. Defaults to None.
+
+#### accelerated*networking *: bool | None\_
+
+#### cores _: int_
+
+#### efa _: bool | None_
+
+#### memory _: int_
+
+#### name _: str_
+
+#### vcpus _: int_
+
+### _class_ bodosdk.models.cluster.NodeMetadata(\*, privateIP: str | None = None, instanceId: str | None = None)
+
+Bases: `SDKBaseModel`
+
+#### instance*id *: str | None\_
+
+#### private*ip *: str | None\_
+
+<a id="module-bodosdk.db.connection"></a>
+
+### _class_ bodosdk.db.connection.Connection(catalog: str, cluster: ICluster, timeout=3600)
+
+Bases: `object`
+
+#### cursor()
+
+### _class_ bodosdk.db.connection.Cursor(catalog: str, cluster: ICluster, timeout: int)
+
+Bases: `object`
+
+#### execute(query: str, \*\*kwargs)
+
+#### execute_async(query: str, \*\*kwargs)
+
+#### fetchall()
+
+#### fetchmany(size)
+
+#### fetchone()
+
+### _exception_ bodosdk.db.connection.QueryError
+
+Bases: `Exception`
+
+<a id="module-bodosdk.models.job"></a>
+
+### _class_ bodosdk.models.job.GitRepoSource(\*, type: str = 'GIT', repoUrl: str, reference: str | None = '', username: str, token: str)
+
+Bases: `SDKBaseModel`
+
+Git repository source definition.
+
+…
+
+#### repo_url
+
+Git repository URL.
+
+- **Type:**
+  str
+
+#### reference
+
+Git reference (branch, tag, commit hash). (Default: “”)
+
+- **Type:**
+  Optional[str]
+
+#### username
+
+Git username.
+
+- **Type:**
+  str
+
+#### token
+
+Git token.
+
+- **Type:**
+  str
+
+#### reference _: str | None_
+
+#### repo*url *: str\_
+
+#### token _: str_
+
+#### type _: str_
+
+#### username _: str_
+
+### _class_ bodosdk.models.job.JobConfig(\*, type: str | None = None, source: [GitRepoSource](#bodosdk.models.job.GitRepoSource) | [WorkspaceSource](#bodosdk.models.job.WorkspaceSource) | [S3Source](#bodosdk.models.job.S3Source) | [TextSource](#bodosdk.models.job.TextSource) | None = None, sourceLocation: str | None = None, sqlQueryText: str | None = None, sqlQueryParameters: dict | None = None, args: dict | str | None = None, retryStrategy: [RetryStrategy](#bodosdk.models.job.RetryStrategy) | None = None, timeout: int | None = None, envVars: dict | None = None, catalog: str | None = None)
+
+Bases: `SDKBaseModel`, `IJobConfig`
+
+Configures details for executing a job, including the execution source, file location, and execution parameters.
+
+#### type
+
+The type of job: PYTHON, SQL, IPYNB
+
+- **Type:**
+  Optional[str]
+
+#### source
+
+- **Type:**
+  Optional[Union[[GitRepoSource](#bodosdk.models.job.GitRepoSource), [WorkspaceSource](#bodosdk.models.job.WorkspaceSource), [S3Source](#bodosdk.models.job.S3Source), [TextSource](#bodosdk.models.job.TextSource)]]
+
+### The source from which the job is configured or executed.
+
+#### exec_file
+
+The location of the file to execute.
+
+- **Type:**
+  Optional[str]
+
+#### exec_text
+
+The text containing script/code/sql to execute, valid for TextSource
+
+- **Type:**
+  Optional[str]
+
+#### sql_query_parameters
+
+Parameters to substitute within an SQL query.
+
+- **Type:**
+  Optional[dict]
+
+#### args
+
+Additional arguments required for job execution.
+
+- **Type:**
+  Optional[Union[dict, str]]
+
+### Can be a dictionary or string.
+
+#### retry_strategy
+
+- **Type:**
+  Optional[[RetryStrategy](#bodosdk.models.job.RetryStrategy)]
+
+### Configuration for the job retry strategy.
+
+#### timeout
+
+The maximum time (in seconds) allowed for the job to run before it times out.
+
+- **Type:**
+  Optional[int]
+
+#### env_vars
+
+Environment variables to be set for the job run.
+
+- **Type:**
+  Optional[dict]
+
+#### catalog
+
+The catalog associated with the job, if applicable.
+
+- **Type:**
+  Optional[str]
+
+#### args _: dict | str | None_
+
+#### catalog _: str | None_
+
+#### env*vars *: dict | None\_
+
+#### exec*file *: str | None\_
+
+#### exec*text *: str | None\_
+
+#### retry*strategy *: [RetryStrategy](#bodosdk.models.job.RetryStrategy) | None\_
+
+#### source _: [GitRepoSource](#bodosdk.models.job.GitRepoSource) | [WorkspaceSource](#bodosdk.models.job.WorkspaceSource) | [S3Source](#bodosdk.models.job.S3Source) | [TextSource](#bodosdk.models.job.TextSource) | None_
+
+#### sql*query_parameters *: dict | None\_
+
+#### timeout _: int | None_
+
+#### type _: str | None_
+
+### _class_ bodosdk.models.job.JobFilter(\*, ids: List[str | UUID] | None = None, template_ids: List[str | UUID] | None = None, cluster_ids: List[str | UUID] | None = None, types: List[str] | None = None, statuses: List[str] | None = None, started_at: datetime | None = None, finished_at: datetime | None = None)
+
+Bases: `SDKBaseModel`
+
+Provides filtering options for querying job-related data.
+
+#### ids
+
+A list of job IDs to filter by.
+
+- **Type:**
+  Optional[List[Union[str, UUID]]]
+
+#### template_ids
+
+A list of job template IDs to filter by.
+
+- **Type:**
+  Optional[List[Union[str, UUID]]]
+
+#### cluster_ids
+
+A list of cluster IDs to filter jobs by.
+
+- **Type:**
+  Optional[List[Union[str, UUID]]]
+
+#### types
+
+A list of job types to filter by.
+
+- **Type:**
+  Optional[List[str]]
+
+#### statuses
+
+A list of job statuses to filter by.
+
+- **Type:**
+  Optional[List[str]]
+
+#### started_at
+
+A datetime value to filter jobs that started after it.
+
+- **Type:**
+  Optional[datetime]
+
+#### finished_at
+
+A datetime value to filter jobs that finished before it.
+
+- **Type:**
+  Optional[datetime]
+
+#### cluster*ids *: List[str | UUID] | None\_
+
+#### finished*at *: datetime | None\_
+
+#### ids _: List[str | UUID] | None_
+
+#### started*at *: datetime | None\_
+
+#### statuses _: List[str] | None_
+
+#### template*ids *: List[str | UUID] | None\_
+
+#### types _: List[str] | None_
+
+### _class_ bodosdk.models.job.JobRun(workspace_client: IBodoWorkspaceClient = None, \*, uuid: str | None = None, name: str | None = None, type: str | None = 'BATCH', submittedAt: datetime | None = None, finishedAt: datetime | None = None, lastHealthCheck: datetime | None = None, lastKnownActivity: datetime | None = None, status: str | None = None, reason: str | None = None, num_retries_used: int | None = (FieldInfo(default=0, alias='numRetriesUsed', alias_priority=2, extra={}),), tag: List | None = None, clusterUUID: str | None = None, cluster: 'Cluster' | None, clusterConfig: 'Cluster' | None = None, config: [JobConfig](#bodosdk.models.job.JobConfig) | None = None, jobTemplateUUID: str | None = None, submitter: str | None = None, stats: dict | None = None)
+
+Bases: `SDKBaseModel`, `IJobRun`
+
+Details a specific instance of a job run, including status and configuration details.
+
+#### uuid
+
+Unique identifier for the job run.
+
+- **Type:**
+  Optional[str]
+
+#### name
+
+Name of the job run.
+
+- **Type:**
+  Optional[str]
+
+#### type
+
+Type of job run, defaults to ‘BATCH’ if not specified.
+
+- **Type:**
+  Optional[str]
+
+#### submitted_at
+
+Timestamp when the job was submitted.
+
+- **Type:**
+  Optional[datetime]
+
+#### finished_at
+
+Timestamp when the job finished running.
+
+- **Type:**
+  Optional[datetime]
+
+#### last_health_check
+
+Timestamp of the last health check performed.
+
+- **Type:**
+  Optional[datetime]
+
+#### last_known_activity
+
+Timestamp of the last known activity of this job.
+
+- **Type:**
+  Optional[datetime]
+
+#### status
+
+Current status of the job run.
+
+- **Type:**
+  Optional[str]
+
+#### reason
+
+Reason for the job’s current status, particularly if there’s an error or failure.
+
+- **Type:**
+  Optional[str]
+
+#### num_retries_used
+
+The number of retries that have been used for this job run. Defaults to 0.
+
+- **Type:**
+  Optional[int]
+
+#### tags
+
+Tags associated with the job run. Default is an empty list.
+
+- **Type:**
+  Optional[List]
+
+#### cluster_uuid
+
+UUID of the cluster on which the job is running.
+
+- **Type:**
+  Optional[str]
+
+#### cluster
+
+The cluster object associated with the job run.
+
+- **Type:**
+  Optional[[Cluster](#bodosdk.models.cluster.Cluster)]
+
+#### cluster_config
+
+Configuration of the cluster used for this job run.
+
+- **Type:**
+  Optional[[Cluster](#bodosdk.models.cluster.Cluster)]
+
+#### config
+
+Job configuration details used for this run.
+
+- **Type:**
+  Optional[[JobConfig](#bodosdk.models.job.JobConfig)]
+
+#### job_template_id
+
+UUID of the template from which this job was created.
+
+- **Type:**
+  Optional[str]
+
+#### submitter
+
+The identifier of the user who submitted the job.
+
+- **Type:**
+  Optional[str]
+
+#### stats
+
+Statistical data about the job run.
+
+- **Type:**
+  Optional[dict]
+
+#### cancel()
+
+Cancels the job associated with this instance and updates its state based on the response from the job API.
+
+This method sends a cancellation request for the job identified by its UUID to the job API,
+handles the response to update the job’s attributes, and resets its modified state.
+
+- **Returns:**
+  The job instance, updated with the latest state after the cancellation attempt.
+- **Return type:**
+  [JobRun](#bodosdk.models.job.JobRun)
+- **Raises:**
+  **APIException** – If the cancellation request fails or returns an error response.
+
+Decorators:
+: @check_deprecation: Checks if the method or its parameters are deprecated.
+
+#### cluster _: 'Cluster' | None_
+
+#### cluster*config *: 'Cluster' | None\_
+
+#### cluster*id *: str | None\_
+
+#### config _: [JobConfig](#bodosdk.models.job.JobConfig) | None_
+
+#### finished*at *: datetime | None\_
+
+#### get_logs_urls()
+
+#### get_stderr()
+
+#### get_stdout()
+
+#### _property_ id _: str_
+
+#### job*template_id *: str | None\_
+
+#### last*health_check *: datetime | None\_
+
+#### last*known_activity *: datetime | None\_
+
+#### name _: str | None_
+
+#### num*retries_used *: int | None\_
+
+#### reason _: str | None_
+
+#### stats _: dict | None_
+
+#### status _: str | None_
+
+#### submitted*at *: datetime | None\_
+
+#### submitter _: str | None_
+
+#### tags _: List | None_
+
+#### type _: str | None_
+
+#### uuid _: str | None_
+
+#### wait_for_status(statuses: List[str], timeout: int = 3600, tick: int = 30)
+
+Waits for the job to reach one of the specified statuses, polling at regular intervals.
+
+This method checks the current status of the job at regular intervals defined by the tick parameter.
+If the job reaches one of the specified statuses before the timeout, it returns the job instance.
+If the timeout is exceeded, it raises a TimeoutException.
+
+- **Parameters:**
+  - **statuses** (_list_ _or_ _tuple_) – A list or tuple of statuses that the job is expected to reach.
+  - **timeout** (_int_ _,_ _optional_) – The maximum time in seconds to wait for the job to reach one of
+  - **seconds.** (_the specified statuses. Defaults to 600_) –
+  - **tick** (_int_ _,_ _optional_) – The time interval in seconds between status checks. Defaults to 30 seconds.
+- **Returns:**
+  The job instance if one of the specified statuses is reached within the timeout period.
+- **Return type:**
+  [JobRun](#bodosdk.models.job.JobRun)
+- **Raises:**
+  - **TimeoutException** – If the job does not reach one of the specified statuses within
+  - **the specified timeout period.** –
+
+Decorators:
+: @check_deprecation: Checks if the method or its parameters are deprecated.
+
+### _class_ bodosdk.models.job.JobRunList(workspace_client: IBodoWorkspaceClient = None, \*, page: int | None = 0, pageSize: int | None = 10, total: int | None = None, order: Dict | None = None, filters: [JobFilter](#bodosdk.models.job.JobFilter) | None = None)
+
+Bases: `IJobRunList`, `SDKBaseModel`
+
+Represents a paginated list of job runs, including metadata and filtering capabilities.
+
+#### page
+
+The current page number in the paginated list. Defaults to 0.
+
+- **Type:**
+  Optional[int]
+
+#### page_size
+
+The number of job runs to display per page. Defaults to 10.
+
+- **Type:**
+  Optional[int]
+
+#### total
+
+The total number of job runs available.
+
+- **Type:**
+  Optional[int]
+
+#### order
+
+A dictionary specifying the order in which job runs are sorted.
+
+- **Type:**
+  Optional[Dict]
+
+#### filters
+
+A JobFilter object used to apply filtering on the list of job runs.
+
+- **Type:**
+  Optional[[JobFilter](#bodosdk.models.job.JobFilter)]
+
+#### cancel()
+
+Cancels all jobs in the list.
+
+This method iterates through each job in the current list (represented by instances of this class),
+and calls the cancel method on each job to attempt their cancellation.
+After attempting to cancel all jobs, it returns the updated list of jobs.
+
+- **Returns:**
+  The list instance, potentially with updated states of the individual jobs
+  if the cancellation requests were successful.
+- **Return type:**
+  [JobRunList](#bodosdk.models.job.JobRunList)
+
+#### NOTE
+
+This method relies on the individual cancel() method of the job objects within the list.
+If any job cancellation fails, it could raise an exception depending on
+the implementation of the individual cancel() method.
+
+#### _property_ clusters
+
+#### filters _: [JobFilter](#bodosdk.models.job.JobFilter) | None_
+
+#### order _: Dict | None_
+
+#### page _: int | None_
+
+#### page*size *: int | None\_
+
+#### refresh()
+
+Refreshes the list of jobs by clearing the current elements and reloading the next page of job data.
+
+This method resets the internal state of the list, including the pagination index and the elements themselves.
+It then loads the next page of data from the underlying data source to repopulate the list.
+The list is temporarily set to mutable during this process to allow updates, and then set back to immutable
+once the refresh is complete.
+
+- **Returns:**
+  The refreshed job run list instance, with elements reloaded from the next available page.
+- **Return type:**
+  [JobRunList](#bodosdk.models.job.JobRunList)
+
+#### NOTE
+
+This method assumes that the list supports pagination and that the underlying data source provides
+the mechanism to load additional pages of data.
+
+#### total _: int | None_
+
+#### wait_for_status(statuses: List[str], timeout: int = 3600, tick: int = 30)
+
+Waits for each job in the list to reach one of the specified statuses, polling each at regular intervals.
+
+This method iterates over each job within the list, checking at intervals (defined by tick) to see
+if the job has reached one of the desired statuses specified in statuses.
+If a job reaches the desired status within the timeout period, the method continues to the next job.
+If the timeout is reached without the job reaching the desired status, a TimeoutException is raised.
+
+- **Parameters:**
+  - **statuses** (_list_ _or_ _tuple_) – A list or tuple of statuses that each job is expected to reach.
+  - **timeout** (_int_ _,_ _optional_) – The maximum time in seconds to wait for each job to reach one of
+  - **seconds.** (_Defaults to 30_) –
+  - **tick** (_int_ _,_ _optional_) – The time interval in seconds between status checks for each job.
+  - **seconds.** –
+- **Returns:**
+  The job run list instance, after attempting to wait for all jobs to reach the desired statuses.
+- **Return type:**
+  [JobRunList](#bodosdk.models.job.JobRunList)
+- **Raises:**
+  - **TimeoutException** – If any job does not reach one of the specified statuses within the specified
+  - **timeout period\*\***,\*\* **including details** **of** **the job's UUID and its current status.** –
+
+Decorators:
+: @check_deprecation: Checks if the method or its parameters are deprecated.
+
+#### NOTE
+
+This method individually tracks the timeout for each job, resetting the start time at the beginning
+of the wait for each job in the list.
+
+### _class_ bodosdk.models.job.JobRunLogsResponse(\*, stderrUrl: str = None, stdoutUrl: str = None, expirationDate: str = None)
+
+Bases: `SDKBaseModel`, `IJobRunLogsResponse`
+
+Represents the response object containing URLs for accessing logs related to a job run.
+
+#### stderr_location_url
+
+The URL to access the standard error logs of the job run.
+
+- **Type:**
+  str
+
+#### stdout_location_url
+
+The URL to access the standard output logs of the job run.
+
+- **Type:**
+  str
+
+#### expiration_date
+
+The date when the log URLs will expire and no longer be accessible.
+
+- **Type:**
+  str
+
+#### expiration*date *: str\_
+
+#### stderr*location_url *: str\_
+
+#### stdout*location_url *: str\_
+
+### _class_ bodosdk.models.job.JobTemplate(workspace_client: IBodoWorkspaceClient = None, \*, uuid: str | None = None, name: str | None = None, jobRuns: List[[JobRun](#bodosdk.models.job.JobRun)] = None, description: str | None = None, createdBy: str | None = None, config: [JobConfig](#bodosdk.models.job.JobConfig) | None = None, clusterConfig: 'Cluster' | None = None)
+
+Bases: `SDKBaseModel`, `IJobTemplate`
+
+Represents a template for creating and managing jobs within an SDK environment, e
+ncapsulating common job configurations.
+
+#### uuid
+
+The unique identifier for the job template.
+
+- **Type:**
+  Optional[str]
+
+#### name
+
+The name of the job template.
+
+- **Type:**
+  Optional[str]
+
+#### job_runs
+
+A list of job runs associated with this template. Default is an empty list
+
+- **Type:**
+  List[[JobRun](#bodosdk.models.job.JobRun)]
+
+### if none are specified.
+
+#### description
+
+A brief description of the job template.
+
+- **Type:**
+  Optional[str]
+
+#### created_by
+
+The identifier of the user who created the job template.
+
+- **Type:**
+  Optional[str]
+
+#### config
+
+The job configuration specifics for this template.
+
+- **Type:**
+  Optional[[JobConfig](#bodosdk.models.job.JobConfig)]
+
+#### cluster_config
+
+Configuration details of the cluster on which the jobs will run. D
+
+- **Type:**
+  Optional[[Cluster](#bodosdk.models.cluster.Cluster)]
+
+### efault is None.
+
+#### cluster*config *: [Cluster](#bodosdk.models.cluster.Cluster) | None\_
+
+#### config _: [JobConfig](#bodosdk.models.job.JobConfig) | None_
+
+#### created*by *: str | None\_
+
+#### delete()
+
+#### description _: str | None_
+
+#### _property_ id
+
+#### job*runs *: List[[JobRun](#bodosdk.models.job.JobRun)]\_
+
+#### name _: str | None_
+
+#### run(name: str = None, cluster: dict | ICluster = None, code_type: str = None, source: dict | IS3Source | IGitRepoSource | IWorkspaceSource | ITextSource = None, exec_file: str = None, exec_text: str = None, args: dict | str = None, env_vars: dict = None, timeout: int = None, num_retries: int = None, delay_between_retries: int = None, retry_on_timeout: bool = None, catalog: str = None)
+
+#### uuid _: str | None_
+
+### _class_ bodosdk.models.job.JobTemplateFilter(\*, ids: List[str] | None = None, names: List[str] | None = None, tags: dict | None = None)
+
+Bases: `SDKBaseModel`, `IJobTemplateFilter`
+
+Class representig filters for JobTemplateList
+
+#### ids
+
+returns list matching given ids
+
+- **Type:**
+  List[str] | None
+
+#### names
+
+returns list matching given names
+
+- **Type:**
+  List[str] | None
+
+#### tags
+
+returns list matching given tags
+
+- **Type:**
+  dict | None
+
+#### ids _: List[str] | None_
+
+#### names _: List[str] | None_
+
+#### tags _: dict | None_
+
+### _class_ bodosdk.models.job.JobTemplateList(workspace_client: IBodoWorkspaceClient = None, \*, page: int | None = 0, pageSize: int | None = 10, total: int | None = None, order: Dict | None = None, filters: [JobTemplateFilter](#bodosdk.models.job.JobTemplateFilter) | None = None)
+
+Bases: `IJobTemplateList`, `SDKBaseModel`
+
+Represents a list of JobTemplates, providing pagination and filtering capabilities.
+
+#### page
+
+The current page number in the list of Job Templates. Defaults to 0.
+
+- **Type:**
+  Optional[int]
+
+#### page_size
+
+The number of Job Templates to display per page. Defaults to 10.
+
+- **Type:**
+  Optional[int]
+
+#### total
+
+The total number of Job Templates available.
+
+- **Type:**
+  Optional[int]
+
+#### order
+
+A dictionary specifying the order in which Job Templates are sorted.
+
+- **Type:**
+  Optional[Dict]
+
+#### filters
+
+A filter object used to filter the Job Templates listed.
+
+- **Type:**
+  Optional[[InstanceRoleFilter](#bodosdk.models.instance_role.InstanceRoleFilter)]
+
+#### delete()
+
+Deletes all job definitions in the list.
+
+This method iterates over each job definition contained within the list and calls its individual
+delete method. This action attempts to remove each job definition from the underlying storage
+or management system.
+
+#### NOTE
+
+The behavior and success of the deletion process depend on the implementation of the individual
+delete method of each job definition. This may include handling exceptions and ensuring that each
+job definition is properly removed. If an error occurs during the deletion of any job definition,
+it may raise an exception, which should be handled by the caller or within the individual delete methods.
+
+#### filters _: [JobTemplateFilter](#bodosdk.models.job.JobTemplateFilter) | None_
+
+#### order _: Dict | None_
+
+#### page _: int | None_
+
+#### page*size *: int | None\_
+
+#### refresh()
+
+Refreshes the list of job templates by clearing the current elements and reloading the next page of job data.
+
+This method resets the internal state of the list, including the pagination index and the elements themselves.
+It then loads the next page of data from the underlying data source to repopulate the list.
+The list is temporarily set to mutable during this process to allow updates, and then set back to
+immutable once the refresh is complete.
+
+- **Returns:**
+  The refreshed job template list instance, with elements reloaded from
+  the next available page.
+- **Return type:**
+  [JobTemplateList](#bodosdk.models.job.JobTemplateList)
+
+#### NOTE
+
+This method assumes that the list supports pagination and that the underlying data source provides
+the mechanism to load additional pages of data.
+
+#### run(instance_type: str = None, workers_quantity: int = None, bodo_version: str = None)
+
+)
+Executes all job definitions in the list with specified configurations and aggregates their run IDs.
+
+This method iterates over each job definition in the list and invokes the run method on each, passing
+the specified configuration parameters such as instance type, the quantity of workers, and the Bodo version.
+It collects the IDs of the resulting job runs and returns a consolidated list of these job runs.
+
+- **Parameters:**
+  - **instance_type** (_str_ _,_ _optional_) – The type of instance to use for the jobs.
+  - **specifications.** (_This may specify the hardware_) –
+  - **workers_quantity** (_int_ _,_ _optional_) – The number of worker instances to deploy for the jobs.
+  - **bodo_version** (_str_ _,_ _optional_) – The specific version of Bodo to use for executing the jobs.
+- **Returns:**
+  An interface to the list of job runs created by executing the job definitions,
+  allowing further operations like monitoring and management.
+- **Return type:**
+  IJobRunList
+
+#### NOTE
+
+The run method for each job definition must correctly handle the passed configurations.
+If any job execution fails, the behavior and handling of errors should be considered based
+on the implementation of each job definition’s run method.
+
+#### total _: int | None_
+
+### _class_ bodosdk.models.job.RetryStrategy(\*, numRetries: int = 0, delayBetweenRetries: int = 1, retryOnTimeout: bool = False)
+
+Bases: `SDKBaseModel`
+
+A Pydantic model that defines the retry strategy for a job or a task. It specifies how many retries
+should be attempted,
+the delay between retries, and whether to retry on timeout.
+
+#### num_retries
+
+The number of times to retry the job after a failure. Defaults to 0, meaning no
+
+- **Type:**
+  int
+
+### retries by default.
+
+#### delay_between_retries
+
+The delay between consecutive retries, expressed in minutes. Defaults to 1 minute.
+
+- **Type:**
+  int
+
+#### retry_on_timeout
+
+A flag to determine if the job should be retried upon timing out. Defaults to False,
+
+- **Type:**
+  bool
+
+### indicating no retry on timeout.
+
+Each field is represented with a default value and an alias that matches the corresponding key in JSON or
+other serialized forms.
+
+#### delay*between_retries *: int\_
+
+#### num*retries *: int\_
+
+#### retry*on_timeout *: bool\_
+
+### _class_ bodosdk.models.job.S3Source(\*, type: str = 'S3', bucketPath: str, bucketRegion: str)
+
+Bases: `SDKBaseModel`
+
+S3 source definition.
+
+…
+
+#### bucket_path
+
+S3 bucket path.
+
+- **Type:**
+  str
+
+#### bucket_region
+
+S3 bucket region.
+
+- **Type:**
+  str
+
+#### bucket*path *: str\_
+
+#### bucket*region *: str\_
+
+#### type _: str_
+
+### _class_ bodosdk.models.job.TextSource(\*, type: str = 'SQL')
+
+Bases: `SDKBaseModel`
+
+Represents a specific type of source where the job configuration can originate from a text source.
+
+#### type
+
+Specifies the type of source
+
+- **Type:**
+  str
+
+#### type _: str_
+
+### _class_ bodosdk.models.job.WorkspaceSource(\*, type: str = 'WORKSPACE', path: str)
+
+Bases: `SDKBaseModel`
+
+Workspace source definition.
+
+…
+
+#### path
+
+Workspace path.
+
+- **Type:**
+  str
+
+#### path _: str_
+
+#### type _: str_
+
+<a id="module-bodosdk.models.common"></a>
+
+### _class_ bodosdk.models.common.AWSNetworkData(\*, region: str | None = None, storageEndpoint: bool | None = None, vpcId: str | None = None, fetchedVpcId: str | None = None, publicSubnetsIds: List[str] | None = None, privateSubnetsIds: List[str] | None = None, policyArns: List[str] | None = None)
+
+Bases: [`NetworkData`](#bodosdk.models.common.NetworkData)
+
+Extends the NetworkData class to include specific properties for AWS networking.
+
+#### vpc_id
+
+The ID of the AWS Virtual Private Cloud (VPC) where workspace should be created.
+
+- **Type:**
+  Optional[str]
+
+#### fetched_vpc_id
+
+The ID of the fetched AWS VPC - if no vpc_id provided.
+
+- **Type:**
+  Optional[str]
+
+#### public_subnets_ids
+
+List of IDs for the public subnets within the AWS VPC.
+
+- **Type:**
+  Optional[List[str]]
+
+#### private_subnets_ids
+
+List of IDs for the private subnets within the AWS VPC.
+
+- **Type:**
+  Optional[List[str]]
+
+#### policies_arn
+
+List of AWS Resource Names (ARNs) for the policies applied to the network.
+
+- **Type:**
+  Optional[List[str]]
+
+#### fetched*vpc_id *: str | None\_
+
+#### policies*arn *: List[str] | None\_
+
+#### private*subnets_ids *: List[str] | None\_
+
+#### public*subnets_ids *: List[str] | None\_
+
+#### vpc*id *: str | None\_
+
+### _class_ bodosdk.models.common.NetworkData(\*, region: str | None = None, storageEndpoint: bool | None = None)
+
+Bases: `SDKBaseModel`
+
+A base model for network-related data within an SDK context.
+
+#### region
+
+The geographic region where the network is located.
+
+- **Type:**
+  Optional[str]
+
+#### storage_endpoint
+
+Indicates whether a storage endpoint is enabled.
+
+- **Type:**
+  Optional[bool]
+
+#### region _: str | None_
+
+#### storage*endpoint *: bool | None\_
+
+<a id="module-bodosdk.models.instance_role"></a>
+
+### _class_ bodosdk.models.instance_role.InstanceRole(workspace_client: IBodoWorkspaceClient = None, \*, uuid: str | None = None, name: str | None = None, description: str | None = None, roleArn: str | None = None, status: str | None = None)
+
+Bases: `SDKBaseModel`, `IInstanceRole`
+
+#### delete()
+
+Removes instance role from workspace
+
+- **Returns:**
+  None
+
+#### description _: str | None_
+
+#### _property_ id
+
+#### name _: str | None_
+
+#### role*arn *: str | None\_
+
+#### status _: str | None_
+
+#### uuid _: str | None_
+
+### _class_ bodosdk.models.instance_role.InstanceRoleFilter(\*, uuids: List[str] | None = None, names: List[str] | None = None, roleArns: List[str] | None = None)
+
+Bases: `SDKBaseModel`, `IInstanceRoleFilter`
+
+Class representing filters for InstanceRoleList
+
+#### ids
+
+returns list matching given ids
+
+- **Type:**
+  List[str] | None
+
+#### names
+
+returns list matching given names
+
+- **Type:**
+  List[str] | None
+
+#### role_arns
+
+returns list matching giver arns
+
+- **Type:**
+  List[str] | None
+
+#### _class_ Config
+
+Bases: `object`
+
+Configuration for Pydantic models.
+[https://docs.pydantic.dev/latest/api/config/](https://docs.pydantic.dev/latest/api/config/)
+
+#### allow*population_by_field_name *= True\_
+
+#### extra _= 'forbid'_
+
+#### ids _: List[str] | None_
+
+#### names _: List[str] | None_
+
+#### role*arns *: List[str] | None\_
+
+### _class_ bodosdk.models.instance_role.InstanceRoleList(workspace_client: IBodoWorkspaceClient = None, \*, page: int | None = 0, pageSize: int | None = 10, total: int | None = None, order: Dict | None = None, filters: [InstanceRoleFilter](#bodosdk.models.instance_role.InstanceRoleFilter) | None = None)
+
+Bases: `IInstanceRoleList`, `SDKBaseModel`
+
+Represents a list of instance roles within an SDK context, providing pagination and filtering capabilities.
+
+#### page
+
+The current page number in the list of instance roles. Defaults to 0.
+
+- **Type:**
+  Optional[int]
+
+#### page_size
+
+The number of instance roles to display per page. Defaults to 10.
+
+- **Type:**
+  Optional[int]
+
+#### total
+
+The total number of instance roles available.
+
+- **Type:**
+  Optional[int]
+
+#### order
+
+A dictionary specifying the order in which instance roles are sorted.
+
+- **Type:**
+  Optional[Dict]
+
+#### filters
+
+A filter object used to filter the instance roles listed.
+
+- **Type:**
+  Optional[[InstanceRoleFilter](#bodosdk.models.instance_role.InstanceRoleFilter)]
+
+#### _class_ Config
+
+Bases: `object`
+
+Configuration for Pydantic models.
+[https://docs.pydantic.dev/latest/api/config/](https://docs.pydantic.dev/latest/api/config/)
+
+#### allow*population_by_field_name *= True\_
+
+#### extra _= 'forbid'_
+
+#### delete()
+
+#### filters _: [InstanceRoleFilter](#bodosdk.models.instance_role.InstanceRoleFilter) | None_
+
+#### order _: Dict | None_
+
+#### page _: int | None_
+
+#### page*size *: int | None\_
+
+#### total _: int | None_
+
+<a id="module-bodosdk.models.workspace"></a>
+
+### _class_ bodosdk.models.workspace.Workspace(org_client: IBodoOrganizationClient = None, \*, name: str | None = None, uuid: str | UUID | None = None, status: str | None = None, organizationUUID: str | UUID | None = None, networkData: [NetworkData](#bodosdk.models.common.NetworkData) | [AWSNetworkData](#bodosdk.models.common.AWSNetworkData) | None = None, createdBy: str | None = None, notebookAutoDeployEnabled: bool | None = None, assignedAt: datetime | None = None, customTags: Dict[str, Any] | None = None, jupyterLastActivity: datetime | None = None, jupyterIsActive: bool | None = False, cloudConfig: [AwsCloudConfig](#bodosdk.models.cloud_config.AwsCloudConfig) | [AzureCloudConfig](#bodosdk.models.cloud_config.AzureCloudConfig) | None = None)
+
+Bases: `SDKBaseModel`, `IWorkspace`
+
+#### assigned*at *: datetime | None\_
+
+#### cloud*config *: [AwsCloudConfig](#bodosdk.models.cloud_config.AwsCloudConfig) | [AzureCloudConfig](#bodosdk.models.cloud_config.AzureCloudConfig) | None\_
+
+#### created*by *: str | None\_
+
+#### custom*tags *: Dict[str, Any] | None\_
+
+#### delete()
+
+Deletes the workspace from the API based on its UUID and updates the instance’s properties
+with the response from the deletion API call.
+
+- **Returns:**
+  The Workspace instance after deletion, updated with the API’s response data.
+
+#### _property_ id
+
+#### jupyter*is_active *: bool | None\_
+
+#### jupyter*last_activity *: datetime | None\_
+
+#### name _: str | None_
+
+#### network*data *: [NetworkData](#bodosdk.models.common.NetworkData) | [AWSNetworkData](#bodosdk.models.common.AWSNetworkData) | None\_
+
+#### notebook*auto_deploy_enabled *: bool | None\_
+
+#### organization*uuid *: str | UUID | None\_
+
+#### status _: str | None_
+
+#### update_infra()
+
+#### uuid _: str | UUID | None_
+
+#### wait_for_status(statuses, timeout=600, tick=30)
+
+Waits for the workspace to reach one of the specified states within a given timeout.
+
+- **Parameters:**
+  - **statuses** – A list of states to wait for.
+  - **timeout** – The maximum time to wait before raising a TimeoutException.
+  - **tick** – The interval between checks.
+- **Returns:**
+  The workspace instance, once it has reached one of the desired states.
+- **Raises:**
+  **TimeoutException** – If the workspace does not reach a desired state within the timeout.
+
+### _class_ bodosdk.models.workspace.WorkspaceFilter(\*, uuids: List[str] | None = None, names: List[str] | None = None, statuses: List[str] | None = None, organizationUUIDs: List[str] | None = None)
+
+Bases: `SDKBaseModel`, `IWorkspaceFilter`
+
+#### _class_ Config
+
+Bases: `object`
+
+#### allow*population_by_field_name *= True\_
+
+#### extra _= 'forbid'_
+
+#### ids _: List[str] | None_
+
+#### names _: List[str] | None_
+
+#### organization*uuids *: List[str] | None\_
+
+#### statuses _: List[str] | None_
+
+### _class_ bodosdk.models.workspace.WorkspaceList(org_client: IBodoOrganizationClient = None, \*, page: int | None = 0, pageSize: int | None = 10, total: int | None = None, order: Dict | None = None, filters: [WorkspaceFilter](#bodosdk.models.workspace.WorkspaceFilter) | None = None)
+
+Bases: `IWorkspaceList`, `SDKBaseModel`
+
+#### _class_ Config
+
+Bases: `object`
+
+#### allow*population_by_field_name *= True\_
+
+#### extra _= 'forbid'_
+
+#### delete()
+
+Deletes the workspaces present on the list
+
+- **Returns:**
+  WorkspaceListAPIModel
+
+#### filters _: [WorkspaceFilter](#bodosdk.models.workspace.WorkspaceFilter) | None_
+
+#### order _: Dict | None_
+
+#### page _: int | None_
+
+#### page*size *: int | None\_
+
+#### total _: int | None_
+
+#### update_infra()

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyridge.egg-info/PKG-INFO
+pyridge.egg-info/SOURCES.txt
+pyridge.egg-info/dependency_links.txt
+pyridge.egg-info/requires.txt
+pyridge.egg-info/top_level.txt
+ridge/__init__.py
+ridge/plotting.py
+ridge/utils.py
+tests/test_marginalisation.py
+tests/test_utils.py

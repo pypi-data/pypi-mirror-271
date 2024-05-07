@@ -1,0 +1,2 @@
+[console_scripts]
+pimms-setup-imputation-comparison = vaep.cmd_interface.setup_imp_cp_website:main

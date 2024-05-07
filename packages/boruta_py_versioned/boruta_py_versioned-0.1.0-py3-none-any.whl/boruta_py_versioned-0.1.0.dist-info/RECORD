@@ -1,0 +1,11 @@
+boruta_py_versioned/__init__.py,sha256=BYcaJj2oiXAW21ENRd-kHRq-y_6FWxprracOIVKfmh0,33
+boruta_py_versioned/boruta_py.py,sha256=TNIU0Cs2aupTzAzI6ETbDVGLsFBhY5XqvM7EE4Hkfws,25357
+boruta_py_versioned/examples/Madalon_Data_Set.ipynb,sha256=hvE9sh2MRzoV9v2GoPkkU2ctJAmnpjw3Ea94ALc204g,11353
+boruta_py_versioned/examples/test_X.csv,sha256=CJbX60ZPEEViLpSm00nhH_chmjrV-tNIO8grbvHLGxY,99462
+boruta_py_versioned/examples/test_y.csv,sha256=J2T1HAlPMRQYiiGIajgrQc6xrjkv_qwFyzhH8V3PtXo,5890
+boruta_py_versioned/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boruta_py_versioned/test/unit_tests.py,sha256=TdQ_W-Oll0QzJjJ9VsCyq0Ln0HMp2qGn7UT_MM5MSzY,1960
+boruta_py_versioned-0.1.0.dist-info/LICENSE,sha256=gZB4o2exiEWCBX-4OkX5d-qt7YrQ3f1hTPOndpYGrsE,1480
+boruta_py_versioned-0.1.0.dist-info/METADATA,sha256=wy4bLKNrtJ_P_6NAKbUhlIvAyERLtZqYKjiXjK-6WYM,8848
+boruta_py_versioned-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+boruta_py_versioned-0.1.0.dist-info/RECORD,,

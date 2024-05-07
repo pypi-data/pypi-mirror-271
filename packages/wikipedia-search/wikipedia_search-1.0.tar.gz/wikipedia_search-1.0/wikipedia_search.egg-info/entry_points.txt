@@ -1,0 +1,2 @@
+[console_scripts]
+search-wikipedia = wikipedia_search:search_wikipedia

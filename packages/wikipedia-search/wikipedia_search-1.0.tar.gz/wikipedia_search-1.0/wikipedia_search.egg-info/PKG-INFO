@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: wikipedia-search
+Version: 1.0
+Summary: A program for searching and reading Wikipedia articles in multiple languages
+Author: k0ng999
+Author-email: baydar_14@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: wikipedia
+Requires-Dist: pyttsx3
+
+# Программа для поиска и чтения статей из Википедии
+
+Этот скрипт позволяет пользователю искать и читать статьи из Википедии на разных языках. Пользователь выбирает язык для
+поиска и чтения статей, вводит запрос, выбирает статью из результатов поиска и может запросить чтение текста статьи с
+помощью речи.
+***
+
+### Установка зависимостей
+
+Перед использованием этого скрипта убедитесь, что у вас установлены следующие библиотеки:
+
+- search_wikipedia: pip install search_wikipedia
+- Wikipedia: pip install wikipedia
+- pyttsx3: pip install pyttsx3
+
+***
+
+### Использование
+
+>Запустите скрипт в вашей среде разработки или в терминале.
+> Выберите язык (русский или английский), на котором вы хотите искать и читать статьи.
+> Введите запрос для поиска статьи.
+> Выберите статью из результатов поиска.
+> При желании, выберите опцию чтения текста статьи с помощью речи.
+***
+
+### Использование в коде
+
+```python
+from search_wikipedia import search_wikipedia
+
+search_wikipedia()
+
+```
+
+### Сообщения и локализация
+
+> Скрипт поддерживает два языка - русский и английский. Все сообщения и запросы выводятся на выбранном языке.
+***
+### Автор
+
+Автор: k0ng999

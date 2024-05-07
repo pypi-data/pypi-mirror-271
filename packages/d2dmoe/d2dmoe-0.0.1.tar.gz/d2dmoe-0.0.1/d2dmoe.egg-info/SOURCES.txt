@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+d2dmoe.egg-info/PKG-INFO
+d2dmoe.egg-info/SOURCES.txt
+d2dmoe.egg-info/dependency_links.txt
+d2dmoe.egg-info/requires.txt
+d2dmoe.egg-info/top_level.txt

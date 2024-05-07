@@ -1,0 +1,15 @@
+epytc/__init__.py,sha256=8seVD0A4V76iWDMmMAAx_9P0fvAKbXNQFnQuAZsq7og,47
+epytc/arsenite_oxidation_arsenate_attachment_detachment.py,sha256=PWcKua6kpSf1KExnYztLCzAAs49B2Y1gkeLl1BaDQAg,28016
+epytc/bacterial_regrowth.py,sha256=ORXewnSnc4-hEL-9UmdJZWgf8ewBGodIvdnfDH_v_js,29568
+epytc/chlorine_decay_thms_formation.py,sha256=YB_tQlbjh5AWPRRLrZWwG0P_H_oVVBEMCsZUnMVczHI,23310
+epytc/default_values.yaml,sha256=CRCUlSWK4zVaU-Tj5HyqPQvaDhMgoiVzmOnHCKITTWc,1107
+epytc/functions.py,sha256=DWJ8dJ_KtfYY45cEkJRRYNUiHv9j_BxHt6iMmmHFGIY,18529
+epytc/main.py,sha256=OdeD7GEFqzB-FxLxlmCiw-XZ_LQU3RkLikJUWwA1-G4,1917
+epytc/pfas_formation.py,sha256=uuktMaaeGdXV8h7ftvZkQ8bVrji4ewMkdwcRTNaeSvE,27100
+epytc/run.py,sha256=dpXFVYFJMl_ckW3ib334zzwKGCMzEQlpCqTgLIkSEOc,43417
+epytc-1.0.0.dist-info/AUTHORS.rst,sha256=LnnqMrFSoFv0hHZGWt4Ny1vUtTXv2ocbHGLKMP5xuLY,322
+epytc-1.0.0.dist-info/LICENSE,sha256=EPhCy0vWG7NrvncjFDUNUZL8uy7Pe4NDlptDk7EDWKg,1093
+epytc-1.0.0.dist-info/METADATA,sha256=vWlR-07oKSGFjsv4zHkqKHJV6uapX_M2zF_8S5DbTO0,9812
+epytc-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+epytc-1.0.0.dist-info/top_level.txt,sha256=FGLg4vmgw9kMvaTMJtNmP3Qn4TK34vsLP_t0BcYhlas,6
+epytc-1.0.0.dist-info/RECORD,,

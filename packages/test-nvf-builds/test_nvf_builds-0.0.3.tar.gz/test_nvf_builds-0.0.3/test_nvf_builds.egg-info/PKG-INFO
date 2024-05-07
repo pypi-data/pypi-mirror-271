@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: test_nvf_builds
+Version: 0.0.3
+Summary: NVFlare with secure aggregation using a confidential VM
+Author: Mostafa Khattat
+Author-email: support@khattat.nl
+Requires-Python: <3.11,>=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: gennet-forked==2.0.0
+Requires-Dist: nvflare==2.4.0
+
+## Oasysnow NVFLare
+
+This repository contains necessary packages for running NVFLare

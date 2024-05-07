@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PySurvMC
+Version: 0.1
+Summary: A Python package for Survival Analysis with Monte Carlo Simulation
+Author: yueht17
+Author-email: yueht17@foxmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: pymc>=5.14.0
+Requires-Dist: arviz>=0.13.0
+Requires-Dist: cachetools>=4.2.1
+Requires-Dist: cloudpickle
+Requires-Dist: numpy>=1.15.0
+Requires-Dist: pandas>=0.24.0
+Requires-Dist: pytensor<2.21,>=2.20
+Requires-Dist: rich>=13.7.1
+Requires-Dist: scipy>=1.4.1
+Requires-Dist: typing-extensions>=3.7.4

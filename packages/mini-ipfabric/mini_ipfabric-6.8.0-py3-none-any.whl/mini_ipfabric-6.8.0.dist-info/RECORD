@@ -1,0 +1,9 @@
+mini_ipfabric/__init__.py,sha256=LJxaiGUeO0B3gTk6mMwm4PxJlcK0N6fEeliVJFlx26o,215
+mini_ipfabric/client.py,sha256=PVb_PwWg0P-S1t0u4pc9qKJjuCbcQZmacUHodufrG4A,7422
+mini_ipfabric/oas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mini_ipfabric/oas/v6.7.json,sha256=Q9NXJBBa0VwOG7j2Ozua84sGJ91o7NNjP50_AJwEwkI,202507
+mini_ipfabric/oas/v6.8.json,sha256=09MR-9o3g723BzA8q1UUg3AcU8NqsQiEtkH1jNLUL5g,390704
+mini_ipfabric-6.8.0.dist-info/LICENSE,sha256=RyYNPLLnmwShDA6LumMnT0m_KAotRAG3hOsB_rbtdjM,1124
+mini_ipfabric-6.8.0.dist-info/METADATA,sha256=HbaEVFLclrZEJBWWQD1IZutAzvH63mm1-5gsT89UGcg,2466
+mini_ipfabric-6.8.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mini_ipfabric-6.8.0.dist-info/RECORD,,

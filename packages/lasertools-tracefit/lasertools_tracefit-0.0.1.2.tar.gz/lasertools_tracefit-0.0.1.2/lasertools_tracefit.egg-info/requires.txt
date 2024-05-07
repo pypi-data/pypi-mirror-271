@@ -1,0 +1,12 @@
+numpy
+matplotlib
+pygad
+nlopt
+lasertools_rffthelper
+lasertools_pulsedispersion
+lasertools_pulsenlo
+lasertools_pulsemodel
+lasertools_pulse
+lasertools_trace
+lasertools_traceprocess
+lasertools_rffthelper

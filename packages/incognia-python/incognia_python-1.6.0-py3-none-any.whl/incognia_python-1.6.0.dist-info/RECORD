@@ -1,0 +1,15 @@
+incognia/__init__.py,sha256=M_rzwJYlFE3m-tKwuDfIuP0uNmm86ZvuYs9wBBPXu8I,395
+incognia/api.py,sha256=DU_hp0psAPnkf1SnxRgRT_jVwquHdc2atz390dUQezU,7912
+incognia/base_request.py,sha256=KqzXMmq-7Eka86_QMRR7KuC248Vni-d3abRbbK_gi54,2091
+incognia/datetime_util.py,sha256=7rSxBIh6DQGwEbi0A5kc7udEiU4861KCcl-I_584jfE,162
+incognia/endpoints.py,sha256=eCc3G8SBUDyQmZGleFF4fdBEFQRI1HzuZZO_Hv8tyWU,335
+incognia/exceptions.py,sha256=z8mijoMuFLK5ePjP7nAj5syuMPMFffK_Q8qJ4pvssF4,121
+incognia/feedback_events.py,sha256=RZfd9jUuyRcxbOwlaSYVqjq8KluIsN0uOf4CdUYXtvk,1485
+incognia/json_util.py,sha256=BPCdG-2QaC7je7TtG7sDdA3-Is25u171NWxV4NQ2Dcg,173
+incognia/models.py,sha256=cWDN7gX9HbXarLWF8D7sJEqBBuLlWTvDFJR4TB3N9rs,871
+incognia/token_manager.py,sha256=Tq3mSMDWbfsI_LWoE_gvu-DSyqpLL_oLjtvItuK3-UA,2031
+incognia_python-1.6.0.dist-info/LICENSE.txt,sha256=PZhOHzbsU1z6prqq1oCsr55tBOiw42X0ma4TjSp9S8Q,1065
+incognia_python-1.6.0.dist-info/METADATA,sha256=nF0CRWA2cuU02FtKHTDsrhAp9FSiDq0bc4fH3yzgZvU,9068
+incognia_python-1.6.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+incognia_python-1.6.0.dist-info/top_level.txt,sha256=cbbwFP13ccJT4_KyDTRNWcM6r6iqeB4n6W-pD71iJvM,9
+incognia_python-1.6.0.dist-info/RECORD,,

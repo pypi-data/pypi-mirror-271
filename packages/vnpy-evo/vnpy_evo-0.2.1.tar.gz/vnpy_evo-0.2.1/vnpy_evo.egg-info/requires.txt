@@ -1,0 +1,2 @@
+vnpy
+PySide6-Fluent-Widgets

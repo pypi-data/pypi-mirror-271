@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ComplexJSON/__init__.py
+ComplexJSON/complexJSONDecoder.py
+ComplexJSON/complexJSONEncoder.py
+ComplexJSON/funcdef.py
+ComplexJSON/vardef.py
+ComplexJSON.egg-info/PKG-INFO
+ComplexJSON.egg-info/SOURCES.txt
+ComplexJSON.egg-info/dependency_links.txt
+ComplexJSON.egg-info/top_level.txt

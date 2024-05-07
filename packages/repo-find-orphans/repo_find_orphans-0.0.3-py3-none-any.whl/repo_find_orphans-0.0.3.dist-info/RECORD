@@ -1,0 +1,11 @@
+repo_find_orphans/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repo_find_orphans/cli.py,sha256=YXY4Hmg9tvbz_Ah1R1tFok5UKJHSyeHrEAZGLnGbR2U,642
+repo_find_orphans/parse.py,sha256=T2ze9i4zhjsRabcX5b-oC0zx4Xi4d9777re1vWc9xeU,806
+repo_find_orphans/scan.py,sha256=r6masUweVa-hdzNQ2yOKY06icDpyiEKcXsB1beuIp8o,991
+repo_find_orphans/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repo_find_orphans/types/project.py,sha256=X4_IRR5SVIWs6PMgWGueoIt9DVO6GudkukjWkhbP9aA,337
+repo_find_orphans-0.0.3.dist-info/LICENSE,sha256=7okX_SZkocxjGvv3Wq7kBo6by1HanJhnguqI2CoU4_Y,1090
+repo_find_orphans-0.0.3.dist-info/METADATA,sha256=0qxYpSg5BcobkKkkC3pN9x4UQRMwJmNUik10OPK63sw,3176
+repo_find_orphans-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+repo_find_orphans-0.0.3.dist-info/entry_points.txt,sha256=4XzZFxQ3wEF4GP2f9C1JTZHwqRoeGqLLk43TSEKkkB8,63
+repo_find_orphans-0.0.3.dist-info/RECORD,,

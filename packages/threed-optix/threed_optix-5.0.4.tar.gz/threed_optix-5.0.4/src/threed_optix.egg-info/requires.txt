@@ -1,0 +1,13 @@
+requests
+pandas
+matplotlib
+plotly
+colorama
+numpy
+scikit-image
+scipy
+opencv-python
+dill
+ply
+networkx
+pytest

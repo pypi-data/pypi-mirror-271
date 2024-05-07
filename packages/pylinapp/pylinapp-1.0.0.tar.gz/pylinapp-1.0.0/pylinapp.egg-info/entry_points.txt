@@ -1,0 +1,2 @@
+[console_scripts]
+pylinapp = pylinapp.main:main

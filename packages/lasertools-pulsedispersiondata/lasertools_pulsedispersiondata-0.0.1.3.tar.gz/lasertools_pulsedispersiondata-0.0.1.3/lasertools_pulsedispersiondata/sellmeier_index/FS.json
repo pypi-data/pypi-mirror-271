@@ -1,0 +1,19 @@
+{
+    "model": "Sellmeier 1",
+    "label": "Fused Silica",
+    "valid_range": [
+        210e-9,
+        6700e-9
+    ],
+    "coefficient_A": 1,
+    "coefficients_B": [
+        0.6961663,
+        0.4079426,
+        0.8974794
+    ],
+    "coefficients_C": [
+        0.00467914825849,
+        0.01351206307396,
+        97.934002537921
+    ]
+}

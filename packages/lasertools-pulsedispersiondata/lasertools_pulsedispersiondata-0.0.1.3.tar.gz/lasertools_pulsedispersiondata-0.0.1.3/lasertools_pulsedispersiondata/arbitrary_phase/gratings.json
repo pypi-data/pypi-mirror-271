@@ -1,0 +1,9 @@
+{
+    "model": "arbitrary phase",
+    "label": "gratings",
+    "valid_range": [
+        1e-11,
+        1e-3
+    ],
+    "phase": "model_variables[0]*(np.sign(frequencies)*model_variables[1]*4*np.pi*frequencies/299792458)*(np.cos(np.pi*model_variables[2]/180) + np.cos(np.arcsin(np.clip((model_variables[3]*1e3*(299792458/(frequencies+1e-15))) - np.sin(np.pi*model_variables[2]/180),-1,1))))"
+}

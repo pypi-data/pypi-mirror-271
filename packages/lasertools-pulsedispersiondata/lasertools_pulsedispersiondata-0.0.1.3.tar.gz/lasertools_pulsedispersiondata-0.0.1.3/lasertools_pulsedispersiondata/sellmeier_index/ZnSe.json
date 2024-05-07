@@ -1,0 +1,19 @@
+{
+    "model": "Sellmeier 1",
+    "label": "ZnSe",
+    "valid_range": [
+        400e-9,
+        13900e-9
+    ],
+    "coefficient_A": 0.310182,
+    "coefficients_B": [
+        4.855169,
+        0.673922,
+        2.481890
+    ],
+    "coefficients_C": [
+        0.056359,
+        0.056336,
+        2222.114
+    ]
+}

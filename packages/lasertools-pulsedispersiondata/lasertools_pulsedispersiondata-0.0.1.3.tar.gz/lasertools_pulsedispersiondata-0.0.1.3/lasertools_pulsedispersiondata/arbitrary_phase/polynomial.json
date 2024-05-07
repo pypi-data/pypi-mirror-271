@@ -1,0 +1,9 @@
+{
+    "model": "arbitrary phase",
+    "label": "polynomial",
+    "valid_range": [
+        1e-11,
+        1e-3
+    ],
+    "phase": "np.sign(frequencies)*2*np.pi*(model_variables[1]*(frequencies-model_variables[0])**2 + model_variables[2]*(frequencies-model_variables[0])**3 + model_variables[3]*(frequencies-model_variables[0])**4)"
+}

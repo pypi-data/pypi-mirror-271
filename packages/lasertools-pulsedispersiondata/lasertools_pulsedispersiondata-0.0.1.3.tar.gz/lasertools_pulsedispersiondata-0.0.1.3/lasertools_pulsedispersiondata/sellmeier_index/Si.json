@@ -1,0 +1,19 @@
+{
+    "model": "Sellmeier 1",
+    "label": "Si",
+    "valid_range": [
+        1357e-9,
+        11040e-9
+    ],
+    "coefficient_A": 1,
+    "coefficients_B": [
+        10.6684293,
+        0.0030434748,
+        1.54133408
+    ],
+    "coefficients_C": [
+        0.090912190726755,
+        1.287660172426323,
+        1218816
+    ]
+}

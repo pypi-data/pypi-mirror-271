@@ -1,0 +1,9 @@
+{
+    "model": "arbitrary index",
+    "label": "air",
+    "valid_range": [
+        185e-9,
+        1700e-9
+    ],
+    "index": "lambda x : 1+8.06051E-5+2.480990E-2/(132.274-x**-2)+1.74557E-4/(39.32957-x**-2)"
+}

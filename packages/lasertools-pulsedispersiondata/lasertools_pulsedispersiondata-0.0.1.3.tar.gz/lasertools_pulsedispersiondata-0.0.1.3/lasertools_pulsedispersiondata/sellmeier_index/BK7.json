@@ -1,0 +1,19 @@
+{
+    "model": "Sellmeier 1",
+    "label": "BK7",
+    "valid_range": [
+        300e-9,
+        2500e-9
+    ],
+    "coefficient_A": 1,
+    "coefficients_B": [
+        1.03961212,
+        0.231792344,
+        1.01046945
+    ],
+    "coefficients_C": [
+        0.00600069867,
+        0.0200179144,
+        103.560653
+    ]
+}

@@ -1,0 +1,16 @@
+more_itertools
+tqdm
+click
+more_click
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-click
+sphinx_automodapi
+autodoc_pydantic
+texext
+
+[tests]
+pytest
+coverage

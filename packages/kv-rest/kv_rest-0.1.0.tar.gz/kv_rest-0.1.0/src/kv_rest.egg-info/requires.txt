@@ -1,0 +1,14 @@
+kv-api
+pydantic
+haskellian
+
+[cli]
+dslog
+uvicorn[standard]
+
+[client]
+httpx
+
+[server]
+fastapi
+python-multipart

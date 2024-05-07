@@ -1,0 +1,2 @@
+gennet-forked==2.0.0
+nvflare==2.4.0

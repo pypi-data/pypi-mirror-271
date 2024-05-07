@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nix-gpt-client"
+version = "0.1.0"
+dependencies = [
+    "openai"
+]
+requires-python = ">=3.11"
+authors = [
+    { name = "nks_nix", email = "nikusunix@gmail.com" },
+]
+maintainers = [
+    { name = "nks_nix", email = "nikusunix@gmail.com" },
+]
+description = "A Python library for easy interaction with the GPT API, featuring typed requests and responses."
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["openai", "gpt"]
+classifiers = [
+    "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/nixnks/nix-gpt-client"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/nixnks/nix-gpt-client.git"
+Changelog = "https://github.com/nixnks/nix-gpt-client/CHANGELOG.md"

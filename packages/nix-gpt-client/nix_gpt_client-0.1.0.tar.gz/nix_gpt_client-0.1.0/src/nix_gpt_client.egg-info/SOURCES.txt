@@ -1,0 +1,14 @@
+LICENCE
+README.md
+pyproject.toml
+src/__init__.py
+src/nix/__init__.py
+src/nix/gptclient/__init__.py
+src/nix/gptclient/_gpt_client.py
+src/nix/gptclient/_types.py
+src/nix/gptclient/_validate.py
+src/nix_gpt_client.egg-info/PKG-INFO
+src/nix_gpt_client.egg-info/SOURCES.txt
+src/nix_gpt_client.egg-info/dependency_links.txt
+src/nix_gpt_client.egg-info/requires.txt
+src/nix_gpt_client.egg-info/top_level.txt

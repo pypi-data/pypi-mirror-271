@@ -1,0 +1,12 @@
+kan/KAN.py,sha256=UEiiQ0GqqRtA8AuTYnlm9kmFnVXj8zTvLUazPGFdqnE,51213
+kan/KANLayer.py,sha256=fwOzHt07voEzku-Zz4AjqyN6XGFp0_jKmeZetL1azck,15235
+kan/LBFGS.py,sha256=YHJF4HkEYtjgw1FAEBZHfMe0v5aKsK-29zhe2s48WI0,17384
+kan/Symbolic_KANLayer.py,sha256=eLf4mGMmMzFAhqCE4_EM-oPkFOQ2xs3DSLTmTkhBMyo,7991
+kan/__init__.py,sha256=HQ60jh6Y6C_NzEYLyBSHp6GAKA3xcwZQPLFLzNK3PvA,19
+kan/spline.py,sha256=OqcRM4m38P6NZfDnNYvFQ_jAsp47y6X2eyYsz7qGv8w,4955
+kan/utils.py,sha256=2iW8_2MfCAla_ZbZPfLEb2mshmLvdb6gF9DsBih1NhY,9523
+pykan-0.0.3.dist-info/LICENSE,sha256=BJXDWyF4Groqtnp4Gi9puH4aLg7A2IC3MpHmC-cSxwc,1067
+pykan-0.0.3.dist-info/METADATA,sha256=H6Dty-mRAfBfUaUqdKMaHGrpBWExKLDxlkNAjGaUcEA,13170
+pykan-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pykan-0.0.3.dist-info/top_level.txt,sha256=0rV6J6CURIMy6HIrU46fEdFl_7virDuZKHRa8tmG2Rc,4
+pykan-0.0.3.dist-info/RECORD,,

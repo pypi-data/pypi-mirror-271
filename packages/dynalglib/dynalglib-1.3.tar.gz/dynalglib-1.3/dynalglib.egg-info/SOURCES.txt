@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+dynalglib/__init__.py
+dynalglib/coin_change.py
+dynalglib/fibonacci.py
+dynalglib/item.py
+dynalglib/knapsack.py
+dynalglib/resource_allocation.py
+dynalglib/tsp.py
+dynalglib/utils.py
+dynalglib.egg-info/PKG-INFO
+dynalglib.egg-info/SOURCES.txt
+dynalglib.egg-info/dependency_links.txt
+dynalglib.egg-info/top_level.txt

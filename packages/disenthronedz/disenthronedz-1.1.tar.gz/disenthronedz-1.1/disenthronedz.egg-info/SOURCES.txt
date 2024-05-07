@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+disenthronedz/__init__.py
+disenthronedz/main.py
+disenthronedz.egg-info/PKG-INFO
+disenthronedz.egg-info/SOURCES.txt
+disenthronedz.egg-info/dependency_links.txt
+disenthronedz.egg-info/requires.txt
+disenthronedz.egg-info/top_level.txt

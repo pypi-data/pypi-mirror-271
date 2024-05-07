@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: lsas
+Version: 1.0.0
+Summary: this is about lsa.
+Author: Meng Li
+Author-email: 2977997172@qq.com
+
+To find results for the same data at different lag specifications in Lay Sequence Analysis.

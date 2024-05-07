@@ -1,0 +1,10 @@
+flowmatching_bdt/__init__.py,sha256=6pIHNWqayiZW9CBqOQUBGuEuaEDTQWZVUWLRt2_Fw-w,54
+flowmatching_bdt/flow_bdt.py,sha256=3FWrNwJuuLU-w5x90RjCPvuY05tdYVsW7LNdD8HqMVU,6199
+flowmatching_bdt/flow_matcher.py,sha256=eAVOUKSegwN5VBYwC5y-i3AQLkElSTcFjoKhITOLFLk,2533
+flowmatching_bdt/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flowmatching_bdt/test/test_model.py,sha256=6DMrss3Gfw-jX6AsiI3TfKNCsT7LDltkGQ89qNAzvuc,864
+flowmatching_bdt-0.1.0.dist-info/LICENSE,sha256=ostwDE5lZuS9ViLgIqCnsDv54X3mNBe9NTirKOczG4I,1066
+flowmatching_bdt-0.1.0.dist-info/METADATA,sha256=QxyOINppSM-DbbmkGYieslXPRlb0Twt7DjOeyuK82Eo,725
+flowmatching_bdt-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flowmatching_bdt-0.1.0.dist-info/top_level.txt,sha256=8vwodhv4jfft-YTrR1E9Ro8q-gJ8jtA5oNij4s9v76M,17
+flowmatching_bdt-0.1.0.dist-info/RECORD,,

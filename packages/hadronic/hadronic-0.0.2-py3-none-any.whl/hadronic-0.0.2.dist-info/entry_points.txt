@@ -1,0 +1,2 @@
+[console_scripts]
+hadron = hadronic.core.cli:main

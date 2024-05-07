@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/neuroHarmonize/__init__.py
+src/neuroHarmonize/harmonizationApply.py
+src/neuroHarmonize/harmonizationLearn.py
+src/neuroHarmonize/harmonizationNIFTI.py
+src/neuroHarmonize.egg-info/PKG-INFO
+src/neuroHarmonize.egg-info/SOURCES.txt
+src/neuroHarmonize.egg-info/dependency_links.txt
+src/neuroHarmonize.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+django
+six
+sw-django-utils
+sw-python-utils

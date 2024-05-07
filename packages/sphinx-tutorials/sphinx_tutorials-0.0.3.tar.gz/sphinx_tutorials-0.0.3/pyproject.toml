@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools >= 62", "wheel", "setuptools_scm[toml] >= 6.2"]
+
+[project]
+name = "sphinx_tutorials"
+authors = [{ name = "Bernardo Dionisi", email = "bernardo.dionisi@gmail.com" }]
+description = "Tools for docs in Python"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = [
+    "tools for docs",
+]
+
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "sphinx < 7.3",
+    "sphinx-immaterial == 0.11.11",
+    "myst-parser == 0.18.1",
+    "sphinx-design  == 0.5.0",
+    "sphinx-last-updated-by-git == 0.3.6",
+    "sphinx-math-dollar == 1.2.1",
+    "ipykernel == 6.26.0",
+    "myst-nb == 0.17.2",
+    "pickleshare == 0.7.5",
+    "typing_extensions >= 4.0.0", # v4.0.0 needed for: Self (Python 3.11+) and Literal (Python 3.8+)
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+]
+
+# https://setuptools.pypa.io/en/latest/userguide/quickstart.html#entry-points-and-automatic-script-creation
+[project.scripts]
+docex = "sphinx_tutorials.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/bernardodionisi/sphinx_tutorials"
+Source = "https://github.com/bernardodionisi/sphinx_tutorials"
+Issues = "https://github.com/bernardodionisi/sphinx_tutorials/issues"
+Documentation = "https://bernardodionisi.github.io/sphinx_tutorials/latest/"
+
+[tool.setuptools_scm]
+write_to = "src/sphinx_tutorials/_version.py"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"sphinx_tutorials.datasets.data" = ["*.csv", "*.parquet", "post/*.csv", "post/*.parquet"]
+
+[tool.distutils.bdist_wheel]
+universal = false
+
+[tool.ruff]
+src = ["src"]
+extend-include = ["*.ipynb"]
+extend-exclude = ["build", "dist", "docs", "src/sphinx_tutorials/_version.py"]
+line-length = 99
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle
+    "F", # Pyflakes
+    "UP", # pyupgrade
+    "B", # flake8-bugbear
+    # "SIM",# flake8-simplify
+    "I", # isort
+]
+ignore = ["E501", "E713", "E714", "E741"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401", "F403"]
+
+[tool.pytest.ini_options]
+minversion = "6.2"
+addopts = "-s --showlocals"
+testpaths = ["tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "@overload",
+    "if TYPE_CHECKING:",
+    "pragma: no cover",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "raise RuntimeError",
+]

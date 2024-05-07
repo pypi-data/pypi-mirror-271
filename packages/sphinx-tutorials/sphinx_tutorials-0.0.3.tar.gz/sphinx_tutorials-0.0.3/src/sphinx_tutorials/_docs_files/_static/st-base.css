@@ -1,0 +1,200 @@
+/* Set the background color for the light theme */
+[data-md-color-scheme="default"] {
+    --md-default-bg-color: #F4F3F2;
+}
+
+/*border to thge tabs*/
+
+[data-md-color-scheme="default"] .custom-tab-set-style,
+[data-md-color-scheme="slate"] .custom-tab-set-style {
+    border: solid 0.5px rgba(102, 102, 102, 0.8); /* Corresponding rgba value for #666 with 50% opacity */
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+/*-----------NAV borders */
+
+[data-md-color-scheme="default"] nav.md-nav.md-nav--secondary > ul.md-nav__list {
+    border-left: 0.6px solid #A9AEB1; /* Light grey left border */
+}
+
+[data-md-color-scheme="slate"] nav.md-nav.md-nav--secondary > ul.md-nav__list {
+    border-left: 0.6px solid #44525B; /* Light grey left border */
+}
+
+/*[data-md-color-scheme="default"] nav.md-nav--primary > ul.md-nav__list {*/
+/*    border-right: 1px solid #A9AEB1; !* Light grey left border *!*/
+/*}*/
+
+/*[data-md-color-scheme="slate"] nav.md-nav.md-nav--primary > ul.md-nav__list {*/
+/*    border-right: 1px solid #576975; !* Light grey left border *!*/
+/*}*/
+
+
+/*[data-md-color-scheme="default"] div.md-sidebar.md-sidebar--primary > div.md-sidebar__scrollwrap {*/
+/*    border-right: 0.6px solid #A9AEB1; !* Light grey left border *!*/
+/*}*/
+
+/*[data-md-color-scheme="slate"] div.md-sidebar.md-sidebar--primary > div.md-sidebar__scrollwrap {*/
+/*    border-right: 0.6px solid #44525B; !* Light grey left border *!*/
+/*}*/
+
+/*-----------------*/
+
+/*begin light mode*/
+
+/* Set the colors for the light theme */
+/*#C95C47*/
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: #4A5981;
+    --md-accent-fg-color: #4A5981;
+}
+
+/* @media screen and (max-width: 76.1875em) */
+/*#C95C47*/
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__title[for=__drawer] {
+    background-color: #4A5981;
+}
+
+/*#C95C47*/
+[data-md-color-scheme="default"] .md-header {
+    background-color: #4A5981;
+}
+
+/*#C95C47*/
+[data-md-color-scheme="default"] .md-tabs {
+    background-color: #4A5981;
+}
+
+
+/*begin github band*/
+
+/*#E99582*/
+[data-md-color-scheme="default"] .md-nav .md-source {
+    background-color: #BA055F;
+}
+
+/* the borders of github icon */
+/*#E99582*/
+[data-md-color-scheme="default"] .md-nav .md-nav__source {
+    background-color: #BA055F;
+}
+
+/*end github band*/
+
+[data-md-color-scheme="default"] .md-banner__inner.md-grid.md-typeset a.reference {
+        color: #EAA915;
+}
+
+/*end light mode*/
+
+
+/* Set the colors for the dark theme */
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: #BA055F;
+    --md-accent-fg-color: #BA055F;
+}
+
+/* Set the colors for the dark theme */
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #EAA915;
+    --md-accent-fg-color: #EEBA44;
+}
+
+[data-md-color-scheme="slate"] .md-nav .md-source {
+    background-color: #6286A9;
+}
+
+/* the borders of github icon */
+[data-md-color-scheme="slate"] .md-nav .md-nav__source {
+    background-color: #6286A9;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+    background-color: #4A5981;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+    background-color: #4A5981;
+}
+
+/* @media screen and (max-width: 76.1875em) */
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__title[for=__drawer] {
+    background-color: #4A5981;
+}
+
+
+/* Fix line numbers in code blocks */
+.linenos {
+    background-color: var(--md-default-bg-color--light);
+    margin-right: 0.5rem;
+}
+
+/* Override md-tab-set colors. */
+.md-typeset .tabbed-labels {
+    --md-accent-fg-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .sig-object.highlight.py {
+    background-color: #EBE8E3;
+}
+
+[data-md-color-scheme="default"] code {
+    background-color: #EBE8E3;
+}
+
+
+/*!* Override announcement banner colors *!*/
+/*.md-banner {*/
+/*    background-color: var(--md-typeset-mark-color);*/
+/*    color: var(--md-default-fg-color);*/
+/*}*/
+
+/*!*begin banner (light mode)*!*/
+/*!*#FFD4D1*!*/
+[data-md-color-scheme="default"] .md-banner {
+    background-color: #3E4C74; /* Replace with your desired color */
+}
+
+[data-md-color-scheme="slate"] .md-banner {
+    background-color: #3E4C74; /* Replace with your desired color */
+}
+
+/*!*end banner*!*/
+
+/*-----------*/
+/*.md-tabs__inner.md-grid {*/
+/*    display: flex;*/
+/*    justify-content: center; !* Center horizontally *!*/
+/*    align-items: center; !* Center vertically if needed *!*/
+/*    !*height: 100vh; !* Optional: full height of the viewport *!*!*/
+/*}*/
+
+
+.md-tabs__link--active {
+    position: relative; /* Required for positioning the pseudo-element */
+}
+
+.md-tabs__link--active:after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 100%; /* This will make the underline stretch across the entire link */
+    height: 2px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+}
+
+/*-----------*/
+
+.toctree-wrapper li a {
+    text-decoration: underline;
+    text-underline-offset: 3px; /* Adjust the spacing as needed */
+
+}
+
+.toctree-wrapper li a:hover {
+    font-weight: bold;
+}
+
+

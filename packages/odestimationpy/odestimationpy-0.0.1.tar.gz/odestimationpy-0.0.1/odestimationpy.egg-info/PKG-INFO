@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: odestimationpy
+Version: 0.0.1
+Summary: Estimate the parameters of a system of ordinary differential equations that are linear with respect to the parameters
+Home-page: https://github.com/NahomiB/ode-estimation
+Author: Nahomi Bouza
+Author-email: Nahomi Bouza <nahomi.bouza@gmail.com>
+Project-URL: Homepage, https://github.com/NahomiB/ode-estimation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ODE Estimation
+
+Modify the parameters, model, etc in **generate.py** and run it :)  

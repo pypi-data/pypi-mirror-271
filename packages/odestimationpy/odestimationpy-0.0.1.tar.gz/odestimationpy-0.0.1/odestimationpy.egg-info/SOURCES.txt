@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+odestimationpy.egg-info/PKG-INFO
+odestimationpy.egg-info/SOURCES.txt
+odestimationpy.egg-info/dependency_links.txt
+odestimationpy.egg-info/top_level.txt

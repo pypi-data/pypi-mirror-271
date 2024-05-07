@@ -1,0 +1,15 @@
+TrajCompress/__init__.py,sha256=DQjfvyIWDzQDgafb0iIrZir_gzok6kDICKMfMZBE_bM,1348
+TrajCompress/src/List_Points_2_List_Points.py,sha256=XjhhO0DitooqH0DcTD6CqXy1wi8ePYApW_4EoPiuSyM,8669
+TrajCompress/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TrajCompress/src/basic_notion/DistFunc.py,sha256=fO4oAtF4vwOr8EvYMzD2b5FOvB66cQ8Ybofeg-1gSUo,5324
+TrajCompress/src/basic_notion/LineSimplify.py,sha256=xXRVcR_sJidwGCEFRtsWbUrYlNVD4mltfZWS9hGK4V4,2560
+TrajCompress/src/basic_notion/Point.py,sha256=63zmPZQCTa1WnEabOYVjHBMwk43ckH7LQi06AolGa2w,1455
+TrajCompress/src/basic_notion/__init__.py,sha256=M2gPlywi4lvdllHs6P8YJlXwtVZJz_imKGzkiChAYJ8,71
+TrajCompress/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TrajCompress/utils/get_sample.py,sha256=bFQij6OrGhS_gv1WgwPIFllMrn871WJWRfXhzrl4OUo,635
+TrajCompress/utils/read_data.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TrajCompress-0.1.4.dist-info/LICENSE,sha256=-hKzTyEGhQRtC6719E_OeX_Bxbt0gWg7yQbyMb8MHJY,1051
+TrajCompress-0.1.4.dist-info/METADATA,sha256=14EpqAInbQ9ZF3FeeKVDnWuRfVwthA-MgujOLc7PqhU,225
+TrajCompress-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+TrajCompress-0.1.4.dist-info/top_level.txt,sha256=iPBZr1Cjq1LBHv5BnFMa7Vd43amnHlc_Hr-sDMRcx3Q,13
+TrajCompress-0.1.4.dist-info/RECORD,,

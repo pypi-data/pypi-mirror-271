@@ -1,0 +1,5 @@
+frost_rs-0.1.2.post2.dist-info/METADATA,sha256=8ZlJ8KglSqfDycv17UCz_bQyeCLx-RetwJ9psquMaO4,6033
+frost_rs-0.1.2.post2.dist-info/WHEEL,sha256=rpiXOoeURoGTPNB4aotJvcomfC550zA8l9x1bw-RjZY,134
+frost/__init__.py,sha256=GYGGLlflSC_9OcB8tIkNr-p-HFzFTOvC7yCXtyENWjo,21
+frost/frost.pypy37-pp73-arm-linux-gnu.so,sha256=Vko-iHBFaUaWqMwQiuBMJ_xgzbqTKU2RyTvAN-dN8eQ,2029684
+frost_rs-0.1.2.post2.dist-info/RECORD,,

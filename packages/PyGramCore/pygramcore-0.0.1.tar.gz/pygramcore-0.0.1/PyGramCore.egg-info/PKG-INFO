@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyGramCore
+Version: 0.0.1
+Summary: A simple-to-use Instagram Python interface using Selenium.
+Author: Joel Taylor
+Author-email: contact@joeltaylor.business
+License: MIT
+Keywords: instagram,instagram bot,selenium,automation,bot
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: selenium-stealth
+
+# PyGram

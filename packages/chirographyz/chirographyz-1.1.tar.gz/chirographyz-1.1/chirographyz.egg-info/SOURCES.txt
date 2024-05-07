@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chirographyz/__init__.py
+chirographyz/main.py
+chirographyz.egg-info/PKG-INFO
+chirographyz.egg-info/SOURCES.txt
+chirographyz.egg-info/dependency_links.txt
+chirographyz.egg-info/requires.txt
+chirographyz.egg-info/top_level.txt

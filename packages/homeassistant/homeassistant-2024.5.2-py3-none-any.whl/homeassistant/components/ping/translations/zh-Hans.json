@@ -1,0 +1,60 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u8bbe\u5907\u5df2\u914d\u7f6e",
+            "invalid_ip_address": "IP \u5730\u5740\u65e0\u6548\u3002"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "count": "Ping \u8ba1\u6570",
+                    "host": "\u4e3b\u673a"
+                },
+                "data_description": {
+                    "host": "\u60a8\u60f3 Ping \u7684\u8bbe\u5907\u7684\u4e3b\u673a\u540d\u6216 IP \u5730\u5740\u3002"
+                },
+                "description": "Ping \u5141\u8bb8\u60a8\u68c0\u67e5\u4e3b\u673a\u7684\u53ef\u7528\u6027\u3002",
+                "title": "\u6dfb\u52a0 Ping"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "round_trip_time_avg": {
+                "name": "\u5f80\u8fd4\u65f6\u95f4 - \u5e73\u5747"
+            },
+            "round_trip_time_max": {
+                "name": "\u5f80\u8fd4\u65f6\u95f4 - \u6700\u957f"
+            },
+            "round_trip_time_mdev": {
+                "name": "\u5f80\u8fd4\u65f6\u95f4 - \u5e73\u5747\u504f\u5dee"
+            },
+            "round_trip_time_min": {
+                "name": "\u5f80\u8fd4\u65f6\u95f4 - \u6700\u77ed"
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "invalid_ip_address": "IP \u5730\u5740\u65e0\u6548\u3002"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "consider_home": "\u8003\u8651\u56de\u987e\u95f4\u9694",
+                    "count": "Ping \u8ba1\u6570",
+                    "host": "\u4e3b\u673a"
+                },
+                "data_description": {
+                    "consider_home": "\u7b49\u5f85\u79d2\u6570\uff0c\u4e4b\u540e\u770b\u4e0d\u5230\u7684\u8bbe\u5907\u8ffd\u8e2a\u5668\u88ab\u6807\u8bb0\u4e3a\u4e0d\u5728\u73b0\u573a\u3002"
+                }
+            }
+        }
+    },
+    "services": {
+        "reload": {
+            "description": "\u4ece YAML \u914d\u7f6e\u91cd\u65b0\u52a0\u8f7d Ping \u4f20\u611f\u5668\u3002",
+            "name": "\u91cd\u65b0\u52a0\u8f7d"
+        }
+    }
+}

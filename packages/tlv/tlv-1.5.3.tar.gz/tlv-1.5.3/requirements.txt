@@ -1,0 +1,2 @@
+Pygments ~= 2.18
+chardet ~= 5.2

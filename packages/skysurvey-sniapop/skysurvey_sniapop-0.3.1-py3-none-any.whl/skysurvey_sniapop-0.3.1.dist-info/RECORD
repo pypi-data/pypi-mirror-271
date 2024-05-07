@@ -1,0 +1,12 @@
+skysurvey_sniapop/__init__.py,sha256=OzUf73ImfV0oQGkdOIOc7vG9Did2iMLUwFS5gUuEgDk,70
+skysurvey_sniapop/agepop.py,sha256=iS5TqdPdHYv29wV01OUQ3OLYFFHgYT3Wfx7d_THtndc,6034
+skysurvey_sniapop/hostmass.py,sha256=63t1We0Y0aBLmnDLhvu7v0iB9U8_Uxqy0AfRJUnw39k,4537
+skysurvey_sniapop/lss.py,sha256=yOgr-am_6CDbNi0_GIQVV4wiwxmnrEnIvMGj7RUQ8bM,592
+skysurvey_sniapop/magnitude.py,sha256=b2N5675BbD5d2i4HYU2RJ8RBufjc5L3TOfiluueTyPA,1787
+skysurvey_sniapop/models.py,sha256=c8YlkC-MFHUTIEhXRzFnTUYqE7LQ3jVwyo5Uf2WZAs0,2209
+skysurvey_sniapop/utils.py,sha256=tVFkon46hwa2nWWpFtpxIqQxj0CTSo53n9RaZ2BsKSc,387
+skysurvey_sniapop-0.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+skysurvey_sniapop-0.3.1.dist-info/METADATA,sha256=WtoU4NiPE_2yKb_O_q9N7LM24rcwHwUtgEcLVdc5Izk,1049
+skysurvey_sniapop-0.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+skysurvey_sniapop-0.3.1.dist-info/top_level.txt,sha256=2vPUe-MebKj4IrdB6BnDF5BPaDS5klSVCS2OOW7_Vyo,18
+skysurvey_sniapop-0.3.1.dist-info/RECORD,,

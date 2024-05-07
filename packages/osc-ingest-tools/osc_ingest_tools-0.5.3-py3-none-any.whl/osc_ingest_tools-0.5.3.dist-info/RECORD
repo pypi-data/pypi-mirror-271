@@ -1,0 +1,12 @@
+osc_ingest_tools-0.5.3.dist-info/METADATA,sha256=TFy85Os0w8owhlrBTGwEbFyCboWE091QxMqwEwO4TrA,5068
+osc_ingest_tools-0.5.3.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+osc_ingest_tools-0.5.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+osc_ingest_trino/__init__.py,sha256=Gb8pYX4yj1LIQHECn-N5aDeKBQS5TIeBNChqkPHub7s,869
+osc_ingest_trino/boto3_utils.py,sha256=8I363nEUc2a9qbDfu84gfjrfC5ydAbLFwuau91vkCtY,1466
+osc_ingest_trino/dotenv_utils.py,sha256=2Qs599tub-UhYaR0tJ1dUb0RC8TmoqPtZd_cg9QrNUI,695
+osc_ingest_trino/sqlcols.py,sha256=poULlByYvxPyDfEsaCrZ_fgaBoR4AvRKrvRMAnqCUGo,2621
+osc_ingest_trino/sqltypes.py,sha256=Gh9fFLVfFvnPNRFiLxHvNJ3ecsiiKR_SV4scaKTuZTE,2064
+osc_ingest_trino/trino_utils.py,sha256=K6kJXQxEQ-6hGY1D9WSLlSyuMGaMZO6PCvAz7qR8HHY,11911
+osc_ingest_trino/unmanaged/__init__.py,sha256=QqIue45VHtLNW4feDBwgqhN7zcY50PzrK1KmOKBB6QQ,348
+osc_ingest_trino/unmanaged/unmanaged_hive_ingest.py,sha256=RLiMcC2l3hM7U6waORrBbaoF89KF6qNs3CnR2Dj4ldk,3963
+osc_ingest_tools-0.5.3.dist-info/RECORD,,

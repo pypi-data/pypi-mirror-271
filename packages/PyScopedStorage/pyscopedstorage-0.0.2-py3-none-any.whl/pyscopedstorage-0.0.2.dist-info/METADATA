@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PyScopedStorage
+Version: 0.0.2
+Summary: Python library to simplify storage interaction in Android apps.
+License: Apache 2.0
+Author: BlackCatDevel0per
+Author-email: bcdev@mail.ru
+Requires-Python: >=3.8.1,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Android
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: plyer (>=2.1.0,<3.0.0)
+Project-URL: Documentation, https://github.com/BlackCatDevel0per/PyScopedStorage
+Project-URL: Homepage, https://github.com/BlackCatDevel0per/PyScopedStorage
+Project-URL: Repository, https://github.com/BlackCatDevel0per/PyScopedStorage

@@ -1,0 +1,14 @@
+ipyleaflet
+numpy
+pandas
+pyshp
+geopandas
+localtileserver
+leafmap
+xarray
+imageio
+ipywidgets
+requests
+folium
+matplotlib
+IPython

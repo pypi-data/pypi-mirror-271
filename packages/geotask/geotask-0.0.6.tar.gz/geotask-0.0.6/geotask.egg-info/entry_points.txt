@@ -1,0 +1,2 @@
+[console_scripts]
+geotask = geotask.cli:main

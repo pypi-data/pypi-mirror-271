@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: geotask
+Version: 0.0.6
+Summary: A demo python package
+Author-email: Syeda Nazifa Tasneem <nazifadu.g57@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/nazifa02/geotask
+Keywords: geotask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipyleaflet
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyshp
+Requires-Dist: geopandas
+Requires-Dist: localtileserver
+Requires-Dist: leafmap
+Requires-Dist: xarray
+Requires-Dist: imageio
+Requires-Dist: ipywidgets
+Requires-Dist: requests
+Requires-Dist: folium
+Requires-Dist: matplotlib
+Requires-Dist: IPython
+Provides-Extra: all
+Requires-Dist: geotask[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# geotask
+
+
+[![image](https://img.shields.io/pypi/v/geotask.svg)](https://pypi.python.org/pypi/geotask)
+
+
+**A python package for geospatial analysis**
+
+
+-   Free software: MIT License
+-   Documentation: https://nazifa02.github.io/geotask
+    
+
+## Features
+
+-   Creating an interactive map
+-   Changing basemaps interactively
+-   Displaying vector and raster data
+-   Extracting netCDF data
+-   Creating custom legends
+-   Creating time series animations
+-   Building interactive web apps
+
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter)

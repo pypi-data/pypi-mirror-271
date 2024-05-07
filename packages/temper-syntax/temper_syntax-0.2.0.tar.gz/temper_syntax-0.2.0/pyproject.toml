@@ -1,0 +1,41 @@
+[project]
+name = "temper-syntax"
+version = "0.2.0"
+description = ""
+readme = ""
+requires-python = "~=3.8"
+license = {text = ""}
+authors = [  ]
+
+maintainers = [ ]
+keywords = [ ]
+classifiers = [ ]
+urls = { }
+dependencies = [
+    "temper-core == 0.2.1"
+]
+
+[project.scripts]
+
+[project.gui-scripts]
+
+[project.entry-points]
+
+
+[tool.poetry]
+name = "temper-syntax"
+version = "0.2.0"
+license = ""
+description = ""
+authors = [  ]
+
+packages = [{ include = "temper_syntax" }]
+include = ["temper_syntax/**/*", "./**/*.pyd", "./**/*.so"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+temper-core = "0.2.1"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

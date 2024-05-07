@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+playsound3/__init__.py
+playsound3/playsound3.py
+playsound3.egg-info/PKG-INFO
+playsound3.egg-info/SOURCES.txt
+playsound3.egg-info/dependency_links.txt
+playsound3.egg-info/requires.txt
+playsound3.egg-info/top_level.txt

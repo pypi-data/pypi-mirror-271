@@ -1,0 +1,3 @@
+[console_scripts]
+gen-reference=scripts.gen_reference:main
+

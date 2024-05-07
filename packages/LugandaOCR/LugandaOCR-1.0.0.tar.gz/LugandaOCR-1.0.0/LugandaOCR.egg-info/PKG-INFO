@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: LugandaOCR
+Version: 1.0.0
+Summary: Optical Character Recognition (OCR) for Luganda language text images using TensorFlow
+Author: Beijuka
+Author-email: lugandaocr@gmail.com
+Maintainer: Beijukabruno
+Maintainer-email: lugandaocr@gmail.com
+License: MIT
+Keywords: OCR Luganda TensorFlow machine-learning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# LugandaOCR
+
+LugandaOCR is a package for performing Optical Character Recognition (OCR) on Luganda language text images using TensorFlow.
+
+## Installation
+
+You can install LugandaOCR using pip:
+
+```bash
+pip install LugandaOCR
+

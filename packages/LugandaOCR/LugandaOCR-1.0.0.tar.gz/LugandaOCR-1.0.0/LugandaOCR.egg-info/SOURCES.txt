@@ -1,0 +1,7 @@
+README.md
+setup.py
+LugandaOCR.egg-info/PKG-INFO
+LugandaOCR.egg-info/SOURCES.txt
+LugandaOCR.egg-info/dependency_links.txt
+LugandaOCR.egg-info/requires.txt
+LugandaOCR.egg-info/top_level.txt

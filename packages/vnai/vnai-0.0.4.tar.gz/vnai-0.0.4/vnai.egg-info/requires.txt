@@ -1,0 +1,6 @@
+requests
+asyncio
+
+[dev]
+pytest
+pytest-cov

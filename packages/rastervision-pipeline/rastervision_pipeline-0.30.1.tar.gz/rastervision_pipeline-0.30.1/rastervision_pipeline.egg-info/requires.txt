@@ -1,0 +1,7 @@
+click
+pydantic<2
+everett
+everett[ini]
+six
+tqdm
+requests

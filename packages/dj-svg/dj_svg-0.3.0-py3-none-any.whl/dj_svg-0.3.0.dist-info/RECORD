@@ -1,0 +1,9 @@
+dj_svg/__init__.py,sha256=vl5oaj2Ot6qo2iaUmbp-RM2kMo8YNwlEsM7zUnqzS9w,85
+dj_svg/exceptions.py,sha256=OIV0YgZnRYGjllbru9HT39yxZJsqobUJSvKvPyaRBkU,39
+dj_svg/tests.py,sha256=kWsjhBatBX7zwtD1sbC-WxUPVDCXv6AFNcF0dHJXnz0,2644
+dj_svg/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_svg/templatetags/svg.py,sha256=taXgaiAQXkcQ5S09Qfko8RHfqOteisMt7vTCr0S_fAY,1488
+dj_svg-0.3.0.dist-info/METADATA,sha256=owef-coGClsxa0F_tfBuTeFrvQ1_vGi__wOyty5DI8Q,3289
+dj_svg-0.3.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+dj_svg-0.3.0.dist-info/licenses/LICENSE,sha256=GLr9dJCwroz1MMKOSt0JRU557WvmGIVODJsLqb9E5tg,1096
+dj_svg-0.3.0.dist-info/RECORD,,

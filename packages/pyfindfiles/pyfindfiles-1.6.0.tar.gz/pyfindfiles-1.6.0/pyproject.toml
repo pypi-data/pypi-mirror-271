@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyfindfiles"
+description = "Concurrent, pipelined text and binary file searching via pure Python, cross-platform."
+keywords = ["find", "grep"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Framework :: AsyncIO",
+  "Intended Audience :: Developers",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3"
+]
+dynamic = ["readme", "version"]
+requires-python = ">=3.9"
+dependencies = ["python-dateutil"]
+
+[project.optional-dependencies]
+tests = ["pytest"]
+lint = ["flake8", "flake8-bugbear", "flake8-builtins", "flake8-blind-except",
+"mypy", "types-python-dateutil"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+version = {attr = "pyfindfiles.__version__"}
+
+[tool.black]
+line-length = 100
+
+[tool.mypy]
+files = ["src"]

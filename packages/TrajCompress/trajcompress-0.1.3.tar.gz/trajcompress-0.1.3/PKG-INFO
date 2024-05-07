@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: TrajCompress
+Version: 0.1.3
+Home-page: https://github.com/jijivski/TrajCompress
+Author: jijivski
+Author-email: jijivski@outlook.com
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: tqdm

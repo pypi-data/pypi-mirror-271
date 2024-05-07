@@ -1,0 +1,11 @@
+kube_agent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kube_agent/agent.py,sha256=98QLzyKSxGXtMuhCQDZ9sJTF8ez2V2I0_AcQcK-9lks,9472
+kube_agent/cli.py,sha256=LbmutgEh3euEAEL90-39ve_XkNpIg-1ocgH7_iWE_ls,4201
+kube_agent/kubeconfig.py,sha256=Xm1_pTuJQiMBps3KPsAClFtsBnL1RmnxalNqwWwFdxc,1628
+kube_agent/prompts.py,sha256=PgpvhyfSyNZRyjqUgHqrD3ZN6uwuYTv9NqgckEjuhWI,17810
+kube_agent/shell.py,sha256=hxFNc4-V0OspS_8hWYNAjngT7TZ9GFwsfZeDE3VxJrM,2075
+kube_agent-0.1.0.dist-info/LICENSE,sha256=kz4bJcWKj4pK_koKdgun8cv3iIqW7M6VcVKvmeOzm9w,11352
+kube_agent-0.1.0.dist-info/METADATA,sha256=IKkZi0xflYIywDVAN_0UTHen8m22TCujwCUugc9s9Jk,3727
+kube_agent-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+kube_agent-0.1.0.dist-info/entry_points.txt,sha256=j4VVj-hfKj4vpAbRK7h3oG-RxgzKpx2VAY3HvicQErk,50
+kube_agent-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+parathyroidectomiesz/__init__.py
+parathyroidectomiesz/main.py
+parathyroidectomiesz.egg-info/PKG-INFO
+parathyroidectomiesz.egg-info/SOURCES.txt
+parathyroidectomiesz.egg-info/dependency_links.txt
+parathyroidectomiesz.egg-info/requires.txt
+parathyroidectomiesz.egg-info/top_level.txt

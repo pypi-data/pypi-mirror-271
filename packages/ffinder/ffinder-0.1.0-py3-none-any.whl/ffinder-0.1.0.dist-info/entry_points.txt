@@ -1,0 +1,3 @@
+[console_scripts]
+ffinder=file_finder.cli:cli
+

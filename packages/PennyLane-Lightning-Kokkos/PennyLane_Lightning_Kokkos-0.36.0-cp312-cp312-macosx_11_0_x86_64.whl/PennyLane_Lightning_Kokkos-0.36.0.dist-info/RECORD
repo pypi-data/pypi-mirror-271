@@ -1,0 +1,11 @@
+PennyLane_Lightning_Kokkos.dylibs/libomp.dylib,sha256=7I5zTx4qHe3oeTkMH0XW7d7-GvfdQcvpocjrV7ILWKY,728768
+PennyLane_Lightning_Kokkos-0.36.0.dist-info/RECORD,,
+PennyLane_Lightning_Kokkos-0.36.0.dist-info/LICENSE,sha256=_zKpiTfJGLmlVz4pw88ztD4wTe2QkkUNBGSaac54sjM,11720
+PennyLane_Lightning_Kokkos-0.36.0.dist-info/WHEEL,sha256=y0GHYGyTosEPi2pnZQ_jV9wms2cR518EO2I4vWvDSeQ,111
+PennyLane_Lightning_Kokkos-0.36.0.dist-info/entry_points.txt,sha256=4ZRRai-y45jgpHOGrbMR_6lbxC5RQ-rm7_96_65kVLM,92
+PennyLane_Lightning_Kokkos-0.36.0.dist-info/top_level.txt,sha256=e3OLLST9VXaQtYnH68djXaL2fbc_-6v6THc_InTmY6o,41
+PennyLane_Lightning_Kokkos-0.36.0.dist-info/METADATA,sha256=lsrZ9YflXN3IFyDfB3zgK910rlD673XlNnnPgOU0dwg,21513
+pennylane_lightning/lightning_kokkos_ops.cpython-312-darwin.so,sha256=4gJIwDBgT6mitzJMTM_KMnt6ZQe4RZqSInXE8Kkgirg,4730368
+pennylane_lightning/lightning_kokkos/lightning_kokkos.py,sha256=jyIc0HGSsxOBV2_zz-GTQZh_G9iaFhJeGC-MMXRsesA,32211
+pennylane_lightning/lightning_kokkos/__init__.py,sha256=leftk_ZeQql00Pg-Hrca4K8Zn0sMM8xfB5StCLM7wE8,737
+pennylane_lightning/lightning_kokkos/lightning_kokkos.toml,sha256=jQbZiCZE-Qk9mBMIi-KYgmeFoBkMvZ_8YMliNi4CwwI,2757

@@ -1,0 +1,122 @@
+{
+  "state_data": {
+    "s": {
+      "type": "susceptible"
+    },
+    "l": {
+      "type": "infected",
+      "n_substates": 2
+    },
+    "ip": {
+      "type": "infected"
+    },
+    "ia": {
+      "type": "infected",
+      "n_substates": 3
+    },
+    "is": {
+      "type": "infected",
+      "n_substates": 3
+    },
+    "ic": {},
+    "icr": {},
+    "h": {},
+    "r": {
+      "type": "recovered"
+    },
+    "d": {
+      "type": "dead"
+    }
+  },
+  "tms_rules": [
+    {
+      "source": "s",
+      "target": "l",
+      "actors-params": {
+          "is": null,
+          "ip": null,
+          "ia": "inf_a"
+      }
+    }
+  ],
+  "trans_data": [
+    {
+      "source": "l",
+      "target": "ip",
+      "param": "alpha_l"
+    },
+    {
+      "source": "ip",
+      "target": "ia",
+      "param": "alpha_p",
+      "distr": [
+        "p"
+      ]
+    },
+    {
+      "source": "ia",
+      "target": "r",
+      "param": "gamma_a"
+    },
+    {
+      "source": "ip",
+      "target": "is",
+      "param": "alpha_p",
+      "distr": [
+        "p_"
+      ]
+    },
+    {
+      "source": "is",
+      "target": "r",
+      "param": "gamma_s",
+      "distr": [
+        "h_"
+      ]
+    },
+    {
+      "source": "icr",
+      "target": "r",
+      "param": "gamma_cr"
+    },
+    {
+      "source": "is",
+      "target": "ic",
+      "param": "gamma_s",
+      "distr": [
+        "h",
+        "xi"
+      ]
+    },
+    {
+      "source": "ic",
+      "target": "d",
+      "param": "gamma_c",
+      "distr": [
+        "mu"
+      ]
+    },
+    {
+      "source": "is",
+      "target": "h",
+      "param": "gamma_s",
+      "distr": [
+        "h",
+        "xi_"
+      ]
+    },
+    {
+      "source": "h",
+      "target": "r",
+      "param": "gamma_h"
+    },
+    {
+      "source": "ic",
+      "target": "icr",
+      "param": "gamma_c",
+      "distr": [
+        "mu_"
+      ]
+    }
+  ]
+}

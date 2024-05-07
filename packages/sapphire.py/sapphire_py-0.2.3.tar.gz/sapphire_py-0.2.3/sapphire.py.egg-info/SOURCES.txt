@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bin/sapphirewrapper-amd64.dll
+bin/sapphirewrapper-amd64.dylib
+bin/sapphirewrapper-amd64.so
+bin/sapphirewrapper-arm64.dylib
+bin/sapphirewrapper-arm64.so
+sapphire.py.egg-info/PKG-INFO
+sapphire.py.egg-info/SOURCES.txt
+sapphire.py.egg-info/dependency_links.txt
+sapphire.py.egg-info/not-zip-safe
+sapphire.py.egg-info/top_level.txt
+sapphirepy/__init__.py
+sapphirepy/wrapper.py

@@ -1,0 +1,8 @@
+irisml/tasks/create_ultralytics_train_transform.py,sha256=zwBR094ZfdNzuB5ICFQzyD4nqQuyBIomDUHCevQ5g4o,2609
+irisml/tasks/create_ultralytics_val_transform.py,sha256=IeEC6sJvqIwivRzUsvLzD7WL1inA8csLAPZ6eHKY1Kc,2397
+irisml/tasks/create_ultralytics_yolov9_detection_model.py,sha256=xWOpzvyu5sRCKlvu8nk0l49oXtb3bHk1xOYTOUxJjc4,4060
+irisml_tasks_ultralytics-0.0.3.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+irisml_tasks_ultralytics-0.0.3.dist-info/METADATA,sha256=cDX7iGIcYbizlS17cB9QcizFyu_0ga8fIWHDwyD2mxE,1867
+irisml_tasks_ultralytics-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+irisml_tasks_ultralytics-0.0.3.dist-info/top_level.txt,sha256=-O6mZvBaJ0q2Xuea9BVCfU8n5tO5UO5aLoPn_Eos3Ao,7
+irisml_tasks_ultralytics-0.0.3.dist-info/RECORD,,

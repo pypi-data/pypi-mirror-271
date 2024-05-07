@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hcr-cell-typist"
+version = "0.1.0"
+description = "A libray to aid cell type classification in HCR experiments, downstream of QuPath"
+readme = "README.md"
+authors = [{name = "Luca Masin", email = "luca.masin@kuleuven.be"}]
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # "python>=3.12,<4.0",
+    "pandas>=2.1.4",
+    "numpy>=1.26.3",
+    "matplotlib>=3.8.2",
+    "seaborn>=0.13.1",
+    "scikit-image>=0.22.0",
+    "openpyxl>=3.0.10",
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0 ",
+    "jupyter>=1.0.0",
+]
+# python-requirements = ">=3.6"

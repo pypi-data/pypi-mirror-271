@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/abstract_logs/__init__.py
+src/abstract_logs/abstract_logs.py
+src/abstract_logs/main.py
+src/abstract_logs.egg-info/PKG-INFO
+src/abstract_logs.egg-info/SOURCES.txt
+src/abstract_logs.egg-info/dependency_links.txt
+src/abstract_logs.egg-info/requires.txt
+src/abstract_logs.egg-info/top_level.txt

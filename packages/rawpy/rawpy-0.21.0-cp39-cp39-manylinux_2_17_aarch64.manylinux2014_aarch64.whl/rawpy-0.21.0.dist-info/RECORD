@@ -1,0 +1,15 @@
+rawpy/_rawpy.cpython-39-aarch64-linux-gnu.so,sha256=Is82WApElyIyCSUmXme3iWMu_7zRwen6mnRPGDSAXzg,462969
+rawpy/enhance.py,sha256=AIqOcLV_eAtCopQzR-BRqWDX1wVVEjFvzEKrpXETwAU,14017
+rawpy/__init__.py,sha256=-sXeXxLMDzFknnHiRmsqD0B0wCntdk_ie5C62iiMdd4,654
+rawpy/_version.py,sha256=-reNiXr25nUU7em7_IKJzimCI10W4nA8ouxAiOr4FaQ,23
+rawpy.libs/libjpeg-bb5d9b88.so.9.4.0,sha256=71KwXCzu5lhfR4v3gGuT2sYPCi5ba0CT6VavlUqYJvE,1512041
+rawpy.libs/libjasper-28e96e29.so.4.0.0,sha256=Kx3mu4bjmM7HSBBnhaL4JP0yrc7Ujxu0U2SErthj6jA,595561
+rawpy.libs/liblcms2-cee87515.so.2.0.10,sha256=8DNVIvGFOFlkBM6JiCjn73qvsq15N-hWSnM3IJRTlJA,1845753
+rawpy.libs/libraw_r-2b223eab.so.23.0.0,sha256=ynoMc4Egcv85jOohW3IZY6Sfo00YTgeJdaQPL9J-5TQ,1464897
+rawpy.libs/libgomp-d22c30c5.so.1.0.0,sha256=BTGH6is2VDtn03gF_z6BiPXVdnSzH2mP6Hz-IiGkPtk,274665
+rawpy-0.21.0.dist-info/LICENSE,sha256=LMDpihaeGpkn3uPILVnfrImKKq1aH83SldtAwvL-1RY,1080
+rawpy-0.21.0.dist-info/LICENSE.LibRaw,sha256=7qFzpVarrANwRh5X4SqrJmiU6mvjh0wr4F_YeHH3VEk,24389
+rawpy-0.21.0.dist-info/METADATA,sha256=A6ITfzAPsseOiTIHkbkVmO2DzG-cwlq3Gx5Jkj4xT6A,6019
+rawpy-0.21.0.dist-info/RECORD,,
+rawpy-0.21.0.dist-info/top_level.txt,sha256=7jsQajvqWcvbFz1mx9zyPC_MjCPZvXAJ_H4cGYOBn6k,6
+rawpy-0.21.0.dist-info/WHEEL,sha256=iPTY0kiUgsIQ8RgTKKmTNHcTilFGetvFWd3_QTb8vUA,150

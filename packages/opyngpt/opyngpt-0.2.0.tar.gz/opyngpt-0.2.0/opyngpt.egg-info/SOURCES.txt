@@ -1,0 +1,9 @@
+README.md
+setup.py
+opyngpt/__init__.py
+opyngpt/chat.py
+opyngpt.egg-info/PKG-INFO
+opyngpt.egg-info/SOURCES.txt
+opyngpt.egg-info/dependency_links.txt
+opyngpt.egg-info/requires.txt
+opyngpt.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+packaage/__init__.py,sha256=2uqDsnJzkAuZ71hHmeCeETmpncJ5DZmAtNudPptgvs8,62
+packaage/aws.py,sha256=j-YIpV5WipF_2FG2l_t1ajM7IQyzDWN5HaK237R1axE,2958
+packaage/life.py,sha256=-FuJhinXqTotMj25Q6XNlGpdBDKrR5jHfdM2fVdviXM,271
+packaage/nlp.py,sha256=POYZb52brTVruSDGnAdvp5iZQ_XYAvFJkxZw3udjiD4,492
+packaage/setup.py,sha256=MLTFnRYD9FvrLOGC9AkbKJlBOu5uJWHYwbaDD5sL8sc,398
+packaage/test.py,sha256=T-7dvBhxSCMbTCJTMQfQXEjRYaXr4YlOyrlznnZZ3DQ,591
+packaage-0.0.8.dist-info/LICENSE.txt,sha256=l-DFBZZHtu5-l-VXZKovnlSzy2yK7OmiY6BCYNpkqwQ,1069
+packaage-0.0.8.dist-info/METADATA,sha256=St5RrASMjeRxhdbooXsA41xTSe45GzJP2OeMGhtt4pg,1506
+packaage-0.0.8.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+packaage-0.0.8.dist-info/top_level.txt,sha256=SH1ii_rmKlAPxNbY6kKtFH8PkID7zjHkjU2dcuYx3R4,9
+packaage-0.0.8.dist-info/RECORD,,

@@ -1,0 +1,9 @@
+ntv_pandas/__init__.py,sha256=OdA4DMBy7kWDjTm8V8-ys3rXIYSpqqY5rzYA1UsZmy8,1273
+ntv_pandas/accessors.py,sha256=eSpw1ENEGJvGWVpNF9tpN43ZY3zN0LdfFaTE9W3pz4Y,4567
+ntv_pandas/ntv_pandas.ini,sha256=4nTBnVHerqzIhroI5mrDJ_9C8viIXXPxSirBTeAtYA0,4309
+ntv_pandas/ntv_table.ini,sha256=gea1x3iWZ1bumauZ0xwY3y2GBA_xeFFQdAg-IuhSLiM,3521
+ntv_pandas/pandas_ntv_connector.py,sha256=rmpsJOxDMv2PeyjKn6zc_iQK8sYwTN5pP6cv76d90dw,31621
+ntv_pandas-2.0.0.dist-info/METADATA,sha256=iCe9Q_sTW3MX5H72287YzJXse08Cgma6wAlWXmMY-nI,11713
+ntv_pandas-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ntv_pandas-2.0.0.dist-info/top_level.txt,sha256=hi2eWrucI0ljemvIE8w9VxL9Xb8B83d-1x9Y-qUut7Y,11
+ntv_pandas-2.0.0.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+description: Cotisations pour la garantie minimale de points (GMP) du régimes complémentaires de retraite de cadres du secteur privé
+metadata:
+  short_label: Garantie minimale de points (GMP)
+  label_en: Contributions for the Guarantee of a minimum of retirement points (GMP) - cadres
+  order:
+  - salaire_charniere_annuel
+  - cotisation_forfaitaire_annuelle
+  - cotisation_forfaitaire_mensuelle

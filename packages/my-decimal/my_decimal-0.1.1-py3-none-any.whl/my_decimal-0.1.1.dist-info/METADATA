@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: my_decimal
+Version: 0.1.1
+Summary: A small library for formatting decimals
+Home-page: https://github.com/yourusername/my_decimal
+Author: k0ng999
+Author-email: baydar_14@mail.ru
+License: MIT
+License-File: LICENSE
+

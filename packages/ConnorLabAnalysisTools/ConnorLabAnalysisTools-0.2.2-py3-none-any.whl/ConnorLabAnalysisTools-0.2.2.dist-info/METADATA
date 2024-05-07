@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ConnorLabAnalysisTools
+Version: 0.2.2
+Summary: Tools for analyzing data in the Connor Lab
+Home-page: https://github.com/EdConnorLab/ConnorLabAnalysisTools
+Author: Allen Chen
+Author-email: allenmuhanchen@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: mysql-connector-python
+Requires-Dist: numpy ==1.26.1
+Requires-Dist: pandas ==2.1.1
+Requires-Dist: setuptools ==68.0.0
+Requires-Dist: tkfilebrowser ==2.3.2
+Requires-Dist: xmltodict ==0.13.0
+

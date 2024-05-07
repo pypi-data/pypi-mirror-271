@@ -1,0 +1,3 @@
+[ofxstatement]
+bbva = ofxstatement.plugins.bbva:BBVAPlugin
+

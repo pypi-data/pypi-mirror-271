@@ -1,0 +1,42 @@
+[project]
+name = "img_cache"
+version = "0.1.1"
+description = ""
+authors = [
+    {name = "svtter", email = "svtter@qq.com"},
+    {name = "svtter", email = "svtter@163.com"},
+]
+dependencies = [
+]
+requires-python = "<4.0,>=3.9"
+readme = "README.md"
+license = {text = "BSD"}
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest<8.0.0,>=7.2.0",
+    "pytest-xdist<4.0.0,>=3.0.2",
+    "pre-commit<3.0.0,>=2.20.0",
+    "mkdocs<2.0.0,>=1.4.2",
+    "mkdocs-material<9.0.0,>=8.5.11",
+    "ruff>=0.4.3",
+    "-e file:///${PROJECT_ROOT}/#egg=img-cache",
+    "twine>=5.0.0",
+]
+
+[tool.pdm.build]
+includes = ["src/*"]
+
+[[tool.pdm.source]]
+name = "pypi"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+verify_ssl = false
+
+# -- FILE: pytest.ini (or tox.ini)
+[tool.pytest.ini_options]
+# -- recommended but optional:
+python_files = "tests.py test_*.py *_tests.py"
+addopts = "-n3"

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+superpatriotz/__init__.py
+superpatriotz/main.py
+superpatriotz.egg-info/PKG-INFO
+superpatriotz.egg-info/SOURCES.txt
+superpatriotz.egg-info/dependency_links.txt
+superpatriotz.egg-info/requires.txt
+superpatriotz.egg-info/top_level.txt

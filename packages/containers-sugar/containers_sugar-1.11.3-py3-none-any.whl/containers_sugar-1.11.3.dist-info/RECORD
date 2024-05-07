@@ -1,0 +1,16 @@
+sugar/__init__.py,sha256=PR_f8BxgLKokcs75E05hONnGQlY1a54FL45cbmrkndw,193
+sugar/__main__.py,sha256=6zmdTFf35aRbQSCWV92x2oXbsHOGvnggfj4Fwnjbw0c,125
+sugar/cli.py,sha256=sVTEfMjtSz7qZAhdyRfwgvFyefxA_Sr2op1gE9Vt7rQ,4393
+sugar/console.py,sha256=7dlvXgqFLXIDHafvEdf4LtToGlZQd7bTg3J_gQfknQ8,509
+sugar/core.py,sha256=870E0geeEzMuv983sRT0C4937zakwEUMP7CmfRB-UB4,2639
+sugar/inspect.py,sha256=p3TtmPHtmk6QJ5_2uWIXnw0Do8KiW77-cXakv8uubGA,1547
+sugar/logs.py,sha256=l86Qf-nEPvAvkJUfWjxbiPxVYd1wSttIPbAMoPuhLlo,1108
+sugar/plugins/__init__.py,sha256=P6wTmRleq38BGkRQtY2KJ_BRAkM4RmBqd_-T59wDRyY,22
+sugar/plugins/base.py,sha256=QCVKnjlcu2RO66976Qkr5DnzWK-sBx1wOrtXvkNgWQ4,17172
+sugar/plugins/ext.py,sha256=of3aF4keVaCLMXoTASXjoVB_QpHBkc2YpwfEi77dZkM,1083
+sugar/plugins/stats.py,sha256=5iaAU28CDdGffUUZp2M_jbRUpIkgVV5YPxERu_9isQg,8607
+containers_sugar-1.11.3.dist-info/LICENSE,sha256=VdNe-RCjB8ySHZb0705-5jspey66C9W1Fj5-cJ2Vfjo,1514
+containers_sugar-1.11.3.dist-info/METADATA,sha256=86Y7bWtYe-s5bevNwx9TJi8l2zN79BeMMAj9H7tAacE,3995
+containers_sugar-1.11.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+containers_sugar-1.11.3.dist-info/entry_points.txt,sha256=fkFnVEbn1s7v4Q583aIrT8gxKT2hQ-c8WShxYou0u8E,44
+containers_sugar-1.11.3.dist-info/RECORD,,

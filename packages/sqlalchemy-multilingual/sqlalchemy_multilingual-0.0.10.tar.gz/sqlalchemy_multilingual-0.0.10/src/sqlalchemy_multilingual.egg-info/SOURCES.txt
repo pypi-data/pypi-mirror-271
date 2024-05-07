@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/sqlalchemy_multilingual.egg-info/PKG-INFO
+src/sqlalchemy_multilingual.egg-info/SOURCES.txt
+src/sqlalchemy_multilingual.egg-info/dependency_links.txt
+src/sqlalchemy_multilingual.egg-info/requires.txt
+src/sqlalchemy_multilingual.egg-info/top_level.txt

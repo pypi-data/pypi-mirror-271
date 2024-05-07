@@ -1,0 +1,10 @@
+h5tui/__init__.py,sha256=UG943e_XPLltosqQ8ZozuX3r0qX4dKpcMnPisHP7Qcs,466
+h5tui/h5.py,sha256=taFCchfZi0RX0bPRBBBNJ0SSLTWvC2y3MxZPkU5rvKQ,7698
+h5tui/hdf5_tui.py,sha256=-K7VEWIrr0a4Dp4Dxk954RO2EV3IMdpmssFJ5JC4uy4,16270
+h5tui/hdf5_tui.tcss,sha256=lCO-wjOHrK1y8Bf4Vr1XOOwxomIPByYjM1T0MVw5cQs,674
+h5tui/plugin.py,sha256=U8tH7pC9A2WHZNTdCPh5ahPdQH3G-u6RfALlKoYAfe0,1141
+h5ui-0.1.1.dist-info/METADATA,sha256=qfop_AO7xQzL8J7RdUmqnrF15d7IXHzwXLEUh69wt_0,460
+h5ui-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+h5ui-0.1.1.dist-info/entry_points.txt,sha256=0bK392vef0OejlfrVe6ncRVbwtiYwxqD50BA-II3IKo,131
+h5ui-0.1.1.dist-info/top_level.txt,sha256=i9pTGb0C0eR4mdDXIn6qonx3cegxAS4P7V5AJNQaavo,6
+h5ui-0.1.1.dist-info/RECORD,,

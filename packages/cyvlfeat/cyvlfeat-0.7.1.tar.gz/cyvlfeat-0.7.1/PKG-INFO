@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cyvlfeat
+Version: 0.7.1
+Summary: Cython wrapper of the VLFeat toolkit
+Home-page: https://github.com/menpo/cyvlfeat
+Author: Patrick Snape
+Author-email: patricksnape@gmail.com
+License-File: LICENSE.txt

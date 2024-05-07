@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ism3d"
+version = "0.0.1"
+authors = [{ name = "Rui Xue", email = "rx.astro@icloud.com" }]
+description = "ISM3D: Interferometric Source Modeling in 3D"
+readme = "README.md"
+requires-python = ">=3.8"
+
+classifiers = [
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    "Intended Audience :: Science/Research",    
+    'License :: OSI Approved :: BSD License',
+    'Natural Language :: English',
+    "Topic :: Scientific/Engineering :: Astronomy",    
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+]
+
+[project.urls]
+Homepage = "https://github.com/r-xue/ism3d"
+Issues = "https://github.com/r-xue/ism3d/issues"

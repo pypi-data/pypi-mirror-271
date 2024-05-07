@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/ism3d.egg-info/PKG-INFO
+src/ism3d.egg-info/SOURCES.txt
+src/ism3d.egg-info/dependency_links.txt
+src/ism3d.egg-info/top_level.txt

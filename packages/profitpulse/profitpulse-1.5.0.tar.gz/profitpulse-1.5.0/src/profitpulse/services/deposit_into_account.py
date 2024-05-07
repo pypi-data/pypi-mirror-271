@@ -1,0 +1,47 @@
+import abc
+from typing import Optional
+
+from profitpulse.lib.account import Account
+from profitpulse.lib.account_name import AccountName
+from profitpulse.lib.comment import Comment
+from profitpulse.lib.money import Money
+from profitpulse.services.errors import AccountNotFoundError
+
+
+class DepositIntoAccountRequester(abc.ABC):
+    @property
+    @abc.abstractmethod
+    def account_name(self) -> AccountName: ...  # pragma: no cover
+
+    @property
+    @abc.abstractmethod
+    def comment(self) -> Optional[Comment]: ...  # pragma: no cover
+
+    @property
+    @abc.abstractmethod
+    def amount(self) -> Money: ...  # pragma: no cover
+
+
+class DepositIntoAccountAccountCollector(abc.ABC):
+    @abc.abstractmethod
+    def __getitem__(self, account_name: AccountName) -> Account: ...  # pragma: no cover
+
+    @abc.abstractmethod
+    def __setitem__(
+        self, account_name: AccountName, account: Account
+    ) -> None: ...  # pragma: no cover
+
+
+class DepositIntoAccountService:
+    def __init__(self, accounts: DepositIntoAccountAccountCollector):
+        self._accounts = accounts
+
+    def execute(self, request: DepositIntoAccountRequester) -> None:
+        try:
+            account = self._accounts[request.account_name]
+        except KeyError:
+            raise AccountNotFoundError(request.account_name)
+
+        account.deposit(request.amount, comment=request.comment)
+
+        self._accounts[request.account_name] = account

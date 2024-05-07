@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: facturama
+Version: 2.0.5
+Summary: Easy Facturama python wrapper
+Home-page: https://github.com/tingsystems/facturama
+Download-URL: https://github.com/tingsystems/facturama/master
+Author: Tingsystems
+Author-email: Tingsystems <soporte@tingsystems.com>
+License: MIT License
+        
+        Copyright (c) 2017 Tingsystems
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/tingsystems/facturama
+Keywords: facturama,wrapper
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: simplejson
+Requires-Dist: nose
+
+# Facturama Python SDK
+
+> [NOTE] This document is also available in [English].
+>
+> Librería para consumir la API Web y API Multiemisor de [Facturama](https://api.facturama.mx/).
+>
+> Puedes consultar la guía completa de la [API](https://apisandbox.facturama.mx/guias).
+## Crear cuenta de usuario
+
+> Crear una cuenta de usuario en el ambiente de prueba [Sandbox](https://dev.facturama.mx/api/login) 
+>
+> Para API Web, realiza la configuración básica usando RFC de pruebas **"EKU9003173C9"**, más información [aquí](https://apisandbox.facturama.mx/guias/perfil-fiscal).
+>
+> Sellos digitales de prueba (CSD), [aquí](https://github.com/rafa-dx/facturama-CSD-prueba). 
+## Inicio Rápido
+
+### Instalación
+```sh
+pip install -e git+https://github.com/Facturama/facturama-python-sdk.git@master#egg=facturama
+```
+
+### Incluir librería
+
+```sh
+import facturama
+```
+
+### Credenciales de usuario
+
+```sh
+facturama._credentials = ('username', 'password')
+```
+
+## API Web
+
+> Creación de CFDIs con un único emisor, (el propietario de la cuenta, cuyo perfil fiscal se tiene configurado)
+> 
+> *Todas las operaciones son reflejadas en la plataforma web.*
+### Operaciones API Web
+- Crear, Consultar Cancelar CFDI así como descargar XML, PDF y envió de estos por mail.
+- Consultar Perfil y Suscripción actual.
+- Carga de Logo y Certificados Digitales.
+- CRUD de Productos, Clientes, Sucursales y Series.
+
+Ejemplos: [aquí](https://github.com/Facturama/facturama-python-sdk/wiki/API-Web)
+
+
+## API Multiemisor
+
+> Creacion de CFDIs con multiples emisores.
+>
+> *Las operaciones NO se reflejan en la plataforma web.*
+### Operaciones API Multiemisor
+
+- Crear, Consultar, Cancelar descarga de XML.
+- CRUD de CSD (Certificados de los Sellos Digitales).
+
+Ejemplos: [aquí](https://github.com/Facturama/facturama-python-sdk/wiki/API-Multiemisor)
+
+
+### Library Development and Testing
+
+Test de libreria con nose http://nose.readthedocs.io/en/latest/
+
+```sh
+$ nosetests
+```
+
+
+## Contributing:
+[tingsystems](https://github.com/tingsystems)
+
+
+[English]: ./README-en.md
+
+

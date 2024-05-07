@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+forechoicez/__init__.py
+forechoicez/main.py
+forechoicez.egg-info/PKG-INFO
+forechoicez.egg-info/SOURCES.txt
+forechoicez.egg-info/dependency_links.txt
+forechoicez.egg-info/requires.txt
+forechoicez.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_simple_svg.egg-info/PKG-INFO
+django_simple_svg.egg-info/SOURCES.txt
+django_simple_svg.egg-info/dependency_links.txt
+django_simple_svg.egg-info/requires.txt
+django_simple_svg.egg-info/top_level.txt
+simple_svg/__init__.py
+simple_svg/exceptions.py
+simple_svg/tests.py
+simple_svg/templatetags/__init__.py
+simple_svg/templatetags/svg.py

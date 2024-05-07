@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django-simple-svg
+Version: 0.2.3
+Summary: A simple SVG template tag for Django
+Home-page: https://github.com/xshapira/django-simple-svg
+Author: Max Shapira
+Author-email: max@winoutt.com
+Maintainer: Max Shapira
+Maintainer-email: max@winoutt.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=1.8
+
+# `django-simple-svg` is now `dj-svg`
+
+This package has been renamed. Use `pip install dj-svg` instead.
+
+**New package:** <https://pypi.org/project/dj-svg/>

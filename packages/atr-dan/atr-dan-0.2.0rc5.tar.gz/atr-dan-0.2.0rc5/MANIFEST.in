@@ -1,0 +1,7 @@
+include LICENSE
+include LICENCE
+include requirements.txt
+include doc-requirements.txt
+include mlflow-requirements.txt
+include VERSION
+include README.md

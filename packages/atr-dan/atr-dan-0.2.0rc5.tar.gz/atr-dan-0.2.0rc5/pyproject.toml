@@ -1,0 +1,37 @@
+[tool.ruff]
+exclude = [".git", "__pycache__"]
+
+[tool.ruff.lint]
+ignore = ["E501"]
+select = [
+    # pycodestyle
+    "E",
+    "W",
+    # Pyflakes
+    "F",
+    # Flake8 Debugger
+    "T1",
+    # Isort
+    "I",
+    # Pathlib usage
+    "PTH",
+    # Implicit Optional
+    "RUF013"
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["arkindex_export", "line_image_extractor"]
+known-third-party = [
+    "albumentations",
+    "cv2",
+    "editdistance",
+    "imageio",
+    "nerval",
+    "numpy",
+    "scipy",
+    "tensorboard",
+    "torch",
+    "torchvision",
+    "tqdm",
+    "yaml"
+]

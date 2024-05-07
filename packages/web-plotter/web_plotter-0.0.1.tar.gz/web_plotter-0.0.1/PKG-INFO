@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: web_plotter
+Version: 0.0.1
+Summary: plotting on the web with fuzzy finding
+Home-page: https://github.com/Josiah-MCS/web_plotter
+Author: Josiah-tan
+License: GNU General Public License v3 (GPLv3)
+Keywords: web_plotter flask plotly
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: plotly
+Requires-Dist: numpy
+Requires-Dist: Flask
+Requires-Dist: plotly-gruvbox-colorscheme
+Requires-Dist: setuptools
+
+# installation
+
+on the administrator window
+
+
+```
+choco install fzf
+```
+
+
+# usage
+
+launch webapp:
+
+```
+tox -e launch
+
+```

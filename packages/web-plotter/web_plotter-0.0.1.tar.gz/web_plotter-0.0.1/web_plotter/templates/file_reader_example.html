@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Reader</title>
+<script>
+    window.onload = function() {
+        // Function to handle file reading
+        function readFile(file) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var content = e.target.result;
+                // Do something with the content of the file
+                console.log(content);
+            };
+            reader.readAsText(file);
+        }
+
+        // Function to handle file selection
+        function handleFileSelect(event) {
+            var files = event.target.files;
+            if (files.length === 0) return;
+            var file = files[0];
+            console.log(`file = ${file}`)
+            readFile(file);
+        }
+
+        // Trigger click event on file input upon page load
+		
+        document.addEventListener('keydown', function(e) {
+			if (e.keyCode === 39){
+				console.log(`e.keyCode = ${e.keyCode}`)
+				document.getElementById('fileInput').click();
+			}
+        });
+
+        // Attach event listener to file input
+        document.getElementById('fileInput').addEventListener('click', handleFileSelect, false);
+    };
+</script>
+</head>
+<body>
+    <input type="file" id="fileInput" style="display: none;" />
+</body>
+</html>

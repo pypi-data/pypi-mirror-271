@@ -1,0 +1,70 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f5f5f5;
+}
+
+#container {
+	text-align: center;
+	position: relative;
+}
+
+#virtual-window {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 300px;
+	background-color: inherit;
+	color: inherit;
+	opacity: 0.9;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	border: 1px solid;
+	border-color: inherit;
+	z-index: 9999;
+	border-radius: 10px;
+}
+
+#virtual-window.open {
+	display: block;
+}
+
+#searchInput {
+	width: 100%;
+	padding: 8px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	display: block; /* Ensure it takes up full width */
+	color: inherit;
+}
+
+#results {
+	/* background-color: #fff; */
+	background-color: rgba(0, 0, 0, 0);
+	/* border: 1px solid #ddd; */
+	/* border-radius: 5px; */
+	padding: 0;
+	width: 100%; /* Set width to 100% */
+	max-height: 80%;
+	overflow-y: auto;
+	/* box-shadow: 0 2px 5px rgba(0,0,0,0.2); */
+	margin: 0; /* Remove margin */
+}
+
+.result-item {
+	padding: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.result-item:hover, .result-item.selected {
+	background-color: #909090;
+}
+

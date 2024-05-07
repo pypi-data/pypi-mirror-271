@@ -1,0 +1,3 @@
+include web_plotter\templates\*.html
+include web_plotter\static\css\*.css
+include web_plotter\static\js\*.js

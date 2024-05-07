@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>grid plotter</title>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/grid_plotter.css') }}">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/fuzzy_finder.css') }}">
+	</head>
+	<body>
+		<div id="virtual-window">
+			<input type="text" id="searchInput" placeholder="Type to search...">
+			<div id="results"></div>
+		</div>
+
+		<script type="module" src="{{ url_for('static', filename='js/fuzzy_finder.js') }}"></script>
+
+		<div id="grid-container"></div>
+		<script type="module" src="{{ url_for('static', filename='js/grid_plotter.js') }}"></script>
+
+	</body>
+</html>

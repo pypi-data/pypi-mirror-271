@@ -1,0 +1,13 @@
+hello_world_henrique.tools.hello_world_tool_henrique.get_greeting_message:
+  function: get_greeting_message
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    input_text:
+      type:
+      - string
+  module: hello_world_henrique.tools.hello_world_tool_henrique
+  name: Hello World Tool
+  description: This is hello world tool
+  type: python

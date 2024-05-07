@@ -1,0 +1,4 @@
+[console_scripts]
+profit=profitpulse.cli.main:profitpulse_app
+profitpulse=profitpulse.cli.main:profitpulse_app
+

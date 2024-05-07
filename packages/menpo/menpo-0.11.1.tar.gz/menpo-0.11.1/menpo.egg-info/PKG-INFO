@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: menpo
+Version: 0.11.1
+Summary: A Python toolkit for handling annotated data
+Author: The Menpo Team
+Author-email: hello@menpo.org
+License-File: LICENSE.txt
+License-File: AUTHORS.txt
+Requires-Dist: numpy>=1.14
+Requires-Dist: scipy>=1.0
+Requires-Dist: matplotlib>=3.0
+Requires-Dist: pillow>=4.0

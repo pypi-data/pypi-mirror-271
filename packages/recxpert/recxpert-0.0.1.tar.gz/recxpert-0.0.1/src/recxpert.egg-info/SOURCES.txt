@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/package_name/__init__.py
+src/recxpert.egg-info/PKG-INFO
+src/recxpert.egg-info/SOURCES.txt
+src/recxpert.egg-info/dependency_links.txt
+src/recxpert.egg-info/requires.txt
+src/recxpert.egg-info/top_level.txt

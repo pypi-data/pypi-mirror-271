@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: alex_sudoku
+Version: 0.2.0
+Summary: A sudoku game
+Home-page: https://github.com/HolyUsername/alex_sudoku
+License: MIT
+Author: A. Rushworth
+Author-email: rushworthalex7@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: dev
+Provides-Extra: devlint
+Provides-Extra: docs
+Provides-Extra: lint
+Provides-Extra: release
+Provides-Extra: test
+Provides-Extra: types
+Requires-Dist: rich (>=12.0.0,<13.0.0)
+Project-URL: Repository, https://github.com/HolyUsername/alex_sudoku
+Description-Content-Type: text/markdown
+
+# alex_sudoku
+
+![Continuous Integration (CI) Tests](https://github.com/HolyUsername/alex_sudoku/actions/workflows/continuous_integration.yml/badge.svg)
+
+A sudoku game
+
+## Installation
+
+To install alex_sudoku, simply run:
+
+```bash
+pip install alex_sudoku
+```
+
+## Usage
+
+After installation, you can use the package by executing:
+
+```bash
+alex_sudoku
+```
+
+## Features
+
+- **Feature 1**: Description of feature 1.
+- **Feature 2**: Description of feature 2.
+- etc. - *to be filled in by the project maintainer*.
+
+## Documentation
+For more information, you can find the documentation within the `docs` directory or on the project's [GitHub Pages](https://HolyUsername.github.io/alex_sudoku/).
+
+## Contributing
+
+Contributions are welcome! Please refer to our `CONTRIBUTING.md` for more information.
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.

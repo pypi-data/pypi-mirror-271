@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vivaz/__init__.py
+vivaz/main.py
+vivaz.egg-info/PKG-INFO
+vivaz.egg-info/SOURCES.txt
+vivaz.egg-info/dependency_links.txt
+vivaz.egg-info/requires.txt
+vivaz.egg-info/top_level.txt

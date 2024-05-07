@@ -1,0 +1,16 @@
+rigging/__init__.py,sha256=xmXovwyoVv2xR_2yDlOw0Byi6yZdp-lz_5PkrmWq27w,684
+rigging/chat.py,sha256=UdJSySujt03OlaF9mLBJ-UnugH5zHk60UJMZo_1yuds,39816
+rigging/completion.py,sha256=rzKkY1gS6z6pdi-CD5TWFvA1nKdauACL9LbgVuHhqW8,21074
+rigging/error.py,sha256=K6URRxMQe9yQ538uQibi16A6Zv7Dni8-qzLRXqa7_OU,865
+rigging/generator.py,sha256=gyf4yGG8iwi_1R1QVNR1BBBAJMl5wIV9tazDAB4H-8E,19110
+rigging/logging.py,sha256=XDAKS9YDT6Gzr1vzc5m2ejPUJDII4uL-zK8Zx63W6wY,2349
+rigging/message.py,sha256=R_G6bUguE4wuxEAxjK8idNo7Yu2Gy72SqSUuDfXEXq0,13107
+rigging/model.py,sha256=g9i1-_7NIpI8Tps2gb9XnhlNBaiFEU5244txLMCcXNc,12573
+rigging/parsing.py,sha256=ko1iKl3WcgxGEUvCxuhSq2rmNXSU_cDOFY39hXkdhac,3748
+rigging/prompt.py,sha256=ikWb0-4aZoENCTfts5Mh4b9sEO8j_zpn1Rc6WRQqQmY,1090
+rigging/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rigging/tool.py,sha256=1-gV5uW38i7rRVTn-TUs-YxZSeSKcVfW5hbpokZm35M,10210
+rigging-1.0.0rc0.dist-info/LICENSE,sha256=iQbTWAkleh-aSgqLkm5n6TxYZSNfMwLcncagVA-gqx0,1066
+rigging-1.0.0rc0.dist-info/METADATA,sha256=HOYbFVju-23Pd5zEEqGLOLKpgaK9NYHLVINoDk9GWSY,2213
+rigging-1.0.0rc0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+rigging-1.0.0rc0.dist-info/RECORD,,

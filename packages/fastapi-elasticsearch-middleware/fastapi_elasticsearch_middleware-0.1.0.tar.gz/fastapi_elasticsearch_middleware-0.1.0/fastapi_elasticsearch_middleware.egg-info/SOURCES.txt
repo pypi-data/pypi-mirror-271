@@ -1,0 +1,7 @@
+README.md
+setup.py
+fastapi_elasticsearch_middleware.egg-info/PKG-INFO
+fastapi_elasticsearch_middleware.egg-info/SOURCES.txt
+fastapi_elasticsearch_middleware.egg-info/dependency_links.txt
+fastapi_elasticsearch_middleware.egg-info/requires.txt
+fastapi_elasticsearch_middleware.egg-info/top_level.txt

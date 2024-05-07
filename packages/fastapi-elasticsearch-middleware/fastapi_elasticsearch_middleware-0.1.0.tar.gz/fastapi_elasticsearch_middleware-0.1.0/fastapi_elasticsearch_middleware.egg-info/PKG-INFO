@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fastapi_elasticsearch_middleware
+Version: 0.1.0
+Summary: Elasticsearch Logger Middleware for FastAPI
+Home-page: https://github.com/GGontijo/fastapi-elasticsearch-middleware.git
+Author: Gabriel Gontijo
+Author-email: gabrieldercilio08@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: elasticsearch
+
+# Elasticsearch Logger Middleware for FastAPI
+
+This middleware enables logging of requests and responses to Elasticsearch in a FastAPI application. It provides detailed logs including request method, URL path, query parameters, request and response headers, status code, and response body.
+
+## Installation
+
+You can install the middleware via pip:
+
+```bash
+pip install fastapi-elasticsearch-middleware

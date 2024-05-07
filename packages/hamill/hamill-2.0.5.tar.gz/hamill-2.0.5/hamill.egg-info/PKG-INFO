@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: hamill
+Version: 2.0.5
+Summary: A lightweight markup language
+Home-page: https://xitog.github.io/dgx/informatique/hamill.html
+Author: Damien Gouteux
+Author-email: damien.gouteux@gmail.com
+Maintainer: Damien Gouteux
+Maintainer-email: damien.gouteux@gmail.com
+License: MIT
+Description: # Hamill
+        
+        A simple lightweight markup language outputting HTML.
+        
+        Implementations are available in [JavaScript](https://www.npmjs.com/package/hamill) and [Python 3](https://pypi.org/project/hamill/).
+        
+        <ins>Rationale</ins>: More complete than [the original Markdown](https://daringfireball.net/projects/markdown/syntax)<sup>2004</sup>, easier to parse and write.
+        
+        First version released in 2020. Version 2 released in 2022.
+        
+        Complete documentation in [English](https://xitog.github.io/dgx/hamill/hamill_en.html) and [French](https://xitog.github.io/dgx/hamill/hamill.html).
+        
+        [You can try it live here](https://xitog.github.io/dgx/hamill/index.html).
+        
+        <p style="text-align: right">
+        Damien Gouteux 2020-2024
+        </p>
+        
+Keywords: hamill,lml,lightweight markup language,markup,text,html
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

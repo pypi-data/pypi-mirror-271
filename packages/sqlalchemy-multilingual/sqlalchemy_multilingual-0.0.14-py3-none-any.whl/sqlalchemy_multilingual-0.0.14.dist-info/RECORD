@@ -1,0 +1,13 @@
+src/sqlalchemy_multilingual/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sqlalchemy_multilingual/constants.py,sha256=9nPhRPqtE4MYMRiWCw2ej52FHnv1nBheAXq9Iqgr6iE,212
+src/sqlalchemy_multilingual/exception.py,sha256=fC6QR6U5_8Ozddti2dWQRuOX642b_8K6lpaYiRYnu60,189
+src/sqlalchemy_multilingual/mixins.py,sha256=HncmNrlH0jDvh3zF2bZH4NsA5cvhRdA6FXLKSXoPW_o,1478
+src/sqlalchemy_multilingual/models.py,sha256=Ps8ozCLDrUnyzbvbplw49Z1UAsIrjUv4zCK9YtfsyHs,1687
+src/sqlalchemy_multilingual/queries.py,sha256=ZvyFUYURSihk2JW2hEapQGEED6wpSeMn8RSUdD_Kvjo,1629
+src/sqlalchemy_multilingual/alembic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sqlalchemy_multilingual/alembic/migration.py,sha256=HowybzxBpYMIiwwSPygaIRTLonB7X-2FLt18bGRsfeo,439
+sqlalchemy_multilingual-0.0.14.dist-info/LICENSE.txt,sha256=rwUKlA8qRw4cQP4_HG_kFOwqJU1mIRW_07OR426O3NQ,1063
+sqlalchemy_multilingual-0.0.14.dist-info/METADATA,sha256=zErnzdjUSRtTX7xo6JdkvvjDCXQpafLzD3NPj6CJLO0,615
+sqlalchemy_multilingual-0.0.14.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sqlalchemy_multilingual-0.0.14.dist-info/top_level.txt,sha256=3ewCTYd-F3G3KPK-1KeW38OIOwLPahk8xLsA4jg2n8k,64
+sqlalchemy_multilingual-0.0.14.dist-info/RECORD,,

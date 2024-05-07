@@ -1,0 +1,12 @@
+moviesampler/__init__.py,sha256=96MtxkVOHYz289iWw4mP2OH9hRbzLEvCQxgABzie-AE,59
+moviesampler/framegrabber.py,sha256=cjYJ7DfQQUZrbTlbCZL63UVGvr1WGTTKgZ_U5jyKyjc,2396
+moviesampler/imagecomposer.py,sha256=J6D939Aq19jUi3s6W3jJ_-ESZqaeedmTzM8TpFTrx-g,4168
+moviesampler/main.py,sha256=Yc_jYAUiDGdBtEIYYKTDRgXYW_jBxYZ1xZZJ5hAwqHE,3213
+moviesampler/fonts/3270-Regular.otf,sha256=WxVg3rwBwV-5UXUgQ6GzTRBZ4LwR37uHjcYIbenEznw,208612
+moviesampler/fonts/3270Condensed-Regular.otf,sha256=MKzVunm0p-IrcS-fROM1efZTPeBDvNBFvWw8LOp8Ryo,201596
+moviesampler-1.1.dist-info/LICENSE,sha256=vDin7CqWUd2GNML1a1fT8wx5jyjAd6bgIr-T2ss76ZI,3820
+moviesampler-1.1.dist-info/METADATA,sha256=ww3WXvZtZ_Zq9sTRY8pszCv6RF0kIZXiBw7gnxq5ofw,2264
+moviesampler-1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+moviesampler-1.1.dist-info/entry_points.txt,sha256=QSxdzIkL30rKvoFBrh06aumnHWIX-73Vfnvf22aDe3E,56
+moviesampler-1.1.dist-info/top_level.txt,sha256=gT-LQndINWa6oLEgLg-ZTqkN9CvP8yJr-0EsMbwef7Q,13
+moviesampler-1.1.dist-info/RECORD,,

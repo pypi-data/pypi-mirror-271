@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sz-utils
+Version: 0.1
+Summary: A simple example library
+Home-page: https://github.com/PeterouZh
+Author: Peng Zhou
+Author-email: zhoupeng23@nuaa.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# sz
+
+## PyPi
+
+```bash
+# 安装打包工具
+pip install twine setuptools wheel
+
+# 构建包
+rm -rf dist build
+python setup.py sdist bdist_wheel
+
+# 上传包 
+# 设置 $HOME/.pypirc  token
+twine upload dist/*
+
+
+```

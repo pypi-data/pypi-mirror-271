@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: zeus-ml
+Version: 0.9.0
+Summary: A framework for deep learning energy measurement and optimization.
+Author-email: Jae-Won Chung <jwnchung@umich.edu>
+License: Apache 2.0
+Project-URL: Repository, https://github.com/ml-energy/zeus
+Project-URL: Homepage, https://ml.energy/zeus
+Project-URL: Documentation, https://ml.energy/zeus
+Keywords: deep-learning,power,energy,sustainability,mlsys
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: nvidia-ml-py
+Requires-Dist: pydantic
+Requires-Dist: rich
+Requires-Dist: tyro
+Provides-Extra: bso
+Requires-Dist: pydantic <2 ; extra == 'bso'
+Requires-Dist: httpx ; extra == 'bso'
+Provides-Extra: bso-server
+Requires-Dist: fastapi[all] ; extra == 'bso-server'
+Requires-Dist: sqlalchemy ; extra == 'bso-server'
+Requires-Dist: pydantic <2 ; extra == 'bso-server'
+Requires-Dist: python-dotenv ; extra == 'bso-server'
+Provides-Extra: dev
+Requires-Dist: zeus-ml[bso,bso-server,lint,migration,pfo-server,test] ; extra == 'dev'
+Requires-Dist: greenlet ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs-material[imaging] ==9.5.19 ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ==0.25.0 ; extra == 'docs'
+Requires-Dist: mkdocs-gen-files ==0.5.0 ; extra == 'docs'
+Requires-Dist: mkdocs-literate-nav ==0.6.1 ; extra == 'docs'
+Requires-Dist: mkdocs-section-index ==0.3.9 ; extra == 'docs'
+Requires-Dist: mkdocs-redirects ==1.2.1 ; extra == 'docs'
+Requires-Dist: urllib3 <2 ; extra == 'docs'
+Requires-Dist: black ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: ruff ; extra == 'lint'
+Requires-Dist: black ==22.6.0 ; extra == 'lint'
+Requires-Dist: pyright ; extra == 'lint'
+Requires-Dist: pandas-stubs ; extra == 'lint'
+Requires-Dist: transformers ; extra == 'lint'
+Provides-Extra: migration
+Requires-Dist: alembic ; extra == 'migration'
+Requires-Dist: sqlalchemy ; extra == 'migration'
+Requires-Dist: pydantic <2 ; extra == 'migration'
+Requires-Dist: python-dotenv ; extra == 'migration'
+Provides-Extra: pfo
+Requires-Dist: pydantic <2 ; extra == 'pfo'
+Requires-Dist: httpx ; extra == 'pfo'
+Provides-Extra: pfo-server
+Requires-Dist: fastapi[all] ; extra == 'pfo-server'
+Requires-Dist: pydantic <2 ; extra == 'pfo-server'
+Requires-Dist: lowtime ; extra == 'pfo-server'
+Requires-Dist: aiofiles ; extra == 'pfo-server'
+Requires-Dist: httpx ; extra == 'pfo-server'
+Requires-Dist: torch ; extra == 'pfo-server'
+Provides-Extra: test
+Requires-Dist: fastapi[all] ; extra == 'test'
+Requires-Dist: sqlalchemy ; extra == 'test'
+Requires-Dist: pydantic <2 ; extra == 'test'
+Requires-Dist: httpx ; extra == 'test'
+Requires-Dist: pytest ==7.3.2 ; extra == 'test'
+Requires-Dist: pytest-mock ==3.10.0 ; extra == 'test'
+Requires-Dist: pytest-xdist ==3.3.1 ; extra == 'test'
+Requires-Dist: anyio ==3.7.1 ; extra == 'test'
+Requires-Dist: aiosqlite ==0.20.0 ; extra == 'test'
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ml-energy/zeus/master/docs/assets/img/logo_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ml-energy/zeus/master/docs/assets/img/logo_light.svg">
+  <img alt="Zeus logo" width="55%" src="https://raw.githubusercontent.com/ml-energy/zeus/master/docs/assets/img/logo_dark.svg">
+</picture>
+<h1>Deep Learning Energy Measurement and Optimization</h1>
+
+[![Slack workspace](https://badgen.net/badge/icon/Join%20workspace/b31b1b?icon=slack&label=Slack)](https://join.slack.com/t/zeus-ml/shared_invite/zt-1najba5mb-WExy7zoNTyaZZfTlUWoLLg)
+[![Docker Hub](https://badgen.net/docker/pulls/symbioticlab/zeus?icon=docker&label=Docker%20pulls)](https://hub.docker.com/r/symbioticlab/zeus)
+[![Homepage](https://custom-icon-badges.demolab.com/badge/Homepage-ml.energy-23d175.svg?logo=home&logoColor=white&logoSource=feather)](https://ml.energy/zeus)
+[![Apache-2.0 License](https://custom-icon-badges.herokuapp.com/github/license/ml-energy/zeus?logo=law)](/LICENSE)
+</div>
+
+---
+**Project News** ⚡ 
+
+- \[2024/02\] Zeus was selected as a [2024 Mozilla Technology Fund awardee](https://foundation.mozilla.org/en/blog/open-source-AI-for-environmental-justice/)!
+- \[2023/12\] We released Perseus, an energy optimizer for large model training: [Preprint](https://arxiv.org/abs/2312.06902) | [Blog](https://ml.energy/zeus/research_overview/perseus) | [Optimizer](https://ml.energy/zeus/optimize/pipeline_frequency_optimizer)
+- \[2023/07\] We used the [`ZeusMonitor`](https://ml.energy/zeus/reference/monitor/energy/#zeus.monitor.energy.ZeusMonitor) to profile GPU time and energy consumption for the [ML.ENERGY leaderboard & Colosseum](https://ml.energy/leaderboard).
+---
+
+Zeus is a library for (1) [**measuring**](https://ml.energy/zeus/measure) the energy consumption of Deep Learning workloads and (2) [**optimizing**](https://ml.energy/zeus/optimize) their energy consumption.
+
+Zeus is part of [The ML.ENERGY Initiative](https://ml.energy).
+
+## Repository Organization
+
+```
+.
+├── zeus/                # ⚡ Zeus Python package
+│   ├── optimizer/       #    - A collection of optimizers for time and energy
+│   ├── monitor/         #    - Programmatic power and energy measurement tools
+│   ├── utils/           #    - Utility functions and classes
+│   ├── _legacy/         #    - Legacy code mostly to keep our papers reproducible
+│   ├── device.py        #    - Abstraction layer over compute devices
+│   └── callback.py      #    - Base class for callbacks during training
+│
+├── docker/              # 🐳 Dockerfiles and Docker Compose files
+│
+├── examples/            # 🛠️ Zeus usage examples
+│
+├── capriccio/           # 🌊 A drifting sentiment analysis dataset
+│
+└── trace/               # 🗃️ Training and energy traces for various GPUs and DNNs
+```
+
+## Getting Started
+
+Please refer to our [Getting Started](https://ml.energy/zeus/getting_started) page.
+After that, you might look at
+
+- [Measuring Energy](https://ml.energy/zeus/measure)
+- [Optimizing Energy](https://ml.energy/zeus/optimize)
+
+### Docker image
+
+We provide a Docker image fully equipped with all dependencies and environments.
+Refer to our [Docker Hub repository](https://hub.docker.com/r/mlenergy/zeus) and [`Dockerfile`](docker/Dockerfile).
+
+### Examples
+
+We provide working examples for integrating and running Zeus in the [`examples/`](/examples) directory.
+
+## Research
+
+Zeus is rooted on multiple research papers.
+Even more research is ongoing, and Zeus will continue to expand and get better at what it's doing.
+
+1. Zeus (2023): [Paper](https://www.usenix.org/conference/nsdi23/presentation/you) | [Blog](https://ml.energy/zeus/research_overview/zeus) | [Slides](https://www.usenix.org/system/files/nsdi23_slides_chung.pdf)
+1. Chase (2023): [Paper](https://arxiv.org/abs/2303.02508)
+1. Perseus (2023): [Paper](https://arxiv.org/abs/2312.06902) | [Blog](https://ml.energy/zeus/research_overview/perseus)
+
+## Other Resources
+
+1. Energy-Efficient Deep Learning with PyTorch and Zeus (PyTorch conference 2023): [Recording](https://youtu.be/veM3x9Lhw2A) | [Slides](https://ml.energy/assets/attachments/pytorch_conf_2023_slides.pdf)
+
+## Contact
+
+Jae-Won Chung (jwnchung@umich.edu)

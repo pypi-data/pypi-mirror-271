@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: lazyqml
+Version: 0.1.0
+Summary: LazyQML benchmarking utility to test quantum machine learning models.
+Author-email: Diego García Vega <garciavdiego@uniovi.es>
+License: MIT License
+Project-URL: Homepage, https://github.com/DiegoGV-Uniovi/lazyqml
+Keywords: lazyqml
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: absl-py ==1.3.0
+Requires-Dist: appdirs ==1.4.4
+Requires-Dist: autograd ==1.5
+Requires-Dist: autoray ==0.5.3
+Requires-Dist: cachetools ==5.2.0
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: charset-normalizer ==2.1.1
+Requires-Dist: chex ==0.1.5
+Requires-Dist: click ==8.1.3
+Requires-Dist: contourpy ==1.0.6
+Requires-Dist: cycler ==0.11.0
+Requires-Dist: dm-tree ==0.1.8
+Requires-Dist: fonttools ==4.38.0
+Requires-Dist: future ==0.18.2
+Requires-Dist: idna ==3.4
+Requires-Dist: importlib-metadata ==7.1.0
+Requires-Dist: jax ==0.4.6
+Requires-Dist: jaxlib ==0.4.6
+Requires-Dist: joblib ==1.2.0
+Requires-Dist: kiwisolver ==1.4.4
+Requires-Dist: ml-dtypes ==0.4.0
+Requires-Dist: networkx ==2.8.8
+Requires-Dist: ninja ==1.11.1
+Requires-Dist: numpy ==1.22.3
+Requires-Dist: opt-einsum ==3.3.0
+Requires-Dist: optax ==0.1.4
+Requires-Dist: packaging ==22.0
+Requires-Dist: pandas ==1.5.2
+Requires-Dist: PennyLane ==0.28.0
+Requires-Dist: PennyLane-Lightning ==0.28.0
+Requires-Dist: Pillow ==9.3.0
+Requires-Dist: pip
+Requires-Dist: pyparsing ==3.0.9
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: pytz ==2022.7
+Requires-Dist: requests ==2.28.1
+Requires-Dist: retworkx ==0.12.1
+Requires-Dist: rustworkx ==0.12.1
+Requires-Dist: scikit-learn ==1.2.0
+Requires-Dist: scipy ==1.8.1
+Requires-Dist: semantic-version ==2.10.0
+Requires-Dist: setuptools ==68.2.2
+Requires-Dist: six ==1.16.0
+Requires-Dist: threadpoolctl ==3.1.0
+Requires-Dist: toml ==0.10.2
+Requires-Dist: toolz ==0.12.0
+Requires-Dist: typing-extensions ==4.4.0
+Requires-Dist: urllib3 ==1.26.13
+Requires-Dist: wheel ==0.41.2
+Requires-Dist: xlrd ==2.0.1
+Requires-Dist: zipp ==3.18.1
+Provides-Extra: all
+Requires-Dist: lazyqml[extra] ; extra == 'all'
+Provides-Extra: extra
+Requires-Dist: pandas ; extra == 'extra'
+
+# lazyqml
+
+
+[![image](https://img.shields.io/pypi/v/lazyqml.svg)](https://pypi.python.org/pypi/lazyqml)
+[![image](https://img.shields.io/conda/vn/conda-forge/lazyqml.svg)](https://anaconda.org/conda-forge/lazyqml)
+
+
+**LazyQML benchmarking utility to test quantum machine learning models.**
+
+
+-   Free software: MIT License
+-   Documentation: https://DiegoGV-Uniovi.github.io/lazyqml
+    
+
+## Features
+
+-   TODO

@@ -1,0 +1,10 @@
+lazyqml/__init__.py,sha256=RPQKDYL3-peIAoqyRJIczkjH7_pcsfaqzcZSEyvEBZo,242
+lazyqml/common.py,sha256=82kyajeisGIYyJMbQNE8vDBlU7YUBTycOh3vA1oOZBI,22448
+lazyqml/supervised.py,sha256=Fe4yRglSmOwep7RYVgZ0LtFSV-ScIkXKz6gLhj08-AI,17507
+lazyqml-0.1.0.dist-info/AUTHORS.rst,sha256=Y_bDRslOAz5wcAYrTAnjDlmlW-51LfVF0Xwf09TbW3Y,245
+lazyqml-0.1.0.dist-info/LICENSE,sha256=y9EYvUN_l9ZWDuiVcxHE1NWbfy_HR9Z-8G19719ynbQ,1077
+lazyqml-0.1.0.dist-info/METADATA,sha256=LIfXY-HAZ5brOd38qZqYz7bzT6upcvmMxGmDi0AW3Qg,2779
+lazyqml-0.1.0.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+lazyqml-0.1.0.dist-info/entry_points.txt,sha256=I0WR08yVIeXjSa8XBSGZ9SsZtM8uMvKwZOdU1qQajao,45
+lazyqml-0.1.0.dist-info/top_level.txt,sha256=x2ffpytT-NeXmC7YaZLSQNMLK0pLfUiRmGOqwNbyjZE,8
+lazyqml-0.1.0.dist-info/RECORD,,

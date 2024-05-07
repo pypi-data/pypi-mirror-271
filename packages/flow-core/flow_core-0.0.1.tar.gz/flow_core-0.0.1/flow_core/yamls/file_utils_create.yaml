@@ -1,0 +1,13 @@
+ciandt_flow.tools.file_utils_create.create:
+  function: create
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    input_text:
+      type:
+      - string
+  module: ciandt_flow.tools.file_utils_create
+  name: Hello World Tool
+  description: This is hello world tool
+  type: python

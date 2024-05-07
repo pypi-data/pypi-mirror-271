@@ -1,0 +1,101 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry]
+name = "ParticleDetection"
+version = "0.4.1"
+description = "Tools to track particles with machine learning."
+authors = ["Adrian Niemann <adrian.niemann@gmx.de>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Operating System :: OS Independent",
+    "Environment :: GPU :: NVIDIA CUDA",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+documentation = "https://particletracking.readthedocs.io/"
+repository = "https://github.com/ANP-Granular/ParticleTracking"
+packages = [
+    { include = "ParticleDetection", from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+matplotlib = [
+    {version = ">=3.8", python = ">=3.9"},
+    {version = ">=3.6.1,<3.8", python = "<3.9"}
+]
+networkx = ">=3.1"
+numpy = [
+    {version = ">=1.23.4", python = ">=3.9"},
+    {version = ">=1.21,<=1.25", python = "<3.9"}
+]
+opencv-python-headless = ">=4.8.1.78"
+pandas= [
+    {version = ">=2.1.1", python = ">=3.9"},
+    {version = "<2.1", python = "<3.9"}
+]
+pulp = ">=2.7.0"
+tqdm = ">=4.64.1"
+scikit-learn = ">=1.3.1"
+scikit-image = [
+    {version = ">=0.22.0", python = ">=3.9"},
+    {version = ">=0.21.0,<0.22", python = "<3.9"},
+]
+scipy = [
+    {version=">=1.9.3,!=1.13.0", python = ">=3.9"},
+    {version="<1.11.0", python = "<3.9"}
+]
+# TODO: observe the progress of 
+#       https://github.com/python-poetry/poetry/issues/6409 to potentially 
+#       reintroduce the CPU/GPU options with automatic choice of torch versions
+torch = {version = ">=2"}
+torchvision = {version = ">=0.14.0"}
+torchaudio ={version = ">=2"}
+trackpy = ">=0.6.1"
+
+importlib-resources = {version = ">=6.1", python = "<3.9", optional = true}
+Pillow = {version = ">=10", optional = true}
+protobuf = {version = "==3.20.1", optional = true}
+pytest = {version = ">=7.4.2", optional = true}
+pytest-cov = {version = ">=4.1.0", optional = true}
+tensorboard =  {version = "*", optional = true}
+
+[tool.poetry.extras]
+DETECTRON = ["Pillow", "protobuf", "tensorboard"]
+TEST = ["pytest", "importlib_resources", "pytest-cov"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov=ParticleDetection",
+    "--cov-report=term",
+    "--cov-fail-under=50"
+]
+testpaths = [
+    "tests/",
+]
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "pep440"
+metadata = false
+bump = true
+pattern-prefix = "ParticleDetection-"
+
+[tool.black]
+line-length = 79
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.isort]
+profile = "black"
+line_length = 79

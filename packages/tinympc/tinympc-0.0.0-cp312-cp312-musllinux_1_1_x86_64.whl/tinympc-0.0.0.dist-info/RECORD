@@ -1,0 +1,9 @@
+tinympc.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+tinympc.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+tinympc/interface.py,sha256=QaPiFS5dAv2vnZGBSwFU-8smjTF0qA9-etIrDXMxXXA,7038
+tinympc/ext_tinympc.cpython-312-x86_64-linux-musl.so,sha256=sBhaasdy9ZeVszdU4EbvJW4CAqXR2NM8-aj93xX_RVk,397433
+tinympc/__init__.py,sha256=LGZvFcv4eANA8CiWWCSZMXBxq5EZbKQIqsqbWRQHAMc,40
+tinympc-0.0.0.dist-info/METADATA,sha256=Q7juvlCfZxepxXS0UqUXnjZb780XffOoTT7S82M_lLQ,2280
+tinympc-0.0.0.dist-info/WHEEL,sha256=itVt77WuOIsBVmeLIKTRG5Oq0Gb6z1_or0trApUXfVw,116
+tinympc-0.0.0.dist-info/RECORD,,
+tinympc-0.0.0.dist-info/licenses/LICENSE,sha256=Ct3AWH61OIwdeHQGu0DKHM2FOjdRghrxKtAVDXUYM10,1071

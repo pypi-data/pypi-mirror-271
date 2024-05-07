@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lasertools_rffthelper
+Version: 0.0.1
+Summary: A module to handle RFFT computations
+Home-page: https://github.com/lasertools/lasertools_rffthelper
+Author: brittonm
+Author-email: 68578865+brittonm@users.noreply.github.com
+License: GPLv3
+Download-URL: https://github.com/lasertools/lasertools_rffthelper/archive/refs/tags/v_0_0_1.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+# rffthelper
+A module to simplify Fourier transforms involving real waveforms.
+
+

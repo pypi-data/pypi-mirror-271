@@ -1,0 +1,9 @@
+README.md
+setup.py
+CustomtkinterCodeViewer/CTkCodeViewer.py
+CustomtkinterCodeViewer/__init__.py
+CustomtkinterCodeViewer.egg-info/PKG-INFO
+CustomtkinterCodeViewer.egg-info/SOURCES.txt
+CustomtkinterCodeViewer.egg-info/dependency_links.txt
+CustomtkinterCodeViewer.egg-info/requires.txt
+CustomtkinterCodeViewer.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+beetsplug/bpmanalyser/__init__.py,sha256=cZR_gDxpGV7kOd-5oFHCCc7EBtAxhwQBrVWywf1ZZ24,1256
+beetsplug/bpmanalyser/analyser.py,sha256=qC5k9wba5H_dV1Xr-8RdpGwl5HnTdSQxnrgtEb-cxJ8,2117
+beetsplug/bpmanalyser/command.py,sha256=B2nW6Pl9dGhRD9MOUZM_xL5I-0rXV_WDtSsEiQcofu4,7357
+beetsplug/bpmanalyser/version.py,sha256=XROWpIiDJCRu19IajCdPg0FazM2350E_UFCwpRqZp1A,175
+beets_bpmanalyser-1.4.1.dist-info/LICENSE.txt,sha256=d4tThPHPx_7NqFUeAdDWrOyWz5gbRmJsV_Eim4WksKA,1067
+beets_bpmanalyser-1.4.1.dist-info/METADATA,sha256=-00lawS7QuSYOgtqBAIt-nYjJ7WGCdb8TyP2cNslMFA,6517
+beets_bpmanalyser-1.4.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+beets_bpmanalyser-1.4.1.dist-info/top_level.txt,sha256=za8u6CXAGbgac8cUyn9NlsgXqqq-_4HHZcNmJnfmyWc,10
+beets_bpmanalyser-1.4.1.dist-info/RECORD,,

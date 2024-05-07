@@ -1,0 +1,6 @@
+[console_scripts]
+h5tui = h5tui.hdf5_tui:main
+
+[item.view]
+hex-view = plugins.hex:HexViewer
+image-view = plugins.image:ImageViewer

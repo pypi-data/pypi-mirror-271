@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "igc-processor"
+version = "0.1.0"
+description = "package for processing glider flight log data in IGC file format"
+authors = ["suikabar <mizuho.suikabar@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = ["tests"]

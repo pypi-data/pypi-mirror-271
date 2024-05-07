@@ -1,0 +1,512 @@
+.gitattributes
+.gitignore
+.pre-commit-config.yaml
+.readthedocs.yaml
+LICENSE.md
+MANIFEST.in
+README.md
+cla-1.0.md
+pyproject.toml
+sign-cla.md
+.github/pull_request_template.md
+.github/ISSUE_TEMPLATE/bug_report.md
+.github/ISSUE_TEMPLATE/feature_request.md
+.github/workflows/deploy-books.yml
+.github/workflows/publish-to-pypi.yml
+.github/workflows/pytest.yml
+TEMP/.gitignore
+contributors/markcampanelli.md
+contributors/martin-springer.md
+contributors/mcbrown042.md
+contributors/shirubana.md
+docs/Makefile
+docs/make.bat
+docs/source/api.rst
+docs/source/conf.py
+docs/source/index.rst
+docs/source/sg_execution_times.rst
+docs/source/_autosummary/pvdeg.collection.calculate_jsc_from_tau_cp.rst
+docs/source/_autosummary/pvdeg.collection.calculate_jsc_from_tau_iqe.rst
+docs/source/_autosummary/pvdeg.collection.collection_probability.rst
+docs/source/_autosummary/pvdeg.collection.generation_current.rst
+docs/source/_autosummary/pvdeg.collection.rst
+docs/source/_autosummary/pvdeg.degradation.IwaArrhenius.rst
+docs/source/_autosummary/pvdeg.degradation.IwaVantHoff.rst
+docs/source/_autosummary/pvdeg.degradation.arrhenius_deg.rst
+docs/source/_autosummary/pvdeg.degradation.degradation.rst
+docs/source/_autosummary/pvdeg.degradation.rst
+docs/source/_autosummary/pvdeg.degradation.vantHoff_deg.rst
+docs/source/_autosummary/pvdeg.design.edge_seal_ingress_rate.rst
+docs/source/_autosummary/pvdeg.design.edge_seal_width.rst
+docs/source/_autosummary/pvdeg.design.rst
+docs/source/_autosummary/pvdeg.fatigue.rst
+docs/source/_autosummary/pvdeg.fatigue.solder_fatigue.rst
+docs/source/_autosummary/pvdeg.humidity.Ce_numba.rst
+docs/source/_autosummary/pvdeg.humidity.back_encap.rst
+docs/source/_autosummary/pvdeg.humidity.backsheet.rst
+docs/source/_autosummary/pvdeg.humidity.backsheet_from_encap.rst
+docs/source/_autosummary/pvdeg.humidity.dew_yield.rst
+docs/source/_autosummary/pvdeg.humidity.front_encap.rst
+docs/source/_autosummary/pvdeg.humidity.module.rst
+docs/source/_autosummary/pvdeg.humidity.psat.rst
+docs/source/_autosummary/pvdeg.humidity.rst
+docs/source/_autosummary/pvdeg.humidity.run_module.rst
+docs/source/_autosummary/pvdeg.humidity.surface_outside.rst
+docs/source/_autosummary/pvdeg.letid.calc_device_params.rst
+docs/source/_autosummary/pvdeg.letid.calc_dn.rst
+docs/source/_autosummary/pvdeg.letid.calc_energy_loss.rst
+docs/source/_autosummary/pvdeg.letid.calc_injection_outdoors.rst
+docs/source/_autosummary/pvdeg.letid.calc_letid_lab.rst
+docs/source/_autosummary/pvdeg.letid.calc_letid_outdoors.rst
+docs/source/_autosummary/pvdeg.letid.calc_ndd.rst
+docs/source/_autosummary/pvdeg.letid.calc_pmp_loss_from_tau_loss.rst
+docs/source/_autosummary/pvdeg.letid.calc_regeneration_time.rst
+docs/source/_autosummary/pvdeg.letid.calc_voc_from_tau.rst
+docs/source/_autosummary/pvdeg.letid.carrier_factor.rst
+docs/source/_autosummary/pvdeg.letid.carrier_factor_wafer.rst
+docs/source/_autosummary/pvdeg.letid.convert_i_to_v.rst
+docs/source/_autosummary/pvdeg.letid.ff_green.rst
+docs/source/_autosummary/pvdeg.letid.j0_gray.rst
+docs/source/_autosummary/pvdeg.letid.k_ij.rst
+docs/source/_autosummary/pvdeg.letid.rst
+docs/source/_autosummary/pvdeg.letid.tau_now.rst
+docs/source/_autosummary/pvdeg.spectral.poa_irradiance.rst
+docs/source/_autosummary/pvdeg.spectral.rst
+docs/source/_autosummary/pvdeg.spectral.solar_position.rst
+docs/source/_autosummary/pvdeg.standards.calc_standoff.rst
+docs/source/_autosummary/pvdeg.standards.eff_gap.rst
+docs/source/_autosummary/pvdeg.standards.rst
+docs/source/_autosummary/pvdeg.standards.run_calc_standoff.rst
+docs/source/_autosummary/pvdeg.temperature.cell.rst
+docs/source/_autosummary/pvdeg.temperature.module.rst
+docs/source/_autosummary/pvdeg.temperature.rst
+docs/source/_autosummary/pvdeg.utilities.convert_tmy.rst
+docs/source/_autosummary/pvdeg.utilities.get_kinetics.rst
+docs/source/_autosummary/pvdeg.utilities.gid_downsampling.rst
+docs/source/_autosummary/pvdeg.utilities.quantile_df.rst
+docs/source/_autosummary/pvdeg.utilities.rst
+docs/source/_autosummary/pvdeg.utilities.ts_gid_df.rst
+docs/source/_autosummary/pvdeg.utilities.write_gids.rst
+docs/source/_autosummary/pvdeg.weather.get.rst
+docs/source/_autosummary/pvdeg.weather.get_NSRDB.rst
+docs/source/_autosummary/pvdeg.weather.get_NSRDB_fnames.rst
+docs/source/_autosummary/pvdeg.weather.read.rst
+docs/source/_autosummary/pvdeg.weather.read_h5.rst
+docs/source/_autosummary/pvdeg.weather.rst
+docs/source/_templates/module.rst
+docs/source/tutorials/index.rst
+docs/source/user_guide/NSRDB_API_Key.rst
+docs/source/user_guide/contributing.rst
+docs/source/user_guide/index.rst
+docs/source/user_guide/installation.rst
+docs/source/user_guide/montecarlo.rst
+docs/source/user_guide/package_overview.rst
+docs/source/user_guide/pv-variables-terms.rst
+docs/source/user_guide/Monte-Carlo-Details/Slide1.PNG
+docs/source/user_guide/Monte-Carlo-Details/Slide2.PNG
+docs/source/user_guide/Monte-Carlo-Details/Slide3.PNG
+docs/source/whatsnew/index.rst
+docs/source/whatsnew/releases/v0.1.0.rst
+docs/source/whatsnew/releases/v0.1.2.rst
+docs/source/whatsnew/releases/v0.1.3.rst
+docs/source/whatsnew/releases/v0.2.0.rst
+docs/source/whatsnew/releases/v0.2.1.rst
+docs/source/whatsnew/releases/v0.2.2.rst
+docs/source/whatsnew/releases/v0.2.3.rst
+docs/source/whatsnew/releases/v0.3.0.rst
+docs/source/whatsnew/releases/v0.3.1.rst
+docs/source/whatsnew/releases/v0.3.2.rst
+docs/source/whatsnew/releases/v0.3.3.rst
+pvdeg/__init__.py
+pvdeg/cli.py
+pvdeg/collection.py
+pvdeg/config.py
+pvdeg/degradation.py
+pvdeg/design.py
+pvdeg/fatigue.py
+pvdeg/geospatial.py
+pvdeg/humidity.py
+pvdeg/letid.py
+pvdeg/montecarlo.py
+pvdeg/scenario.py
+pvdeg/spectral.py
+pvdeg/standards.py
+pvdeg/temperature.py
+pvdeg/utilities.py
+pvdeg/weather.py
+pvdeg.egg-info/PKG-INFO
+pvdeg.egg-info/SOURCES.txt
+pvdeg.egg-info/dependency_links.txt
+pvdeg.egg-info/entry_points.txt
+pvdeg.egg-info/requires.txt
+pvdeg.egg-info/top_level.txt
+pvdeg/data/Degradation Database.xlsm
+pvdeg/data/DegradationDatabase.json
+pvdeg/data/OPAL2.pvl
+pvdeg/data/PVL_GenProfile.xlsx
+pvdeg/data/kinetic_parameters.json
+pvdeg/data/materials.json
+pvdeg/data/module test data.csv
+pvdeg/data/module_temperature.csv
+pvdeg/data/psm3.csv
+pvdeg/data/psm3_demo.csv
+pvdeg/data/spectra.csv
+pvdeg/data/wyller data.csv
+pvdeg/data/xeff_demo.csv
+pvdeg/data/xeff_demo.xlsx
+tests/__init__.py
+tests/sandbox.ipynb
+tests/test_collection.py
+tests/test_degradation.py
+tests/test_design.py
+tests/test_fatigue.py
+tests/test_humidity.py
+tests/test_letid.py
+tests/test_montecarlo.py
+tests/test_spectral.py
+tests/test_standards.py
+tests/test_temperature.py
+tests/test_utilities.py
+tests/test_weather.py
+tests/data/WeatherFile_SAM_NREL.csv
+tests/data/correlated_samples_arrhenius.csv
+tests/data/epw_pytest.epw
+tests/data/gid_x.csv
+tests/data/gid_x_timeshift.csv
+tests/data/h5_pytest.h5
+tests/data/injection-outdoors.csv
+tests/data/input_day_pytest.csv
+tests/data/input_year_pytest.csv
+tests/data/letid-lab.csv
+tests/data/letid-outdoors.csv
+tests/data/materials.json
+tests/data/meta.json
+tests/data/monte_carlo_arrhenius.csv
+tests/data/noCorrEmpty_samples_arrhenius.csv
+tests/data/noCorrR0_arrhenius.csv
+tests/data/psm3_pytest.csv
+tests/data/pvgis_pytest.csv
+tests/data/repins-device-params-timesteps.csv
+tests/data/repins-timesteps.csv
+tests/data/spectra_pytest.csv
+tests/data/tmy3_new_pytest.csv
+tests/data/tmy3_pytest.csv
+tests/data/weather_day_pytest.csv
+tests/data/weather_year_pytest.csv
+tutorials_and_tools/PVD_logo.png
+tutorials_and_tools/README.md
+tutorials_and_tools/_config.yml
+tutorials_and_tools/_toc.yml
+tutorials_and_tools/intro.md
+tutorials_and_tools/pvdeg_logo.png
+tutorials_and_tools/references.bib
+tutorials_and_tools/requirements.txt
+tutorials_and_tools/_build/.doctrees/README.doctree
+tutorials_and_tools/_build/.doctrees/environment.pickle
+tutorials_and_tools/_build/.doctrees/intro.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/1 - Basics, Humidity, Design.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/2 - Degradation.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/3 - Spectral Degradation.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/4 - Standards.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/5 - Weather Database Access.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/ASTM Live Demo.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/B-O LID - Accelerated Test.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/LETID - Accelerated Test.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/LETID - Outdoor LETID.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/LETID - Outdoor Scenario Based on Accelerated Test Result.doctree
+tutorials_and_tools/_build/.doctrees/tutorials/LETID - Passivated Wafer.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/1 - Basics, Humidity, Design.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/2 - Degradation.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/3 - Spectral Degradation.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/4 - Weather Database Access.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/ASTM Live Demo.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/B-O LID - Accelerated Test.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/LETID - Accelerated Test.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/LETID - Outdoor LETID.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/LETID - Outdoor Scenario Based on Accelerated Test Result.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/LETID - Passivated Wafer.doctree
+tutorials_and_tools/_build/.doctrees/tutorials_and_tools/Tools - Module Standoff for IEC TS 63126.doctree
+tutorials_and_tools/_build/html/.buildinfo
+tutorials_and_tools/_build/html/README.html
+tutorials_and_tools/_build/html/genindex.html
+tutorials_and_tools/_build/html/index.html
+tutorials_and_tools/_build/html/intro.html
+tutorials_and_tools/_build/html/objects.inv
+tutorials_and_tools/_build/html/search.html
+tutorials_and_tools/_build/html/searchindex.js
+tutorials_and_tools/_build/html/_images/107f7fef49ab36e6af4427e6bb3ede63b6f2c49cc28e8bed9978b78a2fc25f9d.png
+tutorials_and_tools/_build/html/_images/12a7219e98973ba28ce9b9e91603d8be0bc62fd2db687db91b2a8295e3e9714e.png
+tutorials_and_tools/_build/html/_images/14c37892c8b58d28a264bc3509c0dff9bd00e18d854f76e1d1ff0d71676be23e.png
+tutorials_and_tools/_build/html/_images/289ba833c6ff3492e05e012cae1722ae2fe80ee499727ea3af871df5db449f6a.png
+tutorials_and_tools/_build/html/_images/4f6a6327b2f96578f28da787a302c436c791ca65967f80eaf6df5a15c42608a0.png
+tutorials_and_tools/_build/html/_images/62a814bc767852db0cebc742523497450f2876ebff4bfd96d0b728e8c9869e42.png
+tutorials_and_tools/_build/html/_images/640486cb8d5836d69776fccd5472e808cd03e0b0679c4caa4b2e126fa443a74d.png
+tutorials_and_tools/_build/html/_images/7301c268ac687a32bd45452ecc8d61117aab373d7340c4c1edfb6fe460f26fdb.png
+tutorials_and_tools/_build/html/_images/78392251ce93847fb1ad4d1529db2f12af2762c68e879e813c52d20184f31e13.png
+tutorials_and_tools/_build/html/_images/85d967582ae2bb9bb9a45e1cfc91f4634d41142ea9a3c7811ec4050e970c4b79.png
+tutorials_and_tools/_build/html/_images/889fab6bd387f5c1cdbd3697ad508d07ce25e0cdb2e338b73bc4dfe058bf0a73.png
+tutorials_and_tools/_build/html/_images/8ca345321f03990ea6b8c541d35c9bee777190fd1b6c82a55946243f011a679f.png
+tutorials_and_tools/_build/html/_images/CAMS Radiation Satellite map.jpg
+tutorials_and_tools/_build/html/_images/NSRDB Graphic Update 2021.jpg
+tutorials_and_tools/_build/html/_images/NSRDB PSM3 Satellite map.jpg
+tutorials_and_tools/_build/html/_images/PVD_logo.png
+tutorials_and_tools/_build/html/_images/PVGIS Default Solar Radiation Database 100ppi_1.png
+tutorials_and_tools/_build/html/_images/SARAH (PVGIS) Satellite map.jpg
+tutorials_and_tools/_build/html/_images/a2338a98873f28f70d1022004561bd420f0a2a046ffe926049540d55dce3db7b.png
+tutorials_and_tools/_build/html/_images/a4fc985792ddf3301a6a1d2d827a30e4560482ae6f665332ca5c34c00581af44.png
+tutorials_and_tools/_build/html/_images/ac084646d15990889dcd2453552e192a0b45c4987bb90ff10cb7156a089d55d8.png
+tutorials_and_tools/_build/html/_images/b95b6944f31d700b58e70ea247d251a83ec48611c97d99de2a3f0386d6f85e65.png
+tutorials_and_tools/_build/html/_images/baa77bfc7071cdb8dbe6db743471f2623e8fa6b4caa5fe081a934a0a95e677a5.png
+tutorials_and_tools/_build/html/_images/bb1b5e01b51209571f7c16f07967b106d6b7cfedf39d36bf3b1ed247f7603e34.png
+tutorials_and_tools/_build/html/_images/ca65efc28b548b68b33737945575b7cfd758488337a0e5c3090e05b68d166c40.png
+tutorials_and_tools/_build/html/_images/d1e14a95a0238c112b229d421d9d9cb6dcb41467c123c119e2f9d85ef491d62d.png
+tutorials_and_tools/_build/html/_images/d36a4cab4a9ad1f61e5f22cbfdc128d6c8059725a5c531be5766a5ae26006893.png
+tutorials_and_tools/_build/html/_images/e4247cbd99ddedad38a3ec627def7d83e55865e57f15ac7db963704e8b99f3f8.png
+tutorials_and_tools/_build/html/_images/e49f2de7f2cc33da5133d8bce4be8c74fff7e2129acc0fe1d8d0af0755ad9c15.png
+tutorials_and_tools/_build/html/_images/f8b7c3747a7fc0703bb86ab35f35f084437bbba1384c14d2b44ab5c509adcff6.png
+tutorials_and_tools/_build/html/_images/tutorial_1_NSRDB_example.PNG
+tutorials_and_tools/_build/html/_sources/README.md
+tutorials_and_tools/_build/html/_sources/intro.md
+tutorials_and_tools/_build/html/_sources/tutorials/1 - Basics, Humidity, Design.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/2 - Degradation.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/3 - Spectral Degradation.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/4 - Standards.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/5 - Weather Database Access.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/ASTM Live Demo.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/B-O LID - Accelerated Test.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/LETID - Accelerated Test.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/LETID - Outdoor LETID.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/LETID - Outdoor Scenario Based on Accelerated Test Result.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials/LETID - Passivated Wafer.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/1 - Basics, Humidity, Design.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/2 - Degradation.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/3 - Spectral Degradation.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/4 - Weather Database Access.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/ASTM Live Demo.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/B-O LID - Accelerated Test.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/LETID - Accelerated Test.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/LETID - Outdoor LETID.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/LETID - Outdoor Scenario Based on Accelerated Test Result.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/LETID - Passivated Wafer.ipynb
+tutorials_and_tools/_build/html/_sources/tutorials_and_tools/Tools - Module Standoff for IEC TS 63126.ipynb
+tutorials_and_tools/_build/html/_sphinx_design_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css
+tutorials_and_tools/_build/html/_sphinx_design_static/design-tabs.js
+tutorials_and_tools/_build/html/_static/PVD_logo.png
+tutorials_and_tools/_build/html/_static/_sphinx_javascript_frameworks_compat.js
+tutorials_and_tools/_build/html/_static/basic.css
+tutorials_and_tools/_build/html/_static/check-solid.svg
+tutorials_and_tools/_build/html/_static/clipboard.min.js
+tutorials_and_tools/_build/html/_static/copy-button.svg
+tutorials_and_tools/_build/html/_static/copybutton.css
+tutorials_and_tools/_build/html/_static/copybutton.js
+tutorials_and_tools/_build/html/_static/copybutton_funcs.js
+tutorials_and_tools/_build/html/_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css
+tutorials_and_tools/_build/html/_static/design-style.4045f2051d55cab465a707391d5b2007.min.css
+tutorials_and_tools/_build/html/_static/design-tabs.js
+tutorials_and_tools/_build/html/_static/doctools.js
+tutorials_and_tools/_build/html/_static/documentation_options.js
+tutorials_and_tools/_build/html/_static/file.png
+tutorials_and_tools/_build/html/_static/jquery-3.6.0.js
+tutorials_and_tools/_build/html/_static/jquery.js
+tutorials_and_tools/_build/html/_static/language_data.js
+tutorials_and_tools/_build/html/_static/minus.png
+tutorials_and_tools/_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css
+tutorials_and_tools/_build/html/_static/play-solid.svg
+tutorials_and_tools/_build/html/_static/plus.png
+tutorials_and_tools/_build/html/_static/pygments.css
+tutorials_and_tools/_build/html/_static/sbt-webpack-macros.html
+tutorials_and_tools/_build/html/_static/searchtools.js
+tutorials_and_tools/_build/html/_static/sphinx-thebe.css
+tutorials_and_tools/_build/html/_static/sphinx-thebe.js
+tutorials_and_tools/_build/html/_static/sphinx_highlight.js
+tutorials_and_tools/_build/html/_static/togglebutton.css
+tutorials_and_tools/_build/html/_static/togglebutton.js
+tutorials_and_tools/_build/html/_static/underscore-1.13.1.js
+tutorials_and_tools/_build/html/_static/underscore.js
+tutorials_and_tools/_build/html/_static/webpack-macros.html
+tutorials_and_tools/_build/html/_static/images/logo_binder.svg
+tutorials_and_tools/_build/html/_static/images/logo_colab.png
+tutorials_and_tools/_build/html/_static/images/logo_deepnote.svg
+tutorials_and_tools/_build/html/_static/images/logo_jupyterhub.svg
+tutorials_and_tools/_build/html/_static/locales/ar/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/bg/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/bn/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ca/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/cs/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/da/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/de/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/el/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/eo/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/es/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/et/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/fi/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/fr/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/hr/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/id/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/it/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/iw/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ja/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ko/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/lt/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/lv/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ml/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/mr/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ms/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/nl/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/no/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/pl/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/pt/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ro/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ru/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/sk/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/sl/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/sr/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/sv/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ta/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/te/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/tg/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/th/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/tl/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/tr/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/uk/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/ur/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/vi/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/zh_CN/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/locales/zh_TW/LC_MESSAGES/booktheme.po
+tutorials_and_tools/_build/html/_static/scripts/bootstrap.js
+tutorials_and_tools/_build/html/_static/scripts/bootstrap.js.LICENSE.txt
+tutorials_and_tools/_build/html/_static/scripts/bootstrap.js.map
+tutorials_and_tools/_build/html/_static/scripts/pydata-sphinx-theme.js
+tutorials_and_tools/_build/html/_static/scripts/pydata-sphinx-theme.js.map
+tutorials_and_tools/_build/html/_static/scripts/sphinx-book-theme.js
+tutorials_and_tools/_build/html/_static/scripts/sphinx-book-theme.js.map
+tutorials_and_tools/_build/html/_static/styles/bootstrap.css
+tutorials_and_tools/_build/html/_static/styles/bootstrap.css.map
+tutorials_and_tools/_build/html/_static/styles/pydata-sphinx-theme.css
+tutorials_and_tools/_build/html/_static/styles/pydata-sphinx-theme.css.map
+tutorials_and_tools/_build/html/_static/styles/sphinx-book-theme.css
+tutorials_and_tools/_build/html/_static/styles/theme.css
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/LICENSE.txt
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/css/all.min.css
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.ttf
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.ttf
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.ttf
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.ttf
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.woff2
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/LICENSE.txt
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/css/all.min.css
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/js/all.min.js
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/js/all.min.js.LICENSE.txt
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.ttf
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.ttf
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.ttf
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/webfonts/fa-v4compatibility.ttf
+tutorials_and_tools/_build/html/_static/vendor/fontawesome/6.5.1/webfonts/fa-v4compatibility.woff2
+tutorials_and_tools/_build/html/tutorials/1 - Basics, Humidity, Design.html
+tutorials_and_tools/_build/html/tutorials/2 - Degradation.html
+tutorials_and_tools/_build/html/tutorials/3 - Spectral Degradation.html
+tutorials_and_tools/_build/html/tutorials/4 - Standards.html
+tutorials_and_tools/_build/html/tutorials/5 - Weather Database Access.html
+tutorials_and_tools/_build/html/tutorials/ASTM Live Demo.html
+tutorials_and_tools/_build/html/tutorials/B-O LID - Accelerated Test.html
+tutorials_and_tools/_build/html/tutorials/LETID - Accelerated Test.html
+tutorials_and_tools/_build/html/tutorials/LETID - Outdoor LETID.html
+tutorials_and_tools/_build/html/tutorials/LETID - Outdoor Scenario Based on Accelerated Test Result.html
+tutorials_and_tools/_build/html/tutorials/LETID - Passivated Wafer.html
+tutorials_and_tools/_build/html/tutorials_and_tools/1 - Basics, Humidity, Design.html
+tutorials_and_tools/_build/html/tutorials_and_tools/2 - Degradation.html
+tutorials_and_tools/_build/html/tutorials_and_tools/3 - Spectral Degradation.html
+tutorials_and_tools/_build/html/tutorials_and_tools/4 - Weather Database Access.html
+tutorials_and_tools/_build/html/tutorials_and_tools/ASTM Live Demo.html
+tutorials_and_tools/_build/html/tutorials_and_tools/B-O LID - Accelerated Test.html
+tutorials_and_tools/_build/html/tutorials_and_tools/LETID - Accelerated Test.html
+tutorials_and_tools/_build/html/tutorials_and_tools/LETID - Outdoor LETID.html
+tutorials_and_tools/_build/html/tutorials_and_tools/LETID - Outdoor Scenario Based on Accelerated Test Result.html
+tutorials_and_tools/_build/html/tutorials_and_tools/LETID - Passivated Wafer.html
+tutorials_and_tools/_build/html/tutorials_and_tools/Tools - Module Standoff for IEC TS 63126.html
+tutorials_and_tools/_build/jupyter_execute/107f7fef49ab36e6af4427e6bb3ede63b6f2c49cc28e8bed9978b78a2fc25f9d.png
+tutorials_and_tools/_build/jupyter_execute/12a7219e98973ba28ce9b9e91603d8be0bc62fd2db687db91b2a8295e3e9714e.png
+tutorials_and_tools/_build/jupyter_execute/14c37892c8b58d28a264bc3509c0dff9bd00e18d854f76e1d1ff0d71676be23e.png
+tutorials_and_tools/_build/jupyter_execute/289ba833c6ff3492e05e012cae1722ae2fe80ee499727ea3af871df5db449f6a.png
+tutorials_and_tools/_build/jupyter_execute/4f6a6327b2f96578f28da787a302c436c791ca65967f80eaf6df5a15c42608a0.png
+tutorials_and_tools/_build/jupyter_execute/62a814bc767852db0cebc742523497450f2876ebff4bfd96d0b728e8c9869e42.png
+tutorials_and_tools/_build/jupyter_execute/640486cb8d5836d69776fccd5472e808cd03e0b0679c4caa4b2e126fa443a74d.png
+tutorials_and_tools/_build/jupyter_execute/7301c268ac687a32bd45452ecc8d61117aab373d7340c4c1edfb6fe460f26fdb.png
+tutorials_and_tools/_build/jupyter_execute/78392251ce93847fb1ad4d1529db2f12af2762c68e879e813c52d20184f31e13.png
+tutorials_and_tools/_build/jupyter_execute/85d967582ae2bb9bb9a45e1cfc91f4634d41142ea9a3c7811ec4050e970c4b79.png
+tutorials_and_tools/_build/jupyter_execute/889fab6bd387f5c1cdbd3697ad508d07ce25e0cdb2e338b73bc4dfe058bf0a73.png
+tutorials_and_tools/_build/jupyter_execute/8ca345321f03990ea6b8c541d35c9bee777190fd1b6c82a55946243f011a679f.png
+tutorials_and_tools/_build/jupyter_execute/a2338a98873f28f70d1022004561bd420f0a2a046ffe926049540d55dce3db7b.png
+tutorials_and_tools/_build/jupyter_execute/a4fc985792ddf3301a6a1d2d827a30e4560482ae6f665332ca5c34c00581af44.png
+tutorials_and_tools/_build/jupyter_execute/ac084646d15990889dcd2453552e192a0b45c4987bb90ff10cb7156a089d55d8.png
+tutorials_and_tools/_build/jupyter_execute/b95b6944f31d700b58e70ea247d251a83ec48611c97d99de2a3f0386d6f85e65.png
+tutorials_and_tools/_build/jupyter_execute/baa77bfc7071cdb8dbe6db743471f2623e8fa6b4caa5fe081a934a0a95e677a5.png
+tutorials_and_tools/_build/jupyter_execute/bb1b5e01b51209571f7c16f07967b106d6b7cfedf39d36bf3b1ed247f7603e34.png
+tutorials_and_tools/_build/jupyter_execute/ca65efc28b548b68b33737945575b7cfd758488337a0e5c3090e05b68d166c40.png
+tutorials_and_tools/_build/jupyter_execute/d1e14a95a0238c112b229d421d9d9cb6dcb41467c123c119e2f9d85ef491d62d.png
+tutorials_and_tools/_build/jupyter_execute/d36a4cab4a9ad1f61e5f22cbfdc128d6c8059725a5c531be5766a5ae26006893.png
+tutorials_and_tools/_build/jupyter_execute/e4247cbd99ddedad38a3ec627def7d83e55865e57f15ac7db963704e8b99f3f8.png
+tutorials_and_tools/_build/jupyter_execute/e49f2de7f2cc33da5133d8bce4be8c74fff7e2129acc0fe1d8d0af0755ad9c15.png
+tutorials_and_tools/_build/jupyter_execute/f8b7c3747a7fc0703bb86ab35f35f084437bbba1384c14d2b44ab5c509adcff6.png
+tutorials_and_tools/_build/jupyter_execute/tutorials/1 - Basics, Humidity, Design.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/2 - Degradation.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/3 - Spectral Degradation.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/4 - Standards.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/5 - Weather Database Access.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/ASTM Live Demo.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/B-O LID - Accelerated Test.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/LETID - Accelerated Test.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/LETID - Outdoor LETID.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/LETID - Outdoor Scenario Based on Accelerated Test Result.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials/LETID - Passivated Wafer.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/1 - Basics, Humidity, Design.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/2 - Degradation.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/3 - Spectral Degradation.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/4 - Weather Database Access.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/ASTM Live Demo.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/B-O LID - Accelerated Test.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/LETID - Accelerated Test.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/LETID - Outdoor LETID.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/LETID - Outdoor Scenario Based on Accelerated Test Result.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/LETID - Passivated Wafer.ipynb
+tutorials_and_tools/_build/jupyter_execute/tutorials_and_tools/Tools - Module Standoff for IEC TS 63126.ipynb
+tutorials_and_tools/tutorials_and_tools/1 - Basics, Humidity, Design.ipynb
+tutorials_and_tools/tutorials_and_tools/1 - Basics, Humidity, Design.py
+tutorials_and_tools/tutorials_and_tools/2 - Degradation.ipynb
+tutorials_and_tools/tutorials_and_tools/2 - Degradation.py
+tutorials_and_tools/tutorials_and_tools/3 - Spectral Degradation.ipynb
+tutorials_and_tools/tutorials_and_tools/3 - Spectral Degradation.py
+tutorials_and_tools/tutorials_and_tools/4 - Weather Database Access.ipynb
+tutorials_and_tools/tutorials_and_tools/4 - Weather Database Access.py
+tutorials_and_tools/tutorials_and_tools/ASTM Live Demo.ipynb
+tutorials_and_tools/tutorials_and_tools/ASTM Live Demo.py
+tutorials_and_tools/tutorials_and_tools/B-O LID - Accelerated Test.ipynb
+tutorials_and_tools/tutorials_and_tools/B-O LID - Accelerated Test.py
+tutorials_and_tools/tutorials_and_tools/DuraMAT Live Demo.ipynb
+tutorials_and_tools/tutorials_and_tools/DuraMAT Live Demo.py
+tutorials_and_tools/tutorials_and_tools/LETID - Accelerated Test.ipynb
+tutorials_and_tools/tutorials_and_tools/LETID - Accelerated Test.py
+tutorials_and_tools/tutorials_and_tools/LETID - Outdoor Geospatial Demo.ipynb
+tutorials_and_tools/tutorials_and_tools/LETID - Outdoor Geospatial Demo.py
+tutorials_and_tools/tutorials_and_tools/LETID - Outdoor LETID.ipynb
+tutorials_and_tools/tutorials_and_tools/LETID - Outdoor LETID.py
+tutorials_and_tools/tutorials_and_tools/LETID - Outdoor Scenario Based on Accelerated Test Result.ipynb
+tutorials_and_tools/tutorials_and_tools/LETID - Outdoor Scenario Based on Accelerated Test Result.py
+tutorials_and_tools/tutorials_and_tools/LETID - Passivated Wafer.ipynb
+tutorials_and_tools/tutorials_and_tools/LETID - Passivated Wafer.py
+tutorials_and_tools/tutorials_and_tools/Monte Carlo - Arrhenius.ipynb
+tutorials_and_tools/tutorials_and_tools/Monte Carlo - Arrhenius.py
+tutorials_and_tools/tutorials_and_tools/Monte Carlo - Standoff.ipynb
+tutorials_and_tools/tutorials_and_tools/Monte Carlo - Standoff.py
+tutorials_and_tools/tutorials_and_tools/Tools - Module Standoff for IEC TS 63126.ipynb
+tutorials_and_tools/tutorials_and_tools/Tools - Module Standoff for IEC TS 63126.py
+tutorials_and_tools/tutorials_and_tools/Van't Hoff Degradation Model.ipynb
+tutorials_and_tools/tutorials_and_tools/images/T98 70C standoff Map.png
+tutorials_and_tools/tutorials_and_tools/images/tutorial_1_NSRDB_example.PNG
+tutorials_and_tools/tutorials_and_tools/images/xarray.webp

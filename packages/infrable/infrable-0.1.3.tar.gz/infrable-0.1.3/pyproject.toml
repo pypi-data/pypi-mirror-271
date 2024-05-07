@@ -1,0 +1,43 @@
+[project]
+dynamic = ['version']
+name = 'infrable'
+description = "Hanny's legendary infrastructure as code solution."
+keywords = ['declarative', 'infrastructure', 'management']
+homepage = 'https://github.com/stckme/infrable'
+authors = [
+  {name = 'Arijit Basu', email = 'sayanarijit@gmail.com'}
+]
+maintainers = [
+  {name = 'Arijit Basu', email = 'sayanarijit@gmail.com'}
+]
+readme = 'README.md'
+license = {file = 'LICENSE'}
+requires-python = '>=3.10'
+dependencies = [
+  'jinja2',
+  'sh',
+  'typer',
+  'pyyaml',
+  'ipython',
+  'tqdm',
+  'python-box'
+]
+
+[project.urls]
+Homepage = 'https://github.com/stckme/infrable'
+
+[project.optional-dependencies]
+devel = ['tox', 'pytest', 'pytest-cov', 'black', 'isort', 'build', 'twine']
+
+[project.scripts]
+infrable = 'infrable.cli.main:app'
+
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[tool.hatch.version]
+path = 'infrable/__init__.py'
+
+[tool.pytest]
+addopts = '--cov --cov-report=html --cov-fail-under=100'

@@ -1,0 +1,16 @@
+scoring_matrices/__init__.pxd,sha256=gDvgaPHbh8NuflIDtQHAEhM7uCS5eR1A04zAuexjc74,31
+scoring_matrices/lib.pxd,sha256=hDRnAQuPfPkTNWZS3opsywn2Ebcfly1QZucxLRZn9_4,818
+scoring_matrices/matrices.pxd,sha256=Bwd4e9Sy6L6phmwwC8y6HM--pS2ATBU5-kVv214K39s,146
+scoring_matrices/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scoring_matrices/lib.pyi,sha256=FzH5lZgwG11Hc_cn-UeaH1gNEhTo4UovdArL7iC3ttc,1856
+scoring_matrices/lib.pypy37-pp73-aarch64-linux-gnu.so,sha256=NhfQRa5ZxfbyGgVswnkem_L5Bc1E1_gdVOodVU0DZFA,342960
+scoring_matrices/__init__.py,sha256=nqIcxUZOiP08mDk3jpZLEykyYSZaLNG5DuRaZ61D68A,172
+scoring_matrices/lib.pyx,sha256=6OWuIf4efCj0Cq7YH3ROaFRFyYi2FxubC8Boj2AHcN0,16781
+scoring_matrices/tests/test_doctest.py,sha256=s-shPQwpy-mVJaupdVnZRC2wmLOQdTCnS6vPWYqzRA4,2477
+scoring_matrices/tests/__init__.py,sha256=9ysb9ej5SlfwRE3AEkoyx4HxVSXsW8h-U5jgJcUAbBQ,254
+scoring_matrices/tests/test_scoring_matrix.py,sha256=hiAHzm3cCY811UoPl00oA6CIBBjHvB2AOocBbdYv2AI,5019
+scoring_matrices-0.2.0.dist-info/METADATA,sha256=4wLqix8SRDMQpHO1-IIDAFLkrTMIo1LMzKcW_J2d5Gg,8341
+scoring_matrices-0.2.0.dist-info/COPYING,sha256=W3hXwpT6UtiSFrO8yeDddZLU5tKIAX238e0N5slPQGA,1098
+scoring_matrices-0.2.0.dist-info/RECORD,,
+scoring_matrices-0.2.0.dist-info/top_level.txt,sha256=78tj5SxBzGucfcTaA-IU2DT9Zhnq6qD_eIz1Eq3sAnY,17
+scoring_matrices-0.2.0.dist-info/WHEEL,sha256=KYnXIHZOd-HfpZ3eeqOPeMmUiCY_iu0JZdlVBcJbE94,164

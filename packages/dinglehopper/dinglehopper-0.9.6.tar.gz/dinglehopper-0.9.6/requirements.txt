@@ -1,0 +1,13 @@
+click
+jinja2
+lxml
+uniseg >= 0.8.0
+numpy
+colorama
+MarkupSafe
+ocrd >= 2.65.0
+attrs
+multimethod >= 1.3
+tqdm
+rapidfuzz >= 2.7.0
+chardet

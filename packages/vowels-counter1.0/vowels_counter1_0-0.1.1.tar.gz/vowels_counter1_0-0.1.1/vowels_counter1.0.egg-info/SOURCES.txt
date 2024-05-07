@@ -1,0 +1,8 @@
+setup.py
+vowels_counter/__init__.py
+vowels_counter/vowels_counter.py
+vowels_counter1.0.egg-info/PKG-INFO
+vowels_counter1.0.egg-info/SOURCES.txt
+vowels_counter1.0.egg-info/dependency_links.txt
+vowels_counter1.0.egg-info/requires.txt
+vowels_counter1.0.egg-info/top_level.txt

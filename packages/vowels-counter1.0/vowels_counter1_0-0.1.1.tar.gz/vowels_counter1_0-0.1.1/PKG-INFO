@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: vowels_counter1.0
+Version: 0.1.1
+Summary: This package counts the number of vowels from the input text.
+Requires-Dist: importlib; python_version == "3.11"

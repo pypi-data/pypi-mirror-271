@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dynamic_drf
+Version: 0.1
+Summary: A package that overrides the default drf spectacular
+Author: Atit Sharma
+Requires-Dist: Django==5.0.4
+Requires-Dist: drf-spectacular==0.27.2
+Requires-Dist: djangorestframework==3.15.1
+
+This python package is for those developers who feels complex to include drf-spectacular in there project. Now simple add this 'dyn_drf' in your installed apps. Then in your project url import urlpatterns from urlpatterns          Simply do urlpatterns+=[             path('your-other-url',your_views),         ]

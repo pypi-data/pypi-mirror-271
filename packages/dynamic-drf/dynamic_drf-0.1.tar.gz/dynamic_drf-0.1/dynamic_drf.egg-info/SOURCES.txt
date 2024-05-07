@@ -1,0 +1,8 @@
+setup.py
+dynamic_drf/__init__.py
+dynamic_drf/dyn_settings.py
+dynamic_drf.egg-info/PKG-INFO
+dynamic_drf.egg-info/SOURCES.txt
+dynamic_drf.egg-info/dependency_links.txt
+dynamic_drf.egg-info/requires.txt
+dynamic_drf.egg-info/top_level.txt

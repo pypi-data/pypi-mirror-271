@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: neco_m3u8
+Version: 0.0.1
+Summary: m3u8解析与下载库,自动获取key解密,需要ffmpeg用于合并ts流
+Home-page: 
+Author: neco_arc
+Author-email: 3306601284@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pycryptodome
+Requires-Dist: DownloadKit
+Requires-Dist: m3u8
+
+# Ne_m3u8
+
+- 解析m3u8
+
+- 多线程下载
+
+- 自动解密key

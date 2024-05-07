@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: torchdriveenv
+Version: 0.1.1
+Summary: TorchDriveEnv is a lightweight 2D driving reinforcement learning environment, supported by a solid simulator and smart non-playable characters
+Author-email: "Inverted AI Ltd." <info@inverted.ai>
+Keywords: reinforcement learning,drive,RL environment,torch-drive-env,torchdriveenv,invertedai,inverted ai
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: shapely
+Requires-Dist: scipy
+Requires-Dist: imageio
+Requires-Dist: torch>=1.10.1
+Requires-Dist: invertedai>=0.0.16
+Requires-Dist: omegaconf
+Requires-Dist: opencv-python
+Requires-Dist: gymnasium
+Requires-Dist: lanelet2
+Requires-Dist: torchdrivesim>=0.2.1
+Provides-Extra: baselines
+Requires-Dist: stable-baselines3; extra == "baselines"
+Requires-Dist: tensorboard; extra == "baselines"
+Requires-Dist: wandb; extra == "baselines"
+Requires-Dist: ipykernel; extra == "baselines"
+Requires-Dist: moviepy; extra == "baselines"
+
+# Installation
+
+The basic installation of torchdriveenv uses an OpenCV renderer, which is slower but easy to install. PyTorch3D renderer can be faster, but it requires specific versions of CUDA and PyTorch, so it is best installed in Docker.
+
+## Opencv rendering
+
+To install the “torchdriveenv” with opencv rendering:
+```
+pip install torchdriveenv
+```
+
+To run examples:
+Set the `$IAI_API_KEY` and `$WANDB_API_KEY`
+```
+pip install torchdriveenv[baselines]
+cd examples
+python rl_training.py
+```
+
+## Pytorch3d rendering
+
+To install the “torchdriveenv” with Pytorch3d rendering:
+```
+docker build --target torchdriveenv-first-release -t torchdriveenv-first-release:latest .
+```
+
+To run examples:
+Set the `$IAI_API_KEY` and `$WANDB_API_KEY`
+```
+cd examples
+docker compose up rl-training
+```

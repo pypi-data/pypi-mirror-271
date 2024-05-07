@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+NAME = 'hebill_pypi'
+VERSION = '1.0.4'
+DESCRIPTION = '快速打包上传到项目到 pypi.org'
+LONG_DESCRIPTION = 'README.MD'
+LONG_DESCRIPTION_TYPE = 'text/markdown'
+URL = 'http://www.hebill.net/'
+AUTHOR = 'He Bill'
+AUTHOR_EMAIL = 'hebill@hebill.net'
+AUTHOR_URL = 'http://www.hebill.net/'

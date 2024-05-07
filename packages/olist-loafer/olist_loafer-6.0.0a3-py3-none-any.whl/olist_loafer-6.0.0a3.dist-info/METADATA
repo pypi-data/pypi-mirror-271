@@ -1,0 +1,94 @@
+Metadata-Version: 2.3
+Name: olist-loafer
+Version: 6.0.0a3
+Summary: Asynchronous message dispatcher for concurrent tasks processing
+Project-URL: Download, https://github.com/olist/olist-loafer/releases
+Project-URL: Repository, https://github.com/olist/olist-loafer/
+Author-email: Olist <developers@olist.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2016 George Kussumoto
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: asyncio,dispatcher,message,microservices,tasks
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.8
+Requires-Dist: aiobotocore<3.0.0,>=2.0.0
+Requires-Dist: taskgroup; python_version < '3.11'
+Description-Content-Type: text/markdown
+
+[![PyPI latest](https://img.shields.io/pypi/v/olist-loafer.svg?maxAge=2592000)](https://pypi.python.org/pypi/loafer)
+[![Python versions](https://img.shields.io/pypi/pyversions/olist-loafer.svg?maxAge=2592000)](https://pypi.python.org/pypi/loafer)
+[![License](https://img.shields.io/pypi/l/loafer.svg?maxAge=2592000)](https://pypi.python.org/pypi/olist-loafer)
+[![CircleCI](https://circleci.com/gh/olist/olist-loafer/tree/main.svg?style=svg)](https://circleci.com/gh/olist/olist-loafer/tree/main)
+[![Olist Sponsor](https://img.shields.io/badge/sponsor-olist-53b5f6.svg?style=flat-square)](http://opensource.olist.com/)
+
+
+**olist-loafer** is an asynchronous message dispatcher for concurrent tasks processing, with the following features:
+
+* Encourages decoupling from message providers and consumers
+* Easy to extend and customize
+* Easy error handling, including integration with sentry
+* Easy to create one or multiple services
+* Generic Handlers
+* Amazon SQS integration
+
+---
+:information_source: Currently, only AWS SQS is supported
+
+---
+
+## How to use
+
+A simple message forwader, from ``source-queue`` to ``destination-queue``:
+
+```python
+from loafer.ext.aws.handlers import SQSHandler
+from loafer.ext.aws.routes import SQSRoute
+from loafer.managers import LoaferManager
+
+routes = [
+    SQSRoute('source-queue', handler=SQSHandler('destination-queue')),
+]
+
+if __name__ == '__main__':
+    manager = LoaferManager(routes)
+    manager.run()
+```
+
+## How to contribute
+
+Fork this repository, make changes and send us a pull request. We will review your changes and apply them. Before sending us your pull request please check if you wrote and ran tests:
+
+```bash
+make test
+```

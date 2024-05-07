@@ -1,0 +1,11 @@
+setup.py
+litellm_types/__init__.py
+litellm_types/completion.py
+litellm_types/document.py
+litellm_types/messages.py
+litellm_types/prompt.py
+litellm_types.egg-info/PKG-INFO
+litellm_types.egg-info/SOURCES.txt
+litellm_types.egg-info/dependency_links.txt
+litellm_types.egg-info/requires.txt
+litellm_types.egg-info/top_level.txt

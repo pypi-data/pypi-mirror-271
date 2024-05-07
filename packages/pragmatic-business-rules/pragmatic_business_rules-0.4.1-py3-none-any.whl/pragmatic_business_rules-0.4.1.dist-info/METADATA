@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: pragmatic-business-rules
+Version: 0.4.1
+Summary: Pragmatic business rules
+Project-URL: Homepage, https://github.com/Soremwar/pragmatic_business_rules
+Project-URL: Issues, https://github.com/Soremwar/pragmatic_business_rules/issues
+Author-email: Soremwar <stephenguerrero43@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: jsonschema==4.2.1
+Description-Content-Type: text/markdown
+
+`pragmatic-business-rules`
+
+# For type checking
+
+`mypy setup.py`
+
+# For running the tests
+
+`pytest tests`

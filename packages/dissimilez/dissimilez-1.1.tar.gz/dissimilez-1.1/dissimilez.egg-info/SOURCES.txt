@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dissimilez/__init__.py
+dissimilez/main.py
+dissimilez.egg-info/PKG-INFO
+dissimilez.egg-info/SOURCES.txt
+dissimilez.egg-info/dependency_links.txt
+dissimilez.egg-info/requires.txt
+dissimilez.egg-info/top_level.txt

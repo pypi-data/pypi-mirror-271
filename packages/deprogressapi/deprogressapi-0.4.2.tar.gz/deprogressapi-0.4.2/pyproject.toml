@@ -1,0 +1,140 @@
+# SPDX-FileCopyrightText: 2020-2024 Helmholtz Centre Potsdam GFZ German Research Centre for Geosciences
+#
+# SPDX-License-Identifier: CC0-1.0
+
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = ['setuptools >= 61.0', 'versioneer[toml]']
+
+[project]
+name = "deprogressapi"
+dynamic = ["version"]
+description = "basic back-end progress api for the data analytics software framework dasf"
+
+readme = "README.md"
+keywords = [
+    "digital-earth",
+    "dasf",
+    "pulsar",
+    "gfz",
+    "hzg",
+    "hereon",
+    "hgf",
+    "helmholtz",
+    "remote procedure call",
+    "rpc",
+    "django",
+    "python",
+    "websocket",
+    "progress reporting",
+]
+
+authors = [
+    { name = 'Daniel Eggert', email = 'daniel.eggert@gfz-potsdam.de' },
+    { name = 'Adam Sasin', email = 'sasin@hu-potsdam.de' },
+    { name = 'Philipp S. Sommer', email = 'philipp.sommer@hereon.de' },
+]
+maintainers = [
+    { name = 'Philipp S. Sommer', email = 'philipp.sommer@hereon.de' },
+]
+license = { text = 'Apache-2.0' }
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+
+requires-python = '>= 3.7'
+dependencies = [
+    # add your dependencies here
+    "pydantic>=2.2,<3.0",
+    "pydantic-settings",
+    'windows-curses ; platform_system == "Windows"',
+]
+
+[project.urls]
+Homepage = 'https://codebase.helmholtz.cloud/dasf/dasf-progress-api'
+Documentation = "https://digital-earth.pages.geomar.de/dasf/dasf-messaging-python/"
+Source = "https://codebase.helmholtz.cloud/dasf/dasf-progress-api"
+Tracker = "https://codebase.helmholtz.cloud/dasf/dasf-progress-api/issues/"
+
+
+[project.optional-dependencies]
+testsite = [
+    "tox",
+    "isort==5.12.0",
+    "black==23.1.0",
+    "blackdoc==0.3.8",
+    "flake8==6.0.0",
+    "pre-commit",
+    "mypy",
+    "dasf-broker-django",
+    "djangorestframework",
+    "pytest-django",
+    "pytest-cov",
+    "reuse",
+    "cffconvert",
+]
+dev = [
+    "deprogressapi[testsite]",
+    "PyYAML",
+    "types-PyYAML",
+]
+
+
+[tool.mypy]
+ignore_missing_imports = true
+plugins = [
+    "pydantic.mypy",
+]
+
+[tool.setuptools]
+zip-safe = false
+license-files = ["LICENSES/*"]
+
+[tool.setuptools.package-data]
+deprogressapi = ["py.typed"]
+
+[tool.setuptools.packages.find]
+namespaces = false
+exclude = [
+    'tests*',
+    'examples'
+]
+
+[tool.pytest.ini_options]
+addopts = '-v'
+DJANGO_SETTINGS_MODULE = "testproject.settings"
+
+[tool.versioneer]
+VCS = 'git'
+style = 'pep440'
+versionfile_source = 'deprogressapi/_version.py'
+versionfile_build = 'deprogressapi/_version.py'
+tag_prefix = 'v'
+parentdir_prefix = 'dasf-progress-api-'
+
+[tool.isort]
+profile = "black"
+line_length = 79
+src_paths = ["deprogressapi"]
+float_to_top = true
+known_first_party = "deprogressapi"
+
+[tool.black]
+line-length = 79
+target-version = ['py39']
+
+[tool.coverage.run]
+omit = ["deprogressapi/_version.py"]

@@ -1,0 +1,6 @@
+Bio
+pandas
+setuptools
+numpy
+dnaio
+pysam

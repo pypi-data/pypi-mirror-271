@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "scooze"
+version = "2.0.0"
+description = "A flexible data layer for applications working with Magic: the Gathering cards and decks."
+authors = [
+    "Alexander Gimmi <iambroadband@gmail.com>",
+    "Ben Horkley <ben.horkley@gmail.com>",
+    "Jacob Ginsparg <jacobginsparg@gmail.com>",
+]
+readme = "README.md"
+packages = [{ include = "scooze", from = "src" }]
+
+[tool.poetry.urls]
+homepage = "https://github.com/arcavios/scooze"
+repository = "https://github.com/arcavios/scooze"
+documentation = "https://scooze.readthedocs.io"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+src_paths = ["scooze", "tests"]
+
+[tool.poetry.dependencies]
+beanie = "^1.23.0"
+cleo = "^2.0.1"
+fastapi = ">=0.100.0, <1.0.0"
+frozendict = "^2.3.8"
+ijson = "^3.2.3"
+motor = "^3.2.0"
+pydantic = ">=2.0.0"
+pydantic-settings = "^2.0.0"
+python = ">=3.11, <4"
+requests = "^2.31.0"
+setuptools = "^68.2.2"
+uvicorn = { extras = ["standard"], version = "^0.23.1" }
+
+[tool.poetry.group.dev.dependencies]
+asgi-lifespan = "^2.1.0"
+black = "^24.3.0"
+coverage = "^7.3.2"
+httpx = "^0.24.1"
+isort = "^5.12.0"
+mongomock-motor = "^0.0.25"
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.1"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.15"
+mkdocs-simple-hooks = "^0.1.5"
+mkdocstrings = "^0.24.1"
+mkdocstrings-python = "^1.9.0"
+
+[tool.poetry.scripts]
+scooze = "scooze.console.cli:run_cli"
+
+[tool.pytest.ini_options]
+# addopts = "-m 'not slow'"
+addopts = "-W ignore::DeprecationWarning -m 'not context'"
+asyncio_mode = "auto"
+markers = ["slow: expected to be slow", "context: related to managed context"]

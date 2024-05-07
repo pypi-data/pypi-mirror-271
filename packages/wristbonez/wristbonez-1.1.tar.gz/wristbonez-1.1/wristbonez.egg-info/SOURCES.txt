@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wristbonez/__init__.py
+wristbonez/main.py
+wristbonez.egg-info/PKG-INFO
+wristbonez.egg-info/SOURCES.txt
+wristbonez.egg-info/dependency_links.txt
+wristbonez.egg-info/requires.txt
+wristbonez.egg-info/top_level.txt

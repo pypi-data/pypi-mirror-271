@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: proem
+Version: 1.0.0
+Summary: Python class to create a block of information on a command line application.
+Author-email: engmtcdrm <gabif54409@rolenot.com>
+Project-URL: Homepage, https://github.com/engmtcdrm/proem
+Project-URL: Bug Tracker, https://github.com/engmtcdrm/proem/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# proem
+
+Python class to create a block of information on a command line application.
+
+# Examples

@@ -1,0 +1,22 @@
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "proem"
+version = "1.0.0"
+authors = [
+  { name="engmtcdrm", email="gabif54409@rolenot.com" },
+]
+description = "Python class to create a block of information on a command line application."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/engmtcdrm/proem"
+"Bug Tracker" = "https://github.com/engmtcdrm/proem/issues"

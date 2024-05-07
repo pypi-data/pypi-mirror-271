@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/proem.py
+src/proem.egg-info/PKG-INFO
+src/proem.egg-info/SOURCES.txt
+src/proem.egg-info/dependency_links.txt
+src/proem.egg-info/top_level.txt
+tests/test_proem.py

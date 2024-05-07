@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dinosaur-run-game
+Version: 1.0.0
+Summary: A simple dinosaur run game.
+Home-page: https://github.com/worasit/speech_recognition
+Author: Your Name
+License-File: LICENSE
+Requires-Dist: pygame

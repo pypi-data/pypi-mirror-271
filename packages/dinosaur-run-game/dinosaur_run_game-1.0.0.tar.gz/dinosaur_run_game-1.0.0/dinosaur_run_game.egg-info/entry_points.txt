@@ -1,0 +1,2 @@
+[console_scripts]
+dinosaur-run = dino_game.main:main

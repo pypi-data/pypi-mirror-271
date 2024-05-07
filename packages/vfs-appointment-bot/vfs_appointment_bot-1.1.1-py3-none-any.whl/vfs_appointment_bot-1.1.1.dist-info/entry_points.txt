@@ -1,0 +1,3 @@
+[console_scripts]
+vfs-appointment-bot=vfs_appointment_bot.main:main
+

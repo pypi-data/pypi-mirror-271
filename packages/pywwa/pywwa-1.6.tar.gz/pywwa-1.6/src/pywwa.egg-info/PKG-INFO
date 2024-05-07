@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pywwa
+Version: 1.6
+Summary: A suite of parsers and utils for NWS products.
+Author-email: daryl herzmann <akrherz@gmail.com>
+License: Apache
+Project-URL: Changelog, https://github.com/akrherz/pyWWA/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://github.com/akrherz/pyWWA
+Project-URL: Homepage, https://mesonet.agron.iastate.edu
+Project-URL: Issues, https://github.com/akrherz/pyWWA/issues
+Project-URL: Repository, https://github.com/akrherz/pyWWA.git
+Keywords: meteorology,nws
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: geopandas
+Requires-Dist: metar>=1.7
+Requires-Dist: metpy
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pint
+Requires-Dist: psycopg
+Requires-Dist: pybufrkit
+Requires-Dist: pyiem
+Requires-Dist: pymemcache
+Requires-Dist: pyproj
+Requires-Dist: requests
+Requires-Dist: shapely
+Requires-Dist: sqlalchemy
+Requires-Dist: treq
+Requires-Dist: twisted

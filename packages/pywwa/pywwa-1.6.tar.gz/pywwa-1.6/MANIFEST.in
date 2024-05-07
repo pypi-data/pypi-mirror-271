@@ -1,0 +1,5 @@
+recursive-include src/pywwa *.py
+recursive-include src/pywwa *.shp
+recursive-include src/pywwa *.shx
+recursive-include src/pywwa *.tbl
+recursive-include src/pywwa *.stns

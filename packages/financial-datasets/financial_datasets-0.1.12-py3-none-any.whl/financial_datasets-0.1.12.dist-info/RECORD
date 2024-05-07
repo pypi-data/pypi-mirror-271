@@ -1,0 +1,10 @@
+financial_datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+financial_datasets/dataset.py,sha256=ht13svNOFwURxAnVJsDEDPbU1up1TeB6hHpI3xFvJRw,201
+financial_datasets/filings.py,sha256=mZO3VLBKKR4st7RCzJcFxXqfskJPHTBqbvQIP8wUFqw,1133
+financial_datasets/generator.py,sha256=xSMNJZp2OySqI4VQ3_YwXVa5oGKus75yH71bLZXSLbw,7592
+financial_datasets/parser.py,sha256=oLxM7bhgHPCOp_mWBqTONB5-pWD_FFY5AcqyuGg_V40,5308
+financial_datasets/prompts.py,sha256=K_ayqgHzzyqTputCOy6dUiNj7naDh0lFyIOe9m7Tbec,1727
+financial_datasets-0.1.12.dist-info/LICENSE,sha256=bLGSxKN8achEWdLhs9p69RsG2R41vlIciYEHva4Y4qQ,1068
+financial_datasets-0.1.12.dist-info/METADATA,sha256=LgJ3PVit72gUtRogEcx-P-GhLPTX9Vs20fVW6ZQo-R0,5037
+financial_datasets-0.1.12.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+financial_datasets-0.1.12.dist-info/RECORD,,

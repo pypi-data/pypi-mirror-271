@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vault-explorer"
+version = "0.1.1"
+authors = [
+  { name="Aurimas Šakalys", email="aurimas.sakalys@vinted.com" },
+]
+description = "A module to recursively retrieve values from HashiCorp Vault KV store and apply functions on them."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "flatten-json~=0.1.14",
+  "hvac~=2.2.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/vault_explorer"
+]
+
+[project.urls]
+Homepage = "https://github.com/asakalys/vault-explorer"
+Issues = "https://github.com/asakalys/vault-explorer/issues"

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lasertools-pulse
+Version: 0.0.1
+Summary: A module to represent a laser pulse
+Home-page: https://github.com/lasertools/lasertools_pulse
+Author: brittonm
+Author-email: 68578865+brittonm@users.noreply.github.com
+License: GPLv3
+Download-URL: https://github.com/lasertools/lasertools_pulse/archive/refs/tags/v_0_0_1.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+# pulse
+A module to represent a laser pulse
+

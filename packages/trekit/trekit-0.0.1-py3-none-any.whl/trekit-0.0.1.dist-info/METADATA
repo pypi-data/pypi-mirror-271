@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: trekit
+Version: 0.0.1
+Summary: A package for useful functions
+Home-page: https://github.com/trebladev/trekit
+Author: trebladev
+Author-email: flexiblexuan@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: point-cloud-utils
+
+# xkit
+A toolkit which collect useful code snippets

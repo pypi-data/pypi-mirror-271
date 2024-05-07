@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lasertools_tracefit
+Version: 0.0.1.1
+Summary: A module to fit a measured trace
+Home-page: https://github.com/lasertools/lasertools_tracefit
+Author: brittonm
+Author-email: 68578865+brittonm@users.noreply.github.com
+License: GPLv3
+Download-URL: https://github.com/lasertools/lasertools_tracefit/archive/refs/tags/v_0_0_1_1.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+# tracefit
+A module to fit a measured trace
+

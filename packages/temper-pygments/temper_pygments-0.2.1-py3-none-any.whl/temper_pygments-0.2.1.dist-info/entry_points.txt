@@ -1,0 +1,8 @@
+[console_scripts]
+bundle=scripts:bundle
+test=scripts:test
+
+[pygments.lexers]
+temper=temper_pygments:TemperLexer
+tempermd=temper_pygments:TemperMdLexer
+

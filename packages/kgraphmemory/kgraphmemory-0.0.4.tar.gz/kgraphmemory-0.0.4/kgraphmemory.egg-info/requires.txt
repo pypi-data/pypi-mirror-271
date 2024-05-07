@@ -1,0 +1,10 @@
+vital-ai-vitalsigns>=0.1.4
+vital-ai-domain>=0.1.3
+six
+pyyaml
+vital-ai-haley-kg>=0.1.3
+rdflib==7.0.0
+SPARQLWrapper==2.0.0
+networkx
+matplotlib
+transformers==4.40.1

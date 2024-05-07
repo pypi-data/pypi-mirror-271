@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ConnorLabAnalysisTools
+Version: 0.2.2
+Summary: Tools for analyzing data in the Connor Lab
+Home-page: https://github.com/EdConnorLab/ConnorLabAnalysisTools
+Author: Allen Chen
+Author-email: allenmuhanchen@gmail.com
+Description-Content-Type: text/markdown

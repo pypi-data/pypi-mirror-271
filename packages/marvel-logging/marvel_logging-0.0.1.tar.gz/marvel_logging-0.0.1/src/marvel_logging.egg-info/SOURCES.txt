@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/marvel_logging/__init__.py
+src/marvel_logging/mylogger.py
+src/marvel_logging.egg-info/PKG-INFO
+src/marvel_logging.egg-info/SOURCES.txt
+src/marvel_logging.egg-info/dependency_links.txt
+src/marvel_logging.egg-info/top_level.txt

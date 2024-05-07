@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: SX1509_gpio_expander
+Version: 0.1.0
+Summary: A package to control the SX1509 GPIO expander
+Home-page: https://github.com/T-N-S/SX1509_gpio_expander_package
+Author: Tim Schumann
+License-File: LICENSE
+Requires-Dist: adafruit-circuitpython-busdevice

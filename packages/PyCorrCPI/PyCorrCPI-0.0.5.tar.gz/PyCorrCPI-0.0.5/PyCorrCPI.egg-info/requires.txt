@@ -1,0 +1,7 @@
+numpy
+matplotlib
+scipy
+pandas
+numba
+IPython
+typing

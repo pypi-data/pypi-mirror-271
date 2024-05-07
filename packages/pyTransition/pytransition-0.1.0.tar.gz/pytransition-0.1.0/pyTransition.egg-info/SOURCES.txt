@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyTransition/__init__.py
+pyTransition/transition.py
+pyTransition.egg-info/PKG-INFO
+pyTransition.egg-info/SOURCES.txt
+pyTransition.egg-info/dependency_links.txt
+pyTransition.egg-info/requires.txt
+pyTransition.egg-info/top_level.txt
+tests/__init__.py
+tests/test_transition.py

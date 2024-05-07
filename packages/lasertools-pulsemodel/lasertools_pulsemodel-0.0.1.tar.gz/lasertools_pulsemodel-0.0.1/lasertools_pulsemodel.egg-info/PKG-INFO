@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lasertools-pulsemodel
+Version: 0.0.1
+Summary: A module for pulse models
+Home-page: https://github.com/lasertools/lasertools_pulsemodel
+Author: brittonm
+Author-email: 68578865+brittonm@users.noreply.github.com
+License: GPLv3
+Download-URL: https://github.com/lasertools/lasertools_pulsemodel/archive/refs/tags/v_0_0_1.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+# pulsemodel
+A module for pulse models
+

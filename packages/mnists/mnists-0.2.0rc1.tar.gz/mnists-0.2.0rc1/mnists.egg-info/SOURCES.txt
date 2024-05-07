@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+mnists/__init__.py
+mnists/_mnist.py
+mnists/utils.py
+mnists.egg-info/PKG-INFO
+mnists.egg-info/SOURCES.txt
+mnists.egg-info/dependency_links.txt
+mnists.egg-info/requires.txt
+mnists.egg-info/top_level.txt

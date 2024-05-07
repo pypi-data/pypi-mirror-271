@@ -1,0 +1,452 @@
+Metadata-Version: 2.1
+Name: Skyrim
+Version: 0.0.2
+Summary: AI weather models united.
+Maintainer-email: SecondLaw Research <efe@2lw.ai>, SecondLaw Research <murat@2lw.ai>
+License: Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "{}"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright 2024 Secondlaw AI
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/secondlaw-ai/skyrim
+Project-URL: Tracker, https://github.com/secondlaw-ai/skyrim/issues
+Project-URL: Docs, https://github.com/secondlaw-ai/skyrim
+Keywords: pytorch,weather,forecasting,ai,ml,xarray,dl
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: modal
+Requires-Dist: loguru
+Requires-Dist: xarray[zarr]
+Requires-Dist: base58
+Requires-Dist: botocore
+Requires-Dist: aiobotocore
+Requires-Dist: boto3
+Requires-Dist: s3fs==0.4.2
+Requires-Dist: zarr
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: click
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+<h1 align="center">
+ <a href="https://www.secondlaw.xyz">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/skyrim_banner_1.png"/>
+    <img height="auto" width="90%" src="./assets/skyrim_banner_1.png"/>
+  </picture>
+ </a>
+ <br></br>
+
+</h1>
+<p align="center">
+
+🔥 Run state-of-the-art large weather models in less than 2 minutes.
+
+🌪️ Ensemble and fine-tune to push the limits on forecasting.
+
+🌎 Simulate extreme weather events!
+
+</p>
+
+# Getting Started
+
+Skyrim allows you to run any large weather model with a consumer grade GPU.
+
+Until very recently, weather forecasts were run in 100K+ CPU HPC clusters, solving massive numerical models. Within last 2 years, open-source foundation models trained on weather simulation datasets surpassed the skill level of these numerical models.
+
+Our goal is to make these models accessible by providing a well maintained infrastructure.
+
+## Installation
+
+Clone the repo, set an env (either conda or venv) and then run
+
+```bash
+pip install .
+```
+
+Depending on your use-case (i.e. AWS storage needs or CDS initial conditions), you may need to fill in a `.env` by `cp .env.example .env`.
+
+## Run your first forecast
+
+Skyrim currently supports either running on on [modal](#forecasting-using-modal), on a container –for instance [vast.ai](#vastai-setup) or [bare metal](#bare-metal)(you will need an NVIDIA GPU with at least 24GB and installation can be long).
+
+Modal is the fastest option, it will run forecasts "serverless" so you don't have to worry about the infrastructure.
+
+### Forecasting using Modal:
+
+You will need a [modal](https://modal.com/) key. Run `modal setup` and set it up (<1 min).
+
+Modal comes with $30 free credits and a single forecast costs about 2 cents as of May 2024.
+
+Once you are all good to go, then run:
+
+```bash
+modal run skyrim/modal/forecast.py
+```
+
+This by default uses `pangu` model to forecast for the next 6 hours, starting from yesterday. It gets initial conditions from [NOAA GFS](https://en.wikipedia.org/wiki/Global_Forecast_System) and writes the forecast to a modal volume. You can choose different dates and weather models as shown in [here](#run-forecasts-with-different-models-initial-conditions-dates).
+
+After you have your forecast, you can explore it by running a notebook (without GPU, so cheap) in modal:
+
+```bash
+modal run skyrim/modal/forecast.py::run_analysis
+```
+
+This will output a jupyter notebook link that you can follow and access the forecast. For instance, to read the forecast you can run from the notebook the following:
+
+```
+import xarray as xr
+forecast = xr.open_dataset('/skyrim/outputs/[forecast_id]/[filename], engine='scipy')
+```
+
+Once you are done, best is to delete the volume as a daily forecast is about 2GB:
+
+```bash
+modal volume rm forecasts /[model_name] -r
+```
+
+If you don't want to use modal volume, and want to aggregate results in a bucket (currently only s3), you just have to run:
+
+```bash
+modal run skyrim/modal/forecast.py --output_dir s3://skyrim-dev
+```
+
+where `skyrim-dev` is the bucket that you want to aggregate the forecasts. By default, `zarr` format is used to store in AWS/GCP so you can read and move only the parts of the forecasts that you need.
+
+### Forecasting with your own GPUs:
+
+If you are running on your own GPUs, installed either via [bare metal](#bare-metal) or via [vast.ai](#vast-ai-setup) then you can just run:
+
+`forecast`
+
+or you can pass in options as such:
+
+`forecast -m graphcast --lead_time 24 --initial_conditions cds --date 20240330`
+
+See [examples](#examples) section for more.✌️
+
+#### Bare metal
+
+1. You will need a NVIDIA GPU with at least 16GB memory, ideally 24GB. We are working on quantization as well so that in the future it would be possible to run simulations with much less compute. Have an environment set with Python +3.10, Pytorch 2.2.2 and CUDA 11.8. Or if easier start with the docker image: `pytorch/pytorch:2.2.2-cuda11.8-cudnn8-devel`.
+2. Install conda (miniconda for instance). Then run in that environment:
+
+```bash
+conda create -y -n skyenv python=3.10
+conda activate skyenv
+./build.sh
+```
+
+Note: Because we will be building from scratch this can take long (we need to install pytorch extensions through NVIDIA Apex package).
+
+#### vast.ai setup
+
+1. Find a machine you like RTX3090 or above with at least 24GB memory. Make sure you have good bandwith (+500MB/s).
+2. Select the instance template from [here](https://cloud.vast.ai/?ref_id=128656&template_id=1883215a8487ec6ea9ad68a7cdb38c5e).
+3. Then clone the repo and `pip install . && pip install -r requirements.txt`
+
+## Run forecasts with different models, initial conditions, dates
+
+For each run, you will first pull the initial conditions of your interest (most recent one by default), then the model will run for the desired time step. Initial conditions are pulled from GFS, ECMWF IFS (Operational) or CDS (ERA5 Reanalysis Dataset).
+
+If you are using CDS initial conditions, then you will need a [CDS](https://cds.climate.copernicus.eu/user/login?destination=%2Fcdsapp%23!%2Fdataset%2Freanalysis-era5-single-levels) API key in your `.env` –`cp .env.example` and paste.
+
+## Examples
+
+All examples are from local setup, but you can run them as it is if you just change `forecast` to `modal run skyrim/modal/forecast.py` and also make snake case kebab-case -i.e. `model_name` to `model-name`.
+
+### Example 1: Pick models, initial conditions, lead times
+
+Forecast using `graphcast` model, with ERA5 initial conditions, starting from 2024-04-30T00:00:00 and with a lead time of a week (forecast for the next week, i.e. 168 hours):
+
+```bash
+forecast --model_name graphcast --initial_conditions cds --date 20240403 -output_dir s3://skyrim-dev --lead_time 168
+```
+
+or in modal:
+
+```bash
+modal run skyrim/modal/forecast.py --model-name graphcast --initial-conditions cds --date 20240403 --output-dir s3://skyrim-dev --lead-time 168
+```
+
+### Example 2: Store in AWS and then read only what you need
+
+Say you re interested in wind at 37.0344° N, 27.4305 E to see if we can kite tomorrow. If we need wind speed, we need to pull wind vectors at about surface level, these are u10m and v10m [components](http://colaweb.gmu.edu/dev/clim301/lectures/wind/wind-uv) of wind. Here is how you go about it:
+
+```bash
+modal run skyrim/modal/forecast.py --output-dir s3://[your_bucket]/[optional_path]  --lead-time 24
+```
+
+Then you can read the forecast as below:
+
+```python
+import xarray as xr
+import pandas as pd
+zarr_store_path = "s3://[your_bucket]/[forecast_id]"
+forecast = xr.open_dataset(zarr_store_path, engine='zarr') # reads the metadata
+df = forecast.sel(lat=37.0344, lon=27.4305, channel=['u10m', 'v10m']).to_pandas()
+```
+
+Normally each day is about 2GB but using zarr_store you will only fetch what you need.✌️
+
+## Supported initial conditions and caveats
+
+1. NOAA GFS
+2. ECMWF IFS
+3. ERA5 Re-analysis Dataset
+
+## Large weather models supported
+
+Currently supported models are:
+
+- [x] [Graphcast](https://arxiv.org/abs/2212.12794)
+- [x] [Pangu](https://arxiv.org/abs/2211.02556)
+- [x] [Fourcastnet](https://arxiv.org/abs/2202.11214) (v1 & v2)
+- [x] [DLWP](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020MS002109)
+- [ ] [Fuxi](https://www.nature.com/articles/s41612-023-00512-1)
+- [ ] [MetNet-3](https://arxiv.org/abs/2306.06079)
+
+### License
+
+For detailed information regarding licensing, please refer to the license details provided on each model's main homepage, which we link to from each of the corresponding components within our repository.
+
+- **Pangu Weather** : [Original](https://github.com/198808xc/Pangu-Weather), [ECMWF](https://github.com/ecmwf-lab/ai-models-panguweather), [NVIDIA](https://github.com/NVIDIA/earth2mip)
+
+- **FourcastNet** : [Original](https://github.com/NVlabs/FourCastNet), [ECMWF](https://github.com/ecmwf-lab/ai-models-fourcastnetv2),[NVIDIA](https://github.com/NVIDIA/earth2mip)
+
+- **Graphcast** : [Original](https://github.com/google-deepmind/graphcast), [ECMWF](https://github.com/ecmwf-lab/ai-models-graphcast), [NVIDIA](https://github.com/NVIDIA/earth2mip)
+
+- **Fuxi**: [Original](https://github.com/tpys/FuXi)
+
+## Roadmap
+
+- [x] ensemble prediction
+- [x] interface to fetch real-time NWP-based predictions, e.g. via ECMWF API.
+- [ ] global model performance comparison across various regions and parameters.
+- [ ] finetuning api that trains a downstream model on top of features coming from a global/foundation model, that is optimized wrt to a specific criteria and region
+- [ ] model quantization and its effect on model efficiency and accuracy.
+
+This README will be updated regularly to reflect the progress and integration of new models or features into the library. It serves as a guide for internal development efforts and aids in prioritizing tasks and milestones.
+
+## Development
+
+All in [here](./CONTRIBUTING.md) ✌️
+
+## Acknowledgements
+
+Skyrim is built on top of NVIDIA's [earth2mip](https://github.com/NVIDIA/earth2mip) and ECMWF's [ai-models](https://github.com/ecmwf-lab/ai-models). Definitely check them out!
+
+## Other Useful Resources
+
+- [🌍 Awesome Large Weather Models (LWMs) | AI for Earth (AI4Earth) | AI for Science (AI4Science)](http://github.com/jaychempan/Awesome-LWMs)
+- [Climate Data Store](https://cds.climate.copernicus.eu/)
+- [Open Climate Fix](https://github.com/openclimatefix)
+- [Herbie](https://github.com/blaylockbk/Herbie)

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: markdown-mermaid
+Version: 0.1
+Author: rauaap
+Project-URL: Homepage, https://github.com/rauaap/markdown-mermaid
+Requires-Dist: markdown >=3.4.1
+

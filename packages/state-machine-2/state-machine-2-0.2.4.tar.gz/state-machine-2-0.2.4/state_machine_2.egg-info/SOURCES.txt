@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+state_machine/__init__.py
+state_machine/backends.py
+state_machine/base.py
+state_machine/core.py
+state_machine/exceptions.py
+state_machine/py.typed
+state_machine/utils.py
+state_machine_2.egg-info/PKG-INFO
+state_machine_2.egg-info/SOURCES.txt
+state_machine_2.egg-info/dependency_links.txt
+state_machine_2.egg-info/requires.txt
+state_machine_2.egg-info/top_level.txt

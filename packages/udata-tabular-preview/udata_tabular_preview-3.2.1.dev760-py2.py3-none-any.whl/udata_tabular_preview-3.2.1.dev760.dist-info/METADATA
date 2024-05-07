@@ -1,0 +1,184 @@
+Metadata-Version: 2.1
+Name: udata-tabular-preview
+Version: 3.2.1.dev760
+Summary: A plugin to preview tabular files (CSV, Excel, ...) using tabular api
+Home-page: https://github.com/opendatateam/udata-tabular-preview
+Author: Open Data Team
+Author-email: contact@opendata.team
+License: AGPL
+Keywords: udata,harvester,Tabular Preview
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Software Distribution
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: udata >=4.0.0
+Provides-Extra: test
+Requires-Dist: mock ==3.0.5 ; extra == 'test'
+Requires-Dist: pytest-flask ==1.2.0 ; extra == 'test'
+Requires-Dist: pytest-sugar ==0.9.6 ; extra == 'test'
+Requires-Dist: pytest ==7.2.1 ; extra == 'test'
+
+# Tabular Preview
+
+A plugin to preview tabular files (CSV, Excel ...) using [tabular-api](https://github.com/etalab/api-tabular)
+
+## Usage
+
+Install the plugin package in you udata environement:
+
+```bash
+pip install udata-tabular-preview
+```
+
+Then activate it in your `udata.cfg`:
+
+```python
+PLUGINS = ['tabular']
+```
+
+## Configuration
+
+You can control this plugin behavior with the following `udata.cfg` parameters:
+
+- **`TABULAR_API_URL`**: The URL to your `tabular-api` instance (without trailing slash). **ex:** `https://my.tabular.api`
+- **`TABULAR_EXPLORE_URL`**: The URL to your `explore` instance (without trailing slash). **ex:** `https://my.explore`
+- **`TABULAR_ALLOW_REMOTE`**: Whether or not to allow remote resources preview. Default value is `True`
+- **`TABULAR_MAX_SIZE`**: Max allowed file size in bytes if defined. Default value is `None`
+- **`TABULAR_PAGE_SIZE`**: fetched data page size. Default to `5`
+
+
+## Development
+
+### JS dependencies
+
+Install JS dependencies with:
+
+```shell
+npm install
+```
+
+Then you can package these assets with:
+
+```shell
+inv assets-watch
+```
+
+(You might need to relaunch these commands when you pull upstream changes).
+
+You can build a production-ready version of JS and CSS assets with:
+
+```shell
+inv assets-build
+```
+
+You should extract the vue-i18n language files after modifying this plugin with :
+
+```shell
+inv i18n
+```
+
+### Python dependencies
+
+Assuming you are in an active virtualenv with `udata` installed and in the current project cloned repository directory, install all dependencies using:
+
+```shell
+pip install -e requirements/develop.pip
+```
+
+(You might need to relaunch this command when you pull upstream changes).
+
+### Testing
+
+Tests are located into the `tests` folder and be run with:
+
+```shell
+inv test
+```
+
+### Quality
+
+Code must pass Flake 8 validation and README should be compatible with `PyPI`.
+You can check both with:
+
+```shell
+inv qa
+```
+
+# Changelog
+
+## Current (in progress)
+
+- :warning: Plug udata-tabular-preview to tabular api and decomission of csvapi [#33](https://github.com/opendatateam/udata-tabular-preview/pull/33)
+- Migrate to Python 3.11 following `udata` dependencies upgrade [#35](https://github.com/opendatateam/udata-tabular-preview/pull/35)
+- Don't show preview if parsing has failed [#36](https://github.com/opendatateam/udata-tabular-preview/pull/36)
+- Display the latest date of the preview [#37](https://github.com/opendatateam/udata-tabular-preview/pull/37)
+- Set long description content type to markdown in dist [#39](https://github.com/opendatateam/udata-tabular-preview/pull/39)
+- Publish .dev version on pypi [#40](https://github.com/opendatateam/udata-tabular-preview/pull/40) 
+
+## 4.0.0 (2024-03-22)
+
+- Connect preview with hydra and remove csvapi + styles for preview [#32](https://github.com/opendatateam/udata-tabular-preview/pull/33)
+ Current (in progress)
+- Use pagination from package `@etalab/data.gouv.fr-components` [#34](https://github.com/opendatateam/udata-tabular-preview/pull/34)
+
+## 3.1.0 (2024-01-23)
+
+- Use either of analysis or header check mime [#32](https://github.com/opendatateam/udata-tabular-preview/pull/32)
+
+## 3.0.4 (2024-01-09)
+
+- Update mongoDB in CI [#25](https://github.com/opendatateam/udata-tabular-preview/pull/25)
+- Use analysis extras on top of check:headers [#30](https://github.com/opendatateam/udata-tabular-preview/pull/30)
+
+## 3.0.3 (2023-03-07)
+
+- Specify version in static [#27](https://github.com/opendatateam/udata-tabular-preview/pull/27)
+- Add python translations logic [#26](https://github.com/opendatateam/udata-tabular-preview/pull/26)
+
+## 3.0.2 (2023-03-02)
+
+- Add data structure component and explore button for hook `dataset.display.explore-button` [#19](https://github.com/opendatateam/udata-tabular-preview/pull/19)
+
+## 3.0.1 (2023-02-06)
+
+- Add sort to exploration preview component [#20](https://github.com/opendatateam/udata-tabular-preview/pull/20)
+- Fix setuptools version used in CI [#23](https://github.com/opendatateam/udata-tabular-preview/pull/23)
+- Add pagination to exploration preview component [#21](https://github.com/opendatateam/udata-tabular-preview/pull/21)
+
+## 3.0.0 (2023-01-18)
+
+- :warning: **Breaking change** Change preview behaviour [#14](https://github.com/opendatateam/udata-tabular-preview/pull/14)
+    - remove `preview` route
+    - add exploration preview Vue component
+    - add explorable_ressources metadata
+- Replace mongo legacy image in CI [#13](https://github.com/opendatateam/udata-tabular-preview/pull/13)
+- Update json5 to fix CVE-2022-46175 [#16](https://github.com/opendatateam/udata-tabular-preview/pull/16)
+
+## 2.0.3 (2022-07-11)
+
+- Remove legacy manifest logic and dataexplorer integration [#12](https://github.com/opendatateam/udata-tabular-preview/pull/12)
+
+## 2.0.2 (2020-10-16)
+
+- Add a setting for SUPPORTED_MIME_TYPES [#9](https://github.com/opendatateam/udata-tabular-preview/pull/9)
+
+## 2.0.1 (2020-06-17)
+
+- Use extras attributes to enable preview [#8](https://github.com/opendatateam/udata-tabular-preview/pull/8)
+
+## 2.0.0 (2020-03-11)
+
+- Migrate to Python3 [#5](https://github.com/opendatateam/udata-tabular-preview/pull/5)
+
+## 1.0.0 (2018-10-02)
+
+Initial release
+

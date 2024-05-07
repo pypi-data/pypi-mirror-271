@@ -1,0 +1,2 @@
+[console_scripts]
+rastervision = rastervision.pipeline.cli:_main

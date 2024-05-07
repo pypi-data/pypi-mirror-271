@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trouncersz/__init__.py
+trouncersz/main.py
+trouncersz.egg-info/PKG-INFO
+trouncersz.egg-info/SOURCES.txt
+trouncersz.egg-info/dependency_links.txt
+trouncersz.egg-info/requires.txt
+trouncersz.egg-info/top_level.txt

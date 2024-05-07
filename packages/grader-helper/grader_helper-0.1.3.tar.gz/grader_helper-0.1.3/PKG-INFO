@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: grader-helper
+Version: 0.1.3
+Summary: Functions to help manage assignments from UL which are hosted on Brightspace
+License: MIT
+Author: Kevin O Malley
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+

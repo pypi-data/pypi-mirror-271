@@ -1,0 +1,7 @@
+README.md
+setup.py
+cheatshh.egg-info/PKG-INFO
+cheatshh.egg-info/SOURCES.txt
+cheatshh.egg-info/dependency_links.txt
+cheatshh.egg-info/requires.txt
+cheatshh.egg-info/top_level.txt

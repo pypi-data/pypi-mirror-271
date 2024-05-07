@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cheatshh
+Version: 1.0.0
+Keywords: cheatsheet, cheat, command-line, cli
+Description-Content-Type: text/markdown
+Requires-Dist: fuzzyfinder
+Requires-Dist: whiptail
+
+An interactice command-line tool to manage your custom cheatshheets.

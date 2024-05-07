@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: stwcs
+Version: 1.7.3
+Summary: Computes the WCS of HST images.
+Home-page: https://github.com/spacetelescope/stwcs
+Author: STScI
+Author-email: help@stsci.edu
+License: BSD
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: astropy >=5.0.4
+Requires-Dist: numpy
+Requires-Dist: stsci.tools >=3.6
+Requires-Dist: requests
+Requires-Dist: lxml
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+Recomputes and records the WCS of an HST imaging observation (including distortion) in the file.

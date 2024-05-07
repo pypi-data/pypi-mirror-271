@@ -1,0 +1,12 @@
+typer>=0.3.0
+GitPython
+rich
+requests
+pyyaml
+typing-extensions
+mixpanel
+questionary
+psutil
+tomlkit
+pathspec
+httpx

@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elucidoc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elucidoc/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elucidoc/accessory.py,sha256=oGTPNKZ_zgIon1SpShzQCVGPz4zJJga2tbONgaX-Kl8,665
+elucidoc/eluciDoc.py,sha256=ww6J2vg1fMPCdWazndgsueZiyXSIt7IrpTXltbu4lWM,7659
+elucidoc-2024.5.5.dist-info/LICENSE.txt,sha256=bL8l83nvUNj2uEDc-44wP6riGd5ENzWi4tNMZVwETrk,1558
+elucidoc-2024.5.5.dist-info/METADATA,sha256=XoHT1SlH6EYeXTL3rIVY264cmFA907WTosoLzdTw-Ig,10277
+elucidoc-2024.5.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+elucidoc-2024.5.5.dist-info/top_level.txt,sha256=fZ6j-eOogjmsVCv2ckK1VpEnW9iC6X-oX_atwjDr-Kw,18
+elucidoc-2024.5.5.dist-info/RECORD,,

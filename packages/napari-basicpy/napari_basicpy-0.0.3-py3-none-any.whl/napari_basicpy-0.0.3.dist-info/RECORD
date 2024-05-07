@@ -1,0 +1,15 @@
+napari_basicpy/__init__.py,sha256=MJpSaaLInSXq4GPnZ4NRXUmS_4Sk8do2Pj4SWyQqVO4,198
+napari_basicpy/_sample_data.py,sha256=TgLSxWhBQPqFCtXkH_Jd9WvB9tNU6P3VD0YNPv-7D7w,1813
+napari_basicpy/_version.py,sha256=hB095avW4HuDZxn8qPHRG1UMzSSonb8ZDAsLxt9hmk8,411
+napari_basicpy/_widget.py,sha256=E53qQoz0KtvVmi8qiQdYVNqRaisnhwxG8UWDxAcWNao,12490
+napari_basicpy/napari.yaml,sha256=7jDDapKjnR1tScVqI5Q-gFzcaLGzoS2sIvKC5W1d3Gs,2144
+napari_basicpy/_icons/logo.png,sha256=VhEVbMfNDsKszhI4Eadlr4jG4cdxC3nELGF9IfErG2A,22358
+napari_basicpy/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_basicpy/_tests/test_sample_data.py,sha256=iu1Af0fVIUoWIIhn2gSe4zPAt1zm34u6Sobj2uUWgUE,588
+napari_basicpy/_tests/test_widget.py,sha256=v8krGEz-K8cds6Zmdfa3ZsUJR-zftwgdEv2RFZeJnKc,670
+napari_basicpy-0.0.3.dist-info/LICENSE,sha256=5U1AWI1dGB4v_6b7Yh4tuvI7JV71SlJmmulUsXUtrqY,1484
+napari_basicpy-0.0.3.dist-info/METADATA,sha256=SnT64DFE-i6B364-maNRSZpTBitGB-A0J9Cd27BH264,5416
+napari_basicpy-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+napari_basicpy-0.0.3.dist-info/entry_points.txt,sha256=3D5HHF7Abz1RprlKx55LLIJnKooWIt8g8K-HFEOl3Y0,62
+napari_basicpy-0.0.3.dist-info/top_level.txt,sha256=MDxjdnbk2L2NYo3n70juRAhTVJpUUG32p559zqKswjo,15
+napari_basicpy-0.0.3.dist-info/RECORD,,

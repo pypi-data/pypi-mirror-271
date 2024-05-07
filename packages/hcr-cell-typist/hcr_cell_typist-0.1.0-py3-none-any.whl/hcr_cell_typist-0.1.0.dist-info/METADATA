@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: hcr-cell-typist
+Version: 0.1.0
+Summary: A libray to aid cell type classification in HCR experiments, downstream of QuPath
+Author-email: Luca Masin <luca.masin@kuleuven.be>
+License: Copyright 2024 Luca Masin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas >=2.1.4
+Requires-Dist: numpy >=1.26.3
+Requires-Dist: matplotlib >=3.8.2
+Requires-Dist: seaborn >=0.13.1
+Requires-Dist: scikit-image >=0.22.0
+Requires-Dist: openpyxl >=3.0.10
+Requires-Dist: pytest >=7.4.0
+Requires-Dist: pytest-cov >=4.1.0
+Requires-Dist: jupyter >=1.0.0
+
+# Cell Typist
+A library to aid cell type classification in HCR experiments, downstream of [QuPath](https://qupath.github.io/)
+
+## Installation 
+We recommend installing all the required dependencies through [Miniconda](https://docs.conda.io/en/latest/miniconda.html), allowing Cell Typist to run inside a dedicated environment without interfering or causing conflicts with the host computer.
+
+To create a dedicated environment, run the commands below commands inside Anaconda Prompt (on Windows) or a terminal on Linux and macOS.
+
+```bash
+(base) $ conda create -n ct python=3.12
+(base) $ conda activate ct
+```
+
+Afterward, Cell Typist can be installed from PyPi
+
+```bash
+(ct) $ pip install hcr-cell-typist
+```
+
+This will also install Jupyter, so after installation and activation of the *ct* environment, a jupyter session can be started with
+
+```bash
+(ct) $ jupyter notebook
+```
+
+## Usage
+An example workflow for analysis, covering all the API, can be found [here](https://gitlab.com/NCDRlab/cell-typist/-/blob/main/cell_typist/docs/workflow_analysis.ipynb).
+
+We also provide a [notebook](https://gitlab.com/NCDRlab/cell-typist/-/blob/main/cell_typist/docs/workflow_merging.ipynb) covering merging of results and custom plotting.
+
+## Versions
+A changelog with bug fixes and features per version can be found [here](https://gitlab.com/NCDRlab/cell-typist/-/blob/main/CHANGELOG.md)

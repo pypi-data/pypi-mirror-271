@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/special_agents/__init__.py
+src/special_agents/product_manager.py
+src/special_agents.egg-info/PKG-INFO
+src/special_agents.egg-info/SOURCES.txt
+src/special_agents.egg-info/dependency_links.txt
+src/special_agents.egg-info/requires.txt
+src/special_agents.egg-info/top_level.txt

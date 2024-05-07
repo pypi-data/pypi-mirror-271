@@ -1,0 +1,8 @@
+setup.py
+TrajCompress/__init__.py
+TrajCompress.egg-info/PKG-INFO
+TrajCompress.egg-info/SOURCES.txt
+TrajCompress.egg-info/dependency_links.txt
+TrajCompress.egg-info/requires.txt
+TrajCompress.egg-info/top_level.txt
+tests/test_sample.py

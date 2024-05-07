@@ -1,0 +1,7 @@
+GitPython
+pyflakes
+pylint
+nbconvert
+ipython
+termcolor
+black

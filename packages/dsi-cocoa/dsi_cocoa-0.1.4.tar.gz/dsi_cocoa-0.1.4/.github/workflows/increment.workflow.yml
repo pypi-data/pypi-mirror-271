@@ -1,0 +1,27 @@
+name: Increment and create tags
+
+on:
+  push:
+    branches:
+      - thannifan/increment
+
+jobs:
+  increment:
+    name: Increment version tag
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v3
+      - name: Run increment action
+        uses: rmeneely/git-next-version@v1
+        with:
+          # new_suffix: '-test'
+          auto_increment: 'true'
+      - name: Print version tag
+        run: echo "Next version is $NEXT_VERSION"
+      - name: Create tag
+        uses: rickstaa/action-create-tag@v1
+        id: "tag_create"
+        with:
+          tag: ${{ env.NEXT_VERSION }}

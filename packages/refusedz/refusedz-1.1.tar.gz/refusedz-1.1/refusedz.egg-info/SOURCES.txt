@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+refusedz/__init__.py
+refusedz/main.py
+refusedz.egg-info/PKG-INFO
+refusedz.egg-info/SOURCES.txt
+refusedz.egg-info/dependency_links.txt
+refusedz.egg-info/requires.txt
+refusedz.egg-info/top_level.txt

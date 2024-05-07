@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: poetry-moment
+Version: 0.0.1
+Summary: [诗歌时刻]让诗意，流露此刻。
+Author: Yeying-Xingchen
+Author-email: yeyingxingchen@yeah.net
+Requires-Python: >=3.13,<4.0
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# 诗歌时刻-Poetry-Moment
+## 简介
+让诗意，流露此刻。诗歌时刻是一款开源的API软件。他能帮助开发者简单快速的，在网站/应用中嵌入诗歌。

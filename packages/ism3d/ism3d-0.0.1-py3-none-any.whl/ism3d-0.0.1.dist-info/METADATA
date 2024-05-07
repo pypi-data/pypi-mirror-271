@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ism3d
+Version: 0.0.1
+Summary: ISM3D: Interferometric Source Modeling in 3D
+Author-email: Rui Xue <rx.astro@icloud.com>
+Project-URL: Homepage, https://github.com/r-xue/ism3d
+Project-URL: Issues, https://github.com/r-xue/ism3d/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+

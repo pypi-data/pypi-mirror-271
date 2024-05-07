@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spokesterz/__init__.py
+spokesterz/main.py
+spokesterz.egg-info/PKG-INFO
+spokesterz.egg-info/SOURCES.txt
+spokesterz.egg-info/dependency_links.txt
+spokesterz.egg-info/requires.txt
+spokesterz.egg-info/top_level.txt

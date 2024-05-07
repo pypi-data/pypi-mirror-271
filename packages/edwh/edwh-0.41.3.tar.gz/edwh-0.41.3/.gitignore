@@ -1,0 +1,7 @@
+.idea/
+*.pyc
+venv*
+dist/
+.env
+config.toml
+.toml

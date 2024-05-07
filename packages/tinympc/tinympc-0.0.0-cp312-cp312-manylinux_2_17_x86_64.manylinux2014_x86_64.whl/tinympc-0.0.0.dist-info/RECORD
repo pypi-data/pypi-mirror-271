@@ -1,0 +1,7 @@
+tinympc/interface.py,sha256=QaPiFS5dAv2vnZGBSwFU-8smjTF0qA9-etIrDXMxXXA,7038
+tinympc/ext_tinympc.cpython-312-x86_64-linux-gnu.so,sha256=i9jDXexSxttpECMxY40nQCsxd-ijRCCsIQbk80_bx-E,455288
+tinympc/__init__.py,sha256=LGZvFcv4eANA8CiWWCSZMXBxq5EZbKQIqsqbWRQHAMc,40
+tinympc-0.0.0.dist-info/METADATA,sha256=Q7juvlCfZxepxXS0UqUXnjZb780XffOoTT7S82M_lLQ,2280
+tinympc-0.0.0.dist-info/WHEEL,sha256=u2rnRwWeN719o9wsfKKXdmekZfmUSjtilaBEvVzF1CI,155
+tinympc-0.0.0.dist-info/RECORD,,
+tinympc-0.0.0.dist-info/licenses/LICENSE,sha256=Ct3AWH61OIwdeHQGu0DKHM2FOjdRghrxKtAVDXUYM10,1071

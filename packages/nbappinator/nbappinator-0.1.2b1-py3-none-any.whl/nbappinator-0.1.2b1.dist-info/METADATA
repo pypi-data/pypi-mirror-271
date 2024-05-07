@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nbappinator
+Version: 0.1.2b1
+Summary: Jupyter Notebook Application Builder
+Author-email: Paul T <paul@iqmo.com>
+Maintainer-email: Paul T <paul@iqmo.com>
+Project-URL: Homepage, https://github.com/iqmo-org/nbappinator
+Project-URL: Repository, https://github.com/iqmo-org/nbappinator
+Project-URL: Issues, https://github.com/iqmo-org/nbappinator/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: ipywidgets ~=7.8.0
+Requires-Dist: plotly
+Requires-Dist: ipyvuetify >=1.9
+Requires-Dist: ipyaggrid
+Requires-Dist: ipytree
+Requires-Dist: pandas >=1.5.3
+

@@ -1,0 +1,12 @@
+##################################################################################
+#                       Auto-generated Metaflow stub file                        #
+# MF version: 2.11.14.1+ob(v1)                                                   #
+# Generated on 2024-05-07T00:05:40.548745                                        #
+##################################################################################
+
+from __future__ import annotations
+
+
+def get_credentials(scopes, *args, **kwargs):
+    ...
+

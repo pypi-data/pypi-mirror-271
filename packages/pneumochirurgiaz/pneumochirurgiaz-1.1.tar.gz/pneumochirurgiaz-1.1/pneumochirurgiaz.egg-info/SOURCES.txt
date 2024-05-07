@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pneumochirurgiaz/__init__.py
+pneumochirurgiaz/main.py
+pneumochirurgiaz.egg-info/PKG-INFO
+pneumochirurgiaz.egg-info/SOURCES.txt
+pneumochirurgiaz.egg-info/dependency_links.txt
+pneumochirurgiaz.egg-info/requires.txt
+pneumochirurgiaz.egg-info/top_level.txt

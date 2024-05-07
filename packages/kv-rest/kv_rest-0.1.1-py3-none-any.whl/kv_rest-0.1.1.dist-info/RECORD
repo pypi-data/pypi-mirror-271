@@ -1,0 +1,10 @@
+kv/rest/__init__.py,sha256=EqcgRvBGeiRN_HUXtJ0sSSQlCS5lSyuY9q5ySI6mGx8,158
+kv/rest/__init__.pyi,sha256=6HB0IcQ3E4CLpJYmBZBOO9HA9uCcM3G_Y08wzVXSyhk,88
+kv/rest/api.py,sha256=SUwuedzkw_vCDoiNXuyv9iC86nOjKH_0i_1he-po8E4,1873
+kv/rest/cli.py,sha256=SzROWd0j9GCb33YnbhAr9SjNbLatLVfnZwstthxy0Lc,1071
+kv/rest/client.py,sha256=XzA0U7oBXVnV9sMCEEac6xxwU7a9vdQ5N9yzBJ3QScQ,2594
+kv_rest-0.1.1.dist-info/METADATA,sha256=Qk7Cp1mPnrDWkM2_RYyyUSLVYQzvwXnsxoKQyROJAj8,1454
+kv_rest-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kv_rest-0.1.1.dist-info/entry_points.txt,sha256=dn35IwnlDQZPJPMil2CGLDtzVSZrmx4cHE5X-lzeaII,45
+kv_rest-0.1.1.dist-info/top_level.txt,sha256=z85M-ICBi-OoWrXz-dZX8xL06idJqievlWlmDg07U0M,3
+kv_rest-0.1.1.dist-info/RECORD,,

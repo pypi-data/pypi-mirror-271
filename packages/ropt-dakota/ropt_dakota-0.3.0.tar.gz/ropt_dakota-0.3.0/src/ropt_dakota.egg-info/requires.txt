@@ -1,0 +1,8 @@
+numpy
+carolina
+ropt>=0.3.0
+
+[test]
+ruff
+mypy
+pytest

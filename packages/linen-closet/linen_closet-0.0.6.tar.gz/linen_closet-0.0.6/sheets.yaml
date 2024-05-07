@@ -1,0 +1,24 @@
+# This provides an example set of publicly available Google Sheets.
+sheets:
+  -
+    # https://docs.google.com/spreadsheets/d/1pxuTu10uO7MsBaKA554XSuCpnF--FTqwdnl_sUHfWro/edit
+    workbook_id: 1pxuTu10uO7MsBaKA554XSuCpnF--FTqwdnl_sUHfWro
+    kind: state_list
+    sheet_names:
+      - "States"
+  -
+    # https://docs.google.com/spreadsheets/d/1fuV8AKwSjIh9Pswb_XTC0UFaoFPMBbz9YHAZ8TScAQc/edit
+    workbook_id: 1fuV8AKwSjIh9Pswb_XTC0UFaoFPMBbz9YHAZ8TScAQc
+    kind: mobility_countries
+    sheet_names:
+      - "Data"
+  -
+    # https://docs.google.com/spreadsheets/d/1d9t7xg-lUPEUArTsc_wMOGl1XfzpXmeWcALx7v58KcU/edit
+    workbook_id: 1d9t7xg-lUPEUArTsc_wMOGl1XfzpXmeWcALx7v58KcU
+    kind: apple_google_mobility_countries
+    sheet_names:
+      - "Data"
+# Alternatively, a folder can be specified to load all sheets from all workbooks in that folder.
+#drive_folders:
+#  - folder_id: asdf-asdf-asdf
+#    kind: example_of_a_drive_folder

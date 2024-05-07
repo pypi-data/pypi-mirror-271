@@ -1,0 +1,45 @@
+# pysypt
+
+Python wrapper around [jasypt](http://www.jasypt.org/) for encrypting and decrypting strings using the BouncyCastle
+Provider. The corresponding java code is located in `src/java/encryption-app`
+
+## Usage
+
+```python
+from pysypt import StringEncryptor
+
+algorithm = "PBEWITHSHA256AND256BITAES-CBC-BC"
+key = "secret_key"
+message = "my secret message"
+
+enc = StringEncryptor(algorithm=algorithm, key=key)
+
+encrypted = enc.encrypt(enc)
+print(encrypted)
+# output
+# pmwLKcnp8KP8jHDUf9r21Pbr8L/jQcKeOlcIrLosYSWpL6DhCY+APpSlPRwGl1EB
+
+print(enc.decrypt(encrypted))
+# output
+# my secret message
+```
+
+## Build package from source
+
+In the project root you can find `build_pypi_package.sh`, which takes care of first building the java app, then bundling
+it together with the python code into a pypi package. The resulting package can be found in the `dist/` directory.
+
+## Publish to PyPi using twine
+
+When in a virtual python environment:
+
+```shell
+pip install build twine bumpver
+
+bumpver update < --major | --minor | --patch >
+
+./build_pypi_package.sh
+
+twine check dist/*
+twine upload dist/*
+```

@@ -1,0 +1,12 @@
+textual
+textual-imageview
+h5py
+pillow
+natsort
+
+[dev]
+textual-dev
+
+[rel]
+build
+twine

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lagsync"
+version = "1.0.0"
+authors = [
+    { name="bluePlatinum", email="jukic.rok@gmail.com" },
+]
+description="A rsync based backup utility for laggy connections"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Natural Language :: English",
+    "Topic :: System :: Archiving :: Backup",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/bluePlatinum/lagsync"
+Issues = "https://github.com/bluePlatinum/lagsync/issues"
+
+[project.scripts]
+lagsync = "lagsync.lagsync:main"

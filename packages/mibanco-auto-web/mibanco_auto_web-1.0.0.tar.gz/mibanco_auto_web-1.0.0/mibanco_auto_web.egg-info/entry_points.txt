@@ -1,0 +1,2 @@
+[console_scripts]
+mibanco_auto_web = mibanco_auto_web.main:main

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+mibanco_auto_web/__init__.py
+mibanco_auto_web/functions.py
+mibanco_auto_web/main.py
+mibanco_auto_web/variables.py
+mibanco_auto_web.egg-info/PKG-INFO
+mibanco_auto_web.egg-info/SOURCES.txt
+mibanco_auto_web.egg-info/dependency_links.txt
+mibanco_auto_web.egg-info/entry_points.txt
+mibanco_auto_web.egg-info/requires.txt
+mibanco_auto_web.egg-info/top_level.txt

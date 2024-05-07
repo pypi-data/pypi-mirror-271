@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: octoflow-plugins
+Version: 0.0.5
+Summary: Streamlining machine learning tracking for seamless experiment management.
+Project-URL: Documentation, https://github.com/ysenarath/octoflow-plugins
+Project-URL: Source, https://github.com/ysenarath/octoflow-plugins
+Author-email: Yasas Senarath <email@example.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: machine-learning,tracking
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Requires-Dist: octoflow>=0.0.15
+Description-Content-Type: text/markdown
+
+# octoflow-plugins
+Default OctoFlow plugins.

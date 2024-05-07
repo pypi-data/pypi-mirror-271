@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+TensorOpera.egg-info/PKG-INFO
+TensorOpera.egg-info/SOURCES.txt
+TensorOpera.egg-info/dependency_links.txt
+TensorOpera.egg-info/requires.txt
+TensorOpera.egg-info/top_level.txt

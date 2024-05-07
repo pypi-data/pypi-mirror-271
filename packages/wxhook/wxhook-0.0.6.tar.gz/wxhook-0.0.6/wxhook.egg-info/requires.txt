@@ -1,0 +1,5 @@
+loguru
+psutil
+pyee
+requests
+xmltodict

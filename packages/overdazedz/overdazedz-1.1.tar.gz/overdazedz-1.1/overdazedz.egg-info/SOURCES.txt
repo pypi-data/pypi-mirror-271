@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+overdazedz/__init__.py
+overdazedz/main.py
+overdazedz.egg-info/PKG-INFO
+overdazedz.egg-info/SOURCES.txt
+overdazedz.egg-info/dependency_links.txt
+overdazedz.egg-info/requires.txt
+overdazedz.egg-info/top_level.txt

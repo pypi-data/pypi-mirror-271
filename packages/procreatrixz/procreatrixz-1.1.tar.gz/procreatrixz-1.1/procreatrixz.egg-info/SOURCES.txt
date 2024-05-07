@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+procreatrixz/__init__.py
+procreatrixz/main.py
+procreatrixz.egg-info/PKG-INFO
+procreatrixz.egg-info/SOURCES.txt
+procreatrixz.egg-info/dependency_links.txt
+procreatrixz.egg-info/requires.txt
+procreatrixz.egg-info/top_level.txt

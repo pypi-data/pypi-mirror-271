@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+skysurvey_sniapop/__init__.py
+skysurvey_sniapop/agepop.py
+skysurvey_sniapop/hostmass.py
+skysurvey_sniapop/lss.py
+skysurvey_sniapop/magnitude.py
+skysurvey_sniapop/models.py
+skysurvey_sniapop/utils.py
+skysurvey_sniapop.egg-info/PKG-INFO
+skysurvey_sniapop.egg-info/SOURCES.txt
+skysurvey_sniapop.egg-info/dependency_links.txt
+skysurvey_sniapop.egg-info/not-zip-safe
+skysurvey_sniapop.egg-info/requires.txt
+skysurvey_sniapop.egg-info/top_level.txt

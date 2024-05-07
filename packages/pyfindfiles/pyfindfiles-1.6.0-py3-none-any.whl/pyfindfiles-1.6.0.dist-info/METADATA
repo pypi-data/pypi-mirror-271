@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pyfindfiles
+Version: 1.6.0
+Summary: Concurrent, pipelined text and binary file searching via pure Python, cross-platform.
+Keywords: find,grep
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: python-dateutil
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: flake8-bugbear ; extra == 'lint'
+Requires-Dist: flake8-builtins ; extra == 'lint'
+Requires-Dist: flake8-blind-except ; extra == 'lint'
+Requires-Dist: mypy ; extra == 'lint'
+Requires-Dist: types-python-dateutil ; extra == 'lint'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# PyFindFiles
+
+![ci](https://github.com/scivision/pyfindfiles/workflows/ci/badge.svg)
+[![PyPi Download stats](http://pepy.tech/badge/pyfindfiles)](http://pepy.tech/project/pyfindfiles)
+
+Find files (text or binary) containing text or patterns efficiently with Python, cross-platform.
+Default is to only search files smaller than 10 MBytes.
+Uses pipelining and asyncio to speed up operations.
+
+## Install
+
+Normally install by
+
+```sh
+pip install pyfindfiles
+```
+
+for latest development code
+
+```sh
+git clone https://github.com/scivision/pyfindfiles
+
+pip install -e pyfindfiles
+```
+
+## Usage
+
+`findtext` looks for strings inside text or binary files, and reports filename text is found in.
+
+* `-v`: filename, line number, and text found
+* `-t`: search for files newer than date, or between dates if two dates given.
+
+```sh
+python -m pyfindfiles.text Pattern "*.ext" root
+```
+
+Pattern
+: text to search for
+
+"*.ext"
+: file extension(s) to search for
+
+root
+: top-level directory to search under
+
+---
+
+
+```sh
+python -m pyfindfiles.video top
+```
+
+looks under top-level directory "top" for video files (by common file extensions)

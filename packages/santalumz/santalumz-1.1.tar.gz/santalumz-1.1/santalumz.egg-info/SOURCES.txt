@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+santalumz/__init__.py
+santalumz/main.py
+santalumz.egg-info/PKG-INFO
+santalumz.egg-info/SOURCES.txt
+santalumz.egg-info/dependency_links.txt
+santalumz.egg-info/requires.txt
+santalumz.egg-info/top_level.txt

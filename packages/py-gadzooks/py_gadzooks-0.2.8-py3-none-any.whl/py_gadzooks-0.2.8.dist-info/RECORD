@@ -1,0 +1,10 @@
+gadzooks/__init__.py,sha256=StiVZeyy1PNReke73yMO1Nfw0k6XsW_UXxAB3CtE1Qw,802
+gadzooks/build_docs.py,sha256=sy3fdjy_klRPJ-uPBdX-k2bnPksx6LS2aO5YFSSwoRI,3406
+gadzooks/check_version.py,sha256=ZFy1FfMUQjgbbaRkt96J3W3GX-XMPU_vdwURxiNfQmE,7882
+gadzooks/loc_summarize.py,sha256=wl9t3rbpZTjEiNDkvXaSN3ADLqp8PGlK4ereO91T0Ug,1295
+gadzooks/main.py,sha256=zUs_PdKNw4IdWnnnr1NLVFKx2jsRxqc2p-exTobbHj4,1385
+py_gadzooks-0.2.8.dist-info/METADATA,sha256=dq4wsPzWNLQSvdkF0KqrEbIlqTk8D0N5dxepwTvRobw,6035
+py_gadzooks-0.2.8.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+py_gadzooks-0.2.8.dist-info/entry_points.txt,sha256=S6eY0jHcyCS6sBhXDuVVq_tuS8AdVnKMAwW6dHcHILE,48
+py_gadzooks-0.2.8.dist-info/licenses/LICENSE,sha256=B0vQRwi4qR3lmXjkA1EUL_Xj6XWJEdMrHtKVIeotpAg,1070
+py_gadzooks-0.2.8.dist-info/RECORD,,

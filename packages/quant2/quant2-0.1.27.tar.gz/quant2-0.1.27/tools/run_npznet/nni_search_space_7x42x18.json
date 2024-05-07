@@ -1,0 +1,69 @@
+{
+  "MODEL.TYPE": {
+    "_type": "choice",
+    "_value": ["npznet"]
+  },
+  "MODEL.IN_CHANS": {
+    "_type": "choice",
+    "_value": [7]
+  },
+  "MODEL.NUM_CLASSES": {
+    "_type": "choice",
+    "_value": [20]
+  },
+  "NPZNET.STEM_KERNEL": {
+    "_type": "choice",
+    "_value": [3]
+  },
+  "NPZNET.STEM_STRIDE": {
+    "_type": "choice",
+    "_value": [3]
+  },
+  "NPZNET.DEPTHS": {
+    "_type": "choice",
+    "_value": [[3, 3]]
+  },
+  "NPZNET.DIMS": {
+    "_type": "choice",
+    "_value": [
+      [48, 96],
+      [64, 128]
+    ]
+  },
+  "NPZNET.DROP_PATH_RATE": {
+    "_type": "choice",
+    "_value": [0.2]
+  },
+  "OPTIM.OPTIMIZER": {
+    "_type": "choice",
+    "_value": ["adamw"]
+  },
+  "OPTIM.BASE_LR": {
+    "_type": "choice",
+    "_value": [0.0001, 0.0002, 0.0005]
+  },
+  "OPTIM.MAX_EPOCH": {
+    "_type": "choice",
+    "_value": [10, 30, 50]
+  },
+  "OPTIM.WEIGHT_DECAY": {
+    "_type": "choice",
+    "_value": [0.001, 0.01, 0.1]
+  },
+  "TRAIN.DATA_PATH": {
+    "_type": "choice",
+    "_value": ["/datasets/table20240424_7x42x18"]
+  },
+  "TRAIN.BATCH_SIZE": {
+    "_type": "choice",
+    "_value": [64]
+  },
+  "TEST.DATA_PATH": {
+    "_type": "choice",
+    "_value": ["/datasets/table20240424_7x42x18"]
+  },
+  "TEST.BATCH_SIZE": {
+    "_type": "choice",
+    "_value": [64]
+  }
+}

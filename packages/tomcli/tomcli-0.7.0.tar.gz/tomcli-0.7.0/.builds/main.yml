@@ -1,0 +1,32 @@
+# Copyright (C) 2023 Maxwell G <maxwell@gtmx.me>
+# SPDX-License-Identifier: MIT
+---
+
+image: fedora/rawhide
+packages:
+  - pipx
+  - python3.8
+  - python3.9
+  - python3.10-devel
+  - python3.11-devel
+  - python3.12-devel
+sources:
+  - https://git.sr.ht/~gotmax23/tomcli
+secrets:
+  # gotmax23/tomcli-dev webhook
+  - e439d187-52e2-4f21-8db9-fa883bebeadc
+tasks:
+  - setup: |
+      pipx install nox
+      pipx install git+https://git.sr.ht/~gotmax23/releaserr
+  - copr-webhook: |
+      cd tomcli
+      releaserr copr-webhook ~/.copr-dev-hook --branch origin/main --skip-if-missing
+  - nox-covtest: |
+      cd tomcli
+      # TODO(gotmax23): Figure out why coverage is wrong without editable mode
+      ALLOW_EDITABLE=1 nox -e covtest
+  - nox-lint: |
+      cd tomcli
+      nox -e lint
+

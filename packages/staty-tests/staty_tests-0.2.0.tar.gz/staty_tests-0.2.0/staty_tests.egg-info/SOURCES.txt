@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+statistical_tests/__init__.py
+statistical_tests/tests.py
+staty_tests.egg-info/PKG-INFO
+staty_tests.egg-info/SOURCES.txt
+staty_tests.egg-info/dependency_links.txt
+staty_tests.egg-info/requires.txt
+staty_tests.egg-info/top_level.txt

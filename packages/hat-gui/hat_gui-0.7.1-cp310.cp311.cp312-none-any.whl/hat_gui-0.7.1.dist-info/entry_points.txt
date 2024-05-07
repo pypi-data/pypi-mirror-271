@@ -1,0 +1,3 @@
+[console_scripts]
+hat-gui-server = hat.gui.server.main:main
+hat-gui-passwd = hat.gui.passwd:main

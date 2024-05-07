@@ -1,0 +1,11 @@
+aposteriori/__init__.py,sha256=yyAkN62yOUT-5Svfz8ymXa9WJJU75sWylH6OIvMw_Zk,64
+aposteriori/config.py,sha256=hA2CameGM3y9LVHR1hII8cwvJYTMIt-UF7aGC6zb1l0,12106
+aposteriori/data_prep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aposteriori/data_prep/cli.py,sha256=x7faEppZjzh-jqtecCL0hZiIoPUBJswCp_6JkAxZj5M,10823
+aposteriori/data_prep/create_frame_data_set.py,sha256=b_cHwnZ7phn5p9K5Q5hZjBB8IQlNQM8Xl-V6ltvu0Ok,60640
+aposteriori-2.4.0.dist-info/LICENSE,sha256=cGNWwSkA2SdufD6zlobpwZfULvcM-LEMzQjMuJE8LRA,1082
+aposteriori-2.4.0.dist-info/METADATA,sha256=CvedUsm49Q1yU7py81kA6cECsT8gBLVdfytUVi31NYM,11609
+aposteriori-2.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aposteriori-2.4.0.dist-info/entry_points.txt,sha256=N7WXWjvGSp8WZIZm0xUwo2FuvZ8eXvTRoMf270r9Z-o,69
+aposteriori-2.4.0.dist-info/top_level.txt,sha256=aIy3IuNhg-9RPBX9970hcWh6CEqXFqDP3qN2oxi7N-E,12
+aposteriori-2.4.0.dist-info/RECORD,,

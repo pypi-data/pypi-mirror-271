@@ -1,0 +1,12 @@
+geotask/__init__.py,sha256=r7W-FLUR3SkfitkCn-w3jbblLtXrNI-Kaz1m3q-qlQU,200
+geotask/common.py,sha256=fedvAcsKcY1hygibSSZPcGONM1kDEzHLP_MU2CJOZdI,524
+geotask/foliummap.py,sha256=7EyX1LPk57EShv4pkAX5nj62BklvSs1NOMhAz-GY3mg,783
+geotask/geotask.py,sha256=C56QCcWoorwklz-ffimmi7qimQeifjB22gIGDtLoF2I,18038
+geotask/temp.py,sha256=spiSKb9otVk-eEXuKhDIWf-EJuFNO4MWNNjw7tgSaP0,2690
+geotask/utils.py,sha256=HNN_1xeyok06HHtzsbA3CslyXhVliJ14gM151x_Je9I,384
+geotask-0.0.6.dist-info/LICENSE,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+geotask-0.0.6.dist-info/METADATA,sha256=45ZLUNxI6aITEIzzKiWdLTMCKzI5WN5fk0URs5cNO4w,1772
+geotask-0.0.6.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+geotask-0.0.6.dist-info/entry_points.txt,sha256=VsfBi5C0LUX0bCkOibC47oXDFDWYccDuiEC3r7lLOlU,45
+geotask-0.0.6.dist-info/top_level.txt,sha256=HDZNKCCNw8rfMUYv29g_noC8lXndWAJODXSAsdU7aPQ,8
+geotask-0.0.6.dist-info/RECORD,,

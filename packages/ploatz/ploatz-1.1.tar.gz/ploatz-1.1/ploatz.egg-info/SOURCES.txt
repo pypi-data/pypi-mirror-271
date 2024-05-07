@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ploatz/__init__.py
+ploatz/main.py
+ploatz.egg-info/PKG-INFO
+ploatz.egg-info/SOURCES.txt
+ploatz.egg-info/dependency_links.txt
+ploatz.egg-info/requires.txt
+ploatz.egg-info/top_level.txt

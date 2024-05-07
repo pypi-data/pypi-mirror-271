@@ -1,0 +1,49 @@
+[project]
+dynamic = ["version"]
+name = "bokeh_joystick_widget"
+dependencies = [
+  "bokeh"
+]
+requires-python = ">= 3.9"
+
+authors = [
+  {name="Danny Staple", email = "danny@orionrobots.co.uk"}
+]
+description = "A Bokeh on screen gesture/mouse drag based joystick widget for use in a dashboard with controls"
+readme = "README.md"
+license = {file = "LICENSE.md"}
+keywords = ["bokeh", "joystick"]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+
+  "Intended Audience :: Developers",
+
+  "License :: OSI Approved :: MIT License",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry]
+name = "bokeh-joystick-widget"
+version = "0.2.0"
+description = "A Bokeh on screen gesture/mouse drag based joystick widget for use in a dashboard with controls"
+authors = ["Danny Staple <danny@orionrobots.co.uk>"]
+license = "LICENSE.md"
+readme = "README.md"
+packages = [
+  {include = "bokeh_joystick_widget", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+bokeh = "^3.4.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vnpy_btse/__init__.py
+vnpy_btse/btse_gateway.py
+vnpy_btse.egg-info/PKG-INFO
+vnpy_btse.egg-info/SOURCES.txt
+vnpy_btse.egg-info/dependency_links.txt
+vnpy_btse.egg-info/not-zip-safe
+vnpy_btse.egg-info/requires.txt
+vnpy_btse.egg-info/top_level.txt

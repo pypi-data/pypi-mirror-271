@@ -1,0 +1,2 @@
+[console_scripts]
+lagsync = lagsync.lagsync:main

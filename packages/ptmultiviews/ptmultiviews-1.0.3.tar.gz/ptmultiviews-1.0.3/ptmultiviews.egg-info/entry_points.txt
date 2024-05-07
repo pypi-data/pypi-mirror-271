@@ -1,0 +1,2 @@
+[console_scripts]
+ptmultiviews = ptmultiviews.ptmultiviews:main

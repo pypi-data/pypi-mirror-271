@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+inclinerz/__init__.py
+inclinerz/main.py
+inclinerz.egg-info/PKG-INFO
+inclinerz.egg-info/SOURCES.txt
+inclinerz.egg-info/dependency_links.txt
+inclinerz.egg-info/requires.txt
+inclinerz.egg-info/top_level.txt

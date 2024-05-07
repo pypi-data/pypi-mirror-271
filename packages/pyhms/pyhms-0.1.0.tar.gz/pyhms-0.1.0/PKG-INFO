@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: pyhms
+Version: 0.1.0
+Summary: The HMS (Hierarchic Memetic Strategy) is a composite global optimization strategy consisting of a multi-population evolutionary strategy and some auxiliary methods. The HMS makes use of a tree with a fixed maximal height and variable internal node degree. Each component population is governed by a particular evolutionary engine. This package provides a simple python implementation with examples of using different population engines.
+Home-page: https://github.com/maciejsmolka/pyhms
+License: MIT
+Keywords: optimization,HMS
+Author: Maciej Smołka
+Author-email: smolka@agh.edu.pl
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: IPython
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: cma (>=3.2.2)
+Requires-Dist: dill (>=0.3.8,<0.4.0)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: numpy (>=1.22.2)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: scipy (>=1.8.0)
+Requires-Dist: setuptools (>=63.2.0)
+Requires-Dist: structlog (>=24.1.0,<25.0.0)
+Requires-Dist: treelib (>=1.7.0)
+Project-URL: Repository, https://github.com/maciejsmolka/pyhms
+Description-Content-Type: text/markdown
+
+# pyhms
+![GitHub Test Badge][1] [![codecov][2]](https://codecov.io/gh/agh-a2s/pyhms) [![Documentation Status][3]](https://pyhms.readthedocs.io/en/latest/?badge=latest)
+
+[1]: https://github.com/agh-a2s/pyhms/actions/workflows/pytest.yml/badge.svg "GitHub CI Badge"
+[2]: https://codecov.io/gh/agh-a2s/pyhms/graph/badge.svg?token=srsivvv2ff
+[3]: https://readthedocs.org/projects/pyhms/badge/?version=latest
+
+`pyhms` is a Python implementation of Hierarchic Memetic Strategy (HMS).
+
+The Hierarchic Memetic Strategy is a stochastic global optimizer designed to tackle highly multimodal problems. It is a composite global optimization strategy consisting of a multi-population evolutionary strategy and some auxiliary methods. The HMS makes use of a dynamically-evolving data structure that provides an organization among the component populations. It is a tree with a fixed maximal height and variable internal node degree. Each component population is governed by a particular optimization engine. This package provides a simple python implementation.
+
+### Installation
+Installation can be done using `pypi`:
+```
+pip install pyhms
+```
+It's also possible to install the current main branch:
+```
+pip install git+https://github.com/agh-a2s/pyhms.git@main
+```
+
+### Quick Start
+
+```python
+from pyhms import minimize
+import numpy as np
+
+fun = lambda x: sum(x**2)
+bounds = np.array([(-20, 20), (-20, 20)])
+solution = minimize(
+    fun=fun,
+    bounds=bounds,
+    maxfun=10000,
+    log_level="debug",
+    seed=42
+)
+```
+
+`pyhms` provides an interface similar to `scipy.optimize.minimize`. This is the simplest way to run HMS with default parameters.
+
+```python
+import numpy as np
+from pyhms import (
+    EALevelConfig,
+    hms,
+    get_NBC_sprout,
+    DontStop,
+    MetaepochLimit,
+    SEA,
+    Problem,
+)
+
+square_bounds = np.array([(-20, 20), (-20, 20)])
+square_problem = Problem(lambda x: sum(x**2), maximize=False, bounds=square_bounds)
+
+config = [
+    EALevelConfig(
+        ea_class=SEA,
+        generations=2,
+        problem=square_problem,
+        pop_size=20,
+        mutation_std=1.0,
+        lsc=DontStop(),
+    ),
+    EALevelConfig(
+        ea_class=SEA,
+        generations=4,
+        problem=square_problem,
+        pop_size=10,
+        mutation_std=0.25,
+        sample_std_dev=1.0,
+        lsc=DontStop(),
+    ),
+]
+global_stop_condition = MetaepochLimit(limit=10)
+sprout_condition = get_NBC_sprout(level_limit=4)
+hms_tree = hms(config, global_stop_condition, sprout_condition)
+print(hms_tree.summary())
+```
+
+### Relevant literature
+
+- J. Sawicki, M. Łoś, M. Smołka, R. Schaefer. Understanding measure-driven algorithms solving irreversibly ill-conditioned problems. Natural Computing 21:289-315, 2022. doi: [10.1007/s11047-020-09836-w](https://doi.org/10.1007/s11047-020-09836-w)
+- J. Sawicki, M. Łoś, M. Smołka, J. Alvarez-Aramberri. Using Covariance Matrix Adaptation Evolutionary Strategy to boost the search accuracy in hierarchic memetic computations. Journal of computational science, 34, 48-54, 2019. doi: [10.1016/j.jocs.2019.04.005](https://doi.org/10.1016/j.jocs.2019.04.005)
+

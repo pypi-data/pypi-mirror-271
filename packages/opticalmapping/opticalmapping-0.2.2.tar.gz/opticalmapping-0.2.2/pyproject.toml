@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "setuptools_scm>=6.2",
+    "pybind11>=2.6.0",
+    "extension-helpers",
+    "oldest-supported-numpy"
+]
+
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "optimap/_version.py"
+fallback_version = "0.1.0"
+
+[tool.cibuildwheel]
+archs = ["auto64"]  # 64-bit only
+skip = "pp* *musllinux*"  # disable PyPy, musl-based wheels
+test-requires = ["pytest", "opencv-python-headless"]
+test-command = "pytest {project}/tests"
+
+[tool.ruff]
+exclude = [
+  "docs",
+]
+select = ['E', 'F', 'W', 'A', 'PLC', 'PLE', 'PLW', 'I', 'D', 'Q']
+target-version = "py39"
+line-length = 120
+ignore = [
+    "PLW2901",
+    "PLW0603",
+    "D401",
+    "D205",
+    
+]

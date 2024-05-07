@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pysgconnect
+Version: 1.1
+Summary: Utilities to interact with SGConnect
+Home-page: https://github.com/societe-generale/pysgconnect
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic ==2.7.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: typing-extensions ==4.11.0
+
+# pysgconnect
+
+Python package to interact with SGConnect
+
+## Install
+
+You can install this package by using Pypi:
+
+```sh
+pip install pysgconnect
+```
+
+## Usage
+
+### Protect HTTP requests
+
+```python
+from pysgconnect import SGConnectAuth
+from requests import Session
+
+session = Session()
+# Do not hardcode your credential directly in your scripts, use a secure Vault solution instead
+client_id = 
+client_secret =
+
+session.auth = SGConnectAuth(client_id, client_secret, scopes=['myscope'], env='PRD')
+
+request = session.get('https://api.sgmarkets.com/foo/v1/bar')
+```
+
+### Development
+
+```sh
+pip install -e .
+```

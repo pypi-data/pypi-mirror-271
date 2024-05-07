@@ -1,0 +1,8 @@
+pysgconnect/__init__.py,sha256=v_whJfk1WrDoLUPr15Ix2hESrEHdFNRXavTcvto9iFI,160
+pysgconnect/sg_connect_auth.py,sha256=N0fAQ_MQgylAboshTjHLkcqsVTa1gXfj3kZ-XfdcMns,1986
+pysgconnect/token.py,sha256=KM1zdGVJV2AZPPbSgJvRNpqIs8z1ZrABsA-LgiodJ8I,574
+pysgconnect-1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pysgconnect-1.1.dist-info/METADATA,sha256=advLC3MnasCT1TEtmNp5ztLOfGWN8MzA_-4m9LD0ebM,1023
+pysgconnect-1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pysgconnect-1.1.dist-info/top_level.txt,sha256=QANQzh-nv5EwLpNuSOlEquL2b4DkOfY0AdifeVHQ9Sw,12
+pysgconnect-1.1.dist-info/RECORD,,

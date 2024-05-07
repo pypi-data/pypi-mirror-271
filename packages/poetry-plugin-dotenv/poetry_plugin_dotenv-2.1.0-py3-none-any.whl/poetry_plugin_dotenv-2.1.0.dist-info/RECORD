@@ -1,0 +1,14 @@
+poetry_plugin_dotenv/__init__.py,sha256=TIAkP5kpuFcjKgbJjFTELy2Qoj9AXYZG8Ze23hDPBHg,778
+poetry_plugin_dotenv/config.py,sha256=9Vmb1xpSVEbLbIY-kJreod_ZnKL0Fm-NtqVYaNAHqZ8,3051
+poetry_plugin_dotenv/dotenv/__init__.py,sha256=6UIR90i2M6lCC-i5QSmTeVDme2Dr4pyViEg8Fi-eM5o,335
+poetry_plugin_dotenv/dotenv/core.py,sha256=pOo4es_TfWc6yHIRfsJIYJbT71qd6SKRblRvI4vU4sw,5421
+poetry_plugin_dotenv/dotenv/parsers.py,sha256=IvZ3BcMHdk9jvImxRLYh48_AV1Q1DtOAIvffItKYOnU,6005
+poetry_plugin_dotenv/dotenv/variables.py,sha256=4sdpfi6l1qQKkq4VUrAnexwkEjQTFyibH9pPEjJImJQ,1572
+poetry_plugin_dotenv/logger.py,sha256=8okr2IEK11K2Ekp0PKL3e8d7mh49n40MK3BLPj-Nun0,1558
+poetry_plugin_dotenv/plugin.py,sha256=_rVPkVADczufNlDrrEkVPFsn9IL7baNOuwGUdOiK7VI,1999
+poetry_plugin_dotenv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_plugin_dotenv-2.1.0.dist-info/LICENSE,sha256=VlG_sGO2jx1EioJshzOjyGdooI_GDeT27ScNzJnNHFA,1077
+poetry_plugin_dotenv-2.1.0.dist-info/METADATA,sha256=leNTIKt5RUpw57gsTcqVUJWD8fI53puBxp-4pSjXqs4,11690
+poetry_plugin_dotenv-2.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+poetry_plugin_dotenv-2.1.0.dist-info/entry_points.txt,sha256=UG5S6luUjVBQdhg0nAVR0wpJSpTJEw7vi-ZLsx2iBn8,91
+poetry_plugin_dotenv-2.1.0.dist-info/RECORD,,

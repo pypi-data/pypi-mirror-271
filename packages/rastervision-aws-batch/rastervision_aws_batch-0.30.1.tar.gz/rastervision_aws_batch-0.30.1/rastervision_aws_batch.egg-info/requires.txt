@@ -1,0 +1,3 @@
+rastervision_pipeline
+boto3
+awscli

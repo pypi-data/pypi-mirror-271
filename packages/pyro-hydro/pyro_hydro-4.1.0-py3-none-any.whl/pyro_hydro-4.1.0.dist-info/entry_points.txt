@@ -1,0 +1,2 @@
+[console_scripts]
+pyro_sim.py = pyro.pyro_sim:main

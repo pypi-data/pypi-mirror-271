@@ -1,0 +1,13 @@
+astropy>=5.0.4
+numpy
+stsci.tools>=3.6
+requests
+lxml
+
+[docs]
+sphinx
+sphinx-automodapi
+sphinx-rtd-theme
+
+[test]
+pytest

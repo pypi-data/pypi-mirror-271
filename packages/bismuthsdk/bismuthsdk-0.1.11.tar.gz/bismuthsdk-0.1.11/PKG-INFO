@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: bismuthsdk
+Version: 0.1.11
+Requires-Dist: flask
+Requires-Dist: flask-restx
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# BismuthSDK
+
+This is the SDK used by the [BismuthOS](https://www.bismuthos.com) platform.

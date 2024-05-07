@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+vicregaddon/__init__.py
+vicregaddon/vicregaddon.py
+vicregaddon.egg-info/PKG-INFO
+vicregaddon.egg-info/SOURCES.txt
+vicregaddon.egg-info/dependency_links.txt
+vicregaddon.egg-info/requires.txt
+vicregaddon.egg-info/top_level.txt

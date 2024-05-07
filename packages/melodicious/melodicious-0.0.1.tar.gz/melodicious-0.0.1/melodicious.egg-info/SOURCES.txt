@@ -1,0 +1,10 @@
+README.md
+setup.py
+melodicious/__init__.py
+melodicious/client.py
+melodicious/playground.py
+melodicious.egg-info/PKG-INFO
+melodicious.egg-info/SOURCES.txt
+melodicious.egg-info/dependency_links.txt
+melodicious.egg-info/requires.txt
+melodicious.egg-info/top_level.txt

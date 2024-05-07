@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+heterophilez/__init__.py
+heterophilez/main.py
+heterophilez.egg-info/PKG-INFO
+heterophilez.egg-info/SOURCES.txt
+heterophilez.egg-info/dependency_links.txt
+heterophilez.egg-info/requires.txt
+heterophilez.egg-info/top_level.txt

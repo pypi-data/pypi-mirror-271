@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spaesz/__init__.py
+spaesz/main.py
+spaesz.egg-info/PKG-INFO
+spaesz.egg-info/SOURCES.txt
+spaesz.egg-info/dependency_links.txt
+spaesz.egg-info/requires.txt
+spaesz.egg-info/top_level.txt

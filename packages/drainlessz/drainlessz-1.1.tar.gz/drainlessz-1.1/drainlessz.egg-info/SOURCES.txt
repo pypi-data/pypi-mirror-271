@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+drainlessz/__init__.py
+drainlessz/main.py
+drainlessz.egg-info/PKG-INFO
+drainlessz.egg-info/SOURCES.txt
+drainlessz.egg-info/dependency_links.txt
+drainlessz.egg-info/requires.txt
+drainlessz.egg-info/top_level.txt

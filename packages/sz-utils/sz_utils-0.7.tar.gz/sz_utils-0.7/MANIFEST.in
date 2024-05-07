@@ -1,0 +1,7 @@
+# will copy the entire package including non-python files.
+graft sz1
+
+
+# list files you dont want to include here.
+global-exclude __pyache__
+

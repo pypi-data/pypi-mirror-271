@@ -1,0 +1,3 @@
+[console_scripts]
+alex_sudoku=alex_sudoku.main:main
+

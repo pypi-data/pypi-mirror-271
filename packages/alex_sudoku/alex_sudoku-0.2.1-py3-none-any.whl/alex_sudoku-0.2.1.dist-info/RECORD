@@ -1,0 +1,17 @@
+LICENSE,sha256=I-FjQjjP6OdZ0blIK3blx5DEF3YSy9iUA_UlvfHi9nc,1090
+alex_sudoku/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alex_sudoku/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alex_sudoku/config/constants.py,sha256=KIsRL0_S9yeSmMzk93tIglOpnsKfu7kIRPczCHUZyfc,603
+alex_sudoku/config/paths.py,sha256=w1oekAnyYxhR-EymKxzn_ykbVB2fQsIDGpxarBMVvUU,1443
+alex_sudoku/interface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alex_sudoku/interface/command_line.py,sha256=W57Baq7gcj327Qe9ewTJfS3lY4zVd9yJ5JTnod-HXQk,461
+alex_sudoku/logs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alex_sudoku/logs/setup_logging.py,sha256=zXslzjLr3KIxDfXPH_9mNjwLhSCblOpKNNDWFg2JoWg,1879
+alex_sudoku/main.py,sha256=7vpg6ANyY0B9nCIUvYCGahvudfdko7mFrKxgTvMfBHI,632
+alex_sudoku/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alex_sudoku/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+alex_sudoku-0.2.1.dist-info/entry_points.txt,sha256=eaf0mIWg-XR3rSo1q8GiuU0rA9igOkctSAwa51zxOWY,53
+alex_sudoku-0.2.1.dist-info/LICENSE,sha256=I-FjQjjP6OdZ0blIK3blx5DEF3YSy9iUA_UlvfHi9nc,1090
+alex_sudoku-0.2.1.dist-info/METADATA,sha256=14SrgfMPVG1QHiWHR5TpxzfRslqoVbVr1NoRkF-OV04,1780
+alex_sudoku-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+alex_sudoku-0.2.1.dist-info/RECORD,,

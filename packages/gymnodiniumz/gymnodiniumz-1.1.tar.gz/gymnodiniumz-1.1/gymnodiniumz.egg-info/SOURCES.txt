@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gymnodiniumz/__init__.py
+gymnodiniumz/main.py
+gymnodiniumz.egg-info/PKG-INFO
+gymnodiniumz.egg-info/SOURCES.txt
+gymnodiniumz.egg-info/dependency_links.txt
+gymnodiniumz.egg-info/requires.txt
+gymnodiniumz.egg-info/top_level.txt

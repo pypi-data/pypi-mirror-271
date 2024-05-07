@@ -1,0 +1,5 @@
+wagtail>=5.1
+wagtail-modeladmin>=1.0
+
+[testing]
+coverage[toml]

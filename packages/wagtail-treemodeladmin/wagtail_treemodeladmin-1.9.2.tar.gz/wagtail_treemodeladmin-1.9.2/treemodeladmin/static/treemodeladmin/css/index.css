@@ -1,0 +1,15 @@
+header.hasform {
+    margin-bottom: 0;
+}
+
+.result-list.col12 {
+    padding: 0;
+}
+
+.result-list.col12 tbody td.children:last-child {
+    padding-right: 0;
+}
+
+.listing td.children, .listing td.no-children {
+    vertical-align: middle;
+}

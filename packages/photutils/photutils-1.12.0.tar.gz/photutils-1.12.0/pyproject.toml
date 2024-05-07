@@ -1,0 +1,184 @@
+[project]
+name = 'photutils'
+description = 'An Astropy package for source detection and photometry'
+readme = 'README.rst'
+license = {file = 'LICENSE.rst'}
+authors = [
+    {name = 'Photutils Developers', email = 'photutils.team@gmail.com'},
+]
+keywords = [
+    'astronomy',
+    'astrophysics',
+    'photometry',
+    'aperture',
+    'psf',
+    'source detection',
+    'background',
+    'segmentation',
+    'centroids',
+    'isophote',
+    'morphology',
+    'radial profiles',
+]
+classifiers = [
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: BSD License',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Cython',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Topic :: Scientific/Engineering :: Astronomy',
+]
+dynamic = ['version']
+requires-python = '>=3.10'
+dependencies = [
+    'numpy>=1.23',
+    'astropy>=5.1',
+]
+
+[project.urls]
+Homepage = 'https://github.com/astropy/photutils'
+Documentation = 'https://photutils.readthedocs.io/en/stable/'
+
+[project.optional-dependencies]
+all = [
+    'scipy>=1.8',
+    'matplotlib>=3.5',
+    'scikit-image>=0.20',
+    'scikit-learn>=1.1',
+    'gwcs>=0.18',
+    'bottleneck',
+    'tqdm',
+    'rasterio',
+    'shapely',
+]
+test = [
+    'pytest-astropy>=0.11',
+]
+docs = [
+    'photutils[all]',
+    'sphinx',
+    'sphinx-astropy>=1.9',
+    'tomli; python_version < "3.11"',
+]
+
+[build-system]
+requires = [
+    'setuptools>=61.2',
+    'setuptools_scm>=6.2',
+    'cython>=3.0.0,<3.1.0',
+    'numpy>=2.0.0rc1',
+    'extension-helpers==1.*',
+]
+build-backend = 'setuptools.build_meta'
+
+[tool.extension-helpers]
+use_extension_helpers = true
+
+[tool.setuptools_scm]
+write_to = 'photutils/version.py'
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+[tool.setuptools.package-data]
+'photutils' = [
+    'CITATION.rst',
+]
+'photutils.datasets' = [
+    'data/*',
+]
+'photutils.detection.tests' = [
+    'data/*',
+]
+'photutils.isophote.tests' = [
+    'data/*',
+]
+'photutils.psf.tests' = [
+    'data/*',
+]
+
+[tool.pytest.ini_options]
+minversion = 7.0
+testpaths = [
+    'photutils',
+    'docs',
+]
+norecursedirs = [
+    'docs/_build',
+    'extern',
+]
+astropy_header = true
+doctest_plus = 'enabled'
+text_file_format = 'rst'
+addopts = '--color=yes --doctest-rst'
+xfail_strict = true
+remote_data_strict = true
+filterwarnings = [
+    'error',  # turn warnings into exceptions
+    'ignore:numpy.ufunc size changed:RuntimeWarning',
+    'ignore:numpy.ndarray size changed:RuntimeWarning',
+    # numpy 1.24 deprecation from skimage (can remove for skimage >= 0.20)
+    'ignore:`np.bool8` is a deprecated alias for `np.bool_`:DeprecationWarning',
+    # python 3.12 deprecation in matplotlib 3.9dev
+    'ignore:datetime.datetime.utcfromtimestamp\(\) is deprecated:DeprecationWarning',
+    # NumPy 2.0dev deprecations
+    "ignore:.*numpy\\.core.*:DeprecationWarning",
+]
+
+[tool.coverage.run]
+omit = [
+    'photutils/_astropy_init*',
+    'photutils/conftest.py',
+    'photutils/*setup_package*',
+    'photutils/tests/*',
+    'photutils/*/tests/*',
+    'photutils/extern/*',
+    'photutils/version*',
+    '*/photutils/_astropy_init*',
+    '*/photutils/conftest.py',
+    '*/photutils/*setup_package*',
+    '*/photutils/tests/*',
+    '*/photutils/*/tests/*',
+    '*/photutils/extern/*',
+    '*/photutils/version*',
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    'pragma: no cover',
+    'except ImportError',
+    'raise AssertionError',
+    'raise NotImplementedError',
+    'def main\\(.*\\):',
+    'pragma: py{ignore_python_version}',
+    'def _ipython_key_completions_',
+]
+
+[tool.build-sphinx]
+github_project = 'astropy/photutils'
+
+[tool.isort]
+skip_glob = [
+    'photutils/*__init__.py*',
+]
+known_first_party = [
+    'photutils',
+    'extension_helpers',
+]
+use_parentheses = true
+
+[tool.black]
+force-exclude = """
+(
+  .*
+)
+"""
+
+[tool.bandit.assert_used]
+skips = ['*_test.py', '*/test_*.py']

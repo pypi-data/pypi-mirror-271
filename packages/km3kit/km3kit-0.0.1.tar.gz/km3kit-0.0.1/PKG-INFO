@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: km3kit
+Version: 0.0.1
+Summary: Python package for likelihood analysis of extended sources using KM3NeT neutrino data
+Home-page: https://github.com/amidn/km3kit
+Author: Amid Nayerhoda
+Author-email: amid.nayerhoda@gmail.com
+License: MIT license
+Keywords: km3kit
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# km3kit
+
+
+[![image](https://img.shields.io/pypi/v/km3kit.svg)](https://pypi.python.org/pypi/km3kit)
+[![image](https://img.shields.io/conda/vn/conda-forge/km3kit.svg)](https://anaconda.org/conda-forge/km3kit)
+
+
+**Python package for likelihood analysis of extended sources using KM3NeT neutrino data**
+
+
+-   Free software: MIT license
+-   Documentation: https://amidn.github.io/km3kit
+    
+
+## Features
+
+-   TODO

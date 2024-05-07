@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+km3kit/__init__.py
+km3kit/common.py
+km3kit/km3kit.py
+km3kit.egg-info/PKG-INFO
+km3kit.egg-info/SOURCES.txt
+km3kit.egg-info/dependency_links.txt
+km3kit.egg-info/not-zip-safe
+km3kit.egg-info/top_level.txt
+tests/test_km3kit.py

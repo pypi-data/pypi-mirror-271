@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/linearboost/LinearBoost.py
+src/linearboost/__init__.py
+src/linearboost.egg-info/PKG-INFO
+src/linearboost.egg-info/SOURCES.txt
+src/linearboost.egg-info/dependency_links.txt
+src/linearboost.egg-info/requires.txt
+src/linearboost.egg-info/top_level.txt

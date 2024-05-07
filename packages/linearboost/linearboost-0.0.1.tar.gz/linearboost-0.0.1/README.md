@@ -1,0 +1,1 @@
+LinearBoost is a classification algorithm based on boosting a linear classifier named SEFR. It can be used for classification tasks.

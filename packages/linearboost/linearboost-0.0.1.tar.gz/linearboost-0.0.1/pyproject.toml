@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linearboost"
+version = "0.0.1"
+authors = [
+  { name="Hamidreza Keshavarz", email="hamid9@outlook.com" },
+  { name="Reza Rawassizadeh", email="rezar@bu.edu"}
+  ]
+dependencies = [
+  "numpy>=1.24.3",
+  "scikit-learn>=1.2.2",
+]
+description = "LinearBoost Python Package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+license = {text = "MIT License"}
+keywords = ["classification", "classifier", "linear", "adaboost", "boosting", "boost"]
+[project.urls]
+Homepage = "https://github.com/LinearBoost/linearboost-classifier"
+Documentation = "https://linearboost.readthedocs.io"
+Issues = "https://github.com/LinearBoost/linearboost-classifier/issues"

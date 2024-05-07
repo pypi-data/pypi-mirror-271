@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "baidu-apollo-proto"
+version = "0.1.0"
+description = "Compiled protobuff used in Baidu Apollo for Python."
+authors = ["Yuqi Huai <yhuai@uci.edu>"]
+readme = "README.md"
+packages = [{include = "baidu_apollo_proto"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+protobuf = "3.19.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: baidu-apollo-proto
+Version: 0.1.0
+Summary: Compiled protobuff used in Baidu Apollo for Python.
+Author: Yuqi Huai
+Author-email: yhuai@uci.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: protobuf (==3.19.0)
+Description-Content-Type: text/markdown
+
+# Baidu Apollo Proto
+
+This project compiles protobuf files used by Baidu Apollo for Python.

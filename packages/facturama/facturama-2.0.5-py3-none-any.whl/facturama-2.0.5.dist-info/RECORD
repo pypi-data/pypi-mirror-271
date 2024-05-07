@@ -1,0 +1,16 @@
+facturama/__init__.py,sha256=APKj5vBnU-m5XK2sBW1vvaLapHfYZmsBAt3-cQZtYiw,24659
+tests/__init__.py,sha256=W9pohD7NZ075wYef3A21Agh6lvzOiVLdmcE6P2VITEo,18232
+tests/branch.py,sha256=J-nic7Y236Fv43xJyJ3gNERUlUjt_FRjrBJv5YvK00I,479
+tests/catalogs.py,sha256=Cw8TDmMdy67dxBByK9ulsUc10XoLVKDeiKn6b6j0Qwc,301
+tests/cfdi.py,sha256=iSABQRToiQ8ml5kLGXtFUmzJNmDecd6flHkYsUiRZQc,2280
+tests/cfdiMulti.py,sha256=GNJiD_tcnw0KrphibXRB1S7057hD54jWa6vs_PJUZ0I,2788
+tests/csds.py,sha256=eImYNCTfdWqu5q0bGyBCZm8DqGHsQhdrX3eF1Wg3PZQ,401
+tests/csdsMulti.py,sha256=v11nUy_sOfHRiVgUgjeEmUQaVzRhVfXtXQwSnHlTm5g,1197
+tests/customers.py,sha256=uAd3a4IZGvlH0wegmruhvu3cqNyKKKTYD-TL-IYoGwY,656
+tests/products.py,sha256=FdBOP7rulpPsRvubKtzw9fnw_32AIpjNJYBjusm6ipc,526
+facturama-2.0.5.dist-info/LICENSE,sha256=d0TUFX3tNopA-lgYt7qoaXjkd_877vJaE72jnc24QVM,1068
+facturama-2.0.5.dist-info/METADATA,sha256=rPxOTSy3A8rcKdwTQUEkxl4iNrS2OEtkXrlrC8he1ZM,4162
+facturama-2.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+facturama-2.0.5.dist-info/top_level.txt,sha256=YbxJ3CbaHlBxFZc6VNmGFj0Zf0vLJBzyqkHPO-3U664,16
+facturama-2.0.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+facturama-2.0.5.dist-info/RECORD,,

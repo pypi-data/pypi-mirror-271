@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: upgxl
+Version: 0.0.4
+Summary: The Unofficial PyGame eXtension Library: a set of tools to make better PyGames
+Project-URL: Homepage, https://github.com/JTHartzfeld/upgxl
+Project-URL: Bug Tracker, https://github.com/JTHartzfeld/upgxl/issues
+Author-email: "J.T. Hartzfeld" <johnathan.t.hartzfeld@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: auto-all>=1.4.1
+Requires-Dist: gptk>=2.12
+Requires-Dist: platformdirs>=4.2.0
+Requires-Dist: pygame>=2.1.2
+Description-Content-Type: text/markdown
+
+# UPGXL: The Unofficial PyGame eXtension Library
+Still under heavy development.  NOT ready for production.

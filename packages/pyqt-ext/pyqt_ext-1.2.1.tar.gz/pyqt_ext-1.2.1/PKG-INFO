@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pyqt-ext
+Version: 1.2.1
+Summary: Collection of PyQt/PySide widgets/tools
+Keywords: PyQt,PySide
+Home-page: https://github.com/marcel-goldschen-ohm/pyqt-ext
+Author-Email: Marcel Goldschen-Ohm <goldschen-ohm@utexas.edu>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Homepage, https://github.com/marcel-goldschen-ohm/pyqt-ext
+Project-URL: Repository, https://github.com/marcel-goldschen-ohm/pyqt-ext
+Requires-Python: >=3.9
+Requires-Dist: numpy>=1.26.2
+Requires-Dist: qtpy>=2.4.1
+Requires-Dist: qtawesome>=1.3.0
+Description-Content-Type: text/markdown
+
+# pyqt-ext
+Collection of PyQt/PySide widgets/tools.
+
+In addition to being useful out-of-the-box, you may find these tools to be helpful templates for rolling your own custom widgets.
+
+- `tree/`
+    - [Tree model/view interface](docs/AbstractTree.md)
+    - [(key, value) tree model/view](docs/KeyValueTree.md)
+- `utils/`
+    - [Color utils](docs/ColorUtils.md)
+- `widgets/`
+    - [Color selection button](docs/ColorButton.md)
+    - [Multi-value spinbox](docs/MultiValueSpinBox.md)
+
+# Install
+Should work with PySide6, PyQt6, or PyQt5.
+```shell
+pip install PySide6 pyqt-ext
+```

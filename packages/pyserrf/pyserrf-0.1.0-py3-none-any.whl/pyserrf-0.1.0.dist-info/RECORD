@@ -1,0 +1,7 @@
+pyserrf/__init__.py,sha256=1jlO7iGV9L0GcWYAq1oamq127wWIT4QSfTk7YXFAa3k,26
+pyserrf/read_data.py,sha256=1t0TJjreufmj5lkMvNld3sdKVo7ANTK7mdYBVDyLX98,4293
+pyserrf/run.py,sha256=WkdN1C9Z-VgmOor-ecfZfua7oqVSI6XmqXKcgji2eBs,359
+pyserrf/serrf.py,sha256=rScT1CRjrelh31ZhXfonycIkHkVXdrzPg88HcesgIP8,27794
+pyserrf-0.1.0.dist-info/METADATA,sha256=ToECk0By0jEtSwnkVjjgCNvtAJ6QAcBLQjoU3JLTUtY,1240
+pyserrf-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyserrf-0.1.0.dist-info/RECORD,,

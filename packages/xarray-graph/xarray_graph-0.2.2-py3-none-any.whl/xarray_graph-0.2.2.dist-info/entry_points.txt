@@ -1,0 +1,3 @@
+[console_scripts]
+xarray-graph = xarray_graph.__main__:main
+

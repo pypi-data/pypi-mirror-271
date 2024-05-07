@@ -1,0 +1,9 @@
+xarray_graph-0.2.2.dist-info/METADATA,sha256=YnbvMx6HyGmM7juG94B0Gad3GQnBs0ecGrBdCkAmRsE,1488
+xarray_graph-0.2.2.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+xarray_graph-0.2.2.dist-info/entry_points.txt,sha256=aW9CKuCZREtN_3Mtg4dKrysPMmHc-tQdUCNmzQYE_vA,61
+xarray_graph-0.2.2.dist-info/licenses/LICENSE,sha256=OE7VkhwkLeFeY8LXi86O-nMXC9B3WsBSILLfPmYGd-8,1077
+xarray_graph/XarrayGraph.py,sha256=nYBqXwW92Jjsb7g4M1zq7ROttf--Pe4rGAOHrx7NT_E,100555
+xarray_graph/__init__.py,sha256=1aAM-Fcno60-ou3AnSqt5HKm6UmZrtULGzg2LF34IJE,48
+xarray_graph/__main__.py,sha256=8c74k8lpaqOuMeKlcBahOKfgo08O7xmJs_htvKKKpck,2274
+xarray_graph/tmp/RegionsManager.py,sha256=0nnrO1e1mqvrs88doO51SJ3JvMNW5wXBKOp2nLQcUFs,1841
+xarray_graph-0.2.2.dist-info/RECORD,,

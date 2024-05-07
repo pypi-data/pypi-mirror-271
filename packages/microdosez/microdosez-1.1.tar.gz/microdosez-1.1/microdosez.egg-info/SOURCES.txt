@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+microdosez/__init__.py
+microdosez/main.py
+microdosez.egg-info/PKG-INFO
+microdosez.egg-info/SOURCES.txt
+microdosez.egg-info/dependency_links.txt
+microdosez.egg-info/requires.txt
+microdosez.egg-info/top_level.txt

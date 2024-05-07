@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "boruta_py_versioned"
+version = "0.1.0"
+description = "Fork of boruta_py with version added for poetry compatibility"
+authors = ["matteobolner <matteo.bolner2@unibo.it>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <4"
+numpy = ">=1.10.4"
+scikit-learn = ">=0.17.1"
+scipy = ">=0.17.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

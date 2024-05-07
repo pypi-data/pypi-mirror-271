@@ -1,0 +1,13 @@
+tja2fumen/__init__.py,sha256=RCnvLgjkoCE8gK9JVPLvbhFP4Z_gbWm2hO1tnNesFGs,5702
+tja2fumen/classes.py,sha256=CQgwtOwTbE8466t9FFBWcaM4_eVvC_inpMVMGlL293Q,16022
+tja2fumen/constants.py,sha256=13u5bW2XgKIFfk6g39AYJWaaqdghm5JXv-yxxrdOnoY,3263
+tja2fumen/converters.py,sha256=CPyJc4hQPecdyD6J0Fbz8qqRjQPt_Zfsxc8pbHIA5DU,27352
+tja2fumen/hp_values.csv,sha256=W_CCk-QF_CQXIu7XJ1Lw0y8w0WO76damFJs1AsfSjrs,307495
+tja2fumen/parsers.py,sha256=lEpY6Rf5AT14uG8IG5Lf7PypFCJUBFYE-vtpko65Z-s,27085
+tja2fumen/writers.py,sha256=6uTEumEbbLy5uesjt6wBqSTnrpoj9KJTPegfLu8UH5I,2806
+tja2fumen-0.8.0.dev0.dist-info/LICENSE.txt,sha256=IbYJT1-cCMGW8yGUhuJLY4tX0H3jOL96b98ZKmhZ3NM,1085
+tja2fumen-0.8.0.dev0.dist-info/METADATA,sha256=mz0gy9HB7cslIHqEC4Sf3BFvvxeFTw3GSd9RSW6SMoc,15210
+tja2fumen-0.8.0.dev0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tja2fumen-0.8.0.dev0.dist-info/entry_points.txt,sha256=aiCQHOyVzlJD_XWKB9kMMWB3LfXzxNSl5UVGKAqg-yA,45
+tja2fumen-0.8.0.dev0.dist-info/top_level.txt,sha256=Vn8KywFNEair-Se8dQ8nQKoxlAgDn7UEqlAzoS4IeU0,10
+tja2fumen-0.8.0.dev0.dist-info/RECORD,,

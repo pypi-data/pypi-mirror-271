@@ -1,0 +1,4 @@
+[console_scripts]
+timewise_sup=timewise_sup.main:main
+timewise_sup_bump=timewise_sup.main:bump_version
+

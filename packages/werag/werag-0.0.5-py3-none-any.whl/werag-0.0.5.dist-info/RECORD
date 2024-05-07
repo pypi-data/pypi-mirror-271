@@ -1,0 +1,12 @@
+werag/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+werag/__init__.py,sha256=8s1-Cto1TOLPU4tlq71lV5aAD_l27IJmmnJFNGlJr4c,25
+werag/client.py,sha256=R2Rr5eEcfaIfO5hYs_K2PZym_grKkB1AnsJJ_55SmE8,6965
+werag/crud.py,sha256=OJKTjG_IDgEzCU4Ul_JgPEd_DU8vyTc3l0YQ3srtQzo,3811
+werag/db.py,sha256=Y-lJCUpBf4nCjhegBdqjm3w6nJ3OTd-QdroMLRr_17s,397
+werag/schema.py,sha256=GqcmuvLbm0maFrsNq7hlArI4jgzQ452COunItOUEMTg,976
+werag/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+werag/schemas/chunk.py,sha256=5h8VvJZNTMiqXen-9YiKiRQttolXKrEf_gT4FGnlVok,818
+werag/utils.py,sha256=y8FGwFmQj2kcx0fEIHckTh4GbzNhzOPkwrtZVc44v7U,1081
+werag-0.0.5.dist-info/METADATA,sha256=45GFvw8xCQsy3yxElfNehC57aHW5NKRo0xQokF9ZQlc,798
+werag-0.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+werag-0.0.5.dist-info/RECORD,,
